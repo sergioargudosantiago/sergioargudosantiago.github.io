@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Mi Sitio Personal',
+  title: 'Sergio Argudo Santiago - Inspector del SOIVRE',
   description: 'Sitio personal y de estudio para opositores.',
 };
 

@@ -1,33 +1,76 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { FileText } from "lucide-react";
 import Link from "next/link";
 
 const syllabusData = [
   {
-    exam: "Bloque I: Derecho Constitucional",
-    topics: [
-      "Tema 1: La Constitución Española de 1978: estructura y contenido.",
-      "Tema 2: Derechos y deberes fundamentales.",
-      "Tema 3: La Corona. Funciones constitucionales del Rey.",
-      "Tema 4: Las Cortes Generales: composición, atribuciones y funcionamiento.",
+    exam: "Examen 1: Bloques I, II, III y IV",
+    blocks: [
+      {
+        title: "Bloque I: Derecho",
+        topics: ["Tema 1: ...", "Tema 2: ...", "Tema 3: ..."],
+      },
+      {
+        title: "Bloque II: Economía",
+        topics: ["Tema 4: ...", "Tema 5: ...", "Tema 6: ..."],
+      },
+      {
+        title: "Bloque III: Unión Europea",
+        topics: ["Tema 7: ...", "Tema 8: ..."],
+      },
+       {
+        title: "Bloque IV: Política Comercial",
+        topics: ["Tema 9: ...", "Tema 10: ..."],
+      },
     ],
   },
   {
-    exam: "Bloque II: Derecho Administrativo",
-    topics: [
-      "Tema 5: El Gobierno y la Administración. La Administración General del Estado.",
-      "Tema 6: El procedimiento administrativo común.",
-      "Tema 7: Los contratos del sector público.",
-      "Tema 8: La responsabilidad patrimonial de las Administraciones Públicas.",
+    exam: "Examen 2: Examen de inglés y optativamente otro idioma voluntario",
+    blocks: [
+       {
+        title: "Pruebas",
+        topics: ["Prueba 1: Traducción directa", "Prueba 2: Traducción inversa", "Prueba 3: Reading", "Prueba 4: Listening", "Prueba 5: Redacción"],
+      }
+    ]
+  },
+  {
+    exam: "Examen 3: Bloques V y VI",
+    blocks: [
+        {
+            title: "Bloque V: Calidad y Seguridad industrial",
+            topics: ["Tema 11: ...", "Tema 12: ..."],
+        },
+        {
+            title: "Bloque VI: Sectores específicos",
+            topics: ["Tema 13: ...", "Tema 14: ..."],
+        }
     ],
   },
   {
-    exam: "Bloque III: Gestión Financiera",
-    topics: [
-      "Tema 9: El presupuesto: elaboración, aprobación y ejecución.",
-      "Tema 10: El control del gasto público.",
-      "Tema 11: Los tributos: clases. La Agencia Tributaria.",
-      "Tema 12: La Seguridad Social: campo de aplicación, estructura y regímenes.",
+    exam: "Examen 4: Casos prácticos",
+    blocks: [
+      {
+        title: "Casos prácticos",
+        topics: ["Caso 1: ...", "Caso 2: ..."],
+      },
+      {
+        title: "Casos prácticos resueltos",
+        topics: ["Resolución Caso 1: ...", "Resolución Caso 2: ..."],
+      },
+    ],
+  },
+  {
+    exam: "Examen 5: Desarrollo de tema",
+     blocks: [
+        {
+            title: "Desarrollo de tema",
+            topics: ["Tema a elegir de los bloques I, II, III o IV", "Tema a elegir de los bloques V o VI"],
+        }
     ],
   },
 ];
@@ -38,34 +81,41 @@ export function SyllabusSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter text-primary sm:text-5xl">
-            Temario Completo y Estructurado
+            Temario Resumen
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Accede a un temario desglosado por bloques para facilitar tu estudio y planificación. Cada tema incluye un enlace a su material en PDF.
+            El objetivo de esta web es recopilar una serie de resúmenes de cada tema con el objetivo de una vez estudiado el temario que sirvan como tema estilo resumido para poder estudiar con ellos una vez se tiene un conocimiento más amplio del temario, así como servir de material complementario o para ver el temario de manera más detallada para gente que se está planteando opositar al cuerpo de Inspectores e Ingenieros Técnicos del SOIVRE. El material está basado en los temas de Roberto Martín López, mi preparador y en diversas fuentes de relevancia y enfoque según mi punto de vista. Los materiales se encuentran actualizados hasta finales de 2024.
           </p>
         </div>
-        <div className="mx-auto mt-12 grid gap-8 md:grid-cols-1 lg:max-w-5xl lg:grid-cols-3">
-          {syllabusData.map((item, index) => (
-            <Card key={index} className="flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-xl text-primary">{item.exam}</CardTitle>
-              </CardHeader>
-              <CardContent className="flex flex-1 flex-col">
-                <ul className="flex-1 space-y-4">
-                  {item.topics.map((topic, topicIndex) => (
-                    <li key={topicIndex}>
-                      <Link href="#" className="group flex items-start gap-3 text-left">
-                         <FileText className="h-5 w-5 flex-shrink-0 text-muted-foreground transition-colors group-hover:text-accent" />
-                        <span className="text-sm text-muted-foreground transition-colors group-hover:text-foreground">
-                          {topic}
-                        </span>
-                      </Link>
-                    </li>
+        <div className="mx-auto mt-12 w-full max-w-4xl">
+          <Accordion type="single" collapsible className="w-full">
+            {syllabusData.map((item, index) => (
+              <AccordionItem value={`item-${index}`} key={index}>
+                <AccordionTrigger className="text-xl font-semibold text-primary hover:no-underline">
+                  {item.exam}
+                </AccordionTrigger>
+                <AccordionContent>
+                  {item.blocks.map((block, blockIndex) => (
+                    <div key={blockIndex} className="pt-4">
+                      <h4 className="mb-3 text-lg font-medium">{block.title}</h4>
+                      <ul className="space-y-3 pl-4">
+                        {block.topics.map((topic, topicIndex) => (
+                          <li key={topicIndex}>
+                             <Link href="#" className="group flex items-start gap-3 text-left">
+                                <FileText className="h-5 w-5 flex-shrink-0 text-muted-foreground transition-colors group-hover:text-accent" />
+                                <span className="text-sm text-muted-foreground transition-colors group-hover:text-foreground">
+                                  {topic}
+                                </span>
+                              </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   ))}
-                </ul>
-              </CardContent>
-            </Card>
-          ))}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function AboutSection() {
   return (
@@ -14,7 +15,9 @@ export function AboutSection() {
                 Soy un profesional dedicado con una pasión por el servicio público. Mi objetivo es ayudar a otros aspirantes a opositores a alcanzar sus metas proporcionando recursos claros, estructurados y de alta calidad. Este sitio es el resultado de años de estudio y experiencia en el campo.
               </p>
             </div>
-            <Button size="lg">Contactar</Button>
+            <Button size="lg" asChild>
+              <Link href="mailto:sergio.argudo.santiago@example.com">Contactar por email</Link>
+            </Button>
           </div>
           <div className="flex justify-center">
             {/* You can replace this with an actual image */}
