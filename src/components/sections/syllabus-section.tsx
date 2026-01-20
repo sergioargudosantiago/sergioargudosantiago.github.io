@@ -1,85 +1,34 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { FileText } from "lucide-react";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Info } from "lucide-react";
 import Link from "next/link";
 
-const syllabusData = [
+const syllabusBlocks = [
   {
-    exam: "Examen 1: Primer Ejercicio: Comercio, CITES y Control.",
-    parts: [
-      {
-        part: "Parte A: Política comercial, CITES y control",
-        themes: Array.from({ length: 13 }, (_, i) => `Tema ${i + 1}: Título del tema`),
-      },
-      {
-        part: "Parte B: Productos industriales I",
-        themes: Array.from({ length: 12 }, (_, i) => `Tema ${i + 14}: Título del tema`),
-      },
-      {
-        part: "Parte C: Productos industriales II",
-        themes: Array.from({ length: 13 }, (_, i) => `Tema ${i + 26}: Título del tema`),
-      },
-      {
-        part: "Parte D: Productos agrarios y alimentarios I",
-        themes: Array.from({ length: 10 }, (_, i) => `Tema ${i + 39}: Título del tema`),
-      },
-      {
-        part: "Parte E: Productos agrarios y alimentarios II",
-        themes: Array.from({ length: 7 }, (_, i) => `Tema ${i + 49}: Título del tema`),
-      },
-    ],
+    title: "PRIMER EJERCICIO",
+    description: "Parte A. Comercio de mercancías. Análisis sectorial (intro); Parte B. Comercio de servicios (intro); Parte C. CITES (intro); Parte D. Control analítico (intro); Parte E. Normalización. Inspección.",
+    href: "/temario/examen-1"
   },
   {
-    exam: "Examen 2: Examen de idiomas",
-    summary: "Consiste en una prueba de idioma extranjero (Inglés obligatorio) con traducción y resumen, y una prueba voluntaria de un segundo idioma.",
+    title: "SEGUNDO EJERCICIO",
+    description: "Consiste en una prueba de inglés con parte escrita y oral, que puede realizarse de forma optativa en otros idiomas.",
+    href: "/temario/examen-2"
   },
   {
-      exam: "Examen 3: Tercer Ejercicio: Comercio Exterior y Organismos.",
-      parts: [
-        {
-          part: "Parte A: Política comercial y comercio exterior",
-          themes: Array.from({ length: 36 }, (_, i) => `Tema ${i + 1}: Título del tema`),
-        },
-        {
-          part: "Parte B: Organismos Económicos Internacionales y Unión Europea",
-          themes: Array.from({ length: 22 }, (_, i) => `Tema ${i + 37}: Título del tema`),
-        },
-      ]
+    title: "TERCER EJERCICIO",
+    description: "Parte A. Comercio exterior (intro); Parte B. Organismos Internacionales y Unión Europea.",
+    href: "/temario/examen-3"
   },
   {
-    exam: "Examen 4: Casos prácticos",
-    blocks: [
-      {
-        title: "Casos prácticos",
-        topics: ["Caso 1: Título del caso", "Caso 2: Título del caso"],
-      },
-      {
-        title: "Casos prácticos resueltos",
-        topics: ["Resolución Caso 1: Título del caso", "Resolución Caso 2: Título del caso"],
-      },
-    ],
+    title: "CUARTO EJERCICIO",
+    description: "Consiste en la resolución de 4 casos prácticos relacionados con el contenido de la oposición.",
+    href: "/temario/examen-4"
   },
   {
-    exam: "Examen 5: Quinto Ejercicio: Economía, Interior y Derecho.",
-    parts: [
-      {
-        part: "Parte A: Macroeconomía y Microeconomía",
-        themes: Array.from({ length: 21 }, (_, i) => `Tema ${i + 1}: Título del tema`),
-      },
-      {
-        part: "Parte B: Economía del sector público, Sistema Financiero Español",
-        themes: Array.from({ length: 13 }, (_, i) => `Tema ${i + 22}: Título del tema`),
-      },
-      {
-        part: "Parte C: Derecho",
-        themes: Array.from({ length: 12 }, (_, i) => `Tema ${i + 35}: Título del tema`),
-      },
-    ]
-  },
+    title: "QUINTO EJERCICIO",
+    description: "Parte A. Economía General y Estructura económica de España (intro); Parte B. Comercio Interior (intro); Parte C. Derecho Administrativo y organización del Estado.",
+    href: "/temario/examen-5"
+  }
 ];
 
 export function SyllabusSection() {
@@ -88,69 +37,38 @@ export function SyllabusSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4 text-center">
           <h2 className="text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
-            Temario Resumen
+            TEMARIO
           </h2>
           <p className="max-w-[900px] font-serif text-justify text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            El objetivo de esta web es recopilar una serie de resúmenes de cada tema para que, una vez estudiado el temario completo, puedan utilizarse como temas resumidos con los que repasar cuando ya se tiene un conocimiento más amplio del mismo. Asimismo, pretende servir como material complementario o como una forma de consultar el temario con mayor nivel de detalle para aquellas personas que se estén planteando opositar al Cuerpo de Inspectores e Ingenieros Técnicos del SOIVRE. El material está basado en los temas de Roberto Martín López, mi preparador, así como en diversas fuentes relevantes, seleccionadas y enfocadas según mi criterio. Los contenidos se encuentran actualizados hasta finales de 2024.
+            El objetivo de esta web es recopilar una serie de resúmenes de cada tema para que, una vez estudiado el temario completo, puedan utilizarse como temas resumidos con los que repasar cuando ya se tiene un conocimiento más amplio del mismo. Asimismo, pretende servir como material complementario o como una forma de consultar el temario con mayor nivel de detalle para aquellas personas que se estén planteando opositar al Cuerpo de Inspectores e Ingenieros Técnicos del SOIVRE.
+            <br/><br/>
+            El temario que se presenta a continuación es un resumen de los temas de la oposición. El material está basado en los temas de Roberto Martín López, mi preparador, así como en diversas fuentes relevantes, seleccionadas y enfocadas según mi criterio. Los contenidos se encuentran actualizados hasta finales de 2024.
           </p>
         </div>
-        <div className="mx-auto mt-12 w-full max-w-4xl">
-          <Accordion type="single" collapsible className="w-full">
-            {syllabusData.map((item, index) => (
-              <AccordionItem value={`item-${index}`} key={index}>
-                <AccordionTrigger className="text-xl font-semibold text-primary hover:no-underline">
-                  {item.exam}
-                </AccordionTrigger>
-                <AccordionContent>
-                  {item.summary ? (
-                     <p className="p-4 font-serif text-justify text-muted-foreground">{item.summary}</p>
-                  ) : item.parts ? (
-                    <Accordion type="single" collapsible className="w-full pl-4">
-                      {item.parts.map((part, partIndex) => (
-                        <AccordionItem value={`part-${index}-${partIndex}`} key={partIndex}>
-                          <AccordionTrigger className="text-lg font-medium text-primary/90 hover:no-underline">
-                            {part.part}
-                          </AccordionTrigger>
-                          <AccordionContent>
-                            <ul className="space-y-3 pt-4 pl-4">
-                              {part.themes.map((theme, themeIndex) => (
-                                <li key={themeIndex}>
-                                  <Link href="#" download className="group flex items-start gap-3 text-left">
-                                    <FileText className="h-5 w-5 flex-shrink-0 text-muted-foreground transition-colors group-hover:text-accent" />
-                                    <span className="text-sm text-muted-foreground transition-colors group-hover:text-foreground">
-                                      {theme}
-                                    </span>
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </AccordionContent>
-                        </AccordionItem>
-                      ))}
-                    </Accordion>
-                  ) : item.blocks ? (
-                     item.blocks.map((block, blockIndex) => (
-                        <div key={blockIndex} className="pt-4 pl-4">
-                          <h4 className="mb-3 text-lg font-medium text-primary/90">{block.title}</h4>
-                          <ul className="space-y-3 pl-4">
-                            {block.topics.map((topic, topicIndex) => (
-                              <li key={topicIndex}>
-                                 <Link href="#" download className="group flex items-start gap-3 text-left">
-                                    <FileText className="h-5 w-5 flex-shrink-0 text-muted-foreground transition-colors group-hover:text-accent" />
-                                    <span className="text-sm text-muted-foreground transition-colors group-hover:text-foreground">
-                                      {topic}
-                                    </span>
-                                  </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))
-                  ) : null}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+
+        <div className="mx-auto mt-8 max-w-4xl">
+            <Alert className="bg-white border-primary/50">
+                <Info className="h-4 w-4 text-primary" />
+                <AlertTitle className="font-bold text-primary">Nota aclaratoria</AlertTitle>
+                <AlertDescription className="font-serif text-justify text-foreground/80">
+                El contenido de este repositorio no incluye toda la información necesaria para aprobar y, además, puede contener errores. Si detectas cualquier error, por favor contacta con <a href="mailto:ponercorreo@gmail.com" className="font-semibold text-primary underline">ponercorreo@gmail.com</a>.
+                </AlertDescription>
+            </Alert>
+        </div>
+
+        <div className="mx-auto mt-12 grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {syllabusBlocks.map((block) => (
+             <Link href={block.href} key={block.title} className="group block h-full">
+              <Card className="flex h-full flex-col transition-all duration-300 group-hover:border-primary group-hover:shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-primary">{block.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p className="font-serif text-justify text-sm text-muted-foreground">{block.description}</p>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
