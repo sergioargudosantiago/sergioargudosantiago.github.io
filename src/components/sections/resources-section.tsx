@@ -18,7 +18,7 @@ const linksIngles = [
 
 export function ResourcesSection() {
   return (
-    <section id="enlaces-de-interes" className="w-full py-16 md:py-24 lg:py-32">
+    <section id="enlaces-de-interes" className="h-full w-full overflow-y-auto py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-center space-y-6 text-center">
           <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm">
@@ -27,7 +27,7 @@ export function ResourcesSection() {
           <h2 className="text-3xl font-bold tracking-tighter text-primary sm:text-5xl">
             Enlaces de Interés
           </h2>
-          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="max-w-[900px] font-serif text-justify text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Una colección de enlaces a recursos externos en español e inglés que pueden ser de utilidad durante tu preparación.
           </p>
         </div>

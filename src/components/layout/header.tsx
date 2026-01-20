@@ -1,42 +1,52 @@
 "use client";
 
-import Link from "next/link";
 import { Menu, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import React from "react";
+import { cn } from "@/lib/utils";
+import type { SectionId } from "@/app/page";
 
-const navLinks = [
-  { href: "#introduccion", label: "INTRODUCCIÓN" },
-  { href: "#temario", label: "TEMARIO" },
-  { href: "#enlaces-de-interes", label: "ENLACES DE INTERÉS" },
-  { href: "#sobre-mi", label: "SOBRE MÍ" },
+const navLinks: { id: SectionId; label: string }[] = [
+  { id: "introduccion", label: "INTRODUCCIÓN" },
+  { id: "temario", label: "TEMARIO" },
+  { id: "enlaces-de-interes", label: "ENLACES DE INTERÉS" },
+  { id: "sobre-mi", label: "SOBRE MÍ" },
 ];
 
-export function Header() {
+interface HeaderProps {
+  activeSection: SectionId;
+  setActiveSection: (id: SectionId) => void;
+}
+
+export function Header({ activeSection, setActiveSection }: HeaderProps) {
   const [searchQuery, setSearchQuery] = React.useState("");
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="text-lg font-bold text-primary sm:text-xl">
+        <button onClick={() => setActiveSection('introduccion')} className="text-left text-lg font-bold text-primary sm:text-xl">
           Sergio Argudo Santiago - Inspector del SOIVRE
-        </Link>
+        </button>
         
-        <div className="hidden items-center gap-6 md:flex">
-          <nav className="flex items-center gap-6 text-sm font-medium">
+        <div className="hidden items-center gap-1 md:flex">
+          <nav className="flex items-center gap-1 text-sm font-medium">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-foreground/80 transition-colors hover:text-primary"
+              <Button
+                key={link.id}
+                variant="ghost"
+                onClick={() => setActiveSection(link.id)}
+                className={cn(
+                  "text-foreground/80 transition-colors hover:text-primary",
+                  activeSection === link.id && "text-primary"
+                )}
               >
                 {link.label}
-              </Link>
+              </Button>
             ))}
           </nav>
-          <div className="relative">
+          <div className="relative ml-4">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
               type="search"
@@ -56,22 +66,28 @@ export function Header() {
                 <span className="sr-only">Abrir menú</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-full max-w-xs pr-0">
+            <SheetContent side="left" className="w-full max-w-xs p-0">
                 <div className="flex h-full flex-col">
                   <div className="border-b p-4">
-                     <Link href="/" className="text-lg font-bold text-primary">
-                      Sergio Argudo Santiago - Inspector del SOIVRE
-                    </Link>
+                     <SheetClose asChild>
+                      <button onClick={() => setActiveSection('introduccion')} className="text-left text-lg font-bold text-primary">
+                        Sergio Argudo Santiago - Inspector del SOIVRE
+                      </button>
+                     </SheetClose>
                   </div>
-                  <nav className="flex flex-col gap-4 p-4">
+                  <nav className="flex flex-col gap-1 p-4">
                     {navLinks.map((link) => (
-                      <SheetClose asChild key={link.href}>
-                        <Link
-                          href={link.href}
-                          className="rounded-md p-2 text-foreground/80 transition-colors hover:bg-accent hover:text-accent-foreground"
+                      <SheetClose asChild key={link.id}>
+                        <Button
+                          variant="ghost"
+                          onClick={() => setActiveSection(link.id)}
+                          className={cn(
+                            "w-full justify-start rounded-md p-2 text-left text-foreground/80",
+                            activeSection === link.id && "bg-accent text-accent-foreground"
+                          )}
                         >
                           {link.label}
-                        </Link>
+                        </Button>
                       </SheetClose>
                     ))}
                   </nav>
