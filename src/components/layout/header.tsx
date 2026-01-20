@@ -25,10 +25,7 @@ export function Header({ activeSection, setActiveSection }: HeaderProps) {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <button onClick={() => setActiveSection('introduccion')} className="text-left text-lg font-bold text-primary sm:text-xl">
-          Sergio Argudo Santiago - Inspector del SOIVRE
-        </button>
+      <div className="container mx-auto flex h-16 max-w-7xl items-center justify-center px-4 sm:px-6 lg:px-8">
         
         <div className="hidden items-center gap-1 md:flex">
           <nav className="flex items-center gap-1 text-sm font-medium">
@@ -38,11 +35,16 @@ export function Header({ activeSection, setActiveSection }: HeaderProps) {
                 variant="ghost"
                 onClick={() => setActiveSection(link.id)}
                 className={cn(
-                  "text-foreground/80 transition-colors hover:text-primary",
+                  "group relative text-foreground/80 transition-colors hover:text-primary",
                   activeSection === link.id && "text-primary"
                 )}
               >
                 {link.label}
+                <span className={cn(
+                  "absolute bottom-2 left-0 block h-[2px] w-full origin-center transform bg-primary transition-transform duration-300",
+                  activeSection === link.id ? 'scale-x-100' : 'scale-x-0',
+                  'group-hover:scale-x-100'
+                )} />
               </Button>
             ))}
           </nav>
@@ -58,7 +60,7 @@ export function Header({ activeSection, setActiveSection }: HeaderProps) {
           </div>
         </div>
 
-        <div className="md:hidden">
+        <div className="absolute right-4 md:hidden">
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
@@ -71,7 +73,7 @@ export function Header({ activeSection, setActiveSection }: HeaderProps) {
                   <div className="border-b p-4">
                      <SheetClose asChild>
                       <button onClick={() => setActiveSection('introduccion')} className="text-left text-lg font-bold text-primary">
-                        Sergio Argudo Santiago - Inspector del SOIVRE
+                        Menú
                       </button>
                      </SheetClose>
                   </div>

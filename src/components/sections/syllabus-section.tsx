@@ -13,45 +13,40 @@ const syllabusData = [
     parts: [
       {
         part: "Parte A: Política comercial, CITES y control",
-        themes: Array.from({ length: 13 }, (_, i) => `Tema ${i + 1}: ...`),
+        themes: Array.from({ length: 13 }, (_, i) => `Tema ${i + 1}: Título del tema`),
       },
       {
         part: "Parte B: Productos industriales I",
-        themes: Array.from({ length: 12 }, (_, i) => `Tema ${i + 14}: ...`),
+        themes: Array.from({ length: 12 }, (_, i) => `Tema ${i + 14}: Título del tema`),
       },
       {
         part: "Parte C: Productos industriales II",
-        themes: Array.from({ length: 13 }, (_, i) => `Tema ${i + 26}: ...`),
+        themes: Array.from({ length: 13 }, (_, i) => `Tema ${i + 26}: Título del tema`),
       },
       {
         part: "Parte D: Productos agrarios y alimentarios I",
-        themes: Array.from({ length: 10 }, (_, i) => `Tema ${i + 39}: ...`),
+        themes: Array.from({ length: 10 }, (_, i) => `Tema ${i + 39}: Título del tema`),
       },
       {
         part: "Parte E: Productos agrarios y alimentarios II",
-        themes: Array.from({ length: 7 }, (_, i) => `Tema ${i + 49}: ...`),
+        themes: Array.from({ length: 7 }, (_, i) => `Tema ${i + 49}: Título del tema`),
       },
     ],
   },
   {
     exam: "Examen 2: Examen de idiomas",
-    blocks: [
-       {
-        title: "Pruebas",
-        topics: ["Prueba 1: Traducción directa", "Prueba 2: Traducción inversa", "Prueba 3: Reading", "Prueba 4: Listening", "Prueba 5: Redacción"],
-      }
-    ]
+    summary: "Consiste en una prueba de idioma extranjero (Inglés obligatorio) con traducción y resumen, y una prueba voluntaria de un segundo idioma.",
   },
   {
       exam: "Examen 3: Tercer Ejercicio: Comercio Exterior y Organismos.",
       parts: [
         {
           part: "Parte A: Política comercial y comercio exterior",
-          themes: Array.from({ length: 36 }, (_, i) => `Tema ${i + 1}: ...`),
+          themes: Array.from({ length: 36 }, (_, i) => `Tema ${i + 1}: Título del tema`),
         },
         {
           part: "Parte B: Organismos Económicos Internacionales y Unión Europea",
-          themes: Array.from({ length: 22 }, (_, i) => `Tema ${i + 37}: ...`),
+          themes: Array.from({ length: 22 }, (_, i) => `Tema ${i + 37}: Título del tema`),
         },
       ]
   },
@@ -60,11 +55,11 @@ const syllabusData = [
     blocks: [
       {
         title: "Casos prácticos",
-        topics: ["Caso 1: ...", "Caso 2: ..."],
+        topics: ["Caso 1: Título del caso", "Caso 2: Título del caso"],
       },
       {
         title: "Casos prácticos resueltos",
-        topics: ["Resolución Caso 1: ...", "Resolución Caso 2: ..."],
+        topics: ["Resolución Caso 1: Título del caso", "Resolución Caso 2: Título del caso"],
       },
     ],
   },
@@ -73,15 +68,15 @@ const syllabusData = [
     parts: [
       {
         part: "Parte A: Macroeconomía y Microeconomía",
-        themes: Array.from({ length: 21 }, (_, i) => `Tema ${i + 1}: ...`),
+        themes: Array.from({ length: 21 }, (_, i) => `Tema ${i + 1}: Título del tema`),
       },
       {
         part: "Parte B: Economía del sector público, Sistema Financiero Español",
-        themes: Array.from({ length: 13 }, (_, i) => `Tema ${i + 22}: ...`),
+        themes: Array.from({ length: 13 }, (_, i) => `Tema ${i + 22}: Título del tema`),
       },
       {
         part: "Parte C: Derecho",
-        themes: Array.from({ length: 12 }, (_, i) => `Tema ${i + 35}: ...`),
+        themes: Array.from({ length: 12 }, (_, i) => `Tema ${i + 35}: Título del tema`),
       },
     ]
   },
@@ -92,7 +87,7 @@ export function SyllabusSection() {
     <section id="temario" className="h-full w-full bg-secondary/30 overflow-y-auto py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
+          <h2 className="text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
             Temario Resumen
           </h2>
           <p className="max-w-[900px] font-serif text-justify text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -107,7 +102,9 @@ export function SyllabusSection() {
                   {item.exam}
                 </AccordionTrigger>
                 <AccordionContent>
-                  {item.parts ? (
+                  {item.summary ? (
+                     <p className="p-4 font-serif text-justify text-muted-foreground">{item.summary}</p>
+                  ) : item.parts ? (
                     <Accordion type="single" collapsible className="w-full pl-4">
                       {item.parts.map((part, partIndex) => (
                         <AccordionItem value={`part-${index}-${partIndex}`} key={partIndex}>
@@ -118,7 +115,7 @@ export function SyllabusSection() {
                             <ul className="space-y-3 pt-4 pl-4">
                               {part.themes.map((theme, themeIndex) => (
                                 <li key={themeIndex}>
-                                  <Link href="#" className="group flex items-start gap-3 text-left">
+                                  <Link href="#" download className="group flex items-start gap-3 text-left">
                                     <FileText className="h-5 w-5 flex-shrink-0 text-muted-foreground transition-colors group-hover:text-accent" />
                                     <span className="text-sm text-muted-foreground transition-colors group-hover:text-foreground">
                                       {theme}
@@ -133,12 +130,12 @@ export function SyllabusSection() {
                     </Accordion>
                   ) : item.blocks ? (
                      item.blocks.map((block, blockIndex) => (
-                        <div key={blockIndex} className="pt-4">
-                          <h4 className="mb-3 text-lg font-medium">{block.title}</h4>
+                        <div key={blockIndex} className="pt-4 pl-4">
+                          <h4 className="mb-3 text-lg font-medium text-primary/90">{block.title}</h4>
                           <ul className="space-y-3 pl-4">
                             {block.topics.map((topic, topicIndex) => (
                               <li key={topicIndex}>
-                                 <Link href="#" className="group flex items-start gap-3 text-left">
+                                 <Link href="#" download className="group flex items-start gap-3 text-left">
                                     <FileText className="h-5 w-5 flex-shrink-0 text-muted-foreground transition-colors group-hover:text-accent" />
                                     <span className="text-sm text-muted-foreground transition-colors group-hover:text-foreground">
                                       {topic}
