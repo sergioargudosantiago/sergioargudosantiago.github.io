@@ -3,7 +3,7 @@
 import { Menu, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import React from "react";
 import { cn } from "@/lib/utils";
 import type { SectionId } from "@/app/page";
@@ -69,6 +69,10 @@ export function Header({ activeSection, setActiveSection }: HeaderProps) {
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="w-full max-w-xs p-0">
+                <SheetTitle className="sr-only">Menú de Navegación</SheetTitle>
+                <SheetDescription className="sr-only">
+                  Contiene los enlaces principales del sitio: Introducción, Temario, Enlaces de Interés y Sobre Mí.
+                </SheetDescription>
                 <div className="flex h-full flex-col">
                   <div className="border-b p-4">
                      <SheetClose asChild>

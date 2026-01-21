@@ -11,7 +11,7 @@ export function AboutSection() {
             <h2 className="text-5xl font-bold tracking-tighter text-primary sm:text-6xl">
               Sergio Argudo Santiago
             </h2>
-            <div className="font-serif text-xl text-foreground md:text-2xl space-y-2">
+            <div className="font-serif text-xl text-foreground md:text-2xl space-y-4 text-justify">
                 <p className="font-bold">Inspector del SOIVRE (Promoción 2025)</p>
                 <p className="font-bold">Ingeniero Técnico del SOIVRE (Promoción del 2023)</p>
                 <p>Ingeniero Químico por la Universidad Complutense de Madrid</p>
