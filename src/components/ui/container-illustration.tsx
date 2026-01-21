@@ -9,7 +9,7 @@ export function ContainerIllustration({ className }: { className?: string }) {
       )}
     >
       <div
-        className="h-full w-full bg-cover bg-center bg-no-repeat opacity-5"
+        className="h-full w-full bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('/contenedor-fondo.png')",
         }}

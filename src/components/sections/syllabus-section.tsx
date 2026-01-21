@@ -50,7 +50,7 @@ export function SyllabusSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="bg-white/95 rounded-2xl shadow-xl p-8">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <h2 className="text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
+              <h2 className="text-4xl font-extrabold tracking-tighter text-primary sm:text-5xl md:text-6xl lg:text-7xl">
                 TEMARIO
               </h2>
               <p className="max-w-[900px] font-serif text-justify text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
