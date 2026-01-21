@@ -48,7 +48,7 @@ export function SyllabusSection() {
   return (
     <section id="temario" className="flex h-full min-h-screen w-full items-center py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="bg-card rounded-xl shadow-lg p-8">
+        <div className="bg-white/95 rounded-2xl shadow-xl p-8">
             <div className="flex flex-col items-center space-y-4 text-center">
               <h2 className="text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
                 TEMARIO

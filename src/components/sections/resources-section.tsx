@@ -14,7 +14,7 @@ const resourceCategories = [
         ]
     },
     {
-        category: "ENLACES DE CARÁCTER GENERAL",
+        category: "ENLACES GENERALES",
         links: [
             { title: "Secretaría de Estado de Comercio", href: "https://comercio.gob.es/" },
             { title: "Revistas ICE", href: "https://comercio.gob.es//es-es/publicaciones-estadisticas/paginas/revistasice.aspx" },
@@ -30,7 +30,7 @@ const resourceCategories = [
         ]
     },
     {
-        category: "ORGANISMOS INTERGUBERNAMENTALES",
+        category: "ORGANISMOS",
         links: [
             { title: "Blog de la OMC", href: "https://www.wto.org/spanish/blogs_s/blogs_s.htm" },
         ]
@@ -41,7 +41,7 @@ export function ResourcesSection() {
   return (
     <section id="enlaces-de-interes" className="flex h-full min-h-screen w-full items-center py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="bg-card rounded-xl shadow-lg p-8">
+        <div className="bg-white/95 rounded-2xl shadow-xl p-8">
             <div className="mx-auto flex max-w-5xl flex-col items-center justify-center space-y-6 text-center">
               <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm">
                 Recursos Externos
