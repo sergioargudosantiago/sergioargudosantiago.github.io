@@ -8,7 +8,7 @@ const resourceCategories = [
         links: [
             { title: "Datacomex", href: "https://datacomex.comercio.es/" },
             { title: "Informe mensual de Comercio Exterior", href: "https://comercio.gob.es/ImportacionExportacion/Informes_Estadisticas/Paginas/Historico-boletines-me.aspx" },
-            { title: "Estadísticas inversiones Exteriores", href: "https://comercio.gob.es/es-es/inversiones_exteriores/estadisticas/Paginas/default.aspx" },
+            { title: "Estadísticas Inversiones Exteriores", href: "https://comercio.gob.es/es-es/inversiones_exteriores/estadisticas/Paginas/default.aspx" },
             { title: "Balanza Comercial Agroalimentaria", href: "https://comercio.gob.es/importacionexportacion/informes_estadisticas/paginas/historico-balanza.aspx" },
             { title: "Estadísticas relacionadas con el sector exterior del BdE", href: "https://www.bde.es/webbe/es/estadisticas/otras-clasificaciones/publicaciones/boletin-estadistico/capitulo-17.html" },
         ]
