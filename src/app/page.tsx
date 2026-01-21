@@ -7,6 +7,7 @@ import { HeroSection } from "@/components/sections/hero-section";
 import { SyllabusSection } from "@/components/sections/syllabus-section";
 import { ResourcesSection } from "@/components/sections/resources-section";
 import { AboutSection } from "@/components/sections/about-section";
+import { ContainerIllustration } from "@/components/ui/container-illustration";
 
 export type SectionId = "introduccion" | "temario" | "enlaces-de-interes" | "sobre-mi";
 
@@ -23,8 +24,11 @@ export default function Home() {
   return (
     <div className="flex h-screen flex-col bg-background">
       <Header activeSection={activeSection} setActiveSection={setActiveSection} />
-      <main className="flex-1 overflow-hidden">
-        {sections[activeSection]}
+      <main className="relative flex-1 overflow-hidden">
+        <ContainerIllustration />
+        <div className="h-full overflow-y-auto">
+          {sections[activeSection]}
+        </div>
       </main>
       <Footer />
     </div>

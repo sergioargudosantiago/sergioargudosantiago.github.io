@@ -39,41 +39,43 @@ const resourceCategories = [
 
 export function ResourcesSection() {
   return (
-    <section id="enlaces-de-interes" className="h-full w-full overflow-y-auto py-16 md:py-24 lg:py-32">
+    <section id="enlaces-de-interes" className="flex h-full min-h-screen w-full items-center py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mx-auto flex max-w-5xl flex-col items-center justify-center space-y-6 text-center">
-          <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm">
-            Recursos Externos
-          </div>
-          <h2 className="text-3xl font-bold tracking-tighter text-primary sm:text-5xl">
-            Enlaces de Interés
-          </h2>
-          <p className="max-w-[900px] font-serif text-justify text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Una colección de enlaces a recursos externos que pueden ser de utilidad durante tu preparación.
-          </p>
-        </div>
-        <div className="mx-auto mt-12 grid max-w-7xl gap-8 md:grid-cols-2">
-            {resourceCategories.map((category) => (
-              <Card key={category.category} className="flex flex-col">
-                <CardHeader>
-                    <CardTitle className="text-primary">{category.category}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                    <ul className="space-y-3">
-                        {category.links.map(link => (
-                            <li key={link.title}>
-                                <Link href={link.href} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 text-left">
-                                    <LinkIcon className="h-4 w-4 flex-shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
-                                    <span className="font-serif text-sm text-muted-foreground transition-colors group-hover:text-foreground">
-                                        {link.title}
-                                    </span>
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </CardContent>
-              </Card>
-            ))}
+        <div className="bg-card rounded-xl shadow-lg p-8">
+            <div className="mx-auto flex max-w-5xl flex-col items-center justify-center space-y-6 text-center">
+              <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm">
+                Recursos Externos
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter text-primary sm:text-5xl">
+                Enlaces de Interés
+              </h2>
+              <p className="max-w-[900px] font-serif text-justify text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Una colección de enlaces a recursos externos que pueden ser de utilidad durante tu preparación.
+              </p>
+            </div>
+            <div className="mx-auto mt-12 grid max-w-7xl gap-8 md:grid-cols-2">
+                {resourceCategories.map((category) => (
+                  <Card key={category.category} className="flex flex-col bg-background/50">
+                    <CardHeader>
+                        <CardTitle className="text-primary">{category.category}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                        <ul className="space-y-3">
+                            {category.links.map(link => (
+                                <li key={link.title}>
+                                    <Link href={link.href} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 text-left">
+                                        <LinkIcon className="h-4 w-4 flex-shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
+                                        <span className="font-serif text-sm text-muted-foreground transition-colors group-hover:text-foreground">
+                                            {link.title}
+                                        </span>
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </CardContent>
+                  </Card>
+                ))}
+            </div>
         </div>
       </div>
     </section>
