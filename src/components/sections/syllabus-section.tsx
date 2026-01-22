@@ -51,7 +51,7 @@ export function SyllabusSection() {
         <div className="bg-white/95 rounded-2xl shadow-xl p-8">
             <div className="flex flex-col items-center space-y-4 text-center">
               <h2 className="text-4xl font-extrabold tracking-tighter text-primary sm:text-5xl md:text-6xl lg:text-7xl">
-                temario
+                TEMARIO
               </h2>
               <p className="max-w-[900px] font-serif text-justify text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 El objetivo de esta web es recopilar una serie de resúmenes de cada tema para que, una vez estudiado el temario completo, puedan utilizarse como temas resumidos con los que repasar cuando ya se tiene un conocimiento más amplio del mismo. Asimismo, pretende servir como material complementario o como una forma de consultar el temario con mayor nivel de detalle para aquellas personas que se estén planteando opositar al Cuerpo de Inspectores e Ingenieros Técnicos del SOIVRE.
