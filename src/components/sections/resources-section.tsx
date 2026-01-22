@@ -43,9 +43,6 @@ export function ResourcesSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="bg-white/95 rounded-2xl shadow-xl p-8">
             <div className="mx-auto flex max-w-5xl flex-col items-center justify-center space-y-6 text-center">
-              <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm">
-                Recursos Externos
-              </div>
               <h2 className="text-3xl font-bold tracking-tighter text-primary sm:text-5xl">
                 Enlaces de Interés
               </h2>
