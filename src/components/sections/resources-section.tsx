@@ -12,7 +12,6 @@ const resourceCategories = [
             { title: "Balanza Comercial Agroalimentaria", href: "https://comercio.gob.es/importacionexportacion/informes_estadisticas/paginas/historico-balanza.aspx" },
             { title: "Estadísticas relacionadas con el sector exterior del BdE", href: "https://www.bde.es/webbe/es/estadisticas/otras-clasificaciones/publicaciones/boletin-estadistico/capitulo-17.html" },
             { title: "EUROSTAT", href: "https://ec.europa.eu/eurostat/web/international-trade-in-goods/database" },
-            { title: "OMA", href: "https://www.wcoomd.org/" },
         ]
     },
     {
@@ -40,6 +39,7 @@ const resourceCategories = [
             { title: "UNCTAD", href: "https://unctad.org/es" },
             { title: "OCDE", href: "https://www.oecd.org/en/about/directorates/statistics-and-data-directorate.html" },
             { title: "TRADE MAP (ITC)", href: "https://www.trademap.org/Index.aspx" },
+            { title: "OMA", href: "https://www.wcoomd.org/" },
         ]
     }
 ];
