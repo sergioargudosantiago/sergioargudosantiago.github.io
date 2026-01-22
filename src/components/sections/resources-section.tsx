@@ -11,6 +11,8 @@ const resourceCategories = [
             { title: "Estadísticas Inversiones Exteriores", href: "https://comercio.gob.es/es-es/inversiones_exteriores/estadisticas/Paginas/default.aspx" },
             { title: "Balanza Comercial Agroalimentaria", href: "https://comercio.gob.es/importacionexportacion/informes_estadisticas/paginas/historico-balanza.aspx" },
             { title: "Estadísticas relacionadas con el sector exterior del BdE", href: "https://www.bde.es/webbe/es/estadisticas/otras-clasificaciones/publicaciones/boletin-estadistico/capitulo-17.html" },
+            { title: "EUROSTAT", href: "https://ec.europa.eu/eurostat/web/international-trade-in-goods/database" },
+            { title: "OMA", href: "https://www.wcoomd.org/" },
         ]
     },
     {
@@ -18,9 +20,10 @@ const resourceCategories = [
         links: [
             { title: "Secretaría de Estado de Comercio", href: "https://comercio.gob.es/" },
             { title: "Revistas ICE", href: "https://comercio.gob.es//es-es/publicaciones-estadisticas/paginas/revistasice.aspx" },
-            { title: "Blog del FMI", href: "https://www.imf.org/es/blogs" },
             { title: "El Orden Mundial", href: "https://elordenmundial.com/" },
             { title: "Bloomberg", href: "https://www.bloomberg.com/europe" },
+            { title: "Portwatch", href: "https://portwatch.imf.org/" },
+            { title: "Drewry - Precios de rutas comerciales", href: "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry?gad_source=1&gad_campaignid=21493608168&gclid=CjwKCAiAssfLBhBDEiwAcLpwfkWGPLr_uwX4wGO2cldRa8pw3XWhqUBj8LAplnqbs8hpJYc_r2D01hoCdQQQAvD_BwE" },
         ]
     },
     {
@@ -30,9 +33,13 @@ const resourceCategories = [
         ]
     },
     {
-        category: "ORGANISMOS",
+        category: "ORGANISMOS INTERGUBERNAMENTALES",
         links: [
             { title: "Blog de la OMC", href: "https://www.wto.org/spanish/blogs_s/blogs_s.htm" },
+            { title: "Blog del FMI", href: "https://www.imf.org/es/blogs" },
+            { title: "UNCTAD", href: "https://unctad.org/es" },
+            { title: "OCDE", href: "https://www.oecd.org/en/about/directorates/statistics-and-data-directorate.html" },
+            { title: "TRADE MAP (ITC)", href: "https://www.trademap.org/Index.aspx" },
         ]
     }
 ];
@@ -50,9 +57,9 @@ export function ResourcesSection() {
                 Una colección de enlaces a recursos externos que pueden ser de utilidad durante tu preparación.
               </p>
             </div>
-            <div className="mx-auto mt-12 grid max-w-7xl gap-8 md:grid-cols-2">
+            <div className="mx-auto mt-12 grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                 {resourceCategories.map((category) => (
-                  <Card key={category.category} className="flex flex-col bg-background/50">
+                  <Card key={category.category} className="flex h-full flex-col bg-background/50">
                     <CardHeader>
                         <CardTitle className="text-primary">{category.category}</CardTitle>
                     </CardHeader>
