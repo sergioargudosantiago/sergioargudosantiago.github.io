@@ -22,11 +22,11 @@ export default function Home() {
   };
 
   return (
-    <div className="flex h-screen flex-col bg-background">
+    <div className="flex min-h-screen flex-col bg-background">
       <Header activeSection={activeSection} setActiveSection={setActiveSection} />
-      <main className="relative flex-1 overflow-hidden">
+      <main className="relative flex-1 pb-32">
         <ContainerIllustration />
-        <div className="h-full overflow-y-auto">
+        <div>
           {sections[activeSection]}
         </div>
       </main>

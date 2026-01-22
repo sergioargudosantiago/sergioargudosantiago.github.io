@@ -1,6 +1,6 @@
 export function HeroSection() {
   return (
-    <section id="introduccion" className="flex h-full w-full items-center justify-center">
+    <section id="introduccion" className="flex min-h-screen w-full items-center justify-center">
       <div className="container mx-auto rounded-xl bg-white/85 px-4 py-8 text-center backdrop-blur-sm md:px-6">
         <div className="flex flex-col items-center space-y-4">
           <div className="space-y-2">

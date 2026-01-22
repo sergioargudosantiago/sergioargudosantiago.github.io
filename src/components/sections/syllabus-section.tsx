@@ -13,12 +13,14 @@ const syllabusBlocks = [
       "Parte D. Control analítico",
       "Parte E. Normalización. Inspección.",
     ],
-    href: "/temario/ejercicio-1"
+    href: "/temario/ejercicio-1",
+    download: false,
   },
   {
     title: "SEGUNDO EJERCICIO",
     description: "Consiste en una prueba de inglés con parte escrita y oral, que puede realizarse de forma optativa en otros idiomas.",
-    href: "/temario/ejercicio-2"
+    href: "/temario/ejercicio-2",
+    download: false,
   },
   {
     title: "TERCER EJERCICIO",
@@ -26,12 +28,14 @@ const syllabusBlocks = [
       "Parte A. Comercio exterior",
       "Parte B. Organismos Internacionales y Unión Europea.",
     ],
-    href: "/temario/ejercicio-3"
+    href: "/temas/ejercicio-3/ESQUEMA TEMA 1.docx",
+    download: true,
   },
   {
     title: "CUARTO EJERCICIO",
     description: "Consiste en la resolución de 4 casos prácticos relacionados con el contenido de la oposición.",
-    href: "/temario/ejercicio-4"
+    href: "/temario/ejercicio-4",
+    download: false,
   },
   {
     title: "QUINTO EJERCICIO",
@@ -40,13 +44,14 @@ const syllabusBlocks = [
       "Parte B. Comercio Interior",
       "Parte C. Derecho Administrativo y organización del Estado.",
     ],
-    href: "/temario/ejercicio-5"
+    href: "/temas/ejercicio-5/ESQUEMA TEMA 1.docx",
+    download: true,
   }
 ];
 
 export function SyllabusSection() {
   return (
-    <section id="temario" className="flex h-full min-h-screen w-full items-center py-16 md:py-24 lg:py-32">
+    <section id="temario" className="flex min-h-screen w-full items-center py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="bg-white/95 rounded-2xl shadow-xl p-8">
             <div className="flex flex-col items-center space-y-4 text-center">
@@ -72,8 +77,8 @@ export function SyllabusSection() {
 
             <div className="mx-auto mt-12 grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
               {syllabusBlocks.map((block) => (
-                 <Link href={block.href} key={block.title} className="group block h-full">
-                  <Card className="flex h-full flex-col bg-background/50 transition-all duration-300 group-hover:border-primary group-hover:shadow-lg">
+                 <Link href={block.href} key={block.title} className="group block h-full" target={block.download ? "_blank" : undefined} download={block.download}>
+                  <Card className="flex h-full flex-col bg-background/50 transition-all duration-300 group-hover:border-primary group-hover:shadow-lg group-hover:scale-[1.02]">
                     <CardHeader>
                       <CardTitle className="text-primary">{block.title}</CardTitle>
                     </CardHeader>

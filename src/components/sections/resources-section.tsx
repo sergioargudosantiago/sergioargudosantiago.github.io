@@ -46,7 +46,7 @@ const resourceCategories = [
 
 export function ResourcesSection() {
   return (
-    <section id="enlaces-de-interes" className="flex h-full min-h-screen w-full items-center py-16 md:py-24 lg:py-32">
+    <section id="enlaces-de-interes" className="flex min-h-screen w-full items-center py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="bg-white/95 rounded-2xl shadow-xl p-8">
             <div className="mx-auto flex max-w-5xl flex-col items-center justify-center space-y-6 text-center">

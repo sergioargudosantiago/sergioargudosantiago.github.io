@@ -4,7 +4,7 @@ import { Linkedin, Mail, Github } from "lucide-react";
 
 export function AboutSection() {
   return (
-    <section id="sobre-mi" className="flex h-full min-h-screen w-full items-center justify-center">
+    <section id="sobre-mi" className="flex min-h-screen w-full items-center justify-center py-24 md:py-32">
       <div className="container mx-auto rounded-2xl bg-white/85 p-8 shadow-xl backdrop-blur-sm">
         <div className="mx-auto max-w-4xl space-y-8">
           <div className="space-y-4 text-left">
