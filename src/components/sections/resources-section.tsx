@@ -43,8 +43,8 @@ export function ResourcesSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="bg-white/95 rounded-2xl shadow-xl p-8">
             <div className="mx-auto flex max-w-5xl flex-col items-center justify-center space-y-6 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter text-primary sm:text-5xl">
-                Enlaces de Interés
+              <h2 className="text-4xl font-extrabold tracking-tighter text-primary sm:text-5xl md:text-6xl lg:text-7xl">
+                ENLACES DE INTERÉS
               </h2>
               <p className="max-w-[900px] font-serif text-justify text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Una colección de enlaces a recursos externos que pueden ser de utilidad durante tu preparación.
