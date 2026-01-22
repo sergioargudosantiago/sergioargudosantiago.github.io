@@ -61,7 +61,7 @@ export function ResourcesSection() {
                 {resourceCategories.map((category) => (
                   <Card key={category.category} className="flex h-full flex-col bg-background/50">
                     <CardHeader>
-                        <CardTitle className="text-primary">{category.category}</CardTitle>
+                        <CardTitle className="text-primary text-xl">{category.category}</CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
                         <ul className="space-y-3">
