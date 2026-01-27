@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header activeSection={activeSection} setActiveSection={setActiveSection} />
-      <main className="relative flex-1 pb-32">
+      <main className="relative flex-1 pb-24">
         <ContainerIllustration />
         <div>
           {sections[activeSection]}

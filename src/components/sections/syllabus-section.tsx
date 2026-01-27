@@ -5,19 +5,30 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
-import { Info, Download, Search } from "lucide-react";
+import { Info, Download, Search, XCircle } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-// Helper to generate a dummy file list for demonstration
-const generateDummyFiles = (exerciseNumber: number, count: number) => {
-    return Array.from({ length: count }, (_, i) => ({
-        name: `ESQUEMA TEMA ${i + 1}.docx`,
-        path: `/temas/ejercicio-${exerciseNumber}/ESQUEMA TEMA ${i + 1}.docx`,
-    }));
+type Topic = {
+  name: string;
+  path: string;
+  status: "available" | "coming-soon" | "discarded";
+  message?: string;
 };
 
-const syllabusBlocksData = [
+type SyllabusBlock = {
+  title: string;
+  description: string | string[];
+  isModal: boolean;
+  href?: string;
+  modalType?: "coming-soon" | "topic-list";
+  exerciseDetails?: {
+    number: number;
+    count: number;
+  };
+};
+
+const syllabusBlocksData: SyllabusBlock[] = [
   {
     title: "PRIMER EJERCICIO",
     description: [
@@ -27,16 +38,14 @@ const syllabusBlocksData = [
       "Parte D. Control analítico",
       "Parte E. Normalización. Inspección.",
     ],
-    href: "/temario/ejercicio-1",
     isModal: true,
-    files: generateDummyFiles(1, 20), // Example files
+    modalType: "coming-soon",
   },
   {
     title: "SEGUNDO EJERCICIO",
     description: "Consiste en una prueba de inglés con parte escrita y oral, que puede realizarse de forma optativa en otros idiomas.",
-    href: "/temario/ejercicio-2",
     isModal: false,
-    files: [],
+    href: "/temario/ejercicio-2",
   },
   {
     title: "TERCER EJERCICIO",
@@ -44,29 +53,15 @@ const syllabusBlocksData = [
       "Parte A. Comercio exterior",
       "Parte B. Organismos Internacionales y Unión Europea.",
     ],
-    href: "/temas/ejercicio-3/",
     isModal: true,
-    files: [
-        { name: "ESQUEMA TEMA 1.docx", path: "/temas/ejercicio-3/ESQUEMA TEMA 1.docx" },
-        { name: "ESQUEMA TEMA 7.docx", path: "/temas/ejercicio-3/ESQUEMA TEMA 7.docx" },
-        // Generate remaining files to meet the count of 60, avoiding duplicates
-        ...Array.from({ length: 58 }, (_, i) => {
-            const themeNum = i + 2;
-            if (themeNum === 7) return null; // Avoid duplicating Tema 7
-            return { name: `ESQUEMA TEMA ${themeNum > 7 ? themeNum + 1 : themeNum}.docx`, path: `/temas/ejercicio-3/ESQUEMA TEMA ${themeNum > 7 ? themeNum + 1 : themeNum}.docx` };
-        }).filter(Boolean)
-    ].sort((a,b) => {
-        const numA = parseInt(a!.name.match(/\d+/)?.[0] || '0');
-        const numB = parseInt(b!.name.match(/\d+/)?.[0] || '0');
-        return numA - numB;
-    }),
+    modalType: "topic-list",
+    exerciseDetails: { number: 3, count: 58 },
   },
   {
     title: "CUARTO EJERCICIO",
     description: "Consiste en la resolución de 4 casos prácticos relacionados con el contenido de la oposición.",
-    href: "/temario/ejercicio-4",
-    isModal: false,
-    files: [],
+    isModal: true,
+    modalType: "coming-soon",
   },
   {
     title: "QUINTO EJERCICIO",
@@ -75,16 +70,11 @@ const syllabusBlocksData = [
       "Parte B. Comercio Interior",
       "Parte C. Derecho Administrativo y organización del Estado.",
     ],
-    href: "/temas/ejercicio-5/",
     isModal: true,
-    files: [
-        { name: "ESQUEMA TEMA 1.docx", path: "/temas/ejercicio-5/ESQUEMA TEMA 1.docx" },
-        ...generateDummyFiles(5, 15).slice(1),
-    ],
-  }
+    modalType: "topic-list",
+    exerciseDetails: { number: 5, count: 46 },
+  },
 ];
-
-type SyllabusBlock = typeof syllabusBlocksData[0];
 
 export function SyllabusSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -92,25 +82,93 @@ export function SyllabusSection() {
   const [searchQuery, setSearchQuery] = useState("");
 
   const handleBlockClick = (block: SyllabusBlock) => {
-    if (block.isModal && block.files.length > 0) {
+    if (block.isModal) {
       setCurrentExercise(block);
       setIsModalOpen(true);
       setSearchQuery(""); // Reset search on open
     }
   };
 
-  const filteredFiles = useMemo(() => {
-    if (!currentExercise?.files) return [];
-    return currentExercise.files.filter(file =>
-      file.name.toLowerCase().includes(searchQuery.toLowerCase())
+  const topicList = useMemo((): Topic[] => {
+    if (currentExercise?.modalType !== "topic-list" || !currentExercise.exerciseDetails) {
+      return [];
+    }
+
+    const { number, count } = currentExercise.exerciseDetails;
+    const topics: Topic[] = [];
+
+    for (let i = 1; i <= count; i++) {
+      const topic: Topic = {
+        name: `ESQUEMA TEMA ${i}.docx`,
+        path: `/temas/ejercicio-${number}/ESQUEMA TEMA ${i}.docx`,
+        status: "coming-soon", // Default status
+      };
+
+      if (number === 3) {
+        if ([12, 33, 43].includes(i)) {
+          topic.status = "discarded";
+          topic.message = "No disponible, era mi tema de descarte";
+        } else if (i >= 1 && i <= 30) {
+          topic.status = "available";
+        }
+      } else if (number === 5) {
+        if (i >= 1 && i <= 2) {
+          topic.status = "available";
+        }
+      }
+      topics.push(topic);
+    }
+    return topics;
+  }, [currentExercise]);
+
+  const filteredTopics = useMemo(() => {
+    if (!topicList) return [];
+    return topicList.filter(topic =>
+      topic.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
-  }, [currentExercise, searchQuery]);
+  }, [topicList, searchQuery]);
 
   const getModalTitle = (title: string | undefined) => {
     if (!title) return "Esquemas";
     const titleCase = title.charAt(0).toUpperCase() + title.slice(1).toLowerCase();
-    return `Esquemas del ${titleCase}`;
-  }
+    const exerciseName = titleCase.replace("ejercicio", "Ejercicio");
+    return `Esquemas del ${exerciseName}`;
+  };
+
+  const renderTopicItem = (topic: Topic) => {
+    switch (topic.status) {
+      case "available":
+        return (
+          <a
+            key={topic.path}
+            href={topic.path}
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+            className="flex cursor-pointer items-center justify-between rounded-md p-3 transition-colors hover:bg-accent group"
+          >
+            <span className="font-serif font-medium text-foreground/80 group-hover:text-foreground">{topic.name}</span>
+            <Download className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
+          </a>
+        );
+      case "discarded":
+        return (
+          <div key={topic.path} className="flex items-center justify-between rounded-md p-3 opacity-60">
+            <span className="font-serif font-medium text-foreground/80">{topic.name}</span>
+            <span className="text-sm text-muted-foreground italic">{topic.message}</span>
+          </div>
+        );
+      case "coming-soon":
+        return (
+          <div key={topic.path} className="flex items-center justify-between rounded-md p-3 opacity-60">
+            <span className="font-serif font-medium text-foreground/80">{topic.name}</span>
+            <span className="text-sm text-muted-foreground">Próximamente disponible</span>
+          </div>
+        );
+      default:
+        return null;
+    }
+  };
 
   return (
     <section id="temario" className="flex min-h-screen w-full items-center py-16 md:py-24 lg:py-32">
@@ -163,7 +221,7 @@ export function SyllabusSection() {
                         </Card>
                     </div>
                 ) : (
-                    <Link href={block.href} key={block.title} className="group block h-full">
+                    <Link href={block.href!} key={block.title} className="group block h-full">
                         <Card className="flex h-full flex-col bg-background/50 transition-all duration-300 group-hover:border-primary group-hover:shadow-lg group-hover:scale-[1.02]">
                         <CardHeader>
                             <CardTitle className="text-primary">{block.title}</CardTitle>
@@ -188,47 +246,54 @@ export function SyllabusSection() {
       </div>
 
       <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-        <DialogContent className="max-w-2xl h-[90vh] sm:h-[80vh] flex flex-col">
-            <DialogHeader className="pr-6">
-                <DialogTitle className="text-primary text-2xl">{getModalTitle(currentExercise?.title)}</DialogTitle>
-                <DialogDescription className="sr-only">
-                    Lista de esquemas descargables para {currentExercise?.title}. Utilice la barra de búsqueda para filtrar los resultados.
-                </DialogDescription>
-            </DialogHeader>
-            <div className="relative">
-                <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                <Input
-                    type="search"
-                    placeholder="Buscar por 'Tema X' o palabra clave..."
-                    className="h-10 w-full rounded-md bg-secondary pl-9"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                />
-            </div>
-            <div className="flex-1 overflow-y-auto -mx-6 px-6 mt-4">
-                <div className="space-y-2">
-                    {filteredFiles.length > 0 ? (
-                        filteredFiles.map((file) => (
-                            <a
-                                key={file.path}
-                                href={file.path}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                download
-                                className="flex items-center justify-between rounded-md p-3 transition-colors hover:bg-accent group"
-                            >
-                                <span className="font-serif font-medium text-foreground/80 group-hover:text-foreground">{file.name}</span>
-                                <Download className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
-                            </a>
-                        ))
-                    ) : (
-                        <div className="flex flex-col items-center justify-center h-full text-center text-muted-foreground p-8">
-                            <p className="font-semibold">No se encontraron resultados.</p>
-                            <p className="text-sm">Pruebe con otra búsqueda.</p>
+        <DialogContent className={cn(
+            "max-w-2xl flex flex-col",
+            currentExercise?.modalType === 'topic-list' ? "h-[90vh] sm:h-[80vh]" : "h-auto"
+        )}>
+            {currentExercise?.modalType === 'coming-soon' && (
+                <>
+                    <DialogHeader>
+                        <DialogTitle className="sr-only">{currentExercise.title}</DialogTitle>
+                        <DialogDescription className="sr-only">Contenido no disponible todavía.</DialogDescription>
+                    </DialogHeader>
+                    <div className="flex h-48 flex-col items-center justify-center text-center">
+                        <h3 className="text-2xl font-bold text-primary">PRÓXIMAMENTE DISPONIBLE...</h3>
+                    </div>
+                </>
+            )}
+
+            {currentExercise?.modalType === 'topic-list' && (
+                <>
+                    <DialogHeader className="pr-6">
+                        <DialogTitle className="text-primary text-2xl">{getModalTitle(currentExercise?.title)}</DialogTitle>
+                        <DialogDescription className="sr-only">
+                            Lista de esquemas descargables para {currentExercise?.title}. Utilice la barra de búsqueda para filtrar los resultados.
+                        </DialogDescription>
+                    </DialogHeader>
+                    <div className="relative">
+                        <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                        <Input
+                            type="search"
+                            placeholder="Buscar por 'Tema X' o palabra clave..."
+                            className="h-10 w-full rounded-md bg-secondary pl-9"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                        />
+                    </div>
+                    <div className="flex-1 overflow-y-auto -mx-6 px-6 mt-4">
+                        <div className="space-y-2">
+                            {filteredTopics.length > 0 ? (
+                                filteredTopics.map(renderTopicItem)
+                            ) : (
+                                <div className="flex flex-col items-center justify-center h-full text-center text-muted-foreground p-8">
+                                    <p className="font-semibold">No se encontraron resultados.</p>
+                                    <p className="text-sm">Pruebe con otra búsqueda.</p>
+                                </div>
+                            )}
                         </div>
-                    )}
-                </div>
-            </div>
+                    </div>
+                </>
+            )}
         </DialogContent>
       </Dialog>
     </section>
