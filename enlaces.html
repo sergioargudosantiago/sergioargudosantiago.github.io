@@ -19,29 +19,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        /* CSS Variables from globals.css */
+        /* CSS Variables - Clean Minimal Theme */
         :root {
-            --background: 0 0% 100%;
-            --foreground: 224 64% 10%;
+            --background: 220 14% 96%;
+            --foreground: 220 9% 46%;
             --card: 0 0% 100%;
-            --card-foreground: 224 64% 10%;
+            --card-foreground: 220 13% 18%;
             --popover: 0 0% 100%;
-            --popover-foreground: 224 64% 10%;
-            --primary: 224 64% 33%;
-            --primary-foreground: 0 0% 98%;
-            --secondary: 210 40% 96.1%;
-            --secondary-foreground: 224 64% 10%;
-            --muted: 210 40% 96.1%;
-            --muted-foreground: 215 20% 65%;
-            --accent: 217 94% 67%;
-            --accent-foreground: 224 64% 10%;
+            --popover-foreground: 220 13% 18%;
+            --primary: 217 91% 45%;
+            --primary-foreground: 0 0% 100%;
+            --secondary: 220 14% 96%;
+            --secondary-foreground: 220 13% 18%;
+            --muted: 220 14% 96%;
+            --muted-foreground: 220 9% 46%;
+            --accent: 217 91% 45%;
+            --accent-foreground: 0 0% 100%;
             --destructive: 0 84.2% 60.2%;
             --destructive-foreground: 0 0% 98%;
-            --border: 214.3 31.8% 91.4%;
-            --input: 214.3 31.8% 91.4%;
-            --ring: 217 94% 67%;
+            --border: 220 13% 91%;
+            --input: 220 13% 91%;
+            --ring: 217 91% 45%;
             --radius: 0.5rem;
         }
+
 
         * {
             margin: 0;
@@ -63,7 +64,7 @@
             font-family: 'Cambria', 'Noto Serif', serif;
         }
 
-        /* Custom background with illustration */
+        /* Dot Grid Background Pattern */
         .container-illustration {
             position: fixed;
             top: 0;
@@ -71,7 +72,9 @@
             right: 0;
             bottom: 0;
             z-index: -1;
-            background: linear-gradient(135deg, hsl(var(--secondary)) 0%, hsl(var(--background)) 50%, hsl(var(--accent) / 0.1) 100%);
+            background-color: #f5f6f7;
+            background-image: radial-gradient(circle, #d1d5db 1px, transparent 1px);
+            background-size: 24px 24px;
         }
 
         /* Mobile menu styles */
@@ -268,187 +271,270 @@
                     </p>
                 </div>
 
-                <!-- Enlaces Generales -->
-                <div class="mb-16">
-                    <h2 class="text-2xl font-bold text-primary mb-6 border-b-2 border-primary/20 pb-2">
-                        ENLACES GENERALES
-                    </h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <!-- BOE -->
-                        <a href="https://www.boe.es/" target="_blank" rel="noopener noreferrer"
-                            class="group flex flex-col h-full rounded-lg border-2 border-border bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:scale-[1.02]">
-                            <h3 class="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                BOE
-                            </h3>
-                            <p class="font-serif text-sm text-muted-foreground flex-grow">
-                                Boletín Oficial del Estado
-                            </p>
-                        </a>
+                <!-- 4 Category Boxes - Responsive Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-                        <!-- DOUE -->
-                        <a href="https://eur-lex.europa.eu/oj/direct-access.html?locale=es" target="_blank"
-                            rel="noopener noreferrer"
-                            class="group flex flex-col h-full rounded-lg border-2 border-border bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:scale-[1.02]">
-                            <h3 class="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                DOUE
-                            </h3>
-                            <p class="font-serif text-sm text-muted-foreground flex-grow">
-                                Diario Oficial de la Unión Europea
-                            </p>
-                        </a>
+                    <!-- Box 1: ESTADÍSTICAS DE COMERCIO EXTERIOR -->
+                    <div
+                        class="flex flex-col h-full bg-white/70 backdrop-blur-md border border-white/30 rounded-3xl p-8 shadow-xl transition-all duration-300 hover:shadow-[0_0_40px_rgba(6,182,212,0.3)] hover:bg-white/80 hover:-translate-y-1">
+                        <h2
+                            class="text-xl font-bold text-primary mb-6 border-b-2 border-primary/30 pb-3 tracking-tight">
+                            ESTADÍSTICAS DE COMERCIO EXTERIOR
+                        </h2>
+                        <div class="flex flex-col space-y-3 flex-grow">
+                            <!-- DATACOMEX -->
+                            <a href="https://datacomex.comercio.es/" target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">DATACOMEX</span>
+                            </a>
 
-                        <!-- EUR-Lex -->
-                        <a href="https://eur-lex.europa.eu/homepage.html?locale=es" target="_blank"
-                            rel="noopener noreferrer"
-                            class="group flex flex-col h-full rounded-lg border-2 border-border bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:scale-[1.02]">
-                            <h3 class="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                EUR-Lex
-                            </h3>
-                            <p class="font-serif text-sm text-muted-foreground flex-grow">
-                                Legislación de la Unión Europea
-                            </p>
-                        </a>
+                            <!-- Informe Mensual -->
+                            <a href="https://comercio.gob.es/ImportacionExportacion/Informes_Estadisticas/Paginas/Historico-boletines-me.aspx"
+                                target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">Informe Mensual de Comercio Exterior</span>
+                            </a>
 
-                        <!-- Portwatch -->
-                        <a href="https://portwatch.imf.org/" target="_blank" rel="noopener noreferrer"
-                            class="group flex flex-col h-full rounded-lg border-2 border-border bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:scale-[1.02]">
-                            <h3 class="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                Portwatch
-                            </h3>
-                            <p class="font-serif text-sm text-muted-foreground flex-grow">
-                                Precios y tiempos de los fletes marítimos
-                            </p>
-                        </a>
+                            <!-- Estadísticas BdE -->
+                            <a href="https://www.bde.es/webbe/es/estadisticas/otras-clasificaciones/publicaciones/boletin-estadistico/capitulo-17.html"
+                                target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">Estadísticas de Comercio Exterior del BdE</span>
+                            </a>
 
-                        <!-- Drewry -->
-                        <a href="https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry"
-                            target="_blank" rel="noopener noreferrer"
-                            class="group flex flex-col h-full rounded-lg border-2 border-border bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:scale-[1.02]">
-                            <h3 class="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                Drewry
-                            </h3>
-                            <p class="font-serif text-sm text-muted-foreground flex-grow">
-                                Precios de rutas comerciales
-                            </p>
-                        </a>
+                            <!-- EUROSTAT -->
+                            <a href="https://ec.europa.eu/eurostat/web/main/data/database" target="_blank"
+                                rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">EUROSTAT</span>
+                            </a>
+
+                            <!-- Estadísticas Inversiones -->
+                            <a href="https://comercio.gob.es/es-es/inversiones_exteriores/estadisticas/Paginas/default.aspx"
+                                target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">Estadísticas Inversiones Exteriores</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Estadísticas de Comercio Exterior -->
-                <div class="mb-16">
-                    <h2 class="text-2xl font-bold text-primary mb-6 border-b-2 border-primary/20 pb-2">
-                        ESTADÍSTICAS DE COMERCIO EXTERIOR
-                    </h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <!-- DataComex -->
-                        <a href="https://datacomex.comercio.es/" target="_blank" rel="noopener noreferrer"
-                            class="group flex flex-col h-full rounded-lg border-2 border-border bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:scale-[1.02]">
-                            <h3 class="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                DataComex
-                            </h3>
-                            <p class="font-serif text-sm text-muted-foreground flex-grow">
-                                Estadísticas de comercio exterior español
-                            </p>
-                        </a>
+                    <!-- Box 2: ENLACES GENERALES -->
+                    <div
+                        class="flex flex-col h-full bg-white/70 backdrop-blur-md border border-white/30 rounded-3xl p-8 shadow-xl transition-all duration-300 hover:shadow-[0_0_40px_rgba(6,182,212,0.3)] hover:bg-white/80 hover:-translate-y-1">
+                        <h2
+                            class="text-lg font-bold text-primary mb-6 border-b-2 border-primary/30 pb-3 tracking-tight leading-tight">
+                            ENLACES GENERALES
+                        </h2>
+                        <div class="flex flex-col space-y-3 flex-grow">
+                            <!-- Secretaría de Estado de Comercio -->
+                            <a href="https://comercio.gob.es/es-es/Paginas/Index.aspx" target="_blank"
+                                rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">Secretaría de Estado de Comercio</span>
+                            </a>
 
-                        <!-- EUROSTAT -->
-                        <a href="https://ec.europa.eu/eurostat/web/international-trade-in-goods/database"
-                            target="_blank" rel="noopener noreferrer"
-                            class="group flex flex-col h-full rounded-lg border-2 border-border bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:scale-[1.02]">
-                            <h3 class="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                EUROSTAT
-                            </h3>
-                            <p class="font-serif text-sm text-muted-foreground flex-grow">
-                                Estadísticas de comercio internacional de mercancías de la UE
-                            </p>
-                        </a>
+                            <!-- Revistas ICE -->
+                            <a href="https://comercio.gob.es//es-es/publicaciones-estadisticas/paginas/revistasice.aspx"
+                                target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">Revistas ICE</span>
+                            </a>
 
-                        <!-- OMA -->
-                        <a href="https://www.wcoomd.org/" target="_blank" rel="noopener noreferrer"
-                            class="group flex flex-col h-full rounded-lg border-2 border-border bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:scale-[1.02]">
-                            <h3 class="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                OMA
-                            </h3>
-                            <p class="font-serif text-sm text-muted-foreground flex-grow">
-                                Organización Mundial de Aduanas
-                            </p>
-                        </a>
+                            <!-- El Orden Mundial -->
+                            <a href="https://elordenmundial.com/" target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">El Orden Mundial</span>
+                            </a>
+
+                            <!-- Bloomberg -->
+                            <a href="https://www.bloomberg.com/europe" target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">Bloomberg</span>
+                            </a>
+
+                            <!-- Portwatch -->
+                            <a href="https://portwatch.imf.org/" target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">Portwatch</span>
+                            </a>
+
+                            <!-- Drewry -->
+                            <a href="https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry?gad_source=1&gad_campaignid=21493608168&gclid=CjwKCAiAssfLBhBDEiwAcLpwfkWGPLr_uwX4wGO2cldRa8pw3XWhqUBj8LAplnqbs8hpJYc_r2D01hoCdQQQAvD_BwE"
+                                target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">Drewry - Precios de rutas comerciales</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Organismos Intergubernamentales -->
-                <div class="mb-16">
-                    <h2 class="text-2xl font-bold text-primary mb-6 border-b-2 border-primary/20 pb-2">
-                        ORGANISMOS INTERGUBERNAMENTALES
-                    </h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <!-- OMC -->
-                        <a href="https://www.wto.org/index.htm" target="_blank" rel="noopener noreferrer"
-                            class="group flex flex-col h-full rounded-lg border-2 border-border bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:scale-[1.02]">
-                            <h3 class="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                OMC
-                            </h3>
-                            <p class="font-serif text-sm text-muted-foreground flex-grow">
-                                Organización Mundial del Comercio
-                            </p>
-                        </a>
+                    <!-- Box 3: RELACIONES COMERCIALES -->
+                    <div
+                        class="flex flex-col h-full bg-white/70 backdrop-blur-md border border-white/30 rounded-3xl p-8 shadow-xl transition-all duration-300 hover:shadow-[0_0_40px_rgba(6,182,212,0.3)] hover:bg-white/80 hover:-translate-y-1">
+                        <h2
+                            class="text-xl font-bold text-primary mb-6 border-b-2 border-primary/30 pb-3 tracking-tight">
+                            RELACIONES COMERCIALES
+                        </h2>
+                        <div class="flex flex-col space-y-3 flex-grow">
+                            <!-- Trade by country/region -->
+                            <a href="https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions_en"
+                                target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">Trade by country/region</span>
+                            </a>
 
-                        <!-- Banco Mundial -->
-                        <a href="https://datos.bancomundial.org/" target="_blank" rel="noopener noreferrer"
-                            class="group flex flex-col h-full rounded-lg border-2 border-border bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:scale-[1.02]">
-                            <h3 class="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                Banco Mundial
-                            </h3>
-                            <p class="font-serif text-sm text-muted-foreground flex-grow">
-                                Datos estadísticos del Banco Mundial
-                            </p>
-                        </a>
-
-                        <!-- Blog del FMI -->
-                        <a href="https://www.imf.org/es/Blogs" target="_blank" rel="noopener noreferrer"
-                            class="group flex flex-col h-full rounded-lg border-2 border-border bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:scale-[1.02]">
-                            <h3 class="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                Blog del FMI
-                            </h3>
-                            <p class="font-serif text-sm text-muted-foreground flex-grow">
-                                Información y análisis del Fondo Monetario Internacional
-                            </p>
-                        </a>
-
-                        <!-- UNCTAD -->
-                        <a href="https://unctad.org/es" target="_blank" rel="noopener noreferrer"
-                            class="group flex flex-col h-full rounded-lg border-2 border-border bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:scale-[1.02]">
-                            <h3 class="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                UNCTAD
-                            </h3>
-                            <p class="font-serif text-sm text-muted-foreground flex-grow">
-                                Conferencia de las Naciones Unidas sobre Comercio y Desarrollo
-                            </p>
-                        </a>
-
-                        <!-- OCDE -->
-                        <a href="https://www.oecd.org/en/about/directorates/statistics-and-data-directorate.html"
-                            target="_blank" rel="noopener noreferrer"
-                            class="group flex flex-col h-full rounded-lg border-2 border-border bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:scale-[1.02]">
-                            <h3 class="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                OCDE
-                            </h3>
-                            <p class="font-serif text-sm text-muted-foreground flex-grow">
-                                Organización para la Cooperación y el Desarrollo Económicos
-                            </p>
-                        </a>
-
-                        <!-- TRADE MAP (ITC) -->
-                        <a href="https://www.trademap.org/Index.aspx" target="_blank" rel="noopener noreferrer"
-                            class="group flex flex-col h-full rounded-lg border-2 border-border bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:scale-[1.02]">
-                            <h3 class="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                TRADE MAP (ITC)
-                            </h3>
-                            <p class="font-serif text-sm text-muted-foreground flex-grow">
-                                Centro de Comercio Internacional - Estadísticas de comercio
-                            </p>
-                        </a>
+                            <!-- Access2Markets -->
+                            <a href="https://trade.ec.europa.eu/access-to-markets/en/home" target="_blank"
+                                rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">Access2Markets</span>
+                            </a>
+                        </div>
                     </div>
+
+                    <!-- Box 4: ORGANISMOS INTERGUBERNAMENTALES -->
+                    <div
+                        class="flex flex-col h-full bg-white/70 backdrop-blur-md border border-white/30 rounded-3xl p-8 shadow-xl transition-all duration-300 hover:shadow-[0_0_40px_rgba(6,182,212,0.3)] hover:bg-white/80 hover:-translate-y-1">
+                        <h2
+                            class="text-lg font-bold text-primary mb-6 border-b-2 border-primary/30 pb-3 tracking-tight leading-tight">
+                            ORGANISMOS INTERGUBERNAMENTALES
+                        </h2>
+                        <div class="flex flex-col space-y-3 flex-grow">
+                            <!-- Blog de la OMC -->
+                            <a href="https://www.wto.org/spanish/blogs_s/blogs_s.htm" target="_blank"
+                                rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">Blog de la OMC</span>
+                            </a>
+
+                            <!-- Blog del FMI -->
+                            <a href="https://www.imf.org/es/blogs" target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">Blog del FMI</span>
+                            </a>
+
+                            <!-- UNCTAD -->
+                            <a href="https://unctad.org/es" target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">UNCTAD</span>
+                            </a>
+
+                            <!-- OCDE -->
+                            <a href="https://www.oecd.org/en/about/directorates/statistics-and-data-directorate.html"
+                                target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">OCDE</span>
+                            </a>
+
+                            <!-- TRADE MAP (ITC) -->
+                            <a href="https://www.trademap.org/Index.aspx?AspxAutoDetectCookieSupport=1" target="_blank"
+                                rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">TRADE MAP (ITC)</span>
+                            </a>
+
+                            <!-- OMA -->
+                            <a href="https://www.wcoomd.org/" target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                                <svg class="h-4 w-4 flex-shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-medium text-sm">OMA</span>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>

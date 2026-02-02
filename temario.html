@@ -19,27 +19,27 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        /* CSS Variables from globals.css */
+        /* CSS Variables - Clean Minimal Theme */
         :root {
-            --background: 0 0% 100%;
-            --foreground: 224 64% 10%;
+            --background: 220 14% 96%;
+            --foreground: 220 9% 46%;
             --card: 0 0% 100%;
-            --card-foreground: 224 64% 10%;
+            --card-foreground: 220 13% 18%;
             --popover: 0 0% 100%;
-            --popover-foreground: 224 64% 10%;
-            --primary: 224 64% 33%;
-            --primary-foreground: 0 0% 98%;
-            --secondary: 210 40% 96.1%;
-            --secondary-foreground: 224 64% 10%;
-            --muted: 210 40% 96.1%;
-            --muted-foreground: 215 20% 65%;
-            --accent: 217 94% 67%;
-            --accent-foreground: 224 64% 10%;
+            --popover-foreground: 220 13% 18%;
+            --primary: 217 91% 45%;
+            --primary-foreground: 0 0% 100%;
+            --secondary: 220 14% 96%;
+            --secondary-foreground: 220 13% 18%;
+            --muted: 220 14% 96%;
+            --muted-foreground: 220 9% 46%;
+            --accent: 217 91% 45%;
+            --accent-foreground: 0 0% 100%;
             --destructive: 0 84.2% 60.2%;
             --destructive-foreground: 0 0% 98%;
-            --border: 214.3 31.8% 91.4%;
-            --input: 214.3 31.8% 91.4%;
-            --ring: 217 94% 67%;
+            --border: 220 13% 91%;
+            --input: 220 13% 91%;
+            --ring: 217 91% 45%;
             --radius: 0.5rem;
         }
 
@@ -63,7 +63,7 @@
             font-family: 'Cambria', 'Noto Serif', serif;
         }
 
-        /* Custom background with illustration */
+        /* Dot Grid Background Pattern */
         .container-illustration {
             position: fixed;
             top: 0;
@@ -71,10 +71,12 @@
             right: 0;
             bottom: 0;
             z-index: -1;
-            background: linear-gradient(135deg, hsl(var(--secondary)) 0%, hsl(var(--background)) 50%, hsl(var(--accent) / 0.1) 100%);
+            background-color: #f5f6f7;
+            background-image: radial-gradient(circle, #d1d5db 1px, transparent 1px);
+            background-size: 24px 24px;
         }
 
-        /* Modal styles */
+        /* Clean Modal styles */
         .modal {
             display: none;
             position: fixed;
@@ -83,9 +85,8 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(4px);
-            animation: fadeIn 0.2s ease-out;
+            background-color: rgba(0, 0, 0, 0.4);
+            animation: fadeIn 0.3s ease-out;
         }
 
         .modal.active {
@@ -95,15 +96,15 @@
         }
 
         .modal-content {
-            background-color: white;
-            border-radius: 0.5rem;
+            background: white;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+            border-radius: 2rem;
             max-width: 42rem;
             width: 90%;
             max-height: 90vh;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            animation: slideIn 0.3s ease-out;
+            animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .modal-content.coming-soon {
@@ -358,8 +359,8 @@
                     <div class="mx-auto mt-8 max-w-4xl">
                         <div class="bg-background/50 border-primary/50 rounded-lg border p-4">
                             <div class="flex gap-2">
-                                <svg class="h-4 w-4 text-primary mt-1" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg class="h-4 w-4 text-primary mt-1" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
@@ -383,8 +384,7 @@
                             <div
                                 class="flex h-full flex-col rounded-lg border bg-background/50 p-6 transition-all duration-300 group-hover:border-primary group-hover:shadow-lg group-hover:scale-[1.02]">
                                 <h3 class="text-xl font-bold text-primary mb-4">PRIMER EJERCICIO</h3>
-                                <div
-                                    class="font-serif text-justify text-sm text-muted-foreground space-y-2 flex-grow">
+                                <div class="font-serif text-justify text-sm text-muted-foreground space-y-2 flex-grow">
                                     <p>Parte A. Comercio de mercancías. Análisis sectorial</p>
                                     <p>Parte B. Comercio de servicios</p>
                                     <p>Parte C. CITES</p>
@@ -399,8 +399,7 @@
                             <div
                                 class="flex h-full flex-col rounded-lg border bg-background/50 p-6 transition-all duration-300 group-hover:border-primary group-hover:shadow-lg group-hover:scale-[1.02]">
                                 <h3 class="text-xl font-bold text-primary mb-4">SEGUNDO EJERCICIO</h3>
-                                <div
-                                    class="font-serif text-justify text-sm text-muted-foreground space-y-2 flex-grow">
+                                <div class="font-serif text-justify text-sm text-muted-foreground space-y-2 flex-grow">
                                     <p>Consiste en una prueba de inglés con parte escrita y oral, que puede
                                         realizarse de forma optativa en otros idiomas.</p>
                                 </div>
@@ -413,8 +412,7 @@
                             <div
                                 class="flex h-full flex-col rounded-lg border bg-background/50 p-6 transition-all duration-300 group-hover:border-primary group-hover:shadow-lg group-hover:scale-[1.02]">
                                 <h3 class="text-xl font-bold text-primary mb-4">TERCER EJERCICIO</h3>
-                                <div
-                                    class="font-serif text-justify text-sm text-muted-foreground space-y-2 flex-grow">
+                                <div class="font-serif text-justify text-sm text-muted-foreground space-y-2 flex-grow">
                                     <p>Parte A. Comercio exterior</p>
                                     <p>Parte B. Organismos Internacionales y Unión Europea.</p>
                                 </div>
@@ -427,8 +425,7 @@
                             <div
                                 class="flex h-full flex-col rounded-lg border bg-background/50 p-6 transition-all duration-300 group-hover:border-primary group-hover:shadow-lg group-hover:scale-[1.02]">
                                 <h3 class="text-xl font-bold text-primary mb-4">CUARTO EJERCICIO</h3>
-                                <div
-                                    class="font-serif text-justify text-sm text-muted-foreground space-y-2 flex-grow">
+                                <div class="font-serif text-justify text-sm text-muted-foreground space-y-2 flex-grow">
                                     <p>Consiste en la resolución de 4 casos prácticos relacionados con el contenido
                                         de la oposición.</p>
                                 </div>
@@ -441,8 +438,7 @@
                             <div
                                 class="flex h-full flex-col rounded-lg border bg-background/50 p-6 transition-all duration-300 group-hover:border-primary group-hover:shadow-lg group-hover:scale-[1.02]">
                                 <h3 class="text-xl font-bold text-primary mb-4">QUINTO EJERCICIO</h3>
-                                <div
-                                    class="font-serif text-justify text-sm text-muted-foreground space-y-2 flex-grow">
+                                <div class="font-serif text-justify text-sm text-muted-foreground space-y-2 flex-grow">
                                     <p>Parte A. Economía General y Estructura económica de España</p>
                                     <p>Parte B. Comercio Interior</p>
                                     <p>Parte C. Derecho Administrativo y organización del Estado.</p>

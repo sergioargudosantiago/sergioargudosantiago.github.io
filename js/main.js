@@ -121,7 +121,7 @@ function renderTopics() {
     topicList.innerHTML = filteredTopics.map(topic => renderTopicItem(topic)).join('');
 }
 
-// Render Individual Topic Item
+// Render Individual Topic Item - Energy Cell Design
 function renderTopicItem(topic) {
     switch (topic.status) {
         case 'available':
@@ -131,24 +131,24 @@ function renderTopicItem(topic) {
                    rel="noopener noreferrer" 
                    download
                    onclick="console.log('Attempting to download:', '${topic.path}');"
-                   class="flex cursor-pointer items-center justify-between rounded-md p-3 transition-colors hover:bg-accent group">
-                    <span class="font-serif font-medium text-foreground/80 group-hover:text-foreground">${topic.name}</span>
-                    <svg class="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                   class="flex cursor-pointer items-center justify-between bg-white/60 backdrop-blur-sm border border-white/40 rounded-2xl p-4 transition-all duration-300 hover:bg-white/80 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] hover:border-accent/50 group">
+                    <span class="font-serif font-semibold text-foreground/90 group-hover:text-primary transition-colors">${topic.name}</span>
+                    <svg class="h-5 w-5 text-muted-foreground transition-all group-hover:text-accent group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                     </svg>
                 </a>
             `;
         case 'discarded':
             return `
-                <div class="flex items-center justify-between rounded-md p-3 opacity-60">
-                    <span class="font-serif font-medium text-foreground/80">${topic.name}</span>
+                <div class="flex items-center justify-between bg-white/30 backdrop-blur-sm border border-white/30 rounded-2xl p-4 opacity-60">
+                    <span class="font-serif font-medium text-foreground/70">${topic.name}</span>
                     <span class="text-sm text-muted-foreground italic">${topic.message}</span>
                 </div>
             `;
         case 'coming-soon':
             return `
-                <div class="flex items-center justify-between rounded-md p-3 opacity-60">
-                    <span class="font-serif font-medium text-foreground/80">${topic.name}</span>
+                <div class="flex items-center justify-between bg-white/30 backdrop-blur-sm border border-white/30 rounded-2xl p-4 opacity-60">
+                    <span class="font-serif font-medium text-foreground/70">${topic.name}</span>
                     <span class="text-sm text-muted-foreground">Próximamente disponible</span>
                 </div>
             `;
