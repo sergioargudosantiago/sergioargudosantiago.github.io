@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Información personal sobre el creador de esta web dedicada a las oposiciones del SOIVRE.">
+    <title>Sobre Mí - Oposiciones SOIVRE</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* CSS Variables from globals.css */
+        :root {
+            --background: 0 0% 100%;
+            --foreground: 224 64% 10%;
+            --card: 0 0% 100%;
+            --card-foreground: 224 64% 10%;
+            --popover: 0 0% 100%;
+            --popover-foreground: 224 64% 10%;
+            --primary: 224 64% 33%;
+            --primary-foreground: 0 0% 98%;
+            --secondary: 210 40% 96.1%;
+            --secondary-foreground: 224 64% 10%;
+            --muted: 210 40% 96.1%;
+            --muted-foreground: 215 20% 65%;
+            --accent: 217 94% 67%;
+            --accent-foreground: 224 64% 10%;
+            --destructive: 0 84.2% 60.2%;
+            --destructive-foreground: 0 0% 98%;
+            --border: 214.3 31.8% 91.4%;
+            --input: 214.3 31.8% 91.4%;
+            --ring: 217 94% 67%;
+            --radius: 0.5rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: hsl(var(--background));
+            color: hsl(var(--foreground));
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .font-serif {
+            font-family: 'Cambria', 'Noto Serif', serif;
+        }
+
+        /* Custom background with illustration */
+        .container-illustration {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background: linear-gradient(135deg, hsl(var(--secondary)) 0%, hsl(var(--background)) 50%, hsl(var(--accent) / 0.1) 100%);
+        }
+
+        /* Mobile menu styles */
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+
+        /* Nav link styles */
+        .nav-link {
+            position: relative;
+            padding: 0.5rem 1rem;
+            color: hsl(var(--foreground) / 0.8);
+            transition: color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .nav-link:hover {
+            color: hsl(var(--primary));
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0.5rem;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: hsl(var(--primary));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            transform: scaleX(1);
+        }
+    </style>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: 'hsl(var(--background))',
+                        foreground: 'hsl(var(--foreground))',
+                        primary: {
+                            DEFAULT: 'hsl(var(--primary))',
+                            foreground: 'hsl(var(--primary-foreground))',
+                        },
+                        secondary: {
+                            DEFAULT: 'hsl(var(--secondary))',
+                            foreground: 'hsl(var(--secondary-foreground))',
+                        },
+                        muted: {
+                            DEFAULT: 'hsl(var(--muted))',
+                            foreground: 'hsl(var(--muted-foreground))',
+                        },
+                        accent: {
+                            DEFAULT: 'hsl(var(--accent))',
+                            foreground: 'hsl(var(--accent-foreground))',
+                        },
+                        border: 'hsl(var(--border))',
+                        input: 'hsl(var(--input))',
+                        ring: 'hsl(var(--ring))',
+                    },
+                    borderRadius: {
+                        lg: 'var(--radius)',
+                        md: 'calc(var(--radius) - 2px)',
+                        sm: 'calc(var(--radius) - 4px)',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="flex min-h-screen flex-col">
+    <!-- Background Illustration -->
+    <div class="container-illustration"></div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur">
+        <div class="container mx-auto flex h-16 max-w-7xl items-center justify-center px-4 sm:px-6 lg:px-8">
+            <!-- Desktop Navigation -->
+            <div class="hidden items-center gap-1 md:flex">
+                <nav class="flex items-center gap-1 text-sm font-medium">
+                    <a href="index.html" class="nav-link">
+                        INTRODUCCIÓN
+                    </a>
+                    <a href="temario.html" class="nav-link">
+                        TEMARIO
+                    </a>
+                    <a href="fuentes-de-datos.html" class="nav-link">
+                        FUENTES DE DATOS
+                    </a>
+                    <a href="enlaces.html" class="nav-link">
+                        ENLACES DE INTERÉS
+                    </a>
+                    <a href="sobre-mi.html" class="nav-link active">
+                        SOBRE MÍ
+                    </a>
+                </nav>
+                <div class="relative ml-4">
+                    <svg class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input type="search" placeholder="Buscar en temario..."
+                        class="h-9 w-48 rounded-md bg-secondary pl-9 pr-3 text-sm outline-none ring-ring focus:ring-2"
+                        id="headerSearch">
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="absolute right-4 md:hidden">
+                <button onclick="toggleMobileMenu()" class="p-2 text-foreground hover:text-primary"
+                    aria-label="Abrir menú">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+        class="mobile-menu fixed inset-y-0 left-0 z-50 w-full max-w-xs bg-background shadow-xl md:hidden">
+        <div class="flex h-full flex-col">
+            <div class="border-b p-4">
+                <button onclick="toggleMobileMenu()" class="text-left text-lg font-bold text-primary">
+                    Menú
+                </button>
+            </div>
+            <nav class="flex flex-col gap-1 p-4">
+                <a href="index.html" onclick="toggleMobileMenu();"
+                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
+                    INTRODUCCIÓN
+                </a>
+                <a href="temario.html" onclick="toggleMobileMenu();"
+                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
+                    TEMARIO
+                </a>
+                <a href="fuentes-de-datos.html" onclick="toggleMobileMenu();"
+                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
+                    FUENTES DE DATOS
+                </a>
+                <a href="enlaces.html" onclick="toggleMobileMenu();"
+                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
+                    ENLACES DE INTERÉS
+                </a>
+                <a href="sobre-mi.html" onclick="toggleMobileMenu();"
+                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent bg-accent">
+                    SOBRE MÍ
+                </a>
+            </nav>
+            <div class="mt-auto p-4">
+                <div class="relative">
+                    <svg class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input type="search" placeholder="Buscar en temario..."
+                        class="h-9 w-full rounded-md bg-secondary pl-9 pr-3 text-sm outline-none ring-ring focus:ring-2"
+                        id="mobileSearch">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="relative flex-1 pb-24">
+        <!-- Sobre Mí Section -->
+        <section class="flex min-h-screen w-full items-center justify-center py-16">
+            <div class="container mx-auto max-w-4xl px-4 md:px-6">
+                <div class="rounded-2xl bg-white/95 p-8 md:p-12 shadow-2xl backdrop-blur-sm">
+                    <!-- Profile Header -->
+                    <div class="text-center mb-8">
+                        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-primary mb-6">
+                            Sergio Argudo Santiago
+                        </h1>
+
+                        <!-- Professional Titles -->
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center justify-center gap-2">
+                                <svg class="h-5 w-5 text-accent flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <p class="text-lg md:text-xl font-semibold text-foreground">
+                                    Inspector del SOIVRE (Promoción 2025)
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2">
+                                <svg class="h-5 w-5 text-accent flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <p class="text-lg md:text-xl font-semibold text-foreground">
+                                    Ingeniero Técnico del SOIVRE (Promoción 2023)
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="w-24 h-1 bg-primary mx-auto mb-8 rounded-full"></div>
+
+                        <!-- Education -->
+                        <div class="space-y-4">
+                            <h2 class="text-2xl font-bold text-primary mb-4">Formación Académica</h2>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3 text-left max-w-2xl mx-auto">
+                                    <svg class="h-5 w-5 text-primary mt-1 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                    </svg>
+                                    <p class="font-serif text-muted-foreground leading-relaxed">
+                                        Ingeniero Químico por la Universidad Complutense de Madrid
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3 text-left max-w-2xl mx-auto">
+                                    <svg class="h-5 w-5 text-primary mt-1 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                    </svg>
+                                    <p class="font-serif text-muted-foreground leading-relaxed">
+                                        Máster en Ingeniería Química por la Universidad Autónoma de Madrid y Universidad
+                                        Rey Juan Carlos
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Button -->
+                        <div class="mt-10">
+                            <a href="mailto:sergio.argudo.santiago@example.com"
+                                class="inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-3 text-base font-semibold text-primary-foreground shadow-lg transition-all duration-300 hover:bg-primary/90 hover:shadow-xl hover:scale-105">
+                                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                Contactar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-primary-foreground">
+        <div class="container mx-auto flex h-16 items-center justify-center gap-6 px-4 sm:px-6 lg:px-8">
+            <a href="https://www.linkedin.com/in/sergio-argudo-santiago-inspector-soivre-placeholder"
+                aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"
+                class="transition-colors hover:text-accent">
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+            </a>
+            <a href="mailto:sergio.argudo.santiago@example.com" aria-label="Email" target="_blank"
+                rel="noopener noreferrer" class="transition-colors hover:text-accent">
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+            </a>
+            <a href="https://github.com/sergio-argudo" aria-label="GitHub" target="_blank" rel="noopener noreferrer"
+                class="transition-colors hover:text-accent">
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
