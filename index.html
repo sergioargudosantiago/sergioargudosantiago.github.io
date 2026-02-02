@@ -17,6 +17,50 @@
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Tailwind Configuration for Mobile Support
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'sm': '640px',
+                        'md': '768px',
+                        'lg': '1024px',
+                        'xl': '1280px',
+                        '2xl': '1536px',
+                    },
+                    colors: {
+                        background: 'hsl(var(--background))',
+                        foreground: 'hsl(var(--foreground))',
+                        primary: {
+                            DEFAULT: 'hsl(var(--primary))',
+                            foreground: 'hsl(var(--primary-foreground))',
+                        },
+                        secondary: {
+                            DEFAULT: 'hsl(var(--secondary))',
+                            foreground: 'hsl(var(--secondary-foreground))',
+                        },
+                        muted: {
+                            DEFAULT: 'hsl(var(--muted))',
+                            foreground: 'hsl(var(--muted-foreground))',
+                        },
+                        accent: {
+                            DEFAULT: 'hsl(var(--accent))',
+                            foreground: 'hsl(var(--accent-foreground))',
+                        },
+                        border: 'hsl(var(--border))',
+                        input: 'hsl(var(--input))',
+                        ring: 'hsl(var(--ring))',
+                    },
+                    borderRadius: {
+                        lg: 'var(--radius)',
+                        md: 'calc(var(--radius) - 2px)',
+                        sm: 'calc(var(--radius) - 4px)',
+                    },
+                }
+            }
+        }
+    </script>
 
     <style>
         /* CSS Variables - Clean Minimal Theme */
@@ -51,13 +95,12 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: hsl(var(--background));
+            background: linear-gradient(to bottom, #f5f6f7, #e8eaed);
+            position: relative;
+            min-height: 100vh;
             color: hsl(var(--foreground));
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
 
         .font-serif {
             font-family: 'Cambria', 'Noto Serif', serif;
@@ -324,7 +367,55 @@
     </footer>
 
     <!-- Main JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js" onerror="handleScriptError('main.js')"></script>
+
+    <!-- Critical Inline Functions for Robustness -->
+    <script>
+        // Error handler for missing scripts
+        function handleScriptError(scriptName) {
+            console.warn(`Failed to load ${scriptName}. Some features may be limited.`);
+            if (!window.jsLoadFailed) {
+                window.jsLoadFailed = true;
+                const message = document.createElement('div');
+                message.style.cssText = 'position:fixed;bottom:20px;right:20px;background:#FEF3C7;border:2px solid #F59E0B;padding:12px 16px;border-radius:8px;max-width:300px;z-index:10000;font-family:Inter,sans-serif;font-size:14px;box-shadow:0 4px 6px rgba(0,0,0,0.1);';
+                message.innerHTML = '<strong style="color:#92400E;">⚠️ Funcionalidad Limitada</strong><br><span style="color:#78350F;">La carpeta /js/ no se encuentra. La búsqueda y algunas funciones pueden no funcionar.</span>';
+                document.body.appendChild(message);
+                setTimeout(() => message.remove(), 8000);
+            }
+        }
+
+        // Mobile Menu Toggle - Critical inline function
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            if (!menu) return;
+
+            const isHidden = menu.classList.contains('-translate-x-full') ||
+                menu.classList.contains('opacity-0') ||
+                menu.classList.contains('pointer-events-none');
+
+            if (isHidden) {
+                // Open menu
+                menu.classList.remove('-translate-x-full', 'opacity-0', 'pointer-events-none');
+                menu.classList.add('translate-x-0', 'opacity-100');
+                document.body.style.overflow = 'hidden';
+            } else {
+                // Close menu
+                menu.classList.add('-translate-x-full', 'opacity-0', 'pointer-events-none');
+                menu.classList.remove('translate-x-0', 'opacity-100');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Close menu on escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                const menu = document.getElementById('mobileMenu');
+                if (menu && !menu.classList.contains('opacity-0')) {
+                    toggleMobileMenu();
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

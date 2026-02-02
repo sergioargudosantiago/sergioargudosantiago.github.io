@@ -17,6 +17,19 @@
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: { 'sm': '640px', 'md': '768px', 'lg': '1024px', 'xl': '1280px', '2xl': '1536px' },
+                    colors: {
+                        primary: { DEFAULT: 'hsl(217 91% 45%)', foreground: 'hsl(0 0% 100%)' },
+                        secondary: { DEFAULT: 'hsl(220 14% 96%)', foreground: 'hsl(220 13% 18%)' },
+                    }
+                }
+            }
+        }
+    </script>
 
     <style>
         /* CSS Variables - Clean Minimal Theme */
@@ -52,7 +65,9 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: hsl(var(--background));
+            background: linear-gradient(to bottom, #f5f6f7, #e8eaed);
+            position: relative;
+            min-height: 100vh;
             color: hsl(var(--foreground));
         }
 

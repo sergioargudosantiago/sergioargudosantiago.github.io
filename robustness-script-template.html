@@ -1,0 +1,50 @@
+<!-- Add this before </body> in all HTML files -->
+
+<!-- Main JavaScript with error handling -->
+<script src="./js/main.js" onerror="handleScriptError('main.js')"></script>
+
+<!-- Critical Inline Functions for Robustness -->
+<script>
+    // Error handler for missing scripts
+    function handleScriptError(scriptName) {
+        console.warn(`Failed to load ${scriptName}. Some features may be limited.`);
+        if (!window.jsLoadFailed) {
+            window.jsLoadFailed = true;
+            const message = document.createElement('div');
+            message.style.cssText = 'position:fixed;bottom:20px;right:20px;background:#FEF3C7;border:2px solid #F59E0B;padding:12px 16px;border-radius:8px;max-width:300px;z-index:10000;font-family:Inter,sans-serif;font-size:14px;box-shadow:0 4px 6px rgba(0,0,0,0.1);';
+            message.innerHTML = '<strong style="color:#92400E;">⚠️ Funcionalidad Limitada</strong><br><span style="color:#78350F;">La carpeta /js/ no se encuentra. La búsqueda y algunas funciones pueden no funcionar.</span>';
+            document.body.appendChild(message);
+            setTimeout(() => message.remove(), 8000);
+        }
+    }
+
+    // Mobile Menu Toggle - Critical inline function
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        if (!menu) return;
+
+        const isHidden = menu.classList.contains('-translate-x-full') ||
+            menu.classList.contains('opacity-0') ||
+            menu.classList.contains('pointer-events-none');
+
+        if (isHidden) {
+            menu.classList.remove('-translate-x-full', 'opacity-0', 'pointer-events-none');
+            menu.classList.add('translate-x-0', 'opacity-100');
+            document.body.style.overflow = 'hidden';
+        } else {
+            menu.classList.add('-translate-x-full', 'opacity-0', 'pointer-events-none');
+            menu.classList.remove('translate-x-0', 'opacity-100');
+            document.body.style.overflow = '';
+        }
+    }
+
+    // Close menu on escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            const menu = document.getElementById('mobileMenu');
+            if (menu && !menu.classList.contains('opacity-0')) {
+                toggleMobileMenu();
+            }
+        }
+    });
+</script>
