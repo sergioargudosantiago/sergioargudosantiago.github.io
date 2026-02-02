@@ -178,7 +178,7 @@
             <div class="hidden items-center md:flex">
                 <div class="relative">
                     <input type="search" placeholder="Buscar en temario..."
-                        class="h-9 w-56 rounded-lg bg-gray-100 pl-3 pr-10 text-sm text-gray-600 outline-none focus:ring-2 focus:ring-primary/20"
+                        class="h-11 w-56 rounded-lg bg-gray-100 pl-3 pr-10 text-sm text-gray-600 outline-none focus:ring-2 focus:ring-primary/20"
                         id="headerSearch">
                     <svg class="absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -188,9 +188,10 @@
                 </div>
             </div>
 
-            <!-- Mobile Menu Button -->
+            <!-- Mobile Menu Button - 44x44px touch target -->
             <div class="md:hidden">
-                <button onclick="toggleMobileMenu()" class="p-2 text-gray-600 hover:text-primary"
+                <button onclick="toggleMobileMenu()"
+                    class="p-3 min-w-[44px] min-h-[44px] flex items-center justify-center text-gray-600 hover:text-primary active:scale-95 transition-all"
                     aria-label="Abrir menú">
                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -260,16 +261,17 @@
                             class="text-5xl sm:text-6xl md:text-7xl font-black tracking-tighter text-primary leading-tight">
                             INTRODUCCIÓN
                         </h1>
-                        <p class="mx-auto max-w-[680px] text-center text-gray-600 text-base md:text-lg leading-relaxed">
+                        <p
+                            class="mx-auto max-w-[680px] text-center text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
                             En esta web encontrarás resúmenes extendidos de temario, recursos y algunos enlaces de
                             utilidad para la preparación de las oposiciones del <span
                                 class="font-semibold text-gray-800">Cuerpo de Inspectores del SOIVRE</span> e <span
                                 class="font-semibold text-gray-800">Ingenieros Técnicos del SOIVRE</span>.
                         </p>
 
-                        <!-- Pill Button -->
+                        <!-- Pill Button - Touch Optimized -->
                         <a href="temario.html"
-                            class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border-2 border-primary text-primary font-semibold text-sm hover:bg-primary hover:text-white transition-all duration-200">
+                            class="inline-flex items-center gap-2 px-8 py-4 min-h-[44px] rounded-full border-2 border-primary text-primary font-semibold text-sm sm:text-base hover:bg-primary hover:text-white active:scale-95 transition-all duration-200">
                             Explorar Temario
                             <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">

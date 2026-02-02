@@ -191,14 +191,15 @@
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                     <input type="search" placeholder="Buscar en temario..."
-                        class="h-9 w-48 rounded-md bg-secondary pl-9 pr-3 text-sm outline-none ring-ring focus:ring-2"
+                        class="h-11 w-48 rounded-md bg-secondary pl-9 pr-3 text-sm outline-none ring-ring focus:ring-2"
                         id="headerSearch">
                 </div>
             </div>
 
-            <!-- Mobile Menu Button -->
+            <!-- Mobile Menu Button - 44px Touch Target -->
             <div class="absolute right-4 md:hidden">
-                <button onclick="toggleMobileMenu()" class="p-2 text-foreground hover:text-primary"
+                <button onclick="toggleMobileMenu()"
+                    class="p-3 min-w-[44px] min-h-[44px] flex items-center justify-center text-foreground hover:text-primary active:scale-95 transition-all"
                     aria-label="Abrir menú">
                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
