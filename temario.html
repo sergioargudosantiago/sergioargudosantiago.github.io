@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description"
         content="Resúmenes extendidos de temario, recursos y enlaces de utilidad para la preparación de las oposiciones del Cuerpo de Inspectores del SOIVRE e Ingenieros Técnicos del SOIVRE.">
     <title>Temario - Oposiciones SOIVRE</title>
@@ -192,6 +192,67 @@
 
         .modal-scroll::-webkit-scrollbar-thumb:hover {
             background: hsl(var(--primary));
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        /* ========== GLASSMORPHISM & DESIGN SYSTEM ========== */
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+            border-radius: 3rem;
+        }
+
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-link {
+            position: relative;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #6b7280;
+            text-decoration: none;
+            padding-bottom: 4px;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: hsl(217, 91%, 45%);
+        }
+
+        .nav-link.active {
+            color: hsl(217, 91%, 45%);
+            font-weight: 600;
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: hsl(217, 91%, 45%);
         }
     </style>
 

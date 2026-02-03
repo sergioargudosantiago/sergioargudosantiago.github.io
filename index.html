@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description"
         content="Resúmenes extendidos de temario, recursos y enlaces de utilidad para la preparación de las oposiciones del Cuerpo de Inspectores del SOIVRE e Ingenieros Técnicos del SOIVRE.">
     <title>Oposiciones SOIVRE - Inspector e Ingeniero Técnico</title>
@@ -150,6 +150,511 @@
             color: hsl(217, 91%, 45%);
             font-weight: 600;
         }
+
+        /* ========== GLASSMORPHISM & DESIGN SYSTEM ========== */
+
+        /* Glass Effects */
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+            border-radius: 3rem;
+        }
+
+        /* Top Navigation Bar */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Nav Links with Active State */
+        .nav-link {
+            position: relative;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #6b7280;
+            text-decoration: none;
+            padding-bottom: 4px;
+            transition: color 0.2s;
+            letter-spacing: 0.02em;
+        }
+
+        .nav-link:hover {
+            color: hsl(217, 91%, 45%);
+        }
+
+        .nav-link.active {
+            color: hsl(217, 91%, 45%);
+            font-weight: 600;
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: hsl(217, 91%, 45%);
+        }
+
+        /* Search Input Styling */
+        .search-input {
+            height: 2.5rem;
+            width: 12rem;
+            border-radius: 0.5rem;
+            background-color: #f3f4f6;
+            padding-left: 2.5rem;
+            padding-right: 1rem;
+            font-size: 0.875rem;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .search-input:focus {
+            background-color: #e5e7eb;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+        }
+
+        /* ========== CRITICAL STANDALONE CSS ========== */
+        /* Works without Tailwind CDN for standalone file:// usage */
+
+        /* Container & Layout */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .min-h-screen {
+            min-height: 100vh;
+        }
+
+        /* Grid System */
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+
+        @media (min-width: 640px) {
+            .sm\\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 768px) {
+            .md\\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .lg\\:grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+
+        /* Flexbox */
+        .flex {
+            display: flex;
+        }
+
+        .inline-flex {
+            display: inline-flex;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .items-end {
+            align-items: flex-end;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .gap-2 {
+            gap: 0.5rem;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .gap-6 {
+            gap: 1.5rem;
+        }
+
+        .gap-8 {
+            gap: 2rem;
+        }
+
+        /* Spacing */
+        .p-3 {
+            padding: 0.75rem;
+        }
+
+        .p-4 {
+            padding: 1rem;
+        }
+
+        .p-6 {
+            padding: 1.5rem;
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .px-8 {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .py-3 {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .py-12 {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .py-16 {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .py-24 {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        @media (min-width: 640px) {
+            .sm\\:px-6 {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+
+            .sm\\:px-16 {
+                padding-left: 4rem;
+                padding-right: 4rem;
+            }
+
+            .sm\\:py-24 {
+                padding-top: 6rem;
+                padding-bottom: 6rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .md\\:px-20 {
+                padding-left: 5rem;
+                padding-right: 5rem;
+            }
+
+            .md\\:py-28 {
+                padding-top: 7rem;
+                padding-bottom: 7rem;
+            }
+        }
+
+        /* Borders & Radius */
+        .border {
+            border-width: 1px;
+        }
+
+        .border-2 {
+            border-width: 2px;
+        }
+
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+
+        .rounded-xl {
+            border-radius: 0.75rem;
+        }
+
+        .rounded-2xl {
+            border-radius: 1rem;
+        }
+
+        .rounded-full {
+            border-radius: 9999px;
+        }
+
+        .rounded-\\[2rem\\] {
+            border-radius: 2rem;
+        }
+
+        @media (min-width: 640px) {
+            .sm\\:rounded-\\[3rem\\] {
+                border-radius: 3rem;
+            }
+        }
+
+        /* Text */
+        .text-center {
+            text-align: center;
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+
+        .text-base {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+        }
+
+        @media (min-width: 640px) {
+            .sm\\:text-base {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+
+            .sm\\:text-5xl {
+                font-size: 3rem;
+                line-height: 1;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .md\\:text-lg {
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+            }
+
+            .md\\:text-7xl {
+                font-size: 4.5rem;
+                line-height: 1;
+            }
+        }
+
+        /* Font Weight */
+        .font-medium {
+            font-weight: 500;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .font-black {
+            font-weight: 900;
+        }
+
+        /* Line Height & Tracking */
+        .leading-tight {
+            line-height: 1.25;
+        }
+
+        .leading-relaxed {
+            line-height: 1.625;
+        }
+
+        .tracking-tighter {
+            letter-spacing: -0.05em;
+        }
+
+        /* Display & Visibility */
+        .hidden {
+            display: none;
+        }
+
+        .block {
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            .md\\:flex {
+                display: flex !important;
+            }
+
+            .md\\:hidden {
+                display: none !important;
+            }
+        }
+
+        /* Position */
+        .relative {
+            position: relative;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        /* Transitions */
+        .transition-all {
+            transition: all 0.2s;
+        }
+
+        .transition-colors {
+            transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+        }
+
+        .duration-200 {
+            transition-duration: 200ms;
+        }
+
+        /* Hover & Active States */
+        button:hover,
+        a:hover {
+            opacity: 0.9;
+        }
+
+        .active\\:scale-95:active {
+            transform: scale(0.95);
+        }
+
+        /* Mobile Menu - Critical */
+        #mobileMenu {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .-translate-x-full {
+            transform: translateX(-100%);
+        }
+
+        .translate-x-0 {
+            transform: translateX(0);
+        }
+
+        .opacity-0 {
+            opacity: 0;
+        }
+
+        .opacity-100 {
+            opacity: 1;
+        }
+
+        .pointer-events-none {
+            pointer-events: none;
+        }
+
+        /* Height */
+        .h-11 {
+            height: 2.75rem;
+        }
+
+        .h-16 {
+            height: 4rem;
+        }
+
+        .min-h-\\[44px\\] {
+            min-height: 44px;
+        }
+
+        /* Z-index */
+        .z-50 {
+            z-index: 50;
+        }
+
+        /* Backdrop blur */
+        .backdrop-blur {
+            backdrop-filter: blur(8px);
+        }
+
+        /* ========== MOBILE MENU TRANSITIONS (iOS Compatible) ========== */
+        #mobileMenu {
+            transform: translateX(-100%);
+            -webkit-transform: translateX(-100%);
+            opacity: 0;
+            visibility: hidden;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s 0.3s;
+            -webkit-transition: -webkit-transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s 0.3s;
+        }
+
+        #mobileMenu.menu-open {
+            transform: translateX(0);
+            -webkit-transform: translateX(0);
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            -webkit-transition: -webkit-transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
     </style>
 
     <!-- Tailwind Config -->
@@ -195,60 +700,61 @@
     <!-- Background Illustration -->
     <div class="container-illustration"></div>
 
-    <!-- Header -->
-    <header class="sticky top-0 z-50 w-full border-b border-border/20 bg-white">
-        <div class="container mx-auto flex h-14 max-w-7xl items-center justify-between px-6">
-            <!-- Desktop Navigation -->
-            <nav class="hidden items-center gap-0 md:flex">
-                <a href="index.html" class="nav-link active">
-                    INTRODUCCIÓN
-                </a>
-                <a href="temario.html" class="nav-link">
-                    TEMARIO
-                </a>
-                <a href="fuentes-de-datos.html" class="nav-link">
-                    FUENTES DE DATOS
-                </a>
-                <a href="enlaces.html" class="nav-link">
-                    ENLACES
-                </a>
-                <a href="sobre-mi.html" class="nav-link">
-                    SOBRE MÍ
-                </a>
-            </nav>
-
-            <!-- Search Bar -->
-            <div class="hidden items-center md:flex">
-                <div class="relative">
-                    <input type="search" placeholder="Buscar en temario..."
-                        class="h-11 w-56 rounded-lg bg-gray-100 pl-3 pr-10 text-sm text-gray-600 outline-none focus:ring-2 focus:ring-primary/20"
-                        id="headerSearch">
-                    <svg class="absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="container mx-auto px-6">
+            <nav class="flex items-center justify-between h-16">
+                <!-- Logo/Brand -->
+                <div class="font-bold text-xl text-primary hidden md:block">
+                    SOIVRE
                 </div>
-            </div>
 
-            <!-- Mobile Menu Button - 44x44px touch target -->
-            <div class="md:hidden">
-                <button onclick="toggleMobileMenu()"
-                    class="p-3 min-w-[44px] min-h-[44px] flex items-center justify-center text-gray-600 hover:text-primary active:scale-95 transition-all"
-                    aria-label="Abrir menú">
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="nav-link active">INTRODUCCIÓN</a>
+                    <a href="temario.html" class="nav-link">TEMARIO</a>
+                    <a href="fuentes-de-datos.html" class="nav-link">FUENTES DE DATOS</a>
+                    <a href="enlaces.html" class="nav-link">ENLACES</a>
+                    <a href="sobre-mi.html" class="nav-link">SOBRE MÍ</a>
+                </div>
+
+                <!-- Search Bar + Dark Mode (Desktop) -->
+                <div class="hidden md:flex items-center gap-4">
+                    <!-- Search Bar -->
+                    <div class="relative">
+                        <input type="search" placeholder="Buscar en temario..." class="search-input" id="headerSearch">
+                        <svg width="20" height="20" class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+
+                    <!-- Dark Mode Toggle -->
+                    <button class="p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Toggle dark mode">
+                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile: Hamburger Menu Button -->
+                <button class="md:hidden p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
+                    onclick="toggleMobileMenu()" aria-label="Abrir menú">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
-            </div>
+            </nav>
         </div>
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu"
-        class="mobile-menu fixed inset-y-0 left-0 z-50 w-full max-w-xs bg-background shadow-xl md:hidden">
+    <div id="mobileMenu" class="fixed inset-0 z-50 backdrop-blur-xl bg-white/95 md:hidden">
         <div class="flex h-full flex-col">
             <div class="border-b p-4">
                 <button onclick="toggleMobileMenu()" class="text-left text-lg font-bold text-primary">
@@ -294,30 +800,29 @@
 
     <!-- Main Content -->
     <main class="relative flex-1">
-        <!-- Introducción Section -->
+        <!-- Hero Section with Glass Card -->
         <section class="flex min-h-screen w-full items-center justify-center px-4 py-20">
             <div class="container mx-auto max-w-6xl">
-                <div
-                    class="bg-white rounded-[3rem] px-16 py-24 md:px-20 md:py-28 text-center shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-shadow hover:shadow-[0_8px_40px_rgba(0,0,0,0.12)]">
+                <div class="glass-card px-8 py-12 sm:px-16 sm:py-24 md:px-20 md:py-28 text-center">
                     <div class="flex flex-col items-center space-y-10">
-                        <h1
-                            class="text-5xl sm:text-6xl md:text-7xl font-black tracking-tighter text-primary leading-tight">
+                        <h1 class="text-3xl sm:text-5xl md:text-7xl font-black tracking-tighter leading-tight"
+                            style="color: #1e3a8a;">
                             INTRODUCCIÓN
                         </h1>
-                        <p
-                            class="mx-auto max-w-[680px] text-center text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
+                        <p class="mx-auto max-w-[680px] text-center text-sm sm:text-base md:text-lg leading-relaxed"
+                            style="color: #374151;">
                             En esta web encontrarás resúmenes extendidos de temario, recursos y algunos enlaces de
-                            utilidad para la preparación de las oposiciones del <span
-                                class="font-semibold text-gray-800">Cuerpo de Inspectores del SOIVRE</span> e <span
-                                class="font-semibold text-gray-800">Ingenieros Técnicos del SOIVRE</span>.
+                            utilidad para la preparación de las oposiciones del <span class="font-semibold"
+                                style="color: #111827;">Cuerpo de Inspectores del SOIVRE</span> e <span
+                                class="font-semibold" style="color: #111827;">Ingenieros Técnicos del SOIVRE</span>.
                         </p>
 
-                        <!-- Pill Button - Touch Optimized -->
+                        <!-- CTA Button with hardcoded SVG size -->
                         <a href="temario.html"
                             class="inline-flex items-center gap-2 px-8 py-4 min-h-[44px] rounded-full border-2 border-primary text-primary font-semibold text-sm sm:text-base hover:bg-primary hover:text-white active:scale-95 transition-all duration-200">
                             Explorar Temario
-                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                     d="M9 5l7 7-7 7" />
                             </svg>
@@ -384,25 +889,22 @@
             }
         }
 
-        // Mobile Menu Toggle - Critical inline function
+        // Mobile Menu Toggle - iOS Compatible
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
             if (!menu) return;
 
-            const isHidden = menu.classList.contains('-translate-x-full') ||
-                menu.classList.contains('opacity-0') ||
-                menu.classList.contains('pointer-events-none');
+            menu.classList.toggle('menu-open');
 
-            if (isHidden) {
-                // Open menu
-                menu.classList.remove('-translate-x-full', 'opacity-0', 'pointer-events-none');
-                menu.classList.add('translate-x-0', 'opacity-100');
+            // Prevent body scroll when menu is open
+            if (menu.classList.contains('menu-open')) {
                 document.body.style.overflow = 'hidden';
+                document.body.style.position = 'fixed';
+                document.body.style.width = '100%';
             } else {
-                // Close menu
-                menu.classList.add('-translate-x-full', 'opacity-0', 'pointer-events-none');
-                menu.classList.remove('translate-x-0', 'opacity-100');
                 document.body.style.overflow = '';
+                document.body.style.position = '';
+                document.body.style.width = '';
             }
         }
 
@@ -410,7 +912,7 @@
         document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape') {
                 const menu = document.getElementById('mobileMenu');
-                if (menu && !menu.classList.contains('opacity-0')) {
+                if (menu && menu.classList.contains('menu-open')) {
                     toggleMobileMenu();
                 }
             }
