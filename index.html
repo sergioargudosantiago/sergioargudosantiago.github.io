@@ -655,6 +655,106 @@
             transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
             -webkit-transition: -webkit-transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
         }
+
+        /* ========== ILLUMINATED ISLAND NAVIGATION ========== */
+        .nav-island {
+            position: fixed;
+            top: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 50;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+        }
+
+        .nav-segment {
+            position: relative;
+            padding: 0.625rem 1.25rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: hsl(var(--foreground) / 0.7);
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            border: 1px solid transparent;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            letter-spacing: 0.02em;
+            white-space: nowrap;
+        }
+
+        .nav-segment:hover {
+            color: hsl(var(--primary));
+            background: rgba(255, 255, 255, 0.25);
+            border-color: rgba(6, 132, 212, 0.2);
+            box-shadow: 0 0 20px rgba(6, 132, 212, 0.4),
+                0 0 40px rgba(6, 132, 212, 0.2);
+        }
+
+        .nav-segment.active {
+            color: hsl(var(--primary));
+            background: rgba(6, 132, 212, 0.15);
+            border-color: rgba(6, 132, 212, 0.3);
+            font-weight: 600;
+            box-shadow: 0 0 30px rgba(6, 132, 212, 0.6),
+                0 0 50px rgba(6, 132, 212, 0.3),
+                inset 0 0 20px rgba(6, 132, 212, 0.1);
+        }
+
+        .search-island {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-left: 0.5rem;
+        }
+
+        .search-island input {
+            width: 12rem;
+            height: 2.5rem;
+            padding: 0 1rem 0 2.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 1.25rem;
+            font-size: 0.875rem;
+            color: hsl(var(--foreground));
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-island input::placeholder {
+            color: hsl(var(--foreground) / 0.5);
+        }
+
+        .search-island input:focus {
+            background: rgba(255, 255, 255, 0.35);
+            border-color: rgba(6, 132, 212, 0.3);
+            box-shadow: 0 0 15px rgba(6, 132, 212, 0.3);
+        }
+
+        .search-island svg {
+            position: absolute;
+            left: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            color: hsl(var(--foreground) / 0.5);
+            pointer-events: none;
+        }
+
+        /* Hide desktop island on mobile */
+        @media (max-width: 768px) {
+            .nav-island {
+                display: none;
+            }
+        }
     </style>
 
     <!-- Tailwind Config -->
@@ -700,58 +800,32 @@
     <!-- Background Illustration -->
     <div class="container-illustration"></div>
 
-    <!-- Top Navigation Bar -->
-    <header class="top-nav">
-        <div class="container mx-auto px-6">
-            <nav class="flex items-center justify-between h-16">
-                <!-- Logo/Brand -->
-                <div class="font-bold text-xl text-primary hidden md:block">
-                    SOIVRE
-                </div>
+    <!-- Illuminated Island Navigation (Desktop) -->
+    <nav class="nav-island hidden md:flex">
+        <a href="index.html" class="nav-segment active">INTRODUCCIÓN</a>
+        <a href="temario.html" class="nav-segment">TEMARIO</a>
+        <a href="fuentes-de-datos.html" class="nav-segment">FUENTES DE DATOS</a>
+        <a href="enlaces.html" class="nav-segment">ENLACES</a>
+        <a href="sobre-mi.html" class="nav-segment">SOBRE MÍ</a>
 
-                <!-- Desktop Navigation Links -->
-                <div class="hidden md:flex items-center gap-8">
-                    <a href="index.html" class="nav-link active">INTRODUCCIÓN</a>
-                    <a href="temario.html" class="nav-link">TEMARIO</a>
-                    <a href="fuentes-de-datos.html" class="nav-link">FUENTES DE DATOS</a>
-                    <a href="enlaces.html" class="nav-link">ENLACES</a>
-                    <a href="sobre-mi.html" class="nav-link">SOBRE MÍ</a>
-                </div>
-
-                <!-- Search Bar + Dark Mode (Desktop) -->
-                <div class="hidden md:flex items-center gap-4">
-                    <!-- Search Bar -->
-                    <div class="relative">
-                        <input type="search" placeholder="Buscar en temario..." class="search-input" id="headerSearch">
-                        <svg width="20" height="20" class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </div>
-
-                    <!-- Dark Mode Toggle -->
-                    <button class="p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Toggle dark mode">
-                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                        </svg>
-                    </button>
-                </div>
-
-                <!-- Mobile: Hamburger Menu Button -->
-                <button class="md:hidden p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
-                    onclick="toggleMobileMenu()" aria-label="Abrir menú">
-                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </nav>
+        <div class="search-island">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="search" placeholder="Buscar en temario..." id="headerSearch">
         </div>
-    </header>
+    </nav>
+
+    <!-- Mobile Menu Button (Floating) -->
+    <button
+        class="md:hidden fixed top-4 right-4 z-50 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center bg-white/80 backdrop-blur-md rounded-full border border-white/40 shadow-lg"
+        onclick="toggleMobileMenu()" aria-label="Abrir menú">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" class="text-primary">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
 
     <!-- Mobile Menu -->
     <div id="mobileMenu" class="fixed inset-0 z-50 backdrop-blur-xl bg-white/95 md:hidden">
@@ -802,19 +876,20 @@
     <main class="relative flex-1">
         <!-- Hero Section with Glass Card -->
         <section class="flex min-h-screen w-full items-center justify-center px-4 py-20">
-            <div class="container mx-auto max-w-6xl">
-                <div class="glass-card px-8 py-12 sm:px-16 sm:py-24 md:px-20 md:py-28 text-center">
-                    <div class="flex flex-col items-center space-y-10">
-                        <h1 class="text-3xl sm:text-5xl md:text-7xl font-black tracking-tighter leading-tight"
-                            style="color: #1e3a8a;">
+            <div class="container mx-auto max-w-6xl px-4 md:px-6">
+                <div
+                    class="bg-white/75 backdrop-blur-md border border-white/30 rounded-3xl shadow-2xl p-8 md:p-12 min-h-[50vh] flex items-center justify-center">
+                    <div class="flex flex-col items-center space-y-10 text-center">
+                        <h1
+                            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight text-primary">
                             INTRODUCCIÓN
                         </h1>
-                        <p class="mx-auto max-w-[680px] text-center text-sm sm:text-base md:text-lg leading-relaxed"
-                            style="color: #374151;">
+                        <p
+                            class="mx-auto max-w-[680px] text-center text-base md:text-lg leading-relaxed text-foreground/80">
                             En esta web encontrarás resúmenes extendidos de temario, recursos y algunos enlaces de
-                            utilidad para la preparación de las oposiciones del <span class="font-semibold"
-                                style="color: #111827;">Cuerpo de Inspectores del SOIVRE</span> e <span
-                                class="font-semibold" style="color: #111827;">Ingenieros Técnicos del SOIVRE</span>.
+                            utilidad para la preparación de las oposiciones del <span
+                                class="font-semibold text-foreground">Cuerpo de Inspectores del SOIVRE</span> e <span
+                                class="font-semibold text-foreground">Ingenieros Técnicos del SOIVRE</span>.
                         </p>
 
                         <!-- CTA Button with hardcoded SVG size -->
