@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description"
-        content="Visualización de estadísticas relevantes para las oposiciones del SOIVRE basadas en convocatorias anteriores.">
-    <title>Fuentes de Datos - Oposiciones SOIVRE</title>
+        content="Dashboard de comercio exterior español con datos de exportación e importación por sectores económicos.">
+    <title>Dashboard Comercio Exterior - Oposiciones SOIVRE</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +17,6 @@
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = { theme: { extend: { screens: { 'sm': '640px', 'md': '768px', 'lg': '1024px' } } } }
-    </script>
 
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
@@ -31,8 +28,6 @@
             --foreground: 220 9% 46%;
             --card: 0 0% 100%;
             --card-foreground: 220 13% 18%;
-            --popover: 0 0% 100%;
-            --popover-foreground: 220 13% 18%;
             --primary: 217 91% 45%;
             --primary-foreground: 0 0% 100%;
             --secondary: 220 14% 96%;
@@ -40,15 +35,9 @@
             --muted: 220 14% 96%;
             --muted-foreground: 220 9% 46%;
             --accent: 217 91% 45%;
-            --accent-foreground: 0 0% 100%;
-            --destructive: 0 84.2% 60.2%;
-            --destructive-foreground: 0 0% 98%;
             --border: 220 13% 91%;
-            --input: 220 13% 91%;
-            --ring: 217 91% 45%;
             --radius: 0.5rem;
         }
-
 
         * {
             margin: 0;
@@ -85,47 +74,6 @@
             background-size: 24px 24px;
         }
 
-        /* Mobile menu styles */
-        .mobile-menu {
-            transform: translateX(-100%);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .mobile-menu.active {
-            transform: translateX(0);
-        }
-
-        /* Nav link styles */
-        .nav-link {
-            position: relative;
-            padding: 0.5rem 1rem;
-            color: hsl(var(--foreground) / 0.8);
-            transition: color 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .nav-link:hover {
-            color: hsl(var(--primary));
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0.5rem;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: hsl(var(--primary));
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            transform: scaleX(1);
-        }
-
         /* ========== GLASSMORPHISM ========== */
         .glass {
             background: rgba(255, 255, 255, 0.7);
@@ -137,22 +85,18 @@
         .glass-card {
             background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
             border-radius: 3rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .top-nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 50;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(12px);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        .glass-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.15);
         }
 
-        /* ========== ILLUMINATED ISLAND NAVIGATION ========== */
+        /* ========== NAVIGATION ========== */
         .nav-island {
             position: fixed;
             top: 1.5rem;
@@ -190,8 +134,7 @@
             color: hsl(var(--primary));
             background: rgba(255, 255, 255, 0.25);
             border-color: rgba(6, 132, 212, 0.2);
-            box-shadow: 0 0 20px rgba(6, 132, 212, 0.4),
-                0 0 40px rgba(6, 132, 212, 0.2);
+            box-shadow: 0 0 20px rgba(6, 132, 212, 0.4);
         }
 
         .nav-segment.active {
@@ -199,50 +142,7 @@
             background: rgba(6, 132, 212, 0.15);
             border-color: rgba(6, 132, 212, 0.3);
             font-weight: 600;
-            box-shadow: 0 0 30px rgba(6, 132, 212, 0.6),
-                0 0 50px rgba(6, 132, 212, 0.3),
-                inset 0 0 20px rgba(6, 132, 212, 0.1);
-        }
-
-        .search-island {
-            position: relative;
-            display: flex;
-            align-items: center;
-            margin-left: 0.5rem;
-        }
-
-        .search-island input {
-            width: 12rem;
-            height: 2.5rem;
-            padding: 0 1rem 0 2.5rem;
-            background: rgba(255, 255, 255, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 1.25rem;
-            font-size: 0.875rem;
-            color: hsl(var(--foreground));
-            outline: none;
-            transition: all 0.3s ease;
-        }
-
-        .search-island input::placeholder {
-            color: hsl(var(--foreground) / 0.5);
-        }
-
-        .search-island input:focus {
-            background: rgba(255, 255, 255, 0.35);
-            border-color: rgba(6, 132, 212, 0.3);
-            box-shadow: 0 0 15px rgba(6, 132, 212, 0.3);
-        }
-
-        .search-island svg {
-            position: absolute;
-            left: 0.75rem;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 16px;
-            height: 16px;
-            color: hsl(var(--foreground) / 0.5);
-            pointer-events: none;
+            box-shadow: 0 0 30px rgba(6, 132, 212, 0.6);
         }
 
         /* Hide desktop island on mobile */
@@ -251,185 +151,229 @@
                 display: none;
             }
         }
-    </style>
 
-    <!-- Tailwind Config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        background: 'hsl(var(--background))',
-                        foreground: 'hsl(var(--foreground))',
-                        primary: {
-                            DEFAULT: 'hsl(var(--primary))',
-                            foreground: 'hsl(var(--primary-foreground))',
-                        },
-                        secondary: {
-                            DEFAULT: 'hsl(var(--secondary))',
-                            foreground: 'hsl(var(--secondary-foreground))',
-                        },
-                        muted: {
-                            DEFAULT: 'hsl(var(--muted))',
-                            foreground: 'hsl(var(--muted-foreground))',
-                        },
-                        accent: {
-                            DEFAULT: 'hsl(var(--accent))',
-                            foreground: 'hsl(var(--accent-foreground))',
-                        },
-                        border: 'hsl(var(--border))',
-                        input: 'hsl(var(--input))',
-                        ring: 'hsl(var(--ring))',
-                    },
-                    borderRadius: {
-                        lg: 'var(--radius)',
-                        md: 'calc(var(--radius) - 2px)',
-                        sm: 'calc(var(--radius) - 4px)',
-                    },
-                }
-            }
+        /* ========== FLOW TOGGLE ========== */
+        .flow-toggle {
+            display: inline-flex;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(8px);
+            border-radius: 2rem;
+            padding: 0.25rem;
+            gap: 0.25rem;
         }
-    </script>
+
+        .flow-toggle-btn {
+            padding: 0.75rem 2rem;
+            border-radius: 1.5rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            color: hsl(var(--foreground) / 0.6);
+        }
+
+        .flow-toggle-btn.active {
+            background: hsl(var(--primary));
+            color: white;
+            box-shadow: 0 4px 12px rgba(6, 132, 212, 0.3);
+        }
+
+        /* ========== SECTOR CARDS ========== */
+        .sector-card {
+            cursor: pointer;
+            padding: 2.5rem;
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .sector-card h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: hsl(var(--primary));
+            letter-spacing: 0.05em;
+        }
+
+        .sector-card:hover h3 {
+            transform: scale(1.05);
+        }
+
+        /* ========== BREADCRUMBS ========== */
+        .breadcrumbs {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            font-size: 0.875rem;
+            color: hsl(var(--foreground) / 0.7);
+            margin-bottom: 2rem;
+        }
+
+        .breadcrumb-item {
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb-item:hover {
+            color: hsl(var(--primary));
+        }
+
+        .breadcrumb-separator {
+            color: hsl(var(--foreground) / 0.4);
+        }
+
+        /* ========== TVA BADGE ========== */
+        .tva-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .tva-positive {
+            background: #10b981;
+            color: white;
+        }
+
+        .tva-negative {
+            background: #ef4444;
+            color: white;
+        }
+
+        /* ========== GRID LAYOUT ========== */
+        .sector-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        /* ========== UTILITY ========== */
+        .hidden {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body class="flex min-h-screen flex-col">
     <!-- Background Illustration -->
     <div class="container-illustration"></div>
 
-    <!-- Illuminated Island Navigation (Desktop) -->
+    <!-- Desktop Navigation -->
     <nav class="nav-island hidden md:flex">
         <a href="index.html" class="nav-segment">INTRODUCCIÓN</a>
         <a href="temario.html" class="nav-segment">TEMARIO</a>
         <a href="fuentes-de-datos.html" class="nav-segment active">FUENTES DE DATOS</a>
         <a href="enlaces.html" class="nav-segment">ENLACES</a>
         <a href="sobre-mi.html" class="nav-segment">SOBRE MÍ</a>
-
-        <div class="search-island">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-            <input type="search" placeholder="Buscar en temario..." id="headerSearch">
-        </div>
     </nav>
 
-    <!-- Mobile Menu Button (Floating) -->
+    <!-- Mobile Menu Button -->
     <button
         class="md:hidden fixed top-4 right-4 z-50 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center bg-white/80 backdrop-blur-md rounded-full border border-white/40 shadow-lg"
-        onclick="toggleMobileMenu()" aria-label="Abrir menú">
+        onclick="alert('Menú móvil - implementar si es necesario')" aria-label="Abrir menú">
         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
             stroke="currentColor" class="text-primary">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
     </button>
 
-    <!-- Mobile Menu -->
-    <div id="mobileMenu"
-        class="mobile-menu fixed inset-y-0 left-0 z-50 w-full max-w-xs bg-background shadow-xl md:hidden">
-        <div class="flex h-full flex-col">
-            <div class="border-b p-4">
-                <button onclick="toggleMobileMenu()" class="text-left text-lg font-bold text-primary">
-                    Menú
-                </button>
-            </div>
-            <nav class="flex flex-col gap-1 p-4">
-                <a href="index.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
-                    INTRODUCCIÓN
-                </a>
-                <a href="temario.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
-                    TEMARIO
-                </a>
-                <a href="fuentes-de-datos.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent bg-accent">
-                    FUENTES DE DATOS
-                </a>
-                <a href="enlaces.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
-                    ENLACES DE INTERÉS
-                </a>
-                <a href="sobre-mi.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
-                    SOBRE MÍ
-                </a>
-            </nav>
-            <div class="mt-auto p-4">
-                <div class="relative">
-                    <svg class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                    <input type="search" placeholder="Buscar en temario..."
-                        class="h-9 w-full rounded-md bg-secondary pl-9 pr-3 text-sm outline-none ring-ring focus:ring-2"
-                        id="mobileSearch">
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Main Content -->
-    <main class="relative flex-1 pb-24">
-        <!-- Fuentes de Datos Section -->
-        <section class="flex min-h-screen w-full items-center py-16 md:py-24 lg:py-32">
+    <main class="relative flex-1 pb-24 pt-24 md:pt-32">
+        <section class="w-full">
             <div class="container mx-auto max-w-6xl px-4 md:px-6">
-                <div
-                    class="bg-white/75 backdrop-blur-md border border-white/30 rounded-3xl shadow-2xl p-8 md:p-12 min-h-[75vh]">
-                    <div class="flex flex-col items-center space-y-6 text-center mb-16">
-                        <h2
-                            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-primary">
-                            FUENTES DE DATOS
+                <div class="glass-card p-8 md:p-12 min-h-[75vh]">
+
+                    <!-- Header -->
+                    <div class="flex flex-col items-center space-y-6 text-center mb-12">
+                        <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-primary">
+                            COMERCIO EXTERIOR
                         </h2>
-                        <p
-                            class="max-w-[900px] font-serif text-justify text-foreground/80 text-base md:text-lg leading-relaxed">
-                            Visualización de estadísticas relevantes para las oposiciones del SOIVRE basadas en
-                            convocatorias anteriores.
+                        <p class="max-w-[900px] font-serif text-foreground/80 text-base md:text-lg leading-relaxed">
+                            Dashboard interactivo de exportación e importación española por sectores económicos
+                            (2021-2025)
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-                        <!-- Chart Container -->
-                        <div
-                            class="bg-white/60 backdrop-blur-sm border border-white/40 rounded-2xl p-8 hover:bg-white/70 transition-all duration-300">
-                            <h3 class="text-2xl font-bold text-primary mb-6 tracking-tight">Evolución de Plazas</h3>
-                            <canvas id="plazasChart"></canvas>
+                    <!-- Breadcrumbs -->
+                    <div id="breadcrumbs" class="breadcrumbs hidden"></div>
+
+                    <!-- Home View -->
+                    <div id="homeView">
+                        <!-- Flow Toggle -->
+                        <div class="flex justify-center mb-12">
+                            <div class="flow-toggle">
+                                <button class="flow-toggle-btn active" data-flow="E" onclick="switchFlow('E')">
+                                    EXPORTACIÓN
+                                </button>
+                                <button class="flow-toggle-btn" data-flow="I" onclick="switchFlow('I')">
+                                    IMPORTACIÓN
+                                </button>
+                            </div>
                         </div>
 
-                        <!-- Pie Chart Container -->
-                        <div
-                            class="bg-white/60 backdrop-blur-sm border border-white/40 rounded-2xl p-8 hover:bg-white/70 transition-all duration-300">
-                            <h3 class="text-2xl font-bold text-primary mb-6 tracking-tight">Ratio Aspirantes/Plaza</h3>
-                            <canvas id="ratioChart"></canvas>
+                        <!-- Macro Sector Selection -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="glass-card sector-card" onclick="selectMacroSector('Agroalimentario')">
+                                <h3>AGROALIMENTARIO</h3>
+                            </div>
+                            <div class="glass-card sector-card" onclick="selectMacroSector('Industrial')">
+                                <h3>INDUSTRIAL</h3>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Table Container -->
-                    <div
-                        class="bg-white/60 backdrop-blur-sm border border-white/40 rounded-2xl p-8 hover:bg-white/70 transition-all duration-300">
-                        <h3 class="text-xl font-bold text-primary mb-4">Datos Detallados</h3>
-                        <div class="overflow-x-auto">
-                            <table id="dataTable" class="w-full text-sm">
-                                <thead class="bg-primary text-primary-foreground">
-                                    <tr>
-                                        <th class="p-3 text-left font-semibold">Año</th>
-                                        <th class="p-3 text-left font-semibold">Plazas</th>
-                                        <th class="p-3 text-left font-semibold">Aspirantes</th>
-                                        <th class="p-3 text-left font-semibold">Ratio</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="dataTableBody" class="font-serif">
-                                    <tr>
-                                        <td class="p-3 border-b" colspan="4">
-                                            <div class="text-center text-muted-foreground">
-                                                Cargando datos...
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <!-- Level 1 View -->
+                    <div id="level1View" class="hidden">
+                        <h3 id="level1Title" class="text-3xl font-bold text-primary mb-6"></h3>
+                        <div id="level1Grid" class="sector-grid"></div>
+                    </div>
+
+                    <!-- Level 2 View -->
+                    <div id="level2View" class="hidden">
+                        <h3 id="level2Title" class="text-3xl font-bold text-primary mb-6"></h3>
+                        <div id="level2Grid" class="sector-grid"></div>
+                    </div>
+
+                    <!-- Level 3 View -->
+                    <div id="level3View" class="hidden">
+                        <h3 id="level3Title" class="text-3xl font-bold text-primary mb-6"></h3>
+                        <div id="level3Grid" class="sector-grid"></div>
+                    </div>
+
+                    <!-- Final Data View -->
+                    <div id="finalView" class="hidden">
+                        <h3 id="finalTitle" class="text-3xl font-bold text-primary mb-6"></h3>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                            <!-- Chart -->
+                            <div class="bg-white/60 backdrop-blur-sm border border-white/40 rounded-2xl p-8">
+                                <h4 class="text-xl font-bold text-primary mb-4">Evolución Temporal</h4>
+                                <canvas id="timeSeriesChart"></canvas>
+                            </div>
+
+                            <!-- Stats -->
+                            <div class="space-y-6">
+                                <!-- TVA Badge -->
+                                <div class="bg-white/60 backdrop-blur-sm border border-white/40 rounded-2xl p-8">
+                                    <h4 class="text-xl font-bold text-primary mb-4">Variación Anual (2024-2025)</h4>
+                                    <div id="tvaContainer" class="flex justify-center"></div>
+                                </div>
+
+                                <!-- Top Countries -->
+                                <div class="bg-white/60 backdrop-blur-sm border border-white/40 rounded-2xl p-8">
+                                    <h4 class="text-xl font-bold text-primary mb-4">Principales Destinos</h4>
+                                    <div id="countriesContainer" class="space-y-3"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -464,18 +408,699 @@
         </div>
     </footer>
 
-    <!-- Main JavaScript -->
-    <script src="js/main.js"></script>
-
-    <!-- Data Visualization JavaScript -->
-    <script src="js/data-visualization.js"></script>
-
-    <!-- Auto-load data visualization on page load -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            if (typeof loadDataVisualization === 'function') {
-                loadDataVisualization();
+        // ========== GLOBAL STATE ==========
+        let allData = [];
+        let currentFlow = 'E';
+        let navigationState = {
+            macroSector: null,
+            lv1: null,
+            lv2: null,
+            lv3: null
+        };
+        let chartInstance = null;
+
+        // ========== COUNTRY FLAGS ==========
+        const countryFlags = {
+            'China': '🇨🇳',
+            'Francia': '🇫🇷',
+            'Portugal': '🇵🇹',
+            'Italia': '🇮🇹',
+            'Alemania': '🇩🇪',
+            'Estados Unidos': '🇺🇸',
+            'Reino Unido': '🇬🇧',
+            'Japón': '🇯🇵',
+            'Arabia Saudí': '🇸🇦',
+            'Países Bajos': '🇳🇱',
+            'Bélgica': '🇧🇪',
+            'Marruecos': '🇲🇦',
+            'Argelia': '🇩🇿',
+            'Túnez': '🇹🇳',
+            'Emiratos Árabes Unidos': '🇦🇪',
+            'Corea del Sur': '🇰🇷',
+            'Filipinas': '🇵🇭',
+            'Rusia': '🇷🇺',
+            'Grecia': '🇬🇷',
+            'Polonia': '🇵🇱',
+            'Líbano': '🇱🇧',
+            'Libia': '🇱🇾',
+            'Jordania': '🇯🇴',
+            'Israel': '🇮🇱',
+            'Cuba': '🇨🇺',
+            'México': '🇲🇽',
+            'Brasil': '🇧🇷',
+            'Chile': '🇨🇱',
+            'Suiza': '🇨🇭',
+            'Austria': '🇦🇹',
+            'Suecia': '🇸🇪',
+            'Dinamarca': '🇩🇰',
+            'Noruega': '🇳🇴',
+            'Finlandia': '🇫🇮',
+            'Rumanía': '🇷🇴',
+            'Ucrania': '🇺🇦',
+            'Turquía': '🇹🇷',
+            'Egipto': '🇪🇬',
+            'Sudáfrica': '🇿🇦',
+            'India': '🇮🇳',
+            'Omán': '🇴🇲',
+            'Luxemburgo': '🇱🇺',
+            'Andorra': '🇦🇩',
+            'Mali': '🇲🇱',
+            'Senegal': '🇸🇳',
+            'Côte d\'Ivoire': '🇨🇮',
+            'Mauritania': '🇲🇷',
+            'Vietnam': '🇻🇳',
+            'Colombia': '🇨🇴',
+            'República Dominicana': '🇩🇴',
+            'República Democrática del Congo': '🇨🇩'
+        };
+
+        // ========== CSV PARSING (RFC 4180 COMPLIANT) ==========
+        function parseCSV(text) {
+            console.log('🚀 Iniciando parsing avanzado de CSV (RFC 4180)...');
+            const lines = text.trim().split('\n').filter(line => line.trim());
+            console.log(`📊 Total de líneas encontradas: ${lines.length}`);
+
+            if (lines.length === 0) {
+                console.error('❌ El archivo CSV está vacío');
+                return [];
             }
+
+            // Parse header line
+            const headers = parseCSVLineAdvanced(lines[0]);
+            console.log('📋 Headers encontrados:', headers);
+            const data = [];
+
+            // Parse data lines
+            for (let i = 1; i < lines.length; i++) {
+                const values = parseCSVLineAdvanced(lines[i]);
+
+                if (values.length === headers.length) {
+                    const row = {};
+                    headers.forEach((header, index) => {
+                        // Trim and normalize all values
+                        const cleanHeader = header.trim();
+                        let cleanValue = values[index].trim();
+
+                        // Remove surrounding quotes if present
+                        if (cleanValue.startsWith('"') && cleanValue.endsWith('"')) {
+                            cleanValue = cleanValue.slice(1, -1);
+                        }
+
+                        row[cleanHeader] = cleanValue;
+                    });
+                    data.push(row);
+                } else if (values.length > 0) {
+                    console.warn(`⚠️ Línea ${i + 1} tiene ${values.length} columnas, esperadas ${headers.length}`);
+                    console.log(`   Contenido: ${lines[i].substring(0, 100)}...`);
+                }
+            }
+
+            console.log(`✅ Datos parseados correctamente: ${data.length} registros`);
+
+            // Show sample data in table format for debugging
+            if (data.length > 0) {
+                console.log('📊 Muestra de los primeros 5 registros:');
+                console.table(data.slice(0, 5));
+                console.log('🔍 Valores únicos de macro_sector:', [...new Set(data.map(r => r.macro_sector))]);
+                console.log('🔍 Valores únicos de flujo:', [...new Set(data.map(r => r.flujo))]);
+            }
+
+            return data;
+        }
+
+        function parseCSVLineAdvanced(line) {
+            const result = [];
+            let cell = '';
+            let inQuotes = false;
+
+            for (let i = 0; i < line.length; i++) {
+                const char = line[i];
+                const nextChar = line[i + 1];
+
+                if (char === '"') {
+                    if (inQuotes && nextChar === '"') {
+                        // Handle escaped quotes ("")
+                        cell += '"';
+                        i++; // Skip the second quote
+                    } else {
+                        // Toggle quote state
+                        inQuotes = !inQuotes;
+                    }
+                } else if (char === ',' && !inQuotes) {
+                    // Aded result
+                    result.push(cell);
+                    cell = '';
+                } else {
+                    cell += char;
+                }
+            }
+            // Add last cell
+            result.push(cell);
+            return result;
+        }
+
+        // ========== VALUE PARSING HELPERS ==========
+        function parseNumericValue(value) {
+            // Handle NA, null, empty string, or undefined
+            if (!value || value === 'NA' || value === 'null' || value.trim() === '') {
+                return 0;
+            }
+
+            const num = parseFloat(value);
+            return isNaN(num) ? 0 : num;
+        }
+
+        function parseTVAValue(value) {
+            // TVA can be NA - return null for display purposes
+            if (!value || value === 'NA' || value === 'null' || value.trim() === '') {
+                return null;
+            }
+
+            const num = parseFloat(value);
+            return isNaN(num) ? null : num;
+        }
+
+        // ========== DATA LOADING ==========
+        async function loadData() {
+            const container = document.querySelector('.glass-card');
+            const loadingMsg = document.createElement('div');
+            loadingMsg.id = 'loadingMessage';
+            loadingMsg.className = 'text-center text-primary text-xl font-bold mt-8';
+            loadingMsg.innerHTML = '⏳ Cargando datos del comercio exterior...';
+            container.appendChild(loadingMsg);
+
+            try {
+                console.log('📥 Iniciando carga del CSV...');
+                const response = await fetch('datos_maestros_dashboard.csv');
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const text = await response.text();
+                console.log(`📄 CSV cargado, tamaño: ${text.length} caracteres`);
+
+                allData = parseCSV(text);
+                console.log(`✅ Datos cargados exitosamente: ${allData.length} registros`);
+
+                // Remove loading message
+                const msg = document.getElementById('loadingMessage');
+                if (msg) msg.remove();
+
+            } catch (error) {
+                console.error('❌ Error loading CSV:', error);
+                console.error('Detalles del error:', error.message);
+
+                const msg = document.getElementById('loadingMessage');
+                if (msg) {
+                    msg.innerHTML = `
+                        <div class="text-center">
+                            <p class="text-red-600 text-xl font-bold mb-4">❌ Error al cargar los datos</p>
+                            <p class="text-sm text-foreground mb-4">
+                                ${error.message.includes('fetch') || error.message.includes('CORS') || error.message.includes('NetworkError')
+                            ? '🚨 <strong>Problema de CORS detectado</strong>: No puedes abrir este archivo directamente (file://).'
+                            : 'Error: ' + error.message}
+                            </p>
+                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 text-left text-sm">
+                                <p class="font-bold mb-2">✅ Solución:</p>
+                                <ol class="list-decimal list-inside space-y-1">
+                                    <li>Abre una terminal en: <code class="bg-gray-200 px-1">c:\\sergioargudosantiago.github.io</code></li>
+                                    <li>Ejecuta: <code class="bg-gray-200 px-1">python -m http.server 8000</code></li>
+                                    <li>Abre: <code class="bg-gray-200 px-1">http://localhost:8000/fuentes-de-datos.html</code></li>
+                                </ol>
+                                <p class="mt-2 text-xs text-gray-600">Presiona F12 para ver el error completo en la consola.</p>
+                            </div>
+                        </div>
+                    `;
+                    msg.className = 'text-center text-sm mt-8 max-w-2xl mx-auto';
+                }
+            }
+        }
+
+        // ========== FLOW SWITCHING ==========
+        function switchFlow(flow) {
+            console.log(`🔄 Cambiando flujo a: ${flow}`);
+            currentFlow = flow;
+
+            // Update toggle buttons
+            document.querySelectorAll('.flow-toggle-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.flow === flow);
+            });
+
+            // Reset navigation
+            resetNavigation();
+        }
+
+        // ========== NAVIGATION ==========
+        function resetNavigation() {
+            navigationState = {
+                macroSector: null,
+                lv1: null,
+                lv2: null,
+                lv3: null
+            };
+            showView('homeView');
+            updateBreadcrumbs();
+        }
+
+        function selectMacroSector(sector) {
+            console.log(`📊 Seleccionando macro sector: ${sector}`);
+            navigationState.macroSector = sector;
+            showLevel1();
+        }
+
+        function showLevel1() {
+            console.log(`🔍 Filtrando datos para Nivel 1...`);
+            console.log(`   - Flujo actual: ${currentFlow}`);
+            console.log(`   - Macro sector: ${navigationState.macroSector}`);
+            console.log(`   - Total registros: ${allData.length}`);
+
+            // Case-insensitive filtering with trim
+            const filtered = allData.filter(row => {
+                const flujoMatch = row.flujo && row.flujo.trim().toUpperCase() === currentFlow.trim().toUpperCase();
+                const sectorMatch = row.macro_sector &&
+                    row.macro_sector.trim().toLowerCase() === navigationState.macroSector.trim().toLowerCase();
+                return flujoMatch && sectorMatch;
+            });
+
+            console.log(`✅ Registros filtrados: ${filtered.length}`);
+
+            if (filtered.length === 0) {
+                console.warn('⚠️ No se encontraron registros con los filtros actuales');
+                console.log('Valores disponibles de macro_sector:', [...new Set(allData.map(r => r.macro_sector))]);
+                console.log('Valores disponibles de flujo:', [...new Set(allData.map(r => r.flujo))]);
+            }
+
+            // Get unique Level 1 items
+            const lv1Items = {};
+            filtered.forEach(row => {
+                const key = row.lv1;
+                if (!lv1Items[key]) {
+                    lv1Items[key] = {
+                        code: row.lv1,
+                        name: row.lit_lv1.trim(),
+                        lv2: row.lit_lv2.trim(),
+                        lv3: row.lit_lv3.trim()
+                    };
+                }
+            });
+
+            console.log(`📋 Sectores únicos de Nivel 1: ${Object.keys(lv1Items).length}`);
+
+            // Render grid
+            const grid = document.getElementById('level1Grid');
+            grid.innerHTML = '';
+            document.getElementById('level1Title').textContent = navigationState.macroSector.toUpperCase();
+
+            if (Object.keys(lv1Items).length === 0) {
+                grid.innerHTML = '<p class="text-center text-muted-foreground text-lg p-8">No se encontraron datos para este sector. Revisa la consola (F12) para más detalles.</p>';
+            } else {
+                Object.values(lv1Items).forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'glass-card sector-card';
+                    card.innerHTML = `<h3 class="text-lg">${item.name}</h3>`;
+                    card.onclick = () => selectLevel1(item.code, item.name, item.lv2, item.lv3);
+                    grid.appendChild(card);
+                });
+            }
+
+            showView('level1View');
+            updateBreadcrumbs();
+        }
+
+        function selectLevel1(code, name, sampleLv2, sampleLv3) {
+            console.log(`🎯 Nivel 1 seleccionado: ${name} (${code})`);
+            navigationState.lv1 = { code, name };
+
+            // Check equality rule (with trimmed comparison)
+            const nameTrimmed = name.trim();
+            const lv2Trimmed = sampleLv2.trim();
+            const lv3Trimmed = sampleLv3.trim();
+
+            console.log(`   Comparando: lv1="${nameTrimmed}" vs lv2="${lv2Trimmed}" vs lv3="${lv3Trimmed}"`);
+
+            if (nameTrimmed === lv2Trimmed && lv2Trimmed === lv3Trimmed) {
+                console.log('   ➡️ Colapso total detectado, yendo a vista final');
+                // Full collapse: go directly to final view
+                navigationState.lv2 = { code: code, name: name };
+                navigationState.lv3 = { code: code, name: name };
+                showFinalView();
+            } else if (nameTrimmed === lv2Trimmed) {
+                console.log('   ➡️ Colapso parcial detectado, saltando a nivel 3');
+                // Partial skip: skip level 2, show level 3
+                navigationState.lv2 = { code: code, name: name };
+                showLevel3();
+            } else {
+                console.log('   ➡️ Navegación estándar, mostrando nivel 2');
+                // Standard path: show level 2
+                showLevel2();
+            }
+        }
+
+        function showLevel2() {
+            const filtered = allData.filter(row =>
+                row.flujo === currentFlow &&
+                row.macro_sector === navigationState.macroSector &&
+                row.lv1 === navigationState.lv1.code
+            );
+
+            // Get unique Level 2 items
+            const lv2Items = {};
+            filtered.forEach(row => {
+                const key = row.lv2;
+                if (!lv2Items[key]) {
+                    lv2Items[key] = {
+                        code: row.lv2,
+                        name: row.lit_lv2,
+                        lv3: row.lit_lv3
+                    };
+                }
+            });
+
+            // Render grid
+            const grid = document.getElementById('level2Grid');
+            grid.innerHTML = '';
+            document.getElementById('level2Title').textContent = navigationState.lv1.name;
+
+            Object.values(lv2Items).forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'glass-card sector-card';
+                card.innerHTML = `<h3 class="text-base">${item.name}</h3>`;
+                card.onclick = () => selectLevel2(item.code, item.name, item.lv3);
+                grid.appendChild(card);
+            });
+
+            showView('level2View');
+            updateBreadcrumbs();
+        }
+
+        function selectLevel2(code, name, sampleLv3) {
+            navigationState.lv2 = { code, name };
+
+            // Check if lv2 == lv3 (partial skip from lv1 to lv3)
+            if (name === sampleLv3) {
+                navigationState.lv3 = { code: code, name: name };
+                showFinalView();
+            } else {
+                showLevel3();
+            }
+        }
+
+        function showLevel3() {
+            const filtered = allData.filter(row =>
+                row.flujo === currentFlow &&
+                row.macro_sector === navigationState.macroSector &&
+                row.lv1 === navigationState.lv1.code &&
+                row.lv2 === (navigationState.lv2?.code || navigationState.lv1.code)
+            );
+
+            // Get unique Level 3 items
+            const lv3Items = {};
+            filtered.forEach(row => {
+                const key = row.lv3;
+                if (!lv3Items[key]) {
+                    lv3Items[key] = {
+                        code: row.lv3,
+                        name: row.lit_lv3
+                    };
+                }
+            });
+
+            // Render grid
+            const grid = document.getElementById('level3Grid');
+            grid.innerHTML = '';
+            document.getElementById('level3Title').textContent = navigationState.lv2?.name || navigationState.lv1.name;
+
+            Object.values(lv3Items).forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'glass-card sector-card';
+                card.innerHTML = `<h3 class="text-sm">${item.name}</h3>`;
+                card.onclick = () => selectLevel3(item.code, item.name);
+                grid.appendChild(card);
+            });
+
+            showView('level3View');
+            updateBreadcrumbs();
+        }
+
+        function selectLevel3(code, name) {
+            navigationState.lv3 = { code, name };
+            showFinalView();
+        }
+
+        // ========== FINAL VIEW ==========
+        function showFinalView() {
+            console.log('📊 Mostrando vista final con datos agregados...');
+
+            const filtered = allData.filter(row =>
+                row.flujo === currentFlow &&
+                row.macro_sector === navigationState.macroSector &&
+                row.lv3 === navigationState.lv3.code
+            );
+
+            if (filtered.length === 0) {
+                console.error('❌ No data found for final view');
+                console.log('Parámetros de búsqueda:', {
+                    flujo: currentFlow,
+                    macro_sector: navigationState.macroSector,
+                    lv3: navigationState.lv3.code
+                });
+                return;
+            }
+
+            console.log(`✅ Registros encontrados para vista final: ${filtered.length}`);
+
+            // Prepare yearly data with NA handling
+            const yearlyData = {};
+            filtered.forEach(row => {
+                const year = row.year;
+                const value = parseNumericValue(row.total_millones);
+                yearlyData[year] = value;
+            });
+
+            console.log('📈 Datos anuales procesados:', yearlyData);
+
+            // Get latest record for metadata
+            const latestRecord = filtered[filtered.length - 1];
+
+            // Update title
+            document.getElementById('finalTitle').textContent = navigationState.lv3.name;
+
+            // Render chart
+            renderChart(yearlyData);
+
+            // Render TVA badge
+            renderTVA(latestRecord.tva_lv3);
+
+            // Render countries
+            renderCountries(latestRecord.top_paises_lv3);
+
+            showView('finalView');
+            updateBreadcrumbs();
+        }
+
+        function renderChart(yearlyData) {
+            const years = ['2021', '2022', '2023', '2024', '2025'];
+            const values = years.map(year => yearlyData[year] || 0);
+
+            const ctx = document.getElementById('timeSeriesChart').getContext('2d');
+
+            // Destroy existing chart
+            if (chartInstance) {
+                chartInstance.destroy();
+            }
+
+            chartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: years,
+                    datasets: [{
+                        label: 'Millones €',
+                        data: values,
+                        borderColor: 'hsl(217, 91%, 45%)',
+                        backgroundColor: 'hsla(217, 91%, 45%, 0.1)',
+                        borderWidth: 3,
+                        tension: 0.4,
+                        fill: true,
+                        pointRadius: 5,
+                        pointHoverRadius: 7
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                            titleColor: '#333',
+                            bodyColor: '#666',
+                            borderColor: 'hsl(217, 91%, 45%)',
+                            borderWidth: 2,
+                            padding: 12,
+                            displayColors: false,
+                            callbacks: {
+                                title: function (context) {
+                                    return context[0].label;
+                                },
+                                label: function (context) {
+                                    return context.parsed.y.toFixed(2) + 'M €';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            },
+                            ticks: {
+                                callback: function (value) {
+                                    return value.toFixed(0) + 'M';
+                                }
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderTVA(tvaValue) {
+            const container = document.getElementById('tvaContainer');
+            const tva = parseTVAValue(tvaValue);
+
+            if (tva === null) {
+                container.innerHTML = '<p class="text-muted-foreground">No disponible</p>';
+                return;
+            }
+
+            const badgeClass = tva >= 0 ? 'tva-positive' : 'tva-negative';
+            const arrow = tva >= 0 ? '↑' : '↓';
+
+            container.innerHTML = `
+                <div class="tva-badge ${badgeClass}">
+                    <span>${Math.abs(tva).toFixed(1)}%</span>
+                    <span>${arrow}</span>
+                </div>
+            `;
+        }
+
+        function renderCountries(countriesString) {
+            const container = document.getElementById('countriesContainer');
+
+            if (!countriesString || countriesString === 'NA') {
+                container.innerHTML = '<p class="text-muted-foreground">No disponible</p>';
+                return;
+            }
+
+            const countries = countriesString.split(',').map(c => c.trim()).slice(0, 3);
+
+            container.innerHTML = countries.map(country => {
+                const flag = countryFlags[country] || '🌐';
+                return `
+                    <div class="flex items-center gap-3 p-3 bg-white/40 rounded-xl">
+                        <span class="text-3xl">${flag}</span>
+                        <span class="font-semibold text-foreground">${country}</span>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // ========== BREADCRUMBS ==========
+        function updateBreadcrumbs() {
+            const container = document.getElementById('breadcrumbs');
+            const crumbs = [];
+
+            crumbs.push({ label: 'Home', action: resetNavigation });
+
+            if (navigationState.macroSector) {
+                crumbs.push({
+                    label: navigationState.macroSector,
+                    action: () => {
+                        navigationState.lv1 = null;
+                        navigationState.lv2 = null;
+                        navigationState.lv3 = null;
+                        showLevel1();
+                    }
+                });
+            }
+
+            // Only add unique breadcrumb levels (skip redundant names)
+            if (navigationState.lv1) {
+                const lv1Name = navigationState.lv1.name;
+                const lv2Name = navigationState.lv2?.name;
+                const lv3Name = navigationState.lv3?.name;
+
+                // Add lv1 if it's different from lv2
+                if (lv1Name !== lv2Name) {
+                    crumbs.push({
+                        label: lv1Name,
+                        action: () => {
+                            navigationState.lv2 = null;
+                            navigationState.lv3 = null;
+                            showLevel2();
+                        }
+                    });
+                }
+
+                // Add lv2 if it exists and is different from lv1 and lv3
+                if (lv2Name && lv2Name !== lv1Name && lv2Name !== lv3Name) {
+                    crumbs.push({
+                        label: lv2Name,
+                        action: () => {
+                            navigationState.lv3 = null;
+                            showLevel3();
+                        }
+                    });
+                }
+
+                // Add lv3 if it exists and is different from lv2
+                if (lv3Name && lv3Name !== lv2Name) {
+                    crumbs.push({
+                        label: lv3Name,
+                        action: null  // Final level, no action
+                    });
+                }
+            }
+
+            if (crumbs.length <= 1) {
+                container.classList.add('hidden');
+            } else {
+                container.classList.remove('hidden');
+                container.innerHTML = crumbs.map((crumb, index) => {
+                    const isLast = index === crumbs.length - 1;
+                    const clickable = crumb.action ? `onclick="(${crumb.action.toString()})()"` : '';
+                    const cursorClass = crumb.action ? 'breadcrumb-item' : '';
+
+                    return `
+                        <span class="${cursorClass}" ${clickable}>${crumb.label}</span>
+                        ${!isLast ? '<span class="breadcrumb-separator">›</span>' : ''}
+                    `;
+                }).join('');
+            }
+        }
+
+        // ========== VIEW MANAGEMENT ==========
+        function showView(viewId) {
+            const views = ['homeView', 'level1View', 'level2View', 'level3View', 'finalView'];
+            views.forEach(id => {
+                document.getElementById(id).classList.toggle('hidden', id !== viewId);
+            });
+        }
+
+        // ========== INITIALIZATION ==========
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadData();
+            resetNavigation();
         });
     </script>
 </body>

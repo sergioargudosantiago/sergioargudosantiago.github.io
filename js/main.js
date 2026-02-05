@@ -172,20 +172,51 @@ function filterTopics() {
     renderTopics();
 }
 
-// Header Search (Placeholder functionality)
-document.getElementById('headerSearch')?.addEventListener('input', (e) => {
-    const query = e.target.value.toLowerCase();
-    // Placeholder - could implement global search functionality here
-    console.log('Header search query:', query);
+// Header Search Redirection
+function handleGlobalSearch(query) {
+    if (!query) return;
+    const currentPath = window.location.pathname;
+    if (currentPath.includes('temario.html')) {
+        // If already on temario, open global search modal
+        openGlobalSearch(query);
+    } else {
+        // Otherwise redirect to temario with query
+        window.location.href = `temario.html?q=${encodeURIComponent(query)}`;
+    }
+}
+
+function openGlobalSearch(query) {
+    currentExercise = { number: 'all', count: 104, title: 'BÚSQUEDA GLOBAL' };
+    document.getElementById('modalTitle').textContent = `Resultados de búsqueda: "${query}"`;
+
+    // Combine all topics from Ejercicio 3 and 5
+    const topics3 = generateTopics(3, 58);
+    const topics5 = generateTopics(5, 46);
+    currentTopics = [...topics3, ...topics5];
+
+    filteredTopics = currentTopics.filter(topic =>
+        topic.name.toLowerCase().includes(query.toLowerCase())
+    );
+
+    renderTopics();
+    document.getElementById('modalSearch').value = query;
+    document.getElementById('topicModal').classList.add('active');
+}
+
+document.getElementById('headerSearch')?.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') handleGlobalSearch(e.target.value);
 });
 
-document.getElementById('mobileSearch')?.addEventListener('input', (e) => {
-    const query = e.target.value.toLowerCase();
-    // Placeholder - could implement global search functionality here
-    console.log('Mobile search query:', query);
+document.getElementById('mobileSearch')?.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') handleGlobalSearch(e.target.value);
 });
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
-    // Page is now self-contained, no section navigation needed
+    // Check for search query in URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get('q');
+    if (query && window.location.pathname.includes('temario.html')) {
+        openGlobalSearch(query);
+    }
 });
