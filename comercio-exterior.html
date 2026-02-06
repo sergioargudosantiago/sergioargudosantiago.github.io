@@ -2020,6 +2020,10 @@
         function selectMacroSector(sector) {
             console.log(`📊 Seleccionando macro sector: ${sector}`);
             navigationState.macroSector = sector;
+            // FIXED: Explicitly reset deeper levels to prevent ghost data
+            navigationState.lv1 = null;
+            navigationState.lv2 = null;
+            navigationState.lv3 = null;
             showLevel1();
         }
 
@@ -2175,6 +2179,8 @@
 
         function selectLevel2(code, name, sampleLv3) {
             navigationState.lv2 = { code, name };
+            // FIXED: Reset level 3 before proceeding
+            navigationState.lv3 = null;
 
             // Check if lv2 == lv3 (partial skip from lv1 to lv3)
             if (name === sampleLv3) {
@@ -2252,7 +2258,10 @@
 
             updateDashboardMetrics(filtered, navigationState.lv3.name, 'lv3');
 
-            showView('level3View'); // Reuse level3View container logic in showView
+            // FIXED: Do NOT show level3View container here if we are in a final view for a higher-level sector.
+            // Using 'finalView' (dummy) hides all grids.
+            showView('finalView');
+
             document.getElementById('analyticsSection').classList.remove('hidden');
             updateBreadcrumbs();
         }
