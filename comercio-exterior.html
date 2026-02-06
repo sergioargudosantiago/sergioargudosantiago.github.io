@@ -2286,17 +2286,21 @@
 
             // STRICT TITLE: If it's the root macro sector view, force "SECTOR AGROALIMENTARIO"
             let strictTitle = title;
-            if (navigationState.macroSector === 'Agroalimentario' && level === 'lv1' && title === 'Agroalimentario') {
-                strictTitle = 'SECTOR AGROALIMENTARIO';
+            // FIXED: Check specifically for Agroalimentario root level to force styling
+            if (navigationState.macroSector === 'Agroalimentario' && level === 'lv1' && (!navigationState.lv2)) {
+                strictTitle = 'Agroalimentario';
+                if (chartTitleParams) {
+                    // FIXED: Bold styling request
+                    chartTitleParams.innerHTML = `<span class="text-primary">EVOLUCIÓN:</span> <span class="font-bold text-black uppercase">${strictTitle.toUpperCase()}</span>`;
+                }
+            } else {
+                // RESET LOGIC: If navigating back or invalid title, fallback safely
+                if (!strictTitle || strictTitle === 'undefined') {
+                    // Try to recover from navigation state
+                    strictTitle = navigationState.lv3?.name || navigationState.lv2?.name || navigationState.lv1?.name || navigationState.macroSector || 'Sector';
+                }
+                if (chartTitleParams) chartTitleParams.innerHTML = `<span class="text-primary">EVOLUCIÓN:</span> ${strictTitle.toUpperCase()}`;
             }
-
-            // RESET LOGIC: If navigating back or invalid title, fallback safely
-            if (!strictTitle || strictTitle === 'undefined') {
-                // Try to recover from navigation state
-                strictTitle = navigationState.lv3?.name || navigationState.lv2?.name || navigationState.lv1?.name || navigationState.macroSector || 'Sector';
-            }
-
-            if (chartTitleParams) chartTitleParams.innerHTML = `<span class="text-primary">EVOLUCIÓN:</span> ${strictTitle.toUpperCase()}`;
 
             // Display 2025 value formatted
             const metricValueElement = document.getElementById('metricValue');
@@ -2496,9 +2500,12 @@
                 crumbs.push({
                     label: navigationState.macroSector,
                     action: () => {
+                        // FIXED: Force full reset of deeper levels when clicking root breadcrumb
                         navigationState.lv1 = null;
                         navigationState.lv2 = null;
                         navigationState.lv3 = null;
+                        // Force title update by passing correct context
+                        document.getElementById('finalTitle').classList.add('hidden');
                         showLevel1();
                     }
                 });
