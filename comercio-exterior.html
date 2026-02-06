@@ -421,29 +421,27 @@
                         </div>
                     </div>
 
-                    <!-- Level 1 View -->
+                    <!-- Levels View Containers (Grids only) -->
                     <div id="level1View" class="hidden">
-                        <h3 id="level1Title" class="text-3xl font-bold text-primary mb-6"></h3>
+                        <h3 id="level1Title" class="text-3xl font-bold text-primary mb-6 uppercase tracking-tight"></h3>
                         <div id="level1Grid" class="sector-grid"></div>
                     </div>
 
-                    <!-- Level 2 View -->
                     <div id="level2View" class="hidden">
                         <h3 id="level2Title" class="text-3xl font-bold text-primary mb-6"></h3>
                         <div id="level2Grid" class="sector-grid"></div>
                     </div>
 
-                    <!-- Level 3 View -->
                     <div id="level3View" class="hidden">
                         <h3 id="level3Title" class="text-3xl font-bold text-primary mb-6"></h3>
                         <div id="level3Grid" class="sector-grid"></div>
                     </div>
 
-                    <!-- Final Data View -->
-                    <div id="finalView" class="hidden">
+                    <!-- REUSABLE ANALYTICS SECTION (Visible in Levels 1, 2, 3 and Final) -->
+                    <div id="analyticsSection" class="hidden mt-16 pt-16 border-t border-primary/10">
                         <div class="flex flex-col space-y-8">
-                            <!-- Title -->
-                            <h3 id="finalTitle" class="text-3xl font-bold text-primary mb-2"></h3>
+                            <!-- Title (Optional, used for final view level) -->
+                            <h3 id="finalTitle" class="text-3xl font-bold text-primary mb-2 hidden"></h3>
 
                             <!-- Chart (Top - Full Width) -->
                             <div class="glass-card p-6 min-h-[450px]">
@@ -456,7 +454,7 @@
 
                             <!-- Bottom Grid (Stats + Countries) -->
                             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                                <!-- LEFT: TVA Badge -->
+                                <!-- LEFT: TVA + 2025 Total -->
                                 <div class="glass-card p-10 flex flex-col items-center justify-center text-center">
                                     <h4
                                         class="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-6">
@@ -472,10 +470,11 @@
                                 <div
                                     class="glass-card p-10 flex flex-col items-center justify-center text-center border-2 border-primary/10">
                                     <h4 id="metricLabel"
-                                        class="text-sm font-semibold uppercase tracking-wider text-primary mb-6">VALOR
-                                        2025 (M€)</h4>
+                                        class="text-sm font-semibold uppercase tracking-wider text-primary mb-6">
+                                        VALOR 2025 (M€)
+                                    </h4>
                                     <div id="metricValue" class="text-5xl font-black text-primary tracking-tighter">
-                                        0.00
+                                        0,00
                                     </div>
                                     <p class="text-[10px] text-muted-foreground mt-8 italic uppercase tracking-wider">
                                         Millones de Euros</p>
@@ -493,6 +492,7 @@
                             </div>
                         </div>
                     </div>
+
 
                 </div>
             </div>
@@ -1863,6 +1863,12 @@
                             cleanValue = cleanValue.slice(1, -1);
                         }
 
+                        // RENAMING RULE: "Agrícolas sin clasificar" -> "Otros productos"
+                        const normalizedVal = cleanValue.toLowerCase().replace(/[\s_]/g, '');
+                        if (normalizedVal.includes('agricolassinclasificar')) {
+                            cleanValue = 'Otros productos';
+                        }
+
                         row[cleanHeader] = cleanValue;
                     });
                     data.push(row);
@@ -1917,6 +1923,10 @@
         }
 
         // ========== VALUE PARSING HELPERS ==========
+        function formatNumber(num) {
+            return num.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        }
+
         function parseNumericValue(value) {
             // Handle NA, null, empty string, or undefined
             if (!value || value === 'NA' || value === 'null' || value.trim() === '') {
@@ -2024,7 +2034,7 @@
                 console.log('Valores disponibles de flujo:', [...new Set(allData.map(r => r.flujo))]);
             }
 
-            // Get unique Level 1 items
+            // Get unique Level 1 items with totals
             const lv1Items = {};
             filtered.forEach(row => {
                 const key = row.lv1;
@@ -2033,8 +2043,12 @@
                         code: row.lv1,
                         name: row.lit_lv1.trim(),
                         lv2: row.lit_lv2.trim(),
-                        lv3: row.lit_lv3.trim()
+                        lv3: row.lit_lv3.trim(),
+                        total: 0
                     };
+                }
+                if (row.year === '2025') {
+                    lv1Items[key].total += parseNumericValue(row.total_millones);
                 }
             });
 
@@ -2043,61 +2057,67 @@
             // Render grid
             const grid = document.getElementById('level1Grid');
             grid.innerHTML = '';
-            document.getElementById('level1Title').textContent = navigationState.macroSector.toUpperCase();
+
+            // STRICT TITLE: Force "SECTOR " prefix for clarity
+            let displayTitle = navigationState.macroSector.toUpperCase();
+            if (!displayTitle.startsWith('SECTOR')) {
+                displayTitle = 'SECTOR ' + displayTitle;
+            }
+            document.getElementById('level1Title').textContent = displayTitle;
 
             if (Object.keys(lv1Items).length === 0) {
                 grid.innerHTML = '<p class="text-center text-muted-foreground text-lg p-8">No se encontraron datos para este sector. Revisa la consola (F12) para más detalles.</p>';
             } else {
                 Object.values(lv1Items).forEach(item => {
                     const card = document.createElement('div');
-                    card.className = 'glass-card sector-card';
-                    card.innerHTML = `<h3 class="text-lg">${item.name}</h3>`;
+                    card.className = 'glass-card sector-card py-6 flex flex-col items-center justify-center text-center';
+                    card.innerHTML = `
+                        <h3 class="text-base font-bold mb-2">${item.name}</h3>
+                        <span class="text-primary font-black text-lg">${formatNumber(item.total)} M€</span>
+                    `;
                     card.onclick = () => selectLevel1(item.code, item.name, item.lv2, item.lv3);
                     grid.appendChild(card);
                 });
             }
+
+            // ANALYTICS: Use all filtered data for current macro sector
+            updateDashboardMetrics(filtered, navigationState.macroSector, 'lv1');
 
             showView('level1View');
             updateBreadcrumbs();
         }
 
         function selectLevel1(code, name, sampleLv2, sampleLv3) {
-            console.log(`🎯 Nivel 1 seleccionado: ${name} (${code})`);
-            navigationState.lv1 = { code, name };
+            // Ensure strict mapping by filtering the literal name + code if available
+            navigationState.lv1 = { code, name: name.trim() };
+            navigationState.lv2 = null;
+            navigationState.lv3 = null;
 
-            // Check equality rule (with trimmed comparison)
-            const nameTrimmed = name.trim();
-            const lv2Trimmed = sampleLv2.trim();
-            const lv3Trimmed = sampleLv3.trim();
+            const nameTrim = name.trim();
+            const lv2Trim = sampleLv2.trim();
+            const lv3Trim = sampleLv3.trim();
 
-            console.log(`   Comparando: lv1="${nameTrimmed}" vs lv2="${lv2Trimmed}" vs lv3="${lv3Trimmed}"`);
-
-            if (nameTrimmed === lv2Trimmed && lv2Trimmed === lv3Trimmed) {
-                console.log('   ➡️ Colapso total detectado, yendo a vista final');
-                // Find actual codes for this item to ensure filtering works
+            if (nameTrim === lv2Trim && lv2Trim === lv3Trim) {
                 const match = allData.find(row =>
                     row.flujo === currentFlow &&
                     row.macro_sector === navigationState.macroSector &&
-                    row.lit_lv1 === name &&
-                    row.lit_lv2 === sampleLv2 &&
-                    row.lit_lv3 === sampleLv3
+                    row.lit_lv1.trim() === nameTrim &&
+                    row.lit_lv2.trim() === lv2Trim &&
+                    row.lit_lv3.trim() === lv3Trim
                 );
-
                 navigationState.lv2 = { code: match ? match.lv2 : code, name: name };
                 navigationState.lv3 = { code: match ? match.lv3 : code, name: name };
                 showFinalView();
-            } else if (nameTrimmed === lv2Trimmed) {
-                console.log('   ➡️ Colapso parcial detectado, saltando a nivel 3');
+            } else if (nameTrim === lv2Trim) {
                 const match = allData.find(row =>
                     row.flujo === currentFlow &&
                     row.macro_sector === navigationState.macroSector &&
-                    row.lit_lv1 === name &&
-                    row.lit_lv2 === sampleLv2
+                    row.lit_lv1.trim() === nameTrim &&
+                    row.lit_lv2.trim() === lv2Trim
                 );
                 navigationState.lv2 = { code: match ? match.lv2 : code, name: name };
                 showLevel3();
             } else {
-                console.log('   ➡️ Navegación estándar, mostrando nivel 2');
                 showLevel2();
             }
         }
@@ -2106,34 +2126,37 @@
             const filtered = allData.filter(row =>
                 row.flujo === currentFlow &&
                 row.macro_sector === navigationState.macroSector &&
-                row.lv1 === navigationState.lv1.code
+                row.lv1 === navigationState.lv1.code &&
+                row.lit_lv1.trim() === navigationState.lv1.name
             );
 
-            // Get unique Level 2 items
             const lv2Items = {};
             filtered.forEach(row => {
-                const key = row.lv2;
-                if (!lv2Items[key]) {
-                    lv2Items[key] = {
-                        code: row.lv2,
-                        name: row.lit_lv2,
-                        lv3: row.lit_lv3
-                    };
+                if (!lv2Items[row.lv2]) {
+                    lv2Items[row.lv2] = { code: row.lv2, name: row.lit_lv2, lv3: row.lit_lv3, total: 0 };
+                }
+                if (row.year === '2025') {
+                    lv2Items[row.lv2].total += parseNumericValue(row.total_millones);
                 }
             });
 
-            // Render grid
             const grid = document.getElementById('level2Grid');
             grid.innerHTML = '';
             document.getElementById('level2Title').textContent = navigationState.lv1.name;
 
             Object.values(lv2Items).forEach(item => {
                 const card = document.createElement('div');
-                card.className = 'glass-card sector-card';
-                card.innerHTML = `<h3 class="text-base">${item.name}</h3>`;
+                card.className = 'glass-card sector-card py-4 flex flex-col items-center justify-center text-center';
+                card.innerHTML = `
+                    <h3 class="text-sm font-bold mb-1">${item.name}</h3>
+                    <span class="text-primary font-bold text-base">${formatNumber(item.total)} M€</span>
+                `;
                 card.onclick = () => selectLevel2(item.code, item.name, item.lv3);
                 grid.appendChild(card);
             });
+
+            // ANALYTICS: Use data filtered by Lv1
+            updateDashboardMetrics(filtered, navigationState.lv1.name, 'lv2');
 
             showView('level2View');
             updateBreadcrumbs();
@@ -2155,40 +2178,42 @@
             const filtered = allData.filter(row => {
                 const flowMatch = row.flujo === currentFlow;
                 const macroMatch = row.macro_sector === navigationState.macroSector;
-                const lv1Match = row.lv1 === navigationState.lv1.code;
+                const lv1Match = row.lv1 === navigationState.lv1.code && row.lit_lv1.trim() === navigationState.lv1.name;
 
-                // If lv1 and lv2 names are the same, we've "skipped" lv2, so we don't filter by lv2 code
                 const lv2Match = (navigationState.lv1.name === navigationState.lv2?.name)
                     ? true
-                    : (row.lv2 === navigationState.lv2?.code);
+                    : (row.lv2 === navigationState.lv2?.code && row.lit_lv2.trim() === navigationState.lv2?.name);
 
                 return flowMatch && macroMatch && lv1Match && lv2Match;
             });
 
-            // Get unique Level 3 items
             const lv3Items = {};
             filtered.forEach(row => {
-                const key = row.lv3;
-                if (!lv3Items[key]) {
-                    lv3Items[key] = {
-                        code: row.lv3,
-                        name: row.lit_lv3
-                    };
+                if (!lv3Items[row.lv3]) {
+                    lv3Items[row.lv3] = { code: row.lv3, name: row.lit_lv3, total: 0 };
+                }
+                if (row.year === '2025') {
+                    lv3Items[row.lv3].total += parseNumericValue(row.total_millones);
                 }
             });
 
-            // Render grid
             const grid = document.getElementById('level3Grid');
             grid.innerHTML = '';
             document.getElementById('level3Title').textContent = navigationState.lv2?.name || navigationState.lv1.name;
 
             Object.values(lv3Items).forEach(item => {
                 const card = document.createElement('div');
-                card.className = 'glass-card sector-card';
-                card.innerHTML = `<h3 class="text-sm">${item.name}</h3>`;
+                card.className = 'glass-card sector-card py-4 flex flex-col items-center justify-center text-center';
+                card.innerHTML = `
+                    <h3 class="text-xs font-bold mb-1">${item.name}</h3>
+                    <span class="text-primary font-bold text-sm">${formatNumber(item.total)} M€</span>
+                `;
                 card.onclick = () => selectLevel3(item.code, item.name);
                 grid.appendChild(card);
             });
+
+            // ANALYTICS: Use data filtered by Lv2
+            updateDashboardMetrics(filtered, navigationState.lv2?.name || navigationState.lv1.name, 'lv2');
 
             showView('level3View');
             updateBreadcrumbs();
@@ -2200,102 +2225,98 @@
         }
 
         // ========== FINAL VIEW ==========
-        async function loadData() {
-            // First check if there are embedded data from a standalone version
-            if (typeof EMBEDDED_CSV_DATA !== 'undefined' && EMBEDDED_CSV_DATA.length > 100) {
-                console.log('✅ Modo Standalone detectado. Procesando datos embebidos...');
-                allData = parseCSV(EMBEDDED_CSV_DATA).filter(row => {
-                    const macro = (row.macro_sector || '').toLowerCase();
-                    const lv1 = (row.lit_lv1 || '').toLowerCase();
-                    return macro !== 'agricolasinclasificar' && lv1 !== 'agricolasinclasificar';
-                });
-                console.log('✅ Datos embebidos cargados:', allData.length);
-                return;
-            }
-
-            // If no embedded data, try to fetch from CSV file
-            try {
-                const response = await fetch('datos_maestros_dashboard.csv');
-                if (!response.ok) throw new Error('No se pudo cargar el archivo CSV');
-                const csvText = await response.text();
-                allData = parseCSV(csvText).filter(row => {
-                    const macro = (row.macro_sector || '').toLowerCase();
-                    const lv1 = (row.lit_lv1 || '').toLowerCase();
-                    return macro !== 'agricolasinclasificar' && lv1 !== 'agricolasinclasificar';
-                });
-                console.log('✅ CSV cargado y filtrado:', allData.length);
-            } catch (error) {
-                console.error('❌ Error cargando CSV:', error);
-
-                // Final fallback: if fetch fails and we have absolutely no data
-                if (allData.length === 0) {
-                    console.warn('⚠️ No hay datos cargados. Por favor, asegúrate de usar un servidor local (Live Server) o generar la versión standalone.');
-                }
-            }
-        }
         function showFinalView() {
-            console.log('📊 Mostrando vista final con datos agregados...');
-
             const filtered = allData.filter(row =>
                 row.flujo === currentFlow &&
                 row.macro_sector === navigationState.macroSector &&
-                row.lv3 === navigationState.lv3.code
+                row.lv3 === navigationState.lv3.code &&
+                row.lit_lv3.trim() === navigationState.lv3.name
             );
 
-            if (filtered.length === 0) {
-                console.error('❌ No data found for final view');
-                console.log('Parámetros de búsqueda:', {
-                    flujo: currentFlow,
-                    macro_sector: navigationState.macroSector,
-                    lv3: navigationState.lv3.code
-                });
-                return;
-            }
+            if (filtered.length === 0) return;
 
-            console.log(`✅ Registros encontrados para vista final: ${filtered.length}`);
+            // Update title and metrics
+            document.getElementById('finalTitle').textContent = navigationState.lv3.name;
+            document.getElementById('finalTitle').classList.remove('hidden');
 
-            // Prepare yearly data with NA handling
+            updateDashboardMetrics(filtered, navigationState.lv3.name, 'lv3');
+
+            showView('level3View'); // Reuse level3View container logic in showView
+            document.getElementById('analyticsSection').classList.remove('hidden');
+            updateBreadcrumbs();
+        }
+
+        function updateDashboardMetrics(dataRows, title, level) {
+            if (!dataRows || dataRows.length === 0) return;
+
+            // Aggregation by year
             const yearlyData = {};
-            filtered.forEach(row => {
-                const year = row.year;
-                const value = parseNumericValue(row.total_millones);
-                yearlyData[year] = value;
+            ['2021', '2022', '2023', '2024', '2025'].forEach(y => yearlyData[y] = 0);
+
+            dataRows.forEach(row => {
+                const val = parseNumericValue(row.total_millones);
+                yearlyData[row.year] += val;
             });
 
-            console.log('📈 Datos anuales procesados:', yearlyData);
+            const latestRecord = dataRows[dataRows.length - 1];
+            const val2025 = yearlyData['2025'] || 0;
 
-            // Get latest record for metadata
-            const latestRecord = filtered[filtered.length - 1];
+            // PERSISTENCE: Update chart title with current level name
+            const chartTitleParams = document.getElementById('chartTitle');
 
-            // Update title
-            document.getElementById('finalTitle').textContent = navigationState.lv3.name;
-
-            // Update countries box title and metric label based on flow
-            const countriesTitle = document.getElementById('countriesTitle');
-            const metricLabel = document.getElementById('metricLabel');
-            if (currentFlow === 'E') {
-                countriesTitle.textContent = 'Principales Destinos';
-                metricLabel.textContent = 'Exportaciones 2025 (M€)';
-            } else {
-                countriesTitle.textContent = 'Principales Orígenes';
-                metricLabel.textContent = 'Importaciones 2025 (M€)';
+            // STRICT TITLE: If it's the root macro sector view, force "SECTOR AGROALIMENTARIO"
+            let strictTitle = title;
+            if (navigationState.macroSector === 'Agroalimentario' && level === 'lv1' && title === 'Agroalimentario') {
+                strictTitle = 'SECTOR AGROALIMENTARIO';
             }
 
-            // Update 2025 value
-            const value2025 = yearlyData['2025'] || 0;
-            document.getElementById('metricValue').textContent = value2025.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            if (chartTitleParams) chartTitleParams.innerHTML = `<span class="text-primary">EVOLUCIÓN:</span> ${strictTitle.toUpperCase()}`;
 
-            // Render chart
+            // Display 2025 value formatted
+            document.getElementById('metricValue').textContent = formatNumber(val2025);
+
+            // Labels based on flow
+            const flowLabel = currentFlow === 'E' ? 'Exportaciones' : 'Importaciones';
+            const rankingLabel = currentFlow === 'E' ? 'Principales Destinos' : 'Principales Orígenes';
+            document.getElementById('metricLabel').textContent = `${flowLabel.toUpperCase()} 2025 (M€)`;
+            document.getElementById('countriesTitle').textContent = rankingLabel;
+
+            // Stats from columnar mapping
+            let tvaValue = 'NA';
+            let countriesString = 'NA';
+
+            if (level === 'lv1') {
+                tvaValue = latestRecord.tva_lv1;
+                countriesString = latestRecord.top_paises_lv1;
+            } else if (level === 'lv2') {
+                tvaValue = latestRecord.tva_lv2;
+                countriesString = latestRecord.top_paises_lv2;
+            } else {
+                tvaValue = latestRecord.tva_lv3;
+                countriesString = latestRecord.top_paises_lv3;
+            }
+
             renderChart(yearlyData);
+            renderTVA(tvaValue);
 
-            // Render TVA badge
-            renderTVA(latestRecord.tva_lv3);
+            // CONDITIONAL: Hide country ranking for Total Agroalimentario root
+            const rankingCard = document.getElementById('countriesContainer').parentElement;
+            // Assuming the architecture: div.grid > div.card > div#countriesContainer
+            // Parent of rankingCard is the Grid
+            const statsGrid = rankingCard.parentElement;
 
-            // Render countries
-            renderCountries(latestRecord.top_paises_lv3);
+            if (navigationState.macroSector === title && level === 'lv1') {
+                rankingCard.classList.add('hidden');
+                statsGrid.classList.remove('lg:grid-cols-3');
+                statsGrid.classList.add('lg:grid-cols-2');
+            } else {
+                rankingCard.classList.remove('hidden');
+                statsGrid.classList.remove('lg:grid-cols-2');
+                statsGrid.classList.add('lg:grid-cols-3');
+                renderCountries(countriesString);
+            }
 
-            showView('finalView');
-            updateBreadcrumbs();
+            document.getElementById('analyticsSection').classList.remove('hidden');
         }
 
         function renderChart(yearlyData) {
@@ -2303,11 +2324,7 @@
             const values = years.map(year => yearlyData[year] || 0);
 
             const ctx = document.getElementById('timeSeriesChart').getContext('2d');
-
-            // Destroy existing chart
-            if (chartInstance) {
-                chartInstance.destroy();
-            }
+            if (chartInstance) chartInstance.destroy();
 
             chartInstance = new Chart(ctx, {
                 type: 'line',
@@ -2318,53 +2335,72 @@
                         data: values,
                         borderColor: 'hsl(217, 91%, 45%)',
                         backgroundColor: 'hsla(217, 91%, 45%, 0.1)',
-                        borderWidth: 3,
+                        borderWidth: 4,
                         tension: 0.4,
                         fill: true,
-                        pointRadius: 5,
-                        pointHoverRadius: 7
+                        pointRadius: 6,
+                        pointHoverRadius: 10,
+                        pointBackgroundColor: 'white',
+                        pointBorderColor: 'hsl(217, 91%, 45%)',
+                        pointBorderWidth: 2
                     }]
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: true,
+                    maintainAspectRatio: false,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false,
+                    },
                     plugins: {
-                        legend: {
-                            display: false
-                        },
+                        legend: { display: false },
                         tooltip: {
-                            backgroundColor: 'rgba(255, 255, 255, 0.95)',
-                            titleColor: '#333',
-                            bodyColor: '#666',
-                            borderColor: 'hsl(217, 91%, 45%)',
-                            borderWidth: 2,
-                            padding: 12,
-                            displayColors: false,
+                            backgroundColor: 'rgba(255, 255, 255, 0.98)',
+                            titleColor: '#1e293b',
+                            bodyColor: '#1e293b',
+                            borderColor: 'rgba(6, 132, 212, 0.2)',
+                            borderWidth: 1,
+                            padding: 16,
+                            boxPadding: 8,
+                            usePointStyle: true,
+                            titleFont: { size: 14, weight: 'bold' },
+                            bodyFont: { size: 14 },
                             callbacks: {
-                                title: function (context) {
-                                    return context[0].label;
-                                },
-                                label: function (context) {
-                                    return context.parsed.y.toFixed(2) + 'M €';
-                                }
+                                label: (context) => ` ${formatNumber(context.parsed.y)} M€`
                             }
                         }
                     },
                     scales: {
-                        y: {
-                            beginAtZero: true,
-                            grid: {
-                                color: 'rgba(0, 0, 0, 0.05)'
-                            },
+                        x: {
+                            grid: { display: false },
                             ticks: {
-                                callback: function (value) {
-                                    return value.toFixed(0) + 'M';
+                                font: (context) => {
+                                    if (context.tick && context.tick.label === '2025') return { weight: '900', size: 14 };
+                                    return { weight: 'normal', size: 12 };
+                                },
+                                color: (context) => {
+                                    if (context.tick && context.tick.label === '2025') return '#0f172a';
+                                    return '#64748b';
                                 }
                             }
                         },
-                        x: {
-                            grid: {
-                                display: false
+                        y: {
+                            position: 'right',
+                            beginAtZero: true,
+                            grid: { color: 'rgba(0, 0, 0, 0.03)' },
+                            ticks: {
+                                font: (context) => {
+                                    // HIGHLIGHT 2025: Bold and larger font for the closing value
+                                    if (context.tick && context.tick.value === values[4]) {
+                                        return { weight: 'bold', size: 14 };
+                                    }
+                                    return { weight: 'normal', size: 11 };
+                                },
+                                color: (context) => {
+                                    if (context.tick && context.tick.value === values[4]) return 'hsl(217, 91%, 45%)';
+                                    return '#64748b';
+                                },
+                                callback: (value) => formatNumber(value)
                             }
                         }
                     }
@@ -2386,7 +2422,7 @@
 
             container.innerHTML = `
                 <div class="tva-badge ${badgeClass}">
-                    <span>${Math.abs(tva).toFixed(1)}%</span>
+                    <span>${formatNumber(Math.abs(tva))}%</span>
                     <span>${arrow}</span>
                 </div>
             `;
@@ -2394,29 +2430,30 @@
 
         function renderCountries(countriesString) {
             const container = document.getElementById('countriesContainer');
-
             if (!countriesString || countriesString === 'NA') {
                 container.innerHTML = '<p class="text-muted-foreground text-center">No disponible</p>';
                 return;
             }
 
-            // Clean string: split, trim, remove ISO codes (at start or end), and slice top 3
+            // CLEAN RANKING: Strict Regex to remove ISO codes at start (e.g. "US, ", "FR, ")
             const countries = countriesString.split(',')
                 .map(c => c.trim()
-                    .replace(/^[A-Z]{2}\s+/i, '')   // Remove ISO at start (e.g. "FR Francia")
-                    .replace(/\s+[A-Z]{2}$/i, '')   // Remove ISO at end (e.g. "Francia FR")
+                    .replace(/^[A-Z]{2}[, ]+/i, '') // Remove "US, " at start (case insensitive)
+                    .replace(/^[A-Z]{2}\s+/i, '')   // "US " at start
+                    .replace(/\s+[A-Z]{2}$/i, '')   // " US" at end
+                    .replace(/mercado preferencial/gi, '')
+                    .trim()
                 )
+                .filter(c => c.length > 0)
                 .slice(0, 3);
 
             container.innerHTML = countries.map((country, index) => {
                 const flag = countryFlags[country] || '🌐';
                 return `
                     <div class="flex items-center gap-4 p-4 bg-white/40 backdrop-blur-sm rounded-2xl border border-white/30 transition-all hover:bg-white/60">
-                        <span class="text-2xl font-bold text-primary/40">${index + 1}.</span>
-                        <span class="text-3xl">${flag}</span>
-                        <div class="flex flex-col">
-                            <span class="font-bold text-foreground">${country}</span>
-                        </div>
+                        <span class="text-2xl font-black text-primary/20">${index + 1}</span>
+                        <span class="text-2xl">${flag}</span>
+                        <span class="font-bold text-foreground text-sm">${country}</span>
                     </div>
                 `;
             }).join('');
@@ -2495,10 +2532,16 @@
 
         // ========== VIEW MANAGEMENT ==========
         function showView(viewId) {
-            const views = ['homeView', 'level1View', 'level2View', 'level3View', 'finalView'];
+            const views = ['homeView', 'level1View', 'level2View', 'level3View'];
             views.forEach(id => {
-                document.getElementById(id).classList.toggle('hidden', id !== viewId);
+                const el = document.getElementById(id);
+                if (el) el.classList.toggle('hidden', id !== viewId);
             });
+            // Auto-hide analytics if going home
+            if (viewId === 'homeView') {
+                document.getElementById('analyticsSection').classList.add('hidden');
+                document.getElementById('finalTitle').classList.add('hidden');
+            }
         }
 
         // ========== GLOBAL SEARCH REDIRECT ==========
