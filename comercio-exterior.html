@@ -2270,10 +2270,17 @@
                 strictTitle = 'SECTOR AGROALIMENTARIO';
             }
 
+            // RESET LOGIC: If navigating back or invalid title, fallback safely
+            if (!strictTitle || strictTitle === 'undefined') {
+                // Try to recover from navigation state
+                strictTitle = navigationState.lv3?.name || navigationState.lv2?.name || navigationState.lv1?.name || navigationState.macroSector || 'Sector';
+            }
+
             if (chartTitleParams) chartTitleParams.innerHTML = `<span class="text-primary">EVOLUCIÓN:</span> ${strictTitle.toUpperCase()}`;
 
             // Display 2025 value formatted
-            document.getElementById('metricValue').textContent = formatNumber(val2025);
+            const metricValueElement = document.getElementById('metricValue');
+            if (metricValueElement) metricValueElement.textContent = formatNumber(val2025);
 
             // Labels based on flow
             const flowLabel = currentFlow === 'E' ? 'Exportaciones' : 'Importaciones';
@@ -2448,11 +2455,10 @@
                 .slice(0, 3);
 
             container.innerHTML = countries.map((country, index) => {
-                const flag = countryFlags[country] || '🌐';
+                // FIXED: Removed flag span entirely to prevent ISO code rendering issues on Windows
                 return `
                     <div class="flex items-center gap-4 p-4 bg-white/40 backdrop-blur-sm rounded-2xl border border-white/30 transition-all hover:bg-white/60">
                         <span class="text-2xl font-black text-primary/20">${index + 1}</span>
-                        <span class="text-2xl">${flag}</span>
                         <span class="font-bold text-foreground text-sm">${country}</span>
                     </div>
                 `;
