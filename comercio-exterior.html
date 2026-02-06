@@ -1924,7 +1924,18 @@
 
         // ========== VALUE PARSING HELPERS ==========
         function formatNumber(num) {
-            return num.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            if (num === null || num === undefined) return '0,00';
+            const n = Number(num);
+            if (isNaN(n)) return '0,00';
+            // Force Spanish format manually to ensure 4-digit grouping
+            // 1. Format to 2 decimal places fixed
+            const fixed = n.toFixed(2);
+            // 2. Split integer and decimal
+            const parts = fixed.split('.');
+            // 3. Add dots to integer part
+            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            // 4. Join with comma
+            return parts.join(',');
         }
 
         function parseNumericValue(value) {
