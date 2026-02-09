@@ -241,26 +241,48 @@ function generateTopics(exerciseNumber, topicCount) {
     const topics = [];
 
     for (let i = 1; i <= topicCount; i++) {
-        const fileName = `ESQUEMA TEMA ${i}.docx`;
-        // Encode the filename separately to properly handle spaces
-        const encodedFileName = encodeURIComponent(fileName);
-        // HARDCODED relative path with dot prefix for proper resolution
-        const path = `./public/temas/ejercicio-${exerciseNumber}/${encodedFileName}`;
-
         // Determine the display name (full title)
-        let displayName = fileName;
+        let displayName = `TEMA ${i}`;
+        let titleOnly = "";
+
         if (exerciseNumber === 1 && EXERCISE_1_TITLES[i]) {
-            displayName = `TEMA ${i}. ${EXERCISE_1_TITLES[i]}`;
+            titleOnly = EXERCISE_1_TITLES[i];
+            displayName = `TEMA ${i}. ${titleOnly}`;
         } else if (exerciseNumber === 3 && EXERCISE_3_TITLES[i]) {
-            displayName = `TEMA ${i}. ${EXERCISE_3_TITLES[i]}`;
+            titleOnly = EXERCISE_3_TITLES[i];
+            displayName = `TEMA ${i}. ${titleOnly}`;
         } else if (exerciseNumber === 5 && EXERCISE_5_TITLES[i]) {
-            displayName = `TEMA ${i}. ${EXERCISE_5_TITLES[i]}`;
+            titleOnly = EXERCISE_5_TITLES[i];
+            displayName = `TEMA ${i}. ${titleOnly}`;
         }
+
+        // Clean filename for storage (must match renaming script)
+        // Remove trailing dots and replace illegal characters (like :) and remove other illegal chars
+        const safeTitle = displayName
+            .replace(/:/g, ".")
+            .replace(/[<>:"/\\|?*]/g, "")
+            .replace(/\.$/, "");
+
+        const fileNameWord = `${safeTitle}.docx`;
+        const fileNamePdf = `${safeTitle}.pdf`;
+
+        // Encode the filenames
+        const encodedSafeTitle = encodeURIComponent(safeTitle);
+        const encodedOriginalName = encodeURIComponent(`ESQUEMA TEMA ${i}.docx`);
+
+        // Paths
+        // Word: Use original filename for path (since renaming failed), but try to use safe title for download attribute
+        const pathWord = `./public/temas/ejercicio-${exerciseNumber}/${encodedOriginalName}`;
+        // PDF: Assume new PDFs will be uploaded with the correct safe title
+        const pathPdf = `./public/temas/ejercicio-${exerciseNumber}/${encodedSafeTitle}.pdf`;
 
         const topic = {
             number: i,
             name: displayName,
-            path: path, // Path with properly encoded filename
+            pathWord: pathWord,
+            filenameWord: fileNameWord,
+            pathPdf: pathPdf,
+            filenamePdf: fileNamePdf,
             status: 'coming-soon', // Default status
             message: null
         };
@@ -325,18 +347,29 @@ function renderTopicItem(topic) {
     switch (topic.status) {
         case 'available':
             return `
-                <a href="${topic.path}" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   download
-                   onclick="console.log('Attempting to download:', '${topic.path}');"
-                   class="flex cursor-pointer items-center justify-between bg-white/60 backdrop-blur-sm border border-white/40 rounded-2xl p-4 transition-all duration-300 hover:bg-white/80 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] hover:border-accent/50 group">
+                <div class="flex items-center justify-between bg-white/60 backdrop-blur-sm border border-white/40 rounded-2xl p-4 transition-all duration-300 hover:bg-white/80 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] hover:border-accent/50 group">
                     <span class="font-serif font-semibold text-foreground/90 group-hover:text-primary transition-colors flex-1 pr-4">${topic.name}</span>
-                    <svg class="h-5 w-5 text-muted-foreground transition-all group-hover:text-accent group-hover:scale-110 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                    </svg>
-                </a>
-
+                    <div class="flex space-x-2">
+                        <!-- Word Download -->
+                        <a href="#" 
+                           onclick="event.preventDefault(); downloadFile('${topic.pathWord}', '${topic.filenameWord}');"
+                           title="Descargar en Word"
+                           class="p-2 rounded-full bg-blue-100 hover:bg-blue-200 text-blue-600 transition-colors">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </a>
+                        <!-- PDF Download -->
+                        <a href="#" 
+                           onclick="event.preventDefault(); downloadFile('${topic.pathPdf}', '${topic.filenamePdf}');"
+                           title="Descargar en PDF"
+                           class="p-2 rounded-full bg-red-100 hover:bg-red-200 text-red-600 transition-colors">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             `;
         case 'discarded':
             return `
@@ -354,6 +387,41 @@ function renderTopicItem(topic) {
             `;
         default:
             return '';
+    }
+}
+
+// Download Helper Function
+async function downloadFile(url, filename) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error('Network response or file not found');
+        const blob = await response.blob();
+        const objectUrl = window.URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = objectUrl;
+        a.download = filename;
+        document.body.appendChild(a);
+
+        a.click();
+
+        setTimeout(() => {
+            window.URL.revokeObjectURL(objectUrl);
+            document.body.removeChild(a);
+        }, 100);
+    } catch (error) {
+        console.warn('Advanced download failed (likely due to local file/CORS), falling back to direct link:', error);
+
+        // Fallback: Trigger direct download
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        a.target = '_blank';
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
     }
 }
 
