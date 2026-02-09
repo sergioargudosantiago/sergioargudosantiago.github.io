@@ -50,7 +50,7 @@ Sub ConvertToPdf(exerciseNum, topicNum, title)
         Exit Sub
     End If
     
-    WScript.Echo "Converting: " & topicNum & "..."
+    WScript.Echo "Converting Ex " & exerciseNum & " - Topic " & topicNum & "..."
     
     On Error Resume Next
     Set doc = word.Documents.Open(sourcePath, False, True, False) ' ReadOnly, No addToRecentFiles
@@ -66,7 +66,7 @@ Sub ConvertToPdf(exerciseNum, topicNum, title)
         WScript.Echo "Error saving PDF: " & pdfName
         Err.Clear
     Else
-        WScript.Echo "Created: " & pdfName
+        ' WScript.Echo "Created: " & pdfName
     End If
     
     doc.Close 0 ' wdDoNotSaveChanges
@@ -136,14 +136,55 @@ ConvertToPdf 3, 56, "Politica comercial de la UE (III). Euromediterraneo, Africa
 ConvertToPdf 3, 57, "Politica comercial de la UE (IV). Estados Unidos, Canada, Latinoamerica"
 ConvertToPdf 3, 58, "Politica comercial de la UE (V). Asia, Oceania, Golfo"
 
-' Exercise 5 Titles - Truncated for brevity since pattern is established and file size limits apply to tools.
-' User only specified they wanted a script. I'll include first few Ex 5 to prove concept.
+' Exercise 5 Titles
 ConvertToPdf 5, 1, "Objeto y metodo de la ciencia economica. Economistas clasicos y Marx"
 ConvertToPdf 5, 2, "Evolucion del pensamiento economico. Neoclasicos, Keynes"
 ConvertToPdf 5, 3, "Teoria de la Demanda. Teoria de la produccion. Teoria de los Costes"
-' ... (simulated continuation)
+ConvertToPdf 5, 4, "El funcionamiento del mercado. Competencia perfecta, monopolio, oligopolio"
+ConvertToPdf 5, 5, "La politica monetaria. Estrategias y efectos"
+ConvertToPdf 5, 6, "La politica fiscal. Disciplina fiscal y sostenibilidad"
+ConvertToPdf 5, 7, "Crecimiento economico y desarrollo. Modelos de crecimiento"
+ConvertToPdf 5, 8, "La globalizacion de la economia. Decisiones de inversion"
+ConvertToPdf 5, 9, "La integracion economica regional"
+ConvertToPdf 5, 10, "La politica agraria espanola en el marco de la PAC"
+ConvertToPdf 5, 11, "Sector pesquero espanol. Evolucion y situacion actual en la UE"
+ConvertToPdf 5, 12, "La politica industrial en Espana. Medio Ambiente e I+D"
+ConvertToPdf 5, 13, "La politica energetica espanola"
+ConvertToPdf 5, 14, "El sector servicios en Espana. Construccion y vivienda"
+ConvertToPdf 5, 15, "La politica de desarrollo regional en Espana"
+ConvertToPdf 5, 16, "El marco economico de la distribucion comercial"
+ConvertToPdf 5, 17, "Evolucion de la actividad comercial. Ratios y formatos"
+ConvertToPdf 5, 18, "Precios y margenes en el canal de distribucion. IPC"
+ConvertToPdf 5, 19, "La Ordenacion del Comercio Minorista"
+ConvertToPdf 5, 20, "Instrumentos de apoyo al comercio minorista"
+ConvertToPdf 5, 21, "El comercio mayorista en Espana. MERCASA"
+ConvertToPdf 5, 22, "Servicios de la Sociedad de la Informacion y Comercio Electronico"
+ConvertToPdf 5, 23, "Otras formas comerciales. Franquicias, venta a distancia, venta automatica"
+ConvertToPdf 5, 24, "La proteccion al consumidor"
+ConvertToPdf 5, 25, "La defensa de la libre competencia en Espana"
+ConvertToPdf 5, 26, "Practicas restrictivas de la competencia"
+ConvertToPdf 5, 27, "Concentraciones economicas"
+ConvertToPdf 5, 28, "Ayudas publicas. Regulacion y control"
+ConvertToPdf 5, 29, "Las fuentes del Derecho Administrativo"
+ConvertToPdf 5, 30, "El reglamento. La potestad reglamentaria"
+ConvertToPdf 5, 31, "El acto administrativo. concepto, clases y elementos"
+ConvertToPdf 5, 32, "Los recursos administrativos"
+ConvertToPdf 5, 33, "La jurisdiccion contencioso-administrativa"
+ConvertToPdf 5, 34, "Los contratos administrativos"
+ConvertToPdf 5, 35, "El servicio publico. concepto y gestion"
+ConvertToPdf 5, 36, "El Procedimiento Administrativo Comun"
+ConvertToPdf 5, 37, "El Estatuto Basico del Empleado Publico"
+ConvertToPdf 5, 38, "El ciudadano y la Administracion publica"
+ConvertToPdf 5, 39, "La Constitucion Espanola de 1978"
+ConvertToPdf 5, 40, "El Gobierno y su presidente. Administracion Central del Estado"
+ConvertToPdf 5, 41, "Organizacion y competencias del Ministerio de Economia, Comercio y Empresa"
+ConvertToPdf 5, 42, "Organizacion territorial del Estado. Comunidades Autonomas"
+ConvertToPdf 5, 43, "El sistema tributario espanol"
+ConvertToPdf 5, 44, "La Ley General Presupuestaria y las leyes anuales de presupuestos"
+ConvertToPdf 5, 45, "Politicas Publicas. Igualdad, Violencia de Genero, Discapacidad, LGTBI, Transparencia"
+ConvertToPdf 5, 46, "Gobernanza Publica y Gobierno Abierto"
 
 word.Quit
 Set word = Nothing
 Set fso = Nothing
-WScript.Echo "Done!"
+WScript.Echo "All Done!"

@@ -1,49 +1,50 @@
 
 import os
+import sys
 
-# Titles mappings
+# Titles mappings (Hardcoded to be standalone)
 EXERCISE_3_TITLES = {
     1: "El comercio internacional. Marco general y principales magnitudes",
     2: "Balanza de Pagos. Concepto. Presentaciones, metodología y estructura",
-    3: "El comercio exterior español. Principales rasgos",
+    3: "El comercio exterior español: Principales rasgos",
     4: "La empresa ante el comercio internacional",
     5: "El marketing internacional. Concepto y funciones",
     6: "Las formas de acceso a los mercados",
     7: "Instrumentos financieros de apoyo a la internacionalización (I). El Crédito Oficial",
     8: "Instrumentos financieros de apoyo a la internacionalización (II). El Seguro de Crédito",
     9: "Instrumentos financieros de apoyo a la internacionalización (III). El FIEM",
-    10: "Instrumentos comerciales de apoyo a la internacionalización (I). ICEX",
-    11: "Instrumentos comerciales de apoyo a la internacionalización (II). Las Cámaras de Comercio",
+    10: "Instrumentos comerciales de apoyo a la internacionalización (I): ICEX",
+    11: "Instrumentos comerciales de apoyo a la internacionalización (II): Las Cámaras de Comercio",
     12: "Instrumentos fiscales no aduaneros. IVA en comercio exterior. INTRASTAT",
     13: "El factoring, el leasing y el forfaiting",
-    14: "Financiación de operaciones de comercio exterior. Mercado de divisas",
+    14: "Financiación de operaciones de comercio exterior: Mercado de divisas",
     15: "Medios de pago y cobro internacionales",
-    16: "Contratación internacional (I). Generalidades. INCOTERMS",
-    17: "Contratación internacional (II). Incumplimiento y resolución de conflictos",
+    16: "Contratación internacional (I): Generalidades. INCOTERMS",
+    17: "Contratación internacional (II): Incumplimiento y resolución de conflictos",
     18: "Inversiones extranjeras. Inversión directa y en valores negociables",
     19: "Inversión española en el exterior",
     20: "Inversión extranjera en España",
-    21: "El régimen aduanero del comercio exterior. política aduanera comunitaria",
+    21: "El régimen aduanero del comercio exterior: política aduanera comunitaria",
     22: "Sistema de Preferencias Generalizadas",
-    23: "Regímenes aduaneros. Generalidades y tipos",
+    23: "Regímenes aduaneros: Generalidades y tipos",
     24: "Los regímenes especiales. Tránsito, depósito, perfeccionamiento",
-    25: "Instrumentos de defensa comercial. salvaguardia, antidumping, antisubvención",
+    25: "Instrumentos de defensa comercial: salvaguardia, antidumping, antisubvención",
     26: "Comercio exterior de material de defensa y de doble uso",
-    27: "Obstáculos comerciales. Identificación y caracterización",
+    27: "Obstáculos comerciales: Identificación y caracterización",
     28: "Medidas sanitarias y fitosanitarias. Acuerdo MSF de la OMC",
     29: "Medidas de armonización y transparencia en la UE",
     30: "Política comunitaria en materia de normas y evaluación de la conformidad",
     31: "Acuerdos de reconocimiento mutuo sobre evaluación de la conformidad",
     32: "El transporte internacional marítimo y aéreo",
     33: "El transporte internacional por carretera y ferrocarril",
-    34: "Naciones Unidas. Objetivos y Órganos principales",
-    35: "La cooperación económica internacional. el FMI",
+    34: "Naciones Unidas: Objetivos y Órganos principales",
+    35: "La cooperación económica internacional: el FMI",
     36: "Instituciones multilaterales de financiación y ayuda al desarrollo",
-    37: "La OCDE. Objetivo, estructura y funciones",
-    38: "Las negociaciones comerciales multilaterales. evolución del GATT",
+    37: "La OCDE: Objetivo, estructura y funciones",
+    38: "Las negociaciones comerciales multilaterales: evolución del GATT",
     39: "La OMC y la economía mundial. Sistema, objetivo, funciones",
     40: "La OMC y los Acuerdos multilaterales y plurilaterales",
-    41: "La Unión Europea. Antecedentes y evolución. Tratados",
+    41: "La Unión Europea: Antecedentes y evolución. Tratados",
     42: "Las Instituciones de la Unión Europea",
     43: "Toma de decisiones en la UE. Proceso legislativo, comitología",
     44: "El Mercado Único Europeo. Libre circulación",
@@ -56,11 +57,11 @@ EXERCISE_3_TITLES = {
     51: "Política de medio ambiente de la UE y compromisos internacionales",
     52: "Política de Competencia de la UE",
     53: "Política regional y de cohesión de la UE. Fondos europeos",
-    54: "Política comercial de la UE (I). Política comercial común",
-    55: "Política comercial de la UE (II). EEE, Reino Unido, Suiza, Turquía, Rusia, Balcanes",
-    56: "Política comercial de la UE (III). Euromediterráneo, África, Caribe, Pacífico",
-    57: "Política comercial de la UE (IV). Estados Unidos, Canadá, Latinoamérica",
-    58: "Política comercial de la UE (V). Asia, Oceanía, Golfo"
+    54: "Política comercial de la UE (I): Política comercial común",
+    55: "Política comercial de la UE (II): EEE, Reino Unido, Suiza, Turquía, Rusia, Balcanes",
+    56: "Política comercial de la UE (III): Euromediterráneo, África, Caribe, Pacífico",
+    57: "Política comercial de la UE (IV): Estados Unidos, Canadá, Latinoamérica",
+    58: "Política comercial de la UE (V): Asia, Oceanía, Golfo"
 }
 
 EXERCISE_5_TITLES = {
@@ -86,7 +87,7 @@ EXERCISE_5_TITLES = {
     20: "Instrumentos de apoyo al comercio minorista",
     21: "El comercio mayorista en España. MERCASA",
     22: "Servicios de la Sociedad de la Información y Comercio Electrónico",
-    23: "Otras formas comerciales. Franquicias, venta a distancia, venta automática",
+    23: "Otras formas comerciales: Franquicias, venta a distancia, venta automática",
     24: "La protección al consumidor",
     25: "La defensa de la libre competencia en España",
     26: "Prácticas restrictivas de la competencia",
@@ -94,11 +95,11 @@ EXERCISE_5_TITLES = {
     28: "Ayudas públicas. Regulación y control",
     29: "Las fuentes del Derecho Administrativo",
     30: "El reglamento. La potestad reglamentaria",
-    31: "El acto administrativo. concepto, clases y elementos",
+    31: "El acto administrativo: concepto, clases y elementos",
     32: "Los recursos administrativos",
     33: "La jurisdicción contencioso-administrativa",
     34: "Los contratos administrativos",
-    35: "El servicio público. concepto y gestión",
+    35: "El servicio público: concepto y gestión",
     36: "El Procedimiento Administrativo Común",
     37: "El Estatuto Básico del Empleado Público",
     38: "El ciudadano y la Administración pública",
@@ -108,13 +109,29 @@ EXERCISE_5_TITLES = {
     42: "Organización territorial del Estado. Comunidades Autónomas",
     43: "El sistema tributario español",
     44: "La Ley General Presupuestaria y las leyes anuales de presupuestos",
-    45: "Políticas Públicas. Igualdad, Violencia de Género, Discapacidad, LGTBI, Transparencia",
+    45: "Políticas Públicas: Igualdad, Violencia de Género, Discapacidad, LGTBI, Transparencia",
     46: "Gobernanza Pública y Gobierno Abierto"
 }
 
 def sanitize_filename(filename):
-    return filename.replace(":", ".").replace("/", "").replace("\\", "").replace("?", "").replace("*", "").rstrip('.')
+    # Use ASCII mapping manually if needed or standard string replacements
+    # VBScript/CMD prefers simple ASCII in some locales
+    
+    # Replace non-ascii chars with simple equivalents for filename safety
+    replacements = {
+        'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u',
+        'Á': 'A', 'É': 'E', 'Í': 'I', 'Ó': 'O', 'Ú': 'U',
+        'ñ': 'n', 'Ñ': 'N',
+        ':': '.', '/': '', '\\': '', '?': '', '*': '', '"': '', '<': '', '>': '', '|': ''
+    }
+    
+    clean_name = filename
+    for old, new in replacements.items():
+        clean_name = clean_name.replace(old, new)
+        
+    return clean_name.rstrip('.')
 
+# VBScript header
 vbs_content = """Option Explicit
 
 Dim word, doc, fso
@@ -132,7 +149,7 @@ word.Visible = False
 word.DisplayAlerts = 0 ' wdAlertsNone
 
 Sub ConvertToPdf(exerciseNum, topicNum, title)
-    Dim basePath, originalName, sanitizedName, sourcePath, pdfPath, folderPath
+    Dim originalName, sanitizedName, sourcePath, pdfPath, folderPath
     
     ' Construct base path relative to script location
     folderPath = fso.GetParentFolderName(WScript.ScriptFullName) & "\\public\\temas\\ejercicio-" & exerciseNum
@@ -210,7 +227,11 @@ Set fso = Nothing
 WScript.Echo "All Done!"
 """
 
-with open("convert_to_pdf.vbs", "w", encoding="latin-1") as f:
-    f.write(vbs_content)
-
-print("VBScript created: convert_to_pdf.vbs")
+# Write with 'latin-1' encoding to handle Spanish characters if possible,
+# or better yet 'utf-8' and hope cscript respects it, but 'latin-1' is safer for legacy VBS on Windows
+try:
+    with open("convert_to_pdf.vbs", "w", encoding="latin-1", errors="replace") as f:
+        f.write(vbs_content)
+    print("VBScript created successfully: convert_to_pdf.vbs")
+except Exception as e:
+    print(f"Failed to write file: {e}")
