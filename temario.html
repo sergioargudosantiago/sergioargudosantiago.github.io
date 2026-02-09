@@ -153,6 +153,14 @@
             animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 95%;
+                max-height: 95vh;
+                border-radius: 1.5rem;
+            }
+        }
+
         .modal-content.coming-soon {
             max-height: auto;
         }
@@ -673,9 +681,10 @@
     <!-- Modal for Topic List -->
     <div id="topicModal" class="modal">
         <div class="modal-content">
-            <div class="p-6 border-b flex justify-between items-start">
-                <h2 id="modalTitle" class="text-2xl font-bold text-primary"></h2>
-                <button onclick="closeModal()" class="text-muted-foreground hover:text-foreground transition-colors">
+            <div class="p-4 md:p-6 border-b flex justify-between items-start">
+                <h2 id="modalTitle" class="text-xl md:text-2xl font-bold text-primary pr-4"></h2>
+                <button onclick="closeModal()"
+                    class="text-muted-foreground hover:text-foreground transition-colors p-1">
                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -684,7 +693,7 @@
                 </button>
             </div>
 
-            <div class="p-6">
+            <div class="p-4 md:p-6 pb-2 md:pb-4">
                 <div class=" relative">
                     <svg class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -692,15 +701,16 @@
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                     <input type="search" placeholder="Buscar por 'Tema X' o palabra clave..."
-                        class="h-10 w-full rounded-md bg-secondary pl-9 pr-3 text-sm outline-none ring-ring focus:ring-2"
+                        class="h-10 w-full rounded-md bg-secondary pl-9 pr-3 text-sm outline-none ring-ring focus:ring-2 appearance-none"
                         id="modalSearch" oninput="filterTopics()">
                 </div>
             </div>
 
-            <div class="flex-1 overflow-y-auto modal-scroll px-6 pb-6" id="topicList">
+            <div class="flex-1 overflow-y-auto modal-scroll px-4 md:px-6 pb-4 md:pb-6" id="topicList">
                 <!-- Topics will be populated here -->
             </div>
         </div>
+
     </div>
 
     <!-- Modal for Coming Soon -->

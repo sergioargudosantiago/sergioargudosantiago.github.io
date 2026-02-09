@@ -1,11 +1,25 @@
 import re
 
-# Read the CSV file
-with open('full_embed_data.csv', 'r', encoding='utf-8') as f:
+# File path
+file_path = 'comercio-exterior.html'
+
+# Read file
+with open(file_path, 'r', encoding='utf-8') as f:
     content = f.read()
 
-# Define replacements: (pattern, replacement)
-# Order matters! Specific replacements should come before general ones if they overlap.
+# Extract CSV part
+# Regex to capture the content inside `...`
+# We use non-greedy .*? and DOTALL (s)
+csv_match = re.search(r'const EMBEDDED_CSV_DATA = `(.*?)`;', content, re.DOTALL)
+
+if not csv_match:
+    print("❌ Could not find EMBEDDED_CSV_DATA in " + file_path)
+    exit(1)
+
+csv_data = csv_match.group(1)
+original_csv_data = csv_data
+
+# Define replacements (from fix_names.py + new ones)
 replacements = [
     # Truncated names (Agroalimentario)
     ('invertebrados acuá', 'invertebrados acuáticos'),
@@ -74,16 +88,30 @@ replacements = [
     ('MARITIMO', 'MARÍTIMO'),
     ('AEREA', 'AÉREA'),
     ('ELECTRODOMESTICOS', 'ELECTRODOMÉSTICOS'),
-    # Add Space checks to avoid replacing inside words incorrectly if not distinct enough, 
-    # but most of these are distinct enough in uppercase.
+    
+    # NEW Additions for Industrial
+    ('ENERGETICOS', 'ENERGÉTICOS'),
+    ('CARBON', 'CARBÓN'),
+    ('PETROLEO', 'PETRÓLEO'),
+    ('ELECTRICA', 'ELÉCTRICA'),
+    ('CONSTRUCCION', 'CONSTRUCCIÓN'),
+    ('PRECISION', 'PRECISIÓN')
 ]
 
-# Apply all replacements
+# Apply replacements
+count = 0
 for pattern, replacement in replacements:
-    content = content.replace(pattern, replacement)
+    if pattern in csv_data:
+        csv_data = csv_data.replace(pattern, replacement)
+        count += 1
 
-# Write the corrected CSV
-with open('full_embed_data.csv', 'w', encoding='utf-8') as f:
-    f.write(content)
-
-print(f"CSV file corrected successfully! Applied check for {len(replacements)} patterns.")
+if original_csv_data == csv_data:
+    print("⚠️ No changes made to CSV data.")
+else:
+    # Replace in full content
+    new_content = content.replace(original_csv_data, csv_data)
+    
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(new_content)
+    
+    print(f"✅ Updated {file_path} with corrected names (Replaced {count} patterns).")
