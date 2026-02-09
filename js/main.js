@@ -3,6 +3,65 @@ let currentExercise = null;
 let currentTopics = [];
 let filteredTopics = [];
 
+// Topic Titles for Exercise 1 (Primer ejercicio)
+const EXERCISE_1_TITLES = {
+    1: "Sector de frutos frescos, excepto cítricos.",
+    2: "Sector de cítricos.",
+    3: "Sector de hortalizas frescas.",
+    4: "Sector de frutos secos.",
+    5: "Sector de granos y semillas de consumo humano.",
+    6: "Sector cárnico.",
+    7: "Sector de productos de la pesca.",
+    8: "Sector lácteo.",
+    9: "Sectores de miel, azúcar y huevos.",
+    10: "Sector de conservas y semiconservas vegetales.",
+    11: "Sector vinos y demás bebidas alcohólicas.",
+    12: "Sector de aceites y grasas comestibles.",
+    13: "Otros sectores agroalimentarios no incluidos en temas anteriores.",
+    14: "Sector de productos energéticos y materias primas.",
+    15: "Sector de semi-manufacturas: Metales, químicos, etc.",
+    16: "Sector de bienes de equipo (I): Maquinaria indistria, motores, etc.",
+    17: "Sector de bienes de equipo (II): Material de transporte, automoción.",
+    18: "Sector de bienes de consumo duradero: Muebles, electrodomésticos.",
+    19: "Sector de manufacturas de consumo (I): Textil, calzado.",
+    20: "Sector de manufacturas de consumo (II): Juguetes, material eléctrico.",
+    21: "Definición de servicio y regulación internacional (GATS).",
+    22: "Las estadísticas de comercio internacional de servicios.",
+    23: "Evolución del comercio de servicios en España (I). Turismo.",
+    24: "Evolución del comercio de servicios en España (II). No turísticos.",
+    25: "El Convenio CITES: Objetivos y estructura.",
+    26: "El Convenio CITES como instrumento de política comercial.",
+    27: "Aplicación del Convenio CITES en la Unión Europea.",
+    28: "Autoridades de Aplicación y Observancia CITES en España.",
+    29: "Especímenes de origen vegetal sujetos al CITES.",
+    30: "Especímenes de origen animal sujetos al CITES.",
+    31: "Muestreo: físico y estadístico.",
+    32: "Errores en análisis instrumental: regresión y correlación.",
+    33: "Control de calidad en laboratorios: Gráficos de control.",
+    34: "Validación de métodos analíticos.",
+    35: "Técnicas de preparación de muestras.",
+    36: "Ensayos fisicoquímicos. Gravimetría, volumetría, etc.",
+    37: "Técnicas ópticas. Microscopía y refractometría.",
+    38: "Técnicas de análisis cromatográfico.",
+    39: "Técnicas espectrométricas.",
+    40: "Técnicas de identificación de especies. Moleculares.",
+    41: "Normalización internacional (I): CODEX Alimentarius.",
+    42: "Normalización internacional (II): CEPE/NU y OCDE.",
+    43: "Normalización en el seno de la Unión Europea.",
+    44: "Otros organismos de normalización: ISO, CEN, AENOR.",
+    45: "Control oficial de productos alimenticios.",
+    46: "Control oficial de productos industriales de terceros países.",
+    47: "Calidad comercial. Evaluación y certificación.",
+    48: "Criterios de calidad comercial: Factores y parámetros.",
+    49: "Etiquetado de productos alimenticios e industriales.",
+    50: "Aditivos y contaminantes en alimentos y productos.",
+    51: "Microbiología de los alimentos.",
+    52: "Envases y embalajes. Legislación y materiales.",
+    53: "Certificación y Acreditación (ENAC).",
+    54: "Aseguramiento de la calidad en la industria alimentaria (ISO 9000).",
+    55: "Control higiénico-sanitario basado en el sistema APPCC."
+};
+
 // Topic Titles for Exercise 3 (Tercer ejercicio)
 const EXERCISE_3_TITLES = {
     1: "El comercio internacional. Marco general y principales magnitudes.",
@@ -190,7 +249,9 @@ function generateTopics(exerciseNumber, topicCount) {
 
         // Determine the display name (full title)
         let displayName = fileName;
-        if (exerciseNumber === 3 && EXERCISE_3_TITLES[i]) {
+        if (exerciseNumber === 1 && EXERCISE_1_TITLES[i]) {
+            displayName = `TEMA ${i}. ${EXERCISE_1_TITLES[i]}`;
+        } else if (exerciseNumber === 3 && EXERCISE_3_TITLES[i]) {
             displayName = `TEMA ${i}. ${EXERCISE_3_TITLES[i]}`;
         } else if (exerciseNumber === 5 && EXERCISE_5_TITLES[i]) {
             displayName = `TEMA ${i}. ${EXERCISE_5_TITLES[i]}`;
@@ -204,8 +265,12 @@ function generateTopics(exerciseNumber, topicCount) {
             message: null
         };
 
+        // Exercise 1: All topics 1-55 visible but coming-soon
+        if (exerciseNumber === 1) {
+            // Keep status as 'coming-soon' by default
+        }
         // Exercise 3: Topics 1-58 available (except 12, 33, 43)
-        if (exerciseNumber === 3) {
+        else if (exerciseNumber === 3) {
             if ([12, 33, 43].includes(i)) {
                 topic.status = 'discarded';
                 topic.message = 'No disponible, era mi tema de descarte';
@@ -254,11 +319,12 @@ function renderTopicItem(topic) {
                    download
                    onclick="console.log('Attempting to download:', '${topic.path}');"
                    class="flex cursor-pointer items-center justify-between bg-white/60 backdrop-blur-sm border border-white/40 rounded-2xl p-4 transition-all duration-300 hover:bg-white/80 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] hover:border-accent/50 group">
-                    <span class="font-serif font-semibold text-foreground/90 group-hover:text-primary transition-colors">${topic.name}</span>
-                    <svg class="h-5 w-5 text-muted-foreground transition-all group-hover:text-accent group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <span class="font-serif font-semibold text-foreground/90 group-hover:text-primary transition-colors flex-1 pr-4">${topic.name}</span>
+                    <svg class="h-5 w-5 text-muted-foreground transition-all group-hover:text-accent group-hover:scale-110 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                     </svg>
                 </a>
+
             `;
         case 'discarded':
             return `

@@ -285,7 +285,24 @@
             font-weight: 800;
             color: hsl(var(--primary));
             letter-spacing: 0.05em;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
         }
+
+        @media (max-width: 640px) {
+            .sector-card h3 {
+                font-size: 1.1rem;
+                /* Smaller font on mobile */
+                letter-spacing: 0.02em;
+            }
+
+            .sector-card {
+                padding: 1.5rem;
+                /* Less padding on mobile */
+            }
+        }
+
 
         .sector-card:hover h3 {
             transform: scale(1.05);
