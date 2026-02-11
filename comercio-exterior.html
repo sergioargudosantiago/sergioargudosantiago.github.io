@@ -525,39 +525,69 @@
                             </div>
 
                             <!-- Bottom Grid (Stats + Countries) -->
-                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                                <!-- LEFT: TVA + 2025 Total -->
-                                <div class="glass-card p-10 flex flex-col items-center justify-center text-center">
+                            <!-- BENTO GRID LAYOUT: 12 Cols for maximum flexibility -->
+                            <div id="analyticsGrid"
+                                class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 auto-rows-min">
+                                <!-- LEFT: TVA + Latest Total (ID: card-tva) -->
+                                <div id="card-tva"
+                                    class="glass-card p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
                                     <h4
-                                        class="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-6">
+                                        class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6">
                                         Tasa Var. Anual (TVA)</h4>
-                                    <div id="tvaContainer" class="flex flex-col items-center scale-150 py-4">
+                                    <div id="tvaContainer"
+                                        class="flex flex-col items-center scale-125 md:scale-150 py-2 md:py-4">
                                         <!-- Dynamic TVA badge -->
                                     </div>
-                                    <p class="text-[10px] text-muted-foreground mt-8 italic uppercase tracking-wider">
-                                        Comparativa 2024-2025</p>
+                                    <p
+                                        class="text-[10px] text-muted-foreground mt-6 md:mt-8 italic uppercase tracking-wider">
+                                        Comparativa <span id="tvaYearLabel">2024-2025</span></p>
                                 </div>
 
-                                <!-- CENTER: 2025 Metric -->
-                                <div
-                                    class="glass-card p-10 flex flex-col items-center justify-center text-center border-2 border-primary/10">
+                                <!-- CENTER 1: Metric (ID: card-volume) -->
+                                <div id="card-volume"
+                                    class="glass-card p-6 md:p-10 flex flex-col items-center justify-center text-center border-2 border-primary/10 transition-all duration-300">
                                     <h4 id="metricLabel"
-                                        class="text-sm font-semibold uppercase tracking-wider text-primary mb-6">
+                                        class="text-xs md:text-sm font-semibold uppercase tracking-wider text-primary mb-4 md:mb-6">
                                         VALOR 2025 (M€)
                                     </h4>
-                                    <div id="metricValue" class="text-5xl font-black text-primary tracking-tighter">
+                                    <div id="metricValue"
+                                        class="text-3xl md:text-5xl font-black text-primary tracking-tighter">
                                         0,00
                                     </div>
-                                    <p class="text-[10px] text-muted-foreground mt-8 italic uppercase tracking-wider">
+                                    <p
+                                        class="text-[10px] text-muted-foreground mt-6 md:mt-8 italic uppercase tracking-wider">
                                         Millones de Euros</p>
                                 </div>
 
-                                <!-- RIGHT: Top Countries -->
-                                <div class="glass-card p-8">
+                                <!-- CENTER 2: Balance (New) (ID: card-balance) -->
+                                <div id="card-balance"
+                                    class="glass-card p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
+                                    <h4
+                                        class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6">
+                                        SALDO COMERCIAL
+                                    </h4>
+                                    <div id="balanceContainer" class="flex flex-col items-center justify-center">
+                                        <div id="balanceValue"
+                                            class="text-2xl md:text-4xl font-black tracking-tighter mb-2">0,00
+                                        </div>
+                                        <div id="balanceLabel"
+                                            class="text-[10px] md:text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-gray-100 text-gray-500">
+                                            NEUTRO</div>
+                                    </div>
+                                    <p
+                                        class="text-[10px] text-muted-foreground mt-6 md:mt-8 italic uppercase tracking-wider">
+                                        <span id="balanceYearLabel">2025</span> (EXP - IMP)
+                                    </p>
+                                </div>
+
+                                <!-- RIGHT: Top Countries (ID: card-countries) -->
+                                <div id="card-countries"
+                                    class="glass-card p-6 md:p-8 transition-all duration-300 flex flex-col items-center justify-center">
                                     <h4 id="countriesTitle"
-                                        class="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-6 text-center">
+                                        class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6 text-center w-full">
                                         Principales Destinos</h4>
-                                    <div id="countriesContainer" class="space-y-4">
+                                    <div id="countriesContainer"
+                                        class="space-y-3 md:space-y-4 w-full flex flex-col px-4 md:px-6">
                                         <!-- Dynamic ranking items -->
                                     </div>
                                 </div>
@@ -3105,50 +3135,108 @@
         function updateDashboardMetrics(dataRows, title, level) {
             if (!dataRows || dataRows.length === 0) return;
 
-            // Aggregation by year
+            // 1. Identify Latest Year & Aggregation
+            // Get all unique years from current dataset
+            const yearsSet = new Set();
+            dataRows.forEach(r => yearsSet.add(r.year));
+            const availableYears = Array.from(yearsSet).sort();
+            const latestYear = availableYears[availableYears.length - 1]; // e.g., "2025" or "2022"
+
+            // Build yearly data for Chart
             const yearlyData = {};
-            ['2021', '2022', '2023', '2024', '2025'].forEach(y => yearlyData[y] = 0);
+            availableYears.forEach(y => yearlyData[y] = 0);
 
             dataRows.forEach(row => {
                 const val = parseNumericValue(row.total_millones);
                 yearlyData[row.year] += val;
             });
 
-            const latestRecord = dataRows[dataRows.length - 1];
-            const val2025 = yearlyData['2025'] || 0;
+            // Get Value for Latest Year (for "VALOR 20XX")
+            const valLatest = yearlyData[latestYear] || 0;
+            const previousYear = availableYears[availableYears.length - 2];
 
-            // PERSISTENCE: Update chart title with current level name
+            // 2. Calculate Trade Balance (Deficit/Superavit) for Latest Year
+            // We need to query 'allData' to get both Flows (E and I) for the current sector context
+            let exportVal = 0;
+            let importVal = 0;
+
+            const contextRows = allData.filter(row =>
+                row.year === latestYear &&
+                row.macro_sector === navigationState.macroSector &&
+                (!navigationState.lv1 || row.lv1 === navigationState.lv1.code) &&
+                (!navigationState.lv2 || row.lv2 === navigationState.lv2.code) &&
+                (!navigationState.lv3 || row.lv3 === navigationState.lv3.code) &&
+                (!navigationState.lv4 || row.lv4 === navigationState.lv4.code)
+            );
+
+            contextRows.forEach(r => {
+                const v = parseNumericValue(r.total_millones);
+                if (r.flujo === 'E') exportVal += v;
+                if (r.flujo === 'I') importVal += v;
+            });
+
+            const balance = exportVal - importVal;
+
+            // 3. UI Updates
+
+            // Chart Title
             const chartTitleParams = document.getElementById('chartTitle');
-
-            // STRICT TITLE: If it's the root macro sector view, force "SECTOR AGROALIMENTARIO"
             let strictTitle = title;
             // FIXED: Check specifically for Agroalimentario root level to force styling
             if (navigationState.macroSector === 'Agroalimentario' && level === 'lv1' && (!navigationState.lv2)) {
                 strictTitle = 'Agroalimentario';
                 if (chartTitleParams) {
-                    // FIXED: Bold styling request
                     chartTitleParams.innerHTML = `<span class="text-primary">EVOLUCIÓN:</span> <span class="font-bold text-black uppercase">${strictTitle.toUpperCase()}</span>`;
                 }
             } else {
                 // RESET LOGIC: If navigating back or invalid title, fallback safely
                 if (!strictTitle || strictTitle === 'undefined') {
-                    // Try to recover from navigation state
                     strictTitle = navigationState.lv3?.name || navigationState.lv2?.name || navigationState.lv1?.name || navigationState.macroSector || 'Sector';
                 }
                 if (chartTitleParams) chartTitleParams.innerHTML = `<span class="text-primary">EVOLUCIÓN:</span> ${strictTitle.toUpperCase()}`;
             }
 
-            // Display 2025 value formatted
-            const metricValueElement = document.getElementById('metricValue');
-            if (metricValueElement) metricValueElement.textContent = formatNumber(val2025);
-
-            // Labels based on flow
+            // Main Metric Label & Value
             const flowLabel = currentFlow === 'E' ? 'Exportaciones' : 'Importaciones';
             const rankingLabel = currentFlow === 'E' ? 'Principales Destinos' : 'Principales Orígenes';
-            document.getElementById('metricLabel').textContent = `${flowLabel.toUpperCase()} 2025 (M€)`;
+
+            document.getElementById('metricLabel').textContent = `${flowLabel.toUpperCase()} ${latestYear} (M€)`;
+            document.getElementById('metricValue').textContent = formatNumber(valLatest);
             document.getElementById('countriesTitle').textContent = rankingLabel;
 
-            // Stats from columnar mapping
+            // Balance Metric UI
+            const balanceContainer = document.getElementById('balanceValue');
+            const balanceLabel = document.getElementById('balanceLabel');
+            const balanceYearLabel = document.getElementById('balanceYearLabel');
+
+            if (balanceYearLabel) balanceYearLabel.textContent = latestYear;
+            if (balanceContainer) balanceContainer.textContent = formatNumber(Math.abs(balance)) + ' M€';
+
+            if (balanceLabel) {
+                if (balance > 0) {
+                    balanceLabel.textContent = 'SUPERÁVIT ↑';
+                    balanceLabel.className = 'text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-green-100 text-green-700';
+                    balanceContainer.className = 'text-4xl font-black tracking-tighter mb-2 text-green-600';
+                } else if (balance < 0) {
+                    balanceLabel.textContent = 'DÉFICIT ↓';
+                    balanceLabel.className = 'text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-red-100 text-red-700';
+                    balanceContainer.className = 'text-4xl font-black tracking-tighter mb-2 text-red-600';
+                } else {
+                    balanceLabel.textContent = 'NEUTRO';
+                    balanceLabel.className = 'text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-gray-100 text-gray-500';
+                    balanceContainer.className = 'text-4xl font-black tracking-tighter mb-2 text-gray-600';
+                }
+            }
+
+            // TVA Label
+            const tvaYearLabel = document.getElementById('tvaYearLabel');
+            if (tvaYearLabel && previousYear) {
+                tvaYearLabel.textContent = `${previousYear}-${latestYear}`;
+            }
+
+            // Stats from latest record
+            const latestRecord = dataRows.find(r => r.year === latestYear) || dataRows[dataRows.length - 1];
+
             let tvaValue = 'NA';
             let countriesString = 'NA';
 
@@ -3167,33 +3255,70 @@
                 countriesString = latestRecord.top_paises_lv4 || latestRecord.top_paises_lv3;
             }
 
-
-            renderChart(yearlyData);
+            renderChart(yearlyData, availableYears);
             renderTVA(tvaValue);
 
-            // CONDITIONAL: Hide country ranking for Total Agroalimentario root
+            // GRID LAYOUT LOGIC (BENTO 12-COL SYSTEM)
             const rankingCard = document.getElementById('countriesContainer').parentElement;
-            // Assuming the architecture: div.grid > div.card > div#countriesContainer
-            // Parent of rankingCard is the Grid
-            const statsGrid = rankingCard.parentElement;
+            const statsGrid = document.getElementById('analyticsGrid');
+
+            const cardTVA = document.getElementById('card-tva');
+            const cardVolume = document.getElementById('card-volume');
+            const cardBalance = document.getElementById('card-balance');
+            const cardCountries = document.getElementById('card-countries');
+
+            // Reset base classes for ALL cards
+            [cardTVA, cardVolume, cardBalance, cardCountries].forEach(card => {
+                if (card) {
+                    // Remove old explicit spans/orders
+                    card.classList.remove('col-span-12', 'md:col-span-6', 'xl:col-span-3', 'xl:col-span-4', 'xl:col-span-6', 'xl:col-span-12', 'order-1', 'order-2', 'order-3', 'order-4');
+                    // Default: full width on mobile
+                    card.classList.add('col-span-12');
+                }
+            });
+
+            // Ensure Container is clean 12-col (reset dynamic overrides if any, keep base)
+            statsGrid.className = 'grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 auto-rows-min';
 
             if (navigationState.macroSector === title && level === 'lv1') {
+                // AGRO ROOT (3 Items): Pyramid Layout
                 rankingCard.classList.add('hidden');
-                statsGrid.classList.remove('lg:grid-cols-3');
-                statsGrid.classList.add('lg:grid-cols-2');
+
+                // Hero Volume (Full width top)
+                cardVolume.classList.add('xl:col-span-12', 'order-1');
+
+                // Balance (Left Bottom)
+                cardBalance.classList.add('md:col-span-6', 'xl:col-span-6', 'order-2');
+
+                // TVA (Right Bottom)
+                cardTVA.classList.add('md:col-span-6', 'xl:col-span-6', 'order-3');
+
             } else {
+                // STANDARD (4 Items): 2x2 Grid (2 Top, 2 Bottom)
                 rankingCard.classList.remove('hidden');
-                statsGrid.classList.remove('lg:grid-cols-2');
-                statsGrid.classList.add('lg:grid-cols-3');
+
+                // Volume (Top Left)
+                cardVolume.classList.add('md:col-span-6', 'xl:col-span-6', 'order-1');
+
+                // Balance (Top Right)
+                cardBalance.classList.add('md:col-span-6', 'xl:col-span-6', 'order-2');
+
+                // TVA (Bottom Left)
+                cardTVA.classList.add('md:col-span-6', 'xl:col-span-6', 'order-3');
+
+                // Countries (Bottom Right)
+                cardCountries.classList.add('md:col-span-6', 'xl:col-span-6', 'order-4');
+
                 renderCountries(countriesString);
             }
 
             document.getElementById('analyticsSection').classList.remove('hidden');
         }
 
-        function renderChart(yearlyData) {
-            const years = ['2021', '2022', '2023', '2024', '2025'];
+        function renderChart(yearlyData, years) {
+            if (!years) years = ['2021', '2022', '2023', '2024', '2025'];
             const values = years.map(year => yearlyData[year] || 0);
+            const lastYear = years[years.length - 1];
 
             const ctx = document.getElementById('timeSeriesChart').getContext('2d');
             if (chartInstance) chartInstance.destroy();
@@ -3256,11 +3381,11 @@
                             grid: { display: false },
                             ticks: {
                                 font: (context) => {
-                                    if (context.tick && context.tick.label === '2025') return { weight: '900', size: 14 };
+                                    if (context.tick && context.tick.label === lastYear) return { weight: '900', size: 14 };
                                     return { weight: 'normal', size: 12 };
                                 },
                                 color: (context) => {
-                                    if (context.tick && context.tick.label === '2025') return '#0f172a';
+                                    if (context.tick && context.tick.label === lastYear) return '#0f172a';
                                     return '#64748b';
                                 }
                             }
@@ -3271,14 +3396,14 @@
                             grid: { color: 'rgba(0, 0, 0, 0.03)' },
                             ticks: {
                                 font: (context) => {
-                                    // HIGHLIGHT 2025: Bold and larger font for the closing value
-                                    if (context.tick && context.tick.value === values[4]) {
+                                    // HIGHLIGHT LATEST: Bold and larger font for the closing value
+                                    if (context.tick && context.tick.value === values[values.length - 1]) {
                                         return { weight: 'bold', size: 14 };
                                     }
                                     return { weight: 'normal', size: 11 };
                                 },
                                 color: (context) => {
-                                    if (context.tick && context.tick.value === values[4]) return 'hsl(217, 91%, 45%)';
+                                    if (context.tick && context.tick.value === values[values.length - 1]) return 'hsl(217, 91%, 45%)';
                                     return '#64748b';
                                 },
                                 callback: (value) => formatNumber(value)
