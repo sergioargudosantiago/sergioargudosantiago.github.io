@@ -155,9 +155,10 @@
 
         @media (max-width: 768px) {
             .modal-content {
-                width: 95%;
-                max-height: 95vh;
+                width: 90%;
+                max-height: 80vh;
                 border-radius: 1.5rem;
+                margin-bottom: env(safe-area-inset-bottom);
             }
         }
 
@@ -684,7 +685,7 @@
             <div class="p-4 md:p-6 border-b flex justify-between items-start">
                 <h2 id="modalTitle" class="text-xl md:text-2xl font-bold text-primary pr-4"></h2>
                 <button onclick="closeModal()"
-                    class="text-muted-foreground hover:text-foreground transition-colors p-1">
+                    class="text-muted-foreground hover:text-foreground transition-colors p-3 rounded-full hover:bg-muted/50">
                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -719,7 +720,7 @@
             <div class="p-6 border-b flex justify-between items-start">
                 <h2 class="sr-only" id="comingSoonTitle"></h2>
                 <button onclick="closeModal()"
-                    class="ml-auto text-muted-foreground hover:text-foreground transition-colors">
+                    class="ml-auto text-muted-foreground hover:text-foreground transition-colors p-3 rounded-full hover:bg-muted/50">
                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
