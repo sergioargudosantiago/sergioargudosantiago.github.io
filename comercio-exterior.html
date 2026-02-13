@@ -916,8 +916,17 @@
                             <!-- Services Breakdown -->
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                                 <div class="bp-chart-card">
-                                    <div class="bp-chart-title">Servicios No Turísticos — Ingresos por Tipo (Último
-                                        Trimestre)</div>
+                                    <div
+                                        class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-2">
+                                        <div class="bp-chart-title" id="bp174DonutTitle" style="margin-bottom:0">
+                                            Servicios No Turísticos — Ingresos por Tipo</div>
+                                        <div class="bp-sub-tabs" style="flex-shrink:0">
+                                            <button class="bp-sub-tab active" data-donut-mode="ingresos"
+                                                onclick="switchDonutMode('ingresos')">Ingresos</button>
+                                            <button class="bp-sub-tab" data-donut-mode="pagos"
+                                                onclick="switchDonutMode('pagos')">Pagos</button>
+                                        </div>
+                                    </div>
                                     <div class="h-[300px] sm:h-[350px]" style="position:relative;"><canvas
                                             id="bp174DonutChart"></canvas>
                                     </div>
@@ -3981,7 +3990,7 @@
         // ========== FORMAT NUMBER (Spanish) ==========
         function bpFormatNum(n) {
             if (n == null) return '—';
-            return new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0 }).format(n);
+            return new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0, useGrouping: true }).format(Math.round(n));
         }
 
         // ========== BALANZA CHART INSTANCES ==========
@@ -4265,15 +4274,27 @@
         }
 
         // ========== SERVICES DONUT CHART (ANNUAL) ==========
-        function render174DonutChart() {
+        let currentDonutMode = 'ingresos';
+
+        function switchDonutMode(mode) {
+            currentDonutMode = mode;
+            document.querySelectorAll('[data-donut-mode]').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.donutMode === mode);
+            });
+            render174DonutChart(mode);
+        }
+
+        function render174DonutChart(mode) {
+            mode = mode || currentDonutMode;
             const data = BALANZA_174A_RAW;
-            // Aggregate latest year's ingresos by summing quarters
+            // Aggregate latest year's data by summing quarters
             const byYear = {};
             data.data.forEach(d => {
-                if (!byYear[d.year]) byYear[d.year] = { quarters: 0, ingresos: new Array(13).fill(0) };
+                if (!byYear[d.year]) byYear[d.year] = { quarters: 0, ingresos: new Array(13).fill(0), pagos: new Array(13).fill(0) };
                 const y = byYear[d.year];
                 y.quarters++;
                 d.ingresos.forEach((v, i) => { if (v != null && i < 13) y.ingresos[i] += v; });
+                d.pagos.forEach((v, i) => { if (v != null && i < 13) y.pagos[i] += v; });
             });
             const years = Object.keys(byYear).sort();
             const latestYear = years[years.length - 1];
@@ -4281,7 +4302,8 @@
             const isPartial = ly.quarters < 4;
             // Skip index 0 (total), take indices 1-12 (sub-types)
             const typeLabels = data.labels.slice(1);
-            const values = ly.ingresos.slice(1);
+            const values = (mode === 'pagos' ? ly.pagos : ly.ingresos).slice(1);
+            const modeLabel = mode === 'pagos' ? 'Pagos' : 'Ingresos';
             const bgColors = [
                 '#0684D4', '#10b981', '#ef4444', '#f59e0b', '#8b5cf6',
                 '#ec4899', '#14b8a6', '#f97316', '#6366f1', '#84cc16',
@@ -4323,9 +4345,10 @@
                     }
                 }
             });
-            // Update chart title with year info
-            const titleEl = ctx.canvas.closest('.bp-chart-card')?.querySelector('.bp-chart-title');
-            if (titleEl) titleEl.textContent = `Servicios No Turísticos — Ingresos por Tipo (${isPartial ? latestYear + ' hasta ' + ly.quarters + 'T' : latestYear})`;
+            // Update chart title with year and mode info
+            const titleEl = document.getElementById('bp174DonutTitle');
+            const yearText = isPartial ? `${latestYear} hasta ${ly.quarters}T` : latestYear;
+            if (titleEl) titleEl.textContent = `Servicios No Turísticos — ${modeLabel} por Tipo (${yearText})`;
         }
 
         // ========== INGRESOS VS PAGOS CHART (ANNUAL) ==========
