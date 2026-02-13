@@ -361,6 +361,250 @@
             margin-top: 2rem;
         }
 
+        /* ========== MAIN TAB TOGGLE ========== */
+        .main-tab-toggle {
+            display: inline-flex;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(12px);
+            border-radius: 9999px;
+            padding: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .main-tab-btn {
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: hsl(var(--foreground) / 0.6);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .main-tab-btn.active {
+            background: hsl(var(--primary));
+            color: white;
+            box-shadow: 0 4px 12px rgba(6, 132, 212, 0.3);
+        }
+
+        .main-tab-btn:hover:not(.active) {
+            color: hsl(var(--primary));
+            background: rgba(6, 132, 212, 0.08);
+        }
+
+        /* ========== BALANZA KPI CARDS ========== */
+        .bp-kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .bp-kpi-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .bp-kpi-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .bp-kpi-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: hsl(var(--foreground) / 0.5);
+            margin-bottom: 0.75rem;
+        }
+
+        .bp-kpi-value {
+            font-size: 1.75rem;
+            font-weight: 900;
+            letter-spacing: -0.03em;
+        }
+
+        .bp-kpi-value.positive {
+            color: #10b981;
+        }
+
+        .bp-kpi-value.negative {
+            color: #ef4444;
+        }
+
+        .bp-kpi-unit {
+            font-size: 0.65rem;
+            color: hsl(var(--foreground) / 0.4);
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        /* ========== BALANZA BADGE ========== */
+        .bp-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, rgba(6, 132, 212, 0.12), rgba(6, 132, 212, 0.06));
+            color: hsl(var(--primary));
+            border: 1px solid rgba(6, 132, 212, 0.2);
+        }
+
+        .bp-badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: hsl(var(--primary));
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-dot {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(0.8);
+            }
+        }
+
+        /* ========== BALANZA SUB-TABS ========== */
+        .bp-sub-tabs {
+            display: inline-flex;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 0.75rem;
+            padding: 3px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .bp-sub-tab {
+            padding: 0.4rem 1rem;
+            border-radius: 0.6rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            color: hsl(var(--foreground) / 0.5);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+
+        .bp-sub-tab.active {
+            background: white;
+            color: hsl(var(--primary));
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        /* ========== BALANZA CHART CONTAINERS ========== */
+        .bp-chart-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 1rem;
+            padding: 1.5rem;
+        }
+
+        .bp-chart-title {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: hsl(var(--foreground) / 0.5);
+            margin-bottom: 1rem;
+        }
+
+        /* ========== BALANZA MOBILE RESPONSIVE ========== */
+        @media (max-width: 640px) {
+            .main-tab-toggle {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .main-tab-btn {
+                padding: 0.4rem 0.75rem;
+                font-size: 0.65rem;
+            }
+
+            .bp-sub-tabs {
+                flex-direction: column;
+                width: 100%;
+                border-radius: 0.75rem;
+            }
+
+            .bp-sub-tab {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.6rem;
+                text-align: center;
+                width: 100%;
+            }
+
+            .bp-kpi-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+            }
+
+            .bp-kpi-card {
+                padding: 0.75rem;
+            }
+
+            .bp-kpi-label {
+                font-size: 0.55rem;
+                margin-bottom: 0.4rem;
+            }
+
+            .bp-kpi-value {
+                font-size: 1.25rem;
+            }
+
+            .bp-kpi-unit {
+                font-size: 0.55rem;
+                margin-top: 0.25rem;
+            }
+
+            .bp-chart-card {
+                padding: 0.75rem;
+                border-radius: 0.75rem;
+            }
+
+            .bp-chart-title {
+                font-size: 0.6rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .bp-badge {
+                font-size: 0.6rem;
+                padding: 0.3rem 0.75rem;
+            }
+
+            #bp171Table th,
+            #bp171Table td {
+                padding: 0.3rem 0.25rem !important;
+                font-size: 0.65rem !important;
+            }
+        }
+
         /* ========== UTILITY ========== */
     </style>
 </head>
@@ -454,152 +698,246 @@
                             COMERCIO EXTERIOR
                         </h2>
                         <p class="text-base md:text-lg text-muted-foreground font-medium uppercase tracking-widest">
-                            Flujos comerciales agroalimentarios e industriales (2021-2025)
+                            Análisis de datos de comercio exterior de España
                         </p>
                     </div>
 
-                    <!-- Breadcrumbs -->
-                    <div id="breadcrumbs" class="breadcrumbs hidden"></div>
-
-                    <!-- Home View -->
-                    <div id="homeView">
-                        <!-- Flow Toggle -->
-                        <div class="flex justify-center mb-12">
-                            <div class="flow-toggle">
-                                <button class="flow-toggle-btn active" data-flow="E" onclick="switchFlow('E')">
-                                    EXPORTACIÓN
-                                </button>
-                                <button class="flow-toggle-btn" data-flow="I" onclick="switchFlow('I')">
-                                    IMPORTACIÓN
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Macro Sector Selection -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div class="glass-card sector-card" onclick="selectMacroSector('Agroalimentario')">
-                                <h3>AGROALIMENTARIO</h3>
-                            </div>
-                            <div class="glass-card sector-card" onclick="selectMacroSector('Industrial')">
-                                <h3>INDUSTRIAL</h3>
-                            </div>
+                    <!-- Main Tab Toggle -->
+                    <div class="flex justify-center mb-10">
+                        <div class="main-tab-toggle">
+                            <button class="main-tab-btn active" data-main-tab="flujos"
+                                onclick="switchMainTab('flujos')">
+                                Flujos Comerciales
+                            </button>
+                            <button class="main-tab-btn" data-main-tab="balanza" onclick="switchMainTab('balanza')">
+                                Balanza de Pagos
+                            </button>
                         </div>
                     </div>
 
-                    <!-- Levels View Containers (Grids only) -->
-                    <div id="level1View" class="hidden">
-                        <h3 id="level1Title" class="text-3xl font-bold text-primary mb-6 uppercase tracking-tight"></h3>
-                        <div id="level1Grid" class="sector-grid"></div>
-                    </div>
+                    <!-- ===== FLUJOS COMERCIALES VIEW ===== -->
+                    <div id="flujosView">
+                        <!-- Breadcrumbs -->
+                        <div id="breadcrumbs" class="breadcrumbs hidden"></div>
 
-                    <div id="level2View" class="hidden">
-                        <h3 id="level2Title" class="text-3xl font-bold text-primary mb-6"></h3>
-                        <div id="level2Grid" class="sector-grid"></div>
-                    </div>
-
-                    <div id="level3View" class="hidden">
-                        <h3 id="level3Title" class="text-3xl font-bold text-primary mb-6"></h3>
-                        <div id="level3Grid" class="sector-grid"></div>
-                    </div>
-
-                    <!-- Level 4 View (for Industrial sector detail) -->
-                    <div id="level4View" class="hidden">
-                        <h3 id="level4Title" class="text-3xl font-bold text-primary mb-6"></h3>
-                        <div id="level4Grid" class="sector-grid"></div>
-                    </div>
-
-                    <!-- REUSABLE ANALYTICS SECTION (Visible in Levels 1, 2, 3 and Final) -->
-
-                    <div id="analyticsSection" class="hidden mt-16 pt-16 border-t border-primary/10">
-                        <div class="flex flex-col space-y-8">
-                            <!-- Title (Optional, used for final view level) -->
-                            <h3 id="finalTitle" class="text-3xl font-bold text-primary mb-2 hidden"></h3>
-
-                            <!-- Chart (Top - Full Width) -->
-                            <div class="glass-card p-6 min-h-[450px]">
-                                <h4 class="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">
-                                    Evolución Temporal (Millones €)</h4>
-                                <div class="h-[380px]">
-                                    <canvas id="timeSeriesChart"></canvas>
+                        <!-- Home View -->
+                        <div id="homeView">
+                            <!-- Flow Toggle -->
+                            <div class="flex justify-center mb-12">
+                                <div class="flow-toggle">
+                                    <button class="flow-toggle-btn active" data-flow="E" onclick="switchFlow('E')">
+                                        EXPORTACIÓN
+                                    </button>
+                                    <button class="flow-toggle-btn" data-flow="I" onclick="switchFlow('I')">
+                                        IMPORTACIÓN
+                                    </button>
                                 </div>
                             </div>
 
-                            <!-- Bottom Grid (Stats + Countries) -->
-                            <!-- BENTO GRID LAYOUT: 12 Cols for maximum flexibility -->
-                            <div id="analyticsGrid"
-                                class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 auto-rows-min">
-                                <!-- LEFT: TVA + Latest Total (ID: card-tva) -->
-                                <div id="card-tva"
-                                    class="glass-card p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
+                            <!-- Macro Sector Selection -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="glass-card sector-card" onclick="selectMacroSector('Agroalimentario')">
+                                    <h3>AGROALIMENTARIO</h3>
+                                </div>
+                                <div class="glass-card sector-card" onclick="selectMacroSector('Industrial')">
+                                    <h3>INDUSTRIAL</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Levels View Containers (Grids only) -->
+                        <div id="level1View" class="hidden">
+                            <h3 id="level1Title" class="text-3xl font-bold text-primary mb-6 uppercase tracking-tight">
+                            </h3>
+                            <div id="level1Grid" class="sector-grid"></div>
+                        </div>
+
+                        <div id="level2View" class="hidden">
+                            <h3 id="level2Title" class="text-3xl font-bold text-primary mb-6"></h3>
+                            <div id="level2Grid" class="sector-grid"></div>
+                        </div>
+
+                        <div id="level3View" class="hidden">
+                            <h3 id="level3Title" class="text-3xl font-bold text-primary mb-6"></h3>
+                            <div id="level3Grid" class="sector-grid"></div>
+                        </div>
+
+                        <!-- Level 4 View (for Industrial sector detail) -->
+                        <div id="level4View" class="hidden">
+                            <h3 id="level4Title" class="text-3xl font-bold text-primary mb-6"></h3>
+                            <div id="level4Grid" class="sector-grid"></div>
+                        </div>
+
+                        <!-- REUSABLE ANALYTICS SECTION (Visible in Levels 1, 2, 3 and Final) -->
+
+                        <div id="analyticsSection" class="hidden mt-16 pt-16 border-t border-primary/10">
+                            <div class="flex flex-col space-y-8">
+                                <!-- Title (Optional, used for final view level) -->
+                                <h3 id="finalTitle" class="text-3xl font-bold text-primary mb-2 hidden"></h3>
+
+                                <!-- Chart (Top - Full Width) -->
+                                <div class="glass-card p-6 min-h-[450px]">
                                     <h4
-                                        class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6">
-                                        Tasa Var. Anual (TVA)</h4>
-                                    <div id="tvaContainer"
-                                        class="flex flex-col items-center scale-125 md:scale-150 py-2 md:py-4">
-                                        <!-- Dynamic TVA badge -->
+                                        class="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">
+                                        Evolución Temporal (Millones €)</h4>
+                                    <div class="h-[380px]">
+                                        <canvas id="timeSeriesChart"></canvas>
                                     </div>
-                                    <p
-                                        class="text-[10px] text-muted-foreground mt-6 md:mt-8 italic uppercase tracking-wider">
-                                        Comparativa <span id="tvaYearLabel">2024-2025</span></p>
                                 </div>
 
-                                <!-- CENTER 1: Metric (ID: card-volume) -->
-                                <div id="card-volume"
-                                    class="glass-card p-6 md:p-10 flex flex-col items-center justify-center text-center border-2 border-primary/10 transition-all duration-300">
-                                    <h4 id="metricLabel"
-                                        class="text-xs md:text-sm font-semibold uppercase tracking-wider text-primary mb-4 md:mb-6">
-                                        VALOR 2025 (M€)
-                                    </h4>
-                                    <div id="metricValue"
-                                        class="text-3xl md:text-5xl font-black text-primary tracking-tighter">
-                                        0,00
-                                    </div>
-                                    <p
-                                        class="text-[10px] text-muted-foreground mt-6 md:mt-8 italic uppercase tracking-wider">
-                                        Millones de Euros</p>
-                                </div>
-
-                                <!-- CENTER 2: Balance (New) (ID: card-balance) -->
-                                <div id="card-balance"
-                                    class="glass-card p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
-                                    <h4
-                                        class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6">
-                                        SALDO COMERCIAL
-                                    </h4>
-                                    <div id="balanceContainer" class="flex flex-col items-center justify-center">
-                                        <div id="balanceValue"
-                                            class="text-2xl md:text-4xl font-black tracking-tighter mb-2">0,00
+                                <!-- Bottom Grid (Stats + Countries) -->
+                                <!-- BENTO GRID LAYOUT: 12 Cols for maximum flexibility -->
+                                <div id="analyticsGrid"
+                                    class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 auto-rows-min">
+                                    <!-- LEFT: TVA + Latest Total (ID: card-tva) -->
+                                    <div id="card-tva"
+                                        class="glass-card p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
+                                        <h4
+                                            class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6">
+                                            Tasa Var. Anual (TVA)</h4>
+                                        <div id="tvaContainer"
+                                            class="flex flex-col items-center scale-125 md:scale-150 py-2 md:py-4">
+                                            <!-- Dynamic TVA badge -->
                                         </div>
-                                        <div id="balanceLabel"
-                                            class="text-[10px] md:text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-gray-100 text-gray-500">
-                                            NEUTRO</div>
+                                        <p
+                                            class="text-[10px] text-muted-foreground mt-6 md:mt-8 italic uppercase tracking-wider">
+                                            Comparativa <span id="tvaYearLabel">2024-2025</span></p>
                                     </div>
-                                    <p
-                                        class="text-[10px] text-muted-foreground mt-6 md:mt-8 italic uppercase tracking-wider">
-                                        <span id="balanceYearLabel">2025</span> (EXP - IMP)
-                                    </p>
-                                </div>
 
-                                <!-- RIGHT: Top Countries (ID: card-countries) -->
-                                <div id="card-countries"
-                                    class="glass-card p-6 md:p-8 transition-all duration-300 flex flex-col items-center justify-center">
-                                    <h4 id="countriesTitle"
-                                        class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6 text-center w-full">
-                                        Principales Destinos</h4>
-                                    <div id="countriesContainer"
-                                        class="space-y-3 md:space-y-4 w-full flex flex-col px-4 md:px-6">
-                                        <!-- Dynamic ranking items -->
+                                    <!-- CENTER 1: Metric (ID: card-volume) -->
+                                    <div id="card-volume"
+                                        class="glass-card p-6 md:p-10 flex flex-col items-center justify-center text-center border-2 border-primary/10 transition-all duration-300">
+                                        <h4 id="metricLabel"
+                                            class="text-xs md:text-sm font-semibold uppercase tracking-wider text-primary mb-4 md:mb-6">
+                                            VALOR 2025 (M€)
+                                        </h4>
+                                        <div id="metricValue"
+                                            class="text-3xl md:text-5xl font-black text-primary tracking-tighter">
+                                            0,00
+                                        </div>
+                                        <p
+                                            class="text-[10px] text-muted-foreground mt-6 md:mt-8 italic uppercase tracking-wider">
+                                            Millones de Euros</p>
+                                    </div>
+
+                                    <!-- CENTER 2: Balance (New) (ID: card-balance) -->
+                                    <div id="card-balance"
+                                        class="glass-card p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
+                                        <h4
+                                            class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6">
+                                            SALDO COMERCIAL
+                                        </h4>
+                                        <div id="balanceContainer" class="flex flex-col items-center justify-center">
+                                            <div id="balanceValue"
+                                                class="text-2xl md:text-4xl font-black tracking-tighter mb-2">0,00
+                                            </div>
+                                            <div id="balanceLabel"
+                                                class="text-[10px] md:text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-gray-100 text-gray-500">
+                                                NEUTRO</div>
+                                        </div>
+                                        <p
+                                            class="text-[10px] text-muted-foreground mt-6 md:mt-8 italic uppercase tracking-wider">
+                                            <span id="balanceYearLabel">2025</span> (EXP - IMP)
+                                        </p>
+                                    </div>
+
+                                    <!-- RIGHT: Top Countries (ID: card-countries) -->
+                                    <div id="card-countries"
+                                        class="glass-card p-6 md:p-8 transition-all duration-300 flex flex-col items-center justify-center">
+                                        <h4 id="countriesTitle"
+                                            class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6 text-center w-full">
+                                            Principales Destinos</h4>
+                                        <div id="countriesContainer"
+                                            class="space-y-3 md:space-y-4 w-full flex flex-col px-4 md:px-6">
+                                            <!-- Dynamic ranking items -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end analyticsSection -->
+                    </div><!-- end flujosView -->
+
+                    <!-- ===== BALANZA DE PAGOS VIEW ===== -->
+                    <div id="balanzaView" class="hidden">
+
+                        <!-- Sub-tab Toggle: 17.1 vs 17.4 -->
+                        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8">
+                            <div class="bp-sub-tabs">
+                                <button class="bp-sub-tab active" data-bp-tab="s171" onclick="switchBPTab('s171')">Serie
+                                    17.1 — Resumen Mensual</button>
+                                <button class="bp-sub-tab" data-bp-tab="s174" onclick="switchBPTab('s174')">Serie 17.4 —
+                                    Cuenta Corriente</button>
+                            </div>
+                            <div id="bpBadge" class="bp-badge">Último dato: Noviembre 2025</div>
+                        </div>
+
+                        <!-- Serie 17.1 Panel -->
+                        <div id="bp171Panel">
+                            <!-- KPI Cards -->
+                            <div id="bp171KPIs" class="bp-kpi-grid mb-8"></div>
+
+                            <!-- Main Time Series Chart -->
+                            <div class="bp-chart-card mb-8">
+                                <div class="bp-chart-title">Evolución Mensual — Saldos Balanza de Pagos (Millones €)
+                                </div>
+                                <div class="h-[280px] sm:h-[400px]" style="position:relative;"><canvas
+                                        id="bp171Chart"></canvas></div>
+                            </div>
+
+                            <!-- Annual Summary Table -->
+                            <div class="bp-chart-card">
+                                <div class="bp-chart-title">Resumen Anual (Millones €)</div>
+                                <div style="overflow-x:auto;">
+                                    <table id="bp171Table" class="w-full text-sm"></table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Serie 17.4 Panel -->
+                        <div id="bp174Panel" class="hidden">
+                            <!-- KPI Cards -->
+                            <div id="bp174KPIs" class="bp-kpi-grid mb-8"></div>
+
+                            <!-- Goods vs Services Charts -->
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                                <div class="bp-chart-card">
+                                    <div class="bp-chart-title">Bienes y Servicios — Saldos Anuales (M€)</div>
+                                    <div class="h-[260px] sm:h-[350px]" style="position:relative;"><canvas
+                                            id="bp174BarChart"></canvas>
+                                    </div>
+                                </div>
+                                <div class="bp-chart-card">
+                                    <div class="bp-chart-title">Ingresos por Turismo — Top Países (M€)</div>
+                                    <div class="h-[260px] sm:h-[350px]" style="position:relative;"><canvas
+                                            id="bp174TourismChart"></canvas></div>
+                                </div>
+                            </div>
+
+                            <!-- Services Breakdown -->
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                                <div class="bp-chart-card">
+                                    <div class="bp-chart-title">Servicios No Turísticos — Ingresos por Tipo (Último
+                                        Trimestre)</div>
+                                    <div class="h-[300px] sm:h-[350px]" style="position:relative;"><canvas
+                                            id="bp174DonutChart"></canvas>
+                                    </div>
+                                </div>
+                                <div class="bp-chart-card">
+                                    <div class="bp-chart-title">Ingresos vs Pagos — Servicios Anuales (M€)</div>
+                                    <div class="h-[260px] sm:h-[350px]" style="position:relative;"><canvas
+                                            id="bp174IngPagChart"></canvas>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div><!-- end balanzaView -->
 
                 </div>
             </div>
         </section>
     </main>
+
 
     <!-- Footer -->
     <footer class="bg-primary text-primary-foreground">
@@ -633,6 +971,17 @@
     <!-- STANDALONE VERSION WITH EMBEDDED DATA -->
     <script>
         // ========== EMBEDDED CSV DATA ==========
+
+        // ========== BALANZA DE PAGOS RAW DATA ==========
+        // ========== BALANZA DE PAGOS DATA ==========
+        const BALANZA_171_RAW = { "labels": ["Cuenta Corriente", "Bienes y Servicios", "Rentas Primaria y Secundaria", "Cuenta de Capital", "Cta. Corriente + Capital", "Cuenta Financiera", "Banco de España", "Excl. Banco de España", "Errores y Omisiones"], "data": [{ "year": 2015, "month": 1, "monthName": "ENE", "values": [-228, 975, -1203, 126, -102, -5576, -1237, -4338, -5473] }, { "year": 2015, "month": 2, "monthName": "FEB", "values": [-1957, 1101, -3057, 54, -1903, 1679, 2736, -1057, 3582] }, { "year": 2015, "month": 3, "monthName": "MAR", "values": [1390, 2296, -906, 374, 1764, 883, -16430, 17313, -881] }, { "year": 2015, "month": 4, "monthName": "ABR", "values": [1665, 2511, -846, 420, 2085, -4619, 6020, -10639, -6704] }, { "year": 2015, "month": 5, "monthName": "MAY", "values": [3007, 4499, -1492, 553, 3560, 5466, -1774, 7240, 1906] }, { "year": 2015, "month": 6, "monthName": "JUN", "values": [2774, 3064, -290, 580, 3354, 8889, -13285, 22175, 5536] }, { "year": 2015, "month": 7, "monthName": "JUL", "values": [4486, 6061, -1575, 708, 5194, 13922, -149, 14071, 8728] }, { "year": 2015, "month": 8, "monthName": "AGO", "values": [2850, 4175, -1325, 496, 3346, -8500, -536, -7965, -11846] }, { "year": 2015, "month": 9, "monthName": "SEP", "values": [2065, 2447, -382, 336, 2401, 4086, 754, 3332, 1686] }, { "year": 2015, "month": 10, "monthName": "OCT", "values": [2304, 3114, -811, 377, 2681, 8151, 5712, 2439, 5470] }, { "year": 2015, "month": 11, "monthName": "NOV", "values": [1930, 1369, 561, 645, 2575, -3090, -11636, 8545, -5665] }, { "year": 2015, "month": 12, "monthName": "DIC", "values": [1962, 1169, 793, 2236, 4198, 8687, -10962, 19649, 4490] }, { "year": 2016, "month": 1, "monthName": "ENE", "values": [-630, 909, -1538, 92, -537, 1105, 6647, -5542, 1643] }, { "year": 2016, "month": 2, "monthName": "FEB", "values": [-191, 2307, -2498, 245, 54, -3775, -13007, 9232, -3830] }, { "year": 2016, "month": 3, "monthName": "MAR", "values": [1915, 2508, -593, 146, 2061, 4997, -1061, 6057, 2936] }, { "year": 2016, "month": 4, "monthName": "ABR", "values": [4406, 4580, -174, 164, 4570, 5485, 10137, -4652, 915] }, { "year": 2016, "month": 5, "monthName": "MAY", "values": [4243, 5465, -1222, 150, 4393, 1417, -36411, 37828, -2976] }, { "year": 2016, "month": 6, "monthName": "JUN", "values": [3778, 4081, -303, 309, 4087, 1393, -8821, 10214, -2694] }, { "year": 2016, "month": 7, "monthName": "JUL", "values": [5666, 7916, -2249, 128, 5795, 10326, 14978, -4651, 4532] }, { "year": 2016, "month": 8, "monthName": "AGO", "values": [4442, 5233, -790, 35, 4478, 1014, -18506, 19519, -3464] }, { "year": 2016, "month": 9, "monthName": "SEP", "values": [2709, 3720, -1011, 104, 2813, -391, -3495, 3104, -3204] }, { "year": 2016, "month": 10, "monthName": "OCT", "values": [2946, 3820, -873, 106, 3052, 10355, 7058, 3297, 7303] }, { "year": 2016, "month": 11, "monthName": "NOV", "values": [3739, 2482, 1257, 287, 4026, 6943, -15078, 22020, 2917] }, { "year": 2016, "month": 12, "monthName": "DIC", "values": [2310, 1511, 799, 656, 2965, -5022, 3532, -8553, -7987] }, { "year": 2017, "month": 1, "monthName": "ENE", "values": [-302, 869, -1171, 106, -196, -842, -20893, 20050, -646] }, { "year": 2017, "month": 2, "monthName": "FEB", "values": [-295, 1073, -1368, 105, -190, 822, -10513, 11335, 1012] }, { "year": 2017, "month": 3, "monthName": "MAR", "values": [2140, 2475, -335, 132, 2272, 1539, -11994, 13533, -733] }, { "year": 2017, "month": 4, "monthName": "ABR", "values": [3852, 4596, -743, 217, 4069, 7896, 9054, -1158, 3827] }, { "year": 2017, "month": 5, "monthName": "MAY", "values": [4150, 5337, -1188, 159, 4308, 1404, -8226, 9631, -2904] }, { "year": 2017, "month": 6, "monthName": "JUN", "values": [3852, 5153, -1301, 226, 4078, -895, 4788, -5683, -4973] }, { "year": 2017, "month": 7, "monthName": "JUL", "values": [4450, 6527, -2077, 289, 4739, 2956, -11346, 14301, -1783] }, { "year": 2017, "month": 8, "monthName": "AGO", "values": [3848, 5244, -1397, 144, 3991, 6732, -860, 7592, 2741] }, { "year": 2017, "month": 9, "monthName": "SEP", "values": [2608, 3488, -880, 149, 2757, 2641, 11666, -9025, -116] }, { "year": 2017, "month": 10, "monthName": "OCT", "values": [2846, 3762, -916, 225, 3071, 2547, 13048, -10501, -524] }, { "year": 2017, "month": 11, "monthName": "NOV", "values": [3711, 2497, 1214, 323, 4033, 12, -3355, 3367, -4021] }, { "year": 2017, "month": 12, "monthName": "DIC", "values": [1826, 1491, 335, 717, 2542, 10804, -3998, 14803, 8262] }, { "year": 2018, "month": 1, "monthName": "ENE", "values": [-924, -189, -735, 141, -784, 3620, -23701, 27321, 4404] }, { "year": 2018, "month": 2, "monthName": "FEB", "values": [-405, 1290, -1695, 140, -265, -3082, 1752, -4834, -2817] }, { "year": 2018, "month": 3, "monthName": "MAR", "values": [2003, 2465, -462, 163, 2166, -1125, 18949, -20073, -3291] }, { "year": 2018, "month": 4, "monthName": "ABR", "values": [1408, 2992, -1584, 258, 1666, 5380, -6396, 11777, 3714] }, { "year": 2018, "month": 5, "monthName": "MAY", "values": [4855, 5124, -269, 176, 5031, 606, -2438, 3043, -4426] }, { "year": 2018, "month": 6, "monthName": "JUN", "values": [2812, 4120, -1308, 252, 3064, 4201, -5568, 9770, 1137] }, { "year": 2018, "month": 7, "monthName": "JUL", "values": [2734, 4784, -2050, 305, 3039, 5735, -1728, 7463, 2696] }, { "year": 2018, "month": 8, "monthName": "AGO", "values": [3250, 4845, -1595, 260, 3510, 5242, 14682, -9440, 1732] }, { "year": 2018, "month": 9, "monthName": "SEP", "values": [1529, 2464, -935, 302, 1831, 1713, -6075, 7788, -118] }, { "year": 2018, "month": 10, "monthName": "OCT", "values": [1563, 2628, -1065, 429, 1992, 6690, -590, 7280, 4698] }, { "year": 2018, "month": 11, "monthName": "NOV", "values": [2271, 1733, 538, 369, 2639, 1122, -2703, 3825, -1517] }, { "year": 2018, "month": 12, "monthName": "DIC", "values": [1661, 963, 698, 2999, 4660, 977, -432, 1409, -3683] }, { "year": 2019, "month": 1, "monthName": "ENE", "values": [-903, -167, -736, 167, -736, 2182, 3489, -1306, 2918] }, { "year": 2019, "month": 2, "monthName": "FEB", "values": [-1411, 1206, -2617, 188, -1223, -1782, 3760, -5542, -559] }, { "year": 2019, "month": 3, "monthName": "MAR", "values": [1574, 1939, -365, 409, 1983, 916, -4586, 5502, -1067] }, { "year": 2019, "month": 4, "monthName": "ABR", "values": [3068, 4711, -1643, 276, 3344, 1820, -1209, 3029, -1524] }, { "year": 2019, "month": 5, "monthName": "MAY", "values": [4086, 4675, -589, 224, 4310, 9517, -950, 10467, 5207] }, { "year": 2019, "month": 6, "monthName": "JUN", "values": [3876, 5023, -1147, 338, 4215, 6667, -1714, 8381, 2452] }, { "year": 2019, "month": 7, "monthName": "JUL", "values": [4036, 6157, -2121, 233, 4268, -4933, 652, -5584, -9201] }, { "year": 2019, "month": 8, "monthName": "AGO", "values": [3219, 4259, -1040, 76, 3295, 5435, 5998, -564, 2140] }, { "year": 2019, "month": 9, "monthName": "SEP", "values": [1157, 2029, -872, 233, 1391, 1593, 16843, -15250, 202] }, { "year": 2019, "month": 10, "monthName": "OCT", "values": [2890, 3950, -1061, 355, 3245, -1928, 5554, -7482, -5172] }, { "year": 2019, "month": 11, "monthName": "NOV", "values": [3225, 2374, 851, 303, 3528, 5995, -3202, 9196, 2467] }, { "year": 2019, "month": 12, "monthName": "DIC", "values": [1873, 1265, 608, 1393, 3266, 1295, -8880, 10176, -1970] }, { "year": 2020, "month": 1, "monthName": "ENE", "values": [-1749, 592, -2342, 202, -1547, -967, 3245, -4212, 580] }, { "year": 2020, "month": 2, "monthName": "FEB", "values": [1352, 2257, -905, 319, 1672, 136, 13250, -13115, -1536] }, { "year": 2020, "month": 3, "monthName": "MAR", "values": [-408, 292, -699, 219, -188, -494, -29341, 28846, -306] }, { "year": 2020, "month": 4, "monthName": "ABR", "values": [-1743, -401, -1343, 208, -1536, -1534, -20270, 18736, 2] }, { "year": 2020, "month": 5, "monthName": "MAY", "values": [605, 1733, -1128, 197, 802, -567, -15321, 14754, -1369] }, { "year": 2020, "month": 6, "monthName": "JUN", "values": [2213, 2704, -491, 318, 2531, 7446, -7130, 14575, 4914] }, { "year": 2020, "month": 7, "monthName": "JUL", "values": [1630, 3321, -1691, 382, 2012, 4316, 3775, 540, 2304] }, { "year": 2020, "month": 8, "monthName": "AGO", "values": [54, 1007, -953, 162, 216, -2945, 3949, -6895, -3162] }, { "year": 2020, "month": 9, "monthName": "SEP", "values": [-378, 565, -943, 348, -30, 1723, -5037, 6760, 1753] }, { "year": 2020, "month": 10, "monthName": "OCT", "values": [1213, 2079, -866, 379, 1593, -3518, 8276, -11794, -5111] }, { "year": 2020, "month": 11, "monthName": "NOV", "values": [3694, 2225, 1469, 336, 4030, 2535, -19391, 21926, -1495] }, { "year": 2020, "month": 12, "monthName": "DIC", "values": [2424, 743, 1681, 1969, 4393, 4473, -17847, 22319, 79] }, { "year": 2021, "month": 1, "monthName": "ENE", "values": [-852, -406, -446, 149, -703, 607, 4003, -3396, 1310] }, { "year": 2021, "month": 2, "monthName": "FEB", "values": [-982, 781, -1764, 244, -738, 1631, -9944, 11575, 2369] }, { "year": 2021, "month": 3, "monthName": "MAR", "values": [1479, 1254, 225, 651, 2130, 3147, 28401, -25254, 1017] }, { "year": 2021, "month": 4, "monthName": "ABR", "values": [928, 1174, -246, 506, 1434, 3977, -8199, 12175, 2543] }, { "year": 2021, "month": 5, "monthName": "MAY", "values": [971, 1640, -669, 367, 1339, 523, -686, 1209, -816] }, { "year": 2021, "month": 6, "monthName": "JUN", "values": [88, 1070, -982, 889, 978, 3119, 1, 3118, 2141] }, { "year": 2021, "month": 7, "monthName": "JUL", "values": [2313, 2873, -560, 1046, 3359, -2149, 3199, -5348, -5508] }, { "year": 2021, "month": 8, "monthName": "AGO", "values": [388, 966, -578, 298, 687, 3078, 11369, -8291, 2392] }, { "year": 2021, "month": 9, "monthName": "SEP", "values": [1716, 2157, -441, 1640, 3356, 3389, 11892, -8503, 32] }, { "year": 2021, "month": 10, "monthName": "OCT", "values": [2210, 2212, -2, 722, 2932, 1127, 3623, -2495, -1805] }, { "year": 2021, "month": 11, "monthName": "NOV", "values": [1755, 742, 1014, 788, 2543, 7507, -4975, 12482, 4963] }, { "year": 2021, "month": 12, "monthName": "DIC", "values": [-465, -2239, 1774, 3433, 2968, -109, -22559, 22450, -3077] }, { "year": 2022, "month": 1, "monthName": "ENE", "values": [-3620, -3455, -166, 163, -3458, -1438, 8696, -10134, 2020] }, { "year": 2022, "month": 2, "monthName": "FEB", "values": [-862, 91, -953, 338, -525, -3449, -1425, -2024, -2925] }, { "year": 2022, "month": 3, "monthName": "MAR", "values": [351, 43, 308, 656, 1007, 4852, -18485, 23337, 3845] }, { "year": 2022, "month": 4, "monthName": "ABR", "values": [-500, 955, -1456, 663, 163, 4913, 32725, -27811, 4751] }, { "year": 2022, "month": 5, "monthName": "MAY", "values": [2476, 3022, -546, 882, 3358, 1552, -19074, 20626, -1806] }, { "year": 2022, "month": 6, "monthName": "JUN", "values": [-395, 519, -913, 921, 526, 1231, 9991, -8760, 704] }, { "year": 2022, "month": 7, "monthName": "JUL", "values": [2262, 3747, -1484, 1320, 3583, 1580, 22031, -20451, -2002] }, { "year": 2022, "month": 8, "monthName": "AGO", "values": [593, 1470, -876, 617, 1210, 5829, -5139, 10968, 4619] }, { "year": 2022, "month": 9, "monthName": "SEP", "values": [18, 538, -520, 1123, 1141, -4820, 12588, -17408, -5961] }, { "year": 2022, "month": 10, "monthName": "OCT", "values": [884, 1999, -1116, 945, 1829, 3582, 3775, -192, 1754] }, { "year": 2022, "month": 11, "monthName": "NOV", "values": [3977, 3496, 481, 1052, 5029, 703, 17766, -17063, -4326] }, { "year": 2022, "month": 12, "monthName": "DIC", "values": [581, -350, 931, 3876, 4457, 3969, -33176, 37145, -488] }, { "year": 2023, "month": 1, "monthName": "ENE", "values": [1321, 962, 359, 524, 1844, 7530, 24039, -16509, 5685] }, { "year": 2023, "month": 2, "monthName": "FEB", "values": [2715, 3812, -1097, 947, 3662, -4062, 26275, -30337, -7724] }, { "year": 2023, "month": 3, "monthName": "MAR", "values": [6707, 7138, -431, 1255, 7962, 2738, 5426, -2688, -5224] }, { "year": 2023, "month": 4, "monthName": "ABR", "values": [1363, 3881, -2517, 536, 1899, 6666, 7255, -589, 4767] }, { "year": 2023, "month": 5, "monthName": "MAY", "values": [3798, 5710, -1912, 533, 4332, 6603, 17124, -10521, 2272] }, { "year": 2023, "month": 6, "monthName": "JUN", "values": [4514, 6814, -2301, 1081, 5595, -110, 8473, -8583, -5705] }, { "year": 2023, "month": 7, "monthName": "JUL", "values": [3055, 6367, -3312, 1396, 4450, 13005, 4613, 8392, 8555] }, { "year": 2023, "month": 8, "monthName": "AGO", "values": [4812, 6577, -1765, 612, 5424, 1872, 4386, -2513, -3552] }, { "year": 2023, "month": 9, "monthName": "SEP", "values": [3679, 5288, -1608, 1195, 4874, -1297, 14772, -16069, -6172] }, { "year": 2023, "month": 10, "monthName": "OCT", "values": [2604, 4306, -1702, 1856, 4460, 13227, 21725, -8498, 8767] }, { "year": 2023, "month": 11, "monthName": "NOV", "values": [3226, 4332, -1106, 1421, 4647, 522, 19947, -19425, -4125] }, { "year": 2023, "month": 12, "monthName": "DIC", "values": [3123, 2263, 861, 5546, 8669, 7584, -39669, 47252, -1085] }, { "year": 2024, "month": 1, "monthName": "ENE", "values": [4195, 2784, 1411, 335, 4530, 6258, 37030, -30772, 1728] }, { "year": 2024, "month": 2, "monthName": "FEB", "values": [3404, 4713, -1309, 584, 3988, 1995, -32960, 34954, -1994] }, { "year": 2024, "month": 3, "monthName": "MAR", "values": [5246, 5732, -486, 912, 6158, 8839, -33111, 41950, 2681] }, { "year": 2024, "month": 4, "monthName": "ABR", "values": [1260, 4640, -3380, 778, 2038, 6191, -8461, 14652, 4154] }, { "year": 2024, "month": 5, "monthName": "MAY", "values": [6364, 8750, -2387, 1107, 7471, 11291, -7705, 18995, 3820] }, { "year": 2024, "month": 6, "monthName": "JUN", "values": [5755, 7196, -1441, 1332, 7087, 9130, -20347, 29477, 2043] }, { "year": 2024, "month": 7, "monthName": "JUL", "values": [6451, 9269, -2818, 1863, 8314, 5094, 30258, -25164, -3220] }, { "year": 2024, "month": 8, "monthName": "AGO", "values": [5373, 7080, -1707, 1285, 6658, 6563, 9877, -3314, -95] }, { "year": 2024, "month": 9, "monthName": "SEP", "values": [3450, 4855, -1405, 1416, 4866, 1895, -21928, 23822, -2971] }, { "year": 2024, "month": 10, "monthName": "OCT", "values": [4872, 6908, -2036, 1870, 6742, 15258, 27057, -11799, 8516] }, { "year": 2024, "month": 11, "monthName": "NOV", "values": [2481, 2920, -439, 1472, 3953, 397, -16203, 16599, -3556] }, { "year": 2024, "month": 12, "monthName": "DIC", "values": [1828, 1501, 327, 5109, 6937, 11006, -11710, 22716, 4070] }, { "year": 2025, "month": 1, "monthName": "ENE", "values": [3041, 1770, 1271, 260, 3301, 5140, 24163, -19023, 1839] }, { "year": 2025, "month": 2, "monthName": "FEB", "values": [3644, 4297, -652, 816, 4461, 1302, -16494, 17796, -3159] }, { "year": 2025, "month": 3, "monthName": "MAR", "values": [3287, 4344, -1058, 1445, 4732, 3303, -4909, 8212, -1429] }, { "year": 2025, "month": 4, "monthName": "ABR", "values": [2376, 6135, -3759, 742, 3118, 8178, 14364, -6186, 5059] }, { "year": 2025, "month": 5, "monthName": "MAY", "values": [6400, 8445, -2045, 1117, 7517, 7313, -682, 7995, -204] }, { "year": 2025, "month": 6, "monthName": "JUN", "values": [5393, 6139, -747, 1619, 7012, 9190, 7186, 2004, 2178] }, { "year": 2025, "month": 7, "monthName": "JUL", "values": [5981, 8194, -2213, 1098, 7079, 8352, 30727, -22374, 1273] }, { "year": 2025, "month": 8, "monthName": "AGO", "values": [5243, 6768, -1525, 648, 5891, 772, 2466, -1694, -5119] }, { "year": 2025, "month": 9, "monthName": "SEP", "values": [4164, 4673, -509, 2217, 6381, 3448, -814, 4262, -2933] }, { "year": 2025, "month": 10, "monthName": "OCT", "values": [7180, 7504, -325, 1970, 9150, 6099, 265, 5835, -3051] }, { "year": 2025, "month": 11, "monthName": "NOV", "values": [205, 2360, -2155, 1574, 1779, -4325, -717, -3608, -6104] }] };
+
+        const BALANZA_174_RAW = { "labels": ["Bienes Saldo", "Bienes Ingresos", "Bienes Pagos", "Servicios Saldo", "Turismo Saldo", "Serv. No Turísticos Saldo", "Servicios Ingresos", "Turismo Ingresos", "Serv. No Turísticos Ingresos", "Servicios Pagos", "Turismo Pagos", "Serv. No Turísticos Pagos"], "data": [{ "year": 2015, "quarter": 1, "values": [-4446, 62556, 67003, 8818, 6166, 2652, 21127, 8979, 12148, 12309, 2813, 9496] }, { "year": 2015, "quarter": 2, "values": [-4558, 65026, 69584, 14631, 11167, 3463, 28041, 14716, 13325, 13411, 3549, 9862] }, { "year": 2015, "quarter": 3, "values": [-6802, 60837, 67639, 19484, 16193, 3291, 34310, 21362, 12948, 14826, 5168, 9657] }, { "year": 2015, "quarter": 4, "values": [-4869, 64419, 69288, 10521, 7059, 3462, 25677, 11253, 14424, 15156, 4194, 10962] }, { "year": 2016, "quarter": 1, "values": [-3719, 62512, 66230, 9442, 6214, 3229, 22665, 9457, 13207, 13222, 3244, 9979] }, { "year": 2016, "quarter": 2, "values": [-1802, 68069, 69872, 15929, 12308, 3621, 29809, 15833, 13977, 13880, 3525, 10356] }, { "year": 2016, "quarter": 3, "values": [-3575, 61908, 65482, 20443, 17012, 3431, 36417, 22605, 13813, 15975, 5593, 10382] }, { "year": 2016, "quarter": 4, "values": [-4647, 67501, 72148, 12459, 7820, 4640, 28179, 12456, 15723, 15719, 4636, 11083] }, { "year": 2017, "quarter": 1, "values": [-5436, 71819, 77255, 9854, 6846, 3008, 23702, 10417, 13285, 13849, 3572, 10277] }, { "year": 2017, "quarter": 2, "values": [-3423, 71522, 74945, 18508, 13798, 4710, 33326, 18077, 15248, 14817, 4279, 10538] }, { "year": 2017, "quarter": 3, "values": [-7092, 65324, 72415, 22351, 18692, 3659, 39583, 25190, 14393, 17232, 6498, 10734] }, { "year": 2017, "quarter": 4, "values": [-5237, 73152, 78389, 12986, 7735, 5251, 29915, 12997, 16919, 16929, 5261, 11668] }, { "year": 2018, "quarter": 1, "values": [-6163, 72360, 78523, 9729, 7084, 2644, 25100, 11324, 13776, 15371, 4240, 11131] }, { "year": 2018, "quarter": 2, "values": [-5951, 76156, 82107, 18187, 14008, 4180, 34195, 18540, 15655, 16008, 4533, 11475] }, { "year": 2018, "quarter": 3, "values": [-8831, 68471, 77302, 20924, 17724, 3201, 40557, 25493, 15064, 19632, 7769, 11863] }, { "year": 2018, "quarter": 4, "values": [-7305, 74800, 82105, 12629, 7957, 4672, 31141, 13811, 17330, 18512, 5854, 12658] }, { "year": 2019, "quarter": 1, "values": [-7145, 73551, 80695, 10122, 7228, 2894, 26848, 11691, 15158, 16726, 4463, 12264] }, { "year": 2019, "quarter": 2, "values": [-3734, 76957, 80690, 18143, 14188, 3955, 35994, 19198, 16796, 17851, 5011, 12841] }, { "year": 2019, "quarter": 3, "values": [-8842, 69220, 78062, 21287, 17246, 4041, 43251, 26237, 17015, 21964, 8990, 12974] }, { "year": 2019, "quarter": 4, "values": [-5474, 75592, 81066, 13064, 7692, 5371, 33318, 14042, 19276, 20255, 6350, 13905] }, { "year": 2020, "quarter": 1, "values": [-5259, 70984, 76243, 8400, 5135, 3265, 24488, 8957, 15531, 16088, 3822, 12266] }, { "year": 2020, "quarter": 2, "values": [675, 55341, 54666, 3362, 27, 3335, 13709, 153, 13557, 10347, 126, 10221] }, { "year": 2020, "quarter": 3, "values": [-2260, 65366, 67626, 7153, 2857, 4296, 20412, 5247, 15164, 13259, 2390, 10869] }, { "year": 2020, "quarter": 4, "values": [-186, 74586, 74773, 5234, 613, 4621, 19311, 1846, 17465, 14077, 1233, 12844] }, { "year": 2021, "quarter": 1, "values": [-1000, 74948, 75948, 2630, 426, 2204, 15662, 1184, 14478, 13032, 758, 12274] }, { "year": 2021, "quarter": 2, "values": [-1568, 80504, 82072, 5452, 1783, 3669, 20667, 3810, 16856, 15214, 2027, 13187] }, { "year": 2021, "quarter": 3, "values": [-6847, 76655, 83502, 12843, 9278, 3565, 30708, 13536, 17173, 17865, 4258, 13608] }, { "year": 2021, "quarter": 4, "values": [-11888, 85715, 97603, 12603, 7043, 5560, 32201, 10668, 21533, 19598, 3624, 15973] }, { "year": 2022, "quarter": 1, "values": [-14586, 90317, 104903, 11265, 7347, 3918, 28265, 9629, 18635, 16999, 2282, 14717] }, { "year": 2022, "quarter": 2, "values": [-15237, 101004, 116241, 19733, 14046, 5687, 40589, 18829, 21760, 20856, 4783, 16073] }, { "year": 2022, "quarter": 3, "values": [-19133, 95122, 114255, 24887, 18104, 6784, 47691, 25653, 22037, 22803, 7550, 15254] }, { "year": 2022, "quarter": 4, "values": [-11259, 102849, 114108, 16404, 8592, 7812, 39991, 15095, 24897, 23587, 6503, 17085] }, { "year": 2023, "quarter": 1, "values": [-5166, 103457, 108623, 17077, 9844, 7233, 35250, 13432, 21818, 18173, 3588, 14586] }, { "year": 2023, "quarter": 2, "values": [-8531, 98308, 106839, 24936, 16163, 8772, 45341, 22260, 23081, 20405, 6096, 14309] }, { "year": 2023, "quarter": 3, "values": [-12042, 87803, 99845, 30273, 21487, 8787, 53610, 30434, 23176, 23336, 8947, 14390] }, { "year": 2023, "quarter": 4, "values": [-9312, 96882, 106193, 20213, 11304, 8909, 45752, 18949, 26803, 25539, 7645, 17894] }, { "year": 2024, "quarter": 1, "values": [-6359, 96563, 102922, 19588, 12601, 6987, 40774, 16904, 23870, 21186, 4303, 16883] }, { "year": 2024, "quarter": 2, "values": [-6423, 102144, 108567, 27009, 18868, 8141, 51680, 25781, 25899, 24671, 6913, 17758] }, { "year": 2024, "quarter": 3, "values": [-10362, 91654, 102017, 31566, 23963, 7603, 59607, 34313, 25294, 28041, 10350, 17691] }, { "year": 2024, "quarter": 4, "values": [-10713, 97322, 108035, 22042, 12758, 9284, 51048, 21398, 29651, 29006, 8640, 20367] }, { "year": 2025, "quarter": 1, "values": [-12628, 98502, 111130, 23040, 13196, 9844, 46885, 18152, 28734, 23845, 4956, 18890] }, { "year": 2025, "quarter": 2, "values": [-9462, 102697, 112160, 30181, 19612, 10570, 57410, 28030, 29380, 27229, 8419, 18810] }, { "year": 2025, "quarter": 3, "values": [-14844, 91984, 106827, 34479, 24659, 9820, 64751, 36266, 28485, 30272, 11607, 18664] }] };
+
+        const BALANZA_174A_RAW = { "labels": ["Total No Turísticos", "Transformación y Reparaciones", "Transporte", "Construcción", "Seguros y Pensiones", "Servicios Financieros", "Propiedad Intelectual", "Telecomunicaciones e Informática", "Otros Serv. Empresariales", "I+D", "Consultoría", "Serv. Técnicos y Comerciales", "Personales y Culturales"], "data": [{ "year": 2020, "quarter": 1, "ingresos": [15531, 1141, 3815, 146, 248, 831, 543, 2956, 5414, 441, 1876, 3096, 436], "pagos": [12266, 303, 2659, 31, 566, 698, 1198, 1785, 4631, 211, 1336, 3084, 394] }, { "year": 2020, "quarter": 2, "ingresos": [13557, 816, 2851, 224, 195, 830, 543, 2281, 5571, 429, 1706, 3436, 246], "pagos": [10221, 197, 1954, 25, 415, 700, 963, 1689, 3994, 196, 1227, 2571, 284] }, { "year": 2020, "quarter": 3, "ingresos": [15164, 1104, 3693, 223, 240, 834, 618, 2715, 5352, 391, 1530, 3431, 385], "pagos": [10869, 305, 2253, 29, 429, 709, 931, 1827, 4071, 285, 1183, 2603, 315] }, { "year": 2020, "quarter": 4, "ingresos": [17465, 1020, 3603, 235, 293, 912, 864, 3069, 7058, 497, 2047, 4514, 411], "pagos": [12844, 252, 2327, 32, 471, 784, 1385, 2395, 4921, 234, 1563, 3124, 277] }, { "year": 2021, "quarter": 1, "ingresos": [14478, 1103, 3099, 165, 422, 798, 661, 2675, 5161, 440, 1472, 3248, 393], "pagos": [12274, 279, 2919, 23, 563, 759, 1237, 2037, 4214, 207, 1293, 2714, 244] }, { "year": 2021, "quarter": 2, "ingresos": [16856, 1079, 3620, 269, 409, 890, 787, 3037, 6375, 486, 1810, 4080, 391], "pagos": [13187, 241, 3172, 29, 575, 703, 1283, 2204, 4643, 216, 1384, 3044, 337] }, { "year": 2021, "quarter": 3, "ingresos": [17173, 1191, 3727, 234, 406, 888, 765, 3254, 6067, 437, 1669, 3961, 639], "pagos": [13608, 248, 3713, 41, 520, 678, 1047, 2223, 4833, 189, 1329, 3315, 305] }, { "year": 2021, "quarter": 4, "ingresos": [21533, 1435, 4285, 332, 360, 1114, 1042, 4079, 8167, 546, 2459, 5162, 718], "pagos": [15973, 298, 4199, 25, 478, 712, 1439, 2463, 5957, 269, 1808, 3880, 401] }, { "year": 2022, "quarter": 1, "ingresos": [18635, 1557, 4039, 195, 317, 896, 976, 3347, 6645, 569, 1776, 4299, 664], "pagos": [14717, 387, 3751, 40, 567, 724, 1305, 2273, 5266, 197, 1454, 3616, 404] }, { "year": 2022, "quarter": 2, "ingresos": [21760, 1299, 5195, 233, 345, 989, 1041, 4096, 7784, 520, 2400, 4864, 780], "pagos": [16073, 331, 4320, 51, 597, 673, 1411, 2222, 5957, 212, 1590, 4155, 511] }, { "year": 2022, "quarter": 3, "ingresos": [22037, 1483, 5433, 252, 317, 1003, 976, 4399, 7349, 449, 2388, 4512, 824], "pagos": [15254, 347, 4256, 48, 534, 527, 1155, 2393, 5532, 193, 1665, 3673, 462] }, { "year": 2022, "quarter": 4, "ingresos": [24897, 1614, 5009, 235, 313, 1194, 1305, 4552, 9709, 553, 3101, 6055, 967], "pagos": [17085, 336, 4145, 68, 615, 483, 1666, 2569, 6635, 336, 1960, 4339, 567] }, { "year": 2023, "quarter": 1, "ingresos": [21818, 1274, 4336, 312, 470, 1323, 842, 4840, 7679, 685, 2304, 4691, 743], "pagos": [14586, 550, 2137, 118, 660, 454, 1414, 2656, 6069, 306, 1962, 3802, 528] }, { "year": 2023, "quarter": 2, "ingresos": [23081, 1175, 5056, 368, 343, 1156, 812, 5005, 8393, 545, 3025, 4824, 774], "pagos": [14309, 374, 2325, 84, 604, 416, 1586, 2513, 5791, 358, 2032, 3401, 615] }, { "year": 2023, "quarter": 3, "ingresos": [23176, 989, 4880, 290, 427, 1479, 960, 4951, 8195, 717, 2505, 4974, 1005], "pagos": [14390, 441, 2042, 51, 562, 345, 1436, 2550, 6406, 424, 2103, 3879, 557] }, { "year": 2023, "quarter": 4, "ingresos": [26803, 1465, 4258, 287, 505, 1574, 1263, 5574, 11075, 954, 3330, 6791, 803], "pagos": [17894, 497, 2224, 88, 542, 767, 1970, 3629, 7518, 275, 2920, 4322, 659] }, { "year": 2024, "quarter": 1, "ingresos": [23870, 941, 4094, 284, 878, 1503, 995, 4793, 9594, 555, 3149, 5890, 786], "pagos": [16883, 558, 2634, 40, 924, 466, 1501, 2773, 7252, 414, 2546, 4293, 735] }, { "year": 2024, "quarter": 2, "ingresos": [25899, 1134, 4828, 323, 603, 1695, 1047, 5154, 10255, 714, 3080, 6462, 860], "pagos": [17758, 556, 3107, 72, 837, 457, 1740, 2875, 7261, 404, 2497, 4360, 853] }, { "year": 2024, "quarter": 3, "ingresos": [25294, 1073, 4738, 228, 633, 1544, 1028, 5078, 9980, 641, 3142, 6197, 994], "pagos": [17691, 464, 3139, 75, 749, 409, 1605, 2738, 7679, 276, 2625, 4778, 832] }, { "year": 2024, "quarter": 4, "ingresos": [29651, 1413, 4480, 357, 525, 1975, 1425, 6056, 12589, 702, 4254, 7633, 829], "pagos": [20367, 664, 3248, 103, 789, 592, 1920, 3198, 8876, 277, 3090, 5509, 976] }, { "year": 2025, "quarter": 1, "ingresos": [28734, 1183, 5478, 285, 1018, 1444, 1897, 5426, 11011, 656, 3581, 6774, 992], "pagos": [18890, 544, 2553, 92, 1091, 589, 1772, 2896, 8651, 446, 3186, 5019, 702] }, { "year": 2025, "quarter": 2, "ingresos": [29380, 1435, 6181, 322, 701, 1481, 1344, 5636, 11234, 702, 3494, 7038, 1047], "pagos": [18810, 603, 2486, 133, 929, 614, 2058, 2800, 8238, 458, 2682, 5099, 950] }, { "year": 2025, "quarter": 3, "ingresos": [28485, 1325, 5812, 309, 554, 1540, 1460, 5585, 10705, 603, 3226, 6876, 1196], "pagos": [18664, 552, 2361, 121, 978, 640, 1845, 2867, 8210, 305, 2619, 5286, 1091] }] };
+
+        const BALANZA_174C_RAW = { "labels": ["Total", "Europa", "UE 27", "UEM 20", "Alemania", "Bélgica", "Países Bajos", "Francia", "Italia", "Irlanda", "Portugal", "UE27 extra UEM20", "Europa extra UE27", "Reino Unido", "Rusia", "Suiza", "América", "Am. Norte y Central", "EEUU", "Am. del Sur", "África", "Asia"], "data": [{ "year": 2020, "quarter": 1, "values": [8957, 7012, 4717, 3836, 1161, 282, 399, 979, 342, 179, 135, 881, 2295, 1547, 113, 167, 1124, 710, 408, 414, 236, 521] }, { "year": 2020, "quarter": 2, "values": [153, 139, 126, 119, 27, 8, 11, 60, 7, null, null, 7, 13, null, null, 3, 13, 13, null, 0, 0, 0] }, { "year": 2020, "quarter": 3, "values": [5247, 4821, 3908, 3506, 726, 309, 363, 1564, 213, 73, 120, 402, 913, 667, null, 129, 221, 127, 46, 94, 32, 120] }, { "year": 2020, "quarter": 4, "values": [1846, 1636, 1220, 1026, 237, 93, 77, 432, 54, 34, 49, 194, 415, 325, null, 40, 119, 73, 26, 46, 19, 61] }, { "year": 2021, "quarter": 1, "values": [1184, 1015, 866, 723, 193, 53, 50, 274, 51, 16, 30, 143, 150, 65, null, 34, 93, 60, 24, 33, 25, 36] }, { "year": 2021, "quarter": 2, "values": [3810, 3357, 2855, 2491, 900, 187, 237, 700, 161, 43, 95, 363, 502, 216, null, 153, 264, 199, 110, 65, 64, 117] }, { "year": 2021, "quarter": 3, "values": [13536, 12009, 9292, 8127, 2103, 737, 1051, 2595, 575, 289, 296, 1165, 2716, 1946, 68, 385, 941, 740, 461, 201, 171, 397] }, { "year": 2021, "quarter": 4, "values": [10668, 9097, 6570, 5622, 1763, 477, 605, 1421, 433, 269, 158, 948, 2527, 1742, 66, 280, 1064, 766, 437, 298, 198, 297] }, { "year": 2022, "quarter": 1, "values": [9629, 8046, 5747, 4720, 1372, 367, 579, 1161, 379, 235, 173, 1026, 2300, 1757, null, 197, 1043, 574, 353, 470, 209, 296] }, { "year": 2022, "quarter": 2, "values": [18829, 15521, 10444, 9036, 2761, 641, 1097, 2117, 696, 590, 316, 1408, 5077, 3998, null, 464, 2338, 1499, 1094, 838, 224, 600] }, { "year": 2022, "quarter": 3, "values": [25653, 21628, 15176, 13413, 3123, 1159, 1698, 3812, 1260, 758, 593, 1763, 6451, 5198, 105, 554, 2401, 1594, 1040, 808, 642, 789] }, { "year": 2022, "quarter": 4, "values": [15095, 12102, 8342, 7074, 2027, 527, 685, 1900, 652, 394, 268, 1268, 3760, 2704, 112, 365, 2076, 1439, 931, 637, 237, 534] }, { "year": 2023, "quarter": 1, "values": [13432, 10535, 7333, 5961, 1674, 418, 669, 1461, 542, 301, 295, 1372, 3185, 2281, 90, 261, 1867, 1154, 732, 713, 304, 617] }, { "year": 2023, "quarter": 2, "values": [22260, 17398, 12004, 10279, 3037, 684, 1190, 2616, 828, 641, 418, 1725, 5383, 4251, 115, 553, 3215, 2323, 1600, 892, 410, 946] }, { "year": 2023, "quarter": 3, "values": [30434, 24807, 17240, 15275, 3483, 1188, 1897, 4530, 1468, 887, 698, 1966, 7545, 5890, 132, 720, 3284, 2380, 1540, 904, 732, 1100] }, { "year": 2023, "quarter": 4, "values": [18949, 14522, 10130, 8521, 2371, 644, 900, 2203, 838, 504, 283, 1609, 4362, 3265, 86, 445, 2834, 1958, 1324, 876, 455, 920] }, { "year": 2024, "quarter": 1, "values": [16904, 13089, 9142, 7456, 2228, 606, 816, 1782, 680, 414, 254, 1686, 3926, 2844, 86, 301, 2394, 1601, 996, 794, 410, 844] }, { "year": 2024, "quarter": 2, "values": [25781, 19933, 13581, 11707, 3289, 863, 1365, 2970, 990, 832, 414, 1874, 6334, 4945, 97, 573, 3923, 3012, 2185, 911, 401, 1235] }, { "year": 2024, "quarter": 3, "values": [34313, 27820, 19379, 16913, 3941, 1360, 2164, 5059, 1583, 1014, 788, 2466, 8422, 6572, 155, 790, 3543, 2509, 1590, 1034, 933, 1531] }, { "year": 2024, "quarter": 4, "values": [21398, 16528, 11709, 10008, 2866, 717, 979, 2587, 969, 571, 346, 1701, 4800, 3505, 86, 457, 3090, 2224, 1377, 866, 620, 810] }, { "year": 2025, "quarter": 1, "values": [18152, 14256, 10106, 8279, 2359, 554, 870, 2185, 758, 439, 282, 1827, 4128, 2998, 62, 369, 2483, 1518, 941, 965, 512, 742] }, { "year": 2025, "quarter": 2, "values": [28030, 21532, 14692, 12681, 3509, 911, 1519, 3254, 1059, 913, 490, 2011, 6840, 5319, 77, 678, 4360, 3327, 2321, 1033, 693, 1159] }, { "year": 2025, "quarter": 3, "values": [36266, 29314, 20541, 17832, 4004, 1400, 2366, 5107, 1723, 1169, 980, 2708, 8773, 6736, 146, 801, 4033, 2786, 1904, 1246, 1060, 1455] }] };
+
         const EMBEDDED_CSV_DATA = `year,flujo,macro_sector,lv1,lit_lv1,lv2,lit_lv2,lv3,lit_lv3,lv4,lit_lv4,total_millones,top_paises_lv1,tva_lv1,top_paises_lv2,tva_lv2,top_paises_lv3,tva_lv3,top_paises_lv4,tva_lv4
 2021,E,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111111,Animales vivos de bovinos,NA,NA,249.18,"China, Francia, Portugal",NA,"Portugal, Italia, Francia",NA,"Argelia, Libia, Líbano",NA,"Argelia, Libia, Líbano",NA
 2021,E,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111112,Carne fresca o refrigerada de  bovino,NA,NA,686.61,"China, Francia, Portugal",NA,"Portugal, Italia, Francia",NA,"Portugal, Italia, Grecia",NA,"Portugal, Italia, Grecia",NA
@@ -3599,6 +3948,435 @@
                 }
             }
         });
+
+
+
+        // ========== MAIN TAB SWITCHING ==========
+        function switchMainTab(tab) {
+            document.querySelectorAll('.main-tab-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.mainTab === tab);
+            });
+            document.getElementById('flujosView').classList.toggle('hidden', tab !== 'flujos');
+            document.getElementById('balanzaView').classList.toggle('hidden', tab !== 'balanza');
+            if (tab === 'balanza') {
+                initBalanzaDeP();
+            }
+        }
+
+        // ========== BALANZA SUB-TAB SWITCHING ==========
+        function switchBPTab(tab) {
+            document.querySelectorAll('.bp-sub-tab').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.bpTab === tab);
+            });
+            document.getElementById('bp171Panel').classList.toggle('hidden', tab !== 's171');
+            document.getElementById('bp174Panel').classList.toggle('hidden', tab !== 's174');
+            const badge = document.getElementById('bpBadge');
+            if (tab === 's171') {
+                badge.textContent = 'Último dato: Noviembre 2025';
+            } else {
+                badge.textContent = 'Último dato: 3T 2025';
+            }
+        }
+
+        // ========== FORMAT NUMBER (Spanish) ==========
+        function bpFormatNum(n) {
+            if (n == null) return '—';
+            return new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0 }).format(n);
+        }
+
+        // ========== BALANZA CHART INSTANCES ==========
+        const bpCharts = {};
+
+        // ========== INIT BALANZA ==========
+        let bpInitialized = false;
+        function initBalanzaDeP() {
+            if (bpInitialized) return;
+            bpInitialized = true;
+            render171KPIs();
+            render171Chart();
+            render171Table();
+            render174KPIs();
+            render174BarChart();
+            render174TourismChart();
+            render174DonutChart();
+            render174IngPagChart();
+        }
+
+        // ========== SERIE 17.1 KPIs ==========
+        function render171KPIs() {
+            const data = BALANZA_171_RAW;
+            const latest = data.data[data.data.length - 1];
+            const kpiDefs = [
+                { label: 'Cuenta Corriente', idx: 0 },
+                { label: 'Bienes y Servicios', idx: 1 },
+                { label: 'Rentas Primaria y Secundaria', idx: 2 },
+                { label: 'Cuenta de Capital', idx: 3 }
+            ];
+            const container = document.getElementById('bp171KPIs');
+            const monthNames = {
+                1: 'Enero', 2: 'Febrero', 3: 'Marzo', 4: 'Abril', 5: 'Mayo', 6: 'Junio',
+                7: 'Julio', 8: 'Agosto', 9: 'Septiembre', 10: 'Octubre', 11: 'Noviembre', 12: 'Diciembre'
+            };
+            container.innerHTML = kpiDefs.map(k => {
+                const val = latest.values[k.idx];
+                const cls = val >= 0 ? 'positive' : 'negative';
+                const sign = val >= 0 ? '+' : '';
+                return `<div class="bp-kpi-card">
+                    <div class="bp-kpi-label">${k.label}</div>
+                    <div class="bp-kpi-value ${cls}">${sign}${bpFormatNum(val)}</div>
+                    <div class="bp-kpi-unit">${monthNames[latest.month]} ${latest.year} · M€</div>
+                </div>`;
+            }).join('');
+        }
+
+        // ========== SERIE 17.1 CHART ==========
+        function render171Chart() {
+            const data = BALANZA_171_RAW;
+            // Last 60 months
+            const recent = data.data.slice(-60);
+            const labels = recent.map(d => {
+                const m = String(d.month).padStart(2, '0');
+                return `${m}/${d.year}`;
+            });
+            const colors = [
+                'rgba(6,132,212,1)',     // Cuenta Corriente
+                'rgba(16,185,129,1)',    // Bienes y Servicios
+                'rgba(239,68,68,0.7)',   // Rentas
+            ];
+            const seriesNames = ['Cuenta Corriente', 'Bienes y Servicios', 'Rentas Primaria y Secundaria'];
+            const datasets = seriesNames.map((name, i) => ({
+                label: name,
+                data: recent.map(d => d.values[i]),
+                borderColor: colors[i],
+                backgroundColor: colors[i].replace(',1)', ',0.08)'),
+                borderWidth: 2,
+                pointRadius: 0,
+                pointHoverRadius: 4,
+                tension: 0.3,
+                fill: i === 0
+            }));
+
+            const ctx = document.getElementById('bp171Chart').getContext('2d');
+            if (bpCharts.bp171) bpCharts.bp171.destroy();
+            bpCharts.bp171 = new Chart(ctx, {
+                type: 'line',
+                data: { labels, datasets },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: { mode: 'index', intersect: false },
+                    plugins: {
+                        legend: { position: 'top', labels: { usePointStyle: true, pointStyle: 'circle', font: { size: 11 } } },
+                        tooltip: {
+                            callbacks: {
+                                label: ctx => `${ctx.dataset.label}: ${bpFormatNum(ctx.raw)} M€`
+                            }
+                        }
+                    },
+                    scales: {
+                        x: { grid: { display: false }, ticks: { font: { size: 9 }, maxTicksLimit: 12 } },
+                        y: {
+                            grid: { color: 'rgba(0,0,0,0.05)' },
+                            ticks: { callback: v => bpFormatNum(v), font: { size: 10 } }
+                        }
+                    }
+                }
+            });
+        }
+
+        // ========== SERIE 17.1 ANNUAL TABLE ==========
+        function render171Table() {
+            const data = BALANZA_171_RAW;
+            // Group by year
+            const byYear = {};
+            data.data.forEach(d => {
+                if (!byYear[d.year]) byYear[d.year] = { count: 0, sums: [0, 0, 0, 0, 0, 0, 0, 0, 0] };
+                const y = byYear[d.year];
+                y.count++;
+                d.values.forEach((v, i) => { if (v != null) y.sums[i] += v; });
+            });
+            const years = Object.keys(byYear).sort().slice(-5);
+            const headers = ['Año', 'Cta. Corriente', 'Bienes/Serv.', 'Rentas', 'Cta. Capital', 'Capacidad Financ.'];
+            const table = document.getElementById('bp171Table');
+            let html = '<thead><tr>';
+            headers.forEach(h => html += `<th class="px-4 py-3 text-center text-xs font-semibold uppercase tracking-wider text-primary/70 border-b border-primary/10">${h}</th>`);
+            html += '</tr></thead><tbody>';
+            years.forEach((yr, ri) => {
+                const y = byYear[yr];
+                const label = y.count < 12 ? `${yr}*` : yr;
+                html += `<tr class="${ri % 2 === 0 ? 'bg-white/30' : ''}">`;
+                html += `<td class="px-4 py-2 text-center font-bold text-primary">${label}</td>`;
+                [0, 1, 2, 3, 4].forEach(i => {
+                    const val = y.sums[i];
+                    const cls = val >= 0 ? 'text-emerald-600' : 'text-red-500';
+                    html += `<td class="px-4 py-2 text-center font-semibold ${cls}">${bpFormatNum(val)}</td>`;
+                });
+                html += '</tr>';
+            });
+            html += '</tbody>';
+            if (byYear[years[years.length - 1]]?.count < 12) {
+                html += `<tfoot><tr><td colspan="6" class="px-4 py-2 text-xs text-muted-foreground italic text-center">* Datos parciales (${byYear[years[years.length - 1]].count} meses)</td></tr></tfoot>`;
+            }
+            table.innerHTML = html;
+        }
+
+        // ========== HELPER: aggregate 17.4 data by year ==========
+        function aggregate174ByYear(dataArr, numCols) {
+            const byYear = {};
+            dataArr.forEach(d => {
+                if (!byYear[d.year]) byYear[d.year] = { quarters: 0, sums: new Array(numCols).fill(0) };
+                const y = byYear[d.year];
+                y.quarters++;
+                const vals = d.values || [];
+                vals.forEach((v, i) => { if (i < numCols && v != null) y.sums[i] += v; });
+            });
+            return byYear;
+        }
+
+        // ========== SERIE 17.4 KPIs ==========
+        function render174KPIs() {
+            const data = BALANZA_174_RAW;
+            const byYear = aggregate174ByYear(data.data, 12);
+            const years = Object.keys(byYear).sort();
+            const latestYear = years[years.length - 1];
+            const ly = byYear[latestYear];
+            const isPartial = ly.quarters < 4;
+            const periodLabel = isPartial ? `${latestYear} (hasta ${ly.quarters}T)` : latestYear;
+            const kpiDefs = [
+                { label: 'Saldo Bienes', idx: 0 },
+                { label: 'Saldo Servicios', idx: 3 },
+                { label: 'Saldo Turismo', idx: 4 }
+            ];
+            const container = document.getElementById('bp174KPIs');
+            container.innerHTML = kpiDefs.map(k => {
+                const val = ly.sums[k.idx];
+                const cls = val >= 0 ? 'positive' : 'negative';
+                const sign = val >= 0 ? '+' : '';
+                return `<div class="bp-kpi-card">
+                    <div class="bp-kpi-label">${k.label}</div>
+                    <div class="bp-kpi-value ${cls}">${sign}${bpFormatNum(val)}</div>
+                    <div class="bp-kpi-unit">${periodLabel} · M€</div>
+                </div>`;
+            }).join('');
+        }
+
+        // ========== SERIE 17.4 BAR CHART (ANNUAL) ==========
+        function render174BarChart() {
+            const data = BALANZA_174_RAW;
+            const byYear = aggregate174ByYear(data.data, 12);
+            const years = Object.keys(byYear).sort().slice(-6);
+            const labels = years.map(yr => {
+                const y = byYear[yr];
+                return y.quarters < 4 ? `${yr}*` : yr;
+            });
+            const ctx = document.getElementById('bp174BarChart').getContext('2d');
+            if (bpCharts.bp174bar) bpCharts.bp174bar.destroy();
+            bpCharts.bp174bar = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels,
+                    datasets: [
+                        {
+                            label: 'Bienes (Saldo)',
+                            data: years.map(yr => byYear[yr].sums[0]),
+                            backgroundColor: 'rgba(239,68,68,0.6)',
+                            borderColor: 'rgba(239,68,68,1)',
+                            borderWidth: 1,
+                            borderRadius: 4
+                        },
+                        {
+                            label: 'Servicios (Saldo)',
+                            data: years.map(yr => byYear[yr].sums[3]),
+                            backgroundColor: 'rgba(16,185,129,0.6)',
+                            borderColor: 'rgba(16,185,129,1)',
+                            borderWidth: 1,
+                            borderRadius: 4
+                        },
+                        {
+                            label: 'Turismo (Saldo)',
+                            data: years.map(yr => byYear[yr].sums[4]),
+                            backgroundColor: 'rgba(251,191,36,0.5)',
+                            borderColor: 'rgba(251,191,36,1)',
+                            borderWidth: 1,
+                            borderRadius: 4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'top', labels: { usePointStyle: true, font: { size: 10 } } },
+                        tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${bpFormatNum(ctx.raw)} M€` } }
+                    },
+                    scales: {
+                        x: { grid: { display: false }, ticks: { font: { size: 9 } } },
+                        y: { grid: { color: 'rgba(0,0,0,0.05)' }, ticks: { callback: v => bpFormatNum(v), font: { size: 10 } } }
+                    }
+                }
+            });
+        }
+
+        // ========== TOURISM CHART ==========
+        function render174TourismChart() {
+            const data = BALANZA_174C_RAW;
+            const recent = data.data.slice(-12);
+            const labels = recent.map(d => `${d.quarter}T ${d.year}`);
+            // Countries: idx 4=Alemania, 7=Francia, 13=Reino Unido, 8=Italia, 6=P.Bajos, 18=EEUU
+            const countries = [
+                { name: 'Alemania', idx: 4, color: 'rgba(6,132,212,1)' },
+                { name: 'Francia', idx: 7, color: 'rgba(16,185,129,1)' },
+                { name: 'Reino Unido', idx: 13, color: 'rgba(239,68,68,1)' },
+                { name: 'Italia', idx: 8, color: 'rgba(251,191,36,1)' },
+                { name: 'Países Bajos', idx: 6, color: 'rgba(168,85,247,1)' },
+                { name: 'EEUU', idx: 18, color: 'rgba(245,158,11,1)' }
+            ];
+
+            const ctx = document.getElementById('bp174TourismChart').getContext('2d');
+            if (bpCharts.bp174tour) bpCharts.bp174tour.destroy();
+            bpCharts.bp174tour = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels,
+                    datasets: countries.map(c => ({
+                        label: c.name,
+                        data: recent.map(d => d.values[c.idx]),
+                        borderColor: c.color,
+                        backgroundColor: c.color.replace(',1)', ',0.08)'),
+                        borderWidth: 2,
+                        pointRadius: 2,
+                        pointHoverRadius: 5,
+                        tension: 0.3
+                    }))
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'top', labels: { usePointStyle: true, font: { size: 10 } } },
+                        tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${bpFormatNum(ctx.raw)} M€` } }
+                    },
+                    scales: {
+                        x: { grid: { display: false }, ticks: { font: { size: 9 } } },
+                        y: { grid: { color: 'rgba(0,0,0,0.05)' }, ticks: { callback: v => bpFormatNum(v), font: { size: 10 } } }
+                    }
+                }
+            });
+        }
+
+        // ========== SERVICES DONUT CHART (ANNUAL) ==========
+        function render174DonutChart() {
+            const data = BALANZA_174A_RAW;
+            // Aggregate latest year's ingresos by summing quarters
+            const byYear = {};
+            data.data.forEach(d => {
+                if (!byYear[d.year]) byYear[d.year] = { quarters: 0, ingresos: new Array(13).fill(0) };
+                const y = byYear[d.year];
+                y.quarters++;
+                d.ingresos.forEach((v, i) => { if (v != null && i < 13) y.ingresos[i] += v; });
+            });
+            const years = Object.keys(byYear).sort();
+            const latestYear = years[years.length - 1];
+            const ly = byYear[latestYear];
+            const isPartial = ly.quarters < 4;
+            // Skip index 0 (total), take indices 1-12 (sub-types)
+            const typeLabels = data.labels.slice(1);
+            const values = ly.ingresos.slice(1);
+            const bgColors = [
+                '#0684D4', '#10b981', '#ef4444', '#f59e0b', '#8b5cf6',
+                '#ec4899', '#14b8a6', '#f97316', '#6366f1', '#84cc16',
+                '#06b6d4', '#e11d48'
+            ];
+
+            const ctx = document.getElementById('bp174DonutChart').getContext('2d');
+            if (bpCharts.bp174donut) bpCharts.bp174donut.destroy();
+            const isMobile = window.innerWidth < 640;
+            bpCharts.bp174donut = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: typeLabels,
+                    datasets: [{
+                        data: values,
+                        backgroundColor: bgColors,
+                        borderWidth: 2,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '55%',
+                    plugins: {
+                        legend: {
+                            position: isMobile ? 'bottom' : 'right',
+                            labels: { font: { size: isMobile ? 8 : 9 }, usePointStyle: true, pointStyle: 'circle', padding: isMobile ? 4 : 8 }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: ctx => {
+                                    const total = ctx.dataset.data.reduce((a, b) => a + (b || 0), 0);
+                                    const pct = ((ctx.raw / total) * 100).toFixed(1);
+                                    return `${ctx.label}: ${bpFormatNum(ctx.raw)} M€ (${pct}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+            // Update chart title with year info
+            const titleEl = ctx.canvas.closest('.bp-chart-card')?.querySelector('.bp-chart-title');
+            if (titleEl) titleEl.textContent = `Servicios No Turísticos — Ingresos por Tipo (${isPartial ? latestYear + ' hasta ' + ly.quarters + 'T' : latestYear})`;
+        }
+
+        // ========== INGRESOS VS PAGOS CHART (ANNUAL) ==========
+        function render174IngPagChart() {
+            const data = BALANZA_174_RAW;
+            const byYear = aggregate174ByYear(data.data, 12);
+            const years = Object.keys(byYear).sort().slice(-6);
+            const labels = years.map(yr => {
+                const y = byYear[yr];
+                return y.quarters < 4 ? `${yr}*` : yr;
+            });
+
+            const ctx = document.getElementById('bp174IngPagChart').getContext('2d');
+            if (bpCharts.bp174ip) bpCharts.bp174ip.destroy();
+            bpCharts.bp174ip = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels,
+                    datasets: [
+                        {
+                            label: 'Servicios Ingresos',
+                            data: years.map(yr => byYear[yr].sums[6]),
+                            backgroundColor: 'rgba(16,185,129,0.5)',
+                            borderColor: 'rgba(16,185,129,1)',
+                            borderWidth: 1,
+                            borderRadius: 4
+                        },
+                        {
+                            label: 'Servicios Pagos',
+                            data: years.map(yr => -byYear[yr].sums[9]),
+                            backgroundColor: 'rgba(239,68,68,0.5)',
+                            borderColor: 'rgba(239,68,68,1)',
+                            borderWidth: 1,
+                            borderRadius: 4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'top', labels: { usePointStyle: true, font: { size: 10 } } },
+                        tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${bpFormatNum(Math.abs(ctx.raw))} M€` } }
+                    },
+                    scales: {
+                        x: { stacked: true, grid: { display: false }, ticks: { font: { size: 9 } } },
+                        y: { stacked: true, grid: { color: 'rgba(0,0,0,0.05)' }, ticks: { callback: v => bpFormatNum(v), font: { size: 10 } } }
+                    }
+                }
+            });
+        }
 
         // ========== INITIALIZATION ==========
         document.addEventListener('DOMContentLoaded', async () => {
