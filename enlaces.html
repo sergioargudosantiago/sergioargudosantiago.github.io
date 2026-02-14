@@ -15,6 +15,37 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 
+    <!-- SEO & Social Meta Tags -->
+    <meta name="author" content="Sergio Argudo Santiago">
+    <meta name="keywords"
+        content="Enlaces SOIVRE, Recursos Oposiciones, Organismos Comercio Exterior, Normativa Aduanera">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sergioargudosantiago.github.io/enlaces.html">
+    <meta property="og:title" content="Enlaces de Interés - Sergio Argudo Santiago | Recursos SOIVRE">
+    <meta property="og:description"
+        content="Recopilación de enlaces útiles para la preparación de oposiciones SOIVRE: Organismos internacionales, normativas y estadísticas.">
+    <meta property="og:image" content="https://sergioargudosantiago.github.io/images/og-default.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sergioargudosantiago.github.io/enlaces.html">
+    <meta property="twitter:title" content="Enlaces de Interés - Sergio Argudo Santiago | Recursos SOIVRE">
+    <meta property="twitter:description"
+        content="Recopilación de enlaces útiles para la preparación de oposiciones SOIVRE: Organismos internacionales, normativas y estadísticas.">
+    <meta property="twitter:image" content="https://sergioargudosantiago.github.io/images/og-default.jpg">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -100,6 +131,8 @@
             position: relative;
             min-height: 100vh;
             color: hsl(var(--foreground));
+            padding-bottom: 5rem;
+            /* Space for sticky footer */
         }
 
         html {
@@ -696,8 +729,9 @@
     </main>
 
 
-    <!-- Footer -->
-    <footer class="bg-primary text-primary-foreground">
+    <!-- Footer (Sticky) -->
+    <footer
+        class="bg-primary text-primary-foreground fixed bottom-0 left-0 right-0 z-50 shadow-lg border-t border-primary/20 backdrop-blur-sm bg-opacity-95">
         <div class="container mx-auto flex h-16 items-center justify-center gap-6 px-4 sm:px-6 lg:px-8">
             <a href="https://www.linkedin.com/in/sergio-argudo-santiago-inspector-soivre-placeholder"
                 aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"
