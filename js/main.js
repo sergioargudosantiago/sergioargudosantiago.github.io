@@ -259,6 +259,7 @@ function generateTopics(exerciseNumber, topicCount) {
         // Clean filename for storage (must match renaming script)
         // Remove trailing dots and replace illegal characters (like :) and remove other illegal chars
         const safeTitle = displayName
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Remove accents
             .replace(/:/g, ".")
             .replace(/[<>:"/\\|?*]/g, "")
             .replace(/\.$/, "");
@@ -351,8 +352,8 @@ function renderTopicItem(topic) {
                     <span class="font-serif font-semibold text-foreground/90 group-hover:text-primary transition-colors flex-1 pr-4">${topic.name}</span>
                     <div class="flex space-x-2">
                         <!-- Word Download -->
-                        <a href="#" 
-                           onclick="event.preventDefault(); downloadFile('${topic.pathWord}', '${topic.filenameWord}');"
+                        <a href="${topic.pathWord}" 
+                           download="${topic.filenameWord}"
                            title="Descargar en Word"
                            class="p-2 rounded-full bg-blue-100 hover:bg-blue-200 text-blue-600 transition-colors">
                             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -360,8 +361,9 @@ function renderTopicItem(topic) {
                             </svg>
                         </a>
                         <!-- PDF Download -->
-                        <a href="#" 
-                           onclick="event.preventDefault(); downloadFile('${topic.pathPdf}', '${topic.filenamePdf}');"
+                        <a href="${topic.pathPdf}" 
+                           download="${topic.filenamePdf}"
+                           target="_blank"
                            title="Descargar en PDF"
                            class="p-2 rounded-full bg-red-100 hover:bg-red-200 text-red-600 transition-colors">
                             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
