@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description"
         content="Dashboard de comercio exterior español con datos de exportación e importación por sectores económicos.">
-    <title>Dashboard Comercio Exterior - Oposiciones SOIVRE</title>
+    <title>Sergio Argudo - Comercio Exterior</title>
+    <link rel="icon" href="images/logo.png?v=2" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,16 +26,16 @@
     <meta property="og:url" content="https://sergioargudosantiago.github.io/comercio-exterior.html">
     <meta property="og:title" content="Estadísticas Comercio Exterior - Sergio Argudo Santiago | SOIVRE">
     <meta property="og:description"
-        content="Análisis y gráficas interactivas del comercio exterior español. Datos actualizados para la preparación de oposiciones SOIVRE.">
-    <meta property="og:image" content="https://sergioargudosantiago.github.io/images/og-default.jpg">
+        content="Dashboard interactivo de datos de comercio exterior de España. Análisis por sectores y CC.AA.">
+    <meta property="og:image" content="https://sergioargudosantiago.github.io/images/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sergioargudosantiago.github.io/comercio-exterior.html">
-    <meta property="twitter:title" content="Estadísticas Comercio Exterior - Sergio Argudo Santiago | SOIVRE">
+    <meta property="twitter:title" content="Dashboard Comercio Exterior - Oposiciones SOIVRE">
     <meta property="twitter:description"
-        content="Análisis y gráficas interactivas del comercio exterior español. Datos actualizados para la preparación de oposiciones SOIVRE.">
-    <meta property="twitter:image" content="https://sergioargudosantiago.github.io/images/og-default.jpg">
+        content="Dashboard interactivo de datos de comercio exterior de España. Análisis por sectores y CC.AA.">
+    <meta property="twitter:image" content="https://sergioargudosantiago.github.io/images/logo.png">
 
     <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -719,7 +720,7 @@
     </div>
 
     <!-- Main Content -->
-    <main class="relative flex-1 pb-24 pt-24 md:pt-32">
+    <main class="relative flex-1 pb-40 pt-24 md:pt-32">
         <section class="w-full">
             <div class="container mx-auto max-w-6xl px-4 md:px-6">
                 <div class="glass-card p-8 md:p-12 min-h-[75vh]">
@@ -971,10 +972,33 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
+                        </div><!-- end bp174Panel -->
                     </div><!-- end balanzaView -->
 
+                    <!-- Disclaimer Note (Global) -->
+                    <div class="mt-16 mb-8 w-full relative z-30 block mx-auto max-w-4xl">
+                        <div
+                            class="bg-background/50 border-primary/50 rounded-lg border p-4 backdrop-blur-sm shadow-sm">
+                            <div class="flex gap-2 items-start">
+                                <svg class="h-5 w-5 text-primary mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <div class="text-left">
+                                    <h3 class="font-bold text-primary text-sm uppercase tracking-wide mb-1">Nota
+                                        Importante</h3>
+                                    <p class="font-serif text-foreground/80 text-sm md:text-base leading-relaxed">
+                                        Los datos mostrados provienen de fuentes oficiales (DataComex, Banco de España).
+                                        Si detectas algún dato extraño o tienes alguna sugerencia,
+                                        <a href="sobre-mi.html"
+                                            class="font-medium text-primary hover:underline hover:text-primary/80 transition-colors">contacta
+                                            conmigo</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -4442,6 +4466,9 @@
         });
 
     </script>
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/cookies.js?v=1"></script>
 </body>
 
 </html>

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description"
         content="Información personal sobre el creador de esta web dedicada a las oposiciones del SOIVRE.">
-    <title>Sobre Mí - Oposiciones SOIVRE</title>
+    <title>Sergio Argudo - Sobre Mí</title>
+    <link rel="icon" href="images/logo.png?v=2" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,16 +25,16 @@
     <meta property="og:url" content="https://sergioargudosantiago.github.io/sobre-mi.html">
     <meta property="og:title" content="Sobre Mí - Sergio Argudo Santiago | Inspector SOIVRE">
     <meta property="og:description"
-        content="Conoce mi trayectoria profesional y académica. Preparador de oposiciones al Cuerpo de Inspectores del SOIVRE.">
-    <meta property="og:image" content="https://sergioargudosantiago.github.io/images/og-default.jpg">
+        content="Conoce a Sergio Argudo Santiago, Inspector del SOIVRE y creador de este portal.">
+    <meta property="og:image" content="https://sergioargudosantiago.github.io/images/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sergioargudosantiago.github.io/sobre-mi.html">
-    <meta property="twitter:title" content="Sobre Mí - Sergio Argudo Santiago | Inspector SOIVRE">
+    <meta property="twitter:title" content="Sobre Mí - Sergio Argudo, Inspector del SOIVRE">
     <meta property="twitter:description"
-        content="Conoce mi trayectoria profesional y académica. Preparador de oposiciones al Cuerpo de Inspectores del SOIVRE.">
-    <meta property="twitter:image" content="https://sergioargudosantiago.github.io/images/og-default.jpg">
+        content="Conoce a Sergio Argudo Santiago, Inspector del SOIVRE y creador de este portal.">
+    <meta property="twitter:image" content="https://sergioargudosantiago.github.io/images/logo.png">
 
     <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -528,8 +529,8 @@
                                     ¿Tienes dudas?
                                 </h3>
                                 <p class="text-foreground/80 mb-8 leading-relaxed">
-                                    Si tienes preguntas sobre cómo preparar la oposición, dudas sobre el material o
-                                    cualquier aspecto relacionado con el cuerpo, no dudes en contactarme.
+                                    Si tienes preguntas sobre cómo preparar la oposición, dudas sobre el material,
+                                    quieres colaborar en la web o tienes alguna sugerencia, no dudes en contactarme.
                                 </p>
 
                                 <a href="mailto:sergio.argudo.santiago@example.com"
@@ -551,48 +552,7 @@
     </main>
 
     <!-- Cookie Banner -->
-    <div id="cookie-banner"
-        class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-xl border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] p-4 md:p-6 translate-y-full transition-transform duration-500 z-[100] flex flex-col md:flex-row items-center justify-between gap-4">
-        <div class="text-sm text-foreground/80 max-w-3xl">
-            <span class="font-bold text-primary block mb-1">🍪 Política de Cookies</span>
-            Utilizamos cookies propias y de terceros (Google Analytics) para mejorar tu experiencia y analizar el
-            tráfico. Puedes aceptar todas o gestionar tus preferencias.
-        </div>
-        <div class="flex gap-3 w-full md:w-auto">
-            <button onclick="acceptCookies()"
-                class="flex-1 md:flex-none px-6 py-2.5 bg-primary text-white text-sm font-bold rounded-full hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20 whitespace-nowrap">
-                Aceptar Todas
-            </button>
-            <button onclick="hideCookieBanner()"
-                class="flex-1 md:flex-none px-6 py-2.5 bg-gray-100 text-gray-700 text-sm font-bold rounded-full hover:bg-gray-200 transition-colors whitespace-nowrap">
-                Cerrar
-            </button>
-        </div>
-    </div>
 
-    <script>
-        // Cookie Logic
-        function showCookieBanner() {
-            if (!localStorage.getItem('cookiesAccepted')) {
-                setTimeout(() => {
-                    document.getElementById('cookie-banner').classList.remove('translate-y-full');
-                }, 2000); // Show after 2 seconds
-            }
-        }
-
-        function acceptCookies() {
-            localStorage.setItem('cookiesAccepted', 'true');
-            hideCookieBanner();
-            // Here you would trigger GA4 consent update if needed
-        }
-
-        function hideCookieBanner() {
-            document.getElementById('cookie-banner').classList.add('translate-y-full');
-        }
-
-        // Init
-        showCookieBanner();
-    </script>
 
     <!-- Footer (Sticky) -->
     <footer
@@ -626,6 +586,7 @@
 
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>
+    <script src="js/cookies.js?v=1"></script>
 </body>
 
 </html>
