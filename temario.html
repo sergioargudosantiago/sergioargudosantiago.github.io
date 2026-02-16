@@ -234,6 +234,38 @@
             background: rgba(30, 41, 59, 0.75) !important;
         }
 
+        html.dark .bg-white\/60 {
+            background: rgba(30, 41, 59, 0.6) !important;
+        }
+
+        html.dark .bg-white\/40 {
+            background: rgba(30, 41, 59, 0.4) !important;
+        }
+
+        html.dark .bg-white\/30 {
+            background: rgba(30, 41, 59, 0.3) !important;
+        }
+
+        html.dark .hover\:bg-white\/80:hover {
+            background: rgba(30, 41, 59, 0.85) !important;
+        }
+
+        html.dark .text-foreground\/80 {
+            color: hsl(210 40% 85%) !important;
+        }
+
+        html.dark .text-gray-600 {
+            color: hsl(210 20% 60%) !important;
+        }
+
+        html.dark .text-gray-500 {
+            color: hsl(210 20% 55%) !important;
+        }
+
+        html.dark .text-gray-400 {
+            color: hsl(210 20% 50%) !important;
+        }
+
         html.dark .bg-white\/80 {
             background: rgba(30, 41, 59, 0.8) !important;
         }
@@ -447,6 +479,27 @@
 
         .modal-scroll::-webkit-scrollbar-thumb:hover {
             background: hsl(var(--primary));
+        }
+
+        /* Dark mode: Modals */
+        html.dark .modal {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        html.dark .modal-content {
+            background: hsl(222, 47%, 14%);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        html.dark .modal-content .border-b {
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        html.dark .modal-content input {
+            background: rgba(255, 255, 255, 0.08);
+            color: hsl(var(--foreground));
+            border-color: rgba(255, 255, 255, 0.08);
         }
 
         .scroll-container::-webkit-scrollbar-thumb:hover {
@@ -735,6 +788,23 @@
                     SOBRE MÍ
                 </a>
             </nav>
+            <!-- Mobile Theme Toggle -->
+            <div class="px-4 pt-2">
+                <button onclick="toggleTheme()"
+                    class="w-full flex items-center gap-3 rounded-md p-2 text-foreground/80 hover:bg-accent transition-colors">
+                    <svg class="theme-icon-sun h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <circle cx="12" cy="12" r="5" stroke-width="2" />
+                        <path stroke-linecap="round" stroke-width="2"
+                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                    <svg class="theme-icon-moon h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        style="display:none">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                    </svg>
+                    <span class="text-sm font-medium">Cambiar tema</span>
+                </button>
+            </div>
             <div class="mt-auto p-4">
                 <div class="relative">
                     <svg class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
