@@ -639,6 +639,16 @@
             }
         }
 
+        /* ========== MOBILE MENU SLIDE ========== */
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+
         /* ========== UTILITY ========== */
     </style>
 </head>
@@ -674,8 +684,8 @@
         </svg>
     </button>
 
-    <!-- Mobile Menu Overlay -->
-    <div id="mobileMenu" class="fixed inset-0 z-50 backdrop-blur-xl bg-white/95 md:hidden hidden">
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu fixed inset-y-0 left-0 z-50 w-full max-w-xs bg-white shadow-xl md:hidden">
         <div class="flex h-full flex-col">
             <div class="border-b p-4">
                 <button onclick="toggleMobileMenu()" class="text-left text-lg font-bold text-primary">
@@ -692,7 +702,7 @@
                     TEMARIO
                 </a>
                 <a href="comercio-exterior.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent bg-accent focus:bg-accent focus:text-accent-foreground outline-none">
+                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent bg-accent">
                     COMERCIO EXTERIOR
                 </a>
                 <a href="enlaces.html" onclick="toggleMobileMenu();"
@@ -4003,7 +4013,7 @@
         // ========== MOBILE MENU ==========
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
+            menu.classList.toggle('active');
         }
 
         // ========== MOBILE SEARCH ==========
