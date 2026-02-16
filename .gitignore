@@ -43,3 +43,24 @@ next-env.d.ts
 # firebase
 firebase-debug.log
 firestore-debug.log
+
+# ===== Development scripts (not needed in production) =====
+*.py
+*.ps1
+*.vbs
+*.bat
+
+# ===== Data files (keep locally, embed in HTML for production) =====
+*.csv
+balanza_data.js
+balanza_preview.txt
+
+# ===== Obsolete templates/configs =====
+critical-css-template.css
+robustness-script-template.html
+CLEANUP-GUIDE.md
+apphosting.yaml
+
+# ===== Agent/IDE =====
+.agent/
+.gemini/

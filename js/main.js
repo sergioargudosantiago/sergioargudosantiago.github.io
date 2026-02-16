@@ -1,3 +1,77 @@
+/* =========================================
+   Dark Mode Toggle
+   ========================================= */
+function initTheme() {
+    const saved = localStorage.getItem('soivre_theme');
+    if (saved === 'dark') {
+        document.documentElement.classList.add('dark');
+    } else if (!saved) {
+        // Respect system preference
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+    }
+}
+
+function toggleTheme() {
+    const html = document.documentElement;
+    html.classList.toggle('dark');
+    const isDark = html.classList.contains('dark');
+    localStorage.setItem('soivre_theme', isDark ? 'dark' : 'light');
+
+    // Update all toggle icons
+    document.querySelectorAll('.theme-icon-sun').forEach(el => el.style.display = isDark ? 'none' : 'block');
+    document.querySelectorAll('.theme-icon-moon').forEach(el => el.style.display = isDark ? 'block' : 'none');
+}
+
+// Apply theme ASAP (before DOMContentLoaded) to avoid flash
+initTheme();
+
+/* =========================================
+   Scroll Reveal Animations
+   ========================================= */
+function initScrollReveal() {
+    const revealElements = document.querySelectorAll('[data-reveal]');
+    if (!revealElements.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => observer.observe(el));
+}
+
+/* =========================================
+   Skeleton Loading (for charts)
+   ========================================= */
+function removeSkeletons() {
+    document.querySelectorAll('.skeleton-loader').forEach(el => {
+        el.style.opacity = '0';
+        setTimeout(() => el.remove(), 300);
+    });
+}
+
+// Run on DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+    initScrollReveal();
+
+    // Update theme toggle icons to match current state
+    const isDark = document.documentElement.classList.contains('dark');
+    document.querySelectorAll('.theme-icon-sun').forEach(el => el.style.display = isDark ? 'none' : 'block');
+    document.querySelectorAll('.theme-icon-moon').forEach(el => el.style.display = isDark ? 'block' : 'none');
+
+    // Remove skeletons after a short delay (charts will call removeSkeletons when ready)
+    setTimeout(removeSkeletons, 3000);
+});
+
 // State Management
 let currentExercise = null;
 let currentTopics = [];
