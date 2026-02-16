@@ -442,75 +442,157 @@
     <!-- Main Content -->
     <main class="relative flex-1 pb-24">
         <!-- Sobre Mí Section -->
-        <section class="flex min-h-screen w-full items-center justify-center py-16">
-            <div class="container mx-auto max-w-6xl px-4 md:px-6">
+        <section class="flex min-h-screen w-full items-center justify-center py-24 px-4">
+            <div class="container mx-auto max-w-6xl">
                 <div
-                    class="bg-white/75 backdrop-blur-md border border-white/30 rounded-3xl shadow-2xl p-8 md:p-12 min-h-[75vh] transition-all duration-300 hover:shadow-[0_0_50px_rgba(6,182,212,0.2)]">
-                    <!-- Profile Header -->
-                    <div class="text-center mb-20">
-                        <h1
-                            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-primary mb-10">
-                            Sergio Argudo Santiago
-                        </h1>
+                    class="glass-card p-6 md:p-10 lg:p-12 transition-all duration-300 hover:shadow-[0_0_50px_rgba(6,182,212,0.15)] bg-white/80">
 
-                        <!-- Professional Titles -->
-                        <div class="space-y-8 mb-16">
-                            <div class="flex items-center justify-center gap-3">
-                                <p class="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
-                                    Inspector del SOIVRE (Promoción 2025)
-                                </p>
-                            </div>
-                            <div class="flex items-center justify-center gap-3">
-                                <p class="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
-                                    Ingeniero Técnico del SOIVRE (Promoción 2023)
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Divider -->
-                        <div class="w-48 h-2.5 bg-gradient-to-r from-primary to-accent mx-auto mb-16 rounded-full">
-                        </div>
-
-                        <!-- Education -->
-                        <div class="space-y-10">
-                            <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-8 tracking-tight">Formación
-                                Académica</h2>
-                            <div class="space-y-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                        <!-- Left Column: Photo & Titles (Aligned Top-Left) -->
+                        <div class="lg:col-span-5 flex flex-col items-start text-left">
+                            <!-- Photo Container -->
+                            <div class="relative w-32 h-32 md:w-40 md:h-40 mb-6 group -ml-2 -mt-2">
                                 <div
-                                    class="flex items-start gap-4 text-left max-w-2xl mx-auto bg-white/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/40">
-                                    <p
-                                        class="font-serif text-foreground/80 leading-relaxed text-lg md:text-xl lg:text-2xl">
+                                    class="absolute inset-0 bg-gradient-to-tr from-primary to-accent rounded-full blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="relative w-full h-full rounded-full border-4 border-white ring-4 ring-primary shadow-2xl overflow-hidden group-hover:scale-[1.02] transition-transform duration-500 bg-white">
+                                    <img src="./images/Captura de pantalla 2026-02-16 104349.png"
+                                        alt="Sergio Argudo Santiago"
+                                        class="w-full h-full object-contain object-bottom p-4 rounded-full">
+                                </div>
+                            </div>
+
+                            <h1
+                                class="text-3xl sm:text-4xl font-extrabold tracking-tight text-primary mb-4 whitespace-nowrap w-full">
+                                Sergio Argudo Santiago
+                            </h1>
+
+                            <div class="w-24 h-1.5 bg-accent rounded-full mb-6 mx-0"></div>
+
+                            <div class="space-y-3 text-foreground/80">
+                                <p class="text-xl md:text-2xl font-bold text-foreground">
+                                    Inspector del SOIVRE
+                                </p>
+                                <p class="text-lg md:text-xl font-medium text-muted-foreground">
+                                    Promoción 2025
+                                </p>
+                                <p class="text-xl md:text-2xl font-bold text-foreground mt-4">
+                                    Ingeniero Técnico del SOIVRE
+                                </p>
+                                <p class="text-lg md:text-xl font-medium text-muted-foreground">
+                                    Promoción 2023
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Education & Contact -->
+                        <div class="lg:col-span-7 flex flex-col justify-center space-y-10">
+
+                            <!-- Education Section -->
+                            <div class="space-y-6">
+                                <div class="flex items-center gap-4 mb-2">
+                                    <span class="p-3 rounded-xl bg-primary/10 text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                            <path
+                                                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                        </svg>
+                                    </span>
+                                    <h2 class="text-3xl font-bold text-foreground">Formación Académica</h2>
+                                </div>
+
+                                <div
+                                    class="bg-white/60 p-6 rounded-2xl border border-white/50 shadow-sm hover:shadow-md transition-shadow">
+                                    <p class="font-serif text-lg md:text-xl text-foreground/90 leading-relaxed">
                                         Ingeniero Químico por la Universidad Complutense de Madrid
                                     </p>
                                 </div>
+
                                 <div
-                                    class="flex items-start gap-4 text-left max-w-2xl mx-auto bg-white/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/40">
-                                    <p
-                                        class="font-serif text-foreground/80 leading-relaxed text-lg md:text-xl lg:text-2xl">
+                                    class="bg-white/60 p-6 rounded-2xl border border-white/50 shadow-sm hover:shadow-md transition-shadow">
+                                    <p class="font-serif text-lg md:text-xl text-foreground/90 leading-relaxed">
                                         Máster en Ingeniería Química por la Universidad Autónoma de Madrid y Universidad
                                         Rey Juan Carlos
                                     </p>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Contact Button -->
-                        <div class="mt-16">
-                            <a href="mailto:sergio.argudo.santiago@example.com"
-                                class="inline-flex items-center gap-3 rounded-2xl bg-primary px-14 py-6 text-2xl font-bold text-primary-foreground shadow-xl transition-all duration-300 hover:bg-primary/90 hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] hover:scale-105">
-                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                                Contactar
-                            </a>
+                            <!-- Contact CTA Section -->
+                            <div
+                                class="mt-8 bg-blue-50/50 rounded-3xl p-8 border border-blue-100 text-center lg:text-left">
+                                <h3 class="text-xl font-bold text-primary mb-3">
+                                    ¿Tienes dudas?
+                                </h3>
+                                <p class="text-foreground/80 mb-8 leading-relaxed">
+                                    Si tienes preguntas sobre cómo preparar la oposición, dudas sobre el material o
+                                    cualquier aspecto relacionado con el cuerpo, no dudes en contactarme.
+                                </p>
+
+                                <a href="mailto:sergio.argudo.santiago@example.com"
+                                    class="inline-flex items-center justify-center gap-3 rounded-full bg-primary px-8 py-4 text-lg font-bold text-white shadow-lg transition-all duration-300 hover:bg-primary/90 hover:shadow-xl hover:-translate-y-1 w-full sm:w-auto">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                    Contactar Ahora
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner"
+        class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-xl border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] p-4 md:p-6 translate-y-full transition-transform duration-500 z-[100] flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="text-sm text-foreground/80 max-w-3xl">
+            <span class="font-bold text-primary block mb-1">🍪 Política de Cookies</span>
+            Utilizamos cookies propias y de terceros (Google Analytics) para mejorar tu experiencia y analizar el
+            tráfico. Puedes aceptar todas o gestionar tus preferencias.
+        </div>
+        <div class="flex gap-3 w-full md:w-auto">
+            <button onclick="acceptCookies()"
+                class="flex-1 md:flex-none px-6 py-2.5 bg-primary text-white text-sm font-bold rounded-full hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20 whitespace-nowrap">
+                Aceptar Todas
+            </button>
+            <button onclick="hideCookieBanner()"
+                class="flex-1 md:flex-none px-6 py-2.5 bg-gray-100 text-gray-700 text-sm font-bold rounded-full hover:bg-gray-200 transition-colors whitespace-nowrap">
+                Cerrar
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Cookie Logic
+        function showCookieBanner() {
+            if (!localStorage.getItem('cookiesAccepted')) {
+                setTimeout(() => {
+                    document.getElementById('cookie-banner').classList.remove('translate-y-full');
+                }, 2000); // Show after 2 seconds
+            }
+        }
+
+        function acceptCookies() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            hideCookieBanner();
+            // Here you would trigger GA4 consent update if needed
+        }
+
+        function hideCookieBanner() {
+            document.getElementById('cookie-banner').classList.add('translate-y-full');
+        }
+
+        // Init
+        showCookieBanner();
+    </script>
 
     <!-- Footer (Sticky) -->
     <footer
