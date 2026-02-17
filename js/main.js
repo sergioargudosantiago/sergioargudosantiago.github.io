@@ -5,12 +5,14 @@ function initTheme() {
     const saved = localStorage.getItem('soivre_theme');
     if (saved === 'dark') {
         document.documentElement.classList.add('dark');
-    } else if (!saved) {
-        // Respect system preference
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.documentElement.classList.add('dark');
-        }
+    } else {
+        // Default to light mode — remove dark class if present
+        document.documentElement.classList.remove('dark');
     }
+    // Sync icons on load
+    const isDark = document.documentElement.classList.contains('dark');
+    document.querySelectorAll('.theme-icon-sun').forEach(el => el.style.display = isDark ? 'none' : 'block');
+    document.querySelectorAll('.theme-icon-moon').forEach(el => el.style.display = isDark ? 'block' : 'none');
 }
 
 function toggleTheme() {
