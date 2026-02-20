@@ -1,0 +1,63 @@
+Total lines: 1839
+Cleaned header: year,"flujo","macro_sector","lv1","lit_lv1","lv2","lit_lv2","lv3","lit_lv3","lv4","lit_lv4","total_millones","top_lv1","tva_lv1","top_lv2","tva_lv2","top_lv3","tva_lv3","top_lv4.x","tva_lv4.x","top_lv4.y","tva_lv4.y"
+Header columns (22): ['year', 'flujo', 'macro_sector', 'lv1', 'lit_lv1', 'lv2', 'lit_lv2', 'lv3', 'lit_lv3', 'lv4', 'lit_lv4', 'total_millones', 'top_lv1', 'tva_lv1', 'top_lv2', 'tva_lv2', 'top_lv3', 'tva_lv3', 'top_lv4.x', 'tva_lv4.x', 'top_lv4.y', 'tva_lv4.y']
+
+Total data rows: 1838
+Agroalimentario: 1228
+Industrial: 610
+
+Sample Industrial row:
+  year: 2021
+  flujo: E
+  macro_sector: Industrial
+  lv1: 2
+  lit_lv1: PRODUCTOS ENERGETICOS
+  lv2: 21
+  lit_lv2: CARBON
+  lv3: 210
+  lit_lv3: CARBON
+  lv4: 2100
+  lit_lv4: CARBON
+  total_millones: 120.32
+  top_lv1: Avituallamiento Extra., Francia, Portugal
+  tva_lv1: NA
+  top_lv2: Francia, Italia, Marruecos
+  tva_lv2: NA
+  top_lv3: Francia, Italia, Marruecos
+  tva_lv3: NA
+  top_lv4.x: Francia, Italia, Marruecos
+  tva_lv4.x: NA
+  top_lv4.y: Francia, Italia, Marruecos
+  tva_lv4.y: NA
+
+Output written to: c:\sergioargudosantiago.github.io\sergioargudosantiago.github.io\full_embed_data.csv
+Total rows: 1838
+
+=== Sample output ===
+Header: year,flujo,macro_sector,lv1,lit_lv1,lv2,lit_lv2,lv3,lit_lv3,lv4,lit_lv4,total_millones,top_paises_lv1,tva_lv1,top_paises_lv2,tva_lv2,top_paises_lv3,tva_lv3,top_paises_lv4,tva_lv4
+
+Agro sample:
+2021,E,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111111,Animales vivos de bovinos,NA,NA,249.18,"China, Francia, Portugal",NA,"Portugal, Italia,
+
+Industrial sample:
+2021,E,Industrial,2,PRODUCTOS ENERGETICOS,21,CARBON,210,CARBON,2100,CARBON,120.32,"Avituallamiento Extra., Francia, Portugal",NA,"Francia, Italia, Marruecos",NA,"Francia, Italia, Marruecos",NA,"Franci
+[INFO] HTML file size: 622338 bytes
+[INFO] CSV data size: 465852 bytes
+[OK] Updated EMBEDDED_CSV_DATA
+[INFO] Level 4 HTML structure already exists
+[INFO] navigationState already has lv4
+[INFO] showLevel4 function already exists
+[INFO] views array already has level4View
+[INFO] updateDashboardMetrics already handles lv4
+[INFO] Breadcrumbs already handle lv4
+[DONE] HTML file updated successfully!
+[INFO] New file size: 622193 bytes
+Traceback (most recent call last):
+  File "c:\sergioargudosantiago.github.io\sergioargudosantiago.github.io\update_data.py", line 117, in <module>
+    print(f"\u2705 Updated {file_path} with corrected names (Replaced {count} patterns).")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+Done 
