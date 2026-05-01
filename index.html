@@ -50,51 +50,6 @@
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        // Tailwind Configuration for Mobile Support
-        tailwind.config = {
-            darkMode: false,
-            theme: {
-                extend: {
-                    screens: {
-                        'sm': '640px',
-                        'md': '768px',
-                        'lg': '1024px',
-                        'xl': '1280px',
-                        '2xl': '1536px',
-                    },
-                    colors: {
-                        background: '#FFFBDB',
-                        foreground: '#000000',
-                        primary: {
-                            DEFAULT: '#000000',
-                            foreground: '#FFFBDB',
-                        },
-                        secondary: {
-                            DEFAULT: '#FFFBDB',
-                            foreground: '#000000',
-                        },
-                        muted: {
-                            DEFAULT: '#F5F0C0',
-                            foreground: '#333333',
-                        },
-                        accent: {
-                            DEFAULT: '#000000',
-                            foreground: '#FFFBDB',
-                        },
-                        border: '#000000',
-                        input: '#FFFBDB',
-                        ring: '#000000',
-                    },
-                    borderRadius: {
-                        lg: '0',
-                        md: '0',
-                        sm: '0',
-                    },
-                }
-            }
-        }
-    </script>
 
     <style>
         /* CSS Variables - Arcade Theme */
@@ -177,83 +132,7 @@
             }
         }
 
-        /* Clean Nav link styles */
-        .nav-link {
-            position: relative;
-            padding: 0.5rem 1rem;
-            color: hsl(220, 9%, 46%);
-            transition: color 0.2s ease;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 0.875rem;
-            font-weight: 400;
-            letter-spacing: 0.01em;
-        }
-
-        .nav-link:hover {
-            color: hsl(217, 91%, 45%);
-        }
-
-        .nav-link.active {
-            color: hsl(217, 91%, 45%);
-            font-weight: 600;
-        }
-
         /* ========== GLASSMORPHISM & DESIGN SYSTEM ========== */
-
-        /* Glass Effects */
-        .glass {
-            background: rgba(255, 255, 255, 0.7);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
-            border-radius: 3rem;
-        }
-
-        /* Top Navigation Bar */
-        .top-nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 50;
-            background: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-        }
-
-        /* Nav Links with Active State */
-        .nav-link {
-            position: relative;
-            font-size: 0.875rem;
-            font-weight: 500;
-            color: #6b7280;
-            text-decoration: none;
-            padding-bottom: 4px;
-            transition: color 0.2s;
-            letter-spacing: 0.02em;
-        }
-
-        .nav-link:hover {
-            color: hsl(217, 91%, 45%);
-        }
-
-        .nav-link.active {
-            color: hsl(217, 91%, 45%);
-            font-weight: 600;
-        }
-
-        .nav-link.active::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: hsl(217, 91%, 45%);
-        }
 
         /* Search Input Styling */
         .search-input {
