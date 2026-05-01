@@ -134,24 +134,6 @@
 
         /* ========== GLASSMORPHISM & DESIGN SYSTEM ========== */
 
-        /* Search Input Styling */
-        .search-input {
-            height: 2.5rem;
-            width: 12rem;
-            border-radius: 0.5rem;
-            background-color: #f3f4f6;
-            padding-left: 2.5rem;
-            padding-right: 1rem;
-            font-size: 0.875rem;
-            outline: none;
-            transition: all 0.2s;
-        }
-
-        .search-input:focus {
-            background-color: #e5e7eb;
-            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
-        }
-
         /* ========== CRITICAL STANDALONE CSS ========== */
         /* Works without Tailwind CDN for standalone file:// usage */
 
@@ -697,6 +679,7 @@
     inset: 4px;
     border: 1px solid #000000;
     pointer-events: none;
+    z-index: 1;
 }
 
 .arcade-title {
@@ -1064,30 +1047,25 @@ footer.arcade-footer a:hover {
     <!-- Mobile Menu -->
     <div id="mobileMenu" class="fixed inset-y-0 left-0 z-50 w-72 md:hidden">
         <div class="flex h-full flex-col">
-            <div class="border-b p-4">
-                <button onclick="toggleMobileMenu()" class="text-left text-lg font-bold text-primary">
+            <div style="border-bottom:1px solid rgba(255,251,219,0.3);padding:0.75rem 1rem">
+                <button onclick="toggleMobileMenu()" class="text-left text-lg font-bold" style="color:#FFFBDB">
                     Menú
                 </button>
             </div>
-            <nav class="flex flex-col gap-1 p-4">
-                <a href="index.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent bg-accent">
+            <nav class="flex flex-col p-2">
+                <a href="index.html" onclick="toggleMobileMenu();" style="color:#FFFBDB;background:#FFFBDB;color:#000">
                     INTRODUCCIÓN
                 </a>
-                <a href="temario.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
+                <a href="temario.html" onclick="toggleMobileMenu();">
                     TEMARIO
                 </a>
-                <a href="comercio-exterior.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent focus:bg-accent focus:text-accent-foreground outline-none">
+                <a href="comercio-exterior.html" onclick="toggleMobileMenu();">
                     COMERCIO EXTERIOR
                 </a>
-                <a href="enlaces.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
+                <a href="enlaces.html" onclick="toggleMobileMenu();">
                     ENLACES DE INTERÉS
                 </a>
-                <a href="sobre-mi.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
+                <a href="sobre-mi.html" onclick="toggleMobileMenu();">
                     SOBRE MÍ
                 </a>
             </nav>
@@ -1219,7 +1197,7 @@ footer.arcade-footer a:hover {
             if (!window.jsLoadFailed) {
                 window.jsLoadFailed = true;
                 const message = document.createElement('div');
-                message.style.cssText = 'position:fixed;bottom:20px;right:20px;background:#FEF3C7;border:2px solid #F59E0B;padding:12px 16px;border-radius:8px;max-width:300px;z-index:10000;font-family:Inter,sans-serif;font-size:14px;box-shadow:0 4px 6px rgba(0,0,0,0.1);';
+                message.style.cssText = 'position:fixed;bottom:20px;right:20px;background:#FFFBDB;border:2px solid #000;padding:12px 16px;border-radius:0;max-width:300px;z-index:10000;font-family:\'Share Tech Mono\',monospace;font-size:14px;box-shadow:0 4px 6px rgba(0,0,0,0.1);';
                 message.innerHTML = '<strong style="color:#92400E;">⚠️ Funcionalidad Limitada</strong><br><span style="color:#78350F;">La carpeta /js/ no se encuentra. La búsqueda y algunas funciones pueden no funcionar.</span>';
                 document.body.appendChild(message);
                 setTimeout(() => message.remove(), 8000);
@@ -1261,10 +1239,6 @@ footer.arcade-footer a:hover {
             const slides = [
                 document.getElementById('slide-1'),
                 document.getElementById('slide-2')
-            ];
-            const indicators = [
-                document.getElementById('indicator-1'),
-                document.getElementById('indicator-2')
             ];
             let currentSlide = 0;
             let interval;
