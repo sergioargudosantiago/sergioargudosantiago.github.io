@@ -135,9 +135,6 @@
             padding-bottom: 5rem;
         }
 
-        .container-illustration {
-            display: none;
-        }
 
         /* ===== SCROLL REVEAL ===== */
         [data-reveal] {
@@ -823,6 +820,26 @@
                 display: none;
             }
         }
+
+        /* ===== ARCADE BACKGROUND SVG ===== */
+        .arcade-bg {
+            position: fixed;
+            bottom: 4rem;
+            right: 0;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.10;
+        }
+
+        .arcade-bg-left {
+            position: fixed;
+            bottom: 4rem;
+            left: 0;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.07;
+            transform: scaleX(-1);
+        }
     </style>
 
     <!-- Tailwind Config -->
@@ -866,8 +883,142 @@
 </head>
 
 <body class="flex min-h-screen flex-col">
-    <!-- Background Illustration -->
-    <div class="container-illustration"></div>
+    <!-- Background Illustration — Container Towers -->
+    <svg class="arcade-bg" width="320" height="340" viewBox="0 0 320 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Tower 1 (izquierda, 7 contenedores) -->
+        <rect x="10" y="40" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="10" y1="51" x2="82" y2="51" stroke="#B8860B" stroke-width="1"/>
+        <rect x="12" y="42" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="10" y="62" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="10" y1="73" x2="82" y2="73" stroke="#B8860B" stroke-width="1"/>
+        <rect x="12" y="64" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="10" y="84" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="10" y1="95" x2="82" y2="95" stroke="#B8860B" stroke-width="1"/>
+        <rect x="12" y="86" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="10" y="106" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="10" y1="117" x2="82" y2="117" stroke="#B8860B" stroke-width="1"/>
+        <rect x="12" y="108" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="10" y="128" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="10" y1="139" x2="82" y2="139" stroke="#B8860B" stroke-width="1"/>
+        <rect x="12" y="130" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="10" y="150" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="10" y1="161" x2="82" y2="161" stroke="#B8860B" stroke-width="1"/>
+        <rect x="12" y="152" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="10" y="172" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="10" y1="183" x2="82" y2="183" stroke="#B8860B" stroke-width="1"/>
+        <rect x="12" y="174" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <!-- Base torre 1 -->
+        <rect x="4" y="194" width="84" height="6" fill="#B8860B" opacity="0.4"/>
+
+        <!-- Tower 2 (centro, 5 contenedores) -->
+        <rect x="100" y="106" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="100" y1="117" x2="172" y2="117" stroke="#B8860B" stroke-width="1"/>
+        <rect x="160" y="108" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="100" y="128" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="100" y1="139" x2="172" y2="139" stroke="#B8860B" stroke-width="1"/>
+        <rect x="160" y="130" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="100" y="150" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="100" y1="161" x2="172" y2="161" stroke="#B8860B" stroke-width="1"/>
+        <rect x="160" y="152" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="100" y="172" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="100" y1="183" x2="172" y2="183" stroke="#B8860B" stroke-width="1"/>
+        <rect x="160" y="174" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="100" y="194" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="100" y1="205" x2="172" y2="205" stroke="#B8860B" stroke-width="1"/>
+        <rect x="160" y="196" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <!-- Base torre 2 -->
+        <rect x="94" y="216" width="84" height="6" fill="#B8860B" opacity="0.4"/>
+
+        <!-- Tower 3 (derecha, 9 contenedores) -->
+        <rect x="192" y="6" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="192" y1="17" x2="264" y2="17" stroke="#B8860B" stroke-width="1"/>
+        <rect x="252" y="8" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="192" y="28" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="192" y1="39" x2="264" y2="39" stroke="#B8860B" stroke-width="1"/>
+        <rect x="252" y="30" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="192" y="50" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="192" y1="61" x2="264" y2="61" stroke="#B8860B" stroke-width="1"/>
+        <rect x="252" y="52" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="192" y="72" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="192" y1="83" x2="264" y2="83" stroke="#B8860B" stroke-width="1"/>
+        <rect x="252" y="74" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="192" y="94" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="192" y1="105" x2="264" y2="105" stroke="#B8860B" stroke-width="1"/>
+        <rect x="252" y="96" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="192" y="116" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="192" y1="127" x2="264" y2="127" stroke="#B8860B" stroke-width="1"/>
+        <rect x="252" y="118" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="192" y="138" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="192" y1="149" x2="264" y2="149" stroke="#B8860B" stroke-width="1"/>
+        <rect x="252" y="140" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="192" y="160" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="192" y1="171" x2="264" y2="171" stroke="#B8860B" stroke-width="1"/>
+        <rect x="252" y="162" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="192" y="182" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="192" y1="193" x2="264" y2="193" stroke="#B8860B" stroke-width="1"/>
+        <rect x="252" y="184" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+
+        <!-- Base torre 3 -->
+        <rect x="186" y="204" width="84" height="6" fill="#B8860B" opacity="0.4"/>
+
+        <!-- Suelo / muelle -->
+        <line x1="0" y1="222" x2="320" y2="222" stroke="#B8860B" stroke-width="2"/>
+
+        <!-- Grúa pórtico (derecha) -->
+        <line x1="270" y1="222" x2="270" y2="60" stroke="#B8860B" stroke-width="2"/>
+        <line x1="270" y1="60" x2="310" y2="60" stroke="#B8860B" stroke-width="2"/>
+        <line x1="310" y1="60" x2="310" y2="100" stroke="#B8860B" stroke-width="1.5"/>
+        <!-- Cable grúa -->
+        <line x1="295" y1="60" x2="295" y2="88" stroke="#B8860B" stroke-width="1" stroke-dasharray="3,3"/>
+        <!-- Gancho -->
+        <rect x="290" y="88" width="10" height="6" stroke="#B8860B" stroke-width="1"/>
+    </svg>
+
+    <svg class="arcade-bg-left" width="200" height="280" viewBox="0 0 200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Torre izquierda decorativa (más pequeña) -->
+        <rect x="20" y="60" width="60" height="20" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="20" y1="70" x2="80" y2="70" stroke="#B8860B" stroke-width="1"/>
+        <rect x="22" y="62" width="9" height="16" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="20" y="80" width="60" height="20" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="20" y1="90" x2="80" y2="90" stroke="#B8860B" stroke-width="1"/>
+        <rect x="22" y="82" width="9" height="16" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="20" y="100" width="60" height="20" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="20" y1="110" x2="80" y2="110" stroke="#B8860B" stroke-width="1"/>
+        <rect x="22" y="102" width="9" height="16" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="20" y="120" width="60" height="20" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="20" y1="130" x2="80" y2="130" stroke="#B8860B" stroke-width="1"/>
+        <rect x="22" y="122" width="9" height="16" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="20" y="140" width="60" height="20" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="20" y1="150" x2="80" y2="150" stroke="#B8860B" stroke-width="1"/>
+        <rect x="22" y="142" width="9" height="16" stroke="#B8860B" stroke-width="1"/>
+
+        <rect x="14" y="160" width="72" height="5" fill="#B8860B" opacity="0.4"/>
+        <line x1="0" y1="165" x2="200" y2="165" stroke="#B8860B" stroke-width="1.5"/>
+    </svg>
 
     <!-- Mobile Breadcrumb -->
     <div class="mobile-breadcrumb md:hidden">
