@@ -569,16 +569,19 @@
         /* ===== ARCADE NAVIGATION BAR ===== */
         .nav-island {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
             z-index: 50;
             display: flex;
             align-items: center;
-            padding: 0;
+            padding: 0 0.25rem;
             background: #000000;
-            border-bottom: 2px solid #000000;
-            height: 3rem;
+            border: 2px solid #000000;
+            box-shadow: 4px 4px 0 #003366;
+            height: 3.25rem;
+            white-space: nowrap;
+            max-width: 92vw;
         }
 
         .nav-segment {
@@ -588,7 +591,7 @@
             display: flex;
             align-items: center;
             font-family: 'Orbitron', monospace;
-            font-size: 0.65rem;
+            font-size: 0.75rem;
             font-weight: 600;
             color: #FFFBDB;
             text-decoration: none;
@@ -653,9 +656,26 @@
             pointer-events: none;
         }
 
-        /* Theme toggle oculto en arcade design */
+        /* Theme toggle arcade */
         .theme-toggle {
-            display: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.25rem;
+            height: 100%;
+            background: transparent;
+            border: none;
+            border-left: 1px solid rgba(255, 251, 219, 0.2);
+            cursor: pointer;
+            color: #FFFBDB;
+            padding: 0;
+            flex-shrink: 0;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .theme-toggle:hover {
+            background: #FFFBDB;
+            color: #000000;
         }
 
         @media (max-width: 768px) {
@@ -677,7 +697,7 @@
     content: '';
     position: absolute;
     inset: 4px;
-    border: 1px solid #000000;
+    border: 1px solid #003366;
     pointer-events: none;
     z-index: 1;
 }
@@ -701,7 +721,7 @@
     display: flex;
     gap: 0;
     margin-bottom: 1.5rem;
-    border: 2px solid #000000;
+    border: 2px solid #003366;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -709,10 +729,10 @@
 
 .arcade-tab {
     font-family: 'Orbitron', monospace;
-    font-size: 0.6rem;
+    font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.05em;
-    padding: 0.5rem 1.25rem;
+    padding: 0.6rem 1.5rem;
     background: #FFFBDB;
     color: #000000;
     border: none;
@@ -740,23 +760,23 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.75rem 2rem;
+    padding: 0.9rem 2.25rem;
     background: #000000;
     color: #FFFBDB;
     font-family: 'Orbitron', monospace;
-    font-size: 0.7rem;
+    font-size: 0.82rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-decoration: none;
     border: 2px solid #000000;
-    box-shadow: 4px 4px 0 #000000;
+    box-shadow: 4px 4px 0 #003366;
     transition: box-shadow 0.1s, transform 0.1s;
     text-transform: uppercase;
     cursor: pointer;
 }
 
 .arcade-btn:hover {
-    box-shadow: 2px 2px 0 #000000;
+    box-shadow: 2px 2px 0 #003366;
     transform: translate(2px, 2px);
     opacity: 1;
 }
@@ -801,7 +821,7 @@ footer.arcade-footer a:hover {
             right: 0;
             z-index: 0;
             pointer-events: none;
-            opacity: 0.10;
+            opacity: 0.22;
         }
 
         .arcade-bg-left {
@@ -810,15 +830,167 @@ footer.arcade-footer a:hover {
             left: 0;
             z-index: 0;
             pointer-events: none;
-            opacity: 0.07;
+            opacity: 0.16;
             transform: scaleX(-1);
         }
+
+/* ===== DARK MODE (MODO NOCTURNO) ===== */
+html.dark body {
+    background: #0D1B2A;
+    color: #FFFBDB;
+}
+
+html.dark .arcade-card {
+    background: #162032;
+    border-color: #FFFBDB;
+    box-shadow: 6px 6px 0 rgba(255, 251, 219, 0.3);
+}
+
+html.dark .arcade-card::before {
+    border-color: rgba(255, 251, 219, 0.35);
+}
+
+html.dark .arcade-title {
+    color: #FFFBDB;
+}
+
+html.dark .arcade-body {
+    color: #d4dde6;
+}
+
+html.dark .arcade-tabs {
+    border-color: #FFFBDB;
+}
+
+html.dark .arcade-tab {
+    background: #162032;
+    color: #FFFBDB;
+    border-right-color: rgba(255, 251, 219, 0.3);
+}
+
+html.dark .arcade-tab.active-tab {
+    background: #FFFBDB;
+    color: #000000;
+}
+
+html.dark .arcade-tab:hover:not(.active-tab) {
+    background: #1e3a52;
+}
+
+html.dark .arcade-btn {
+    background: #FFFBDB;
+    color: #000000;
+    border-color: #FFFBDB;
+    box-shadow: 4px 4px 0 rgba(255, 251, 219, 0.4);
+}
+
+html.dark .arcade-btn:hover {
+    box-shadow: 2px 2px 0 rgba(255, 251, 219, 0.4);
+}
+
+html.dark .arcade-btn-outline {
+    background: #162032;
+    color: #FFFBDB;
+    border-color: #FFFBDB;
+}
+
+html.dark .arcade-btn-outline:hover {
+    background: #FFFBDB;
+    color: #000000;
+}
+
+html.dark .nav-island {
+    background: #FFFBDB;
+    border-color: #FFFBDB;
+    box-shadow: 4px 4px 0 #003366;
+}
+
+html.dark .nav-segment {
+    color: #000000;
+    border-right-color: rgba(0, 0, 0, 0.2);
+}
+
+html.dark .nav-segment:hover {
+    background: #000000;
+    color: #FFFBDB;
+}
+
+html.dark .nav-segment.active {
+    background: #000000;
+    color: #FFFBDB;
+}
+
+html.dark .search-island input {
+    background: #FFFBDB;
+    border-color: #000000;
+    color: #000000;
+}
+
+html.dark .search-island input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+html.dark .search-island svg {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+html.dark .theme-toggle {
+    color: #000000;
+    border-left-color: rgba(0, 0, 0, 0.2);
+}
+
+html.dark .theme-toggle:hover {
+    background: #000000;
+    color: #FFFBDB;
+}
+
+html.dark footer.arcade-footer {
+    background: #FFFBDB !important;
+    color: #000000 !important;
+    border-color: #FFFBDB !important;
+}
+
+html.dark footer.arcade-footer a {
+    color: #000000;
+}
+
+html.dark footer.arcade-footer a:hover {
+    color: #003366;
+}
+
+html.dark #mobileMenu {
+    background: #162032 !important;
+    border-right-color: rgba(255, 251, 219, 0.2);
+}
+
+html.dark #mobileMenu a:hover,
+html.dark #mobileMenu a.bg-accent {
+    background: #FFFBDB !important;
+    color: #000000 !important;
+}
+
+html.dark .mobile-breadcrumb {
+    background: #162032;
+    border-bottom-color: rgba(255, 251, 219, 0.2);
+}
+
+html.dark .arcade-bg,
+html.dark .arcade-bg-left {
+    opacity: 0.12;
+}
+
+/* Nav logo en dark mode */
+html.dark .nav-logo-svg g,
+html.dark .nav-logo-svg rect,
+html.dark .nav-logo-svg text {
+    fill: #000000 !important;
+}
     </style>
 
     <!-- Tailwind Config -->
     <script>
         tailwind.config = {
-            darkMode: false,
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
@@ -859,138 +1031,138 @@ footer.arcade-footer a:hover {
     <!-- Background Illustration — Container Towers -->
     <svg class="arcade-bg" width="320" height="340" viewBox="0 0 320 340" fill="none" xmlns="http://www.w3.org/2000/svg">
         <!-- Tower 1 (izquierda, 7 contenedores) -->
-        <rect x="10" y="40" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="10" y1="51" x2="82" y2="51" stroke="#B8860B" stroke-width="1"/>
-        <rect x="12" y="42" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="10" y="40" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="10" y1="51" x2="82" y2="51" stroke="#003366" stroke-width="1"/>
+        <rect x="12" y="42" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="10" y="62" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="10" y1="73" x2="82" y2="73" stroke="#B8860B" stroke-width="1"/>
-        <rect x="12" y="64" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="10" y="62" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="10" y1="73" x2="82" y2="73" stroke="#003366" stroke-width="1"/>
+        <rect x="12" y="64" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="10" y="84" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="10" y1="95" x2="82" y2="95" stroke="#B8860B" stroke-width="1"/>
-        <rect x="12" y="86" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="10" y="84" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="10" y1="95" x2="82" y2="95" stroke="#003366" stroke-width="1"/>
+        <rect x="12" y="86" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="10" y="106" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="10" y1="117" x2="82" y2="117" stroke="#B8860B" stroke-width="1"/>
-        <rect x="12" y="108" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="10" y="106" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="10" y1="117" x2="82" y2="117" stroke="#003366" stroke-width="1"/>
+        <rect x="12" y="108" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="10" y="128" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="10" y1="139" x2="82" y2="139" stroke="#B8860B" stroke-width="1"/>
-        <rect x="12" y="130" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="10" y="128" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="10" y1="139" x2="82" y2="139" stroke="#003366" stroke-width="1"/>
+        <rect x="12" y="130" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="10" y="150" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="10" y1="161" x2="82" y2="161" stroke="#B8860B" stroke-width="1"/>
-        <rect x="12" y="152" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="10" y="150" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="10" y1="161" x2="82" y2="161" stroke="#003366" stroke-width="1"/>
+        <rect x="12" y="152" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="10" y="172" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="10" y1="183" x2="82" y2="183" stroke="#B8860B" stroke-width="1"/>
-        <rect x="12" y="174" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="10" y="172" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="10" y1="183" x2="82" y2="183" stroke="#003366" stroke-width="1"/>
+        <rect x="12" y="174" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
         <!-- Base torre 1 -->
-        <rect x="4" y="194" width="84" height="6" fill="#B8860B" opacity="0.4"/>
+        <rect x="4" y="194" width="84" height="6" fill="#003366" opacity="0.4"/>
 
         <!-- Tower 2 (centro, 5 contenedores) -->
-        <rect x="100" y="106" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="100" y1="117" x2="172" y2="117" stroke="#B8860B" stroke-width="1"/>
-        <rect x="160" y="108" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="100" y="106" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="100" y1="117" x2="172" y2="117" stroke="#003366" stroke-width="1"/>
+        <rect x="160" y="108" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="100" y="128" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="100" y1="139" x2="172" y2="139" stroke="#B8860B" stroke-width="1"/>
-        <rect x="160" y="130" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="100" y="128" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="100" y1="139" x2="172" y2="139" stroke="#003366" stroke-width="1"/>
+        <rect x="160" y="130" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="100" y="150" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="100" y1="161" x2="172" y2="161" stroke="#B8860B" stroke-width="1"/>
-        <rect x="160" y="152" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="100" y="150" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="100" y1="161" x2="172" y2="161" stroke="#003366" stroke-width="1"/>
+        <rect x="160" y="152" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="100" y="172" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="100" y1="183" x2="172" y2="183" stroke="#B8860B" stroke-width="1"/>
-        <rect x="160" y="174" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="100" y="172" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="100" y1="183" x2="172" y2="183" stroke="#003366" stroke-width="1"/>
+        <rect x="160" y="174" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="100" y="194" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="100" y1="205" x2="172" y2="205" stroke="#B8860B" stroke-width="1"/>
-        <rect x="160" y="196" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="100" y="194" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="100" y1="205" x2="172" y2="205" stroke="#003366" stroke-width="1"/>
+        <rect x="160" y="196" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
         <!-- Base torre 2 -->
-        <rect x="94" y="216" width="84" height="6" fill="#B8860B" opacity="0.4"/>
+        <rect x="94" y="216" width="84" height="6" fill="#003366" opacity="0.4"/>
 
         <!-- Tower 3 (derecha, 9 contenedores) -->
-        <rect x="192" y="6" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="192" y1="17" x2="264" y2="17" stroke="#B8860B" stroke-width="1"/>
-        <rect x="252" y="8" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="192" y="6" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="192" y1="17" x2="264" y2="17" stroke="#003366" stroke-width="1"/>
+        <rect x="252" y="8" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="192" y="28" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="192" y1="39" x2="264" y2="39" stroke="#B8860B" stroke-width="1"/>
-        <rect x="252" y="30" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="192" y="28" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="192" y1="39" x2="264" y2="39" stroke="#003366" stroke-width="1"/>
+        <rect x="252" y="30" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="192" y="50" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="192" y1="61" x2="264" y2="61" stroke="#B8860B" stroke-width="1"/>
-        <rect x="252" y="52" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="192" y="50" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="192" y1="61" x2="264" y2="61" stroke="#003366" stroke-width="1"/>
+        <rect x="252" y="52" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="192" y="72" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="192" y1="83" x2="264" y2="83" stroke="#B8860B" stroke-width="1"/>
-        <rect x="252" y="74" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="192" y="72" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="192" y1="83" x2="264" y2="83" stroke="#003366" stroke-width="1"/>
+        <rect x="252" y="74" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="192" y="94" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="192" y1="105" x2="264" y2="105" stroke="#B8860B" stroke-width="1"/>
-        <rect x="252" y="96" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="192" y="94" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="192" y1="105" x2="264" y2="105" stroke="#003366" stroke-width="1"/>
+        <rect x="252" y="96" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="192" y="116" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="192" y1="127" x2="264" y2="127" stroke="#B8860B" stroke-width="1"/>
-        <rect x="252" y="118" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="192" y="116" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="192" y1="127" x2="264" y2="127" stroke="#003366" stroke-width="1"/>
+        <rect x="252" y="118" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="192" y="138" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="192" y1="149" x2="264" y2="149" stroke="#B8860B" stroke-width="1"/>
-        <rect x="252" y="140" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="192" y="138" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="192" y1="149" x2="264" y2="149" stroke="#003366" stroke-width="1"/>
+        <rect x="252" y="140" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="192" y="160" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="192" y1="171" x2="264" y2="171" stroke="#B8860B" stroke-width="1"/>
-        <rect x="252" y="162" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="192" y="160" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="192" y1="171" x2="264" y2="171" stroke="#003366" stroke-width="1"/>
+        <rect x="252" y="162" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
-        <rect x="192" y="182" width="72" height="22" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="192" y1="193" x2="264" y2="193" stroke="#B8860B" stroke-width="1"/>
-        <rect x="252" y="184" width="10" height="18" stroke="#B8860B" stroke-width="1"/>
+        <rect x="192" y="182" width="72" height="22" stroke="#003366" stroke-width="1.5"/>
+        <line x1="192" y1="193" x2="264" y2="193" stroke="#003366" stroke-width="1"/>
+        <rect x="252" y="184" width="10" height="18" stroke="#003366" stroke-width="1"/>
 
         <!-- Base torre 3 -->
-        <rect x="186" y="204" width="84" height="6" fill="#B8860B" opacity="0.4"/>
+        <rect x="186" y="204" width="84" height="6" fill="#003366" opacity="0.4"/>
 
         <!-- Suelo / muelle -->
-        <line x1="0" y1="222" x2="320" y2="222" stroke="#B8860B" stroke-width="2"/>
+        <line x1="0" y1="222" x2="320" y2="222" stroke="#003366" stroke-width="2"/>
 
         <!-- Grúa pórtico (derecha) -->
-        <line x1="270" y1="222" x2="270" y2="60" stroke="#B8860B" stroke-width="2"/>
-        <line x1="270" y1="60" x2="310" y2="60" stroke="#B8860B" stroke-width="2"/>
-        <line x1="310" y1="60" x2="310" y2="100" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="270" y1="222" x2="270" y2="60" stroke="#003366" stroke-width="2"/>
+        <line x1="270" y1="60" x2="310" y2="60" stroke="#003366" stroke-width="2"/>
+        <line x1="310" y1="60" x2="310" y2="100" stroke="#003366" stroke-width="1.5"/>
         <!-- Cable grúa -->
-        <line x1="295" y1="60" x2="295" y2="88" stroke="#B8860B" stroke-width="1" stroke-dasharray="3,3"/>
+        <line x1="295" y1="60" x2="295" y2="88" stroke="#003366" stroke-width="1" stroke-dasharray="3,3"/>
         <!-- Gancho -->
-        <rect x="290" y="88" width="10" height="6" stroke="#B8860B" stroke-width="1"/>
+        <rect x="290" y="88" width="10" height="6" stroke="#003366" stroke-width="1"/>
     </svg>
 
     <svg class="arcade-bg-left" width="200" height="280" viewBox="0 0 200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
         <!-- Torre izquierda decorativa (más pequeña) -->
-        <rect x="20" y="60" width="60" height="20" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="20" y1="70" x2="80" y2="70" stroke="#B8860B" stroke-width="1"/>
-        <rect x="22" y="62" width="9" height="16" stroke="#B8860B" stroke-width="1"/>
+        <rect x="20" y="60" width="60" height="20" stroke="#003366" stroke-width="1.5"/>
+        <line x1="20" y1="70" x2="80" y2="70" stroke="#003366" stroke-width="1"/>
+        <rect x="22" y="62" width="9" height="16" stroke="#003366" stroke-width="1"/>
 
-        <rect x="20" y="80" width="60" height="20" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="20" y1="90" x2="80" y2="90" stroke="#B8860B" stroke-width="1"/>
-        <rect x="22" y="82" width="9" height="16" stroke="#B8860B" stroke-width="1"/>
+        <rect x="20" y="80" width="60" height="20" stroke="#003366" stroke-width="1.5"/>
+        <line x1="20" y1="90" x2="80" y2="90" stroke="#003366" stroke-width="1"/>
+        <rect x="22" y="82" width="9" height="16" stroke="#003366" stroke-width="1"/>
 
-        <rect x="20" y="100" width="60" height="20" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="20" y1="110" x2="80" y2="110" stroke="#B8860B" stroke-width="1"/>
-        <rect x="22" y="102" width="9" height="16" stroke="#B8860B" stroke-width="1"/>
+        <rect x="20" y="100" width="60" height="20" stroke="#003366" stroke-width="1.5"/>
+        <line x1="20" y1="110" x2="80" y2="110" stroke="#003366" stroke-width="1"/>
+        <rect x="22" y="102" width="9" height="16" stroke="#003366" stroke-width="1"/>
 
-        <rect x="20" y="120" width="60" height="20" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="20" y1="130" x2="80" y2="130" stroke="#B8860B" stroke-width="1"/>
-        <rect x="22" y="122" width="9" height="16" stroke="#B8860B" stroke-width="1"/>
+        <rect x="20" y="120" width="60" height="20" stroke="#003366" stroke-width="1.5"/>
+        <line x1="20" y1="130" x2="80" y2="130" stroke="#003366" stroke-width="1"/>
+        <rect x="22" y="122" width="9" height="16" stroke="#003366" stroke-width="1"/>
 
-        <rect x="20" y="140" width="60" height="20" stroke="#B8860B" stroke-width="1.5"/>
-        <line x1="20" y1="150" x2="80" y2="150" stroke="#B8860B" stroke-width="1"/>
-        <rect x="22" y="142" width="9" height="16" stroke="#B8860B" stroke-width="1"/>
+        <rect x="20" y="140" width="60" height="20" stroke="#003366" stroke-width="1.5"/>
+        <line x1="20" y1="150" x2="80" y2="150" stroke="#003366" stroke-width="1"/>
+        <rect x="22" y="142" width="9" height="16" stroke="#003366" stroke-width="1"/>
 
-        <rect x="14" y="160" width="72" height="5" fill="#B8860B" opacity="0.4"/>
-        <line x1="0" y1="165" x2="200" y2="165" stroke="#B8860B" stroke-width="1.5"/>
+        <rect x="14" y="160" width="72" height="5" fill="#003366" opacity="0.4"/>
+        <line x1="0" y1="165" x2="200" y2="165" stroke="#003366" stroke-width="1.5"/>
     </svg>
 
     <!-- Mobile Breadcrumb -->
@@ -1004,6 +1176,31 @@ footer.arcade-footer a:hover {
 
     <!-- Illuminated Island Navigation (Desktop) -->
     <nav class="nav-island hidden md:flex">
+        <a href="index.html" style="display:flex;align-items:center;padding:0 0.75rem;height:100%;border-right:1px solid rgba(255,251,219,0.2);flex-shrink:0">
+            <svg class="nav-logo-svg" xmlns="http://www.w3.org/2000/svg" width="148" height="37" viewBox="0 0 480 120">
+                <defs>
+                    <style>.orb{font-family:'Orbitron',monospace;font-weight:800}.mono{font-family:'Share Tech Mono',monospace}</style>
+                </defs>
+                <g fill="#FFFBDB" transform="translate(36, 18) scale(0.525)">
+                    <polygon points="8,54 152,54 140,72 20,72"></polygon>
+                    <rect x="18" y="44" width="124" height="10"></rect>
+                    <rect x="22" y="28" width="28" height="16"></rect>
+                    <rect x="22" y="24" width="28" height="4" opacity="0.4"></rect>
+                    <rect x="54" y="22" width="28" height="22"></rect>
+                    <rect x="54" y="18" width="28" height="4" opacity="0.4"></rect>
+                    <rect x="86" y="28" width="28" height="16"></rect>
+                    <rect x="86" y="24" width="28" height="4" opacity="0.4"></rect>
+                    <rect x="114" y="12" width="20" height="32"></rect>
+                    <rect x="116" y="8" width="16" height="6" opacity="0.6"></rect>
+                    <rect x="123" y="2" width="2" height="8"></rect>
+                    <rect x="4" y="74" width="152" height="3" opacity="0.25"></rect>
+                    <rect x="0" y="79" width="160" height="2" opacity="0.12"></rect>
+                </g>
+                <rect x="195" y="30" width="2" height="60" fill="#FFFBDB" opacity="0.2"></rect>
+                <text x="218" y="66" class="orb" font-size="36" letter-spacing="6" fill="#FFFBDB">SAS</text>
+                <text x="218" y="86" class="mono" font-size="11" letter-spacing="2" fill="#FFFBDB" opacity="0.7">INSPECTOR DEL SOIVRE</text>
+            </svg>
+        </a>
         <a href="index.html" class="nav-segment active">INTRODUCCIÓN</a>
         <a href="temario.html" class="nav-segment">TEMARIO</a>
         <a href="comercio-exterior.html" class="nav-segment">COMERCIO EXTERIOR</a>
@@ -1108,10 +1305,10 @@ footer.arcade-footer a:hover {
                     <!-- Slide 1: Intro -->
                     <div class="carousel-slide absolute inset-0 flex flex-col items-center justify-center text-center transition-opacity duration-500 opacity-100 z-10 p-4"
                         id="slide-1">
-                        <h1 class="arcade-title text-3xl sm:text-4xl md:text-5xl mb-6">
+                        <h1 class="arcade-title text-4xl sm:text-5xl md:text-6xl mb-6">
                             INTRODUCCIÓN
                         </h1>
-                        <p class="arcade-body mx-auto max-w-[640px] text-sm md:text-base mb-8">
+                        <p class="arcade-body mx-auto max-w-[640px] text-base md:text-lg mb-8">
                             Recursos especializados para la preparación de las oposiciones al
                             <strong>Cuerpo de Inspectores del SOIVRE</strong>.
                             <br><br>
@@ -1130,10 +1327,10 @@ footer.arcade-footer a:hover {
                     <!-- Slide 2: Why SOIVRE? -->
                     <div class="carousel-slide absolute inset-0 flex flex-col items-center justify-center text-center transition-opacity duration-500 opacity-0 z-0 pointer-events-none p-4"
                         id="slide-2">
-                        <h1 class="arcade-title text-2xl sm:text-3xl md:text-4xl mb-6">
+                        <h1 class="arcade-title text-3xl sm:text-4xl md:text-5xl mb-6">
                             ¿POR QUÉ INSPECTOR DEL SOIVRE?
                         </h1>
-                        <p class="arcade-body mx-auto max-w-[640px] text-sm md:text-base mb-8">
+                        <p class="arcade-body mx-auto max-w-[640px] text-base md:text-lg mb-8">
                             Una carrera centrada en el comercio exterior con funciones clave en inspección
                             agroalimentaria e industrial, así como en el diseño de política e inteligencia
                             comercial, ofreciendo una sólida proyección nacional e internacional.
@@ -1203,6 +1400,27 @@ footer.arcade-footer a:hover {
                 setTimeout(() => message.remove(), 8000);
             }
         }
+
+        // Theme toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const isDark = html.classList.toggle('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            const sunIcons = document.querySelectorAll('.theme-icon-sun');
+            const moonIcons = document.querySelectorAll('.theme-icon-moon');
+            sunIcons.forEach(el => el.style.display = isDark ? 'none' : 'block');
+            moonIcons.forEach(el => el.style.display = isDark ? 'block' : 'none');
+        }
+
+        // Restore theme on load
+        (function() {
+            const saved = localStorage.getItem('theme');
+            if (saved === 'dark') {
+                document.documentElement.classList.add('dark');
+                document.querySelectorAll('.theme-icon-sun').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('.theme-icon-moon').forEach(el => el.style.display = 'block');
+            }
+        })();
 
         // Mobile Menu Toggle - iOS Compatible
         function toggleMobileMenu() {
