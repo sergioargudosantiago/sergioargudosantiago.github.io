@@ -97,183 +97,46 @@
     </script>
 
     <style>
-        /* CSS Variables - Clean Minimal Theme */
+        /* CSS Variables - Arcade Theme */
         :root {
-            --background: 220 14% 96%;
-            --foreground: 220 9% 46%;
-            --card: 0 0% 100%;
-            --card-foreground: 220 13% 18%;
-            --popover: 0 0% 100%;
-            --popover-foreground: 220 13% 18%;
-            --primary: 217 91% 45%;
-            --primary-foreground: 0 0% 100%;
-            --secondary: 220 14% 96%;
-            --secondary-foreground: 220 13% 18%;
-            --muted: 220 14% 96%;
-            --muted-foreground: 220 9% 46%;
-            --accent: 217 91% 45%;
-            --accent-foreground: 0 0% 100%;
-            --destructive: 0 84.2% 60.2%;
-            --destructive-foreground: 0 0% 98%;
-            --border: 220 13% 91%;
-            --input: 220 13% 91%;
-            --ring: 217 91% 45%;
-            --radius: 0.5rem;
-        }
-
-        /* ===== DARK THEME ===== */
-        html.dark {
-            --background: 222 47% 11%;
-            --foreground: 210 40% 80%;
-            --card: 222 47% 14%;
-            --card-foreground: 210 40% 90%;
-            --popover: 222 47% 14%;
-            --popover-foreground: 210 40% 90%;
-            --primary: 210 100% 60%;
-            --primary-foreground: 222 47% 8%;
-            --secondary: 222 47% 16%;
-            --secondary-foreground: 210 40% 90%;
-            --muted: 222 47% 18%;
-            --muted-foreground: 210 20% 60%;
-            --accent: 210 100% 60%;
-            --accent-foreground: 222 47% 8%;
-            --destructive: 0 84% 60%;
-            --destructive-foreground: 0 0% 98%;
-            --border: 222 30% 22%;
-            --input: 222 30% 22%;
-            --ring: 210 100% 60%;
+            --background: #FFFBDB;
+            --foreground: #000000;
+            --primary: #000000;
+            --primary-foreground: #FFFBDB;
+            --secondary: #FFFBDB;
+            --secondary-foreground: #000000;
+            --muted: #F5F0C0;
+            --muted-foreground: #333333;
+            --accent: #000000;
+            --accent-foreground: #FFFBDB;
+            --border: #000000;
+            --input: #FFFBDB;
+            --ring: #000000;
+            --radius: 0px;
         }
 
         html {
-            transition: color 0.3s, background-color 0.3s;
+            transition: none;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            border-radius: 0 !important;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(to bottom, #f5f6f7, #e8eaed);
+            font-family: 'Share Tech Mono', monospace;
+            background: #FFFBDB;
             position: relative;
             min-height: 100vh;
-            color: hsl(var(--foreground));
+            color: #000000;
             padding-bottom: 5rem;
         }
 
-        html.dark body {
-            background: linear-gradient(to bottom, hsl(222, 47%, 11%), hsl(222, 47%, 8%));
-        }
-
-        .font-serif {
-            font-family: 'Cambria', 'Noto Serif', serif;
-        }
-
-        /* Dot Grid Background Pattern */
         .container-illustration {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-            background-color: #f5f6f7;
-            background-image: radial-gradient(circle, #d1d5db 1px, transparent 1px);
-            background-size: 24px 24px;
-        }
-
-        html.dark .container-illustration {
-            background-color: hsl(222, 47%, 11%);
-            background-image: radial-gradient(circle, hsl(222, 30%, 22%) 1px, transparent 1px);
-        }
-
-        /* Dark mode overrides for glass elements */
-        html.dark .nav-island {
-            background: rgba(30, 41, 59, 0.85);
-            border-color: rgba(255, 255, 255, 0.08);
-        }
-
-        html.dark .nav-segment {
-            color: hsl(var(--foreground));
-        }
-
-        html.dark .nav-segment:hover {
-            color: hsl(var(--primary));
-            background: rgba(59, 130, 246, 0.15);
-        }
-
-        html.dark .nav-segment.active {
-            color: hsl(var(--primary));
-            background: rgba(59, 130, 246, 0.2);
-            border-color: rgba(59, 130, 246, 0.4);
-        }
-
-        html.dark .search-island input {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.12);
-            color: hsl(var(--foreground));
-        }
-
-        html.dark footer {
-            background: hsl(222, 47%, 11%) !important;
-            color: hsl(210 40% 90%) !important;
-            border-color: rgba(255, 255, 255, 0.08) !important;
-        }
-
-        /* Dark mode: Intro carousel & tabs */
-        html.dark .bg-white\/90 {
-            background: rgba(30, 41, 59, 0.9) !important;
-        }
-
-        html.dark .bg-white\/75 {
-            background: rgba(30, 41, 59, 0.75) !important;
-        }
-
-        html.dark .bg-white\/80 {
-            background: rgba(30, 41, 59, 0.8) !important;
-        }
-
-        html.dark .ring-black\/5 {
-            --tw-ring-color: rgba(255, 255, 255, 0.08) !important;
-        }
-
-        html.dark .text-gray-600 {
-            color: hsl(210 20% 60%) !important;
-        }
-
-        html.dark .hover\:bg-gray-100:hover {
-            background: rgba(255, 255, 255, 0.08) !important;
-        }
-
-        html.dark .text-foreground {
-            color: hsl(var(--card-foreground)) !important;
-        }
-
-        html.dark .border-white\/30 {
-            border-color: rgba(255, 255, 255, 0.08) !important;
-        }
-
-        html.dark .border-white\/40 {
-            border-color: rgba(255, 255, 255, 0.08) !important;
-        }
-
-        html.dark .text-foreground\/80 {
-            color: hsl(210 40% 85%) !important;
-        }
-
-        html.dark .text-foreground\/90 {
-            color: hsl(210 40% 90%) !important;
-        }
-
-        /* Mobile menu + hamburger button */
-        html.dark .bg-white\/95 {
-            background: rgba(15, 23, 42, 0.97) !important;
-        }
-
-        html.dark [class*="bg-white/80"] {
-            background: rgba(30, 41, 59, 0.85) !important;
+            display: none;
         }
 
         /* ===== SCROLL REVEAL ===== */
@@ -311,12 +174,7 @@
             text-transform: uppercase;
         }
 
-        html.dark .mobile-breadcrumb {
-            background: rgba(30, 41, 59, 0.9);
-            border-color: rgba(255, 255, 255, 0.08);
-        }
-
-        @media (min-width: 768px) {
+@media (min-width: 768px) {
             .mobile-breadcrumb {
                 display: none;
             }
