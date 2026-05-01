@@ -148,42 +148,33 @@
             transform: translateY(0);
         }
 
-        /* ===== MOBILE BREADCRUMB ===== */
+        /* ===== ARCADE MOBILE MENU ===== */
         .mobile-breadcrumb {
             position: fixed;
-            top: 1rem;
-            left: 1rem;
+            top: 0;
+            left: 0;
+            right: 0;
             z-index: 40;
             display: flex;
             align-items: center;
-            gap: 0.4rem;
-            padding: 0.4rem 0.85rem;
-            background: rgba(255, 255, 255, 0.85);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 9999px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-            font-size: 0.7rem;
+            padding: 0.5rem 1rem;
+            background: #000000;
+            border-bottom: 1px solid rgba(255, 251, 219, 0.3);
+            font-family: 'Orbitron', monospace;
+            font-size: 0.6rem;
             font-weight: 700;
-            letter-spacing: 0.06em;
-            color: #000000;
+            letter-spacing: 0.08em;
+            color: #FFFBDB;
             text-transform: uppercase;
+            height: 2.5rem;
+            box-shadow: none;
+            backdrop-filter: none;
         }
 
 @media (min-width: 768px) {
             .mobile-breadcrumb {
                 display: none;
             }
-        }
-
-
-        /* Mobile menu styles */
-        .mobile-menu {
-            transform: translateX(-100%);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .mobile-menu.active {
-            transform: translateX(0);
         }
 
         /* Clean Nav link styles */
@@ -639,11 +630,6 @@
             transform: scale(0.95);
         }
 
-        /* Mobile Menu - Critical */
-        #mobileMenu {
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-
         .-translate-x-full {
             transform: translateX(-100%);
         }
@@ -687,21 +673,36 @@
         /* ========== MOBILE MENU TRANSITIONS (iOS Compatible) ========== */
         #mobileMenu {
             transform: translateX(-100%);
-            -webkit-transform: translateX(-100%);
             opacity: 0;
             visibility: hidden;
-            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s 0.3s;
-            -webkit-transition: -webkit-transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s 0.3s;
+            transition: transform 0.2s ease, opacity 0.2s ease, visibility 0s 0.2s;
+            background: #000000 !important;
+            border-right: 2px solid rgba(255, 251, 219, 0.3);
         }
 
         #mobileMenu.menu-open {
             transform: translateX(0);
-            -webkit-transform: translateX(0);
             opacity: 1;
             visibility: visible;
-            pointer-events: auto;
-            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-            -webkit-transition: -webkit-transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        #mobileMenu a {
+            font-family: 'Orbitron', monospace;
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: #FFFBDB;
+            letter-spacing: 0.05em;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid rgba(255, 251, 219, 0.15);
+            display: block;
+            text-decoration: none;
+        }
+
+        #mobileMenu a:hover,
+        #mobileMenu a.bg-accent {
+            background: #FFFBDB !important;
+            color: #000000 !important;
         }
 
         /* ===== ARCADE NAVIGATION BAR ===== */
@@ -1172,16 +1173,17 @@ footer.arcade-footer a:hover {
 
     <!-- Mobile Menu Button (Floating) -->
     <button
-        class="md:hidden fixed top-4 right-4 z-50 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center bg-white/80 backdrop-blur-md rounded-full border border-white/40 shadow-lg"
+        class="md:hidden fixed top-0 right-0 z-50 flex items-center justify-center"
+        style="width:2.5rem;height:2.5rem;background:#000;border-left:1px solid rgba(255,251,219,0.3);border-bottom:1px solid rgba(255,251,219,0.3);"
         onclick="toggleMobileMenu()" aria-label="Abrir menú">
-        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" class="text-primary">
+        <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="#FFFBDB">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
     </button>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="fixed inset-0 z-50 backdrop-blur-xl bg-white/95 md:hidden">
+    <div id="mobileMenu" class="fixed inset-y-0 left-0 z-50 w-72 md:hidden">
         <div class="flex h-full flex-col">
             <div class="border-b p-4">
                 <button onclick="toggleMobileMenu()" class="text-left text-lg font-bold text-primary">
@@ -1210,23 +1212,6 @@ footer.arcade-footer a:hover {
                     SOBRE MÍ
                 </a>
             </nav>
-            <!-- Mobile Theme Toggle -->
-            <div class="px-4 pt-2">
-                <button onclick="toggleTheme()"
-                    class="w-full flex items-center gap-3 rounded-md p-2 text-foreground/80 hover:bg-accent transition-colors">
-                    <svg class="theme-icon-sun h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <circle cx="12" cy="12" r="5" stroke-width="2" />
-                        <path stroke-linecap="round" stroke-width="2"
-                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
-                    </svg>
-                    <svg class="theme-icon-moon h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                        style="display:none">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-                    </svg>
-                    <span class="text-sm font-medium">Cambiar tema</span>
-                </button>
-            </div>
             <div class="mt-auto p-4">
                 <div class="relative">
                     <svg class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
