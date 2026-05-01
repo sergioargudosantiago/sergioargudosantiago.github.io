@@ -913,6 +913,24 @@
     color: #FFFBDB;
 }
 
+/* ===== ARCADE FOOTER ===== */
+footer.arcade-footer {
+    background: #000000 !important;
+    color: #FFFBDB !important;
+    border-top: 2px solid #000000 !important;
+    backdrop-filter: none !important;
+}
+
+footer.arcade-footer a {
+    color: #FFFBDB;
+    transition: color 0.15s;
+}
+
+footer.arcade-footer a:hover {
+    color: #FFE566;
+    opacity: 1;
+}
+
         /* ===== ARCADE BACKGROUND SVG ===== */
         .arcade-bg {
             position: fixed;
@@ -1298,9 +1316,8 @@
 </main>
 
     <!-- Footer (Sticky) -->
-    <footer
-        class="bg-primary text-primary-foreground fixed bottom-0 left-0 right-0 z-50 shadow-lg border-t border-primary/20 backdrop-blur-sm bg-opacity-95">
-        <div class="container mx-auto flex h-16 items-center justify-center gap-6 px-4 sm:px-6 lg:px-8">
+    <footer class="arcade-footer fixed bottom-0 left-0 right-0 z-50 shadow-lg border-t">
+        <div class="container mx-auto flex h-12 items-center justify-center gap-6 px-4 sm:px-6 lg:px-8">
             <a href="https://www.linkedin.com/in/sergio-argudo-santiago-inspector-soivre-placeholder"
                 aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"
                 class="transition-colors hover:text-accent">
