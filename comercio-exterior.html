@@ -7,13 +7,13 @@
     <meta name="description"
         content="Dashboard de comercio exterior español con datos de exportación e importación por sectores económicos.">
     <title>Sergio Argudo - Comercio Exterior</title>
-    <link rel="icon" href="images/logo.png?v=2" type="image/x-icon">
+    <link rel="icon" href="logos/SAS-icono-claro.svg" type="image/svg+xml">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap"
         rel="stylesheet">
 
     <!-- SEO & Social Meta Tags -->
@@ -50,46 +50,22 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        // Tailwind Configuration for Mobile Support
         tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
-                    screens: {
-                        'sm': '640px',
-                        'md': '768px',
-                        'lg': '1024px',
-                        'xl': '1280px',
-                        '2xl': '1536px',
-                    },
                     colors: {
-                        background: 'hsl(var(--background))',
-                        foreground: 'hsl(var(--foreground))',
-                        primary: {
-                            DEFAULT: 'hsl(var(--primary))',
-                            foreground: 'hsl(var(--primary-foreground))',
-                        },
-                        secondary: {
-                            DEFAULT: 'hsl(var(--secondary))',
-                            foreground: 'hsl(var(--secondary-foreground))',
-                        },
-                        muted: {
-                            DEFAULT: 'hsl(var(--muted))',
-                            foreground: 'hsl(var(--muted-foreground))',
-                        },
-                        accent: {
-                            DEFAULT: 'hsl(var(--accent))',
-                            foreground: 'hsl(var(--accent-foreground))',
-                        },
-                        border: 'hsl(var(--border))',
-                        input: 'hsl(var(--input))',
-                        ring: 'hsl(var(--ring))',
+                        background: '#C2D9C2',
+                        foreground: '#121412',
+                        primary: { DEFAULT: '#121412', foreground: '#C2D9C2' },
+                        secondary: { DEFAULT: '#C2D9C2', foreground: '#121412' },
+                        muted: { DEFAULT: '#A8C9A8', foreground: '#2A3528' },
+                        accent: { DEFAULT: '#121412', foreground: '#C2D9C2' },
+                        border: '#121412',
+                        input: '#C2D9C2',
+                        ring: '#121412',
                     },
-                    borderRadius: {
-                        lg: 'var(--radius)',
-                        md: 'calc(var(--radius) - 2px)',
-                        sm: 'calc(var(--radius) - 4px)',
-                    },
+                    borderRadius: { lg: '0', md: '0', sm: '0' },
                 }
             }
         }
@@ -99,201 +75,40 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 
     <style>
-        /* CSS Variables - Clean Minimal Theme */
+        /* CSS Variables - Arcade Theme */
         :root {
-            --background: 220 14% 96%;
-            --foreground: 220 9% 46%;
-            --card: 0 0% 100%;
-            --card-foreground: 220 13% 18%;
-            --primary: 217 91% 45%;
-            --primary-foreground: 0 0% 100%;
-            --secondary: 220 14% 96%;
-            --secondary-foreground: 220 13% 18%;
-            --muted: 220 14% 96%;
-            --muted-foreground: 220 9% 46%;
-            --accent: 217 91% 45%;
-            --border: 220 13% 91%;
-            --radius: 0.5rem;
+            --background: #C2D9C2;
+            --foreground: #121412;
+            --primary: #121412;
+            --primary-foreground: #C2D9C2;
+            --secondary: #C2D9C2;
+            --secondary-foreground: #121412;
+            --muted: #A8C9A8;
+            --muted-foreground: #2A3528;
+            --accent: #121412;
+            --accent-foreground: #C2D9C2;
+            --border: #121412;
+            --input: #C2D9C2;
+            --ring: #121412;
+            --radius: 0px;
         }
 
-        /* ===== DARK THEME ===== */
-        html.dark {
-            --background: 222 47% 11%;
-            --foreground: 210 40% 80%;
-            --card: 222 47% 14%;
-            --card-foreground: 210 40% 90%;
-            --popover: 222 47% 14%;
-            --popover-foreground: 210 40% 90%;
-            --primary: 210 100% 60%;
-            --primary-foreground: 222 47% 8%;
-            --secondary: 222 47% 16%;
-            --secondary-foreground: 210 40% 90%;
-            --muted: 222 47% 18%;
-            --muted-foreground: 210 20% 60%;
-            --accent: 210 100% 60%;
-            --accent-foreground: 222 47% 8%;
-            --destructive: 0 84% 60%;
-            --destructive-foreground: 0 0% 98%;
-            --border: 222 30% 22%;
-            --input: 222 30% 22%;
-            --ring: 210 100% 60%;
-        }
-
-        html {
-            transition: color 0.3s, background-color 0.3s;
-        }
+        html { transition: none; }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            border-radius: 0 !important;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(to bottom, #f5f6f7, #e8eaed);
+            font-family: 'Share Tech Mono', monospace;
+            background: #C2D9C2;
             position: relative;
             min-height: 100vh;
-            color: hsl(var(--foreground));
+            color: #121412;
             padding-bottom: 5rem;
-        }
-
-        html.dark body {
-            background: linear-gradient(to bottom, hsl(222, 47%, 11%), hsl(222, 47%, 8%));
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .font-serif {
-            font-family: 'Cambria', 'Noto Serif', serif;
-        }
-
-        /* Dot Grid Background Pattern */
-        .container-illustration {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-            background-color: #f5f6f7;
-            background-image: radial-gradient(circle, #d1d5db 1px, transparent 1px);
-            background-size: 24px 24px;
-        }
-
-        html.dark .container-illustration {
-            background-color: hsl(222, 47%, 11%);
-            background-image: radial-gradient(circle, hsl(222, 30%, 22%) 1px, transparent 1px);
-        }
-
-        /* Dark mode overrides */
-        html.dark .nav-island {
-            background: rgba(30, 41, 59, 0.85);
-            border-color: rgba(255, 255, 255, 0.08);
-        }
-
-        html.dark .nav-segment {
-            color: hsl(var(--foreground));
-        }
-
-        html.dark .nav-segment:hover {
-            color: hsl(var(--primary));
-            background: rgba(59, 130, 246, 0.15);
-        }
-
-        html.dark .nav-segment.active {
-            color: hsl(var(--primary));
-            background: rgba(59, 130, 246, 0.2);
-            border-color: rgba(59, 130, 246, 0.4);
-        }
-
-        html.dark .search-island input {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.12);
-            color: hsl(var(--foreground));
-        }
-
-        html.dark .glass-card {
-            background: rgba(30, 41, 59, 0.8);
-            border-color: rgba(255, 255, 255, 0.08);
-        }
-
-        html.dark .sector-card {
-            border-color: rgba(255, 255, 255, 0.08);
-        }
-
-        html.dark .sector-card:hover {
-            border-color: rgba(59, 130, 246, 0.4);
-        }
-
-        html.dark .bp-kpi-card {
-            background: rgba(30, 41, 59, 0.7);
-            border-color: rgba(255, 255, 255, 0.08);
-        }
-
-        html.dark .bp-chart-card {
-            background: rgba(30, 41, 59, 0.7);
-            border-color: rgba(255, 255, 255, 0.08);
-        }
-
-        html.dark .flow-toggle {
-            background: rgba(30, 41, 59, 0.5);
-        }
-
-        html.dark .main-tab-toggle {
-            background: rgba(30, 41, 59, 0.5);
-            border-color: rgba(255, 255, 255, 0.08);
-        }
-
-        html.dark .bp-sub-tabs {
-            background: rgba(30, 41, 59, 0.5);
-            border-color: rgba(255, 255, 255, 0.08);
-        }
-
-        html.dark .bp-sub-tab.active {
-            background: rgba(59, 130, 246, 0.2);
-            color: hsl(var(--primary));
-        }
-
-        /* Dark mode: Content cards & text */
-        html.dark .bg-white\/75 {
-            background: rgba(30, 41, 59, 0.75) !important;
-        }
-
-        html.dark .bg-white\/80 {
-            background: rgba(30, 41, 59, 0.8) !important;
-        }
-
-        html.dark .border-white\/30 {
-            border-color: rgba(255, 255, 255, 0.08) !important;
-        }
-
-        html.dark .border-white\/40 {
-            border-color: rgba(255, 255, 255, 0.08) !important;
-        }
-
-        html.dark .text-foreground {
-            color: hsl(var(--card-foreground)) !important;
-        }
-
-        html.dark .text-foreground\/80 {
-            color: hsl(210 40% 85%) !important;
-        }
-
-        html.dark [class*="bg-white/80"] {
-            background: rgba(30, 41, 59, 0.85) !important;
-        }
-
-        html.dark .bg-white\/95 {
-            background: rgba(15, 23, 42, 0.97) !important;
-        }
-
-        html.dark footer {
-            background: hsl(222, 47%, 11%) !important;
-            color: hsl(210 40% 90%) !important;
-            border-color: rgba(255, 255, 255, 0.08) !important;
         }
 
         /* ===== SCROLL REVEAL ===== */
@@ -302,305 +117,229 @@
             transform: translateY(24px);
             transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
         }
+        [data-reveal].revealed { opacity: 1; transform: translateY(0); }
 
-        [data-reveal].revealed {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* ===== MOBILE BREADCRUMB ===== */
+        /* ===== ARCADE MOBILE BREADCRUMB ===== */
         .mobile-breadcrumb {
             position: fixed;
-            top: 1rem;
-            left: 1rem;
+            top: 0; left: 0; right: 0;
             z-index: 40;
             display: flex;
             align-items: center;
-            gap: 0.4rem;
-            padding: 0.4rem 0.85rem;
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 9999px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-            font-size: 0.7rem;
+            padding: 0.5rem 1rem;
+            background: #121412;
+            border-bottom: 1px solid rgba(194,217,194,0.3);
+            font-family: 'Orbitron', monospace;
+            font-size: 0.6rem;
             font-weight: 700;
-            letter-spacing: 0.06em;
-            color: hsl(var(--primary));
+            letter-spacing: 0.08em;
+            color: #C2D9C2;
             text-transform: uppercase;
+            height: 2.5rem;
         }
-
-        html.dark .mobile-breadcrumb {
-            background: rgba(30, 41, 59, 0.9);
-            border-color: rgba(255, 255, 255, 0.08);
-        }
-
-        @media (min-width: 768px) {
-            .mobile-breadcrumb {
-                display: none;
-            }
-        }
+        @media (min-width: 768px) { .mobile-breadcrumb { display: none; } }
 
         /* ===== THEME TOGGLE ===== */
         .theme-toggle {
-            padding: 0.5rem;
-            border-radius: 9999px;
-            background: transparent;
-            border: 1px solid transparent;
-            cursor: pointer;
-            color: hsl(var(--foreground) / 0.7);
-            transition: all 0.3s;
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 4rem;
+            height: 100%;
+            background: transparent;
+            border: none;
+            border-left: 1px solid rgba(194,217,194,0.2);
+            cursor: pointer;
+            color: #C2D9C2;
+            padding: 0;
+            flex-shrink: 0;
+            transition: background 0.15s, color 0.15s;
         }
-
-        .theme-toggle:hover {
-            color: hsl(var(--primary));
-            background: rgba(255, 255, 255, 0.15);
-            border-color: rgba(6, 132, 212, 0.2);
-        }
+        .theme-toggle:hover { background: #C2D9C2; color: #121412; }
 
         /* ===== SKELETON LOADING ===== */
         .skeleton-loader {
             position: relative;
             overflow: hidden;
-            border-radius: 1rem;
-            background: rgba(255, 255, 255, 0.5);
+            background: #A8C9A8;
             transition: opacity 0.3s;
         }
-
-        html.dark .skeleton-loader {
-            background: rgba(30, 41, 59, 0.5);
-        }
-
         .skeleton-loader::after {
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
             animation: shimmer 1.5s infinite;
         }
+        @keyframes shimmer { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+        .skeleton-bar { height: 1.5rem; background: rgba(0,0,0,0.12); margin-bottom: 0.75rem; }
+        .skeleton-bar:nth-child(2) { width: 75%; }
+        .skeleton-bar:nth-child(3) { width: 50%; }
 
-        html.dark .skeleton-loader::after {
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+        /* ========== ARCADE CARDS ========== */
+        .glass, .glass-card {
+            background: #C2D9C2;
+            border: 2px solid #121412;
+            box-shadow: 4px 4px 0 #121412;
         }
+        .glass-card:hover { transform: none; box-shadow: 2px 2px 0 #121412; }
 
-        @keyframes shimmer {
-            0% {
-                transform: translateX(-100%);
-            }
-
-            100% {
-                transform: translateX(100%);
-            }
-        }
-
-        .skeleton-bar {
-            height: 1.5rem;
-            border-radius: 0.5rem;
-            background: hsl(var(--muted));
-            margin-bottom: 0.75rem;
-        }
-
-        .skeleton-bar:nth-child(2) {
-            width: 75%;
-        }
-
-        .skeleton-bar:nth-child(3) {
-            width: 50%;
-        }
-
-        /* ========== GLASSMORPHISM ========== */
-        .glass {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
-            border-radius: 3rem;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .glass-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.15),
-                0 0 25px rgba(6, 132, 212, 0.4),
-                0 0 50px rgba(6, 132, 212, 0.2);
-            border: 1px solid rgba(6, 132, 212, 0.4);
-        }
-
-
-        /* ========== NAVIGATION (Floating Island) ========== */
+        /* ========== ARCADE NAVIGATION BAR ========== */
         .nav-island {
             position: fixed;
-            top: 1.5rem;
+            top: 1.25rem;
             left: 50%;
             transform: translateX(-50%);
             z-index: 50;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            background: rgba(255, 255, 255, 0.75);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 2rem;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            padding: 0 0.25rem;
+            background: #121412;
+            border: 2px solid #121412;
+            box-shadow: 4px 4px 0 #121412;
+            height: 4.5rem;
+            white-space: nowrap;
+            max-width: 92vw;
         }
-
         .nav-segment {
             position: relative;
-            padding: 0.625rem 1.25rem;
-            font-size: 0.875rem;
-            font-weight: 500;
-            color: hsl(var(--foreground) / 0.7);
-            text-decoration: none;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 1rem;
-            border: 1px solid transparent;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            letter-spacing: 0.02em;
-            white-space: nowrap;
-        }
-
-        .nav-segment:hover {
-            color: hsl(var(--primary));
-            background: rgba(255, 255, 255, 0.25);
-            border-color: rgba(6, 132, 212, 0.2);
-            box-shadow: 0 0 20px rgba(6, 132, 212, 0.4),
-                0 0 40px rgba(6, 132, 212, 0.2);
-        }
-
-        .nav-segment.active {
-            color: hsl(var(--primary));
-            background: rgba(6, 132, 212, 0.15);
-            border-color: rgba(6, 132, 212, 0.3);
+            padding: 0 1.25rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-family: 'Orbitron', monospace;
+            font-size: 0.75rem;
             font-weight: 600;
-            box-shadow: 0 0 30px rgba(6, 132, 212, 0.6),
-                0 0 50px rgba(6, 132, 212, 0.3),
-                inset 0 0 20px rgba(6, 132, 212, 0.1);
+            color: #C2D9C2;
+            text-decoration: none;
+            border-right: 1px solid rgba(194,217,194,0.2);
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+            transition: background 0.15s, color 0.15s;
         }
+        .nav-segment:hover { background: #C2D9C2; color: #121412; box-shadow: none; }
+        .nav-segment.active { background: #C2D9C2; color: #121412; font-weight: 700; box-shadow: none; }
 
         .search-island {
             position: relative;
             display: flex;
             align-items: center;
-            margin-left: 0.5rem;
+            margin-left: auto;
+            margin-right: 0.75rem;
         }
-
         .search-island input {
-            width: 12rem;
-            height: 2.5rem;
-            padding: 0 1rem 0 2.5rem;
-            background: rgba(255, 255, 255, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 1.25rem;
-            font-size: 0.875rem;
-            color: hsl(var(--foreground));
+            width: 11rem;
+            height: 1.75rem;
+            padding: 0 0.75rem 0 2rem;
+            background: #1a1a1a;
+            border: 1px solid #C2D9C2;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.75rem;
+            color: #C2D9C2;
             outline: none;
-            transition: all 0.3s ease;
         }
-
-        .search-island input::placeholder {
-            color: hsl(var(--foreground) / 0.5);
-        }
-
-        .search-island input:focus {
-            background: rgba(255, 255, 255, 0.35);
-            border-color: rgba(6, 132, 212, 0.3);
-            box-shadow: 0 0 15px rgba(6, 132, 212, 0.3);
-        }
-
+        .search-island input::placeholder { color: rgba(194,217,194,0.5); }
+        .search-island input:focus { background: #2a2a2a; }
         .search-island svg {
             position: absolute;
-            left: 0.75rem;
+            left: 0.5rem;
             top: 50%;
             transform: translateY(-50%);
-            width: 16px;
-            height: 16px;
-            color: hsl(var(--foreground) / 0.5);
+            width: 14px; height: 14px;
+            color: rgba(194,217,194,0.6);
             pointer-events: none;
         }
+        @media (max-width: 768px) { .nav-island { display: none; } }
 
-        @media (max-width: 768px) {
-            .nav-island {
-                display: none;
-            }
+        /* ===== DARK MODE ===== */
+        html.dark body { background: #3B4533; color: #E8EDE8; }
+        html.dark .glass, html.dark .glass-card {
+            background: #2D3828;
+            border-color: #C2D9C2;
+            box-shadow: 4px 4px 0 rgba(194,217,194,0.3);
         }
+        html.dark .nav-island { background: #C2D9C2; border-color: #C2D9C2; box-shadow: 4px 4px 0 rgba(0,0,0,0.5); }
+        html.dark .nav-segment { color: #121412; border-right-color: rgba(0,0,0,0.2); }
+        html.dark .nav-segment:hover { background: #121412; color: #E8EDE8; }
+        html.dark .nav-segment.active { background: #121412; color: #E8EDE8; }
+        html.dark .search-island input { background: #C2D9C2; border-color: #121412; color: #121412; }
+        html.dark .search-island svg { color: rgba(0,0,0,0.5); }
+        html.dark .theme-toggle { color: #121412; border-left-color: rgba(0,0,0,0.2); }
+        html.dark .theme-toggle:hover { background: #121412; color: #E8EDE8; }
+        html.dark .mobile-breadcrumb { background: #2D3828; border-bottom-color: rgba(194,217,194,0.2); }
+        html.dark .nav-logo-svg g, html.dark .nav-logo-svg rect, html.dark .nav-logo-svg text { fill: #121412 !important; }
+        html.dark .skeleton-loader { background: #4A5C3F; }
+        html.dark .skeleton-bar { background: rgba(194,217,194,0.12); }
+        html.dark footer.arcade-footer { background: #C2D9C2 !important; color: #121412 !important; border-color: #C2D9C2 !important; }
+        html.dark footer.arcade-footer a { color: #121412; }
+        html.dark footer.arcade-footer a:hover { color: #4A5C4A; }
+        html.dark #mobileMenu { background: #2D3828 !important; border-right-color: rgba(194,217,194,0.2); }
+        html.dark #mobileMenu a:hover, html.dark #mobileMenu a.bg-accent { background: #C2D9C2 !important; color: #121412 !important; }
 
-        /* ========== FLOW TOGGLE ========== */
+        /* ========== FLOW TOGGLE (arcade) ========== */
         .flow-toggle {
             display: inline-flex;
-            background: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(8px);
-            border-radius: 2rem;
-            padding: 0.25rem;
-            gap: 0.25rem;
+            background: #C2D9C2;
+            border: 2px solid #121412;
+            padding: 0;
+            gap: 0;
         }
-
         .flow-toggle-btn {
-            padding: 0.75rem 2rem;
-            border-radius: 1.5rem;
-            font-weight: 600;
-            font-size: 0.875rem;
+            padding: 0.65rem 1.75rem;
+            font-family: 'Orbitron', monospace;
+            font-weight: 700;
+            font-size: 0.72rem;
             letter-spacing: 0.05em;
-            transition: all 0.3s ease;
+            transition: background 0.15s, color 0.15s;
             cursor: pointer;
             border: none;
-            background: transparent;
-            color: hsl(var(--foreground) / 0.6);
+            border-right: 2px solid #121412;
+            background: #C2D9C2;
+            color: #121412;
+            text-transform: uppercase;
         }
+        .flow-toggle-btn:last-child { border-right: none; }
+        .flow-toggle-btn.active { background: #121412; color: #C2D9C2; }
+        .flow-toggle-btn:hover:not(.active) { background: #F0E88A; }
 
-        .flow-toggle-btn.active {
-            background: hsl(var(--primary));
-            color: white;
-            box-shadow: 0 4px 12px rgba(6, 132, 212, 0.3);
-        }
+        html.dark .flow-toggle { background: #2D3828; border-color: #C2D9C2; }
+        html.dark .flow-toggle-btn { background: #2D3828; color: #E8EDE8; border-right-color: rgba(194,217,194,0.3); }
+        html.dark .flow-toggle-btn.active { background: #C2D9C2; color: #121412; }
+        html.dark .flow-toggle-btn:hover:not(.active) { background: #4A5C3F; }
 
-        /* ========== SECTOR CARDS ========== */
+        /* ========== SECTOR CARDS (arcade) ========== */
         .sector-card {
             cursor: pointer;
-            padding: 2.5rem;
+            padding: 2rem;
             text-align: center;
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            border: 2px solid #121412;
+            background: #C2D9C2;
+            box-shadow: 3px 3px 0 #121412;
+            transition: box-shadow 0.1s, transform 0.1s;
         }
-
+        .sector-card:hover {
+            box-shadow: 1px 1px 0 #121412;
+            transform: translate(2px, 2px);
+        }
         .sector-card h3 {
-            font-size: 1.5rem;
+            font-family: 'Orbitron', monospace;
+            font-size: 1.1rem;
             font-weight: 800;
-            color: hsl(var(--primary));
+            color: #121412;
             letter-spacing: 0.05em;
             word-break: break-word;
             overflow-wrap: break-word;
             hyphens: auto;
         }
-
         @media (max-width: 640px) {
-            .sector-card h3 {
-                font-size: 1.1rem;
-                /* Smaller font on mobile */
-                letter-spacing: 0.02em;
-            }
-
-            .sector-card {
-                padding: 1.5rem;
-                /* Less padding on mobile */
-            }
+            .sector-card h3 { font-size: 0.85rem; letter-spacing: 0.02em; }
+            .sector-card { padding: 1.25rem; }
         }
+        .sector-card:hover h3 { transform: none; }
 
-
-        .sector-card:hover h3 {
-            transform: scale(1.05);
-        }
+        html.dark .sector-card { background: #2D3828; border-color: #C2D9C2; box-shadow: 3px 3px 0 rgba(194,217,194,0.3); }
+        html.dark .sector-card:hover { box-shadow: 1px 1px 0 rgba(194,217,194,0.3); }
+        html.dark .sector-card h3 { color: #E8EDE8; }
 
         /* ========== BREADCRUMBS ========== */
         .breadcrumbs {
@@ -655,119 +394,120 @@
             margin-top: 2rem;
         }
 
-        /* ========== MAIN TAB TOGGLE ========== */
+        /* ========== MAIN TAB TOGGLE (arcade) ========== */
         .main-tab-toggle {
             display: inline-flex;
-            background: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(12px);
-            border-radius: 9999px;
-            padding: 4px;
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            background: #C2D9C2;
+            border: 2px solid #121412;
+            padding: 0;
         }
-
         .main-tab-btn {
             padding: 0.5rem 1.5rem;
-            border-radius: 9999px;
-            font-size: 0.75rem;
+            font-family: 'Orbitron', monospace;
+            font-size: 0.72rem;
             font-weight: 700;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            color: hsl(var(--foreground) / 0.6);
-            background: transparent;
+            color: #121412;
+            background: #C2D9C2;
             border: none;
+            border-right: 2px solid #121412;
             cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: background 0.15s, color 0.15s;
         }
+        .main-tab-btn:last-child { border-right: none; }
+        .main-tab-btn.active { background: #121412; color: #C2D9C2; }
+        .main-tab-btn:hover:not(.active) { background: #F0E88A; }
 
-        .main-tab-btn.active {
-            background: hsl(var(--primary));
-            color: white;
-            box-shadow: 0 4px 12px rgba(6, 132, 212, 0.3);
-        }
+        html.dark .main-tab-toggle { background: #2D3828; border-color: #C2D9C2; }
+        html.dark .main-tab-btn { background: #2D3828; color: #E8EDE8; border-right-color: rgba(194,217,194,0.3); }
+        html.dark .main-tab-btn.active { background: #C2D9C2; color: #121412; }
+        html.dark .main-tab-btn:hover:not(.active) { background: #4A5C3F; }
 
-        .main-tab-btn:hover:not(.active) {
-            color: hsl(var(--primary));
-            background: rgba(6, 132, 212, 0.08);
-        }
-
-        /* ========== BALANZA KPI CARDS ========== */
+        /* ========== BALANZA KPI CARDS (arcade) ========== */
         .bp-kpi-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
         }
-
         .bp-kpi-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 1rem;
+            background: #C2D9C2;
+            border: 2px solid #121412;
+            box-shadow: 3px 3px 0 #121412;
             padding: 1.5rem;
             text-align: center;
-            transition: all 0.3s;
+            transition: box-shadow 0.1s, transform 0.1s;
         }
-
         .bp-kpi-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            box-shadow: 1px 1px 0 #121412;
+            transform: translate(2px, 2px);
         }
-
         .bp-kpi-label {
-            font-size: 0.65rem;
+            font-family: 'Orbitron', monospace;
+            font-size: 0.6rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            color: hsl(var(--foreground) / 0.5);
+            color: rgba(0,0,0,0.5);
             margin-bottom: 0.75rem;
         }
-
         .bp-kpi-value {
-            font-size: 1.75rem;
+            font-family: 'Orbitron', monospace;
+            font-size: 1.6rem;
             font-weight: 900;
             letter-spacing: -0.03em;
+            color: #121412;
         }
-
-        .bp-kpi-value.positive {
-            color: #10b981;
-        }
-
-        .bp-kpi-value.negative {
-            color: #ef4444;
-        }
-
+        .bp-kpi-value.positive { color: #1a7a4a; }
+        .bp-kpi-value.negative { color: #b91c1c; }
         .bp-kpi-unit {
-            font-size: 0.65rem;
-            color: hsl(var(--foreground) / 0.4);
+            font-size: 0.6rem;
+            color: rgba(0,0,0,0.4);
             margin-top: 0.5rem;
             text-transform: uppercase;
             letter-spacing: 0.08em;
         }
+
+        html.dark .bp-kpi-card { background: #2D3828; border-color: #C2D9C2; box-shadow: 3px 3px 0 rgba(194,217,194,0.3); }
+        html.dark .bp-kpi-card:hover { box-shadow: 1px 1px 0 rgba(194,217,194,0.3); }
+        html.dark .bp-kpi-label { color: rgba(194,217,194,0.5); }
+        html.dark .bp-kpi-value { color: #E8EDE8; }
+        html.dark .bp-kpi-value.positive { color: #4ade80 !important; }
+        html.dark .bp-kpi-value.negative { color: #f87171 !important; }
+        html.dark .bp-kpi-unit { color: rgba(194,217,194,0.4); }
+        html.dark #metricValue { color: #C2D9C2 !important; }
+        html.dark #metricLabel { color: #C2D9C2 !important; }
+        html.dark #card-volume .text-muted-foreground { color: rgba(194,217,194,0.6) !important; }
+        html.dark #countriesTitle { color: #C2D9C2 !important; }
+        html.dark #countriesContainer .flex { background: rgba(194,217,194,0.08) !important; border-color: rgba(194,217,194,0.15) !important; }
+        html.dark #countriesContainer .font-bold { color: #C2D9C2 !important; }
+        html.dark #countriesContainer .text-2xl { color: rgba(194,217,194,0.25) !important; }
+        html.dark #analyticsSection > div > .glass-card:first-child h4 { color: #C2D9C2 !important; }
 
         /* ========== BALANZA BADGE ========== */
         .bp-badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.4rem 1rem;
-            border-radius: 9999px;
-            font-size: 0.7rem;
+            padding: 0.3rem 0.75rem;
+            font-family: 'Orbitron', monospace;
+            font-size: 0.65rem;
             font-weight: 700;
             letter-spacing: 0.05em;
             text-transform: uppercase;
-            background: linear-gradient(135deg, rgba(6, 132, 212, 0.12), rgba(6, 132, 212, 0.06));
-            color: hsl(var(--primary));
-            border: 1px solid rgba(6, 132, 212, 0.2);
+            background: #121412;
+            color: #C2D9C2;
+            border: 2px solid #121412;
         }
-
         .bp-badge::before {
             content: '';
             width: 6px;
             height: 6px;
-            border-radius: 50%;
-            background: hsl(var(--primary));
+            background: #C2D9C2;
             animation: pulse-dot 2s ease-in-out infinite;
         }
+        html.dark .bp-badge { background: #C2D9C2; color: #121412; border-color: #C2D9C2; }
+        html.dark .bp-badge::before { background: #121412; }
 
         @keyframes pulse-dot {
 
@@ -783,51 +523,53 @@
             }
         }
 
-        /* ========== BALANZA SUB-TABS ========== */
+        /* ========== BALANZA SUB-TABS (arcade) ========== */
         .bp-sub-tabs {
             display: inline-flex;
-            background: rgba(255, 255, 255, 0.5);
-            border-radius: 0.75rem;
-            padding: 3px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: #C2D9C2;
+            border: 2px solid #121412;
+            padding: 0;
         }
-
         .bp-sub-tab {
             padding: 0.4rem 1rem;
-            border-radius: 0.6rem;
-            font-size: 0.7rem;
+            font-family: 'Orbitron', monospace;
+            font-size: 0.65rem;
             font-weight: 600;
             letter-spacing: 0.04em;
-            color: hsl(var(--foreground) / 0.5);
-            background: transparent;
+            color: #121412;
+            background: #C2D9C2;
             border: none;
+            border-right: 2px solid #121412;
             cursor: pointer;
-            transition: all 0.25s;
+            transition: background 0.15s, color 0.15s;
         }
+        .bp-sub-tab:last-child { border-right: none; }
+        .bp-sub-tab.active { background: #121412; color: #C2D9C2; }
+        .bp-sub-tab:hover:not(.active) { background: #F0E88A; }
 
-        .bp-sub-tab.active {
-            background: white;
-            color: hsl(var(--primary));
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        }
+        html.dark .bp-sub-tabs { background: #2D3828; border-color: #C2D9C2; }
+        html.dark .bp-sub-tab { background: #2D3828; color: #E8EDE8; border-right-color: rgba(194,217,194,0.3); }
+        html.dark .bp-sub-tab.active { background: #C2D9C2; color: #121412; }
+        html.dark .bp-sub-tab:hover:not(.active) { background: #4A5C3F; }
 
-        /* ========== BALANZA CHART CONTAINERS ========== */
+        /* ========== BALANZA CHART CONTAINERS (arcade) ========== */
         .bp-chart-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 1rem;
+            background: #C2D9C2;
+            border: 2px solid #121412;
+            box-shadow: 3px 3px 0 #121412;
             padding: 1.5rem;
         }
-
         .bp-chart-title {
-            font-size: 0.7rem;
+            font-family: 'Orbitron', monospace;
+            font-size: 0.65rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.08em;
-            color: hsl(var(--foreground) / 0.5);
+            color: rgba(0,0,0,0.5);
             margin-bottom: 1rem;
         }
+        html.dark .bp-chart-card { background: #2D3828; border-color: #C2D9C2; box-shadow: 3px 3px 0 rgba(194,217,194,0.3); }
+        html.dark .bp-chart-title { color: #E8EDE8; }
 
         /* ========== BALANZA MOBILE RESPONSIVE ========== */
         @media (max-width: 640px) {
@@ -899,35 +641,88 @@
             }
         }
 
-        /* ========== MOBILE MENU SLIDE ========== */
-        .mobile-menu {
+        /* ========== MOBILE MENU ARCADE ========== */
+        #mobileMenu {
             transform: translateX(-100%);
-            transition: transform 0.3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+            transition: transform 0.2s ease, opacity 0.2s ease, visibility 0s 0.2s;
+            background: #121412 !important;
+            border-right: 2px solid rgba(194,217,194,0.3);
+        }
+        #mobileMenu.menu-open {
+            transform: translateX(0);
+            opacity: 1;
+            visibility: visible;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+        #mobileMenu a {
+            font-family: 'Orbitron', monospace;
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: #C2D9C2;
+            letter-spacing: 0.05em;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid rgba(194,217,194,0.15);
+            display: block;
+            text-decoration: none;
+        }
+        #mobileMenu a:hover, #mobileMenu a.bg-accent {
+            background: #C2D9C2 !important;
+            color: #121412 !important;
         }
 
-        .mobile-menu.active {
-            transform: translateX(0);
+        /* ========== ARCADE FOOTER ========== */
+        footer.arcade-footer {
+            background: #121412 !important;
+            color: #C2D9C2 !important;
+            border-top: 2px solid #121412 !important;
         }
+        footer.arcade-footer a { color: #C2D9C2; transition: color 0.15s; }
+        footer.arcade-footer a:hover { color: #FFE566; opacity: 1; }
 
         /* ========== UTILITY ========== */
     </style>
 </head>
 
 <body class="flex min-h-screen flex-col">
-    <!-- Background Illustration -->
-    <div class="container-illustration"></div>
 
     <!-- Mobile Breadcrumb -->
     <div class="mobile-breadcrumb md:hidden">
-        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="margin-right:0.5rem">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                 d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
         </svg>
         Comercio Exterior
     </div>
 
-    <!-- Desktop Navigation -->
+    <!-- Illuminated Island Navigation (Desktop) -->
     <nav class="nav-island hidden md:flex">
+        <a href="index.html" style="display:flex;align-items:center;padding:0 1rem;height:100%;border-right:1px solid rgba(194,217,194,0.2);flex-shrink:0">
+            <svg class="nav-logo-svg" xmlns="http://www.w3.org/2000/svg" width="260" height="62" viewBox="0 0 500 120">
+                <defs>
+                    <style>.orb{font-family:'Orbitron',monospace;font-weight:800}.mono{font-family:'Share Tech Mono',monospace}</style>
+                </defs>
+                <g fill="#C2D9C2" transform="translate(30, 16) scale(0.525)">
+                    <polygon points="8,54 152,54 140,72 20,72"></polygon>
+                    <rect x="18" y="44" width="124" height="10"></rect>
+                    <rect x="22" y="28" width="28" height="16"></rect>
+                    <rect x="22" y="24" width="28" height="4" opacity="0.4"></rect>
+                    <rect x="54" y="22" width="28" height="22"></rect>
+                    <rect x="54" y="18" width="28" height="4" opacity="0.4"></rect>
+                    <rect x="86" y="28" width="28" height="16"></rect>
+                    <rect x="86" y="24" width="28" height="4" opacity="0.4"></rect>
+                    <rect x="114" y="12" width="20" height="32"></rect>
+                    <rect x="116" y="8" width="16" height="6" opacity="0.6"></rect>
+                    <rect x="123" y="2" width="2" height="8"></rect>
+                    <rect x="4" y="74" width="152" height="3" opacity="0.25"></rect>
+                    <rect x="0" y="79" width="160" height="2" opacity="0.12"></rect>
+                </g>
+                <rect x="200" y="28" width="2" height="64" fill="#C2D9C2" opacity="0.2"></rect>
+                <text x="220" y="64" class="orb" font-size="36" letter-spacing="6" fill="#C2D9C2">SAS</text>
+                <text x="220" y="90" class="mono" font-size="17" letter-spacing="2" fill="#C2D9C2" opacity="0.7">INSPECTOR DEL SOIVRE</text>
+            </svg>
+        </a>
         <a href="index.html" class="nav-segment">INTRODUCCIÓN</a>
         <a href="temario.html" class="nav-segment">TEMARIO</a>
         <a href="comercio-exterior.html" class="nav-segment active">COMERCIO EXTERIOR</a>
@@ -959,74 +754,40 @@
 
     <!-- Mobile Menu Button -->
     <button
-        class="md:hidden fixed top-4 right-4 z-50 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center bg-white/80 backdrop-blur-md rounded-full border border-white/40 shadow-lg"
+        class="md:hidden fixed top-0 right-0 z-50 flex items-center justify-center"
+        style="width:2.5rem;height:2.5rem;background:#000;border-left:1px solid rgba(194,217,194,0.3);border-bottom:1px solid rgba(194,217,194,0.3);"
         onclick="toggleMobileMenu()" aria-label="Abrir menú">
-        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" class="text-primary">
+        <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="#C2D9C2">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
     </button>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu"
-        class="mobile-menu fixed inset-y-0 left-0 z-50 w-full max-w-xs bg-background shadow-xl md:hidden">
+    <div id="mobileMenu" class="fixed inset-y-0 left-0 z-50 w-72 md:hidden">
         <div class="flex h-full flex-col">
-            <div class="border-b p-4">
-                <button onclick="toggleMobileMenu()" class="text-left text-lg font-bold text-primary">
+            <div style="border-bottom:1px solid rgba(194,217,194,0.3);padding:0.75rem 1rem">
+                <button onclick="toggleMobileMenu()" class="text-left text-lg font-bold" style="color:#C2D9C2">
                     Menú
                 </button>
             </div>
-            <nav class="flex flex-col gap-1 p-4">
-                <a href="index.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
+            <nav class="flex flex-col p-2">
+                <a href="index.html" onclick="toggleMobileMenu();">
                     INTRODUCCIÓN
                 </a>
-                <a href="temario.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
+                <a href="temario.html" onclick="toggleMobileMenu();">
                     TEMARIO
                 </a>
-                <a href="comercio-exterior.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent bg-accent">
+                <a href="comercio-exterior.html" onclick="toggleMobileMenu();" style="background:#C2D9C2;color:#000">
                     COMERCIO EXTERIOR
                 </a>
-                <a href="enlaces.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
-                    ENLACES
+                <a href="enlaces.html" onclick="toggleMobileMenu();">
+                    ENLACES DE INTERÉS
                 </a>
-                <a href="sobre-mi.html" onclick="toggleMobileMenu();"
-                    class="w-full justify-start rounded-md p-2 text-left text-foreground/80 hover:bg-accent">
+                <a href="sobre-mi.html" onclick="toggleMobileMenu();">
                     SOBRE MÍ
                 </a>
             </nav>
-            <!-- Mobile Theme Toggle -->
-            <div class="px-4 pt-2">
-                <button onclick="toggleTheme()"
-                    class="w-full flex items-center gap-3 rounded-md p-2 text-foreground/80 hover:bg-accent transition-colors">
-                    <svg class="theme-icon-sun h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <circle cx="12" cy="12" r="5" stroke-width="2" />
-                        <path stroke-linecap="round" stroke-width="2"
-                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
-                    </svg>
-                    <svg class="theme-icon-moon h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                        style="display:none">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-                    </svg>
-                    <span class="text-sm font-medium">Cambiar tema</span>
-                </button>
-            </div>
-            <div class="mt-auto p-4">
-                <div class="relative">
-                    <svg class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                    <input type="search" placeholder="Buscar en temario..."
-                        class="h-9 w-full rounded-md bg-secondary pl-9 pr-3 text-sm outline-none ring-ring focus:ring-2"
-                        id="mobileSearch">
-                </div>
-            </div>
         </div>
     </div>
 
@@ -1329,9 +1090,8 @@
 
 
     <!-- Footer (Sticky) -->
-    <footer
-        class="bg-primary text-primary-foreground fixed bottom-0 left-0 right-0 z-50 shadow-lg border-t border-primary/20 backdrop-blur-sm bg-opacity-95">
-        <div class="container mx-auto flex h-16 items-center justify-center gap-6 px-4 sm:px-6 lg:px-8">
+    <footer class="arcade-footer fixed bottom-0 left-0 right-0 z-50 shadow-lg border-t">
+        <div class="container mx-auto flex h-12 items-center justify-center gap-6 px-4 sm:px-6 lg:px-8">
             <a href="https://www.linkedin.com/in/sergio-argudo-santiago-inspector-soivre-placeholder"
                 aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"
                 class="transition-colors hover:text-accent">
@@ -3226,6 +2986,7 @@
             lv4: null
         };
         let chartInstance = null;
+        let lastChartArgs = null;
 
         // ========== COUNTRY FLAGS ==========
         const countryFlags = {
@@ -4061,6 +3822,13 @@
 
             const ctx = document.getElementById('timeSeriesChart').getContext('2d');
             if (chartInstance) chartInstance.destroy();
+            lastChartArgs = { yearlyData, years };
+
+            const isDark = document.documentElement.classList.contains('dark');
+            const chartMain = isDark ? '#C2D9C2' : '#3B4533';
+            const chartMainAlpha = isDark ? 'rgba(194,217,194,0.12)' : 'rgba(59,69,51,0.12)';
+            const tickMain = isDark ? '#E8EDE8' : '#0f172a';
+            const tickMuted = isDark ? 'rgba(194,217,194,0.6)' : '#64748b';
 
             chartInstance = new Chart(ctx, {
                 type: 'line',
@@ -4069,15 +3837,15 @@
                     datasets: [{
                         label: 'Millones €',
                         data: values,
-                        borderColor: 'hsl(217, 91%, 45%)',
-                        backgroundColor: 'hsla(217, 91%, 45%, 0.1)',
+                        borderColor: chartMain,
+                        backgroundColor: chartMainAlpha,
                         borderWidth: 4,
                         tension: 0.4,
                         fill: true,
                         pointRadius: 6,
                         pointHoverRadius: 10,
-                        pointBackgroundColor: 'white',
-                        pointBorderColor: 'hsl(217, 91%, 45%)',
+                        pointBackgroundColor: isDark ? '#3B4533' : 'white',
+                        pointBorderColor: chartMain,
                         pointBorderWidth: 2
                     }]
                 },
@@ -4095,15 +3863,15 @@
                             text: 'Fuente: Elaboración propia a partir de datos del departamento de Aduanas e IIEE',
                             position: 'bottom',
                             align: 'center',
-                            color: '#64748b',
+                            color: tickMuted,
                             font: { size: 10, style: 'italic', family: 'Inter' },
                             padding: { top: 16 }
                         },
                         tooltip: {
-                            backgroundColor: 'rgba(255, 255, 255, 0.98)',
-                            titleColor: '#1e293b',
-                            bodyColor: '#1e293b',
-                            borderColor: 'rgba(6, 132, 212, 0.2)',
+                            backgroundColor: isDark ? 'rgba(45,56,40,0.98)' : 'rgba(255,255,255,0.98)',
+                            titleColor: isDark ? '#E8EDE8' : '#1e293b',
+                            bodyColor: isDark ? '#C2D9C2' : '#1e293b',
+                            borderColor: isDark ? 'rgba(194,217,194,0.3)' : 'rgba(59,69,51,0.2)',
                             borderWidth: 1,
                             padding: 16,
                             boxPadding: 8,
@@ -4124,26 +3892,25 @@
                                     return { weight: 'normal', size: 12 };
                                 },
                                 color: (context) => {
-                                    if (context.tick && context.tick.label === lastYear) return '#0f172a';
-                                    return '#64748b';
+                                    if (context.tick && context.tick.label === lastYear) return tickMain;
+                                    return tickMuted;
                                 }
                             }
                         },
                         y: {
                             position: 'right',
                             beginAtZero: true,
-                            grid: { color: 'rgba(0, 0, 0, 0.03)' },
+                            grid: { color: isDark ? 'rgba(194,217,194,0.05)' : 'rgba(0,0,0,0.03)' },
                             ticks: {
                                 font: (context) => {
-                                    // HIGHLIGHT LATEST: Bold and larger font for the closing value
                                     if (context.tick && context.tick.value === values[values.length - 1]) {
                                         return { weight: 'bold', size: 14 };
                                     }
                                     return { weight: 'normal', size: 11 };
                                 },
                                 color: (context) => {
-                                    if (context.tick && context.tick.value === values[values.length - 1]) return 'hsl(217, 91%, 45%)';
-                                    return '#64748b';
+                                    if (context.tick && context.tick.value === values[values.length - 1]) return chartMain;
+                                    return tickMuted;
                                 },
                                 callback: (value) => formatNumber(value)
                             }
@@ -4448,6 +4215,9 @@
 
             const ctx = document.getElementById('bp171Chart').getContext('2d');
             if (bpCharts.bp171) bpCharts.bp171.destroy();
+            const bpIsDark = document.documentElement.classList.contains('dark');
+            const bpTickColor = bpIsDark ? '#E8EDE8' : '#64748b';
+            const bpGridColor = bpIsDark ? 'rgba(194,217,194,0.08)' : 'rgba(0,0,0,0.05)';
             bpCharts.bp171 = new Chart(ctx, {
                 type: 'line',
                 data: { labels, datasets },
@@ -4456,7 +4226,7 @@
                     maintainAspectRatio: false,
                     interaction: { mode: 'index', intersect: false },
                     plugins: {
-                        legend: { position: 'top', labels: { usePointStyle: true, pointStyle: 'circle', font: { size: 11 } } },
+                        legend: { position: 'top', labels: { usePointStyle: true, pointStyle: 'circle', font: { size: 11 }, color: bpTickColor } },
                         tooltip: {
                             callbacks: {
                                 label: ctx => `${ctx.dataset.label}: ${bpFormatNum(ctx.raw)} M€`
@@ -4464,10 +4234,10 @@
                         }
                     },
                     scales: {
-                        x: { grid: { display: false }, ticks: { font: { size: 9 }, maxTicksLimit: 12 } },
+                        x: { grid: { display: false }, ticks: { font: { size: 9 }, maxTicksLimit: 12, color: bpTickColor } },
                         y: {
-                            grid: { color: 'rgba(0,0,0,0.05)' },
-                            ticks: { callback: v => bpFormatNum(v), font: { size: 10 } }
+                            grid: { color: bpGridColor },
+                            ticks: { callback: v => bpFormatNum(v), font: { size: 10 }, color: bpTickColor }
                         }
                     }
                 }
@@ -4561,6 +4331,9 @@
             });
             const ctx = document.getElementById('bp174BarChart').getContext('2d');
             if (bpCharts.bp174bar) bpCharts.bp174bar.destroy();
+            const bpIsDark = document.documentElement.classList.contains('dark');
+            const bpTickColor = bpIsDark ? '#E8EDE8' : '#64748b';
+            const bpGridColor = bpIsDark ? 'rgba(194,217,194,0.08)' : 'rgba(0,0,0,0.05)';
             bpCharts.bp174bar = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -4596,12 +4369,12 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                        legend: { position: 'top', labels: { usePointStyle: true, font: { size: 10 } } },
+                        legend: { position: 'top', labels: { usePointStyle: true, font: { size: 10 }, color: bpTickColor } },
                         tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${bpFormatNum(ctx.raw)} M€` } }
                     },
                     scales: {
-                        x: { grid: { display: false }, ticks: { font: { size: 9 } } },
-                        y: { grid: { color: 'rgba(0,0,0,0.05)' }, ticks: { callback: v => bpFormatNum(v), font: { size: 10 } } }
+                        x: { grid: { display: false }, ticks: { font: { size: 9 }, color: bpTickColor } },
+                        y: { grid: { color: bpGridColor }, ticks: { callback: v => bpFormatNum(v), font: { size: 10 }, color: bpTickColor } }
                     }
                 }
             });
@@ -4624,6 +4397,9 @@
 
             const ctx = document.getElementById('bp174TourismChart').getContext('2d');
             if (bpCharts.bp174tour) bpCharts.bp174tour.destroy();
+            const bpIsDark = document.documentElement.classList.contains('dark');
+            const bpTickColor = bpIsDark ? '#E8EDE8' : '#64748b';
+            const bpGridColor = bpIsDark ? 'rgba(194,217,194,0.08)' : 'rgba(0,0,0,0.05)';
             bpCharts.bp174tour = new Chart(ctx, {
                 type: 'line',
                 data: {
@@ -4643,12 +4419,12 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                        legend: { position: 'top', labels: { usePointStyle: true, font: { size: 10 } } },
+                        legend: { position: 'top', labels: { usePointStyle: true, font: { size: 10 }, color: bpTickColor } },
                         tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${bpFormatNum(ctx.raw)} M€` } }
                     },
                     scales: {
-                        x: { grid: { display: false }, ticks: { font: { size: 9 } } },
-                        y: { grid: { color: 'rgba(0,0,0,0.05)' }, ticks: { callback: v => bpFormatNum(v), font: { size: 10 } } }
+                        x: { grid: { display: false }, ticks: { font: { size: 9 }, color: bpTickColor } },
+                        y: { grid: { color: bpGridColor }, ticks: { callback: v => bpFormatNum(v), font: { size: 10 }, color: bpTickColor } }
                     }
                 }
             });
@@ -4694,6 +4470,8 @@
             const ctx = document.getElementById('bp174DonutChart').getContext('2d');
             if (bpCharts.bp174donut) bpCharts.bp174donut.destroy();
             const isMobile = window.innerWidth < 640;
+            const bpIsDark = document.documentElement.classList.contains('dark');
+            const bpTickColor = bpIsDark ? '#E8EDE8' : '#64748b';
             bpCharts.bp174donut = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
@@ -4712,7 +4490,7 @@
                     plugins: {
                         legend: {
                             position: isMobile ? 'bottom' : 'right',
-                            labels: { font: { size: isMobile ? 8 : 9 }, usePointStyle: true, pointStyle: 'circle', padding: isMobile ? 4 : 8 }
+                            labels: { font: { size: isMobile ? 8 : 9 }, usePointStyle: true, pointStyle: 'circle', padding: isMobile ? 4 : 8, color: bpTickColor }
                         },
                         tooltip: {
                             callbacks: {
@@ -4744,6 +4522,9 @@
 
             const ctx = document.getElementById('bp174IngPagChart').getContext('2d');
             if (bpCharts.bp174ip) bpCharts.bp174ip.destroy();
+            const bpIsDark = document.documentElement.classList.contains('dark');
+            const bpTickColor = bpIsDark ? '#E8EDE8' : '#64748b';
+            const bpGridColor = bpIsDark ? 'rgba(194,217,194,0.08)' : 'rgba(0,0,0,0.05)';
             bpCharts.bp174ip = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -4771,12 +4552,12 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                        legend: { position: 'top', labels: { usePointStyle: true, font: { size: 10 } } },
+                        legend: { position: 'top', labels: { usePointStyle: true, font: { size: 10 }, color: bpTickColor } },
                         tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${bpFormatNum(Math.abs(ctx.raw))} M€` } }
                     },
                     scales: {
-                        x: { stacked: true, grid: { display: false }, ticks: { font: { size: 9 } } },
-                        y: { stacked: true, grid: { color: 'rgba(0,0,0,0.05)' }, ticks: { callback: v => bpFormatNum(v), font: { size: 10 } } }
+                        x: { stacked: true, grid: { display: false }, ticks: { font: { size: 9 }, color: bpTickColor } },
+                        y: { stacked: true, grid: { color: bpGridColor }, ticks: { callback: v => bpFormatNum(v), font: { size: 10 }, color: bpTickColor } }
                     }
                 }
             });
@@ -4787,6 +4568,13 @@
             await loadData();
             resetNavigation();
         });
+
+        // Re-render chart when theme toggles
+        new MutationObserver(() => {
+            if (chartInstance && lastChartArgs) {
+                renderChart(lastChartArgs.yearlyData, lastChartArgs.years);
+            }
+        }).observe(document.documentElement, { attributeFilter: ['class'] });
 
     </script>
     <!-- Main JavaScript -->
