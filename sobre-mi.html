@@ -136,7 +136,9 @@
             letter-spacing: 0.05em;
             padding: 0.75rem 1rem;
             border-bottom: 1px solid rgba(194,217,194,0.15);
-            display: block;
+            display: flex;
+            align-items: center;
+            min-height: 44px;
             text-decoration: none;
         }
         #mobileMenu a:hover, #mobileMenu a.bg-accent {
@@ -244,6 +246,11 @@
             border: 1px solid rgba(0,0,0,0.2);
             pointer-events: none;
             z-index: 1;
+        }
+
+        @media (max-width: 640px) {
+            .arcade-card { padding: 1.5rem 1.25rem; }
+            .photo-frame { width: 120px; height: 120px; }
         }
 
         .arcade-title {

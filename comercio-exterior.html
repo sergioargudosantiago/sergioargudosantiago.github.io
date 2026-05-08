@@ -395,7 +395,7 @@
         /* ========== GRID LAYOUT ========== */
         .sector-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
             gap: 1.5rem;
             margin-top: 2rem;
         }
@@ -683,7 +683,9 @@
             letter-spacing: 0.05em;
             padding: 0.75rem 1rem;
             border-bottom: 1px solid rgba(194,217,194,0.15);
-            display: block;
+            display: flex;
+            align-items: center;
+            min-height: 44px;
             text-decoration: none;
         }
         #mobileMenu a:hover, #mobileMenu a.bg-accent {
