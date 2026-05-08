@@ -684,13 +684,18 @@
             .nav-island {
                 display: none;
             }
+            .arcade-bg { width: 260px; height: auto; }
+            .arcade-bg-left { width: 140px; height: auto; }
         }
 
         @media (max-width: 640px) {
-            .arcade-card { padding: 1.5rem 1.25rem; }
+            .arcade-card { padding: 1.5rem 1.25rem; overflow: visible; }
             .arcade-tabs { flex-wrap: wrap; width: 100%; }
             .arcade-tab { flex: 1; min-width: 0; font-size: 0.6rem; padding: 0.5rem 0.75rem; border-right: none; border-bottom: 2px solid #121412; }
             .arcade-tab:last-child { border-bottom: none; }
+            .arcade-title { font-size: clamp(1.25rem, 5vw, 2rem) !important; word-break: break-word; hyphens: auto; }
+            .arcade-body { font-size: 0.85rem !important; line-height: 1.6; }
+            .arcade-bg, .arcade-bg-left { display: none; }
         }
 
 /* ===== ARCADE HERO CARD ===== */
@@ -717,6 +722,8 @@
     letter-spacing: 0.04em;
     color: #121412;
     text-transform: uppercase;
+    word-break: break-word;
+    hyphens: auto;
 }
 
 .arcade-body {
@@ -1302,7 +1309,7 @@ html.dark .nav-logo-light { display: none !important; }
             </div>
 
             <!-- Arcade Card -->
-            <div data-reveal class="arcade-card relative w-full max-w-5xl mx-auto min-h-[580px] flex items-center justify-center overflow-hidden">
+            <div data-reveal class="arcade-card relative w-full max-w-5xl mx-auto min-h-[580px] flex items-center justify-center overflow-visible">
                 <div id="carouselSlides" class="relative w-full h-full flex items-center justify-center">
 
                     <!-- Slide 1: Intro -->
