@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(C:\\\\Users\\\\sargudo\\\\.claude\\\\plugins\\\\cache\\\\claude-plugins-official\\\\superpowers\\\\5.0.7\\\\scripts\\\\start-server.sh *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git *)",
+      "Bash(Get-ChildItem *.html)",
+      "Bash(Select-Object Name)",
+      "Bash(python3 -c ' *)",
+      "Read(//c/Users/sargudo/.claude/plugins/**)",
+      "Read(//c/Users/sargudo/.claude/**)",
+      "Bash(where uvx *)",
+      "Bash(pip install *)",
+      "Bash(python -c \"import sys,os; print\\(os.path.dirname\\(sys.executable\\)\\)\")",
+      "Bash(python -m uv --version)",
+      "Bash(python -m pip show -f uv)",
+      "Bash(rm -rf \"C:\\\\Users\\\\sargudo\\\\.claude\\\\plugins\\\\marketplaces\\\\leeguooooo-plugins\")",
+      "Bash(python -c \"import json; d=json.load\\(open\\(r'C:\\\\Users\\\\sargudo\\\\.claude\\\\settings.json'\\)\\); json.load\\(open\\(r'C:\\\\Users\\\\sargudo\\\\.claude.json'\\)\\); print\\('JSON ok'\\)\")",
+      "Bash(\"C:\\\\Users\\\\sargudo\\\\AppData\\\\Roaming\\\\Python\\\\Python313\\\\Scripts\\\\uvx.exe\" --help)",
+      "mcp__plugin_context-mode_context-mode__ctx_batch_execute",
+      "Bash(powershell -ExecutionPolicy Bypass -File _audit.ps1)",
+      "Bash(python generate_balanza_data.py)",
+      "Bash(python -c ' *)"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="120" viewBox="0 0 500 120">
+  <defs>
+    
+  </defs>
+  <rect width="500" height="120" fill="#C2D9C2"></rect>
+  <g fill="#3B4533" transform="translate(30, 16) scale(0.525)">
+  <polygon points="8,54 152,54 140,72 20,72"></polygon>
+  <rect x="18" y="44" width="124" height="10"></rect>
+  <rect x="22" y="28" width="28" height="16"></rect>
+  <rect x="22" y="24" width="28" height="4" opacity="0.4"></rect>
+  <rect x="54" y="22" width="28" height="22"></rect>
+  <rect x="54" y="18" width="28" height="4" opacity="0.4"></rect>
+  <rect x="86" y="28" width="28" height="16"></rect>
+  <rect x="86" y="24" width="28" height="4" opacity="0.4"></rect>
+  <rect x="114" y="12" width="20" height="32"></rect>
+  <rect x="116" y="8" width="16" height="6" opacity="0.6"></rect>
+  <rect x="123" y="2" width="2" height="8"></rect>
+  <rect x="4" y="74" width="152" height="3" opacity="0.25"></rect>
+  <rect x="0" y="79" width="160" height="2" opacity="0.12"></rect>
+</g>
+  <rect x="200" y="28" width="2" height="64" fill="#3B4533" opacity="0.2"></rect>
+  <text x="220" y="64" class="orb" font-size="36" letter-spacing="6" fill="#3B4533">SAS</text>
+  <text x="220" y="90" class="mono" font-size="17" letter-spacing="2" fill="#3B4533" opacity="0.6">INSPECTOR DEL SOIVRE</text>
+</svg>
