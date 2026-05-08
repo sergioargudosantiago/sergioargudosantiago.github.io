@@ -7,7 +7,7 @@
     <meta name="description"
         content="Dashboard de comercio exterior español con datos de exportación e importación por sectores económicos.">
     <title>Sergio Argudo - Comercio Exterior</title>
-    <link rel="icon" href="logos/SAS-icono-claro.svg" type="image/svg+xml">
+    <link rel="icon" href="logos/png/SAS-icono-claro.png" type="image/png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,14 +56,14 @@
                 extend: {
                     colors: {
                         background: '#C2D9C2',
-                        foreground: '#121412',
-                        primary: { DEFAULT: '#121412', foreground: '#C2D9C2' },
-                        secondary: { DEFAULT: '#C2D9C2', foreground: '#121412' },
+                        foreground: '#3B4533',
+                        primary: { DEFAULT: '#3B4533', foreground: '#C2D9C2' },
+                        secondary: { DEFAULT: '#C2D9C2', foreground: '#3B4533' },
                         muted: { DEFAULT: '#A8C9A8', foreground: '#2A3528' },
-                        accent: { DEFAULT: '#121412', foreground: '#C2D9C2' },
-                        border: '#121412',
+                        accent: { DEFAULT: '#3B4533', foreground: '#C2D9C2' },
+                        border: '#3B4533',
                         input: '#C2D9C2',
-                        ring: '#121412',
+                        ring: '#3B4533',
                     },
                     borderRadius: { lg: '0', md: '0', sm: '0' },
                 }
@@ -78,18 +78,18 @@
         /* CSS Variables - Arcade Theme */
         :root {
             --background: #C2D9C2;
-            --foreground: #121412;
-            --primary: #121412;
+            --foreground: #3B4533;
+            --primary: #3B4533;
             --primary-foreground: #C2D9C2;
             --secondary: #C2D9C2;
-            --secondary-foreground: #121412;
+            --secondary-foreground: #3B4533;
             --muted: #A8C9A8;
             --muted-foreground: #2A3528;
-            --accent: #121412;
+            --accent: #3B4533;
             --accent-foreground: #C2D9C2;
-            --border: #121412;
+            --border: #3B4533;
             --input: #C2D9C2;
-            --ring: #121412;
+            --ring: #3B4533;
             --radius: 0px;
         }
 
@@ -107,7 +107,7 @@
             background: #C2D9C2;
             position: relative;
             min-height: 100vh;
-            color: #121412;
+            color: #3B4533;
             padding-bottom: 5rem;
         }
 
@@ -252,20 +252,20 @@
         @media (max-width: 768px) { .nav-island { display: none; } }
 
         /* ===== DARK MODE ===== */
-        html.dark body { background: #3B4533; color: #E8EDE8; }
+        html.dark body { background: #3B4533; color: #C2D9C2; }
         html.dark .glass, html.dark .glass-card {
             background: #2D3828;
             border-color: #C2D9C2;
             box-shadow: 4px 4px 0 rgba(194,217,194,0.3);
         }
-        html.dark .nav-island { background: #C2D9C2; border-color: #C2D9C2; box-shadow: 4px 4px 0 rgba(0,0,0,0.5); }
-        html.dark .nav-segment { color: #121412; border-right-color: rgba(0,0,0,0.2); }
-        html.dark .nav-segment:hover { background: #121412; color: #E8EDE8; }
-        html.dark .nav-segment.active { background: #121412; color: #E8EDE8; }
-        html.dark .search-island input { background: #C2D9C2; border-color: #121412; color: #121412; }
-        html.dark .search-island svg { color: rgba(0,0,0,0.5); }
-        html.dark .theme-toggle { color: #121412; border-left-color: rgba(0,0,0,0.2); }
-        html.dark .theme-toggle:hover { background: #121412; color: #E8EDE8; }
+        html.dark .nav-island { background: #3B4533; border-color: #C2D9C2; box-shadow: 4px 4px 0 rgba(194,217,194,0.3); }
+        html.dark .nav-segment { color: #C2D9C2; border-right-color: rgba(194,217,194,0.2); }
+        html.dark .nav-segment:hover { background: #C2D9C2; color: #3B4533; }
+        html.dark .nav-segment.active { background: #C2D9C2; color: #3B4533; }
+        html.dark .search-island input { background: #2D3828; border-color: #C2D9C2; color: #C2D9C2; }
+        html.dark .search-island svg { color: rgba(194,217,194,0.6); }
+        html.dark .theme-toggle { color: #C2D9C2; border-left-color: rgba(194,217,194,0.2); }
+        html.dark .theme-toggle:hover { background: #C2D9C2; color: #3B4533; }
         html.dark .mobile-breadcrumb { background: #2D3828; border-bottom-color: rgba(194,217,194,0.2); }
         html.dark .nav-logo-light { display: none; }
         html.dark .nav-logo-dark { display: block; }
@@ -435,14 +435,14 @@
         }
         .bp-kpi-card {
             background: #C2D9C2;
-            border: 2px solid #121412;
-            box-shadow: 3px 3px 0 #121412;
+            border: 2px solid #3B4533;
+            box-shadow: 3px 3px 0 #3B4533;
             padding: 1.5rem;
             text-align: center;
             transition: box-shadow 0.1s, transform 0.1s;
         }
         .bp-kpi-card:hover {
-            box-shadow: 1px 1px 0 #121412;
+            box-shadow: 1px 1px 0 #3B4533;
             transform: translate(2px, 2px);
         }
         .bp-kpi-label {
@@ -451,7 +451,7 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            color: rgba(0,0,0,0.5);
+            color: rgba(59,69,51,0.6);
             margin-bottom: 0.75rem;
         }
         .bp-kpi-value {
@@ -459,25 +459,25 @@
             font-size: 1.6rem;
             font-weight: 900;
             letter-spacing: -0.03em;
-            color: #121412;
+            color: #3B4533;
         }
         .bp-kpi-value.positive { color: #1a7a4a; }
         .bp-kpi-value.negative { color: #b91c1c; }
         .bp-kpi-unit {
             font-size: 0.6rem;
-            color: rgba(0,0,0,0.4);
+            color: rgba(59,69,51,0.5);
             margin-top: 0.5rem;
             text-transform: uppercase;
             letter-spacing: 0.08em;
         }
 
-        html.dark .bp-kpi-card { background: #2D3828; border-color: #C2D9C2; box-shadow: 3px 3px 0 rgba(194,217,194,0.3); }
-        html.dark .bp-kpi-card:hover { box-shadow: 1px 1px 0 rgba(194,217,194,0.3); }
-        html.dark .bp-kpi-label { color: rgba(194,217,194,0.5); }
-        html.dark .bp-kpi-value { color: #E8EDE8; }
-        html.dark .bp-kpi-value.positive { color: #4ade80 !important; }
-        html.dark .bp-kpi-value.negative { color: #f87171 !important; }
-        html.dark .bp-kpi-unit { color: rgba(194,217,194,0.4); }
+        html.dark .bp-kpi-card { background: #C2D9C2; border-color: #3B4533; box-shadow: 3px 3px 0 rgba(59,69,51,0.5); }
+        html.dark .bp-kpi-card:hover { box-shadow: 1px 1px 0 rgba(59,69,51,0.5); }
+        html.dark .bp-kpi-label { color: rgba(59,69,51,0.6); }
+        html.dark .bp-kpi-value { color: #3B4533; }
+        html.dark .bp-kpi-value.positive { color: #1a7a4a !important; }
+        html.dark .bp-kpi-value.negative { color: #b91c1c !important; }
+        html.dark .bp-kpi-unit { color: rgba(59,69,51,0.5); }
         html.dark #metricValue { color: #C2D9C2 !important; }
         html.dark #metricLabel { color: #C2D9C2 !important; }
         html.dark #card-volume .text-muted-foreground { color: rgba(194,217,194,0.6) !important; }
@@ -984,7 +984,7 @@
                                 <button class="bp-sub-tab" data-bp-tab="s174" onclick="switchBPTab('s174')">Serie 17.4 —
                                     Cuenta Corriente</button>
                             </div>
-                            <div id="bpBadge" class="bp-badge">Último dato: Noviembre 2025</div>
+                            <div id="bpBadge" class="bp-badge">Último dato: Febrero 2026</div>
                         </div>
 
                         <!-- Serie 17.1 Panel -->
@@ -4127,9 +4127,9 @@
             document.getElementById('bp174Panel').classList.toggle('hidden', tab !== 's174');
             const badge = document.getElementById('bpBadge');
             if (tab === 's171') {
-                badge.textContent = 'Último dato: Noviembre 2025';
+                badge.textContent = 'Último dato: Febrero 2026';
             } else {
-                badge.textContent = 'Último dato: 3T 2025';
+                badge.textContent = 'Último dato: 4T 2025';
             }
         }
 
