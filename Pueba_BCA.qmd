@@ -1,0 +1,424 @@
+---
+title: "GRAFS"
+author: "Sergio ARGUDO"
+format: html
+params:
+  output_agro_ind: "datos_maestros_AGRO_IND.csv"
+  output_dashboard: "datos_maestros_dashboard.csv"
+  desde: 2021
+  hasta: 2025
+---
+
+
+```{r}
+library(tidyverse)
+library(comerciotools) 
+library(countrycode)
+
+```
+
+# Agro export
+
+```{r}
+
+# Función A: Tasa de Variación Anual (TVA) en %
+get_tva <- function(df, ..., col_destino) {
+  df %>%
+    group_by(..., year, flujo) %>%
+    summarise(total_grupo = sum(euros, na.rm = TRUE), .groups = "drop_last") %>%
+    arrange(..., flujo, year) %>%
+    group_by(..., flujo) %>%
+    mutate(!!col_destino := (total_grupo - lag(total_grupo)) / lag(total_grupo) * 100) %>%
+    select(..., year, flujo, !!sym(col_destino)) %>%
+    ungroup()
+}
+# ==============================================================================
+# FUNCIÓN ACTUALIZADA: TOP PAÍSES CON CÓDIGOS ESPECIALES (900+)
+# ==============================================================================
+
+# 1. Definimos el diccionario de códigos especiales fuera para mayor claridad
+#    (Optimizamos los nombres para que queden bien en el Tooltip de la web)
+codigos_iso_especiales <- c(
+  "949" = "Avituallamiento Nac.",
+  "950" = "Avituallamiento",
+  "951" = "Avituallamiento Intra.",
+  "952" = "Avituallamiento Extra.",
+  "953" = "Alta Mar",
+  "954" = "Pesca de Altura",
+  "955" = "Alta Mar",
+  "958" = "Indeterminado",
+  "959" = "Indeterminado Intra.",      # El que te daba el aviso
+  "960" = "Indeterminado Extra.",
+  "975" = "Indeterminado Com. (Intra)",
+  "976" = "Indeterminado Com. (Extra)",
+  "977" = "Confidencial/Militar",
+  "978" = "Confidencial (Intra)",
+  "979" = "Confidencial (Extra)",
+  "ROM" = "Rumanía"
+)
+
+# 2. Función actualizada con el custom_match
+get_top_paises <- function(df, ..., col_destino) {
+  df %>%
+    group_by(..., iso3a) %>%
+    summarise(total_pais = sum(euros, na.rm = TRUE), .groups = "drop_last") %>%
+    slice_max(order_by = total_pais, n = 3) %>%
+    
+    # --- TRADUCCIÓN ROBUSTA ---
+    mutate(
+      nombre_pais = countrycode(
+        iso3a, 
+        origin = "iso3c", 
+        destination = "cldr.name.es",
+        # Aquí inyectamos tu lista para corregir los 959, 960, etc.
+        custom_match = codigos_iso_especiales
+      )
+    ) %>%
+    # Fallback final: Si sigue habiendo algún código raro no mapeado, usa el original
+    mutate(nombre_pais = ifelse(is.na(nombre_pais), iso3a, nombre_pais)) %>%
+    # --------------------------
+    
+    summarise(!!col_destino := paste(nombre_pais, collapse = ", "), .groups = "drop")
+}
+# ------------------------------------------------------------------------------
+# 2. FUNCIÓN GENERADORA DE DATASETS (WRAPPER)
+# ------------------------------------------------------------------------------
+# Esta función procesa cualquier sector (Agro o Industrial) y cualquier flujo
+generar_datos_sector <- function(tabla_pg, flujo_taric, macro_label, nivel_taric=8) {
+  
+  message(paste("Procesando:", macro_label, "-", flujo_taric, "..."))
+  
+  # A. Obtener Correspondencias
+  df_corresp <- get_pg(paste0("SELECT * FROM ", tabla_pg))
+  
+  # B. Obtener Datos TARIC
+  df_raw <- comerciotools::taric(
+    nivel = nivel_taric,
+    flujo = flujo_taric,
+    desde = 2021, hasta = 2025,
+    .iso3a_agregado = FALSE # Necesitamos el país desagregado
+  )
+  
+  # C. Cruce Base
+  df_base <- df_raw %>%
+    mutate(codigo_nc = str_pad(as.character(codigo), width = 8, side = "left", pad = "0")) %>%
+    inner_join(df_corresp, by = "codigo_nc") %>%
+    mutate(macro_sector = macro_label)
+
+  # D. Cálculo de Métricas por Nivel
+  # Nivel 1
+  top_lv1 <- get_top_paises(df_base, year, flujo, macro_sector, id_lv1, col_destino = "top_paises_lv1")
+  tva_lv1 <- get_tva(df_base, macro_sector, id_lv1, col_destino = "tva_lv1")
+  
+  # Nivel 2
+  top_lv2 <- get_top_paises(df_base, year, flujo, macro_sector, id_lv1, id_lv2, col_destino = "top_paises_lv2")
+  tva_lv2 <- get_tva(df_base, macro_sector, id_lv1, id_lv2, col_destino = "tva_lv2")
+  
+  # Nivel 3
+  top_lv3 <- get_top_paises(df_base, year, flujo, macro_sector, id_lv1, id_lv2, id_lv3, col_destino = "top_paises_lv3")
+  tva_lv3 <- get_tva(df_base, macro_sector, id_lv1, id_lv2, id_lv3, col_destino = "tva_lv3")
+  
+  # E. Agregación y Unión Final
+  df_final <- df_base %>%
+    group_by(
+      year, flujo, macro_sector,
+      lv1=id_lv1, lit_lv1=nombre_lv1,
+      lv2=id_lv2, lit_lv2=nombre_lv2,
+      lv3=id_lv3, lit_lv3=nombre_lv3
+    ) %>%
+    summarise(total_millones = sum(euros, na.rm=TRUE)/1000000, .groups="drop") %>%
+    
+    # Joins de métricas
+    left_join(top_lv1, by = c("year", "flujo", "macro_sector", "lv1"="id_lv1")) %>%
+    left_join(tva_lv1, by = c("year", "flujo", "macro_sector", "lv1"="id_lv1")) %>%
+    
+    left_join(top_lv2, by = c("year", "flujo", "macro_sector", "lv1"="id_lv1", "lv2"="id_lv2")) %>%
+    left_join(tva_lv2, by = c("year", "flujo", "macro_sector", "lv1"="id_lv1", "lv2"="id_lv2")) %>%
+    
+    left_join(top_lv3, by = c("year", "flujo", "macro_sector", "lv1"="id_lv1", "lv2"="id_lv2", "lv3"="id_lv3")) %>%
+    left_join(tva_lv3, by = c("year", "flujo", "macro_sector", "lv1"="id_lv1", "lv2"="id_lv2", "lv3"="id_lv3")) %>%
+    
+    # Limpieza decimales
+    mutate(
+      total_millones = round(total_millones, 2),
+      across(starts_with("tva_"), ~round(., 1))
+    )
+    
+  return(df_final)
+}
+
+# ------------------------------------------------------------------------------
+# 3. EJECUCIÓN: CREACIÓN DEL DATASET MAESTRO
+# ------------------------------------------------------------------------------
+
+# 1. Generamos los bloques Agro
+df_agro_exp <- generar_datos_sector("pruebas.correspondencias_sectores", "E", "Agroalimentario")
+df_agro_imp <- generar_datos_sector("pruebas.correspondencias_sectores", "I", "Agroalimentario")
+
+# 2. Generamos los bloques Industriales (DESCOMENTAR CUANDO TENGAS LA TABLA PG LISTA)
+# df_ind_exp <- generar_datos_sector("pruebas.correspondencias_industrial", "E", "Industrial")
+# df_ind_imp <- generar_datos_sector("pruebas.correspondencias_industrial", "I", "Industrial")
+
+# 3. Unificamos todo en un solo archivo para Antigravity
+datos_maestros_dashboard <- bind_rows(df_agro_exp, df_agro_imp) 
+# Futuro: bind_rows(df_agro_exp, df_agro_imp, df_ind_exp, df_ind_imp)
+
+# 4. Exportar
+con_dash <- file(params$output_dashboard, encoding = "UTF-8")
+write.csv(datos_maestros_dashboard, con_dash, row.names = FALSE)
+close(con_dash)
+
+print("¡Proceso finalizado! Archivo generado con nombres de países traducidos.")
+glimpse(datos_maestros_dashboard)
+```
+
+
+```{r}
+# ==============================================================================
+# SCRIPT MAESTRO V5: AGRO + INDUSTRIAL (4 NIVELES)
+# ==============================================================================
+
+library(tidyverse)
+library(comerciotools)
+library(countrycode)
+
+# ------------------------------------------------------------------------------
+# 1. DICCIONARIOS Y CONFIGURACIÓN
+# ------------------------------------------------------------------------------
+
+# Diccionario para limpiar códigos raros en Top Países
+codigos_taric_especiales <- c(
+  "ROM" = "Rumanía",
+  "949" = "Avituallamiento Nac.", "950" = "Avituallamiento",
+  "951" = "Avituallamiento Intra.", "952" = "Avituallamiento Extra.",
+  "953" = "Alta Mar", "954" = "Pesca de Altura",
+  "955" = "Alta Mar", "958" = "Indeterminado",
+  "959" = "Indeterminado Intra.", "960" = "Indeterminado Extra.",
+  "975" = "Indeterminado (Intra)", "976" = "Indeterminado (Extra)",
+  "977" = "Confidencial", "978" = "Confidencial (Intra)", "979" = "Confidencial (Extra)"
+)
+
+# ------------------------------------------------------------------------------
+# 2. FUNCIONES DE CÁLCULO (KPIS)
+# ------------------------------------------------------------------------------
+
+# Función A: Tasa de Variación Anual (TVA) en %
+get_tva <- function(df, ..., col_destino) {
+  df %>%
+    group_by(..., year, flujo) %>%
+    summarise(total_grupo = sum(euros, na.rm = TRUE), .groups = "drop_last") %>%
+    arrange(..., flujo, year) %>%
+    group_by(..., flujo) %>%
+    mutate(!!col_destino := (total_grupo - lag(total_grupo)) / lag(total_grupo) * 100) %>%
+    select(..., year, flujo, !!sym(col_destino)) %>%
+    ungroup()
+}
+
+# Función B: Top 3 Países con NOMBRE REAL
+get_top_paises <- function(df, ..., col_destino) {
+  df %>%
+    group_by(..., iso3a) %>%
+    summarise(total_pais = sum(euros, na.rm = TRUE), .groups = "drop_last") %>%
+    slice_max(order_by = total_pais, n = 3) %>%
+    mutate(
+      nombre_pais = countrycode(iso3a, origin = "iso3c", destination = "cldr.name.es", custom_match = codigos_taric_especiales)
+    ) %>%
+    mutate(nombre_pais = ifelse(is.na(nombre_pais), iso3a, nombre_pais)) %>%
+    summarise(!!col_destino := paste(nombre_pais, collapse = ", "), .groups = "drop")
+}
+
+# ------------------------------------------------------------------------------
+# 3. PROCESADORES POR SECTOR (La lógica de extracción)
+# ------------------------------------------------------------------------------
+
+# --- PROCESADOR AGROALIMENTARIO (3 Niveles) ---
+procesar_agro <- function(flujo_taric) {
+  message(paste("Procesando AGRO - Flujo:", flujo_taric))
+  
+  # 1. Correspondencias (Esquema Pruebas)
+  df_corresp <- get_pg("SELECT * FROM pruebas.correspondencias_sectores")
+  
+  # 2. Datos Taric
+  df_raw <- comerciotools::taric(nivel=8, flujo=flujo_taric, desde=2021, hasta=2025, .iso3a_agregado=F)
+  
+  # 3. Cruce
+  df_base <- df_raw %>%
+    mutate(codigo_nc = str_pad(as.character(codigo), width=8, side="left", pad="0")) %>%
+    inner_join(df_corresp, by="codigo_nc") %>%
+    mutate(macro_sector = "Agroalimentario") %>%
+    # AÑADIMOS NIVEL 4 VACÍO (Para compatibilidad con industria)
+    mutate(id_lv4 = NA_character_, nombre_lv4 = NA_character_) 
+
+  # 4. Retornamos la base limpia para calcular métricas conjuntas luego
+  return(df_base)
+}
+
+# ------------------------------------------------------------------------------
+# PROCESADOR INDUSTRIAL CORREGIDO (CON DEDUPLICACIÓN)
+# ------------------------------------------------------------------------------
+
+procesar_industrial <- function(flujo_taric) {
+  message(paste("Procesando INDUSTRIAL - Flujo:", flujo_taric))
+  
+  # 1. Correspondencias (Tabla datacomex filtrada)
+  query_ind <- "
+    SELECT 
+      taric8 as codigo_nc,
+      sec1 as id_lv1, sec1_lit as nombre_lv1,
+      sec2 as id_lv2, sec2_lit as nombre_lv2,
+      sec3 as id_lv3, sec3_lit as nombre_lv3,
+      sec4 as id_lv4, sec4_lit as nombre_lv4
+    FROM datacomex.equivalencias_taric_sec_cuci_cpa
+    WHERE sec1 NOT IN ('1', '9')
+  "
+  
+  # DESCARGA Y LIMPIEZA DE DUPLICADOS (El paso clave)
+  df_corresp <- get_pg(query_ind) %>%
+    # Aseguramos que codigo_nc tenga 8 dígitos antes de deduplicar
+    mutate(codigo_nc = str_pad(as.character(codigo_nc), width=8, side="left", pad="0")) %>%
+    # ¡AQUÍ ESTÁ EL ARREGLO!: Nos quedamos con una sola fila por código
+    distinct(codigo_nc, .keep_all = TRUE)
+  
+  # 2. Datos Taric
+  df_raw <- comerciotools::taric(
+    nivel = 8, 
+    flujo = flujo_taric, 
+    desde = 2021, hasta = 2025, 
+    .iso3a_agregado = FALSE
+  )
+  
+  # 3. Cruce (Ahora será seguro 1 a 1)
+  df_base <- df_raw %>%
+    mutate(codigo_nc = str_pad(as.character(codigo), width=8, side="left", pad="0")) %>%
+    # Usamos inner_join. Si saltara el aviso aquí, R ya no duplicará filas
+    inner_join(df_corresp, by = "codigo_nc") %>%
+    mutate(macro_sector = "Industrial")
+  
+  return(df_base)
+}
+
+# ------------------------------------------------------------------------------
+# 4. EJECUCIÓN Y CÁLCULO UNIFICADO
+# ------------------------------------------------------------------------------
+
+# A. Generar las bases crudas
+df_agro_e <- procesar_agro("E")
+df_agro_i <- procesar_agro("I")
+df_ind_e  <- procesar_industrial("E")
+df_ind_i  <- procesar_industrial("I")
+
+# B. Unir todo en una SUPER BASE
+# (bind_rows une las columnas coincidentes y rellena con NA las faltantes)
+df_total_raw <- bind_rows(df_agro_e, df_agro_i, df_ind_e, df_ind_i)
+
+message("Calculando métricas para la Tabla Maestra...")
+
+# C. Calcular Métricas para TODOS los niveles (Loop funcional)
+# Definimos los niveles para iterar y no repetir código 4 veces
+datos_finales <- df_total_raw %>%
+  # Agregación Base (Millones)
+  group_by(year, flujo, macro_sector,
+           lv1=id_lv1, lit_lv1=nombre_lv1,
+           lv2=id_lv2, lit_lv2=nombre_lv2,
+           lv3=id_lv3, lit_lv3=nombre_lv3,
+           lv4=id_lv4, lit_lv4=nombre_lv4) %>% # Incluimos nivel 4
+  summarise(total_millones = sum(euros, na.rm=T)/1000000, .groups="drop")
+
+# D. Calcular y Pegar Tops y TVAs por Nivel
+# Nivel 1
+datos_finales <- datos_finales %>%
+  left_join(get_top_paises(df_total_raw, year, flujo, macro_sector, id_lv1, col_destino="top_lv1"), by=c("year","flujo","macro_sector","lv1"="id_lv1")) %>%
+  left_join(get_tva(df_total_raw, macro_sector, id_lv1, col_destino="tva_lv1"), by=c("year","flujo","macro_sector","lv1"="id_lv1"))
+
+# Nivel 2
+datos_finales <- datos_finales %>%
+  left_join(get_top_paises(df_total_raw, year, flujo, macro_sector, id_lv1, id_lv2, col_destino="top_lv2"), by=c("year","flujo","macro_sector","lv1"="id_lv1","lv2"="id_lv2")) %>%
+  left_join(get_tva(df_total_raw, macro_sector, id_lv1, id_lv2, col_destino="tva_lv2"), by=c("year","flujo","macro_sector","lv1"="id_lv1","lv2"="id_lv2"))
+
+# Nivel 3
+datos_finales <- datos_finales %>%
+  left_join(get_top_paises(df_total_raw, year, flujo, macro_sector, id_lv1, id_lv2, id_lv3, col_destino="top_lv3"), by=c("year","flujo","macro_sector","lv1"="id_lv1","lv2"="id_lv2","lv3"="id_lv3")) %>%
+  left_join(get_tva(df_total_raw, macro_sector, id_lv1, id_lv2, id_lv3, col_destino="tva_lv3"), by=c("year","flujo","macro_sector","lv1"="id_lv1","lv2"="id_lv2","lv3"="id_lv3"))
+
+# Nivel 4 (Solo aplicará donde existan datos, es decir, Industrial. En Agro saldrá NA)
+datos_finales <- datos_finales %>%
+  left_join(get_top_paises(df_total_raw, year, flujo, macro_sector, id_lv1, id_lv2, id_lv3, id_lv4, col_destino="top_lv4"), by=c("year","flujo","macro_sector","lv1"="id_lv1","lv2"="id_lv2","lv3"="id_lv3","lv4"="id_lv4")) %>%
+  left_join(get_tva(df_total_raw, macro_sector, id_lv1, id_lv2, id_lv3, id_lv4, col_destino="tva_lv4"), by=c("year","flujo","macro_sector","lv1"="id_lv1","lv2"="id_lv2","lv3"="id_lv3","lv4"="id_lv4"))
+
+# E. Limpieza final
+datos_finales <- datos_finales %>%
+  mutate(
+    total_millones = round(total_millones, 2),
+    across(starts_with("tva_"), ~round(., 1))
+  )
+
+# ------------------------------------------------------------------------------
+# 5. NORMALIZACIÓN Y VALIDACIÓN
+# ------------------------------------------------------------------------------
+
+# Normalizar nombres de columna: sin tildes, snake_case, lowercase, sin espacios
+normalizar_nombres <- function(x) {
+  x |>
+    tolower() |>
+    stringi::stri_trans_general("Latin-ASCII") |>
+    gsub("[^a-z0-9]+", "_", x = _) |>
+    gsub("^_|_$", "", x = _)
+}
+
+names(datos_finales) <- normalizar_nombres(names(datos_finales))
+
+# Coerción numérica robusta: total_millones y tva_* (manejar comas europeas, "n.d.", "-")
+coerce_numeric <- function(x) {
+  x_clean <- gsub(",", ".", as.character(x))
+  x_clean <- gsub("n\\.d\\.|^-$|^NA$", NA_character_, x_clean, ignore.case = TRUE)
+  suppressWarnings(as.numeric(x_clean))
+}
+
+cols_numericas <- c("total_millones", grep("^tva_", names(datos_finales), value = TRUE))
+n_antes <- nrow(datos_finales)
+
+for (col in cols_numericas) {
+  if (col %in% names(datos_finales)) {
+    original <- datos_finales[[col]]
+    convertida <- coerce_numeric(original)
+    n_na_nuevos <- sum(is.na(convertida)) - sum(is.na(suppressWarnings(as.numeric(original))))
+    if (n_na_nuevos > 0) {
+      message(sprintf("[WARN] Columna '%s': %d celdas descartadas como NA por coerción numérica", col, n_na_nuevos))
+    }
+    datos_finales[[col]] <- convertida
+  }
+}
+
+# Validar tipos por columna
+col_tipos <- sapply(datos_finales, class)
+cols_esperadas_num <- cols_numericas[cols_numericas %in% names(datos_finales)]
+cols_mal_tipo <- cols_esperadas_num[col_tipos[cols_esperadas_num] != "numeric"]
+if (length(cols_mal_tipo) > 0) {
+  message(sprintf("[WARN] Columnas numéricas con tipo incorrecto: %s", paste(cols_mal_tipo, collapse = ", ")))
+}
+
+# ------------------------------------------------------------------------------
+# 6. EXPORTAR (UTF-8 sin BOM)
+# ------------------------------------------------------------------------------
+out_path <- params$output_agro_ind
+con <- file(out_path, encoding = "UTF-8")
+write.csv(datos_finales, con, row.names = FALSE)
+close(con)
+
+# ------------------------------------------------------------------------------
+# 7. REPORTE RESUMEN
+# ------------------------------------------------------------------------------
+n_despues <- nrow(datos_finales)
+n_cols    <- ncol(datos_finales)
+n_nan     <- sum(is.na(datos_finales))
+
+message("============================================================")
+message(sprintf("REPORTE FINAL: %s", out_path))
+message(sprintf("  Filas entrada (df_total_raw): %d", nrow(df_total_raw)))
+message(sprintf("  Filas salida  (datos_finales): %d", n_despues))
+message(sprintf("  Columnas: %d", n_cols))
+message(sprintf("  Celdas NA totales: %d", n_nan))
+message("============================================================")
+glimpse(datos_finales)
+```
+
