@@ -486,6 +486,19 @@
         html.dark #countriesContainer .font-bold { color: #C2D9C2 !important; }
         html.dark #countriesContainer .text-2xl { color: rgba(194,217,194,0.25) !important; }
         html.dark #analyticsSection > div > .glass-card:first-child h4 { color: #C2D9C2 !important; }
+        /* Flujos dark: breadcrumb category + flow stat box titles */
+        html.dark .breadcrumb-item { color: #C2D9C2 !important; }
+        html.dark .breadcrumb-separator { color: rgba(194,217,194,0.4) !important; }
+        html.dark #card-tva h4,
+        html.dark #card-tva .text-muted-foreground { color: #C2D9C2 !important; }
+        html.dark #card-balance h4,
+        html.dark #card-balance .text-muted-foreground { color: #C2D9C2 !important; }
+        html.dark #card-volume .text-muted-foreground { color: rgba(194,217,194,0.6) !important; }
+        /* Balanza 17.1 table dark: year column + headers */
+        html.dark #bp171Table th { color: #C2D9C2 !important; }
+        html.dark #bp171Table td.text-primary { color: #C2D9C2 !important; }
+        /* Balanza 17.1 KPI boxes titles/subtitles */
+        html.dark #bp171KPIs .bp-kpi-label { color: #C2D9C2 !important; }
 
         /* ========== BALANZA BADGE ========== */
         .bp-badge {
@@ -4201,7 +4214,7 @@
             const ctx = document.getElementById('bp171Chart').getContext('2d');
             if (bpCharts.bp171) bpCharts.bp171.destroy();
             const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = bpIsDark ? '#E8EDE8' : '#64748b';
+            const bpTickColor = bpIsDark ? '#E8EDE8' : '#6B8E23';
             const bpGridColor = bpIsDark ? 'rgba(194,217,194,0.08)' : 'rgba(0,0,0,0.05)';
             bpCharts.bp171 = new Chart(ctx, {
                 type: 'line',
@@ -4317,7 +4330,7 @@
             const ctx = document.getElementById('bp174BarChart').getContext('2d');
             if (bpCharts.bp174bar) bpCharts.bp174bar.destroy();
             const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = bpIsDark ? '#E8EDE8' : '#64748b';
+            const bpTickColor = bpIsDark ? '#E8EDE8' : '#6B8E23';
             const bpGridColor = bpIsDark ? 'rgba(194,217,194,0.08)' : 'rgba(0,0,0,0.05)';
             bpCharts.bp174bar = new Chart(ctx, {
                 type: 'bar',
@@ -4383,7 +4396,7 @@
             const ctx = document.getElementById('bp174TourismChart').getContext('2d');
             if (bpCharts.bp174tour) bpCharts.bp174tour.destroy();
             const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = bpIsDark ? '#E8EDE8' : '#64748b';
+            const bpTickColor = bpIsDark ? '#E8EDE8' : '#6B8E23';
             const bpGridColor = bpIsDark ? 'rgba(194,217,194,0.08)' : 'rgba(0,0,0,0.05)';
             bpCharts.bp174tour = new Chart(ctx, {
                 type: 'line',
@@ -4456,7 +4469,7 @@
             if (bpCharts.bp174donut) bpCharts.bp174donut.destroy();
             const isMobile = window.innerWidth < 640;
             const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = bpIsDark ? '#E8EDE8' : '#64748b';
+            const bpTickColor = bpIsDark ? '#E8EDE8' : '#6B8E23';
             bpCharts.bp174donut = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
@@ -4508,7 +4521,7 @@
             const ctx = document.getElementById('bp174IngPagChart').getContext('2d');
             if (bpCharts.bp174ip) bpCharts.bp174ip.destroy();
             const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = bpIsDark ? '#E8EDE8' : '#64748b';
+            const bpTickColor = bpIsDark ? '#E8EDE8' : '#6B8E23';
             const bpGridColor = bpIsDark ? 'rgba(194,217,194,0.08)' : 'rgba(0,0,0,0.05)';
             bpCharts.bp174ip = new Chart(ctx, {
                 type: 'bar',
