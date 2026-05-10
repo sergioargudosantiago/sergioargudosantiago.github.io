@@ -674,6 +674,7 @@
             opacity: 1;
             visibility: visible;
             transition: transform 0.2s ease, opacity 0.2s ease;
+            z-index: 60;
         }
         #mobileMenu a {
             font-family: 'Orbitron', monospace;
@@ -695,9 +696,9 @@
 
         /* ========== ARCADE FOOTER ========== */
         footer.arcade-footer {
-            background: #121412 !important;
+            background: #3B4533 !important;
             color: #C2D9C2 !important;
-            border-top: 2px solid #121412 !important;
+            border-top: 2px solid #3B4533 !important;
         }
         footer.arcade-footer a { color: #C2D9C2; transition: color 0.15s; }
         footer.arcade-footer a:hover { color: #FFE566; opacity: 1; }
@@ -4604,6 +4605,23 @@
     </script>
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>
+    <script>
+    // Override main.js toggleMobileMenu — uses menu-open class, not active
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        if (!menu) return;
+        menu.classList.toggle('menu-open');
+        if (menu.classList.contains('menu-open')) {
+            document.body.style.overflow = 'hidden';
+            document.body.style.position = 'fixed';
+            document.body.style.width = '100%';
+        } else {
+            document.body.style.overflow = '';
+            document.body.style.position = '';
+            document.body.style.width = '';
+        }
+    }
+    </script>
     <script src="js/cookies.js?v=1"></script>
 </body>
 

@@ -546,6 +546,7 @@
             opacity: 1;
             visibility: visible;
             transition: transform 0.2s ease, opacity 0.2s ease;
+            z-index: 60;
         }
 
         #mobileMenu a {
@@ -689,13 +690,14 @@
         }
 
         @media (max-width: 640px) {
-            .arcade-card { padding: 1.5rem 1.25rem; overflow: visible; }
+            .arcade-card { padding: 1.5rem 1.25rem; overflow: visible; min-height: 720px !important; }
             .arcade-tabs { flex-wrap: wrap; width: 100%; }
             .arcade-tab { flex: 1; min-width: 0; font-size: 0.6rem; padding: 0.5rem 0.75rem; border-right: none; border-bottom: 2px solid #121412; }
             .arcade-tab:last-child { border-bottom: none; }
             .arcade-title { font-size: clamp(1.25rem, 5vw, 2rem) !important; word-break: break-word; hyphens: auto; }
             .arcade-body { font-size: 0.85rem !important; line-height: 1.6; }
             .arcade-bg, .arcade-bg-left { display: none; }
+            .carousel-slide { padding: 1.5rem 1rem; }
         }
 
 /* ===== ARCADE HERO CARD ===== */
@@ -814,9 +816,9 @@
 
 /* ===== ARCADE FOOTER ===== */
 footer.arcade-footer {
-    background: #121412 !important;
+    background: #3B4533 !important;
     color: #C2D9C2 !important;
-    border-top: 2px solid #121412 !important;
+    border-top: 2px solid #3B4533 !important;
     backdrop-filter: none !important;
 }
 

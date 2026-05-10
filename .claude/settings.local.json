@@ -21,7 +21,9 @@
       "mcp__plugin_context-mode_context-mode__ctx_batch_execute",
       "Bash(powershell -ExecutionPolicy Bypass -File _audit.ps1)",
       "Bash(python generate_balanza_data.py)",
-      "Bash(python -c ' *)"
+      "Bash(python -c ' *)",
+      "Bash(awk 'NR>=4000 && NR<=4115 && /^\\\\s*\\(function|}\\)/' \"C:/sergioargudosantiago.github.io/sergioargudosantiago.github.io/comercio-exterior.html\")",
+      "Bash(awk NR>=4590 && NR<=4610 *)"
     ]
   }
 }
