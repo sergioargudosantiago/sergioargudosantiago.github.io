@@ -63,7 +63,7 @@ body { font-family:'Share Tech Mono',monospace; background:#C2D9C2; color:#3B453
 .mobile-breadcrumb { position:fixed; top:0; left:0; right:0; z-index:40; display:flex; align-items:center; padding:0.5rem 1rem; background:#121412; border-bottom:1px solid rgba(194,217,194,0.3); font-family:'Orbitron',monospace; font-size:0.6rem; font-weight:700; letter-spacing:0.08em; color:#C2D9C2; text-transform:uppercase; height:2.5rem; box-shadow:none; }
 @media(min-width:768px){.mobile-breadcrumb{display:none}}
 #mobileMenu { transform:translateX(-100%); opacity:0; visibility:hidden; transition:transform 0.2s ease,opacity 0.2s ease,visibility 0s 0.2s; background:#121412!important; border-right:2px solid rgba(194,217,194,0.3); }
-#mobileMenu.menu-open { transform:translateX(0); opacity:1; visibility:visible; transition:transform 0.2s ease,opacity 0.2s ease; }
+#mobileMenu.menu-open { transform:translateX(0); opacity:1; visibility:visible; transition:transform 0.2s ease,opacity 0.2s ease; z-index:60; }
 #mobileMenu a { font-family:'Orbitron',monospace; font-size:0.65rem; font-weight:600; color:#C2D9C2; letter-spacing:0.05em; padding:0.75rem 1rem; border-bottom:1px solid rgba(194,217,194,0.15); display:flex; align-items:center; min-height:44px; text-decoration:none; }
 #mobileMenu a:hover,#mobileMenu a.active-mobile { background:#C2D9C2!important; color:#3B4533!important; }
 .nav-island { position:fixed; top:1.25rem; left:50%; transform:translateX(-50%); z-index:50; display:flex; align-items:center; padding:0 0.25rem; background:#C2D9C2; border:2px solid #3B4533; box-shadow:4px 4px 0 #3B4533; height:4.5rem; white-space:nowrap; max-width:92vw; }
