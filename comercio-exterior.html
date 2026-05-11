@@ -3990,6 +3990,11 @@
                     }
                 }
             });
+
+            // Render EU share
+            const euLevel = (level === 'final' || level === 'lv4') ? 'lv4' : 'lv3';
+            const euPct = computeWeightedEUShare(dataRows, euLevel);
+            renderEUShare(euPct, currentFlow);
         }
 
         function renderTVA(tvaValue) {
@@ -4010,6 +4015,54 @@
                     <span>${arrow}</span>
                 </div>
             `;
+        }
+
+        function renderEUShare(pctUE, flow) {
+            const container = document.getElementById('euShareContainer');
+            const label = document.getElementById('euShareLabel');
+
+            // Update directional label
+            if (label) {
+                label.textContent = flow === 'E' ? '% hacia UE' : '% desde UE';
+            }
+
+            if (pctUE === null || pctUE === undefined || isNaN(pctUE)) {
+                container.innerHTML = '<span class="eu-na">No disponible</span>';
+                return;
+            }
+
+            const pct = Math.round(pctUE * 10) / 10;
+            const barWidth = Math.min(Math.max(pct, 0), 100);
+
+            container.innerHTML = `
+                <div class="eu-badge">
+                    <span class="eu-pct">${pct.toFixed(1)}%</span>
+                    <div class="eu-bar-track">
+                        <div class="eu-bar-fill" style="width:${barWidth}%"></div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function computeWeightedEUShare(filteredRows, level) {
+            // level: 'lv3' or 'lv4' — which pct_ue column to use
+            const col = level === 'lv4' ? 'pct_ue_lv4' : 'pct_ue_lv3';
+            let totalValue = 0;
+            let weightedSum = 0;
+            let hasData = false;
+
+            filteredRows.forEach(row => {
+                const val = parseNumericValue(row.total_millones);
+                const pct = parseFloat(row[col]);
+                if (!isNaN(val) && val > 0 && !isNaN(pct)) {
+                    weightedSum += val * pct;
+                    totalValue += val;
+                    hasData = true;
+                }
+            });
+
+            if (!hasData || totalValue === 0) return null;
+            return weightedSum / totalValue;
         }
 
         function renderCountries(countriesString) {
