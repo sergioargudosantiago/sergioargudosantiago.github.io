@@ -247,6 +247,26 @@ generar_filas_desagregacion <- function(
   bind_rows(rows)
 }
 
+# ── Mapping código interno → prefijo CN para pct_ue filas base ──────────────
+# Permite calcular pct_ue para las categorías agregadas del CSV base
+
+CODIGO_CN_MAP <- tibble::tribble(
+  ~lv3,       ~cn_prefix,
+  # Frutas
+  "181111",   "080510",   # Cítricos → naranjas como proxy (mayoritario)
+  "181112",   "080711",   # Melones/sandías → sandías como proxy
+  "181114",   "081010",   # Fresas
+  "181118",   "0803",     # Plátano (solo 4-digit disponible)
+  "181119",   "081190",   # Los demás frutos rojos
+  # Hortalizas
+  "171112",   "070960",   # Pimiento
+  "171113",   "070700",   # Pepino
+  # Pesca
+  "131112",   "030271",   # Pescado fresco → merluza fresca como proxy
+  "131113",   "030370",   # Pescado congelado → atún como proxy
+  "131114",   "030743"    # Moluscos → pulpo como proxy
+)
+
 # ── Leer CSV base desde HTML embebido ────────────────────────────────────────
 message("Leyendo CSV base del HTML...")
 
@@ -267,6 +287,40 @@ csv_df <- readr::read_csv(csv_match, show_col_types = FALSE) |>
   )
 
 message(sprintf("CSV base: %d filas", nrow(csv_df)))
+
+# ── Calcular pct_ue_lv3 para filas base con CN mapping ───────────────────────
+message("Calculando pct_ue_lv3 para filas base...")
+
+# Get unique combinations of lv3+flujo that have a CN mapping
+mapped_lv3 <- CODIGO_CN_MAP$lv3
+
+for (i in seq_len(nrow(CODIGO_CN_MAP))) {
+  lv3_code <- CODIGO_CN_MAP$lv3[i]
+  cn        <- CODIGO_CN_MAP$cn_prefix[i]
+  nivel_use <- if (nchar(cn) >= 6) 6L else 4L
+
+  for (fl in c("E","I")) {
+    pct_data <- tryCatch(
+      calcular_pct_ue(cn, fl, ANOS),
+      error = function(e) { message(sprintf("  Error %s %s: %s", lv3_code, fl, e$message)); NULL }
+    )
+    if (is.null(pct_data)) next
+
+    # Update csv_df rows where lv3==lv3_code and flujo==fl
+    for (yr in ANOS) {
+      yr_row <- pct_data |> filter(year == yr)
+      if (nrow(yr_row) == 0) next
+
+      csv_df <<- csv_df |>
+        mutate(pct_ue_lv3 = if_else(
+          lv3 == lv3_code & flujo == fl & year == as.character(yr),
+          yr_row$pct_ue,
+          pct_ue_lv3
+        ))
+    }
+  }
+  message(sprintf("  Procesado lv3=%s cn=%s", lv3_code, cn))
+}
 
 # ── Generar filas desagregadas ────────────────────────────────────────────────
 
@@ -321,3 +375,26 @@ message(sprintf("CSV final: %d filas (%d base + %d nuevas)",
   nrow(csv_final), nrow(csv_df), nrow(csv_final) - nrow(csv_df)))
 
 csv_text_nuevo <- readr::format_csv(csv_final, na = "NA")
+
+# ── Re-embeber CSV en HTML ────────────────────────────────────────────────────
+
+reembeber_csv <- function(html_path, csv_text_nuevo) {
+  html <- readr::read_file(html_path)
+
+  # Find start and end of embedded CSV
+  pattern <- "(?s)(const EMBEDDED_CSV_DATA = `)([^`]+)(`)"
+
+  if (!grepl(pattern, html, perl = TRUE)) {
+    stop("No se encontró EMBEDDED_CSV_DATA en el HTML. Verifica el patrón.")
+  }
+
+  html_nuevo <- sub(pattern, paste0("\\1", csv_text_nuevo, "\\3"), html, perl = TRUE)
+
+  readr::write_file(html_nuevo, html_path)
+  message(sprintf("HTML actualizado: %s", html_path))
+  message(sprintf("Tamaño HTML: %.1f KB", nchar(html_nuevo) / 1024))
+}
+
+# Execute
+reembeber_csv(HTML_PATH, csv_text_nuevo)
+message("Pipeline completo.")
