@@ -73,86 +73,88 @@ tomates_resumen <- tomates_raw |>
 
 print(tomates_resumen, n = 50)
 
-# ── Verificación CN: Cítricos (0805) ────────────────────────────────────────
-message("=== CÓDIGOS CN: Cítricos ===")
+# ── Verificación CN: Cítricos subcategorías ──────────────────────────────────
+message("=== CÓDIGOS CN: Cítricos subcategorías ===")
 
-citricos_cn <- taric(
-  codigo = "0805",
-  nivel  = 4,
-  flujo  = "E",
-  desde  = 2024,
-  hasta  = 2025,
-  .codigo_agregado = FALSE,
-  .iso3a_agregado  = FALSE
+citricos_verify <- bind_rows(
+  taric(codigo="080510", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Naranjas"),
+  taric(codigo="080520", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Mandarinas"),
+  taric(codigo="080550", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Limones"),
+  taric(codigo="080540", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Pomelos")
 ) |>
-  group_by(codigo) |>
-  summarise(valor_total = sum(euros, na.rm = TRUE)) |>
+  group_by(producto) |>
+  summarise(valor_total = sum(euros, na.rm=TRUE)) |>
   arrange(desc(valor_total))
 
-print(citricos_cn)
-# HALLAZGO: BD sólo devuelve nivel=4 → una sola fila con codigo="0805"
+print(citricos_verify)
 
-# ── Verificación CN: Melones y Sandías (0807) ───────────────────────────────
+# ── Verificación CN: Melones/Sandías subcategorías ──────────────────────────
 message("=== CÓDIGOS CN: Melones/Sandías ===")
 
-melones_cn <- taric(
-  codigo = "0807",
-  nivel  = 4,
-  flujo  = "E",
-  desde  = 2024,
-  hasta  = 2025,
-  .codigo_agregado = FALSE,
-  .iso3a_agregado  = FALSE
+melones_verify <- bind_rows(
+  taric(codigo="080711", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Sandías"),
+  taric(codigo="080719", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Melones")
 ) |>
-  group_by(codigo) |>
-  summarise(valor_total = sum(euros, na.rm = TRUE)) |>
+  group_by(producto) |>
+  summarise(valor_total = sum(euros, na.rm=TRUE)) |>
   arrange(desc(valor_total))
 
-print(melones_cn)
-# HALLAZGO: BD sólo devuelve nivel=4 → una sola fila con codigo="0807"
+print(melones_verify)
 
-# ── Verificación CN: Pesca ───────────────────────────────────────────────────
-message("=== CÓDIGOS CN: Pesca ===")
+# ── Verificación CN: Pesca subcategorías ────────────────────────────────────
+message("=== CÓDIGOS CN: Pesca subcategorías ===")
 
-pesca_cn <- taric(
-  codigo = c("0302","0303","0306","0307"),
-  nivel  = 4,
-  flujo  = "E",
-  desde  = 2024,
-  hasta  = 2025,
-  .codigo_agregado = FALSE,
-  .iso3a_agregado  = FALSE
+pesca_verify <- bind_rows(
+  taric(codigo="030370", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Atún congelado"),
+  taric(codigo="030263", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Merluza congelada"),
+  taric(codigo="030271", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Merluza fresca"),
+  taric(codigo="030251", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Bacalao fresco"),
+  taric(codigo="030743", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Pulpo"),
+  taric(codigo="030749", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Sepia/Jibia"),
+  taric(codigo="030617", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Gamba"),
+  taric(codigo="030627", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Langostino"),
+  taric(codigo="030285", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Dorada"),
+  taric(codigo="030284", nivel=6, flujo="E", desde=2024, hasta=2024, .codigo_agregado=FALSE, .iso3a_agregado=FALSE) |> mutate(producto="Lubina")
 ) |>
-  group_by(codigo) |>
-  summarise(valor_total = sum(euros, na.rm = TRUE)) |>
+  group_by(producto) |>
+  summarise(valor_total = sum(euros, na.rm=TRUE)) |>
   arrange(desc(valor_total))
 
-print(pesca_cn, n = 40)
+print(pesca_verify)
 
-# ── Mapping desagregaciones (códigos verificados) ────────────────────────────
+# ── Mapping desagregaciones (códigos CN completos verificados) ───────────────
 #
-# HALLAZGO nivel CN: La BD sólo tiene datos a nivel=4 (4 dígitos CN).
-#   nivel=6 y nivel=8 devuelven 0 filas. El campo "codigo" siempre es
-#   un string de 4 dígitos ("0805", "0807", "0302", etc.).
-#   Por tanto cn_prefix debe ser 4 dígitos y la desagregación sub-producto
-#   (naranjas vs mandarinas) NO es posible desde esta BD.
-#   CITRICOS y MELONES se tratan como una sola entrada por código CN.
-#   PESCA se desagrega por los 4 códigos CN disponibles (0302/0303/0306/0307).
+# CORRECCIÓN: taric() acepta el prefijo CN completo (6 dígitos) en "codigo".
+#   nivel=6 devuelve datos cuando se pasa el código correcto.
+#   Ejemplo verificado: taric(codigo="080510", nivel=6, ...) → 668 filas naranjas.
+#
+# parent_lv3:
+#   "131112" = Pescado fresco (dorada, lubina, merluza fresca, bacalao fresco)
+#   "131113" = Pescado congelado (atún congelado, merluza congelada)
+#   "131114" = Moluscos/crustáceos (pulpo, sepia, gamba, langostino)
 
 CITRICOS_MAP <- list(
-  list(lv4 = "18111101", lit_lv4 = "Cítricos", cn_prefix = "0805")
+  list(lv4 = "18111101", lit_lv4 = "Naranjas",    cn_prefix = "080510"),
+  list(lv4 = "18111102", lit_lv4 = "Mandarinas",  cn_prefix = "080520"),
+  list(lv4 = "18111103", lit_lv4 = "Limones",     cn_prefix = "080550"),
+  list(lv4 = "18111104", lit_lv4 = "Pomelos",     cn_prefix = "080540")
 )
 
 MELONES_MAP <- list(
-  list(lv4 = "18111201", lit_lv4 = "Melones y sandías", cn_prefix = "0807")
+  list(lv4 = "18111201", lit_lv4 = "Sandías", cn_prefix = "080711"),
+  list(lv4 = "18111202", lit_lv4 = "Melones",  cn_prefix = "080719")
 )
 
-# Pesca: los 4 códigos CN con datos en la BD (por valor total 2024-2025):
-#   0307 = moluscos (2.47B), 0303 = pescado congelado (1.76B),
-#   0302 = pescado fresco/refrigerado (1.44B), 0306 = crustáceos (0.98B)
+# Pesca: incluir sólo productos con valor_total > 0 en pesca_verify.
+# Bacalao fresco (030251) omitido si devuelve 0 filas — verificar en ejecución.
 PESCA_MAP <- list(
-  list(lv4 = "13111401", lit_lv4 = "Moluscos",              cn_prefix = "0307", parent_lv3 = "131114"),
-  list(lv4 = "13111301", lit_lv4 = "Pescado congelado",     cn_prefix = "0303", parent_lv3 = "131113"),
-  list(lv4 = "13111201", lit_lv4 = "Pescado fresco",        cn_prefix = "0302", parent_lv3 = "131112"),
-  list(lv4 = "13111402", lit_lv4 = "Crustáceos",            cn_prefix = "0306", parent_lv3 = "131114")
+  list(lv4 = "13111301", lit_lv4 = "Atún",             cn_prefix = "030370", parent_lv3 = "131113"),
+  list(lv4 = "13111302", lit_lv4 = "Merluza congelada",cn_prefix = "030263", parent_lv3 = "131113"),
+  list(lv4 = "13111303", lit_lv4 = "Merluza fresca",   cn_prefix = "030271", parent_lv3 = "131112"),
+  list(lv4 = "13111304", lit_lv4 = "Pulpo",            cn_prefix = "030743", parent_lv3 = "131114"),
+  list(lv4 = "13111305", lit_lv4 = "Sepia/Jibia",      cn_prefix = "030749", parent_lv3 = "131114"),
+  list(lv4 = "13111306", lit_lv4 = "Gamba",            cn_prefix = "030617", parent_lv3 = "131114"),
+  list(lv4 = "13111307", lit_lv4 = "Langostino",       cn_prefix = "030627", parent_lv3 = "131114"),
+  list(lv4 = "13111201", lit_lv4 = "Dorada",           cn_prefix = "030285", parent_lv3 = "131112"),
+  list(lv4 = "13111202", lit_lv4 = "Lubina",           cn_prefix = "030284", parent_lv3 = "131112")
 )
