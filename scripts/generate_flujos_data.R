@@ -161,12 +161,12 @@ PESCA_MAP <- list(
 
 # ── Función: calcular pct_ue por código CN ───────────────────────────────────
 
-calcular_pct_ue <- function(cn_prefix, flujo, anos) {
+calcular_pct_ue <- function(cn_prefix, flujo, anos, nivel = 6L) {
   message(sprintf("  pct_ue: %s flujo=%s %d-%d", cn_prefix, flujo, min(anos), max(anos)))
 
   total_df <- taric(
     codigo = cn_prefix,
-    nivel  = 6,
+    nivel  = nivel,
     flujo  = flujo,
     desde  = min(anos),
     hasta  = max(anos),
@@ -178,7 +178,7 @@ calcular_pct_ue <- function(cn_prefix, flujo, anos) {
 
   ue_df <- taric(
     codigo = cn_prefix,
-    nivel  = 6,
+    nivel  = nivel,
     flujo  = flujo,
     desde  = min(anos),
     hasta  = max(anos),
@@ -301,7 +301,7 @@ for (i in seq_len(nrow(CODIGO_CN_MAP))) {
 
   for (fl in c("E","I")) {
     pct_data <- tryCatch(
-      calcular_pct_ue(cn, fl, ANOS),
+      calcular_pct_ue(cn, fl, ANOS, nivel = nivel_use),
       error = function(e) { message(sprintf("  Error %s %s: %s", lv3_code, fl, e$message)); NULL }
     )
     if (is.null(pct_data)) next
