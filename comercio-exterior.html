@@ -396,6 +396,42 @@
             color: white;
         }
 
+        /* ========== EU SHARE BADGE ========== */
+        .eu-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            width: 100%;
+        }
+        .eu-pct {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: #003399;
+            letter-spacing: -0.02em;
+        }
+        html.dark .eu-pct { color: #6699ff; }
+        .eu-bar-track {
+            width: 100%;
+            height: 5px;
+            background: rgba(0,51,153,0.12);
+            position: relative;
+            overflow: hidden;
+        }
+        .eu-bar-fill {
+            position: absolute;
+            left: 0; top: 0; height: 100%;
+            background: #003399;
+            transition: width 0.5s ease;
+        }
+        html.dark .eu-bar-fill { background: #6699ff; }
+        .eu-na {
+            font-size: 0.75rem;
+            color: var(--muted-foreground);
+            font-style: italic;
+        }
+
         /* ========== GRID LAYOUT ========== */
         .sector-grid {
             display: grid;
@@ -930,16 +966,32 @@
                                     <!-- LEFT: TVA + Latest Total (ID: card-tva) -->
                                     <div id="card-tva"
                                         class="glass-card p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
-                                        <h4
-                                            class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6">
-                                            Tasa Var. Anual (TVA)</h4>
-                                        <div id="tvaContainer"
-                                            class="flex flex-col items-center scale-125 md:scale-150 py-2 md:py-4">
-                                            <!-- Dynamic TVA badge -->
+                                        <!-- Mitad superior: TVA -->
+                                        <div class="flex flex-col items-center w-full flex-1 justify-center pb-4">
+                                            <h4 class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6">
+                                                Tasa Var. Anual (TVA)</h4>
+                                            <div id="tvaContainer"
+                                                class="flex flex-col items-center scale-125 md:scale-150 py-2 md:py-4">
+                                                <!-- Dynamic TVA badge -->
+                                            </div>
+                                            <p class="text-[10px] text-muted-foreground mt-6 md:mt-8 italic uppercase tracking-wider">
+                                                Comparativa <span id="tvaYearLabel">2024-2025</span></p>
                                         </div>
-                                        <p
-                                            class="text-[10px] text-muted-foreground mt-6 md:mt-8 italic uppercase tracking-wider">
-                                            Comparativa <span id="tvaYearLabel">2024-2025</span></p>
+
+                                        <!-- Divisor -->
+                                        <div class="w-full border-t border-primary/20 my-2"></div>
+
+                                        <!-- Mitad inferior: % UE -->
+                                        <div class="flex flex-col items-center w-full flex-1 justify-center pt-4">
+                                            <h4 class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3">
+                                                Cuota UE27</h4>
+                                            <div id="euShareContainer" class="flex flex-col items-center w-full px-4">
+                                                <!-- Dynamic EU share — renderizado por renderEUShare() -->
+                                            </div>
+                                            <p id="euShareLabel"
+                                                class="text-[10px] text-muted-foreground mt-3 italic uppercase tracking-wider">
+                                                % hacia UE</p>
+                                        </div>
                                     </div>
 
                                     <!-- CENTER 1: Metric (ID: card-volume) -->
