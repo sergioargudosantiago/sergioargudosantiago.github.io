@@ -158,3 +158,166 @@ PESCA_MAP <- list(
   list(lv4 = "13111201", lit_lv4 = "Dorada",           cn_prefix = "030285", parent_lv3 = "131112"),
   list(lv4 = "13111202", lit_lv4 = "Lubina",           cn_prefix = "030284", parent_lv3 = "131112")
 )
+
+# ── Función: calcular pct_ue por código CN ───────────────────────────────────
+
+calcular_pct_ue <- function(cn_prefix, flujo, anos) {
+  message(sprintf("  pct_ue: %s flujo=%s %d-%d", cn_prefix, flujo, min(anos), max(anos)))
+
+  total_df <- taric(
+    codigo = cn_prefix,
+    nivel  = 6,
+    flujo  = flujo,
+    desde  = min(anos),
+    hasta  = max(anos),
+    .codigo_agregado = FALSE,
+    .iso3a_agregado  = FALSE
+  ) |>
+    group_by(year) |>
+    summarise(valor_total = sum(euros, na.rm = TRUE), .groups = "drop")
+
+  ue_df <- taric(
+    codigo = cn_prefix,
+    nivel  = 6,
+    flujo  = flujo,
+    desde  = min(anos),
+    hasta  = max(anos),
+    iso3a  = UE27_ISO3A,
+    .codigo_agregado = FALSE,
+    .iso3a_agregado  = FALSE
+  ) |>
+    group_by(year) |>
+    summarise(valor_ue = sum(euros, na.rm = TRUE), .groups = "drop")
+
+  left_join(total_df, ue_df, by = "year") |>
+    mutate(
+      valor_ue = replace_na(valor_ue, 0),
+      pct_ue   = if_else(valor_total > 0,
+                         round(valor_ue / valor_total * 100, 1),
+                         NA_real_)
+    )
+}
+
+# ── Función: generar filas CSV para una desagregación ───────────────────────
+
+generar_filas_desagregacion <- function(
+    map_entry, flujos = c("E","I"), anos = ANOS,
+    parent_lv1, parent_lv2, parent_lv3,
+    lit_lv1, lit_lv2, lit_lv3
+) {
+  rows <- list()
+
+  for (fl in flujos) {
+    pct_data <- calcular_pct_ue(map_entry$cn_prefix, fl, anos)
+
+    for (yr in anos) {
+      yr_row <- pct_data |> filter(year == yr)
+      if (nrow(yr_row) == 0 || yr_row$valor_total == 0) next
+
+      total_mill <- round(yr_row$valor_total / 1e6, 2)
+      pct_ue_val <- yr_row$pct_ue
+
+      rows[[length(rows) + 1]] <- tibble(
+        year            = as.character(yr),
+        flujo           = fl,
+        macro_sector    = "Agroalimentario",
+        lv1             = parent_lv1,
+        lit_lv1         = lit_lv1,
+        lv2             = parent_lv2,
+        lit_lv2         = lit_lv2,
+        lv3             = parent_lv3,
+        lit_lv3         = lit_lv3,
+        lv4             = map_entry$lv4,
+        lit_lv4         = map_entry$lit_lv4,
+        total_millones  = total_mill,
+        top_paises_lv1  = NA_character_,
+        tva_lv1         = NA_character_,
+        top_paises_lv2  = NA_character_,
+        tva_lv2         = NA_character_,
+        top_paises_lv3  = NA_character_,
+        tva_lv3         = NA_character_,
+        top_paises_lv4  = NA_character_,
+        tva_lv4         = NA_character_,
+        pct_ue_lv3      = NA_real_,
+        pct_ue_lv4      = if_else(!is.na(pct_ue_val), pct_ue_val, NA_real_)
+      )
+    }
+  }
+
+  bind_rows(rows)
+}
+
+# ── Leer CSV base desde HTML embebido ────────────────────────────────────────
+message("Leyendo CSV base del HTML...")
+
+html_content <- readr::read_file(HTML_PATH)
+
+# Extract text between backticks of EMBEDDED_CSV_DATA
+csv_match <- regmatches(html_content,
+  regexpr("(?<=const EMBEDDED_CSV_DATA = `)([\\s\\S]*?)(?=`;)", html_content, perl=TRUE))
+
+if (length(csv_match) == 0) stop("No se encontró EMBEDDED_CSV_DATA en el HTML")
+
+csv_df <- readr::read_csv(csv_match, show_col_types = FALSE) |>
+  mutate(
+    year       = as.character(year),
+    lv4        = as.character(lv4),
+    pct_ue_lv3 = NA_real_,
+    pct_ue_lv4 = NA_real_
+  )
+
+message(sprintf("CSV base: %d filas", nrow(csv_df)))
+
+# ── Generar filas desagregadas ────────────────────────────────────────────────
+
+message("Generando filas: Cítricos...")
+filas_citricos <- bind_rows(lapply(CITRICOS_MAP, function(m) {
+  generar_filas_desagregacion(
+    map_entry  = m,
+    parent_lv1 = "18", lit_lv1 = "Frutas",
+    parent_lv2 = "1811", lit_lv2 = "Frutas",
+    parent_lv3 = "181111", lit_lv3 = "Cítricos"
+  )
+}))
+message(sprintf("  Filas cítricos: %d", nrow(filas_citricos)))
+
+message("Generando filas: Melones/Sandías...")
+filas_melones <- bind_rows(lapply(MELONES_MAP, function(m) {
+  generar_filas_desagregacion(
+    map_entry  = m,
+    parent_lv1 = "18", lit_lv1 = "Frutas",
+    parent_lv2 = "1811", lit_lv2 = "Frutas",
+    parent_lv3 = "181112", lit_lv3 = "Melones y sandías"
+  )
+}))
+message(sprintf("  Filas melones/sandías: %d", nrow(filas_melones)))
+
+message("Generando filas: Pesca...")
+filas_pesca <- bind_rows(lapply(PESCA_MAP, function(m) {
+  # Find parent lit from base CSV
+  parent_row <- csv_df |>
+    filter(flujo == "E", lv3 == m$parent_lv3, year == "2024") |>
+    slice(1)
+
+  if (nrow(parent_row) == 0) {
+    message(sprintf("  AVISO: parent_lv3=%s no encontrado en CSV base", m$parent_lv3))
+    return(tibble())
+  }
+
+  generar_filas_desagregacion(
+    map_entry  = m,
+    parent_lv1 = parent_row$lv1,  lit_lv1 = parent_row$lit_lv1,
+    parent_lv2 = parent_row$lv2,  lit_lv2 = parent_row$lit_lv2,
+    parent_lv3 = m$parent_lv3,    lit_lv3 = parent_row$lit_lv3
+  )
+}))
+message(sprintf("  Filas pesca: %d", nrow(filas_pesca)))
+
+# ── Unir todo ────────────────────────────────────────────────────────────────
+csv_final <- bind_rows(csv_df, filas_citricos, filas_melones, filas_pesca) |>
+  arrange(year, flujo, macro_sector, lv1, lv2, lv3, lv4)
+
+message(sprintf("CSV final: %d filas (%d base + %d nuevas)",
+  nrow(csv_final), nrow(csv_df), nrow(csv_final) - nrow(csv_df)))
+
+csv_text_nuevo <- readr::format_csv(csv_final, na = "NA")
