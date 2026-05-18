@@ -575,26 +575,25 @@
             top: 1.25rem;
             left: 50%;
             transform: translateX(-50%);
+            transform-origin: top center;
             z-index: 50;
             display: flex;
             align-items: center;
-            padding: 0 0.25rem;
+            padding: 0 clamp(0.1rem, 0.2vw, 0.25rem);
             background: #C2D9C2;
             border: 2px solid #3B4533;
             box-shadow: 4px 4px 0 #3B4533;
-            height: 4.5rem;
+            height: clamp(3rem, 4.2vw, 4.5rem);
             white-space: nowrap;
-            max-width: 92vw;
         }
-
         .nav-segment {
             position: relative;
-            padding: 0 1.25rem;
+            padding: 0 clamp(0.45rem, 1.04vw, 1.25rem);
             height: 100%;
             display: flex;
             align-items: center;
             font-family: 'Orbitron', monospace;
-            font-size: 0.75rem;
+            font-size: clamp(0.58rem, 0.625vw, 0.75rem);
             font-weight: 600;
             color: #3B4533;
             text-decoration: none;
@@ -603,20 +602,29 @@
             white-space: nowrap;
             transition: background 0.15s, color 0.15s;
         }
-
-        .nav-segment:hover {
-            background: #3B4533;
-            color: #C2D9C2;
-            box-shadow: none;
+        .nav-island img {
+            width: clamp(100px, 10vw, 200px);
+            height: auto;
         }
-
-        .nav-segment.active {
-            background: #3B4533;
-            color: #C2D9C2;
-            font-weight: 700;
-            box-shadow: none;
+        @media (max-width: 1400px) {
+            .nav-segment {
+                font-size: clamp(0.52rem, 0.8vw, 0.68rem);
+                padding: 0 clamp(0.3rem, 0.7vw, 0.9rem);
+                letter-spacing: 0.02em;
+            }
+            .nav-island img { width: clamp(80px, 8vw, 160px); }
         }
-
+        @media (max-width: 1100px) {
+            .nav-segment {
+                font-size: clamp(0.48rem, 0.9vw, 0.62rem);
+                padding: 0 clamp(0.2rem, 0.55vw, 0.7rem);
+                letter-spacing: 0;
+            }
+            .nav-island img { width: clamp(60px, 6vw, 120px); }
+            .nav-island { height: clamp(2.5rem, 4vw, 3.5rem); }
+        }
+        .nav-segment:hover { background: #3B4533; color: #C2D9C2; box-shadow: none; }
+        .nav-segment.active { background: #3B4533; color: #C2D9C2; font-weight: 700; box-shadow: none; }
         .search-island {
             position: relative;
             display: flex;
@@ -624,40 +632,30 @@
             margin-left: auto;
             margin-right: 0.75rem;
         }
-
         .search-island input {
-            width: 11rem;
+            width: clamp(6rem, 8.5vw, 11rem);
             height: 1.75rem;
             padding: 0 0.75rem 0 2rem;
             background: #ddeedd;
             border: 1px solid #3B4533;
             border-radius: 0;
             font-family: 'Share Tech Mono', monospace;
-            font-size: 0.75rem;
+            font-size: clamp(0.55rem, 0.7vw, 0.75rem);
             color: #3B4533;
             outline: none;
         }
-
-        .search-island input::placeholder {
-            color: rgba(59, 69, 51, 0.5);
-        }
-
-        .search-island input:focus {
-            background: #C2D9C2;
-            border-color: #3B4533;
-            box-shadow: none;
-        }
-
+        .search-island input::placeholder { color: rgba(59,69,51,0.5); }
+        .search-island input:focus { background: #C2D9C2; border-color: #3B4533; box-shadow: none; }
         .search-island svg {
             position: absolute;
             left: 0.5rem;
             top: 50%;
             transform: translateY(-50%);
-            width: 14px;
-            height: 14px;
-            color: rgba(59, 69, 51, 0.6);
+            width: 14px; height: 14px;
+            color: rgba(194,217,194,0.6);
             pointer-events: none;
         }
+        @media (max-width: 768px) { .nav-island { display: none; } }
 
         /* Theme toggle arcade */
         .theme-toggle {
@@ -682,9 +680,6 @@
         }
 
         @media (max-width: 768px) {
-            .nav-island {
-                display: none;
-            }
             .arcade-bg { width: 260px; height: auto; }
             .arcade-bg-left { width: 140px; height: auto; }
         }

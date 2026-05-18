@@ -66,17 +66,94 @@ body { font-family:'Share Tech Mono',monospace; background:#C2D9C2; color:#3B453
 #mobileMenu.menu-open { transform:translateX(0); opacity:1; visibility:visible; transition:transform 0.2s ease,opacity 0.2s ease; z-index:60; }
 #mobileMenu a { font-family:'Orbitron',monospace; font-size:0.65rem; font-weight:600; color:#C2D9C2; letter-spacing:0.05em; padding:0.75rem 1rem; border-bottom:1px solid rgba(194,217,194,0.15); display:flex; align-items:center; min-height:44px; text-decoration:none; }
 #mobileMenu a:hover,#mobileMenu a.active-mobile { background:#C2D9C2!important; color:#3B4533!important; }
-.nav-island { position:fixed; top:1.25rem; left:50%; transform:translateX(-50%); z-index:50; display:flex; align-items:center; padding:0 0.25rem; background:#C2D9C2; border:2px solid #3B4533; box-shadow:4px 4px 0 #3B4533; height:4.5rem; white-space:nowrap; max-width:92vw; }
-.nav-segment { position:relative; padding:0 1.25rem; height:100%; display:flex; align-items:center; font-family:'Orbitron',monospace; font-size:0.75rem; font-weight:600; color:#3B4533; text-decoration:none; border-right:1px solid rgba(59,69,51,0.2); letter-spacing:0.05em; white-space:nowrap; transition:background 0.15s,color 0.15s; }
-.nav-segment:hover { background:#3B4533; color:#C2D9C2; }
-.nav-segment.active { background:#3B4533; color:#C2D9C2; font-weight:700; }
-.search-island { position:relative; display:flex; align-items:center; margin-left:auto; margin-right:0.75rem; }
-.search-island input { width:11rem; height:1.75rem; padding:0 0.75rem 0 2rem; background:#ddeedd; border:1px solid #3B4533; font-family:'Share Tech Mono',monospace; font-size:0.75rem; color:#3B4533; outline:none; }
-.search-island input::placeholder { color:rgba(59,69,51,0.5); }
-.search-island svg { position:absolute; left:0.5rem; top:50%; transform:translateY(-50%); width:14px; height:14px; color:rgba(59,69,51,0.6); pointer-events:none; }
+        .nav-island {
+            position: fixed;
+            top: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            transform-origin: top center;
+            z-index: 50;
+            display: flex;
+            align-items: center;
+            padding: 0 clamp(0.1rem, 0.2vw, 0.25rem);
+            background: #C2D9C2;
+            border: 2px solid #3B4533;
+            box-shadow: 4px 4px 0 #3B4533;
+            height: clamp(3rem, 4.2vw, 4.5rem);
+            white-space: nowrap;
+        }
+        .nav-segment {
+            position: relative;
+            padding: 0 clamp(0.45rem, 1.04vw, 1.25rem);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(0.58rem, 0.625vw, 0.75rem);
+            font-weight: 600;
+            color: #3B4533;
+            text-decoration: none;
+            border-right: 1px solid rgba(59, 69, 51, 0.2);
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+            transition: background 0.15s, color 0.15s;
+        }
+        .nav-island img {
+            width: clamp(100px, 10vw, 200px);
+            height: auto;
+        }
+        @media (max-width: 1400px) {
+            .nav-segment {
+                font-size: clamp(0.52rem, 0.8vw, 0.68rem);
+                padding: 0 clamp(0.3rem, 0.7vw, 0.9rem);
+                letter-spacing: 0.02em;
+            }
+            .nav-island img { width: clamp(80px, 8vw, 160px); }
+        }
+        @media (max-width: 1100px) {
+            .nav-segment {
+                font-size: clamp(0.48rem, 0.9vw, 0.62rem);
+                padding: 0 clamp(0.2rem, 0.55vw, 0.7rem);
+                letter-spacing: 0;
+            }
+            .nav-island img { width: clamp(60px, 6vw, 120px); }
+            .nav-island { height: clamp(2.5rem, 4vw, 3.5rem); }
+        }
+        .nav-segment:hover { background: #3B4533; color: #C2D9C2; box-shadow: none; }
+        .nav-segment.active { background: #3B4533; color: #C2D9C2; font-weight: 700; box-shadow: none; }
+        .search-island {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 0.75rem;
+        }
+        .search-island input {
+            width: clamp(6rem, 8.5vw, 11rem);
+            height: 1.75rem;
+            padding: 0 0.75rem 0 2rem;
+            background: #ddeedd;
+            border: 1px solid #3B4533;
+            border-radius: 0;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: clamp(0.55rem, 0.7vw, 0.75rem);
+            color: #3B4533;
+            outline: none;
+        }
+        .search-island input::placeholder { color: rgba(59,69,51,0.5); }
+        .search-island input:focus { background: #C2D9C2; border-color: #3B4533; box-shadow: none; }
+        .search-island svg {
+            position: absolute;
+            left: 0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 14px; height: 14px;
+            color: rgba(194,217,194,0.6);
+            pointer-events: none;
+        }
+        @media (max-width: 768px) { .nav-island { display: none; } }
 .theme-toggle { display:flex; align-items:center; justify-content:center; width:4rem; height:100%; background:transparent; border:none; border-left:1px solid rgba(59,69,51,0.2); cursor:pointer; color:#3B4533; padding:0; flex-shrink:0; transition:background 0.15s,color 0.15s; }
 .theme-toggle:hover { background:#3B4533; color:#C2D9C2; }
-@media(max-width:768px){.nav-island{display:none}}
 .arcade-section-title { font-family:'Orbitron',monospace; font-size:0.72rem; font-weight:700; letter-spacing:0.1em; color:#3B4533; text-transform:uppercase; border-bottom:2px solid #3B4533; padding-bottom:0.5rem; margin-bottom:1.25rem; }
 .arcade-link { display:flex; align-items:center; gap:0.5rem; font-family:'Share Tech Mono',monospace; font-size:0.875rem; color:#3B4533; text-decoration:none; padding:0.4rem 0.5rem; border-bottom:1px solid rgba(59,69,51,0.1); transition:background 0.1s,padding-left 0.1s; }
 .arcade-link:hover { background:#3B4533; color:#C2D9C2; padding-left:0.75rem; }
