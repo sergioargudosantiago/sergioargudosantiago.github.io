@@ -231,13 +231,13 @@ generar_filas_desagregacion <- function(
         lit_lv4         = map_entry$lit_lv4,
         total_millones  = total_mill,
         top_paises_lv1  = NA_character_,
-        tva_lv1         = NA_character_,
+        tva_lv1         = NA_real_,
         top_paises_lv2  = NA_character_,
-        tva_lv2         = NA_character_,
+        tva_lv2         = NA_real_,
         top_paises_lv3  = NA_character_,
-        tva_lv3         = NA_character_,
+        tva_lv3         = NA_real_,
         top_paises_lv4  = NA_character_,
-        tva_lv4         = NA_character_,
+        tva_lv4         = NA_real_,
         pct_ue_lv3      = NA_real_,
         pct_ue_lv4      = if_else(!is.na(pct_ue_val), pct_ue_val, NA_real_)
       )
@@ -247,25 +247,24 @@ generar_filas_desagregacion <- function(
   bind_rows(rows)
 }
 
-# ── Mapping código interno → prefijo CN para pct_ue filas base ──────────────
-# Permite calcular pct_ue para las categorías agregadas del CSV base
+# ── Mapping completo lv3 → códigos CN (desde Correspondencias_Para_Importar) ─
+# Carga el fichero de correspondencias para calcular pct_ue en TODAS las
+# categorías agroalimentarias, no solo las 10 del mapa anterior.
 
-CODIGO_CN_MAP <- tibble::tribble(
-  ~lv3,       ~cn_prefix,
-  # Frutas
-  "181111",   "080510",   # Cítricos → naranjas como proxy (mayoritario)
-  "181112",   "080711",   # Melones/sandías → sandías como proxy
-  "181114",   "081010",   # Fresas
-  "181118",   "0803",     # Plátano (solo 4-digit disponible)
-  "181119",   "081190",   # Los demás frutos rojos
-  # Hortalizas
-  "171112",   "070960",   # Pimiento
-  "171113",   "070700",   # Pepino
-  # Pesca
-  "131112",   "030271",   # Pescado fresco → merluza fresca como proxy
-  "131113",   "030370",   # Pescado congelado → atún como proxy
-  "131114",   "030743"    # Moluscos → pulpo como proxy
-)
+CORR_PATH <- file.path(dirname(HTML_PATH), "Correspondencias_Para_Importar.csv")
+
+corr_df <- readr::read_delim(CORR_PATH, delim = ";", show_col_types = FALSE,
+                             col_types = readr::cols(.default = "c")) |>
+  dplyr::mutate(
+    codigo_nc = trimws(codigo_nc),
+    lv3       = trimws(lv3)
+  ) |>
+  dplyr::filter(nchar(codigo_nc) >= 6)
+
+# Para cada lv3: lista de prefijos CN (6 dígitos) a agregar
+AGRO_CN_MAP <- corr_df |>
+  dplyr::mutate(cn_prefix = substr(codigo_nc, 1, 6)) |>
+  dplyr::distinct(lv3, cn_prefix)
 
 # ── Leer CSV base desde HTML embebido ────────────────────────────────────────
 message("Leyendo CSV base del HTML...")
@@ -278,7 +277,7 @@ csv_match <- regmatches(html_content,
 
 if (length(csv_match) == 0) stop("No se encontró EMBEDDED_CSV_DATA en el HTML")
 
-csv_df <- readr::read_csv(csv_match, show_col_types = FALSE) |>
+csv_df <- readr::read_csv(I(csv_match), show_col_types = FALSE) |>
   mutate(
     year       = as.character(year),
     lv4        = as.character(lv4),
@@ -288,38 +287,120 @@ csv_df <- readr::read_csv(csv_match, show_col_types = FALSE) |>
 
 message(sprintf("CSV base: %d filas", nrow(csv_df)))
 
-# ── Calcular pct_ue_lv3 para filas base con CN mapping ───────────────────────
-message("Calculando pct_ue_lv3 para filas base...")
+# ── Calcular pct_ue_lv3 para filas agroalimentarias (Correspondencias) ────────
+message("Calculando pct_ue_lv3 agroalimentario (todas las categorías)...")
 
-# Get unique combinations of lv3+flujo that have a CN mapping
-mapped_lv3 <- CODIGO_CN_MAP$lv3
+calcular_pct_ue_multi <- function(cn_prefixes, flujo, anos) {
+  # Agrega taric() para un vector de prefijos CN (nivel=6)
+  query_taric <- function(iso3a_filter = NULL) {
+    rows <- lapply(cn_prefixes, function(cn) {
+      nivel_use <- if (nchar(cn) >= 6) 6L else 4L
+      args <- list(
+        codigo = cn, nivel = nivel_use, flujo = flujo,
+        desde = min(anos), hasta = max(anos),
+        .codigo_agregado = FALSE, .iso3a_agregado = FALSE
+      )
+      if (!is.null(iso3a_filter)) args$iso3a <- iso3a_filter
+      tryCatch(do.call(taric, args), error = function(e) NULL)
+    })
+    dplyr::bind_rows(rows)
+  }
 
-for (i in seq_len(nrow(CODIGO_CN_MAP))) {
-  lv3_code <- CODIGO_CN_MAP$lv3[i]
-  cn        <- CODIGO_CN_MAP$cn_prefix[i]
-  nivel_use <- if (nchar(cn) >= 6) 6L else 4L
+  total_df <- query_taric() |>
+    dplyr::group_by(year) |>
+    dplyr::summarise(valor_total = sum(euros, na.rm = TRUE), .groups = "drop")
+
+  ue_df <- query_taric(UE27_ISO3A) |>
+    dplyr::group_by(year) |>
+    dplyr::summarise(valor_ue = sum(euros, na.rm = TRUE), .groups = "drop")
+
+  dplyr::left_join(total_df, ue_df, by = "year") |>
+    dplyr::mutate(
+      valor_ue = tidyr::replace_na(valor_ue, 0),
+      pct_ue   = dplyr::if_else(valor_total > 0,
+                                round(valor_ue / valor_total * 100, 1),
+                                NA_real_)
+    )
+}
+
+unique_lv3_agro <- unique(AGRO_CN_MAP$lv3)
+message(sprintf("  Categorías agroalimentarias lv3: %d", length(unique_lv3_agro)))
+
+for (lv3_code in unique_lv3_agro) {
+  cn_prefixes <- AGRO_CN_MAP |> dplyr::filter(lv3 == lv3_code) |> dplyr::pull(cn_prefix)
 
   for (fl in c("E","I")) {
     pct_data <- tryCatch(
-      calcular_pct_ue(cn, fl, ANOS, nivel = nivel_use),
+      calcular_pct_ue_multi(cn_prefixes, fl, ANOS),
       error = function(e) { message(sprintf("  Error %s %s: %s", lv3_code, fl, e$message)); NULL }
     )
-    if (is.null(pct_data)) next
+    if (is.null(pct_data) || nrow(pct_data) == 0) next
 
-    # Update csv_df rows where lv3==lv3_code and flujo==fl
     for (yr in ANOS) {
-      yr_row <- pct_data |> filter(year == yr)
+      yr_row <- pct_data |> dplyr::filter(year == yr)
       if (nrow(yr_row) == 0) next
-
       csv_df <<- csv_df |>
-        mutate(pct_ue_lv3 = if_else(
+        dplyr::mutate(pct_ue_lv3 = dplyr::if_else(
           lv3 == lv3_code & flujo == fl & year == as.character(yr),
           yr_row$pct_ue,
           pct_ue_lv3
         ))
     }
   }
-  message(sprintf("  Procesado lv3=%s cn=%s", lv3_code, cn))
+  message(sprintf("  lv3=%s (%d prefijos CN)", lv3_code, length(cn_prefixes)))
+}
+
+# ── Calcular pct_ue_lv3 para filas industriales (sec()) ─────────────────────
+message("Calculando pct_ue_lv3 industrial (sec)...")
+
+industrial_lv3 <- csv_df |>
+  dplyr::filter(macro_sector != "Agroalimentario", !is.na(lv3), lv3 != "NA") |>
+  dplyr::distinct(lv3) |>
+  dplyr::pull(lv3)
+
+message(sprintf("  Categorías industriales lv3: %d", length(industrial_lv3)))
+
+for (lv3_code in industrial_lv3) {
+  for (fl in c("E","I")) {
+    total_ind <- tryCatch(
+      sec(codigo = lv3_code, nivel = 3, flujo = fl,
+          desde = min(ANOS), hasta = max(ANOS),
+          .codigo_agregado = FALSE, .iso3a_agregado = FALSE) |>
+        dplyr::group_by(year) |>
+        dplyr::summarise(valor_total = sum(euros, na.rm = TRUE), .groups = "drop"),
+      error = function(e) { message(sprintf("  Error total ind %s %s: %s", lv3_code, fl, e$message)); NULL }
+    )
+    if (is.null(total_ind) || nrow(total_ind) == 0) next
+
+    ue_ind <- tryCatch(
+      sec(codigo = lv3_code, nivel = 3, flujo = fl,
+          desde = min(ANOS), hasta = max(ANOS),
+          iso3a = UE27_ISO3A,
+          .codigo_agregado = FALSE, .iso3a_agregado = FALSE) |>
+        dplyr::group_by(year) |>
+        dplyr::summarise(valor_ue = sum(euros, na.rm = TRUE), .groups = "drop"),
+      error = function(e) NULL
+    )
+
+    ue_ind_safe <- if (is.null(ue_ind)) dplyr::tibble(year = integer(), valor_ue = numeric()) else ue_ind
+    pct_data <- dplyr::left_join(total_ind, ue_ind_safe, by = "year") |>
+      dplyr::mutate(
+        valor_ue = tidyr::replace_na(valor_ue, 0),
+        pct_ue   = dplyr::if_else(valor_total > 0, round(valor_ue / valor_total * 100, 1), NA_real_)
+      )
+
+    for (yr in ANOS) {
+      yr_row <- pct_data |> dplyr::filter(year == yr)
+      if (nrow(yr_row) == 0) next
+      csv_df <<- csv_df |>
+        dplyr::mutate(pct_ue_lv3 = dplyr::if_else(
+          lv3 == lv3_code & flujo == fl & year == as.character(yr),
+          yr_row$pct_ue,
+          pct_ue_lv3
+        ))
+    }
+  }
+  message(sprintf("  lv3=%s industrial", lv3_code))
 }
 
 # ── Generar filas desagregadas ────────────────────────────────────────────────
