@@ -984,7 +984,7 @@
                                     class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 auto-rows-min">
                                     <!-- LEFT: TVA + Latest Total (ID: card-tva) -->
                                     <div id="card-tva"
-                                        class="glass-card p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
+                                        class="glass-card col-span-12 md:col-span-6 xl:col-span-6 p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
                                         <!-- Mitad superior: TVA -->
                                         <div class="flex flex-col items-center w-full flex-1 justify-center pb-4">
                                             <h4 class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6">
@@ -1015,7 +1015,7 @@
 
                                     <!-- CENTER 1: Metric (ID: card-volume) -->
                                     <div id="card-volume"
-                                        class="glass-card p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
+                                        class="glass-card col-span-12 md:col-span-6 xl:col-span-6 p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
                                         <h4 id="metricLabel"
                                             class="text-xs md:text-sm font-semibold uppercase tracking-wider text-primary mb-4 md:mb-6">
                                             VALOR 2025 (M€)
@@ -1031,7 +1031,7 @@
 
                                     <!-- CENTER 2: Balance (New) (ID: card-balance) -->
                                     <div id="card-balance"
-                                        class="glass-card p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
+                                        class="glass-card col-span-12 md:col-span-6 xl:col-span-6 p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
                                         <h4
                                             class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6">
                                             SALDO COMERCIAL
@@ -1052,7 +1052,7 @@
 
                                     <!-- RIGHT: Top Countries (ID: card-countries) -->
                                     <div id="card-countries"
-                                        class="glass-card p-6 md:p-8 transition-all duration-300 flex flex-col items-center justify-center">
+                                        class="glass-card col-span-12 md:col-span-6 xl:col-span-6 p-6 md:p-8 transition-all duration-300 flex flex-col items-center justify-center">
                                         <h4 id="countriesTitle"
                                             class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6 text-center w-full">
                                             Principales Destinos</h4>
@@ -3729,11 +3729,11 @@
                 });
             }
 
-            // ANALYTICS: Use all filtered data for current macro sector
-            updateDashboardMetrics(filtered, navigationState.macroSector, 'lv1');
-
             showView('level1View');
             updateBreadcrumbs();
+
+            // ANALYTICS: Use all filtered data for current macro sector
+            updateDashboardMetrics(filtered, navigationState.macroSector, 'lv1');
         }
 
         function selectLevel1(code, name, sampleLv2, sampleLv3) {
@@ -3812,11 +3812,11 @@
                 grid.appendChild(card);
             });
 
-            // ANALYTICS: Use data filtered by Lv1
-            updateDashboardMetrics(filtered, navigationState.lv1.name, 'lv2');
-
             showView('level2View');
             updateBreadcrumbs();
+
+            // ANALYTICS: Use data filtered by Lv1
+            updateDashboardMetrics(filtered, navigationState.lv1.name, 'lv2');
         }
 
         function selectLevel2(code, name, sampleLv3) {
@@ -3888,11 +3888,11 @@
                 grid.appendChild(card);
             });
 
-            // ANALYTICS: Use data filtered by Lv2
-            updateDashboardMetrics(filtered, navigationState.lv2?.name || navigationState.lv1.name, 'lv2');
-
             showView('level3View');
             updateBreadcrumbs();
+
+            // ANALYTICS: Use data filtered by Lv2
+            updateDashboardMetrics(filtered, navigationState.lv2?.name || navigationState.lv1.name, 'lv2');
         }
 
         function selectLevel3(code, name) {
@@ -3990,11 +3990,11 @@
                 });
             }
 
-            // Update analytics for current lv3 level (before clicking lv4)
-            updateDashboardMetrics(filtered, navigationState.lv3.name, 'lv3');
-
             showView('level4View');
             updateBreadcrumbs();
+
+            // Update analytics for current lv3 level (before clicking lv4)
+            updateDashboardMetrics(filtered, navigationState.lv3.name, 'lv3');
         }
 
         function selectLevel4(code, name) {
@@ -4019,13 +4019,13 @@
             document.getElementById('finalTitle').textContent = navigationState.lv4.name;
             document.getElementById('finalTitle').classList.remove('hidden');
 
-            updateDashboardMetrics(filtered, navigationState.lv4.name, 'lv4');
-
             // Show final view (hides all grids, shows analytics)
             showView('finalView');
 
             document.getElementById('analyticsSection').classList.remove('hidden');
             updateBreadcrumbs();
+
+            updateDashboardMetrics(filtered, navigationState.lv4.name, 'lv4');
         }
 
         // ========== FINAL VIEW ==========
@@ -4044,18 +4044,26 @@
             document.getElementById('finalTitle').textContent = navigationState.lv3.name;
             document.getElementById('finalTitle').classList.remove('hidden');
 
-            updateDashboardMetrics(filtered, navigationState.lv3.name, 'lv3');
-
             // FIXED: Do NOT show level3View container here if we are in a final view for a higher-level sector.
             // Using 'finalView' (dummy) hides all grids.
             showView('finalView');
 
             document.getElementById('analyticsSection').classList.remove('hidden');
             updateBreadcrumbs();
+
+            updateDashboardMetrics(filtered, navigationState.lv3.name, 'lv3');
         }
 
         function updateDashboardMetrics(dataRows, title, level) {
+            try { _updateDashboardMetrics(dataRows, title, level); }
+            catch(e) { console.error('❌ updateDashboardMetrics crash [level=' + level + ']:', e.message, e); }
+        }
+
+        function _updateDashboardMetrics(dataRows, title, level) {
             if (!dataRows || dataRows.length === 0) return;
+
+            // Ensure analytics section visible before rendering chart (Chart.js needs visible canvas)
+            document.getElementById('analyticsSection').classList.remove('hidden');
 
             // 1. Identify Latest Year & Aggregation
             // Get all unique years from current dataset
@@ -4233,8 +4241,6 @@
 
                 renderCountries(countriesString);
             }
-
-            document.getElementById('analyticsSection').classList.remove('hidden');
         }
 
         function renderChart(yearlyData, years, level, dataRows) {
@@ -4242,9 +4248,16 @@
             const values = years.map(year => yearlyData[year] || 0);
             const lastYear = years[years.length - 1];
 
+            lastChartArgs = { yearlyData, years, level, dataRows };
+
+            if (typeof Chart === 'undefined') {
+                console.warn('Chart.js no disponible (posiblemente bloqueado por tracking prevention)');
+                renderEUShare(computeWeightedEUShare(dataRows ? dataRows.filter(r => r.year === lastYear) : [], level === 'lv4' ? 'lv4' : 'lv3'), currentFlow);
+                return;
+            }
+
             const ctx = document.getElementById('timeSeriesChart').getContext('2d');
             if (chartInstance) chartInstance.destroy();
-            lastChartArgs = { yearlyData, years, level, dataRows };
 
             const isDark = document.documentElement.classList.contains('dark');
             const chartMain = isDark ? '#C2D9C2' : '#3B4533';
@@ -4343,7 +4356,7 @@
 
             // Render EU share — solo año más reciente
             const euLevel = (level === 'final' || level === 'lv4') ? 'lv4' : 'lv3';
-            const latestRows = dataRows.filter(r => r.year === latestYear);
+            const latestRows = dataRows.filter(r => r.year === lastYear);
             const euPct = computeWeightedEUShare(latestRows, euLevel);
             renderEUShare(euPct, currentFlow);
         }
