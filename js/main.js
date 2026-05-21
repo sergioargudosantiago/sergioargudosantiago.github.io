@@ -1,29 +1,30 @@
 /* =========================================
    Dark Mode Toggle
    ========================================= */
-function initTheme() {
-    const saved = localStorage.getItem('soivre_theme');
-    if (saved === 'dark') {
-        document.documentElement.classList.add('dark');
-    } else {
-        // Default to light mode — remove dark class if present
-        document.documentElement.classList.remove('dark');
-    }
-    // Sync icons on load
+const THEME_KEY = 'theme';
+
+function syncThemeIcons() {
     const isDark = document.documentElement.classList.contains('dark');
     document.querySelectorAll('.theme-icon-sun').forEach(el => el.style.display = isDark ? 'none' : 'block');
     document.querySelectorAll('.theme-icon-moon').forEach(el => el.style.display = isDark ? 'block' : 'none');
+}
+
+function initTheme() {
+    const saved = localStorage.getItem(THEME_KEY);
+    if (saved === 'dark') {
+        document.documentElement.classList.add('dark');
+    } else if (saved === 'light') {
+        document.documentElement.classList.remove('dark');
+    }
+    syncThemeIcons();
 }
 
 function toggleTheme() {
     const html = document.documentElement;
     html.classList.toggle('dark');
     const isDark = html.classList.contains('dark');
-    localStorage.setItem('soivre_theme', isDark ? 'dark' : 'light');
-
-    // Update all toggle icons
-    document.querySelectorAll('.theme-icon-sun').forEach(el => el.style.display = isDark ? 'none' : 'block');
-    document.querySelectorAll('.theme-icon-moon').forEach(el => el.style.display = isDark ? 'block' : 'none');
+    localStorage.setItem(THEME_KEY, isDark ? 'dark' : 'light');
+    syncThemeIcons();
 }
 
 // Apply theme ASAP (before DOMContentLoaded) to avoid flash
@@ -64,14 +65,17 @@ function removeSkeletons() {
 // Run on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
     initScrollReveal();
-
-    // Update theme toggle icons to match current state
-    const isDark = document.documentElement.classList.contains('dark');
-    document.querySelectorAll('.theme-icon-sun').forEach(el => el.style.display = isDark ? 'none' : 'block');
-    document.querySelectorAll('.theme-icon-moon').forEach(el => el.style.display = isDark ? 'block' : 'none');
-
-    // Remove skeletons after a short delay (charts will call removeSkeletons when ready)
+    syncThemeIcons();
     setTimeout(removeSkeletons, 3000);
+});
+
+// Cross-tab sync: react when theme changes in another tab
+window.addEventListener('storage', (e) => {
+    if (e.key === THEME_KEY) {
+        if (e.newValue === 'dark') document.documentElement.classList.add('dark');
+        else document.documentElement.classList.remove('dark');
+        syncThemeIcons();
+    }
 });
 
 // State Management
