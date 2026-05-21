@@ -127,7 +127,7 @@
             display: flex;
             align-items: center;
             padding: 0.5rem 1rem;
-            background: #121412;
+            background: #3B4533;
             border-bottom: 1px solid rgba(194,217,194,0.3);
             font-family: 'Orbitron', monospace;
             font-size: 0.6rem;
@@ -144,7 +144,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 4rem;
+            width: clamp(2.25rem, 3.5vw, 4rem);
             height: 100%;
             background: transparent;
             border: none;
@@ -179,66 +179,69 @@
         /* ========== ARCADE CARDS ========== */
         .glass, .glass-card {
             background: #C2D9C2;
-            border: 2px solid #121412;
-            box-shadow: 4px 4px 0 #121412;
+            border: 2px solid #3B4533;
+            box-shadow: 4px 4px 0 #3B4533;
         }
-        .glass-card:hover { transform: none; box-shadow: 2px 2px 0 #121412; }
+        .glass-card:hover { transform: none; box-shadow: 2px 2px 0 #3B4533; }
 
         /* ========== ARCADE NAVIGATION BAR ========== */
         .nav-island {
             position: fixed;
-            top: 1.25rem;
+            top: 1rem;
             left: 50%;
             transform: translateX(-50%);
             transform-origin: top center;
             z-index: 50;
             display: flex;
-            align-items: center;
+            align-items: stretch;
             padding: 0 clamp(0.1rem, 0.2vw, 0.25rem);
             background: #C2D9C2;
             border: 2px solid #3B4533;
             box-shadow: 4px 4px 0 #3B4533;
-            height: clamp(3rem, 4.2vw, 4.5rem);
+            height: clamp(2.75rem, 4vw, 4.25rem);
+            max-width: calc(100vw - 1.5rem);
             white-space: nowrap;
+            overflow: hidden;
         }
+        .nav-island > a:first-child { flex-shrink: 0; }
         .nav-segment {
             position: relative;
-            padding: 0 clamp(0.45rem, 1.04vw, 1.25rem);
+            padding: 0 clamp(0.4rem, 1vw, 1.25rem);
             height: 100%;
             display: flex;
             align-items: center;
             font-family: 'Orbitron', monospace;
-            font-size: clamp(0.58rem, 0.625vw, 0.75rem);
+            font-size: clamp(0.55rem, 0.78vw, 0.75rem);
             font-weight: 600;
             color: #3B4533;
             text-decoration: none;
             border-right: 1px solid rgba(59, 69, 51, 0.2);
-            letter-spacing: 0.05em;
+            letter-spacing: 0.03em;
             white-space: nowrap;
             transition: background 0.15s, color 0.15s;
+            flex-shrink: 1;
+            min-width: 0;
         }
         .nav-island img {
-            width: clamp(100px, 10vw, 200px);
+            width: clamp(80px, 9vw, 200px);
             height: auto;
         }
-        /* Portátil ~1366px y pantallas medianas */
         @media (max-width: 1400px) {
             .nav-segment {
-                font-size: clamp(0.52rem, 0.8vw, 0.68rem);
-                padding: 0 clamp(0.3rem, 0.7vw, 0.9rem);
-                letter-spacing: 0.02em;
-            }
-            .nav-island img { width: clamp(80px, 8vw, 160px); }
-        }
-        /* Portátil pequeño / zoom alto */
-        @media (max-width: 1100px) {
-            .nav-segment {
-                font-size: clamp(0.48rem, 0.9vw, 0.62rem);
-                padding: 0 clamp(0.2rem, 0.55vw, 0.7rem);
+                font-size: clamp(0.5rem, 0.72vw, 0.68rem);
+                padding: 0 clamp(0.28rem, 0.6vw, 0.85rem);
                 letter-spacing: 0;
             }
-            .nav-island img { width: clamp(60px, 6vw, 120px); }
-            .nav-island { height: clamp(2.5rem, 4vw, 3.5rem); }
+            .nav-island img { width: clamp(70px, 7.5vw, 160px); }
+        }
+        @media (max-width: 1100px) {
+            .nav-segment {
+                font-size: clamp(0.45rem, 0.7vw, 0.6rem);
+                padding: 0 clamp(0.18rem, 0.45vw, 0.6rem);
+                letter-spacing: 0;
+            }
+            .nav-island img { width: clamp(55px, 6vw, 110px); }
+            .nav-island { height: clamp(2.4rem, 3.6vw, 3.4rem); }
         }
         .nav-segment:hover { background: #3B4533; color: #C2D9C2; box-shadow: none; }
         .nav-segment.active { background: #3B4533; color: #C2D9C2; font-weight: 700; box-shadow: none; }
@@ -298,17 +301,17 @@
         .nav-logo-dark { display: none; }
         html.dark .skeleton-loader { background: #4A5C3F; }
         html.dark .skeleton-bar { background: rgba(194,217,194,0.12); }
-        html.dark footer.arcade-footer { background: #C2D9C2 !important; color: #121412 !important; border-color: #C2D9C2 !important; }
-        html.dark footer.arcade-footer a { color: #121412; }
+        html.dark footer.arcade-footer { background: #C2D9C2 !important; color: #3B4533 !important; border-color: #C2D9C2 !important; }
+        html.dark footer.arcade-footer a { color: #3B4533; }
         html.dark footer.arcade-footer a:hover { color: #4A5C4A; }
         html.dark #mobileMenu { background: #2D3828 !important; border-right-color: rgba(194,217,194,0.2); }
-        html.dark #mobileMenu a:hover, html.dark #mobileMenu a.bg-accent { background: #C2D9C2 !important; color: #121412 !important; }
+        html.dark #mobileMenu a:hover, html.dark #mobileMenu a.bg-accent { background: #C2D9C2 !important; color: #3B4533 !important; }
 
         /* ========== FLOW TOGGLE (arcade) ========== */
         .flow-toggle {
             display: inline-flex;
             background: #C2D9C2;
-            border: 2px solid #121412;
+            border: 2px solid #3B4533;
             padding: 0;
             gap: 0;
         }
@@ -321,18 +324,18 @@
             transition: background 0.15s, color 0.15s;
             cursor: pointer;
             border: none;
-            border-right: 2px solid #121412;
+            border-right: 2px solid #3B4533;
             background: #C2D9C2;
-            color: #121412;
+            color: #3B4533;
             text-transform: uppercase;
         }
         .flow-toggle-btn:last-child { border-right: none; }
-        .flow-toggle-btn.active { background: #121412; color: #C2D9C2; }
+        .flow-toggle-btn.active { background: #3B4533; color: #C2D9C2; }
         .flow-toggle-btn:hover:not(.active) { background: #F0E88A; }
 
         html.dark .flow-toggle { background: #2D3828; border-color: #C2D9C2; }
         html.dark .flow-toggle-btn { background: #2D3828; color: #E8EDE8; border-right-color: rgba(194,217,194,0.3); }
-        html.dark .flow-toggle-btn.active { background: #C2D9C2; color: #121412; }
+        html.dark .flow-toggle-btn.active { background: #C2D9C2; color: #3B4533; }
         html.dark .flow-toggle-btn:hover:not(.active) { background: #4A5C3F; }
 
         /* ========== SECTOR CARDS (arcade) ========== */
@@ -340,20 +343,20 @@
             cursor: pointer;
             padding: 2rem;
             text-align: center;
-            border: 2px solid #121412;
+            border: 2px solid #3B4533;
             background: #C2D9C2;
-            box-shadow: 3px 3px 0 #121412;
+            box-shadow: 3px 3px 0 #3B4533;
             transition: box-shadow 0.1s, transform 0.1s;
         }
         .sector-card:hover {
-            box-shadow: 1px 1px 0 #121412;
+            box-shadow: 1px 1px 0 #3B4533;
             transform: translate(2px, 2px);
         }
         .sector-card h3 {
             font-family: 'Orbitron', monospace;
             font-size: 1.1rem;
             font-weight: 800;
-            color: #121412;
+            color: #3B4533;
             letter-spacing: 0.05em;
             word-break: break-word;
             overflow-wrap: break-word;
@@ -463,7 +466,7 @@
         .main-tab-toggle {
             display: inline-flex;
             background: #C2D9C2;
-            border: 2px solid #121412;
+            border: 2px solid #3B4533;
             padding: 0;
         }
         .main-tab-btn {
@@ -473,20 +476,20 @@
             font-weight: 700;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            color: #121412;
+            color: #3B4533;
             background: #C2D9C2;
             border: none;
-            border-right: 2px solid #121412;
+            border-right: 2px solid #3B4533;
             cursor: pointer;
             transition: background 0.15s, color 0.15s;
         }
         .main-tab-btn:last-child { border-right: none; }
-        .main-tab-btn.active { background: #121412; color: #C2D9C2; }
+        .main-tab-btn.active { background: #3B4533; color: #C2D9C2; }
         .main-tab-btn:hover:not(.active) { background: #F0E88A; }
 
         html.dark .main-tab-toggle { background: #2D3828; border-color: #C2D9C2; }
         html.dark .main-tab-btn { background: #2D3828; color: #E8EDE8; border-right-color: rgba(194,217,194,0.3); }
-        html.dark .main-tab-btn.active { background: #C2D9C2; color: #121412; }
+        html.dark .main-tab-btn.active { background: #C2D9C2; color: #3B4533; }
         html.dark .main-tab-btn:hover:not(.active) { background: #4A5C3F; }
 
         /* ========== BALANZA KPI CARDS (arcade) ========== */
@@ -573,9 +576,9 @@
             font-weight: 700;
             letter-spacing: 0.05em;
             text-transform: uppercase;
-            background: #121412;
+            background: #3B4533;
             color: #C2D9C2;
-            border: 2px solid #121412;
+            border: 2px solid #3B4533;
         }
         .bp-badge::before {
             content: '';
@@ -584,8 +587,8 @@
             background: #C2D9C2;
             animation: pulse-dot 2s ease-in-out infinite;
         }
-        html.dark .bp-badge { background: #C2D9C2; color: #121412; border-color: #C2D9C2; }
-        html.dark .bp-badge::before { background: #121412; }
+        html.dark .bp-badge { background: #C2D9C2; color: #3B4533; border-color: #C2D9C2; }
+        html.dark .bp-badge::before { background: #3B4533; }
 
         @keyframes pulse-dot {
 
@@ -605,7 +608,7 @@
         .bp-sub-tabs {
             display: inline-flex;
             background: #C2D9C2;
-            border: 2px solid #121412;
+            border: 2px solid #3B4533;
             padding: 0;
         }
         .bp-sub-tab {
@@ -614,27 +617,27 @@
             font-size: 0.65rem;
             font-weight: 600;
             letter-spacing: 0.04em;
-            color: #121412;
+            color: #3B4533;
             background: #C2D9C2;
             border: none;
-            border-right: 2px solid #121412;
+            border-right: 2px solid #3B4533;
             cursor: pointer;
             transition: background 0.15s, color 0.15s;
         }
         .bp-sub-tab:last-child { border-right: none; }
-        .bp-sub-tab.active { background: #121412; color: #C2D9C2; }
+        .bp-sub-tab.active { background: #3B4533; color: #C2D9C2; }
         .bp-sub-tab:hover:not(.active) { background: #F0E88A; }
 
         html.dark .bp-sub-tabs { background: #2D3828; border-color: #C2D9C2; }
         html.dark .bp-sub-tab { background: #2D3828; color: #E8EDE8; border-right-color: rgba(194,217,194,0.3); }
-        html.dark .bp-sub-tab.active { background: #C2D9C2; color: #121412; }
+        html.dark .bp-sub-tab.active { background: #C2D9C2; color: #3B4533; }
         html.dark .bp-sub-tab:hover:not(.active) { background: #4A5C3F; }
 
         /* ========== BALANZA CHART CONTAINERS (arcade) ========== */
         .bp-chart-card {
             background: #C2D9C2;
-            border: 2px solid #121412;
-            box-shadow: 3px 3px 0 #121412;
+            border: 2px solid #3B4533;
+            box-shadow: 3px 3px 0 #3B4533;
             padding: 1.5rem;
         }
         .bp-chart-title {
@@ -725,7 +728,7 @@
             opacity: 0;
             visibility: hidden;
             transition: transform 0.2s ease, opacity 0.2s ease, visibility 0s 0.2s;
-            background: #121412 !important;
+            background: #3B4533 !important;
             border-right: 2px solid rgba(194,217,194,0.3);
         }
         #mobileMenu.menu-open {
@@ -750,7 +753,7 @@
         }
         #mobileMenu a:hover, #mobileMenu a.bg-accent {
             background: #C2D9C2 !important;
-            color: #121412 !important;
+            color: #3B4533 !important;
         }
 
         /* ========== ARCADE FOOTER ========== */
@@ -818,19 +821,12 @@
             </svg>
         </button>
 
-        <div class="search-island">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-            <input type="search" placeholder="Buscar en temario..." id="headerSearch">
-        </div>
     </nav>
 
     <!-- Mobile Menu Button -->
     <button
         class="md:hidden fixed top-0 right-0 z-50 flex items-center justify-center"
-        style="width:2.5rem;height:2.5rem;background:#000;border-left:1px solid rgba(194,217,194,0.3);border-bottom:1px solid rgba(194,217,194,0.3);"
+        style="width:2.5rem;height:2.5rem;background:#3B4533;border-left:1px solid rgba(194,217,194,0.3);border-bottom:1px solid rgba(194,217,194,0.3);"
         onclick="toggleMobileMenu()" aria-label="Abrir menú">
         <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
             stroke="#C2D9C2">
@@ -853,7 +849,7 @@
                 <a href="temario.html" onclick="toggleMobileMenu();">
                     TEMARIO
                 </a>
-                <a href="comercio-exterior.html" onclick="toggleMobileMenu();" style="background:#C2D9C2;color:#000">
+                <a href="comercio-exterior.html" onclick="toggleMobileMenu();" style="background:#C2D9C2;color:#3B4533">
                     COMERCIO EXTERIOR
                 </a>
                 <a href="enlaces.html" onclick="toggleMobileMenu();">
