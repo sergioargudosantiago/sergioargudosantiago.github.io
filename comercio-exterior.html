@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Dashboard de comercio exterior español con datos de exportación e importación por sectores económicos.">
     <title>Sergio Argudo - Comercio Exterior</title>
@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- SEO & Social Meta Tags -->
@@ -47,29 +47,8 @@
         gtag('config', 'G-XXXXXXXXXX');
     </script>
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        background: '#C2D9C2',
-                        foreground: '#3B4533',
-                        primary: { DEFAULT: '#3B4533', foreground: '#C2D9C2' },
-                        secondary: { DEFAULT: '#C2D9C2', foreground: '#3B4533' },
-                        muted: { DEFAULT: '#A8C9A8', foreground: '#2A3528' },
-                        accent: { DEFAULT: '#3B4533', foreground: '#C2D9C2' },
-                        border: '#3B4533',
-                        input: '#C2D9C2',
-                        ring: '#3B4533',
-                    },
-                    borderRadius: { lg: '0', md: '0', sm: '0' },
-                }
-            }
-        }
-    </script>
+    <!-- Tailwind CSS (compiled) -->
+    <link rel="stylesheet" href="css/tailwind.css">
 
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
@@ -83,7 +62,7 @@
             --primary-foreground: #C2D9C2;
             --secondary: #C2D9C2;
             --secondary-foreground: #3B4533;
-            --muted: #A8C9A8;
+            --muted: #8FB58F;
             --muted-foreground: #2A3528;
             --accent: #3B4533;
             --accent-foreground: #C2D9C2;
@@ -99,17 +78,20 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            border-radius: 0 !important;
         }
 
         body {
-            font-family: 'Share Tech Mono', monospace;
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
             background: #C2D9C2;
             position: relative;
             min-height: 100vh;
             color: #3B4533;
             padding-bottom: 5rem;
+            line-height: 1.55;
+            -webkit-font-smoothing: antialiased;
         }
+        h1, h2, h3, h4 { font-family: 'Orbitron', monospace; letter-spacing: 0.03em; }
+        :root { --accent-warm: #C8A951; }
 
         /* ===== SCROLL REVEAL ===== */
         [data-reveal] {
@@ -161,7 +143,7 @@
         .skeleton-loader {
             position: relative;
             overflow: hidden;
-            background: #A8C9A8;
+            background: #8FB58F;
             transition: opacity 0.3s;
         }
         .skeleton-loader::after {
@@ -328,6 +310,9 @@
             background: #C2D9C2;
             color: #3B4533;
             text-transform: uppercase;
+        }
+        @media (max-width: 640px) {
+            .flow-toggle-btn { padding: 0.55rem 0.9rem; font-size: 0.65rem; }
         }
         .flow-toggle-btn:last-child { border-right: none; }
         .flow-toggle-btn.active { background: #3B4533; color: #C2D9C2; }
@@ -894,23 +879,26 @@
 
                     <!-- ===== FLUJOS COMERCIALES VIEW ===== -->
                     <div id="flujosView">
+                        <!-- Persistent Flow + Year selectors (visible across all navigation levels) -->
+                        <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-8">
+                            <div class="flow-toggle" role="group" aria-label="Seleccionar flujo">
+                                <button class="flow-toggle-btn active" data-flow="E" onclick="switchFlow('E')">
+                                    EXPORTACIÓN
+                                </button>
+                                <button class="flow-toggle-btn" data-flow="I" onclick="switchFlow('I')">
+                                    IMPORTACIÓN
+                                </button>
+                            </div>
+                            <div class="flow-toggle" id="yearToggle" role="group" aria-label="Seleccionar año">
+                                <!-- year buttons injected by JS -->
+                            </div>
+                        </div>
+
                         <!-- Breadcrumbs -->
                         <div id="breadcrumbs" class="breadcrumbs hidden"></div>
 
                         <!-- Home View -->
                         <div id="homeView">
-                            <!-- Flow Toggle -->
-                            <div class="flex justify-center mb-12">
-                                <div class="flow-toggle">
-                                    <button class="flow-toggle-btn active" data-flow="E" onclick="switchFlow('E')">
-                                        EXPORTACIÓN
-                                    </button>
-                                    <button class="flow-toggle-btn" data-flow="I" onclick="switchFlow('I')">
-                                        IMPORTACIÓN
-                                    </button>
-                                </div>
-                            </div>
-
                             <!-- Macro Sector Selection -->
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-reveal>
                                 <div class="glass-card sector-card" onclick="selectMacroSector('Agroalimentario')">
@@ -1166,6 +1154,21 @@
                                             class="font-medium text-primary hover:underline hover:text-primary/80 transition-colors">contacta
                                             conmigo</a>.
                                     </p>
+                                    <p class="mt-3 font-serif text-foreground/80 text-sm md:text-base leading-relaxed">
+                                        <strong>Aclaración:</strong> los datos de <em>exportación</em>, <em>importación</em>
+                                        y <em>TVA</em> están disponibles para todos los años (2021&ndash;2025). La
+                                        <em>cuota de la UE</em> y los <em>países destino/origen</em> sólo se muestran
+                                        para el año <strong>2025</strong>.
+                                    </p>
+                                    <div class="mt-4 pt-3 border-t border-primary/30 text-sm md:text-base">
+                                        <p class="font-bold uppercase tracking-wide text-primary mb-1">Fuente de los datos</p>
+                                        <p class="mb-1 text-foreground/80">Estadísticas oficiales de comercio exterior español. Última actualización: 2025.</p>
+                                        <ul class="list-disc list-inside space-y-1 text-foreground/80">
+                                            <li><a href="https://datacomex.comercio.es/Metadata/Comex" target="_blank" rel="noopener noreferrer" class="underline hover:text-primary">DataComex &mdash; Ministerio de Economía, Comercio y Empresa</a></li>
+                                            <li><a href="https://sede.agenciatributaria.gob.es/Sede/estadisticas/estadisticas-comercio-exterior.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-primary">Estadísticas de comercio exterior &mdash; Agencia Tributaria</a></li>
+                                            <li><a href="https://www.bde.es/webbe/es/estadisticas/otras-clasificaciones/publicaciones/boletin-estadistico/capitulo-17.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-primary">Boletín Estadístico Capítulo 17 &mdash; Banco de España</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1173,6 +1176,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
 
@@ -2690,127 +2694,127 @@
 2024,I,Industrial,8,MANUFACTURAS DE CONSUMO,87,OTRAS MANUFACTURAS DE CONSUMO,870,OTRAS MANUFACTURAS DE CONSUMO,8700,OTRAS MANUFACTURAS DE CONSUMO,10335.93,"China, Bangladés, Italia",3.4,"China, Francia, Alemania",4.5,"China, Francia, Alemania",4.5,"China, Francia, Alemania",4.5,47.0,47.0
 2025,E,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111111,Animales vivos de bovinos,NA,NA,234.09,"Francia, Portugal, Italia",2.6,"Portugal, Italia, Francia",19.4,"Marruecos, Portugal, Líbano",-10.6,"Marruecos, Portugal, Líbano",-10.6,40.2,NA
 2025,E,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111112,Carne fresca o refrigerada de  bovino,NA,NA,1498.75,"Francia, Portugal, Italia",2.6,"Portugal, Italia, Francia",19.4,"Portugal, Italia, Argelia",28,"Portugal, Italia, Argelia",28,84.3,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111113,Carne congelada de  bovino,NA,NA,252.73,"Francia, Portugal, Italia",2.6,"Portugal, Italia, Francia",19.4,"Portugal, Francia, Marruecos",15.9,"Portugal, Francia, Marruecos",15.9,82.1,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111114,Preparaciones y despojos de  bovino,NA,NA,46.49,"Francia, Portugal, Italia",2.6,"Portugal, Italia, Francia",19.4,"Francia, Portugal, Reino Unido",3.2,"Francia, Portugal, Reino Unido",3.2,77.6,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111115,Despojos de bovino,NA,NA,80.27,"Francia, Portugal, Italia",2.6,"Portugal, Italia, Francia",19.4,"Portugal, Francia, Italia",10,"Portugal, Francia, Italia",10,68.1,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111113,Carne congelada de  bovino,NA,NA,252.73,"Francia, Portugal, Italia",2.6,"Portugal, Italia, Francia",19.4,"Portugal, Francia, Marruecos",15.9,"Portugal, Francia, Marruecos",15.9,82.6,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111114,Preparaciones y despojos de  bovino,NA,NA,46.49,"Francia, Portugal, Italia",2.6,"Portugal, Italia, Francia",19.4,"Francia, Portugal, Reino Unido",3.2,"Francia, Portugal, Reino Unido",3.2,77.9,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111115,Despojos de bovino,NA,NA,80.27,"Francia, Portugal, Italia",2.6,"Portugal, Italia, Francia",19.4,"Portugal, Francia, Italia",10,"Portugal, Francia, Italia",10,69.7,NA
 2025,E,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111211,Animales vivos de  ovino-caprino,NA,NA,189.71,"Francia, Portugal, Italia",2.6,"Argelia, Francia, Italia",7.6,"Argelia, Marruecos, Alemania",-18.6,"Argelia, Marruecos, Alemania",-18.6,33.3,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111212,Carne de ovino-caprino,NA,NA,414.79,"Francia, Portugal, Italia",2.6,"Argelia, Francia, Italia",7.6,"Francia, Argelia, Italia",25.7,"Francia, Argelia, Italia",25.7,59.3,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111213,Preparaciones de  ovino-caprino,NA,NA,3.87,"Francia, Portugal, Italia",2.6,"Argelia, Francia, Italia",7.6,"Francia, Países Bajos, Portugal",30,"Francia, Países Bajos, Portugal",30,82.2,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111214,Despojos,NA,NA,16.98,"Francia, Portugal, Italia",2.6,"Argelia, Francia, Italia",7.6,"Grecia, Italia, Francia",12.1,"Grecia, Italia, Francia",12.1,94.6,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111212,Carne de ovino-caprino,NA,NA,414.79,"Francia, Portugal, Italia",2.6,"Argelia, Francia, Italia",7.6,"Francia, Argelia, Italia",25.7,"Francia, Argelia, Italia",25.7,59.8,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111213,Preparaciones de  ovino-caprino,NA,NA,3.87,"Francia, Portugal, Italia",2.6,"Argelia, Francia, Italia",7.6,"Francia, Países Bajos, Portugal",30,"Francia, Países Bajos, Portugal",30,77.1,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111214,Despojos,NA,NA,16.98,"Francia, Portugal, Italia",2.6,"Argelia, Francia, Italia",7.6,"Grecia, Italia, Francia",12.1,"Grecia, Italia, Francia",12.1,95.0,NA
 2025,E,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111311,Animales vivos de porcino,NA,NA,210.37,"Francia, Portugal, Italia",2.6,"Francia, China, Italia",-3.3,"Portugal, Italia, Alemania",3.1,"Portugal, Italia, Alemania",3.1,99.9,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111312,Carne fresca y refrigerada de porcino,NA,NA,2975.8,"Francia, Portugal, Italia",2.6,"Francia, China, Italia",-3.3,"Italia, Francia, Rumanía",-8.5,"Italia, Francia, Rumanía",-8.5,84.2,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111313,Carne congelada de  porcino,NA,NA,2769.97,"Francia, Portugal, Italia",2.6,"Francia, China, Italia",-3.3,"Japón, China, Corea del Sur",-2.8,"Japón, China, Corea del Sur",-2.8,20.5,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111314,Tocino de porcino,NA,NA,139.75,"Francia, Portugal, Italia",2.6,"Francia, China, Italia",-3.3,"Filipinas, Vietnam, Alemania",-5.8,"Filipinas, Vietnam, Alemania",-5.8,35.0,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111315,Jamones y paleta de porcino,NA,NA,806.51,"Francia, Portugal, Italia",2.6,"Francia, China, Italia",-3.3,"Francia, Alemania, Portugal",5.1,"Francia, Alemania, Portugal",5.1,63.3,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111316,Preparaciones de  porcino,NA,NA,996.26,"Francia, Portugal, Italia",2.6,"Francia, China, Italia",-3.3,"Francia, Reino Unido, Portugal",4.7,"Francia, Reino Unido, Portugal",4.7,67.5,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111317,Despojos de  porcino,NA,NA,769.82,"Francia, Portugal, Italia",2.6,"Francia, China, Italia",-3.3,"China, Filipinas, Francia",-2.8,"China, Filipinas, Francia",-2.8,9.7,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111312,Carne fresca y refrigerada de porcino,NA,NA,2975.8,"Francia, Portugal, Italia",2.6,"Francia, China, Italia",-3.3,"Italia, Francia, Rumanía",-8.5,"Italia, Francia, Rumanía",-8.5,94.0,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111313,Carne congelada de  porcino,NA,NA,2769.97,"Francia, Portugal, Italia",2.6,"Francia, China, Italia",-3.3,"Japón, China, Corea del Sur",-2.8,"Japón, China, Corea del Sur",-2.8,21.9,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111314,Tocino de porcino,NA,NA,139.75,"Francia, Portugal, Italia",2.6,"Francia, China, Italia",-3.3,"Filipinas, Vietnam, Alemania",-5.8,"Filipinas, Vietnam, Alemania",-5.8,37.5,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111315,Jamones y paleta de porcino,NA,NA,806.51,"Francia, Portugal, Italia",2.6,"Francia, China, Italia",-3.3,"Francia, Alemania, Portugal",5.1,"Francia, Alemania, Portugal",5.1,65.0,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111316,Preparaciones de  porcino,NA,NA,996.26,"Francia, Portugal, Italia",2.6,"Francia, China, Italia",-3.3,"Francia, Reino Unido, Portugal",4.7,"Francia, Reino Unido, Portugal",4.7,69.7,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111317,Despojos de  porcino,NA,NA,769.82,"Francia, Portugal, Italia",2.6,"Francia, China, Italia",-3.3,"China, Filipinas, Francia",-2.8,"China, Filipinas, Francia",-2.8,9.8,NA
 2025,E,Agroalimentario,11,Sectores Cárnicos,1114,Aves y huevos,111411,Animales vivos de  aves,NA,NA,124.76,"Francia, Portugal, Italia",2.6,"Portugal, Francia, Reino Unido",19,"Portugal, Argelia, Marruecos",12.7,"Portugal, Argelia, Marruecos",12.7,28.6,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1114,Aves y huevos,111412,Carne de aves,NA,NA,629.53,"Francia, Portugal, Italia",2.6,"Portugal, Francia, Reino Unido",19,"Portugal, Francia, Alemania",23.2,"Portugal, Francia, Alemania",23.2,77.0,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1114,Aves y huevos,111413,Huevos y Ovoproductos,NA,NA,390.75,"Francia, Portugal, Italia",2.6,"Portugal, Francia, Reino Unido",19,"Francia, Portugal, Países Bajos",20.7,"Francia, Portugal, Países Bajos",20.7,78.3,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1114,Aves y huevos,111414,Preparados  de aves,NA,NA,198.5,"Francia, Portugal, Italia",2.6,"Portugal, Francia, Reino Unido",19,"Portugal, Reino Unido, Francia",8.3,"Portugal, Reino Unido, Francia",8.3,77.7,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1115,Otros animales,111511,Otros animales vivos,NA,NA,92.5,"Francia, Portugal, Italia",2.6,"Italia, Países Bajos, Francia",10.1,"Países Bajos, Emiratos Árabes Unidos, Francia",18.8,"Países Bajos, Emiratos Árabes Unidos, Francia",18.8,50.2,NA
-2025,E,Agroalimentario,11,Sectores Cárnicos,1115,Otros animales,111512,Carne de otros animales,NA,NA,119.16,"Francia, Portugal, Italia",2.6,"Italia, Países Bajos, Francia",10.1,"Italia, Alemania, Portugal",4.2,"Italia, Alemania, Portugal",4.2,90.8,NA
-2025,E,Agroalimentario,12,Lácteos,1211,Lácteos,121111,Leche,NA,NA,429.91,"Portugal, Francia, Italia",1.3,"Portugal, Francia, Italia",1.3,"Portugal, Francia, Países Bajos",-7.1,"Portugal, Francia, Países Bajos",-7.1,61.2,NA
-2025,E,Agroalimentario,12,Lácteos,1211,Lácteos,121112,Mantequilla,NA,NA,119.18,"Portugal, Francia, Italia",1.3,"Portugal, Francia, Italia",1.3,"Italia, Francia, Bélgica",13.3,"Italia, Francia, Bélgica",13.3,84.5,NA
-2025,E,Agroalimentario,12,Lácteos,1211,Lácteos,121113,Quesos,NA,NA,878.81,"Portugal, Francia, Italia",1.3,"Portugal, Francia, Italia",1.3,"Francia, Portugal, Italia",4.6,"Francia, Portugal, Italia",4.6,65.0,NA
-2025,E,Agroalimentario,12,Lácteos,1211,Lácteos,121114,Yogures y lactosueros,NA,NA,443.7,"Portugal, Francia, Italia",1.3,"Portugal, Francia, Italia",1.3,"Portugal, Francia, Italia",0.8,"Portugal, Francia, Italia",0.8,72.4,NA
-2025,E,Agroalimentario,13,Pesca,1311,Pesca,131111,Peces vivos,NA,NA,40.68,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",8.8,"Francia, Italia, Portugal",22.9,"Francia, Italia, Portugal",22.9,89.4,NA
-2025,E,Agroalimentario,13,Pesca,1311,Pesca,131112,Pescado fresco,NA,NA,879.75,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",8.8,"Portugal, Italia, Francia",9.9,"Portugal, Italia, Francia",9.9,80.7,NA
-2025,E,Agroalimentario,13,Pesca,1311,Pesca,131113,Pescado congelado,NA,NA,1347.35,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",8.8,"Italia, Portugal, China",20.5,"Italia, Portugal, China",20.5,54.3,NA
-2025,E,Agroalimentario,13,Pesca,1311,Pesca,131114,"Moluscos, crustáceos y otros invertebrados acuáticos",NA,NA,1756.84,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",2.8,"Italia, Portugal, Francia",2.8,84.4,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1114,Aves y huevos,111412,Carne de aves,NA,NA,629.53,"Francia, Portugal, Italia",2.6,"Portugal, Francia, Reino Unido",19,"Portugal, Francia, Alemania",23.2,"Portugal, Francia, Alemania",23.2,77.3,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1114,Aves y huevos,111413,Huevos y Ovoproductos,NA,NA,390.75,"Francia, Portugal, Italia",2.6,"Portugal, Francia, Reino Unido",19,"Francia, Portugal, Países Bajos",20.7,"Francia, Portugal, Países Bajos",20.7,78.5,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1114,Aves y huevos,111414,Preparados  de aves,NA,NA,198.5,"Francia, Portugal, Italia",2.6,"Portugal, Francia, Reino Unido",19,"Portugal, Reino Unido, Francia",8.3,"Portugal, Reino Unido, Francia",8.3,78.2,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1115,Otros animales,111511,Otros animales vivos,NA,NA,92.5,"Francia, Portugal, Italia",2.6,"Italia, Países Bajos, Francia",10.1,"Países Bajos, Emiratos Árabes Unidos, Francia",18.8,"Países Bajos, Emiratos Árabes Unidos, Francia",18.8,50.6,NA
+2025,E,Agroalimentario,11,Sectores Cárnicos,1115,Otros animales,111512,Carne de otros animales,NA,NA,119.16,"Francia, Portugal, Italia",2.6,"Italia, Países Bajos, Francia",10.1,"Italia, Alemania, Portugal",4.2,"Italia, Alemania, Portugal",4.2,91.9,NA
+2025,E,Agroalimentario,12,Lácteos,1211,Lácteos,121111,Leche,NA,NA,429.91,"Portugal, Francia, Italia",1.3,"Portugal, Francia, Italia",1.3,"Portugal, Francia, Países Bajos",-7.1,"Portugal, Francia, Países Bajos",-7.1,61.3,NA
+2025,E,Agroalimentario,12,Lácteos,1211,Lácteos,121112,Mantequilla,NA,NA,119.18,"Portugal, Francia, Italia",1.3,"Portugal, Francia, Italia",1.3,"Italia, Francia, Bélgica",13.3,"Italia, Francia, Bélgica",13.3,84.6,NA
+2025,E,Agroalimentario,12,Lácteos,1211,Lácteos,121113,Quesos,NA,NA,878.81,"Portugal, Francia, Italia",1.3,"Portugal, Francia, Italia",1.3,"Francia, Portugal, Italia",4.6,"Francia, Portugal, Italia",4.6,65.4,NA
+2025,E,Agroalimentario,12,Lácteos,1211,Lácteos,121114,Yogures y lactosueros,NA,NA,443.7,"Portugal, Francia, Italia",1.3,"Portugal, Francia, Italia",1.3,"Portugal, Francia, Italia",0.8,"Portugal, Francia, Italia",0.8,72.5,NA
+2025,E,Agroalimentario,13,Pesca,1311,Pesca,131111,Peces vivos,NA,NA,40.68,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",8.8,"Francia, Italia, Portugal",22.9,"Francia, Italia, Portugal",22.9,89.6,NA
+2025,E,Agroalimentario,13,Pesca,1311,Pesca,131112,Pescado fresco,NA,NA,879.75,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",8.8,"Portugal, Italia, Francia",9.9,"Portugal, Italia, Francia",9.9,81.0,NA
+2025,E,Agroalimentario,13,Pesca,1311,Pesca,131113,Pescado congelado,NA,NA,1347.35,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",8.8,"Italia, Portugal, China",20.5,"Italia, Portugal, China",20.5,55.4,NA
+2025,E,Agroalimentario,13,Pesca,1311,Pesca,131114,"Moluscos, crustáceos y otros invertebrados acuáticos",NA,NA,1756.84,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",2.8,"Italia, Portugal, Francia",2.8,85.0,NA
 2025,E,Agroalimentario,13,Pesca,1311,Pesca,131115,Los demás preparados de productos de la pesca,NA,NA,112.76,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",8.8,"Portugal, Italia, Francia",1.8,"Portugal, Italia, Francia",1.8,80.8,NA
-2025,E,Agroalimentario,13,Pesca,1311,Pesca,131116,Conservas de pescados,NA,NA,1223.65,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",8.8,"Italia, Francia, Portugal",8,"Italia, Francia, Portugal",8,86.2,NA
-2025,E,Agroalimentario,13,Pesca,1311,Pesca,131117,Conservas de moluscos y crustaceos,NA,NA,379.39,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",8.8,"Francia, Estados Unidos, Italia",2.8,"Francia, Estados Unidos, Italia",2.8,69.6,NA
-2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141111,Trigo,NA,NA,75.58,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Túnez, Portugal, Italia",-54.3,"Túnez, Portugal, Italia",-54.3,47.5,NA
+2025,E,Agroalimentario,13,Pesca,1311,Pesca,131116,Conservas de pescados,NA,NA,1223.65,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",8.8,"Italia, Francia, Portugal",8,"Italia, Francia, Portugal",8,87.1,NA
+2025,E,Agroalimentario,13,Pesca,1311,Pesca,131117,Conservas de moluscos y crustaceos,NA,NA,379.39,"Italia, Portugal, Francia",8.8,"Italia, Portugal, Francia",8.8,"Francia, Estados Unidos, Italia",2.8,"Francia, Estados Unidos, Italia",2.8,70.8,NA
+2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141111,Trigo,NA,NA,75.58,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Túnez, Portugal, Italia",-54.3,"Túnez, Portugal, Italia",-54.3,47.6,NA
 2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141112,Cebada,NA,NA,22.07,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Bélgica",40.1,"Portugal, Francia, Bélgica",40.1,98.5,NA
-2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141113,Maíz,NA,NA,100.04,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Francia, Portugal, Reino Unido",-15.9,"Francia, Portugal, Reino Unido",-15.9,69.2,NA
+2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141113,Maíz,NA,NA,100.04,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Francia, Portugal, Reino Unido",-15.9,"Francia, Portugal, Reino Unido",-15.9,69.9,NA
 2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141114,Arroz,NA,NA,193.94,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",14.7,"Portugal, Francia, Reino Unido",14.7,74.5,NA
-2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141115,Otros cereales,NA,NA,26.41,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Italia",2.3,"Portugal, Francia, Italia",2.3,87.8,NA
+2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141115,Otros cereales,NA,NA,26.41,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Italia",2.3,"Portugal, Francia, Italia",2.3,89.0,NA
 2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141116,Harina de trigo,NA,NA,58.19,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Italia",37.6,"Portugal, Francia, Italia",37.6,88.9,NA
-2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141117,Otras harinas,NA,NA,28.46,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Francia, Omán, Portugal",1.8,"Francia, Omán, Portugal",1.8,66.6,NA
+2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141117,Otras harinas,NA,NA,28.46,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Francia, Omán, Portugal",1.8,"Francia, Omán, Portugal",1.8,66.9,NA
 2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141118,Malta,NA,NA,23.25,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Portugal, República Democrática del Congo, Burkina Faso",-48.9,"Portugal, República Democrática del Congo, Burkina Faso",-48.9,67.8,NA
 2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141119,Almidón,NA,NA,63.32,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Francia, Portugal, Reino Unido",-12.7,"Francia, Portugal, Reino Unido",-12.7,88.0,NA
 2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141120,Grañones y sémola de trigo,NA,NA,42.07,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Francia, Mali, Côte d’Ivoire",5.4,"Francia, Mali, Côte d’Ivoire",5.4,62.3,NA
-2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141121,Otros productos de cereales,NA,NA,199.47,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Francia, Portugal, Alemania",24,"Francia, Portugal, Alemania",24,0.0,NA
+2025,E,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141121,Otros productos de cereales,NA,NA,199.47,"Portugal, Francia, Reino Unido",-5.8,"Portugal, Francia, Reino Unido",-5.8,"Francia, Portugal, Alemania",24,"Francia, Portugal, Alemania",24,68.7,NA
 2025,E,Agroalimentario,15,Industrias alimentarias y piensos,1511,Industrias alimentarias,151111,Residuos de productos alimentarios,NA,NA,427.94,"Francia, Portugal, Italia",7.2,"Francia, Portugal, Italia",7.2,"Francia, Portugal, Italia",-1.3,"Francia, Portugal, Italia",-1.3,77.9,NA
-2025,E,Agroalimentario,15,Industrias alimentarias y piensos,1511,Industrias alimentarias,151112,Piensos,NA,NA,1465.81,"Francia, Portugal, Italia",7.2,"Francia, Portugal, Italia",7.2,"Portugal, Francia, Italia",9.9,"Portugal, Francia, Italia",9.9,63.5,NA
-2025,E,Agroalimentario,16,Flores y plantas,1611,Flores y plantas,161111,Flores y plantas,NA,NA,742.83,"Francia, Países Bajos, Portugal",6.1,"Francia, Países Bajos, Portugal",6.1,"Francia, Países Bajos, Portugal",6.1,"Francia, Países Bajos, Portugal",6.1,76.8,NA
-2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171111,Tomate,NA,NA,727.54,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",NA,"Alemania, Reino Unido, Francia",NA,80.8,NA
-2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171112,Pimiento,NA,NA,1767.95,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",6.1,"Alemania, Reino Unido, Francia",6.1,81.8,NA
-2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171113,Pepino,NA,NA,1185.44,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Países Bajos",20.9,"Alemania, Reino Unido, Países Bajos",20.9,82.1,NA
-2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171114,Lechuga,NA,NA,1043.89,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Francia, Reino Unido",3.2,"Alemania, Francia, Reino Unido",3.2,79.6,NA
-2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171115,Patata,NA,NA,147.28,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Portugal, Francia, Alemania",-33,"Portugal, Francia, Alemania",-33,96.1,NA
-2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171116,Cebolla,NA,NA,179.94,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Portugal",-3.5,"Alemania, Reino Unido, Portugal",-3.5,70.9,NA
-2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171117,Ajos,NA,NA,454.9,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Estados Unidos, Reino Unido",-0.1,"Alemania, Estados Unidos, Reino Unido",-0.1,65.7,NA
-2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171118,Zanahoria,NA,NA,68.72,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Francia, Alemania, Portugal",-39,"Francia, Alemania, Portugal",-39,91.7,NA
-2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171119,Las demás hortalizas frescas,NA,NA,2266.95,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",-2,"Alemania, Reino Unido, Francia",-2,73.3,NA
-2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171120,Hortalizas congeladas,NA,NA,905.22,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Francia, Alemania, Estados Unidos",5.8,"Francia, Alemania, Estados Unidos",5.8,71.4,NA
-2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171121,Hortalizas conservadas o secas,NA,NA,175.01,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Francia, Portugal",-1.5,"Alemania, Francia, Portugal",-1.5,76.9,NA
+2025,E,Agroalimentario,15,Industrias alimentarias y piensos,1511,Industrias alimentarias,151112,Piensos,NA,NA,1465.81,"Francia, Portugal, Italia",7.2,"Francia, Portugal, Italia",7.2,"Portugal, Francia, Italia",9.9,"Portugal, Francia, Italia",9.9,64.8,NA
+2025,E,Agroalimentario,16,Flores y plantas,1611,Flores y plantas,161111,Flores y plantas,NA,NA,742.83,"Francia, Países Bajos, Portugal",6.1,"Francia, Países Bajos, Portugal",6.1,"Francia, Países Bajos, Portugal",6.1,"Francia, Países Bajos, Portugal",6.1,77.1,NA
+2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171111,Tomate,NA,NA,727.54,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",NA,"Alemania, Reino Unido, Francia",NA,80.1,NA
+2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171112,Pimiento,NA,NA,1767.95,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",6.1,"Alemania, Reino Unido, Francia",6.1,82.6,NA
+2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171113,Pepino,NA,NA,1185.44,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Países Bajos",20.9,"Alemania, Reino Unido, Países Bajos",20.9,82.6,NA
+2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171114,Lechuga,NA,NA,1043.89,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Francia, Reino Unido",3.2,"Alemania, Francia, Reino Unido",3.2,80.2,NA
+2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171115,Patata,NA,NA,147.28,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Portugal, Francia, Alemania",-33,"Portugal, Francia, Alemania",-33,96.2,NA
+2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171116,Cebolla,NA,NA,179.94,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Portugal",-3.5,"Alemania, Reino Unido, Portugal",-3.5,71.0,NA
+2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171117,Ajos,NA,NA,454.9,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Estados Unidos, Reino Unido",-0.1,"Alemania, Estados Unidos, Reino Unido",-0.1,66.7,NA
+2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171118,Zanahoria,NA,NA,68.72,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Francia, Alemania, Portugal",-39,"Francia, Alemania, Portugal",-39,91.8,NA
+2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171119,Las demás hortalizas frescas,NA,NA,2266.95,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",-2,"Alemania, Reino Unido, Francia",-2,73.8,NA
+2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171120,Hortalizas congeladas,NA,NA,905.22,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Francia, Alemania, Estados Unidos",5.8,"Francia, Alemania, Estados Unidos",5.8,71.7,NA
+2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171121,Hortalizas conservadas o secas,NA,NA,175.01,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Francia, Portugal",-1.5,"Alemania, Francia, Portugal",-1.5,77.6,NA
 2025,E,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171122,Legumbres,NA,NA,60.46,"Alemania, Reino Unido, Francia",11.5,"Alemania, Reino Unido, Francia",11.5,"Alemania, Países Bajos, Francia",-26.3,"Alemania, Países Bajos, Francia",-26.3,83.1,NA
-2025,E,Agroalimentario,18,Frutas,1811,Frutas,181111,Cítricos,NA,NA,3697.82,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",4.6,"Alemania, Francia, Reino Unido",4.6,86.0,NA
-2025,E,Agroalimentario,18,Frutas,1811,Frutas,181112,Melones y sandías,NA,NA,958.47,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",8.7,"Alemania, Francia, Reino Unido",8.7,84.9,NA
-2025,E,Agroalimentario,18,Frutas,1811,Frutas,181113,Melocotón y nectarina,NA,NA,1186.55,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Italia",15.5,"Alemania, Francia, Italia",15.5,86.1,NA
-2025,E,Agroalimentario,18,Frutas,1811,Frutas,181114,Fresas,NA,NA,871.09,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Reino Unido, Francia",10.5,"Alemania, Reino Unido, Francia",10.5,80.4,NA
-2025,E,Agroalimentario,18,Frutas,1811,Frutas,181115,Los demás frutos rojos,NA,NA,1243.49,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Países Bajos, Reino Unido",10.7,"Alemania, Países Bajos, Reino Unido",10.7,82.2,NA
-2025,E,Agroalimentario,18,Frutas,1811,Frutas,181116,Caquis,NA,NA,261.51,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Italia",5.4,"Alemania, Francia, Italia",5.4,77.2,NA
-2025,E,Agroalimentario,18,Frutas,1811,Frutas,181117,"Manzanas, peras y membrillos",NA,NA,204.47,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Marruecos, Italia, Francia",4.7,"Marruecos, Italia, Francia",4.7,46.8,NA
-2025,E,Agroalimentario,18,Frutas,1811,Frutas,181118,Plátano,NA,NA,92.42,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Portugal, Francia, Marruecos",-17.5,"Portugal, Francia, Marruecos",-17.5,91.6,NA
-2025,E,Agroalimentario,18,Frutas,1811,Frutas,181119,Almendras y avellanas,NA,NA,857.97,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Italia, Francia",23,"Alemania, Italia, Francia",23,86.6,NA
-2025,E,Agroalimentario,18,Frutas,1811,Frutas,181120,Uva,NA,NA,477.88,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Reino Unido, Portugal",6.6,"Alemania, Reino Unido, Portugal",6.6,74.4,NA
-2025,E,Agroalimentario,18,Frutas,1811,Frutas,181121,Las demás frutas frescas y desecadas,NA,NA,1863.8,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Francia, Alemania, Portugal",15.1,"Francia, Alemania, Portugal",15.1,85.1,NA
-2025,E,Agroalimentario,18,Frutas,1811,Frutas,181122,Frutas congeladas,NA,NA,86.48,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Francia, Alemania, Bélgica",8.8,"Francia, Alemania, Bélgica",8.8,77.0,NA
-2025,E,Agroalimentario,18,Frutas,1811,Frutas,181123,Frutas conservadas provisionalmente y cortezas,NA,NA,115.88,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Portugal",12.9,"Alemania, Francia, Portugal",12.9,87.1,NA
-2025,E,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191111,Tomate,NA,NA,542.68,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Estados Unidos",3.5,"Alemania, Francia, Italia",-10,"Alemania, Francia, Italia",-10,75.9,NA
-2025,E,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191112,Aceituna,NA,NA,985.37,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Estados Unidos",3.5,"Estados Unidos, Italia, Francia",0.7,"Estados Unidos, Italia, Francia",0.7,36.3,NA
-2025,E,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191113,Espárragos,NA,NA,17.66,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Italia, Suecia",12.2,"Francia, Italia, Suecia",12.2,95.2,NA
-2025,E,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191114,Las demás hortalizas,NA,NA,942.41,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Portugal",-3.7,"Francia, Reino Unido, Portugal",-3.7,62.1,NA
-2025,E,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191115,Zumos,NA,NA,1021.66,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Alemania",11.7,"Francia, Reino Unido, Alemania",11.7,57.1,NA
-2025,E,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191116,Confituras y mermeladas,NA,NA,265.66,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Estados Unidos",3.5,"Portugal, Alemania, Francia",8.1,"Portugal, Alemania, Francia",8.1,74.8,NA
-2025,E,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191117,Las demás frutas,NA,NA,599.49,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Alemania, Países Bajos",22.4,"Francia, Alemania, Países Bajos",22.4,71.1,NA
-2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201111,Agua,NA,NA,52.8,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Francia, Portugal, Andorra",8.1,"Francia, Portugal, Andorra",8.1,53.9,NA
-2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201112,Bebidas refrescantes,NA,NA,718.58,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Portugal, Francia, Reino Unido",18.4,"Portugal, Francia, Reino Unido",18.4,61.7,NA
-2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201113,Cerveza,NA,NA,327.9,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"China, Cuba, Reino Unido",8.4,"China, Cuba, Reino Unido",8.4,21.7,NA
-2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201114,Mosto,NA,NA,400.26,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Italia, China, Francia",5.6,"Italia, China, Francia",5.6,54.6,NA
-2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201115,Vino,NA,NA,2899.64,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Alemania, Reino Unido, Estados Unidos",-2.6,"Alemania, Reino Unido, Estados Unidos",-2.6,46.7,NA
-2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201116,Vermut y vino aromátizado,NA,NA,82.67,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Estados Unidos, Francia, Bélgica",-7.1,"Estados Unidos, Francia, Bélgica",-7.1,43.0,NA
-2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201117,Otras bebidas fermentadas,NA,NA,38.6,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Estados Unidos, Portugal, Reino Unido",5.4,"Estados Unidos, Portugal, Reino Unido",5.4,29.9,NA
-2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201118,Bebidas espirituosas,NA,NA,1081.73,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Filipinas, Alemania, Italia",4,"Filipinas, Alemania, Italia",4,41.0,NA
-2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201119,Alcohol,NA,NA,428.41,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Francia, Grecia, Italia",5.5,"Francia, Grecia, Italia",5.5,66.9,NA
-2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201120,Vinagre y sucedáneos,NA,NA,70.07,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Estados Unidos, Reino Unido, Francia",4.4,"Estados Unidos, Reino Unido, Francia",4.4,38.1,NA
-2025,E,Agroalimentario,21,Tabaco,2111,Tabaco,211111,Tabaco,NA,NA,548.23,"Indeterminado Extra., Portugal, Alemania",22.5,"Indeterminado Extra., Portugal, Alemania",22.5,"Indeterminado Extra., Portugal, Alemania",22.5,"Indeterminado Extra., Portugal, Alemania",22.5,44.5,NA
+2025,E,Agroalimentario,18,Frutas,1811,Frutas,181111,Cítricos,NA,NA,3697.82,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",4.6,"Alemania, Francia, Reino Unido",4.6,86.4,NA
+2025,E,Agroalimentario,18,Frutas,1811,Frutas,181112,Melones y sandías,NA,NA,958.47,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",8.7,"Alemania, Francia, Reino Unido",8.7,85.2,NA
+2025,E,Agroalimentario,18,Frutas,1811,Frutas,181113,Melocotón y nectarina,NA,NA,1186.55,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Italia",15.5,"Alemania, Francia, Italia",15.5,86.8,NA
+2025,E,Agroalimentario,18,Frutas,1811,Frutas,181114,Fresas,NA,NA,871.09,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Reino Unido, Francia",10.5,"Alemania, Reino Unido, Francia",10.5,80.5,NA
+2025,E,Agroalimentario,18,Frutas,1811,Frutas,181115,Los demás frutos rojos,NA,NA,1243.49,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Países Bajos, Reino Unido",10.7,"Alemania, Países Bajos, Reino Unido",10.7,82.9,NA
+2025,E,Agroalimentario,18,Frutas,1811,Frutas,181116,Caquis,NA,NA,261.51,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Italia",5.4,"Alemania, Francia, Italia",5.4,78.3,NA
+2025,E,Agroalimentario,18,Frutas,1811,Frutas,181117,"Manzanas, peras y membrillos",NA,NA,204.47,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Marruecos, Italia, Francia",4.7,"Marruecos, Italia, Francia",4.7,47.3,NA
+2025,E,Agroalimentario,18,Frutas,1811,Frutas,181118,Plátano,NA,NA,92.42,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Portugal, Francia, Marruecos",-17.5,"Portugal, Francia, Marruecos",-17.5,93.3,NA
+2025,E,Agroalimentario,18,Frutas,1811,Frutas,181119,Almendras y avellanas,NA,NA,857.97,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Italia, Francia",23,"Alemania, Italia, Francia",23,86.8,NA
+2025,E,Agroalimentario,18,Frutas,1811,Frutas,181120,Uva,NA,NA,477.88,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Reino Unido, Portugal",6.6,"Alemania, Reino Unido, Portugal",6.6,74.8,NA
+2025,E,Agroalimentario,18,Frutas,1811,Frutas,181121,Las demás frutas frescas y desecadas,NA,NA,1863.8,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Francia, Alemania, Portugal",15.1,"Francia, Alemania, Portugal",15.1,85.9,NA
+2025,E,Agroalimentario,18,Frutas,1811,Frutas,181122,Frutas congeladas,NA,NA,86.48,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Francia, Alemania, Bélgica",8.8,"Francia, Alemania, Bélgica",8.8,77.6,NA
+2025,E,Agroalimentario,18,Frutas,1811,Frutas,181123,Frutas conservadas provisionalmente y cortezas,NA,NA,115.88,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Reino Unido",9.7,"Alemania, Francia, Portugal",12.9,"Alemania, Francia, Portugal",12.9,87.3,NA
+2025,E,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191111,Tomate,NA,NA,542.68,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Estados Unidos",3.5,"Alemania, Francia, Italia",-10,"Alemania, Francia, Italia",-10,77.5,NA
+2025,E,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191112,Aceituna,NA,NA,985.37,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Estados Unidos",3.5,"Estados Unidos, Italia, Francia",0.7,"Estados Unidos, Italia, Francia",0.7,37.0,NA
+2025,E,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191113,Espárragos,NA,NA,17.66,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Italia, Suecia",12.2,"Francia, Italia, Suecia",12.2,95.6,NA
+2025,E,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191114,Las demás hortalizas,NA,NA,942.41,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Portugal",-3.7,"Francia, Reino Unido, Portugal",-3.7,62.2,NA
+2025,E,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191115,Zumos,NA,NA,1021.66,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Alemania",11.7,"Francia, Reino Unido, Alemania",11.7,57.3,NA
+2025,E,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191116,Confituras y mermeladas,NA,NA,265.66,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Estados Unidos",3.5,"Portugal, Alemania, Francia",8.1,"Portugal, Alemania, Francia",8.1,74.9,NA
+2025,E,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191117,Las demás frutas,NA,NA,599.49,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Reino Unido, Estados Unidos",3.5,"Francia, Alemania, Países Bajos",22.4,"Francia, Alemania, Países Bajos",22.4,72.9,NA
+2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201111,Agua,NA,NA,52.8,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Francia, Portugal, Andorra",8.1,"Francia, Portugal, Andorra",8.1,54.3,NA
+2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201112,Bebidas refrescantes,NA,NA,718.58,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Portugal, Francia, Reino Unido",18.4,"Portugal, Francia, Reino Unido",18.4,62.3,NA
+2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201113,Cerveza,NA,NA,327.9,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"China, Cuba, Reino Unido",8.4,"China, Cuba, Reino Unido",8.4,22.5,NA
+2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201114,Mosto,NA,NA,400.26,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Italia, China, Francia",5.6,"Italia, China, Francia",5.6,55.4,NA
+2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201115,Vino,NA,NA,2899.64,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Alemania, Reino Unido, Estados Unidos",-2.6,"Alemania, Reino Unido, Estados Unidos",-2.6,47.3,NA
+2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201116,Vermut y vino aromátizado,NA,NA,82.67,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Estados Unidos, Francia, Bélgica",-7.1,"Estados Unidos, Francia, Bélgica",-7.1,43.5,NA
+2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201117,Otras bebidas fermentadas,NA,NA,38.6,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Estados Unidos, Portugal, Reino Unido",5.4,"Estados Unidos, Portugal, Reino Unido",5.4,30.2,NA
+2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201118,Bebidas espirituosas,NA,NA,1081.73,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Filipinas, Alemania, Italia",4,"Filipinas, Alemania, Italia",4,42.9,NA
+2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201119,Alcohol,NA,NA,428.41,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Francia, Grecia, Italia",5.5,"Francia, Grecia, Italia",5.5,98.1,NA
+2025,E,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201120,Vinagre y sucedáneos,NA,NA,70.07,"Francia, Alemania, Reino Unido",2.5,"Francia, Alemania, Reino Unido",2.5,"Estados Unidos, Reino Unido, Francia",4.4,"Estados Unidos, Reino Unido, Francia",4.4,38.2,NA
+2025,E,Agroalimentario,21,Tabaco,2111,Tabaco,211111,Tabaco,NA,NA,548.23,"Indeterminado Extra., Portugal, Alemania",22.5,"Indeterminado Extra., Portugal, Alemania",22.5,"Indeterminado Extra., Portugal, Alemania",22.5,"Indeterminado Extra., Portugal, Alemania",22.5,51.1,NA
 2025,E,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221111,Aceite de soja,NA,NA,294.02,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",-12.4,"Marruecos, Italia, Francia",-1.8,"Marruecos, Italia, Francia",-1.8,43.3,NA
-2025,E,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221112,Aceite de oliva,NA,NA,5143.8,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",-21.8,"Italia, Estados Unidos, Portugal",-21.8,52.3,NA
+2025,E,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221112,Aceite de oliva,NA,NA,5143.8,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",-21.8,"Italia, Estados Unidos, Portugal",-21.8,52.5,NA
 2025,E,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221113,Aceite de girasol,NA,NA,366.76,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",-12.4,"Portugal, Francia, Estados Unidos",1.4,"Portugal, Francia, Estados Unidos",1.4,64.4,NA
-2025,E,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221114,Margarina,NA,NA,374.59,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",-12.4,"Francia, Portugal, Estados Unidos",10.5,"Francia, Portugal, Estados Unidos",10.5,59.8,NA
-2025,E,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221115,Las demás grasas y aceites animales,NA,NA,118.27,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Francia, Países Bajos",4.8,"Italia, Francia, Países Bajos",4.8,72.9,NA
-2025,E,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221116,Las demás grasas y aceites vegetales,NA,NA,862.66,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",32.8,"Italia, Estados Unidos, Portugal",32.8,61.5,NA
+2025,E,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221114,Margarina,NA,NA,374.59,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",-12.4,"Francia, Portugal, Estados Unidos",10.5,"Francia, Portugal, Estados Unidos",10.5,60.2,NA
+2025,E,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221115,Las demás grasas y aceites animales,NA,NA,118.27,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Francia, Países Bajos",4.8,"Italia, Francia, Países Bajos",4.8,73.0,NA
+2025,E,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221116,Las demás grasas y aceites vegetales,NA,NA,862.66,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",32.8,"Italia, Estados Unidos, Portugal",32.8,61.6,NA
 2025,E,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221117,Residuos,NA,NA,455.01,"Italia, Estados Unidos, Portugal",-12.4,"Italia, Estados Unidos, Portugal",-12.4,"Suecia, Portugal, Países Bajos",31.1,"Suecia, Portugal, Países Bajos",31.1,97.1,NA
 2025,E,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231111,Soja,NA,NA,9.35,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Alemania, Portugal, Francia",221.2,"Alemania, Portugal, Francia",221.2,98.0,NA
-2025,E,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231112,Girasol,NA,NA,110.65,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Francia, Ucrania, Rumanía",43.1,"Francia, Ucrania, Rumanía",43.1,53.0,NA
-2025,E,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231113,Otros productos del capítulo 12,NA,NA,457.99,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Francia, Portugal, Alemania",7.9,"Francia, Portugal, Alemania",7.9,63.7,NA
+2025,E,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231112,Girasol,NA,NA,110.65,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Francia, Ucrania, Rumanía",43.1,"Francia, Ucrania, Rumanía",43.1,64.9,NA
+2025,E,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231113,Otros productos del capítulo 12,NA,NA,457.99,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Francia, Portugal, Alemania",7.9,"Francia, Portugal, Alemania",7.9,64.4,NA
 2025,E,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231114,Forrajes,NA,NA,343.52,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Emiratos Árabes Unidos, Arabia Saudí, Jordania",43.4,"Emiratos Árabes Unidos, Arabia Saudí, Jordania",43.4,13.9,NA
-2025,E,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231115,Mandioca,NA,NA,42.11,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Francia, Portugal, Reino Unido",26.1,"Francia, Portugal, Reino Unido",26.1,80.2,NA
-2025,E,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241111,Café,NA,NA,554.8,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",39.1,"Portugal, Francia, Italia",48.9,"Portugal, Francia, Italia",48.9,74.9,NA
-2025,E,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241112,Extractos de café,NA,NA,830.49,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",39.1,"Reino Unido, Francia, Turquía",26.5,"Reino Unido, Francia, Turquía",26.5,56.2,NA
-2025,E,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241113,Sucedáneos de café,NA,NA,8.39,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Túnez",78,"Francia, Portugal, Túnez",78,85.8,NA
-2025,E,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241114,Té,NA,NA,80.45,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",39.1,"Portugal, Francia, Alemania",18.5,"Portugal, Francia, Alemania",18.5,79.7,NA
-2025,E,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241115,Cacao,NA,NA,927.65,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",39.1,"Francia, Italia, Estados Unidos",65.9,"Francia, Italia, Estados Unidos",65.9,54.7,NA
-2025,E,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241116,Azúcar,NA,NA,151.7,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",-11.8,"Francia, Portugal, Italia",-11.8,89.1,NA
-2025,E,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241117,Melazas,NA,NA,6.33,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",39.1,"Portugal, Finlandia, Francia",-15.2,"Portugal, Finlandia, Francia",-15.2,99.5,NA
-2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251111,Miel,NA,NA,110.49,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Alemania, Portugal",11.1,"Francia, Alemania, Portugal",11.1,69.1,NA
-2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251112,Extractos y jugos de origen animal,NA,NA,20.95,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Italia, Portugal",12.9,"Francia, Italia, Portugal",12.9,68.6,NA
-2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251113,Levaduras,NA,NA,54.94,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Italia",2.6,"Francia, Portugal, Italia",2.6,58.7,NA
-2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251114,Otras preparaciones alimenticias,NA,NA,1455.71,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Alemania",9.5,"Francia, Portugal, Alemania",9.5,47.5,NA
-2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251115,Especias,NA,NA,480.99,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Estados Unidos, Francia, Reino Unido",-3.3,"Estados Unidos, Francia, Reino Unido",-3.3,49.5,NA
-2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251116,"Gomas, resinas y extractos vegetales",NA,NA,562.52,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Estados Unidos, Alemania, Francia",-3.7,"Estados Unidos, Alemania, Francia",-3.7,42.8,NA
-2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251117,Artículos sin cacao de confitería,NA,NA,906.77,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Estados Unidos, Francia, Alemania",-3.8,"Estados Unidos, Francia, Alemania",-3.8,51.7,NA
-2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251118,Chocolate y preparaciones con cacao,NA,NA,1125.64,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Alemania",40.5,"Francia, Portugal, Alemania",40.5,71.2,NA
-2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251119,Pastas alimenticias,NA,NA,240.92,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Italia",-2.5,"Francia, Portugal, Italia",-2.5,91.3,NA
-2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251120,"Panadería, pastelería y galletería",NA,NA,2257.96,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Portugal, Francia, Reino Unido",10.5,"Portugal, Francia, Reino Unido",10.5,65.9,NA
-2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251121,Otras preparaciones de harina y cereales,NA,NA,776.73,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Estados Unidos",3.2,"Francia, Portugal, Estados Unidos",3.2,53.4,NA
-2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251122,Salsas y sopas,NA,NA,886.48,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Reino Unido, Italia",5.7,"Francia, Reino Unido, Italia",5.7,61.5,NA
-2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251123,Helados,NA,NA,335.06,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Luxemburgo, Portugal, Francia",-1.4,"Luxemburgo, Portugal, Francia",-1.4,72.8,NA
-2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251124,Batidos y postres lácteos,NA,NA,179.55,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Portugal, Italia, Francia",3,"Portugal, Italia, Francia",3,56.1,NA
+2025,E,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231115,Mandioca,NA,NA,42.11,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Francia, Portugal, Emiratos Árabes Unidos",23.9,"Francia, Portugal, Reino Unido",26.1,"Francia, Portugal, Reino Unido",26.1,81.1,NA
+2025,E,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241111,Café,NA,NA,554.8,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",39.1,"Portugal, Francia, Italia",48.9,"Portugal, Francia, Italia",48.9,75.6,NA
+2025,E,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241112,Extractos de café,NA,NA,830.49,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",39.1,"Reino Unido, Francia, Turquía",26.5,"Reino Unido, Francia, Turquía",26.5,57.2,NA
+2025,E,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241113,Sucedáneos de café,NA,NA,8.39,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Túnez",78,"Francia, Portugal, Túnez",78,85.9,NA
+2025,E,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241114,Té,NA,NA,80.45,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",39.1,"Portugal, Francia, Alemania",18.5,"Portugal, Francia, Alemania",18.5,79.9,NA
+2025,E,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241115,Cacao,NA,NA,927.65,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",39.1,"Francia, Italia, Estados Unidos",65.9,"Francia, Italia, Estados Unidos",65.9,55.5,NA
+2025,E,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241116,Azúcar,NA,NA,151.7,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",-11.8,"Francia, Portugal, Italia",-11.8,89.2,NA
+2025,E,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241117,Melazas,NA,NA,6.33,"Francia, Portugal, Italia",39.1,"Francia, Portugal, Italia",39.1,"Portugal, Finlandia, Francia",-15.2,"Portugal, Finlandia, Francia",-15.2,99.4,NA
+2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251111,Miel,NA,NA,110.49,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Alemania, Portugal",11.1,"Francia, Alemania, Portugal",11.1,70.7,NA
+2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251112,Extractos y jugos de origen animal,NA,NA,20.95,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Italia, Portugal",12.9,"Francia, Italia, Portugal",12.9,70.2,NA
+2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251113,Levaduras,NA,NA,54.94,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Italia",2.6,"Francia, Portugal, Italia",2.6,58.9,NA
+2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251114,Otras preparaciones alimenticias,NA,NA,1455.71,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Alemania",9.5,"Francia, Portugal, Alemania",9.5,48.3,NA
+2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251115,Especias,NA,NA,480.99,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Estados Unidos, Francia, Reino Unido",-3.3,"Estados Unidos, Francia, Reino Unido",-3.3,50.3,NA
+2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251116,"Gomas, resinas y extractos vegetales",NA,NA,562.52,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Estados Unidos, Alemania, Francia",-3.7,"Estados Unidos, Alemania, Francia",-3.7,43.3,NA
+2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251117,Artículos sin cacao de confitería,NA,NA,906.77,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Estados Unidos, Francia, Alemania",-3.8,"Estados Unidos, Francia, Alemania",-3.8,52.6,NA
+2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251118,Chocolate y preparaciones con cacao,NA,NA,1125.64,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Alemania",40.5,"Francia, Portugal, Alemania",40.5,72.7,NA
+2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251119,Pastas alimenticias,NA,NA,240.92,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Italia",-2.5,"Francia, Portugal, Italia",-2.5,91.6,NA
+2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251120,"Panadería, pastelería y galletería",NA,NA,2257.96,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Portugal, Francia, Reino Unido",10.5,"Portugal, Francia, Reino Unido",10.5,66.8,NA
+2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251121,Otras preparaciones de harina y cereales,NA,NA,776.73,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Estados Unidos",3.2,"Francia, Portugal, Estados Unidos",3.2,55.5,NA
+2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251122,Salsas y sopas,NA,NA,886.48,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Francia, Reino Unido, Italia",5.7,"Francia, Reino Unido, Italia",5.7,62.0,NA
+2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251123,Helados,NA,NA,335.06,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Luxemburgo, Portugal, Francia",-1.4,"Luxemburgo, Portugal, Francia",-1.4,73.7,NA
+2025,E,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251124,Batidos y postres lácteos,NA,NA,179.55,"Francia, Portugal, Reino Unido",7.7,"Francia, Portugal, Reino Unido",7.7,"Portugal, Italia, Francia",3,"Portugal, Italia, Francia",3,55.3,NA
 2025,E,Agroalimentario,AR,AgricolasSinClasificar,AARR,AgricolasSinClasificar,RESTO,AgricolasSinClasificar,NA,NA,392.47,"China, Alemania, Francia",1.6,"China, Alemania, Francia",1.6,"China, Alemania, Francia",1.6,"China, Alemania, Francia",1.6,NA,NA
 2025,E,Industrial,2,PRODUCTOS ENERGÉTICOS,21,CARBÓN,210,CARBÓN,2100,CARBÓN,168.8,"Avituallamiento Intra., Avituallamiento Extra., Portugal",-4.3,"Francia, Marruecos, Bélgica",-17.6,"Francia, Marruecos, Bélgica",-17.6,"Francia, Marruecos, Bélgica",-17.6,49.2,49.2
 2025,E,Industrial,2,PRODUCTOS ENERGÉTICOS,22,PETRÓLEO Y DERIVADOS,220,PETRÓLEO Y DERIVADOS,2200,PETRÓLEO Y DERIVADOS,21268.91,"Avituallamiento Intra., Avituallamiento Extra., Portugal",-4.3,"Avituallamiento Intra., Avituallamiento Extra., Países Bajos",-2.1,"Avituallamiento Intra., Avituallamiento Extra., Países Bajos",-2.1,"Avituallamiento Intra., Avituallamiento Extra., Países Bajos",-2.1,31.6,31.6
@@ -2873,129 +2877,129 @@
 2025,E,Industrial,8,MANUFACTURAS DE CONSUMO,85,JOYERÍA Y RELOJES,850,JOYERÍA Y RELOJES,8500,JOYERÍA Y RELOJES,1412.99,"Francia, Italia, Portugal",3.8,"Francia, Portugal, Suiza",23.5,"Francia, Portugal, Suiza",23.5,"Francia, Portugal, Suiza",23.5,55.0,55.0
 2025,E,Industrial,8,MANUFACTURAS DE CONSUMO,86,CUERO Y MANUFACTURAS DEL CUERO,860,CUERO Y MANUFACTURAS DEL CUERO,8600,CUERO Y MANUFACTURAS DEL CUERO,527.55,"Francia, Italia, Portugal",3.8,"Italia, Francia, Portugal",-0.3,"Italia, Francia, Portugal",-0.3,"Italia, Francia, Portugal",-0.3,74.6,74.6
 2025,E,Industrial,8,MANUFACTURAS DE CONSUMO,87,OTRAS MANUFACTURAS DE CONSUMO,870,OTRAS MANUFACTURAS DE CONSUMO,8700,OTRAS MANUFACTURAS DE CONSUMO,7960.81,"Francia, Italia, Portugal",3.8,"Francia, Portugal, Italia",1.1,"Francia, Portugal, Italia",1.1,"Francia, Portugal, Italia",1.1,59.2,59.2
-2025,I,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111111,Animales vivos de bovinos,NA,NA,668.83,"Países Bajos, Francia, Polonia",28.3,"Francia, Países Bajos, Polonia",44.9,"Francia, Portugal, Irlanda",76.5,"Francia, Portugal, Irlanda",76.5,98.1,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111112,Carne fresca o refrigerada de  bovino,NA,NA,1137.01,"Países Bajos, Francia, Polonia",28.3,"Francia, Países Bajos, Polonia",44.9,"Países Bajos, Polonia, Alemania",30.6,"Países Bajos, Polonia, Alemania",30.6,87.7,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111113,Carne congelada de  bovino,NA,NA,308.11,"Países Bajos, Francia, Polonia",28.3,"Francia, Países Bajos, Polonia",44.9,"Brasil, Países Bajos, Polonia",60.4,"Brasil, Países Bajos, Polonia",60.4,69.6,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111114,Preparaciones y despojos de  bovino,NA,NA,71.41,"Países Bajos, Francia, Polonia",28.3,"Francia, Países Bajos, Polonia",44.9,"Países Bajos, Alemania, Portugal",11.8,"Países Bajos, Alemania, Portugal",11.8,91.1,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111115,Despojos de bovino,NA,NA,37.79,"Países Bajos, Francia, Polonia",28.3,"Francia, Países Bajos, Polonia",44.9,"Alemania, Francia, Polonia",32,"Alemania, Francia, Polonia",32,95.4,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111211,Animales vivos de  ovino-caprino,NA,NA,30.56,"Países Bajos, Francia, Polonia",28.3,"Italia, Francia, Grecia",16.4,"Francia, Grecia, Rumanía",39.8,"Francia, Grecia, Rumanía",39.8,88.8,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111212,Carne de ovino-caprino,NA,NA,84.91,"Países Bajos, Francia, Polonia",28.3,"Italia, Francia, Grecia",16.4,"Italia, Francia, Nueva Zelanda",11.5,"Italia, Francia, Nueva Zelanda",11.5,73.3,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111213,Preparaciones de  ovino-caprino,NA,NA,4.2,"Países Bajos, Francia, Polonia",28.3,"Italia, Francia, Grecia",16.4,"Alemania, Francia, Rumanía",1.9,"Alemania, Francia, Rumanía",1.9,88.9,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111214,Despojos,NA,NA,2.43,"Países Bajos, Francia, Polonia",28.3,"Italia, Francia, Grecia",16.4,"Portugal, Nueva Zelanda, Francia",-11,"Portugal, Nueva Zelanda, Francia",-11,86.7,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111311,Animales vivos de porcino,NA,NA,466.91,"Países Bajos, Francia, Polonia",28.3,"Países Bajos, Alemania, Portugal",10.9,"Países Bajos, Bélgica, Portugal",1.7,"Países Bajos, Bélgica, Portugal",1.7,99.7,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111312,Carne fresca y refrigerada de porcino,NA,NA,234.77,"Países Bajos, Francia, Polonia",28.3,"Países Bajos, Alemania, Portugal",10.9,"Países Bajos, Portugal, Polonia",35.9,"Países Bajos, Portugal, Polonia",35.9,98.6,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111313,Carne congelada de  porcino,NA,NA,129.72,"Países Bajos, Francia, Polonia",28.3,"Países Bajos, Alemania, Portugal",10.9,"Alemania, Francia, Dinamarca",-1.3,"Alemania, Francia, Dinamarca",-1.3,93.0,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111314,Tocino de porcino,NA,NA,11.23,"Países Bajos, Francia, Polonia",28.3,"Países Bajos, Alemania, Portugal",10.9,"Alemania, Polonia, Francia",23.5,"Alemania, Polonia, Francia",23.5,97.8,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111315,Jamones y paleta de porcino,NA,NA,35.64,"Países Bajos, Francia, Polonia",28.3,"Países Bajos, Alemania, Portugal",10.9,"Italia, Alemania, Portugal",22.1,"Italia, Alemania, Portugal",22.1,93.9,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111316,Preparaciones de  porcino,NA,NA,287.29,"Países Bajos, Francia, Polonia",28.3,"Países Bajos, Alemania, Portugal",10.9,"Italia, Alemania, Dinamarca",18.1,"Italia, Alemania, Dinamarca",18.1,92.3,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111317,Despojos de  porcino,NA,NA,37.95,"Países Bajos, Francia, Polonia",28.3,"Países Bajos, Alemania, Portugal",10.9,"Alemania, Polonia, Países Bajos",-6.7,"Alemania, Polonia, Países Bajos",-6.7,96.2,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111111,Animales vivos de bovinos,NA,NA,689.27,"Países Bajos, Francia, Polonia",28.3,"Francia, Países Bajos, Polonia",44.9,"Francia, Portugal, Irlanda",76.5,"Francia, Portugal, Irlanda",76.5,98.5,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111112,Carne fresca o refrigerada de  bovino,NA,NA,1137.01,"Países Bajos, Francia, Polonia",28.3,"Francia, Países Bajos, Polonia",44.9,"Países Bajos, Polonia, Alemania",30.6,"Países Bajos, Polonia, Alemania",30.6,88.0,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111113,Carne congelada de  bovino,NA,NA,308.11,"Países Bajos, Francia, Polonia",28.3,"Francia, Países Bajos, Polonia",44.9,"Brasil, Países Bajos, Polonia",60.4,"Brasil, Países Bajos, Polonia",60.4,71.5,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111114,Preparaciones y despojos de  bovino,NA,NA,71.41,"Países Bajos, Francia, Polonia",28.3,"Francia, Países Bajos, Polonia",44.9,"Países Bajos, Alemania, Portugal",11.8,"Países Bajos, Alemania, Portugal",11.8,93.5,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1111,Bovino,111115,Despojos de bovino,NA,NA,37.79,"Países Bajos, Francia, Polonia",28.3,"Francia, Países Bajos, Polonia",44.9,"Alemania, Francia, Polonia",32,"Alemania, Francia, Polonia",32,96.2,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111211,Animales vivos de  ovino-caprino,NA,NA,30.56,"Países Bajos, Francia, Polonia",28.3,"Italia, Francia, Grecia",16.4,"Francia, Grecia, Rumanía",39.8,"Francia, Grecia, Rumanía",39.8,100.0,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111212,Carne de ovino-caprino,NA,NA,84.91,"Países Bajos, Francia, Polonia",28.3,"Italia, Francia, Grecia",16.4,"Italia, Francia, Nueva Zelanda",11.5,"Italia, Francia, Nueva Zelanda",11.5,74.7,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111213,Preparaciones de  ovino-caprino,NA,NA,4.2,"Países Bajos, Francia, Polonia",28.3,"Italia, Francia, Grecia",16.4,"Alemania, Francia, Rumanía",1.9,"Alemania, Francia, Rumanía",1.9,99.3,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1112,Ovino-caprino,111214,Despojos,NA,NA,2.43,"Países Bajos, Francia, Polonia",28.3,"Italia, Francia, Grecia",16.4,"Portugal, Nueva Zelanda, Francia",-11,"Portugal, Nueva Zelanda, Francia",-11,80.8,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111311,Animales vivos de porcino,NA,NA,466.91,"Países Bajos, Francia, Polonia",28.3,"Países Bajos, Alemania, Portugal",10.9,"Países Bajos, Bélgica, Portugal",1.7,"Países Bajos, Bélgica, Portugal",1.7,99.9,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111312,Carne fresca y refrigerada de porcino,NA,NA,234.77,"Países Bajos, Francia, Polonia",28.3,"Países Bajos, Alemania, Portugal",10.9,"Países Bajos, Portugal, Polonia",35.9,"Países Bajos, Portugal, Polonia",35.9,100.0,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111313,Carne congelada de  porcino,NA,NA,129.72,"Países Bajos, Francia, Polonia",28.3,"Países Bajos, Alemania, Portugal",10.9,"Alemania, Francia, Dinamarca",-1.3,"Alemania, Francia, Dinamarca",-1.3,95.1,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111314,Tocino de porcino,NA,NA,11.23,"Países Bajos, Francia, Polonia",28.3,"Países Bajos, Alemania, Portugal",10.9,"Alemania, Polonia, Francia",23.5,"Alemania, Polonia, Francia",23.5,100.0,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111315,Jamones y paleta de porcino,NA,NA,35.64,"Países Bajos, Francia, Polonia",28.3,"Países Bajos, Alemania, Portugal",10.9,"Italia, Alemania, Portugal",22.1,"Italia, Alemania, Portugal",22.1,98.6,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111316,Preparaciones de  porcino,NA,NA,287.29,"Países Bajos, Francia, Polonia",28.3,"Países Bajos, Alemania, Portugal",10.9,"Italia, Alemania, Dinamarca",18.1,"Italia, Alemania, Dinamarca",18.1,99.1,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1113,Porcino,111317,Despojos de  porcino,NA,NA,37.95,"Países Bajos, Francia, Polonia",28.3,"Países Bajos, Alemania, Portugal",10.9,"Alemania, Polonia, Países Bajos",-6.7,"Alemania, Polonia, Países Bajos",-6.7,100.0,NA
 2025,I,Agroalimentario,11,Sectores Cárnicos,1114,Aves y huevos,111411,Animales vivos de  aves,NA,NA,64.22,"Países Bajos, Francia, Polonia",28.3,"Polonia, Países Bajos, Francia",24.8,"Portugal, Francia, Reino Unido",17.3,"Portugal, Francia, Reino Unido",17.3,78.8,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1114,Aves y huevos,111412,Carne de aves,NA,NA,738.62,"Países Bajos, Francia, Polonia",28.3,"Polonia, Países Bajos, Francia",24.8,"Polonia, Países Bajos, Alemania",22.6,"Polonia, Países Bajos, Alemania",22.6,87.0,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1114,Aves y huevos,111413,Huevos y Ovoproductos,NA,NA,263.56,"Países Bajos, Francia, Polonia",28.3,"Polonia, Países Bajos, Francia",24.8,"Portugal, Francia, Ucrania",44.7,"Portugal, Francia, Ucrania",44.7,78.2,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1114,Aves y huevos,111414,Preparados  de aves,NA,NA,295.69,"Países Bajos, Francia, Polonia",28.3,"Polonia, Países Bajos, Francia",24.8,"Países Bajos, Francia, Alemania",17.3,"Países Bajos, Francia, Alemania",17.3,88.9,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1114,Aves y huevos,111412,Carne de aves,NA,NA,739.41,"Países Bajos, Francia, Polonia",28.3,"Polonia, Países Bajos, Francia",24.8,"Polonia, Países Bajos, Alemania",22.6,"Polonia, Países Bajos, Alemania",22.6,87.3,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1114,Aves y huevos,111413,Huevos y Ovoproductos,NA,NA,263.56,"Países Bajos, Francia, Polonia",28.3,"Polonia, Países Bajos, Francia",24.8,"Portugal, Francia, Ucrania",44.7,"Portugal, Francia, Ucrania",44.7,79.7,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1114,Aves y huevos,111414,Preparados  de aves,NA,NA,295.69,"Países Bajos, Francia, Polonia",28.3,"Polonia, Países Bajos, Francia",24.8,"Países Bajos, Francia, Alemania",17.3,"Países Bajos, Francia, Alemania",17.3,88.6,NA
 2025,I,Agroalimentario,11,Sectores Cárnicos,1115,Otros animales,111511,Otros animales vivos,NA,NA,71.86,"Países Bajos, Francia, Polonia",28.3,"Francia, Bélgica, Portugal",10.6,"Francia, Bélgica, Países Bajos",8.4,"Francia, Bélgica, Países Bajos",8.4,82.3,NA
-2025,I,Agroalimentario,11,Sectores Cárnicos,1115,Otros animales,111512,Carne de otros animales,NA,NA,28.82,"Países Bajos, Francia, Polonia",28.3,"Francia, Bélgica, Portugal",10.6,"Francia, Portugal, Italia",16.7,"Francia, Portugal, Italia",16.7,88.6,NA
-2025,I,Agroalimentario,12,Lácteos,1211,Lácteos,121111,Leche,NA,NA,468.61,"Países Bajos, Francia, Alemania",10.4,"Países Bajos, Francia, Alemania",10.4,"Francia, Portugal, Países Bajos",8,"Francia, Portugal, Países Bajos",8,98.1,NA
-2025,I,Agroalimentario,12,Lácteos,1211,Lácteos,121112,Mantequilla,NA,NA,257.95,"Países Bajos, Francia, Alemania",10.4,"Países Bajos, Francia, Alemania",10.4,"Países Bajos, Francia, Bélgica",5.2,"Países Bajos, Francia, Bélgica",5.2,97.1,NA
-2025,I,Agroalimentario,12,Lácteos,1211,Lácteos,121113,Quesos,NA,NA,2162.87,"Países Bajos, Francia, Alemania",10.4,"Países Bajos, Francia, Alemania",10.4,"Países Bajos, Alemania, Italia",10.8,"Países Bajos, Alemania, Italia",10.8,97.8,NA
-2025,I,Agroalimentario,12,Lácteos,1211,Lácteos,121114,Yogures y lactosueros,NA,NA,470.16,"Países Bajos, Francia, Alemania",10.4,"Países Bajos, Francia, Alemania",10.4,"Francia, Alemania, Portugal",14.2,"Francia, Alemania, Portugal",14.2,92.9,NA
-2025,I,Agroalimentario,13,Pesca,1311,Pesca,131111,Peces vivos,NA,NA,108.24,"Marruecos, Ecuador, Portugal",9.9,"Marruecos, Ecuador, Portugal",9.9,"Suecia, Francia, Dinamarca",-29.5,"Suecia, Francia, Dinamarca",-29.5,93.4,NA
+2025,I,Agroalimentario,11,Sectores Cárnicos,1115,Otros animales,111512,Carne de otros animales,NA,NA,29.40,"Países Bajos, Francia, Polonia",28.3,"Francia, Bélgica, Portugal",10.6,"Francia, Portugal, Italia",16.7,"Francia, Portugal, Italia",16.7,93.8,NA
+2025,I,Agroalimentario,12,Lácteos,1211,Lácteos,121111,Leche,NA,NA,468.61,"Países Bajos, Francia, Alemania",10.4,"Países Bajos, Francia, Alemania",10.4,"Francia, Portugal, Países Bajos",8,"Francia, Portugal, Países Bajos",8,98.3,NA
+2025,I,Agroalimentario,12,Lácteos,1211,Lácteos,121112,Mantequilla,NA,NA,257.95,"Países Bajos, Francia, Alemania",10.4,"Países Bajos, Francia, Alemania",10.4,"Países Bajos, Francia, Bélgica",5.2,"Países Bajos, Francia, Bélgica",5.2,97.4,NA
+2025,I,Agroalimentario,12,Lácteos,1211,Lácteos,121113,Quesos,NA,NA,2162.87,"Países Bajos, Francia, Alemania",10.4,"Países Bajos, Francia, Alemania",10.4,"Países Bajos, Alemania, Italia",10.8,"Países Bajos, Alemania, Italia",10.8,98.2,NA
+2025,I,Agroalimentario,12,Lácteos,1211,Lácteos,121114,Yogures y lactosueros,NA,NA,470.16,"Países Bajos, Francia, Alemania",10.4,"Países Bajos, Francia, Alemania",10.4,"Francia, Alemania, Portugal",14.2,"Francia, Alemania, Portugal",14.2,95.8,NA
+2025,I,Agroalimentario,13,Pesca,1311,Pesca,131111,Peces vivos,NA,NA,108.24,"Marruecos, Ecuador, Portugal",9.9,"Marruecos, Ecuador, Portugal",9.9,"Suecia, Francia, Dinamarca",-29.5,"Suecia, Francia, Dinamarca",-29.5,96.8,NA
 2025,I,Agroalimentario,13,Pesca,1311,Pesca,131112,Pescado fresco,NA,NA,1718.52,"Marruecos, Ecuador, Portugal",9.9,"Marruecos, Ecuador, Portugal",9.9,"Suecia, Noruega, Grecia",6.5,"Suecia, Noruega, Grecia",6.5,67.5,NA
-2025,I,Agroalimentario,13,Pesca,1311,Pesca,131113,Pescado congelado,NA,NA,1757.13,"Marruecos, Ecuador, Portugal",9.9,"Marruecos, Ecuador, Portugal",9.9,"Namibia, China, Portugal",11.5,"Namibia, China, Portugal",11.5,19.8,NA
+2025,I,Agroalimentario,13,Pesca,1311,Pesca,131113,Pescado congelado,NA,NA,1757.13,"Marruecos, Ecuador, Portugal",9.9,"Marruecos, Ecuador, Portugal",9.9,"Namibia, China, Portugal",11.5,"Namibia, China, Portugal",11.5,20.4,NA
 2025,I,Agroalimentario,13,Pesca,1311,Pesca,131114,"Moluscos, crustáceos y otros invertebrados acuáticos",NA,NA,3965.72,"Marruecos, Ecuador, Portugal",9.9,"Marruecos, Ecuador, Portugal",9.9,"Marruecos, Ecuador, Mauritania",12.6,"Marruecos, Ecuador, Mauritania",12.6,15.3,NA
-2025,I,Agroalimentario,13,Pesca,1311,Pesca,131115,Los demás preparados de productos de la pesca,NA,NA,268.71,"Marruecos, Ecuador, Portugal",9.9,"Marruecos, Ecuador, Portugal",9.9,"Islandia, Islas Feroe, Alemania",18.5,"Islandia, Islas Feroe, Alemania",18.5,35.2,NA
-2025,I,Agroalimentario,13,Pesca,1311,Pesca,131116,Conservas de pescados,NA,NA,1325.75,"Marruecos, Ecuador, Portugal",9.9,"Marruecos, Ecuador, Portugal",9.9,"Ecuador, Portugal, China",9.5,"Ecuador, Portugal, China",9.5,18.9,NA
-2025,I,Agroalimentario,13,Pesca,1311,Pesca,131117,Conservas de moluscos y crustaceos,NA,NA,217.89,"Marruecos, Ecuador, Portugal",9.9,"Marruecos, Ecuador, Portugal",9.9,"Chile, Vietnam, Países Bajos",-0.9,"Chile, Vietnam, Países Bajos",-0.9,19.2,NA
-2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141111,Trigo,NA,NA,1465.61,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Ucrania, Canadá",-18.3,"Francia, Ucrania, Canadá",-18.3,58.5,NA
-2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141112,Cebada,NA,NA,116.93,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Alemania, Bulgaria",-65.8,"Francia, Alemania, Bulgaria",-65.8,88.6,NA
-2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141113,Maíz,NA,NA,1997.96,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Estados Unidos, Francia, Ucrania",-2.6,"Estados Unidos, Francia, Ucrania",-2.6,23.5,NA
-2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141114,Arroz,NA,NA,260.59,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Argentina, Myanmar (Birmania), India",-15.3,"Argentina, Myanmar (Birmania), India",-15.3,17.7,NA
+2025,I,Agroalimentario,13,Pesca,1311,Pesca,131115,Los demás preparados de productos de la pesca,NA,NA,268.71,"Marruecos, Ecuador, Portugal",9.9,"Marruecos, Ecuador, Portugal",9.9,"Islandia, Islas Feroe, Alemania",18.5,"Islandia, Islas Feroe, Alemania",18.5,35.3,NA
+2025,I,Agroalimentario,13,Pesca,1311,Pesca,131116,Conservas de pescados,NA,NA,1325.75,"Marruecos, Ecuador, Portugal",9.9,"Marruecos, Ecuador, Portugal",9.9,"Ecuador, Portugal, China",9.5,"Ecuador, Portugal, China",9.5,19.1,NA
+2025,I,Agroalimentario,13,Pesca,1311,Pesca,131117,Conservas de moluscos y crustaceos,NA,NA,217.89,"Marruecos, Ecuador, Portugal",9.9,"Marruecos, Ecuador, Portugal",9.9,"Chile, Vietnam, Países Bajos",-0.9,"Chile, Vietnam, Países Bajos",-0.9,19.3,NA
+2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141111,Trigo,NA,NA,1465.61,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Ucrania, Canadá",-18.3,"Francia, Ucrania, Canadá",-18.3,61.2,NA
+2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141112,Cebada,NA,NA,116.93,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Alemania, Bulgaria",-65.8,"Francia, Alemania, Bulgaria",-65.8,94.2,NA
+2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141113,Maíz,NA,NA,1997.96,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Estados Unidos, Francia, Ucrania",-2.6,"Estados Unidos, Francia, Ucrania",-2.6,24.9,NA
+2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141114,Arroz,NA,NA,260.59,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Argentina, Myanmar (Birmania), India",-15.3,"Argentina, Myanmar (Birmania), India",-15.3,18.0,NA
 2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141115,Otros cereales,NA,NA,238.79,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Estados Unidos, Francia, Polonia",24.4,"Estados Unidos, Francia, Polonia",24.4,54.8,NA
-2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141116,Harina de trigo,NA,NA,69.01,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Italia, Francia, Portugal",7.6,"Italia, Francia, Portugal",7.6,95.2,NA
-2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141117,Otras harinas,NA,NA,117.92,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Italia, Francia, Países Bajos",-4.8,"Italia, Francia, Países Bajos",-4.8,95.1,NA
+2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141116,Harina de trigo,NA,NA,69.01,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Italia, Francia, Portugal",7.6,"Italia, Francia, Portugal",7.6,95.5,NA
+2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141117,Otras harinas,NA,NA,117.92,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Italia, Francia, Países Bajos",-4.8,"Italia, Francia, Países Bajos",-4.8,96.1,NA
 2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141118,Malta,NA,NA,22.98,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Bélgica, Alemania",-4.8,"Francia, Bélgica, Alemania",-4.8,93.1,NA
-2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141119,Almidón,NA,NA,103.29,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Países Bajos, Bélgica, Alemania",3.7,"Países Bajos, Bélgica, Alemania",3.7,87.4,NA
-2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141120,Grañones y sémola de trigo,NA,NA,5.72,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Italia, Países Bajos, Portugal",-24,"Italia, Países Bajos, Portugal",-24,94.9,NA
-2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141121,Otros productos de cereales,NA,NA,118.88,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Bélgica, Alemania",15.9,"Francia, Bélgica, Alemania",15.9,92.8,NA
-2025,I,Agroalimentario,15,Industrias alimentarias y piensos,1511,Industrias alimentarias,151111,Residuos de productos alimentarios,NA,NA,1677.82,"Brasil, Francia, Argentina",-2,"Brasil, Francia, Argentina",-2,"Brasil, Argentina, Francia",-4.9,"Brasil, Argentina, Francia",-4.9,17.6,NA
-2025,I,Agroalimentario,15,Industrias alimentarias y piensos,1511,Industrias alimentarias,151112,Piensos,NA,NA,1113.01,"Brasil, Francia, Argentina",-2,"Brasil, Francia, Argentina",-2,"Francia, Países Bajos, Alemania",2.7,"Francia, Países Bajos, Alemania",2.7,89.4,NA
+2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141119,Almidón,NA,NA,103.29,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Países Bajos, Bélgica, Alemania",3.7,"Países Bajos, Bélgica, Alemania",3.7,89.4,NA
+2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141120,Grañones y sémola de trigo,NA,NA,5.72,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Italia, Países Bajos, Portugal",-24,"Italia, Países Bajos, Portugal",-24,95.6,NA
+2025,I,Agroalimentario,14,Cereales y productos de molinera,1411,Cereales,141121,Otros productos de cereales,NA,NA,118.88,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Estados Unidos, Ucrania",-11.6,"Francia, Bélgica, Alemania",15.9,"Francia, Bélgica, Alemania",15.9,93.0,NA
+2025,I,Agroalimentario,15,Industrias alimentarias y piensos,1511,Industrias alimentarias,151111,Residuos de productos alimentarios,NA,NA,1679.60,"Brasil, Francia, Argentina",-2,"Brasil, Francia, Argentina",-2,"Brasil, Argentina, Francia",-4.9,"Brasil, Argentina, Francia",-4.9,17.9,NA
+2025,I,Agroalimentario,15,Industrias alimentarias y piensos,1511,Industrias alimentarias,151112,Piensos,NA,NA,1113.01,"Brasil, Francia, Argentina",-2,"Brasil, Francia, Argentina",-2,"Francia, Países Bajos, Alemania",2.7,"Francia, Países Bajos, Alemania",2.7,89.6,NA
 2025,I,Agroalimentario,16,Flores y plantas,1611,Flores y plantas,161111,Flores y plantas,NA,NA,419.3,"Países Bajos, Colombia, Ecuador",13.5,"Países Bajos, Colombia, Ecuador",13.5,"Países Bajos, Colombia, Ecuador",13.5,"Países Bajos, Colombia, Ecuador",13.5,58.4,NA
-2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171111,Tomate,NA,NA,127.19,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"Marruecos, Portugal, Países Bajos",NA,"Marruecos, Portugal, Países Bajos",NA,54.7,NA
+2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171111,Tomate,NA,NA,127.19,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"Marruecos, Portugal, Países Bajos",NA,"Marruecos, Portugal, Países Bajos",NA,30.9,NA
 2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171112,Pimiento,NA,NA,166.36,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"Marruecos, Portugal, Países Bajos",22.4,"Marruecos, Portugal, Países Bajos",22.4,11.7,NA
-2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171113,Pepino,NA,NA,30.9,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"Marruecos, Alemania, Portugal",29.8,"Marruecos, Alemania, Portugal",29.8,31.3,NA
+2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171113,Pepino,NA,NA,30.9,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"Marruecos, Alemania, Portugal",29.8,"Marruecos, Alemania, Portugal",29.8,31.6,NA
 2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171114,Lechuga,NA,NA,51.04,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"Francia, Países Bajos, Italia",-7.4,"Francia, Países Bajos, Italia",-7.4,99.5,NA
 2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171115,Patata,NA,NA,461.97,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"Francia, Países Bajos, Portugal",-17.7,"Francia, Países Bajos, Portugal",-17.7,83.7,NA
 2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171116,Cebolla,NA,NA,97.9,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"Perú, Países Bajos, Chile",20.8,"Perú, Países Bajos, Chile",20.8,27.4,NA
-2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171117,Ajos,NA,NA,40.88,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"China, Países Bajos, Argentina",15.5,"China, Países Bajos, Argentina",15.5,31.6,NA
+2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171117,Ajos,NA,NA,40.88,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"China, Países Bajos, Argentina",15.5,"China, Países Bajos, Argentina",15.5,31.9,NA
 2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171118,Zanahoria,NA,NA,12.41,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"Francia, Portugal, Países Bajos",30.9,"Francia, Portugal, Países Bajos",30.9,94.2,NA
-2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171119,Las demás hortalizas frescas,NA,NA,450.93,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"Marruecos, Perú, Portugal",-2.3,"Marruecos, Perú, Portugal",-2.3,100.0,NA
-2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171120,Hortalizas congeladas,NA,NA,281.9,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"Francia, Países Bajos, Bélgica",-2.4,"Francia, Países Bajos, Bélgica",-2.4,76.8,NA
-2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171121,Hortalizas conservadas o secas,NA,NA,153.35,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"India, China, Portugal",-5,"India, China, Portugal",-5,38.8,NA
+2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171119,Las demás hortalizas frescas,NA,NA,450.93,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"Marruecos, Perú, Portugal",-2.3,"Marruecos, Perú, Portugal",-2.3,37.9,NA
+2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171120,Hortalizas congeladas,NA,NA,281.9,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"Francia, Países Bajos, Bélgica",-2.4,"Francia, Países Bajos, Bélgica",-2.4,77.6,NA
+2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171121,Hortalizas conservadas o secas,NA,NA,153.35,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"India, China, Portugal",-5,"India, China, Portugal",-5,39.0,NA
 2025,I,Agroalimentario,17,Hortalizas y legumbres,1711,Hortalizas y legumbres,171122,Legumbres,NA,NA,258.22,"Francia, Marruecos, Países Bajos",3.4,"Francia, Marruecos, Países Bajos",3.4,"Estados Unidos, Canadá, Argentina",3.9,"Estados Unidos, Canadá, Argentina",3.9,14.2,NA
 2025,I,Agroalimentario,18,Frutas,1811,Frutas,181111,Cítricos,NA,NA,303.27,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Sudáfrica, Marruecos, Portugal",24.2,"Sudáfrica, Marruecos, Portugal",24.2,19.1,NA
-2025,I,Agroalimentario,18,Frutas,1811,Frutas,181112,Melones y sandías,NA,NA,181.32,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Brasil, Marruecos, Senegal",27,"Brasil, Marruecos, Senegal",27,10.8,NA
-2025,I,Agroalimentario,18,Frutas,1811,Frutas,181113,Melocotón y nectarina,NA,NA,9,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Chile, Grecia",-17.6,"Marruecos, Chile, Grecia",-17.6,48.0,NA
-2025,I,Agroalimentario,18,Frutas,1811,Frutas,181114,Fresas,NA,NA,37.57,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Grecia, Portugal",-12.4,"Marruecos, Grecia, Portugal",-12.4,28.8,NA
-2025,I,Agroalimentario,18,Frutas,1811,Frutas,181115,Los demás frutos rojos,NA,NA,745.31,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Portugal, Perú",19.2,"Marruecos, Portugal, Perú",19.2,16.6,NA
-2025,I,Agroalimentario,18,Frutas,1811,Frutas,181116,Caquis,NA,NA,2.48,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Perú, Alemania, Uruguay",81.6,"Perú, Alemania, Uruguay",81.6,16.9,NA
-2025,I,Agroalimentario,18,Frutas,1811,Frutas,181117,"Manzanas, peras y membrillos",NA,NA,305.42,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Italia, Francia, Bélgica",7.5,"Italia, Francia, Bélgica",7.5,89.5,NA
+2025,I,Agroalimentario,18,Frutas,1811,Frutas,181112,Melones y sandías,NA,NA,181.32,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Brasil, Marruecos, Senegal",27,"Brasil, Marruecos, Senegal",27,10.9,NA
+2025,I,Agroalimentario,18,Frutas,1811,Frutas,181113,Melocotón y nectarina,NA,NA,9,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Chile, Grecia",-17.6,"Marruecos, Chile, Grecia",-17.6,48.5,NA
+2025,I,Agroalimentario,18,Frutas,1811,Frutas,181114,Fresas,NA,NA,37.57,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Grecia, Portugal",-12.4,"Marruecos, Grecia, Portugal",-12.4,28.9,NA
+2025,I,Agroalimentario,18,Frutas,1811,Frutas,181115,Los demás frutos rojos,NA,NA,745.31,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Portugal, Perú",19.2,"Marruecos, Portugal, Perú",19.2,17.0,NA
+2025,I,Agroalimentario,18,Frutas,1811,Frutas,181116,Caquis,NA,NA,2.48,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Perú, Alemania, Uruguay",81.6,"Perú, Alemania, Uruguay",81.6,17.8,NA
+2025,I,Agroalimentario,18,Frutas,1811,Frutas,181117,"Manzanas, peras y membrillos",NA,NA,305.42,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Italia, Francia, Bélgica",7.5,"Italia, Francia, Bélgica",7.5,89.6,NA
 2025,I,Agroalimentario,18,Frutas,1811,Frutas,181118,Plátano,NA,NA,365.26,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Costa Rica, Colombia, Côte d’Ivoire",6.3,"Costa Rica, Colombia, Côte d’Ivoire",6.3,8.4,NA
-2025,I,Agroalimentario,18,Frutas,1811,Frutas,181119,Almendras y avellanas,NA,NA,565.5,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Estados Unidos, Portugal, Turquía",38.1,"Estados Unidos, Portugal, Turquía",38.1,16.3,NA
+2025,I,Agroalimentario,18,Frutas,1811,Frutas,181119,Almendras y avellanas,NA,NA,565.5,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Estados Unidos, Portugal, Turquía",38.1,"Estados Unidos, Portugal, Turquía",38.1,16.5,NA
 2025,I,Agroalimentario,18,Frutas,1811,Frutas,181120,Uva,NA,NA,244.98,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Perú, Italia, Chile",21.6,"Perú, Italia, Chile",21.6,24.8,NA
 2025,I,Agroalimentario,18,Frutas,1811,Frutas,181121,Las demás frutas frescas y desecadas,NA,NA,2434.77,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Perú, Estados Unidos, Nueva Zelanda",14.8,"Perú, Estados Unidos, Nueva Zelanda",14.8,19.6,NA
-2025,I,Agroalimentario,18,Frutas,1811,Frutas,181122,Frutas congeladas,NA,NA,128.79,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Bélgica, Marruecos, Perú",46.4,"Bélgica, Marruecos, Perú",46.4,48.6,NA
-2025,I,Agroalimentario,18,Frutas,1811,Frutas,181123,Frutas conservadas provisionalmente y cortezas,NA,NA,15.76,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Perú, Argentina, México",-18,"Perú, Argentina, México",-18,37.6,NA
-2025,I,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191111,Tomate,NA,NA,75.39,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Francia, Países Bajos",7.8,"Portugal, Italia, China",-33.2,"Portugal, Italia, China",-33.2,78.2,NA
-2025,I,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191112,Aceituna,NA,NA,61.68,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Francia, Países Bajos",7.8,"Egipto, Portugal, Grecia",8.2,"Egipto, Portugal, Grecia",8.2,49.3,NA
+2025,I,Agroalimentario,18,Frutas,1811,Frutas,181122,Frutas congeladas,NA,NA,128.79,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Bélgica, Marruecos, Perú",46.4,"Bélgica, Marruecos, Perú",46.4,48.7,NA
+2025,I,Agroalimentario,18,Frutas,1811,Frutas,181123,Frutas conservadas provisionalmente y cortezas,NA,NA,15.76,"Marruecos, Estados Unidos, Perú",17.8,"Marruecos, Estados Unidos, Perú",17.8,"Perú, Argentina, México",-18,"Perú, Argentina, México",-18,37.9,NA
+2025,I,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191111,Tomate,NA,NA,75.39,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Francia, Países Bajos",7.8,"Portugal, Italia, China",-33.2,"Portugal, Italia, China",-33.2,79.3,NA
+2025,I,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191112,Aceituna,NA,NA,61.68,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Francia, Países Bajos",7.8,"Egipto, Portugal, Grecia",8.2,"Egipto, Portugal, Grecia",8.2,50.5,NA
 2025,I,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191113,Espárragos,NA,NA,93.73,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Francia, Países Bajos",7.8,"China, Perú, Alemania",48.1,"China, Perú, Alemania",48.1,1.3,NA
-2025,I,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191114,Las demás hortalizas,NA,NA,833.47,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Perú, Francia",7.7,"Bélgica, Perú, Francia",7.7,67.7,NA
-2025,I,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191115,Zumos,NA,NA,456.3,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Francia, Países Bajos",7.8,"Brasil, Países Bajos, Irlanda",10.3,"Brasil, Países Bajos, Irlanda",10.3,43.5,NA
-2025,I,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191116,Confituras y mermeladas,NA,NA,104.25,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Francia, Países Bajos",7.8,"Italia, Francia, Turquía",13.3,"Italia, Francia, Turquía",13.3,70.4,NA
-2025,I,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191117,Las demás frutas,NA,NA,377.21,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Francia, Países Bajos",7.8,"Alemania, Francia, Turquía",9.4,"Alemania, Francia, Turquía",9.4,52.4,NA
-2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201111,Agua,NA,NA,57.05,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Italia, Francia, Alemania",18.8,"Italia, Francia, Alemania",18.8,90.6,NA
-2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201112,Bebidas refrescantes,NA,NA,347.02,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Portugal, Países Bajos, Austria",8.3,"Portugal, Países Bajos, Austria",8.3,90.5,NA
-2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201113,Cerveza,NA,NA,430.9,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Bélgica, Portugal, México",-5.4,"Bélgica, Portugal, México",-5.4,82.5,NA
-2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201114,Mosto,NA,NA,10.19,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Chile, Francia, Italia",-15.9,"Chile, Francia, Italia",-15.9,56.4,NA
-2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201115,Vino,NA,NA,323.97,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Francia, Italia, Portugal",7.5,"Francia, Italia, Portugal",7.5,88.9,NA
-2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201116,Vermut y vino aromátizado,NA,NA,61.43,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Italia, Alemania, Francia",23.8,"Italia, Alemania, Francia",23.8,98.6,NA
-2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201117,Otras bebidas fermentadas,NA,NA,31.48,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Suecia, Alemania, Irlanda",-18.1,"Suecia, Alemania, Irlanda",-18.1,86.4,NA
-2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201118,Bebidas espirituosas,NA,NA,1009.07,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Reino Unido, Estados Unidos, Países Bajos",6.9,"Reino Unido, Estados Unidos, Países Bajos",6.9,36.8,NA
-2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201119,Alcohol,NA,NA,248.25,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Estados Unidos, Pakistán, Francia",-3.1,"Estados Unidos, Pakistán, Francia",-3.1,35.9,NA
-2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201120,Vinagre y sucedáneos,NA,NA,23.8,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Italia, Francia, Países Bajos",-1.3,"Italia, Francia, Países Bajos",-1.3,90.5,NA
-2025,I,Agroalimentario,21,Tabaco,2111,Tabaco,211111,Tabaco,NA,NA,1769.53,"Polonia, Alemania, Portugal",0.6,"Polonia, Alemania, Portugal",0.6,"Polonia, Alemania, Portugal",0.6,"Polonia, Alemania, Portugal",0.6,90.1,NA
+2025,I,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191114,Las demás hortalizas,NA,NA,833.47,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Perú, Francia",7.7,"Bélgica, Perú, Francia",7.7,71.0,NA
+2025,I,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191115,Zumos,NA,NA,456.3,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Francia, Países Bajos",7.8,"Brasil, Países Bajos, Irlanda",10.3,"Brasil, Países Bajos, Irlanda",10.3,43.6,NA
+2025,I,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191116,Confituras y mermeladas,NA,NA,104.25,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Francia, Países Bajos",7.8,"Italia, Francia, Turquía",13.3,"Italia, Francia, Turquía",13.3,70.5,NA
+2025,I,Agroalimentario,19,Conservas vegetales,1911,Conservas vegetales,191117,Las demás frutas,NA,NA,377.21,"Bélgica, Francia, Países Bajos",7.8,"Bélgica, Francia, Países Bajos",7.8,"Alemania, Francia, Turquía",9.4,"Alemania, Francia, Turquía",9.4,56.2,NA
+2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201111,Agua,NA,NA,57.05,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Italia, Francia, Alemania",18.8,"Italia, Francia, Alemania",18.8,93.4,NA
+2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201112,Bebidas refrescantes,NA,NA,347.02,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Portugal, Países Bajos, Austria",8.3,"Portugal, Países Bajos, Austria",8.3,88.3,NA
+2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201113,Cerveza,NA,NA,430.9,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Bélgica, Portugal, México",-5.4,"Bélgica, Portugal, México",-5.4,82.7,NA
+2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201114,Mosto,NA,NA,10.19,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Chile, Francia, Italia",-15.9,"Chile, Francia, Italia",-15.9,57.8,NA
+2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201115,Vino,NA,NA,323.97,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Francia, Italia, Portugal",7.5,"Francia, Italia, Portugal",7.5,91.2,NA
+2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201116,Vermut y vino aromátizado,NA,NA,61.43,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Italia, Alemania, Francia",23.8,"Italia, Alemania, Francia",23.8,98.9,NA
+2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201117,Otras bebidas fermentadas,NA,NA,31.48,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Suecia, Alemania, Irlanda",-18.1,"Suecia, Alemania, Irlanda",-18.1,86.8,NA
+2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201118,Bebidas espirituosas,NA,NA,1009.07,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Reino Unido, Estados Unidos, Países Bajos",6.9,"Reino Unido, Estados Unidos, Países Bajos",6.9,37.0,NA
+2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201119,Alcohol,NA,NA,248.25,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Estados Unidos, Pakistán, Francia",-3.1,"Estados Unidos, Pakistán, Francia",-3.1,31.2,NA
+2025,I,Agroalimentario,20,Vinos y bebidas,2011,Vinos y bebidas,201120,Vinagre y sucedáneos,NA,NA,23.8,"Francia, Reino Unido, Bélgica",3.8,"Francia, Reino Unido, Bélgica",3.8,"Italia, Francia, Países Bajos",-1.3,"Italia, Francia, Países Bajos",-1.3,90.6,NA
+2025,I,Agroalimentario,21,Tabaco,2111,Tabaco,211111,Tabaco,NA,NA,1784.03,"Polonia, Alemania, Portugal",0.6,"Polonia, Alemania, Portugal",0.6,"Polonia, Alemania, Portugal",0.6,"Polonia, Alemania, Portugal",0.6,93.1,NA
 2025,I,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221111,Aceite de soja,NA,NA,205.45,"Ucrania, Portugal, Indonesia",-8.1,"Ucrania, Portugal, Indonesia",-8.1,"Países Bajos, Portugal, Turquía",-25.8,"Países Bajos, Portugal, Turquía",-25.8,68.3,NA
-2025,I,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221112,Aceite de oliva,NA,NA,823.67,"Ucrania, Portugal, Indonesia",-8.1,"Ucrania, Portugal, Indonesia",-8.1,"Portugal, Túnez, Italia",-50.7,"Portugal, Túnez, Italia",-50.7,58.3,NA
-2025,I,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221113,Aceite de girasol,NA,NA,1033.44,"Ucrania, Portugal, Indonesia",-8.1,"Ucrania, Portugal, Indonesia",-8.1,"Ucrania, Bulgaria, Francia",7.1,"Ucrania, Bulgaria, Francia",7.1,31.7,NA
+2025,I,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221112,Aceite de oliva,NA,NA,823.67,"Ucrania, Portugal, Indonesia",-8.1,"Ucrania, Portugal, Indonesia",-8.1,"Portugal, Túnez, Italia",-50.7,"Portugal, Túnez, Italia",-50.7,58.9,NA
+2025,I,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221113,Aceite de girasol,NA,NA,1033.44,"Ucrania, Portugal, Indonesia",-8.1,"Ucrania, Portugal, Indonesia",-8.1,"Ucrania, Bulgaria, Francia",7.1,"Ucrania, Bulgaria, Francia",7.1,32.7,NA
 2025,I,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221114,Margarina,NA,NA,132.84,"Ucrania, Portugal, Indonesia",-8.1,"Ucrania, Portugal, Indonesia",-8.1,"Bélgica, Portugal, Países Bajos",6.3,"Bélgica, Portugal, Países Bajos",6.3,92.5,NA
-2025,I,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221115,Las demás grasas y aceites animales,NA,NA,233.64,"Ucrania, Portugal, Indonesia",-8.1,"Ucrania, Portugal, Indonesia",-8.1,"Francia, Italia, Uruguay",4,"Francia, Italia, Uruguay",4,57.9,NA
-2025,I,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221116,Las demás grasas y aceites vegetales,NA,NA,1434.21,"Ucrania, Portugal, Indonesia",-8.1,"Ucrania, Portugal, Indonesia",-8.1,"Indonesia, Filipinas, Francia",11.7,"Indonesia, Filipinas, Francia",11.7,31.6,NA
-2025,I,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221117,Residuos,NA,NA,1297.96,"Ucrania, Portugal, Indonesia",-8.1,"Ucrania, Portugal, Indonesia",-8.1,"China, Indonesia, Malasia",21.2,"China, Indonesia, Malasia",21.2,30.3,NA
+2025,I,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221115,Las demás grasas y aceites animales,NA,NA,233.64,"Ucrania, Portugal, Indonesia",-8.1,"Ucrania, Portugal, Indonesia",-8.1,"Francia, Italia, Uruguay",4,"Francia, Italia, Uruguay",4,58.1,NA
+2025,I,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221116,Las demás grasas y aceites vegetales,NA,NA,1434.21,"Ucrania, Portugal, Indonesia",-8.1,"Ucrania, Portugal, Indonesia",-8.1,"Indonesia, Filipinas, Francia",11.7,"Indonesia, Filipinas, Francia",11.7,31.9,NA
+2025,I,Agroalimentario,22,Grasas y aceites,2211,Grasas y aceites,221117,Residuos,NA,NA,1302.44,"Ucrania, Portugal, Indonesia",-8.1,"Ucrania, Portugal, Indonesia",-8.1,"China, Indonesia, Malasia",21.2,"China, Indonesia, Malasia",21.2,30.3,NA
 2025,I,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231111,Soja,NA,NA,1235.37,"Brasil, Estados Unidos, Francia",-13.1,"Brasil, Estados Unidos, Francia",-13.1,"Brasil, Estados Unidos, Portugal",-22.2,"Brasil, Estados Unidos, Portugal",-22.2,1.3,NA
-2025,I,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231112,Girasol,NA,NA,259.81,"Brasil, Estados Unidos, Francia",-13.1,"Brasil, Estados Unidos, Francia",-13.1,"Francia, China, Bulgaria",-2.4,"Francia, China, Bulgaria",-2.4,62.3,NA
-2025,I,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231113,Otros productos del capítulo 12,NA,NA,868.64,"Brasil, Estados Unidos, Francia",-13.1,"Brasil, Estados Unidos, Francia",-13.1,"Países Bajos, Francia, China",-1.3,"Países Bajos, Francia, China",-1.3,62.1,NA
-2025,I,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231114,Forrajes,NA,NA,8.2,"Brasil, Estados Unidos, Francia",-13.1,"Brasil, Estados Unidos, Francia",-13.1,"Francia, Portugal, Italia",-36.2,"Francia, Portugal, Italia",-36.2,90.0,NA
+2025,I,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231112,Girasol,NA,NA,259.81,"Brasil, Estados Unidos, Francia",-13.1,"Brasil, Estados Unidos, Francia",-13.1,"Francia, China, Bulgaria",-2.4,"Francia, China, Bulgaria",-2.4,64.8,NA
+2025,I,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231113,Otros productos del capítulo 12,NA,NA,869.43,"Brasil, Estados Unidos, Francia",-13.1,"Brasil, Estados Unidos, Francia",-13.1,"Países Bajos, Francia, China",-1.3,"Países Bajos, Francia, China",-1.3,62.2,NA
+2025,I,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231114,Forrajes,NA,NA,8.2,"Brasil, Estados Unidos, Francia",-13.1,"Brasil, Estados Unidos, Francia",-13.1,"Francia, Portugal, Italia",-36.2,"Francia, Portugal, Italia",-36.2,95.0,NA
 2025,I,Agroalimentario,23,"Semillas, oleaginosas, mandíoca y forraje",2311,"Semillas, oleaginosas, mandíoca y forraje",231115,Mandioca,NA,NA,59.11,"Brasil, Estados Unidos, Francia",-13.1,"Brasil, Estados Unidos, Francia",-13.1,"Costa Rica, Egipto, Portugal",18.5,"Costa Rica, Egipto, Portugal",18.5,15.9,NA
 2025,I,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241111,Café,NA,NA,2302.46,"Côte d’Ivoire, Francia, Brasil",28,"Côte d’Ivoire, Francia, Brasil",28,"Vietnam, Brasil, Francia",33.8,"Vietnam, Brasil, Francia",33.8,29.7,NA
-2025,I,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241112,Extractos de café,NA,NA,190.54,"Côte d’Ivoire, Francia, Brasil",28,"Côte d’Ivoire, Francia, Brasil",28,"Alemania, Vietnam, Italia",20.3,"Alemania, Vietnam, Italia",20.3,70.8,NA
-2025,I,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241113,Sucedáneos de café,NA,NA,9.3,"Côte d’Ivoire, Francia, Brasil",28,"Côte d’Ivoire, Francia, Brasil",28,"Polonia, Portugal, Francia",-9.3,"Polonia, Portugal, Francia",-9.3,98.0,NA
-2025,I,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241114,Té,NA,NA,85.64,"Côte d’Ivoire, Francia, Brasil",28,"Côte d’Ivoire, Francia, Brasil",28,"Países Bajos, Alemania, China",-2.7,"Países Bajos, Alemania, China",-2.7,58.6,NA
+2025,I,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241112,Extractos de café,NA,NA,190.54,"Côte d’Ivoire, Francia, Brasil",28,"Côte d’Ivoire, Francia, Brasil",28,"Alemania, Vietnam, Italia",20.3,"Alemania, Vietnam, Italia",20.3,71.1,NA
+2025,I,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241113,Sucedáneos de café,NA,NA,9.3,"Côte d’Ivoire, Francia, Brasil",28,"Côte d’Ivoire, Francia, Brasil",28,"Polonia, Portugal, Francia",-9.3,"Polonia, Portugal, Francia",-9.3,97.9,NA
+2025,I,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241114,Té,NA,NA,85.64,"Côte d’Ivoire, Francia, Brasil",28,"Côte d’Ivoire, Francia, Brasil",28,"Países Bajos, Alemania, China",-2.7,"Países Bajos, Alemania, China",-2.7,58.7,NA
 2025,I,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241115,Cacao,NA,NA,1913.75,"Côte d’Ivoire, Francia, Brasil",28,"Côte d’Ivoire, Francia, Brasil",28,"Côte d’Ivoire, Países Bajos, Ghana",61.1,"Côte d’Ivoire, Países Bajos, Ghana",61.1,22.1,NA
-2025,I,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241116,Azúcar,NA,NA,881.4,"Côte d’Ivoire, Francia, Brasil",28,"Côte d’Ivoire, Francia, Brasil",28,"Francia, Brasil, Portugal",-14.6,"Francia, Brasil, Portugal",-14.6,70.1,NA
+2025,I,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241116,Azúcar,NA,NA,890.16,"Côte d’Ivoire, Francia, Brasil",28,"Côte d’Ivoire, Francia, Brasil",28,"Francia, Brasil, Portugal",-14.6,"Francia, Brasil, Portugal",-14.6,70.4,NA
 2025,I,Agroalimentario,24,"Café, té, cacao y azúcar",2411,"Café, té, cacao y azúcar",241117,Melazas,NA,NA,24.02,"Côte d’Ivoire, Francia, Brasil",28,"Côte d’Ivoire, Francia, Brasil",28,"Egipto, Países Bajos, República Dominicana",-7.5,"Egipto, Países Bajos, República Dominicana",-7.5,27.2,NA
-2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251111,Miel,NA,NA,68.12,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Portugal, Ucrania, Alemania",6,"Portugal, Ucrania, Alemania",6,51.9,NA
+2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251111,Miel,NA,NA,68.12,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Portugal, Ucrania, Alemania",6,"Portugal, Ucrania, Alemania",6,56.7,NA
 2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251112,Extractos y jugos de origen animal,NA,NA,13.19,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"China, Hungría, Portugal",16.6,"China, Hungría, Portugal",16.6,50.0,NA
-2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251113,Levaduras,NA,NA,88.01,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Francia, Bélgica, Portugal",7.7,"Francia, Bélgica, Portugal",7.7,84.0,NA
-2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251114,Otras preparaciones alimenticias,NA,NA,1380.94,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Países Bajos, Francia, Alemania",15.1,"Países Bajos, Francia, Alemania",15.1,84.8,NA
-2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251115,Especias,NA,NA,344.01,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"China, Irán, Vietnam",-7.7,"China, Irán, Vietnam",-7.7,14.6,NA
-2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251116,"Gomas, resinas y extractos vegetales",NA,NA,316.4,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"China, Alemania, Francia",5.2,"China, Alemania, Francia",5.2,41.5,NA
-2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251117,Artículos sin cacao de confitería,NA,NA,262.43,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Alemania, Italia, Bélgica",15.3,"Alemania, Italia, Bélgica",15.3,85.1,NA
-2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251118,Chocolate y preparaciones con cacao,NA,NA,1182.02,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",26.7,"Alemania, Francia, Italia",26.7,96.7,NA
-2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251119,Pastas alimenticias,NA,NA,395.86,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Italia, Francia, Alemania",15.5,"Italia, Francia, Alemania",15.5,87.6,NA
-2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251120,"Panadería, pastelería y galletería",NA,NA,1195.57,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Alemania, Italia, Francia",12.1,"Alemania, Italia, Francia",12.1,94.9,NA
-2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251121,Otras preparaciones de harina y cereales,NA,NA,460.77,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Francia, Alemania, Portugal",3.9,"Francia, Alemania, Portugal",3.9,91.5,NA
-2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251122,Salsas y sopas,NA,NA,404.69,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Italia, Países Bajos, Alemania",11.5,"Italia, Países Bajos, Alemania",11.5,81.9,NA
-2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251123,Helados,NA,NA,292.04,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Francia, Alemania, Italia",4.7,"Francia, Alemania, Italia",4.7,96.6,NA
-2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251124,Batidos y postres lácteos,NA,NA,320.03,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Países Bajos",7.8,"Alemania, Francia, Países Bajos",7.8,93.8,NA
+2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251113,Levaduras,NA,NA,88.01,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Francia, Bélgica, Portugal",7.7,"Francia, Bélgica, Portugal",7.7,84.2,NA
+2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251114,Otras preparaciones alimenticias,NA,NA,1380.94,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Países Bajos, Francia, Alemania",15.1,"Países Bajos, Francia, Alemania",15.1,85.4,NA
+2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251115,Especias,NA,NA,344.01,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"China, Irán, Vietnam",-7.7,"China, Irán, Vietnam",-7.7,15.3,NA
+2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251116,"Gomas, resinas y extractos vegetales",NA,NA,316.4,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"China, Alemania, Francia",5.2,"China, Alemania, Francia",5.2,41.9,NA
+2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251117,Artículos sin cacao de confitería,NA,NA,262.43,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Alemania, Italia, Bélgica",15.3,"Alemania, Italia, Bélgica",15.3,85.6,NA
+2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251118,Chocolate y preparaciones con cacao,NA,NA,1182.02,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",26.7,"Alemania, Francia, Italia",26.7,97.0,NA
+2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251119,Pastas alimenticias,NA,NA,395.86,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Italia, Francia, Alemania",15.5,"Italia, Francia, Alemania",15.5,87.9,NA
+2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251120,"Panadería, pastelería y galletería",NA,NA,1195.57,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Alemania, Italia, Francia",12.1,"Alemania, Italia, Francia",12.1,95.5,NA
+2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251121,Otras preparaciones de harina y cereales,NA,NA,460.77,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Francia, Alemania, Portugal",3.9,"Francia, Alemania, Portugal",3.9,90.0,NA
+2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251122,Salsas y sopas,NA,NA,404.69,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Italia, Países Bajos, Alemania",11.5,"Italia, Países Bajos, Alemania",11.5,83.0,NA
+2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251123,Helados,NA,NA,292.04,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Francia, Alemania, Italia",4.7,"Francia, Alemania, Italia",4.7,96.9,NA
+2025,I,Agroalimentario,25,Industrias agroalimentarias,2511,Industrias agroalimentarias,251124,Batidos y postres lácteos,NA,NA,320.03,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Italia",12.4,"Alemania, Francia, Países Bajos",7.8,"Alemania, Francia, Países Bajos",7.8,97.9,NA
 2025,I,Agroalimentario,AR,AgricolasSinClasificar,AARR,AgricolasSinClasificar,RESTO,AgricolasSinClasificar,NA,NA,281.54,"China, Francia, Portugal",5.6,"China, Francia, Portugal",5.6,"China, Francia, Portugal",5.6,"China, Francia, Portugal",5.6,NA,NA
 2025,I,Industrial,2,PRODUCTOS ENERGÉTICOS,21,CARBÓN,210,CARBÓN,2100,CARBÓN,590.42,"Estados Unidos, Argelia, Nigeria",-1.7,"Australia, Estados Unidos, Colombia",-37.9,"Australia, Estados Unidos, Colombia",-37.9,"Australia, Estados Unidos, Colombia",-37.9,14.2,14.2
 2025,I,Industrial,2,PRODUCTOS ENERGÉTICOS,22,PETRÓLEO Y DERIVADOS,220,PETRÓLEO Y DERIVADOS,2200,PETRÓLEO Y DERIVADOS,40029.81,"Estados Unidos, Argelia, Nigeria",-1.7,"Estados Unidos, Brasil, México",-5,"Estados Unidos, Brasil, México",-5,"Estados Unidos, Brasil, México",-5,12.4,12.4
@@ -3395,7 +3399,15 @@
     <script>
         // ========== GLOBAL STATE ==========
         let allData = [];
+        let lv3HasParent = new Set();
         let currentFlow = 'E';
+        let currentYear = '2025';
+
+        // Skip a row when it is a lv4-detail duplicate of an existing lv3-parent row.
+        function isLv4Dup(row) {
+            return row.lv4 && row.lv4 !== 'NA' &&
+                   lv3HasParent.has(row.year + '|' + row.flujo + '|' + row.lv3);
+        }
         let navigationState = {
             macroSector: null,
             lv1: null,
@@ -3607,6 +3619,14 @@
                 allData = parseCSV(text);
                 console.log(`✅ Datos procesados: ${allData.length} registros`);
 
+                // Build index of (year,flujo,lv3) tuples that have a parent row (lv4='NA').
+                // Used to skip duplicated lv4-detail rows when a parent already provides the lv3 total
+                // (Agroalimentario). For Industrial sectors, lv3 has no parent and lv4 rows are summed directly.
+                lv3HasParent = new Set();
+                allData.forEach(r => {
+                    if (r.lv4 === 'NA') lv3HasParent.add(r.year + '|' + r.flujo + '|' + r.lv3);
+                });
+
                 // Remove loading message
                 const msg = document.getElementById('loadingMessage');
                 if (msg) msg.remove();
@@ -3626,13 +3646,44 @@
             console.log(`🔄 Cambiando flujo a: ${flow}`);
             currentFlow = flow;
 
-            // Update toggle buttons
-            document.querySelectorAll('.flow-toggle-btn').forEach(btn => {
+            // Update toggle buttons (only the flow group, not the year group)
+            document.querySelectorAll('.flow-toggle-btn[data-flow]').forEach(btn => {
                 btn.classList.toggle('active', btn.dataset.flow === flow);
             });
 
             // Reset navigation
             resetNavigation();
+        }
+
+        function switchYear(year) {
+            console.log(`📅 Cambiando año a: ${year}`);
+            currentYear = year;
+            document.querySelectorAll('.flow-toggle-btn[data-year]').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.year === year);
+            });
+            // Re-render current view at the new year
+            const ms = navigationState.macroSector;
+            if (!ms) { resetNavigation(); return; }
+            if (navigationState.lv3) { showFinalView(); }
+            else if (navigationState.lv2) { showLevel3(); }
+            else if (navigationState.lv1) { showLevel2(); }
+            else { showLevel1(); }
+        }
+
+        function buildYearSelector() {
+            const years = Array.from(new Set(allData.map(r => r.year))).filter(Boolean).sort();
+            const container = document.getElementById('yearToggle');
+            if (!container) return;
+            container.innerHTML = '';
+            years.forEach(y => {
+                const b = document.createElement('button');
+                b.className = 'flow-toggle-btn' + (y === currentYear ? ' active' : '');
+                b.dataset.year = y;
+                b.textContent = y;
+                b.setAttribute('aria-label', 'Año ' + y);
+                b.addEventListener('click', () => switchYear(y));
+                container.appendChild(b);
+            });
         }
 
         // ========== NAVIGATION ==========
@@ -3680,6 +3731,7 @@
             }
 
             // Get unique Level 1 items with totals
+            // FIX: Sum only parent rows (lv4='NA') to avoid double-count with lv4 detail rows
             const lv1Items = {};
             filtered.forEach(row => {
                 const key = row.lv1;
@@ -3692,7 +3744,7 @@
                         total: 0
                     };
                 }
-                if (row.year === '2025') {
+                if (row.year === currentYear && !isLv4Dup(row)) {
                     lv1Items[key].total += parseNumericValue(row.total_millones);
                 }
             });
@@ -3788,7 +3840,7 @@
                 if (!lv2Items[row.lv2]) {
                     lv2Items[row.lv2] = { code: row.lv2, name: row.lit_lv2, lv3: row.lit_lv3, total: 0 };
                 }
-                if (row.year === '2025') {
+                if (row.year === currentYear && !isLv4Dup(row)) {
                     lv2Items[row.lv2].total += parseNumericValue(row.total_millones);
                 }
             });
@@ -3864,7 +3916,7 @@
                 if (!lv3Items[row.lv3]) {
                     lv3Items[row.lv3] = { code: row.lv3, name: row.lit_lv3, total: 0 };
                 }
-                if (row.year === '2025') {
+                if (row.year === currentYear && !isLv4Dup(row)) {
                     lv3Items[row.lv3].total += parseNumericValue(row.total_millones);
                 }
             });
@@ -3958,7 +4010,7 @@
                         total: 0
                     };
                 }
-                if (row.year === '2025') {
+                if (row.year === currentYear) {
                     lv4Items[key].total += parseNumericValue(row.total_millones);
                 }
             });
@@ -4066,13 +4118,26 @@
             const yearsSet = new Set();
             dataRows.forEach(r => yearsSet.add(r.year));
             const availableYears = Array.from(yearsSet).sort();
-            const latestYear = availableYears[availableYears.length - 1]; // e.g., "2025" or "2022"
+            // Use user-selected year (currentYear) when present in dataset, else fallback to latest
+            const latestYear = availableYears.includes(currentYear) ? currentYear : availableYears[availableYears.length - 1];
 
             // Build yearly data for Chart
             const yearlyData = {};
             availableYears.forEach(y => yearlyData[y] = 0);
 
+            // FIX: When not navigating at lv4, sum only parent rows (lv4='NA') to avoid
+            // double-counting the lv3 aggregate with its lv4 children.
+            // Build local parent index: only skip lv4-detail dups when the parent (lv4='NA')
+            // actually exists in this filtered slice. This handles three cases:
+            //   - Agroalimentario at lv1/lv2/lv3: parents present → skip lv4 detail (avoid double-count).
+            //   - Industrial: no parents anywhere → sum lv4 detail rows.
+            //   - Final view inside lv4 grid: filtered already contains only lv4 detail → sum them.
+            const sumOnlyParents = !navigationState.lv4;
+            const localParents = new Set();
+            dataRows.forEach(r => { if (r.lv4 === 'NA') localParents.add(r.year + '|' + r.flujo + '|' + r.lv3); });
             dataRows.forEach(row => {
+                if (sumOnlyParents && row.lv4 && row.lv4 !== 'NA'
+                    && localParents.has(row.year + '|' + row.flujo + '|' + row.lv3)) return;
                 const val = parseNumericValue(row.total_millones);
                 yearlyData[row.year] += val;
             });
@@ -4092,7 +4157,7 @@
                 (!navigationState.lv1 || row.lv1 === navigationState.lv1.code) &&
                 (!navigationState.lv2 || row.lv2 === navigationState.lv2.code) &&
                 (!navigationState.lv3 || row.lv3 === navigationState.lv3.code) &&
-                (!navigationState.lv4 || row.lv4 === navigationState.lv4.code)
+                (navigationState.lv4 ? row.lv4 === navigationState.lv4.code : !isLv4Dup(row))
             );
 
             contextRows.forEach(r => {
@@ -4411,7 +4476,12 @@
             let weightedSum = 0;
             let hasData = false;
 
+            const sumOnlyParents = (level !== 'lv4' && level !== 'final');
+            const localParents = new Set();
+            filteredRows.forEach(r => { if (r.lv4 === 'NA') localParents.add(r.year + '|' + r.flujo + '|' + r.lv3); });
             filteredRows.forEach(row => {
+                if (sumOnlyParents && row.lv4 && row.lv4 !== 'NA'
+                    && localParents.has(row.year + '|' + row.flujo + '|' + row.lv3)) return;
                 const val = parseNumericValue(row.total_millones);
                 if (isNaN(val) || val <= 0) return;
                 let pctRaw = row[col];
@@ -5064,6 +5134,7 @@
         // ========== INITIALIZATION ==========
         document.addEventListener('DOMContentLoaded', async () => {
             await loadData();
+            buildYearSelector();
             resetNavigation();
         });
 
