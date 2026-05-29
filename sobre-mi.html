@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Información personal sobre el creador de esta web dedicada a las oposiciones del SOIVRE.">
     <title>Sergio Argudo - Sobre Mí</title>
@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- SEO & Social Meta Tags -->
@@ -45,8 +45,8 @@
         gtag('config', 'G-XXXXXXXXXX');
     </script>
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS (compiled) -->
+    <link rel="stylesheet" href="css/tailwind.css">
 
     <style>
         /* CSS Variables - Arcade Theme */
@@ -57,7 +57,7 @@
             --primary-foreground: #C2D9C2;
             --secondary: #C2D9C2;
             --secondary-foreground: #3B4533;
-            --muted: #A8C9A8;
+            --muted: #8FB58F;
             --muted-foreground: #2A3528;
             --accent: #3B4533;
             --accent-foreground: #C2D9C2;
@@ -73,17 +73,20 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            border-radius: 0 !important;
         }
 
         body {
-            font-family: 'Share Tech Mono', monospace;
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
             background: #C2D9C2;
             position: relative;
             min-height: 100vh;
             color: #3B4533;
             padding-bottom: 5rem;
+            line-height: 1.55;
+            -webkit-font-smoothing: antialiased;
         }
+        h1, h2, h3, h4 { font-family: 'Orbitron', monospace; letter-spacing: 0.03em; }
+        :root { --accent-warm: #C8A951; }
 
         /* ===== SCROLL REVEAL ===== */
         [data-reveal] {
@@ -450,28 +453,6 @@
         .nav-logo-dark { display: none; }
     </style>
 
-    <!-- Tailwind Config -->
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        background: '#C2D9C2',
-                        foreground: '#3B4533',
-                        primary: { DEFAULT: '#3B4533', foreground: '#C2D9C2' },
-                        secondary: { DEFAULT: '#C2D9C2', foreground: '#3B4533' },
-                        muted: { DEFAULT: '#A8C9A8', foreground: '#2A3528' },
-                        accent: { DEFAULT: '#3B4533', foreground: '#C2D9C2' },
-                        border: '#3B4533',
-                        input: '#C2D9C2',
-                        ring: '#3B4533',
-                    },
-                    borderRadius: { lg: '0', md: '0', sm: '0' },
-                }
-            }
-        }
-    </script>
 </head>
 
 <body class="flex min-h-screen flex-col">
