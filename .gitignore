@@ -50,10 +50,13 @@ firestore-debug.log
 *.vbs
 *.bat
 
-# ===== Data files (keep locally, embed in HTML for production) =====
+# ===== Data files =====
 *.csv
 balanza_data.js
 balanza_preview.txt
+# Estos dos SÍ se despliegan: la web los carga en runtime
+!data/flujos_data.csv
+!data/balanza_data.js
 
 # ===== Obsolete templates/configs =====
 critical-css-template.css

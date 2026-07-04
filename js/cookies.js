@@ -1,76 +1,131 @@
 /* =========================================
-   Global Cookie Banner Implementation
+   Global Cookie Banner — Arcade Theme
    ========================================= */
 (function () {
     function initCookieBanner() {
-        console.log('Cookie Banner: Initializing...');
         const COOKIE_KEY = 'soivre_cookies_accepted';
 
         // 1. Check if user has already decided
-        if (localStorage.getItem(COOKIE_KEY)) {
-            console.log('Cookie Banner: Already accepted/rejected.');
-            return;
-        }
+        if (localStorage.getItem(COOKIE_KEY)) return;
 
-        // 2. Create Banner Element
+        // 2. Inject self-contained styles (no dependency on compiled Tailwind)
+        const style = document.createElement('style');
+        style.textContent = `
+            #global-cookie-banner {
+                position: fixed;
+                bottom: 5.5rem;
+                left: 1rem;
+                right: 1rem;
+                z-index: 60;
+                max-width: 28rem;
+                padding: 1.25rem;
+                background: #C2D9C2;
+                color: #3B4533;
+                border: 2px solid #3B4533;
+                box-shadow: 4px 4px 0 #3B4533;
+                font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+                transform: translateY(2.5rem);
+                opacity: 0;
+                transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s;
+            }
+            @media (min-width: 768px) {
+                #global-cookie-banner { bottom: 1.5rem; right: 1.5rem; left: auto; }
+            }
+            #global-cookie-banner.ck-visible { transform: translateY(0); opacity: 1; }
+            #global-cookie-banner .ck-title {
+                font-family: 'Orbitron', monospace;
+                font-size: 0.7rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                margin-bottom: 0.35rem;
+            }
+            #global-cookie-banner .ck-text {
+                font-size: 0.8rem;
+                line-height: 1.5;
+                margin-bottom: 1rem;
+            }
+            #global-cookie-banner .ck-actions {
+                display: flex;
+                gap: 0.5rem;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+            }
+            #global-cookie-banner button {
+                font-family: 'Orbitron', monospace;
+                font-size: 0.65rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.06em;
+                padding: 0.5rem 1rem;
+                border: 2px solid #3B4533;
+                cursor: pointer;
+                transition: background 0.15s, color 0.15s, box-shadow 0.15s, transform 0.15s;
+            }
+            #global-cookie-banner .ck-reject {
+                background: transparent;
+                color: #3B4533;
+            }
+            #global-cookie-banner .ck-reject:hover { background: rgba(59, 69, 51, 0.1); }
+            #global-cookie-banner .ck-accept {
+                background: #3B4533;
+                color: #C2D9C2;
+                box-shadow: 3px 3px 0 rgba(59, 69, 51, 0.35);
+            }
+            #global-cookie-banner .ck-accept:hover {
+                transform: translate(1px, 1px);
+                box-shadow: 2px 2px 0 rgba(59, 69, 51, 0.35);
+            }
+            html.dark #global-cookie-banner {
+                background: #3B4533;
+                color: #C2D9C2;
+                border-color: #C2D9C2;
+                box-shadow: 4px 4px 0 rgba(194, 217, 194, 0.3);
+            }
+            html.dark #global-cookie-banner button { border-color: #C2D9C2; }
+            html.dark #global-cookie-banner .ck-reject { color: #C2D9C2; }
+            html.dark #global-cookie-banner .ck-reject:hover { background: rgba(194, 217, 194, 0.12); }
+            html.dark #global-cookie-banner .ck-accept {
+                background: #C2D9C2;
+                color: #3B4533;
+                box-shadow: 3px 3px 0 rgba(194, 217, 194, 0.3);
+            }
+        `;
+        document.head.appendChild(style);
+
+        // 3. Create banner
         const banner = document.createElement('div');
         banner.id = 'global-cookie-banner';
-
-        // Tailwind classes for positioning and styling
-        banner.className = `
-            fixed bottom-[5.5rem] left-4 right-4 md:bottom-6 md:right-6 md:left-auto md:max-w-md
-            bg-white/90 backdrop-blur-xl border border-white/40 shadow-[0_8px_30px_rgb(0,0,0,0.12)]
-            p-5 rounded-2xl z-[60] transform transition-all duration-700 translate-y-10 opacity-0
-            font-sans flex flex-col gap-4
-        `;
-
-        // 3. Inject Content
+        banner.setAttribute('role', 'dialog');
+        banner.setAttribute('aria-label', 'Política de cookies');
         banner.innerHTML = `
-            <div class="flex items-start gap-4">
-                <div class="text-2xl pt-1">🍪</div>
-                <div class="flex-1">
-                    <h3 class="font-bold text-gray-900 text-sm mb-1">Política de Cookies</h3>
-                        Utilizamos cookies para mejorar tu experiencia y analizar el tráfico de la web.
-                    </p>
-                </div>
-            </div>
-            <div class="flex gap-2 justify-end">
-                <button id="btn-reject-cookies" class="px-4 py-2 text-xs font-semibold text-gray-600 hover:bg-gray-100/80 rounded-lg transition-colors">
-                    Solo necesarias
-                </button>
-                <button id="btn-accept-cookies" class="px-5 py-2 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-lg shadow-blue-600/20 transition-all hover:scale-105 active:scale-95">
-                    Aceptar todas
-                </button>
+            <div class="ck-title">🍪 Política de Cookies</div>
+            <p class="ck-text">Utilizamos cookies para mejorar tu experiencia y analizar el tráfico de la web.</p>
+            <div class="ck-actions">
+                <button id="btn-reject-cookies" class="ck-reject" type="button">Solo necesarias</button>
+                <button id="btn-accept-cookies" class="ck-accept" type="button">Aceptar todas</button>
             </div>
         `;
-
-        // 4. Add to DOM
         document.body.appendChild(banner);
-        console.log('Cookie Banner: Added to DOM');
 
-        // 5. Animate Entry (delayed slightly)
-        setTimeout(() => {
-            banner.classList.remove('translate-y-10', 'opacity-0');
-        }, 500);
+        // 4. Animate entry
+        setTimeout(() => banner.classList.add('ck-visible'), 500);
 
-        // 6. Handle Interaction
+        // 5. Handle interaction
         const closeBanner = () => {
-            banner.classList.add('translate-y-10', 'opacity-0', 'scale-95');
+            banner.classList.remove('ck-visible');
             setTimeout(() => banner.remove(), 500);
         };
-
         document.getElementById('btn-accept-cookies').addEventListener('click', () => {
             localStorage.setItem(COOKIE_KEY, 'true');
             closeBanner();
         });
-
         document.getElementById('btn-reject-cookies').addEventListener('click', () => {
             localStorage.setItem(COOKIE_KEY, 'false');
             closeBanner();
         });
     }
 
-    // Run init when DOM is ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initCookieBanner);
     } else {

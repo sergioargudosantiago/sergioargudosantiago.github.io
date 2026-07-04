@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3B4533">
     <meta name="description"
         content="Enlaces y recursos de utilidad para la preparación de las oposiciones del Cuerpo de Inspectores del SOIVRE e Ingenieros Técnicos del SOIVRE.">
-    <title>Sergio Argudo - Enlaces</title>
+    <title>Enlaces y Recursos para Oposiciones SOIVRE — Sergio Argudo Santiago</title>
+    <link rel="canonical" href="https://sergioargudosantiago.github.io/enlaces.html">
     <link rel="icon" href="logos/png/SAS-icono-claro.png?v=2" type="image/png">
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +29,9 @@
     <meta property="og:title" content="Enlaces de Interés - Sergio Argudo Santiago | Recursos SOIVRE">
     <meta property="og:description"
         content="Recopilación de enlaces oficiales y recursos de interés para opositores al SOIVRE.">
-    <meta property="og:image" content="https://sergioargudosantiago.github.io/images/logo.png">
+    <meta property="og:image" content="https://sergioargudosantiago.github.io/images/og-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -33,16 +39,8 @@
     <meta property="twitter:title" content="Enlaces de Interés - Oposiciones SOIVRE">
     <meta property="twitter:description"
         content="Recopilación de enlaces oficiales y recursos de interés para opositores al SOIVRE.">
-    <meta property="twitter:image" content="https://sergioargudosantiago.github.io/images/logo.png">
+    <meta property="twitter:image" content="https://sergioargudosantiago.github.io/images/og-cover.png">
 
-    <!-- Google Analytics (GA4) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
 
     <!-- Tailwind CSS (compiled) -->
     <link rel="stylesheet" href="css/tailwind.css">
@@ -74,20 +72,28 @@ h1,h2,h3,h4 { font-family:'Orbitron',monospace; letter-spacing:0.03em; }
             background: #C2D9C2;
             border: 2px solid #3B4533;
             box-shadow: 4px 4px 0 #3B4533;
-            height: clamp(2.75rem, 4vw, 4.25rem);
+            height: clamp(2.4rem, 1.4rem + 2vw, 4.25rem);
+            width: max-content;
             max-width: calc(100vw - 1.5rem);
             white-space: nowrap;
             overflow: hidden;
         }
-        .nav-island > a:first-child { flex-shrink: 0; }
+        .nav-logo-link {
+            display: flex;
+            align-items: center;
+            padding: 0 clamp(0.4rem, 0.3rem + 0.7vw, 1rem);
+            height: 100%;
+            border-right: 1px solid rgba(59, 69, 51, 0.2);
+            flex-shrink: 0;
+        }
         .nav-segment {
             position: relative;
-            padding: 0 clamp(0.4rem, 1vw, 1.25rem);
+            padding: 0 clamp(0.25rem, 0.15rem + 0.75vw, 1.25rem);
             height: 100%;
             display: flex;
             align-items: center;
             font-family: 'Orbitron', monospace;
-            font-size: clamp(0.55rem, 0.78vw, 0.75rem);
+            font-size: clamp(0.48rem, 0.3rem + 0.38vw, 0.75rem);
             font-weight: 600;
             color: #3B4533;
             text-decoration: none;
@@ -97,27 +103,12 @@ h1,h2,h3,h4 { font-family:'Orbitron',monospace; letter-spacing:0.03em; }
             transition: background 0.15s, color 0.15s;
             flex-shrink: 1;
             min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .nav-island img {
-            width: clamp(80px, 9vw, 200px);
+            width: clamp(56px, 30px + 6.5vw, 200px);
             height: auto;
-        }
-        @media (max-width: 1400px) {
-            .nav-segment {
-                font-size: clamp(0.5rem, 0.72vw, 0.68rem);
-                padding: 0 clamp(0.28rem, 0.6vw, 0.85rem);
-                letter-spacing: 0;
-            }
-            .nav-island img { width: clamp(70px, 7.5vw, 160px); }
-        }
-        @media (max-width: 1100px) {
-            .nav-segment {
-                font-size: clamp(0.45rem, 0.7vw, 0.6rem);
-                padding: 0 clamp(0.18rem, 0.45vw, 0.6rem);
-                letter-spacing: 0;
-            }
-            .nav-island img { width: clamp(55px, 6vw, 110px); }
-            .nav-island { height: clamp(2.4rem, 3.6vw, 3.4rem); }
         }
         .nav-segment:hover { background: #3B4533; color: #C2D9C2; box-shadow: none; }
         .nav-segment.active { background: #3B4533; color: #C2D9C2; font-weight: 700; box-shadow: none; }
@@ -208,7 +199,7 @@ html.dark .nav-logo-light { display: none !important; }
         </button>
     </div>
     <nav class="nav-island hidden md:flex">
-        <a href="index.html" style="display:flex;align-items:center;padding:0 1rem;height:100%;border-right:1px solid rgba(59,69,51,0.2);flex-shrink:0">
+        <a href="index.html" class="nav-logo-link">
             <img class="nav-logo-light" src="logos/png/SAS-horizontal-claro.png" alt="Sergio Argudo Santiago" width="260" height="62">
             <img class="nav-logo-dark" src="logos/png/SAS-horizontal-oscuro.png" alt="Sergio Argudo Santiago" width="260" height="62">
         </a>
@@ -378,6 +369,12 @@ function toggleMobileMenu() {
 document.addEventListener('keydown', function(e) { if (e.key==='Escape') { const m=document.getElementById('mobileMenu'); if (m&&m.classList.contains('menu-open')) toggleMobileMenu(); } });
     </script>
     <script src="js/cookies.js?v=1"></script>
+    <!-- Analítica ligera y sin cookies (GoatCounter, gratis para uso no comercial).
+         Para activarla: 1) crea una cuenta en https://www.goatcounter.com con el código "sergioargudosantiago";
+         2) descomenta este script. No usa cookies, no requiere consentimiento.
+    <script data-goatcounter="https://sergioargudosantiago.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+    -->
 </body>
 
 </html>
