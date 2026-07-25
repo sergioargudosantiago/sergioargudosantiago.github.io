@@ -380,7 +380,7 @@ ${art.html}
                         <div class="art-compartir">
                             <a class="art-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                             <button type="button" class="art-btn" id="btnCopiarEnlace" data-url="${url}">Copiar enlace</button>
-                            <a class="art-btn" href="${SITIO}/feed.xml">RSS</a>
+                            <a class="art-btn" href="../feed.xml">RSS</a>
                         </div>
                     </footer>
                 </article>
@@ -449,7 +449,7 @@ ${partes.cabeceraMovil}
                 <div class="mb-12 text-center" data-reveal>
                     <h1 style="font-family:'Orbitron',monospace;font-weight:800;letter-spacing:0.04em;font-size:clamp(2rem,1.5rem + 2vw,3.5rem);text-transform:uppercase;margin-bottom:1rem">ARTÍCULOS</h1>
                     <p style="font-family:'Share Tech Mono',monospace;max-width:660px;margin:0 auto">Comercio exterior, política comercial y preparación de la oposición. Con fuentes y datos que puedes comprobar.</p>
-                    <p style="margin-top:1rem"><a class="art-btn" href="${SITIO}/feed.xml">Suscribirse por RSS</a></p>
+                    <p style="margin-top:1rem"><a class="art-btn" href="../feed.xml">Suscribirse por RSS</a></p>
                 </div>
 
                 <div style="display:flex;flex-direction:column;gap:1.5rem">
