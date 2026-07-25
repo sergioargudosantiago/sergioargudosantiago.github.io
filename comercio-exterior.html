@@ -440,6 +440,31 @@
             font-style: italic;
         }
 
+        /* ========== DOWNLOAD BUTTONS ========== */
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding: 0.45rem 0.9rem;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            background: transparent;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+        .download-btn::before { content: '\2193'; font-weight: bold; }
+        .download-btn:hover,
+        .download-btn:focus-visible {
+            background: var(--primary);
+            color: var(--background);
+        }
+        .download-btn[aria-disabled="true"] { opacity: 0.5; cursor: not-allowed; }
+
         /* ========== GRID LAYOUT ========== */
         .sector-grid {
             display: grid;
@@ -1204,6 +1229,25 @@
                                         </ul>
                                         <p class="mt-2 text-foreground/80">Los datos de Balanza de Pagos se actualizan
                                             automáticamente desde la <a href="https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-primary">API de estadísticas del Banco de España</a> al abrir la pestaña.</p>
+                                        <p class="mt-2 text-foreground/80">Metodología completa, jerarquía de sectores y
+                                            correspondencia con los códigos de la Nomenclatura Combinada en la
+                                            <a href="metodologia.html" class="underline hover:text-primary font-medium">ficha metodológica</a>.</p>
+                                    </div>
+
+                                    <!-- Descargas -->
+                                    <div class="mt-4 pt-3 border-t border-primary/30 text-sm md:text-base">
+                                        <p class="font-bold uppercase tracking-wide text-primary mb-2">Descargar los datos</p>
+                                        <div class="flex flex-wrap gap-2">
+                                            <button type="button" id="btnDownloadView"
+                                                class="download-btn">Vista actual (CSV)</button>
+                                            <a href="data/flujos_data.csv" download
+                                                class="download-btn">Dataset completo 2021&ndash;2025 (CSV)</a>
+                                            <a href="data/correspondencias-sectores-nc8.csv" download
+                                                class="download-btn">Sectores &harr; códigos NC8 (CSV)</a>
+                                        </div>
+                                        <p class="mt-2 text-xs text-foreground/70">Los CSV se generan en UTF-8 con
+                                            marca de orden de bytes, de modo que Excel abre las tildes correctamente
+                                            con doble clic.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1969,11 +2013,17 @@
             //   - Final view inside lv4 grid: filtered already contains only lv4 detail → sum them.
             const sumOnlyParents = !navigationState.lv4;
             const localParents = buildLocalParents(dataRows);
+            const visibleRows = [];
             dataRows.forEach(row => {
                 if (sumOnlyParents && isLv4Duplicate(row, localParents)) return;
+                visibleRows.push(row);
                 const val = parseNumericValue(row.total_millones);
                 yearlyData[row.year] += val;
             });
+
+            // Lo que se puede descargar es exactamente lo que se está agregando aquí.
+            currentViewRows = visibleRows;
+            currentViewName = title || navigationState.macroSector || 'comercio-exterior';
 
             // Get Value for Latest Year (for "VALOR 20XX")
             const valLatest = yearlyData[latestYear] || 0;
@@ -3225,10 +3275,68 @@
         }
 
         // ========== INITIALIZATION ==========
+        // ========== DESCARGA DE LA VISTA ACTUAL ==========
+
+        // Las filas que están alimentando las tarjetas ahora mismo, ya deduplicadas
+        // igual que en pantalla. Lo fija _updateDashboardMetrics en cada render.
+        let currentViewRows = [];
+        let currentViewName = 'comercio-exterior';
+
+        const EXPORT_COLUMNS = [
+            'year', 'flujo', 'macro_sector',
+            'lv1', 'lit_lv1', 'lv2', 'lit_lv2', 'lv3', 'lit_lv3', 'lv4', 'lit_lv4',
+            'total_millones',
+            'tva_lv1', 'tva_lv2', 'tva_lv3', 'tva_lv4',
+            'top_paises_lv1', 'top_paises_lv2', 'top_paises_lv3', 'top_paises_lv4',
+            'pct_ue_lv3', 'pct_ue_lv4'
+        ];
+
+        function toCSVField(value) {
+            const s = (value === undefined || value === null) ? '' : String(value);
+            return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+        }
+
+        function rowsToCSV(rows, columns) {
+            const lines = [columns.join(',')];
+            rows.forEach(r => lines.push(columns.map(c => toCSVField(r[c])).join(',')));
+            return lines.join('\r\n');
+        }
+
+        // Marcas diacríticas combinantes (U+0300–U+036F), escapadas para que el fichero
+        // siga siendo correcto aunque alguna herramienta lo reguarde en otra codificación.
+        const DIACRITICS_RE = new RegExp('[\\u0300-\\u036f]', 'g');
+
+        function slugify(text) {
+            return String(text || '')
+                .normalize('NFD').replace(DIACRITICS_RE, '')
+                .toLowerCase().replace(/[^a-z0-9]+/g, '-')
+                .replace(/^-+|-+$/g, '') || 'vista';
+        }
+
+        function downloadCurrentViewCSV() {
+            if (!currentViewRows.length) return;
+            // BOM UTF-8: sin él, Excel abre el fichero en la codificación del sistema
+            // y destroza las tildes. Escapado para que sea visible al leer el código.
+            const BOM = String.fromCharCode(0xFEFF);
+            const csv = BOM + rowsToCSV(currentViewRows, EXPORT_COLUMNS);
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${slugify(currentViewName)}-${currentFlow === 'E' ? 'exportacion' : 'importacion'}.csv`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            setTimeout(() => URL.revokeObjectURL(url), 1000);
+        }
+
         document.addEventListener('DOMContentLoaded', async () => {
             await loadData();
             buildYearSelector();
             resetNavigation();
+
+            const btn = document.getElementById('btnDownloadView');
+            if (btn) btn.addEventListener('click', downloadCurrentViewCSV);
         });
 
         // Re-render charts when theme toggles
