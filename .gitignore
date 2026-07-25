@@ -65,6 +65,11 @@ robustness-script-template.html
 CLEANUP-GUIDE.md
 apphosting.yaml
 
+# ===== Revisión del temario =====
+# El texto extraído es un derivado de los PDF: se regenera en segundos con
+# scripts/extraer-temas.sh y no aporta nada al repositorio.
+review/txt/
+
 # ===== Agent/IDE =====
 .agent/
 .gemini/

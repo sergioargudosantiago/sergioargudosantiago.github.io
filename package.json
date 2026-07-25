@@ -5,7 +5,10 @@
   "description": "Portal personal y visualizador de comercio exterior",
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --minify",
-    "watch:css": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --watch"
+    "watch:css": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --watch",
+    "temas:extraer": "bash scripts/extraer-temas.sh",
+    "temas:auditar": "node scripts/auditar-temas.js",
+    "temas:revisar": "npm run temas:extraer && npm run temas:auditar"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.19"
