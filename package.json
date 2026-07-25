@@ -8,7 +8,8 @@
     "watch:css": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --watch",
     "temas:extraer": "bash scripts/extraer-temas.sh",
     "temas:auditar": "node scripts/auditar-temas.js",
-    "temas:revisar": "npm run temas:extraer && npm run temas:auditar"
+    "temas:revisar": "npm run temas:extraer && npm run temas:auditar",
+    "articulos": "node scripts/build-articulos.js"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.19"

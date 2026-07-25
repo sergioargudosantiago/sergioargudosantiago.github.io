@@ -36,4 +36,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <!-- articulos:inicio -->
+  <url>
+    <loc>https://sergioargudosantiago.github.io/articulos/index.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sergioargudosantiago.github.io/articulos/cuota-ue-que-mide.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- articulos:fin -->
 </urlset>

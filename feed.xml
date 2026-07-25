@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Artículos — Sergio Argudo Santiago</title>
+    <link>https://sergioargudosantiago.github.io/articulos/index.html</link>
+    <description>Comercio exterior, política comercial y preparación de la oposición al SOIVRE.</description>
+    <language>es-ES</language>
+    <atom:link href="https://sergioargudosantiago.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Sun, 26 Jul 2026 09:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Qué mide (y qué no) la cuota UE de un sector</title>
+      <link>https://sergioargudosantiago.github.io/articulos/cuota-ue-que-mide.html</link>
+      <guid isPermaLink="true">https://sergioargudosantiago.github.io/articulos/cuota-ue-que-mide.html</guid>
+      <pubDate>Sun, 26 Jul 2026 09:00:00 GMT</pubDate>
+      <description>La cuota UE del visualizador es una media ponderada por valor, no un promedio de porcentajes. La diferencia entre las dos cosas puede ser de varios puntos.</description>
+      <dc:creator>Sergio Argudo Santiago</dc:creator>
+      <category>comercio exterior</category>
+      <category>metodología</category>
+      <category>UE</category>
+    </item>
+  </channel>
+</rss>
