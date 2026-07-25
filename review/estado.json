@@ -1,0 +1,712 @@
+{
+  "generado": "2026-07-25T18:14:41.978Z",
+  "temas": {
+    "ejercicio-3-01": {
+      "hash": "533119c7daddde60",
+      "palabras": 1105,
+      "avisos": 2,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-02": {
+      "hash": "e231ba5351dabac9",
+      "palabras": 939,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-03": {
+      "hash": "3dd76d5655ebe96b",
+      "palabras": 885,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-04": {
+      "hash": "e048c1304423bcc9",
+      "palabras": 1110,
+      "avisos": 2,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-05": {
+      "hash": "7f3d72f933774111",
+      "palabras": 1388,
+      "avisos": 2,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-06": {
+      "hash": "694b3128e871e0b4",
+      "palabras": 1150,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-07": {
+      "hash": "302db34e0c8f11f6",
+      "palabras": 1014,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-08": {
+      "hash": "383cb85cf32401b0",
+      "palabras": 907,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-09": {
+      "hash": "94369bcfa339d191",
+      "palabras": 847,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-10": {
+      "hash": "afac3ca1ff102264",
+      "palabras": 1127,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-11": {
+      "hash": "289698a9cd483e46",
+      "palabras": 1091,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-13": {
+      "hash": "66b198f70557a9a3",
+      "palabras": 936,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-14": {
+      "hash": "dd4877e87ca43e61",
+      "palabras": 901,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-15": {
+      "hash": "042f6a41663e89f1",
+      "palabras": 991,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-16": {
+      "hash": "0123e176f17fcb9f",
+      "palabras": 1057,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-17": {
+      "hash": "44c4b8930081bc02",
+      "palabras": 1104,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-18": {
+      "hash": "85246ca52429741d",
+      "palabras": 962,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-19": {
+      "hash": "cdf39ee083753a77",
+      "palabras": 942,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-20": {
+      "hash": "bb172e4919baef92",
+      "palabras": 905,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-21": {
+      "hash": "f40c9ab6630b82b9",
+      "palabras": 937,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-22": {
+      "hash": "dc7128d18d3b24cb",
+      "palabras": 1174,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-23": {
+      "hash": "42786b516647c49e",
+      "palabras": 1062,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-24": {
+      "hash": "26a1936bf47aab97",
+      "palabras": 1010,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-25": {
+      "hash": "235bbbe51c153f98",
+      "palabras": 968,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-26": {
+      "hash": "94e9550d2519d6f6",
+      "palabras": 1079,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-27": {
+      "hash": "0eebf7f6e5f1e508",
+      "palabras": 923,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-28": {
+      "hash": "cf318815b0a24bf4",
+      "palabras": 945,
+      "avisos": 2,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-29": {
+      "hash": "159eaa38c7e71c8d",
+      "palabras": 1123,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-30": {
+      "hash": "8ab2a2c4b5cc6479",
+      "palabras": 917,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-31": {
+      "hash": "f82c2d46ba36c890",
+      "palabras": 776,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-32": {
+      "hash": "bf5e9073cec42b4f",
+      "palabras": 1141,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-34": {
+      "hash": "6fb5a342798ea323",
+      "palabras": 814,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-35": {
+      "hash": "650766149f79b9f7",
+      "palabras": 1000,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-36": {
+      "hash": "a83fba50e0c8e5a0",
+      "palabras": 1019,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-37": {
+      "hash": "f55e917a90e1aa9e",
+      "palabras": 1354,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-38": {
+      "hash": "f6be08105bef8992",
+      "palabras": 952,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-39": {
+      "hash": "acbcf6a4e84c9265",
+      "palabras": 1060,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-40": {
+      "hash": "9b73458dc957fa6c",
+      "palabras": 871,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-41": {
+      "hash": "66916c63dc1c6f5a",
+      "palabras": 773,
+      "avisos": 3,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-42": {
+      "hash": "95ff1fba179f4cc0",
+      "palabras": 1152,
+      "avisos": 2,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-44": {
+      "hash": "9839f9088d0a2f69",
+      "palabras": 1238,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-45": {
+      "hash": "503d9da593ee2af7",
+      "palabras": 1145,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-46": {
+      "hash": "7210c45355862faa",
+      "palabras": 849,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-47": {
+      "hash": "66d1369d4680cd24",
+      "palabras": 1367,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-48": {
+      "hash": "c2b1aebcc006263d",
+      "palabras": 1201,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-49": {
+      "hash": "925fc70a5cb0b11b",
+      "palabras": 1022,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-50": {
+      "hash": "223f9ccb9f3d90bc",
+      "palabras": 1012,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-51": {
+      "hash": "2476b2aec80e23f5",
+      "palabras": 1094,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-52": {
+      "hash": "a44589e3b740f47d",
+      "palabras": 839,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-53": {
+      "hash": "9091f1104c695de0",
+      "palabras": 1020,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-54": {
+      "hash": "fad713d025f108f3",
+      "palabras": 1196,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-55": {
+      "hash": "82da4215857030a5",
+      "palabras": 1159,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-56": {
+      "hash": "116cb1848abdd657",
+      "palabras": 1566,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-57": {
+      "hash": "6adcc5b2b44fea8b",
+      "palabras": 1265,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-3-58": {
+      "hash": "5ddd0295bbac1e02",
+      "palabras": 1342,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-01": {
+      "hash": "67157ce847b9fde9",
+      "palabras": 1257,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-02": {
+      "hash": "bafc0b658090d0ad",
+      "palabras": 1040,
+      "avisos": 0,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-03": {
+      "hash": "a23a273b312612ae",
+      "palabras": 691,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-04": {
+      "hash": "883913fde730bfd5",
+      "palabras": 878,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-05": {
+      "hash": "c0446855d627cf35",
+      "palabras": 1231,
+      "avisos": 0,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-06": {
+      "hash": "5859c0f7b769cf55",
+      "palabras": 1084,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-07": {
+      "hash": "48e0b6a696970a10",
+      "palabras": 990,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-08": {
+      "hash": "bdd2c381a8bfdf6e",
+      "palabras": 979,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-09": {
+      "hash": "5369ef34e3a47298",
+      "palabras": 1069,
+      "avisos": 2,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-10": {
+      "hash": "b743d3b69895de6b",
+      "palabras": 1631,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-11": {
+      "hash": "49f475993560dea3",
+      "palabras": 1505,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-12": {
+      "hash": "b032bb89a73fdec7",
+      "palabras": 1280,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-13": {
+      "hash": "647982019d77080b",
+      "palabras": 845,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-14": {
+      "hash": "7ac7b1d823a5cb1d",
+      "palabras": 1750,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-15": {
+      "hash": "49ff0d2516ff25e9",
+      "palabras": 1478,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-16": {
+      "hash": "b055ef56e30ab7b9",
+      "palabras": 1014,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-17": {
+      "hash": "0b14855fb70abce0",
+      "palabras": 1411,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-18": {
+      "hash": "fc3ecb56f79ca68f",
+      "palabras": 1302,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-19": {
+      "hash": "d8c632225932e9e0",
+      "palabras": 1043,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-20": {
+      "hash": "163eb4d0946d4a7b",
+      "palabras": 967,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-21": {
+      "hash": "5926125856cf5a3c",
+      "palabras": 1300,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-22": {
+      "hash": "539391b14cf4acfd",
+      "palabras": 1175,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-23": {
+      "hash": "a64e0665b41fbab0",
+      "palabras": 1199,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-24": {
+      "hash": "b91af226073282a5",
+      "palabras": 1229,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-25": {
+      "hash": "dd9828c17663e900",
+      "palabras": 836,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-26": {
+      "hash": "a314418cbb4cc2bd",
+      "palabras": 816,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-27": {
+      "hash": "b4f03bc49cb74c90",
+      "palabras": 1307,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-28": {
+      "hash": "4ce96a18df256534",
+      "palabras": 1553,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-29": {
+      "hash": "5053d2f1f19c8bcc",
+      "palabras": 1134,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-30": {
+      "hash": "c97320df3df83256",
+      "palabras": 978,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-31": {
+      "hash": "f7663adfa2b88d54",
+      "palabras": 709,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-32": {
+      "hash": "5e9acd0a97a46ced",
+      "palabras": 831,
+      "avisos": 0,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-33": {
+      "hash": "be1624176a8f7959",
+      "palabras": 552,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-34": {
+      "hash": "6fcc3dfe314ce4c7",
+      "palabras": 608,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-35": {
+      "hash": "8c5e13aea16c3162",
+      "palabras": 808,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-36": {
+      "hash": "4e93919728771f32",
+      "palabras": 1435,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-37": {
+      "hash": "df12ec67049dc1a9",
+      "palabras": 1614,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-38": {
+      "hash": "f7f8964706802463",
+      "palabras": 985,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-39": {
+      "hash": "aa31cf418b1c8a34",
+      "palabras": 1413,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-40": {
+      "hash": "6e6f27390d26aa34",
+      "palabras": 1751,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-41": {
+      "hash": "aa9f283c2839056b",
+      "palabras": 1585,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-42": {
+      "hash": "37f6f2c068d11361",
+      "palabras": 963,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-43": {
+      "hash": "3fea7bc6646a3a8d",
+      "palabras": 1192,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-44": {
+      "hash": "b177b5b67acf5a30",
+      "palabras": 1174,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-45": {
+      "hash": "3f63417320b37885",
+      "palabras": 1378,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    },
+    "ejercicio-5-46": {
+      "hash": "667bc138afde04b6",
+      "palabras": 1439,
+      "avisos": 1,
+      "revisado": null,
+      "hallazgos": null
+    }
+  }
+}
