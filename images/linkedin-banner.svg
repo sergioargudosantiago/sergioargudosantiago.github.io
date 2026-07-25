@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396" role="img" aria-label="Sergio Argudo Santiago — Inspector del SOIVRE">
+  <title>Fondo de perfil de LinkedIn — Sergio Argudo Santiago</title>
+
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B4533"/>
+      <stop offset="100%" stop-color="#2D3828"/>
+    </linearGradient>
+    <pattern id="reticula" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0 L0 0 0 48" fill="none" stroke="#C2D9C2" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1584" height="396" fill="url(#fondo)"/>
+  <rect width="1584" height="396" fill="url(#reticula)"/>
+
+  <!--
+    Todo el contenido vive entre x=396 y x=1188, que es la franja que LinkedIn
+    conserva al recortar en móvil, y por encima de y=236, que es donde la foto de
+    perfil se superpone en escritorio.
+  -->
+
+  <!-- Columnas. Serie: 2 3 2 4 3 5 4 5 6 niveles de 18 px sobre la base y=358 -->
+  <g fill="#C2D9C2" fill-opacity="0.17">
+    <rect x="428"  y="322" width="56" height="36"/>
+    <rect x="512"  y="304" width="56" height="54"/>
+    <rect x="596"  y="322" width="56" height="36"/>
+    <rect x="680"  y="286" width="56" height="72"/>
+    <rect x="764"  y="304" width="56" height="54"/>
+    <rect x="848"  y="268" width="56" height="90"/>
+    <rect x="932"  y="286" width="56" height="72"/>
+    <rect x="1016" y="268" width="56" height="90"/>
+    <rect x="1100" y="250" width="56" height="108"/>
+  </g>
+
+  <!-- Muelle -->
+  <rect x="428" y="358" width="728" height="2" fill="#C2D9C2" opacity="0.28"/>
+
+  <!-- La línea pasa por el centro de la cima de cada columna: sube y baja con ellas -->
+  <g opacity="0.85">
+    <polyline points="456,322 540,304 624,322 708,286 792,304 876,268 960,286 1044,268 1128,250"
+              fill="none" stroke="#C8A951" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1128" cy="250" r="6" fill="#C8A951"/>
+  </g>
+
+  <!-- Bloque de texto centrado y en la mitad superior -->
+  <g text-anchor="middle">
+    <text x="792" y="132"
+          font-family="Orbitron, 'Trebuchet MS', sans-serif" font-size="40" font-weight="800"
+          fill="#C2D9C2" letter-spacing="1.5">SERGIO ARGUDO SANTIAGO</text>
+
+    <rect x="742" y="154" width="100" height="3" fill="#C8A951"/>
+
+    <text x="792" y="192"
+          font-family="'Share Tech Mono', 'Courier New', monospace" font-size="21"
+          fill="#C8A951" letter-spacing="3.2">INSPECTOR DEL SOIVRE</text>
+
+    <text x="792" y="224"
+          font-family="Inter, 'Segoe UI', sans-serif" font-size="17"
+          fill="#C2D9C2" fill-opacity="0.72" letter-spacing="0.4">Comercio exterior · Control e Inspección · Datos abiertos</text>
+  </g>
+</svg>
