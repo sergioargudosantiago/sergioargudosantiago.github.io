@@ -70,6 +70,11 @@ apphosting.yaml
 # scripts/extraer-temas.sh y no aporta nada al repositorio.
 review/txt/
 
+# ===== Artículos =====
+# Los borradores de LinkedIn se regeneran con cada build a partir del .md, no
+# son contenido del sitio y sólo servirían para meter ruido en cada commit.
+review/linkedin/
+
 # ===== Agent/IDE =====
 .agent/
 .gemini/
