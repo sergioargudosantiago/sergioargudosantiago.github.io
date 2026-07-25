@@ -25,7 +25,20 @@
       "Bash(awk 'NR>=4000 && NR<=4115 && /^\\\\s*\\(function|}\\)/' \"C:/sergioargudosantiago.github.io/sergioargudosantiago.github.io/comercio-exterior.html\")",
       "Bash(awk NR>=4590 && NR<=4610 *)",
       "WebFetch(domain:www.bde.es)",
-      "PowerShell($f = 'comercio-exterior.html'; Get-Content $f | Select-Object -Skip 1215 -First 10 | ForEach-Object { $i=1216 } { \"{0}: len={1} :: {2}\" -f $i, $_.Length, $_.Substring\\(0, [Math]::Min\\(200, $_.Length\\)\\); $i++ })"
+      "PowerShell($f = 'comercio-exterior.html'; Get-Content $f | Select-Object -Skip 1215 -First 10 | ForEach-Object { $i=1216 } { \"{0}: len={1} :: {2}\" -f $i, $_.Length, $_.Substring\\(0, [Math]::Min\\(200, $_.Length\\)\\); $i++ })",
+      "Bash(grep -oE '.{80}md\\\\\\\\:hidden\\\\{display:none\\\\}' css/tailwind.css)",
+      "Bash(grep -obE 'md\\\\\\\\:hidden' css/tailwind.css)",
+      "Bash(node -e ' *)",
+      "Bash(node \"C:/Users/sergi/AppData/Local/Temp/claude/C--Users-sergi-OneDrive-Documentos-GitHub-sergioargudosantiago-github-io/c0431cb6-4d18-4df8-845d-3bc92f3b2649/scratchpad/build-metodologia.js\" \"C:/Users/sergi/OneDrive/Documentos/GitHub/sergioargudosantiago.github.io\" \"C:/Users/sergi/AppData/Local/Temp/claude/C--Users-sergi-OneDrive-Documentos-GitHub-sergioargudosantiago-github-io/c0431cb6-4d18-4df8-845d-3bc92f3b2649/scratchpad/metodologia-main.html\")",
+      "Bash(bash scripts/extraer-temas.sh)",
+      "Bash(node scripts/auditar-temas.js)",
+      "Bash(node --check scripts/auditar-temas.js)",
+      "Bash(sed -n '/## 2. Avisos de contenido/,/## 4./p' review/auditoria-automatica.md)",
+      "Bash(node --check js/main.js)",
+      "Bash(curl -s -o /dev/null -w \"comercio-exterior.html -> HTTP %{http_code}\\\\n\" http://localhost:8123/comercio-exterior.html)",
+      "Bash(curl -s -o /dev/null -w \"data/flujos_data.csv  -> HTTP %{http_code}  \\(%{size_download} bytes\\)\\\\n\" http://localhost:8123/data/flujos_data.csv)",
+      "WebFetch(domain:www.linkedin.com)",
+      "Bash(cd \"C:/Users/sergi/OneDrive/Documentos/GitHub/sergioargudosantiago.github.io\" && echo \"=== SIN COMMITEAR ===\" && git status --short && echo \"=== correos placeholder ===\" && grep -rc \"example.com\" --include=\"*.html\" . | grep -v \":0\" && echo \"=== codigo muerto ===\" && grep -rl \"data-visualization.js\" --include=\"*.html\" . || echo \"  js/data-visualization.js: no referenciado por ninguna pagina\" && ls balanza/~\\\\$* 2>/dev/null && echo \"  ^ fichero de bloqueo de Excel\")"
     ]
   }
 }
