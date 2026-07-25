@@ -530,6 +530,11 @@
 
         /* Backdrop blur removed (arcade design) */
 
+        /* Ocultar el botón hamburguesa en escritorio (solo visible en móvil) */
+        @media (min-width: 768px) {
+            #mobileMenuBtn { display: none !important; }
+        }
+
         /* ========== MOBILE MENU TRANSITIONS (iOS Compatible) ========== */
         #mobileMenu {
             transform: translateX(-100%);
@@ -1217,6 +1222,7 @@ html.dark .nav-logo-light { display: none !important; }
 
     <!-- Mobile Menu Button (Floating) -->
     <button
+        id="mobileMenuBtn"
         class="md:hidden fixed top-0 right-0 z-50 flex items-center justify-center"
         style="width:2.5rem;height:2.5rem;background:#3B4533;border-left:1px solid rgba(194,217,194,0.3);border-bottom:1px solid rgba(194,217,194,0.3);"
         onclick="toggleMobileMenu()" aria-label="Abrir menú">
