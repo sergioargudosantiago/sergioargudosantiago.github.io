@@ -54,9 +54,10 @@ firestore-debug.log
 *.csv
 balanza_data.js
 balanza_preview.txt
-# Estos dos SÍ se despliegan: la web los carga en runtime
+# Estos SÍ se despliegan: la web los carga en runtime o los ofrece en descarga
 !data/flujos_data.csv
 !data/balanza_data.js
+!data/correspondencias-sectores-nc8.csv
 
 # ===== Obsolete templates/configs =====
 critical-css-template.css

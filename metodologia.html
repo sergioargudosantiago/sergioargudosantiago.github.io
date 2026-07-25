@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3B4533">
+    <meta name="description"
+        content="Metodología y fuentes del visualizador de comercio exterior: origen de los datos, cómo se calcula la cuota UE27 y la TVA, correspondencia de sectores con los códigos NC8 y limitaciones conocidas.">
+    <title>Metodología y Fuentes de los Datos — Sergio Argudo Santiago</title>
+    <link rel="canonical" href="https://sergioargudosantiago.github.io/metodologia.html">
+    <link rel="icon" href="logos/png/SAS-icono-claro.png?v=2" type="image/png">
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SEO & Social Meta Tags -->
+    <meta name="author" content="Sergio Argudo Santiago">
+    <meta name="keywords"
+        content="Metodología comercio exterior, DataComex, Nomenclatura Combinada, NC8, TARIC, cuota UE27, Banco de España">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sergioargudosantiago.github.io/metodologia.html">
+    <meta property="og:title" content="Metodología y Fuentes — Visualizador de Comercio Exterior">
+    <meta property="og:description"
+        content="De dónde vienen los datos de comercio exterior, cómo se calcula cada indicador y qué códigos NC8 componen cada sector.">
+    <meta property="og:image" content="https://sergioargudosantiago.github.io/images/og-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sergioargudosantiago.github.io/metodologia.html">
+    <meta property="twitter:title" content="Metodología y Fuentes — Visualizador de Comercio Exterior">
+    <meta property="twitter:description"
+        content="De dónde vienen los datos de comercio exterior, cómo se calcula cada indicador y qué códigos NC8 componen cada sector.">
+    <meta property="twitter:image" content="https://sergioargudosantiago.github.io/images/og-cover.png">
+
+
+    <!-- Tailwind CSS (compiled) -->
+    <link rel="stylesheet" href="css/tailwind.css">
+
+    <style>
+:root { --background:#C2D9C2; --foreground:#3B4533; --primary:#3B4533; --border:#3B4533; --radius:6px; --accent-warm:#C8A951; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html { transition:none; }
+body { font-family:'Inter','Segoe UI',system-ui,sans-serif; background:#C2D9C2; color:#3B4533; min-height:100vh; padding-bottom:5rem; line-height:1.55; -webkit-font-smoothing:antialiased; }
+h1,h2,h3,h4 { font-family:'Orbitron',monospace; letter-spacing:0.03em; }
+[data-reveal] { opacity:0; transform:translateY(24px); transition:opacity 0.7s,transform 0.7s; }
+[data-reveal].revealed { opacity:1; transform:translateY(0); }
+.mobile-breadcrumb { position:fixed; top:0; left:0; right:0; z-index:40; display:flex; align-items:center; padding:0.5rem 1rem; background:#3B4533; border-bottom:1px solid rgba(194,217,194,0.3); font-family:'Orbitron',monospace; font-size:0.6rem; font-weight:700; letter-spacing:0.08em; color:#C2D9C2; text-transform:uppercase; height:2.5rem; box-shadow:none; }
+@media(min-width:768px){.mobile-breadcrumb{display:none}}
+#mobileMenu { transform:translateX(-100%); opacity:0; visibility:hidden; transition:transform 0.2s ease,opacity 0.2s ease,visibility 0s 0.2s; background:#3B4533!important; border-right:2px solid rgba(194,217,194,0.3); }
+#mobileMenu.menu-open { transform:translateX(0); opacity:1; visibility:visible; transition:transform 0.2s ease,opacity 0.2s ease; z-index:60; }
+#mobileMenu a { font-family:'Orbitron',monospace; font-size:0.65rem; font-weight:600; color:#C2D9C2; letter-spacing:0.05em; padding:0.75rem 1rem; border-bottom:1px solid rgba(194,217,194,0.15); display:flex; align-items:center; min-height:44px; text-decoration:none; }
+#mobileMenu a:hover,#mobileMenu a.active-mobile { background:#C2D9C2!important; color:#3B4533!important; }
+        .nav-island {
+            position: fixed;
+            top: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            transform-origin: top center;
+            z-index: 50;
+            display: flex;
+            align-items: stretch;
+            padding: 0 clamp(0.1rem, 0.2vw, 0.25rem);
+            background: #C2D9C2;
+            border: 2px solid #3B4533;
+            box-shadow: 4px 4px 0 #3B4533;
+            height: clamp(2.4rem, 1.4rem + 2vw, 4.25rem);
+            width: max-content;
+            max-width: calc(100vw - 1.5rem);
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .nav-logo-link {
+            display: flex;
+            align-items: center;
+            padding: 0 clamp(0.4rem, 0.3rem + 0.7vw, 1rem);
+            height: 100%;
+            border-right: 1px solid rgba(59, 69, 51, 0.2);
+            flex-shrink: 0;
+        }
+        .nav-segment {
+            position: relative;
+            padding: 0 clamp(0.25rem, 0.15rem + 0.75vw, 1.25rem);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(0.48rem, 0.3rem + 0.38vw, 0.75rem);
+            font-weight: 600;
+            color: #3B4533;
+            text-decoration: none;
+            border-right: 1px solid rgba(59, 69, 51, 0.2);
+            letter-spacing: 0.03em;
+            white-space: nowrap;
+            transition: background 0.15s, color 0.15s;
+            flex-shrink: 1;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .nav-island img {
+            width: clamp(56px, 30px + 6.5vw, 200px);
+            height: auto;
+        }
+        .nav-segment:hover { background: #3B4533; color: #C2D9C2; box-shadow: none; }
+        .nav-segment.active { background: #3B4533; color: #C2D9C2; font-weight: 700; box-shadow: none; }
+        .search-island {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 0.75rem;
+        }
+        .search-island input {
+            width: clamp(6rem, 8.5vw, 11rem);
+            height: 1.75rem;
+            padding: 0 0.75rem 0 2rem;
+            background: #ddeedd;
+            border: 1px solid #3B4533;
+            border-radius: 0;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: clamp(0.55rem, 0.7vw, 0.75rem);
+            color: #3B4533;
+            outline: none;
+        }
+        .search-island input::placeholder { color: rgba(59,69,51,0.5); }
+        .search-island input:focus { background: #C2D9C2; border-color: #3B4533; box-shadow: none; }
+        .search-island svg {
+            position: absolute;
+            left: 0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 14px; height: 14px;
+            color: rgba(194,217,194,0.6);
+            pointer-events: none;
+        }
+        @media (max-width: 768px) { .nav-island { display: none; } }
+.theme-toggle { display:flex; align-items:center; justify-content:center; width:clamp(2.25rem,3.5vw,4rem); height:100%; background:transparent; border:none; border-left:1px solid rgba(59,69,51,0.2); cursor:pointer; color:#3B4533; padding:0; flex-shrink:0; transition:background 0.15s,color 0.15s; }
+.theme-toggle:hover { background:#3B4533; color:#C2D9C2; }
+.arcade-section-title { font-family:'Orbitron',monospace; font-size:0.72rem; font-weight:700; letter-spacing:0.1em; color:#3B4533; text-transform:uppercase; border-bottom:2px solid #3B4533; padding-bottom:0.5rem; margin-bottom:1.25rem; }
+.arcade-link { display:flex; align-items:center; gap:0.5rem; font-family:'Inter',sans-serif; font-size:0.95rem; font-weight:500; color:#3B4533; text-decoration:none; padding:0.55rem 0.6rem; border-bottom:1px solid rgba(59,69,51,0.1); border-radius:4px; transition:background 0.15s,padding-left 0.15s,color 0.15s; }
+.arcade-link:hover { background:#3B4533; color:var(--accent-warm); padding-left:0.85rem; }
+.arcade-link svg { flex-shrink:0; width:14px; height:14px; }
+.arcade-grid-card { background:#C2D9C2; border:2px solid #3B4533; padding:1.75rem; box-shadow:4px 4px 0 #3B4533; border-radius:6px; display:flex; flex-direction:column; height:100%; }
+footer.arcade-footer { background:#3B4533!important; color:#C2D9C2!important; border-top:2px solid #3B4533!important; backdrop-filter:none!important; }
+footer.arcade-footer a { color:#C2D9C2; transition:color 0.15s; }
+footer.arcade-footer a:hover { color:#FFE566; opacity:1; }
+html.dark body { background:#3B4533; color:#C2D9C2; }
+html.dark .arcade-grid-card { background:#2D3828; border-color:#C2D9C2; box-shadow:4px 4px 0 rgba(194,217,194,0.3); }
+html.dark .arcade-section-title { color:#C2D9C2; border-bottom-color:rgba(194,217,194,0.5); }
+html.dark .arcade-link { color:#C2D9C2; border-bottom-color:rgba(194,217,194,0.15); }
+html.dark .arcade-link:hover { background:#C2D9C2; color:#3B4533; }
+html.dark .nav-island { background:#3B4533; border-color:#C2D9C2; box-shadow:4px 4px 0 rgba(194,217,194,0.3); }
+html.dark .nav-segment { color:#C2D9C2; border-right-color:rgba(194,217,194,0.2); }
+html.dark .nav-segment:hover { background:#C2D9C2; color:#3B4533; }
+html.dark .nav-segment.active { background:#C2D9C2; color:#3B4533; }
+html.dark .search-island input { background:#2D3828; border-color:#C2D9C2; color:#C2D9C2; }
+html.dark .theme-toggle { color:#C2D9C2; border-left-color:rgba(194,217,194,0.2); }
+html.dark .theme-toggle:hover { background:#C2D9C2; color:#3B4533; }
+html.dark footer.arcade-footer { background:#C2D9C2!important; color:#3B4533!important; border-color:#C2D9C2!important; }
+html.dark footer.arcade-footer a { color:#3B4533; }
+html.dark #mobileMenu { background:#2D3828!important; border-right-color:rgba(194,217,194,0.2); }
+html.dark #mobileMenu a:hover,html.dark #mobileMenu a.active-mobile { background:#C2D9C2!important; color:#3B4533!important; }
+html.dark .mobile-breadcrumb { background:#2D3828; border-bottom-color:rgba(194,217,194,0.2); }
+html.dark .nav-logo-light { display: none !important; }
+        html.dark .nav-logo-dark { display: block !important; }
+        .nav-logo-light { display: block; }
+        .nav-logo-dark { display: none; }
+        html.dark h1[style*="color:#3B4533"] { color: #C2D9C2 !important; }
+        html.dark p[style*="color:#3B4533"] { color: rgba(194,217,194,0.8) !important; }
+
+/* ========== METODOLOGÍA ========== */
+.meto-list { list-style:none; display:flex; flex-direction:column; gap:0.85rem; }
+.meto-list li { padding-left:1.1rem; position:relative; }
+.meto-list li::before { content:'\25B8'; position:absolute; left:0; color:var(--accent-warm); font-weight:bold; }
+.meto-link { color:#3B4533; text-decoration:underline; text-underline-offset:2px; font-weight:500; }
+.meto-link:hover { color:var(--accent-warm); }
+html.dark .meto-link { color:#C2D9C2; }
+.meto-note { font-size:0.85rem; opacity:0.8; font-style:italic; }
+.meto-callout { border-left:4px solid var(--accent-warm); background:rgba(200,169,81,0.10); padding:0.9rem 1.1rem; border-radius:4px; }
+.meto-dl dt { font-family:'Orbitron',monospace; font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; margin-top:1.25rem; color:#3B4533; }
+.meto-dl dt:first-child { margin-top:0; }
+.meto-dl dd { margin-top:0.35rem; padding-left:0.9rem; border-left:2px solid rgba(59,69,51,0.18); }
+html.dark .meto-dl dt { color:#C2D9C2; }
+html.dark .meto-dl dd { border-left-color:rgba(194,217,194,0.25); }
+.meto-table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.meto-table { width:100%; border-collapse:collapse; font-size:0.88rem; min-width:520px; }
+.meto-table th, .meto-table td { text-align:left; padding:0.55rem 0.7rem; border-bottom:1px solid rgba(59,69,51,0.18); }
+.meto-table th { font-family:'Orbitron',monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.07em; border-bottom:2px solid #3B4533; }
+.meto-table td:last-child { font-family:'Share Tech Mono',monospace; }
+html.dark .meto-table th { border-bottom-color:#C2D9C2; }
+html.dark .meto-table th, html.dark .meto-table td { border-bottom-color:rgba(194,217,194,0.2); }
+.meto-input { width:100%; max-width:480px; font-family:'Share Tech Mono',monospace; font-size:0.9rem; padding:0.6rem 0.8rem; background:transparent; border:2px solid #3B4533; border-radius:4px; color:#3B4533; }
+.meto-input:focus { outline:none; border-color:var(--accent-warm); }
+html.dark .meto-input { border-color:#C2D9C2; color:#C2D9C2; }
+/* ========== DOWNLOAD BUTTONS ========== */
+.download-btn { display:inline-flex; align-items:center; gap:0.4rem; font-family:'Share Tech Mono',monospace; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.04em; padding:0.45rem 0.9rem; border:1px solid #3B4533; color:#3B4533; background:transparent; cursor:pointer; text-decoration:none; transition:background 0.2s ease,color 0.2s ease; }
+.download-btn::before { content:'\2193'; font-weight:bold; }
+.download-btn:hover, .download-btn:focus-visible { background:#3B4533; color:#C2D9C2; }
+html.dark .download-btn { border-color:#C2D9C2; color:#C2D9C2; }
+html.dark .download-btn:hover { background:#C2D9C2; color:#3B4533; }
+
+    </style>
+</head>
+
+<body class="flex min-h-screen flex-col">
+
+    <!-- Mobile Breadcrumb -->
+    <div class="mobile-breadcrumb md:hidden" style="justify-content:space-between;">
+        <div style="display:flex;align-items:center;">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+            &nbsp;Metodología
+        </div>
+        <button onclick="toggleTheme()" aria-label="Cambiar tema"
+            style="display:flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;background:transparent;border:none;border-left:1px solid rgba(194,217,194,0.3);cursor:pointer;color:#C2D9C2;margin-right:2.5rem;flex-shrink:0;">
+            <svg class="theme-icon-sun" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <circle cx="12" cy="12" r="5" stroke-width="2" />
+                <path stroke-linecap="round" stroke-width="2" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+            </svg>
+            <svg class="theme-icon-moon" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display:none">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+        </button>
+    </div>
+    <nav class="nav-island hidden md:flex">
+        <a href="index.html" class="nav-logo-link">
+            <img class="nav-logo-light" src="logos/png/SAS-horizontal-claro.png" alt="Sergio Argudo Santiago" width="260" height="62">
+            <img class="nav-logo-dark" src="logos/png/SAS-horizontal-oscuro.png" alt="Sergio Argudo Santiago" width="260" height="62">
+        </a>
+        <a href="index.html" class="nav-segment">INTRODUCCIÓN</a>
+        <a href="temario.html" class="nav-segment">TEMARIO</a>
+        <a href="comercio-exterior.html" class="nav-segment active">COMERCIO EXTERIOR</a>
+        <a href="enlaces.html" class="nav-segment">ENLACES</a>
+        <a href="sobre-mi.html" class="nav-segment">SOBRE MÍ</a>
+        <button onclick="toggleTheme()" class="theme-toggle" aria-label="Cambiar tema">
+            <svg class="theme-icon-sun" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="5" stroke-width="2"/><path stroke-linecap="round" stroke-width="2" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            <svg class="theme-icon-moon" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display:none"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+    </nav>
+    <button class="md:hidden fixed top-0 right-0 z-50 flex items-center justify-center" style="width:2.5rem;height:2.5rem;background:#3B4533;border-left:1px solid rgba(194,217,194,0.3);border-bottom:1px solid rgba(194,217,194,0.3);" onclick="toggleMobileMenu()" aria-label="Abrir menú">
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#C2D9C2"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <div id="mobileMenu" class="fixed inset-y-0 left-0 z-50 w-72 md:hidden">
+        <div class="flex h-full flex-col">
+            <div style="border-bottom:1px solid rgba(194,217,194,0.3);padding:0.75rem 1rem">
+                <button onclick="toggleMobileMenu()" class="text-left text-lg font-bold" style="color:#C2D9C2">Menú</button>
+            </div>
+            <nav class="flex flex-col p-2">
+                <a href="index.html" onclick="toggleMobileMenu();">INTRODUCCIÓN</a>
+                <a href="temario.html" onclick="toggleMobileMenu();">TEMARIO</a>
+                <a href="comercio-exterior.html" onclick="toggleMobileMenu();" class="active-mobile">COMERCIO EXTERIOR</a>
+                <a href="enlaces.html" onclick="toggleMobileMenu();">ENLACES DE INTERÉS</a>
+                <a href="sobre-mi.html" onclick="toggleMobileMenu();">SOBRE MÍ</a>
+            </nav>
+        </div>
+    </div>
+
+    <main class="relative flex-1 pb-24 pt-8">
+        <section class="w-full py-20 md:py-28">
+            <div class="container mx-auto max-w-5xl px-4 md:px-6">
+
+                <div class="mb-12 text-center" data-reveal>
+                    <h1 class="arcade-title text-4xl sm:text-5xl md:text-6xl mb-4" style="font-family:'Orbitron',monospace;font-weight:800;letter-spacing:0.04em;color:#3B4533;text-transform:uppercase">METODOLOGÍA Y FUENTES</h1>
+                    <p style="font-family:'Share Tech Mono',monospace;color:#3B4533;max-width:760px;margin:0 auto">De dónde salen los datos del visualizador de comercio exterior, cómo se calcula cada indicador y qué no cubre</p>
+                </div>
+
+                <!-- 1. Origen -->
+                <div class="arcade-grid-card mb-8" data-reveal>
+                    <h2 class="arcade-section-title">1 &middot; Origen de los datos</h2>
+                    <p class="mb-4">Todas las cifras proceden de estadística oficial. No hay estimaciones propias ni datos de terceros.</p>
+                    <ul class="meto-list">
+                        <li><strong>Flujos comerciales por sector</strong> &mdash; <a class="meto-link" href="https://datacomex.comercio.es/Metadata/Comex" target="_blank" rel="noopener noreferrer">DataComex</a>, la base de datos de comercio exterior del Ministerio de Economía, Comercio y Empresa, que a su vez se nutre de las declaraciones aduaneras y de los formularios INTRASTAT gestionados por la <a class="meto-link" href="https://sede.agenciatributaria.gob.es/Sede/estadisticas/estadisticas-comercio-exterior.html" target="_blank" rel="noopener noreferrer">Agencia Tributaria</a>. Última extracción: <strong>4 de julio de 2026</strong>. Serie 2021&ndash;2025.</li>
+                        <li><strong>Balanza de pagos</strong> &mdash; <a class="meto-link" href="https://www.bde.es/webbe/es/estadisticas/otras-clasificaciones/publicaciones/boletin-estadistico/capitulo-17.html" target="_blank" rel="noopener noreferrer">Boletín Estadístico, capítulo 17, del Banco de España</a>. Este bloque se refresca solo: al abrir la pestaña, la web consulta la <a class="meto-link" href="https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html" target="_blank" rel="noopener noreferrer">API de estadísticas del BdE</a> y sustituye los periodos nuevos o revisados sobre los datos embebidos. Si la API no responde, se muestran los últimos datos conocidos sin romper la página.</li>
+                    </ul>
+                    <p class="mt-4 meto-note">Los flujos comerciales no se descargan en el navegador: se extraen y agregan previamente con scripts de R contra DataComex, y el resultado se publica como un único fichero CSV que la web lee al cargar. Por eso la fecha de extracción es fija hasta la siguiente actualización.</p>
+                </div>
+
+                <!-- 2. Jerarquía -->
+                <div class="arcade-grid-card mb-8" data-reveal>
+                    <h2 class="arcade-section-title">2 &middot; Cómo están organizados los sectores</h2>
+                    <p class="mb-4">El visualizador usa la clasificación sectorial de DataComex, dividida en dos macro-sectores que no comparten taxonomía:</p>
+                    <div class="meto-table-wrap">
+                        <table class="meto-table">
+                            <thead>
+                                <tr><th>Macro-sector</th><th>Niveles</th><th>Ejemplo de ruta</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Agroalimentario</strong></td>
+                                    <td>3 niveles (algunos sectores abren un 4.º)</td>
+                                    <td>Sectores Cárnicos &rarr; Bovino &rarr; Animales vivos de bovinos</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Industrial</strong></td>
+                                    <td>4 niveles</td>
+                                    <td>Productos energéticos &rarr; Carbón &rarr; Carbón &rarr; Carbón</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="mt-4">Nueve sectores agroalimentarios (pesca, cítricos, melones y sandías, almendras y avellanas, aceite de oliva y conservas) tienen además desglose de cuarto nivel. En esos casos el dato del nivel superior y el de sus hijos <strong>no se suman</strong>: los hijos ya reproducen exactamente el total del padre, así que agregarlos duplicaría el valor. El visualizador lo tiene en cuenta en todos los niveles.</p>
+                </div>
+
+                <!-- 3. Indicadores -->
+                <div class="arcade-grid-card mb-8" data-reveal>
+                    <h2 class="arcade-section-title">3 &middot; Cómo se calcula cada indicador</h2>
+                    <dl class="meto-dl">
+                        <dt>Exportaciones / Importaciones (M&euro;)</dt>
+                        <dd>Suma del valor estadístico en euros de las partidas del sector para el año seleccionado, en millones. Valor FOB en exportación y CIF en importación, según el criterio de la estadística de Aduanas.</dd>
+
+                        <dt>TVA &mdash; Tasa de variación anual</dt>
+                        <dd>Variación porcentual respecto al año inmediatamente anterior al seleccionado. En la portada de cada macro-sector se calcula sobre el agregado del sector completo; al bajar a un subsector concreto se usa la tasa propia de ese subsector. Para 2021 no existe porque no hay año previo en la serie.</dd>
+
+                        <dt>Cuota UE27</dt>
+                        <dd>Porcentaje del valor con destino (exportación) o procedencia (importación) en los 27 Estados miembros, sobre el valor total del sector. Se calcula partida a partida de la Nomenclatura Combinada y se agrega <strong>ponderando por valor</strong>, no promediando los porcentajes de los subsectores: un sector de 5.000 M&euro; pesa cincuenta veces más que uno de 100 M&euro;. El resultado es equivalente a dividir el valor total dirigido a la UE entre el valor total del sector.</dd>
+
+                        <dt>Saldo comercial</dt>
+                        <dd>Exportaciones menos importaciones del mismo tramo y año. Positivo, superávit; negativo, déficit.</dd>
+
+                        <dt>Principales destinos / orígenes</dt>
+                        <dd>Los <strong>tres</strong> países con mayor valor en ese sector, flujo y año. No es una lista exhaustiva ni incluye su peso porcentual. Las categorías &laquo;Avituallamiento&raquo; e &laquo;Indeterminado&raquo; son rúbricas propias de la estadística aduanera, no países.</dd>
+                    </dl>
+                </div>
+
+                <!-- 4. NC8 vs TARIC -->
+                <div class="arcade-grid-card mb-8" data-reveal>
+                    <h2 class="arcade-section-title">4 &middot; Correspondencia con los códigos de producto</h2>
+                    <p class="mb-4">Cada sector agroalimentario del visualizador agrupa un conjunto de códigos arancelarios concretos. Publicar esa correspondencia es lo que permite reproducir las cifras desde la fuente original.</p>
+
+                    <div class="meto-callout">
+                        <p><strong>Precisión sobre la nomenclatura.</strong> Los códigos publicados aquí tienen <strong>ocho dígitos</strong>: son de la <strong>Nomenclatura Combinada (NC8)</strong>, el arancel comunitario. <strong>No son códigos TARIC</strong>, que tienen diez dígitos y añaden dos posiciones para medidas comunitarias específicas (contingentes, antidumping, suspensiones). Los seis primeros dígitos coinciden con el Sistema Armonizado de la OMA.</p>
+                    </div>
+
+                    <div class="meto-table-wrap mt-4">
+                        <table class="meto-table">
+                            <thead>
+                                <tr><th>Macro-sector</th><th>Sectores de nivel 3</th><th>Con correspondencia NC8</th><th>Códigos publicados</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Agroalimentario</td><td>124</td><td><strong>124 (100&nbsp;%)</strong></td><td>2.374</td></tr>
+                                <tr><td>Industrial</td><td>54</td><td><strong>0</strong></td><td>&mdash;</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="mt-4 meto-note">El bloque industrial usa la clasificación de &laquo;sectores económicos&raquo; de DataComex, cuya tabla de correspondencia con la Nomenclatura Combinada no está publicada aquí todavía. Prefiero decirlo a dejar el hueco en blanco: si necesitas esa equivalencia para un sector industrial concreto, escríbeme.</p>
+                </div>
+
+                <!-- 5. Limitaciones -->
+                <div class="arcade-grid-card mb-8" data-reveal>
+                    <h2 class="arcade-section-title">5 &middot; Limitaciones conocidas</h2>
+                    <ul class="meto-list">
+                        <li><strong>2025 es provisional.</strong> La estadística de Aduanas revisa los datos en meses posteriores, casi siempre al alza. Las cifras de 2025 cambiarán.</li>
+                        <li><strong>Dos agrupaciones residuales sin cuota UE.</strong> Las rúbricas &laquo;Agrícolas sin clasificar&raquo; (392,5 M&euro; en exportación y 281,5 M&euro; en importación en 2025, en torno al 0,4&nbsp;% del valor agroalimentario) no tienen cuota UE asignada y quedan fuera de ese cálculo. Cuando afecta al tramo que estás viendo, la propia tarjeta indica sobre qué porcentaje del valor se ha calculado.</li>
+                        <li><strong>La serie empieza en 2021.</strong> No hay datos anteriores en este visualizador.</li>
+                        <li><strong>Los sectores no son mutuamente exhaustivos.</strong> La suma de los sectores mostrados no reproduce el comercio exterior español total: quedan fuera capítulos no clasificados en estos dos macro-sectores.</li>
+                        <li><strong>Sin desagregación mensual ni por comunidad autónoma.</strong> Todo es anual y de ámbito nacional.</li>
+                    </ul>
+                </div>
+
+                <!-- 6. Descargas -->
+                <div class="arcade-grid-card mb-8" data-reveal>
+                    <h2 class="arcade-section-title">6 &middot; Descarga de los datos</h2>
+                    <p class="mb-4">Todo lo que alimenta el visualizador se puede descargar. Los ficheros van en UTF-8 con marca de orden de bytes, de modo que Excel abre las tildes correctamente con doble clic.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="data/flujos_data.csv" download class="download-btn">Flujos comerciales 2021&ndash;2025 (CSV)</a>
+                        <a href="data/correspondencias-sectores-nc8.csv" download class="download-btn">Sectores &harr; NC8 (CSV)</a>
+                        <a href="comercio-exterior.html" class="download-btn" style="--x:0">Ir al visualizador</a>
+                    </div>
+                    <p class="mt-4 meto-note">Puedes reutilizar estos datos citando la fuente original (DataComex &mdash; Ministerio de Economía, Comercio y Empresa; Banco de España). Si detectas un error, agradezco el aviso: <a class="meto-link" href="sobre-mi.html">contacto</a>.</p>
+                </div>
+
+                <!-- 7. Buscador de correspondencias -->
+                <div class="arcade-grid-card" data-reveal>
+                    <h2 class="arcade-section-title">7 &middot; Buscador de correspondencias sector &harr; NC8</h2>
+                    <p class="mb-4">Escribe el nombre de un sector o un código para ver qué partidas de la Nomenclatura Combinada lo componen.</p>
+                    <input type="search" id="corrSearch" class="meto-input" placeholder="Ej.: aceite de oliva, bovino, 08051010&hellip;" autocomplete="off">
+                    <p id="corrStatus" class="meto-note mt-3">Cargando correspondencias&hellip;</p>
+                    <div class="meto-table-wrap mt-4">
+                        <table class="meto-table" id="corrTable">
+                            <thead>
+                                <tr><th>Sector (nivel 1)</th><th>Nivel 2</th><th>Nivel 3</th><th>Código NC8</th></tr>
+                            </thead>
+                            <tbody id="corrBody"></tbody>
+                        </table>
+                    </div>
+                    <p id="corrMore" class="meto-note mt-3 hidden"></p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="arcade-footer fixed bottom-0 left-0 right-0 z-50 border-t">
+        <div class="container mx-auto flex h-12 items-center justify-center gap-6 px-4">
+            <a href="https://www.linkedin.com/in/sergio-argudo-santiago/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="mailto:sergio.argudo.santiago@example.com" aria-label="Email" target="_blank" rel="noopener noreferrer"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></a>
+            <a href="https://github.com/sergio-argudo" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+        </div>
+    </footer>
+
+    <script src="js/main.js" onerror="console.warn('main.js not found')"></script>
+    <script>
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    if (!menu) return;
+    menu.classList.toggle('menu-open');
+    if (menu.classList.contains('menu-open')) { document.body.style.overflow='hidden'; document.body.style.position='fixed'; document.body.style.width='100%'; }
+    else { document.body.style.overflow=''; document.body.style.position=''; document.body.style.width=''; }
+}
+document.addEventListener('keydown', function(e) { if (e.key==='Escape') { const m=document.getElementById('mobileMenu'); if (m&&m.classList.contains('menu-open')) toggleMobileMenu(); } });
+    </script>
+    <script>
+    // Buscador de correspondencias sector -> NC8. Carga el mismo CSV que se ofrece
+    // en descarga, así lo que se ve y lo que se descarga no pueden divergir.
+    (function () {
+        var rows = [];
+        var LIMIT = 200;
+        var body = document.getElementById('corrBody');
+        var status = document.getElementById('corrStatus');
+        var more = document.getElementById('corrMore');
+        var input = document.getElementById('corrSearch');
+        if (!body || !input) return;
+
+        function splitCSVLine(line) {
+            var out = [], cur = '', q = false;
+            for (var i = 0; i < line.length; i++) {
+                var c = line[i];
+                if (c === '"') { if (q && line[i + 1] === '"') { cur += '"'; i++; } else { q = !q; } }
+                else if (c === ',' && !q) { out.push(cur); cur = ''; }
+                else { cur += c; }
+            }
+            out.push(cur);
+            return out;
+        }
+
+        function esc(s) {
+            return String(s == null ? '' : s)
+                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        function render(query) {
+            var q = (query || '').trim().toLowerCase();
+            var hits = q ? rows.filter(function (r) { return r.hay.indexOf(q) !== -1; }) : rows;
+            var shown = hits.slice(0, LIMIT);
+            body.innerHTML = shown.map(function (r) {
+                return '<tr><td>' + esc(r.lit1) + '</td><td>' + esc(r.lit2) +
+                       '</td><td>' + esc(r.lit3) + '</td><td>' + esc(r.nc) + '</td></tr>';
+            }).join('');
+            if (!hits.length) {
+                status.textContent = q ? 'Sin resultados para "' + query + '".'
+                                       : 'No hay correspondencias cargadas.';
+                more.classList.add('hidden');
+                return;
+            }
+            status.textContent = hits.length + ' código' + (hits.length === 1 ? '' : 's') +
+                                 ' NC8' + (q ? ' coinciden con la búsqueda' : ' en total') + '.';
+            if (hits.length > LIMIT) {
+                more.textContent = 'Se muestran los ' + LIMIT + ' primeros. Afina la búsqueda o descarga el CSV completo.';
+                more.classList.remove('hidden');
+            } else {
+                more.classList.add('hidden');
+            }
+        }
+
+        fetch('data/correspondencias-sectores-nc8.csv')
+            .then(function (r) {
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.text();
+            })
+            .then(function (text) {
+                var lines = text.replace(/^\uFEFF/, '').split(/\r?\n/).filter(function (l) { return l.trim(); });
+                rows = lines.slice(1).map(function (l) {
+                    var v = splitCSVLine(l);
+                    // macro_sector, lv1, lit_lv1, lv2, lit_lv2, lv3, lit_lv3, codigo_nc8
+                    return {
+                        lit1: v[2], lit2: v[4], lit3: v[6], nc: v[7],
+                        hay: (v[2] + ' ' + v[4] + ' ' + v[6] + ' ' + v[7]).toLowerCase()
+                    };
+                });
+                render('');
+            })
+            .catch(function (e) {
+                console.warn('No se pudieron cargar las correspondencias:', e.message);
+                status.textContent = 'No se han podido cargar las correspondencias. Puedes descargar el CSV completo con el botón de arriba.';
+            });
+
+        var t = null;
+        input.addEventListener('input', function () {
+            clearTimeout(t);
+            t = setTimeout(function () { render(input.value); }, 150);
+        });
+    })();
+    </script>
+    <script src="js/cookies.js?v=1"></script>
+    <!-- Analítica ligera y sin cookies (GoatCounter, gratis para uso no comercial).
+         Para activarla: 1) crea una cuenta en https://www.goatcounter.com con el código "sergioargudosantiago";
+         2) descomenta este script. No usa cookies, no requiere consentimiento.
+    <script data-goatcounter="https://sergioargudosantiago.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+    -->
+</body>
+
+</html>
