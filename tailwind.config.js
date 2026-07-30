@@ -3,6 +3,7 @@ module.exports = {
   darkMode: 'class',
   content: [
     './*.html',
+    './articulos/**/*.html',
     './js/**/*.js'
   ],
   theme: {

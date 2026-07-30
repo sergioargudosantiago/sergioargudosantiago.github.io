@@ -24,6 +24,7 @@ const md = require('./lib/markdown.js');
 
 const RAIZ = path.resolve(__dirname, '..');
 const DIR_ARTICULOS = path.join(RAIZ, 'articulos');
+const DIR_FRAGMENTOS = path.join(DIR_ARTICULOS, 'fragmentos');
 const DIR_LINKEDIN = path.join(RAIZ, 'review', 'linkedin');
 
 // Dominio público del sitio. Lo reescribe scripts/cambiar-dominio.js cuando
@@ -122,7 +123,14 @@ function navegacion(base, activo) {
     return { enlaces, movil };
 }
 
-function cabeceraHTML({ titulo, descripcion, url, imagen, base, tipo, extra }) {
+function cabeceraHTML({ titulo, descripcion, url, imagen, base, tipo, extra, imagenPropia }) {
+    // og:image:width/height solo cuando la imagen es la portada del sitio, cuyo
+    // tamaño conocemos. Declarar 1200x630 para una imagen propia de otra
+    // proporción hace que la tarjeta social salga recortada o deformada.
+    const dimsImagen = imagenPropia ? '' :
+        `    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+`;
     return `<!DOCTYPE html>
 <html lang="es">
 
@@ -148,9 +156,7 @@ function cabeceraHTML({ titulo, descripcion, url, imagen, base, tipo, extra }) {
     <meta property="og:title" content="${md.escapeAttr(titulo)}">
     <meta property="og:description" content="${md.escapeAttr(descripcion)}">
     <meta property="og:image" content="${imagen}">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="twitter:card" content="summary_large_image">
+${dimsImagen}    <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="${url}">
     <meta property="twitter:title" content="${md.escapeAttr(titulo)}">
     <meta property="twitter:description" content="${md.escapeAttr(descripcion)}">
@@ -210,6 +216,12 @@ html.dark .nav-logo-dark { display:block !important; }
 .nav-logo-dark { display:none; }
 
 /* ========== ARTÍCULOS ========== */
+/* Ancho de lectura propio en lugar de la utilidad max-w-3xl de Tailwind: no
+   está en el CSS compilado y tailwind.config.js ni siquiera escanea articulos/,
+   así que la página salía a todo el ancho del contenedor. Con clase propia las
+   páginas generadas no dependen de qué haya sobrevivido a la purga. */
+.art-contenedor { width:100%; max-width:48rem; margin:0 auto; padding:0 1rem; }
+@media (min-width:768px) { .art-contenedor { padding:0 1.5rem; } }
 .art-meta { font-family:'Share Tech Mono',monospace; font-size:0.8rem; opacity:0.85; display:flex; flex-wrap:wrap; gap:0.5rem 1rem; align-items:center; }
 .art-etiqueta { font-family:'Share Tech Mono',monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; border:1px solid currentColor; padding:0.1rem 0.5rem; border-radius:999px; opacity:0.9; }
 .art-cuerpo { font-size:1.02rem; line-height:1.75; }
@@ -238,6 +250,19 @@ html.dark .art-tabla th,html.dark .art-tabla td { border-bottom-color:rgba(194,2
 .art-btn { display:inline-flex; align-items:center; gap:0.4rem; font-family:'Share Tech Mono',monospace; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.04em; padding:0.45rem 0.9rem; border:1px solid currentColor; background:transparent; color:inherit; cursor:pointer; text-decoration:none; transition:background 0.2s,color 0.2s; }
 .art-btn:hover,.art-btn:focus-visible { background:#3B4533; color:#C2D9C2; }
 html.dark .art-btn:hover,html.dark .art-btn:focus-visible { background:#C2D9C2; color:#3B4533; }
+/* Gráficos interactivos exportados desde R (ggiraph). El SVG se genera con
+   fondo y tipografía claros, así que en modo oscuro se deja sobre un panel
+   claro en lugar de invertirlo: invertir un SVG con escalas de color propias
+   destroza el significado de los colores. */
+.art-grafico { background:#FFFFFF; border:2px solid #3B4533; border-radius:4px; padding:0.75rem; margin:1.6rem 0; }
+.art-nota { font-size:0.85rem; opacity:0.72; font-style:italic; margin-top:-0.6rem !important; }
+.art-metodologia { font-size:0.9rem; opacity:0.85; border-top:1px solid currentColor; padding-top:1rem; }
+.art-metodologia summary { cursor:pointer; font-family:'Share Tech Mono',monospace; text-transform:uppercase; letter-spacing:0.05em; }
+.art-metodologia > * + * { margin-top:0.8rem; }
+.art-metodologia ul { padding-left:1.4rem; display:flex; flex-direction:column; gap:0.4rem; }
+.art-grafico .girafe { width:100% !important; }
+.art-grafico svg { max-width:100%; height:auto; display:block; }
+html.dark .art-grafico { border-color:#C2D9C2; }
 .art-tarjeta { display:flex; flex-direction:column; gap:0.6rem; text-decoration:none; color:inherit; }
 .art-tarjeta:hover .art-tarjeta-titulo { color:var(--accent-warm); }
 .art-tarjeta-titulo { font-family:'Orbitron',monospace; font-size:1.05rem; font-weight:700; letter-spacing:0.02em; line-height:1.35; transition:color 0.15s; }`;
@@ -332,10 +357,10 @@ function paginaArticulo(art, autores) {
     const cabecera = cabeceraHTML({
         titulo: `${art.titulo} — Sergio Argudo Santiago`,
         descripcion: art.resumen,
-        url, imagen, base: '../', tipo: 'article',
+        url, imagen, base: '../', tipo: 'article', imagenPropia: !!art.imagen,
         extra: `    <meta property="article:published_time" content="${art.fecha}">
 ${art.tags.map(t => `    <meta property="article:tag" content="${md.escapeAttr(t)}">`).join('\n')}
-    <script type="application/ld+json">${JSON.stringify(jsonLD)}</script>`
+${art.css.map(c => `    <link rel="stylesheet" href="../${c}">`).join('\n')}${art.css.length ? '\n' : ''}    <script type="application/ld+json">${JSON.stringify(jsonLD)}</script>`
     });
 
     const bloqueFirmas = firmas.map(a => {
@@ -354,7 +379,7 @@ ${partes.cabeceraMovil}
 
     <main class="relative flex-1 pb-24 pt-8">
         <section class="w-full py-20 md:py-28">
-            <div class="container mx-auto max-w-3xl px-4 md:px-6">
+            <div class="art-contenedor">
 
                 <a href="index.html" class="art-btn mb-8" style="border:none;padding-left:0">&larr; Todos los artículos</a>
 
@@ -389,7 +414,7 @@ ${art.html}
         </section>
     </main>
 
-${partes.pie.replace('</body>', `    <script>
+${partes.pie.replace('</body>', `${art.js.map(j => `    <script src="../${j}"></script>`).join('\n')}${art.js.length ? '\n' : ''}    <script>
     (function () {
         var btn = document.getElementById('btnCopiarEnlace');
         if (!btn || !navigator.clipboard) return;
@@ -444,7 +469,7 @@ ${partes.cabeceraMovil}
 
     <main class="relative flex-1 pb-24 pt-8">
         <section class="w-full py-20 md:py-28">
-            <div class="container mx-auto max-w-3xl px-4 md:px-6">
+            <div class="art-contenedor">
 
                 <div class="mb-12 text-center" data-reveal>
                     <h1 style="font-family:'Orbitron',monospace;font-weight:800;letter-spacing:0.04em;font-size:clamp(2rem,1.5rem + 2vw,3.5rem);text-transform:uppercase;margin-bottom:1rem">ARTÍCULOS</h1>
@@ -525,6 +550,26 @@ function actualizarSitemap(articulos) {
 
 function hoyISO() {
     return new Date().toISOString().slice(0, 10);
+}
+
+/**
+ * Sustituye los marcadores <!--incluir: fichero.html--> por el contenido de
+ * articulos/fragmentos/. Sirve para meter en un artículo un trozo de HTML que
+ * no tiene sentido escribir a mano ni tener dentro del .md: por ejemplo un
+ * gráfico interactivo exportado desde R, cuyo payload son doce mil caracteres
+ * de JSON que dejarían el Markdown ilegible.
+ *
+ * Se aplica después de renderizar: el marcador es un comentario HTML y el
+ * renderizador lo deja pasar intacto.
+ */
+function incluirFragmentos(html, contexto) {
+    return html.replace(/<!--\s*incluir:\s*([\w.-]+)\s*-->/g, (_, fichero) => {
+        const ruta = path.join(DIR_FRAGMENTOS, fichero);
+        if (!fs.existsSync(ruta)) {
+            throw new Error(`${contexto}: el fragmento "${fichero}" no existe en articulos/fragmentos/`);
+        }
+        return fs.readFileSync(ruta, 'utf8');
+    });
 }
 
 /**
@@ -612,9 +657,13 @@ function main() {
                 imagen: datos.imagen || '',
                 // Puntos sueltos para el borrador de LinkedIn, opcionales.
                 puntos: [].concat(datos.puntos || []),
+                // Hojas de estilo y scripts propios de este artículo, con ruta
+                // relativa a la raíz del sitio. Solo se cargan donde hacen falta.
+                css: [].concat(datos.css || []),
+                js: [].concat(datos.js || []),
                 palabras,
                 minutos: Math.max(1, Math.round(palabras / PALABRAS_POR_MINUTO)),
-                html: md.render(cuerpo)
+                html: incluirFragmentos(md.render(cuerpo), fichero)
             });
         } catch (e) {
             errores.push(`${fichero}: ${e.message}`);
@@ -643,6 +692,16 @@ function main() {
         fs.writeFileSync(path.join(DIR_LINKEDIN, `${art.slug}.md`), borradorLinkedIn(art, autores), 'utf8');
     }
     fs.writeFileSync(path.join(DIR_ARTICULOS, 'index.html'), paginaIndice(articulos, autores), 'utf8');
+
+    // Barrido de huérfanos: si se borra o se renombra un .md, su .html se
+    // quedaría publicado y enlazado desde el feed antiguo. Se elimina aquí.
+    const vigentes = new Set([...articulos.map(a => `${a.slug}.html`), 'index.html']);
+    const huerfanos = fs.readdirSync(DIR_ARTICULOS)
+        .filter(f => f.endsWith('.html') && !vigentes.has(f));
+    huerfanos.forEach(f => {
+        fs.unlinkSync(path.join(DIR_ARTICULOS, f));
+        console.log(`  retirado ${f} (ya no tiene .md)`);
+    });
     fs.writeFileSync(path.join(RAIZ, 'feed.xml'), feedRSS(articulos, autores), 'utf8');
     actualizarSitemap(articulos);
 
