@@ -39,13 +39,13 @@
   <!-- articulos:inicio -->
   <url>
     <loc>https://sergioargudosantiago.github.io/articulos/index.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sergioargudosantiago.github.io/articulos/cuota-ue-que-mide.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://sergioargudosantiago.github.io/articulos/aranceles-un-ano.html</loc>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>

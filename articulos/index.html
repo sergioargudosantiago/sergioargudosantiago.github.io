@@ -79,6 +79,12 @@ html.dark .nav-logo-dark { display:block !important; }
 .nav-logo-dark { display:none; }
 
 /* ========== ARTÍCULOS ========== */
+/* Ancho de lectura propio en lugar de la utilidad max-w-3xl de Tailwind: no
+   está en el CSS compilado y tailwind.config.js ni siquiera escanea articulos/,
+   así que la página salía a todo el ancho del contenedor. Con clase propia las
+   páginas generadas no dependen de qué haya sobrevivido a la purga. */
+.art-contenedor { width:100%; max-width:48rem; margin:0 auto; padding:0 1rem; }
+@media (min-width:768px) { .art-contenedor { padding:0 1.5rem; } }
 .art-meta { font-family:'Share Tech Mono',monospace; font-size:0.8rem; opacity:0.85; display:flex; flex-wrap:wrap; gap:0.5rem 1rem; align-items:center; }
 .art-etiqueta { font-family:'Share Tech Mono',monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; border:1px solid currentColor; padding:0.1rem 0.5rem; border-radius:999px; opacity:0.9; }
 .art-cuerpo { font-size:1.02rem; line-height:1.75; }
@@ -107,6 +113,19 @@ html.dark .art-tabla th,html.dark .art-tabla td { border-bottom-color:rgba(194,2
 .art-btn { display:inline-flex; align-items:center; gap:0.4rem; font-family:'Share Tech Mono',monospace; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.04em; padding:0.45rem 0.9rem; border:1px solid currentColor; background:transparent; color:inherit; cursor:pointer; text-decoration:none; transition:background 0.2s,color 0.2s; }
 .art-btn:hover,.art-btn:focus-visible { background:#3B4533; color:#C2D9C2; }
 html.dark .art-btn:hover,html.dark .art-btn:focus-visible { background:#C2D9C2; color:#3B4533; }
+/* Gráficos interactivos exportados desde R (ggiraph). El SVG se genera con
+   fondo y tipografía claros, así que en modo oscuro se deja sobre un panel
+   claro en lugar de invertirlo: invertir un SVG con escalas de color propias
+   destroza el significado de los colores. */
+.art-grafico { background:#FFFFFF; border:2px solid #3B4533; border-radius:4px; padding:0.75rem; margin:1.6rem 0; }
+.art-nota { font-size:0.85rem; opacity:0.72; font-style:italic; margin-top:-0.6rem !important; }
+.art-metodologia { font-size:0.9rem; opacity:0.85; border-top:1px solid currentColor; padding-top:1rem; }
+.art-metodologia summary { cursor:pointer; font-family:'Share Tech Mono',monospace; text-transform:uppercase; letter-spacing:0.05em; }
+.art-metodologia > * + * { margin-top:0.8rem; }
+.art-metodologia ul { padding-left:1.4rem; display:flex; flex-direction:column; gap:0.4rem; }
+.art-grafico .girafe { width:100% !important; }
+.art-grafico svg { max-width:100%; height:auto; display:block; }
+html.dark .art-grafico { border-color:#C2D9C2; }
 .art-tarjeta { display:flex; flex-direction:column; gap:0.6rem; text-decoration:none; color:inherit; }
 .art-tarjeta:hover .art-tarjeta-titulo { color:var(--accent-warm); }
 .art-tarjeta-titulo { font-family:'Orbitron',monospace; font-size:1.05rem; font-weight:700; letter-spacing:0.02em; line-height:1.35; transition:color 0.15s; }
@@ -163,7 +182,7 @@ html.dark .art-btn:hover,html.dark .art-btn:focus-visible { background:#C2D9C2; 
 
     <main class="relative flex-1 pb-24 pt-8">
         <section class="w-full py-20 md:py-28">
-            <div class="container mx-auto max-w-3xl px-4 md:px-6">
+            <div class="art-contenedor">
 
                 <div class="mb-12 text-center" data-reveal>
                     <h1 style="font-family:'Orbitron',monospace;font-weight:800;letter-spacing:0.04em;font-size:clamp(2rem,1.5rem + 2vw,3.5rem);text-transform:uppercase;margin-bottom:1rem">ARTÍCULOS</h1>
@@ -173,16 +192,16 @@ html.dark .art-btn:hover,html.dark .art-btn:focus-visible { background:#C2D9C2; 
 
                 <div style="display:flex;flex-direction:column;gap:1.5rem">
                     <div class="arcade-grid-card" data-reveal>
-                        <a href="cuota-ue-que-mide.html" class="art-tarjeta">
+                        <a href="aranceles-un-ano.html" class="art-tarjeta">
                             <div class="art-meta">
-                                <time datetime="2026-07-26">26 de julio de 2026</time>
+                                <time datetime="2026-07-30">30 de julio de 2026</time>
                                 <span aria-hidden="true">|</span>
-                                <span>2 min</span>
+                                <span>5 min</span>
                                 <span aria-hidden="true">|</span><span>Sergio Argudo Santiago</span>
                             </div>
-                            <h2 class="art-tarjeta-titulo">Qué mide (y qué no) la cuota UE de un sector</h2>
-                            <p style="opacity:0.9">La cuota UE del visualizador es una media ponderada por valor, no un promedio de porcentajes. La diferencia entre las dos cosas puede ser de varios puntos.</p>
-                            <div class="art-meta" style="margin-top:0.25rem"><span class="art-etiqueta">comercio exterior</span><span class="art-etiqueta">metodología</span><span class="art-etiqueta">UE</span></div>
+                            <h2 class="art-tarjeta-titulo">Un año y un mes de aranceles: así ha cambiado el comercio con EE.UU.</h2>
+                            <p style="opacity:0.9">Catorce meses después del Liberation Day, las exportaciones españolas a Estados Unidos caen un 9% de media mensual. El golpe es real y muy desigual por sector, pero el comercio se reorganiza más de lo que se reduce.</p>
+                            <div class="art-meta" style="margin-top:0.25rem"><span class="art-etiqueta">comercio exterior</span><span class="art-etiqueta">aranceles</span><span class="art-etiqueta">Estados Unidos</span><span class="art-etiqueta">UE</span></div>
                         </a>
                     </div>
                 </div>
