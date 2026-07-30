@@ -58,6 +58,39 @@ y ponlo en el frontmatter: `autores: [sergio, clave-corta]`. El orden es el de
 la firma. Si un artículo cita un autor que no está en `autores.json`, el build
 falla a propósito en lugar de publicar una firma vacía.
 
+## Gráficos y otros HTML incrustados
+
+Para meter algo que no tiene sentido escribir a mano —un gráfico interactivo
+exportado desde R, por ejemplo— se usan **fragmentos**. El `.md` lleva un
+marcador solo en su línea:
+
+```markdown
+<!--incluir: aranceles-g1.html-->
+```
+
+y el generador lo sustituye por el contenido de `articulos/fragmentos/aranceles-g1.html`.
+Si el fichero no existe, el build falla. Así el payload del gráfico —que en el
+caso de `ggiraph` son doce mil caracteres de JSON— no ensucia el Markdown.
+
+Las librerías que ese HTML necesite van en `articulos/recursos/` y se declaran
+en el frontmatter, con ruta desde la raíz del sitio:
+
+```yaml
+css: [articulos/recursos/girafe.css]
+js: [articulos/recursos/htmlwidgets.js, articulos/recursos/girafe.js]
+```
+
+Se cargan **solo en el artículo que las declara**, en el orden en que aparecen.
+El resto de páginas no paga ese peso.
+
+Cómo se preparó el artículo de aranceles, por si hay que repetirlo: la salida de
+`save_html()` de R es autocontenida, así que se extrajeron de ella los bloques
+`<script>` y `<style>` de las librerías a `articulos/recursos/`, y cada widget
+(su `<div>` más el `<script type="application/json">` con el mismo `data-for`)
+a un fragmento. Conviene quitar el `width`/`height` fijos en píxeles del `div`:
+`ggiraph` reescala solo al ancho del contenedor. Las fuentes que R empaqueta no
+hacen falta si el SVG no las referencia — eran 19,8 MB de los 21.
+
 ## Markdown admitido
 
 Encabezados `##` a `#####` (el `#` de nivel 1 lo pone la plantilla con el
