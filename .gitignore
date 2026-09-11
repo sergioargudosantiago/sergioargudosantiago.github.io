@@ -78,3 +78,6 @@ review/linkedin/
 # ===== Agent/IDE =====
 .agent/
 .gemini/
+.claude/
+docs/
+review/
