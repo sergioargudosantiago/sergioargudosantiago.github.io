@@ -47,6 +47,31 @@ mueve de año en año. Sirve de piloto para medir el coste real antes de comprom
 los otros 49, igual que el lote 1 hace en la revisión. Después F, G, C, E, A, B — de lo
 más estable a lo que más depende de datos que caducan.
 
+## La fuente: los temas del opositor
+
+**Los esquemas del ejercicio 1 se destilan de los temas desarrollados del opositor, y de
+nada más.** Es la regla que gobierna el resto de este documento.
+
+El material vive en `fuentes/ejercicio-1/`, ignorado por git, con las carpetas por sección
+del pen drive original (`CITES/`, `comercio de mercancías/`, …), en `.docx` y `.pdf`. El
+agente prefiere el `.docx`: se extrae con `zipfile` y no depende de tener `pdftotext`
+instalado.
+
+Las carpetas del opositor no siguen la numeración oficial de los 55 temas, así que el
+emparejamiento entre tema y fuente es por materia, no por número. Un tema sin fuente
+identificable no se escribe.
+
+Por qué esto y no investigación propia: un esquema con materia de fuera es un esquema que
+el opositor no reconoce como suyo cuando lo canta, y que además nadie ha validado. La
+primera tentativa del bloque D se escribió investigando en la web y hubo que descartarla.
+
+Tiene una consecuencia que conviene asumir por escrito: **dos de las cuatro reglas de la
+auditoría dejan de estar garantizadas.** Si la fuente trae una cifra sin año, o una norma
+derogada, o un marco como UE-28, eso pasa al esquema tal cual. No se corrige ni se omite:
+se reproduce y se anota en `review/borradores/ejercicio-1/NORMATIVA-DUDOSA.md`, que el
+opositor revisa antes de pasar nada a `.docx`. La alternativa —dejar que el agente
+actualice por su cuenta— es justo lo que se ha descartado.
+
 ## Cómo es un esquema
 
 La plantilla no se inventa: se copia de los que ya existen. Tomando `ESQUEMA TEMA 21.docx`

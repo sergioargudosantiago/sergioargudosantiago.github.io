@@ -81,3 +81,8 @@ review/linkedin/
 .claude/
 docs/
 review/
+
+# ===== Temas del opositor =====
+# El material de partida del primer ejercicio (el pen drive). Es del opositor,
+# no contenido del sitio, y no tiene por qué acabar en un repositorio público.
+fuentes/
