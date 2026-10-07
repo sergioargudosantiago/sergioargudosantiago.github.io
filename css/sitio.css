@@ -394,3 +394,79 @@ hr + .art-metodologia { border-top: 0; padding-top: 0; }
 @media (prefers-reduced-motion: reduce) {
     .sitio-nav a, .c-boton, .c-tarjeta-articulo h2 { transition: none; }
 }
+
+/* -------------------------------------------------------------------------
+   Páginas de documento (metodología, comercio exterior)
+   ------------------------------------------------------------------------- */
+.c-columna-ancha { max-width: 54rem; margin: 0 auto; }
+.c-columna-sitio { max-width: var(--ancho-sitio); margin: 0 auto; }
+.c-cabecera-pagina { display: grid; gap: 0.9rem; margin-bottom: 2.25rem; }
+.c-cabecera-pagina .c-entradilla { max-width: 60ch; }
+
+.c-indice {
+    display: grid;
+    gap: 0.35rem;
+    padding: 1.1rem 1.25rem;
+    background: var(--c-superficie-2);
+    border: 1px solid var(--c-linea);
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.c-indice ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 0.3rem 1.5rem; }
+.c-indice a { text-decoration: none; }
+.c-indice a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.c-indice .c-num { font-family: var(--f-cifras); color: var(--c-tenue); margin-right: 0.4rem; }
+
+.c-seccion { display: grid; gap: 1rem; padding-block: 2.25rem; border-top: 1px solid var(--c-linea); scroll-margin-top: 4.5rem; }
+.c-seccion > * { min-width: 0; }
+.c-seccion-titulo {
+    font-family: var(--f-titular) !important;
+    font-weight: 700;
+    font-size: 1.55rem;
+    line-height: 1.2;
+    display: flex;
+    gap: 0.6rem;
+    align-items: baseline;
+}
+.c-seccion-titulo .c-num { font-family: var(--f-cifras); font-size: 0.95rem; font-weight: 500; color: var(--c-tenue); }
+.c-seccion p { max-width: 70ch; }
+.c-seccion a:not(.c-boton) { text-decoration: underline; text-decoration-color: var(--c-oro); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+.c-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+.c-lista li { position: relative; padding-left: 1.2rem; max-width: 70ch; }
+.c-lista li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 0.45rem; height: 0.45rem; background: var(--c-acento); }
+
+.c-definiciones { display: grid; gap: 0; margin: 0; }
+.c-definiciones dt { font-weight: 700; padding-top: 1rem; }
+.c-definiciones dt:first-child { padding-top: 0; }
+.c-definiciones dd { margin: 0.3rem 0 0; padding-left: 0.95rem; border-left: 2px solid var(--c-linea); max-width: 70ch; }
+
+.c-aviso { border-left: 4px solid var(--c-acento); background: var(--c-acento-suave); padding: 1rem 1.2rem; border-radius: 0 3px 3px 0; }
+.c-aviso > * + * { margin-top: 0.6rem; }
+.c-nota { font-size: 0.9rem; color: var(--c-tenue); }
+
+.c-tabla-envoltorio { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--c-linea); border-radius: 3px; background: var(--c-superficie); }
+.c-tabla { width: 100%; border-collapse: collapse; font-size: 0.93rem; min-width: 520px; font-variant-numeric: tabular-nums; }
+.c-tabla th, .c-tabla td { text-align: left; padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--c-linea); vertical-align: top; }
+.c-tabla tbody tr:last-child td { border-bottom: 0; }
+.c-tabla th { font-size: 0.76rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--c-tenue); background: var(--c-superficie-2); position: sticky; top: 0; }
+.c-tabla .c-codigo, .c-tabla td.c-codigo { font-family: var(--f-cifras); white-space: nowrap; }
+.c-tabla-alta { max-height: 28rem; overflow-y: auto; }
+
+.c-campo {
+    width: 100%;
+    max-width: 30rem;
+    font-family: var(--f-texto);
+    font-size: 1rem;
+    padding: 0.65rem 0.85rem;
+    background: var(--c-superficie);
+    color: var(--c-tinta);
+    border: 1.5px solid var(--c-linea);
+    border-radius: 3px;
+}
+.c-campo:focus { outline: 2px solid var(--c-foco); outline-offset: 1px; border-color: var(--c-acento); }
+.c-campo::placeholder { color: var(--c-tenue); opacity: 0.8; }
+
+.c-acciones { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.c-boton-descarga::before { content: "\2193"; font-weight: 700; }
+.c-tabla-codigos td:last-child { font-family: var(--f-cifras); white-space: nowrap; }
