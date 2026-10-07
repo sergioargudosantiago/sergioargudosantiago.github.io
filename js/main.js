@@ -280,14 +280,6 @@ const EXERCISE_5_TITLES = {
 };
 
 
-// Mobile Menu Functions
-function toggleMobileMenu() {
-    const menu = document.getElementById('mobileMenu');
-    if (menu) {
-        menu.classList.toggle('active');
-    }
-}
-
 // Modal Functions
 function openModal(type, title, exerciseNumber = null, topicCount = null) {
     if (type === 'coming-soon') {

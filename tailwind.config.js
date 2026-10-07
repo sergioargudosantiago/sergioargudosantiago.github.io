@@ -33,8 +33,8 @@ module.exports = {
         ring: '#3B4533',
       },
       fontFamily: {
-        sans: ['Inter', 'Segoe UI', 'system-ui', 'sans-serif'],
-        mono: ['Share Tech Mono', 'monospace'],
+        sans: ['Atkinson Hyperlegible', 'Segoe UI', 'system-ui', 'sans-serif'],
+        mono: ['IBM Plex Mono', 'ui-monospace', 'monospace'],
         display: ['Orbitron', 'monospace'],
       }
     }

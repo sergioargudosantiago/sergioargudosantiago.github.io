@@ -156,7 +156,6 @@ function cuerpoComun({ base, activo }) {
         pie: `    ${parciales.bloque('pie', { raiz: base })}
 
     <script src="${base}js/main.js"></script>
-    <script src="${base}js/cookies.js?v=1"></script>
 </body>
 
 </html>`

@@ -121,19 +121,18 @@ Hecho el 7 de octubre:
 Pendiente, por orden:
 1. **Autor**: comprar `sergioargudo.es` (Cloudflare no vende `.es`: comprarlo en
    otro registrador y, si se quiere el correo gratis, delegar el DNS en Cloudflare).
-2. ~~**Diseño C, fase 1**~~ (hecho el 7 oct): `css/sitio.css`, parciales comunes,
-   cabecera y pie nuevos en todas las páginas, artículos e índice en diseño C.
-   Pendiente de limpiar en cada página al migrarla: su CSS viejo de `.nav-island`,
-   `#mobileMenu` y `arcade-footer`, y su `toggleMobileMenu()` en línea (ya no hacen
-   nada). Al terminar las fases, quitar Inter y Share Tech Mono de `recursos.html`
-   si ya no se usan.
-3. **Diseño C, fase 2**: `comercio-exterior.html` y `metodologia.html`, con
-   Chart.js recoloreado.
-4. **Diseño C, fase 3**: portada con frase que diga qué ofrece la web (no
-   «Introducción»); temario con la parte arcade.
-5. **Aviso de cookies**: GoatCounter no usa cookies; el banner que dice «Utilizamos
-   cookies» sobra o hay que reescribirlo. Añadir aviso legal / privacidad mínimos y
-   nota de autoría de los temas.
+2. ~~**Diseño C**~~ (hecho el 7 oct): las 7 páginas y los artículos en diseño C,
+   parciales comunes, Tailwind recompilado (solo las clases en uso) y fuentes
+   recortadas a Atkinson Hyperlegible, Fraunces, IBM Plex Mono y Orbitron.
+   Gráficos de comercio exterior con la paleta `--g-*` de `css/sitio.css`.
+3. ~~**Cookies**~~ (hecho el 7 oct): fuera el banner; la web no usa cookies (solo
+   guarda el tema claro/oscuro en el navegador). GoatCounter sigue comentado en
+   cada página: activarlo exige crear la cuenta (decisión del autor).
+4. **Pendiente de decidir con el autor**: aviso legal y privacidad mínimos; si
+   se activa GoatCounter; nota de autoría de los temas (el temario dice que se
+   basa en los temas de su preparador).
+5. Gráfico «Servicios turísticos y no turísticos» de la balanza: usa dos ejes Y
+   (barras en M€ y línea en %). Convendría partirlo en dos gráficos.
 6. **Revisión técnica** con el diseño ya aplicado: enlaces rotos, accesibilidad
    (contraste, teclado, alt), Lighthouse, SEO y Open Graph (LinkedIn Post Inspector),
    errores de consola, móvil.

@@ -211,7 +211,7 @@
         }
     </style>
     <!-- recursos:inicio -->
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/sitio.css">
     <!-- recursos:fin -->
 </head>
@@ -475,7 +475,7 @@
             </div>
         </div>
         <div class="sitio-pie-legal">
-            <span>© 2026 Sergio Argudo Santiago. Web personal: no representa a ningún organismo.</span>
+            <span>© 2026 Sergio Argudo Santiago. Web personal: no representa a ningún organismo. Sin cookies.</span>
             <a href="mailto:contacto@sergioargudo.es">contacto@sergioargudo.es</a>
         </div>
     </footer>
@@ -1788,21 +1788,6 @@
             }
         });
 
-        // ========== MOBILE MENU ==========
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            if (!menu) return;
-            menu.classList.toggle('menu-open');
-            if (menu.classList.contains('menu-open')) {
-                document.body.style.overflow = 'hidden';
-                document.body.style.position = 'fixed';
-                document.body.style.width = '100%';
-            } else {
-                document.body.style.overflow = '';
-                document.body.style.position = '';
-                document.body.style.width = '';
-            }
-        }
 
         // ========== MOBILE SEARCH ==========
         document.getElementById('mobileSearch')?.addEventListener('keypress', (e) => {
@@ -2554,24 +2539,6 @@
     </script>
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>
-    <script>
-    // Override main.js toggleMobileMenu — uses menu-open class, not active
-    function toggleMobileMenu() {
-        const menu = document.getElementById('mobileMenu');
-        if (!menu) return;
-        menu.classList.toggle('menu-open');
-        if (menu.classList.contains('menu-open')) {
-            document.body.style.overflow = 'hidden';
-            document.body.style.position = 'fixed';
-            document.body.style.width = '100%';
-        } else {
-            document.body.style.overflow = '';
-            document.body.style.position = '';
-            document.body.style.width = '';
-        }
-    }
-    </script>
-    <script src="js/cookies.js?v=1"></script>
     <!-- Analítica ligera y sin cookies (GoatCounter, gratis para uso no comercial).
          Para activarla: 1) crea una cuenta en https://www.goatcounter.com con el código "sergioargudosantiago";
          2) descomenta este script. No usa cookies, no requiere consentimiento.
