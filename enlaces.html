@@ -45,136 +45,14 @@
     <link rel="stylesheet" href="css/tailwind.css">
 
     <style>
-:root { --background:#C2D9C2; --foreground:#3B4533; --primary:#3B4533; --border:#3B4533; --radius:6px; --accent-warm:#C8A951; }
-* { margin:0; padding:0; box-sizing:border-box; }
-html { transition:none; }
-body { font-family:'Inter','Segoe UI',system-ui,sans-serif; background:#C2D9C2; color:#3B4533; min-height:100vh; padding-bottom:5rem; line-height:1.55; -webkit-font-smoothing:antialiased; }
-h1,h2,h3,h4 { font-family:'Orbitron',monospace; letter-spacing:0.03em; }
-[data-reveal] { opacity:0; transform:translateY(24px); transition:opacity 0.7s,transform 0.7s; }
-[data-reveal].revealed { opacity:1; transform:translateY(0); }
-.mobile-breadcrumb { position:fixed; top:0; left:0; right:0; z-index:40; display:flex; align-items:center; padding:0.5rem 1rem; background:#3B4533; border-bottom:1px solid rgba(194,217,194,0.3); font-family:'Orbitron',monospace; font-size:0.6rem; font-weight:700; letter-spacing:0.08em; color:#C2D9C2; text-transform:uppercase; height:2.5rem; box-shadow:none; }
-@media(min-width:768px){.mobile-breadcrumb{display:none}}
-#mobileMenu { transform:translateX(-100%); opacity:0; visibility:hidden; transition:transform 0.2s ease,opacity 0.2s ease,visibility 0s 0.2s; background:#3B4533!important; border-right:2px solid rgba(194,217,194,0.3); }
-#mobileMenu.menu-open { transform:translateX(0); opacity:1; visibility:visible; transition:transform 0.2s ease,opacity 0.2s ease; z-index:60; }
-#mobileMenu a { font-family:'Orbitron',monospace; font-size:0.65rem; font-weight:600; color:#C2D9C2; letter-spacing:0.05em; padding:0.75rem 1rem; border-bottom:1px solid rgba(194,217,194,0.15); display:flex; align-items:center; min-height:44px; text-decoration:none; }
-#mobileMenu a:hover,#mobileMenu a.active-mobile { background:#C2D9C2!important; color:#3B4533!important; }
-        .nav-island {
-            position: fixed;
-            top: 1rem;
-            left: 50%;
-            transform: translateX(-50%);
-            transform-origin: top center;
-            z-index: 50;
-            display: flex;
-            align-items: stretch;
-            padding: 0 clamp(0.1rem, 0.2vw, 0.25rem);
-            background: #C2D9C2;
-            border: 2px solid #3B4533;
-            box-shadow: 4px 4px 0 #3B4533;
-            height: clamp(2.4rem, 1.4rem + 2vw, 4.25rem);
-            width: max-content;
-            max-width: calc(100vw - 1.5rem);
-            white-space: nowrap;
-            overflow: hidden;
-        }
-        .nav-logo-link {
-            display: flex;
-            align-items: center;
-            padding: 0 clamp(0.4rem, 0.3rem + 0.7vw, 1rem);
-            height: 100%;
-            border-right: 1px solid rgba(59, 69, 51, 0.2);
-            flex-shrink: 0;
-        }
-        .nav-segment {
-            position: relative;
-            padding: 0 clamp(0.25rem, 0.15rem + 0.75vw, 1.25rem);
-            height: 100%;
-            display: flex;
-            align-items: center;
-            font-family: 'Orbitron', monospace;
-            font-size: clamp(0.58rem, 0.3rem + 0.38vw, 0.75rem);
-            font-weight: 600;
-            color: #3B4533;
-            text-decoration: none;
-            border-right: 1px solid rgba(59, 69, 51, 0.2);
-            letter-spacing: 0.03em;
-            white-space: nowrap;
-            transition: background 0.15s, color 0.15s;
-            flex-shrink: 1;
-            min-width: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .nav-island img {
-            width: clamp(56px, 30px + 6.5vw, 200px);
-            height: auto;
-        }
-        .nav-segment:hover { background: #3B4533; color: #C2D9C2; box-shadow: none; }
-        .nav-segment.active { background: #3B4533; color: #C2D9C2; font-weight: 700; box-shadow: none; }
-        .search-island {
-            position: relative;
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            margin-right: 0.75rem;
-        }
-        .search-island input {
-            width: clamp(6rem, 8.5vw, 11rem);
-            height: 1.75rem;
-            padding: 0 0.75rem 0 2rem;
-            background: #ddeedd;
-            border: 1px solid #3B4533;
-            border-radius: 0;
-            font-family: 'Share Tech Mono', monospace;
-            font-size: clamp(0.55rem, 0.7vw, 0.75rem);
-            color: #3B4533;
-            outline: none;
-        }
-        .search-island input::placeholder { color: rgba(59,69,51,0.5); }
-        .search-island input:focus { background: #C2D9C2; border-color: #3B4533; box-shadow: none; }
-        .search-island svg {
-            position: absolute;
-            left: 0.5rem;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 14px; height: 14px;
-            color: rgba(194,217,194,0.6);
-            pointer-events: none;
-        }
-        @media (max-width: 768px) { .nav-island { display: none; } }
-.theme-toggle { display:flex; align-items:center; justify-content:center; width:clamp(2.25rem,3.5vw,4rem); height:100%; background:transparent; border:none; border-left:1px solid rgba(59,69,51,0.2); cursor:pointer; color:#3B4533; padding:0; flex-shrink:0; transition:background 0.15s,color 0.15s; }
-.theme-toggle:hover { background:#3B4533; color:#C2D9C2; }
-.arcade-section-title { font-family:'Orbitron',monospace; font-size:0.72rem; font-weight:700; letter-spacing:0.1em; color:#3B4533; text-transform:uppercase; border-bottom:2px solid #3B4533; padding-bottom:0.5rem; margin-bottom:1.25rem; }
-.arcade-link { display:flex; align-items:center; gap:0.5rem; font-family:'Inter',sans-serif; font-size:0.95rem; font-weight:500; color:#3B4533; text-decoration:none; padding:0.55rem 0.6rem; border-bottom:1px solid rgba(59,69,51,0.1); border-radius:4px; transition:background 0.15s,padding-left 0.15s,color 0.15s; }
-.arcade-link:hover { background:#3B4533; color:var(--accent-warm); padding-left:0.85rem; }
-.arcade-link svg { flex-shrink:0; width:14px; height:14px; }
-.arcade-grid-card { background:#C2D9C2; border:2px solid #3B4533; padding:1.75rem; box-shadow:4px 4px 0 #3B4533; border-radius:6px; display:flex; flex-direction:column; height:100%; }
-footer.arcade-footer { background:#3B4533!important; color:#C2D9C2!important; border-top:2px solid #3B4533!important; backdrop-filter:none!important; }
-footer.arcade-footer a { color:#C2D9C2; transition:color 0.15s; }
-footer.arcade-footer a:hover { color:#FFE566; opacity:1; }
-html.dark body { background:#3B4533; color:#C2D9C2; }
-html.dark .arcade-grid-card { background:#2D3828; border-color:#C2D9C2; box-shadow:4px 4px 0 rgba(194,217,194,0.3); }
-html.dark .arcade-section-title { color:#C2D9C2; border-bottom-color:rgba(194,217,194,0.5); }
-html.dark .arcade-link { color:#C2D9C2; border-bottom-color:rgba(194,217,194,0.15); }
-html.dark .arcade-link:hover { background:#C2D9C2; color:#3B4533; }
-html.dark .nav-island { background:#3B4533; border-color:#C2D9C2; box-shadow:4px 4px 0 rgba(194,217,194,0.3); }
-html.dark .nav-segment { color:#C2D9C2; border-right-color:rgba(194,217,194,0.2); }
-html.dark .nav-segment:hover { background:#C2D9C2; color:#3B4533; }
-html.dark .nav-segment.active { background:#C2D9C2; color:#3B4533; }
-html.dark .search-island input { background:#2D3828; border-color:#C2D9C2; color:#C2D9C2; }
-html.dark .theme-toggle { color:#C2D9C2; border-left-color:rgba(194,217,194,0.2); }
-html.dark .theme-toggle:hover { background:#C2D9C2; color:#3B4533; }
-html.dark footer.arcade-footer { background:#C2D9C2!important; color:#3B4533!important; border-color:#C2D9C2!important; }
-html.dark footer.arcade-footer a { color:#3B4533; }
-html.dark #mobileMenu { background:#2D3828!important; border-right-color:rgba(194,217,194,0.2); }
-html.dark #mobileMenu a:hover,html.dark #mobileMenu a.active-mobile { background:#C2D9C2!important; color:#3B4533!important; }
-html.dark .mobile-breadcrumb { background:#2D3828; border-bottom-color:rgba(194,217,194,0.2); }
-html.dark .nav-logo-light { display: none !important; }
-        html.dark .nav-logo-dark { display: block !important; }
-        .nav-logo-light { display: block; }
-        .nav-logo-dark { display: none; }
-        html.dark h1[style*="color:#3B4533"] { color: #C2D9C2 !important; }
-        html.dark p[style*="color:#3B4533"] { color: rgba(194,217,194,0.8) !important; }
+        .e-grupos { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(17rem, 100%), 1fr)); gap: 1.25rem; }
+        .e-grupo { background: var(--c-superficie); border: 1px solid var(--c-linea); border-top: 4px solid var(--c-acento); border-radius: 4px; padding: 1.2rem 1.3rem; display: grid; gap: 0.75rem; align-content: start; }
+        .e-grupo-titulo { font-family: var(--f-titular) !important; font-weight: 700; font-size: 1.2rem; }
+        .e-lista { list-style: none; margin: 0; padding: 0; display: grid; }
+        .e-lista a { display: grid; gap: 0.1rem; padding: 0.6rem 0; border-bottom: 1px solid var(--c-linea); text-decoration: none; font-weight: 700; }
+        .e-lista li:last-child a { border-bottom: 0; }
+        .e-lista a:hover { text-decoration: underline; text-decoration-color: var(--c-oro); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+        .e-dominio { font-family: var(--f-cifras); font-size: 0.78rem; font-weight: 400; color: var(--c-tenue); }
     </style>
     <!-- recursos:inicio -->
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -182,7 +60,7 @@ html.dark .nav-logo-light { display: none !important; }
     <!-- recursos:fin -->
 </head>
 
-<body class="flex min-h-screen flex-col">
+<body class="c-pagina flex min-h-screen flex-col">
 
     <!-- cabecera:inicio -->
     <header class="sitio-cabecera">
@@ -211,122 +89,58 @@ html.dark .nav-logo-light { display: none !important; }
     </header>
     <!-- cabecera:fin -->
 
-    <main class="relative flex-1 pb-24 pt-8">
-        <section class="w-full py-20 md:py-28">
-            <div class="container mx-auto max-w-6xl px-4 md:px-6">
-                <div class="mb-12 text-center" data-reveal>
-                    <h1 class="arcade-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4" style="font-family:'Orbitron',monospace;font-weight:800;letter-spacing:0.04em;color:#3B4533;text-transform:uppercase">ENLACES DE INTERÉS</h1>
-                    <p style="font-family:'Share Tech Mono',monospace;color:#3B4533;max-width:700px;margin:0 auto">Recursos y enlaces de utilidad para la preparación de las oposiciones del SOIVRE</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" data-reveal>
+    <main class="c-principal">
+        <div class="c-columna-sitio">
 
-                    <!-- Box 1 -->
-                    <div class="arcade-grid-card">
-                        <h2 class="arcade-section-title">ESTADÍSTICAS DE COMERCIO EXTERIOR</h2>
-                        <div class="flex flex-col space-y-1 flex-grow">
-                            <a href="https://datacomex.comercio.es/" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                DATACOMEX
-                            </a>
-                            <a href="https://comercio.gob.es/ImportacionExportacion/Informes_Estadisticas/Paginas/Historico-boletines-me.aspx" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                Informe Mensual de Comercio Exterior
-                            </a>
-                            <a href="https://www.bde.es/webbe/es/estadisticas/otras-clasificaciones/publicaciones/boletin-estadistico/capitulo-17.html" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                Estadísticas de Comercio Exterior del BdE
-                            </a>
-                            <a href="https://ec.europa.eu/eurostat/web/main/data/database" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                EUROSTAT
-                            </a>
-                            <a href="https://comercio.gob.es/es-es/inversiones_exteriores/estadisticas/Paginas/default.aspx" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                Estadísticas Inversiones Exteriores
-                            </a>
-                        </div>
-                    </div>
+            <header class="c-cabecera-pagina">
+                <p class="c-antetitulo">Recursos</p>
+                <h1 class="c-titular">Enlaces de interés</h1>
+                <p class="c-entradilla">Estadísticas oficiales, organismos y fuentes de actualidad que uso para preparar la oposición y para seguir el comercio exterior. Todos abren en una pestaña nueva.</p>
+            </header>
 
-                    <!-- Box 2 -->
-                    <div class="arcade-grid-card">
-                        <h2 class="arcade-section-title">ENLACES GENERALES</h2>
-                        <div class="flex flex-col space-y-1 flex-grow">
-                            <a href="https://comercio.gob.es/es-es/Paginas/Index.aspx" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                Secretaría de Estado de Comercio
-                            </a>
-                            <a href="https://comercio.gob.es//es-es/publicaciones-estadisticas/paginas/revistasice.aspx" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                Revistas ICE
-                            </a>
-                            <a href="https://elordenmundial.com/" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                El Orden Mundial
-                            </a>
-                            <a href="https://www.bloomberg.com/europe" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                Bloomberg
-                            </a>
-                            <a href="https://portwatch.imf.org/" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                Portwatch
-                            </a>
-                            <a href="https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                Drewry - Precios de rutas comerciales
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Box 3 -->
-                    <div class="arcade-grid-card">
-                        <h2 class="arcade-section-title">RELACIONES COMERCIALES</h2>
-                        <div class="flex flex-col space-y-1 flex-grow">
-                            <a href="https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions_en" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                Trade by country/region
-                            </a>
-                            <a href="https://trade.ec.europa.eu/access-to-markets/en/home" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                Access2Markets
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Box 4 -->
-                    <div class="arcade-grid-card">
-                        <h2 class="arcade-section-title">ORGANISMOS INTERGUBERNAMENTALES</h2>
-                        <div class="flex flex-col space-y-1 flex-grow">
-                            <a href="https://www.wto.org/spanish/blogs_s/blogs_s.htm" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                Blog de la OMC
-                            </a>
-                            <a href="https://www.imf.org/es/blogs" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                Blog del FMI
-                            </a>
-                            <a href="https://unctad.org/es" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                UNCTAD
-                            </a>
-                            <a href="https://www.oecd.org/en/about/directorates/statistics-and-data-directorate.html" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                OCDE
-                            </a>
-                            <a href="https://www.trademap.org/Index.aspx" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                TRADE MAP (ITC)
-                            </a>
-                            <a href="https://www.wcoomd.org/" target="_blank" rel="noopener noreferrer" class="arcade-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                                OMA
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="e-grupos">
+                <section class="e-grupo">
+                    <h2 class="e-grupo-titulo">Estadísticas de comercio exterior</h2>
+                    <ul class="e-lista">
+                        <li><a href="https://datacomex.comercio.es/" target="_blank" rel="noopener noreferrer">DataComex<span class="e-dominio">datacomex.comercio.es</span></a></li>
+                        <li><a href="https://comercio.gob.es/ImportacionExportacion/Informes_Estadisticas/Paginas/Historico-boletines-me.aspx" target="_blank" rel="noopener noreferrer">Informe Mensual de Comercio Exterior<span class="e-dominio">comercio.gob.es</span></a></li>
+                        <li><a href="https://www.bde.es/webbe/es/estadisticas/otras-clasificaciones/publicaciones/boletin-estadistico/capitulo-17.html" target="_blank" rel="noopener noreferrer">Estadísticas de Comercio Exterior del BdE<span class="e-dominio">bde.es</span></a></li>
+                        <li><a href="https://ec.europa.eu/eurostat/web/main/data/database" target="_blank" rel="noopener noreferrer">Eurostat<span class="e-dominio">ec.europa.eu</span></a></li>
+                        <li><a href="https://comercio.gob.es/es-es/inversiones_exteriores/estadisticas/Paginas/default.aspx" target="_blank" rel="noopener noreferrer">Estadísticas Inversiones Exteriores<span class="e-dominio">comercio.gob.es</span></a></li>
+                    </ul>
+                </section>
+                <section class="e-grupo">
+                    <h2 class="e-grupo-titulo">Comercio y actualidad</h2>
+                    <ul class="e-lista">
+                        <li><a href="https://comercio.gob.es/es-es/Paginas/Index.aspx" target="_blank" rel="noopener noreferrer">Secretaría de Estado de Comercio<span class="e-dominio">comercio.gob.es</span></a></li>
+                        <li><a href="https://comercio.gob.es//es-es/publicaciones-estadisticas/paginas/revistasice.aspx" target="_blank" rel="noopener noreferrer">Revistas ICE<span class="e-dominio">comercio.gob.es</span></a></li>
+                        <li><a href="https://elordenmundial.com/" target="_blank" rel="noopener noreferrer">El Orden Mundial<span class="e-dominio">elordenmundial.com</span></a></li>
+                        <li><a href="https://www.bloomberg.com/europe" target="_blank" rel="noopener noreferrer">Bloomberg<span class="e-dominio">bloomberg.com</span></a></li>
+                        <li><a href="https://portwatch.imf.org/" target="_blank" rel="noopener noreferrer">PortWatch (FMI)<span class="e-dominio">portwatch.imf.org</span></a></li>
+                        <li><a href="https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry" target="_blank" rel="noopener noreferrer">Drewry: índice de fletes de contenedores<span class="e-dominio">drewry.co.uk</span></a></li>
+                    </ul>
+                </section>
+                <section class="e-grupo">
+                    <h2 class="e-grupo-titulo">Relaciones comerciales de la UE</h2>
+                    <ul class="e-lista">
+                        <li><a href="https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions_en" target="_blank" rel="noopener noreferrer">Comercio de la UE por país y región<span class="e-dominio">policy.trade.ec.europa.eu</span></a></li>
+                        <li><a href="https://trade.ec.europa.eu/access-to-markets/en/home" target="_blank" rel="noopener noreferrer">Access2Markets<span class="e-dominio">trade.ec.europa.eu</span></a></li>
+                    </ul>
+                </section>
+                <section class="e-grupo">
+                    <h2 class="e-grupo-titulo">Organismos internacionales</h2>
+                    <ul class="e-lista">
+                        <li><a href="https://www.wto.org/spanish/blogs_s/blogs_s.htm" target="_blank" rel="noopener noreferrer">Blog de la OMC<span class="e-dominio">wto.org</span></a></li>
+                        <li><a href="https://www.imf.org/es/blogs" target="_blank" rel="noopener noreferrer">Blog del FMI<span class="e-dominio">imf.org</span></a></li>
+                        <li><a href="https://unctad.org/es" target="_blank" rel="noopener noreferrer">UNCTAD<span class="e-dominio">unctad.org</span></a></li>
+                        <li><a href="https://www.oecd.org/en/about/directorates/statistics-and-data-directorate.html" target="_blank" rel="noopener noreferrer">OCDE<span class="e-dominio">oecd.org</span></a></li>
+                        <li><a href="https://www.trademap.org/Index.aspx" target="_blank" rel="noopener noreferrer">Trade Map (ITC)<span class="e-dominio">trademap.org</span></a></li>
+                        <li><a href="https://www.wcoomd.org/" target="_blank" rel="noopener noreferrer">OMA<span class="e-dominio">wcoomd.org</span></a></li>
+                    </ul>
+                </section>
             </div>
-        </section>
+
+        </div>
     </main>
 
     <!-- pie:inicio -->
@@ -367,17 +181,7 @@ html.dark .nav-logo-light { display: none !important; }
     </footer>
     <!-- pie:fin -->
 
-    <script src="js/main.js" onerror="console.warn('main.js not found')"></script>
-    <script>
-function toggleMobileMenu() {
-    const menu = document.getElementById('mobileMenu');
-    if (!menu) return;
-    menu.classList.toggle('menu-open');
-    if (menu.classList.contains('menu-open')) { document.body.style.overflow='hidden'; document.body.style.position='fixed'; document.body.style.width='100%'; }
-    else { document.body.style.overflow=''; document.body.style.position=''; document.body.style.width=''; }
-}
-document.addEventListener('keydown', function(e) { if (e.key==='Escape') { const m=document.getElementById('mobileMenu'); if (m&&m.classList.contains('menu-open')) toggleMobileMenu(); } });
-    </script>
+    <script src="js/main.js"></script>
     <script src="js/cookies.js?v=1"></script>
     <!-- Analítica ligera y sin cookies (GoatCounter, gratis para uso no comercial).
          Para activarla: 1) crea una cuenta en https://www.goatcounter.com con el código "sergioargudosantiago";

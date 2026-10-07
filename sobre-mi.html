@@ -44,401 +44,14 @@
     <link rel="stylesheet" href="css/tailwind.css">
 
     <style>
-        /* CSS Variables - Arcade Theme */
-        :root {
-            --background: #C2D9C2;
-            --foreground: #3B4533;
-            --primary: #3B4533;
-            --primary-foreground: #C2D9C2;
-            --secondary: #C2D9C2;
-            --secondary-foreground: #3B4533;
-            --muted: #8FB58F;
-            --muted-foreground: #2A3528;
-            --accent: #3B4533;
-            --accent-foreground: #C2D9C2;
-            --border: #3B4533;
-            --input: #C2D9C2;
-            --ring: #3B4533;
-            --radius: 0px;
-        }
-
-        html { transition: none; }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
-            background: #C2D9C2;
-            position: relative;
-            min-height: 100vh;
-            color: #3B4533;
-            padding-bottom: 5rem;
-            line-height: 1.55;
-            -webkit-font-smoothing: antialiased;
-        }
-        h1, h2, h3, h4 { font-family: 'Orbitron', monospace; letter-spacing: 0.03em; }
-        :root { --accent-warm: #C8A951; }
-
-        /* ===== SCROLL REVEAL ===== */
-        [data-reveal] {
-            opacity: 0;
-            transform: translateY(24px);
-            transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        [data-reveal].revealed { opacity: 1; transform: translateY(0); }
-
-        /* ===== ARCADE MOBILE MENU ===== */
-        .mobile-breadcrumb {
-            position: fixed;
-            top: 0; left: 0; right: 0;
-            z-index: 40;
-            display: flex;
-            align-items: center;
-            padding: 0.5rem 1rem;
-            background: #3B4533;
-            border-bottom: 1px solid rgba(194,217,194,0.3);
-            font-family: 'Orbitron', monospace;
-            font-size: 0.6rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            color: #C2D9C2;
-            text-transform: uppercase;
-            height: 2.5rem;
-            box-shadow: none;
-        }
-        @media (min-width: 768px) { .mobile-breadcrumb { display: none; } }
-
-        #mobileMenu {
-            transform: translateX(-100%);
-            opacity: 0;
-            visibility: hidden;
-            transition: transform 0.2s ease, opacity 0.2s ease, visibility 0s 0.2s;
-            background: #3B4533 !important;
-            border-right: 2px solid rgba(194,217,194,0.3);
-        }
-        #mobileMenu.menu-open {
-            transform: translateX(0);
-            opacity: 1;
-            visibility: visible;
-            transition: transform 0.2s ease, opacity 0.2s ease;
-            z-index: 60;
-        }
-        #mobileMenu a {
-            font-family: 'Orbitron', monospace;
-            font-size: 0.65rem;
-            font-weight: 600;
-            color: #C2D9C2;
-            letter-spacing: 0.05em;
-            padding: 0.75rem 1rem;
-            border-bottom: 1px solid rgba(194,217,194,0.15);
-            display: flex;
-            align-items: center;
-            min-height: 44px;
-            text-decoration: none;
-        }
-        #mobileMenu a:hover, #mobileMenu a.bg-accent {
-            background: #C2D9C2 !important;
-            color: #3B4533 !important;
-        }
-
-        /* ===== ARCADE NAVIGATION BAR ===== */
-        .nav-island {
-            position: fixed;
-            top: 1rem;
-            left: 50%;
-            transform: translateX(-50%);
-            transform-origin: top center;
-            z-index: 50;
-            display: flex;
-            align-items: stretch;
-            padding: 0 clamp(0.1rem, 0.2vw, 0.25rem);
-            background: #C2D9C2;
-            border: 2px solid #3B4533;
-            box-shadow: 4px 4px 0 #3B4533;
-            height: clamp(2.4rem, 1.4rem + 2vw, 4.25rem);
-            width: max-content;
-            max-width: calc(100vw - 1.5rem);
-            white-space: nowrap;
-            overflow: hidden;
-        }
-        .nav-logo-link {
-            display: flex;
-            align-items: center;
-            padding: 0 clamp(0.4rem, 0.3rem + 0.7vw, 1rem);
-            height: 100%;
-            border-right: 1px solid rgba(59, 69, 51, 0.2);
-            flex-shrink: 0;
-        }
-        .nav-segment {
-            position: relative;
-            padding: 0 clamp(0.25rem, 0.15rem + 0.75vw, 1.25rem);
-            height: 100%;
-            display: flex;
-            align-items: center;
-            font-family: 'Orbitron', monospace;
-            font-size: clamp(0.58rem, 0.3rem + 0.38vw, 0.75rem);
-            font-weight: 600;
-            color: #3B4533;
-            text-decoration: none;
-            border-right: 1px solid rgba(59, 69, 51, 0.2);
-            letter-spacing: 0.03em;
-            white-space: nowrap;
-            transition: background 0.15s, color 0.15s;
-            flex-shrink: 1;
-            min-width: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .nav-island img {
-            width: clamp(56px, 30px + 6.5vw, 200px);
-            height: auto;
-        }
-        .nav-segment:hover { background: #3B4533; color: #C2D9C2; box-shadow: none; }
-        .nav-segment.active { background: #3B4533; color: #C2D9C2; font-weight: 700; box-shadow: none; }
-        .search-island {
-            position: relative;
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            margin-right: 0.75rem;
-        }
-        .search-island input {
-            width: clamp(6rem, 8.5vw, 11rem);
-            height: 1.75rem;
-            padding: 0 0.75rem 0 2rem;
-            background: #ddeedd;
-            border: 1px solid #3B4533;
-            border-radius: 0;
-            font-family: 'Share Tech Mono', monospace;
-            font-size: clamp(0.55rem, 0.7vw, 0.75rem);
-            color: #3B4533;
-            outline: none;
-        }
-        .search-island input::placeholder { color: rgba(59,69,51,0.5); }
-        .search-island input:focus { background: #C2D9C2; border-color: #3B4533; box-shadow: none; }
-        .search-island svg {
-            position: absolute;
-            left: 0.5rem;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 14px; height: 14px;
-            color: rgba(194,217,194,0.6);
-            pointer-events: none;
-        }
-        @media (max-width: 768px) { .nav-island { display: none; } }
-
-        .theme-toggle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: clamp(2.25rem, 3.5vw, 4rem);
-            height: 100%;
-            background: transparent;
-            border: none;
-            border-left: 1px solid rgba(59,69,51,0.2);
-            cursor: pointer;
-            color: #3B4533;
-            padding: 0;
-            flex-shrink: 0;
-            transition: background 0.15s, color 0.15s;
-        }
-        .theme-toggle:hover { background: #3B4533; color: #C2D9C2; }
-
-        /* ===== ARCADE HERO CARD ===== */
-        .arcade-card {
-            background: #C2D9C2;
-            border: 3px solid #3B4533;
-            box-shadow: 6px 6px 0 #3B4533;
-            position: relative;
-            padding: 3rem 3.5rem;
-        }
-        .arcade-card::before {
-            content: '';
-            position: absolute;
-            inset: 5px;
-            border: 1px solid rgba(0,0,0,0.2);
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        @media (max-width: 640px) {
-            .arcade-card { padding: 1.5rem 1.25rem; }
-            .photo-frame { width: 120px; height: 120px; }
-        }
-
-        .arcade-title {
-            font-family: 'Orbitron', monospace;
-            font-weight: 800;
-            letter-spacing: 0.04em;
-            color: #3B4533;
-            text-transform: uppercase;
-        }
-        .arcade-body {
-            font-family: 'Share Tech Mono', monospace;
-            color: #3B4533;
-            line-height: 1.7;
-        }
-
-        .arcade-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.9rem 2.25rem;
-            background: #3B4533;
-            color: #C2D9C2;
-            font-family: 'Orbitron', monospace;
-            font-size: 0.82rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-decoration: none;
-            border: 2px solid #3B4533;
-            box-shadow: 4px 4px 0 #3B4533;
-            transition: box-shadow 0.1s, transform 0.1s;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
-        .arcade-btn:hover {
-            box-shadow: 2px 2px 0 #3B4533;
-            transform: translate(2px, 2px);
-            opacity: 1;
-        }
-        .arcade-btn:active { box-shadow: none; transform: translate(4px, 4px); }
-
-        /* Info row */
-        .info-row {
-            border: 2px solid #3B4533;
-            padding: 1.25rem 1.5rem;
-            background: #C2D9C2;
-            box-shadow: 3px 3px 0 #3B4533;
-            position: relative;
-        }
-        .info-row + .info-row { border-top: none; }
-
-        .tag-label {
-            font-family: 'Orbitron', monospace;
-            font-size: 0.6rem;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: rgba(0,0,0,0.45);
-            display: block;
-            margin-bottom: 0.3rem;
-        }
-        .tag-value {
-            font-family: 'Share Tech Mono', monospace;
-            font-size: 1rem;
-            color: #3B4533;
-            line-height: 1.4;
-        }
-        .tag-value strong {
-            font-family: 'Orbitron', monospace;
-            font-weight: 700;
-            font-size: 0.9rem;
-        }
-
-        /* Photo frame */
-        .photo-frame {
-            border: 3px solid #3B4533;
-            box-shadow: 5px 5px 0 #3B4533;
-            overflow: hidden;
-            width: 160px;
-            height: 160px;
-            flex-shrink: 0;
-        }
-        @media (min-width: 640px) {
-            .photo-frame { width: 200px; height: 200px; }
-        }
-
-        /* Divider */
-        .arcade-divider {
-            border: none;
-            border-top: 2px solid #3B4533;
-            margin: 2rem 0;
-        }
-
-        /* ===== ARCADE FOOTER ===== */
-        footer.arcade-footer {
-            background: #3B4533 !important;
-            color: #C2D9C2 !important;
-            border-top: 2px solid #3B4533 !important;
-            backdrop-filter: none !important;
-        }
-        footer.arcade-footer a { color: #C2D9C2; transition: color 0.15s; }
-        footer.arcade-footer a:hover { color: #FFE566; opacity: 1; }
-
-        /* ===== DARK MODE ===== */
-        html.dark body { background: #3B4533; color: #C2D9C2; }
-
-        html.dark .arcade-card {
-            background: #2D3828;
-            border-color: #C2D9C2;
-            box-shadow: 6px 6px 0 rgba(194,217,194,0.3);
-        }
-        html.dark .arcade-card::before { border-color: rgba(194,217,194,0.2); }
-        html.dark .arcade-title { color: #C2D9C2; }
-        html.dark .arcade-body { color: #C2D9C2; }
-
-        html.dark .info-row {
-            background: #2D3828;
-            border-color: #C2D9C2;
-            box-shadow: 3px 3px 0 rgba(194,217,194,0.3);
-        }
-        html.dark .tag-label { color: rgba(194,217,194,0.45); }
-        html.dark .tag-value { color: #C2D9C2; }
-
-        html.dark .photo-frame {
-            border-color: #C2D9C2;
-            box-shadow: 5px 5px 0 rgba(194,217,194,0.3);
-        }
-        html.dark .arcade-divider { border-top-color: rgba(194,217,194,0.3); }
-
-        html.dark .arcade-btn {
-            background: #C2D9C2;
-            color: #3B4533;
-            border-color: #C2D9C2;
-            box-shadow: 4px 4px 0 rgba(194,217,194,0.5);
-        }
-        html.dark .arcade-btn:hover { box-shadow: 2px 2px 0 rgba(194,217,194,0.5); }
-
-        html.dark .nav-island {
-            background: #3B4533;
-            border-color: #C2D9C2;
-            box-shadow: 4px 4px 0 rgba(194,217,194,0.3);
-        }
-        html.dark .nav-segment { color: #C2D9C2; border-right-color: rgba(194,217,194,0.2); }
-        html.dark .nav-segment:hover { background: #C2D9C2; color: #3B4533; }
-        html.dark .nav-segment.active { background: #C2D9C2; color: #3B4533; }
-        html.dark .search-island input { background: #2D3828; border-color: #C2D9C2; color: #C2D9C2; }
-        html.dark .search-island input::placeholder { color: rgba(194,217,194,0.5); }
-        html.dark .search-island svg { color: rgba(194,217,194,0.6); }
-        html.dark .theme-toggle { color: #C2D9C2; border-left-color: rgba(194,217,194,0.2); }
-        html.dark .theme-toggle:hover { background: #C2D9C2; color: #3B4533; }
-
-        html.dark footer.arcade-footer {
-            background: #C2D9C2 !important;
-            color: #3B4533 !important;
-            border-color: #C2D9C2 !important;
-        }
-        html.dark footer.arcade-footer a { color: #3B4533; }
-        html.dark footer.arcade-footer a:hover { color: #FFE566; }
-
-        html.dark #mobileMenu { background: #2D3828 !important; border-right-color: rgba(194,217,194,0.2); }
-        html.dark #mobileMenu a:hover, html.dark #mobileMenu a.bg-accent {
-            background: #C2D9C2 !important;
-            color: #3B4533 !important;
-        }
-        html.dark .mobile-breadcrumb { background: #2D3828; border-bottom-color: rgba(194,217,194,0.2); }
-        html.dark .flex-1 span[style*="color:#3B4533"] { color: #C2D9C2 !important; }
-        html.dark .flex-1 span[style*="color:rgba(0,0,0"] { color: rgba(194,217,194,0.7) !important; }
-        html.dark [style*="border-top:3px solid #3B4533"] { border-color: rgba(194,217,194,0.5) !important; }
-        html.dark .nav-logo-light { display: none !important; }
-        html.dark .nav-logo-dark { display: block !important; }
-        .nav-logo-light { display: block; }
-        .nav-logo-dark { display: none; }
+        .s-cabecera { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 1.75rem; align-items: center; margin-bottom: 1.5rem; }
+        .s-foto { width: 9rem; height: 9rem; object-fit: cover; object-position: center top; border: 2px solid var(--c-acento); box-shadow: 5px 5px 0 var(--c-oro); }
+        .s-cuerpos { display: grid; gap: 0.35rem; margin: 0; }
+        .s-cuerpos div { display: flex; flex-wrap: wrap; gap: 0.2rem 0.75rem; align-items: baseline; }
+        .s-cuerpos dt { font-family: var(--f-marca); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+        .s-cuerpos dd { margin: 0; font-family: var(--f-cifras); font-size: 0.88rem; color: var(--c-tenue); }
+        .s-correo { font-family: var(--f-cifras); font-size: 1.1rem; }
+        @media (max-width: 560px) { .s-cabecera { grid-template-columns: 1fr; } }
     </style>
 
     <!-- Datos estructurados -->
@@ -461,7 +74,7 @@
     <!-- recursos:fin -->
 </head>
 
-<body class="flex min-h-screen flex-col">
+<body class="c-pagina flex min-h-screen flex-col">
 
     <!-- cabecera:inicio -->
     <header class="sitio-cabecera">
@@ -491,96 +104,43 @@
     <!-- cabecera:fin -->
 
     <!-- Main Content -->
-    <main class="relative flex-1">
-        <section class="flex min-h-screen w-full items-center justify-center px-4 py-20">
-            <div class="w-full max-w-5xl mx-auto">
+    <main class="c-principal">
+        <div class="c-columna-ancha">
 
-                <div data-reveal class="arcade-card w-full">
-
-                    <!-- Header row: photo + name/titles -->
-                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-8">
-
-                        <!-- Photo -->
-                        <div class="photo-frame flex-shrink-0">
-                            <img src="./images/perfil.jpg" alt="Sergio Argudo Santiago" width="480" height="643"
-                                decoding="async"
-                                style="width:100%;height:100%;object-fit:cover;object-position:center top;">
-                        </div>
-
-                        <!-- Name & Titles -->
-                        <div class="flex-1 text-center sm:text-left">
-                            <h1 class="arcade-title" style="font-size:clamp(1.4rem,4vw,2.2rem);margin-bottom:0.5rem;">
-                                Sergio Argudo Santiago
-                            </h1>
-                            <div style="border-top:3px solid #3B4533;width:4rem;margin:0.75rem auto 0.75rem 0;"></div>
-
-                            <div style="display:flex;flex-direction:column;gap:0.4rem;">
-                                <div>
-                                    <span style="font-family:'Orbitron',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;color:#3B4533;">
-                                        INSPECTOR DEL SOIVRE
-                                    </span>
-                                    <span style="font-family:'Share Tech Mono',monospace;font-size:0.85rem;color:rgba(0,0,0,0.5);margin-left:0.75rem;">
-                                        Prom. 2025
-                                    </span>
-                                </div>
-                                <div>
-                                    <span style="font-family:'Orbitron',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;color:#3B4533;">
-                                        INGENIERO TÉCNICO DEL SOIVRE
-                                    </span>
-                                    <span style="font-family:'Share Tech Mono',monospace;font-size:0.85rem;color:rgba(0,0,0,0.5);margin-left:0.75rem;">
-                                        Prom. 2023
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr class="arcade-divider">
-
-                    <!-- Formación -->
-                    <div style="margin-bottom:2rem;">
-                        <h2 class="arcade-title" style="font-size:0.85rem;margin-bottom:1rem;letter-spacing:0.12em;">
-                            // Formación Académica
-                        </h2>
-
-                        <div class="info-row">
-                            <span class="tag-label">Grado</span>
-                            <span class="tag-value">
-                                Ingeniero Químico — <strong>Universidad Complutense de Madrid</strong>
-                            </span>
-                        </div>
-                        <div class="info-row">
-                            <span class="tag-label">Máster</span>
-                            <span class="tag-value">
-                                Ingeniería Química — <strong>Universidad Autónoma de Madrid</strong> &amp; <strong>Universidad Rey Juan Carlos</strong>
-                            </span>
-                        </div>
-                    </div>
-
-                    <hr class="arcade-divider">
-
-                    <!-- Contacto -->
-                    <div>
-                        <h2 class="arcade-title" style="font-size:0.85rem;margin-bottom:0.75rem;letter-spacing:0.12em;">
-                            // Contacto
-                        </h2>
-                        <p class="arcade-body" style="margin-bottom:1.5rem;font-size:0.95rem;">
-                            ¿Tienes preguntas sobre la oposición, el material o quieres colaborar?
-                            No dudes en escribirme.
-                        </p>
-                        <a href="mailto:contacto@sergioargudo.es" class="arcade-btn">
-                            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                            Enviar Mensaje
-                        </a>
-                    </div>
-
+            <header class="s-cabecera">
+                <img class="s-foto" src="./images/perfil.jpg" alt="Sergio Argudo Santiago" width="480" height="643" decoding="async">
+                <div class="c-cabecera-pagina" style="margin-bottom:0">
+                    <p class="c-antetitulo">Sobre mí</p>
+                    <h1 class="c-titular">Sergio Argudo Santiago</h1>
+                    <dl class="s-cuerpos">
+                        <div><dt>Inspector del SOIVRE</dt><dd>Promoción 2025</dd></div>
+                        <div><dt>Ingeniero Técnico del SOIVRE</dt><dd>Promoción 2023</dd></div>
+                    </dl>
                 </div>
+            </header>
 
-            </div>
-        </section>
+            <section class="c-seccion" aria-labelledby="formacion">
+                <h2 class="c-seccion-titulo" id="formacion">Formación</h2>
+                <dl class="c-definiciones">
+                    <dt>Grado en Ingeniería Química</dt>
+                    <dd>Universidad Complutense de Madrid</dd>
+                    <dt>Máster en Ingeniería Química</dt>
+                    <dd>Universidad Autónoma de Madrid y Universidad Rey Juan Carlos</dd>
+                </dl>
+            </section>
+
+            <section class="c-seccion" aria-labelledby="contacto">
+                <h2 class="c-seccion-titulo" id="contacto">Contacto</h2>
+                <p>¿Tienes preguntas sobre la oposición o el material, has visto un error o quieres colaborar? Escríbeme.</p>
+                <p class="s-correo"><a href="mailto:contacto@sergioargudo.es">contacto@sergioargudo.es</a></p>
+                <div class="c-acciones">
+                    <a href="mailto:contacto@sergioargudo.es" class="c-boton c-boton-principal">Enviar un correo</a>
+                    <a href="https://www.linkedin.com/in/sergio-argudo-santiago/" target="_blank" rel="noopener noreferrer" class="c-boton">LinkedIn &#8599;</a>
+                </div>
+                <p class="c-nota">Esta es una web personal: lo que se publica aquí es opinión y trabajo propios y no representa a ningún organismo.</p>
+            </section>
+
+        </div>
     </main>
 
     <!-- Footer (Sticky) -->
@@ -622,46 +182,8 @@
     </footer>
     <!-- pie:fin -->
 
-    <!-- Main JavaScript -->
-    <script src="js/main.js" onerror="console.warn('main.js no disponible')"></script>
+    <script src="js/main.js"></script>
     <script src="js/cookies.js?v=1"></script>
-
-    <script>
-        // Mobile Menu Toggle
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            if (!menu) return;
-            menu.classList.toggle('menu-open');
-            if (menu.classList.contains('menu-open')) {
-                document.body.style.overflow = 'hidden';
-                document.body.style.position = 'fixed';
-                document.body.style.width = '100%';
-            } else {
-                document.body.style.overflow = '';
-                document.body.style.position = '';
-                document.body.style.width = '';
-            }
-        }
-
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                const menu = document.getElementById('mobileMenu');
-                if (menu && menu.classList.contains('menu-open')) toggleMobileMenu();
-            }
-        });
-
-        // Scroll reveal
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('revealed');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
-    </script>
     <!-- Analítica ligera y sin cookies (GoatCounter, gratis para uso no comercial).
          Para activarla: 1) crea una cuenta en https://www.goatcounter.com con el código "sergioargudosantiago";
          2) descomenta este script. No usa cookies, no requiere consentimiento.
