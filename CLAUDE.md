@@ -133,9 +133,11 @@ Pendiente, por orden:
    basa en los temas de su preparador).
 5. Gráfico «Servicios turísticos y no turísticos» de la balanza: usa dos ejes Y
    (barras en M€ y línea en %). Convendría partirlo en dos gráficos.
-6. **Revisión técnica** con el diseño ya aplicado: enlaces rotos, accesibilidad
-   (contraste, teclado, alt), Lighthouse, SEO y Open Graph (LinkedIn Post Inspector),
-   errores de consola, móvil.
+6. ~~**Revisión técnica**~~ (hecho el 7 oct): axe WCAG 2 AA sin fallos en las 8
+   páginas (claro y oscuro), enlaces internos y 202 descargas del temario
+   comprobados, títulos y descripciones unificados. **Pendiente**: los ~26
+   enlaces externos, que la red de la sesión en la nube no deja comprobar
+   (hacerlo en local o abriéndolos a mano).
 7. **Autor**: leer todos los textos el fin de semana.
 8. **Día 12**: fusionar en `main`, `node scripts/cambiar-dominio.js --aplicar`,
    DNS, HTTPS obligatorio, Google Search Console, sitemap.
