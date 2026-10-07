@@ -56,724 +56,159 @@
     <script defer src="js/bde-api.js"></script>
 
     <style>
-        /* CSS Variables - Arcade Theme */
-        :root {
-            --background: #C2D9C2;
-            --foreground: #3B4533;
-            --primary: #3B4533;
-            --primary-foreground: #C2D9C2;
-            --secondary: #C2D9C2;
-            --secondary-foreground: #3B4533;
-            --muted: #8FB58F;
-            --muted-foreground: #2A3528;
-            --accent: #3B4533;
-            --accent-foreground: #C2D9C2;
-            --border: #3B4533;
-            --input: #C2D9C2;
-            --ring: #3B4533;
-            --radius: 0px;
-        }
+        /* Comercio exterior, diseño C. Colores y tipografías salen de las
+           variables de css/sitio.css; aquí solo va lo propio del visualizador.
+           Los nombres de clase son los que usa el JS de esta página. */
 
-        html { transition: none; }
+        [data-reveal] { opacity: 1; transform: none; }
+        /* El JS oculta y muestra con la clase hidden de Tailwind: que gane siempre
+           a los display de las clases de esta página. */
+        [class~="hidden"] { display: none !important; }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        .ce-contenido { display: grid; gap: 1.75rem; }
+        .ce-contenido > * { min-width: 0; }
 
-        body {
-            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
-            background: #C2D9C2;
-            position: relative;
-            min-height: 100vh;
-            color: #3B4533;
-            padding-bottom: 5rem;
-            line-height: 1.55;
-            -webkit-font-smoothing: antialiased;
-        }
-        h1, h2, h3, h4 { font-family: 'Orbitron', monospace; letter-spacing: 0.03em; }
-        :root { --accent-warm: #C8A951; }
-
-        /* ===== SCROLL REVEAL ===== */
-        [data-reveal] {
-            opacity: 0;
-            transform: translateY(24px);
-            transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        [data-reveal].revealed { opacity: 1; transform: translateY(0); }
-
-        /* ===== ARCADE MOBILE BREADCRUMB ===== */
-        .mobile-breadcrumb {
-            position: fixed;
-            top: 0; left: 0; right: 0;
-            z-index: 49;
-            display: flex;
-            align-items: center;
-            padding: 0.5rem 1rem;
-            background: #3B4533;
-            border-bottom: 1px solid rgba(194,217,194,0.3);
-            font-family: 'Orbitron', monospace;
-            font-size: 0.6rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            color: #C2D9C2;
-            text-transform: uppercase;
-            height: 2.5rem;
-        }
-        @media (min-width: 768px) { .mobile-breadcrumb { display: none; } }
-
-        /* ===== THEME TOGGLE ===== */
-        .theme-toggle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: clamp(2.25rem, 3.5vw, 4rem);
-            height: 100%;
-            background: transparent;
-            border: none;
-            border-left: 1px solid rgba(59, 69, 51, 0.2);
-            cursor: pointer;
-            color: #3B4533;
-            padding: 0;
-            flex-shrink: 0;
-            transition: background 0.15s, color 0.15s;
-        }
-        .theme-toggle:hover { background: #3B4533; color: #C2D9C2; }
-
-        /* ===== SKELETON LOADING ===== */
-        .skeleton-loader {
-            position: relative;
-            overflow: hidden;
-            background: #8FB58F;
-            transition: opacity 0.3s;
-        }
-        .skeleton-loader::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
-            animation: shimmer 1.5s infinite;
-        }
-        @keyframes shimmer { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
-        .skeleton-bar { height: 1.5rem; background: rgba(0,0,0,0.12); margin-bottom: 0.75rem; }
-        .skeleton-bar:nth-child(2) { width: 75%; }
-        .skeleton-bar:nth-child(3) { width: 50%; }
-
-        /* ========== ARCADE CARDS ========== */
-        .glass, .glass-card {
-            background: #C2D9C2;
-            border: 2px solid #3B4533;
-            box-shadow: 4px 4px 0 #3B4533;
-        }
-        .glass-card:hover { transform: none; box-shadow: 2px 2px 0 #3B4533; }
-
-        /* ========== ARCADE NAVIGATION BAR ==========
-           Escalado fluido: todos los tamaños derivan del ancho de viewport (vw)
-           con límites en rem, de modo que la barra mantiene proporciones en
-           cualquier dispositivo y nivel de zoom sin desbordar. */
-        .nav-island {
-            position: fixed;
-            top: 1rem;
-            left: 50%;
-            transform: translateX(-50%);
-            transform-origin: top center;
-            z-index: 50;
-            display: flex;
-            align-items: stretch;
-            padding: 0 clamp(0.1rem, 0.2vw, 0.25rem);
-            background: #C2D9C2;
-            border: 2px solid #3B4533;
-            box-shadow: 4px 4px 0 #3B4533;
-            height: clamp(2.4rem, 1.4rem + 2vw, 4.25rem);
-            width: max-content;
-            max-width: calc(100vw - 1.5rem);
-            white-space: nowrap;
-            overflow: hidden;
-        }
-        .nav-logo-link {
-            display: flex;
-            align-items: center;
-            padding: 0 clamp(0.4rem, 0.3rem + 0.7vw, 1rem);
-            height: 100%;
-            border-right: 1px solid rgba(59, 69, 51, 0.2);
-            flex-shrink: 0;
-        }
-        .nav-segment {
-            position: relative;
-            padding: 0 clamp(0.25rem, 0.15rem + 0.75vw, 1.25rem);
-            height: 100%;
-            display: flex;
-            align-items: center;
-            font-family: 'Orbitron', monospace;
-            font-size: clamp(0.58rem, 0.3rem + 0.38vw, 0.75rem);
-            font-weight: 600;
-            color: #3B4533;
-            text-decoration: none;
-            border-right: 1px solid rgba(59, 69, 51, 0.2);
-            letter-spacing: 0.02em;
-            white-space: nowrap;
-            transition: background 0.15s, color 0.15s;
-            flex-shrink: 1;
-            min-width: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .nav-island img {
-            width: clamp(56px, 30px + 6.5vw, 200px);
-            height: auto;
-        }
-        .nav-segment:hover { background: #3B4533; color: #C2D9C2; box-shadow: none; }
-        .nav-segment.active { background: #3B4533; color: #C2D9C2; font-weight: 700; box-shadow: none; }
-
-        .search-island {
-            position: relative;
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            margin-right: 0.75rem;
-        }
-        .search-island input {
-            width: 11rem;
-            height: 1.75rem;
-            padding: 0 0.75rem 0 2rem;
-            background: #ddeedd;
-            border: 1px solid #3B4533;
-            border-radius: 0;
-            font-family: 'Share Tech Mono', monospace;
-            font-size: 0.75rem;
-            color: #3B4533;
-            outline: none;
-        }
-        .search-island input::placeholder { color: rgba(59,69,51,0.5); }
-        .search-island input:focus { background: #C2D9C2; border-color: #3B4533; box-shadow: none; }
-        .search-island svg {
-            position: absolute;
-            left: 0.5rem;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 14px; height: 14px;
-            color: rgba(194,217,194,0.6);
-            pointer-events: none;
-        }
-        @media (max-width: 768px) { .nav-island { display: none; } }
-
-        /* ===== DARK MODE ===== */
-        html.dark body { background: #3B4533; color: #C2D9C2; }
-        html.dark .glass, html.dark .glass-card {
-            background: #2D3828;
-            border-color: #C2D9C2;
-            box-shadow: 4px 4px 0 rgba(194,217,194,0.3);
-        }
-        html.dark .nav-island { background: #3B4533; border-color: #C2D9C2; box-shadow: 4px 4px 0 rgba(194,217,194,0.3); }
-        html.dark .nav-segment { color: #C2D9C2; border-right-color: rgba(194,217,194,0.2); }
-        html.dark .nav-segment:hover { background: #C2D9C2; color: #3B4533; }
-        html.dark .nav-segment.active { background: #C2D9C2; color: #3B4533; }
-        html.dark .search-island input { background: #2D3828; border-color: #C2D9C2; color: #C2D9C2; }
-        html.dark .search-island input::placeholder { color: rgba(194,217,194,0.5); }
-        html.dark .search-island svg { color: rgba(194,217,194,0.6); }
-        html.dark .theme-toggle { color: #C2D9C2; border-left-color: rgba(194,217,194,0.2); }
-        html.dark .theme-toggle:hover { background: #C2D9C2; color: #3B4533; }
-        html.dark .mobile-breadcrumb { background: #2D3828; border-bottom-color: rgba(194,217,194,0.2); }
-        html.dark .nav-logo-light { display: none !important; }
-        html.dark .nav-logo-dark { display: block !important; }
-        .nav-logo-light { display: block; }
-        .nav-logo-dark { display: none; }
-        html.dark .skeleton-loader { background: #4A5C3F; }
-        html.dark .skeleton-bar { background: rgba(194,217,194,0.12); }
-        html.dark footer.arcade-footer { background: #C2D9C2 !important; color: #3B4533 !important; border-color: #C2D9C2 !important; }
-        html.dark footer.arcade-footer a { color: #3B4533; }
-        html.dark footer.arcade-footer a:hover { color: #4A5C4A; }
-        html.dark #mobileMenu { background: #2D3828 !important; border-right-color: rgba(194,217,194,0.2); }
-        html.dark #mobileMenu a:hover, html.dark #mobileMenu a.bg-accent { background: #C2D9C2 !important; color: #3B4533 !important; }
-
-        /* ========== FLOW TOGGLE (arcade) ========== */
-        .flow-toggle {
+        /* Controles segmentados: pestañas, flujo, año, sub-series */
+        .main-tab-toggle, .flow-toggle, .bp-sub-tabs {
             display: inline-flex;
-            background: #C2D9C2;
-            border: 2px solid #3B4533;
-            padding: 0;
-            gap: 0;
-        }
-        .flow-toggle-btn {
-            padding: 0.65rem 1.75rem;
-            font-family: 'Orbitron', monospace;
-            font-weight: 700;
-            font-size: 0.72rem;
-            letter-spacing: 0.05em;
-            transition: background 0.15s, color 0.15s;
-            cursor: pointer;
-            border: none;
-            border-right: 2px solid #3B4533;
-            background: #C2D9C2;
-            color: #3B4533;
-            text-transform: uppercase;
-        }
-        @media (max-width: 640px) {
-            .flow-toggle-btn { padding: 0.55rem 0.9rem; font-size: 0.65rem; }
-        }
-        .flow-toggle-btn:last-child { border-right: none; }
-        .flow-toggle-btn.active { background: #3B4533; color: #C2D9C2; }
-        .flow-toggle-btn:hover:not(.active) { background: #F0E88A; }
-
-        html.dark .flow-toggle { background: #2D3828; border-color: #C2D9C2; }
-        html.dark .flow-toggle-btn { background: #2D3828; color: #E8EDE8; border-right-color: rgba(194,217,194,0.3); }
-        html.dark .flow-toggle-btn.active { background: #C2D9C2; color: #3B4533; }
-        html.dark .flow-toggle-btn:hover:not(.active) { background: #4A5C3F; }
-
-        /* ========== SECTOR CARDS (arcade) ========== */
-        .sector-card {
-            cursor: pointer;
-            padding: 2rem;
-            text-align: center;
-            border: 2px solid #3B4533;
-            background: #C2D9C2;
-            box-shadow: 3px 3px 0 #3B4533;
-            transition: box-shadow 0.1s, transform 0.1s;
-        }
-        .sector-card:hover {
-            box-shadow: 1px 1px 0 #3B4533;
-            transform: translate(2px, 2px);
-        }
-        .sector-card h3 {
-            font-family: 'Orbitron', monospace;
-            font-size: 1.1rem;
-            font-weight: 800;
-            color: #3B4533;
-            letter-spacing: 0.05em;
-            word-break: break-word;
-            overflow-wrap: break-word;
-            hyphens: auto;
-        }
-        @media (max-width: 640px) {
-            .sector-card h3 { font-size: 0.85rem; letter-spacing: 0.02em; }
-            .sector-card { padding: 1.25rem; }
-        }
-        .sector-card:hover h3 { transform: none; }
-
-        html.dark .sector-card { background: #2D3828; border-color: #C2D9C2; box-shadow: 3px 3px 0 rgba(194,217,194,0.3); }
-        html.dark .sector-card:hover { box-shadow: 1px 1px 0 rgba(194,217,194,0.3); }
-        html.dark .sector-card h3 { color: #E8EDE8; }
-        html.dark .sector-card span { color: #C2D9C2; }
-
-        /* ========== BREADCRUMBS ========== */
-        .breadcrumbs {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
             flex-wrap: wrap;
-            font-size: 0.875rem;
-            color: hsl(var(--foreground) / 0.7);
-            margin-bottom: 2rem;
+            gap: 0.25rem;
+            padding: 0.25rem;
+            background: var(--c-superficie-2);
+            border: 1px solid var(--c-linea);
+            border-radius: 4px;
+            max-width: 100%;
         }
-
-        .breadcrumb-item {
-            cursor: pointer;
-            transition: color 0.2s;
-        }
-
-        .breadcrumb-item:hover {
-            color: hsl(var(--primary));
-        }
-
-        .breadcrumb-separator {
-            color: hsl(var(--foreground) / 0.4);
-        }
-
-        /* ========== TVA BADGE ========== */
-        .tva-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            border-radius: 1rem;
+        .main-tab-btn, .flow-toggle-btn, .bp-sub-tab {
+            font-family: var(--f-texto);
+            font-size: 0.95rem;
             font-weight: 700;
-            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border: 0;
+            border-radius: 3px;
+            background: transparent;
+            color: var(--c-tenue);
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s;
+            font-variant-numeric: tabular-nums;
         }
+        .main-tab-btn:hover:not(.active), .flow-toggle-btn:hover:not(.active), .bp-sub-tab:hover:not(.active) { color: var(--c-tinta); background: var(--c-acento-suave); }
+        .main-tab-btn.active, .flow-toggle-btn.active, .bp-sub-tab.active { background: var(--c-acento); color: var(--c-fondo); }
+        .main-tab-btn:focus-visible, .flow-toggle-btn:focus-visible, .bp-sub-tab:focus-visible { outline: 2px solid var(--c-foco); outline-offset: 1px; }
+        .main-tab-btn { font-size: 1rem; padding: 0.6rem 1.2rem; }
+        .bp-sub-tab { font-size: 0.88rem; padding: 0.4rem 0.8rem; }
+        .ce-controles { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
 
-        .tva-positive {
-            background: #10b981;
-            color: white;
+        /* Migas */
+        .breadcrumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; font-size: 0.95rem; color: var(--c-tenue); }
+        .breadcrumb-item { cursor: pointer; text-decoration: underline; text-decoration-color: var(--c-linea); text-underline-offset: 3px; }
+        .breadcrumb-item:hover { color: var(--c-tinta); text-decoration-color: var(--c-oro); }
+        .breadcrumb-separator { color: var(--c-linea); }
+
+        /* Tarjetas */
+        .ce-tarjeta {
+            background: var(--c-superficie);
+            border: 1px solid var(--c-linea);
+            border-radius: 4px;
+            padding: 1.25rem 1.4rem;
+            min-width: 0;
         }
+        .ce-titulo-nivel { font-family: var(--f-titular) !important; font-weight: 700; font-size: 1.6rem; line-height: 1.2; margin-bottom: 1rem; }
+        .ce-etiqueta { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--c-tenue); }
+        .ce-pie { font-size: 0.85rem; color: var(--c-tenue); }
+        .ce-mensaje { font-size: 1rem; color: var(--c-tenue); padding: 1rem 0; }
+        .ce-mensaje.ce-error { color: var(--c-negativo); }
 
-        .tva-negative {
-            background: #ef4444;
-            color: white;
-        }
-
-        /* ========== EU SHARE BADGE ========== */
-        .eu-badge {
+        .sector-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr)); gap: 0.75rem; }
+        .sector-card {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            width: 100%;
-        }
-        .eu-pct {
-            font-family: 'Orbitron', monospace;
-            font-size: 1.4rem;
-            font-weight: 900;
-            color: #003399;
-            letter-spacing: -0.02em;
-        }
-        html.dark .eu-pct { color: #6699ff; }
-        .eu-bar-track {
-            width: 100%;
-            height: 5px;
-            background: rgba(0,51,153,0.12);
-            position: relative;
-            overflow: hidden;
-        }
-        .eu-bar-fill {
-            position: absolute;
-            left: 0; top: 0; height: 100%;
-            background: #003399;
-            transition: width 0.5s ease;
-        }
-        html.dark .eu-bar-fill { background: #6699ff; }
-        .eu-na {
-            font-size: 0.75rem;
-            color: var(--muted-foreground);
-            font-style: italic;
-        }
-
-        /* ========== DOWNLOAD BUTTONS ========== */
-        .download-btn {
-            display: inline-flex;
-            align-items: center;
             gap: 0.4rem;
-            font-family: 'Share Tech Mono', monospace;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-            padding: 0.45rem 0.9rem;
-            border: 1px solid var(--primary);
-            color: var(--primary);
-            background: transparent;
+            text-align: left;
             cursor: pointer;
-            text-decoration: none;
-            transition: background 0.2s ease, color 0.2s ease;
+            background: var(--c-superficie);
+            border: 1px solid var(--c-linea);
+            border-left: 4px solid var(--c-acento);
+            border-radius: 4px;
+            padding: 1rem 1.1rem;
+            transition: border-color 0.15s, background 0.15s;
         }
-        .download-btn::before { content: '\2193'; font-weight: bold; }
-        .download-btn:hover,
-        .download-btn:focus-visible {
-            background: var(--primary);
-            color: var(--background);
-        }
-        .download-btn[aria-disabled="true"] { opacity: 0.5; cursor: not-allowed; }
+        .sector-card:hover { background: var(--c-acento-suave); border-color: var(--c-acento); }
+        .sector-card:focus-visible { outline: 2px solid var(--c-foco); outline-offset: 2px; }
+        .sector-card h3 { font-family: var(--f-texto) !important; font-weight: 700; font-size: 1rem; line-height: 1.3; color: var(--c-tinta); letter-spacing: normal; overflow-wrap: anywhere; }
+        .sector-card .sector-card-valor { font-family: var(--f-cifras); font-weight: 600; font-size: 1.05rem; color: var(--c-tinta); font-variant-numeric: tabular-nums; }
+        .ce-macro { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr)); gap: 1rem; }
+        .ce-macro .sector-card { padding: 1.5rem 1.6rem; gap: 0.6rem; }
+        .ce-macro .sector-card h3 { font-family: var(--f-titular) !important; font-size: 1.6rem; }
+        .ce-macro .sector-card p { color: var(--c-tenue); font-size: 0.95rem; }
 
-        /* ========== GRID LAYOUT ========== */
-        .sector-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
+        .skeleton-loader { position: relative; overflow: hidden; background: var(--c-superficie-2); border-radius: 3px; padding: 0.75rem; transition: opacity 0.3s; }
+        .skeleton-loader::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent); animation: brillo 1.5s infinite; }
+        @keyframes brillo { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+        .skeleton-bar { height: 1rem; background: var(--c-linea); margin-bottom: 0.6rem; border-radius: 2px; }
+        .skeleton-bar:nth-child(2) { width: 75%; }
+        .skeleton-bar:nth-child(3) { width: 50%; margin-bottom: 0; }
 
-        /* ========== MAIN TAB TOGGLE (arcade) ========== */
-        .main-tab-toggle {
-            display: inline-flex;
-            background: #C2D9C2;
-            border: 2px solid #3B4533;
-            padding: 0;
-        }
-        .main-tab-btn {
-            padding: 0.5rem 1.5rem;
-            font-family: 'Orbitron', monospace;
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: #3B4533;
-            background: #C2D9C2;
-            border: none;
-            border-right: 2px solid #3B4533;
-            cursor: pointer;
-            transition: background 0.15s, color 0.15s;
-        }
-        .main-tab-btn:last-child { border-right: none; }
-        .main-tab-btn.active { background: #3B4533; color: #C2D9C2; }
-        .main-tab-btn:hover:not(.active) { background: #F0E88A; }
+        /* Bloque de análisis */
+        .ce-grafico { display: grid; gap: 0.75rem; }
+        .ce-lienzo { position: relative; height: 380px; }
+        .ce-kpi { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 0.5rem; text-align: left; }
+        .ce-cifra { font-family: var(--f-cifras); font-weight: 600; font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem); line-height: 1.1; letter-spacing: -0.01em; color: var(--c-tinta); font-variant-numeric: tabular-nums; }
+        .ce-positivo { color: var(--c-positivo) !important; }
+        .ce-negativo { color: var(--c-negativo) !important; }
+        .ce-estado { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.15rem 0.6rem; border-radius: 3px; border: 1px solid currentColor; }
+        .ce-estado.ce-neutro { color: var(--c-tenue); }
+        .ce-separador { width: 100%; border-top: 1px solid var(--c-linea); }
 
-        html.dark .main-tab-toggle { background: #2D3828; border-color: #C2D9C2; }
-        html.dark .main-tab-btn { background: #2D3828; color: #E8EDE8; border-right-color: rgba(194,217,194,0.3); }
-        html.dark .main-tab-btn.active { background: #C2D9C2; color: #3B4533; }
-        html.dark .main-tab-btn:hover:not(.active) { background: #4A5C3F; }
+        .tva-badge { display: inline-flex; align-items: baseline; gap: 0.35rem; font-family: var(--f-cifras); font-weight: 600; font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+        .tva-positive { color: var(--c-positivo); }
+        .tva-negative { color: var(--c-negativo); }
 
-        /* ========== BALANZA KPI CARDS (arcade) ========== */
-        .bp-kpi-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-        .bp-kpi-card {
-            background: #C2D9C2;
-            border: 2px solid #3B4533;
-            box-shadow: 3px 3px 0 #3B4533;
-            padding: 1.5rem;
-            text-align: center;
-            transition: box-shadow 0.1s, transform 0.1s;
-        }
-        .bp-kpi-card:hover {
-            box-shadow: 1px 1px 0 #3B4533;
-            transform: translate(2px, 2px);
-        }
-        .bp-kpi-label {
-            font-family: 'Orbitron', monospace;
-            font-size: 0.6rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: rgba(59,69,51,0.6);
-            margin-bottom: 0.75rem;
-        }
-        .bp-kpi-value {
-            font-family: 'Orbitron', monospace;
-            font-size: 1.6rem;
-            font-weight: 900;
-            letter-spacing: -0.03em;
-            color: #3B4533;
-        }
-        .bp-kpi-value.positive { color: #1a7a4a; }
-        .bp-kpi-value.negative { color: #b91c1c; }
-        .bp-kpi-unit {
-            font-size: 0.6rem;
-            color: rgba(59,69,51,0.5);
-            margin-top: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-        }
+        .eu-badge { display: flex; flex-direction: column; gap: 0.5rem; width: 100%; }
+        .eu-pct { font-family: var(--f-cifras); font-weight: 600; font-size: 1.6rem; color: var(--c-tinta); font-variant-numeric: tabular-nums; }
+        .eu-bar-track { width: 100%; height: 8px; background: var(--c-superficie-2); border: 1px solid var(--c-linea); border-radius: 4px; position: relative; overflow: hidden; }
+        .eu-bar-fill { position: absolute; left: 0; top: 0; height: 100%; background: var(--g-ue); border-radius: 0 4px 4px 0; transition: width 0.5s ease; }
+        .eu-na { font-size: 0.9rem; color: var(--c-tenue); }
 
-        html.dark .bp-kpi-card { background: #2D3828; border-color: #C2D9C2; box-shadow: 3px 3px 0 rgba(194,217,194,0.3); }
-        html.dark .bp-kpi-card:hover { box-shadow: 1px 1px 0 rgba(194,217,194,0.3); }
-        html.dark .bp-kpi-label { color: rgba(194,217,194,0.5); }
-        html.dark .bp-kpi-value { color: #E8EDE8; }
-        html.dark .bp-kpi-value.positive { color: #4ade80 !important; }
-        html.dark .bp-kpi-value.negative { color: #f87171 !important; }
-        html.dark .bp-kpi-unit { color: rgba(194,217,194,0.4); }
-        html.dark #metricValue { color: #C2D9C2 !important; }
-        html.dark #metricLabel { color: #C2D9C2 !important; }
-        html.dark #card-volume .text-muted-foreground { color: rgba(194,217,194,0.6) !important; }
-        html.dark #countriesTitle { color: #C2D9C2 !important; }
-        html.dark #countriesContainer .flex { background: rgba(194,217,194,0.08) !important; border-color: rgba(194,217,194,0.15) !important; }
-        html.dark #countriesContainer .font-bold { color: #C2D9C2 !important; }
-        html.dark #countriesContainer .text-2xl { color: rgba(194,217,194,0.25) !important; }
-        html.dark #analyticsSection > div > .glass-card:first-child h4 { color: #C2D9C2 !important; }
-        /* Flujos dark: breadcrumb category + flow stat box titles */
-        html.dark .breadcrumb-item { color: #C2D9C2 !important; }
-        html.dark .breadcrumb-separator { color: rgba(194,217,194,0.4) !important; }
-        html.dark #card-tva h4,
-        html.dark #card-tva .text-muted-foreground { color: #C2D9C2 !important; }
-        html.dark #card-balance h4,
-        html.dark #card-balance .text-muted-foreground { color: #C2D9C2 !important; }
-        html.dark #card-volume .text-muted-foreground { color: rgba(194,217,194,0.6) !important; }
-        /* Balanza 17.1 table dark: year column + headers */
-        html.dark #bp171Table th { color: #C2D9C2 !important; }
-        html.dark #bp171Table td.text-primary { color: #C2D9C2 !important; }
-        /* Balanza 17.1 KPI boxes titles/subtitles */
-        html.dark #bp171KPIs .bp-kpi-label { color: #C2D9C2 !important; }
+        .ce-paises { display: grid; gap: 0.5rem; width: 100%; counter-reset: pais; }
+        .ce-pais { display: flex; align-items: baseline; gap: 0.8rem; padding: 0.6rem 0; border-bottom: 1px solid var(--c-linea); font-weight: 700; }
+        .ce-pais:last-child { border-bottom: 0; }
+        .ce-pais-num { font-family: var(--f-cifras); font-weight: 500; color: var(--c-tenue); min-width: 1.2rem; }
 
-        /* ========== BALANZA BADGE ========== */
-        .bp-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.3rem 0.75rem;
-            font-family: 'Orbitron', monospace;
-            font-size: 0.65rem;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            background: #3B4533;
-            color: #C2D9C2;
-            border: 2px solid #3B4533;
-        }
-        .bp-badge::before {
-            content: '';
-            width: 6px;
-            height: 6px;
-            background: #C2D9C2;
-            animation: pulse-dot 2s ease-in-out infinite;
-        }
-        html.dark .bp-badge { background: #C2D9C2; color: #3B4533; border-color: #C2D9C2; }
-        html.dark .bp-badge::before { background: #3B4533; }
+        /* Balanza de pagos */
+        .bp-cabecera { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; align-items: center; justify-content: space-between; }
+        .bp-kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(13rem, 100%), 1fr)); gap: 0.75rem; }
+        .bp-kpi-card { background: var(--c-superficie); border: 1px solid var(--c-linea); border-radius: 4px; padding: 1rem 1.1rem; display: grid; gap: 0.35rem; }
+        .bp-kpi-label { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--c-tenue); }
+        .bp-kpi-value { font-family: var(--f-cifras); font-weight: 600; font-size: 1.6rem; color: var(--c-tinta); font-variant-numeric: tabular-nums; }
+        .bp-kpi-value.positive { color: var(--c-positivo); }
+        .bp-kpi-value.negative { color: var(--c-negativo); }
+        .bp-kpi-unit { font-family: var(--f-cifras); font-size: 0.8rem; color: var(--c-tenue); }
+        .bp-badge { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--f-cifras); font-size: 0.85rem; color: var(--c-tenue); }
+        .bp-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--c-positivo); }
+        .bp-chart-card { background: var(--c-superficie); border: 1px solid var(--c-linea); border-radius: 4px; padding: 1.1rem 1.25rem; min-width: 0; }
+        .bp-chart-title { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--c-tenue); margin-bottom: 0.9rem; }
+        .ce-pila { display: grid; gap: 1.25rem; }
+        .ce-dos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(26rem, 100%), 1fr)); gap: 1.25rem; }
+        .ce-dos > * { min-width: 0; }
+        .ce-lienzo-bp { position: relative; height: 340px; }
 
-        @keyframes pulse-dot {
+        #bp171Table { width: 100%; border-collapse: collapse; font-size: 0.93rem; font-variant-numeric: tabular-nums; min-width: 560px; }
+        #bp171Table th { text-align: right; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--c-tenue); padding: 0.6rem 0.8rem; border-bottom: 2px solid var(--c-tinta); }
+        #bp171Table th:first-child, #bp171Table td:first-child { text-align: left; }
+        #bp171Table td { text-align: right; font-family: var(--f-cifras); padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--c-linea); }
+        #bp171Table tfoot td { font-family: var(--f-texto); text-align: left; color: var(--c-tenue); border-bottom: 0; }
 
-            0%,
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-
-            50% {
-                opacity: 0.5;
-                transform: scale(0.8);
-            }
-        }
-
-        /* ========== BALANZA SUB-TABS (arcade) ========== */
-        .bp-sub-tabs {
-            display: inline-flex;
-            background: #C2D9C2;
-            border: 2px solid #3B4533;
-            padding: 0;
-        }
-        .bp-sub-tab {
-            padding: 0.4rem 1rem;
-            font-family: 'Orbitron', monospace;
-            font-size: 0.65rem;
-            font-weight: 600;
-            letter-spacing: 0.04em;
-            color: #3B4533;
-            background: #C2D9C2;
-            border: none;
-            border-right: 2px solid #3B4533;
-            cursor: pointer;
-            transition: background 0.15s, color 0.15s;
-        }
-        .bp-sub-tab:last-child { border-right: none; }
-        .bp-sub-tab.active { background: #3B4533; color: #C2D9C2; }
-        .bp-sub-tab:hover:not(.active) { background: #F0E88A; }
-
-        html.dark .bp-sub-tabs { background: #2D3828; border-color: #C2D9C2; }
-        html.dark .bp-sub-tab { background: #2D3828; color: #E8EDE8; border-right-color: rgba(194,217,194,0.3); }
-        html.dark .bp-sub-tab.active { background: #C2D9C2; color: #3B4533; }
-        html.dark .bp-sub-tab:hover:not(.active) { background: #4A5C3F; }
-
-        /* ========== BALANZA CHART CONTAINERS (arcade) ========== */
-        .bp-chart-card {
-            background: #C2D9C2;
-            border: 2px solid #3B4533;
-            box-shadow: 3px 3px 0 #3B4533;
-            padding: 1.5rem;
-        }
-        .bp-chart-title {
-            font-family: 'Orbitron', monospace;
-            font-size: 0.65rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: rgba(0,0,0,0.5);
-            margin-bottom: 1rem;
-        }
-        html.dark .bp-chart-card { background: #2D3828; border-color: #C2D9C2; box-shadow: 3px 3px 0 rgba(194,217,194,0.3); }
-        html.dark .bp-chart-title { color: #E8EDE8; }
-
-        /* ========== BALANZA MOBILE RESPONSIVE ========== */
         @media (max-width: 640px) {
-            .main-tab-toggle {
-                width: 100%;
-                justify-content: center;
-            }
-
-            .main-tab-btn {
-                padding: 0.4rem 0.75rem;
-                font-size: 0.65rem;
-            }
-
-            .bp-sub-tabs {
-                flex-direction: column;
-                width: 100%;
-                border-radius: 0.75rem;
-            }
-
-            .bp-sub-tab {
-                padding: 0.5rem 0.75rem;
-                font-size: 0.6rem;
-                text-align: center;
-                width: 100%;
-            }
-
-            .bp-kpi-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 0.5rem;
-            }
-
-            .bp-kpi-card {
-                padding: 0.75rem;
-            }
-
-            .bp-kpi-label {
-                font-size: 0.55rem;
-                margin-bottom: 0.4rem;
-            }
-
-            .bp-kpi-value {
-                font-size: 1.25rem;
-            }
-
-            .bp-kpi-unit {
-                font-size: 0.55rem;
-                margin-top: 0.25rem;
-            }
-
-            .bp-chart-card {
-                padding: 0.75rem;
-                border-radius: 0.75rem;
-            }
-
-            .bp-chart-title {
-                font-size: 0.6rem;
-                margin-bottom: 0.5rem;
-            }
-
-            .bp-badge {
-                font-size: 0.6rem;
-                padding: 0.3rem 0.75rem;
-            }
-
-            #bp171Table th,
-            #bp171Table td {
-                padding: 0.3rem 0.25rem !important;
-                font-size: 0.65rem !important;
-            }
+            .main-tab-toggle, .flow-toggle, .bp-sub-tabs { display: flex; width: 100%; }
+            .main-tab-btn, .flow-toggle-btn, .bp-sub-tab { flex: 1 1 auto; padding-inline: 0.6rem; }
+            .ce-lienzo { height: 300px; }
+            .ce-lienzo-bp { height: 280px; }
         }
-
-        /* ========== MOBILE MENU ARCADE ========== */
-        #mobileMenu {
-            transform: translateX(-100%);
-            opacity: 0;
-            visibility: hidden;
-            transition: transform 0.2s ease, opacity 0.2s ease, visibility 0s 0.2s;
-            background: #3B4533 !important;
-            border-right: 2px solid rgba(194,217,194,0.3);
+        @media (prefers-reduced-motion: reduce) {
+            .skeleton-loader::after { animation: none; }
+            .eu-bar-fill { transition: none; }
         }
-        #mobileMenu.menu-open {
-            transform: translateX(0);
-            opacity: 1;
-            visibility: visible;
-            transition: transform 0.2s ease, opacity 0.2s ease;
-            z-index: 60;
-        }
-        #mobileMenu a {
-            font-family: 'Orbitron', monospace;
-            font-size: 0.65rem;
-            font-weight: 600;
-            color: #C2D9C2;
-            letter-spacing: 0.05em;
-            padding: 0.75rem 1rem;
-            border-bottom: 1px solid rgba(194,217,194,0.15);
-            display: flex;
-            align-items: center;
-            min-height: 44px;
-            text-decoration: none;
-        }
-        #mobileMenu a:hover, #mobileMenu a.bg-accent {
-            background: #C2D9C2 !important;
-            color: #3B4533 !important;
-        }
-
-        /* ========== ARCADE FOOTER ========== */
-        footer.arcade-footer {
-            background: #3B4533 !important;
-            color: #C2D9C2 !important;
-            border-top: 2px solid #3B4533 !important;
-        }
-        footer.arcade-footer a { color: #C2D9C2; transition: color 0.15s; }
-        footer.arcade-footer a:hover { color: #FFE566; opacity: 1; }
-
-        /* ========== UTILITY ========== */
     </style>
     <!-- recursos:inicio -->
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -781,7 +216,7 @@
     <!-- recursos:fin -->
 </head>
 
-<body class="flex min-h-screen flex-col">
+<body class="c-pagina flex min-h-screen flex-col">
 
     <!-- cabecera:inicio -->
     <header class="sitio-cabecera">
@@ -811,389 +246,199 @@
     <!-- cabecera:fin -->
 
     <!-- Main Content -->
-    <main class="relative flex-1 pb-40 pt-24 md:pt-32">
-        <section class="w-full">
-            <div class="container mx-auto max-w-6xl px-4 md:px-6">
-                <div class="glass-card p-8 md:p-12 min-h-[75vh]">
+    <main class="c-principal">
+        <div class="c-columna-sitio ce-contenido" id="ceContenido">
 
-                    <!-- Header -->
-                    <div class="flex flex-col items-center space-y-4 text-center mb-12">
-                        <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight"
-                            style="color: hsl(var(--primary));">
-                            COMERCIO EXTERIOR
-                        </h2>
-                        <p class="text-base md:text-lg text-muted-foreground font-medium uppercase tracking-widest">
-                            Análisis de datos de comercio exterior de España
-                        </p>
+            <header class="c-cabecera-pagina">
+                <p class="c-antetitulo">Datos oficiales · DataComex y Banco de España</p>
+                <h1 class="c-titular">Comercio exterior de España</h1>
+                <p class="c-entradilla">Exportaciones e importaciones por sector desde 2021 y balanza de pagos mensual. Elige un sector para bajar de nivel y ver su evolución, su saldo y sus principales mercados.</p>
+            </header>
+
+            <div class="main-tab-toggle" role="group" aria-label="Elegir conjunto de datos">
+                <button class="main-tab-btn active" data-main-tab="flujos" onclick="switchMainTab('flujos')">Flujos comerciales</button>
+                <button class="main-tab-btn" data-main-tab="balanza" onclick="switchMainTab('balanza')">Balanza de pagos</button>
+            </div>
+
+            <!-- ===== FLUJOS COMERCIALES ===== -->
+            <div id="flujosView" class="ce-contenido">
+                <div class="ce-controles">
+                    <div class="flow-toggle" role="group" aria-label="Seleccionar flujo">
+                        <button class="flow-toggle-btn active" data-flow="E" onclick="switchFlow('E')">Exportación</button>
+                        <button class="flow-toggle-btn" data-flow="I" onclick="switchFlow('I')">Importación</button>
                     </div>
-
-                    <!-- Main Tab Toggle -->
-                    <div class="flex justify-center mb-10">
-                        <div class="main-tab-toggle">
-                            <button class="main-tab-btn active" data-main-tab="flujos"
-                                onclick="switchMainTab('flujos')">
-                                Flujos Comerciales
-                            </button>
-                            <button class="main-tab-btn" data-main-tab="balanza" onclick="switchMainTab('balanza')">
-                                Balanza de Pagos
-                            </button>
-                        </div>
+                    <div class="flow-toggle" id="yearToggle" role="group" aria-label="Seleccionar año">
+                        <!-- los años los pone el JS -->
                     </div>
+                </div>
 
-                    <!-- ===== FLUJOS COMERCIALES VIEW ===== -->
-                    <div id="flujosView">
-                        <!-- Persistent Flow + Year selectors (visible across all navigation levels) -->
-                        <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-8">
-                            <div class="flow-toggle" role="group" aria-label="Seleccionar flujo">
-                                <button class="flow-toggle-btn active" data-flow="E" onclick="switchFlow('E')">
-                                    EXPORTACIÓN
-                                </button>
-                                <button class="flow-toggle-btn" data-flow="I" onclick="switchFlow('I')">
-                                    IMPORTACIÓN
-                                </button>
-                            </div>
-                            <div class="flow-toggle" id="yearToggle" role="group" aria-label="Seleccionar año">
-                                <!-- year buttons injected by JS -->
-                            </div>
+                <nav id="breadcrumbs" class="breadcrumbs hidden" aria-label="Nivel actual"></nav>
+
+                <div id="homeView">
+                    <div class="ce-macro">
+                        <div class="sector-card" role="button" tabindex="0" onclick="selectMacroSector('Agroalimentario')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+                            <h3>Agroalimentario</h3>
+                            <p>Frutas y hortalizas, cárnicos, pesca, aceite, vino y el resto de la cadena alimentaria.</p>
+                            <div class="skeleton-loader"><div class="skeleton-bar"></div><div class="skeleton-bar"></div><div class="skeleton-bar"></div></div>
                         </div>
-
-                        <!-- Breadcrumbs -->
-                        <div id="breadcrumbs" class="breadcrumbs hidden"></div>
-
-                        <!-- Home View -->
-                        <div id="homeView">
-                            <!-- Macro Sector Selection -->
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-reveal>
-                                <div class="glass-card sector-card" onclick="selectMacroSector('Agroalimentario')">
-                                    <h3>AGROALIMENTARIO</h3>
-                                    <!-- Skeleton -->
-                                    <div class="skeleton-loader mt-4 p-4">
-                                        <div class="skeleton-bar"></div>
-                                        <div class="skeleton-bar"></div>
-                                        <div class="skeleton-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="glass-card sector-card" onclick="selectMacroSector('Industrial')">
-                                    <h3>INDUSTRIAL</h3>
-                                    <!-- Skeleton -->
-                                    <div class="skeleton-loader mt-4 p-4">
-                                        <div class="skeleton-bar"></div>
-                                        <div class="skeleton-bar"></div>
-                                        <div class="skeleton-bar"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Levels View Containers (Grids only) -->
-                        <div id="level1View" class="hidden">
-                            <h3 id="level1Title" class="text-3xl font-bold text-primary mb-6 uppercase tracking-tight">
-                            </h3>
-                            <div id="level1Grid" class="sector-grid"></div>
-                        </div>
-
-                        <div id="level2View" class="hidden">
-                            <h3 id="level2Title" class="text-3xl font-bold text-primary mb-6"></h3>
-                            <div id="level2Grid" class="sector-grid"></div>
-                        </div>
-
-                        <div id="level3View" class="hidden">
-                            <h3 id="level3Title" class="text-3xl font-bold text-primary mb-6"></h3>
-                            <div id="level3Grid" class="sector-grid"></div>
-                        </div>
-
-                        <!-- Level 4 View (for Industrial sector detail) -->
-                        <div id="level4View" class="hidden">
-                            <h3 id="level4Title" class="text-3xl font-bold text-primary mb-6"></h3>
-                            <div id="level4Grid" class="sector-grid"></div>
-                        </div>
-
-                        <!-- REUSABLE ANALYTICS SECTION (Visible in Levels 1, 2, 3 and Final) -->
-
-                        <div id="analyticsSection" class="hidden mt-16 pt-16 border-t border-primary/10">
-                            <div class="flex flex-col space-y-8">
-                                <!-- Title (Optional, used for final view level) -->
-                                <h3 id="finalTitle" class="text-3xl font-bold text-primary mb-2 hidden"></h3>
-
-                                <!-- Chart (Top - Full Width) -->
-                                <div class="glass-card p-6 min-h-[450px]">
-                                    <h4
-                                        class="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">
-                                        Evolución Temporal (Millones €)</h4>
-                                    <div class="h-[380px]">
-                                        <canvas id="timeSeriesChart"></canvas>
-                                    </div>
-                                </div>
-
-                                <!-- Bottom Grid (Stats + Countries) -->
-                                <!-- BENTO GRID LAYOUT: 12 Cols for maximum flexibility -->
-                                <div id="analyticsGrid"
-                                    class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 auto-rows-min">
-                                    <!-- LEFT: TVA + Latest Total (ID: card-tva) -->
-                                    <div id="card-tva"
-                                        class="glass-card col-span-12 md:col-span-6 xl:col-span-6 p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
-                                        <!-- Mitad superior: TVA -->
-                                        <div class="flex flex-col items-center w-full flex-1 justify-center pb-4">
-                                            <h4 class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6">
-                                                Tasa Var. Anual (TVA)</h4>
-                                            <div id="tvaContainer"
-                                                class="flex flex-col items-center scale-125 md:scale-150 py-2 md:py-4">
-                                                <!-- Dynamic TVA badge -->
-                                            </div>
-                                            <p class="text-[10px] text-muted-foreground mt-6 md:mt-8 italic uppercase tracking-wider">
-                                                Comparativa <span id="tvaYearLabel">2024-2025</span></p>
-                                        </div>
-
-                                        <!-- Divisor -->
-                                        <div class="w-full border-t border-primary/20 my-2"></div>
-
-                                        <!-- Mitad inferior: % UE -->
-                                        <div class="flex flex-col items-center w-full flex-1 justify-center pt-4">
-                                            <h4 class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3">
-                                                Cuota UE27 <span id="euShareYearLabel" class="text-primary">2025</span></h4>
-                                            <div id="euShareContainer" class="flex flex-col items-center w-full px-4">
-                                                <!-- Dynamic EU share — renderizado por renderEUShare() -->
-                                            </div>
-                                            <p id="euShareLabel"
-                                                class="text-[10px] text-muted-foreground mt-3 italic uppercase tracking-wider">
-                                                % hacia UE</p>
-                                            <p id="euShareCoverage"
-                                                class="text-[10px] text-muted-foreground/70 mt-1 italic hidden"></p>
-                                        </div>
-                                    </div>
-
-                                    <!-- CENTER 1: Metric (ID: card-volume) -->
-                                    <div id="card-volume"
-                                        class="glass-card col-span-12 md:col-span-6 xl:col-span-6 p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
-                                        <h4 id="metricLabel"
-                                            class="text-xs md:text-sm font-semibold uppercase tracking-wider text-primary mb-4 md:mb-6">
-                                            VALOR 2025 (M€)
-                                        </h4>
-                                        <div id="metricValue"
-                                            class="text-3xl md:text-5xl font-black text-primary tracking-tighter">
-                                            0,00
-                                        </div>
-                                        <p
-                                            class="text-[10px] text-muted-foreground mt-6 md:mt-8 italic uppercase tracking-wider">
-                                            Millones de Euros</p>
-                                    </div>
-
-                                    <!-- CENTER 2: Balance (New) (ID: card-balance) -->
-                                    <div id="card-balance"
-                                        class="glass-card col-span-12 md:col-span-6 xl:col-span-6 p-6 md:p-10 flex flex-col items-center justify-center text-center transition-all duration-300">
-                                        <h4
-                                            class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6">
-                                            SALDO COMERCIAL
-                                        </h4>
-                                        <div id="balanceContainer" class="flex flex-col items-center justify-center">
-                                            <div id="balanceValue"
-                                                class="text-2xl md:text-4xl font-black tracking-tighter mb-2">0,00
-                                            </div>
-                                            <div id="balanceLabel"
-                                                class="text-[10px] md:text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-gray-100 text-gray-500">
-                                                NEUTRO</div>
-                                        </div>
-                                        <p
-                                            class="text-[10px] text-muted-foreground mt-6 md:mt-8 italic uppercase tracking-wider">
-                                            <span id="balanceYearLabel">2025</span> (EXP - IMP)
-                                        </p>
-                                    </div>
-
-                                    <!-- RIGHT: Top Countries (ID: card-countries) -->
-                                    <div id="card-countries"
-                                        class="glass-card col-span-12 md:col-span-6 xl:col-span-6 p-6 md:p-8 transition-all duration-300 flex flex-col items-center justify-center">
-                                        <h4 id="countriesTitle"
-                                            class="text-xs md:text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4 md:mb-6 text-center w-full">
-                                            Principales Destinos</h4>
-                                        <div id="countriesContainer"
-                                            class="space-y-3 md:space-y-4 w-full flex flex-col px-4 md:px-6">
-                                            <!-- Dynamic ranking items -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- end analyticsSection -->
-                    </div><!-- end flujosView -->
-
-                    <!-- ===== BALANZA DE PAGOS VIEW ===== -->
-                    <div id="balanzaView" class="hidden">
-
-                        <!-- Sub-tab Toggle: 17.1 vs 17.4 -->
-                        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8">
-                            <div class="bp-sub-tabs">
-                                <button class="bp-sub-tab active" data-bp-tab="s171" onclick="switchBPTab('s171')">Serie
-                                    17.1 — Resumen Mensual</button>
-                                <button class="bp-sub-tab" data-bp-tab="s174" onclick="switchBPTab('s174')">Serie 17.4 —
-                                    Cuenta Corriente</button>
-                            </div>
-                            <div id="bpBadge" class="bp-badge">Último dato: Febrero 2026</div>
-                        </div>
-
-                        <!-- Serie 17.1 Panel -->
-                        <div id="bp171Panel">
-                            <!-- KPI Cards -->
-                            <div id="bp171KPIs" class="bp-kpi-grid mb-8"></div>
-
-                            <!-- Main Time Series Chart -->
-                            <div class="bp-chart-card mb-8">
-                                <div class="bp-chart-title">Evolución Mensual — Saldos Balanza de Pagos (Millones €)
-                                </div>
-                                <div class="h-[280px] sm:h-[400px]" style="position:relative;"><canvas
-                                        id="bp171Chart"></canvas></div>
-                            </div>
-
-                            <!-- Annual Summary Table -->
-                            <div class="bp-chart-card">
-                                <div class="bp-chart-title">Resumen Anual (Millones €)</div>
-                                <div style="overflow-x:auto;">
-                                    <table id="bp171Table" class="w-full text-sm"></table>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Serie 17.4 Panel -->
-                        <div id="bp174Panel" class="hidden">
-                            <!-- KPI Cards -->
-                            <div id="bp174KPIs" class="bp-kpi-grid mb-8"></div>
-
-                            <!-- Goods vs Services Charts -->
-                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-                                <div class="bp-chart-card">
-                                    <div class="bp-chart-title">Bienes y Servicios — Saldos Anuales (M€)</div>
-                                    <div class="h-[260px] sm:h-[350px]" style="position:relative;"><canvas
-                                            id="bp174BarChart"></canvas>
-                                    </div>
-                                </div>
-                                <div class="bp-chart-card">
-                                    <div class="bp-chart-title">Ingresos por Turismo — Top Países (M€)</div>
-                                    <div class="h-[260px] sm:h-[350px]" style="position:relative;"><canvas
-                                            id="bp174TourismChart"></canvas></div>
-                                </div>
-                            </div>
-
-                            <!-- Services Breakdown -->
-                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                                <div class="bp-chart-card">
-                                    <div
-                                        class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-2">
-                                        <div class="bp-chart-title" id="bp174DonutTitle" style="margin-bottom:0">
-                                            Servicios No Turísticos — Ingresos por Tipo</div>
-                                        <div class="bp-sub-tabs" style="flex-shrink:0">
-                                            <button class="bp-sub-tab active" data-donut-mode="ingresos"
-                                                onclick="switchDonutMode('ingresos')">Ingresos</button>
-                                            <button class="bp-sub-tab" data-donut-mode="pagos"
-                                                onclick="switchDonutMode('pagos')">Pagos</button>
-                                        </div>
-                                    </div>
-                                    <div class="h-[300px] sm:h-[350px]" style="position:relative;"><canvas
-                                            id="bp174DonutChart"></canvas>
-                                    </div>
-                                    <p class="mt-2 text-xs text-muted-foreground italic">El anillo exterior desglosa
-                                        &laquo;Otros Serv. Empresariales&raquo; en I+D, Consultoría y Serv. Técnicos y
-                                        Comerciales (subcategorías no sumadas al total).</p>
-                                </div>
-                                <div class="bp-chart-card">
-                                    <div class="bp-chart-title">Ingresos vs Pagos — Servicios Anuales (M€)</div>
-                                    <div class="h-[260px] sm:h-[350px]" style="position:relative;"><canvas
-                                            id="bp174IngPagChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Tourism vs Non-Tourism Income -->
-                            <div class="bp-chart-card mt-8">
-                                <div
-                                    class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-2">
-                                    <div class="bp-chart-title" style="margin-bottom:0">Ingresos por Servicios —
-                                        Turísticos vs No Turísticos (M€)</div>
-                                    <div class="bp-sub-tabs" style="flex-shrink:0">
-                                        <button class="bp-sub-tab active" data-toursplit-mode="ingresos"
-                                            onclick="switchTourSplitMode('ingresos')">Ingresos</button>
-                                        <button class="bp-sub-tab" data-toursplit-mode="pagos"
-                                            onclick="switchTourSplitMode('pagos')">Pagos</button>
-                                    </div>
-                                </div>
-                                <div class="h-[280px] sm:h-[380px]" style="position:relative;"><canvas
-                                        id="bp174TourSplitChart"></canvas>
-                                </div>
-                            </div>
-                        </div><!-- end bp174Panel -->
-                    </div><!-- end balanzaView -->
-
-                    <!-- Disclaimer Note (Global) -->
-                    <div class="mt-16 mb-8 w-full relative z-30 block mx-auto max-w-4xl">
-                        <div
-                            class="bg-background/50 border-primary/50 rounded-lg border p-4 backdrop-blur-sm shadow-sm">
-                            <div class="flex gap-2 items-start">
-                                <svg class="h-5 w-5 text-primary mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <div class="text-left">
-                                    <h3 class="font-bold text-primary text-sm uppercase tracking-wide mb-1">Nota
-                                        Importante</h3>
-                                    <p class="font-serif text-foreground/80 text-sm md:text-base leading-relaxed">
-                                        Los datos mostrados provienen de fuentes oficiales (DataComex, Banco de España).
-                                        Si detectas algún dato extraño o tienes alguna sugerencia,
-                                        <a href="sobre-mi.html"
-                                            class="font-medium text-primary hover:underline hover:text-primary/80 transition-colors">contacta
-                                            conmigo</a>.
-                                    </p>
-                                    <p class="mt-3 font-serif text-foreground/80 text-sm md:text-base leading-relaxed">
-                                        <strong>Cobertura:</strong> exportación, importación, TVA, cuota de la UE y
-                                        países destino/origen están disponibles para <strong>todos los años
-                                        2021&ndash;2025</strong>. La TVA de 2021 no existe porque no hay año anterior
-                                        con el que comparar. Los datos de <strong>2025 son provisionales</strong> y la
-                                        estadística de Aduanas los revisa al alza en meses posteriores.
-                                    </p>
-                                    <p class="mt-3 font-serif text-foreground/80 text-sm md:text-base leading-relaxed">
-                                        <strong>Cuota UE27:</strong> porcentaje del valor en euros con destino (o
-                                        procedencia) en los 27 Estados miembros sobre el valor total del sector. Se
-                                        calcula a nivel de partida de la Nomenclatura Combinada y se agrega ponderando
-                                        por valor, no promediando porcentajes. Dos agrupaciones residuales
-                                        (&laquo;Agrícolas sin clasificar&raquo;, en torno al 0,4&nbsp;% del valor) no
-                                        tienen cuota UE asignada y quedan fuera del cálculo; cuando eso afecta al tramo
-                                        que estás viendo, la tarjeta lo indica.
-                                    </p>
-                                    <div class="mt-4 pt-3 border-t border-primary/30 text-sm md:text-base">
-                                        <p class="font-bold uppercase tracking-wide text-primary mb-1">Fuente de los datos</p>
-                                        <p class="mb-1 text-foreground/80">Estadísticas oficiales de comercio exterior español. Última extracción de DataComex: <strong>4 de julio de 2026</strong>.</p>
-                                        <ul class="list-disc list-inside space-y-1 text-foreground/80">
-                                            <li><a href="https://datacomex.comercio.es/Metadata/Comex" target="_blank" rel="noopener noreferrer" class="underline hover:text-primary">DataComex &mdash; Ministerio de Economía, Comercio y Empresa</a></li>
-                                            <li><a href="https://sede.agenciatributaria.gob.es/Sede/estadisticas/estadisticas-comercio-exterior.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-primary">Estadísticas de comercio exterior &mdash; Agencia Tributaria</a></li>
-                                            <li><a href="https://www.bde.es/webbe/es/estadisticas/otras-clasificaciones/publicaciones/boletin-estadistico/capitulo-17.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-primary">Boletín Estadístico Capítulo 17 &mdash; Banco de España</a></li>
-                                        </ul>
-                                        <p class="mt-2 text-foreground/80">Los datos de Balanza de Pagos se actualizan
-                                            automáticamente desde la <a href="https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-primary">API de estadísticas del Banco de España</a> al abrir la pestaña.</p>
-                                        <p class="mt-2 text-foreground/80">Metodología completa, jerarquía de sectores y
-                                            correspondencia con los códigos de la Nomenclatura Combinada en la
-                                            <a href="metodologia.html" class="underline hover:text-primary font-medium">ficha metodológica</a>.</p>
-                                    </div>
-
-                                    <!-- Descargas -->
-                                    <div class="mt-4 pt-3 border-t border-primary/30 text-sm md:text-base">
-                                        <p class="font-bold uppercase tracking-wide text-primary mb-2">Descargar los datos</p>
-                                        <div class="flex flex-wrap gap-2">
-                                            <button type="button" id="btnDownloadView"
-                                                class="download-btn">Vista actual (CSV)</button>
-                                            <a href="data/flujos_data.csv" download
-                                                class="download-btn">Dataset completo 2021&ndash;2025 (CSV)</a>
-                                            <a href="data/correspondencias-sectores-nc8.csv" download
-                                                class="download-btn">Sectores &harr; códigos NC8 (CSV)</a>
-                                        </div>
-                                        <p class="mt-2 text-xs text-foreground/70">Los CSV se generan en UTF-8 con
-                                            marca de orden de bytes, de modo que Excel abre las tildes correctamente
-                                            con doble clic.</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="sector-card" role="button" tabindex="0" onclick="selectMacroSector('Industrial')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">
+                            <h3>Industrial</h3>
+                            <p>Energía, química, bienes de equipo, automóvil, materias primas y manufacturas.</p>
+                            <div class="skeleton-loader"><div class="skeleton-bar"></div><div class="skeleton-bar"></div><div class="skeleton-bar"></div></div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
+                <div id="level1View" class="hidden">
+                    <h2 id="level1Title" class="ce-titulo-nivel"></h2>
+                    <div id="level1Grid" class="sector-grid"></div>
+                </div>
+                <div id="level2View" class="hidden">
+                    <h2 id="level2Title" class="ce-titulo-nivel"></h2>
+                    <div id="level2Grid" class="sector-grid"></div>
+                </div>
+                <div id="level3View" class="hidden">
+                    <h2 id="level3Title" class="ce-titulo-nivel"></h2>
+                    <div id="level3Grid" class="sector-grid"></div>
+                </div>
+                <div id="level4View" class="hidden">
+                    <h2 id="level4Title" class="ce-titulo-nivel"></h2>
+                    <div id="level4Grid" class="sector-grid"></div>
+                </div>
+
+                <!-- Análisis del tramo seleccionado (niveles 1 a 4) -->
+                <section id="analyticsSection" class="hidden ce-pila" aria-label="Análisis del sector">
+                    <h2 id="finalTitle" class="ce-titulo-nivel hidden"></h2>
+
+                    <div class="ce-tarjeta ce-grafico">
+                        <h3 class="ce-etiqueta">Evolución anual, millones de euros</h3>
+                        <div class="ce-lienzo"><canvas id="timeSeriesChart" aria-label="Evolución anual del valor del sector"></canvas></div>
+                    </div>
+
+                    <div id="analyticsGrid" class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 auto-rows-min">
+                        <div id="card-volume" class="ce-tarjeta ce-kpi col-span-12 md:col-span-6 xl:col-span-6">
+                            <h3 id="metricLabel" class="ce-etiqueta">Valor 2025 (M€)</h3>
+                            <div id="metricValue" class="ce-cifra">0,00</div>
+                            <p class="ce-pie">Millones de euros</p>
+                        </div>
+
+                        <div id="card-balance" class="ce-tarjeta ce-kpi col-span-12 md:col-span-6 xl:col-span-6">
+                            <h3 class="ce-etiqueta">Saldo comercial</h3>
+                            <div id="balanceContainer" class="ce-kpi">
+                                <div id="balanceValue" class="ce-cifra">0,00</div>
+                                <div id="balanceLabel" class="ce-estado ce-neutro">Neutro</div>
+                            </div>
+                            <p class="ce-pie"><span id="balanceYearLabel">2025</span> · exportación menos importación</p>
+                        </div>
+
+                        <div id="card-tva" class="ce-tarjeta ce-kpi col-span-12 md:col-span-6 xl:col-span-6">
+                            <h3 class="ce-etiqueta">Tasa de variación anual</h3>
+                            <div id="tvaContainer"></div>
+                            <p class="ce-pie">Comparativa <span id="tvaYearLabel">2024-2025</span></p>
+                            <div class="ce-separador"></div>
+                            <h3 class="ce-etiqueta">Cuota UE27 <span id="euShareYearLabel">2025</span></h3>
+                            <div id="euShareContainer" style="width:100%"></div>
+                            <p id="euShareLabel" class="ce-pie">% hacia UE</p>
+                            <p id="euShareCoverage" class="ce-pie hidden"></p>
+                        </div>
+
+                        <div id="card-countries" class="ce-tarjeta ce-kpi col-span-12 md:col-span-6 xl:col-span-6">
+                            <h3 id="countriesTitle" class="ce-etiqueta">Principales destinos</h3>
+                            <div id="countriesContainer" class="ce-paises"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- ===== BALANZA DE PAGOS ===== -->
+            <div id="balanzaView" class="hidden ce-pila">
+                <div class="bp-cabecera">
+                    <div class="bp-sub-tabs" role="group" aria-label="Elegir serie">
+                        <button class="bp-sub-tab active" data-bp-tab="s171" onclick="switchBPTab('s171')">Serie 17.1 · Resumen mensual</button>
+                        <button class="bp-sub-tab" data-bp-tab="s174" onclick="switchBPTab('s174')">Serie 17.4 · Cuenta corriente</button>
+                    </div>
+                    <div id="bpBadge" class="bp-badge">Último dato: Febrero 2026</div>
+                </div>
+
+                <div id="bp171Panel" class="ce-pila">
+                    <div id="bp171KPIs" class="bp-kpi-grid"></div>
+                    <div class="bp-chart-card">
+                        <div class="bp-chart-title">Evolución mensual de los saldos, millones de euros</div>
+                        <div class="ce-lienzo-bp"><canvas id="bp171Chart"></canvas></div>
+                    </div>
+                    <div class="bp-chart-card">
+                        <div class="bp-chart-title">Resumen anual, millones de euros</div>
+                        <div style="overflow-x:auto"><table id="bp171Table"></table></div>
+                    </div>
+                </div>
+
+                <div id="bp174Panel" class="hidden ce-pila">
+                    <div id="bp174KPIs" class="bp-kpi-grid"></div>
+                    <div class="ce-dos">
+                        <div class="bp-chart-card">
+                            <div class="bp-chart-title">Bienes y servicios, saldos anuales (M€)</div>
+                            <div class="ce-lienzo-bp"><canvas id="bp174BarChart"></canvas></div>
+                        </div>
+                        <div class="bp-chart-card">
+                            <div class="bp-chart-title">Ingresos por turismo, principales países (M€)</div>
+                            <div class="ce-lienzo-bp"><canvas id="bp174TourismChart"></canvas></div>
+                        </div>
+                    </div>
+                    <div class="ce-dos">
+                        <div class="bp-chart-card">
+                            <div class="bp-cabecera" style="margin-bottom:0.75rem">
+                                <div class="bp-chart-title" id="bp174DonutTitle" style="margin-bottom:0">Servicios no turísticos, ingresos por tipo</div>
+                                <div class="bp-sub-tabs">
+                                    <button class="bp-sub-tab active" data-donut-mode="ingresos" onclick="switchDonutMode('ingresos')">Ingresos</button>
+                                    <button class="bp-sub-tab" data-donut-mode="pagos" onclick="switchDonutMode('pagos')">Pagos</button>
+                                </div>
+                            </div>
+                            <div class="ce-lienzo-bp"><canvas id="bp174DonutChart"></canvas></div>
+                            <p class="c-nota" style="margin-top:0.6rem">El anillo exterior desglosa «Otros servicios empresariales» en I+D, consultoría y servicios técnicos y comerciales (subcategorías no sumadas al total).</p>
+                        </div>
+                        <div class="bp-chart-card">
+                            <div class="bp-chart-title">Ingresos y pagos por servicios, anual (M€)</div>
+                            <div class="ce-lienzo-bp"><canvas id="bp174IngPagChart"></canvas></div>
+                        </div>
+                    </div>
+                    <div class="bp-chart-card">
+                        <div class="bp-cabecera" style="margin-bottom:0.75rem">
+                            <div class="bp-chart-title" style="margin-bottom:0">Servicios turísticos y no turísticos (M€)</div>
+                            <div class="bp-sub-tabs">
+                                <button class="bp-sub-tab active" data-toursplit-mode="ingresos" onclick="switchTourSplitMode('ingresos')">Ingresos</button>
+                                <button class="bp-sub-tab" data-toursplit-mode="pagos" onclick="switchTourSplitMode('pagos')">Pagos</button>
+                            </div>
+                        </div>
+                        <div class="ce-lienzo-bp"><canvas id="bp174TourSplitChart"></canvas></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== NOTAS, FUENTES Y DESCARGAS ===== -->
+            <section class="c-seccion" aria-labelledby="notasTitulo">
+                <h2 class="c-seccion-titulo" id="notasTitulo">Notas, fuentes y descargas</h2>
+                <div class="c-aviso">
+                    <p> Los datos mostrados provienen de fuentes oficiales (DataComex, Banco de España). Si detectas algún dato extraño o tienes alguna sugerencia, <a href="sobre-mi.html" >contacta conmigo</a>. </p>
+                    <p> <strong>Cobertura:</strong> exportación, importación, TVA, cuota de la UE y países destino/origen están disponibles para <strong>todos los años 2021&ndash;2025</strong>. La TVA de 2021 no existe porque no hay año anterior con el que comparar. Los datos de <strong>2025 son provisionales</strong> y la estadística de Aduanas los revisa al alza en meses posteriores. </p>
+                    <p> <strong>Cuota UE27:</strong> porcentaje del valor en euros con destino (o procedencia) en los 27 Estados miembros sobre el valor total del sector. Se calcula a nivel de partida de la Nomenclatura Combinada y se agrega ponderando por valor, no promediando porcentajes. Dos agrupaciones residuales (&laquo;Agrícolas sin clasificar&raquo;, en torno al 0,4&nbsp;% del valor) no tienen cuota UE asignada y quedan fuera del cálculo; cuando eso afecta al tramo que estás viendo, la tarjeta lo indica. </p>
+                </div>
+                <p>Estadísticas oficiales de comercio exterior español. Última extracción de DataComex: <strong>4 de julio de 2026</strong>.</p>
+                <ul class="c-lista">
+                        <li><a href="https://datacomex.comercio.es/Metadata/Comex" target="_blank" rel="noopener noreferrer">DataComex &mdash; Ministerio de Economía, Comercio y Empresa</a></li>
+                        <li><a href="https://sede.agenciatributaria.gob.es/Sede/estadisticas/estadisticas-comercio-exterior.html" target="_blank" rel="noopener noreferrer">Estadísticas de comercio exterior &mdash; Agencia Tributaria</a></li>
+                        <li><a href="https://www.bde.es/webbe/es/estadisticas/otras-clasificaciones/publicaciones/boletin-estadistico/capitulo-17.html" target="_blank" rel="noopener noreferrer">Boletín Estadístico Capítulo 17 &mdash; Banco de España</a></li>
+                </ul>
+                <p>Los datos de Balanza de Pagos se actualizan automáticamente desde la <a href="https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html" target="_blank" rel="noopener noreferrer">API de estadísticas del Banco de España</a> al abrir la pestaña.</p>
+                <p>Metodología completa, jerarquía de sectores y correspondencia con los códigos de la Nomenclatura Combinada en la <a href="metodologia.html">ficha metodológica</a>.</p>
+                <div class="c-acciones">
+                    <button type="button" id="btnDownloadView" class="c-boton c-boton-descarga">Vista actual (CSV)</button>
+                    <a href="data/flujos_data.csv" download class="c-boton c-boton-descarga">Dataset completo 2021–2025 (CSV)</a>
+                    <a href="data/correspondencias-sectores-nc8.csv" download class="c-boton c-boton-descarga">Sectores ↔ códigos NC8 (CSV)</a>
+                </div>
+                <p class="c-nota">Los CSV se generan en UTF-8 con marca de orden de bytes, de modo que Excel abre las tildes correctamente con doble clic.</p>
+            </section>
+
+        </div>
     </main>
 
 
@@ -1238,6 +483,21 @@
 
     <!-- STANDALONE VERSION WITH EMBEDDED DATA -->
     <script>
+
+        // Colores de los gráficos: salen de las variables --g-* y --c-* de
+        // css/sitio.css, así que siguen al modo oscuro sin tocar este código.
+        // colorGrafico('--g-1', 0.5) devuelve rgba() para poder cambiar el alfa.
+        function colorGrafico(nombre, alfa) {
+            if (window.Chart && !Chart.__fuenteSitio) {
+                Chart.defaults.font.family = '"Atkinson Hyperlegible", system-ui, sans-serif';
+                Chart.__fuenteSitio = true;
+            }
+            const v = getComputedStyle(document.documentElement).getPropertyValue(nombre).trim();
+            if (alfa == null || !/^#[0-9a-f]{6}$/i.test(v)) return v;
+            const n = parseInt(v.slice(1), 16);
+            return `rgba(${n >> 16},${(n >> 8) & 255},${n & 255},${alfa})`;
+        }
+        function serieGrafico(i, alfa) { return colorGrafico('--g-' + i, alfa == null ? 1 : alfa); }
         // ========== EMBEDDED CSV DATA ==========
 
 
@@ -1443,11 +703,11 @@
 
         // ========== DATA LOADING ==========
         async function loadData() {
-            const container = document.querySelector('.glass-card');
+            const container = document.getElementById('ceContenido');
             const loadingMsg = document.createElement('div');
             loadingMsg.id = 'loadingMessage';
-            loadingMsg.className = 'text-center text-primary text-xl font-bold mt-8';
-            loadingMsg.innerHTML = '⏳ Cargando datos...';
+            loadingMsg.className = 'ce-mensaje';
+            loadingMsg.textContent = 'Cargando datos…';
             container.appendChild(loadingMsg);
 
             try {
@@ -1475,8 +735,8 @@
                 console.error('❌ Error:', error);
                 const msg = document.getElementById('loadingMessage');
                 if (msg) {
-                    msg.innerHTML = `❌ Error: ${error.message}. Abre la consola (F12) para más detalles.`;
-                    msg.className = 'text-center text-red-600 text-xl font-bold mt-8';
+                    msg.innerHTML = `No se han podido cargar los datos (${error.message}). Recarga la página; si sigue fallando, avísame.`;
+                    msg.className = 'ce-mensaje ce-error';
                 }
             }
         }
@@ -1592,14 +852,14 @@
             document.getElementById('level1Title').textContent = displayTitle;
 
             if (Object.keys(lv1Items).length === 0) {
-                grid.innerHTML = '<p class="text-center text-muted-foreground text-lg p-8">No se encontraron datos para este sector. Revisa la consola (F12) para más detalles.</p>';
+                grid.innerHTML = '<p class="ce-mensaje">No se encontraron datos para este sector. Revisa la consola (F12) para más detalles.</p>';
             } else {
                 Object.values(lv1Items).forEach(item => {
                     const card = document.createElement('div');
-                    card.className = 'glass-card sector-card py-6 flex flex-col items-center justify-center text-center';
+                    card.className = 'sector-card'; card.tabIndex = 0; card.setAttribute('role', 'button'); card.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); } };
                     card.innerHTML = `
-                        <h3 class="text-base font-bold mb-2">${item.name}</h3>
-                        <span class="text-primary font-black text-lg">${formatNumber(item.total)} M€</span>
+                        <h3>${item.name}</h3>
+                        <span class="sector-card-valor">${formatNumber(item.total)} M€</span>
                     `;
                     card.onclick = () => selectLevel1(item.code, item.name, item.lv2, item.lv3);
                     grid.appendChild(card);
@@ -1680,10 +940,10 @@
 
             Object.values(lv2Items).forEach(item => {
                 const card = document.createElement('div');
-                card.className = 'glass-card sector-card py-4 flex flex-col items-center justify-center text-center';
+                card.className = 'sector-card'; card.tabIndex = 0; card.setAttribute('role', 'button'); card.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); } };
                 card.innerHTML = `
-                    <h3 class="text-sm font-bold mb-1">${item.name}</h3>
-                    <span class="text-primary font-bold text-base">${formatNumber(item.total)} M€</span>
+                    <h3>${item.name}</h3>
+                    <span class="sector-card-valor">${formatNumber(item.total)} M€</span>
                 `;
                 card.onclick = () => selectLevel2(item.code, item.name, item.lv3);
                 grid.appendChild(card);
@@ -1756,10 +1016,10 @@
 
             Object.values(lv3Items).forEach(item => {
                 const card = document.createElement('div');
-                card.className = 'glass-card sector-card py-4 flex flex-col items-center justify-center text-center';
+                card.className = 'sector-card'; card.tabIndex = 0; card.setAttribute('role', 'button'); card.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); } };
                 card.innerHTML = `
-                    <h3 class="text-xs font-bold mb-1">${item.name}</h3>
-                    <span class="text-primary font-bold text-sm">${formatNumber(item.total)} M€</span>
+                    <h3>${item.name}</h3>
+                    <span class="sector-card-valor">${formatNumber(item.total)} M€</span>
                 `;
                 card.onclick = () => selectLevel3(item.code, item.name);
                 grid.appendChild(card);
@@ -1851,14 +1111,14 @@
             const sortedItems = Object.values(lv4Items).sort((a, b) => b.total - a.total);
 
             if (sortedItems.length === 0) {
-                grid.innerHTML = '<p class="text-center text-muted-foreground text-lg p-8">No se encontraron subcategorías.</p>';
+                grid.innerHTML = '<p class="ce-mensaje">No se encontraron subcategorías.</p>';
             } else {
                 sortedItems.forEach(item => {
                     const card = document.createElement('div');
-                    card.className = 'glass-card sector-card py-4 flex flex-col items-center justify-center text-center';
+                    card.className = 'sector-card'; card.tabIndex = 0; card.setAttribute('role', 'button'); card.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); } };
                     card.innerHTML = `
-                        <h3 class="text-sm font-bold mb-1">${item.name}</h3>
-                        <span class="text-primary font-bold text-base">${formatNumber(item.total)} M€</span>
+                        <h3>${item.name}</h3>
+                        <span class="sector-card-valor">${formatNumber(item.total)} M€</span>
                     `;
                     card.onclick = () => selectLevel4(item.code, item.name);
                     grid.appendChild(card);
@@ -2021,9 +1281,9 @@
 
             // Main Metric Label & Value
             const flowLabel = currentFlow === 'E' ? 'Exportaciones' : 'Importaciones';
-            const rankingLabel = currentFlow === 'E' ? 'Principales Destinos' : 'Principales Orígenes';
+            const rankingLabel = currentFlow === 'E' ? 'Principales destinos' : 'Principales orígenes';
 
-            document.getElementById('metricLabel').textContent = `${flowLabel.toUpperCase()} ${latestYear} (M€)`;
+            document.getElementById('metricLabel').textContent = `${flowLabel} ${latestYear} (M€)`;
             document.getElementById('metricValue').textContent = formatNumber(valLatest);
             document.getElementById('countriesTitle').textContent = rankingLabel;
 
@@ -2037,17 +1297,17 @@
 
             if (balanceLabel) {
                 if (balance > 0) {
-                    balanceLabel.textContent = 'SUPERÁVIT ↑';
-                    balanceLabel.className = 'text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-green-100 text-green-700';
-                    balanceContainer.className = 'text-4xl font-black tracking-tighter mb-2 text-green-600';
+                    balanceLabel.textContent = 'Superávit ↑';
+                    balanceLabel.className = 'ce-estado ce-positivo';
+                    balanceContainer.className = 'ce-cifra ce-positivo';
                 } else if (balance < 0) {
-                    balanceLabel.textContent = 'DÉFICIT ↓';
-                    balanceLabel.className = 'text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-red-100 text-red-700';
-                    balanceContainer.className = 'text-4xl font-black tracking-tighter mb-2 text-red-600';
+                    balanceLabel.textContent = 'Déficit ↓';
+                    balanceLabel.className = 'ce-estado ce-negativo';
+                    balanceContainer.className = 'ce-cifra ce-negativo';
                 } else {
-                    balanceLabel.textContent = 'NEUTRO';
-                    balanceLabel.className = 'text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-gray-100 text-gray-500';
-                    balanceContainer.className = 'text-4xl font-black tracking-tighter mb-2 text-gray-600';
+                    balanceLabel.textContent = 'Neutro';
+                    balanceLabel.className = 'ce-estado ce-neutro';
+                    balanceContainer.className = 'ce-cifra';
                 }
             }
 
@@ -2169,10 +1429,10 @@
             if (chartInstance) chartInstance.destroy();
 
             const isDark = document.documentElement.classList.contains('dark');
-            const chartMain = isDark ? '#C2D9C2' : '#3B4533';
-            const chartMainAlpha = isDark ? 'rgba(194,217,194,0.12)' : 'rgba(59,69,51,0.12)';
-            const tickMain = isDark ? '#E8EDE8' : '#0f172a';
-            const tickMuted = isDark ? 'rgba(194,217,194,0.6)' : '#64748b';
+            const chartMain = colorGrafico('--g-principal');
+            const chartMainAlpha = colorGrafico('--g-principal', 0.1);
+            const tickMain = colorGrafico('--c-tinta');
+            const tickMuted = colorGrafico('--c-tenue');
 
             chartInstance = new Chart(ctx, {
                 type: 'line',
@@ -2183,12 +1443,12 @@
                         data: values,
                         borderColor: chartMain,
                         backgroundColor: chartMainAlpha,
-                        borderWidth: 4,
-                        tension: 0.4,
+                        borderWidth: 2.5,
+                        tension: 0.3,
                         fill: true,
-                        pointRadius: 6,
-                        pointHoverRadius: 10,
-                        pointBackgroundColor: isDark ? '#3B4533' : 'white',
+                        pointRadius: 4,
+                        pointHoverRadius: 7,
+                        pointBackgroundColor: colorGrafico('--c-superficie'),
                         pointBorderColor: chartMain,
                         pointBorderWidth: 2
                     }]
@@ -2208,14 +1468,14 @@
                             position: 'bottom',
                             align: 'center',
                             color: tickMuted,
-                            font: { size: 10, style: 'italic', family: 'Inter' },
+                            font: { size: 11 },
                             padding: { top: 16 }
                         },
                         tooltip: {
-                            backgroundColor: isDark ? 'rgba(45,56,40,0.98)' : 'rgba(255,255,255,0.98)',
-                            titleColor: isDark ? '#E8EDE8' : '#1e293b',
-                            bodyColor: isDark ? '#C2D9C2' : '#1e293b',
-                            borderColor: isDark ? 'rgba(194,217,194,0.3)' : 'rgba(59,69,51,0.2)',
+                            backgroundColor: colorGrafico('--c-superficie'),
+                            titleColor: colorGrafico('--c-tinta'),
+                            bodyColor: colorGrafico('--c-tinta'),
+                            borderColor: colorGrafico('--c-linea'),
                             borderWidth: 1,
                             padding: 16,
                             boxPadding: 8,
@@ -2244,7 +1504,7 @@
                         y: {
                             position: 'right',
                             beginAtZero: true,
-                            grid: { color: isDark ? 'rgba(194,217,194,0.05)' : 'rgba(0,0,0,0.03)' },
+                            grid: { color: colorGrafico('--g-rejilla') },
                             ticks: {
                                 font: (context) => {
                                     if (context.tick && context.tick.value === values[values.length - 1]) {
@@ -2274,7 +1534,7 @@
             const tva = parseTVAValue(tvaValue);
 
             if (tva === null) {
-                container.innerHTML = '<p class="text-muted-foreground">No disponible</p>';
+                container.innerHTML = '<p class="eu-na">No disponible</p>';
                 return;
             }
 
@@ -2384,7 +1644,7 @@
         function renderCountries(countriesString) {
             const container = document.getElementById('countriesContainer');
             if (!countriesString || countriesString === 'NA') {
-                container.innerHTML = '<p class="text-muted-foreground text-center">No disponible</p>';
+                container.innerHTML = '<p class="eu-na">No disponible</p>';
                 return;
             }
 
@@ -2403,10 +1663,7 @@
             container.innerHTML = countries.map((country, index) => {
                 // FIXED: Removed flag span entirely to prevent ISO code rendering issues on Windows
                 return `
-                    <div class="flex items-center gap-4 p-4 bg-white/40 backdrop-blur-sm rounded-2xl border border-white/30 transition-all hover:bg-white/60">
-                        <span class="text-2xl font-black text-primary/20">${index + 1}</span>
-                        <span class="font-bold text-foreground text-base">${country}</span>
-                    </div>
+                    <div class="ce-pais"><span class="ce-pais-num">${index + 1}</span><span>${country}</span></div>
                 `;
             }).join('');
 
@@ -2417,7 +1674,7 @@
             const container = document.getElementById('breadcrumbs');
             const crumbs = [];
 
-            crumbs.push({ label: 'Home', action: resetNavigation });
+            crumbs.push({ label: 'Inicio', action: resetNavigation });
 
             if (navigationState.macroSector) {
                 crumbs.push({
@@ -2684,9 +1941,9 @@
                 return `${m}/${d.year}`;
             });
             const colors = [
-                'rgba(6,132,212,1)',     // Cuenta Corriente
-                'rgba(16,185,129,1)',    // Bienes y Servicios
-                'rgba(239,68,68,0.7)',   // Rentas
+                serieGrafico(1),     // Cuenta Corriente
+                serieGrafico(2),    // Bienes y Servicios
+                serieGrafico(3, 0.7),   // Rentas
             ];
             const seriesNames = ['Cuenta Corriente', 'Bienes y Servicios', 'Rentas Primaria y Secundaria'];
             const datasets = seriesNames.map((name, i) => ({
@@ -2704,8 +1961,8 @@
             const ctx = document.getElementById('bp171Chart').getContext('2d');
             if (bpCharts.bp171) bpCharts.bp171.destroy();
             const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = bpIsDark ? '#E8EDE8' : '#6B8E23';
-            const bpGridColor = bpIsDark ? 'rgba(194,217,194,0.08)' : 'rgba(0,0,0,0.05)';
+            const bpTickColor = colorGrafico('--c-tenue');
+            const bpGridColor = colorGrafico('--g-rejilla');
             bpCharts.bp171 = new Chart(ctx, {
                 type: 'line',
                 data: { labels, datasets },
@@ -2747,23 +2004,23 @@
             const headers = ['Año', 'Cta. Corriente', 'Bienes/Serv.', 'Rentas', 'Cta. Capital', 'Capacidad Financ.'];
             const table = document.getElementById('bp171Table');
             let html = '<thead><tr>';
-            headers.forEach(h => html += `<th class="px-4 py-3 text-center text-xs font-semibold uppercase tracking-wider text-primary/70 border-b border-primary/10">${h}</th>`);
+            headers.forEach(h => html += `<th scope="col">${h}</th>`);
             html += '</tr></thead><tbody>';
             years.forEach((yr, ri) => {
                 const y = byYear[yr];
                 const label = y.count < 12 ? `${yr}*` : yr;
-                html += `<tr class="${ri % 2 === 0 ? 'bg-white/30' : ''}">`;
-                html += `<td class="px-4 py-2 text-center font-bold text-primary">${label}</td>`;
+                html += '<tr>';
+                html += `<td>${label}</td>`;
                 [0, 1, 2, 3, 4].forEach(i => {
                     const val = y.sums[i];
-                    const cls = val >= 0 ? 'text-emerald-600' : 'text-red-500';
-                    html += `<td class="px-4 py-2 text-center font-semibold ${cls}">${bpFormatNum(val)}</td>`;
+                    const cls = val >= 0 ? 'ce-positivo' : 'ce-negativo';
+                    html += `<td class="${cls}">${bpFormatNum(val)}</td>`;
                 });
                 html += '</tr>';
             });
             html += '</tbody>';
             if (byYear[years[years.length - 1]]?.count < 12) {
-                html += `<tfoot><tr><td colspan="6" class="px-4 py-2 text-xs text-muted-foreground italic text-center">* Datos parciales (${byYear[years[years.length - 1]].count} meses)</td></tr></tfoot>`;
+                html += `<tfoot><tr><td colspan="6">* Datos parciales (${byYear[years[years.length - 1]].count} meses)</td></tr></tfoot>`;
             }
             table.innerHTML = html;
         }
@@ -2820,8 +2077,8 @@
             const ctx = document.getElementById('bp174BarChart').getContext('2d');
             if (bpCharts.bp174bar) bpCharts.bp174bar.destroy();
             const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = bpIsDark ? '#E8EDE8' : '#6B8E23';
-            const bpGridColor = bpIsDark ? 'rgba(194,217,194,0.08)' : 'rgba(0,0,0,0.05)';
+            const bpTickColor = colorGrafico('--c-tenue');
+            const bpGridColor = colorGrafico('--g-rejilla');
             bpCharts.bp174bar = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -2830,24 +2087,24 @@
                         {
                             label: 'Bienes (Saldo)',
                             data: years.map(yr => byYear[yr].sums[0]),
-                            backgroundColor: 'rgba(239,68,68,0.6)',
-                            borderColor: 'rgba(239,68,68,1)',
+                            backgroundColor: serieGrafico(1, 0.6),
+                            borderColor: serieGrafico(1),
                             borderWidth: 1,
                             borderRadius: 4
                         },
                         {
                             label: 'Servicios (Saldo)',
                             data: years.map(yr => byYear[yr].sums[3]),
-                            backgroundColor: 'rgba(16,185,129,0.6)',
-                            borderColor: 'rgba(16,185,129,1)',
+                            backgroundColor: serieGrafico(2, 0.6),
+                            borderColor: serieGrafico(2),
                             borderWidth: 1,
                             borderRadius: 4
                         },
                         {
                             label: 'Turismo (Saldo)',
                             data: years.map(yr => byYear[yr].sums[4]),
-                            backgroundColor: 'rgba(251,191,36,0.5)',
-                            borderColor: 'rgba(251,191,36,1)',
+                            backgroundColor: serieGrafico(3, 0.5),
+                            borderColor: serieGrafico(3),
                             borderWidth: 1,
                             borderRadius: 4
                         }
@@ -2875,19 +2132,19 @@
             const labels = recent.map(d => `${d.quarter}T ${d.year}`);
             // Countries: idx 4=Alemania, 7=Francia, 13=Reino Unido, 8=Italia, 6=P.Bajos, 18=EEUU
             const countries = [
-                { name: 'Alemania', idx: 4, color: 'rgba(6,132,212,1)' },
-                { name: 'Francia', idx: 7, color: 'rgba(16,185,129,1)' },
-                { name: 'Reino Unido', idx: 13, color: 'rgba(239,68,68,1)' },
-                { name: 'Italia', idx: 8, color: 'rgba(251,191,36,1)' },
-                { name: 'Países Bajos', idx: 6, color: 'rgba(168,85,247,1)' },
-                { name: 'EEUU', idx: 18, color: 'rgba(245,158,11,1)' }
+                { name: 'Alemania', idx: 4, color: serieGrafico(1) },
+                { name: 'Francia', idx: 7, color: serieGrafico(2) },
+                { name: 'Reino Unido', idx: 13, color: serieGrafico(3) },
+                { name: 'Italia', idx: 8, color: serieGrafico(4) },
+                { name: 'Países Bajos', idx: 6, color: serieGrafico(5) },
+                { name: 'EEUU', idx: 18, color: serieGrafico(6) }
             ];
 
             const ctx = document.getElementById('bp174TourismChart').getContext('2d');
             if (bpCharts.bp174tour) bpCharts.bp174tour.destroy();
             const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = bpIsDark ? '#E8EDE8' : '#6B8E23';
-            const bpGridColor = bpIsDark ? 'rgba(194,217,194,0.08)' : 'rgba(0,0,0,0.05)';
+            const bpTickColor = colorGrafico('--c-tenue');
+            const bpGridColor = colorGrafico('--g-rejilla');
             bpCharts.bp174tour = new Chart(ctx, {
                 type: 'line',
                 data: {
@@ -2957,11 +2214,11 @@
             const SUB_IDX = [9, 10, 11];
             const EMP_IDX = 8;
             const TRANSPARENT = 'rgba(0,0,0,0)';
-            const mainColors = [
-                '#0684D4', '#10b981', '#ef4444', '#f59e0b', '#8b5cf6',
-                '#ec4899', '#14b8a6', '#f97316', '#e11d48'
-            ];
-            const subColors = ['#fb923c', '#fdba74', '#c2410c'];
+            // Ocho categorías con la paleta en orden fijo; la novena va en gris.
+            // «Otros serv. empresariales» es la octava: su desglose del anillo
+            // exterior usa el mismo tono con menos opacidad.
+            const mainColors = [1, 2, 3, 4, 5, 6, 7, 8].map(i => serieGrafico(i)).concat(colorGrafico('--c-tenue'));
+            const subColors = [serieGrafico(8, 0.8), serieGrafico(8, 0.55), serieGrafico(8, 0.35)];
 
             const innerLabels = MAIN_IDX.map(i => data.labels[i]);
             const innerValues = MAIN_IDX.map(i => vals[i]);
@@ -2989,8 +2246,8 @@
             if (bpCharts.bp174donut) bpCharts.bp174donut.destroy();
             const isMobile = window.innerWidth < 640;
             const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = bpIsDark ? '#E8EDE8' : '#6B8E23';
-            const ringBorder = bpIsDark ? '#1f2937' : '#fff';
+            const bpTickColor = colorGrafico('--c-tenue');
+            const ringBorder = colorGrafico('--c-superficie');
             bpCharts.bp174donut = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
@@ -3093,8 +2350,8 @@
             const ctx = document.getElementById('bp174TourSplitChart').getContext('2d');
             if (bpCharts.bp174toursplit) bpCharts.bp174toursplit.destroy();
             const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = bpIsDark ? '#E8EDE8' : '#6B8E23';
-            const bpGridColor = bpIsDark ? 'rgba(194,217,194,0.08)' : 'rgba(0,0,0,0.05)';
+            const bpTickColor = colorGrafico('--c-tenue');
+            const bpGridColor = colorGrafico('--g-rejilla');
             bpCharts.bp174toursplit = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -3103,8 +2360,8 @@
                         {
                             label: 'Turismo',
                             data: tourism,
-                            backgroundColor: 'rgba(251,191,36,0.6)',
-                            borderColor: 'rgba(251,191,36,1)',
+                            backgroundColor: serieGrafico(1, 0.6),
+                            borderColor: serieGrafico(1),
                             borderWidth: 1,
                             borderRadius: 4,
                             stack: 'servicios',
@@ -3113,8 +2370,8 @@
                         {
                             label: 'No Turísticos',
                             data: nonTourism,
-                            backgroundColor: 'rgba(6,132,212,0.55)',
-                            borderColor: 'rgba(6,132,212,1)',
+                            backgroundColor: serieGrafico(2, 0.55),
+                            borderColor: serieGrafico(2),
                             borderWidth: 1,
                             borderRadius: 4,
                             stack: 'servicios',
@@ -3125,8 +2382,8 @@
                             data: pctTourism,
                             type: 'line',
                             yAxisID: 'yPct',
-                            borderColor: 'rgba(239,68,68,1)',
-                            backgroundColor: 'rgba(239,68,68,0.1)',
+                            borderColor: serieGrafico(3),
+                            backgroundColor: serieGrafico(3, 0.1),
                             borderWidth: 2,
                             pointRadius: 3,
                             pointHoverRadius: 5,
@@ -3181,8 +2438,8 @@
             const ctx = document.getElementById('bp174IngPagChart').getContext('2d');
             if (bpCharts.bp174ip) bpCharts.bp174ip.destroy();
             const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = bpIsDark ? '#E8EDE8' : '#6B8E23';
-            const bpGridColor = bpIsDark ? 'rgba(194,217,194,0.08)' : 'rgba(0,0,0,0.05)';
+            const bpTickColor = colorGrafico('--c-tenue');
+            const bpGridColor = colorGrafico('--g-rejilla');
             bpCharts.bp174ip = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -3191,16 +2448,16 @@
                         {
                             label: 'Servicios Ingresos',
                             data: years.map(yr => byYear[yr].sums[6]),
-                            backgroundColor: 'rgba(16,185,129,0.5)',
-                            borderColor: 'rgba(16,185,129,1)',
+                            backgroundColor: serieGrafico(1, 0.5),
+                            borderColor: serieGrafico(1),
                             borderWidth: 1,
                             borderRadius: 4
                         },
                         {
                             label: 'Servicios Pagos',
                             data: years.map(yr => -byYear[yr].sums[9]),
-                            backgroundColor: 'rgba(239,68,68,0.5)',
-                            borderColor: 'rgba(239,68,68,1)',
+                            backgroundColor: serieGrafico(2, 0.5),
+                            borderColor: serieGrafico(2),
                             borderWidth: 1,
                             borderRadius: 4
                         }

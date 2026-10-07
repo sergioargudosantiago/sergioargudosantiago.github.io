@@ -470,3 +470,27 @@ hr + .art-metodologia { border-top: 0; padding-top: 0; }
 .c-acciones { display: flex; flex-wrap: wrap; gap: 0.6rem; }
 .c-boton-descarga::before { content: "\2193"; font-weight: 700; }
 .c-tabla-codigos td:last-child { font-family: var(--f-cifras); white-space: nowrap; }
+
+/* -------------------------------------------------------------------------
+   Gráficos (Chart.js lee estas variables en comercio-exterior.html)
+   Paleta categórica validada con la guía de dataviz sobre #FFFFFF y #1A2018:
+   orden fijo, nunca rotado; el color sigue a la serie, no a su posición.
+   ------------------------------------------------------------------------- */
+:root {
+    --g-principal: #3B4533;
+    --g-rejilla: #E7ECE4;
+    --g-ue: #2A5DB0;
+    --c-positivo: #1F6B33;
+    --c-negativo: #B42318;
+    --g-1: #2a78d6; --g-2: #eb6834; --g-3: #1baf7a; --g-4: #eda100;
+    --g-5: #e87ba4; --g-6: #008300; --g-7: #4a3aa7; --g-8: #e34948;
+}
+html.dark {
+    --g-principal: #B9D3B4;
+    --g-rejilla: #263024;
+    --g-ue: #6E9BE8;
+    --c-positivo: #5CC774;
+    --c-negativo: #F08A80;
+    --g-1: #3987e5; --g-2: #d95926; --g-3: #199e70; --g-4: #c98500;
+    --g-5: #d55181; --g-6: #008300; --g-7: #9085e9; --g-8: #e66767;
+}
