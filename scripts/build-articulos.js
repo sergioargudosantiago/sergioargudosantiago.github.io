@@ -341,6 +341,24 @@ ${articulos.length ? `    <lastBuildDate>${fechaRFC822(articulos[0].fecha)}</las
 `;
 }
 
+/** Tarjeta del último artículo en la portada, entre marcas en index.html. */
+function actualizarPortada(articulos) {
+    const ruta = path.join(RAIZ, 'index.html');
+    const html = fs.readFileSync(ruta, 'utf8');
+    const re = /<!-- ultimo-articulo:inicio -->[\s\S]*?<!-- ultimo-articulo:fin -->/;
+    if (!re.test(html)) return;
+    const art = articulos[0];
+    const tarjeta = art ? `
+                    <a class="c-tarjeta-enlace" href="articulos/${art.slug}.html">
+                        <span class="c-antetitulo">Último artículo · ${fechaLarga(art.fecha)}</span>
+                        <span class="c-titulo-tarjeta">${md.escapeHTML(art.titulo)}</span>
+                        <span>${md.escapeHTML(art.resumen)}</span>
+                    </a>
+                    ` : '';
+    const nuevo = html.replace(re, () => `<!-- ultimo-articulo:inicio -->${tarjeta}<!-- ultimo-articulo:fin -->`);
+    if (nuevo !== html) fs.writeFileSync(ruta, nuevo, 'utf8');
+}
+
 function actualizarSitemap(articulos) {
     const ruta = path.join(RAIZ, 'sitemap.xml');
     let xml = fs.readFileSync(ruta, 'utf8');
@@ -529,6 +547,7 @@ function main() {
     });
     fs.writeFileSync(path.join(RAIZ, 'feed.xml'), feedRSS(articulos, autores), 'utf8');
     actualizarSitemap(articulos);
+    actualizarPortada(articulos);
 
     console.log(`${articulos.length} artículo(s) generados:`);
     articulos.forEach(a => console.log(`  · ${a.slug}.html — ${a.palabras} palabras, ${a.minutos} min`));

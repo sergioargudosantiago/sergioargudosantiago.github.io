@@ -494,3 +494,56 @@ html.dark {
     --g-1: #3987e5; --g-2: #d95926; --g-3: #199e70; --g-4: #c98500;
     --g-5: #d55181; --g-6: #008300; --g-7: #9085e9; --g-8: #e66767;
 }
+
+/* -------------------------------------------------------------------------
+   Portada
+   ------------------------------------------------------------------------- */
+.c-portada { background: var(--c-acento-suave); border-bottom: 1px solid var(--c-linea); }
+.c-portada-int {
+    max-width: var(--ancho-sitio);
+    margin: 0 auto;
+    padding-inline: 1rem;
+    padding-block: 3rem 2.5rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: end;
+}
+.c-portada-texto { display: grid; gap: 1.1rem; align-content: center; padding-bottom: 1rem; }
+.c-portada .c-titular { font-size: clamp(2.2rem, 1.3rem + 3.4vw, 3.6rem); }
+.c-ilustracion { width: 100%; max-width: 30rem; height: auto; color: var(--c-acento); opacity: 0.7; justify-self: end; }
+@media (max-width: 860px) {
+    .c-portada-int { grid-template-columns: 1fr; padding-block: 2.25rem 1rem; }
+    .c-ilustracion { max-width: 18rem; justify-self: center; opacity: 0.55; }
+}
+
+.c-tres { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr)); gap: 1rem; margin-bottom: 1rem; }
+.c-tarjeta-enlace {
+    display: grid;
+    align-content: start;
+    gap: 0.6rem;
+    padding: 1.4rem 1.5rem;
+    background: var(--c-superficie);
+    border: 1px solid var(--c-linea);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--c-tinta);
+    transition: border-color 0.15s, background 0.15s;
+}
+.c-tarjeta-enlace:hover { border-color: var(--c-acento); background: var(--c-acento-suave); }
+.c-tarjeta-enlace .c-titulo-tarjeta { font-family: var(--f-titular); font-weight: 700; font-size: 1.3rem; line-height: 1.2; }
+.c-tarjeta-enlace > span:last-child { color: var(--c-tenue); }
+.c-cifra-grande { font-family: var(--f-cifras); font-weight: 600; font-size: 2rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
+
+/* Toque arcade: solo en lo que es de estudio (temario, esquemas, progreso) */
+.c-arcade {
+    background: var(--c-barra);
+    color: var(--c-barra-texto);
+    border: 2px solid var(--c-barra);
+    border-radius: 0;
+    box-shadow: 5px 5px 0 var(--c-oro);
+}
+.c-arcade:hover { background: var(--c-barra); border-color: var(--c-oro); }
+.c-arcade > span:last-child { color: var(--c-barra-texto); }
+.c-arcade .c-cifra-grande { color: var(--c-barra-activo); font-family: var(--f-marca); font-weight: 800; }
+.c-arcade-rotulo { font-family: var(--f-marca); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--c-oro); }
