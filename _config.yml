@@ -1,0 +1,27 @@
+# GitHub Pages construye el sitio con Jekyll aunque sea HTML estático. Sin esta
+# lista, Jekyll publicaba todo el repositorio y, además, convertía los .md con
+# frontmatter en páginas: articulos/<slug>.md pisaba al articulos/<slug>.html
+# que genera scripts/build-articulos.js.
+#
+# Aquí va todo lo que NO debe poder descargarse desde la web. Los datos públicos
+# que usa el visualizador (data/) sí se publican.
+
+exclude:
+  # Herramientas y código fuente de la web
+  - scripts/
+  - src/
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  # Material de trabajo
+  - balanza/
+  - data/update_log.txt
+  - review/
+  - docs/
+  - fuentes/
+  # Documentación del repositorio y fuentes Markdown de los artículos
+  - README.md
+  - CLAUDE.md
+  - articulos/*.md
+  - articulos/autores.json

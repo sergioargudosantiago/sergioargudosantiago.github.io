@@ -1,88 +1,47 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Ojo: no versionar algo no basta para que no se publique, y versionarlo no
+# obliga a publicarlo. Lo que el sitio NO sirve se controla en _config.yml.
 
-# dependencies
+# ===== Dependencias y sistema =====
 /node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
 .DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
-.genkit/*
+Thumbs.db
+*.log
 .env*
 
-# firebase
-firebase-debug.log
-firestore-debug.log
+# Ficheros temporales de Office (~$libro.xlsx) mientras el documento está abierto
+~$*
 
-# ===== Development scripts (not needed in production) =====
+# Salida local de Jekyll si se prueba el build
+/_site/
+
+# ===== Utilidades locales que no son del sitio =====
 *.py
 *.ps1
 *.vbs
 *.bat
 
-# ===== Data files =====
+# ===== Datos =====
+# Por defecto los CSV son intermedios de trabajo. Los que la web carga en
+# runtime u ofrece en descarga se versionan explícitamente.
 *.csv
-balanza_data.js
-balanza_preview.txt
-# Estos SÍ se despliegan: la web los carga en runtime o los ofrece en descarga
 !data/flujos_data.csv
-!data/balanza_data.js
 !data/correspondencias-sectores-nc8.csv
+!data/estadisticas.csv
+!balanza/*.csv
+balanza_preview.txt
 
-# ===== Obsolete templates/configs =====
-critical-css-template.css
-robustness-script-template.html
-CLEANUP-GUIDE.md
-apphosting.yaml
+# ===== Material de trabajo (solo en la máquina local) =====
+# review/: auditoría del temario y borradores de LinkedIn (se regeneran).
+# docs/: planes y notas de diseño.
+# fuentes/: temas del opositor para el agente del ejercicio 1; no es contenido del sitio.
+review/
+docs/
+fuentes/
 
-# ===== Revisión del temario =====
-# El texto extraído es un derivado de los PDF: se regenera en segundos con
-# scripts/extraer-temas.sh y no aporta nada al repositorio.
-review/txt/
-
-# ===== Artículos =====
-# Los borradores de LinkedIn se regeneran con cada build a partir del .md, no
-# son contenido del sitio y sólo servirían para meter ruido en cada commit.
-review/linkedin/
-
-# ===== Agent/IDE =====
+# ===== Agentes / IDE =====
+# De .claude/ solo se versiona el agente del ejercicio 1, para que una sesión
+# en la nube lo tenga. Jekyll no publica carpetas que empiezan por punto.
+.claude/*
+!.claude/agents/
 .agent/
 .gemini/
-.claude/
-docs/
-review/
-
-# ===== Temas del opositor =====
-# El material de partida del primer ejercicio (el pen drive). Es del opositor,
-# no contenido del sitio, y no tiene por qué acabar en un repositorio público.
-fuentes/
