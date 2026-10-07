@@ -5,7 +5,7 @@
  * Cambia el dominio público del sitio en todo el repositorio, de una pasada.
  *
  *   node scripts/cambiar-dominio.js --ver                 (qué cambiaría)
- *   node scripts/cambiar-dominio.js --aplicar             (a sergioargudo.com)
+ *   node scripts/cambiar-dominio.js --aplicar             (a sergioargudo.es)
  *   node scripts/cambiar-dominio.js --aplicar --revertir  (vuelta a github.io)
  *
  * Toca las <link rel="canonical">, og:url, twitter:url, el enlace del feed y
@@ -22,8 +22,8 @@ const path = require('path');
 const RAIZ = path.resolve(__dirname, '..');
 
 const ANTIGUO = 'https://sergioargudosantiago.github.io';
-const NUEVO = 'https://sergioargudo.com';
-const HOST_NUEVO = 'sergioargudo.com';
+const NUEVO = 'https://sergioargudo.es';
+const HOST_NUEVO = 'sergioargudo.es';
 
 const args = process.argv.slice(2);
 const aplicar = args.includes('--aplicar');

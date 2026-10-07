@@ -3,7 +3,7 @@
 Portal personal de Sergio Argudo Santiago. Recursos para la preparación de las oposiciones al **Cuerpo de Inspectores del SOIVRE** e **Ingenieros Técnicos del SOIVRE**, junto con un visualizador interactivo de comercio exterior español.
 
 URL actual: <https://sergioargudosantiago.github.io/>
-Dominio previsto: `sergioargudoSOIVRE.es` (próximo).
+Dominio previsto: `sergioargudo.es`.
 
 ## Páginas
 

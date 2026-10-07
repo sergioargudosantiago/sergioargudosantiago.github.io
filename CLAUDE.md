@@ -24,11 +24,13 @@ Todo el contenido, la interfaz y los commits están en **español**.
 - Chart.js por CDN (jsDelivr). Fuentes de Google (Orbitron, Share Tech Mono, Inter):
   estética arcade.
 - Analítica: GoatCounter (sin cookies). `js/cookies.js` gestiona el aviso.
-- **Todo lo que está versionado se publica**, no solo los `.html`. Antes de añadir un
-  fichero, pregúntate si debe poder descargarse desde la web.
-- Dominio propio: **pendiente de decidir**. `scripts/cambiar-dominio.js` lo cambia en
-  todo el repo de una pasada (canonical, og:url, sitemap, robots, feed, CNAME); el
-  dominio de destino está escrito en ese script y hay que confirmarlo antes de usarlo.
+- GitHub Pages construye con **Jekyll** desde `main`. Jekyll publica todo lo
+  versionado salvo lo que excluye `_config.yml` (scripts, código fuente, material de
+  trabajo, `.md`). **Al añadir un fichero que no deba poder descargarse desde la web,
+  añádelo a esa lista.** Ojo: el repositorio en sí es público en GitHub igualmente.
+- Dominio propio: **`sergioargudo.es`** (decidido). Correo: `contacto@sergioargudo.es`.
+  `scripts/cambiar-dominio.js --aplicar` cambia las URL en todo el repo de una pasada
+  (canonical, og:url, sitemap, robots, feed, CNAME) e imprime los pasos de DNS.
 
 ## Mapa del repositorio
 
@@ -80,6 +82,15 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
 
 ## Estado
 
-Fase actual: **revisión previa a la publicación y compra del dominio** (octubre 2026).
-El plan de revisión y el calendario de artículos se acuerdan con el autor; cuando
-estén cerrados, resumir aquí las decisiones tomadas.
+Fase actual: **revisión previa a la publicación**. Lanzamiento previsto: semana del
+12 de octubre de 2026.
+
+Decisiones tomadas con el autor (octubre 2026):
+
+- Público principal: **opositores SOIVRE y gente interesada en el comercio
+  internacional**. La marca personal es consecuencia, no objetivo.
+- Los temas y esquemas de `public/temas/` son del autor y se publican.
+- Scripts y material de trabajo fuera del sitio; solo se publican los datos públicos
+  (`data/`).
+- Ritmo de artículos: **dos al mes**, cada uno con su post de LinkedIn el mismo día.
+- Aspecto: pendiente de elegir entre las alternativas propuestas.
