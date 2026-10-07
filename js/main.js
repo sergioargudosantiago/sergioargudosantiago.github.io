@@ -301,8 +301,7 @@ function openModal(type, title, exerciseNumber = null, topicCount = null) {
         currentExercise = { number: exerciseNumber, count: topicCount, title: title };
 
         // Set modal title
-        const titleText = title.toLowerCase().replace('ejercicio', 'Ejercicio');
-        document.getElementById('modalTitle').textContent = `Esquemas del ${titleText}`;
+        document.getElementById('modalTitle').textContent = `Temas del ${title.toLowerCase()}`;
 
         // Generate and display topics
         currentTopics = generateTopics(exerciseNumber, topicCount);
@@ -392,6 +391,7 @@ function generateTopics(exerciseNumber, topicCount) {
         const topic = {
             number: i,
             name: displayName,
+            titulo: titleOnly || displayName,
             pathWord: pathWord,
             filenameWord: fileNameWord,
             pathPdf: pathPdf,
@@ -431,74 +431,36 @@ function renderTopics() {
     const topicList = document.getElementById('topicList');
 
     if (filteredTopics.length === 0) {
-        topicList.innerHTML = `
-            <div class="flex flex-col items-center justify-center h-full text-center text-muted-foreground p-8">
-                <p class="font-semibold">No se encontraron resultados.</p>
-                <p class="text-sm">Pruebe con otra búsqueda.</p>
-            </div>
-        `;
+        topicList.innerHTML = '<p class="t-vacio">No hay ningún tema con esa búsqueda.</p>';
         return;
     }
 
     topicList.innerHTML = filteredTopics.map(topic => renderTopicItem(topic)).join('');
 }
 
-// Render Individual Topic Item - Energy Cell Design
+// Una fila por tema. Las clases t-* están en el <style> de temario.html.
 function renderTopicItem(topic) {
-    // Special handling for Exercise 1 (Blocked/View Only)
+    const nombre = `<span class="t-tema-nombre"><span class="t-tema-num">${topic.number}</span>${topic.titulo}</span>`;
+
+    // El primer ejercicio se enseña entero, pero sus esquemas aún no están publicados
     if (currentExercise && currentExercise.number === 1) {
-        return `
-            <div class="flex items-center justify-between bg-white/40 backdrop-blur-sm border border-white/40 rounded-2xl p-4 transition-all duration-300">
-                <span class="font-serif font-semibold text-foreground/70 flex-1 pr-4">${topic.name}</span>
-                <svg class="h-5 w-5 text-muted-foreground/50 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-            </div>
-        `;
+        return `<div class="t-tema t-apagado">${nombre}<span class="t-tema-nota">En preparación</span></div>`;
     }
 
     switch (topic.status) {
         case 'available':
             return `
-                <div class="flex items-center justify-between bg-white/60 backdrop-blur-sm border border-white/40 rounded-2xl p-4 transition-all duration-300 hover:bg-white/80 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] hover:border-accent/50 group">
-                    <span class="font-serif font-semibold text-foreground/90 group-hover:text-primary transition-colors flex-1 pr-4">${topic.name}</span>
-                    <div class="flex space-x-2">
-                        <!-- Word Download -->
-                        <a href="${topic.pathWord}" 
-                           download="${topic.filenameWord}"
-                           title="Descargar en Word"
-                           class="p-2 rounded-full bg-blue-100 hover:bg-blue-200 text-blue-600 transition-colors">
-                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                            </svg>
-                        </a>
-                        <!-- PDF Download -->
-                        <a href="${topic.pathPdf}" 
-                           download="${topic.filenamePdf}"
-                           target="_blank"
-                           title="Descargar en PDF"
-                           class="p-2 rounded-full bg-red-100 hover:bg-red-200 text-red-600 transition-colors">
-                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            `;
+                <div class="t-tema">
+                    ${nombre}
+                    <span class="t-tema-acciones">
+                        <a class="t-descarga" href="${topic.pathPdf}" download="${topic.filenamePdf}" target="_blank" rel="noopener" aria-label="Tema ${topic.number} en PDF">PDF</a>
+                        <a class="t-descarga" href="${topic.pathWord}" download="${topic.filenameWord}" aria-label="Esquema del tema ${topic.number} en Word">Word</a>
+                    </span>
+                </div>`;
         case 'discarded':
-            return `
-                <div class="flex items-center justify-between bg-white/30 backdrop-blur-sm border border-white/30 rounded-2xl p-4 opacity-60">
-                    <span class="font-serif font-medium text-foreground/70">${topic.name}</span>
-                    <span class="text-sm text-muted-foreground italic">${topic.message}</span>
-                </div>
-            `;
+            return `<div class="t-tema t-apagado">${nombre}<span class="t-tema-nota">${topic.message}</span></div>`;
         case 'coming-soon':
-            return `
-                <div class="flex items-center justify-between bg-white/30 backdrop-blur-sm border border-white/30 rounded-2xl p-4 opacity-60">
-                    <span class="font-serif font-medium text-foreground/70">${topic.name}</span>
-                    <span class="text-sm text-muted-foreground">Próximamente disponible</span>
-                </div>
-            `;
+            return `<div class="t-tema t-apagado">${nombre}<span class="t-tema-nota">Próximamente</span></div>`;
         default:
             return '';
     }

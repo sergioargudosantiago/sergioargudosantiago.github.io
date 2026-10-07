@@ -443,6 +443,7 @@ hr + .art-metodologia { border-top: 0; padding-top: 0; }
 
 .c-aviso { border-left: 4px solid var(--c-acento); background: var(--c-acento-suave); padding: 1rem 1.2rem; border-radius: 0 3px 3px 0; }
 .c-aviso > * + * { margin-top: 0.6rem; }
+.c-aviso a { text-decoration: underline; text-decoration-color: var(--c-oro); text-decoration-thickness: 2px; text-underline-offset: 3px; }
 .c-nota { font-size: 0.9rem; color: var(--c-tenue); }
 
 .c-tabla-envoltorio { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--c-linea); border-radius: 3px; background: var(--c-superficie); }

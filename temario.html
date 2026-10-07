@@ -45,158 +45,58 @@
     <link rel="stylesheet" href="css/tailwind.css">
 
     <style>
-:root { --background:#C2D9C2; --foreground:#3B4533; --primary:#3B4533; --border:#3B4533; --radius:6px; --accent-warm:#C8A951; }
-* { margin:0; padding:0; box-sizing:border-box; }
-html { transition:none; }
-body { font-family:'Inter','Segoe UI',system-ui,sans-serif; background:#C2D9C2; color:#3B4533; min-height:100vh; padding-bottom:5rem; line-height:1.55; -webkit-font-smoothing:antialiased; }
-h1,h2,h3,h4 { font-family:'Orbitron',monospace; letter-spacing:0.03em; }
-[data-reveal] { opacity:0; transform:translateY(24px); transition:opacity 0.7s cubic-bezier(0.4,0,0.2,1),transform 0.7s cubic-bezier(0.4,0,0.2,1); }
-[data-reveal].revealed { opacity:1; transform:translateY(0); }
-.mobile-breadcrumb { position:fixed; top:0; left:0; right:0; z-index:40; display:flex; align-items:center; padding:0.5rem 1rem; background:#3B4533; border-bottom:1px solid rgba(194,217,194,0.3); font-family:'Orbitron',monospace; font-size:0.6rem; font-weight:700; letter-spacing:0.08em; color:#C2D9C2; text-transform:uppercase; height:2.5rem; box-shadow:none; }
-@media(min-width:768px){.mobile-breadcrumb{display:none}}
-#mobileMenu { transform:translateX(-100%); opacity:0; visibility:hidden; transition:transform 0.2s ease,opacity 0.2s ease,visibility 0s 0.2s; background:#3B4533!important; border-right:2px solid rgba(194,217,194,0.3); }
-#mobileMenu.menu-open { transform:translateX(0); opacity:1; visibility:visible; transition:transform 0.2s ease,opacity 0.2s ease; z-index:60; }
-#mobileMenu a { font-family:'Orbitron',monospace; font-size:0.65rem; font-weight:600; color:#C2D9C2; letter-spacing:0.05em; padding:0.75rem 1rem; border-bottom:1px solid rgba(194,217,194,0.15); display:flex; align-items:center; min-height:44px; text-decoration:none; }
-#mobileMenu a:hover,#mobileMenu a.active-mobile { background:#C2D9C2!important; color:#3B4533!important; }
-        .nav-island {
-            position: fixed;
-            top: 1rem;
-            left: 50%;
-            transform: translateX(-50%);
-            transform-origin: top center;
-            z-index: 50;
-            display: flex;
-            align-items: stretch;
-            padding: 0 clamp(0.1rem, 0.2vw, 0.25rem);
-            background: #C2D9C2;
-            border: 2px solid #3B4533;
-            box-shadow: 4px 4px 0 #3B4533;
-            height: clamp(2.4rem, 1.4rem + 2vw, 4.25rem);
-            width: max-content;
-            max-width: calc(100vw - 1.5rem);
-            white-space: nowrap;
-            overflow: hidden;
+        /* Temario, diseño C: base sobria y toque arcade en las tarjetas de
+           ejercicio, que es lo que se estudia. Colores de css/sitio.css. */
+        .t-origen { color: var(--c-tenue); max-width: 68ch; }
+        .t-ejercicios { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(19rem, 100%), 1fr)); gap: 1.25rem; padding-block: 0.5rem 1rem; }
+        .t-ejercicio {
+            display: grid;
+            align-content: start;
+            gap: 0.8rem;
+            text-align: left;
+            font: inherit;
+            padding: 1.4rem 1.5rem;
+            background: var(--c-barra);
+            color: var(--c-barra-texto);
+            border: 2px solid var(--c-barra);
+            box-shadow: 5px 5px 0 var(--c-oro);
+            cursor: pointer;
+            transition: transform 0.1s, box-shadow 0.1s;
         }
-        .nav-logo-link {
-            display: flex;
-            align-items: center;
-            padding: 0 clamp(0.4rem, 0.3rem + 0.7vw, 1rem);
-            height: 100%;
-            border-right: 1px solid rgba(59, 69, 51, 0.2);
-            flex-shrink: 0;
+        button.t-ejercicio:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0 var(--c-oro); }
+        button.t-ejercicio:focus-visible { outline: 3px solid var(--c-foco); outline-offset: 3px; }
+        .t-rotulo { font-family: var(--f-marca); font-weight: 800; font-size: 1.05rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--c-barra-activo); }
+        .t-partes { line-height: 1.5; }
+        .t-estado { font-family: var(--f-cifras); font-size: 0.85rem; color: var(--c-oro); }
+        .t-sin-temario { background: var(--c-superficie); color: var(--c-tenue); border: 1px dashed var(--c-linea); box-shadow: none; cursor: default; }
+        .t-sin-temario .t-rotulo { color: var(--c-tinta); }
+        .t-sin-temario .t-estado { color: var(--c-tenue); }
+
+        /* Modal con la lista de temas */
+        .modal { display: none; position: fixed; inset: 0; z-index: 100; background: rgba(10, 14, 9, 0.6); padding: 1rem; }
+        .modal.active { display: flex; align-items: center; justify-content: center; }
+        .modal-content { background: var(--c-fondo); color: var(--c-tinta); border: 1px solid var(--c-linea); border-top: 4px solid var(--c-acento); border-radius: 4px; width: 100%; max-width: 46rem; max-height: 90vh; display: flex; flex-direction: column; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3); }
+        .t-modal-cabecera { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.1rem 1.4rem; border-bottom: 1px solid var(--c-linea); }
+        .t-modal-cabecera h2 { font-family: var(--f-titular) !important; font-weight: 700; font-size: 1.35rem; }
+        .t-cerrar { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; border: 1px solid var(--c-linea); border-radius: 3px; background: transparent; color: var(--c-tinta); cursor: pointer; }
+        .t-cerrar:hover { background: var(--c-acento-suave); }
+        .t-modal-buscar { display: grid; gap: 0.35rem; padding: 0.9rem 1.4rem; border-bottom: 1px solid var(--c-linea); }
+        .t-modal-buscar .c-campo { max-width: none; }
+        .t-modal-lista { overflow-y: auto; padding: 0.5rem 1.4rem 1.25rem; }
+        .t-tema { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.75rem 0; border-bottom: 1px solid var(--c-linea); }
+        .t-tema:last-child { border-bottom: 0; }
+        .t-tema-nombre { flex: 1; min-width: 0; line-height: 1.4; }
+        .t-tema-num { font-family: var(--f-cifras); color: var(--c-tenue); margin-right: 0.4rem; }
+        .t-tema-acciones { display: flex; gap: 0.4rem; flex-shrink: 0; }
+        .t-descarga { font-family: var(--f-cifras); font-size: 0.8rem; font-weight: 600; padding: 0.3rem 0.6rem; border: 1px solid var(--c-acento); border-radius: 3px; color: var(--c-tinta); text-decoration: none; }
+        .t-descarga:hover { background: var(--c-acento); color: var(--c-fondo); }
+        .t-tema-nota { font-size: 0.85rem; color: var(--c-tenue); flex-shrink: 0; text-align: right; }
+        .t-tema.t-apagado .t-tema-nombre { color: var(--c-tenue); }
+        .t-vacio { padding: 2rem 0; text-align: center; color: var(--c-tenue); }
+        @media (max-width: 560px) {
+            .t-tema { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+            .t-tema-nota { text-align: left; }
         }
-        .nav-segment {
-            position: relative;
-            padding: 0 clamp(0.25rem, 0.15rem + 0.75vw, 1.25rem);
-            height: 100%;
-            display: flex;
-            align-items: center;
-            font-family: 'Orbitron', monospace;
-            font-size: clamp(0.58rem, 0.3rem + 0.38vw, 0.75rem);
-            font-weight: 600;
-            color: #3B4533;
-            text-decoration: none;
-            border-right: 1px solid rgba(59, 69, 51, 0.2);
-            letter-spacing: 0.03em;
-            white-space: nowrap;
-            transition: background 0.15s, color 0.15s;
-            flex-shrink: 1;
-            min-width: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .nav-island img {
-            width: clamp(56px, 30px + 6.5vw, 200px);
-            height: auto;
-        }
-        .nav-segment:hover { background: #3B4533; color: #C2D9C2; box-shadow: none; }
-        .nav-segment.active { background: #3B4533; color: #C2D9C2; font-weight: 700; box-shadow: none; }
-        .search-island {
-            position: relative;
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            margin-right: 0.75rem;
-        }
-        .search-island input {
-            width: clamp(6rem, 8.5vw, 11rem);
-            height: 1.75rem;
-            padding: 0 0.75rem 0 2rem;
-            background: #ddeedd;
-            border: 1px solid #3B4533;
-            border-radius: 0;
-            font-family: 'Share Tech Mono', monospace;
-            font-size: clamp(0.55rem, 0.7vw, 0.75rem);
-            color: #3B4533;
-            outline: none;
-        }
-        .search-island input::placeholder { color: rgba(59,69,51,0.5); }
-        .search-island input:focus { background: #C2D9C2; border-color: #3B4533; box-shadow: none; }
-        .search-island svg {
-            position: absolute;
-            left: 0.5rem;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 14px; height: 14px;
-            color: rgba(194,217,194,0.6);
-            pointer-events: none;
-        }
-        @media (max-width: 768px) { .nav-island { display: none; } }
-.theme-toggle { display:flex; align-items:center; justify-content:center; width:clamp(2.25rem,3.5vw,4rem); height:100%; background:transparent; border:none; border-left:1px solid rgba(59,69,51,0.2); cursor:pointer; color:#3B4533; padding:0; flex-shrink:0; transition:background 0.15s,color 0.15s; }
-.theme-toggle:hover { background:#3B4533; color:#C2D9C2; }
-.arcade-card { background:#C2D9C2; border:3px solid #3B4533; box-shadow:6px 6px 0 #3B4533; position:relative; padding:2.5rem 3rem; }
-@media(max-width:640px){.arcade-card{padding:1.25rem 1rem;}}
-.arcade-card::before { content:''; position:absolute; inset:5px; border:1px solid rgba(59,69,51,0.2); pointer-events:none; z-index:1; }
-.arcade-title { font-family:'Orbitron',monospace; font-weight:800; letter-spacing:0.04em; color:#3B4533; text-transform:uppercase; }
-.arcade-body { font-family:'Share Tech Mono',monospace; color:#3B4533; line-height:1.7; }
-.arcade-section-title { font-family:'Orbitron',monospace; font-size:0.8rem; font-weight:700; letter-spacing:0.1em; color:#3B4533; text-transform:uppercase; border-bottom:2px solid #3B4533; padding-bottom:0.5rem; margin-bottom:1.25rem; }
-.arcade-grid-card { background:#C2D9C2; border:2px solid #3B4533; padding:1.5rem; box-shadow:4px 4px 0 #3B4533; transition:box-shadow 0.1s,transform 0.1s; cursor:pointer; }
-.arcade-grid-card:hover { box-shadow:2px 2px 0 #3B4533; transform:translate(2px,2px); }
-.arcade-btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.5rem; background:#3B4533; color:#C2D9C2; font-family:'Orbitron',monospace; font-size:clamp(0.58rem,0.625vw,0.75rem); font-weight:700; letter-spacing:0.08em; text-decoration:none; border:2px solid #3B4533; box-shadow:4px 4px 0 #3B4533; transition:box-shadow 0.1s,transform 0.1s; text-transform:uppercase; cursor:pointer; }
-.arcade-btn:hover { box-shadow:2px 2px 0 #3B4533; transform:translate(2px,2px); }
-.arcade-info-box { border:2px solid #3B4533; padding:1rem 1.25rem; display:flex; gap:0.75rem; background:#C2D9C2; }
-.modal { display:none; position:fixed; z-index:100; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.6); }
-.modal.active { display:flex; align-items:center; justify-content:center; }
-.modal-content { background:#C2D9C2; border:3px solid #3B4533; box-shadow:8px 8px 0 #3B4533; max-width:42rem; width:90%; max-height:90vh; display:flex; flex-direction:column; }
-.modal-content input { background:#C2D9C2; border:2px solid #3B4533; padding:0.5rem 0.75rem 0.5rem 2rem; font-family:'Share Tech Mono',monospace; font-size:0.85rem; color:#3B4533; outline:none; width:100%; }
-.modal-content input:focus { box-shadow:2px 2px 0 #3B4533; }
-.modal-scroll::-webkit-scrollbar { width:6px; }
-.modal-scroll::-webkit-scrollbar-track { background:#C2D9C2; }
-.modal-scroll::-webkit-scrollbar-thumb { background:#3B4533; }
-footer.arcade-footer { background:#3B4533!important; color:#C2D9C2!important; border-top:2px solid #3B4533!important; backdrop-filter:none!important; }
-footer.arcade-footer a { color:#C2D9C2; transition:color 0.15s; }
-footer.arcade-footer a:hover { color:#FFE566; opacity:1; }
-html.dark body { background:#3B4533; color:#C2D9C2; }
-html.dark .arcade-card { background:#2D3828; border-color:#C2D9C2; box-shadow:6px 6px 0 rgba(194,217,194,0.3); }
-html.dark .arcade-card::before { border-color:rgba(194,217,194,0.2); }
-html.dark .arcade-title { color:#E8EDE8; }
-html.dark .arcade-body { color:#C5D8C5; }
-html.dark .arcade-section-title { color:#E8EDE8; border-bottom-color:rgba(194,217,194,0.5); }
-html.dark .arcade-grid-card { background:#2D3828; border-color:#C2D9C2; box-shadow:4px 4px 0 rgba(194,217,194,0.3); }
-html.dark .arcade-grid-card:hover { box-shadow:2px 2px 0 rgba(194,217,194,0.3); }
-html.dark .arcade-btn { background:#C2D9C2; color:#3B4533; border-color:#C2D9C2; box-shadow:4px 4px 0 rgba(194,217,194,0.5); }
-html.dark .arcade-info-box { background:#2D3828; border-color:rgba(194,217,194,0.5); }
-html.dark .modal-content { background:#2D3828; border-color:#C2D9C2; box-shadow:8px 8px 0 rgba(194,217,194,0.3); }
-html.dark .modal-content input { background:#3B4533; border-color:#C2D9C2; color:#E8EDE8; }
-html.dark .nav-island { background:#3B4533; border-color:#C2D9C2; box-shadow:4px 4px 0 rgba(194,217,194,0.3); }
-html.dark .nav-segment { color:#C2D9C2; border-right-color:rgba(194,217,194,0.2); }
-html.dark .nav-segment:hover { background:#C2D9C2; color:#3B4533; }
-html.dark .nav-segment.active { background:#C2D9C2; color:#3B4533; }
-html.dark .search-island input { background:#2D3828; border-color:#C2D9C2; color:#C2D9C2; }
-html.dark .search-island input::placeholder { color:rgba(194,217,194,0.5); }
-html.dark .search-island svg { color:rgba(194,217,194,0.6); }
-html.dark .theme-toggle { color:#C2D9C2; border-left-color:rgba(194,217,194,0.2); }
-html.dark .theme-toggle:hover { background:#C2D9C2; color:#3B4533; }
-html.dark footer.arcade-footer { background:#C2D9C2!important; color:#3B4533!important; border-color:#C2D9C2!important; }
-html.dark footer.arcade-footer a { color:#3B4533; }
-html.dark footer.arcade-footer a:hover { color:#4A5C4A; }
-html.dark #mobileMenu { background:#2D3828!important; border-right-color:rgba(194,217,194,0.2); }
-html.dark #mobileMenu a:hover,html.dark #mobileMenu a.active-mobile { background:#C2D9C2!important; color:#3B4533!important; }
-html.dark .mobile-breadcrumb { background:#2D3828; border-bottom-color:rgba(194,217,194,0.2); }
-html.dark .nav-logo-light { display: none !important; }
-        html.dark .nav-logo-dark { display: block !important; }
-        .nav-logo-light { display: block; }
-        .nav-logo-dark { display: none; }
     </style>
     <!-- recursos:inicio -->
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -204,7 +104,7 @@ html.dark .nav-logo-light { display: none !important; }
     <!-- recursos:fin -->
 </head>
 
-<body class="flex min-h-screen flex-col">
+<body class="c-pagina flex min-h-screen flex-col">
 
     <!-- cabecera:inicio -->
     <header class="sitio-cabecera">
@@ -234,85 +134,50 @@ html.dark .nav-logo-light { display: none !important; }
     <!-- cabecera:fin -->
 
     <!-- Main Content -->
-    <main class="relative flex-1 pb-24">
-        <section class="flex min-h-screen w-full items-center py-20 md:py-28">
-            <div class="container mx-auto max-w-6xl px-4 md:px-8">
-                <div data-reveal class="arcade-card">
+    <main class="c-principal">
+        <div class="c-columna-sitio">
 
-                    <div class="flex flex-col items-center space-y-4 text-center mb-10">
-                        <h2 class="arcade-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-2">TEMARIO</h2>
-                        <p class="arcade-body mx-auto max-w-[900px] text-base md:text-lg text-justify">
-                            El objetivo de esta web es recopilar una serie de resúmenes de cada tema para que, una
-                            vez estudiado el temario completo, puedan utilizarse como temas resumidos con los que
-                            repasar cuando ya se tiene un conocimiento más amplio del mismo. Asimismo, pretende
-                            servir como material complementario o como una forma de consultar el temario con mayor
-                            nivel de detalle para aquellas personas que se estén planteando opositar al Cuerpo de
-                            Inspectores e Ingenieros Técnicos del SOIVRE.
-                            <br><br>
-                            El material está basado en los temas de Roberto Martín López, mi preparador, así como en
-                            diversas fuentes relevantes, seleccionadas y enfocadas según mi criterio. Los contenidos
-                            se encuentran actualizados hasta finales de 2024.
-                        </p>
-                    </div>
-
-                    <div class="mx-auto mb-10 max-w-4xl">
-                        <div class="arcade-info-box">
-                            <svg class="h-4 w-4 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            <div>
-                                <p class="arcade-section-title" style="border-bottom:none;margin-bottom:0.25rem">Nota aclaratoria</p>
-                                <p class="arcade-body text-sm">
-                                    El contenido de este repositorio no incluye toda la información necesaria para aprobar y, además, puede contener errores. Si detectas cualquier error, por favor contacta con <a href="mailto:contacto@sergioargudo.es" style="font-weight:700;text-decoration:underline">contacto@sergioargudo.es</a>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                        <div class="arcade-grid-card" onclick="openModal('topic-list', 'PRIMER EJERCICIO', 1, 55)">
-                            <h3 class="arcade-section-title">PRIMER EJERCICIO</h3>
-                            <div class="arcade-body text-sm space-y-1">
-                                <p>Parte A. Comercio de mercancías. Análisis sectorial</p>
-                                <p>Parte B. Comercio de servicios</p>
-                                <p>Parte C. CITES</p>
-                                <p>Parte D. Control analítico</p>
-                                <p>Parte E. Normalización. Inspección.</p>
-                            </div>
-                        </div>
-                        <div class="arcade-grid-card" onclick="openModal('coming-soon', 'SEGUNDO EJERCICIO')">
-                            <h3 class="arcade-section-title">SEGUNDO EJERCICIO</h3>
-                            <div class="arcade-body text-sm">
-                                <p>Consiste en una prueba de inglés con parte escrita y oral, que puede realizarse de forma optativa en otros idiomas.</p>
-                            </div>
-                        </div>
-                        <div class="arcade-grid-card" onclick="openModal('topic-list', 'TERCER EJERCICIO', 3, 58)">
-                            <h3 class="arcade-section-title">TERCER EJERCICIO</h3>
-                            <div class="arcade-body text-sm space-y-1">
-                                <p>Parte A. Comercio exterior</p>
-                                <p>Parte B. Organismos Internacionales y Unión Europea.</p>
-                            </div>
-                        </div>
-                        <div class="arcade-grid-card" onclick="openModal('coming-soon', 'CUARTO EJERCICIO')">
-                            <h3 class="arcade-section-title">CUARTO EJERCICIO</h3>
-                            <div class="arcade-body text-sm">
-                                <p>Consiste en la resolución de 4 casos prácticos relacionados con el contenido de la oposición.</p>
-                            </div>
-                        </div>
-                        <div class="arcade-grid-card" onclick="openModal('topic-list', 'QUINTO EJERCICIO', 5, 46)">
-                            <h3 class="arcade-section-title">QUINTO EJERCICIO</h3>
-                            <div class="arcade-body text-sm space-y-1">
-                                <p>Parte A. Economía General y Estructura económica de España</p>
-                                <p>Parte B. Comercio Interior</p>
-                                <p>Parte C. Derecho Administrativo y organización del Estado.</p>
-                            </div>
-                        </div>
-                    </div>
-
+            <header class="c-cabecera-pagina">
+                <p class="c-antetitulo">Oposiciones SOIVRE</p>
+                <h1 class="c-titular">Temario</h1>
+                <p class="c-entradilla">Temas desarrollados y esquemas para repasar cuando ya se conoce el temario completo, o para consultarlo con más detalle si te estás planteando opositar al Cuerpo de Inspectores o de Ingenieros Técnicos del SOIVRE.</p>
+                <p class="t-origen">El material está basado en los temas de Roberto Martín López, mi preparador, y en diversas fuentes relevantes, seleccionadas y enfocadas según mi criterio. Los contenidos están actualizados hasta finales de 2024.</p>
+                <div class="c-aviso">
+                    <p><strong>Nota aclaratoria.</strong> Este material no incluye toda la información necesaria para aprobar y puede contener errores. Si detectas alguno, escríbeme a <a href="mailto:contacto@sergioargudo.es">contacto@sergioargudo.es</a>.</p>
                 </div>
-            </div>
-        </section>
+            </header>
+
+            <section class="t-ejercicios" aria-label="Ejercicios de la oposición">
+                <button type="button" class="t-ejercicio" onclick="openModal('topic-list', 'PRIMER EJERCICIO', 1, 55)">
+                    <span class="t-rotulo">Ejercicio 1</span>
+                    <span class="t-partes">Comercio de mercancías y análisis sectorial · Comercio de servicios · CITES · Control analítico · Normalización e inspección</span>
+                    <span class="t-estado">55 temas · esquemas en preparación</span>
+                </button>
+                <div class="t-ejercicio t-sin-temario">
+                    <span class="t-rotulo">Ejercicio 2</span>
+                    <span class="t-partes">Prueba de inglés, escrita y oral. Puede hacerse además, de forma optativa, en otros idiomas.</span>
+                    <span class="t-estado">Sin temario</span>
+                </div>
+                <button type="button" class="t-ejercicio" onclick="openModal('topic-list', 'TERCER EJERCICIO', 3, 58)">
+                    <span class="t-rotulo">Ejercicio 3</span>
+                    <span class="t-partes">Comercio exterior · Organismos internacionales y Unión Europea</span>
+                    <span class="t-estado">55 de 58 temas · PDF y Word</span>
+                </button>
+                <div class="t-ejercicio t-sin-temario">
+                    <span class="t-rotulo">Ejercicio 4</span>
+                    <span class="t-partes">Resolución de cuatro casos prácticos sobre el contenido de la oposición.</span>
+                    <span class="t-estado">Sin temario</span>
+                </div>
+                <button type="button" class="t-ejercicio" onclick="openModal('topic-list', 'QUINTO EJERCICIO', 5, 46)">
+                    <span class="t-rotulo">Ejercicio 5</span>
+                    <span class="t-partes">Economía general y estructura económica de España · Comercio interior · Derecho administrativo y organización del Estado</span>
+                    <span class="t-estado">46 temas · PDF y Word</span>
+                </button>
+            </section>
+
+        </div>
     </main>
 
-    <!-- Footer -->
     <!-- pie:inicio -->
     <footer class="sitio-pie">
         <div class="sitio-pie-int">
@@ -351,60 +216,27 @@ html.dark .nav-logo-light { display: none !important; }
     </footer>
     <!-- pie:fin -->
 
-    <!-- Modal for Topic List -->
-    <div id="topicModal" class="modal">
-        <div class="modal-content" style="max-height:90vh">
-            <div style="padding:1.25rem 1.5rem;border-bottom:2px solid #3B4533;display:flex;justify-content:space-between;align-items:center">
-                <h2 id="modalTitle" class="arcade-title" style="font-size:1.1rem"></h2>
-                <button onclick="closeModal()" style="background:none;border:none;cursor:pointer;padding:0.25rem">
-                    <svg style="width:1.5rem;height:1.5rem" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+    <!-- Lista de temas de un ejercicio (la rellena js/main.js) -->
+    <div id="topicModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <div class="t-modal-cabecera">
+                <h2 id="modalTitle"></h2>
+                <button type="button" class="t-cerrar" onclick="closeModal()" aria-label="Cerrar">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
                 </button>
             </div>
-            <div style="padding:1rem 1.5rem 0.5rem;position:relative">
-                <svg style="position:absolute;left:1.9rem;top:50%;transform:translateY(-50%);width:14px;height:14px;color:#3B4533;pointer-events:none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-                <input type="search" placeholder="Buscar por 'Tema X' o palabra clave..." style="width:100%;height:2.25rem;background:#C2D9C2;border:2px solid #3B4533;padding:0 0.75rem 0 2rem;font-family:'Share Tech Mono',monospace;font-size:0.85rem;color:#3B4533;outline:none" id="modalSearch" oninput="filterTopics()">
+            <div class="t-modal-buscar">
+                <label for="modalSearch" class="c-antetitulo">Buscar</label>
+                <input type="search" id="modalSearch" class="c-campo" placeholder="Número de tema o palabra clave" oninput="filterTopics()" autocomplete="off">
             </div>
-            <div class="flex-1 overflow-y-auto modal-scroll" style="padding:0.5rem 1.5rem 1.5rem" id="topicList"></div>
+            <div class="t-modal-lista" id="topicList"></div>
         </div>
     </div>
 
-    <!-- Modal for Coming Soon -->
-    <div id="comingSoonModal" class="modal">
-        <div class="modal-content" style="max-height:auto">
-            <div style="padding:1.25rem 1.5rem;border-bottom:2px solid #3B4533;display:flex;justify-content:flex-end">
-                <button onclick="closeModal()" style="background:none;border:none;cursor:pointer">
-                    <svg style="width:1.5rem;height:1.5rem" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
-                </button>
-            </div>
-            <div style="display:flex;height:12rem;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:1.5rem">
-                <h3 class="arcade-title" style="font-size:1.5rem">PRÓXIMAMENTE DISPONIBLE...</h3>
-            </div>
-        </div>
-    </div>
+    <!-- main.js lo cierra con closeModal(); ya no se abre desde ningún sitio -->
+    <div id="comingSoonModal" class="modal" hidden></div>
 
-    <script src="./js/main.js" onerror="console.warn('main.js not found')"></script>
-    <script>
-function toggleMobileMenu() {
-    const menu = document.getElementById('mobileMenu');
-    if (!menu) return;
-    menu.classList.toggle('menu-open');
-    if (menu.classList.contains('menu-open')) {
-        document.body.style.overflow = 'hidden';
-        document.body.style.position = 'fixed';
-        document.body.style.width = '100%';
-    } else {
-        document.body.style.overflow = '';
-        document.body.style.position = '';
-        document.body.style.width = '';
-    }
-}
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-        const menu = document.getElementById('mobileMenu');
-        if (menu && menu.classList.contains('menu-open')) toggleMobileMenu();
-    }
-});
-    </script>
+    <script src="js/main.js"></script>
     <script src="js/cookies.js?v=1"></script>
     <!-- Analítica ligera y sin cookies (GoatCounter, gratis para uso no comercial).
          Para activarla: 1) crea una cuenta en https://www.goatcounter.com con el código "sergioargudosantiago";
