@@ -52,6 +52,13 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
 
 ## Flujos de trabajo
 
+- **Cabecera, pie y fuentes comunes**: viven en `src/parciales/` (`cabecera.html`,
+  `pie.html`, `recursos.html`) y en las páginas van entre marcas
+  `<!-- nombre:inicio -->` / `<!-- nombre:fin -->`. **No editarlos en las páginas**:
+  cambiar el parcial y ejecutar `npm run parciales` (páginas sueltas + artículos).
+  Los estilos comunes del diseño C están en `css/sitio.css`, que se carga el último.
+  Una página ya migrada al diseño C lleva `<body class="c-pagina">`.
+
 - **Artículos**: escribir `articulos/<slug>.md` con frontmatter y ejecutar
   `npm run articulos`. Genera el `.html`, el índice, `feed.xml`, las entradas del
   sitemap y un borrador de post de LinkedIn en `review/linkedin/`. **No editar a mano
@@ -75,8 +82,8 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
   el efecto para quien usa la web, no el cambio de código.
 - Las cifras publicadas citan fuente oficial (DataComex, AEAT, BdE, INE, Eurostat,
   Census) y periodo. Si un dato no se puede verificar, no se publica.
-- Cambios de navegación, footer o `<head>` se replican en **todas** las páginas
-  (no hay plantillas compartidas).
+- La navegación, el pie y las fuentes salen de `src/parciales/`; el resto del
+  `<head>` (meta, Open Graph) sigue siendo propio de cada página.
 - El dominio absoluto aparece en canonical, Open Graph, sitemap, robots y feed:
   no escribirlo a mano, usar `scripts/cambiar-dominio.js`.
 
@@ -114,8 +121,12 @@ Hecho el 7 de octubre:
 Pendiente, por orden:
 1. **Autor**: comprar `sergioargudo.es` (Cloudflare no vende `.es`: comprarlo en
    otro registrador y, si se quiere el correo gratis, delegar el DNS en Cloudflare).
-2. **Diseño C, fase 1**: tokens y tipografía comunes, navegación y footer en las
-   7 páginas, plantilla de artículos (`scripts/build-articulos.js`).
+2. ~~**Diseño C, fase 1**~~ (hecho el 7 oct): `css/sitio.css`, parciales comunes,
+   cabecera y pie nuevos en todas las páginas, artículos e índice en diseño C.
+   Pendiente de limpiar en cada página al migrarla: su CSS viejo de `.nav-island`,
+   `#mobileMenu` y `arcade-footer`, y su `toggleMobileMenu()` en línea (ya no hacen
+   nada). Al terminar las fases, quitar Inter y Share Tech Mono de `recursos.html`
+   si ya no se usan.
 3. **Diseño C, fase 2**: `comercio-exterior.html` y `metodologia.html`, con
    Chart.js recoloreado.
 4. **Diseño C, fase 3**: portada con frase que diga qué ofrece la web (no

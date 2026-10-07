@@ -16,9 +16,6 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
 
     <!-- SEO & Social Meta Tags -->
     <meta name="author" content="Sergio Argudo Santiago">
@@ -458,99 +455,40 @@
       }
     }
     </script>
+    <!-- recursos:inicio -->
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sitio.css">
+    <!-- recursos:fin -->
 </head>
 
 <body class="flex min-h-screen flex-col">
 
-    <!-- Mobile Breadcrumb -->
-    <div class="mobile-breadcrumb md:hidden" style="justify-content:space-between;">
-        <div style="display:flex;align-items:center;">
-            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="margin-right:0.5rem">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-            </svg>
-            Sobre Mí
-        </div>
-        <button onclick="toggleTheme()" aria-label="Cambiar tema"
-            style="display:flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;background:transparent;border:none;border-left:1px solid rgba(194,217,194,0.3);cursor:pointer;color:#C2D9C2;margin-right:2.5rem;flex-shrink:0;">
-            <svg class="theme-icon-sun" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <circle cx="12" cy="12" r="5" stroke-width="2" />
-                <path stroke-linecap="round" stroke-width="2" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
-            </svg>
-            <svg class="theme-icon-moon" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display:none">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-            </svg>
-        </button>
-    </div>
-
-    <!-- Illuminated Island Navigation (Desktop) -->
-    <nav class="nav-island hidden md:flex">
-        <a href="index.html" class="nav-logo-link">
-            <img class="nav-logo-light" src="logos/png/SAS-horizontal-claro.png" alt="Sergio Argudo Santiago" width="260" height="62">
-            <img class="nav-logo-dark" src="logos/png/SAS-horizontal-oscuro.png" alt="Sergio Argudo Santiago" width="260" height="62">
-        </a>
-        <a href="index.html" class="nav-segment">INTRODUCCIÓN</a>
-        <a href="temario.html" class="nav-segment">TEMARIO</a>
-        <a href="comercio-exterior.html" class="nav-segment">COMERCIO EXTERIOR</a>
-        <a href="articulos/index.html" class="nav-segment">ARTÍCULOS</a>
-        <a href="enlaces.html" class="nav-segment">ENLACES</a>
-        <a href="sobre-mi.html" class="nav-segment active">SOBRE MÍ</a>
-
-        <!-- Theme Toggle -->
-        <button onclick="toggleTheme()" class="theme-toggle" aria-label="Cambiar tema" title="Modo oscuro/claro">
-            <svg class="theme-icon-sun" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <circle cx="12" cy="12" r="5" stroke-width="2" />
-                <path stroke-linecap="round" stroke-width="2"
-                    d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
-            </svg>
-            <svg class="theme-icon-moon" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                style="display:none">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-            </svg>
-        </button>
-
-    </nav>
-
-    <!-- Mobile Menu Button -->
-    <button
-        class="md:hidden fixed top-0 right-0 z-50 flex items-center justify-center"
-        style="width:2.5rem;height:2.5rem;background:#3B4533;border-left:1px solid rgba(194,217,194,0.3);border-bottom:1px solid rgba(194,217,194,0.3);"
-        onclick="toggleMobileMenu()" aria-label="Abrir menú">
-        <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke="#C2D9C2">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-    </button>
-
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="fixed inset-y-0 left-0 z-50 w-72 md:hidden">
-        <div class="flex h-full flex-col">
-            <div style="border-bottom:1px solid rgba(194,217,194,0.3);padding:0.75rem 1rem">
-                <button onclick="toggleMobileMenu()" class="text-left text-lg font-bold" style="color:#C2D9C2">
-                    Menú
-                </button>
-            </div>
-            <nav class="flex flex-col p-2">
-                <a href="index.html" onclick="toggleMobileMenu();">
-                    INTRODUCCIÓN
-                </a>
-                <a href="temario.html" onclick="toggleMobileMenu();">
-                    TEMARIO
-                </a>
-                <a href="comercio-exterior.html" onclick="toggleMobileMenu();">
-                    COMERCIO EXTERIOR
-                </a>
-                <a href="articulos/index.html" onclick="toggleMobileMenu();">ARTÍCULOS</a>
-                <a href="enlaces.html" onclick="toggleMobileMenu();">
-                    ENLACES DE INTERÉS
-                </a>
-                <a href="sobre-mi.html" onclick="toggleMobileMenu();" style="background:#C2D9C2;color:#3B4533">
-                    SOBRE MÍ
-                </a>
+    <!-- cabecera:inicio -->
+    <header class="sitio-cabecera">
+        <div class="sitio-cabecera-int">
+            <a class="sitio-marca" href="index.html" aria-label="Sergio Argudo Santiago, inicio">
+                <svg viewBox="0 0 160 82" aria-hidden="true" fill="currentColor"><polygon points="8,54 152,54 140,72 20,72"/><rect x="18" y="44" width="124" height="10"/><rect x="22" y="28" width="28" height="16"/><rect x="22" y="24" width="28" height="4" opacity="0.4"/><rect x="54" y="22" width="28" height="22"/><rect x="54" y="18" width="28" height="4" opacity="0.4"/><rect x="86" y="28" width="28" height="16"/><rect x="86" y="24" width="28" height="4" opacity="0.4"/><rect x="114" y="12" width="20" height="32"/><rect x="116" y="8" width="16" height="6" opacity="0.6"/><rect x="123" y="2" width="2" height="8"/></svg>
+                <span class="sitio-marca-sigla">SAS</span>
+                <span class="sitio-marca-nombre">Sergio Argudo Santiago</span>
+            </a>
+            <nav id="sitio-menu" class="sitio-nav" aria-label="Secciones">
+                <a href="index.html" data-seccion="inicio">Inicio</a>
+                <a href="temario.html" data-seccion="temario">Temario</a>
+                <a href="comercio-exterior.html" data-seccion="comercio">Comercio exterior</a>
+                <a href="articulos/index.html" data-seccion="articulos">Artículos</a>
+                <a href="enlaces.html" data-seccion="enlaces">Enlaces</a>
+                <a href="sobre-mi.html" data-seccion="sobre-mi" aria-current="page">Sobre mí</a>
             </nav>
+            <button type="button" class="sitio-icono-boton" onclick="toggleTheme()" aria-label="Cambiar entre modo claro y oscuro">
+                <svg class="theme-icon-sun" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke-width="2"/><path stroke-linecap="round" stroke-width="2" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                <svg class="theme-icon-moon" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" style="display:none"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+            </button>
+            <button type="button" class="sitio-icono-boton sitio-menu-boton" aria-controls="sitio-menu" aria-expanded="false" aria-label="Abrir el menú" onclick="alternarMenuSitio(this)">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
         </div>
-    </div>
+    </header>
+    <!-- cabecera:fin -->
 
     <!-- Main Content -->
     <main class="relative flex-1">
@@ -646,33 +584,43 @@
     </main>
 
     <!-- Footer (Sticky) -->
-    <footer class="arcade-footer fixed bottom-0 left-0 right-0 z-50 shadow-lg border-t">
-        <div class="container mx-auto flex h-12 items-center justify-center gap-6 px-4 sm:px-6 lg:px-8">
-            <a href="https://www.linkedin.com/in/sergio-argudo-santiago/"
-                aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"
-                class="transition-colors hover:text-accent">
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                </svg>
-            </a>
-            <a href="mailto:contacto@sergioargudo.es" aria-label="Email" target="_blank"
-                rel="noopener noreferrer" class="transition-colors hover:text-accent">
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-            </a>
-            <a href="https://github.com/sergio-argudo" aria-label="GitHub" target="_blank" rel="noopener noreferrer"
-                class="transition-colors hover:text-accent">
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                </svg>
-            </a>
+    <!-- pie:inicio -->
+    <footer class="sitio-pie">
+        <div class="sitio-pie-int">
+            <div>
+                <p class="sitio-pie-titulo">Sergio Argudo Santiago</p>
+                <p>Temario, esquemas y datos para opositar al SOIVRE y entender el comercio exterior español.</p>
+                <div class="sitio-pie-redes">
+                    <a href="https://www.linkedin.com/in/sergio-argudo-santiago/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    <a href="mailto:contacto@sergioargudo.es" aria-label="Correo: contacto@sergioargudo.es"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></a>
+                    <a href="feed.xml" aria-label="Artículos por RSS"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11a8 8 0 018 8M5 5a14 14 0 0114 14"/><circle cx="6" cy="18" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+                </div>
+            </div>
+            <nav aria-label="Secciones del sitio">
+                <p class="sitio-pie-titulo">Secciones</p>
+                <ul>
+                    <li><a href="temario.html">Temario</a></li>
+                    <li><a href="comercio-exterior.html">Comercio exterior</a></li>
+                    <li><a href="articulos/index.html">Artículos</a></li>
+                    <li><a href="enlaces.html">Enlaces</a></li>
+                    <li><a href="sobre-mi.html">Sobre mí</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p class="sitio-pie-titulo">Datos</p>
+                <ul>
+                    <li><a href="metodologia.html">Metodología y fuentes</a></li>
+                    <li><a href="https://datacomex.comercio.es/" target="_blank" rel="noopener noreferrer">DataComex</a></li>
+                    <li><a href="https://www.bde.es/webbe/es/estadisticas/otras-clasificaciones/publicaciones/boletin-estadistico/capitulo-17.html" target="_blank" rel="noopener noreferrer">Banco de España, balanza de pagos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sitio-pie-legal">
+            <span>© 2026 Sergio Argudo Santiago. Web personal: no representa a ningún organismo.</span>
+            <a href="mailto:contacto@sergioargudo.es">contacto@sergioargudo.es</a>
         </div>
     </footer>
+    <!-- pie:fin -->
 
     <!-- Main JavaScript -->
     <script src="js/main.js" onerror="console.warn('main.js no disponible')"></script>

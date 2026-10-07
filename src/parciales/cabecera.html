@@ -1,0 +1,24 @@
+    <header class="sitio-cabecera">
+        <div class="sitio-cabecera-int">
+            <a class="sitio-marca" href="{{raiz}}index.html" aria-label="Sergio Argudo Santiago, inicio">
+                <svg viewBox="0 0 160 82" aria-hidden="true" fill="currentColor"><polygon points="8,54 152,54 140,72 20,72"/><rect x="18" y="44" width="124" height="10"/><rect x="22" y="28" width="28" height="16"/><rect x="22" y="24" width="28" height="4" opacity="0.4"/><rect x="54" y="22" width="28" height="22"/><rect x="54" y="18" width="28" height="4" opacity="0.4"/><rect x="86" y="28" width="28" height="16"/><rect x="86" y="24" width="28" height="4" opacity="0.4"/><rect x="114" y="12" width="20" height="32"/><rect x="116" y="8" width="16" height="6" opacity="0.6"/><rect x="123" y="2" width="2" height="8"/></svg>
+                <span class="sitio-marca-sigla">SAS</span>
+                <span class="sitio-marca-nombre">Sergio Argudo Santiago</span>
+            </a>
+            <nav id="sitio-menu" class="sitio-nav" aria-label="Secciones">
+                <a href="{{raiz}}index.html" data-seccion="inicio">Inicio</a>
+                <a href="{{raiz}}temario.html" data-seccion="temario">Temario</a>
+                <a href="{{raiz}}comercio-exterior.html" data-seccion="comercio">Comercio exterior</a>
+                <a href="{{raiz}}articulos/index.html" data-seccion="articulos">Artículos</a>
+                <a href="{{raiz}}enlaces.html" data-seccion="enlaces">Enlaces</a>
+                <a href="{{raiz}}sobre-mi.html" data-seccion="sobre-mi">Sobre mí</a>
+            </nav>
+            <button type="button" class="sitio-icono-boton" onclick="toggleTheme()" aria-label="Cambiar entre modo claro y oscuro">
+                <svg class="theme-icon-sun" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke-width="2"/><path stroke-linecap="round" stroke-width="2" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                <svg class="theme-icon-moon" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" style="display:none"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+            </button>
+            <button type="button" class="sitio-icono-boton sitio-menu-boton" aria-controls="sitio-menu" aria-expanded="false" aria-label="Abrir el menú" onclick="alternarMenuSitio(this)">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+    </header>

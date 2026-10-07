@@ -9,7 +9,8 @@
     "temas:extraer": "bash scripts/extraer-temas.sh",
     "temas:auditar": "node scripts/auditar-temas.js",
     "temas:revisar": "npm run temas:extraer && npm run temas:auditar",
-    "articulos": "node scripts/build-articulos.js"
+    "articulos": "node scripts/build-articulos.js",
+    "parciales": "node scripts/sincronizar-parciales.js && node scripts/build-articulos.js"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.19"

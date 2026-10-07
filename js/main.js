@@ -31,6 +31,31 @@ function toggleTheme() {
 initTheme();
 
 /* =========================================
+   Menú de la cabecera común en el móvil
+   ========================================= */
+function alternarMenuSitio(boton, abrir) {
+    const cabecera = boton && boton.closest('.sitio-cabecera');
+    if (!cabecera) return;
+    const abierto = typeof abrir === 'boolean' ? abrir : !cabecera.hasAttribute('data-menu-abierto');
+    cabecera.toggleAttribute('data-menu-abierto', abierto);
+    boton.setAttribute('aria-expanded', String(abierto));
+    boton.setAttribute('aria-label', abierto ? 'Cerrar el menú' : 'Abrir el menú');
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    const boton = document.querySelector('.sitio-cabecera[data-menu-abierto] .sitio-menu-boton');
+    if (boton) { alternarMenuSitio(boton, false); boton.focus(); }
+});
+
+document.addEventListener('click', (e) => {
+    const abierta = document.querySelector('.sitio-cabecera[data-menu-abierto]');
+    if (abierta && !abierta.contains(e.target)) {
+        alternarMenuSitio(abierta.querySelector('.sitio-menu-boton'), false);
+    }
+});
+
+/* =========================================
    Scroll Reveal Animations
    ========================================= */
 function initScrollReveal() {
