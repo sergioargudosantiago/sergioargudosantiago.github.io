@@ -72,6 +72,13 @@ y el generador lo sustituye por el contenido de `articulos/fragmentos/aranceles-
 Si el fichero no existe, el build falla. Así el payload del gráfico —que en el
 caso de `ggiraph` son doce mil caracteres de JSON— no ensucia el Markdown.
 
+Para un gráfico, añade tras una barra vertical **qué muestra el gráfico**, en una
+o dos frases con las cifras clave. Es lo que lee un lector de pantalla:
+
+```markdown
+<!--incluir: aranceles-g1.html | Gráfico de barras con la variación de la exportación por sector: el gas natural cae casi un 100 %…-->
+```
+
 Las librerías que ese HTML necesite van en `articulos/recursos/` y se declaran
 en el frontmatter, con ruta desde la raíz del sitio:
 

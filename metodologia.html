@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#3B4533">
     <meta name="description"
-        content="Metodología y fuentes del visualizador de comercio exterior: origen de los datos, cómo se calcula la cuota UE27 y la TVA, correspondencia de sectores con los códigos NC8 y limitaciones conocidas.">
-    <title>Metodología y Fuentes de los Datos — Sergio Argudo Santiago</title>
+        content="De dónde vienen los datos del visualizador de comercio exterior, cómo se calcula cada indicador y qué códigos NC8 componen cada sector.">
+    <title>Metodología y fuentes de los datos — Sergio Argudo Santiago</title>
     <link rel="canonical" href="https://sergioargudosantiago.github.io/metodologia.html">
     <link rel="icon" href="logos/png/SAS-icono-claro.png?v=2" type="image/png">
     <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
@@ -25,9 +25,9 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sergioargudosantiago.github.io/metodologia.html">
-    <meta property="og:title" content="Metodología y Fuentes — Visualizador de Comercio Exterior">
+    <meta property="og:title" content="Metodología y fuentes de los datos — Sergio Argudo Santiago">
     <meta property="og:description"
-        content="De dónde vienen los datos de comercio exterior, cómo se calcula cada indicador y qué códigos NC8 componen cada sector.">
+        content="De dónde vienen los datos del visualizador de comercio exterior, cómo se calcula cada indicador y qué códigos NC8 componen cada sector.">
     <meta property="og:image" content="https://sergioargudosantiago.github.io/images/og-cover.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -35,9 +35,9 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sergioargudosantiago.github.io/metodologia.html">
-    <meta property="twitter:title" content="Metodología y Fuentes — Visualizador de Comercio Exterior">
+    <meta property="twitter:title" content="Metodología y fuentes de los datos — Sergio Argudo Santiago">
     <meta property="twitter:description"
-        content="De dónde vienen los datos de comercio exterior, cómo se calcula cada indicador y qué códigos NC8 componen cada sector.">
+        content="De dónde vienen los datos del visualizador de comercio exterior, cómo se calcula cada indicador y qué códigos NC8 componen cada sector.">
     <meta property="twitter:image" content="https://sergioargudosantiago.github.io/images/og-cover.png">
 
 
@@ -199,7 +199,7 @@
                     <p>Escribe el nombre de un sector o un código para ver qué partidas de la Nomenclatura Combinada lo componen.</p>
                     <input type="search" id="corrSearch" class="c-campo" placeholder="Ej.: aceite de oliva, bovino, 08051010&hellip;" autocomplete="off">
                     <p id="corrStatus" class="c-nota">Cargando correspondencias&hellip;</p>
-                    <div class="c-tabla-envoltorio c-tabla-alta">
+                    <div class="c-tabla-envoltorio c-tabla-alta" tabindex="0" role="region" aria-label="Resultados del buscador de correspondencias">
                         <table class="c-tabla c-tabla-codigos" id="corrTable">
                             <thead>
                                 <tr><th>Sector (nivel 1)</th><th>Nivel 2</th><th>Nivel 3</th><th>Código NC8</th></tr>

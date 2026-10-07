@@ -245,6 +245,20 @@ ${art.html}
     </main>
 
 ${partes.pie.replace('</body>', `${art.js.map(j => `    <script src="../${j}"></script>`).join('\n')}${art.js.length ? '\n' : ''}    <script>
+    // ggiraph dibuja el SVG al cargar la página, con role="img" y sin nombre:
+    // se le da el texto alternativo del marcador incluir y se ocultan los iconos.
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            document.querySelectorAll('.art-figura[data-alt]').forEach(function (fig) {
+                var svgs = fig.querySelectorAll('svg');
+                svgs.forEach(function (svg) {
+                    if (svg.closest('.ggiraph-toolbar')) svg.setAttribute('aria-hidden', 'true');
+                });
+                var principal = Array.prototype.find.call(svgs, function (svg) { return !svg.closest('.ggiraph-toolbar'); });
+                if (principal) { principal.setAttribute('role', 'img'); principal.setAttribute('aria-label', fig.dataset.alt); }
+            });
+        }, 300);
+    });
     (function () {
         var btn = document.getElementById('btnCopiarEnlace');
         if (!btn || !navigator.clipboard) return;
@@ -405,12 +419,15 @@ function hoyISO() {
  * renderizador lo deja pasar intacto.
  */
 function incluirFragmentos(html, contexto) {
-    return html.replace(/<!--\s*incluir:\s*([\w.-]+)\s*-->/g, (_, fichero) => {
+    // <!--incluir: fichero.html | texto alternativo--> : el texto, opcional pero
+    // muy recomendable para gráficos, es lo que oye quien usa lector de pantalla.
+    return html.replace(/<!--\s*incluir:\s*([\w.-]+)\s*(?:\|\s*([\s\S]*?))?\s*-->/g, (_, fichero, alt) => {
         const ruta = path.join(DIR_FRAGMENTOS, fichero);
         if (!fs.existsSync(ruta)) {
             throw new Error(`${contexto}: el fragmento "${fichero}" no existe en articulos/fragmentos/`);
         }
-        return fs.readFileSync(ruta, 'utf8');
+        const fragmento = fs.readFileSync(ruta, 'utf8');
+        return alt ? `<div class="art-figura" data-alt="${md.escapeAttr(alt.trim())}">\n${fragmento}\n</div>` : fragmento;
     });
 }
 

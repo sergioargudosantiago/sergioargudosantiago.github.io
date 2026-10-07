@@ -23,7 +23,7 @@ Las exportaciones españolas a Estados Unidos han caído un **9% de media mensua
 
 Detrás de ese 9% se esconden historias muy distintas. El gas natural licuado español a EE.UU. prácticamente ha desaparecido (-97%, aunque partía de un volumen ya pequeño y puntual). Los productos químicos diversos, el equipo de transporte no automovilístico y el hierro y acero también han sufrido caídas de entre el 33% y el 56%. En el otro extremo, sectores como los productos farmacéuticos, la maquinaria industrial o los productos cárnicos han seguido creciendo — probablemente porque quedaron exentos de los aranceles más duros o porque la demanda estadounidense de esos bienes es difícil de sustituir a corto plazo.
 
-<!--incluir: aranceles-g1.html-->
+<!--incluir: aranceles-g1.html | Gráfico de barras con la variación de la exportación media mensual de España a Estados Unidos por sector tras los aranceles: el gas natural cae casi un 100 %; productos químicos diversos, otro equipo de transporte y hierro y acero caen entre un 33 % y un 56 %; farmacéuticos, maquinaria industrial y carne siguen creciendo.-->
 
 <p class="art-nota">Pasa el cursor sobre las barras para ver las cifras exactas de cada sector.</p>
 
@@ -33,7 +33,7 @@ Puesto en contexto europeo, el golpe a España ha sido de intensidad media. Entr
 
 España, con una caída del 11%, se sitúa en una posición intermedia — mejor que la media de los grandes exportadores industriales del norte de Europa, peor que Italia (que incluso ha crecido un 5%) o Finlandia.
 
-<!--incluir: aranceles-g2.html-->
+<!--incluir: aranceles-g2.html | Gráfico de barras con la variación de la exportación media mensual a Estados Unidos de los principales Estados miembros: Irlanda cae un 34 %, Austria, Países Bajos, Bélgica y Alemania caen más de un 10 %, España un 11 %, e Italia y Finlandia crecen.-->
 
 <p class="art-nota">Solo se muestran los Estados miembros con más de 500 millones de euros mensuales de exportación media a EE.UU. antes de abril de 2025.</p>
 
@@ -45,7 +45,7 @@ China es el ejemplo más nítido: sus importaciones a EE.UU. han caído un 40% d
 
 Mientras tanto, Taiwán (+91%) y Vietnam (+47%) han disparado sus ventas a Estados Unidos — el patrón clásico de reubicación de cadenas de suministro que ya se observó durante la primera guerra comercial con China de 2018-2019. México, pese a estar en el punto de mira de la Casa Blanca por motivos migratorios y de fentanilo, ha seguido creciendo un 8%, protegido en parte por el acuerdo USMCA.
 
-<!--incluir: aranceles-g3.html-->
+<!--incluir: aranceles-g3.html | Gráfico de barras con la variación de las importaciones de Estados Unidos por origen: Suiza (−52 %), Irlanda (−41 %) y China (−40 %) son las mayores caídas; Taiwán (+91 %) y Vietnam (+47 %) los mayores aumentos, y México crece un 8 %.-->
 
 <p class="art-nota">Los 12 principales orígenes de importación de EE.UU. por volumen antes de abril de 2025, excluidos agregados regionales y comerciales (UE, TLCAN/USMCA, etc.).</p>
 

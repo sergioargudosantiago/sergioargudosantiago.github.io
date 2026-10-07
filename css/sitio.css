@@ -24,6 +24,7 @@
     --c-barra-activo: #FFFFFF;
     --c-barra-borde: rgba(194, 217, 194, 0.28);
     --c-foco: #C8A951;
+    --c-oro-texto: #E0C46B;       /* dorado legible sobre la barra verde */
 
     /* Tipografía */
     --f-texto: "Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -50,6 +51,7 @@ html.dark {
     --c-barra-texto: #B9D3B4;
     --c-barra-activo: #FFFFFF;
     --c-barra-borde: rgba(185, 211, 180, 0.18);
+    --c-oro-texto: #D9BC63;
 }
 
 /* El pie ya no es fijo: sobra el hueco que cada página reservaba debajo. */
@@ -547,4 +549,4 @@ html.dark {
 .c-arcade:hover { background: var(--c-barra); border-color: var(--c-oro); }
 .c-arcade > span:last-child { color: var(--c-barra-texto); }
 .c-arcade .c-cifra-grande { color: var(--c-barra-activo); font-family: var(--f-marca); font-weight: 800; }
-.c-arcade-rotulo { font-family: var(--f-marca); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--c-oro); }
+.c-arcade-rotulo { font-family: var(--f-marca); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--c-oro-texto); }
