@@ -93,4 +93,61 @@ Decisiones tomadas con el autor (octubre 2026):
 - Scripts y material de trabajo fuera del sitio; solo se publican los datos públicos
   (`data/`).
 - Ritmo de artículos: **dos al mes**, cada uno con su post de LinkedIn el mismo día.
-- Aspecto: pendiente de elegir entre las alternativas propuestas.
+- Aspecto: **opción C, híbrido**. Base sobria y muy legible para datos y artículos
+  (fondo claro, Atkinson Hyperlegible para texto, Fraunces para titulares, IBM Plex
+  Mono para cifras); el verde salvia (`#3B4533` / `#C2D9C2`) pasa a barra de
+  navegación y acentos; la estética arcade (Orbitron, cajas con sombra de píxel) se
+  reserva para la marca y para lo de estudio (temario, esquemas, progreso). El logo
+  del barco se mantiene. Maquetas: <https://claude.ai/artifact/5P7JjrFa9vqEyPvYTBVEpR>
+  (privado, del autor).
+
+## Plan de lanzamiento (octubre 2026)
+
+Lanzamiento el **martes 13 de octubre** (el lunes 12 es festivo nacional).
+Trabajo en la rama `claude/epic-edison-9bfk3y`; se fusiona en `main` el día 12.
+
+Hecho el 7 de octubre:
+- [x] `CLAUDE.md`, `_config.yml` (la web solo sirve el sitio), `.gitignore` limpio.
+- [x] Dominio y correo pasados a `sergioargudo.es`.
+- [x] Fichero temporal de Excel borrado.
+
+Pendiente, por orden:
+1. **Autor**: comprar `sergioargudo.es` (Cloudflare no vende `.es`: comprarlo en
+   otro registrador y, si se quiere el correo gratis, delegar el DNS en Cloudflare).
+2. **Diseño C, fase 1**: tokens y tipografía comunes, navegación y footer en las
+   7 páginas, plantilla de artículos (`scripts/build-articulos.js`).
+3. **Diseño C, fase 2**: `comercio-exterior.html` y `metodologia.html`, con
+   Chart.js recoloreado.
+4. **Diseño C, fase 3**: portada con frase que diga qué ofrece la web (no
+   «Introducción»); temario con la parte arcade.
+5. **Aviso de cookies**: GoatCounter no usa cookies; el banner que dice «Utilizamos
+   cookies» sobra o hay que reescribirlo. Añadir aviso legal / privacidad mínimos y
+   nota de autoría de los temas.
+6. **Revisión técnica** con el diseño ya aplicado: enlaces rotos, accesibilidad
+   (contraste, teclado, alt), Lighthouse, SEO y Open Graph (LinkedIn Post Inspector),
+   errores de consola, móvil.
+7. **Autor**: leer todos los textos el fin de semana.
+8. **Día 12**: fusionar en `main`, `node scripts/cambiar-dominio.js --aplicar`,
+   DNS, HTTPS obligatorio, Google Search Console, sitemap.
+9. **Día 13**: lanzamiento y post de LinkedIn presentando la web.
+
+Después del lanzamiento: actualización mensual de la balanza de pagos con GitHub
+Actions y validaciones; página «qué ha cambiado» en el temario. El chat con IA sobre
+los temas queda aparcado (necesita servidor y API de pago).
+
+## Calendario de artículos
+
+Dos al mes, martes, con post de LinkedIn el mismo día (`npm run articulos` genera el
+borrador). Comprobar normativa y datos vigentes antes de redactar cada uno.
+
+| Fecha | Artículo | Base |
+|---|---|---|
+| 13 oct | Post de lanzamiento (solo LinkedIn) | — |
+| 27 oct | Por qué dos estadísticas oficiales no dan la misma cifra de exportaciones | `balanza/informe_discrepancias_agroalimentario.md` |
+| 10 nov | Qué mide (y qué no) la cuota UE de un sector | `metodologia.html` |
+| 24 nov | La balanza de pagos de España en 2026 | `data/balanza_data.js` |
+| dic | Aranceles de EE. UU., segunda parte | artículo de julio y sus scripts de R |
+| dic | CBAM en su periodo definitivo | temario ej. 3 |
+| ene | Qué hace un inspector del SOIVRE | experiencia del autor |
+| ene | CITES y comercio de especies | bloque piloto temas 25–30 |
+| después | Cómo consultar DataComex en 10 minutos; serie para opositores | — |
