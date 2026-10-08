@@ -150,8 +150,13 @@ Pendiente, por orden:
   <https://claude.ai/artifact/8Ro5mduFV3chbV2ncRfw6g> (privado): formato en tablas,
   en gráficos y mixto (KPI + gráfico + claves + hueco para notas) con el tema 6;
   índice de los temas 1–20 del ejercicio 1 y 23–24 con su encaje en las rúbricas
-  de DataComex; cítricos (tema 2) y turismo (tema 23, balanza de pagos). Pendiente
-  de que el autor elija formato. Después: generarlas todas con un script desde
+  de DataComex; cítricos (tema 2) y turismo (tema 23, balanza de pagos).
+  **Elegido el formato C** (8 oct), ampliado: pág. 1 resumen; pág. 2 exportación
+  y pág. 3 importación por subcategoría (nivel 3 de DataComex), cada una con valor,
+  variación frente al año anterior (calculada sobre el valor), cuota UE y tres
+  principales destinos u orígenes. Ojo: en los sectores con nivel 4 (cítricos…)
+  el CSV repite en cada hijo los países, la cuota UE y la TVA del padre; para
+  esas filas solo el valor es propio. Siguiente: generarlas todas con un script desde
   `data/flujos_data.csv` y `data/balanza_data.js` (no a mano) y publicarlas en
   `public/fichas/`.
 - **Visualizaciones nuevas** (móvil primero) en
