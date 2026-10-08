@@ -21,9 +21,10 @@ Todo el contenido, la interfaz y los commits están en **español**.
   <https://sergioargudosantiago.github.io/>.
 - Tailwind compilado a `css/tailwind.css` (`npm run build:css`, fuente en `src/input.css`).
   Tras tocar clases de Tailwind en cualquier `.html` o `.js`, recompilar y commitear el CSS.
-- Chart.js por CDN (jsDelivr). Fuentes de Google (Orbitron, Share Tech Mono, Inter):
-  estética arcade.
-- Analítica: GoatCounter (sin cookies). `js/cookies.js` gestiona el aviso.
+- Chart.js por CDN (jsDelivr). Fuentes de Google: Atkinson Hyperlegible, Fraunces,
+  IBM Plex Mono y Orbitron (ver «Aspecto» en Estado).
+- Analítica: GoatCounter (sin cookies), comentado en cada página hasta que el autor
+  cree la cuenta. Sin banner de cookies: la web no usa ninguna.
 - GitHub Pages construye con **Jekyll** desde `main`. Jekyll publica todo lo
   versionado salvo lo que excluye `_config.yml` (scripts, código fuente, material de
   trabajo, `.md`). **Al añadir un fichero que no deba poder descargarse desde la web,
@@ -142,6 +143,29 @@ Pendiente, por orden:
 8. **Día 12**: fusionar en `main`, `node scripts/cambiar-dominio.js --aplicar`,
    DNS, HTTPS obligatorio, Google Search Console, sitemap.
 9. **Día 13**: lanzamiento y post de LinkedIn presentando la web.
+
+## Trabajo abierto (8 de octubre)
+
+- **Fichas imprimibles del temario** (PDF A4 para opositores). Maquetas en
+  <https://claude.ai/artifact/8Ro5mduFV3chbV2ncRfw6g> (privado): formato en tablas,
+  en gráficos y mixto (KPI + gráfico + claves + hueco para notas) con el tema 6;
+  índice de los temas 1–20 del ejercicio 1 y 23–24 con su encaje en las rúbricas
+  de DataComex; cítricos (tema 2) y turismo (tema 23, balanza de pagos). Pendiente
+  de que el autor elija formato. Después: generarlas todas con un script desde
+  `data/flujos_data.csv` y `data/balanza_data.js` (no a mano) y publicarlas en
+  `public/fichas/`.
+- **Visualizaciones nuevas** (móvil primero) en
+  <https://claude.ai/artifact/2fRUYTb3vMTJCnbyV63fGN> (privado): mosaico de sectores,
+  mariposa exportación/importación, crecimiento, cuota UE, fichas con evolución,
+  cascada de la balanza, calendario mensual e historias deslizables. Pendiente de
+  que el autor elija cuáles llevar a `comercio-exterior.html`.
+- **Modernizar los gráficos** de `comercio-exterior.html` (Chart.js): el autor
+  prefiere hacerlo en su ordenador local, donde hay R y acceso a internet sin
+  restricciones.
+- **Esquemas del ejercicio 1**: no están en el repositorio. Solo hubo seis
+  borradores (temas 25–30), descartados en septiembre por no salir de los temas
+  del opositor. Si existen, están en la máquina local (`review/`, `fuentes/` o
+  `D:\BLOQUE 1`).
 
 Después del lanzamiento: actualización mensual de la balanza de pagos con GitHub
 Actions y validaciones; página «qué ha cambiado» en el temario. El chat con IA sobre
