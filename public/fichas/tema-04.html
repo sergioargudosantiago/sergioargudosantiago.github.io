@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 4. Sector de frutos secos — ficha de comercio exterior</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Orbitron:wght@700;800&display=swap">
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #D9DED6; font-family: 'Atkinson Hyperlegible', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.pagina { width: 210mm; height: 297mm; margin: 10mm auto; padding: 12mm 12.5mm 10.5mm; background: #fff; display: flex; flex-direction: column; gap: 4.4mm; font-size: 12.5px; line-height: 1.4; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,.18); page-break-after: always; break-after: page; }
+@media print { body { background: #fff; } .pagina { margin: 0; box-shadow: none; } }
+h1, h2 { margin: 0; }
+.marca { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; }
+.cab h1 { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: 31px; line-height: 1.08; text-wrap: balance; }
+.sub { font-size: 13.5px; color: #4A5546; }
+.sello { background: #3B4533; color: #fff; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; }
+.kpi { border: 1px solid #C9D1C5; border-top: 4px solid; padding: 8px 11px; display: flex; flex-direction: column; gap: 1px; }
+.kpi span { font-size: 12px; } .kpi span:first-child { color: #4A5546; }
+.kpi b { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 21px; }
+.kpi.exp { border-top-color: #2A78D6; } .kpi.imp { border-top-color: #EB6834; } .kpi.sal { border-top-color: #1F6B33; } .kpi.ue { border-top-color: #2A5DB0; }
+.dos { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; }
+.dos > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #3B4533; }
+.grafico { width: 100%; height: auto; }
+.grafico .eje { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; fill: #4A5546; }
+.leyenda { display: flex; gap: 14px; font-size: 12px; font-weight: 700; }
+.leyenda span { display: flex; align-items: center; gap: 6px; }
+.leyenda i { display: inline-block; width: 16px; height: 3px; }
+.l-exp { background: #2A78D6; } .l-imp { background: #EB6834; }
+.tabla { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.tabla th { text-align: right; padding: 4px; border-bottom: 2px solid #1F2A1D; font-size: 12px; }
+.tabla th:first-child { text-align: left; }
+.tabla td { padding: 4px; border-bottom: 1px solid #C9D1C5; text-align: right; font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
+.tabla td:first-child { text-align: left; font-family: 'Atkinson Hyperlegible', sans-serif; }
+.pie-tabla { margin: 0; font-size: 12px; color: #4A5546; }
+.nota-tema { margin: 0; font-size: 12px; color: #4A5546; border-left: 3px solid #A8862F; padding-left: 8px; }
+.claves { background: #EEF3EB; border: 1px solid #C9D1C5; padding: 11px 16px; display: flex; flex-direction: column; gap: 6px; }
+.claves h2 { font-family: Orbitron, sans-serif; font-size: 11.5px; letter-spacing: .14em; text-transform: none; }
+.claves ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+.notas { flex-grow: 1; display: flex; flex-direction: column; gap: 6px; min-height: 60px; }
+.renglones { flex-grow: 1; background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 27px, #C9D1C5 27px, #C9D1C5 28px); }
+.pie { margin-top: auto; display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid #C9D1C5; padding-top: 7px; font-size: 11.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; white-space: nowrap; }
+.cab-det { display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #3B4533; padding-bottom: 8px; }
+.cab-det .pag { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3B4533; }
+.h1-det { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: 23px; line-height: 1.15; text-wrap: balance; margin-bottom: 3px; }
+.detalle { width: 100%; border-collapse: collapse; font-size: 12px; line-height: 1.25; font-variant-numeric: tabular-nums; }
+.detalle th { text-align: left; font-size: 11.5px; color: #4A5546; border-bottom: 2px solid #1F2A1D; padding: 4px; }
+.detalle th:nth-child(2), .detalle th:nth-child(3) { text-align: right; }
+.detalle td { padding: 4px; border-bottom: 1px solid #DCE3D8; vertical-align: middle; }
+.detalle td:nth-child(2), .detalle td:nth-child(3) { text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap; }
+.detalle td:nth-child(2) { width: 62px; } .detalle td:nth-child(3) { width: 72px; } .detalle td:nth-child(4) { width: 96px; } .detalle td:nth-child(5) { width: 205px; }
+.detalle tr.grupo td { background: #EEF3EB; font-family: Orbitron, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: .1em; color: #3B4533; padding-top: 5px; }
+.detalle tr.grupo td:nth-child(2) { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0; color: #1F2A1D; }
+.detalle tr.grupo-fila td { background: #EEF3EB; }
+.detalle tr.grupo-fila td:first-child { font-family: Orbitron, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: .1em; color: #3B4533; }
+.detalle .ue { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; white-space: nowrap; }
+.barra-ue { display: inline-block; width: 36px; height: 7px; background: #E2E7DF; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
+.barra-ue i { display: block; height: 100%; background: #2A5DB0; border-radius: 2px; }
+.pos { color: #1F6B33; font-weight: 600; } .neg { color: #B42318; font-weight: 600; }
+.tenue { color: #6B7568; font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 11.5px; }
+</style>
+</head>
+<body>
+<section class="pagina">
+  <header class="cab">
+    <div class="cab-txt">
+      <span class="marca">SAS · FICHAS DEL TEMARIO</span>
+      <h1>Sector de frutos secos</h1>
+      <span class="sub">Comercio exterior de España · 2025 y evolución desde 2021</span>
+    </div>
+    <div class="sello"><span>EJERCICIO 1</span><b>T4</b></div>
+  </header>
+  <div class="kpis">
+    <div class="kpi exp"><span>Exportación</span><b>858</b><span>M€ · +23,0 % vs 2024</span></div>
+    <div class="kpi imp"><span>Importación</span><b>566</b><span>M€ · +38,1 % vs 2024</span></div>
+    <div class="kpi sal"><span>Saldo</span><b>+292</b><span>M€ · cobertura 152 %</span></div>
+    <div class="kpi ue"><span>Hacia la UE</span><b>86,8 %</b><span>de la exportación</span></div>
+  </div>
+  <div class="dos">
+    <div><h2>Evolución, M€</h2><div class="leyenda"><span><i class="l-exp"></i>Exportación</span><span><i class="l-imp"></i>Importación</span></div><svg viewBox="0 0 350 172" class="grafico" role="img" aria-label="Exportación de 668 a 858 M€ e importación de 485 a 566 M€ entre 2021 y 2025">
+<line x1="8" x2="288" y1="150.0" y2="150.0" stroke="#1F2A1D" stroke-width="1"/><text x="294" y="154.0" class="eje">0</text>
+<line x1="8" x2="288" y1="117.5" y2="117.5" stroke="#E2E7DF" stroke-width="1"/><text x="294" y="121.5" class="eje">250</text>
+<line x1="8" x2="288" y1="85.0" y2="85.0" stroke="#E2E7DF" stroke-width="1"/><text x="294" y="89.0" class="eje">500</text>
+<line x1="8" x2="288" y1="52.5" y2="52.5" stroke="#E2E7DF" stroke-width="1"/><text x="294" y="56.5" class="eje">750</text>
+<line x1="8" x2="288" y1="20.0" y2="20.0" stroke="#E2E7DF" stroke-width="1"/><text x="294" y="24.0" class="eje">1.000</text>
+<polyline points="8,86.9 78,75.5 148,92.0 218,96.8 288,76.5" fill="none" stroke="#EB6834" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="8,63.1 78,70.5 148,81.2 218,59.3 288,38.5" fill="none" stroke="#2A78D6" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="8" y="168" class="eje">2021</text><text x="270" y="168" class="eje">2025</text>
+</svg></div>
+    <div>
+      <h2>Principales subsectores, 2025</h2>
+      <table class="tabla">
+        <thead><tr><th>M€</th><th>Exp.</th><th>Imp.</th><th>Saldo</th></tr></thead>
+        <tbody><tr><td>Almendras y avellanas</td><td>858</td><td>566</td><td>+292</td></tr></tbody>
+      </table>
+      <p class="pie-tabla">Destinos: Alemania, Italia, Francia · Orígenes: Estados Unidos, Portugal, Turquía</p>
+    </div>
+  </div>
+  <p class="nota-tema"><strong>Alcance:</strong> Solo almendras y avellanas: el resto de frutos secos no tiene rúbrica propia en DataComex. El desglose por producto que hay en los datos de la web es un reparto estimado, no una cifra de DataComex: esta ficha se queda en el total hasta que se regeneren los datos.</p>
+  <div class="claves">
+    <h2>CLAVES PARA EL TEMA</h2>
+    <ul><li>Desde 2021 la exportación crece un 28 % y la importación crece un 17 %; la tasa de cobertura pasa del 138 % al 152 %.</li><li>El <strong>87 %</strong> de la exportación va a la UE27.</li><li>La primera importación es almendras y avellanas: 566 M€, sobre todo desde Estados Unidos, Portugal, Turquía.</li></ul>
+  </div>
+  <div class="notas"><h2>Mis notas</h2><div class="renglones"></div></div>
+  <footer class="pie"><span>Fuente: DataComex (Ministerio de Economía, Comercio y Empresa), extracción 4 de julio de 2026. 2025 provisional.</span><span class="url">sergioargudo.es · 1 / 3</span></footer>
+</section>
+<section class="pagina">
+  <header class="cab-det">
+    <span class="marca">SAS · FICHAS DEL TEMARIO · TEMA 4</span>
+    <span class="pag">2 / 3</span>
+  </header>
+  <div>
+    <h1 class="h1-det">Sector de frutos secos · exportación por subsector</h1>
+    <span class="sub">2025, millones de euros. Variación frente a 2024 y parte que va a la UE27. Sin desglose por producto: el que hay en los datos de la web es un reparto estimado.</span>
+  </div>
+  <table class="detalle">
+    <thead><tr><th>Subsector</th><th>M€</th><th>Var. 25/24</th><th>Cuota UE</th><th>Principales destinos</th></tr></thead>
+    <tbody><tr><td>Almendras y avellanas</td><td>858</td><td><span class="pos">+23,0 %</span></td><td class="ue"><span class="barra-ue"><i style="width:86.8%"></i></span>86,8 %</td><td>Alemania, Italia, Francia</td></tr></tbody>
+  </table>
+  <footer class="pie"><span>Variación calculada sobre el valor en euros. Cuota UE: % del valor con destino en la UE27. Fuente: DataComex (Ministerio de Economía, Comercio y Empresa), extracción 4 de julio de 2026. 2025 provisional.</span><span class="url">sergioargudo.es · 2 / 3</span></footer>
+</section>
+<section class="pagina">
+  <header class="cab-det">
+    <span class="marca">SAS · FICHAS DEL TEMARIO · TEMA 4</span>
+    <span class="pag">3 / 3</span>
+  </header>
+  <div>
+    <h1 class="h1-det">Sector de frutos secos · importación por subsector</h1>
+    <span class="sub">2025, millones de euros. Variación frente a 2024 y parte que llega desde la UE27. Sin desglose por producto: el que hay en los datos de la web es un reparto estimado.</span>
+  </div>
+  <table class="detalle">
+    <thead><tr><th>Subsector</th><th>M€</th><th>Var. 25/24</th><th>Desde la UE</th><th>Principales orígenes</th></tr></thead>
+    <tbody><tr><td>Almendras y avellanas</td><td>566</td><td><span class="pos">+38,1 %</span></td><td class="ue"><span class="barra-ue"><i style="width:16.5%"></i></span>16,5 %</td><td>Estados Unidos, Portugal, Turquía</td></tr></tbody>
+  </table>
+  <footer class="pie"><span>Variación calculada sobre el valor en euros. Desde la UE: % del valor con origen en la UE27. Fuente: DataComex (Ministerio de Economía, Comercio y Empresa), extracción 4 de julio de 2026. 2025 provisional.</span><span class="url">sergioargudo.es · 3 / 3</span></footer>
+</section>
+</body>
+</html>

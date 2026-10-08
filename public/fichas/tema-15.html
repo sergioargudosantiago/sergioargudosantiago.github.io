@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 15. Sector de semimanufacturas: metales, químicos y otros — ficha de comercio exterior</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Orbitron:wght@700;800&display=swap">
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #D9DED6; font-family: 'Atkinson Hyperlegible', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.pagina { width: 210mm; height: 297mm; margin: 10mm auto; padding: 12mm 12.5mm 10.5mm; background: #fff; display: flex; flex-direction: column; gap: 4.4mm; font-size: 12.5px; line-height: 1.4; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,.18); page-break-after: always; break-after: page; }
+@media print { body { background: #fff; } .pagina { margin: 0; box-shadow: none; } }
+h1, h2 { margin: 0; }
+.marca { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; }
+.cab h1 { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: 31px; line-height: 1.08; text-wrap: balance; }
+.sub { font-size: 13.5px; color: #4A5546; }
+.sello { background: #3B4533; color: #fff; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; }
+.kpi { border: 1px solid #C9D1C5; border-top: 4px solid; padding: 8px 11px; display: flex; flex-direction: column; gap: 1px; }
+.kpi span { font-size: 12px; } .kpi span:first-child { color: #4A5546; }
+.kpi b { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 21px; }
+.kpi.exp { border-top-color: #2A78D6; } .kpi.imp { border-top-color: #EB6834; } .kpi.sal { border-top-color: #1F6B33; } .kpi.ue { border-top-color: #2A5DB0; }
+.dos { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; }
+.dos > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #3B4533; }
+.grafico { width: 100%; height: auto; }
+.grafico .eje { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; fill: #4A5546; }
+.leyenda { display: flex; gap: 14px; font-size: 12px; font-weight: 700; }
+.leyenda span { display: flex; align-items: center; gap: 6px; }
+.leyenda i { display: inline-block; width: 16px; height: 3px; }
+.l-exp { background: #2A78D6; } .l-imp { background: #EB6834; }
+.tabla { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.tabla th { text-align: right; padding: 4px; border-bottom: 2px solid #1F2A1D; font-size: 12px; }
+.tabla th:first-child { text-align: left; }
+.tabla td { padding: 4px; border-bottom: 1px solid #C9D1C5; text-align: right; font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
+.tabla td:first-child { text-align: left; font-family: 'Atkinson Hyperlegible', sans-serif; }
+.pie-tabla { margin: 0; font-size: 12px; color: #4A5546; }
+.nota-tema { margin: 0; font-size: 12px; color: #4A5546; border-left: 3px solid #A8862F; padding-left: 8px; }
+.claves { background: #EEF3EB; border: 1px solid #C9D1C5; padding: 11px 16px; display: flex; flex-direction: column; gap: 6px; }
+.claves h2 { font-family: Orbitron, sans-serif; font-size: 11.5px; letter-spacing: .14em; text-transform: none; }
+.claves ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+.notas { flex-grow: 1; display: flex; flex-direction: column; gap: 6px; min-height: 60px; }
+.renglones { flex-grow: 1; background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 27px, #C9D1C5 27px, #C9D1C5 28px); }
+.pie { margin-top: auto; display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid #C9D1C5; padding-top: 7px; font-size: 11.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; white-space: nowrap; }
+.cab-det { display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #3B4533; padding-bottom: 8px; }
+.cab-det .pag { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3B4533; }
+.h1-det { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: 23px; line-height: 1.15; text-wrap: balance; margin-bottom: 3px; }
+.detalle { width: 100%; border-collapse: collapse; font-size: 12px; line-height: 1.25; font-variant-numeric: tabular-nums; }
+.detalle th { text-align: left; font-size: 11.5px; color: #4A5546; border-bottom: 2px solid #1F2A1D; padding: 4px; }
+.detalle th:nth-child(2), .detalle th:nth-child(3) { text-align: right; }
+.detalle td { padding: 4px; border-bottom: 1px solid #DCE3D8; vertical-align: middle; }
+.detalle td:nth-child(2), .detalle td:nth-child(3) { text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap; }
+.detalle td:nth-child(2) { width: 62px; } .detalle td:nth-child(3) { width: 72px; } .detalle td:nth-child(4) { width: 96px; } .detalle td:nth-child(5) { width: 205px; }
+.detalle tr.grupo td { background: #EEF3EB; font-family: Orbitron, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: .1em; color: #3B4533; padding-top: 5px; }
+.detalle tr.grupo td:nth-child(2) { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0; color: #1F2A1D; }
+.detalle tr.grupo-fila td { background: #EEF3EB; }
+.detalle tr.grupo-fila td:first-child { font-family: Orbitron, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: .1em; color: #3B4533; }
+.detalle .ue { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; white-space: nowrap; }
+.barra-ue { display: inline-block; width: 36px; height: 7px; background: #E2E7DF; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
+.barra-ue i { display: block; height: 100%; background: #2A5DB0; border-radius: 2px; }
+.pos { color: #1F6B33; font-weight: 600; } .neg { color: #B42318; font-weight: 600; }
+.tenue { color: #6B7568; font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 11.5px; }
+</style>
+</head>
+<body>
+<section class="pagina">
+  <header class="cab">
+    <div class="cab-txt">
+      <span class="marca">SAS · FICHAS DEL TEMARIO</span>
+      <h1>Sector de semimanufacturas: metales, químicos y otros</h1>
+      <span class="sub">Comercio exterior de España · 2025 y evolución desde 2021</span>
+    </div>
+    <div class="sello"><span>EJERCICIO 1</span><b>T15</b></div>
+  </header>
+  <div class="kpis">
+    <div class="kpi exp"><span>Exportación</span><b>103.529</b><span>M€ · +3,5 % vs 2024</span></div>
+    <div class="kpi imp"><span>Importación</span><b>103.366</b><span>M€ · +5,5 % vs 2024</span></div>
+    <div class="kpi sal"><span>Saldo</span><b>+163</b><span>M€ · cobertura 100 %</span></div>
+    <div class="kpi ue"><span>Hacia la UE</span><b>59,0 %</b><span>de la exportación</span></div>
+  </div>
+  <div class="dos">
+    <div><h2>Evolución, M€</h2><div class="leyenda"><span><i class="l-exp"></i>Exportación</span><span><i class="l-imp"></i>Importación</span></div><svg viewBox="0 0 350 172" class="grafico" role="img" aria-label="Exportación de 79.267 a 103.529 M€ e importación de 78.536 a 103.366 M€ entre 2021 y 2025">
+<line x1="8" x2="288" y1="150.0" y2="150.0" stroke="#1F2A1D" stroke-width="1"/><text x="294" y="154.0" class="eje">0</text>
+<line x1="8" x2="288" y1="106.7" y2="106.7" stroke="#E2E7DF" stroke-width="1"/><text x="294" y="110.7" class="eje">50.000</text>
+<line x1="8" x2="288" y1="63.3" y2="63.3" stroke="#E2E7DF" stroke-width="1"/><text x="294" y="67.3" class="eje">100.000</text>
+<line x1="8" x2="288" y1="20.0" y2="20.0" stroke="#E2E7DF" stroke-width="1"/><text x="294" y="24.0" class="eje">150.000</text>
+<polyline points="8,81.9 78,57.3 148,66.0 218,65.1 288,60.4" fill="none" stroke="#EB6834" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="8,81.3 78,51.4 148,61.7 218,63.3 288,60.3" fill="none" stroke="#2A78D6" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="8" y="168" class="eje">2021</text><text x="270" y="168" class="eje">2025</text>
+</svg></div>
+    <div>
+      <h2>Por subsector, 2025</h2>
+      <table class="tabla">
+        <thead><tr><th>M€</th><th>Exp.</th><th>Imp.</th><th>Saldo</th></tr></thead>
+        <tbody><tr><td>Productos químicos</td><td>66.023</td><td>72.150</td><td>−6.126</td></tr><tr><td>Otras semimanufacturas</td><td>19.553</td><td>12.627</td><td>+6.926</td></tr><tr><td>Metales no ferrosos</td><td>9.086</td><td>8.451</td><td>+635</td></tr><tr><td>Hierro y acero</td><td>8.866</td><td>10.138</td><td>−1.272</td></tr></tbody>
+      </table>
+      <p class="pie-tabla">Destinos: Francia, Portugal, Alemania · Orígenes: Alemania, Francia, Italia</p>
+    </div>
+  </div>
+  
+  <div class="claves">
+    <h2>CLAVES PARA EL TEMA</h2>
+    <ul><li><strong>Medicamentos (productos químicos)</strong> es lo que más se exporta: el 20 % del sector.</li><li>Desde 2021 la exportación crece un 31 % y la importación crece un 32 %; la tasa de cobertura pasa del 101 % al 100 %.</li><li>El <strong>59 %</strong> de la exportación va a la UE27.</li><li>En 2025, lo que más crece en exportación es medicamentos (productos químicos), +14,3 %, y lo que más cae, plásticos (productos químicos), −3,0 %.</li><li>La primera importación es medicamentos (productos químicos): 26.579 M€, sobre todo desde Estados Unidos, Italia, Alemania.</li></ul>
+  </div>
+  <div class="notas"><h2>Mis notas</h2><div class="renglones"></div></div>
+  <footer class="pie"><span>Fuente: DataComex (Ministerio de Economía, Comercio y Empresa), extracción 4 de julio de 2026. 2025 provisional.</span><span class="url">sergioargudo.es · 1 / 3</span></footer>
+</section>
+<section class="pagina">
+  <header class="cab-det">
+    <span class="marca">SAS · FICHAS DEL TEMARIO · TEMA 15</span>
+    <span class="pag">2 / 3</span>
+  </header>
+  <div>
+    <h1 class="h1-det">Sector de semimanufacturas: metales, químicos y otros · exportación por subsector</h1>
+    <span class="sub">2025, millones de euros. Variación frente a 2024 y parte que va a la UE27.</span>
+  </div>
+  <table class="detalle">
+    <thead><tr><th>Subsector</th><th>M€</th><th>Var. 25/24</th><th>Cuota UE</th><th>Principales destinos</th></tr></thead>
+    <tbody><tr class="grupo"><td>PRODUCTOS QUÍMICOS</td><td>66.023</td><td></td><td></td><td></td></tr><tr><td>Medicamentos</td><td>21.153</td><td><span class="pos">+14,3 %</span></td><td class="ue"><span class="barra-ue"><i style="width:49.3%"></i></span>49,3 %</td><td>Alemania, Reino Unido, Suiza</td></tr><tr><td>Plásticos</td><td>12.985</td><td><span class="neg">−3,0 %</span></td><td class="ue"><span class="barra-ue"><i style="width:66.2%"></i></span>66,2 %</td><td>Francia, Portugal, Alemania</td></tr><tr><td>Aceites esenciales y perfumados</td><td>11.302</td><td><span class="pos">+6,7 %</span></td><td class="ue"><span class="barra-ue"><i style="width:47.3%"></i></span>47,3 %</td><td>Francia, Portugal, Estados Unidos</td></tr><tr><td>Productos químicos orgánicos</td><td>8.469</td><td><span class="pos">+4,9 %</span></td><td class="ue"><span class="barra-ue"><i style="width:69.8%"></i></span>69,8 %</td><td>Países Bajos, Bélgica, Panamá</td></tr><tr><td>Otros productos químicos</td><td>6.136</td><td><span class="neg">−2,1 %</span></td><td class="ue"><span class="barra-ue"><i style="width:64.7%"></i></span>64,7 %</td><td>Francia, Italia, Alemania</td></tr><tr><td>Colorantes y curtientes</td><td>2.941</td><td><span class="neg">−2,1 %</span></td><td class="ue"><span class="barra-ue"><i style="width:51.6%"></i></span>51,6 %</td><td>Italia, Portugal, Francia</td></tr><tr><td>Productos químicos inorgánicos</td><td>1.616</td><td><span class="pos">+7,7 %</span></td><td class="ue"><span class="barra-ue"><i style="width:63.4%"></i></span>63,4 %</td><td>Francia, Portugal, Italia</td></tr><tr><td>Abonos</td><td>1.421</td><td><span class="pos">+3,2 %</span></td><td class="ue"><span class="barra-ue"><i style="width:41.9%"></i></span>41,9 %</td><td>Portugal, Francia, Brasil</td></tr><tr class="grupo"><td>OTRAS SEMIMANUFACTURAS</td><td>19.553</td><td></td><td></td><td></td></tr><tr><td>Material de construcción</td><td>7.721</td><td><span class="neg">−1,5 %</span></td><td class="ue"><span class="barra-ue"><i style="width:48.5%"></i></span>48,5 %</td><td>Francia, Estados Unidos, Portugal</td></tr><tr><td>Papel</td><td>4.977</td><td><span class="neg">−1,6 %</span></td><td class="ue"><span class="barra-ue"><i style="width:67.9%"></i></span>67,9 %</td><td>Francia, Portugal, Italia</td></tr><tr><td>Neumáticos y cámaras</td><td>3.604</td><td><span class="pos">+1,2 %</span></td><td class="ue"><span class="barra-ue"><i style="width:68.7%"></i></span>68,7 %</td><td>Francia, Alemania, Portugal</td></tr><tr><td>Resto otras semimanufacturas</td><td>3.252</td><td><span class="pos">+0,7 %</span></td><td class="ue"><span class="barra-ue"><i style="width:59.2%"></i></span>59,2 %</td><td>Francia, Portugal, Alemania</td></tr><tr class="grupo-fila"><td>METALES NO FERROSOS</td><td>9.086</td><td><span class="pos">+6,5 %</span></td><td class="ue"><span class="barra-ue"><i style="width:64.3%"></i></span>64,3 %</td><td>Italia, Francia, Portugal</td></tr><tr class="grupo-fila"><td>HIERRO Y ACERO</td><td>8.866</td><td><span class="neg">−2,6 %</span></td><td class="ue"><span class="barra-ue"><i style="width:71.0%"></i></span>71,0 %</td><td>Francia, Portugal, Italia</td></tr></tbody>
+  </table>
+  <footer class="pie"><span>Variación calculada sobre el valor en euros. Cuota UE: % del valor con destino en la UE27. Fuente: DataComex (Ministerio de Economía, Comercio y Empresa), extracción 4 de julio de 2026. 2025 provisional.</span><span class="url">sergioargudo.es · 2 / 3</span></footer>
+</section>
+<section class="pagina">
+  <header class="cab-det">
+    <span class="marca">SAS · FICHAS DEL TEMARIO · TEMA 15</span>
+    <span class="pag">3 / 3</span>
+  </header>
+  <div>
+    <h1 class="h1-det">Sector de semimanufacturas: metales, químicos y otros · importación por subsector</h1>
+    <span class="sub">2025, millones de euros. Variación frente a 2024 y parte que llega desde la UE27.</span>
+  </div>
+  <table class="detalle">
+    <thead><tr><th>Subsector</th><th>M€</th><th>Var. 25/24</th><th>Desde la UE</th><th>Principales orígenes</th></tr></thead>
+    <tbody><tr class="grupo"><td>PRODUCTOS QUÍMICOS</td><td>72.150</td><td></td><td></td><td></td></tr><tr><td>Medicamentos</td><td>26.579</td><td><span class="pos">+15,8 %</span></td><td class="ue"><span class="barra-ue"><i style="width:55.5%"></i></span>55,5 %</td><td>Estados Unidos, Italia, Alemania</td></tr><tr><td>Plásticos</td><td>14.984</td><td><span class="pos">+0,6 %</span></td><td class="ue"><span class="barra-ue"><i style="width:67.2%"></i></span>67,2 %</td><td>Alemania, Francia, Italia</td></tr><tr><td>Productos químicos orgánicos</td><td>9.807</td><td><span class="neg">−10,5 %</span></td><td class="ue"><span class="barra-ue"><i style="width:44.8%"></i></span>44,8 %</td><td>China, Alemania, Francia</td></tr><tr><td>Otros productos químicos</td><td>7.080</td><td><span class="pos">+10,6 %</span></td><td class="ue"><span class="barra-ue"><i style="width:77.6%"></i></span>77,6 %</td><td>Alemania, Francia, Países Bajos</td></tr><tr><td>Aceites esenciales y perfumados</td><td>6.972</td><td><span class="pos">+8,7 %</span></td><td class="ue"><span class="barra-ue"><i style="width:83.5%"></i></span>83,5 %</td><td>Francia, Italia, Alemania</td></tr><tr><td>Productos químicos inorgánicos</td><td>3.298</td><td><span class="pos">+8,5 %</span></td><td class="ue"><span class="barra-ue"><i style="width:31.8%"></i></span>31,8 %</td><td>Reino Unido, Alemania, China</td></tr><tr><td>Colorantes y curtientes</td><td>1.918</td><td><span class="neg">−0,7 %</span></td><td class="ue"><span class="barra-ue"><i style="width:74.0%"></i></span>74,0 %</td><td>Alemania, Francia, Italia</td></tr><tr><td>Abonos</td><td>1.512</td><td><span class="pos">+83,3 %</span></td><td class="ue"><span class="barra-ue"><i style="width:41.5%"></i></span>41,5 %</td><td>Egipto, Bélgica, Marruecos</td></tr><tr class="grupo"><td>OTRAS SEMIMANUFACTURAS</td><td>12.627</td><td></td><td></td><td></td></tr><tr><td>Papel</td><td>4.851</td><td><span class="pos">+2,1 %</span></td><td class="ue"><span class="barra-ue"><i style="width:83.2%"></i></span>83,2 %</td><td>Alemania, Francia, Italia</td></tr><tr><td>Resto otras semimanufacturas</td><td>2.942</td><td><span class="pos">+1,3 %</span></td><td class="ue"><span class="barra-ue"><i style="width:68.1%"></i></span>68,1 %</td><td>Francia, Portugal, Alemania</td></tr><tr><td>Neumáticos y cámaras</td><td>2.479</td><td><span class="pos">+6,0 %</span></td><td class="ue"><span class="barra-ue"><i style="width:54.7%"></i></span>54,7 %</td><td>China, Italia, Alemania</td></tr><tr><td>Material de construcción</td><td>2.355</td><td><span class="pos">+5,0 %</span></td><td class="ue"><span class="barra-ue"><i style="width:55.0%"></i></span>55,0 %</td><td>China, Italia, Francia</td></tr><tr class="grupo-fila"><td>HIERRO Y ACERO</td><td>10.138</td><td><span class="neg">−7,4 %</span></td><td class="ue"><span class="barra-ue"><i style="width:57.7%"></i></span>57,7 %</td><td>Francia, Alemania, Italia</td></tr><tr class="grupo-fila"><td>METALES NO FERROSOS</td><td>8.451</td><td><span class="pos">+15,3 %</span></td><td class="ue"><span class="barra-ue"><i style="width:50.5%"></i></span>50,5 %</td><td>República Democrática del Congo, Italia, Alemania</td></tr></tbody>
+  </table>
+  <footer class="pie"><span>Variación calculada sobre el valor en euros. Desde la UE: % del valor con origen en la UE27. Fuente: DataComex (Ministerio de Economía, Comercio y Empresa), extracción 4 de julio de 2026. 2025 provisional.</span><span class="url">sergioargudo.es · 3 / 3</span></footer>
+</section>
+</body>
+</html>

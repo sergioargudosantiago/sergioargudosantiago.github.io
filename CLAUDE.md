@@ -72,6 +72,13 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
   máquina local.
 - **Temario**: `npm run temas:revisar` extrae texto de los PDF y lanza la auditoría
   determinista (`scripts/auditar-temas.js`); la salida va a `review/`.
+- **Fichas del temario** (ejercicio 1, temas 1–20): `npm run fichas` genera
+  `public/fichas/tema-NN.html` (tres páginas A4: resumen, exportación e importación
+  por subsector) desde `data/flujos_data.csv`; qué rúbricas forman cada tema está en
+  `scripts/fichas/temas.json`. `npm run fichas:pdf` saca los PDF en
+  `public/fichas/pdf/` (necesita Playwright). Regenerarlas cada vez que cambien los
+  datos. Las «claves para el tema» se redactan con reglas fijas: leerlas antes de
+  publicar.
 - **Esquemas del ejercicio 1**: el agente `esquema-ejercicio-1` destila exclusivamente
   los temas del opositor; no investiga ni añade materia. Sin fuente, no escribe.
 - Servir en local: `python -m http.server 8000`.
@@ -156,9 +163,9 @@ Pendiente, por orden:
   variación frente al año anterior (calculada sobre el valor), cuota UE y tres
   principales destinos u orígenes. Ojo: en los sectores con nivel 4 (cítricos…)
   el CSV repite en cada hijo los países, la cuota UE y la TVA del padre; para
-  esas filas solo el valor es propio. Siguiente: generarlas todas con un script desde
-  `data/flujos_data.csv` y `data/balanza_data.js` (no a mano) y publicarlas en
-  `public/fichas/`.
+  esas filas solo el valor es propio. Hecho el generador (ver Flujos de trabajo). Pendiente: fichas de balanza de pagos
+  (temas 23 y 24 desde `data/balanza_data.js`) y enlazar `public/fichas/` desde
+  `temario.html`.
 - **Visualizaciones nuevas** (móvil primero) en
   <https://claude.ai/artifact/2fRUYTb3vMTJCnbyV63fGN> (privado): mosaico de sectores,
   mariposa exportación/importación, crecimiento, cuota UE, fichas con evolución,
@@ -167,6 +174,17 @@ Pendiente, por orden:
 - **Modernizar los gráficos** de `comercio-exterior.html` (Chart.js): el autor
   prefiere hacerlo en su ordenador local, donde hay R y acceso a internet sin
   restricciones.
+- **⚠ Datos inventados en `data/flujos_data.csv`** (hallado el 8 oct): las nueve
+  desagregaciones agroalimentarias de nivel 4 (cítricos, melones y sandías,
+  almendras y avellanas, aceite de oliva, pescado fresco y congelado, moluscos y
+  conservas de pescado y de moluscos) no son datos de DataComex sino un reparto del
+  total con porcentajes fijos e iguales todos los años (cítricos: 60/25/12/3). Las
+  metió el commit antiguo «Fsdad·», no el pipeline de R, cuya función
+  `generar_filas_desagregacion` sí descarga los valores reales por código NC.
+  `comercio-exterior.html` las enseña como reales. Arreglo: ejecutar
+  `scripts/generate_flujos_data.R` en local (necesita `comerciotools` e internet) y
+  regenerar fichas. Hasta entonces las fichas detectan el reparto fijo y se quedan
+  en el nivel 3, con aviso.
 - **Esquemas del ejercicio 1**: no están en el repositorio. Solo hubo seis
   borradores (temas 25–30), descartados en septiembre por no salir de los temas
   del opositor. Si existen, están en la máquina local (`review/`, `fuentes/` o

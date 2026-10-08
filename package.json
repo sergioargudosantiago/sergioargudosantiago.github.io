@@ -10,7 +10,9 @@
     "temas:auditar": "node scripts/auditar-temas.js",
     "temas:revisar": "npm run temas:extraer && npm run temas:auditar",
     "articulos": "node scripts/build-articulos.js",
-    "parciales": "node scripts/sincronizar-parciales.js && node scripts/build-articulos.js"
+    "parciales": "node scripts/sincronizar-parciales.js && node scripts/build-articulos.js",
+    "fichas": "node scripts/generar-fichas.js",
+    "fichas:pdf": "node scripts/fichas-pdf.js"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.19"
