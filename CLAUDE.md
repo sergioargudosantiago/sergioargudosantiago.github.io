@@ -67,9 +67,12 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
   Los gráficos interactivos salen de R (ggiraph) como fragmentos en `articulos/fragmentos/`.
 - **Balanza de pagos**: `node scripts/update_balanza_data.js` (Node ≥ 18, sin
   dependencias) regenera `data/balanza_data.js` desde la API del Banco de España.
-- **Flujos comerciales**: `scripts/generate_flujos_data.R` (paquete `comerciotools`,
-  ruta de Windows fija) regenera los datos de `comercio-exterior.html`. Se ejecuta en la
-  máquina local.
+- **Flujos comerciales**: `data/flujos_data.csv` y
+  `data/correspondencias-sectores-nc8.csv` salen de un pipeline privado del autor que
+  **no está en este repositorio** (a propósito: solo se publican los CSV). Lee la
+  estadística de Aduanas, valida cobertura, cuota UE y desgloses antes de escribir y
+  sustituye los dos ficheros enteros. No editarlos a mano. Tras regenerarlos:
+  `npm run fichas && npm run fichas:pdf`.
 - **Temario**: `npm run temas:revisar` extrae texto de los PDF y lanza la auditoría
   determinista (`scripts/auditar-temas.js`); la salida va a `review/`.
 - **Fichas del temario** (ejercicio 1, temas 1–20): `npm run fichas` genera
@@ -161,8 +164,8 @@ Pendiente, por orden:
 de GitHub): `git clone` del repositorio, `git checkout claude/epic-edison-9bfk3y`,
 `git config user.name/user.email` con los datos personales (no los del trabajo),
 `npm install`. Todo lo hecho hasta el 8 de octubre está en esa rama. Primer
-trabajo recomendado allí: ejecutar el pipeline de R (ver ⚠ más abajo) y luego
-`npm run fichas && npm run fichas:pdf`; después, modernizar los gráficos y el
+trabajo recomendado allí: `npm run fichas:pdf` (los datos ya están
+regenerados, ver «Datos de flujos regenerados»); después, modernizar los gráficos y el
 artículo que tiene pensado el autor. Para generar los PDF hace falta Playwright
 (`npm install --no-save playwright && npx playwright install chromium`).
 
@@ -188,17 +191,11 @@ artículo que tiene pensado el autor. Para generar los PDF hace falta Playwright
 - **Modernizar los gráficos** de `comercio-exterior.html` (Chart.js): el autor
   prefiere hacerlo en su ordenador local, donde hay R y acceso a internet sin
   restricciones.
-- **⚠ Datos inventados en `data/flujos_data.csv`** (hallado el 8 oct): las nueve
-  desagregaciones agroalimentarias de nivel 4 (cítricos, melones y sandías,
-  almendras y avellanas, aceite de oliva, pescado fresco y congelado, moluscos y
-  conservas de pescado y de moluscos) no son datos de DataComex sino un reparto del
-  total con porcentajes fijos e iguales todos los años (cítricos: 60/25/12/3). Las
-  metió el commit antiguo «Fsdad·», no el pipeline de R, cuya función
-  `generar_filas_desagregacion` sí descarga los valores reales por código NC.
-  `comercio-exterior.html` las enseña como reales. Arreglo: ejecutar
-  `scripts/generate_flujos_data.R` en local (necesita `comerciotools` e internet) y
-  regenerar fichas. Hasta entonces las fichas detectan el reparto fijo y se quedan
-  en el nivel 3, con aviso.
+- **Datos de flujos regenerados** (9 oct): el CSV anterior tenía desgloses de
+  nivel 4 inventados (reparto fijo), cuota UE sin Rumanía, plátano, tomate y aceite
+  de oliva 2021–2023 incompletos (TVA de +500 % falsas) y años de descargas
+  distintas. Ahora todo sale de una sola extracción validada, con TVA también en
+  2021 y columna `estado` (definitivo/provisional). Pendiente: `npm run fichas:pdf`.
 - **Esquemas del ejercicio 1**: no están en el repositorio. Solo hubo seis
   borradores (temas 25–30), descartados en septiembre por no salir de los temas
   del opositor. Si existen, están en la máquina local (`review/`, `fuentes/` o

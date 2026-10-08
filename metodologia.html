@@ -132,7 +132,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <p>Nueve sectores agroalimentarios (pesca, cítricos, melones y sandías, almendras y avellanas, aceite de oliva y conservas) tienen además desglose de cuarto nivel. En esos casos el dato del nivel superior y el de sus hijos <strong>no se suman</strong>: los hijos ya reproducen exactamente el total del padre, así que agregarlos duplicaría el valor. El visualizador lo tiene en cuenta en todos los niveles.</p>
+                    <p>Nueve sectores agroalimentarios (pesca, cítricos, melones y sandías, almendras y avellanas, aceite de oliva y conservas) tienen además desglose de cuarto nivel. Cada producto de ese nivel agrupa códigos concretos de la Nomenclatura Combinada (naranjas, por ejemplo, son las partidas 0805 10) y una rúbrica «Otros» recoge el resto del sector. En esos casos el dato del nivel superior y el de sus hijos <strong>no se suman</strong>: los hijos ya reproducen exactamente el total del padre, así que agregarlos duplicaría el valor. El visualizador lo tiene en cuenta en todos los niveles.</p>
             </section>
             <section class="c-seccion" id="indicadores">
                     <h2 class="c-seccion-titulo"><span class="c-num">3</span>Cómo se calcula cada indicador</h2>
@@ -141,10 +141,10 @@
                         <dd>Suma del valor estadístico en euros de las partidas del sector para el año seleccionado, en millones. Valor FOB en exportación y CIF en importación, según el criterio de la estadística de Aduanas.</dd>
 
                         <dt>TVA &mdash; Tasa de variación anual</dt>
-                        <dd>Variación porcentual respecto al año inmediatamente anterior al seleccionado. En la portada de cada macro-sector se calcula sobre el agregado del sector completo; al bajar a un subsector concreto se usa la tasa propia de ese subsector. Para 2021 no existe porque no hay año previo en la serie.</dd>
+                        <dd>Variación porcentual respecto al año inmediatamente anterior al seleccionado. En la portada de cada macro-sector se calcula sobre el agregado del sector completo; al bajar a un subsector concreto se usa la tasa propia de ese subsector. Para 2021 se calcula frente a 2020, año que no se muestra en el visualizador.</dd>
 
                         <dt>Cuota UE27</dt>
-                        <dd>Porcentaje del valor con destino (exportación) o procedencia (importación) en los 27 Estados miembros, sobre el valor total del sector. Se calcula partida a partida de la Nomenclatura Combinada y se agrega <strong>ponderando por valor</strong>, no promediando los porcentajes de los subsectores: un sector de 5.000 M&euro; pesa cincuenta veces más que uno de 100 M&euro;. El resultado es equivalente a dividir el valor total dirigido a la UE entre el valor total del sector.</dd>
+                        <dd>Porcentaje del valor con destino (exportación) o procedencia (importación) en los 27 Estados miembros, sobre el valor total del sector. Se calcula partida a partida de la Nomenclatura Combinada y se agrega <strong>ponderando por valor</strong>, no promediando los porcentajes de los subsectores: un sector de 5.000 M&euro; pesa cincuenta veces más que uno de 100 M&euro;. El resultado es equivalente a dividir el valor total dirigido a la UE entre el valor total del sector. No cuentan como UE el avituallamiento de buques y aeronaves ni las operaciones intracomunitarias sin país determinado.</dd>
 
                         <dt>Saldo comercial</dt>
                         <dd>Exportaciones menos importaciones del mismo tramo y año. Positivo, superávit; negativo, déficit.</dd>
@@ -155,7 +155,7 @@
             </section>
             <section class="c-seccion" id="codigos">
                     <h2 class="c-seccion-titulo"><span class="c-num">4</span>Correspondencia con los códigos de producto</h2>
-                    <p>Cada sector agroalimentario del visualizador agrupa un conjunto de códigos arancelarios concretos. Publicar esa correspondencia es lo que permite reproducir las cifras desde la fuente original.</p>
+                    <p>Cada sector agroalimentario del visualizador agrupa un conjunto de códigos arancelarios concretos. Publicar esa correspondencia es lo que permite reproducir las cifras desde la fuente original. Incluye todos los códigos con comercio en algún año de la serie, también los que ya no existen en la nomenclatura vigente.</p>
 
                     <div class="c-aviso">
                         <p><strong>Precisión sobre la nomenclatura.</strong> Los códigos publicados aquí tienen <strong>ocho dígitos</strong>: son de la <strong>Nomenclatura Combinada (NC8)</strong>, el arancel comunitario. <strong>No son códigos TARIC</strong>, que tienen diez dígitos y añaden dos posiciones para medidas comunitarias específicas (contingentes, antidumping, suspensiones). Los seis primeros dígitos coinciden con el Sistema Armonizado de la OMA.</p>
@@ -167,7 +167,7 @@
                                 <tr><th>Macro-sector</th><th>Sectores de nivel 3</th><th>Con correspondencia NC8</th><th>Códigos publicados</th></tr>
                             </thead>
                             <tbody>
-                                <tr><td>Agroalimentario</td><td>124</td><td><strong>124 (100&nbsp;%)</strong></td><td>2.374</td></tr>
+                                <tr><td>Agroalimentario</td><td>124</td><td><strong>124 (100&nbsp;%)</strong></td><td>2.572</td></tr>
                                 <tr><td>Industrial</td><td>54</td><td><strong>0</strong></td><td>&mdash;</td></tr>
                             </tbody>
                         </table>
@@ -177,10 +177,10 @@
             <section class="c-seccion" id="limitaciones">
                     <h2 class="c-seccion-titulo"><span class="c-num">5</span>Limitaciones conocidas</h2>
                     <ul class="c-lista">
-                        <li><strong>2025 es provisional.</strong> La estadística de Aduanas revisa los datos en meses posteriores, casi siempre al alza. Las cifras de 2025 cambiarán.</li>
-                        <li><strong>Dos agrupaciones residuales sin cuota UE.</strong> Las rúbricas &laquo;Agrícolas sin clasificar&raquo; (392,5 M&euro; en exportación y 281,5 M&euro; en importación en 2025, en torno al 0,4&nbsp;% del valor agroalimentario) no tienen cuota UE asignada y quedan fuera de ese cálculo. Cuando afecta al tramo que estás viendo, la propia tarjeta indica sobre qué porcentaje del valor se ha calculado.</li>
+                        <li><strong>2024 y 2025 son provisionales.</strong> La estadística de Aduanas revisa los datos en meses posteriores, casi siempre al alza. Las cifras de esos dos años cambiarán.</li>
+                        <li><strong>Tomate en 2025.</strong> La Nomenclatura Combinada de 2025 partió el tomate fresco en dos códigos nuevos (0702 00 91 y 0702 00 99) que la clasificación oficial de sectores todavía no recoge. Aquí se asignan al sector Tomate, como el código al que sustituyen.</li>
                         <li><strong>La serie empieza en 2021.</strong> No hay datos anteriores en este visualizador.</li>
-                        <li><strong>Los sectores no son mutuamente exhaustivos.</strong> La suma de los sectores mostrados no reproduce el comercio exterior español total: quedan fuera capítulos no clasificados en estos dos macro-sectores.</li>
+                        <li><strong>Los sectores no son mutuamente exhaustivos.</strong> La suma de los sectores mostrados no reproduce el comercio exterior español total: quedan fuera capítulos no clasificados en estos dos macro-sectores. Y al revés: cada macro-sector usa su propia clasificación, así que unos 2.500 M&euro; de exportación de 2025 (flores y plantas, alcohol, gomas y resinas vegetales, almidón) aparecen en los dos. No conviene sumarlos.</li>
                         <li><strong>Sin desagregación mensual ni por comunidad autónoma.</strong> Todo es anual y de ámbito nacional.</li>
                     </ul>
             </section>

@@ -14,7 +14,7 @@
       "incluir": [{ "lv3": "Almendras y avellanas" }], "grupo": "lv3", "fila": "lv4",
       "nota": "Solo almendras y avellanas: el resto de frutos secos no tiene rúbrica propia en DataComex." },
     { "tema": 5, "titulo": "Sector de granos y semillas de consumo humano", "encaje": "suma",
-      "incluir": [{ "lv1": "Cereales y productos de molinera" }, { "lv1": "Semillas, oleaginosas, mandíoca y forraje" }],
+      "incluir": [{ "lv1": "Cereales y productos de molinera" }, { "lv1": "Semillas, oleaginosas, mandioca y forraje" }],
       "grupo": "lv1", "fila": "lv3",
       "nota": "Suma cereales y productos de molinería con semillas, oleaginosas y forrajes, que incluyen usos no alimentarios." },
     { "tema": 6, "titulo": "Sector cárnico", "encaje": "directo",
