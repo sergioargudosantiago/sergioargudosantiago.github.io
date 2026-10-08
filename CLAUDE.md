@@ -78,7 +78,11 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
   `scripts/fichas/temas.json`. `npm run fichas:pdf` saca los PDF en
   `public/fichas/pdf/` (necesita Playwright). Regenerarlas cada vez que cambien los
   datos. Las «claves para el tema» se redactan con reglas fijas: leerlas antes de
-  publicar.
+  publicar. El mismo `npm run fichas` ejecuta `scripts/generar-fichas-balanza.js`,
+  que saca de `data/balanza_data.js` tres fichas de dos páginas: `bp-balanza.html`
+  (ej. 3, tema 2), `bp-turismo.html` (ej. 1, tema 23) y `bp-servicios.html`
+  (ej. 1, tema 24). Solo usan años completos. Tras actualizar la balanza:
+  `npm run fichas && npm run fichas:pdf`.
 - **Esquemas del ejercicio 1**: el agente `esquema-ejercicio-1` destila exclusivamente
   los temas del opositor; no investiga ni añade materia. Sin fuente, no escribe.
 - Servir en local: `python -m http.server 8000`.
@@ -153,6 +157,15 @@ Pendiente, por orden:
 
 ## Trabajo abierto (8 de octubre)
 
+**Para retomar en otro ordenador** (p. ej. el del trabajo, con la cuenta personal
+de GitHub): `git clone` del repositorio, `git checkout claude/epic-edison-9bfk3y`,
+`git config user.name/user.email` con los datos personales (no los del trabajo),
+`npm install`. Todo lo hecho hasta el 8 de octubre está en esa rama. Primer
+trabajo recomendado allí: ejecutar el pipeline de R (ver ⚠ más abajo) y luego
+`npm run fichas && npm run fichas:pdf`; después, modernizar los gráficos y el
+artículo que tiene pensado el autor. Para generar los PDF hace falta Playwright
+(`npm install --no-save playwright && npx playwright install chromium`).
+
 - **Fichas imprimibles del temario** (PDF A4 para opositores). Maquetas en
   <https://claude.ai/artifact/8Ro5mduFV3chbV2ncRfw6g> (privado): formato en tablas,
   en gráficos y mixto (KPI + gráfico + claves + hueco para notas) con el tema 6;
@@ -163,9 +176,10 @@ Pendiente, por orden:
   variación frente al año anterior (calculada sobre el valor), cuota UE y tres
   principales destinos u orígenes. Ojo: en los sectores con nivel 4 (cítricos…)
   el CSV repite en cada hijo los países, la cuota UE y la TVA del padre; para
-  esas filas solo el valor es propio. Hecho el generador (ver Flujos de trabajo). Pendiente: fichas de balanza de pagos
-  (temas 23 y 24 desde `data/balanza_data.js`) y enlazar `public/fichas/` desde
-  `temario.html`.
+  esas filas solo el valor es propio. **Hechas** (8 oct) las 20 fichas de comercio
+  y las 3 de balanza de pagos, con sus PDF e índice (`public/fichas/index.html`, con
+  `noindex`). Pendiente: que el autor revise las claves y enlazar `public/fichas/`
+  desde `temario.html` (lleva a cada tema su PDF).
 - **Visualizaciones nuevas** (móvil primero) en
   <https://claude.ai/artifact/2fRUYTb3vMTJCnbyV63fGN> (privado): mosaico de sectores,
   mariposa exportación/importación, crecimiento, cuota UE, fichas con evolución,

@@ -25,7 +25,7 @@ const DIR = path.resolve(__dirname, '..', 'public', 'fichas');
 const SALIDA = path.join(DIR, 'pdf');
 
 (async () => {
-    const fichas = fs.readdirSync(DIR).filter(f => /^tema-\d+\.html$/.test(f)).sort();
+    const fichas = fs.readdirSync(DIR).filter(f => /^(tema-\d+|bp-[a-z]+)\.html$/.test(f)).sort();
     if (!fichas.length) { console.error('No hay fichas: ejecuta antes npm run fichas'); process.exit(1); }
     fs.mkdirSync(SALIDA, { recursive: true });
     const navegador = await chromium.launch();

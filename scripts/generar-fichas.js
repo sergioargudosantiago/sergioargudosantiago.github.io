@@ -246,22 +246,27 @@ function claves(d) {
 
 // --- HTML -----------------------------------------------------------------------
 
-function grafico(E, I) {
-    const max = Math.max(...E, ...I);
-    const paso = (() => { const p = Math.pow(10, Math.floor(Math.log10(max / 2))); return [1, 2, 2.5, 5, 10].map(m => m * p).find(s => max / s <= 4); })();
-    const tope = Math.ceil(max / paso) * paso;
-    const x = (k) => 8 + k * 70, y = (v) => 150 - v / tope * 130;
-    const linea = (s) => s.map((v, k) => `${x(k)},${y(v).toFixed(1)}`).join(' ');
+/**
+ * Gráfico de líneas en SVG. series: [{ valores, color }], etiquetas: una por
+ * punto (se rotulan la primera y la última). Admite valores negativos.
+ */
+function grafico(series, etiquetas, aria) {
+    const todos = series.flatMap(s => s.valores);
+    const max = Math.max(0, ...todos), min = Math.min(0, ...todos), rango = max - min || 1;
+    const paso = (() => { const p = Math.pow(10, Math.floor(Math.log10(rango / 2))); return [1, 2, 2.5, 5, 10].map(m => m * p).find(s => rango / s <= 4); })();
+    const tope = Math.ceil(max / paso) * paso, suelo = Math.floor(min / paso) * paso;
+    const n = etiquetas.length;
+    const x = (k) => 8 + k * (280 / (n - 1)), y = (v) => 150 - (v - suelo) / (tope - suelo) * 130;
+    const linea = (v) => v.map((val, k) => `${x(k).toFixed(1)},${y(val).toFixed(1)}`).join(' ');
     const marcas = [];
-    for (let v = 0; v <= tope + 1e-9; v += paso) {
-        marcas.push(`<line x1="8" x2="288" y1="${y(v).toFixed(1)}" y2="${y(v).toFixed(1)}" stroke="${v === 0 ? '#1F2A1D' : '#E2E7DF'}" stroke-width="1"/>` +
+    for (let v = suelo; v <= tope + 1e-9; v += paso) {
+        marcas.push(`<line x1="8" x2="288" y1="${y(v).toFixed(1)}" y2="${y(v).toFixed(1)}" stroke="${Math.abs(v) < 1e-9 ? '#1F2A1D' : '#E2E7DF'}" stroke-width="1"/>` +
             `<text x="294" y="${(y(v) + 4).toFixed(1)}" class="eje">${num(v)}</text>`);
     }
-    return `<svg viewBox="0 0 350 172" class="grafico" role="img" aria-label="Exportación de ${num(E[0])} a ${num(E[4])} M€ e importación de ${num(I[0])} a ${num(I[4])} M€ entre 2021 y 2025">
+    return `<svg viewBox="0 0 350 172" class="grafico" role="img" aria-label="${esc(aria)}">
 ${marcas.join('\n')}
-<polyline points="${linea(I)}" fill="none" stroke="#EB6834" stroke-width="2.5" stroke-linejoin="round"/>
-<polyline points="${linea(E)}" fill="none" stroke="#2A78D6" stroke-width="2.5" stroke-linejoin="round"/>
-<text x="8" y="168" class="eje">2021</text><text x="270" y="168" class="eje">2025</text>
+${[...series].reverse().map(s => `<polyline points="${linea(s.valores)}" fill="none" stroke="${s.color}" stroke-width="2.5" stroke-linejoin="round"/>`).join('\n')}
+<text x="8" y="168" class="eje">${esc(etiquetas[0])}</text><text x="${(x(n - 1) - 28).toFixed(0)}" y="168" class="eje">${esc(etiquetas[n - 1])}</text>
 </svg>`;
 }
 
@@ -299,7 +304,7 @@ function paginaResumen(d, nTema) {
     <div class="kpi ue"><span>Hacia la UE</span><b>${d.ueTotal != null ? pct(d.ueTotal) : '—'}</b><span>de la exportación</span></div>
   </div>
   <div class="dos">
-    <div><h2>Evolución, M€</h2><div class="leyenda"><span><i class="l-exp"></i>Exportación</span><span><i class="l-imp"></i>Importación</span></div>${grafico(d.E, d.I)}</div>
+    <div><h2>Evolución, M€</h2><div class="leyenda"><span><i class="l-exp"></i>Exportación</span><span><i class="l-imp"></i>Importación</span></div>${grafico([{ valores: d.E, color: '#2A78D6' }, { valores: d.I, color: '#EB6834' }], ANIOS, `Exportación de ${num(d.E[0])} a ${num(d.E[4])} M€ e importación de ${num(d.I[0])} a ${num(d.I[4])} M€ entre 2021 y 2025`)}</div>
     <div>
       <h2>${tituloTabla}</h2>
       <table class="tabla">
@@ -356,8 +361,8 @@ function paginaDetalle(d, nTema, flujo) {
 </section>`;
 }
 
-function pie(pag, extra = '') {
-    return `<footer class="pie"><span>${extra ? extra + ' ' : ''}Fuente: DataComex (Ministerio de Economía, Comercio y Empresa), extracción ${EXTRACCION}. ${ULTIMO} provisional.</span><span class="url">sergioargudo.es · ${pag}</span></footer>`;
+function pie(pag, extra = '', fuente = `DataComex (Ministerio de Economía, Comercio y Empresa), extracción ${EXTRACCION}. ${ULTIMO} provisional.`) {
+    return `<footer class="pie"><span>${extra ? extra + ' ' : ''}Fuente: ${fuente}</span><span class="url">sergioargudo.es · ${pag}</span></footer>`;
 }
 
 const ESTILO = `
@@ -416,6 +421,10 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .detalle tr.grupo td:nth-child(2) { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0; color: #1F2A1D; }
 .detalle tr.grupo-fila td { background: #EEF3EB; }
 .detalle tr.grupo-fila td:first-child { font-family: Orbitron, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: .1em; color: #3B4533; }
+.detalle.bp td, .detalle.bp th { width: auto; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap; }
+.detalle.bp td:first-child, .detalle.bp th:first-child { text-align: left; font-family: 'Atkinson Hyperlegible', sans-serif; white-space: normal; }
+.detalle.bp th { font-family: 'Atkinson Hyperlegible', sans-serif; }
+.detalle.bp + h2 { margin-top: 6px; }
 .detalle .ue { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; white-space: nowrap; }
 .barra-ue { display: inline-block; width: 36px; height: 7px; background: #E2E7DF; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
 .barra-ue i { display: block; height: 100%; background: #2A5DB0; border-radius: 2px; }
@@ -471,13 +480,20 @@ function main() {
             const n = String(tema.tema).padStart(2, '0');
             return `<tr><td>${tema.tema}</td><td><a href="tema-${n}.html">${esc(tema.titulo)}</a></td><td>${num(e)}</td><td>${num(i)}</td><td>${tema.encaje}</td><td><a href="pdf/tema-${n}.pdf">PDF</a></td></tr>`;
         }).join('\n');
-        const indice = documento('Fichas de comercio exterior del temario',
+        const indice = documento('Fichas de comercio exterior y balanza de pagos del temario',
             `<section class="pagina" style="height:auto;min-height:297mm">
   <span class="marca">SAS · FICHAS DEL TEMARIO</span>
   <h1 style="font-family:Fraunces,Georgia,serif;font-size:30px">Fichas de comercio exterior · ejercicio 1, temas 1 a 20</h1>
   <p class="sub">Cifras de ${ULTIMO} en millones de euros. Fuente: DataComex, extracción ${EXTRACCION}.</p>
   <table class="tabla"><thead><tr><th>Tema</th><th>Sector</th><th>Exporta</th><th>Importa</th><th>Encaje</th><th>PDF</th></tr></thead><tbody>
 ${filas}
+  </tbody></table>
+  <h2 style="margin-top:28px">Balanza de pagos</h2>
+  <p class="sub">Fuente: Banco de España, Boletín Estadístico, capítulo 17.</p>
+  <table class="tabla"><thead><tr><th>Ejercicio</th><th>Tema</th><th>Ficha</th><th>PDF</th></tr></thead><tbody>
+<tr><td>3</td><td>2</td><td><a href="bp-balanza.html">La balanza de pagos de España</a></td><td><a href="pdf/bp-balanza.pdf">PDF</a></td></tr>
+<tr><td>1</td><td>23</td><td><a href="bp-turismo.html">Turismo</a></td><td><a href="pdf/bp-turismo.pdf">PDF</a></td></tr>
+<tr><td>1</td><td>24</td><td><a href="bp-servicios.html">Servicios no turísticos</a></td><td><a href="pdf/bp-servicios.pdf">PDF</a></td></tr>
   </tbody></table>
 </section>`);
         fs.writeFileSync(path.join(SALIDA, 'index.html'), indice, 'utf8');
@@ -486,4 +502,6 @@ ${filas}
     console.log(`${elegidos.length} ficha(s) en public/fichas/.`);
 }
 
-main();
+if (require.main === module) main();
+
+module.exports = { num, conSigno, pct, pctSigno, esc, grafico, pie, documento };
