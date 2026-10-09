@@ -47,9 +47,6 @@
     <!-- Tailwind CSS (compiled) -->
     <link rel="stylesheet" href="css/tailwind.css">
 
-    <!-- Chart.js -->
-    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-
     <!-- Datos Balanza de Pagos (regenerables con: node scripts/update_balanza_data.js) -->
     <script defer src="data/balanza_data.js"></script>
     <script defer src="js/graficos.js"></script>
@@ -150,7 +147,6 @@
 
         /* Bloque de análisis */
         .ce-grafico { display: grid; gap: 0.75rem; }
-        .ce-lienzo { position: relative; height: 380px; }
         .ce-kpi { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 0.5rem; text-align: left; }
         .ce-cifra { font-family: var(--f-cifras); font-weight: 600; font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem); line-height: 1.1; letter-spacing: -0.01em; color: var(--c-tinta); font-variant-numeric: tabular-nums; }
         /* Saldos: superávit con el color de exportaciones, déficit con el de importaciones */
@@ -192,7 +188,6 @@
         .ce-pila { display: grid; gap: 1.25rem; }
         .ce-dos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(26rem, 100%), 1fr)); gap: 1.25rem; }
         .ce-dos > * { min-width: 0; }
-        .ce-lienzo-bp { position: relative; height: 340px; }
 
         #bp171Table { width: 100%; border-collapse: collapse; font-size: 0.93rem; font-variant-numeric: tabular-nums; min-width: 560px; }
         #bp171Table th { text-align: right; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--c-tenue); padding: 0.6rem 0.8rem; border-bottom: 2px solid var(--c-tinta); }
@@ -203,8 +198,6 @@
         @media (max-width: 640px) {
             .main-tab-toggle, .flow-toggle, .bp-sub-tabs { display: flex; width: 100%; }
             .main-tab-btn, .flow-toggle-btn, .bp-sub-tab { flex: 1 1 auto; padding-inline: 0.6rem; }
-            .ce-lienzo { height: 300px; }
-            .ce-lienzo-bp { height: 280px; }
         }
         @media (prefers-reduced-motion: reduce) {
             .skeleton-loader::after { animation: none; }
@@ -366,9 +359,12 @@
 
                 <div id="bp171Panel" class="ce-pila">
                     <div id="bp171KPIs" class="bp-kpi-grid"></div>
-                    <div class="bp-chart-card">
-                        <div class="bp-chart-title">Evolución mensual de los saldos, millones de euros</div>
-                        <div class="ce-lienzo-bp"><canvas id="bp171Chart"></canvas></div>
+                    <div class="bp-chart-card ce-grafico">
+                        <div class="bp-chart-title">Saldo acumulado de los últimos 12 meses, millones de euros</div>
+                        <p id="b1Titulo" class="ce-titular"></p>
+                        <div class="graficos-leyenda"><span><i class="graficos-muestra" style="background:var(--p-balanza-bienes-servicios)"></i>Bienes y servicios</span><span><i class="graficos-muestra" style="background:var(--p-balanza-rentas)"></i>Rentas primaria y secundaria</span><span><i class="graficos-muestra" style="background:var(--c-tinta)"></i>Cuenta corriente</span></div>
+                        <div id="bp171Chart" class="graficos-lienzo" data-h="280"></div>
+                        <p class="c-nota">Fuente: Banco de España, Boletín Estadístico, capítulo 17. La suma de 12 meses quita la estacionalidad.</p>
                     </div>
                     <div class="bp-chart-card">
                         <div class="bp-chart-title">Resumen anual, millones de euros</div>
@@ -378,42 +374,37 @@
 
                 <div id="bp174Panel" class="hidden ce-pila">
                     <div id="bp174KPIs" class="bp-kpi-grid"></div>
-                    <div class="ce-dos">
-                        <div class="bp-chart-card">
-                            <div class="bp-chart-title">Bienes y servicios, saldos anuales (M€)</div>
-                            <div class="ce-lienzo-bp"><canvas id="bp174BarChart"></canvas></div>
-                        </div>
-                        <div class="bp-chart-card">
-                            <div class="bp-chart-title">Ingresos por turismo, principales países (M€)</div>
-                            <div class="ce-lienzo-bp"><canvas id="bp174TourismChart"></canvas></div>
-                        </div>
+                    <div class="bp-chart-card ce-grafico">
+                        <div class="bp-chart-title">Saldos anuales de bienes y servicios, millones de euros</div>
+                        <p id="b2Titulo" class="ce-titular"></p>
+                        <div class="graficos-leyenda"><span><i class="graficos-muestra" style="background:var(--p-balanza-bienes)"></i>Bienes</span><span><i class="graficos-muestra" style="background:var(--p-balanza-turismo)"></i>Turismo</span><span><i class="graficos-muestra" style="background:var(--p-balanza-no-turisticos)"></i>Servicios no turísticos</span><span><i class="graficos-muestra" style="background:var(--c-tinta)"></i>Bienes y servicios</span></div>
+                        <div id="bp174BarChart" class="graficos-lienzo" data-h="280"></div>
+                        <p class="c-nota">Fuente: Banco de España, Boletín Estadístico, capítulo 17. Años completos.</p>
                     </div>
                     <div class="ce-dos">
-                        <div class="bp-chart-card">
-                            <div class="bp-cabecera" style="margin-bottom:0.75rem">
-                                <div class="bp-chart-title" id="bp174DonutTitle" style="margin-bottom:0">Servicios no turísticos, ingresos por tipo</div>
-                                <div class="bp-sub-tabs">
-                                    <button class="bp-sub-tab active" data-donut-mode="ingresos" onclick="switchDonutMode('ingresos')">Ingresos</button>
-                                    <button class="bp-sub-tab" data-donut-mode="pagos" onclick="switchDonutMode('pagos')">Pagos</button>
-                                </div>
-                            </div>
-                            <div class="ce-lienzo-bp"><canvas id="bp174DonutChart"></canvas></div>
-                            <p class="c-nota" style="margin-top:0.6rem">El anillo exterior desglosa «Otros servicios empresariales» en I+D, consultoría y servicios técnicos y comerciales (subcategorías no sumadas al total).</p>
+                        <div class="bp-chart-card ce-grafico">
+                            <div class="bp-chart-title">Ingresos por turismo por país y variación anual, millones de euros</div>
+                            <p id="b3Titulo" class="ce-titular"></p>
+                            <div id="bp174TourismChart" class="graficos-lienzo"></div>
+                            <p class="c-nota">Fuente: Banco de España, Boletín Estadístico, capítulo 17. «Resto» es el total menos los países que publica el BdE.</p>
                         </div>
-                        <div class="bp-chart-card">
-                            <div class="bp-chart-title">Ingresos y pagos por servicios, anual (M€)</div>
-                            <div class="ce-lienzo-bp"><canvas id="bp174IngPagChart"></canvas></div>
+                        <div class="bp-chart-card ce-grafico">
+                            <div class="bp-chart-title">Servicios no turísticos por tipo, millones de euros</div>
+                            <p id="b4Titulo" class="ce-titular"></p>
+                            <div class="graficos-leyenda"><span><i class="graficos-muestra" style="background:var(--p-flujos-exportaciones)"></i>Ingresos</span><span><i class="graficos-muestra" style="background:var(--p-flujos-importaciones)"></i>Pagos</span></div>
+                            <div id="bp174DonutChart" class="graficos-lienzo"></div>
+                            <p class="c-nota">Fuente: Banco de España, Boletín Estadístico, capítulo 17. Las filas sangradas desglosan «Otros servicios empresariales».</p>
                         </div>
                     </div>
-                    <div class="bp-chart-card">
-                        <div class="bp-cabecera" style="margin-bottom:0.75rem">
-                            <div class="bp-chart-title" style="margin-bottom:0">Servicios turísticos y no turísticos (M€)</div>
-                            <div class="bp-sub-tabs">
-                                <button class="bp-sub-tab active" data-toursplit-mode="ingresos" onclick="switchTourSplitMode('ingresos')">Ingresos</button>
-                                <button class="bp-sub-tab" data-toursplit-mode="pagos" onclick="switchTourSplitMode('pagos')">Pagos</button>
-                            </div>
+                    <div class="bp-chart-card ce-grafico">
+                        <div class="bp-chart-title">Ingresos y pagos por servicios, millones de euros</div>
+                        <p id="b5Titulo" class="ce-titular"></p>
+                        <div class="graficos-leyenda"><span><i class="graficos-muestra" style="background:var(--p-flujos-exportaciones)"></i>Ingresos</span><span><i class="graficos-muestra" style="background:var(--p-flujos-importaciones)"></i>Pagos</span><span>Banda: saldo</span></div>
+                        <div class="ce-dos">
+                            <div><p class="ce-etiqueta">Turismo</p><div id="bp174B5a" class="graficos-lienzo" data-h="220"></div></div>
+                            <div><p class="ce-etiqueta">Servicios no turísticos</p><div id="bp174B5b" class="graficos-lienzo" data-h="220"></div></div>
                         </div>
-                        <div class="ce-lienzo-bp"><canvas id="bp174TourSplitChart"></canvas></div>
+                        <p class="c-nota">Fuente: Banco de España, Boletín Estadístico, capítulo 17. Años completos. Misma escala en los dos paneles.</p>
                     </div>
                 </div>
             </div>
@@ -488,20 +479,7 @@
     <!-- STANDALONE VERSION WITH EMBEDDED DATA -->
     <script>
 
-        // Colores de los gráficos: salen de las variables --g-* y --c-* de
-        // css/sitio.css, así que siguen al modo oscuro sin tocar este código.
-        // colorGrafico('--g-1', 0.5) devuelve rgba() para poder cambiar el alfa.
-        function colorGrafico(nombre, alfa) {
-            if (window.Chart && !Chart.__fuenteSitio) {
-                Chart.defaults.font.family = '"Atkinson Hyperlegible", system-ui, sans-serif';
-                Chart.__fuenteSitio = true;
-            }
-            const v = getComputedStyle(document.documentElement).getPropertyValue(nombre).trim();
-            if (alfa == null || !/^#[0-9a-f]{6}$/i.test(v)) return v;
-            const n = parseInt(v.slice(1), 16);
-            return `rgba(${n >> 16},${(n >> 8) & 255},${n & 255},${alfa})`;
-        }
-        function serieGrafico(i, alfa) { return colorGrafico('--g-' + i, alfa == null ? 1 : alfa); }
+        // Los gráficos los dibuja js/graficos.js con los colores de data/paleta.json.
         // ========== EMBEDDED CSV DATA ==========
 
 
@@ -529,7 +507,6 @@
             lv3: null,
             lv4: null
         };
-        let chartInstance = null;
         let lastChartArgs = null;
 
         // ========== COUNTRY FLAGS ==========
@@ -1200,7 +1177,7 @@
         function _updateDashboardMetrics(dataRows, title, level) {
             if (!dataRows || dataRows.length === 0) return;
 
-            // Ensure analytics section visible before rendering chart (Chart.js needs visible canvas)
+            // Ensure analytics section visible before rendering chart (los gráficos necesitan un contenedor visible para medir su ancho)
             document.getElementById('analyticsSection').classList.remove('hidden');
 
             // 1. Identify Latest Year & Aggregation
@@ -1784,39 +1761,31 @@
             return new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0, useGrouping: true }).format(Math.round(n));
         }
 
-        // ========== BALANZA CHART INSTANCES ==========
-        const bpCharts = {};
-
         // ========== INIT BALANZA ==========
         let bpInitialized = false;
+        function renderBalanza() {
+            render171KPIs();
+            renderB1();
+            render171Table();
+            render174KPIs();
+            renderB2();
+            renderB3();
+            renderB4();
+            renderB5();
+            updateBPBadge();
+        }
         function initBalanzaDeP() {
             if (bpInitialized) return;
             bpInitialized = true;
-            render171KPIs();
-            render171Chart();
-            render171Table();
-            render174KPIs();
-            render174BarChart();
-            render174TourismChart();
-            render174DonutChart();
-            render174TourSplitChart();
-            render174IngPagChart();
-            updateBPBadge();
+            renderBalanza();
         }
 
-        // Re-render every balanza chart (called after a theme change)
+        // Al cambiar de tema: las tarjetas se vuelven a pintar, los gráficos los redibuja Graficos.redibujarTodo()
         function rerenderBalanzaCharts() {
             if (!bpInitialized) return;
             render171KPIs();
-            render171Chart();
             render171Table();
             render174KPIs();
-            render174BarChart();
-            render174TourismChart();
-            render174DonutChart();
-            render174TourSplitChart();
-            render174IngPagChart();
-            updateBPBadge();
         }
 
         // ========== SERIE 17.1 KPIs ==========
@@ -1846,63 +1815,6 @@
             }).join('');
         }
 
-        // ========== SERIE 17.1 CHART ==========
-        function render171Chart() {
-            const data = BALANZA_171_RAW;
-            // Last 60 months
-            const recent = data.data.slice(-60);
-            const labels = recent.map(d => {
-                const m = String(d.month).padStart(2, '0');
-                return `${m}/${d.year}`;
-            });
-            const colors = [
-                serieGrafico(1),     // Cuenta Corriente
-                serieGrafico(2),    // Bienes y Servicios
-                serieGrafico(3, 0.7),   // Rentas
-            ];
-            const seriesNames = ['Cuenta Corriente', 'Bienes y Servicios', 'Rentas Primaria y Secundaria'];
-            const datasets = seriesNames.map((name, i) => ({
-                label: name,
-                data: recent.map(d => d.values[i]),
-                borderColor: colors[i],
-                backgroundColor: colors[i].replace(',1)', ',0.08)'),
-                borderWidth: 2,
-                pointRadius: 0,
-                pointHoverRadius: 4,
-                tension: 0.3,
-                fill: i === 0
-            }));
-
-            const ctx = document.getElementById('bp171Chart').getContext('2d');
-            if (bpCharts.bp171) bpCharts.bp171.destroy();
-            const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = colorGrafico('--c-tenue');
-            const bpGridColor = colorGrafico('--g-rejilla');
-            bpCharts.bp171 = new Chart(ctx, {
-                type: 'line',
-                data: { labels, datasets },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    interaction: { mode: 'index', intersect: false },
-                    plugins: {
-                        legend: { position: 'top', labels: { usePointStyle: true, pointStyle: 'circle', font: { size: 11 }, color: bpTickColor } },
-                        tooltip: {
-                            callbacks: {
-                                label: ctx => `${ctx.dataset.label}: ${bpFormatNum(ctx.raw)} M€`
-                            }
-                        }
-                    },
-                    scales: {
-                        x: { grid: { display: false }, ticks: { font: { size: 9 }, maxTicksLimit: 12, color: bpTickColor } },
-                        y: {
-                            grid: { color: bpGridColor },
-                            ticks: { callback: v => bpFormatNum(v), font: { size: 10 }, color: bpTickColor }
-                        }
-                    }
-                }
-            });
-        }
 
         // ========== SERIE 17.1 ANNUAL TABLE ==========
         function render171Table() {
@@ -1980,418 +1892,104 @@
             }).join('');
         }
 
-        // ========== SERIE 17.4 BAR CHART (ANNUAL) ==========
-        function render174BarChart() {
-            const data = BALANZA_174_RAW;
-            const byYear = aggregate174ByYear(data.data, 12);
-            const years = Object.keys(byYear).sort().slice(-6);
-            const labels = years.map(yr => {
-                const y = byYear[yr];
-                return y.quarters < 4 ? `${yr}*` : yr;
-            });
-            const ctx = document.getElementById('bp174BarChart').getContext('2d');
-            if (bpCharts.bp174bar) bpCharts.bp174bar.destroy();
-            const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = colorGrafico('--c-tenue');
-            const bpGridColor = colorGrafico('--g-rejilla');
-            bpCharts.bp174bar = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels,
-                    datasets: [
-                        {
-                            label: 'Bienes (Saldo)',
-                            data: years.map(yr => byYear[yr].sums[0]),
-                            backgroundColor: serieGrafico(1, 0.6),
-                            borderColor: serieGrafico(1),
-                            borderWidth: 1,
-                            borderRadius: 4
-                        },
-                        {
-                            label: 'Servicios (Saldo)',
-                            data: years.map(yr => byYear[yr].sums[3]),
-                            backgroundColor: serieGrafico(2, 0.6),
-                            borderColor: serieGrafico(2),
-                            borderWidth: 1,
-                            borderRadius: 4
-                        },
-                        {
-                            label: 'Turismo (Saldo)',
-                            data: years.map(yr => byYear[yr].sums[4]),
-                            backgroundColor: serieGrafico(3, 0.5),
-                            borderColor: serieGrafico(3),
-                            borderWidth: 1,
-                            borderRadius: 4
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: { position: 'top', labels: { usePointStyle: true, font: { size: 10 }, color: bpTickColor } },
-                        tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${bpFormatNum(ctx.raw)} M€` } }
-                    },
-                    scales: {
-                        x: { grid: { display: false }, ticks: { font: { size: 9 }, color: bpTickColor } },
-                        y: { grid: { color: bpGridColor }, ticks: { callback: v => bpFormatNum(v), font: { size: 10 }, color: bpTickColor } }
-                    }
-                }
+        // ========== GRÁFICOS DE BALANZA (js/graficos.js) ==========
+        // Columnas por etiqueta, no por índice: si el BdE reordena las series, nada se mueve.
+        const col = (g, etiqueta) => g.labels.indexOf(etiqueta);
+        const BP_MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+        function aniosCompletos(g, n) {
+            const c = {};
+            g.data.forEach(r => { c[r.year] = (c[r.year] || 0) + 1; });
+            return Object.keys(c).filter(a => c[a] === n).map(Number).sort((a, b) => a - b);
+        }
+        function sumaAnio(g, anio, i, campo = 'values') {
+            return g.data.filter(r => r.year === anio).reduce((s, r) => s + (r[campo][i] ?? 0), 0);
+        }
+
+        // B1: suma móvil de 12 meses de la cuenta corriente y sus componentes
+        function renderB1() {
+            const g = BALANZA_171_RAW, d = g.data, k = i => d.map(r => r.values[i]);
+            const cc = Graficos.sumaMovil(k(col(g, 'Cuenta Corriente')), 12);
+            const bys = Graficos.sumaMovil(k(col(g, 'Bienes y Servicios')), 12);
+            const ren = Graficos.sumaMovil(k(col(g, 'Rentas Primaria y Secundaria')), 12);
+            const meses = d.slice(11);
+            const ini = Math.max(0, meses.findIndex(r => r.year >= 2019));
+            const u = meses[meses.length - 1], ccu = cc[cc.length - 1];
+            const titular = `La cuenta corriente suma ${Graficos.formato(Math.abs(ccu))} M€ de ${ccu >= 0 ? 'superávit' : 'déficit'} en los 12 meses hasta ${BP_MESES[u.month - 1]} de ${u.year}`;
+            document.getElementById('b1Titulo').textContent = titular;
+            Graficos.apiladas(document.getElementById('bp171Chart'), {
+                x: meses.slice(ini).map(r => `${BP_MESES[r.month - 1]} ${r.year}`),
+                etiquetas: meses.slice(ini).map(r => r.month === 1 ? String(r.year) : ''),
+                series: [{ nombre: 'Bienes y servicios', color: '--p-balanza-bienes-servicios', valores: bys.slice(ini) },
+                         { nombre: 'Rentas', color: '--p-balanza-rentas', valores: ren.slice(ini) }],
+                total: { nombre: 'Cuenta corriente', valores: cc.slice(ini) }, titulo: titular
             });
         }
 
-        // ========== TOURISM CHART ==========
-        function render174TourismChart() {
-            const data = BALANZA_174C_RAW;
-            const recent = data.data.slice(-12);
-            const labels = recent.map(d => `${d.quarter}T ${d.year}`);
-            // Countries: idx 4=Alemania, 7=Francia, 13=Reino Unido, 8=Italia, 6=P.Bajos, 18=EEUU
-            const countries = [
-                { name: 'Alemania', idx: 4, color: serieGrafico(1) },
-                { name: 'Francia', idx: 7, color: serieGrafico(2) },
-                { name: 'Reino Unido', idx: 13, color: serieGrafico(3) },
-                { name: 'Italia', idx: 8, color: serieGrafico(4) },
-                { name: 'Países Bajos', idx: 6, color: serieGrafico(5) },
-                { name: 'EEUU', idx: 18, color: serieGrafico(6) }
-            ];
-
-            const ctx = document.getElementById('bp174TourismChart').getContext('2d');
-            if (bpCharts.bp174tour) bpCharts.bp174tour.destroy();
-            const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = colorGrafico('--c-tenue');
-            const bpGridColor = colorGrafico('--g-rejilla');
-            bpCharts.bp174tour = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels,
-                    datasets: countries.map(c => ({
-                        label: c.name,
-                        data: recent.map(d => d.values[c.idx]),
-                        borderColor: c.color,
-                        backgroundColor: c.color.replace(',1)', ',0.08)'),
-                        borderWidth: 2,
-                        pointRadius: 2,
-                        pointHoverRadius: 5,
-                        tension: 0.3
-                    }))
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: { position: 'top', labels: { usePointStyle: true, font: { size: 10 }, color: bpTickColor } },
-                        tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${bpFormatNum(ctx.raw)} M€` } }
-                    },
-                    scales: {
-                        x: { grid: { display: false }, ticks: { font: { size: 9 }, color: bpTickColor } },
-                        y: { grid: { color: bpGridColor }, ticks: { callback: v => bpFormatNum(v), font: { size: 10 }, color: bpTickColor } }
-                    }
-                }
+        // B2: saldos anuales de bienes, turismo y servicios no turísticos
+        function renderB2() {
+            const g = BALANZA_174_RAW, anios = aniosCompletos(g, 4), s = e => anios.map(a => sumaAnio(g, a, col(g, e)));
+            const bienes = s('Bienes Saldo'), tur = s('Turismo Saldo'), notur = s('Serv. No Turísticos Saldo');
+            const total = anios.map((_, i) => bienes[i] + tur[i] + notur[i]), n = anios.length - 1;
+            const titular = tur[n] > -bienes[n]
+                ? `En ${anios[n]} el turismo (${Graficos.formato(tur[n])} M€) más que compensa el déficit de bienes (${Graficos.formato(-bienes[n])} M€)`
+                : `En ${anios[n]} el turismo (${Graficos.formato(tur[n])} M€) no llega a compensar el saldo de bienes (${Graficos.formato(bienes[n])} M€)`;
+            document.getElementById('b2Titulo').textContent = titular;
+            Graficos.apiladas(document.getElementById('bp174BarChart'), {
+                x: anios.map(String), etiquetas: anios.map((a, i) => (anios.length > 8 && i % 2 && i !== n) ? '' : String(a)),
+                series: [{ nombre: 'Bienes', color: '--p-balanza-bienes', valores: bienes },
+                         { nombre: 'Turismo', color: '--p-balanza-turismo', valores: tur },
+                         { nombre: 'Servicios no turísticos', color: '--p-balanza-no-turisticos', valores: notur }],
+                total: { nombre: 'Bienes y servicios', valores: total }, titulo: titular
             });
         }
 
-        // ========== SERVICES DONUT CHART (ANNUAL) ==========
-        let currentDonutMode = 'ingresos';
-
-        function switchDonutMode(mode) {
-            currentDonutMode = mode;
-            document.querySelectorAll('[data-donut-mode]').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.donutMode === mode);
-            });
-            render174DonutChart(mode);
+        // B3: ranking de ingresos por turismo por país
+        function renderB3() {
+            const g = BALANZA_174C_RAW, anios = aniosCompletos(g, 4), n = anios.length - 1;
+            const PAISES = ['Alemania', 'Bélgica', 'Países Bajos', 'Francia', 'Italia', 'Irlanda', 'Portugal', 'Reino Unido', 'Rusia', 'Suiza', 'EEUU'];
+            // un trimestre nulo deja el año del país sin dato
+            const val = (a, p) => { const v = g.data.filter(r => r.year === a).map(r => r.values[col(g, p)]); return v.some(x => x == null) ? null : v.reduce((s, x) => s + x, 0); };
+            const resto = a => { const ps = PAISES.map(p => val(a, p)); return ps.some(x => x == null) ? null : val(a, 'Total') - ps.reduce((s, x) => s + x, 0); };
+            const filas = PAISES.map(p => ({ nombre: p === 'EEUU' ? 'EE. UU.' : p, valor: val(anios[n], p), variacion: Graficos.variacionPct(val(anios[n - 1], p), val(anios[n], p)), serie: anios.map(a => [String(a), val(a, p)]) }))
+                .filter(f => f.valor != null).sort((x, y) => y.valor - x.valor);
+            const r = resto(anios[n]);
+            if (r != null) filas.push({ nombre: 'Resto', resto: true, valor: r, variacion: Graficos.variacionPct(resto(anios[n - 1]), r), serie: anios.map(a => [String(a), resto(a)]) });
+            const titular = filas.length ? `${filas[0].nombre} es el primer mercado del turismo: ${Graficos.formato(filas[0].valor)} M€ de ingresos en ${anios[n]}` : '';
+            document.getElementById('b3Titulo').textContent = titular;
+            Graficos.ranking(document.getElementById('bp174TourismChart'), { filas, color: '--p-balanza-turismo', titulo: titular });
         }
 
-        function render174DonutChart(mode) {
-            mode = mode || currentDonutMode;
-            const data = BALANZA_174A_RAW;
-            // Aggregate latest year's data by summing quarters
-            const byYear = {};
-            data.data.forEach(d => {
-                if (!byYear[d.year]) byYear[d.year] = { quarters: 0, ingresos: new Array(13).fill(0), pagos: new Array(13).fill(0) };
-                const y = byYear[d.year];
-                y.quarters++;
-                d.ingresos.forEach((v, i) => { if (v != null && i < 13) y.ingresos[i] += v; });
-                d.pagos.forEach((v, i) => { if (v != null && i < 13) y.pagos[i] += v; });
-            });
-            const years = Object.keys(byYear).sort();
-            // Solo años completos: con trimestres sueltos el reparto % queda distorsionado
-            const fullYears = years.filter(y => byYear[y].quarters === 4);
-            const latestYear = fullYears.length ? fullYears[fullYears.length - 1] : years[years.length - 1];
-            const ly = byYear[latestYear];
-            const isPartial = ly.quarters < 4;
-            const vals = mode === 'pagos' ? ly.pagos : ly.ingresos;
-            const modeLabel = mode === 'pagos' ? 'Pagos' : 'Ingresos';
-
-            // "Otros Serv. Empresariales" (8) ya engloba I+D (9), Consultoría (10) y
-            // Serv. Técnicos y Comerciales (11): solo van al anillo exterior de desglose,
-            // nunca sumados junto al agregado (duplicarían el total).
-            const MAIN_IDX = [1, 2, 3, 4, 5, 6, 7, 8, 12];
-            const SUB_IDX = [9, 10, 11];
-            const EMP_IDX = 8;
-            const TRANSPARENT = 'rgba(0,0,0,0)';
-            // Ocho categorías con la paleta en orden fijo; la novena va en gris.
-            // «Otros serv. empresariales» es la octava: su desglose del anillo
-            // exterior usa el mismo tono con menos opacidad.
-            const mainColors = [1, 2, 3, 4, 5, 6, 7, 8].map(i => serieGrafico(i)).concat(colorGrafico('--c-tenue'));
-            const subColors = [serieGrafico(8, 0.8), serieGrafico(8, 0.55), serieGrafico(8, 0.35)];
-
-            const innerLabels = MAIN_IDX.map(i => data.labels[i]);
-            const innerValues = MAIN_IDX.map(i => vals[i]);
-
-            // Outer ring aligned with the inner one: segments of non-business categories
-            // are kept (transparent) so the 3 sub-types line up over their parent slice.
-            const outerLabels = [], outerValues = [], outerColors = [], outerBorderW = [];
-            MAIN_IDX.forEach(i => {
-                if (i === EMP_IDX) {
-                    SUB_IDX.forEach((s, k) => {
-                        outerLabels.push('Emp.: ' + data.labels[s]);
-                        outerValues.push(vals[s]);
-                        outerColors.push(subColors[k]);
-                        outerBorderW.push(2);
-                    });
-                } else {
-                    outerLabels.push(data.labels[i]);
-                    outerValues.push(vals[i]);
-                    outerColors.push(TRANSPARENT);
-                    outerBorderW.push(0);
-                }
-            });
-
-            const ctx = document.getElementById('bp174DonutChart').getContext('2d');
-            if (bpCharts.bp174donut) bpCharts.bp174donut.destroy();
-            const isMobile = window.innerWidth < 640;
-            const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = colorGrafico('--c-tenue');
-            const ringBorder = colorGrafico('--c-superficie');
-            bpCharts.bp174donut = new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: innerLabels,
-                    datasets: [
-                        {
-                            segLabels: outerLabels,
-                            data: outerValues,
-                            backgroundColor: outerColors,
-                            borderWidth: outerBorderW,
-                            borderColor: ringBorder,
-                            weight: 0.7
-                        },
-                        {
-                            segLabels: innerLabels,
-                            data: innerValues,
-                            backgroundColor: mainColors,
-                            borderWidth: 2,
-                            borderColor: ringBorder,
-                            weight: 1.5
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    cutout: '45%',
-                    plugins: {
-                        legend: {
-                            position: isMobile ? 'bottom' : 'right',
-                            onClick: () => { },
-                            labels: {
-                                font: { size: isMobile ? 8 : 9 }, usePointStyle: true, pointStyle: 'circle',
-                                padding: isMobile ? 4 : 8, color: bpTickColor,
-                                generateLabels: chart => {
-                                    const items = [];
-                                    // Inner (main categories) first, then the outer breakdown
-                                    [1, 0].forEach(di => {
-                                        const ds = chart.data.datasets[di];
-                                        ds.segLabels.forEach((lab, i) => {
-                                            const col = ds.backgroundColor[i];
-                                            if (col === TRANSPARENT) return;
-                                            items.push({
-                                                text: lab, fillStyle: col, strokeStyle: col,
-                                                fontColor: bpTickColor, pointStyle: 'circle',
-                                                hidden: false, datasetIndex: di, index: i
-                                            });
-                                        });
-                                    });
-                                    return items;
-                                }
-                            }
-                        },
-                        tooltip: {
-                            filter: item => item.dataset.backgroundColor[item.dataIndex] !== TRANSPARENT,
-                            callbacks: {
-                                label: ctx => {
-                                    const total = ctx.dataset.data.reduce((a, b) => a + (b || 0), 0);
-                                    const pct = ((ctx.raw / total) * 100).toFixed(1);
-                                    return `${ctx.dataset.segLabels[ctx.dataIndex]}: ${bpFormatNum(ctx.raw)} M€ (${pct}%)`;
-                                }
-                            }
-                        }
-                    }
-                }
-            });
-            // Update chart title with year and mode info
-            const titleEl = document.getElementById('bp174DonutTitle');
-            const yearText = isPartial ? `${latestYear} hasta ${ly.quarters}T` : latestYear;
-            if (titleEl) titleEl.textContent = `Servicios No Turísticos — ${modeLabel} por Tipo (${yearText})`;
+        // B4: ingresos y pagos por tipo de servicio no turístico
+        function renderB4() {
+            const g = BALANZA_174A_RAW, anios = aniosCompletos(g, 4), a = anios[anios.length - 1], L = g.labels;
+            const SUB = ['I+D', 'Consultoría', 'Serv. Técnicos y Comerciales'];
+            const NOMBRES = { 'Transformación y Reparaciones': 'Transformación y reparaciones', 'Seguros y Pensiones': 'Seguros y pensiones', 'Servicios Financieros': 'Servicios financieros', 'Propiedad Intelectual': 'Propiedad intelectual', 'Telecomunicaciones e Informática': 'Telecomunicaciones e informática', 'Otros Serv. Empresariales': 'Otros servicios empresariales', 'Serv. Técnicos y Comerciales': 'Servicios técnicos y comerciales', 'Personales y Culturales': 'Personales y culturales' };
+            const ti = sumaAnio(g, a, 0, 'ingresos'), tp = sumaAnio(g, a, 0, 'pagos');
+            const fila = (k, sangria) => {
+                const i = L.indexOf(k), x = sumaAnio(g, a, i, 'ingresos'), y = sumaAnio(g, a, i, 'pagos');
+                return { nombre: NOMBRES[k] || k, a: x, b: y, cuotaA: x / ti * 100, cuotaB: y / tp * 100, sangria };
+            };
+            const principales = L.filter(k => k !== 'Total No Turísticos' && !SUB.includes(k)).map(k => fila(k, false)).sort((x, y) => y.a - x.a);
+            const filas = principales.flatMap(f => f.nombre === 'Otros servicios empresariales' ? [f, ...SUB.map(s => fila(s, true))] : [f]);
+            const sup = principales.filter(f => f.a > f.b).length;
+            const titular = `Los ingresos superan a los pagos en ${sup} de los ${principales.length} tipos de servicio no turístico en ${a}`;
+            document.getElementById('b4Titulo').textContent = titular;
+            Graficos.mancuernas(document.getElementById('bp174DonutChart'), { filas, nombres: ['Ingresos', 'Pagos'], titulo: titular });
         }
 
-        // ========== TOURISM VS NON-TOURISM INCOME CHART (ANNUAL) ==========
-        let currentTourSplitMode = 'ingresos';
-
-        function switchTourSplitMode(mode) {
-            currentTourSplitMode = mode;
-            document.querySelectorAll('[data-toursplit-mode]').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.toursplitMode === mode);
-            });
-            render174TourSplitChart(mode);
+        // B5: turismo frente al resto de servicios, misma escala
+        function renderB5() {
+            const g = BALANZA_174_RAW, anios = aniosCompletos(g, 4), s = e => anios.map(a => sumaAnio(g, a, col(g, e))), n = anios.length - 1;
+            const ti = s('Turismo Ingresos'), tp = s('Turismo Pagos'), ni = s('Serv. No Turísticos Ingresos'), np = s('Serv. No Turísticos Pagos');
+            const titular = ni[n] > ti[n]
+                ? `Los ingresos por servicios no turísticos (${Graficos.formato(ni[n])} M€) ya superan a los del turismo (${Graficos.formato(ti[n])} M€)`
+                : `El turismo sigue aportando más ingresos (${Graficos.formato(ti[n])} M€) que el resto de servicios (${Graficos.formato(ni[n])} M€)`;
+            document.getElementById('b5Titulo').textContent = titular;
+            const base = { x: anios.map(a => "'" + String(a).slice(2)), nombres: ['Ingresos', 'Pagos'], colores: ['--p-flujos-exportaciones', '--p-flujos-importaciones'], titulo: titular };
+            Graficos.panelesGemelos([document.getElementById('bp174B5a'), document.getElementById('bp174B5b')],
+                [Object.assign({}, base, { a: ti, b: tp }), Object.assign({}, base, { a: ni, b: np })]);
         }
 
-        function render174TourSplitChart(mode) {
-            mode = mode || currentTourSplitMode;
-            const data = BALANZA_174_RAW;
-            const byYear = aggregate174ByYear(data.data, 12);
-            const years = Object.keys(byYear).sort().slice(-10);
-            const labels = years.map(yr => byYear[yr].quarters < 4 ? `${yr}*` : yr);
-            // BALANZA_174_RAW: 7=Turismo Ingresos, 8=No Turísticos Ingresos, 10=Turismo Pagos, 11=No Turísticos Pagos
-            const tourIdx = mode === 'pagos' ? 10 : 7;
-            const nonTourIdx = mode === 'pagos' ? 11 : 8;
-            const tourism = years.map(yr => byYear[yr].sums[tourIdx]);
-            const nonTourism = years.map(yr => byYear[yr].sums[nonTourIdx]);
-            const pctTourism = years.map((yr, i) => {
-                const total = tourism[i] + nonTourism[i];
-                return total ? +((tourism[i] / total) * 100).toFixed(1) : null;
-            });
-
-            const ctx = document.getElementById('bp174TourSplitChart').getContext('2d');
-            if (bpCharts.bp174toursplit) bpCharts.bp174toursplit.destroy();
-            const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = colorGrafico('--c-tenue');
-            const bpGridColor = colorGrafico('--g-rejilla');
-            bpCharts.bp174toursplit = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels,
-                    datasets: [
-                        {
-                            label: 'Turismo',
-                            data: tourism,
-                            backgroundColor: serieGrafico(1, 0.6),
-                            borderColor: serieGrafico(1),
-                            borderWidth: 1,
-                            borderRadius: 4,
-                            stack: 'servicios',
-                            order: 2
-                        },
-                        {
-                            label: 'No Turísticos',
-                            data: nonTourism,
-                            backgroundColor: serieGrafico(2, 0.55),
-                            borderColor: serieGrafico(2),
-                            borderWidth: 1,
-                            borderRadius: 4,
-                            stack: 'servicios',
-                            order: 2
-                        },
-                        {
-                            label: '% Turismo',
-                            data: pctTourism,
-                            type: 'line',
-                            yAxisID: 'yPct',
-                            borderColor: serieGrafico(3),
-                            backgroundColor: serieGrafico(3, 0.1),
-                            borderWidth: 2,
-                            pointRadius: 3,
-                            pointHoverRadius: 5,
-                            tension: 0.3,
-                            order: 1
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    interaction: { mode: 'index', intersect: false },
-                    plugins: {
-                        legend: { position: 'top', labels: { usePointStyle: true, font: { size: 10 }, color: bpTickColor } },
-                        tooltip: {
-                            callbacks: {
-                                label: ctx => ctx.dataset.yAxisID === 'yPct'
-                                    ? `${ctx.dataset.label}: ${ctx.raw}%`
-                                    : `${ctx.dataset.label}: ${bpFormatNum(ctx.raw)} M€`
-                            }
-                        }
-                    },
-                    scales: {
-                        x: { stacked: true, grid: { display: false }, ticks: { font: { size: 9 }, color: bpTickColor } },
-                        y: {
-                            stacked: true,
-                            grid: { color: bpGridColor },
-                            ticks: { callback: v => bpFormatNum(v), font: { size: 10 }, color: bpTickColor }
-                        },
-                        yPct: {
-                            position: 'right',
-                            min: 0,
-                            max: 100,
-                            grid: { drawOnChartArea: false },
-                            ticks: { callback: v => v + '%', font: { size: 10 }, color: bpTickColor }
-                        }
-                    }
-                }
-            });
-        }
-
-        // ========== INGRESOS VS PAGOS CHART (ANNUAL) ==========
-        function render174IngPagChart() {
-            const data = BALANZA_174_RAW;
-            const byYear = aggregate174ByYear(data.data, 12);
-            const years = Object.keys(byYear).sort().slice(-6);
-            const labels = years.map(yr => {
-                const y = byYear[yr];
-                return y.quarters < 4 ? `${yr}*` : yr;
-            });
-
-            const ctx = document.getElementById('bp174IngPagChart').getContext('2d');
-            if (bpCharts.bp174ip) bpCharts.bp174ip.destroy();
-            const bpIsDark = document.documentElement.classList.contains('dark');
-            const bpTickColor = colorGrafico('--c-tenue');
-            const bpGridColor = colorGrafico('--g-rejilla');
-            bpCharts.bp174ip = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels,
-                    datasets: [
-                        {
-                            label: 'Servicios Ingresos',
-                            data: years.map(yr => byYear[yr].sums[6]),
-                            backgroundColor: serieGrafico(1, 0.5),
-                            borderColor: serieGrafico(1),
-                            borderWidth: 1,
-                            borderRadius: 4
-                        },
-                        {
-                            label: 'Servicios Pagos',
-                            data: years.map(yr => -byYear[yr].sums[9]),
-                            backgroundColor: serieGrafico(2, 0.5),
-                            borderColor: serieGrafico(2),
-                            borderWidth: 1,
-                            borderRadius: 4
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: { position: 'top', labels: { usePointStyle: true, font: { size: 10 }, color: bpTickColor } },
-                        tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${bpFormatNum(Math.abs(ctx.raw))} M€` } }
-                    },
-                    scales: {
-                        x: { stacked: true, grid: { display: false }, ticks: { font: { size: 9 }, color: bpTickColor } },
-                        y: { stacked: true, grid: { color: bpGridColor }, ticks: { callback: v => bpFormatNum(v), font: { size: 10 }, color: bpTickColor } }
-                    }
-                }
-            });
-        }
 
         // ========== INITIALIZATION ==========
         // ========== DESCARGA DE LA VISTA ACTUAL ==========

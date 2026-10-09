@@ -475,28 +475,11 @@ hr + .art-metodologia { border-top: 0; padding-top: 0; }
 .c-tabla-codigos td:last-child { font-family: var(--f-cifras); white-space: nowrap; }
 
 /* -------------------------------------------------------------------------
-   Gráficos (Chart.js lee estas variables en comercio-exterior.html)
-   Paleta categórica validada con la guía de dataviz sobre #FFFFFF y #1A2018:
-   orden fijo, nunca rotado; el color sigue a la serie, no a su posición.
+   Color de estado para mensajes de error. Los colores de datos son las
+   variables --p-* del bloque «paleta» del final (data/paleta.json).
    ------------------------------------------------------------------------- */
-:root {
-    --g-principal: #3B4533;
-    --g-rejilla: #E7ECE4;
-    --g-ue: #2A5DB0;
-    --c-positivo: #1F6B33;
-    --c-negativo: #B42318;
-    --g-1: #2a78d6; --g-2: #eb6834; --g-3: #1baf7a; --g-4: #eda100;
-    --g-5: #e87ba4; --g-6: #008300; --g-7: #4a3aa7; --g-8: #e34948;
-}
-html.dark {
-    --g-principal: #B9D3B4;
-    --g-rejilla: #263024;
-    --g-ue: #6E9BE8;
-    --c-positivo: #5CC774;
-    --c-negativo: #F08A80;
-    --g-1: #3987e5; --g-2: #d95926; --g-3: #199e70; --g-4: #c98500;
-    --g-5: #d55181; --g-6: #008300; --g-7: #9085e9; --g-8: #e66767;
-}
+:root { --c-negativo: #B42318; }
+html.dark { --c-negativo: #F08A80; }
 
 /* -------------------------------------------------------------------------
    Portada
@@ -558,7 +541,7 @@ html.dark {
 .graficos-lienzo svg { display: block; }
 .graficos-lienzo svg text { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; fill: var(--c-tenue); }
 .graficos-lienzo svg text.nombre { font-family: "Atkinson Hyperlegible", system-ui, sans-serif; font-size: 12.5px; fill: var(--c-tinta); }
-.graficos-lienzo svg text.valor { fill: var(--c-tinta); font-weight: 500; }
+.graficos-lienzo svg text.valor { fill: var(--c-tinta); font-weight: 500; paint-order: stroke; stroke: var(--c-superficie); stroke-width: 3px; stroke-linejoin: round; }
 .graficos-lienzo rect[tabindex]:focus { outline: none; }
 .graficos-lienzo rect[tabindex]:focus-visible { outline: 2px solid var(--c-foco); }
 .graficos-tip { position: fixed; z-index: 50; pointer-events: none; min-width: 150px; padding: 8px 10px; font-size: 0.8rem; color: var(--c-tinta); background: var(--c-superficie); border: 1px solid var(--c-linea); border-radius: 4px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12); }

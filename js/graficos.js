@@ -214,6 +214,10 @@
         const banda = (x1 - x0) / x.length, xs = x.map((_, i) => x0 + banda * (i + 0.5));
         const ancho = banda > 10 ? banda * 0.7 : Math.max(1, banda - 1);
         ejeY(svg, ti, y, m.l, w - m.r);
+        // solo las etiquetas que caben: se salta un número fijo de las no vacías
+        const conEtiqueta = x.map((_, i) => i).filter(i => etiquetas[i]);
+        const saltoEtq = pasoEtiquetas(conEtiqueta.length, x1 - x0);
+        const visibles = new Set(conEtiqueta.filter((_, k) => k % saltoEtq === 0));
         x.forEach((_, i) => {
             let arriba = 0, abajo = 0;
             series.forEach(se => {
@@ -223,7 +227,7 @@
                 if (val > 0) arriba = fin; else abajo = fin;
                 S('rect', { x: xs[i] - ancho / 2, y: Math.min(y(ini), y(fin)), width: ancho, height: Math.max(0.5, Math.abs(y(ini) - y(fin)) - (banda > 10 ? 1 : 0)), fill: v(se.color) }, svg);
             });
-            if (etiquetas[i]) S('text', { x: xs[i], y: h - 8, 'text-anchor': 'middle' }, svg).textContent = etiquetas[i];
+            if (visibles.has(i)) S('text', { x: xs[i], y: h - 8, 'text-anchor': xs[i] < 20 ? 'start' : 'middle' }, svg).textContent = etiquetas[i];
         });
         const puntos = total.valores.map((t, i) => `${xs[i]},${y(t)}`).join(' ');
         S('polyline', { points: puntos, fill: 'none', stroke: v('--c-superficie'), 'stroke-width': 5, 'stroke-linejoin': 'round' }, svg);
@@ -271,22 +275,30 @@
     function dibujarMancuernas(el, op) {
         const { filas, nombres, colores = ['--p-flujos-exportaciones', '--p-flujos-importaciones'], titulo = '' } = op;
         if (!filas.length) return sinDatos(el);
-        const fh = 28, top = 22, h = filas.length * fh + top + 4;
+        // en pantallas estrechas el nombre va encima de su fila para que quepa entero
+        const apilado = el.clientWidth < 520;
+        const fh = apilado ? 42 : 28, top = 22, h = filas.length * fh + top + 4;
         const c = lienzo(el, h, titulo);
         if (!c) return;
         const { svg, w } = c;
         const [cA, cB] = colores.map(v);
-        const etq = Math.min(190, w * 0.4), x0 = etq + 10, x1 = w - 12;
+        const etq = apilado ? 0 : Math.min(190, w * 0.4), x0 = apilado ? 6 : etq + 10, x1 = w - 12;
         const ti = marcas(0, Math.max(...filas.flatMap(f => [f.a, f.b])), w < 500 ? 3 : 5);
         const x = t => x0 + (x1 - x0) * t / ti[ti.length - 1];
-        ti.forEach(t => {
+        ti.forEach((t, k) => {
             S('line', { x1: x(t), x2: x(t), y1: top - 4, y2: h, stroke: v('--c-linea') }, svg);
-            S('text', { x: x(t), y: 12, 'text-anchor': 'middle' }, svg).textContent = formato(t);
+            // la última marca se alinea a la derecha para no salirse del lienzo
+            S('text', { x: x(t), y: 12, 'text-anchor': k === ti.length - 1 ? 'end' : k === 0 ? 'start' : 'middle' }, svg).textContent = formato(t);
         });
         const ys = filas.map((_, i) => top + i * fh + fh / 2);
         filas.forEach((f, i) => {
-            const cy = ys[i];
-            S('text', { x: etq, y: cy + 4, 'text-anchor': 'end', class: 'nombre', 'font-size': f.sangria ? 11.5 : 12.5, style: f.sangria ? `fill:${v('--c-tenue')}` : '' }, svg).textContent = (f.sangria ? '· ' : '') + f.nombre;
+            const cy = apilado ? ys[i] + 8 : ys[i];
+            S('text', apilado ? { x: f.sangria ? 12 : 0, y: ys[i] - 6, 'text-anchor': 'start' } : { x: etq, y: cy + 4, 'text-anchor': 'end' }, svg);
+            const nombre = svg.lastChild;
+            nombre.setAttribute('class', 'nombre');
+            nombre.setAttribute('font-size', f.sangria ? 11.5 : 12.5);
+            if (f.sangria) nombre.setAttribute('style', `fill:${v('--c-tenue')}`);
+            nombre.textContent = (f.sangria ? '· ' : '') + f.nombre;
             S('line', { x1: x(f.a), x2: x(f.b), y1: cy, y2: cy, stroke: v('--c-linea'), 'stroke-width': 3 }, svg);
             S('circle', { cx: x(f.b), cy, r: 5, fill: cB, stroke: v('--c-superficie'), 'stroke-width': 2 }, svg);
             S('circle', { cx: x(f.a), cy, r: 5, fill: cA, stroke: v('--c-superficie'), 'stroke-width': 2 }, svg);
