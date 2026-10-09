@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sergioargudosantiago.github.io/</loc>
+    <loc>https://sergioargudo.es/</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sergioargudosantiago.github.io/temario.html</loc>
+    <loc>https://sergioargudo.es/temario.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sergioargudosantiago.github.io/fichas.html</loc>
+    <loc>https://sergioargudo.es/fichas.html</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sergioargudosantiago.github.io/comercio-exterior.html</loc>
+    <loc>https://sergioargudo.es/comercio-exterior.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sergioargudosantiago.github.io/metodologia.html</loc>
+    <loc>https://sergioargudo.es/metodologia.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sergioargudosantiago.github.io/sobre-mi.html</loc>
+    <loc>https://sergioargudo.es/sobre-mi.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sergioargudosantiago.github.io/enlaces.html</loc>
+    <loc>https://sergioargudo.es/enlaces.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <!-- articulos:inicio -->
   <url>
-    <loc>https://sergioargudosantiago.github.io/articulos/index.html</loc>
+    <loc>https://sergioargudo.es/articulos/index.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sergioargudosantiago.github.io/articulos/aranceles-un-ano.html</loc>
+    <loc>https://sergioargudo.es/articulos/aranceles-un-ano.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>

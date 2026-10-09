@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Artículos — Sergio Argudo Santiago</title>
-    <link>https://sergioargudosantiago.github.io/articulos/index.html</link>
+    <link>https://sergioargudo.es/articulos/index.html</link>
     <description>Comercio exterior, política comercial y preparación de la oposición al SOIVRE.</description>
     <language>es-ES</language>
-    <atom:link href="https://sergioargudosantiago.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://sergioargudo.es/feed.xml" rel="self" type="application/rss+xml"/>
     <lastBuildDate>Thu, 30 Jul 2026 09:00:00 GMT</lastBuildDate>
     <item>
       <title>Un año y un mes de aranceles: así ha cambiado el comercio con EE.UU.</title>
-      <link>https://sergioargudosantiago.github.io/articulos/aranceles-un-ano.html</link>
-      <guid isPermaLink="true">https://sergioargudosantiago.github.io/articulos/aranceles-un-ano.html</guid>
+      <link>https://sergioargudo.es/articulos/aranceles-un-ano.html</link>
+      <guid isPermaLink="true">https://sergioargudo.es/articulos/aranceles-un-ano.html</guid>
       <pubDate>Thu, 30 Jul 2026 09:00:00 GMT</pubDate>
       <description>Catorce meses después del Liberation Day, las exportaciones españolas a Estados Unidos caen un 9% de media mensual. El golpe es real y muy desigual por sector, pero el comercio se reorganiza más de lo que se reduce.</description>
       <dc:creator>Sergio Argudo Santiago</dc:creator>

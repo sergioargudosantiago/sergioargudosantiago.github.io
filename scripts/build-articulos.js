@@ -30,7 +30,7 @@ const DIR_LINKEDIN = path.join(RAIZ, 'review', 'linkedin');
 
 // Dominio público del sitio. Lo reescribe scripts/cambiar-dominio.js cuando
 // sergioargudo.es esté activo; no editarlo a mano en dos sitios distintos.
-const SITIO = 'https://sergioargudosantiago.github.io';
+const SITIO = 'https://sergioargudo.es';
 
 const PALABRAS_POR_MINUTO = 200;
 
