@@ -141,11 +141,11 @@ function cabeceraHTML({ titulo, descripcion, url, imagen, base, tipo, extra, ima
     <meta property="og:title" content="${md.escapeAttr(titulo)}">
     <meta property="og:description" content="${md.escapeAttr(descripcion)}">
     <meta property="og:image" content="${imagen}">
-${dimsImagen}    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="${url}">
-    <meta property="twitter:title" content="${md.escapeAttr(titulo)}">
-    <meta property="twitter:description" content="${md.escapeAttr(descripcion)}">
-    <meta property="twitter:image" content="${imagen}">
+${dimsImagen}    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="${url}">
+    <meta name="twitter:title" content="${md.escapeAttr(titulo)}">
+    <meta name="twitter:description" content="${md.escapeAttr(descripcion)}">
+    <meta name="twitter:image" content="${imagen}">
 ${extra || ''}
     <link rel="stylesheet" href="${base}css/tailwind.css">
     ${parciales.bloque('recursos', { raiz: base })}

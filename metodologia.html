@@ -13,8 +13,6 @@
     <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
 
-    <!-- Google Fonts -->
-
     <!-- SEO & Social Meta Tags -->
     <meta name="author" content="Sergio Argudo Santiago">
     <meta name="keywords"
@@ -31,16 +29,36 @@
     <meta property="og:image:height" content="630">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sergioargudo.es/metodologia.html">
-    <meta property="twitter:title" content="Metodología y fuentes de los datos — Sergio Argudo Santiago">
-    <meta property="twitter:description"
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sergioargudo.es/metodologia.html">
+    <meta name="twitter:title" content="Metodología y fuentes de los datos — Sergio Argudo Santiago">
+    <meta name="twitter:description"
         content="De dónde vienen los datos del visualizador de comercio exterior, cómo se calcula cada indicador y qué códigos NC8 componen cada sector.">
-    <meta property="twitter:image" content="https://sergioargudo.es/images/og-cover.png">
+    <meta name="twitter:image" content="https://sergioargudo.es/images/og-cover.png">
 
 
     <!-- Tailwind CSS (compiled) -->
     <link rel="stylesheet" href="css/tailwind.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "Comercio exterior de España por sectores, 2021-2025",
+      "description": "Exportaciones e importaciones españolas por sector agroalimentario e industrial, en millones de euros, con tasa de variación anual, cuota de la UE27 y tres principales destinos u orígenes. Elaborado a partir de DataComex, con la correspondencia de cada sector agroalimentario con los códigos NC8.",
+      "url": "https://sergioargudo.es/metodologia.html",
+      "inLanguage": "es",
+      "isAccessibleForFree": true,
+      "temporalCoverage": "2021/2025",
+      "spatialCoverage": { "@type": "Place", "name": "España" },
+      "isBasedOn": "https://datacomex.comercio.es/",
+      "creator": { "@type": "Person", "@id": "https://sergioargudo.es/#autor", "name": "Sergio Argudo Santiago", "url": "https://sergioargudo.es/sobre-mi.html" },
+      "distribution": [
+        { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://sergioargudo.es/data/flujos_data.csv" },
+        { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://sergioargudo.es/data/correspondencias-sectores-nc8.csv" }
+      ]
+    }
+    </script>
 
     <!-- recursos:inicio -->
     <link rel="preload" href="fonts/public-sans-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
