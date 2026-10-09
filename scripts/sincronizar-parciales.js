@@ -21,6 +21,7 @@ const RAIZ = path.resolve(__dirname, '..');
 const PAGINAS = {
     'index.html': 'inicio',
     'temario.html': 'temario',
+    'fichas.html': 'temario',
     'comercio-exterior.html': 'comercio',
     'metodologia.html': 'comercio',
     'enlaces.html': 'enlaces',

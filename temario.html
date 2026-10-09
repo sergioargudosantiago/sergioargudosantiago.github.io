@@ -63,8 +63,11 @@
             cursor: pointer;
             transition: transform 0.1s, box-shadow 0.1s;
         }
-        button.t-ejercicio:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0 var(--c-oro); }
-        button.t-ejercicio:focus-visible { outline: 3px solid var(--c-foco); outline-offset: 3px; }
+        button.t-ejercicio:hover, a.t-ejercicio:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0 var(--c-oro); }
+        button.t-ejercicio:focus-visible, a.t-ejercicio:focus-visible { outline: 3px solid var(--c-foco); outline-offset: 3px; }
+        /* .c-pagina a (sitio.css, cargado después) hereda el color: aquí hace falta más especificidad */
+        .c-pagina a.t-ejercicio { text-decoration: none; color: var(--c-barra-texto); }
+        .t-subtitulo { font-family: var(--f-titular); font-weight: 700; font-size: 1.35rem; margin: 1rem 0 0; }
         .t-rotulo { font-family: var(--f-marca); font-weight: 800; font-size: 1.05rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--c-barra-activo); }
         .t-partes { line-height: 1.5; }
         .t-estado { font-family: var(--f-cifras); font-size: 0.85rem; color: var(--c-oro-texto); }
@@ -173,6 +176,15 @@
                     <span class="t-partes">Economía general y estructura económica de España · Comercio interior · Derecho administrativo y organización del Estado</span>
                     <span class="t-estado">46 temas · PDF y Word</span>
                 </button>
+            </section>
+
+            <h2 class="t-subtitulo">Fichas de datos</h2>
+            <section class="t-ejercicios" aria-label="Fichas de datos">
+                <a class="t-ejercicio" href="fichas.html">
+                    <span class="t-rotulo">Fichas</span>
+                    <span class="t-partes">Cifras de comercio exterior de los temas 1 a 20 del ejercicio 1 y de la balanza de pagos: exportación, importación, saldo, cuota UE y principales países.</span>
+                    <span class="t-estado">23 fichas · para leer o imprimir en PDF</span>
+                </a>
             </section>
 
         </div>

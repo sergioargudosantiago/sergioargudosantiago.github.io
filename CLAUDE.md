@@ -90,7 +90,9 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
 - **Fichas del temario** (ejercicio 1, temas 1–20): `npm run fichas` genera
   `public/fichas/tema-NN.html` (tres páginas A4: resumen, exportación e importación
   por subsector) desde `data/flujos_data.csv`; qué rúbricas forman cada tema está en
-  `scripts/fichas/temas.json`. `npm run fichas:pdf` saca los PDF en
+  `scripts/fichas/temas.json` (admite filtros por lv4 y `renombrarGrupo`; los
+  frutos secos se separan por TARIC en el pipeline privado). También rellena el
+  listado de `fichas.html`. `npm run fichas:pdf` saca los PDF en
   `public/fichas/pdf/` (necesita Playwright). Regenerarlas cada vez que cambien los
   datos. Las «claves para el tema» se redactan con reglas fijas: leerlas antes de
   publicar. El mismo `npm run fichas` ejecuta `scripts/generar-fichas-balanza.js`,
@@ -192,9 +194,10 @@ artículo que tiene pensado el autor. Para generar los PDF hace falta Playwright
   principales destinos u orígenes. Ojo: en los sectores con nivel 4 (cítricos…)
   el CSV repite en cada hijo los países, la cuota UE y la TVA del padre; para
   esas filas solo el valor es propio. **Hechas** (8 oct) las 20 fichas de comercio
-  y las 3 de balanza de pagos, con sus PDF e índice (`public/fichas/index.html`, con
-  `noindex`). Pendiente: que el autor revise las claves y enlazar `public/fichas/`
-  desde `temario.html` (lleva a cada tema su PDF).
+  y las 3 de balanza de pagos, con sus PDF. El listado está en la página
+  `fichas.html` (diseño C, enlazada desde `temario.html`), que `npm run fichas`
+  rellena entre las marcas `fichas:inicio`/`fichas:fin`. Pendiente: que el autor
+  revise las claves.
 - **Visualizaciones nuevas** (móvil primero) en
   <https://claude.ai/artifact/2fRUYTb3vMTJCnbyV63fGN> (privado): mosaico de sectores,
   mariposa exportación/importación, crecimiento, cuota UE, fichas con evolución,

@@ -29,6 +29,52 @@ const EXP = colorPaleta('flujos', 'exportaciones'), IMP = colorPaleta('flujos', 
 const CSV = path.join(RAIZ, 'data', 'flujos_data.csv');
 const CONFIG = path.join(__dirname, 'fichas', 'temas.json');
 const SALIDA = path.join(RAIZ, 'public', 'fichas');
+// Página de la web con el listado de fichas: se rellena entre «fichas:inicio» y «fichas:fin»
+const PAGINA_FICHAS = path.join(RAIZ, 'fichas.html');
+const FICHAS_BALANZA = [
+    { ejercicio: 3, tema: 2, nombre: 'La balanza de pagos de España', archivo: 'bp-balanza' },
+    { ejercicio: 1, tema: 23, nombre: 'Turismo en la balanza de pagos', archivo: 'bp-turismo' },
+    { ejercicio: 1, tema: 24, nombre: 'Servicios no turísticos', archivo: 'bp-servicios' }
+];
+
+function listadoFichas(html, resumen) {
+    const tarjeta = (etiqueta, nombre, archivo, cifras = '') => `                    <li class="f-ficha">
+                        <span class="f-tema">${etiqueta}</span>
+                        <h3 class="f-nombre">${esc(nombre)}</h3>
+                        ${cifras}
+                        <div class="f-acciones"><a href="public/fichas/${archivo}.html">Ver ficha</a><a class="f-pdf" href="public/fichas/pdf/${archivo}.pdf" download>PDF</a></div>
+                    </li>`;
+    const cifras = (e, i) => `<p class="f-cifras"><span><i style="background:var(--p-flujos-exportaciones)"></i>Exp. ${num(e)} M€</span><span><i style="background:var(--p-flujos-importaciones)"></i>Imp. ${num(i)} M€</span></p>`;
+    const comercio = resumen.map(({ tema, e, i }) =>
+        tarjeta(`Ejercicio 1 · tema ${tema.tema}`, tema.titulo.replace(/^Sector (de |del )?/, '').replace(/^./, c => c.toUpperCase()),
+            `tema-${String(tema.tema).padStart(2, '0')}`, cifras(e, i))).join('\n');
+    const balanza = FICHAS_BALANZA.map(f => tarjeta(`Ejercicio ${f.ejercicio} · tema ${f.tema}`, f.nombre, f.archivo)).join('\n');
+    const bloque = `<!-- fichas:inicio · generado por scripts/generar-fichas.js, no editar a mano -->
+            <div class="f-grupos">
+                <section aria-labelledby="f-comercio">
+                    <div class="f-grupo-cabecera">
+                        <h2 class="f-grupo-titulo" id="f-comercio">Sectores del ejercicio 1</h2>
+                        <p class="c-nota">Cifras de ${ULTIMO} en millones de euros. Fuente: DataComex. Datos de ${PROVISIONALES}.</p>
+                    </div>
+                    <ul class="f-fichas">
+${comercio}
+                    </ul>
+                </section>
+                <section aria-labelledby="f-balanza">
+                    <div class="f-grupo-cabecera">
+                        <h2 class="f-grupo-titulo" id="f-balanza">Balanza de pagos</h2>
+                        <p class="c-nota">Fuente: Banco de España, Boletín Estadístico, capítulo 17.</p>
+                    </div>
+                    <ul class="f-fichas">
+${balanza}
+                    </ul>
+                </section>
+            </div>
+            <!-- fichas:fin -->`;
+    const re = /<!-- fichas:inicio[\s\S]*?<!-- fichas:fin -->/;
+    if (!re.test(html)) throw new Error('fichas.html no tiene las marcas fichas:inicio / fichas:fin');
+    return html.replace(re, () => bloque);
+}
 
 const ANIOS = ['2021', '2022', '2023', '2024', '2025'];
 const ULTIMO = '2025', PREVIO = '2024';
@@ -488,28 +534,8 @@ function main() {
     }
 
     if (!pedidos.length) {
-        const filas = resumen.map(({ tema, e, i }) => {
-            const n = String(tema.tema).padStart(2, '0');
-            return `<tr><td>${tema.tema}</td><td><a href="tema-${n}.html">${esc(tema.titulo)}</a></td><td>${num(e)}</td><td>${num(i)}</td><td>${tema.encaje}</td><td><a href="pdf/tema-${n}.pdf">PDF</a></td></tr>`;
-        }).join('\n');
-        const indice = documento('Fichas de comercio exterior y balanza de pagos del temario',
-            `<section class="pagina" style="height:auto;min-height:297mm">
-  <span class="marca">SAS · FICHAS DEL TEMARIO</span>
-  <h1 style="font-family:Fraunces,Georgia,serif;font-size:30px">Fichas de comercio exterior · ejercicio 1, temas 1 a 20</h1>
-  <p class="sub">Cifras de ${ULTIMO} en millones de euros. Fuente: DataComex.</p>
-  <table class="tabla"><thead><tr><th>Tema</th><th>Sector</th><th>Exporta</th><th>Importa</th><th>Encaje</th><th>PDF</th></tr></thead><tbody>
-${filas}
-  </tbody></table>
-  <h2 style="margin-top:28px">Balanza de pagos</h2>
-  <p class="sub">Fuente: Banco de España, Boletín Estadístico, capítulo 17.</p>
-  <table class="tabla"><thead><tr><th>Ejercicio</th><th>Tema</th><th>Ficha</th><th>PDF</th></tr></thead><tbody>
-<tr><td>3</td><td>2</td><td><a href="bp-balanza.html">La balanza de pagos de España</a></td><td><a href="pdf/bp-balanza.pdf">PDF</a></td></tr>
-<tr><td>1</td><td>23</td><td><a href="bp-turismo.html">Turismo</a></td><td><a href="pdf/bp-turismo.pdf">PDF</a></td></tr>
-<tr><td>1</td><td>24</td><td><a href="bp-servicios.html">Servicios no turísticos</a></td><td><a href="pdf/bp-servicios.pdf">PDF</a></td></tr>
-  </tbody></table>
-</section>`);
-        fs.writeFileSync(path.join(SALIDA, 'index.html'), indice, 'utf8');
-        console.log('  · index.html');
+        fs.writeFileSync(PAGINA_FICHAS, listadoFichas(fs.readFileSync(PAGINA_FICHAS, 'utf8'), resumen), 'utf8');
+        console.log('  · fichas.html (listado de la web)');
     }
     console.log(`${elegidos.length} ficha(s) en public/fichas/.`);
 }
