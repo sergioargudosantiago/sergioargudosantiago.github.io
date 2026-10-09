@@ -150,8 +150,9 @@
         .ce-kpi { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 0.5rem; text-align: left; }
         .ce-cifra { font-family: var(--f-cifras); font-weight: 600; font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem); line-height: 1.1; letter-spacing: -0.01em; color: var(--c-tinta); font-variant-numeric: tabular-nums; }
         /* Saldos: superávit con el color de exportaciones, déficit con el de importaciones */
-        .ce-positivo { color: var(--p-flujos-exportaciones) !important; }
-        .ce-negativo { color: var(--p-flujos-importaciones) !important; }
+        /* Como texto se mezclan con la tinta para llegar a 4,5:1 en cifras pequeñas */
+        .ce-positivo { color: color-mix(in srgb, var(--p-flujos-exportaciones) 75%, var(--c-tinta)) !important; }
+        .ce-negativo { color: color-mix(in srgb, var(--p-flujos-importaciones) 70%, var(--c-tinta)) !important; }
         .ce-titular { font-family: var(--f-titular); font-size: 1.15rem; font-weight: 600; line-height: 1.3; text-wrap: balance; margin: 0; color: var(--c-tinta); }
         .ce-estado { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.15rem 0.6rem; border-radius: 3px; border: 1px solid currentColor; }
         .ce-estado.ce-neutro { color: var(--c-tenue); }

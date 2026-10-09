@@ -107,7 +107,7 @@
     // Zonas interactivas: un rectángulo transparente enfocable por punto, columna o fila
     function zonas(svg, rects, etiqueta, html, entrar, salir) {
         const lista = rects.map((at, i) => {
-            const r = S('rect', Object.assign({ fill: 'transparent', tabindex: '0', 'aria-label': etiqueta(i) }, at), svg);
+            const r = S('rect', Object.assign({ fill: 'transparent', tabindex: '0', role: 'graphics-symbol', 'aria-label': etiqueta(i) }, at), svg);
             const ver = (x, y) => { if (entrar) entrar(i); verTip(x, y, html(i)); };
             const fuera = () => { ocultarTip(); if (salir) salir(i); };
             r.addEventListener('mousemove', ev => ver(ev.clientX, ev.clientY));

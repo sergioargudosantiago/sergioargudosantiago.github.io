@@ -435,7 +435,7 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .barra-ue i { display: block; height: 100%; background: ${EXP}; border-radius: 2px; }
 /* variaciones sin color (el signo lo dice); saldos con el color de exportaciones o importaciones */
 .pos, .neg { color: inherit; font-weight: 600; }
-.sup { color: ${EXP}; font-weight: 600; } .def { color: ${IMP}; font-weight: 600; }
+.sup { color: color-mix(in srgb, ${EXP} 75%, #1F2A1D); font-weight: 600; } .def { color: color-mix(in srgb, ${IMP} 70%, #1F2A1D); font-weight: 600; }
 .tenue { color: #6B7568; font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 11.5px; }
 `;
 
