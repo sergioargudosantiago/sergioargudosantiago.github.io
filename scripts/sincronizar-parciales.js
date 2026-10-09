@@ -25,8 +25,13 @@ const PAGINAS = {
     'comercio-exterior.html': 'comercio',
     'metodologia.html': 'comercio',
     'enlaces.html': 'enlaces',
-    'sobre-mi.html': 'sobre-mi'
+    'sobre-mi.html': 'sobre-mi',
+    '404.html': null
 };
+
+// GitHub Pages sirve 404.html en cualquier ruta que no exista, a cualquier
+// profundidad: sus enlaces tienen que ser absolutos.
+const RAIZ_PROPIA = { '404.html': '/' };
 
 const sueltas = fs.readdirSync(RAIZ).filter(f => f.endsWith('.html'));
 const sinSeccion = sueltas.filter(f => !(f in PAGINAS));
@@ -41,7 +46,7 @@ for (const [pagina, seccion] of Object.entries(PAGINAS)) {
     const antes = fs.readFileSync(ruta, 'utf8');
     let despues;
     try {
-        despues = aplicar(antes, { raiz: '', seccion });
+        despues = aplicar(antes, { raiz: RAIZ_PROPIA[pagina] || '', seccion });
     } catch (e) {
         console.error(`${pagina}: ${e.message}`);
         process.exit(1);
