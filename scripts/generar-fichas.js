@@ -32,7 +32,8 @@ const SALIDA = path.join(RAIZ, 'public', 'fichas');
 
 const ANIOS = ['2021', '2022', '2023', '2024', '2025'];
 const ULTIMO = '2025', PREVIO = '2024';
-const EXTRACCION = '4 de julio de 2026';
+// Años provisionales según la columna «estado» del CSV (se calcula al leerlo)
+let PROVISIONALES = ULTIMO + ' provisional';
 
 // --- Datos --------------------------------------------------------------------
 
@@ -128,7 +129,9 @@ function calcular(tema, todas) {
     const detalle = (flujo) => {
         const mapa = new Map();
         for (const f of utiles.filter(x => x.flujo === flujo && (x.year === ULTIMO || x.year === PREVIO))) {
-            const grupo = frase(f[LIT[tema.grupo]]);
+            // renombrarGrupo (temas.json): cuando el literal de DataComex engaña en esta ficha
+            const literalGrupo = f[LIT[tema.grupo]];
+            const grupo = frase((tema.renombrarGrupo || {})[literalGrupo] || literalGrupo);
             const nombre = frase(f[LIT[tema.fila]]);
             const k = grupo + '|' + nombre;
             const o = mapa.get(k) || { grupo, nombre, v: 0, vPrev: 0, ue: 0, base: 0, paises: '', paisesPadre: '' };
@@ -366,7 +369,7 @@ function paginaDetalle(d, nTema, flujo) {
 </section>`;
 }
 
-function pie(pag, extra = '', fuente = `DataComex (Ministerio de Economía, Comercio y Empresa), extracción ${EXTRACCION}. ${ULTIMO} provisional.`) {
+function pie(pag, extra = '', fuente = `DataComex (Ministerio de Economía, Comercio y Empresa). Datos de ${PROVISIONALES}.`) {
     return `<footer class="pie"><span>${extra ? extra + ' ' : ''}Fuente: ${fuente}</span><span class="url">sergioargudo.es · ${pag}</span></footer>`;
 }
 
@@ -465,6 +468,8 @@ ${cuerpo}
 
 function main() {
     const todas = leerCSV(fs.readFileSync(CSV, 'utf8'));
+    const prov = [...new Set(todas.filter(f => f.estado === 'provisional').map(f => f.year))].sort();
+    if (prov.length) PROVISIONALES = prov.length === 1 ? `${prov[0]} provisional` : `${prov.slice(0, -1).join(', ')} y ${prov[prov.length - 1]} provisionales`;
     const { temas } = JSON.parse(fs.readFileSync(CONFIG, 'utf8'));
     const pedidos = process.argv.slice(2).map(Number).filter(Boolean);
     const elegidos = pedidos.length ? temas.filter(t => pedidos.includes(t.tema)) : temas;
@@ -491,7 +496,7 @@ function main() {
             `<section class="pagina" style="height:auto;min-height:297mm">
   <span class="marca">SAS · FICHAS DEL TEMARIO</span>
   <h1 style="font-family:Fraunces,Georgia,serif;font-size:30px">Fichas de comercio exterior · ejercicio 1, temas 1 a 20</h1>
-  <p class="sub">Cifras de ${ULTIMO} en millones de euros. Fuente: DataComex, extracción ${EXTRACCION}.</p>
+  <p class="sub">Cifras de ${ULTIMO} en millones de euros. Fuente: DataComex.</p>
   <table class="tabla"><thead><tr><th>Tema</th><th>Sector</th><th>Exporta</th><th>Importa</th><th>Encaje</th><th>PDF</th></tr></thead><tbody>
 ${filas}
   </tbody></table>
