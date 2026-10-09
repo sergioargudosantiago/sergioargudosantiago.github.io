@@ -52,8 +52,6 @@
 
     <!-- Datos Balanza de Pagos (regenerables con: node scripts/update_balanza_data.js) -->
     <script defer src="data/balanza_data.js"></script>
-    <!-- Cliente API Banco de España (actualización en vivo de la Balanza de Pagos) -->
-    <script defer src="js/bde-api.js"></script>
 
     <style>
         /* Comercio exterior, diseño C. Colores y tipografías salen de las
@@ -357,7 +355,7 @@
                         <button class="bp-sub-tab active" data-bp-tab="s171" onclick="switchBPTab('s171')">Serie 17.1 · Resumen mensual</button>
                         <button class="bp-sub-tab" data-bp-tab="s174" onclick="switchBPTab('s174')">Serie 17.4 · Cuenta corriente</button>
                     </div>
-                    <div id="bpBadge" class="bp-badge">Último dato: Febrero 2026</div>
+                    <div id="bpBadge" class="bp-badge"></div>
                 </div>
 
                 <div id="bp171Panel" class="ce-pila">
@@ -428,7 +426,7 @@
                         <li><a href="https://sede.agenciatributaria.gob.es/Sede/estadisticas/estadisticas-comercio-exterior.html" target="_blank" rel="noopener noreferrer">Estadísticas de comercio exterior &mdash; Agencia Tributaria</a></li>
                         <li><a href="https://www.bde.es/webbe/es/estadisticas/otras-clasificaciones/publicaciones/boletin-estadistico/capitulo-17.html" target="_blank" rel="noopener noreferrer">Boletín Estadístico Capítulo 17 &mdash; Banco de España</a></li>
                 </ul>
-                <p>Los datos de Balanza de Pagos se actualizan automáticamente desde la <a href="https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html" target="_blank" rel="noopener noreferrer">API de estadísticas del Banco de España</a> al abrir la pestaña.</p>
+                <p>Los datos de Balanza de Pagos se descargan de la <a href="https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html" target="_blank" rel="noopener noreferrer">API de estadísticas del Banco de España</a> y se publican aquí solo después de comprobar que cuadran sus identidades contables. El último dato disponible figura junto al título de cada serie.</p>
                 <p>Metodología completa, jerarquía de sectores y correspondencia con los códigos de la Nomenclatura Combinada en la <a href="metodologia.html">ficha metodológica</a>.</p>
                 <div class="c-acciones">
                     <button type="button" id="btnDownloadView" class="c-boton c-boton-descarga">Vista actual (CSV)</button>
@@ -1842,7 +1840,6 @@
                 const last = BALANZA_174_RAW.data[BALANZA_174_RAW.data.length - 1];
                 text = `Último dato: ${last.quarter}T ${last.year}`;
             }
-            if (window.bdeApiUpdated) text += ' · actualizado vía API BdE';
             badge.textContent = text;
         }
 
@@ -1870,11 +1867,9 @@
             render174TourSplitChart();
             render174IngPagChart();
             updateBPBadge();
-            // Hybrid data: refresh from the BdE API in the background (js/bde-api.js)
-            if (typeof refreshBalanzaFromBdE === 'function') refreshBalanzaFromBdE();
         }
 
-        // Re-render every balanza chart (called after a BdE API refresh or theme change)
+        // Re-render every balanza chart (called after a theme change)
         function rerenderBalanzaCharts() {
             if (!bpInitialized) return;
             render171KPIs();

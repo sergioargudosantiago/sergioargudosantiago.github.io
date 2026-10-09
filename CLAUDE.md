@@ -40,7 +40,7 @@ Todo el contenido, la interfaz y los commits están en **español**.
 | `index.html`, `temario.html`, `sobre-mi.html`, `enlaces.html` | Páginas del sitio |
 | `comercio-exterior.html`, `metodologia.html` | Visualizador y su metodología |
 | `js/main.js` | Navegación, modales y **títulos oficiales del temario** (ejercicios 1, 3 y 5) |
-| `js/data-visualization.js`, `js/bde-api.js` | Gráficos; refresco de balanza de pagos desde la API del BdE |
+| `js/data-visualization.js` | Gráficos |
 | `data/` | Datos que carga la web (`balanza_data.js`, `flujos_data.csv`, correspondencias NC8) |
 | `articulos/` | Artículos: los `.md` son la fuente; los `.html` se generan |
 | `public/temas/ejercicio-N/` | PDFs y Word del temario |
@@ -65,8 +65,13 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
   sitemap y un borrador de post de LinkedIn en `review/linkedin/`. **No editar a mano
   los `.html` de `articulos/`**. Formato completo en `articulos/README.md`.
   Los gráficos interactivos salen de R (ggiraph) como fragmentos en `articulos/fragmentos/`.
-- **Balanza de pagos**: `node scripts/update_balanza_data.js` (Node ≥ 18, sin
-  dependencias) regenera `data/balanza_data.js` desde la API del Banco de España.
+- **Balanza de pagos**: `npm run balanza` descarga de la API del Banco de España,
+  valida y regenera `data/balanza_data.js` y las fichas (Node ≥ 18, sin dependencias).
+  `npm run balanza:comprobar` valida sin escribir. Las validaciones están en
+  `scripts/lib/validar-balanza.js` (identidades contables, huecos, nulos, historia
+  perdida frente al fichero anterior); con cualquier error no se toca el fichero.
+  El informe, con las revisiones del BdE, queda en `review/balanza/`. `npm test`
+  prueba el validador. La web solo lee `data/balanza_data.js`: no llama a la API.
 - **Flujos comerciales**: `data/flujos_data.csv` y
   `data/correspondencias-sectores-nc8.csv` salen de un pipeline privado del autor que
   **no está en este repositorio** (a propósito: solo se publican los CSV). Lee la

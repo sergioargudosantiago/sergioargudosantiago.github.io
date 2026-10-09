@@ -12,7 +12,10 @@
     "articulos": "node scripts/build-articulos.js",
     "parciales": "node scripts/sincronizar-parciales.js && node scripts/build-articulos.js",
     "fichas": "node scripts/generar-fichas.js && node scripts/generar-fichas-balanza.js",
-    "fichas:pdf": "node scripts/fichas-pdf.js"
+    "fichas:pdf": "node scripts/fichas-pdf.js",
+    "balanza": "node scripts/update_balanza_data.js && npm run fichas",
+    "balanza:comprobar": "node scripts/update_balanza_data.js --simular",
+    "test": "node --test \"scripts/lib/*.test.js\""
   },
   "devDependencies": {
     "tailwindcss": "^3.4.19"

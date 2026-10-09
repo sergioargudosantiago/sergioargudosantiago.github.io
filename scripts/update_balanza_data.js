@@ -2,15 +2,20 @@
  * Regenera data/balanza_data.js con los últimos datos de la Balanza de Pagos
  * descargados de la API de estadísticas del Banco de España.
  *
- * Uso:  node scripts/update_balanza_data.js
+ * Uso:  node scripts/update_balanza_data.js            (descarga, valida y escribe)
+ *       node scripts/update_balanza_data.js --simular  (descarga y valida, no escribe)
+ *       npm run balanza                               (escribe y regenera las fichas)
  *
- * comercio-exterior.html carga data/balanza_data.js y, además, refresca en el
- * navegador vía js/bde-api.js; este script sirve para consolidar los datos en
- * el repositorio (histórico completo) sin depender de la API en cada visita.
+ * comercio-exterior.html y las fichas leen solo data/balanza_data.js: la web no
+ * llama a la API. Antes de escribir se comprueban las identidades contables, los
+ * huecos y los nulos, y se compara con el fichero anterior (scripts/lib/validar-balanza.js).
+ * Con cualquier error no se toca el fichero. El informe, con las revisiones del
+ * BdE sobre datos ya publicados, queda en review/balanza/ (no versionado).
  * Sin dependencias externas (Node >= 18).
  */
 const fs = require('fs');
 const path = require('path');
+const { validarBalanza, clave } = require('./lib/validar-balanza');
 
 const API = 'https://app.bde.es/bierest/resources/srdatosapp/listaSeries';
 const OUTPUT = path.join(__dirname, '..', 'data', 'balanza_data.js');
@@ -187,22 +192,73 @@ async function fetchGroup(group) {
     return { labels: group.labels, data: records };
 }
 
-async function main() {
-    let js = '// ========== BALANZA DE PAGOS DATA (Banco de España) ==========\n';
-    js += `// Generado por scripts/update_balanza_data.js el ${new Date().toISOString().slice(0, 10)}\n`;
-    js += '// Fuente: API de estadísticas del BdE — https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html\n\n';
+// Lee el fichero publicado para comparar. Si no existe o no se puede leer, se valida sin él.
+function leerAnterior() {
+    if (!fs.existsSync(OUTPUT)) return null;
+    try {
+        const src = fs.readFileSync(OUTPUT, 'utf8');
+        const nombres = [...src.matchAll(/const (\w+) =/g)].map(m => m[1]);
+        return new Function(`${src}; return { ${nombres.join(', ')} };`)();
+    } catch (e) {
+        console.warn(`  ⚠ no se pudo leer el fichero anterior: ${e.message}`);
+        return null;
+    }
+}
 
+function informe(hoy, nuevo, { errores, avisos, revisiones }, escrito) {
+    const L = [`# Balanza de pagos: validación del ${hoy}`, ''];
+    L.push(escrito ? 'Resultado: **fichero escrito**.' : errores.length ? 'Resultado: **no se escribe, hay errores**.' : 'Resultado: **simulación, no se escribe**.', '');
+    L.push('| Serie | Registros | Último dato |', '|---|---|---|');
+    for (const [n, g] of Object.entries(nuevo)) L.push(`| ${n} | ${g.data.length} | ${g.data.length ? clave(g.data[g.data.length - 1]) : '-'} |`);
+    L.push('', `## Errores (${errores.length})`, '', ...(errores.length ? errores.map(e => `- ${e}`) : ['Ninguno.']));
+    L.push('', `## Avisos (${avisos.length})`, '', ...(avisos.length ? avisos.map(e => `- ${e}`) : ['Ninguno.']));
+    L.push('', `## Revisiones del BdE sobre datos ya publicados (${revisiones.length})`, '');
+    if (revisiones.length) {
+        L.push('Las 40 mayores en valor absoluto, en millones de euros.', '', '| Serie | Periodo | Concepto | Antes | Ahora | Cambio |', '|---|---|---|---|---|---|');
+        [...revisiones].sort((a, b) => Math.abs(b.ahora - b.antes) - Math.abs(a.ahora - a.antes)).slice(0, 40)
+            .forEach(r => L.push(`| ${r.grupo} | ${r.periodo} | ${r.serie} | ${r.antes} | ${r.ahora} | ${r.ahora - r.antes > 0 ? '+' : ''}${r.ahora - r.antes} |`));
+    } else L.push('Ninguna.');
+    return L.join('\n') + '\n';
+}
+
+async function main() {
+    const simular = process.argv.includes('--simular');
+    const hoy = new Date().toISOString().slice(0, 10);
+    const nuevo = {};
     for (const [name, group] of Object.entries(GROUPS)) {
         console.log(`Descargando ${name} (${group.codes.length} series)...`);
-        const formatted = await fetchGroup(group);
-        const last = formatted.data[formatted.data.length - 1];
-        const period = group.freq === 'M' ? `${last.monthName} ${last.year}` : `${last.quarter}T ${last.year}`;
-        console.log(`  ${formatted.data.length} registros, último: ${period}`);
-        js += `const ${name} = ${JSON.stringify(formatted)};\n\n`;
+        nuevo[name] = await fetchGroup(group);
+        const g = nuevo[name];
+        console.log(`  ${g.data.length} registros, último: ${g.data.length ? clave(g.data[g.data.length - 1]) : 'ninguno'}`);
     }
 
-    fs.writeFileSync(OUTPUT, js, 'utf-8');
-    console.log(`\nEscrito ${OUTPUT} (${(fs.statSync(OUTPUT).size / 1024).toFixed(0)} KB)`);
+    const resultado = validarBalanza(nuevo, leerAnterior());
+    const { errores, avisos, revisiones } = resultado;
+    const escribir = !simular && !errores.length;
+
+    if (escribir) {
+        let js = '// ========== BALANZA DE PAGOS DATA (Banco de España) ==========\n';
+        js += `// Generado y validado por scripts/update_balanza_data.js el ${hoy}\n`;
+        js += '// Fuente: API de estadísticas del BdE — https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html\n\n';
+        for (const [name, g] of Object.entries(nuevo)) js += `const ${name} = ${JSON.stringify(g)};\n\n`;
+        // se escribe a un temporal y se renombra: nunca queda un fichero a medias
+        fs.writeFileSync(OUTPUT + '.tmp', js, 'utf-8');
+        fs.renameSync(OUTPUT + '.tmp', OUTPUT);
+    }
+
+    const dirInforme = path.join(__dirname, '..', 'review', 'balanza');
+    fs.mkdirSync(dirInforme, { recursive: true });
+    const rutaInforme = path.join(dirInforme, `validacion_${hoy}.md`);
+    fs.writeFileSync(rutaInforme, informe(hoy, nuevo, resultado, escribir), 'utf-8');
+
+    console.log(`\nErrores: ${errores.length} · avisos: ${avisos.length} · revisiones del BdE: ${revisiones.length}`);
+    errores.slice(0, 15).forEach(e => console.log(`  ✖ ${e}`));
+    if (errores.length > 15) console.log(`  … y ${errores.length - 15} más`);
+    avisos.forEach(a => console.log(`  ⚠ ${a}`));
+    console.log(`Informe: ${path.relative(process.cwd(), rutaInforme)}`);
+    if (escribir) console.log(`Escrito ${path.relative(process.cwd(), OUTPUT)} (${(fs.statSync(OUTPUT).size / 1024).toFixed(0)} KB)`);
+    else if (errores.length) { console.log('No se escribe data/balanza_data.js.'); process.exit(1); }
+    else console.log('Simulación: no se escribe data/balanza_data.js.');
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
