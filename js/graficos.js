@@ -10,8 +10,13 @@
     'use strict';
 
     // ---------- funciones puras ----------
-    const nf = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0 });
-    const formato = x => nf.format(Math.round(x));
+    // Punto de miles también con cuatro cifras y signo menos tipográfico (U+2212),
+    // igual que las fichas (scripts/generar-fichas.js) y el resto de la página.
+    function formato(x) {
+        const r = Math.round(x), miles = String(Math.abs(r)).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        return (r < 0 ? '−' : '') + miles;
+    }
+    const rangoLineas = (vals, yMax) => [Math.min(0, ...vals), yMax ?? Math.max(0, ...vals)];
     const formatoPct = x => x == null || !isFinite(x) ? '–'
         : (x > 0 ? '+' : x < 0 ? '−' : '') + Math.abs(x).toLocaleString('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' %';
     const variacionPct = (base, actual) => base == null || actual == null || base === 0 ? null : (actual / base - 1) * 100;
@@ -42,7 +47,7 @@
     const anchoDibujable = ancho => ancho > 0;
     const conAlfa = (hex, a) => `rgba(${[1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16)).join(',')},${a})`;
 
-    const puras = { marcas, formato, formatoPct, variacionPct, sumaMovil, pasoEtiquetas, indicesEtiquetas, anchoDibujable, conAlfa };
+    const puras = { marcas, formato, rangoLineas, formatoPct, variacionPct, sumaMovil, pasoEtiquetas, indicesEtiquetas, anchoDibujable, conAlfa };
     if (typeof module !== 'undefined' && module.exports) { module.exports = puras; return; }
 
     // ---------- dibujo (solo navegador) ----------
@@ -155,7 +160,7 @@
         const { svg, w, h } = c;
         const m = { t: 14, b: 26, l: 10, r: 58 }, x0 = m.l + 8, x1 = w - m.r - 8;
         const vals = [...a, ...b].filter(t => t != null);
-        const ti = marcas(Math.min(0, ...vals), yMax ?? Math.max(...vals));
+        const ti = marcas(...rangoLineas(vals, yMax));
         const y = t => m.t + (ti[ti.length - 1] - t) / (ti[ti.length - 1] - ti[0]) * (h - m.t - m.b);
         const xs = x.map((_, i) => x.length > 1 ? x0 + i * (x1 - x0) / (x.length - 1) : (x0 + x1) / 2);
         const [cA, cB] = colores.map(v);
@@ -304,7 +309,7 @@
         const ys = filas.map((_, i) => top + i * fh + fh / 2);
         filas.forEach((f, i) => {
             const cy = apilado ? ys[i] + 8 : ys[i];
-            S('text', apilado ? { x: f.sangria ? 12 : 0, y: ys[i] - 6, 'text-anchor': 'start' } : { x: etq, y: cy + 4, 'text-anchor': 'end' }, svg);
+            S('text', apilado ? { x: f.sangria ? 14 : 2, y: ys[i] - 6, 'text-anchor': 'start' } : { x: etq, y: cy + 4, 'text-anchor': 'end' }, svg);
             const nombre = svg.lastChild;
             nombre.setAttribute('class', 'nombre');
             nombre.setAttribute('font-size', f.sangria ? 11.5 : 12.5);

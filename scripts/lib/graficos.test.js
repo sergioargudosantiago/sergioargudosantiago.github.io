@@ -13,10 +13,19 @@ test('marcas con rango nulo no se cuelgan', () => {
     assert.deepStrictEqual(G.marcas(0, 0), [0, 1]);
 });
 
-test('formato es-ES sin decimales (cuatro cifras sin separador, como pide la RAE)', () => {
+test('formato: punto de miles también con cuatro cifras y signo menos tipográfico, como las fichas', () => {
     assert.strictEqual(G.formato(49524.4), '49.524');
-    assert.strictEqual(G.formato(-12345), '-12.345');
-    assert.strictEqual(G.formato(-1234), '-1234');
+    assert.strictEqual(G.formato(1234), '1.234');
+    assert.strictEqual(G.formato(-12345), '−12.345');
+    assert.strictEqual(G.formato(-1234), '−1.234');
+    assert.strictEqual(G.formato(-0.4), '0');
+    assert.strictEqual(G.formato(380), '380');
+});
+
+test('rangoLineas incluye siempre el cero, también con series solo negativas', () => {
+    assert.deepStrictEqual(G.rangoLineas([-40000, -15000], null), [-40000, 0]);
+    assert.deepStrictEqual(G.rangoLineas([100, 300], null), [0, 300]);
+    assert.deepStrictEqual(G.rangoLineas([100, 300], 500), [0, 500]);
 });
 
 test('variacionPct con base nula o cero devuelve null', () => {

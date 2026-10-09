@@ -41,7 +41,6 @@
     <meta property="twitter:image" content="https://sergioargudosantiago.github.io/images/og-cover.png">
 
     <!-- Resource hints -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="dns-prefetch" href="https://app.bde.es">
 
     <!-- Tailwind CSS (compiled) -->
@@ -508,7 +507,6 @@
             lv3: null,
             lv4: null
         };
-        let lastChartArgs = null;
 
         // ========== COUNTRY FLAGS ==========
         const countryFlags = {
@@ -659,8 +657,8 @@
             const parts = fixed.split('.');
             // 3. Add dots to integer part
             parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-            // 4. Join with comma
-            return parts.join(',');
+            // 4. Join with comma; signo menos tipográfico, como en los gráficos y las fichas
+            return parts.join(',').replace(/^-/, '−');
         }
 
         function parseNumericValue(value) {
@@ -744,7 +742,8 @@
             // Re-render current view at the new year
             const ms = navigationState.macroSector;
             if (!ms) { resetNavigation(); return; }
-            if (navigationState.lv3) { showFinalView(); }
+            if (navigationState.lv4) { showLevel4FinalView(); }
+            else if (navigationState.lv3) { showFinalView(); }
             else if (navigationState.lv2) { showLevel3(); }
             else if (navigationState.lv1) { showLevel2(); }
             else { showLevel1(); }
@@ -772,7 +771,8 @@
                 macroSector: null,
                 lv1: null,
                 lv2: null,
-                lv3: null
+                lv3: null,
+                lv4: null
             };
             showView('homeView');
             updateBreadcrumbs();
@@ -784,6 +784,7 @@
             navigationState.lv1 = null;
             navigationState.lv2 = null;
             navigationState.lv3 = null;
+            navigationState.lv4 = null;
             showLevel1();
         }
 
@@ -1415,7 +1416,6 @@
             // El año de referencia es el que ha elegido el usuario, igual que el resto
             // de tarjetas. Solo se cae al último disponible si no está en este tramo.
             const refYear = (selectedYear && years.includes(selectedYear)) ? selectedYear : years[years.length - 1];
-            lastChartArgs = { yearlyData, years, level, dataRows, selectedYear };
 
             // Cuota UE del año de referencia (el seleccionado por el usuario)
             const euLevel = (level === 'final' || level === 'lv4') ? 'lv4' : 'lv3';
@@ -1425,9 +1425,10 @@
             const exp = sumaAnual(filasDelNodo('E'), years), imp = sumaAnual(filasDelNodo('I'), years);
             const estados = years.map(a => (allData.find(r => r.year === a) || {}).estado);
             const desde = estados.indexOf('provisional');
-            const n = years.length - 1, saldo = exp[n] - imp[n];
+            // El titular habla del año elegido, como las tarjetas. El gráfico enseña toda la serie.
+            const n = years.indexOf(refYear), saldo = exp[n] - imp[n];
             const nombre = currentViewName || navigationState.macroSector || 'Total';
-            const varE = Graficos.variacionPct(exp[0], exp[n]), varI = Graficos.variacionPct(imp[0], imp[n]);
+            const varE = n > 0 ? Graficos.variacionPct(exp[0], exp[n]) : null, varI = n > 0 ? Graficos.variacionPct(imp[0], imp[n]) : null;
             const cola = saldo >= 0
                 ? (varE == null ? '' : `, con exportaciones ${Graficos.formatoPct(varE)} desde ${years[0]}`)
                 : (varI == null ? '' : `, con importaciones ${Graficos.formatoPct(varI)} desde ${years[0]}`);
@@ -1758,8 +1759,10 @@
 
         // ========== FORMAT NUMBER (Spanish) ==========
         function bpFormatNum(n) {
-            if (n == null) return '—';
-            return new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0, useGrouping: true }).format(Math.round(n));
+            if (n == null) return '–';
+            // Mismo criterio que los gráficos: punto de miles con cuatro cifras y signo menos tipográfico
+            const r = Math.round(n);
+            return (r < 0 ? '−' : '') + String(Math.abs(r)).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
         }
 
         // ========== INIT BALANZA ==========
@@ -1967,7 +1970,7 @@
             const g = BALANZA_174A_RAW, anios = aniosCompletos(g, 4), a = anios[anios.length - 1], L = g.labels;
             const SUB = ['I+D', 'Consultoría', 'Serv. Técnicos y Comerciales'];
             const NOMBRES = { 'Transformación y Reparaciones': 'Transformación y reparaciones', 'Seguros y Pensiones': 'Seguros y pensiones', 'Servicios Financieros': 'Servicios financieros', 'Propiedad Intelectual': 'Propiedad intelectual', 'Telecomunicaciones e Informática': 'Telecomunicaciones e informática', 'Otros Serv. Empresariales': 'Otros servicios empresariales', 'Serv. Técnicos y Comerciales': 'Servicios técnicos y comerciales', 'Personales y Culturales': 'Personales y culturales' };
-            const ti = sumaAnio(g, a, 0, 'ingresos'), tp = sumaAnio(g, a, 0, 'pagos');
+            const iTotal = col(g, 'Total No Turísticos'), ti = sumaAnio(g, a, iTotal, 'ingresos'), tp = sumaAnio(g, a, iTotal, 'pagos');
             const fila = (k, sangria) => {
                 const i = L.indexOf(k), x = sumaAnio(g, a, i, 'ingresos'), y = sumaAnio(g, a, i, 'pagos');
                 return { nombre: NOMBRES[k] || k, a: x, b: y, cuotaA: x / ti * 100, cuotaB: y / tp * 100, sangria };
