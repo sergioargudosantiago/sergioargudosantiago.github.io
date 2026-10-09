@@ -17,6 +17,8 @@
     "capturas": "node scripts/capturar-graficos.js",
     "balanza": "node scripts/update_balanza_data.js && npm run fichas",
     "balanza:comprobar": "node scripts/update_balanza_data.js --simular",
+    "marca": "node scripts/generar-logos.js",
+    "marca:png": "node scripts/rasterizar-marca.js",
     "test": "node --test \"scripts/lib/*.test.js\""
   },
   "devDependencies": {

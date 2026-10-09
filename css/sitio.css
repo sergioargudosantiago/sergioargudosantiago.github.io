@@ -176,7 +176,7 @@ html.dark body.c-pagina {
     text-decoration: none;
     min-width: 0;
 }
-.sitio-marca svg { width: 2.1rem; height: auto; flex-shrink: 0; }
+.sitio-marca svg { width: 1.6rem; height: 1.6rem; flex-shrink: 0; }
 .sitio-marca-sigla {
     font-family: var(--f-marca);
     font-weight: 700;
