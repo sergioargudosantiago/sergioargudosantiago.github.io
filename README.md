@@ -46,7 +46,7 @@ Comprobación cruzada de cifras: ver `balanza/Comprobaciones sectores.xlsx`.
 - HTML estático servido por GitHub Pages.
 - Tailwind CSS (CDN — pendiente compilar a CSS estático).
 - Chart.js (via CDN) para gráficos del visualizador.
-- Tipografías Google Fonts: Orbitron + Share Tech Mono (estética arcade).
+- Tipografías Google Fonts: Newsreader (titulares), Public Sans (texto), IBM Plex Mono (cifras) y Orbitron (marca).
 
 ## Desarrollo local
 

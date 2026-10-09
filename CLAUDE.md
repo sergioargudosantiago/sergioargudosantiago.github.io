@@ -23,8 +23,8 @@ Todo el contenido, la interfaz y los commits están en **español**.
   Tras tocar clases de Tailwind en cualquier `.html` o `.js`, recompilar y commitear el CSS.
 - Gráficos propios en SVG (`js/graficos.js`), sin dependencias, con la paleta única
   de `data/paleta.json` (`npm run paleta` la valida y la escribe como variables
-  `--p-*` en `css/sitio.css`). Fuentes de Google: Atkinson Hyperlegible, Fraunces,
-  IBM Plex Mono y Orbitron (ver «Aspecto» en Estado).
+  `--p-*` en `css/sitio.css`). Fuentes de Google: Newsreader (titulares), Public Sans
+  (texto), IBM Plex Mono (cifras) y Orbitron (marca) (ver «Aspecto» en Estado).
 - Analítica: GoatCounter (sin cookies), comentado en cada página hasta que el autor
   cree la cuenta. Sin banner de cookies: la web no usa ninguna.
 - GitHub Pages construye con **Jekyll** desde `main`. Jekyll publica todo lo
@@ -79,6 +79,12 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
   `npm run fichas`. Los titulares de los gráficos se calculan con los datos. Para
   revisarlos: `npm run capturas` (Playwright) deja capturas a 375 y 1280 px, en claro
   y oscuro, en `review/capturas/`. Cómo usar la paleta en R: `articulos/README.md`.
+- **Marca**: la geometría y los colores del símbolo están en `scripts/lib/simbolo.js`.
+  `npm run marca` reescribe los SVG de `logos/` y el banner de LinkedIn;
+  `npm run marca:png` saca PNG, `favicon.ico`, `apple-touch-icon.png`,
+  `images/og-cover.png` y el PNG del banner en `review/linkedin/` (necesita Playwright y
+  conexión). Si cambia el icono, subir `?v=N` en el `rel="icon"` de las páginas y de
+  `scripts/build-articulos.js`.
 - **Flujos comerciales**: `data/flujos_data.csv` y
   `data/correspondencias-sectores-nc8.csv` salen de un pipeline privado del autor que
   **no está en este repositorio** (a propósito: solo se publican los CSV). Lee la
@@ -130,12 +136,15 @@ Decisiones tomadas con el autor (octubre 2026):
   (`data/`).
 - Ritmo de artículos: **dos al mes**, cada uno con su post de LinkedIn el mismo día.
 - Aspecto: **opción C, híbrido**. Base sobria y muy legible para datos y artículos
-  (fondo claro, Atkinson Hyperlegible para texto, Fraunces para titulares, IBM Plex
+  (fondo claro, Public Sans para texto, Newsreader para titulares, IBM Plex
   Mono para cifras); el verde salvia (`#3B4533` / `#C2D9C2`) pasa a barra de
   navegación y acentos; la estética arcade (Orbitron, cajas con sombra de píxel) se
-  reserva para la marca y para lo de estudio (temario, esquemas, progreso). El logo
-  del barco se mantiene. Maquetas: <https://claude.ai/artifact/5P7JjrFa9vqEyPvYTBVEpR>
-  (privado, del autor).
+  reserva para la marca y para lo de estudio (temario, esquemas, progreso). Maquetas:
+  <https://claude.ai/artifact/5P7JjrFa9vqEyPvYTBVEpR> (privado, del autor).
+- Identidad (9 oct): el barco se sustituye por la **S de intercambio** (S de Sergio, de
+  Santiago y de SOIVRE: arriba sale, abajo entra, el trazo central es el saldo) en
+  logo, favicon, índice e imágenes para redes, y la letra pasa a Newsreader y Public
+  Sans. Maquetas: <https://claude.ai/artifact/32YSSNjRgd7QXVF7JGtRZY> (privado, del autor).
 
 ## Plan de lanzamiento (octubre 2026)
 
@@ -152,7 +161,8 @@ Pendiente, por orden:
    otro registrador y, si se quiere el correo gratis, delegar el DNS en Cloudflare).
 2. ~~**Diseño C**~~ (hecho el 7 oct): las 7 páginas y los artículos en diseño C,
    parciales comunes, Tailwind recompilado (solo las clases en uso) y fuentes
-   recortadas a Atkinson Hyperlegible, Fraunces, IBM Plex Mono y Orbitron.
+   recortadas a las fuentes en uso (desde el 9 oct: Newsreader, Public Sans, IBM
+   Plex Mono y Orbitron).
    Gráficos de comercio exterior con la paleta `--g-*` de `css/sitio.css`.
 3. ~~**Cookies**~~ (hecho el 7 oct): fuera el banner; la web no usa cookies (solo
    guarda el tema claro/oscuro en el navegador). GoatCounter sigue comentado en
