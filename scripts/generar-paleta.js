@@ -5,7 +5,7 @@
  */
 const fs = require('fs');
 const path = require('path');
-const { validarPaleta, cssPaleta, FAMILIAS } = require('./lib/paleta');
+const { validarPaleta, cssPaleta, insertarBloque, FAMILIAS } = require('./lib/paleta');
 
 const RAIZ = path.join(__dirname, '..');
 const paleta = JSON.parse(fs.readFileSync(path.join(RAIZ, 'data', 'paleta.json'), 'utf8'));
@@ -17,8 +17,5 @@ if (errores.length) {
 
 const rutaCss = path.join(RAIZ, 'css', 'sitio.css');
 const css = fs.readFileSync(rutaCss, 'utf8');
-const bloque = cssPaleta(paleta);
-const re = /\/\* paleta:inicio[\s\S]*?\/\* paleta:fin \*\/\n?/;
-const nuevo = re.test(css) ? css.replace(re, bloque) : css.trimEnd() + '\n\n' + bloque;
-fs.writeFileSync(rutaCss, nuevo, 'utf8');
+fs.writeFileSync(rutaCss, insertarBloque(css, cssPaleta(paleta)), 'utf8');
 console.log(`Paleta válida: ${FAMILIAS.map(f => `${paleta[f].length} ${f}`).join(', ')}. Escrita en css/sitio.css.`);

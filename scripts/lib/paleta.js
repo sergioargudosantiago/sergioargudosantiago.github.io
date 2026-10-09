@@ -46,4 +46,11 @@ function cssPaleta(p) {
     ].join('\n');
 }
 
-module.exports = { validarPaleta, contraste, cssPaleta, FAMILIAS };
+// Sustituye el bloque entre marcas, o lo añade al final. Idempotente aunque el
+// fichero venga con CRLF (checkout en Windows): el bloque se escribe siempre con LF.
+function insertarBloque(css, bloque) {
+    const re = /\/\* paleta:inicio[\s\S]*?\/\* paleta:fin \*\/(\r?\n)*/;
+    return re.test(css) ? css.replace(re, () => bloque) : css.trimEnd() + '\n\n' + bloque;
+}
+
+module.exports = { validarPaleta, contraste, cssPaleta, insertarBloque, FAMILIAS };

@@ -34,6 +34,17 @@ test('falta una familia o se repite un id', () => {
     assert.ok(err.some(e => e.includes('francia') && e.includes('repetido')));
 });
 
+test('insertar el bloque dos veces no cambia el CSS, también con CRLF', () => {
+    const { insertarBloque } = require('./paleta');
+    const bloque = cssPaleta(PALETA);
+    for (const fin of ['\n', '\r\n']) {
+        const base = ['a { color: red; }', '', ''].join(fin);
+        const una = insertarBloque(base, bloque);
+        const crlf = una.replace(/\r?\n/g, fin);
+        assert.strictEqual(insertarBloque(crlf, bloque).replace(/\r\n/g, '\n'), una.replace(/\r\n/g, '\n'));
+    }
+});
+
 test('el CSS lleva marcas, :root y html.dark', () => {
     const css = cssPaleta(PALETA);
     assert.ok(css.startsWith('/* paleta:inicio'));
