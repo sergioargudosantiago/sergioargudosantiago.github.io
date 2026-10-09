@@ -126,8 +126,8 @@ function cabeceraHTML({ titulo, descripcion, url, imagen, base, tipo, extra, ima
     <title>${md.escapeHTML(titulo)}</title>
     <link rel="canonical" href="${url}">
     <link rel="icon" href="${base}logos/png/SAS-icono-claro.png?v=3" type="image/png">
-    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
     <link rel="alternate" type="application/rss+xml" title="Artículos — Sergio Argudo Santiago" href="${SITIO}/feed.xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

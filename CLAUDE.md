@@ -83,7 +83,8 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
   `npm run marca` reescribe los SVG de `logos/` y el banner de LinkedIn;
   `npm run marca:png` saca PNG, `favicon.ico`, `apple-touch-icon.png`,
   `images/og-cover.png` y el PNG del banner en `review/linkedin/` (necesita Playwright y
-  conexión). Si cambia el icono, subir `?v=N` en el `rel="icon"` de las páginas y de
+  conexión). Si cambia el icono, subir `?v=N` en los tres enlaces de iconos (PNG, `favicon.ico` y
+  `apple-touch-icon.png`) de las páginas y de
   `scripts/build-articulos.js`.
 - **Flujos comerciales**: `data/flujos_data.csv` y
   `data/correspondencias-sectores-nc8.csv` salen de un pipeline privado del autor que
