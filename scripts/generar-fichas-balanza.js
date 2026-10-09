@@ -22,6 +22,8 @@ const vm = require('vm');
 const { num, conSigno, pct, pctSigno, esc, grafico, pie, documento } = require('./generar-fichas.js');
 
 const RAIZ = path.resolve(__dirname, '..');
+const PALETA = require(path.join(RAIZ, 'data', 'paleta.json'));
+const EXP = PALETA.flujos.find(c => c.id === 'exportaciones').claro, IMP = PALETA.flujos.find(c => c.id === 'importaciones').claro;
 const DATOS = path.join(RAIZ, 'data', 'balanza_data.js');
 const SALIDA = path.join(RAIZ, 'public', 'fichas');
 const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
@@ -50,7 +52,7 @@ function anual(serie, campo, completos) {
 }
 
 const fechaLarga = (iso) => { const [a, m, d] = iso.split('-').map(Number); return `${d} de ${MESES[m - 1]} de ${a}`; };
-const fuente = (b, series) => `Banco de España, Boletín Estadístico, capítulo 17 (${series}); datos descargados el ${fechaLarga(b.fecha)}.`;
+const fuente = (b, series) => `Banco de España, Boletín Estadístico, capítulo 17 (${series}). Datos descargados el ${fechaLarga(b.fecha)}.`;
 
 // --- Piezas comunes ----------------------------------------------------------------
 
@@ -70,9 +72,12 @@ function cabeceraDetalle(tema, pag) {
 }
 
 function kpis(lista) {
-    const color = ['exp', 'imp', 'sal', 'ue'];
-    return `<div class="kpis">${lista.map(([etq, valor, sub], k) =>
-        `<div class="kpi ${color[k]}"><span>${esc(etq)}</span><b>${valor}</b><span>${sub}</span></div>`).join('')}</div>`;
+    // El borde dice qué es: ingresos y pagos con sus colores, cuotas en azul y
+    // saldos según su signo (superávit con el color de ingresos, déficit con el de pagos).
+    const clase = (etq, valor) => etq === 'Ingresos' ? 'exp' : etq === 'Pagos' ? 'imp'
+        : /^(Desde la UE|Peso)/.test(etq) ? 'ue' : /^[−-]/.test(String(valor)) ? 'sal sal-def' : 'sal sal-sup';
+    return `<div class="kpis">${lista.map(([etq, valor, sub]) =>
+        `<div class="kpi ${clase(etq, valor)}"><span>${esc(etq)}</span><b>${valor}</b><span>${sub}</span></div>`).join('')}</div>`;
 }
 
 function leyenda(series) {
@@ -97,7 +102,7 @@ function tablaDetalle(cabeceras, filas) {
 }
 
 const varHTML = (a, b) => b ? `<span class="${a >= b ? 'pos' : 'neg'}">${pctSigno((a / b - 1) * 100)}</span>` : '—';
-const saldoHTML = (v) => `<span class="${v >= 0 ? 'pos' : 'neg'}">${conSigno(v)}</span>`;
+const saldoHTML = (v) => `<span class="${v >= 0 ? 'sup' : 'def'}">${conSigno(v)}</span>`;
 
 // --- Ficha 1: la balanza de pagos (ejercicio 3, tema 2) ------------------------------
 
@@ -112,8 +117,8 @@ function fichaBalanza(b) {
     for (let k = A.anios.length - 1; k >= 0 && v(A.anios[k], 0) > 0; k--) racha++;
     const ultimoMes = b.BALANZA_171_RAW.data[b.BALANZA_171_RAW.data.length - 1];
     const series = [
-        { nombre: 'Cuenta corriente', color: '#2A78D6', valores: anios.map(a => v(a, 0)) },
-        { nombre: 'Capacidad de financiación', color: '#1BAF7A', valores: anios.map(a => v(a, 4)) }
+        { nombre: 'Cuenta corriente', color: '#1F2A1D', valores: anios.map(a => v(a, 0)) },
+        { nombre: 'Capacidad de financiación', color: '#6B7568', discontinua: true, valores: anios.map(a => v(a, 4)) }
     ];
     const claves = [
         racha > 1 ? `La cuenta corriente tiene <strong>superávit ${racha} años seguidos</strong> (${racha === A.anios.length ? `toda la serie, desde ${A.anios[0]}` : `desde ${A.anios[A.anios.length - racha]}`}): en ${ult}, ${conSigno(cc)} M€.` : `En ${ult} la cuenta corriente cierra en ${conSigno(cc)} M€.`,
@@ -179,15 +184,15 @@ function fichaTurismo(b) {
     const paises = ['Alemania', 'Bélgica', 'Países Bajos', 'Francia', 'Italia', 'Irlanda', 'Portugal', 'Reino Unido', 'Rusia', 'Suiza', 'EEUU'];
     const ranking = paises.map(p => [p, c[idx(p)]]).sort((x, y) => y[1] - x[1]);
     const series = [
-        { nombre: 'Ingresos', color: '#2A78D6', valores: anios.map(ing) },
-        { nombre: 'Pagos', color: '#EB6834', valores: anios.map(pag) }
+        { nombre: 'Ingresos', color: EXP, valores: anios.map(ing) },
+        { nombre: 'Pagos', color: IMP, valores: anios.map(pag) }
     ];
     const minimo = anios.reduce((m, a) => ing(a) < ing(m) ? a : m, anios[0]);
     const nombre = (p) => p === 'EEUU' ? 'Estados Unidos' : p;
     const claves = [
-        `En ${ult} los ingresos por turismo llegan a <strong>${num(ing(ult))} M€</strong>, ${pctSigno((ing(ult) / ing(prev) - 1) * 100)} sobre ${prev}${minimo !== ult ? `; en ${minimo} se quedaron en ${num(ing(minimo))} M€` : ''}.`,
+        `En ${ult} los ingresos por turismo llegan a <strong>${num(ing(ult))} M€</strong>, ${pctSigno((ing(ult) / ing(prev) - 1) * 100)} sobre ${prev}${minimo !== ult ? `. En ${minimo} se quedaron en ${num(ing(minimo))} M€` : ''}.`,
         `<strong>${esc(nombre(ranking[0][0]))}</strong> es el primer mercado (${pct(ranking[0][1] / total * 100)} de los ingresos), por delante de ${esc(nombre(ranking[1][0]))} y ${esc(nombre(ranking[2][0]))}.`,
-        `La UE27 aporta el ${pct(ue, 0)} de los ingresos; el resto de Europa, el ${pct(c[idx('Europa extra UE27')] / total * 100, 0)}.`,
+        `La UE27 aporta el ${pct(ue, 0)} de los ingresos y el resto de Europa, el ${pct(c[idx('Europa extra UE27')] / total * 100, 0)}.`,
         `El saldo turístico (${conSigno(saldo(ult))} M€) es mayor que el déficit de bienes de la balanza (${conSigno(S.v[ult][0])} M€).`,
         `Los pagos crecen ${(pag(ult) / pag(prev)) > (ing(ult) / ing(prev)) ? 'más' : 'menos'} que los ingresos en ${ult}: ${pctSigno((pag(ult) / pag(prev) - 1) * 100)} frente a ${pctSigno((ing(ult) / ing(prev) - 1) * 100)}.`
     ];
@@ -247,8 +252,8 @@ function fichaServicios(b) {
     const porSaldo = [...tipos].sort((a, b2) => (i25[a.k] - p25[a.k]) - (i25[b2.k] - p25[b2.k]));
     const peso = ing(ult) / S.v[ult][6] * 100;
     const series = [
-        { nombre: 'Ingresos', color: '#2A78D6', valores: anios.map(ing) },
-        { nombre: 'Pagos', color: '#EB6834', valores: anios.map(pag) }
+        { nombre: 'Ingresos', color: EXP, valores: anios.map(ing) },
+        { nombre: 'Pagos', color: IMP, valores: anios.map(pag) }
     ];
     const nombre = (n) => ({ 'Otros Serv. Empresariales': 'Otros servicios empresariales', 'Serv. Técnicos y Comerciales': 'Servicios técnicos y comerciales', 'Telecomunicaciones e Informática': 'Telecomunicaciones e informática', 'Transformación y Reparaciones': 'Transformación y reparaciones', 'Seguros y Pensiones': 'Seguros y pensiones', 'Servicios Financieros': 'Servicios financieros', 'Propiedad Intelectual': 'Propiedad intelectual', 'Personales y Culturales': 'Personales y culturales' }[n] || n);
     const claves = [

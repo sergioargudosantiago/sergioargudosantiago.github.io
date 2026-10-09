@@ -27,7 +27,7 @@ h1, h2 { margin: 0; }
 .kpi { border: 1px solid #C9D1C5; border-top: 4px solid; padding: 8px 11px; display: flex; flex-direction: column; gap: 1px; }
 .kpi span { font-size: 12px; } .kpi span:first-child { color: #4A5546; }
 .kpi b { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 21px; }
-.kpi.exp { border-top-color: #2A78D6; } .kpi.imp { border-top-color: #EB6834; } .kpi.sal { border-top-color: #1F6B33; } .kpi.ue { border-top-color: #2A5DB0; }
+.kpi.exp { border-top-color: #2B6CA3; } .kpi.imp { border-top-color: #B5893A; } .kpi.sal { border-top-color: #1F2A1D; } .kpi.sal-sup { border-top-color: #2B6CA3; } .kpi.sal-def { border-top-color: #B5893A; } .kpi.ue { border-top-color: #2B6CA3; }
 .dos { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; }
 .dos > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
 h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #3B4533; }
@@ -36,7 +36,7 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .leyenda { display: flex; gap: 14px; font-size: 12px; font-weight: 700; }
 .leyenda span { display: flex; align-items: center; gap: 6px; }
 .leyenda i { display: inline-block; width: 16px; height: 3px; }
-.l-exp { background: #2A78D6; } .l-imp { background: #EB6834; }
+.l-exp { background: #2B6CA3; } .l-imp { background: #B5893A; }
 .tabla { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
 .tabla th { text-align: right; padding: 4px; border-bottom: 2px solid #1F2A1D; font-size: 12px; }
 .tabla th:first-child { text-align: left; }
@@ -70,8 +70,10 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .detalle.bp + h2 { margin-top: 6px; }
 .detalle .ue { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; white-space: nowrap; }
 .barra-ue { display: inline-block; width: 36px; height: 7px; background: #E2E7DF; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
-.barra-ue i { display: block; height: 100%; background: #2A5DB0; border-radius: 2px; }
-.pos { color: #1F6B33; font-weight: 600; } .neg { color: #B42318; font-weight: 600; }
+.barra-ue i { display: block; height: 100%; background: #2B6CA3; border-radius: 2px; }
+/* variaciones sin color (el signo lo dice); saldos con el color de exportaciones o importaciones */
+.pos, .neg { color: inherit; font-weight: 600; }
+.sup { color: #2B6CA3; font-weight: 600; } .def { color: #B5893A; font-weight: 600; }
 .tenue { color: #6B7568; font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 11.5px; }
 </style>
 </head>
@@ -88,7 +90,7 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
   <div class="kpis">
     <div class="kpi exp"><span>Exportación</span><b>6.374</b><span>M€ · +7,1 % vs 2024</span></div>
     <div class="kpi imp"><span>Importación</span><b>11.703</b><span>M€ · +7,5 % vs 2024</span></div>
-    <div class="kpi sal"><span>Saldo</span><b>−5.330</b><span>M€ · cobertura 54 %</span></div>
+    <div class="kpi sal sal-def"><span>Saldo</span><b>−5.330</b><span>M€ · exportación menos importación</span></div>
     <div class="kpi ue"><span>Hacia la UE</span><b>71,2 %</b><span>de la exportación</span></div>
   </div>
   <div class="dos">
@@ -97,8 +99,8 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 <line x1="8" x2="288" y1="106.7" y2="106.7" stroke="#E2E7DF" stroke-width="1"/><text x="294" y="110.7" class="eje">5.000</text>
 <line x1="8" x2="288" y1="63.3" y2="63.3" stroke="#E2E7DF" stroke-width="1"/><text x="294" y="67.3" class="eje">10.000</text>
 <line x1="8" x2="288" y1="20.0" y2="20.0" stroke="#E2E7DF" stroke-width="1"/><text x="294" y="24.0" class="eje">15.000</text>
-<polyline points="8.0,63.7 78.0,54.6 148.0,61.1 218.0,55.7 288.0,48.6" fill="none" stroke="#EB6834" stroke-width="2.5" stroke-linejoin="round"/>
-<polyline points="8.0,103.8 78.0,97.2 148.0,98.6 218.0,98.4 288.0,94.8" fill="none" stroke="#2A78D6" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="8.0,63.7 78.0,54.6 148.0,61.1 218.0,55.7 288.0,48.6" fill="none" stroke="#B5893A" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="8.0,103.8 78.0,97.2 148.0,98.6 218.0,98.4 288.0,94.8" fill="none" stroke="#2B6CA3" stroke-width="2.5" stroke-linejoin="round"/>
 <text x="8" y="168" class="eje">2021</text><text x="260" y="168" class="eje">2025</text>
 </svg></div>
     <div>
@@ -113,7 +115,7 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
   
   <div class="claves">
     <h2>CLAVES PARA EL TEMA</h2>
-    <ul><li><strong>Muebles</strong> es lo que más se exporta: el 51 % del sector.</li><li>Desde 2021 la exportación crece un 20 % y la importación crece un 18 %; la tasa de cobertura pasa del 54 % al 54 %.</li><li>El <strong>71 %</strong> de la exportación va a la UE27.</li><li>En 2025, lo que más crece en exportación es electrónica de consumo, +18,8 %.</li><li>La primera importación es muebles: 4.487 M€, sobre todo desde China, Portugal, Marruecos.</li></ul>
+    <ul><li><strong>Muebles</strong> es lo que más se exporta: el 51 % del sector.</li><li>Desde 2021 la exportación crece un 20 % y la importación crece un 18 %. El saldo pasa de un déficit de 4.622 M€ a un déficit de 5.330 M€.</li><li>El <strong>71 %</strong> de la exportación va a la UE27.</li><li>En 2025, lo que más crece en exportación es electrónica de consumo, +18,8 %.</li><li>La primera importación es muebles: 4.487 M€, sobre todo desde China, Portugal, Marruecos.</li></ul>
   </div>
   <div class="notas"><h2>Mis notas</h2><div class="renglones"></div></div>
   <footer class="pie"><span>Fuente: DataComex (Ministerio de Economía, Comercio y Empresa), extracción 4 de julio de 2026. 2025 provisional.</span><span class="url">sergioargudo.es · 1 / 3</span></footer>

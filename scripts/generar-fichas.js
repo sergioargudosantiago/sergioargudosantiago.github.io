@@ -22,6 +22,10 @@ const fs = require('fs');
 const path = require('path');
 
 const RAIZ = path.resolve(__dirname, '..');
+// Colores de datos: data/paleta.json (los mismos que la web). Las fichas se imprimen: modo claro.
+const PALETA = require(path.join(RAIZ, 'data', 'paleta.json'));
+const colorPaleta = (familia, id) => PALETA[familia].find(c => c.id === id).claro;
+const EXP = colorPaleta('flujos', 'exportaciones'), IMP = colorPaleta('flujos', 'importaciones');
 const CSV = path.join(RAIZ, 'data', 'flujos_data.csv');
 const CONFIG = path.join(__dirname, 'fichas', 'temas.json');
 const SALIDA = path.join(RAIZ, 'public', 'fichas');
@@ -215,8 +219,9 @@ function claves(d) {
     }
 
     const cE = (d.E[4] / d.E[0] - 1) * 100, cI = (d.I[4] / d.I[0] - 1) * 100;
-    const cob0 = d.E[0] / d.I[0] * 100, cob1 = e / i * 100;
-    out.push(`Desde 2021 la exportación ${cE >= 0 ? 'crece' : 'cae'} un ${pct(Math.abs(cE), 0)} y la importación ${cI >= 0 ? 'crece' : 'cae'} un ${pct(Math.abs(cI), 0)}; la tasa de cobertura pasa del ${pct(cob0, 0)} al ${pct(cob1, 0)}.`);
+    const s0 = d.E[0] - d.I[0], s1 = e - i;
+    const tipoSaldo = s => s >= 0 ? 'superávit' : 'déficit';
+    out.push(`Desde 2021 la exportación ${cE >= 0 ? 'crece' : 'cae'} un ${pct(Math.abs(cE), 0)} y la importación ${cI >= 0 ? 'crece' : 'cae'} un ${pct(Math.abs(cI), 0)}. El saldo pasa de un ${tipoSaldo(s0)} de ${num(Math.abs(s0))} M€ a un ${tipoSaldo(s1)} de ${num(Math.abs(s1))} M€.`);
 
     if (d.ueTotal != null) {
         const fuera = filasE.filter(o => o.v >= e * 0.05 && o.pctUE != null && !o.heredado && o.pctUE < d.ueTotal - 20)
@@ -265,7 +270,7 @@ function grafico(series, etiquetas, aria) {
     }
     return `<svg viewBox="0 0 350 172" class="grafico" role="img" aria-label="${esc(aria)}">
 ${marcas.join('\n')}
-${[...series].reverse().map(s => `<polyline points="${linea(s.valores)}" fill="none" stroke="${s.color}" stroke-width="2.5" stroke-linejoin="round"/>`).join('\n')}
+${[...series].reverse().map(s => `<polyline points="${linea(s.valores)}" fill="none" stroke="${s.color}" stroke-width="2.5" stroke-linejoin="round"${s.discontinua ? ' stroke-dasharray="5 4"' : ''}/>`).join('\n')}
 <text x="8" y="168" class="eje">${esc(etiquetas[0])}</text><text x="${(x(n - 1) - 28).toFixed(0)}" y="168" class="eje">${esc(etiquetas[n - 1])}</text>
 </svg>`;
 }
@@ -273,7 +278,7 @@ ${[...series].reverse().map(s => `<polyline points="${linea(s.valores)}" fill="n
 function paginaResumen(d, nTema) {
     const e = d.E[4], i = d.I[4], ePrev = d.E[3], iPrev = d.I[3];
     const vE = (e / ePrev - 1) * 100, vI = (i / iPrev - 1) * 100;
-    const saldo = e - i, cob = e / i * 100;
+    const saldo = e - i;
     const tabla = d.exp.length >= 2
         ? d.exp.map(g => {
             const gi = d.imp.find(x => x.nombre === g.nombre);
@@ -300,11 +305,11 @@ function paginaResumen(d, nTema) {
   <div class="kpis">
     <div class="kpi exp"><span>Exportación</span><b>${num(e)}</b><span>M€ · ${pctSigno(vE)} vs ${PREVIO}</span></div>
     <div class="kpi imp"><span>Importación</span><b>${num(i)}</b><span>M€ · ${pctSigno(vI)} vs ${PREVIO}</span></div>
-    <div class="kpi sal"><span>Saldo</span><b>${conSigno(saldo)}</b><span>M€ · cobertura ${pct(cob, 0)}</span></div>
+    <div class="kpi sal ${saldo >= 0 ? 'sal-sup' : 'sal-def'}"><span>Saldo</span><b>${conSigno(saldo)}</b><span>M€ · exportación menos importación</span></div>
     <div class="kpi ue"><span>Hacia la UE</span><b>${d.ueTotal != null ? pct(d.ueTotal) : '—'}</b><span>de la exportación</span></div>
   </div>
   <div class="dos">
-    <div><h2>Evolución, M€</h2><div class="leyenda"><span><i class="l-exp"></i>Exportación</span><span><i class="l-imp"></i>Importación</span></div>${grafico([{ valores: d.E, color: '#2A78D6' }, { valores: d.I, color: '#EB6834' }], ANIOS, `Exportación de ${num(d.E[0])} a ${num(d.E[4])} M€ e importación de ${num(d.I[0])} a ${num(d.I[4])} M€ entre 2021 y 2025`)}</div>
+    <div><h2>Evolución, M€</h2><div class="leyenda"><span><i class="l-exp"></i>Exportación</span><span><i class="l-imp"></i>Importación</span></div>${grafico([{ valores: d.E, color: EXP }, { valores: d.I, color: IMP }], ANIOS, `Exportación de ${num(d.E[0])} a ${num(d.E[4])} M€ e importación de ${num(d.I[0])} a ${num(d.I[4])} M€ entre 2021 y 2025`)}</div>
     <div>
       <h2>${tituloTabla}</h2>
       <table class="tabla">
@@ -384,7 +389,7 @@ h1, h2 { margin: 0; }
 .kpi { border: 1px solid #C9D1C5; border-top: 4px solid; padding: 8px 11px; display: flex; flex-direction: column; gap: 1px; }
 .kpi span { font-size: 12px; } .kpi span:first-child { color: #4A5546; }
 .kpi b { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 21px; }
-.kpi.exp { border-top-color: #2A78D6; } .kpi.imp { border-top-color: #EB6834; } .kpi.sal { border-top-color: #1F6B33; } .kpi.ue { border-top-color: #2A5DB0; }
+.kpi.exp { border-top-color: ${EXP}; } .kpi.imp { border-top-color: ${IMP}; } .kpi.sal { border-top-color: #1F2A1D; } .kpi.sal-sup { border-top-color: ${EXP}; } .kpi.sal-def { border-top-color: ${IMP}; } .kpi.ue { border-top-color: ${EXP}; }
 .dos { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; }
 .dos > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
 h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #3B4533; }
@@ -393,7 +398,7 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .leyenda { display: flex; gap: 14px; font-size: 12px; font-weight: 700; }
 .leyenda span { display: flex; align-items: center; gap: 6px; }
 .leyenda i { display: inline-block; width: 16px; height: 3px; }
-.l-exp { background: #2A78D6; } .l-imp { background: #EB6834; }
+.l-exp { background: ${EXP}; } .l-imp { background: ${IMP}; }
 .tabla { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
 .tabla th { text-align: right; padding: 4px; border-bottom: 2px solid #1F2A1D; font-size: 12px; }
 .tabla th:first-child { text-align: left; }
@@ -427,8 +432,10 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .detalle.bp + h2 { margin-top: 6px; }
 .detalle .ue { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; white-space: nowrap; }
 .barra-ue { display: inline-block; width: 36px; height: 7px; background: #E2E7DF; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
-.barra-ue i { display: block; height: 100%; background: #2A5DB0; border-radius: 2px; }
-.pos { color: #1F6B33; font-weight: 600; } .neg { color: #B42318; font-weight: 600; }
+.barra-ue i { display: block; height: 100%; background: ${EXP}; border-radius: 2px; }
+/* variaciones sin color (el signo lo dice); saldos con el color de exportaciones o importaciones */
+.pos, .neg { color: inherit; font-weight: 600; }
+.sup { color: ${EXP}; font-weight: 600; } .def { color: ${IMP}; font-weight: 600; }
 .tenue { color: #6B7568; font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 11.5px; }
 `;
 

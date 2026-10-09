@@ -27,7 +27,7 @@ h1, h2 { margin: 0; }
 .kpi { border: 1px solid #C9D1C5; border-top: 4px solid; padding: 8px 11px; display: flex; flex-direction: column; gap: 1px; }
 .kpi span { font-size: 12px; } .kpi span:first-child { color: #4A5546; }
 .kpi b { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 21px; }
-.kpi.exp { border-top-color: #2A78D6; } .kpi.imp { border-top-color: #EB6834; } .kpi.sal { border-top-color: #1F6B33; } .kpi.ue { border-top-color: #2A5DB0; }
+.kpi.exp { border-top-color: #2B6CA3; } .kpi.imp { border-top-color: #B5893A; } .kpi.sal { border-top-color: #1F2A1D; } .kpi.sal-sup { border-top-color: #2B6CA3; } .kpi.sal-def { border-top-color: #B5893A; } .kpi.ue { border-top-color: #2B6CA3; }
 .dos { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; }
 .dos > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
 h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #3B4533; }
@@ -36,7 +36,7 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .leyenda { display: flex; gap: 14px; font-size: 12px; font-weight: 700; }
 .leyenda span { display: flex; align-items: center; gap: 6px; }
 .leyenda i { display: inline-block; width: 16px; height: 3px; }
-.l-exp { background: #2A78D6; } .l-imp { background: #EB6834; }
+.l-exp { background: #2B6CA3; } .l-imp { background: #B5893A; }
 .tabla { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
 .tabla th { text-align: right; padding: 4px; border-bottom: 2px solid #1F2A1D; font-size: 12px; }
 .tabla th:first-child { text-align: left; }
@@ -70,8 +70,10 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .detalle.bp + h2 { margin-top: 6px; }
 .detalle .ue { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; white-space: nowrap; }
 .barra-ue { display: inline-block; width: 36px; height: 7px; background: #E2E7DF; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
-.barra-ue i { display: block; height: 100%; background: #2A5DB0; border-radius: 2px; }
-.pos { color: #1F6B33; font-weight: 600; } .neg { color: #B42318; font-weight: 600; }
+.barra-ue i { display: block; height: 100%; background: #2B6CA3; border-radius: 2px; }
+/* variaciones sin color (el signo lo dice); saldos con el color de exportaciones o importaciones */
+.pos, .neg { color: inherit; font-weight: 600; }
+.sup { color: #2B6CA3; font-weight: 600; } .def { color: #B5893A; font-weight: 600; }
 .tenue { color: #6B7568; font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 11.5px; }
 </style>
 </head>
@@ -85,15 +87,15 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
     </div>
     <div class="sello"><span>EJERCICIO 1</span><b>T24</b></div>
   </header>
-  <div class="kpis"><div class="kpi exp"><span>Ingresos</span><b>119.857</b><span>M€ · +14,4 % vs 2024</span></div><div class="kpi imp"><span>Pagos</span><b>76.518</b><span>M€ · +7,6 % vs 2024</span></div><div class="kpi sal"><span>Saldo</span><b>+43.339</b><span>M€ en 2025</span></div><div class="kpi ue"><span>Peso en servicios</span><b>53,3 %</b><span>de los ingresos</span></div></div>
+  <div class="kpis"><div class="kpi exp"><span>Ingresos</span><b>119.857</b><span>M€ · +14,4 % vs 2024</span></div><div class="kpi imp"><span>Pagos</span><b>76.518</b><span>M€ · +7,6 % vs 2024</span></div><div class="kpi sal sal-sup"><span>Saldo</span><b>+43.339</b><span>M€ en 2025</span></div><div class="kpi ue"><span>Peso en servicios</span><b>53,3 %</b><span>de los ingresos</span></div></div>
   <div class="dos">
-    <div><h2>Evolución, M€</h2><div class="leyenda"><span><i style="background:#2A78D6"></i>Ingresos</span><span><i style="background:#EB6834"></i>Pagos</span></div><svg viewBox="0 0 350 172" class="grafico" role="img" aria-label="Ingresos y pagos por servicios no turísticos, 2015 a 2025">
+    <div><h2>Evolución, M€</h2><div class="leyenda"><span><i style="background:#2B6CA3"></i>Ingresos</span><span><i style="background:#B5893A"></i>Pagos</span></div><svg viewBox="0 0 350 172" class="grafico" role="img" aria-label="Ingresos y pagos por servicios no turísticos, 2015 a 2025">
 <line x1="8" x2="288" y1="150.0" y2="150.0" stroke="#1F2A1D" stroke-width="1"/><text x="294" y="154.0" class="eje">0</text>
 <line x1="8" x2="288" y1="106.7" y2="106.7" stroke="#E2E7DF" stroke-width="1"/><text x="294" y="110.7" class="eje">50.000</text>
 <line x1="8" x2="288" y1="63.3" y2="63.3" stroke="#E2E7DF" stroke-width="1"/><text x="294" y="67.3" class="eje">100.000</text>
 <line x1="8" x2="288" y1="20.0" y2="20.0" stroke="#E2E7DF" stroke-width="1"/><text x="294" y="24.0" class="eje">150.000</text>
-<polyline points="8.0,115.4 36.0,113.8 64.0,112.5 92.0,109.2 120.0,104.9 148.0,110.0 176.0,102.3 204.0,95.3 232.0,96.9 260.0,88.4 288.0,83.7" fill="none" stroke="#EB6834" stroke-width="2.5" stroke-linejoin="round"/>
-<polyline points="8.0,104.2 36.0,100.8 64.0,98.1 92.0,96.4 120.0,90.9 148.0,96.5 176.0,89.3 204.0,74.3 232.0,67.9 260.0,59.2 288.0,46.1" fill="none" stroke="#2A78D6" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="8.0,115.4 36.0,113.8 64.0,112.5 92.0,109.2 120.0,104.9 148.0,110.0 176.0,102.3 204.0,95.3 232.0,96.9 260.0,88.4 288.0,83.7" fill="none" stroke="#B5893A" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="8.0,104.2 36.0,100.8 64.0,98.1 92.0,96.4 120.0,90.9 148.0,96.5 176.0,89.3 204.0,74.3 232.0,67.9 260.0,59.2 288.0,46.1" fill="none" stroke="#2B6CA3" stroke-width="2.5" stroke-linejoin="round"/>
 <text x="8" y="168" class="eje">2015</text><text x="260" y="168" class="eje">2025</text>
 </svg></div>
     <div>
@@ -104,15 +106,15 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
   </div>
   <div class="claves"><h2>CLAVES PARA EL TEMA</h2><ul><li>Los servicios no turísticos son el 53 % de los ingresos por servicios de España: 119.857 M€ en 2025.</li><li><strong>Otros servicios empresariales</strong> es la primera partida (39 % de los ingresos), seguida de telecomunicaciones e informática y transporte.</li><li>Desde 2015 los ingresos se multiplican por 2,3 y el saldo pasa de +12.868 a +43.339 M€.</li><li>La partida con más déficit es propiedad intelectual (−673 M€).</li></ul></div>
   <div class="notas"><h2>Mis notas</h2><div class="renglones"></div></div>
-  <footer class="pie"><span>Fuente: Banco de España, Boletín Estadístico, capítulo 17 (series 17.4); datos descargados el 9 de octubre de 2026.</span><span class="url">sergioargudo.es · 1 / 2</span></footer>
+  <footer class="pie"><span>Fuente: Banco de España, Boletín Estadístico, capítulo 17 (series 17.4). Datos descargados el 9 de octubre de 2026.</span><span class="url">sergioargudo.es · 1 / 2</span></footer>
 </section>
 <section class="pagina">
   <header class="cab-det"><span class="marca">SAS · FICHAS DEL TEMARIO · EJERCICIO 1 · TEMA 24</span><span class="pag">2 / 2</span></header>
   <div><h1 class="h1-det">Servicios no turísticos · ingresos y pagos por tipo</h1>
   <span class="sub">2025, millones de euros, y variación frente a 2024.</span></div>
   <table class="detalle bp"><thead><tr><th>Tipo de servicio</th><th>Ingresos</th><th>Var.</th><th>Pagos</th><th>Var.</th><th>Saldo</th></tr></thead>
-<tbody><tr class="grupo-fila"><td>Total servicios no turísticos</td><td>119.857</td><td><span class="pos">+14,4 %</span></td><td>76.518</td><td><span class="pos">+7,6 %</span></td><td><span class="pos">+43.339</span></td></tr><tr class=""><td style="padding-left:18px">Transformación y reparaciones</td><td>5.230</td><td><span class="pos">+14,7 %</span></td><td>2.613</td><td><span class="pos">+16,5 %</span></td><td><span class="pos">+2.617</span></td></tr><tr class=""><td style="padding-left:18px">Transporte</td><td>23.018</td><td><span class="pos">+26,0 %</span></td><td>9.869</td><td><span class="neg">−5,4 %</span></td><td><span class="pos">+13.149</span></td></tr><tr class=""><td style="padding-left:18px">Construcción</td><td>1.286</td><td><span class="pos">+7,9 %</span></td><td>552</td><td><span class="pos">+90,3 %</span></td><td><span class="pos">+734</span></td></tr><tr class=""><td style="padding-left:18px">Seguros y pensiones</td><td>2.280</td><td><span class="neg">−13,7 %</span></td><td>2.822</td><td><span class="neg">−14,3 %</span></td><td><span class="neg">−542</span></td></tr><tr class=""><td style="padding-left:18px">Servicios financieros</td><td>6.110</td><td><span class="neg">−8,1 %</span></td><td>2.852</td><td><span class="pos">+38,9 %</span></td><td><span class="pos">+3.258</span></td></tr><tr class=""><td style="padding-left:18px">Propiedad intelectual</td><td>7.197</td><td><span class="pos">+60,1 %</span></td><td>7.870</td><td><span class="pos">+16,3 %</span></td><td><span class="neg">−673</span></td></tr><tr class=""><td style="padding-left:18px">Telecomunicaciones e informática</td><td>23.566</td><td><span class="pos">+11,8 %</span></td><td>11.973</td><td><span class="pos">+3,4 %</span></td><td><span class="pos">+11.593</span></td></tr><tr class=""><td style="padding-left:18px">Otros servicios empresariales</td><td>46.791</td><td><span class="pos">+10,3 %</span></td><td>33.871</td><td><span class="pos">+9,0 %</span></td><td><span class="pos">+12.920</span></td></tr><tr class=""><td style="padding-left:32px">I+D</td><td>2.753</td><td><span class="pos">+5,4 %</span></td><td>1.546</td><td><span class="pos">+12,8 %</span></td><td><span class="pos">+1.207</span></td></tr><tr class=""><td style="padding-left:32px">Consultoría</td><td>14.718</td><td><span class="pos">+8,0 %</span></td><td>11.645</td><td><span class="pos">+8,2 %</span></td><td><span class="pos">+3.073</span></td></tr><tr class=""><td style="padding-left:32px">Servicios técnicos y comerciales</td><td>29.320</td><td><span class="pos">+12,0 %</span></td><td>20.681</td><td><span class="pos">+9,2 %</span></td><td><span class="pos">+8.639</span></td></tr><tr class=""><td style="padding-left:18px">Personales y culturales</td><td>4.382</td><td><span class="pos">+26,3 %</span></td><td>4.097</td><td><span class="pos">+21,7 %</span></td><td><span class="pos">+285</span></td></tr></tbody></table>
-  <footer class="pie"><span>I+D, consultoría y servicios técnicos están dentro de otros servicios empresariales: no se suman aparte. Fuente: Banco de España, Boletín Estadístico, capítulo 17 (serie 17.4, servicios no turísticos por tipo); datos descargados el 9 de octubre de 2026.</span><span class="url">sergioargudo.es · 2 / 2</span></footer>
+<tbody><tr class="grupo-fila"><td>Total servicios no turísticos</td><td>119.857</td><td><span class="pos">+14,4 %</span></td><td>76.518</td><td><span class="pos">+7,6 %</span></td><td><span class="sup">+43.339</span></td></tr><tr class=""><td style="padding-left:18px">Transformación y reparaciones</td><td>5.230</td><td><span class="pos">+14,7 %</span></td><td>2.613</td><td><span class="pos">+16,5 %</span></td><td><span class="sup">+2.617</span></td></tr><tr class=""><td style="padding-left:18px">Transporte</td><td>23.018</td><td><span class="pos">+26,0 %</span></td><td>9.869</td><td><span class="neg">−5,4 %</span></td><td><span class="sup">+13.149</span></td></tr><tr class=""><td style="padding-left:18px">Construcción</td><td>1.286</td><td><span class="pos">+7,9 %</span></td><td>552</td><td><span class="pos">+90,3 %</span></td><td><span class="sup">+734</span></td></tr><tr class=""><td style="padding-left:18px">Seguros y pensiones</td><td>2.280</td><td><span class="neg">−13,7 %</span></td><td>2.822</td><td><span class="neg">−14,3 %</span></td><td><span class="def">−542</span></td></tr><tr class=""><td style="padding-left:18px">Servicios financieros</td><td>6.110</td><td><span class="neg">−8,1 %</span></td><td>2.852</td><td><span class="pos">+38,9 %</span></td><td><span class="sup">+3.258</span></td></tr><tr class=""><td style="padding-left:18px">Propiedad intelectual</td><td>7.197</td><td><span class="pos">+60,1 %</span></td><td>7.870</td><td><span class="pos">+16,3 %</span></td><td><span class="def">−673</span></td></tr><tr class=""><td style="padding-left:18px">Telecomunicaciones e informática</td><td>23.566</td><td><span class="pos">+11,8 %</span></td><td>11.973</td><td><span class="pos">+3,4 %</span></td><td><span class="sup">+11.593</span></td></tr><tr class=""><td style="padding-left:18px">Otros servicios empresariales</td><td>46.791</td><td><span class="pos">+10,3 %</span></td><td>33.871</td><td><span class="pos">+9,0 %</span></td><td><span class="sup">+12.920</span></td></tr><tr class=""><td style="padding-left:32px">I+D</td><td>2.753</td><td><span class="pos">+5,4 %</span></td><td>1.546</td><td><span class="pos">+12,8 %</span></td><td><span class="sup">+1.207</span></td></tr><tr class=""><td style="padding-left:32px">Consultoría</td><td>14.718</td><td><span class="pos">+8,0 %</span></td><td>11.645</td><td><span class="pos">+8,2 %</span></td><td><span class="sup">+3.073</span></td></tr><tr class=""><td style="padding-left:32px">Servicios técnicos y comerciales</td><td>29.320</td><td><span class="pos">+12,0 %</span></td><td>20.681</td><td><span class="pos">+9,2 %</span></td><td><span class="sup">+8.639</span></td></tr><tr class=""><td style="padding-left:18px">Personales y culturales</td><td>4.382</td><td><span class="pos">+26,3 %</span></td><td>4.097</td><td><span class="pos">+21,7 %</span></td><td><span class="sup">+285</span></td></tr></tbody></table>
+  <footer class="pie"><span>I+D, consultoría y servicios técnicos están dentro de otros servicios empresariales: no se suman aparte. Fuente: Banco de España, Boletín Estadístico, capítulo 17 (serie 17.4, servicios no turísticos por tipo). Datos descargados el 9 de octubre de 2026.</span><span class="url">sergioargudo.es · 2 / 2</span></footer>
 </section>
 </body>
 </html>

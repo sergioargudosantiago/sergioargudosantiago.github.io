@@ -27,7 +27,7 @@ h1, h2 { margin: 0; }
 .kpi { border: 1px solid #C9D1C5; border-top: 4px solid; padding: 8px 11px; display: flex; flex-direction: column; gap: 1px; }
 .kpi span { font-size: 12px; } .kpi span:first-child { color: #4A5546; }
 .kpi b { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 21px; }
-.kpi.exp { border-top-color: #2A78D6; } .kpi.imp { border-top-color: #EB6834; } .kpi.sal { border-top-color: #1F6B33; } .kpi.ue { border-top-color: #2A5DB0; }
+.kpi.exp { border-top-color: #2B6CA3; } .kpi.imp { border-top-color: #B5893A; } .kpi.sal { border-top-color: #1F2A1D; } .kpi.sal-sup { border-top-color: #2B6CA3; } .kpi.sal-def { border-top-color: #B5893A; } .kpi.ue { border-top-color: #2B6CA3; }
 .dos { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; }
 .dos > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
 h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #3B4533; }
@@ -36,7 +36,7 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .leyenda { display: flex; gap: 14px; font-size: 12px; font-weight: 700; }
 .leyenda span { display: flex; align-items: center; gap: 6px; }
 .leyenda i { display: inline-block; width: 16px; height: 3px; }
-.l-exp { background: #2A78D6; } .l-imp { background: #EB6834; }
+.l-exp { background: #2B6CA3; } .l-imp { background: #B5893A; }
 .tabla { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
 .tabla th { text-align: right; padding: 4px; border-bottom: 2px solid #1F2A1D; font-size: 12px; }
 .tabla th:first-child { text-align: left; }
@@ -70,8 +70,10 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .detalle.bp + h2 { margin-top: 6px; }
 .detalle .ue { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; white-space: nowrap; }
 .barra-ue { display: inline-block; width: 36px; height: 7px; background: #E2E7DF; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
-.barra-ue i { display: block; height: 100%; background: #2A5DB0; border-radius: 2px; }
-.pos { color: #1F6B33; font-weight: 600; } .neg { color: #B42318; font-weight: 600; }
+.barra-ue i { display: block; height: 100%; background: #2B6CA3; border-radius: 2px; }
+/* variaciones sin color (el signo lo dice); saldos con el color de exportaciones o importaciones */
+.pos, .neg { color: inherit; font-weight: 600; }
+.sup { color: #2B6CA3; font-weight: 600; } .def { color: #B5893A; font-weight: 600; }
 .tenue { color: #6B7568; font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 11.5px; }
 </style>
 </head>
