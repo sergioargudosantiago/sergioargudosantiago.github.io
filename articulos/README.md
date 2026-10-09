@@ -40,6 +40,22 @@ fecha no tiene ese formato, o el `slug` choca con otro, el build aborta sin
 escribir nada. `autores` por defecto es `[sergio]`; `slug` se deriva del título
 si no lo pones; `imagen` cae en `images/og-cover.png`.
 
+## Próximamente
+
+Con `estado: proximamente` en el frontmatter, el artículo aparece en el índice
+y en la portada como tarjeta bloqueada, sin enlace, y queda fuera del feed y
+del sitemap. Su `.html` no se genera, y si existe se borra.
+
+Para revisarlo en local:
+
+```bash
+npm run articulos:previa
+```
+
+Eso escribe también su `.html`. **No lo subas**: vuelve a ejecutar
+`npm run articulos` antes del commit y desaparece. Para publicarlo, quita la
+línea `estado` y ejecuta `npm run articulos`.
+
 ## Colaboradores
 
 Para firmar con alguien más, añádelo a `autores.json` con una clave corta:

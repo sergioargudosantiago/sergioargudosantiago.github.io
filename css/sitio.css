@@ -531,6 +531,10 @@ html.dark { --c-negativo: #F08A80; }
     transition: border-color 0.15s, background 0.15s;
 }
 .c-tarjeta-enlace:hover { border-color: var(--c-acento); background: var(--c-acento-suave); }
+.c-tarjeta-proxima { cursor: default; opacity: 0.72; }
+.c-tarjeta-enlace.c-tarjeta-proxima:hover { border-color: var(--c-linea); background: var(--c-superficie); }
+.c-tarjeta-articulo.c-tarjeta-proxima:hover h2 { text-decoration: none; }
+.c-candado { display: inline-block; vertical-align: -1px; margin-right: 0.2rem; }
 .c-tarjeta-enlace .c-titulo-tarjeta { font-family: var(--f-titular); font-weight: 600; font-size: 1.3rem; line-height: 1.2; }
 .c-tarjeta-enlace > span:last-child { color: var(--c-tenue); }
 .c-cifra-grande { font-family: var(--f-cifras); font-weight: 600; font-size: 2rem; line-height: 1.1; font-variant-numeric: tabular-nums; }

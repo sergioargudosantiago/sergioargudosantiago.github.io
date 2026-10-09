@@ -10,6 +10,7 @@
     "temas:auditar": "node scripts/auditar-temas.js",
     "temas:revisar": "npm run temas:extraer && npm run temas:auditar",
     "articulos": "node scripts/build-articulos.js",
+    "articulos:previa": "node scripts/build-articulos.js --previa",
     "parciales": "node scripts/sincronizar-parciales.js && node scripts/build-articulos.js",
     "fichas": "node scripts/generar-fichas.js && node scripts/generar-fichas-balanza.js",
     "fichas:pdf": "node scripts/fichas-pdf.js",

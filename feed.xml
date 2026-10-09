@@ -6,17 +6,6 @@
     <description>Comercio exterior, política comercial y preparación de la oposición al SOIVRE.</description>
     <language>es-ES</language>
     <atom:link href="https://sergioargudo.es/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 27 Oct 2026 09:00:00 GMT</lastBuildDate>
-    <item>
-      <title>El comercio exterior español en 5 gráficos</title>
-      <link>https://sergioargudo.es/articulos/comercio-exterior-5-graficos.html</link>
-      <guid isPermaLink="true">https://sergioargudo.es/articulos/comercio-exterior-5-graficos.html</guid>
-      <pubDate>Tue, 27 Oct 2026 09:00:00 GMT</pubDate>
-      <description>Cuánto exporta e importa España, qué sectores pesan, adónde van sus exportaciones, con quién tiene superávit y déficit y qué exporta a cada gran socio. Cinco gráficos con los datos de 2025.</description>
-      <dc:creator>Sergio Argudo Santiago</dc:creator>
-      <category>comercio exterior</category>
-      <category>España</category>
-      <category>datos</category>
-    </item>
+
   </channel>
 </rss>

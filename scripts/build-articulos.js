@@ -33,6 +33,10 @@ const DIR_LINKEDIN = path.join(RAIZ, 'review', 'linkedin');
 const SITIO = 'https://sergioargudo.es';
 
 const PALABRAS_POR_MINUTO = 200;
+// --previa escribe también el .html de los artículos «próximamente» para
+// revisarlos en local. Sin la opción se borra: ese .html no debe subirse.
+const PREVIA = process.argv.includes('--previa');
+const CANDADO = '<svg class="c-candado" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><rect x="3" y="7" width="10" height="8" rx="1.5" fill="currentColor"/><path d="M5 7V5a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>';
 
 const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio',
     'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
@@ -288,6 +292,12 @@ function paginaIndice(articulos, autores) {
     const tarjetas = articulos.map(art => {
         const firmas = art.autores.map(id => autores[id]).filter(Boolean)
             .map(a => md.escapeHTML(a.nombre)).join(', ');
+        // Próximamente: tarjeta sin enlace ni fecha hasta que el autor dé el visto bueno
+        if (art.proximamente) return `                <div class="c-tarjeta-articulo c-tarjeta-proxima" aria-disabled="true">
+                    <div class="c-meta"><span>${CANDADO} Próximamente</span></div>
+                    <h2>${md.escapeHTML(art.titulo)}</h2>
+                    <p>${md.escapeHTML(art.resumen)}</p>
+                </div>`;
         return `                <a href="${art.slug}.html" class="c-tarjeta-articulo">
                     <div class="c-meta">
                         <time datetime="${art.fecha}">${fechaLarga(art.fecha)}</time>
@@ -363,7 +373,13 @@ function actualizarPortada(articulos) {
     const re = /<!-- ultimo-articulo:inicio -->[\s\S]*?<!-- ultimo-articulo:fin -->/;
     if (!re.test(html)) return;
     const art = articulos[0];
-    const tarjeta = art ? `
+    const tarjeta = art && art.proximamente ? `
+                    <div class="c-tarjeta-enlace c-tarjeta-proxima" aria-disabled="true">
+                        <span class="c-antetitulo">${CANDADO} Próximo artículo</span>
+                        <span class="c-titulo-tarjeta">${md.escapeHTML(art.titulo)}</span>
+                        <span>${md.escapeHTML(art.resumen)}</span>
+                    </div>
+                    ` : art ? `
                     <a class="c-tarjeta-enlace" href="articulos/${art.slug}.html">
                         <span class="c-antetitulo">Último artículo · ${fechaLarga(art.fecha)}</span>
                         <span class="c-titulo-tarjeta">${md.escapeHTML(art.titulo)}</span>
@@ -516,6 +532,8 @@ function main() {
                 autores: autoresArt,
                 tags: [].concat(datos.tags || []),
                 imagen: datos.imagen || '',
+                // estado: proximamente = sale bloqueado en índice y portada, sin página
+                proximamente: datos.estado === 'proximamente',
                 // Puntos sueltos para el borrador de LinkedIn, opcionales.
                 puntos: [].concat(datos.puntos || []),
                 // Hojas de estilo y scripts propios de este artículo, con ruta
@@ -548,27 +566,29 @@ function main() {
 
     // Salida
     fs.mkdirSync(DIR_LINKEDIN, { recursive: true });
+    const publicados = articulos.filter(a => !a.proximamente);
+    const conPagina = PREVIA ? articulos : publicados;
     for (const art of articulos) {
-        fs.writeFileSync(path.join(DIR_ARTICULOS, `${art.slug}.html`), paginaArticulo(art, autores), 'utf8');
+        if (conPagina.includes(art)) fs.writeFileSync(path.join(DIR_ARTICULOS, `${art.slug}.html`), paginaArticulo(art, autores), 'utf8');
         fs.writeFileSync(path.join(DIR_LINKEDIN, `${art.slug}.md`), borradorLinkedIn(art, autores), 'utf8');
     }
     fs.writeFileSync(path.join(DIR_ARTICULOS, 'index.html'), paginaIndice(articulos, autores), 'utf8');
 
     // Barrido de huérfanos: si se borra o se renombra un .md, su .html se
     // quedaría publicado y enlazado desde el feed antiguo. Se elimina aquí.
-    const vigentes = new Set([...articulos.map(a => `${a.slug}.html`), 'index.html']);
+    const vigentes = new Set([...conPagina.map(a => `${a.slug}.html`), 'index.html']);
     const huerfanos = fs.readdirSync(DIR_ARTICULOS)
         .filter(f => f.endsWith('.html') && !vigentes.has(f));
     huerfanos.forEach(f => {
         fs.unlinkSync(path.join(DIR_ARTICULOS, f));
-        console.log(`  retirado ${f} (ya no tiene .md)`);
+        console.log(`  retirado ${f} (ya no tiene .md o está como próximamente)`);
     });
-    fs.writeFileSync(path.join(RAIZ, 'feed.xml'), feedRSS(articulos, autores), 'utf8');
-    actualizarSitemap(articulos);
+    fs.writeFileSync(path.join(RAIZ, 'feed.xml'), feedRSS(publicados, autores), 'utf8');
+    actualizarSitemap(publicados);
     actualizarPortada(articulos);
 
     console.log(`${articulos.length} artículo(s) generados:`);
-    articulos.forEach(a => console.log(`  · ${a.slug}.html — ${a.palabras} palabras, ${a.minutos} min`));
+    articulos.forEach(a => console.log(`  · ${a.slug}.html — ${a.palabras} palabras, ${a.minutos} min${a.proximamente ? (PREVIA ? ' · PRÓXIMAMENTE, página de previa: no subirla' : ' · próximamente, sin página') : ''}`));
     console.log(`  índice, feed.xml, entradas de sitemap.xml y ${articulos.length} borrador(es) en review/linkedin/`);
 }
 

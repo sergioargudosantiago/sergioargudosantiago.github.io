@@ -5,6 +5,7 @@ autores: [sergio]
 resumen: Cuánto exporta e importa España, qué sectores pesan, adónde van sus exportaciones, con quién tiene superávit y déficit y qué exporta a cada gran socio. Cinco gráficos con los datos de 2025.
 tags: [comercio exterior, España, datos]
 slug: comercio-exterior-5-graficos
+estado: proximamente
 js: [js/graficos.js, articulos/recursos/comercio-5-graficos.js]
 puntos:
   - España exportó 387.092 millones de euros en bienes en 2025, un 55 % más que en 2015.
