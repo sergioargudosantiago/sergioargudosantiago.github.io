@@ -550,3 +550,64 @@ html.dark {
 .c-arcade > span:last-child { color: var(--c-barra-texto); }
 .c-arcade .c-cifra-grande { color: var(--c-barra-activo); font-family: var(--f-marca); font-weight: 800; }
 .c-arcade-rotulo { font-family: var(--f-marca); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--c-oro-texto); }
+
+/* paleta:inicio · generado por scripts/generar-paleta.js desde data/paleta.json, no editar a mano */
+:root {
+    --p-flujos-exportaciones: #2B6CA3;
+    --p-flujos-importaciones: #B5893A;
+    --p-sectores-alimentacion: #5f9e61;
+    --p-sectores-bienes-equipo: #9076be;
+    --p-sectores-semimanufacturas: #009589;
+    --p-sectores-automovil: #b0475b;
+    --p-sectores-quimicos: #4f8ac6;
+    --p-sectores-energeticos: #d07a6d;
+    --p-sectores-consumo-duradero: #179eb7;
+    --p-sectores-materias-primas: #848e38;
+    --p-sectores-manufacturas-consumo: #c579a5;
+    --p-sectores-otras: #8c9387;
+    --p-paises-francia: #5f9e61;
+    --p-paises-alemania: #9076be;
+    --p-paises-italia: #009589;
+    --p-paises-portugal: #b0475b;
+    --p-paises-reino-unido: #4f8ac6;
+    --p-paises-eeuu: #d07a6d;
+    --p-paises-paises-bajos: #179eb7;
+    --p-paises-marruecos: #848e38;
+    --p-paises-china: #c579a5;
+    --p-paises-resto: #8c9387;
+    --p-balanza-bienes: #9076be;
+    --p-balanza-turismo: #d07a6d;
+    --p-balanza-no-turisticos: #179eb7;
+    --p-balanza-bienes-servicios: #848e38;
+    --p-balanza-rentas: #c579a5;
+}
+html.dark {
+    --p-flujos-exportaciones: #4a8fcc;
+    --p-flujos-importaciones: #b48a3c;
+    --p-sectores-alimentacion: #65a467;
+    --p-sectores-bienes-equipo: #9076be;
+    --p-sectores-semimanufacturas: #009589;
+    --p-sectores-automovil: #b0475b;
+    --p-sectores-quimicos: #4f8ac6;
+    --p-sectores-energeticos: #cd776a;
+    --p-sectores-consumo-duradero: #21a3bc;
+    --p-sectores-materias-primas: #848e38;
+    --p-sectores-manufacturas-consumo: #c276a2;
+    --p-sectores-otras: #8e9589;
+    --p-paises-francia: #65a467;
+    --p-paises-alemania: #9076be;
+    --p-paises-italia: #009589;
+    --p-paises-portugal: #b0475b;
+    --p-paises-reino-unido: #4f8ac6;
+    --p-paises-eeuu: #cd776a;
+    --p-paises-paises-bajos: #21a3bc;
+    --p-paises-marruecos: #848e38;
+    --p-paises-china: #c276a2;
+    --p-paises-resto: #8e9589;
+    --p-balanza-bienes: #9076be;
+    --p-balanza-turismo: #cd776a;
+    --p-balanza-no-turisticos: #21a3bc;
+    --p-balanza-bienes-servicios: #848e38;
+    --p-balanza-rentas: #c276a2;
+}
+/* paleta:fin */

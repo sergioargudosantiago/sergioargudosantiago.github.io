@@ -1,0 +1,43 @@
+{
+  "descripcion": "Paleta maestra de sergioargudo.es: web, fichas y artículos. El orden de cada familia es el orden de apilado y de leyenda.",
+  "validacion": "2026-10-09: contraste >= 3:1 sobre fondo y superficie en claro y oscuro; pares vecinos con ΔE OKLab >= 8 en protan, deutan y tritan.",
+  "superficies": {
+    "claro": ["#FBFCFA", "#FFFFFF"],
+    "oscuro": ["#121711", "#1A2018"]
+  },
+  "flujos": [
+    { "id": "exportaciones", "nombre": "Exportaciones", "claro": "#2B6CA3", "oscuro": "#4a8fcc" },
+    { "id": "importaciones", "nombre": "Importaciones", "claro": "#B5893A", "oscuro": "#b48a3c" }
+  ],
+  "sectores": [
+    { "id": "alimentacion", "nombre": "Alimentación", "claro": "#5f9e61", "oscuro": "#65a467" },
+    { "id": "bienes-equipo", "nombre": "Bienes de equipo", "claro": "#9076be", "oscuro": "#9076be" },
+    { "id": "semimanufacturas", "nombre": "Semimanufacturas no químicas", "claro": "#009589", "oscuro": "#009589" },
+    { "id": "automovil", "nombre": "Automóvil", "claro": "#b0475b", "oscuro": "#b0475b" },
+    { "id": "quimicos", "nombre": "Químicos", "claro": "#4f8ac6", "oscuro": "#4f8ac6" },
+    { "id": "energeticos", "nombre": "Energéticos", "claro": "#d07a6d", "oscuro": "#cd776a" },
+    { "id": "consumo-duradero", "nombre": "Consumo duradero", "claro": "#179eb7", "oscuro": "#21a3bc" },
+    { "id": "materias-primas", "nombre": "Materias primas", "claro": "#848e38", "oscuro": "#848e38" },
+    { "id": "manufacturas-consumo", "nombre": "Manufacturas de consumo", "claro": "#c579a5", "oscuro": "#c276a2" },
+    { "id": "otras", "nombre": "Otras mercancías", "claro": "#8c9387", "oscuro": "#8e9589" }
+  ],
+  "paises": [
+    { "id": "francia", "nombre": "Francia", "claro": "#5f9e61", "oscuro": "#65a467" },
+    { "id": "alemania", "nombre": "Alemania", "claro": "#9076be", "oscuro": "#9076be" },
+    { "id": "italia", "nombre": "Italia", "claro": "#009589", "oscuro": "#009589" },
+    { "id": "portugal", "nombre": "Portugal", "claro": "#b0475b", "oscuro": "#b0475b" },
+    { "id": "reino-unido", "nombre": "Reino Unido", "claro": "#4f8ac6", "oscuro": "#4f8ac6" },
+    { "id": "eeuu", "nombre": "EE. UU.", "claro": "#d07a6d", "oscuro": "#cd776a" },
+    { "id": "paises-bajos", "nombre": "Países Bajos", "claro": "#179eb7", "oscuro": "#21a3bc" },
+    { "id": "marruecos", "nombre": "Marruecos", "claro": "#848e38", "oscuro": "#848e38" },
+    { "id": "china", "nombre": "China", "claro": "#c579a5", "oscuro": "#c276a2" },
+    { "id": "resto", "nombre": "Resto", "claro": "#8c9387", "oscuro": "#8e9589" }
+  ],
+  "balanza": [
+    { "id": "bienes", "nombre": "Bienes", "claro": "#9076be", "oscuro": "#9076be" },
+    { "id": "turismo", "nombre": "Turismo", "claro": "#d07a6d", "oscuro": "#cd776a" },
+    { "id": "no-turisticos", "nombre": "Servicios no turísticos", "claro": "#179eb7", "oscuro": "#21a3bc" },
+    { "id": "bienes-servicios", "nombre": "Bienes y servicios", "claro": "#848e38", "oscuro": "#848e38" },
+    { "id": "rentas", "nombre": "Rentas primaria y secundaria", "claro": "#c579a5", "oscuro": "#c276a2" }
+  ]
+}
