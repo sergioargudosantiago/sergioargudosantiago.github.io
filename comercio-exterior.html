@@ -267,6 +267,7 @@
                 </div>
 
                 <nav id="breadcrumbs" class="breadcrumbs hidden" aria-label="Nivel actual"></nav>
+                <p id="avisoFlujo" class="ce-mensaje" role="status" hidden></p>
 
                 <div id="homeView">
                     <div class="ce-macro">
@@ -730,8 +731,42 @@
                 btn.classList.toggle('active', btn.dataset.flow === flow);
             });
 
-            // Reset navigation
-            resetNavigation();
+            // Se queda en el mismo nodo. Si no existe en el otro flujo, sube al nivel
+            // superior más cercano que sí tenga datos y lo avisa.
+            const perdido = ajustarNodoAlFlujo();
+            redibujarVistaActual();
+            if (perdido) {
+                const aviso = document.getElementById('avisoFlujo');
+                aviso.textContent = `«${perdido}» no tiene ${flow === 'E' ? 'exportaciones' : 'importaciones'} en estos datos. Se muestra el nivel superior.`;
+                aviso.hidden = false;
+            }
+        }
+
+        // Quita los niveles más profundos que no tienen filas en el flujo actual.
+        // Devuelve el nombre del primer nodo quitado, o null si no hace falta subir.
+        function ajustarNodoAlFlujo() {
+            const n = navigationState;
+            let perdido = null;
+            for (const lv of ['lv4', 'lv3', 'lv2', 'lv1']) {
+                if (!n.macroSector || !n[lv]) continue;
+                if (filasDelNodo(currentFlow).length) break;
+                if (!perdido) perdido = n[lv].name;
+                n[lv] = null;
+            }
+            return perdido;
+        }
+
+        // Vuelve a pintar el nivel en el que está el usuario (tras cambiar de año o de flujo)
+        function redibujarVistaActual() {
+            const n = navigationState;
+            if (!n.macroSector) { resetNavigation(); return; }
+            const enRejillaLv4 = !document.getElementById('level4View').classList.contains('hidden');
+            if (n.lv4) { showLevel4FinalView(); }
+            else if (n.lv3 && enRejillaLv4) { showLevel4(); }
+            else if (n.lv3) { showFinalView(); }
+            else if (n.lv2) { showLevel3(); }
+            else if (n.lv1) { showLevel2(); }
+            else { showLevel1(); }
         }
 
         function switchYear(year) {
@@ -739,14 +774,7 @@
             document.querySelectorAll('.flow-toggle-btn[data-year]').forEach(btn => {
                 btn.classList.toggle('active', btn.dataset.year === year);
             });
-            // Re-render current view at the new year
-            const ms = navigationState.macroSector;
-            if (!ms) { resetNavigation(); return; }
-            if (navigationState.lv4) { showLevel4FinalView(); }
-            else if (navigationState.lv3) { showFinalView(); }
-            else if (navigationState.lv2) { showLevel3(); }
-            else if (navigationState.lv1) { showLevel2(); }
-            else { showLevel1(); }
+            redibujarVistaActual();
         }
 
         function buildYearSelector() {
@@ -1677,6 +1705,8 @@
         // ========== VIEW MANAGEMENT ==========
 
         function showView(viewId) {
+            const aviso = document.getElementById('avisoFlujo');
+            if (aviso) aviso.hidden = true;
             const views = ['homeView', 'level1View', 'level2View', 'level3View', 'level4View'];
             views.forEach(id => {
                 const el = document.getElementById(id);
