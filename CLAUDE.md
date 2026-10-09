@@ -21,7 +21,9 @@ Todo el contenido, la interfaz y los commits están en **español**.
   <https://sergioargudosantiago.github.io/>.
 - Tailwind compilado a `css/tailwind.css` (`npm run build:css`, fuente en `src/input.css`).
   Tras tocar clases de Tailwind en cualquier `.html` o `.js`, recompilar y commitear el CSS.
-- Chart.js por CDN (jsDelivr). Fuentes de Google: Atkinson Hyperlegible, Fraunces,
+- Gráficos propios en SVG (`js/graficos.js`), sin dependencias, con la paleta única
+  de `data/paleta.json` (`npm run paleta` la valida y la escribe como variables
+  `--p-*` en `css/sitio.css`). Fuentes de Google: Atkinson Hyperlegible, Fraunces,
   IBM Plex Mono y Orbitron (ver «Aspecto» en Estado).
 - Analítica: GoatCounter (sin cookies), comentado en cada página hasta que el autor
   cree la cuenta. Sin banner de cookies: la web no usa ninguna.
@@ -40,8 +42,8 @@ Todo el contenido, la interfaz y los commits están en **español**.
 | `index.html`, `temario.html`, `sobre-mi.html`, `enlaces.html` | Páginas del sitio |
 | `comercio-exterior.html`, `metodologia.html` | Visualizador y su metodología |
 | `js/main.js` | Navegación, modales y **títulos oficiales del temario** (ejercicios 1, 3 y 5) |
-| `js/data-visualization.js` | Gráficos |
-| `data/` | Datos que carga la web (`balanza_data.js`, `flujos_data.csv`, correspondencias NC8) |
+| `js/graficos.js` | Gráficos SVG de la web (líneas, apiladas, ranking, mancuernas) |
+| `data/` | Datos que carga la web (`balanza_data.js`, `flujos_data.csv`, correspondencias NC8) y la paleta (`paleta.json`) |
 | `articulos/` | Artículos: los `.md` son la fuente; los `.html` se generan |
 | `public/temas/ejercicio-N/` | PDFs y Word del temario |
 | `scripts/` | Generadores y pipelines (Node y R) |
@@ -72,6 +74,11 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
   perdida frente al fichero anterior); con cualquier error no se toca el fichero.
   El informe, con las revisiones del BdE, queda en `review/balanza/`. `npm test`
   prueba el validador. La web solo lee `data/balanza_data.js`: no llama a la API.
+- **Gráficos y colores**: los colores de datos solo se cambian en `data/paleta.json`
+  y luego `npm run paleta` (comprueba contraste ≥ 3:1 en claro y oscuro) y
+  `npm run fichas`. Los titulares de los gráficos se calculan con los datos. Para
+  revisarlos: `npm run capturas` (Playwright) deja capturas a 375 y 1280 px, en claro
+  y oscuro, en `review/capturas/`. Cómo usar la paleta en R: `articulos/README.md`.
 - **Flujos comerciales**: `data/flujos_data.csv` y
   `data/correspondencias-sectores-nc8.csv` salen de un pipeline privado del autor que
   **no está en este repositorio** (a propósito: solo se publican los CSV). Lee la
@@ -151,8 +158,8 @@ Pendiente, por orden:
 4. **Pendiente de decidir con el autor**: aviso legal y privacidad mínimos; si
    se activa GoatCounter; nota de autoría de los temas (el temario dice que se
    basa en los temas de su preparador).
-5. Gráfico «Servicios turísticos y no turísticos» de la balanza: usa dos ejes Y
-   (barras en M€ y línea en %). Convendría partirlo en dos gráficos.
+5. ~~Gráfico de dos ejes Y de la balanza~~ (hecho el 9 oct): sustituido por dos
+   paneles con la misma escala al rehacer los gráficos.
 6. ~~**Revisión técnica**~~ (hecho el 7 oct): axe WCAG 2 AA sin fallos en las 8
    páginas (claro y oscuro), enlaces internos y 202 descargas del temario
    comprobados, títulos y descripciones unificados. **Pendiente**: los ~26
@@ -193,9 +200,11 @@ artículo que tiene pensado el autor. Para generar los PDF hace falta Playwright
   mariposa exportación/importación, crecimiento, cuota UE, fichas con evolución,
   cascada de la balanza, calendario mensual e historias deslizables. Pendiente de
   que el autor elija cuáles llevar a `comercio-exterior.html`.
-- **Modernizar los gráficos** de `comercio-exterior.html` (Chart.js): el autor
-  prefiere hacerlo en su ordenador local, donde hay R y acceso a internet sin
-  restricciones.
+- ~~**Modernizar los gráficos**~~ (hecho el 9 oct): `comercio-exterior.html` ya no usa
+  Chart.js. Flujos: exportaciones e importaciones con la banda de saldo. Balanza:
+  suma móvil de 12 meses, saldos apilados, ranking de turismo por país, ingresos y
+  pagos por tipo de servicio y turismo frente al resto. Paleta única para web,
+  fichas y artículos (el artículo de los 5 gráficos debe usarla).
 - **Datos de flujos regenerados** (9 oct): el CSV anterior tenía desgloses de
   nivel 4 inventados (reparto fijo), cuota UE sin Rumanía, plátano, tomate y aceite
   de oliva 2021–2023 incompletos (TVA de +500 % falsas) y años de descargas

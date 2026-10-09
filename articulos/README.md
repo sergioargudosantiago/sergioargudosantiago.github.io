@@ -98,6 +98,29 @@ a un fragmento. Conviene quitar el `width`/`height` fijos en píxeles del `div`:
 `ggiraph` reescala solo al ancho del contenedor. Las fuentes que R empaqueta no
 hacen falta si el SVG no las referencia — eran 19,8 MB de los 21.
 
+## Colores de los gráficos
+
+Todos los gráficos (web, fichas, artículos y carrusel) usan la paleta de
+`data/paleta.json`. No escribir colores a mano. El orden de cada familia es el
+orden de apilado y de leyenda.
+
+- En la web y en los gráficos interactivos en JS: `js/graficos.js` y las
+  variables `--p-<familia>-<id>` que genera `npm run paleta`.
+- En R:
+
+```r
+paleta <- jsonlite::fromJSON("data/paleta.json")
+sectores <- setNames(paleta$sectores$claro, paleta$sectores$nombre)
+ggplot(df, aes(anio, valor, fill = sector)) +
+  geom_col() +
+  scale_fill_manual(values = sectores, breaks = paleta$sectores$nombre)
+```
+
+Exportaciones e ingresos van siempre en `paleta$flujos$claro[1]` y importaciones
+y pagos en `paleta$flujos$claro[2]`. Para cambiar un color: editar
+`data/paleta.json`, ejecutar `npm run paleta` (valida el contraste y escribe el
+CSS) y regenerar las fichas.
+
 ## Markdown admitido
 
 Encabezados `##` a `#####` (el `#` de nivel 1 lo pone la plantilla con el
