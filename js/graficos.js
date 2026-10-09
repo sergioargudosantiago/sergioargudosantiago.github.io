@@ -32,10 +32,17 @@
     }
 
     const pasoEtiquetas = (n, ancho) => Math.max(1, Math.ceil(n / Math.max(2, Math.floor(ancho / 42))));
+    // Etiquetas visibles contadas desde el final: el último dato siempre lleva etiqueta
+    // y ninguna queda más cerca de su vecina que el paso.
+    function indicesEtiquetas(n, ancho) {
+        const paso = pasoEtiquetas(n, ancho), r = [];
+        for (let i = n - 1; i >= 0; i -= paso) r.unshift(i);
+        return r;
+    }
     const anchoDibujable = ancho => ancho > 0;
     const conAlfa = (hex, a) => `rgba(${[1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16)).join(',')},${a})`;
 
-    const puras = { marcas, formato, formatoPct, variacionPct, sumaMovil, pasoEtiquetas, anchoDibujable, conAlfa };
+    const puras = { marcas, formato, formatoPct, variacionPct, sumaMovil, pasoEtiquetas, indicesEtiquetas, anchoDibujable, conAlfa };
     if (typeof module !== 'undefined' && module.exports) { module.exports = puras; return; }
 
     // ---------- dibujo (solo navegador) ----------
@@ -75,7 +82,8 @@
         if (!anchoDibujable(w)) { el.dataset.w = '0'; return null; }
         el.innerHTML = '';
         el.dataset.w = String(Math.round(w));
-        const svg = S('svg', { width: w, height: h, viewBox: `0 0 ${w} ${h}`, role: 'img', 'aria-label': titulo || '' }, el);
+        // role=group (no img): dentro hay zonas enfocables que el lector de pantalla debe anunciar
+        const svg = S('svg', { width: w, height: h, viewBox: `0 0 ${w} ${h}`, role: 'group', 'aria-label': titulo || '' }, el);
         return { svg, w, h };
     }
     function sinDatos(el) { el.innerHTML = '<p class="c-nota">Sin datos para este periodo.</p>'; el.dataset.w = String(Math.round(el.clientWidth)); }
@@ -93,6 +101,9 @@
             tip = document.createElement('div');
             tip.id = 'graficos-tip'; tip.className = 'graficos-tip'; tip.setAttribute('role', 'tooltip'); tip.hidden = true;
             document.body.appendChild(tip);
+            // en móvil no hay «mouseleave»: se oculta al desplazar o al tocar fuera de un gráfico
+            window.addEventListener('scroll', () => ocultarTip(), { passive: true });
+            document.addEventListener('touchstart', ev => { if (!(ev.target.closest && ev.target.closest('.graficos-lienzo'))) ocultarTip(); }, { passive: true });
         }
         tip.innerHTML = html; tip.hidden = false;
         const r = tip.getBoundingClientRect();
@@ -104,10 +115,12 @@
     const ocultarTip = () => { if (tip) tip.hidden = true; };
     const filaTip = (nombre, color, valor) => `<div class="fila"><span>${color ? `<i class="graficos-muestra" style="background:${color}"></i>` : ''}${nombre}</span><span>${valor}</span></div>`;
 
-    // Zonas interactivas: un rectángulo transparente enfocable por punto, columna o fila
+    // Zonas interactivas: un rectángulo transparente por punto, columna o fila.
+    // Tabulador itinerante: una sola parada de Tab por gráfico y las flechas recorren las zonas.
     function zonas(svg, rects, etiqueta, html, entrar, salir) {
         const lista = rects.map((at, i) => {
-            const r = S('rect', Object.assign({ fill: 'transparent', tabindex: '0', role: 'graphics-symbol', 'aria-label': etiqueta(i) }, at), svg);
+            const r = S('rect', Object.assign({ fill: 'transparent', tabindex: i === 0 ? '0' : '-1', role: 'graphics-symbol', 'aria-label': etiqueta(i) }, at), svg);
+            r.addEventListener('focus', () => lista.forEach((z, k) => z.setAttribute('tabindex', k === i ? '0' : '-1')));
             const ver = (x, y) => { if (entrar) entrar(i); verTip(x, y, html(i)); };
             const fuera = () => { ocultarTip(); if (salir) salir(i); };
             r.addEventListener('mousemove', ev => ver(ev.clientX, ev.clientY));
@@ -147,8 +160,7 @@
         const xs = x.map((_, i) => x.length > 1 ? x0 + i * (x1 - x0) / (x.length - 1) : (x0 + x1) / 2);
         const [cA, cB] = colores.map(v);
         ejeY(svg, ti, y, m.l, w - m.r);
-        const paso = pasoEtiquetas(x.length, x1 - x0);
-        x.forEach((t, i) => { if (i % paso === 0 || i === x.length - 1) S('text', { x: xs[i], y: h - 8, 'text-anchor': 'middle' }, svg).textContent = t; });
+        indicesEtiquetas(x.length, x1 - x0).forEach(i => { S('text', { x: xs[i], y: h - 8, 'text-anchor': 'middle' }, svg).textContent = x[i]; });
 
         // banda de saldo, partida en los cruces
         const tramo = (p, q, ta, tb, sa, sb) => S('polygon', { points: `${p},${y(ta)} ${q},${y(tb)} ${q},${y(sb)} ${p},${y(sa)}`, fill: (ta - sa + tb - sb) >= 0 ? conAlfa(cA, 0.14) : conAlfa(cB, 0.16) }, svg);
@@ -216,8 +228,7 @@
         ejeY(svg, ti, y, m.l, w - m.r);
         // solo las etiquetas que caben: se salta un número fijo de las no vacías
         const conEtiqueta = x.map((_, i) => i).filter(i => etiquetas[i]);
-        const saltoEtq = pasoEtiquetas(conEtiqueta.length, x1 - x0);
-        const visibles = new Set(conEtiqueta.filter((_, k) => k % saltoEtq === 0));
+        const visibles = new Set(indicesEtiquetas(conEtiqueta.length, x1 - x0).map(k => conEtiqueta[k]));
         x.forEach((_, i) => {
             let arriba = 0, abajo = 0;
             series.forEach(se => {

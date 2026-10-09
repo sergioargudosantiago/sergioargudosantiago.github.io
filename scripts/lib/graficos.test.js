@@ -45,6 +45,15 @@ test('pasoEtiquetas deja al menos 42 px por etiqueta', () => {
     assert.ok(G.pasoEtiquetas(88, 330) >= 12);
 });
 
+test('indicesEtiquetas: incluye el último y nunca deja dos más cerca que el paso', () => {
+    for (const [n, ancho] of [[11, 180], [11, 200], [12, 220], [5, 150], [88, 330], [11, 800]]) {
+        const idx = G.indicesEtiquetas(n, ancho);
+        const paso = G.pasoEtiquetas(n, ancho);
+        assert.strictEqual(idx[idx.length - 1], n - 1, `último en n=${n}`);
+        for (let k = 1; k < idx.length; k++) assert.ok(idx[k] - idx[k - 1] >= paso, `n=${n} ancho=${ancho}: ${idx}`);
+    }
+});
+
 test('anchoDibujable: contenedor oculto no se dibuja', () => {
     assert.strictEqual(G.anchoDibujable(0), false);
     assert.strictEqual(G.anchoDibujable(320), true);

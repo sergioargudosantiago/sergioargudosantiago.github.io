@@ -1931,12 +1931,14 @@
             const g = BALANZA_174_RAW, anios = aniosCompletos(g, 4), s = e => anios.map(a => sumaAnio(g, a, col(g, e)));
             const bienes = s('Bienes Saldo'), tur = s('Turismo Saldo'), notur = s('Serv. No Turísticos Saldo');
             const total = anios.map((_, i) => bienes[i] + tur[i] + notur[i]), n = anios.length - 1;
-            const titular = tur[n] > -bienes[n]
-                ? `En ${anios[n]} el turismo (${Graficos.formato(tur[n])} M€) más que compensa el déficit de bienes (${Graficos.formato(-bienes[n])} M€)`
-                : `En ${anios[n]} el turismo (${Graficos.formato(tur[n])} M€) no llega a compensar el saldo de bienes (${Graficos.formato(bienes[n])} M€)`;
+            const titular = bienes[n] >= 0
+                ? `En ${anios[n]} bienes (${Graficos.formato(bienes[n])} M€) y turismo (${Graficos.formato(tur[n])} M€) suman superávit`
+                : tur[n] > -bienes[n]
+                    ? `En ${anios[n]} el turismo (${Graficos.formato(tur[n])} M€) más que compensa el déficit de bienes (${Graficos.formato(-bienes[n])} M€)`
+                    : `En ${anios[n]} el turismo (${Graficos.formato(tur[n])} M€) no llega a compensar el déficit de bienes (${Graficos.formato(-bienes[n])} M€)`;
             document.getElementById('b2Titulo').textContent = titular;
             Graficos.apiladas(document.getElementById('bp174BarChart'), {
-                x: anios.map(String), etiquetas: anios.map((a, i) => (anios.length > 8 && i % 2 && i !== n) ? '' : String(a)),
+                x: anios.map(String), etiquetas: anios.map(String),
                 series: [{ nombre: 'Bienes', color: '--p-balanza-bienes', valores: bienes },
                          { nombre: 'Turismo', color: '--p-balanza-turismo', valores: tur },
                          { nombre: 'Servicios no turísticos', color: '--p-balanza-no-turisticos', valores: notur }],
