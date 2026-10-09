@@ -488,7 +488,8 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .tenue { color: #6B7568; font-family: 'Public Sans', sans-serif; font-size: 11.5px; }
 `;
 
-const FUENTES = 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Newsreader:opsz,wght@6..72,600..700&family=Orbitron:wght@700;800&family=Public+Sans:wght@400;700&display=swap';
+// Las fichas viven en public/fichas/: las fuentes se sirven desde la propia web.
+const FUENTES = '../../css/fuentes.css';
 
 function documento(titulo, cuerpo) {
     return `<!DOCTYPE html>
@@ -498,8 +499,6 @@ function documento(titulo, cuerpo) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
 <title>${esc(titulo)}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${FUENTES}">
 <style>${ESTILO}</style>
 </head>

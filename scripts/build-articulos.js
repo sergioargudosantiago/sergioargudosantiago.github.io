@@ -134,8 +134,6 @@ function cabeceraHTML({ titulo, descripcion, url, imagen, base, tipo, extra, ima
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
     <link rel="alternate" type="application/rss+xml" title="Artículos — Sergio Argudo Santiago" href="${SITIO}/feed.xml">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <meta name="author" content="Sergio Argudo Santiago">
     <meta property="og:type" content="${tipo}">

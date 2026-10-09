@@ -23,8 +23,10 @@ Todo el contenido, la interfaz y los commits están en **español**.
   Tras tocar clases de Tailwind en cualquier `.html` o `.js`, recompilar y commitear el CSS.
 - Gráficos propios en SVG (`js/graficos.js`), sin dependencias, con la paleta única
   de `data/paleta.json` (`npm run paleta` la valida y la escribe como variables
-  `--p-*` en `css/sitio.css`). Fuentes de Google: Newsreader (titulares), Public Sans
-  (texto), IBM Plex Mono (cifras) y Orbitron (marca) (ver «Aspecto» en Estado).
+  `--p-*` en `css/sitio.css`). Fuentes servidas desde la propia web (`fonts/` y
+  `css/fuentes.css`, solo latin y latin-ext; la web no llama a Google): Newsreader
+  (titulares), Public Sans (texto), IBM Plex Mono (cifras) y Orbitron (marca) (ver
+  «Aspecto» en Estado).
 - Analítica: GoatCounter (sin cookies), comentado en cada página hasta que el autor
   cree la cuenta. Sin banner de cookies: la web no usa ninguna.
 - GitHub Pages construye con **Jekyll** desde `main`. Jekyll publica todo lo
