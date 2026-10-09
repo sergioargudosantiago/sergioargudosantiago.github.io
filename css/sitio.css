@@ -27,8 +27,8 @@
     --c-oro-texto: #E0C46B;       /* dorado legible sobre la barra verde */
 
     /* Tipografía */
-    --f-texto: "Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, sans-serif;
-    --f-titular: "Fraunces", Georgia, "Times New Roman", serif;
+    --f-texto: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+    --f-titular: "Newsreader", Georgia, "Times New Roman", serif;
     --f-cifras: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
     --f-marca: "Orbitron", "Segoe UI", system-ui, sans-serif;
 
@@ -97,7 +97,7 @@ html.dark body.c-pagina {
 }
 .c-titular {
     font-family: var(--f-titular) !important;
-    font-weight: 700;
+    font-weight: 600;
     font-size: clamp(1.9rem, 1.2rem + 2.6vw, 2.9rem);
     line-height: 1.1 !important;
     letter-spacing: -0.01em !important;
@@ -324,7 +324,7 @@ html.dark body.c-pagina {
 .art-cuerpo p { max-width: 68ch; }
 .art-cuerpo h2 {
     font-family: var(--f-titular) !important;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.55rem;
     line-height: 1.2;
     margin-top: 2.6rem;
@@ -384,7 +384,7 @@ hr + .art-metodologia { border-top: 0; padding-top: 0; }
 }
 .c-tarjeta-articulo h2 {
     font-family: var(--f-titular) !important;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.5rem;
     line-height: 1.2;
     transition: color 0.15s;
@@ -423,7 +423,7 @@ hr + .art-metodologia { border-top: 0; padding-top: 0; }
 .c-seccion > * { min-width: 0; }
 .c-seccion-titulo {
     font-family: var(--f-titular) !important;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.55rem;
     line-height: 1.2;
     display: flex;
@@ -517,7 +517,7 @@ html.dark { --c-negativo: #F08A80; }
     transition: border-color 0.15s, background 0.15s;
 }
 .c-tarjeta-enlace:hover { border-color: var(--c-acento); background: var(--c-acento-suave); }
-.c-tarjeta-enlace .c-titulo-tarjeta { font-family: var(--f-titular); font-weight: 700; font-size: 1.3rem; line-height: 1.2; }
+.c-tarjeta-enlace .c-titulo-tarjeta { font-family: var(--f-titular); font-weight: 600; font-size: 1.3rem; line-height: 1.2; }
 .c-tarjeta-enlace > span:last-child { color: var(--c-tenue); }
 .c-cifra-grande { font-family: var(--f-cifras); font-weight: 600; font-size: 2rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
 
@@ -540,7 +540,7 @@ html.dark { --c-negativo: #F08A80; }
 .graficos-lienzo { position: relative; width: 100%; min-width: 0; }
 .graficos-lienzo svg { display: block; }
 .graficos-lienzo svg text { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; fill: var(--c-tenue); }
-.graficos-lienzo svg text.nombre { font-family: "Atkinson Hyperlegible", system-ui, sans-serif; font-size: 12.5px; fill: var(--c-tinta); }
+.graficos-lienzo svg text.nombre { font-family: var(--f-texto); font-size: 12.5px; fill: var(--c-tinta); }
 .graficos-lienzo svg text.valor { fill: var(--c-tinta); font-weight: 500; paint-order: stroke; stroke: var(--c-superficie); stroke-width: 3px; stroke-linejoin: round; }
 .graficos-lienzo rect[tabindex]:focus { outline: none; }
 .graficos-lienzo rect[tabindex]:focus-visible { outline: 2px solid var(--c-foco); }
