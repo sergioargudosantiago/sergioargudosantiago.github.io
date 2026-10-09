@@ -52,6 +52,7 @@
 
     <!-- Datos Balanza de Pagos (regenerables con: node scripts/update_balanza_data.js) -->
     <script defer src="data/balanza_data.js"></script>
+    <script defer src="js/graficos.js"></script>
 
     <style>
         /* Comercio exterior, diseño C. Colores y tipografías salen de las
@@ -152,20 +153,22 @@
         .ce-lienzo { position: relative; height: 380px; }
         .ce-kpi { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 0.5rem; text-align: left; }
         .ce-cifra { font-family: var(--f-cifras); font-weight: 600; font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem); line-height: 1.1; letter-spacing: -0.01em; color: var(--c-tinta); font-variant-numeric: tabular-nums; }
-        .ce-positivo { color: var(--c-positivo) !important; }
-        .ce-negativo { color: var(--c-negativo) !important; }
+        /* Saldos: superávit con el color de exportaciones, déficit con el de importaciones */
+        .ce-positivo { color: var(--p-flujos-exportaciones) !important; }
+        .ce-negativo { color: var(--p-flujos-importaciones) !important; }
+        .ce-titular { font-family: var(--f-titular); font-size: 1.15rem; font-weight: 600; line-height: 1.3; text-wrap: balance; margin: 0; color: var(--c-tinta); }
         .ce-estado { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.15rem 0.6rem; border-radius: 3px; border: 1px solid currentColor; }
         .ce-estado.ce-neutro { color: var(--c-tenue); }
         .ce-separador { width: 100%; border-top: 1px solid var(--c-linea); }
 
         .tva-badge { display: inline-flex; align-items: baseline; gap: 0.35rem; font-family: var(--f-cifras); font-weight: 600; font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
-        .tva-positive { color: var(--c-positivo); }
-        .tva-negative { color: var(--c-negativo); }
+        /* Variaciones sin color: la flecha lleva el signo */
+        .tva-positive, .tva-negative { color: var(--c-tinta); }
 
         .eu-badge { display: flex; flex-direction: column; gap: 0.5rem; width: 100%; }
         .eu-pct { font-family: var(--f-cifras); font-weight: 600; font-size: 1.6rem; color: var(--c-tinta); font-variant-numeric: tabular-nums; }
         .eu-bar-track { width: 100%; height: 8px; background: var(--c-superficie-2); border: 1px solid var(--c-linea); border-radius: 4px; position: relative; overflow: hidden; }
-        .eu-bar-fill { position: absolute; left: 0; top: 0; height: 100%; background: var(--g-ue); border-radius: 0 4px 4px 0; transition: width 0.5s ease; }
+        .eu-bar-fill { position: absolute; left: 0; top: 0; height: 100%; background: var(--p-flujos-exportaciones); border-radius: 0 4px 4px 0; transition: width 0.5s ease; }
         .eu-na { font-size: 0.9rem; color: var(--c-tenue); }
 
         .ce-paises { display: grid; gap: 0.5rem; width: 100%; counter-reset: pais; }
@@ -179,11 +182,11 @@
         .bp-kpi-card { background: var(--c-superficie); border: 1px solid var(--c-linea); border-radius: 4px; padding: 1rem 1.1rem; display: grid; gap: 0.35rem; }
         .bp-kpi-label { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--c-tenue); }
         .bp-kpi-value { font-family: var(--f-cifras); font-weight: 600; font-size: 1.6rem; color: var(--c-tinta); font-variant-numeric: tabular-nums; }
-        .bp-kpi-value.positive { color: var(--c-positivo); }
-        .bp-kpi-value.negative { color: var(--c-negativo); }
+        .bp-kpi-value.positive { color: var(--p-flujos-exportaciones); }
+        .bp-kpi-value.negative { color: var(--p-flujos-importaciones); }
         .bp-kpi-unit { font-family: var(--f-cifras); font-size: 0.8rem; color: var(--c-tenue); }
         .bp-badge { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--f-cifras); font-size: 0.85rem; color: var(--c-tenue); }
-        .bp-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--c-positivo); }
+        .bp-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--c-acento); }
         .bp-chart-card { background: var(--c-superficie); border: 1px solid var(--c-linea); border-radius: 4px; padding: 1.1rem 1.25rem; min-width: 0; }
         .bp-chart-title { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--c-tenue); margin-bottom: 0.9rem; }
         .ce-pila { display: grid; gap: 1.25rem; }
@@ -309,8 +312,11 @@
                     <h2 id="finalTitle" class="ce-titulo-nivel hidden"></h2>
 
                     <div class="ce-tarjeta ce-grafico">
-                        <h3 class="ce-etiqueta">Evolución anual, millones de euros</h3>
-                        <div class="ce-lienzo"><canvas id="timeSeriesChart" aria-label="Evolución anual del valor del sector"></canvas></div>
+                        <h3 class="ce-etiqueta">Exportaciones e importaciones, millones de euros</h3>
+                        <p id="f1Titulo" class="ce-titular"></p>
+                        <div class="graficos-leyenda"><span><i class="graficos-muestra" style="background:var(--p-flujos-exportaciones)"></i>Exportaciones</span><span><i class="graficos-muestra" style="background:var(--p-flujos-importaciones)"></i>Importaciones</span><span>Banda: saldo</span></div>
+                        <div id="timeSeriesChart" class="graficos-lienzo" data-h="260"></div>
+                        <p class="c-nota">Fuente: estadística de comercio exterior (AEAT), vía DataComex. Tramo discontinuo: datos provisionales.</p>
                     </div>
 
                     <div id="analyticsGrid" class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 auto-rows-min">
@@ -1406,125 +1412,54 @@
             }
         }
 
+        // Filas del nodo actual (macro y niveles elegidos) para un flujo dado.
+        // F1 necesita exportaciones e importaciones a la vez, aunque el conmutador muestre uno.
+        function filasDelNodo(flujo) {
+            const n = navigationState;
+            return allData.filter(r => r.flujo === flujo && r.macro_sector === n.macroSector &&
+                (!n.lv1 || r.lv1 === n.lv1.code) && (!n.lv2 || r.lv2 === n.lv2.code) &&
+                (!n.lv3 || r.lv3 === n.lv3.code) && (!n.lv4 || r.lv4 === n.lv4.code));
+        }
+
+        // Suma anual con la misma regla que las tarjetas: sin duplicar lv3 y sus lv4.
+        function sumaAnual(filas, anios) {
+            const s = Object.fromEntries(anios.map(a => [a, 0]));
+            const padres = buildLocalParents(filas);
+            filas.forEach(r => {
+                if (!navigationState.lv4 && isLv4Duplicate(r, padres)) return;
+                if (r.year in s) s[r.year] += parseNumericValue(r.total_millones);
+            });
+            return anios.map(a => s[a]);
+        }
+
         function renderChart(yearlyData, years, level, dataRows, selectedYear) {
             if (!years) years = ['2021', '2022', '2023', '2024', '2025'];
-            const values = years.map(year => yearlyData[year] || 0);
             // El año de referencia es el que ha elegido el usuario, igual que el resto
             // de tarjetas. Solo se cae al último disponible si no está en este tramo.
-            const refYear = (selectedYear && years.includes(selectedYear))
-                ? selectedYear
-                : years[years.length - 1];
-
+            const refYear = (selectedYear && years.includes(selectedYear)) ? selectedYear : years[years.length - 1];
             lastChartArgs = { yearlyData, years, level, dataRows, selectedYear };
-
-            if (typeof Chart === 'undefined') {
-                console.warn('Chart.js no disponible (posiblemente bloqueado por tracking prevention)');
-                renderEUShare(computeWeightedEUShare(dataRows ? dataRows.filter(r => r.year === refYear) : [], level === 'lv4' ? 'lv4' : 'lv3'), currentFlow, refYear);
-                return;
-            }
-
-            const ctx = document.getElementById('timeSeriesChart').getContext('2d');
-            if (chartInstance) chartInstance.destroy();
-
-            const isDark = document.documentElement.classList.contains('dark');
-            const chartMain = colorGrafico('--g-principal');
-            const chartMainAlpha = colorGrafico('--g-principal', 0.1);
-            const tickMain = colorGrafico('--c-tinta');
-            const tickMuted = colorGrafico('--c-tenue');
-
-            chartInstance = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: years,
-                    datasets: [{
-                        label: 'Millones €',
-                        data: values,
-                        borderColor: chartMain,
-                        backgroundColor: chartMainAlpha,
-                        borderWidth: 2.5,
-                        tension: 0.3,
-                        fill: true,
-                        pointRadius: 4,
-                        pointHoverRadius: 7,
-                        pointBackgroundColor: colorGrafico('--c-superficie'),
-                        pointBorderColor: chartMain,
-                        pointBorderWidth: 2
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    interaction: {
-                        mode: 'index',
-                        intersect: false,
-                    },
-                    plugins: {
-                        legend: { display: false },
-                        subtitle: {
-                            display: true,
-                            text: 'Fuente: Elaboración propia a partir de datos del departamento de Aduanas e IIEE',
-                            position: 'bottom',
-                            align: 'center',
-                            color: tickMuted,
-                            font: { size: 11 },
-                            padding: { top: 16 }
-                        },
-                        tooltip: {
-                            backgroundColor: colorGrafico('--c-superficie'),
-                            titleColor: colorGrafico('--c-tinta'),
-                            bodyColor: colorGrafico('--c-tinta'),
-                            borderColor: colorGrafico('--c-linea'),
-                            borderWidth: 1,
-                            padding: 16,
-                            boxPadding: 8,
-                            usePointStyle: true,
-                            titleFont: { size: 14, weight: 'bold' },
-                            bodyFont: { size: 14 },
-                            callbacks: {
-                                label: (context) => ` ${formatNumber(context.parsed.y)} M€`
-                            }
-                        }
-                    },
-                    scales: {
-                        x: {
-                            grid: { display: false },
-                            ticks: {
-                                font: (context) => {
-                                    if (context.tick && context.tick.label === refYear) return { weight: '900', size: 14 };
-                                    return { weight: 'normal', size: 12 };
-                                },
-                                color: (context) => {
-                                    if (context.tick && context.tick.label === refYear) return tickMain;
-                                    return tickMuted;
-                                }
-                            }
-                        },
-                        y: {
-                            position: 'right',
-                            beginAtZero: true,
-                            grid: { color: colorGrafico('--g-rejilla') },
-                            ticks: {
-                                font: (context) => {
-                                    if (context.tick && context.tick.value === values[values.length - 1]) {
-                                        return { weight: 'bold', size: 14 };
-                                    }
-                                    return { weight: 'normal', size: 11 };
-                                },
-                                color: (context) => {
-                                    if (context.tick && context.tick.value === values[values.length - 1]) return chartMain;
-                                    return tickMuted;
-                                },
-                                callback: (value) => formatNumber(value)
-                            }
-                        }
-                    }
-                }
-            });
 
             // Cuota UE del año de referencia (el seleccionado por el usuario)
             const euLevel = (level === 'final' || level === 'lv4') ? 'lv4' : 'lv3';
-            const refRows = dataRows.filter(r => r.year === refYear);
-            renderEUShare(computeWeightedEUShare(refRows, euLevel), currentFlow, refYear);
+            renderEUShare(computeWeightedEUShare(dataRows ? dataRows.filter(r => r.year === refYear) : [], euLevel), currentFlow, refYear);
+            if (typeof Graficos === 'undefined') return;
+
+            const exp = sumaAnual(filasDelNodo('E'), years), imp = sumaAnual(filasDelNodo('I'), years);
+            const estados = years.map(a => (allData.find(r => r.year === a) || {}).estado);
+            const desde = estados.indexOf('provisional');
+            const n = years.length - 1, saldo = exp[n] - imp[n];
+            const nombre = currentViewName || navigationState.macroSector || 'Total';
+            const varE = Graficos.variacionPct(exp[0], exp[n]), varI = Graficos.variacionPct(imp[0], imp[n]);
+            const cola = saldo >= 0
+                ? (varE == null ? '' : `, con exportaciones ${Graficos.formatoPct(varE)} desde ${years[0]}`)
+                : (varI == null ? '' : `, con importaciones ${Graficos.formatoPct(varI)} desde ${years[0]}`);
+            const titular = `${nombre}: ${saldo >= 0 ? 'superávit' : 'déficit'} de ${Graficos.formato(Math.abs(saldo))} M€ en ${years[n]}${cola}`;
+            document.getElementById('f1Titulo').textContent = titular;
+            Graficos.lineas(document.getElementById('timeSeriesChart'), {
+                x: years, a: exp, b: imp, nombres: ['Exportaciones', 'Importaciones'],
+                colores: ['--p-flujos-exportaciones', '--p-flujos-importaciones'],
+                desde: desde < 0 ? null : desde, destacar: currentFlow === 'E' ? 'a' : 'b', titulo: titular
+            });
         }
 
         function renderTVA(tvaValue) {
@@ -2525,9 +2460,7 @@
 
         // Re-render charts when theme toggles
         new MutationObserver(() => {
-            if (chartInstance && lastChartArgs) {
-                renderChart(lastChartArgs.yearlyData, lastChartArgs.years, lastChartArgs.level, lastChartArgs.dataRows, lastChartArgs.selectedYear);
-            }
+            if (typeof Graficos !== 'undefined') Graficos.redibujarTodo();
             rerenderBalanzaCharts();
         }).observe(document.documentElement, { attributeFilter: ['class'] });
 
