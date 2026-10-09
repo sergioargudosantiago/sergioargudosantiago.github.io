@@ -24,4 +24,6 @@ exclude:
   - README.md
   - CLAUDE.md
   - articulos/*.md
+  # Fuente Markdown de los esquemas: la web sirve los Word y PDF de public/temas/
+  - temas/
   - articulos/autores.json

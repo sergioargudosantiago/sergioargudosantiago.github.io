@@ -39,9 +39,8 @@ docs/
 fuentes/
 
 # ===== Agentes / IDE =====
-# De .claude/ solo se versiona el agente del ejercicio 1, para que una sesión
-# en la nube lo tenga. Jekyll no publica carpetas que empiezan por punto.
-.claude/*
-!.claude/agents/
+# Nada de .claude/ se versiona: los agentes y las herramientas del temario son
+# privados y viven en un repositorio aparte. Este repositorio es público.
+.claude/
 .agent/
 .gemini/

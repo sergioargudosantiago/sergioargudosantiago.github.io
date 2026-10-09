@@ -48,9 +48,9 @@ Todo el contenido, la interfaz y los commits están en **español**.
 | `public/temas/ejercicio-N/` | PDFs y Word del temario |
 | `scripts/` | Generadores y pipelines (Node y R) |
 | `balanza/` | CSV del BdE y comprobaciones cruzadas (material de trabajo) |
-| `.claude/agents/esquema-ejercicio-1.md` | Agente que redacta esquemas del ejercicio 1 (única parte de `.claude/` versionada, a propósito) |
+| `temas/ejercicio-N/tema-NN.md` | Esquemas en Markdown: la fuente de los Word y PDF de `public/temas/` |
 
-No versionados (ver `.gitignore`): `review/`, `docs/`, `fuentes/`, el resto de `.claude/`.
+No versionados (ver `.gitignore`): `review/`, `docs/`, `fuentes/`, `.claude/`.
 Viven solo en la máquina local; una sesión en la nube no los tiene.
 
 ## Flujos de trabajo
@@ -107,8 +107,9 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
   (ej. 3, tema 2), `bp-turismo.html` (ej. 1, tema 23) y `bp-servicios.html`
   (ej. 1, tema 24). Solo usan años completos. Tras actualizar la balanza:
   `npm run fichas && npm run fichas:pdf`.
-- **Esquemas del ejercicio 1**: el agente `esquema-ejercicio-1` destila exclusivamente
-  los temas del opositor; no investiga ni añade materia. Sin fuente, no escribe.
+- **Esquemas**: los Markdown de `temas/` son la fuente de los esquemas publicados. Los
+  agentes que los crean y los contrastan con los temas desarrollados, y los propios
+  temas, son **privados**: no están en este repositorio ni deben subirse a él.
 - Servir en local: `python -m http.server 8000`.
 
 ## Convenciones
@@ -224,10 +225,10 @@ artículo que tiene pensado el autor. Para generar los PDF hace falta Playwright
   de oliva 2021–2023 incompletos (TVA de +500 % falsas) y años de descargas
   distintas. Ahora todo sale de una sola extracción validada, con TVA también en
   2021 y columna `estado` (definitivo/provisional). Pendiente: `npm run fichas:pdf`.
-- **Esquemas del ejercicio 1**: no están en el repositorio. Solo hubo seis
-  borradores (temas 25–30), descartados en septiembre por no salir de los temas
-  del opositor. Si existen, están en la máquina local (`review/`, `fuentes/` o
-  `D:\BLOQUE 1`).
+- **Esquemas del ejercicio 1**: los 55 están en `temas/ejercicio-1/` y en
+  `public/temas/ejercicio-1/` (9 oct). Pendiente: contrastarlos con los temas
+  desarrollados y activarlos en `temario.html` y `js/main.js`, que aún dicen «en
+  preparación».
 
 Después del lanzamiento: actualización mensual de la balanza de pagos con GitHub
 Actions y validaciones; página «qué ha cambiado» en el temario. El chat con IA sobre
