@@ -289,7 +289,7 @@
 
     // Mancuernas: dos valores por fila (ingresos y pagos)
     function dibujarMancuernas(el, op) {
-        const { filas, nombres, colores = ['--p-flujos-exportaciones', '--p-flujos-importaciones'], titulo = '' } = op;
+        const { filas, nombres, colores = ['--p-flujos-exportaciones', '--p-flujos-importaciones'], titulo = '', xMax = null } = op;
         if (!filas.length) return sinDatos(el);
         // en pantallas estrechas el nombre va encima de su fila para que quepa entero
         const apilado = el.clientWidth < 520;
@@ -298,8 +298,8 @@
         if (!c) return;
         const { svg, w } = c;
         const [cA, cB] = colores.map(v);
-        const etq = apilado ? 0 : Math.min(190, w * 0.4), x0 = apilado ? 6 : etq + 10, x1 = w - 12;
-        const ti = marcas(0, Math.max(...filas.flatMap(f => [f.a, f.b])), w < 500 ? 3 : 5);
+        const etq = apilado ? 0 : Math.min(190, w * 0.4), x0 = apilado ? 12 : etq + 10, x1 = w - 12;
+        const ti = marcas(0, xMax ?? Math.max(...filas.flatMap(f => [f.a, f.b])), w < 500 ? 3 : 5);
         const x = t => x0 + (x1 - x0) * t / ti[ti.length - 1];
         ti.forEach((t, k) => {
             S('line', { x1: x(t), x2: x(t), y1: top - 4, y2: h, stroke: v('--c-linea') }, svg);
@@ -309,7 +309,7 @@
         const ys = filas.map((_, i) => top + i * fh + fh / 2);
         filas.forEach((f, i) => {
             const cy = apilado ? ys[i] + 8 : ys[i];
-            S('text', apilado ? { x: f.sangria ? 14 : 2, y: ys[i] - 6, 'text-anchor': 'start' } : { x: etq, y: cy + 4, 'text-anchor': 'end' }, svg);
+            S('text', apilado ? { x: f.sangria ? 20 : 10, y: ys[i] - 6, 'text-anchor': 'start' } : { x: etq, y: cy + 4, 'text-anchor': 'end' }, svg);
             const nombre = svg.lastChild;
             nombre.setAttribute('class', 'nombre');
             nombre.setAttribute('font-size', f.sangria ? 11.5 : 12.5);

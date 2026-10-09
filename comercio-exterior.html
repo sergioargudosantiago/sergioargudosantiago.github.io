@@ -152,6 +152,11 @@
         /* Como texto se mezclan con la tinta para llegar a 4,5:1 en cifras pequeñas */
         .ce-positivo { color: color-mix(in srgb, var(--p-flujos-exportaciones) 75%, var(--c-tinta)) !important; }
         .ce-negativo { color: color-mix(in srgb, var(--p-flujos-importaciones) 70%, var(--c-tinta)) !important; }
+        /* B4: el desglose de «Otros servicios empresariales» va en un bloque propio */
+        /* La línea izquierda es una sombra interior: el gráfico de dentro mide lo mismo que el de fuera y comparte la escala en píxeles */
+        .b4-desglose { margin-top: 0.5rem; padding: 0.6rem 0 0.2rem; box-shadow: inset 3px 0 0 var(--c-linea); background: var(--c-acento-suave); border-radius: 0 4px 4px 0; }
+        .b4-desglose-titulo { margin: 0 0 0.25rem; padding-left: 0.75rem; font-size: 0.85rem; font-weight: 700; color: var(--c-tinta); }
+        .b4-desglose-titulo span { font-family: var(--f-cifras); font-weight: 400; color: var(--c-tenue); }
         .ce-titular { font-family: var(--f-titular); font-size: 1.15rem; font-weight: 600; line-height: 1.3; text-wrap: balance; margin: 0; color: var(--c-tinta); }
         .ce-estado { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.15rem 0.6rem; border-radius: 3px; border: 1px solid currentColor; }
         .ce-estado.ce-neutro { color: var(--c-tenue); }
@@ -394,7 +399,11 @@
                             <p id="b4Titulo" class="ce-titular"></p>
                             <div class="graficos-leyenda"><span><i class="graficos-muestra" style="background:var(--p-flujos-exportaciones)"></i>Ingresos</span><span><i class="graficos-muestra" style="background:var(--p-flujos-importaciones)"></i>Pagos</span></div>
                             <div id="bp174DonutChart" class="graficos-lienzo"></div>
-                            <p class="c-nota">Fuente: Banco de España, Boletín Estadístico, capítulo 17. Las filas sangradas desglosan «Otros servicios empresariales».</p>
+                            <div class="b4-desglose">
+                                <p class="b4-desglose-titulo">Desglose de «Otros servicios empresariales» <span id="b4DesgloseTotal"></span></p>
+                                <div id="bp174DonutSub" class="graficos-lienzo"></div>
+                            </div>
+                            <p class="c-nota">Fuente: Banco de España, Boletín Estadístico, capítulo 17. El bloque inferior desglosa «Otros servicios empresariales» con la misma escala.</p>
                         </div>
                     </div>
                     <div class="bp-chart-card ce-grafico">
@@ -2006,11 +2015,18 @@
                 return { nombre: NOMBRES[k] || k, a: x, b: y, cuotaA: x / ti * 100, cuotaB: y / tp * 100, sangria };
             };
             const principales = L.filter(k => k !== 'Total No Turísticos' && !SUB.includes(k)).map(k => fila(k, false)).sort((x, y) => y.a - x.a);
-            const filas = principales.flatMap(f => f.nombre === 'Otros servicios empresariales' ? [f, ...SUB.map(s => fila(s, true))] : [f]);
+            const desglose = SUB.map(s => fila(s, false)).sort((x, y) => y.a - x.a);
+            const ose = principales.find(f => f.nombre === 'Otros servicios empresariales');
+            // la marca ↓ remite al bloque de desglose de debajo
+            if (ose) ose.nombre += ' ↓';
             const sup = principales.filter(f => f.a > f.b).length;
             const titular = `Los ingresos superan a los pagos en ${sup} de los ${principales.length} tipos de servicio no turístico en ${a}`;
             document.getElementById('b4Titulo').textContent = titular;
-            Graficos.mancuernas(document.getElementById('bp174DonutChart'), { filas, nombres: ['Ingresos', 'Pagos'], titulo: titular });
+            // misma escala en los dos bloques para que las distancias se comparen
+            const xMax = Math.max(...principales.flatMap(f => [f.a, f.b]));
+            Graficos.mancuernas(document.getElementById('bp174DonutChart'), { filas: principales, nombres: ['Ingresos', 'Pagos'], titulo: titular, xMax });
+            if (ose) document.getElementById('b4DesgloseTotal').textContent = `· ${Graficos.formato(ose.a)} M€ de ingresos`;
+            Graficos.mancuernas(document.getElementById('bp174DonutSub'), { filas: desglose, nombres: ['Ingresos', 'Pagos'], titulo: 'Desglose de Otros servicios empresariales', xMax });
         }
 
         // B5: turismo frente al resto de servicios, misma escala
