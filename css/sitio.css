@@ -497,10 +497,11 @@ html.dark { --c-negativo: #F08A80; }
 }
 .c-portada-texto { display: grid; gap: 1.1rem; align-content: center; padding-bottom: 1rem; }
 .c-portada .c-titular { font-size: clamp(2.2rem, 1.3rem + 3.4vw, 3.6rem); }
-.c-ilustracion { width: 100%; max-width: 30rem; height: auto; color: var(--c-acento); opacity: 0.7; justify-self: end; }
+.c-ilustracion { width: 100%; max-width: 22rem; aspect-ratio: 1.15; justify-self: end; align-self: center; display: grid; place-items: center; padding: 12%; box-sizing: border-box; background: #3B4533; border-radius: 14px; }
+.c-ilustracion svg { width: 100%; height: 100%; display: block; }
 @media (max-width: 860px) {
     .c-portada-int { grid-template-columns: 1fr; padding-block: 2.25rem 1rem; }
-    .c-ilustracion { max-width: 18rem; justify-self: center; opacity: 0.55; }
+    .c-ilustracion { max-width: 14rem; justify-self: center; }
 }
 
 .c-tres { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr)); gap: 1rem; margin-bottom: 1rem; }
