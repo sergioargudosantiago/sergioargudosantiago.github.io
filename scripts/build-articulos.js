@@ -250,6 +250,8 @@ ${partes.pie.replace('</body>', `${art.js.map(j => `    <script src="../${j}"></
     window.addEventListener('load', function () {
         setTimeout(function () {
             document.querySelectorAll('.art-figura[data-alt]').forEach(function (fig) {
+                // solo los de ggiraph: los de js/graficos.js ya llevan su nombre y zonas accesibles
+                if (!fig.querySelector('.girafe')) return;
                 var svgs = fig.querySelectorAll('svg');
                 svgs.forEach(function (svg) {
                     if (svg.closest('.ggiraph-toolbar')) svg.setAttribute('aria-hidden', 'true');

@@ -46,8 +46,14 @@
     }
     const anchoDibujable = ancho => ancho > 0;
     const conAlfa = (hex, a) => `rgba(${[1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16)).join(',')},${a})`;
+    // Cinta curva entre dos tramos verticales: de [a0, b0] en x0 a [a1, b1] en x1
+    function cinta(x0, a0, b0, x1, a1, b1) {
+        const xm = (x0 + x1) / 2, r = n => Math.round(n * 10) / 10;
+        return `M${r(x0)},${r(a0)}C${r(xm)},${r(a0)} ${r(xm)},${r(a1)} ${r(x1)},${r(a1)}` +
+            `L${r(x1)},${r(b1)}C${r(xm)},${r(b1)} ${r(xm)},${r(b0)} ${r(x0)},${r(b0)}Z`;
+    }
 
-    const puras = { marcas, formato, rangoLineas, formatoPct, variacionPct, sumaMovil, pasoEtiquetas, indicesEtiquetas, anchoDibujable, conAlfa };
+    const puras = { marcas, formato, rangoLineas, formatoPct, variacionPct, sumaMovil, pasoEtiquetas, indicesEtiquetas, anchoDibujable, conAlfa, cinta };
     if (typeof module !== 'undefined' && module.exports) { module.exports = puras; return; }
 
     // ---------- dibujo (solo navegador) ----------
@@ -124,7 +130,9 @@
     // Tabulador itinerante: una sola parada de Tab por gráfico y las flechas recorren las zonas.
     function zonas(svg, rects, etiqueta, html, entrar, salir) {
         const lista = rects.map((at, i) => {
-            const r = S('rect', Object.assign({ fill: 'transparent', tabindex: i === 0 ? '0' : '-1', role: 'graphics-symbol', 'aria-label': etiqueta(i) }, at), svg);
+            // forma: 'circle' en el mapa; por defecto rectángulo
+            const { forma = 'rect', ...resto } = at;
+            const r = S(forma, Object.assign({ fill: 'transparent', tabindex: i === 0 ? '0' : '-1', role: 'graphics-symbol', 'aria-label': etiqueta(i) }, resto), svg);
             r.addEventListener('focus', () => lista.forEach((z, k) => z.setAttribute('tabindex', k === i ? '0' : '-1')));
             const ver = (x, y) => { if (entrar) entrar(i); verTip(x, y, html(i)); };
             const fuera = () => { ocultarTip(); if (salir) salir(i); };
@@ -328,7 +336,208 @@
             filas.map(f => [f.nombre, formato(f.a), formato(f.b), cuota(f.cuotaA), cuota(f.cuotaB)]));
     }
 
-    const DIBUJO = { lineas: dibujarLineas, apiladas: dibujarApiladas, ranking: dibujarRanking, mancuernas: dibujarMancuernas };
+    // Mariposa: a a la izquierda, b a la derecha, nombres en el centro (encima en móvil)
+    function dibujarMariposa(el, op) {
+        const { filas, nombres, colores = ['--p-flujos-exportaciones', '--p-flujos-importaciones'], titulo = '' } = op;
+        if (!filas.length) return sinDatos(el);
+        const apilado = el.clientWidth < 560;
+        const fh = apilado ? 40 : 30, top = 26, h = filas.length * fh + top + 4;
+        const c = lienzo(el, h, titulo);
+        if (!c) return;
+        const { svg, w } = c;
+        const [cA, cB] = colores.map(v);
+        const centro = w / 2, ys = filas.map((_, i) => top + i * fh + fh / 2);
+        const cys = ys.map(y => apilado ? y + 7 : y);
+        // nombres primero: el hueco central se ajusta al más largo
+        const anchos = filas.map((f, i) => {
+            const t = S('text', { x: centro, y: apilado ? ys[i] - 8 : cys[i] + 4, 'text-anchor': 'middle', class: 'nombre' }, svg);
+            t.textContent = f.nombre;
+            return t.getComputedTextLength ? t.getComputedTextLength() : f.nombre.length * 7;
+        });
+        const hueco = apilado ? 1 : Math.max(...anchos) / 2 + 10, largoMax = centro - hueco - 52;
+        const max = Math.max(...filas.flatMap(f => [f.a, f.b]));
+        const L = t => largoMax * t / max;
+        const sumA = filas.reduce((s, f) => s + f.a, 0), sumB = filas.reduce((s, f) => s + f.b, 0);
+        S('text', { x: centro - Math.max(hueco, 8), y: 14, 'text-anchor': 'end', class: 'nombre', style: `fill:${cA}` }, svg).textContent = '← ' + nombres[0];
+        S('text', { x: centro + Math.max(hueco, 8), y: 14, 'text-anchor': 'start', class: 'nombre', style: `fill:${cB}` }, svg).textContent = nombres[1] + ' →';
+        filas.forEach((f, i) => {
+            const cy = cys[i], alto = apilado ? 14 : 18;
+            S('rect', { x: centro - hueco - L(f.a), y: cy - alto / 2, width: L(f.a), height: alto, rx: 2, fill: cA }, svg);
+            S('rect', { x: centro + hueco, y: cy - alto / 2, width: L(f.b), height: alto, rx: 2, fill: cB }, svg);
+            S('text', { x: centro - hueco - L(f.a) - 5, y: cy + 4, 'text-anchor': 'end' }, svg).textContent = formato(f.a);
+            S('text', { x: centro + hueco + L(f.b) + 5, y: cy + 4, 'text-anchor': 'start' }, svg).textContent = formato(f.b);
+        });
+        zonas(svg, ys.map(cy => ({ x: 0, y: cy - fh / 2, width: w, height: fh })),
+            i => `${filas[i].nombre}: ${nombres[0]} ${formato(filas[i].a)}, ${nombres[1]} ${formato(filas[i].b)} millones de euros`,
+            i => { const f = filas[i]; return `<div class="cab">${f.nombre}</div>` +
+                filaTip(nombres[0], cA, `${formato(f.a)} · ${cuota(100 * f.a / sumA)}`) + filaTip(nombres[1], cB, `${formato(f.b)} · ${cuota(100 * f.b / sumB)}`) +
+                filaTip('Saldo', '', formato(f.a - f.b)) + '<div class="nota">Millones de euros y % sobre el total</div>'; });
+        tablaAccesible(el, ['', nombres[0], nombres[1]], filas.map(f => [f.nombre, formato(f.a), formato(f.b)]));
+    }
+
+    // Barras divergentes desde cero: positivas a la derecha, negativas a la izquierda.
+    // El nombre va al otro lado del eje, junto al cero.
+    function dibujarDivergentes(el, op) {
+        const { filas, nombres = ['Exportaciones', 'Importaciones'], colores = ['--p-flujos-exportaciones', '--p-flujos-importaciones'], titulo = '' } = op;
+        if (!filas.length) return sinDatos(el);
+        const fh = 24, top = 8, sep = filas.some(f => f.valor < 0) && filas.some(f => f.valor >= 0) ? 14 : 0;
+        const h = filas.length * fh + top + sep + 4;
+        const c = lienzo(el, h, titulo);
+        if (!c) return;
+        const { svg, w } = c;
+        const [cPos, cNeg] = colores.map(v);
+        const max = Math.max(...filas.map(f => f.valor)), min = Math.min(...filas.map(f => f.valor));
+        const margen = 62, x = t => margen + (w - 2 * margen) * (t - min) / (max - min || 1), x0 = x(0);
+        let yAcum = top, cambio = false;
+        const ys = filas.map(f => { if (!cambio && f.valor < 0 && sep) { yAcum += sep; cambio = true; } const y = yAcum + fh / 2; yAcum += fh; return y; });
+        S('line', { x1: x0, x2: x0, y1: 0, y2: h, stroke: v('--c-tenue') }, svg);
+        filas.forEach((f, i) => {
+            const cy = ys[i], pos = f.valor >= 0, xf = x(f.valor);
+            S('rect', { x: Math.min(x0, xf), y: cy - 8, width: Math.max(1, Math.abs(xf - x0)), height: 16, rx: 2, fill: pos ? cPos : cNeg }, svg);
+            S('text', { x: pos ? x0 - 6 : x0 + 6, y: cy + 4, 'text-anchor': pos ? 'end' : 'start', class: 'nombre' }, svg).textContent = f.nombre;
+            S('text', { x: pos ? xf + 5 : xf - 5, y: cy + 4, 'text-anchor': pos ? 'start' : 'end' }, svg).textContent = formato(f.valor);
+        });
+        zonas(svg, ys.map(cy => ({ x: 0, y: cy - fh / 2, width: w, height: fh })),
+            i => `${filas[i].nombre}: saldo ${formato(filas[i].valor)} millones de euros`,
+            i => { const f = filas[i]; return `<div class="cab">${f.nombre}</div>` +
+                filaTip(nombres[0], cPos, formato(f.a)) + filaTip(nombres[1], cNeg, formato(f.b)) +
+                filaTip('Saldo', '', formato(f.valor)) + '<div class="nota">Millones de euros</div>'; });
+        tablaAccesible(el, ['', nombres[0], nombres[1], 'Saldo'], filas.map(f => [f.nombre, formato(f.a), formato(f.b), formato(f.valor)]));
+    }
+
+    // Tiras al 100 %: una fila por categoría, partes en el orden dado
+    function dibujarTiras(el, op) {
+        const { filas, titulo = '', notaTip = '' } = op;
+        if (!filas.length) return sinDatos(el);
+        const apilado = el.clientWidth < 560;
+        const fh = apilado ? 46 : 34, h = filas.length * fh + 4;
+        const c = lienzo(el, h, titulo);
+        if (!c) return;
+        const { svg, w } = c;
+        const etq = apilado ? 0 : Math.min(120, w * 0.22), x0 = apilado ? 0 : etq + 10, x1 = w - 2, alto = 22;
+        const segmentos = [];
+        filas.forEach((f, i) => {
+            const cyBarra = apilado ? 4 + i * fh + 18 + alto / 2 : 4 + i * fh + fh / 2;
+            S('text', apilado ? { x: 0, y: cyBarra - alto / 2 - 5 } : { x: etq, y: cyBarra + 4, 'text-anchor': 'end' }, svg);
+            svg.lastChild.setAttribute('class', 'nombre');
+            svg.lastChild.textContent = f.nombre;
+            const total = f.partes.reduce((s, p) => s + p.valor, 0);
+            let xa = x0;
+            f.partes.forEach(p => {
+                const ancho = (x1 - x0) * p.valor / total, pct = 100 * p.valor / total;
+                S('rect', { x: xa, y: cyBarra - alto / 2, width: Math.max(0, ancho - 1), height: alto, fill: v(p.color) }, svg);
+                if (ancho > 30) S('text', { x: xa + ancho / 2, y: cyBarra + 4, 'text-anchor': 'middle', style: 'fill:#fff;font-weight:500' }, svg).textContent = Math.round(pct) + ' %';
+                segmentos.push({ x: xa, y: cyBarra - alto / 2, width: Math.max(1, ancho), height: alto, fila: f, parte: p, pct });
+                xa += ancho;
+            });
+        });
+        zonas(svg, segmentos.map(({ x, y, width, height }) => ({ x, y, width, height })),
+            i => { const s = segmentos[i]; return `${s.fila.nombre}, ${s.parte.nombre}: ${cuota(s.pct)}, ${formato(s.parte.valor)} millones de euros`; },
+            i => { const s = segmentos[i]; return `<div class="cab">${s.fila.nombre}</div>` +
+                filaTip(s.parte.nombre, v(s.parte.color), `${cuota(s.pct)} · ${formato(s.parte.valor)}`) + (notaTip ? `<div class="nota">${notaTip}</div>` : ''); });
+        tablaAccesible(el, ['', ...filas[0].partes.map(p => p.nombre)], filas.map(f => {
+            const total = f.partes.reduce((s, p) => s + p.valor, 0);
+            return [f.nombre, ...f.partes.map(p => cuota(100 * p.valor / total))];
+        }));
+    }
+
+    // Iconos esquemáticos de los grupos de las ramas, de 18 × 12 con la esquina en (x, y)
+    function icono(svg, tipo, x, y) {
+        if (tipo === 'ue') {
+            S('rect', { x, y, width: 18, height: 12, rx: 1.5, fill: '#003399' }, svg);
+            for (let i = 0; i < 12; i++) {
+                const a = i * Math.PI / 6;
+                S('circle', { cx: x + 9 + 3.9 * Math.cos(a), cy: y + 6 + 3.9 * Math.sin(a), r: 0.75, fill: '#FFCC00' }, svg);
+            }
+        } else {
+            const g = { fill: 'none', stroke: v('--c-tenue'), 'stroke-width': 1 };
+            S('circle', Object.assign({ cx: x + 9, cy: y + 6, r: 5.5 }, g), svg);
+            S('ellipse', Object.assign({ cx: x + 9, cy: y + 6, rx: 2.4, ry: 5.5 }, g), svg);
+            S('line', Object.assign({ x1: x + 3.5, x2: x + 14.5, y1: y + 6, y2: y + 6 }, g), svg);
+        }
+    }
+
+    // Ramas: el origen se abre en grupos y cada grupo en destinos, con grosor proporcional
+    // al valor. invertir = los destinos a la izquierda y las flechas llegan al origen.
+    function dibujarRamas(el, op) {
+        const { origen, grupos, total, invertir = false, color = '--p-flujos-exportaciones', nombreValor = 'Millones de euros', titulo = '' } = op;
+        if (!grupos.length) return sinDatos(el);
+        const estrecho = el.clientWidth < 560;
+        const fh = estrecho ? 32 : 26, cab = 30, hueco = 18, top = 6;
+        const filas = [];
+        let y = top;
+        grupos.forEach(g => {
+            y += cab;
+            const y0 = y;
+            g.hijos.forEach(hj => { filas.push({ g, hj, cy: y + fh / 2 }); y += fh; });
+            g.y0 = y0; g.y1 = y;
+            y += hueco;
+        });
+        const h = y - hueco + 6;
+        const c = lienzo(el, h, titulo);
+        if (!c) return;
+        const { svg, w } = c;
+        const X = x => invertir ? w - x : x;
+        const ancla = a => !invertir ? a : a === 'start' ? 'end' : a === 'end' ? 'start' : a;
+        const caja = (x, yy, ancho, alto, at) => S('rect', Object.assign({ x: invertir ? w - x - ancho : x, y: yy, width: ancho, height: alto }, at), svg);
+        const cFlujo = v(color);
+        const etq = estrecho ? 124 : 200, xO = estrecho ? 4 : 74, nodo = 8;
+        const xC = w - etq - 10, xG = xO + nodo + (xC - xO - nodo) * 0.42;
+        const maxHijo = Math.max(...grupos.flatMap(g => g.hijos.map(hj => hj.valor)));
+        const k = (fh - 7) / maxHijo;
+        // origen centrado entre los nodos de grupo
+        grupos.forEach(g => { g.alto = k * g.valor; g.cy = (g.y0 + g.y1) / 2; g.top = g.cy - g.alto / 2; });
+        // total puede incluir comercio sin país (avituallamiento): el nodo mide lo repartido, la etiqueta el total
+        const altoO = k * grupos.reduce((s, g) => s + g.valor, 0), cyO = (grupos[0].cy + grupos[grupos.length - 1].cy) / 2;
+        let yo = cyO - altoO / 2;
+        grupos.forEach(g => {
+            S('path', { d: cinta(X(xO + nodo), yo, yo + g.alto, X(xG), g.top, g.top + g.alto), fill: conAlfa(cFlujo, 0.22) }, svg);
+            yo += g.alto;
+            let yg = g.top;
+            g.hijos.forEach(hj => {
+                const fila = filas.find(f => f.hj === hj), grosor = Math.max(1, k * hj.valor), col = v(hj.color);
+                S('path', { d: cinta(X(xG + nodo), yg, yg + k * hj.valor, X(xC), fila.cy - grosor / 2, fila.cy + grosor / 2), fill: conAlfa(col, 0.5) }, svg);
+                yg += k * hj.valor;
+                if (!invertir) {
+                    const pa = Math.max(5, grosor / 2 + 2);
+                    S('polygon', { points: `${X(xC)},${fila.cy - pa} ${X(xC + 9)},${fila.cy} ${X(xC)},${fila.cy + pa}`, fill: col }, svg);
+                } else caja(xC - 2, fila.cy - grosor / 2, 3, grosor, { fill: col });
+            });
+            caja(xG, g.top, nodo, g.alto, { fill: cFlujo, rx: 1 });
+            // nombre del grupo, con icono
+            const ty = g.y0 - 10;   // en la fila de cabecera, libre de cintas
+            const t = S('text', { x: X(xG + nodo / 2 + 12), y: ty, 'text-anchor': ancla('start'), class: 'nombre', style: 'font-weight:700' }, svg);
+            t.textContent = `${g.nombre} · ${cuota(100 * g.valor / total)}`;
+            icono(svg, g.icono, invertir ? w - (xG + nodo / 2 - 10) - 18 : xG + nodo / 2 - 10, ty - 10);
+        });
+        // nodo de origen
+        caja(xO, cyO - altoO / 2, nodo, altoO, { fill: v('--c-tinta'), rx: 1 });
+        // en estrecho el nombre va encima del nodo, que se pega al borde
+        const atO = estrecho ? [X(xO), cyO - altoO / 2 - 20, cyO - altoO / 2 - 6, ancla('start')] : [X(xO - 6), cyO - 2, cyO + 13, ancla('end')];
+        const tO = S('text', { x: atO[0], y: atO[1], 'text-anchor': atO[3], class: 'nombre', style: 'font-weight:700' }, svg);
+        tO.textContent = origen;
+        S('text', { x: atO[0], y: atO[2], 'text-anchor': atO[3] }, svg).textContent = formato(total);
+        // destinos: nombre y valor
+        filas.forEach(({ hj, cy }) => {
+            const xt = X(xC + 14);
+            if (estrecho) {
+                S('text', { x: xt, y: cy - 2, 'text-anchor': ancla('start'), class: 'nombre', style: hj.resto ? `fill:${v('--c-tenue')}` : '' }, svg).textContent = hj.nombre;
+                S('text', { x: xt, y: cy + 11, 'text-anchor': ancla('start') }, svg).textContent = `${formato(hj.valor)} · ${cuota(hj.cuota)}`;
+            } else {
+                S('text', { x: xt, y: cy + 4, 'text-anchor': ancla('start'), class: 'nombre', style: hj.resto ? `fill:${v('--c-tenue')}` : '' }, svg).textContent = hj.nombre;
+                S('text', { x: X(w - 2), y: cy + 4, 'text-anchor': ancla('end') }, svg).textContent = formato(hj.valor);
+            }
+        });
+        zonas(svg, filas.map(({ cy }) => ({ x: invertir ? 0 : xG, y: cy - fh / 2, width: w - xG, height: fh })),
+            i => { const { g, hj } = filas[i]; return `${hj.nombre}: ${formato(hj.valor)} millones de euros, ${cuota(hj.cuota)} del total, ${cuota(100 * hj.valor / g.valor)} de ${g.nombre}`; },
+            i => { const { g, hj } = filas[i]; return `<div class="cab">${hj.nombre}</div>` +
+                filaTip(nombreValor, v(hj.color), formato(hj.valor)) + filaTip('% del total', '', cuota(hj.cuota)) +
+                filaTip(`% de ${g.nombre}`, '', cuota(100 * hj.valor / g.valor)) + (hj.puesto ? filaTip('Puesto', '', String(hj.puesto)) : ''); });
+        tablaAccesible(el, ['', 'Grupo', nombreValor, '% del total'], filas.map(({ g, hj }) => [hj.nombre, g.nombre, formato(hj.valor), cuota(hj.cuota)]));
+    }
+
+    const DIBUJO = { lineas: dibujarLineas, apiladas: dibujarApiladas, ranking: dibujarRanking, mancuernas: dibujarMancuernas,
+        mariposa: dibujarMariposa, divergentes: dibujarDivergentes, tiras: dibujarTiras, ramas: dibujarRamas };
     const publico = tipo => (el, op) => { registrar(tipo, el, op); DIBUJO[tipo](el, op); };
 
     function panelesGemelos(els, ops) {
@@ -338,6 +547,7 @@
 
     raiz.Graficos = Object.assign({
         lineas: publico('lineas'), apiladas: publico('apiladas'), ranking: publico('ranking'),
-        mancuernas: publico('mancuernas'), panelesGemelos, redibujarTodo
+        mancuernas: publico('mancuernas'), mariposa: publico('mariposa'), divergentes: publico('divergentes'),
+        tiras: publico('tiras'), ramas: publico('ramas'), panelesGemelos, redibujarTodo
     }, puras);
 })(typeof window !== 'undefined' ? window : globalThis);

@@ -71,3 +71,8 @@ test('anchoDibujable: contenedor oculto no se dibuja', () => {
 test('conAlfa convierte hex a rgba', () => {
     assert.strictEqual(G.conAlfa('#2B6CA3', 0.14), 'rgba(43,108,163,0.14)');
 });
+
+test('cinta cierra una banda curva entre los dos tramos', () => {
+    assert.strictEqual(G.cinta(0, 0, 10, 100, 50, 55),
+        'M0,0C50,0 50,50 100,50L100,55C50,55 50,10 0,10Z');
+});
