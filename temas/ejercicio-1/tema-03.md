@@ -1,83 +1,170 @@
 # 1. INTRODUCCIÓN
 
-- El sector de hortalizas frescas representa en 2025 cerca del **11,7%** de las exportaciones agroalimentarias españolas, uno de los tres pilares del superávit agroalimentario junto con frutas frescas y el sector cárnico, según **DATACOMEX**.
-- Importaciones: **2.133,1 millones €** (+3,4%). Exportaciones: **8.983,3 millones €** (+11,5%). Saldo comercial: **6.850,3 millones €**.
-- Se integran en el **Plan de Internacionalización del Sector Agroalimentario**, a través del **GTISA**, presidido por la Secretaría General de Agricultura y Alimentación del **MAPA**, con un grupo específico de frutas y hortalizas.
+- **Hortalizas frescas**: pilar del comercio exterior agroalimentario, **11,7%** de las exportaciones agroalimentarias en 2025
+  - Entre los tres sectores con más superávit, junto a frutas frescas y cárnico (DATACOMEX)
+- 2025: importaciones **2.133,1 M€** (+3,4%), exportaciones **8.983,3 M€** (+11,5%), saldo **6.850,3 M€**
+- **GTISA** (presidido por la Secretaría General de Agricultura y Alimentación del MAPA)
+  - Siete grupos de trabajo, uno de frutas y hortalizas
+  - Barreras comerciales, mercados, coordinación, dimensión empresarial, promoción
+- Cuatro bloques: productos, calidad comercial, normativa, análisis sectorial
 
 # 2. DESCRIPCIÓN Y DESIGNACIÓN DE LOS PRINCIPALES PRODUCTOS
 
 ## 2.1. Hortalizas aprovechables por sus frutos
-- **Tomate, pimiento y berenjena** (Solanáceas): frutos en baya, con variedades según forma, color y precocidad.
-- **Pepino y calabacín** (Cucurbitáceas): bayas, con tipos según tamaño o forma del fruto.
 
-## 2.2. Hortalizas aprovechables por hojas, tallos e inflorescencias
-- **Lechuga**: romana, acogollada, de hoja suelta y espárrago.
-- **Escarola**: crispa/rizada y lisa. **Espinaca**: Viroflay, Gigante de Invierno y Butterflay.
-- **Coliflor**: extratempranas, tempranas, media estación y tardías.
-- **Alcachofa**: españolas y francesas/italianas.
-- **Espárrago**: blancos, morados, verde-morados y verdes, según exposición a la luz.
+- **Tomate** (*Solanum lycopersicum*, solanáceas)
+  - Baya, fruto **climatérico**
+  - Cuatro tipos: redondo liso, asurcado, oblongo, cereza. Presentación en ramo
+- **Pimiento** (*Capsicum annuum*, solanáceas)
+  - Baya hueca, **no climatérico**
+  - Picantes (capsaicina) y dulces: California, Lamuyo, Italiano
+- **Berenjena** (*Solanum melongena*, solanáceas)
+  - Globosa, semilarga (la más cultivada y exportada), larga y rayada
+- **Pepino** (*Cucumis sativus*, cucurbitáceas)
+  - Corto o español, medio o francés, largo u holandés (principal tipo de exportación)
+- **Calabacín** (*Cucurbita pepo*, cucurbitáceas)
+  - Pepónide inmadura. Variedades Cónsul, Diamante, Baccara, Selena, Elite
 
-## 2.3. Hortalizas aprovechables por tubérculos, bulbos o raíces
-- **Patata**: variedades tempranas (Claustar, Jaerla, Spunta) y de consumo (Desirée, Kennebec, Bintjé).
-- **Cebolla**: tempranas, semitempranas y tardías. La variedad **Grano** supone cerca del **50%** de la producción española y es la más exportada.
-- **Ajo**: blanco y morado. El **ajo morado** representa el **75%** de la producción nacional.
-- **Zanahoria**: cortas, semilargas (**90%** de la producción española) y largas.
+## 2.2. Hortalizas aprovechables por sus hojas, tallos e inflorescencias
+
+- **Lechuga** (*Lactuca sativa*, asteráceas)
+  - Romana, acogollada (Trocadero, Iceberg), de hoja suelta, espárrago
+- **Escarola** (*Cichorium endivia*, asteráceas)
+  - Rizada (*crispum*) y lisa (*latifolium*)
+- **Espinaca** (*Spinacia oleracea*, quenopodiáceas)
+  - Viroflay, Gigante de Invierno, Butterflay
+- **Coliflor** (*Brassica oleracea*, brasicáceas)
+  - Inflorescencia (pella). Brócoli (var. *italica*), de gran peso exportador
+  - Extratempranas, tempranas, media estación, tardías
+- **Alcachofa** (*Cynara scolymus*, asteráceas)
+  - Capítulo floral inmaduro. Blanca de Tudela, la más cultivada
+- **Espárrago** (*Asparagus officinalis*, asparagáceas)
+  - Turión. Blancos, morados, verdes y morados, verdes
+
+## 2.3. Hortalizas aprovechables por tubérculos, bulbos y raíces
+
+- **Patata** (*Solanum tuberosum*, solanáceas)
+  - Variedades tempranas (Spunta, Jaerla) y de media estación y tardías (Monalisa, Agria)
+  - **Fuera de la OCM** de frutas y hortalizas, sin normas de comercialización UE. **Real Decreto 31/2009**, norma de calidad comercial
+- **Cebolla** (*Allium cepa*, amarilidáceas)
+  - Tempranas, semitempranas, tardías (tipo Grano, gran parte de la exportación)
+- **Ajo** (*Allium sativum*, amarilidáceas)
+  - Blanco, morado (IGP Ajo Morado de Las Pedroñeras), tipo Spring
+- **Zanahoria** (*Daucus carota*, umbelíferas)
+  - Cortas, semilargas (tipo Nantesa, mayoría de la producción), largas
 
 # 3. FACTORES DE CALIDAD COMERCIAL
 
-- La **calidad comercial** es el valor añadido derivado de la selección, clasificación, calibrado, acondicionamiento, envasado, almacenaje y transporte del producto.
-- Se regula en las **Normas de Comercialización de la UE**, actualmente el **Reglamento Delegado (UE) 2023/2429**.
-- Requisitos mínimos: productos intactos, sanos, limpios, prácticamente exentos de plagas y de daños en la pulpa, sin humedad exterior anormal ni olores o sabores extraños, y capaces de soportar transporte y manipulación.
-- **Madurez comercial**: determinada por oferta y demanda. Frutos **climatéricos** (maduran tras la recolección, caso del tomate) frente a **no climatéricos** (la madurez comercial coincide con la gustativa, caso del pimiento y el pepino).
-- Índices objetivos de maduración: firmeza, color (cartas colorimétricas OCDE), sabor, almidón y azúcares (grados Brix).
-- La **sanidad vegetal** exige ausencia de plagas y enfermedades, destacando mosca blanca, trips y ácaro rojo en Almería y Murcia.
-- La **salud humana** exige ausencia de materias activas prohibidas y cumplimiento de los **límites máximos de residuos (LMR)**.
+- **Calidad comercial**: características externas e internas que determinan la aptitud para comercializar
+- Normas de la UE: **Reglamento Delegado (UE) 2023/2429**, aplicable desde 1 de enero de 2025
+  - **Norma general**: berenjena, pepino, calabacín, coliflor, alcachofa, espárrago, cebolla, ajo, zanahoria
+  - **Normas específicas**: tomates, pimientos dulces, lechugas y escarolas (categorías Extra, I y II)
+- **Requisitos mínimos**: enteros, sanos, limpios, prácticamente exentos de plagas y de daños en pulpa, sin humedad exterior anormal, sin olores ni sabores extraños, aptos para transporte
+  - Además: madurez mínima, tolerancias, marcado (**país de origen**)
+- **Madurez**: fisiológica, comercial, de consumo
+- **Climatéricos** (tomate) frente a **no climatéricos** (pimiento, pepino, berenjena, calabacín)
+- Índices objetivos: firmeza (penetrómetro), color (carta colorimétrica), sólidos solubles (Brix), acidez
+  - Solo exigibles si la norma los fija
+- Criterios por grupo
+  - Frutos: firmeza, color (carta OCDE en tomate), desarrollo
+  - Hojas, tallos e inflorescencias: frescura, turgencia, compacidad, ausencia de espigado
+  - Tubérculos, bulbos y raíces: firmeza, piel, ausencia de brotación, curado, verdeo en patata
+- Tres ámbitos distintos
+  - **Calidad comercial**
+  - **Sanidad vegetal**: Reglamento (UE) 2016/2031. Mosca blanca, trips (TSWV), *Tuta absoluta*, **ToBRFV**
+  - **Seguridad alimentaria**: LMR, contaminantes, nitratos en lechuga y espinaca
 
 # 4. NORMATIVA APLICABLE
 
-## 4.1. Política Agrícola Común y OCM
-- El **Reglamento (CE) 1234/2007** fue sustituido por el **Reglamento (UE) 1308/2013**, que crea la **OCM Única**, basada en la unidad de mercado, la solidaridad financiera y la preferencia comunitaria.
-- La PAC 2023-2027 se articula mediante el **Reglamento (UE) 2021/2115** (planes estratégicos financiados por FEAGA y FEADER), el **Reglamento (UE) 2021/2116** (financiación y seguimiento) y el **Reglamento (UE) 2021/2117** (modifica la OCM Única).
-- El **Reglamento (UE) 2017/2393 (Ómnibus)** flexibilizó la definición de agricultor activo y elevó las ayudas a jóvenes agricultores hasta el **50%** del pago básico.
-- La OCM establece medidas de intervención pública, ayudas al almacenamiento privado, normas de comercialización e intercambios con terceros países.
-- La clasificación de productos se apoya en las normas **WP7** de la CEPE/UN, con el esquema del **Acuerdo de Ginebra (2015)**: definición, calidad, calibrado, tolerancias, presentación y marcado.
-- Las **Organizaciones de Productores** e Interprofesionales defienden el sector (FRESHUELVA, FEPEX, HORTESPAÑA, COEXPHAL).
-- El régimen de intervención lo gestionan el **FEGA** y el **FEAGA**. La PAC sustituye el Pago Único por el **Pago Básico a la Sostenibilidad (BISS)**, con eco-regímenes y las **Buenas Condiciones Agrarias y Medioambientales (BCAM)**.
+## 4.1. Política Agrícola Común (PAC)
 
-## 4.2. Normativa voluntaria
-- Las normas **CEPE/UN (WP7)** son voluntarias y sirven de base a las normas de comercialización. La OCDE elabora **folletos interpretativos**.
-- El **CODEX** elabora normas voluntarias mundiales para proteger la salud del consumidor.
-- La **producción controlada** se desarrolla mediante normas **UNE** de AENOR.
-- La **producción ecológica** se regula en el **Reglamento (UE) 2018/848**, que exige a terceros países cumplir, desde 2023, los estándares comunitarios. El **SOIVRE**, según la **Orden ECC/1936/2014**, controla su importación.
-- La **producción integrada** se regula por el **Real Decreto 1201/2002**, con logotipo conforme a la **Orden APA/1/2004**.
-- Las figuras **DOP, IGP y ETG** se regulan por el **Reglamento (UE) 2024/1143**, desarrollado por la **Ley 6/2015**, que atribuye a la **AICA** el control de comercialización (DOP Espárrago de Navarra, IGP Ajo Morado de Las Pedroñeras).
-- Destacan protocolos privados como **GLOBALG.A.P.**, Tesco Nurture o Carrefour Quality Lines.
+- **PAC 2023-2027**: modelo orientado al mercado, la sostenibilidad y la simplificación
+- Reglamentos
+  - **(UE) 2021/2115**: planes estratégicos (FEAGA y FEADER). En España, **PEPAC**
+  - **(UE) 2021/2116**: financiación, gestión y seguimiento
+  - **(UE) 2021/2117**: modifica la OCM única (**1308/2013**)
+- **Ayudas directas**
+  - **BISS**, ayuda básica a la renta para la sostenibilidad (sustituye pago básico y greening)
+  - **Eco-regímenes**
+  - **Condicionalidad reforzada** (BCAM)
+- Prioridades: sostenibilidad ambiental y climática, relevo generacional, digitalización, organizaciones de productores, resiliencia ante crisis
 
-## 4.3. Normativa general
-- **Real Decreto 175/2004**, control de normas de comercialización por la Secretaría de Estado de Comercio.
-- **Reglamento (CE) 396/2005**, límites máximos de residuos de plaguicidas.
-- **Reglamento (UE) 2023/915**, límites máximos de contaminantes en alimentos.
-- **Reglamento (UE) 1169/2011**, información al consumidor y etiquetado.
-- **Real Decreto 1055/2022**, envases y residuos de envases.
-- **Reglamentos (CE) 852/2004 y 853/2004** y **Reglamento (UE) 2017/625**, paquete de higiene y controles oficiales.
-- **Ley 28/2015**, defensa de la calidad alimentaria, con régimen sancionador.
-- **Ley 1/2025**, prevención de pérdidas y desperdicio alimentario.
-- **Orden PRE/3026/2003**, modificada por las **Órdenes ECC/2257/2013 y ECC/2566/2015**, sobre inspección de calidad comercial en comercio exterior. El **SOIVRE** controla legumbres, hortalizas, plantas, raíces y tubérculos.
+## 4.2. Organización Común de Mercados (OCM) y normas de comercialización
+
+- Norma base: **Reglamento (UE) 1308/2013**, modificado por el 2021/2117
+- Principios: **unidad de mercado**, **preferencia comunitaria**, **solidaridad financiera**
+- Objetivos: estabilizar mercados, nivel de vida equitativo del agricultor, competitividad, abastecimiento
+- Cinco pilares
+  - **Normas de comercialización**: Reglamento Delegado **2023/2429** y Reglamento de Ejecución **2023/2430** (controles de conformidad)
+    - Base CEPE/ONU (WP.7). Esquema: definición, calidad, calibrado, tolerancias, presentación, marcado
+    - Controles en todas las fases y a terceros países (normas UE o equivalentes). **Real Decreto 175/2004**: autoridad coordinadora
+  - **Organizaciones de productores (OP)**: concentran oferta, planifican, reducen costes
+    - Programas operativos con fondo operativo, intervención sectorial del PEPAC
+  - **Organizaciones interprofesionales**: art. 157 del Reglamento 1308/2013 y **Ley 38/1994**
+    - Defensa y promoción. **PROEXPORT**, **COEXPHAL**. Asociación: **FEPEX**
+  - **Régimen de intervención**: prevención y gestión de crisis, retirada con compensación
+    - **FEGA** gestiona, **FEAGA** financia
+  - **Intercambios con terceros países**: aranceles, contingentes, salvaguardias, certificados
+    - **Precios de entrada** en tomates, pepinos, alcachofas y calabacines
+
+## 4.3. Normativa internacional y voluntaria
+
+- **CEPE/ONU (WP.7)**: normas voluntarias, base técnica de las de la UE. Acuerdo de Ginebra
+- **OCDE**: folletos interpretativos con fotografías y cartas colorimétricas
+- **Codex Alimentarius** (FAO y OMS): voluntario, referencia de los Acuerdos MSF y OTC
+  - Normas para tomate, espárrago, berenjena, ajo
+- Regímenes voluntarios
+  - **Producción controlada**: normas UNE 155000 (CTN 155), certificable por AENOR
+  - **Producción integrada**: **Real Decreto 1201/2002**, logotipo por **Orden APA/1/2004**
+  - **Producción ecológica**: **Reglamento (UE) 2018/848**, desde 1 de enero de 2022
+    - Importaciones con COI electrónico en TRACES. Control del SOIVRE (**Orden ECC/1936/2014**)
+  - **DOP, IGP y ETG**: **Reglamento (UE) 2024/1143**. **Ley 6/2015** (supraautonómicas, control MAPA vía AICA)
+    - Ejemplos: Espárrago de Navarra, Alcachofa de Benicarló, Ajo Morado de Las Pedroñeras, Pimiento del Piquillo de Lodosa, Tomate La Cañada
+  - **Protocolos privados**: GLOBALG.A.P., GFSI (IFS, BRCGS, SQF)
+
+## 4.4. Normativa general y control SOIVRE
+
+- Legislación alimentaria general
+  - **Reglamento (CE) 178/2002**: principios y trazabilidad
+  - Higiene: **852/2004** y **853/2004**
+  - **Reglamento (CE) 396/2005**: LMR de plaguicidas
+  - **Reglamento (UE) 2023/915**: contaminantes
+  - **Reglamento (UE) 1169/2011**: información al consumidor
+  - **Reglamento (UE) 2017/625**: controles oficiales. **Real Decreto 562/2025**
+  - **Ley 28/2015**: calidad alimentaria y sanciones
+  - Envases: **Reglamento (UE) 2025/40** (agosto de 2026) y **Real Decreto 1055/2022**
+  - **Ley 1/2025**: desperdicio alimentario
+- **Orden PRE/3026/2003**: inspección SOIVRE de calidad comercial
+  - Anexo sustituido por la **Orden ECM/1002/2026**, de 9 de septiembre, para adaptarlo a los Reglamentos 2023/2429 y 2023/2430
+  - Control de conformidad frente a solo verificación del país de origen
+  - Selección por **análisis de riesgos**. Certificado de conformidad (2023/2430)
+  - Hortalizas controladas: tomates, cebollas, lechugas, zanahorias, pepinos, pimientos (incluido el tipo padrón)
 
 # 5. ANÁLISIS SECTORIAL
 
-- El sector hortícola español representa cerca del **5,1%** de las exportaciones hortícolas de la UE. China es el principal productor mundial, seguido de India y la UE.
-- La UE mantiene saldo deficitario en frutas y hortalizas frescas, más acusado en frutas. España, Países Bajos, Francia, Bélgica e Italia son los principales exportadores comunitarios en 2025.
-- España presenta superávit generalizado, salvo en **patata**. Principal producto exportado: **pimiento**, seguido de pepino, tomate y lechuga. Principal importación: patata, seguida de tomate y pimiento.
-- La UE concentra cerca del **78%** de las exportaciones españolas (Alemania, Francia, Países Bajos e Italia, en torno al **70%**). Fuera de la UE destaca **Reino Unido**. El valor exportado superó en 2025 los **9.000 millones €** (+10%).
-- En importaciones, el **49%** procede de la UE (Francia, Países Bajos, Portugal), y entre terceros países destacan Marruecos, Perú, China y Estados Unidos, superando los **2.000 millones €**.
-- Principales competidores en la UE: Países Bajos, Francia, Italia y Alemania. En el Mediterráneo, Marruecos, y en América Latina, México y Argentina.
-- La pérdida del mercado ruso desde 2014 impulsó la diversificación hacia Oriente Medio, Norteamérica y Asia.
-- Tras el **Brexit**, el acuerdo UE-Reino Unido mantiene el comercio libre de aranceles, pero con más controles fitosanitarios y costes administrativos.
-- Marruecos incrementa su competencia en tomate, pimiento y judía verde por menores costes y acuerdos preferenciales con la UE.
+- **UE**: 5,1% de sus exportaciones. China principal productor mundial, luego India y la UE
+  - Principales exportadores UE 2025: España, Países Bajos, Francia, Bélgica, Italia
+- **España** 2025: gran superávit, salvo la **patata** (deficitaria)
+  - Exportaciones: pimiento, pepino, tomate, lechuga
+  - Importaciones: patata, tomate, pimiento
+- **Destinos**: UE **78%**. Alemania, Francia, Países Bajos, Italia (**70%**). Reino Unido, principal extracomunitario
+- **Proveedores**: UE 49% (Francia, Países Bajos, Portugal). Terceros: Marruecos, Perú, China, Estados Unidos
+- **Competidores**: Países Bajos (invernadero, reexportación), Bélgica, Francia, Italia, Marruecos, Turquía, Egipto
+  - Perú en espárrago, China en ajo (contingente arancelario)
+- **Rusia**: embargo desde 2014, diversificación a Oriente Medio, Norteamérica y Asia
+- **Guerra Rusia-Ucrania**: mayores costes energéticos, logísticos y de fertilizantes
+- **Reino Unido**: Acuerdo de Comercio y Cooperación sin aranceles, más controles fitosanitarios. Acuerdo sanitario y fitosanitario en 2025
+- **Marruecos**: Acuerdo de Asociación (contingentes y precios de entrada reducidos), modificado en 2025 tras la sentencia del TJUE de octubre de 2024
+  - Productos sensibles: tomate, pimiento, judía verde, calabacín
+- Tendencias de consumo: frescos, saludables, ecológicos, conveniencia, sostenibilidad y trazabilidad
 
 # 6. CONCLUSIÓN
 
-- España es el principal exportador de hortalizas frescas de la UE, apoyado en su especialización productiva y orientación hacia mercados comunitarios.
-- El **Acuerdo de Asociación UE-Mercosur** puede intensificar la competencia al liberalizar el acceso de Argentina, Brasil, Uruguay y Paraguay, con menores costes de producción.
-- La presión de Marruecos y de terceros países mediterráneos exige reforzar la diferenciación, la calidad y la sostenibilidad, junto con estándares equivalentes a los comunitarios.
+- España, **principal exportador de hortalizas frescas de la UE**, con fuerte orientación comunitaria
+- **Mercosur**: Acuerdo Interino de Comercio firmado en enero de 2026, aplicación provisional del pilar comercial desde el **1 de mayo de 2026**
+  - Acuerdo de Asociación pendiente de ratificación
+  - Liberalización progresiva, contingentes y salvaguardia bilateral
+  - Impacto limitado (perecedero, distancia). Atención a ajo y cebolla (Argentina)
+- Presión más directa: **Marruecos** (tomate, pimiento, judía verde, calabacín)
+- Respuesta: diferenciación, innovación varietal, calidad, sostenibilidad y estándares equivalentes
+  - El **control SOIVRE** garantiza las mismas reglas de calidad comercial a lo importado y a lo exportado

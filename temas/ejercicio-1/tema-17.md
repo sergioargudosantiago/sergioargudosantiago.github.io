@@ -1,83 +1,193 @@
 # 1. INTRODUCCIÓN
+- **Sector secundario**: 14,2% PIB, 15,6% VAB, 11,4% empleo (Informe Anual 2025 SG Estudios, Análisis y Planes de Actuación del MINTUR)
+  - Industria manufacturera: bienes intermedios, **bienes de equipo**, bienes de consumo
+- **Bienes de equipo**: máquinas e instalaciones destinadas a producir otros bienes o servicios, nivel tecnológico medio-alto
+- Con automoción, ~30% del VAB y del empleo industrial, muy exportador
+- **Automoción**: componentes (intermedios), vehículos industriales (equipo) y turismos (consumo), 10% PIB, 9% empleo, 12,8% exportaciones
+- Transformación: globalización, electrificación, digitalización, descarbonización
 
-- El sector secundario representa el **14,2 % del PIB**, el **15,6 % del VAB** y el **11,4 % del empleo** (Informe Anual 2025, SG de Estudios, Análisis y Planes de Actuación del MINTUR).
-- La industria manufacturera se divide en bienes intermedios, bienes de equipo y bienes de consumo.
-- Los **bienes de equipo**, incluida la automoción, representan en torno al **30 %** del VAB y del empleo industrial, con elevada orientación exportadora.
-- La **automoción** participa en bienes intermedios, de equipo y de consumo: supone en torno al **10 % del PIB**, **9 % del empleo** y **12,8 % de las exportaciones**.
-- La electrificación, la digitalización y la descarbonización transforman estos subsectores.
+## 1.1. Legislación general del sector industrial
+- Competencia normativa: SG de Calidad y Seguridad Industrial del MINTUR
+- **Ley 21/1992, de Industria**
+- **RD 559/2010**, Reglamento del Registro Integrado Industrial
+- **RD 1072/2015**, Infraestructura para la Calidad y la Seguridad Industrial: AENOR (normalización), ENAC (acreditación)
+- **RD 1468/1988**, etiquetado de productos industriales sin normativa específica
+  - Etiqueta real, veraz y comprensible
+  - Datos mínimos: denominación, composición, plazo de uso, contenido neto, lote, empresa, origen, alérgenos
+  - Exportación a terceros países incumplidora: identificada
+- **RD 1406/1989**, limitaciones de sustancias (benceno, amianto, termómetros de mercurio desde 2009)
+- **RD 330/2008**, control de importaciones en seguridad por riesgos RAPEX
+  - SOIVRE controla antes del despacho aduanero
+  - Lista en **Orden PJC/161/2026**: drones, puericultura, textil, calzado, juguetes, EPIs, pequeño material eléctrico, muebles
+- **RD 993/2022**, control SOIVRE de RoHS y Registro Integrado Industrial de AEEs, pilas y acumuladores
+- **Reglamento (CE) 765/2008**, acreditación y marcado CE (EPIs, juguetes, material eléctrico), vigilancia de mercado sustituida por 2019/1020
+- **Reglamento (UE) 2019/1020**, vigilancia del mercado, poderes de las AVM, controles de terceros países
+- **Reglamento (UE) 2019/515**, reconocimiento mutuo
+- **Decisión 768/2008/CE**, base del Nuevo Marco Legislativo
+- **Reglamento (UE) 2023/988 (RGSP)**: deroga Directiva 2001/95/CE y deja sin efecto el RD 1801/2003
+  - Aplicable desde 13-12-2024, fabricantes y distribuidores, **Safety Gate** (sustituye a RAPEX), mercados en línea
+- **REACH, Reglamento (CE) 1907/2006**: restricciones (Anexo XVII), ECHA
+- **Reglamento (UE) 2023/2411**, indicaciones geográficas de productos artesanales e industriales, aplicable desde 2025
 
-# 2. LEGISLACIÓN GENERAL DEL SECTOR INDUSTRIAL
+# 2. MATERIAL DE TRANSPORTE FERROVIARIO
+- **Contenido**: material rodante, señalización, control y telecomunicaciones, mantenimiento y modernización
+- Intensivo en tecnología, ligado a alta velocidad e infraestructuras sostenibles
+- **España**: referente mundial, participa en toda la cadena de valor, proyectos en Europa, Oriente Medio, Asia, África y América
+- **Estructura**: grandes multinacionales más pymes de mantenimiento, ingeniería y componentes
+  - Concentración: Madrid, País Vasco, Cataluña
+  - Demanda: RENFE, ADIF, SNCF
+- **Comercio**: fuerte superávit
+  - Exportaciones a Europa y países con nuevas infraestructuras
+  - Importaciones de UE y China
+- Descarbonización impulsa el ferrocarril frente a carretera y aire
 
-- **Ley 21/1992, de Industria**: adapta la actividad industrial al Mercado Único europeo.
-- **Real Decreto 559/2010** y **Real Decreto 1072/2015**: Registro Integrado Industrial e Infraestructura para la Calidad y la Seguridad Industrial, que reconoce a **AENOR** y **ENAC**.
-- **Real Decreto 1468/1988**, de Etiquetado de Productos Industriales: exige etiquetado veraz.
-- **Real Decreto 1406/1989**: limita sustancias peligrosas (benceno, amianto, dimetilfumarato, pentaclorofenol).
-- **Real Decreto 330/2008**: control de importación por seguridad vía **SOIVRE**, según riesgos de **RAPEX**, con lista en la **Orden PJC/161/2026**.
-- **Real Decreto 993/2022**: control SOIVRE de aparatos eléctricos y electrónicos (RoHS).
-- **Reglamento (CE) 765/2008**: acreditación y marcado CE, sustituido en vigilancia por el **Reglamento (UE) 2019/1020**.
-- **Reglamento (UE) 2019/515**: reconocimiento mutuo de mercancías comercializadas en otro Estado miembro.
-- **Decisión 768/2008/CE**: marco común de comercialización, base del Nuevo Marco Legislativo.
-- **Reglamento (UE) 2023/988**, de Seguridad General de Productos: sustituye al Real Decreto 1801/2003 desde el **13 de diciembre de 2024**, con el sistema **Safety Gate**.
-- **Reglamento (CE) 1907/2006 (REACH)**: restringe sustancias químicas peligrosas y crea la **ECHA**.
-- **Reglamento (UE) 2023/2411**, de Indicaciones Geográficas industriales y artesanales: aplicable desde 2025.
+## 2.1. Normativa aplicable
+- **Directiva (UE) 2016/798**, seguridad ferroviaria e interoperabilidad
+- **Directiva 2012/34/UE**, Espacio Ferroviario Europeo Único
+- **Directiva 2008/68/CE**, mercancías peligrosas por carretera, ferrocarril y vías navegables
+- **Reglamento (UE) 2016/796**, Agencia Ferroviaria (ERA): certificación de seguridad y autorización de vehículos
+- **Cuarto Paquete Ferroviario (2016)**: liberalización del transporte de pasajeros
 
-# 3. MATERIAL DE TRANSPORTE
+# 3. MATERIAL DE TRANSPORTE POR CARRETERA
+- **Contenido**: vehículos industriales, comerciales ligeros, furgonetas, remolques y semirremolques, sin turismos
+- **España**: primer productor de la UE de vehículos industriales, superávit recurrente
+- **Comercio**
+  - Intercambios con la UE: Alemania y Francia
+  - Exportación a Reino Unido
+  - Importación desde Turquía y China
+- **Transición**: cero y bajas emisiones, hidrógeno renovable, digitalización, Euro VII, objetivos CO₂ de pesados
 
-## 3.1. Ferroviario
+## 3.1. Normativa aplicable
+- **EC WVTA**, homologación de vehículo completo (art. 114 TFUE), válida en toda la UE
+- **Reglamento (UE) 2018/858**, homologación y vigilancia del mercado, controles poscomercialización
+- **Reglamento (UE) 2019/1242**, CO₂ de pesados nuevos: -15% en 2025 y -30% en 2030 sobre 2019
+- **Reglamento (UE) 2024/1257 (Euro VII)**, emisiones de ligeros y pesados, partículas de frenos y neumáticos, durabilidad de baterías
 
-- Material rodante, señalización y mantenimiento, sector de alta tecnología ligado a la alta velocidad.
-- España es referente mundial, con presencia en toda la cadena de valor. Concentración en **Madrid, País Vasco y Cataluña**. Demanda dominada por **RENFE, ADIF y SNCF**.
-- Superávit comercial estable, con tasa de cobertura superior al **200 %**, hacia Europa, con importaciones de la UE y China.
-- Normativa: **Directiva (UE) 2016/798**, Seguridad Ferroviaria, **Directiva 2012/34/UE**, Espacio Ferroviario Europeo Único, **Reglamento (UE) 2016/796**, Agencia Ferroviaria de la UE, Cuarto Paquete Ferroviario (2016).
+# 4. BUQUES Y CONSTRUCCIÓN NAVAL
+- **Contenido**: diseño, construcción, reparación y mantenimiento de buques y equipos
+- Industria de síntesis, alta complejidad, intensiva en capital, ciclos largos
+- **Mercado mundial**: China, Corea del Sur y Japón, ~90% de los pedidos
+  - Europa: crucero, militares, offshore, buques especiales
+  - España: buques multifuncionales y artefactos para extracción de petróleo
+- **Navantia**: empresa pública, actividad militar y civil
+  - Fragatas F-110, buques de apoyo logístico, eólica marina
+  - Contratos con Australia y Arabia Saudí
+- **Comercio** (DATACOMEX, 2025): superávit
+  - Operaciones de alto valor unitario, mercados variables
+  - Exportaciones al alza: Gibraltar, Noruega, Reino Unido
+  - Importaciones estables: China, Francia, Italia, Alemania
+- **Reto**: descarbonización (OMI y UE), GNL, metanol, hidrógeno, amoniaco
 
-## 3.2. Carretera
+## 4.1. Normativa aplicable
+- **Convenio SOLAS** (OMI), seguridad de la navegación
+- **Convenio MARPOL** (OMI), contaminación por buques
+- **Reglamento (UE) 2023/1805 (FuelEU Maritime)**, combustibles alternativos y reducción de intensidad de GEI
+- **Directiva 2014/90/UE**, equipos marinos
+- **Reglamento (UE) 530/2012**, petroleros de doble casco
+- **RDL 2/2011**, Texto Refundido de la Ley de Puertos del Estado y de la Marina Mercante
+- **Estrategia OMI de GEI (revisión 2023)**: emisiones netas casi cero hacia 2050
 
-- Fabricación de vehículos industriales, comerciales ligeros y remolques, sin turismos.
-- España es el principal productor europeo de vehículos industriales. Socios: **Alemania y Francia**, Reino Unido como destino y Turquía y China como proveedores.
-- Transición hacia cero emisiones e hidrógeno, impulsada por la normativa **Euro VII**.
-- Normativa: **Reglamento (UE) 2018/858**, homologación y vigilancia, **Reglamento (UE) 2019/1242**, reducción de CO₂ en pesados (**15 %** en 2025 y **30 %** en 2030), **Reglamento (UE) 2024/1257 (Euro VII)**.
+# 5. AERONAVES Y MATERIAL ESPACIAL
+- **Contenido**: aeronaves civiles y militares, motores, satélites, vehículos espaciales, misiles, mantenimiento
+- Altas barreras de entrada, I+D+i, personal cualificado, efecto tractor
+- **Estructura**: grandes consorcios (Airbus, Boeing, Safran, Leonardo) más pymes proveedoras
+- **España**: 4.º productor europeo tras Francia, Alemania e Italia (Eurostat)
+  - Concentración: Madrid, País Vasco, Andalucía (Sevilla y Cádiz)
+  - Motores: Airbus, ESA, relación con EEUU y Boeing
+- **Comercio**: saldo positivo
+  - 2025: exportaciones -20% a UE, Reino Unido, India y EEUU
+  - Importaciones de EEUU, Francia, Alemania y Reino Unido
+- **Disputa Airbus-Boeing** (OMC, iniciada en 2004)
+  - 2019: sanciones de EEUU por 7.500 M$ anuales
+  - 2021: aranceles suspendidos 5 años, compromiso de no financiar si daña a la otra parte
+  - Tregua hasta 11-7-2026, la UE votó el 25-6-2026 prorrogar su parte (4.000 M$)
+- **Nuevo Espacio**: actores privados (SpaceX, Blue Origin, OneWeb)
+  - España: CDTI, INTA, GMV, Sener, Indra, Iberdrola Ingeniería
 
-## 3.3. Naval
+## 5.1. Normativa aplicable
+- **Ley 48/1960**, Navegación Aérea y Registro de Matrícula
+- **Ley 21/2003**, Seguridad Aérea
+- **Reglamento (UE) 2018/1139**, aviación civil y EASA
+- **CORSIA** (OACI), compensación de emisiones de la aviación internacional
+- **Reglamento (UE) 2023/2405 (ReFuelEU Aviation)**, combustibles sostenibles (SAF)
+- **Reglamento (UE) 2021/696**, Programa Espacial de la UE y EUSPA
 
-- Diseño, construcción, reparación y mantenimiento de buques, de alta complejidad tecnológica.
-- El mercado mundial se concentra en Asia (**China, Corea del Sur y Japón, ~90 %** de los pedidos). Europa se especializa en cruceros, militares y offshore.
-- **Navantia** es el principal actor español, civil y militar (fragatas F-110, eólica marina), con contratos en Australia y Arabia Saudí.
-- Superávit comercial en 2025 (DATACOMEX): exportaciones a Gibraltar, Noruega y Reino Unido, importaciones desde China y la UE.
-- Normativa: **Convenio SOLAS** y **Convenio MARPOL** (OMI), **Reglamento (UE) 2023/1805 (FuelEU Maritime)**, **Real Decreto Legislativo 2/2011**, Ley de Puertos del Estado y Marina Mercante, Estrategia OMI de reducción de gases de efecto invernadero, emisiones netas cercanas a cero hacia 2050.
+# 6. SECTOR DE LA AUTOMOCIÓN
+- **CNAE-2009**: turismos, industriales, especiales, autobuses, motocicletas, bicicletas y componentes
+- Pilar industrial, intensidad tecnológica media-alta, concentración empresarial
 
-## 3.4. Aeronaves y material espacial
+## 6.1. Características generales del sector
+- **Globalizado** y reestructurado: Stellantis, Volkswagen Group, Renault-Nissan-Mitsubishi, Toyota
+- **España**: 2.º fabricante europeo, 8.º mundial, líder europeo en vehículos industriales
+  - 2025: 2.274.026 unidades, -4,3% (ANFAC)
+- **Plantas**: Stellantis, Volkswagen, Renault, Ford, Mercedes-Benz, hacia modelos electrificados
+  - Chery-Ebro en la antigua planta de Nissan Barcelona, SAIC/MG en Galicia para 2027
+  - Hub de fabricantes chinos en Europa Occidental, pérdida de carga de Ford Valencia
+- **Peso**: 10% PIB, 9% empleo, 12,8% exportaciones
+  - Superávit de 4.822 M€, tensionado por importaciones asiáticas
 
-- Fabricación de aeronaves, motores, satélites y vehículos espaciales, con altas barreras de entrada e inversión en I+D+i.
-- Grandes consorcios (**Airbus, Boeing, Safran, Leonardo**) sustentados por una red de pymes.
-- España es el **4.º productor europeo**, tras Francia, Alemania e Italia (Eurostat), concentrado en Madrid, País Vasco y Andalucía.
-- Tasa de cobertura en torno al **110 %**, aunque en 2025 las exportaciones cayeron cerca de un **20 %**, hacia la UE, Reino Unido, India y EEUU.
-- Disputa **Airbus-Boeing** en la OMC (2004): sanciones a EEUU en 2019 por 7.500 M$, suspensión bilateral en 2021 por 5 años, con prórroga votada por la UE el 25 de junio de 2026.
-- **Nuevo Espacio**: actores privados (SpaceX, Blue Origin, OneWeb). España participa vía CDTI, INTA y empresas como GMV, Sener e Indra.
-- Normativa: **Ley 48/1960**, Navegación Aérea, **Ley 21/2003**, Seguridad Aérea, **Reglamento (UE) 2018/1139**, aviación civil y **EASA**, **Reglamento (UE) 2021/696**, Programa Espacial de la UE y **EUSPA**.
+## 6.2. Transición hacia el vehículo eléctrico y planes de apoyo
+- **Ley 7/2021**: prohíbe vehículos de combustión desde 2040
+- **Reglamento (UE) 2023/851**: turismos y furgonetas nuevos de cero emisiones desde 2035
+- **Planes de apoyo**
+  - **PIVE** (8 ediciones): 1.115 M€, 1,185 millones de vehículos
+  - **PIMA Aire y PIMA Transporte** (2013-2015)
+  - **RENOVE 2020**: 250 M€
+  - **MOVES II**: 110 M€, hasta 5.500 €
+  - **MOVES III** (2021-2025): 400 M€, hasta 7.000 €
+  - **MOVES Flotas** (2022-2023)
+  - **Programa Auto+** (vigente en 2026): sustituye a MOVES, 400 M€
+    - Hasta 4.500 € eléctricos y 3.375 € híbridos enchufables
+    - Incentivo adicional si se fabrica en la UE
 
-# 4. SECTOR DE LA AUTOMOCIÓN
+## 6.3. Análisis sectorial
+- **Mundial**: China, EEUU, UE y Japón
+  - Europa >25% de la producción: Alemania, España, Francia, Chequia, Eslovaquia
+  - Fortaleza: innovación y redes, desventaja de costes frente a Asia y Europa del Este
+- **España**: exportaciones/producción ~85%
+  - Destinos: Francia, Alemania, Reino Unido, Turquía
+  - Orígenes: Alemania, Francia, Chequia, Japón, Turquía
+  - China, 3.er proveedor de vehículos (híbridos y eléctricos)
+  - Superávit
 
-- Según la **CNAE-2009**, incluye turismos, vehículos industriales y especiales, autobuses, motocicletas y componentes.
-- Industria globalizada de intensidad tecnológica media-alta, con grandes grupos surgidos de fusiones (**Stellantis, Volkswagen Group, Renault-Nissan-Mitsubishi, Toyota**).
-- España es el **2.º fabricante europeo** y **8.º mundial**, líder europeo en vehículos industriales. En 2025 la producción fue de **2.274.026 unidades**, un descenso del **4,3 %** (ANFAC).
-- Consolidación como hub de fabricantes chinos (Chery-Ebro en Barcelona, SAIC/MG en Galicia para 2027), con fuertes inversiones en eléctricos.
-- Representa el **10 % del PIB**, **9 % del empleo** y **12,8 % de las exportaciones**, con superávit comercial de **4.822 M€**.
-- La **Ley 7/2021** de Cambio Climático prohíbe la venta de vehículos de combustión en España desde **2040**. El **Reglamento (UE) 2023/851** exige cero emisiones desde **2035**.
-- Planes de apoyo: **PIVE** (8 ediciones, 1.115 M€), **RENOVE 2020** (250 M€), **MOVES II** (110 M€), **MOVES III** (400-800 M€), y el vigente **Programa Auto+** (400 M€, hasta 4.500 € para eléctricos y 3.375 € para híbridos enchufables).
-- Ratio de exportación sobre producción cercana al **85 %**, hacia Francia, Alemania, Reino Unido y Turquía, con China como tercer proveedor creciente.
-- Normativa técnica y medioambiental: **Reglamento (UE) 2018/858**, ciclo **WLTP**, **Reglamento (UE) 2024/1257 (Euro 7)**, **Reglamento (UE) 2019/1242** (**45 %** en 2030 y **90 %** en 2040 para pesados), **Directiva 2000/53/CE**, vehículos al final de su vida útil, **Reglamento (UE) 2023/1542**, de baterías, **CBAM**.
-- Normativa fiscal y de seguridad vial: **Impuesto de Matriculación**, aranceles comunitarios a eléctricos asiáticos, **Reglamento (UE) 2019/2144 (GSR II)**, sistemas ADAS, objetivo **Visión Cero** de la UE, norma **IATF 16949**.
+## 6.4. Normativa aplicable al sector de la automoción
 
-# 5. SUBSECTOR DE COMPONENTES DE AUTOMOCIÓN
+## 6.5. Normativa técnica
+- **CARS 21 y CARS 2020**: armonización de 25 directivas y reglamentos CEPE/ONU
+- **Reglamento (UE) 2018/858**, homologación y vigilancia, tras el Dieselgate
+- **Euro 6d y WLTP (2018)**, más ensayos RDE, sustituyen a NEDC
+- **Reglamento (UE) 2024/1257 (Euro 7)**: unifica ligeros y pesados, congela topes de escape de turismos
+  - Regula partículas de frenos y neumáticos y durabilidad de baterías
 
-- El **50 %** de las empresas son multinacionales, con el **77 %** de los trabajadores. Segmentos: neumáticos y caucho, motor y piezas, equipo eléctrico, carrocería y chasis.
-- España ocupa el **4.º lugar europeo** en componentes. En torno al **70 %** de las piezas de los vehículos fabricados en España proceden del propio sector.
-- Saldo comercial deficitario: exportaciones a la UE, Marruecos y Reino Unido, importaciones desde la UE con peso creciente de China, Turquía y Marruecos.
-- La electrificación sustituye componentes de combustión por tracción eléctrica (baterías, motores eléctricos, electrónica de potencia).
-- El **ICEX** y el **MECE** apoyan la internacionalización vía **SERNAUTO** en ferias como Equip Auto.
+## 6.6. Normativa medioambiental
+- **Reglamento (UE) 2023/851** (modifica 2019/631): 100% de cero emisiones en 2035
+- **Reglamento (UE) 2019/1242**: pesados, -45% en 2030 y -90% en 2040 (revisión 2024)
+- **Directiva 2000/53/CE y RD 1383/2002**: vehículos al final de su vida útil
+- **Ley 7/2021**: prohibición en 2040
+- **Reglamento (UE) 2023/1542 (Baterías)**: huella de carbono, materiales reciclados, Pasaporte Digital
+- **CBAM**: acero y aluminio, mayores costes de proveedores
 
-# 6. CONCLUSIÓN
+## 6.7. Normativa fiscal y de seguridad vial
+- **Impuesto de Matriculación**: según emisiones de CO₂, exentos los de cero emisiones
+- **Aranceles de la UE a vehículos eléctricos chinos**: contrarrestan subsidios, reconfiguran inversiones
+- **GSR II (Reglamento UE 2019/2144)**: ADAS de serie (EDR, ISA, frenada de emergencia)
+- **Visión Cero**: mitad de fallecidos y heridos graves en 2030 respecto a 2020, cero en 2050
+- **IATF 16949 (ISO/TS 16949)**: calidad, imprescindible para proveedores de primer nivel
 
-- Los sectores ferroviario, de carretera, naval, aeronáutico, espacial y de automoción constituyen la base de la industria española por su empleo, exportación y efecto tractor.
-- Se transforman por tres vectores: descarbonización, digitalización y competencia geopolítica.
-- España parte de una posición favorable por la fortaleza de estos sectores y la captación de inversión en transición energética y digital, lo que exige reforzar innovación, capital humano e internacionalización.
+# 7. SUBSECTOR DE COMPONENTES DE AUTOMOCIÓN
+- Con los constructores forma la automoción en sentido amplio
+- 50% de empresas multinacionales, 77% del empleo
+- **Segmentos**: neumáticos y caucho, motor y piezas, equipo eléctrico, carrocería y chasis
+- **España**: 4.º europeo, ~70% de las piezas son nacionales
+- **Comercio**: déficit
+  - Exportaciones a UE, Marruecos y Reino Unido
+  - Importaciones de UE, China, Turquía y Marruecos
+- **Electrificación**: de motor de combustión, caja de cambios y escape a baterías, motores eléctricos y electrónica de potencia
+  - Oportunidades: baterías, hidrógeno, electrónica embarcada
+- **Apoyo**: MECE e ICEX con SERNAUTO, ferias como Equip Auto
+
+# 8. CONCLUSIÓN
+- Ferroviario, carretera, naval, aeroespacial y automoción: base industrial, empleo, exportación y efecto tractor
+- **Tres vectores**: descarbonización, digitalización, competencia geopolítica
+- España fuerte en automoción, ferroviario, naval especializado y aeroespacial
+- Exige innovación, autonomía estratégica, capital humano e internacionalización

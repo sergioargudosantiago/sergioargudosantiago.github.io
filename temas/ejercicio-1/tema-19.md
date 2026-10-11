@@ -1,100 +1,178 @@
 # 1. INTRODUCCIÓN
 
-- La industrialización española de los años 60 generó una estructura productiva sesgada hacia sectores tradicionales intensivos en mano de obra, con dependencia energética y tecnológica y elevada presencia de **pymes**.
-- La entrada en la **CEE en 1986** exigió completar la reconversión industrial y adaptarse al Mercado Único y a las políticas liberalizadoras.
-- El sector secundario representa el **14,2 %** del PIB, el **15,6 %** del VAB y el **11,4 %** del empleo (Informe Anual 2025, MINTUR).
-- Las manufacturas de consumo comprenden textil y confección, calzado, **EPIs**, juguete y pequeño material eléctrico.
-- Según **DATACOMEX** (2025), el sector supone el **9,1 %** de las exportaciones y el **11,4 %** de las importaciones, con déficit comercial estructural. Los subsectores más relevantes son textil-confección y calzado.
+- **Secundario**: 14,2 % PIB, 15,6 % VAB, 11,4 % empleo (Informe Anual 2025, SGEAPA del MINTUR)
+- **Manufacturas de consumo**: textil y confección, calzado, EPIs, juguete, pequeño material eléctrico
+- **DATACOMEX 2025**: exportaciones 9,1 % del total, importaciones 11,4 %, déficit estructural
+- Subsectores principales: **textil y confección** y **calzado**
 
 ## 1.1. Legislación general del sector industrial
 
-- Competencia normativa de la **Subdirección General de Calidad y Seguridad Industrial** (MINTUR).
-- **Ley 21/1992, de Industria**: adapta la actividad industrial al Mercado Único europeo.
-- **Real Decreto 559/2010**: Reglamento del Registro Integrado Industrial.
-- **Real Decreto 1072/2015**: Reglamento de la Infraestructura para la Calidad y la Seguridad Industrial, reconoce a **AENOR** y **ENAC**.
-- **Real Decreto 1468/1988**: etiquetado, presentación y publicidad de productos industriales sin normativa específica. Exige denominación, composición, plazo de uso, contenido neto, lote, empresa, origen y alérgenos.
-- **Real Decreto 1406/1989**: prohíbe sustancias como benceno, amianto, dimetilfumarato, pentaclorofenol y termómetros de mercurio.
-- **Real Decreto 330/2008**: control de importación por riesgos de seguridad vía **RAPEX**, con el **SOIVRE** como responsable. La **Orden PJC/161/2026** fija el listado de productos sujetos (drones, puericultura, textil, calzado, juguetes, EPIs, material eléctrico, muebles). El **Real Decreto 993/2022** amplía a AEE y pilas (RoHS).
-- **Reglamento (CE) 765/2008**: requisitos de acreditación y marcado CE, sustituido en vigilancia de mercado por el **Reglamento (UE) 2019/1020**.
-- **Reglamento (UE) 2019/515**: reconocimiento mutuo de mercancías legalmente comercializadas en otro Estado miembro.
-- **Decisión 768/2008/CE**: marco común de comercialización, base del Nuevo Marco Legislativo.
-- **Reglamento (UE) 2023/988 (RGSP)**: aplicable directamente desde el **13 de diciembre de 2024**. Refuerza **Safety Gate** y las obligaciones de mercados en línea.
-- **Reglamento (CE) 1907/2006 (REACH)**: sustancias químicas, restricciones vía Anexo XVII, crea la **ECHA**.
-- **Reglamento (UE) 2023/2411**: indicaciones geográficas de productos industriales y artesanales no alimentarios, aplicable desde 2025.
+- Competencia normativa: **SG de Calidad y Seguridad Industrial** del MINTUR
+- **Ley 21/1992, de Industria** · **RD 559/2010**, Registro Integrado Industrial
+- **RD 1072/2015**, Infraestructura para la Calidad y Seguridad Industrial: **AENOR** normalización, **ENAC** acreditación
+- **RD 1468/1988**, etiquetado de productos industriales sin norma específica
+  - Etiquetado real, veraz y fácil de entender
+  - Datos mínimos: denominación, composición, contenido neto, lote, identificación de la empresa, origen
+  - Exportación a terceros países no conforme: identificada
+- **RD 1406/1989**: prohibiciones de sustancias (benceno, amianto, dimetilfumarato, pentaclorofenol)
+- **RD 330/2008**: control previo al despacho por el **SOIVRE**, a partir de riesgos de RAPEX
+  - Lista en la **Orden PJC/161/2026**: drones, puericultura, textil, calzado, juguetes, EPIs, pequeño material eléctrico, muebles
+  - **RD 993/2022**: amplía a aparatos eléctricos y electrónicos, pilas y acumuladores (RoHS, residuos)
+- **Reglamento (CE) 765/2008**: acreditación y marcado CE (EPIs, juguetes, material eléctrico) · vigilancia de mercado sustituida por el **Reglamento (UE) 2019/1020** (poderes de las AVM, controles a terceros países)
+- **Reglamento (UE) 2019/515**: reconocimiento mutuo · **Decisión 768/2008/CE**: base del Nuevo Marco Legislativo
+- **Reglamento (UE) 2023/988 (RGSP)**: aplicable desde el **13/12/2024**, productos seguros, **Safety Gate** (sustituye a RAPEX), mercados en línea
+- **REACH (CE) 1907/2006**: restricciones del Anexo XVII, **ECHA**
+- **Reglamento (UE) 2023/2411**: indicaciones geográficas de productos artesanales e industriales, aplicable desde 2025
 
 # 2. SUBSECTOR TEXTIL Y CONFECCIÓN
 
-## 2.1. Fibras textiles
+## 2.1. Descripción del producto: fibras textiles
 
-- Productos textiles: compuestos exclusivamente por fibras textiles en cualquier fase de elaboración. Propiedades clave: resistencia, elasticidad, hilabilidad.
-- Defectos de calidad: pilling, electricidad estática, brillo, elasticidad, absorción.
-- **Naturales**: algodón (CO, vegetal, más empleada mundialmente), lana (WO, animal, aislante térmico), amianto (mineral, prohibido, desmantelamiento regulado por la **Directiva 2009/148/CE**).
-- **Químicas artificiales**: viscosa/rayón (CV), fibra modal (CMD), lyocell, acetato/triacetato (CA/CTA), a partir de celulosa.
-- **Químicas sintéticas**: poliéster (PES), poliamida/nylon (PA), aramidas (Kevlar, Nomex, resistentes al calor y fuego), acrílicas (PAN), elastano/Lycra (EL).
-- Procesos: hilatura, tejedura de calada, tejedura de punto y telas no tejidas.
+- Fibras: flexibles, finas, muy largas. Propiedades: resistencia, elasticidad, hilado
+- Calidad de prendas: **pilling**, electricidad estática, brillo, elasticidad, absorción de agua
+- **Fibras naturales**
+  - Vegetales: **algodón (CO)**, la más empleada
+  - Animales: **lana (WO)**
+  - Minerales: **amianto**, prohibido, Directiva 2009/148/CE
+- **Fibras químicas artificiales** (celulosa)
+  - **Viscosa (CV)**/rayón · **modal (CMD)** · **lyocell** · **acetato/triacetato (CA/CTA)**
+- **Fibras químicas sintéticas** (derivados del petróleo)
+  - **Poliéster (PES)**, **poliamida (PA)**, **aramidas** (Kevlar, Nomex, EPIs), **acrílicas (PAN)**, **elastano (EL)**
+  - Texturizado y microfibras
 
-## 2.2. Análisis sectorial
+## 2.2. Procesos industriales
 
-- Representa el **0,9 %** de la producción, **1,0 %** del VAB industrial y **1,9 %** del empleo industrial (INE). España es 4º productor europeo tras Italia, Francia y Alemania.
-- Concentración en **Comunidad Valenciana** y **Cataluña** (hilados y tejidos). Confección dispersa.
-- Exportaciones superiores a **19.400 M€**, principalmente a la UE (Francia, Italia, Portugal, Polonia, Alemania) y terceros países (Marruecos, Turquía). Importaciones desde China, Bangladesh, Turquía, Marruecos, Camboya e Italia, con déficit estructural.
-- Relevancia del **régimen de perfeccionamiento pasivo** con Turquía y Marruecos.
-- **Reglamento (UE) 2024/1781 (ESPR)** y **Estrategia UE para Textiles Sostenibles y Circulares (2022)**: objetivo de productos duraderos, reparables y reciclables en 2030.
-- El **ICEX** promueve el sector mediante la Spain Fashion Exhibition en Asia.
+- **Hilatura**: hilo por torsión de fibras
+- **Tejedura**: telas de **calada** (hilos perpendiculares) y de **punto**
+- **Telas no tejidas**: sin hilatura ni tejedura
 
-## 2.3. Normativa e inspección
+## 2.3. Análisis sectorial
 
-- **Reglamento (UE) 1007/2011**: denominaciones y etiquetado de composición de fibras textiles, base de la inspección fronteriza.
-- **Real Decreto 928/1987**: etiquetado de composición. La falta de NIF del importador no es No Conformidad, sino Comunicación Informativa.
-- **Reglamento (UE) 2023/988 (RGSP)** y **Directiva (UE) 2024/1799** (derecho a la reparación) refuerzan trazabilidad y reparabilidad.
-- **Directiva 2010/75/UE (IED)** y normativa de biocidas: restringen compuestos de estaño y metales pesados.
-- Normas armonizadas SOIVRE: **UNE-EN 14682:2015** (cordones en ropa infantil) y **UNE 40902:2020** (prendas de bebé).
-- Procedimiento SOIVRE: verificar si es EPI (Reglamento (UE) 2016/425). Si no lo es, verificar etiquetado con identificación del importador, cuya ausencia es No Conformidad Subsanable. Composición y NIF son exigibles para la puesta en el mercado, no en el despacho. Etiquetado en castellano, duradero y no engañoso (art. 18.1 TRLGDCU). Las prendas textiles no llevan marcado CE.
-- Ensayos: biocidas DMF (**Decisión 2011/135/UE**, REACH), colorantes azóicos (**Orden PRE/730/2003**), pentaclorofenol (**Orden de 24 de marzo de 2000**), formaldehído y metales pesados (REACH), ftalatos (**Real Decreto 1114/2006**), pH en cuero (**UNE-EN ISO 4045:2019**).
+- Peso: 0,9 % producción, 1,0 % VAB, 1,9 % empleo industrial · 4º productor europeo tras Italia, Francia y Alemania
+- Hilados y tejidos en **C. Valenciana y Cataluña**. Competencia de países de menores costes
+- Exportaciones **>19.400 M€**: Francia, Italia, Portugal, Polonia, Alemania · terceros: Marruecos, Turquía
+- Importaciones: China, Bangladesh, Turquía, Marruecos, Camboya, Italia · **perfeccionamiento pasivo** con Turquía y Marruecos
+- Retos: moda sostenible y economía circular
+  - **Reglamento (UE) 2024/1781 (ESPR)**: durabilidad, contenido reciclado, pasaporte digital
+  - **Estrategia UE Textiles Sostenibles y Circulares (2022)**: objetivo 2030
+- **ICEX**: Spain Fashion Exhibition en Asia
+
+## 2.4. Normativa aplicable
+
+- **Reglamento (UE) 1007/2011**: denominaciones y etiquetado de composición, base de la inspección en frontera
+- **RD 928/1987**: etiquetado de composición. Falta de NIF: Comunicación Informativa a Consumo
+- **RGSP 2023/988** · **ESPR 2024/1781**
+- **Directiva (UE) 2024/1799**: derecho a la reparación
+- **Directiva 2010/75/UE (IED)** y biocidas: estaño, metales pesados
+
+## 2.5. Normas armonizadas de seguridad (inspección SOIVRE)
+
+- **UNE-EN 14682:2015**: cordones y cuerdas en ropa infantil hasta 14 años
+- **UNE 40902:2020**: prendas de bebé, menores de 3 años y hasta 98 cm
+
+## 2.6. Inspección en frontera (textil)
+
+- Base: **RD 330/2008** y **Orden PJC/161/2026**
+- ¿Es EPI? Si lo es, **Reglamento (UE) 2016/425**
+- No EPI: etiquetado con importador (nombre/marca, dirección, referencia del modelo). Falta: **No Conformidad Subsanable**
+- Composición y NIF: exigibles para la puesta en el mercado, no para el despacho. Falta: **Comunicación Informativa**
+- Etiquetado en castellano, duradero, legible, visible, no engañoso (art. 18.1 TRLGDCU)
+- Sin marcado CE
+
+## 2.7. Ensayos de laboratorio en textil
+
+- **Biocidas (DMF)**: Decisión 2011/135/UE, REACH
+- **Colorantes azóicos**: Orden PRE/730/2003
+- **Pentaclorofenol**: Orden de 24/03/2000
+- **Formaldehído** y **metales pesados**: REACH
+- **Ftalatos**: RD 1114/2006
+- **pH en cuero**: UNE-EN ISO 4045:2019
 
 # 3. SUBSECTOR DEL CALZADO
 
-## 3.1. Descripción y análisis sectorial
+## 3.1. Descripción y clasificación
 
-- **Real Decreto 1718/1995**: define calzado como producto con suela para proteger los pies, incluyendo suela, empeine, forro y plantilla por separado.
-- Clasificación: calzado de piel (señora, caballero, niño) y no de piel (caucho/plástico, textil, madera, EPI). También por uso (deportivo, vestir) y gama.
-- Pymes con media de **20 trabajadores**, concentradas dos terceras partes en **Comunidad Valenciana** (Alicante), seguida de Castilla-La Mancha (Albacete).
-- Competencia asiática tras la entrada de China en la OMC (2001). El sector español se orienta a gama media-alta (ej. PIKOLINOS, etiqueta ecológica comunitaria).
-- Exportaciones superiores a **3.600 M€** (UE, EEUU, Reino Unido), destacando calzado de piel de señora. Importaciones superiores a **5.300 M€**, dominadas por China, Vietnam e Italia (competidor en piel de señora). Saldo deficitario. ICEX apoya con "Shoes from Spain".
+- **RD 1718/1995**: producto con suela que protege o cubre el pie
+- Calzado **de piel** (señora, caballero, niño) y **no de piel** (caucho o plástico, textil, madera, otros incluido EPI)
+- Gamas alta, media y baja
 
-## 3.2. Normativa e inspección
+## 3.2. Análisis sectorial
 
-- **Real Decreto 1718/1995**: etiquetado de materiales del calzado, no obligatorio a la importación.
-- **Decisión (UE) 2016/1349**: etiqueta ecológica comunitaria para calzado.
-- **Reglamento (UE) 2018/1513**: modifica REACH, límite de cromo VI en cuero de **1,0 mg/kg**.
-- **Reglamento (UE) 2023/988 (RGSP)**: refuerza controles del calzado en línea.
-- Normas: **UNE 40902:2020** y **UNE-EN 59300:2017** (calzado infantil).
-- Procedimiento SOIVRE similar al textil: verificación EPI, etiquetado con identificación del importador (ausencia como No Conformidad Subsanable), composición exigible en mercado no en despacho, origen no obligatorio, etiquetado en castellano. El calzado no lleva marcado CE.
-- Ensayos: DMF, pentaclorofenol (**UNE 59510:2007**), colorantes azóicos (**Reglamento (CE) 552/2009**), cromo VI, cadmio y plomo (REACH), sustancias solubles (**UNE-EN ISO 20869:2010**), pH en cuero (**UNE-EN ISO 4045:2019**), ftalatos en calzado de plástico infantil.
+- Pymes de unos 20 trabajadores · dos tercios en **C. Valenciana** (Alicante), luego Castilla-La Mancha, La Rioja, Baleares, Aragón, Huelva
+- Respuesta a la competencia asiática: calidad, diseño, gama media-alta. **PIKOLINOS**, etiqueta ecológica
+- Exportaciones **>3.600 M€**: Francia, Italia, Alemania, Portugal, EEUU, Reino Unido · estrella: calzado de piel de señora
+- Importaciones **>5.300 M€**: China, Vietnam, Italia (gran competidor) · déficit
+- **ICEX**: marca "Shoes from Spain"
+
+## 3.3. Normativa aplicable
+
+- **RD 1718/1995**: etiquetado de materiales (empeine, forro/plantilla, suela). No obligatorio a la importación. No aplica a EPI
+- **Decisión (UE) 2016/1349**: etiqueta ecológica
+- **Reglamento (UE) 2018/1513**: **cromo VI** 1,0 mg/kg en cuero
+- **RGSP 2023/988**: mercado en línea
+- **UNE 40902:2020** y **UNE-EN 59300:2017**: calzado de bebé e infantil
+
+## 3.4. Inspección en frontera
+
+- Mismos pasos que textil: EPI o no (Reglamento 2016/425)
+- Importador y referencia del modelo: ausencia, **No Conformidad Subsanable**
+- Composición (tres partes): ausencia, **Comunicación Informativa**
+- Origen no obligatorio. Castellano, visible, no engañoso (art. 18.1 TRLGDCU)
+- Sin marcado CE
+
+## 3.5. Ensayos de laboratorio en calzado
+
+- **DMF**: Decisión 2011/135/UE, REACH (desecantes, antihumedad)
+- **Pentaclorofenol**: UNE 59510:2007
+- **Azóicos** y **ftalatos**: Reglamento (CE) 552/2009
+- **Cromo VI**: 1,0 mg/kg
+- **Cadmio y plomo**: REACH
+- Sustancias solubles: UNE-EN ISO 20869:2010 · **pH en cuero**: UNE-EN ISO 4045:2019
 
 # 4. SUBSECTOR DE LOS EQUIPOS DE PROTECCIÓN INDIVIDUAL (EPIs)
 
 ## 4.1. Definición y categorías
 
-- **Reglamento (UE) 2016/425**: define EPI como equipo para protección personal, sus componentes intercambiables esenciales y sistemas de conexión a anclaje externo.
-- **Categoría I** (riesgos mínimos): sin examen UE de tipo. Ejemplos: guantes de jardinería, gafas de sol, calzado de azafatas.
-- **Categoría II** (riesgos intermedios): mayoría de los EPIs, requieren examen UE de tipo. Ejemplo: calzado de trabajo con puntera metálica.
-- **Categoría III** (riesgos mortales o irreversibles): examen UE de tipo y control de producción por organismo notificado. Ejemplo: protección respiratoria, botas de bombero.
+- **Reglamento (UE) 2016/425**: equipo llevado para proteger de riesgos, componentes intercambiables, sistemas de conexión a anclaje
+- **Anexo I**, tres categorías
+  - **Categoría I**, riesgos mínimos: sin examen UE de tipo (guantes de jardinería, gorros, gafas de sol, calzado de camareros)
+  - **Categoría II**, riesgos intermedios: examen UE de tipo (calzado con puntera metálica)
+  - **Categoría III**, riesgos mortales o irreversibles: examen UE de tipo y control de producción por organismo notificado (respiratoria, química, radiaciones, temperaturas extremas, riesgos eléctricos, botas de bombero)
 
-## 4.2. Documentación y análisis sectorial
+## 4.2. Documentación exigida para la comercialización
 
-- Documentación exigida: folleto informativo, declaración UE de conformidad e informes de ensayo (las 3 categorías), certificado de examen UE de tipo (categorías II y III), autocertificación (categoría I), certificado de control de producción (categoría III).
-- Marcado CE obligatorio y visible, categoría III añade el código del organismo notificado, productos de un solo uso deben indicar "No reutilizables".
-- España cuenta con unas **200 empresas**, 5º inversor europeo. Exportaciones principalmente a Alemania, apoyo en ferias como **SICUR**. La pandemia de COVID-19 impulsó la producción y evidenció la dependencia de Asia.
-- Según DATACOMEX (2025), déficit comercial, exportaciones mayoritarias a la UE e importaciones desde la UE y China.
-- **Reglamento (UE) 2016/425**: con efectos plenos desde el **21 de abril de 2019**.
-- **Real Decreto 1407/1992**: transpuso la anterior directiva, referencia interpretativa del SOIVRE.
-- **Real Decreto 773/1997**: seguridad y salud de los trabajadores en el uso de EPIs.
-- Normas armonizadas: **UNE-EN 21420:2020** (guantes), **UNE-EN ISO 13688:2013** (ropa de protección), **UNE-EN ISO 20345/20346/20347:2022** (calzado de seguridad, protección y trabajo).
+- **Folleto informativo** (I, II, III): en castellano
+- **Declaración UE de conformidad** (I, II, III)
+- **Certificado de examen UE de tipo** (II y III)
+- **Informes de ensayo** (I, II, III)
+- **Autocertificación** (I)
+- **Certificado de control de producción** (III)
+- **Marcado CE**: visible, legible e indeleble. Categoría III: 4 dígitos del organismo notificado. Un solo uso: "No reutilizables"
+
+## 4.3. Análisis sectorial
+
+- Unas **200 empresas**, 5.º inversor de Europa · exportación a Alemania · feria **SICUR**
+- COVID-19: impulso de producción y dependencia de Asia
+- DATACOMEX 2025: déficit · exporta a la UE, importa de la UE y China
+
+## 4.4. Normativa aplicable
+
+- **Reglamento (UE) 2016/425**: categorías, requisitos esenciales, evaluación de conformidad
+- **RD 1407/1992**: referencia interpretativa del SOIVRE si no contradice el Reglamento
+- **RD 773/1997**: uso de EPIs por trabajadores
+- **Anexo II** del Reglamento: requisitos esenciales, base de normas armonizadas
+
+## 4.5. Normas armonizadas de referencia
+
+- Textil: **UNE-EN 21420:2020** (guantes) · **UNE-EN ISO 13688:2013** (ropa de protección, alta visibilidad)
+- Calzado: **UNE-EN ISO 20345:2022** (seguridad, 200 J) · **20346:2022** (protección) · **20347:2022** (trabajo)
+- Otras: bombero, sierra de cadena, riesgos químicos, motoristas
 
 # 5. CONCLUSIÓN
 
-- El sector combina fuerte competencia internacional, especialmente asiática, con exigencias crecientes de seguridad y trazabilidad, situando al **SOIVRE** como barrera clave de control en frontera.
-- La **Orden PJC/161/2026** amplía el ámbito de actuación del SOIVRE, incorporando prendas infantiles, guantes de motociclismo y mayor detalle de EPIs.
-- El **Acuerdo Interino UE-Mercosur**, en aplicación provisional desde el **1 de mayo de 2026**, abre oportunidades exportadoras pero intensifica la competencia de Brasil y Argentina, exigiendo mayor control de seguridad y etiquetado ante el previsible aumento de importaciones.
-- El **ESPR** y el derecho a la reparación reforzarán el papel del SOIVRE como garante de productos seguros, conformes y trazables en un entorno comercial más abierto.
+- Competencia asiática y exigencias de seguridad y trazabilidad: el **SOIVRE** es barrera de control en frontera
+- **Orden PJC/161/2026**: amplía el ámbito (prendas infantiles de punto y tejido plano, guantes de moto de cuero, EPIs textiles y calzado profesional)
+- **Acuerdo Interino UE-Mercosur**: aplicación provisional desde el **1/05/2026**
+  - Oportunidad exportadora, presión de Brasil y Argentina
+  - Origen: Aduana · SOIVRE intensifica controles de seguridad y etiquetado
+- Futuro: calidad, diseño y sostenibilidad, **ESPR** y derecho a la reparación

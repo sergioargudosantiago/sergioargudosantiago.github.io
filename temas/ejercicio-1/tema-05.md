@@ -1,100 +1,176 @@
 # 1. INTRODUCCIÓN
 
-- Los granos y semillas son base de la alimentación humana (harinas, sémolas, bebidas fermentadas), la alimentación animal y la industria química
-- Según **DATACOMEX**, en 2025 representaron el **7,6%** de las importaciones agroalimentarias españolas, con **4.517 millones de euros**, un descenso superior al **11%** respecto al año anterior
-- El tema aborda la designación de los principales productos, los factores de calidad comercial y la normativa aplicable
+- **Granos y semillas de consumo humano**: base de la alimentación por su contenido en hidratos de carbono
+  - Harinas panificables, sémolas y derivados
+  - Bebidas fermentadas (cerveza, whisky, sake, aguardientes)
+  - Piensos e industria química
+- Seguimiento especial de la **FAO** por su peso en la seguridad alimentaria
+- **2025** (DATACOMEX): **7,6%** de las importaciones agroalimentarias, **4.517 M€**, descenso de más del **11%**
+- Estructura: productos (cereales y semillas), calidad comercial y normativa (OCM, normas de comercialización, CEPE/UN, CODEX, OCDE, UNE, ecológica, integrada, legislación general)
 
 # 2. DESCRIPCIÓN Y DESIGNACIÓN DE LOS PRINCIPALES PRODUCTOS
 
 ## 2.1. Cereales
 
-- Frutos (cariópsides) de plantas Gramíneas, con endospermo amiláceo
-- **Granos desnudos** (trigo, centeno, maíz) y **granos vestidos**, con cáscara (arroz, avena, cebada)
-- **Trigo** (*Triticum aestivum*, panificable, y *Triticum durum*, para pasta): cereal más cultivado
-- **Arroz** (*Oryza sativa*): *indica*, grano largo, **85%** del comercio mundial. *Japónica*, grano medio-corto, **15%**
-- **Maíz** (*Zea mays*): primer cereal mundial por producción, variedades híbridas *indurata* e *indentata*
-- **Cebada** (*Hordeum vulgare*): principalmente para alimentación animal, variedades vestidas (dos y seis carreras) y desnudas
-- El **lúpulo** tiene normativa propia: **Reglamento Delegado (UE) 2024/602**, sobre comercialización, desarrollado por el **Reglamento de Ejecución (UE) 2024/601**, sobre certificación. El **Reglamento Delegado (UE) 2023/2835** regula importaciones de arroz, cereales, azúcar y lúpulo, desarrollado por el **Reglamento de Ejecución (UE) 2023/2834**
-
-## 2.2. Organismos genéticamente modificados (OGM)
-
-- Los más cultivados son soja y maíz. España es primer productor de la UE de maíz transgénico
-- Marco ambiental: **Directiva 2001/18/CE**, sobre liberación intencional de OGM, modificada por la **Directiva (UE) 2015/412** (permite restringir el cultivo) y la **Directiva (UE) 2018/350** (evaluación de riesgo ambiental)
-- Marco de seguridad alimentaria: **Reglamento (CE) 1829/2003**, sobre alimentos y piensos modificados, y **Reglamento (CE) 1830/2003**, sobre trazabilidad y etiquetado
-- Transposición española: **Real Decreto 178/2004**, desarrolla la **Ley 9/2003**, modificado por el **Real Decreto 452/2019**. Evaluación de riesgos a cargo de la **EFSA**
-- Novedad: **Nuevas Técnicas Genómicas (NTG)**, en tramitación. Distingue **NTG-1** (equivalentes a convencionales, exentas de normativa OGM) y **NTG-2** (sujetas a legislación OGM), ambas prohibidas en producción ecológica
-
-## 2.3. Semillas
-
-- **Oleaginosas** (soja, girasol, colza, lino): grupo más importante, cubren necesidades mundiales de aceites
-- **Leguminosas**: forrajeras (alfalfa, trébol) y no forrajeras (guisante, habas, lentejas)
-- **De cereales**: forrajeras y no forrajeras, para reproducción vegetal
-- **Hortícolas**: para reproducción vegetal
+- **Cereales**: frutos de Gramíneas, cariópsides con endospermo amiláceo
+  - **Granos desnudos**: trigo, centeno, maíz
+  - **Granos vestidos**: arroz, avena, cebada
+  - Mijos y sorgos: variedades vestidas y desnudas
+- **Trigo** (*Triticum aestivum / durum*): cereal más cultivado, gluten elástico que permite la panificación
+  - *aestivum*: común, panificación
+  - *durum*: duro o vítreo, pasta
+- **Arroz** (*Oryza sativa*): alimento básico de más de la mitad de la población, más calórico
+  - *indica*: grano largo, trópicos, **85%** del comercio (aromáticos jazmín y basmati)
+  - *japónica*: grano medio-corto, zonas templadas, **15%**
+- **Maíz** (*Zea mays*): primer cereal por producción, usos en piensos, biocombustibles, consumo humano e industria química
+  - *indurata*: córneo y vítreo
+  - *indentata*: largo y harinoso
+- **Cebada** (*Hordeum vulgare*): importante en España, sobre todo piensos y malteo
+  - Vestidas: *distichum* (2 carreras), *hexastichum* (6 carreras)
+  - Desnudas: sudeste asiático, no malteables
+- **Lúpulo** (no es cereal, clave en la cerveza)
+  - **Reglamento Delegado (UE) 2024/602**, normas de comercialización, y **Reglamento de Ejecución 2024/601**, certificación y controles
+  - **Reglamento Delegado (UE) 2023/2835**, importaciones en arroz, cereales, azúcar y lúpulo, y **Reglamento de Ejecución 2023/2834**
+- **OGM**: soja y maíz los más cultivados, también arroz dorado
+  - Moratoria de facto de la UE desde **1998**, contraria a la OMC según el OSD (**2006**). Cultivo comercial autorizado desde **2004**. España, primer productor de la UE
+  - Ambiental: **Directiva 2001/18/CE** (liberación intencional)
+    - **Directiva (UE) 2015/412**: los Estados miembros pueden restringir o prohibir el cultivo, medidas en zonas fronterizas desde **3 abril 2017**
+    - **Directiva (UE) 2018/350**: evaluación del riesgo ambiental
+  - Seguridad alimentaria: **Reglamento (CE) 1829/2003** (alimentos y piensos GM), **1830/2003** (trazabilidad y etiquetado)
+  - España: **RD 178/2004** (desarrolla la Ley 9/2003), modificado por **RD 452/2019**
+  - Evaluación de riesgos: **EFSA**
+  - **Nuevas técnicas genómicas (NTG)**: acuerdo provisional **4 diciembre 2025**, Consejo **21 abril 2026**, aplicación prevista mediados de **2028**
+    - **NTG-1**: equivalentes a convencionales, exentas de normativa OGM, etiquetado solo en semillas
+    - **NTG-2**: siguen sujetas a normativa OGM con etiquetado
+    - Ninguna permitida en producción ecológica
+- **Semillas**, cuatro grupos
+  - **Oleaginosas**: soja, girasol, colza, lino, cáñamo
+  - **Leguminosas**: forrajeras y no forrajeras (soja, guisante, haba, lenteja)
+  - **De cereales**: para reproducción vegetal
+  - **Hortícolas**: para reproducción vegetal
 
 # 3. FACTORES DE CALIDAD COMERCIAL
 
-- La **calidad comercial** es el valor añadido derivado de selección, clasificación, acondicionamiento, envasado y transporte
-- Requisitos mínimos de los granos: enteros, sanos, limpios, secos, exentos de materias extrañas, sin recalentar, no germinados, sin olor ni sabor extraños
-- Regulación nacional: **Código Alimentario Español (Decreto 2484/1967)**. Para cereales en copos, **Real Decreto 1094/1987**, modificado por el **Real Decreto 176/2013**
-- Factores destacados: peso específico, humedad y temperatura (riesgo de hongos y aflatoxinas), cantidad de **aflatoxinas** (producidas por *Aspergillus flavus*)
-- Harinas, sémolas y pastas: **Real Decreto 677/2016**
-  - Humedad máxima **15%** al envasado
-  - Proteínas mínimas **9%** en harinas panificables
-  - Acidez de la grasa máxima **30% o 50%** según tipo
+- **Calidad comercial**: valor añadido por selección, clasificación, acondicionamiento, envasado, almacenaje y transporte. Factores externos e internos exigidos en los circuitos comerciales
+- Recogida en las **normas de comercialización** de la UE (criterios, parámetros y categorías)
+- **Requisitos mínimos de los granos**
+  - Enteros, sanos y limpios
+  - Secos, con humedad límite
+  - Sin materias extrañas ni lesiones
+  - Sin recalentar ni germinar
+  - Sin olor ni sabor extraños
+- Nacional: **Código Alimentario Español (Decreto 2484/1967)** y normas específicas
+  - Cereales en copos o expandidos: **RD 1094/1987**, parcialmente modificado por **RD 176/2013**
+- **Factores principales** (también en legumbres)
+  - **Peso específico**: más rendimiento en harina
+  - **Humedad y temperatura**: hongos y fermentación
+  - **Aflatoxinas**: de *Aspergillus flavus*, lesiones hepáticas y tumores
+- **Harinas, sémolas y pastas**: **RD 677/2016** (deroga el RD 1286/1984)
+  - Humedad máxima **15%**
+  - Proteínas mínimo **9%** (panificación)
+  - Acidez de la grasa máximo **30% o 50%**
   - Harinas extrañas máximo **1%**
-  - Calidad panadera en cuatro tipos, y cenizas según tipo de harina
+  - Calidad panadera: cuatro tipos
+  - Cenizas: flor ≤0,50%, normal 0,50-0,80%, morena ≥0,80% y <2,5%
+  - Las mezclas cumplen las características de sus componentes
 
 # 4. NORMATIVA APLICABLE
 
 ## 4.1. Política Agrícola Común (PAC)
 
-- El **Reglamento (CE) 1234/2007** fue sustituido por el **Reglamento (UE) 1308/2013**, que crea la OCM Única
-- PAC 2023-2027: **Reglamento (UE) 2021/2115** (planes estratégicos), **Reglamento (UE) 2021/2116** (financiación) y **Reglamento (UE) 2021/2117** (modifica la OCM Única)
-- Ejes: sostenibilidad, eco-regímenes, condicionalidad reforzada y digitalización
-- El **Reglamento Ómnibus (UE) 2017/2393** introdujo simplificaciones, como ayudas a jóvenes agricultores hasta el **50%** del pago básico
+- **PAC 2023-2027**: modelo orientado al mercado, la sostenibilidad y la simplificación
+- Reglamentos
+  - **(UE) 2021/2115**: planes estratégicos (FEAGA y FEADER). En España, **PEPAC**
+  - **(UE) 2021/2116**: financiación, gestión y seguimiento
+  - **(UE) 2021/2117**: modifica la OCM única (**1308/2013**)
+- **Ayudas directas**
+  - **BISS**, ayuda básica a la renta para la sostenibilidad (sustituye pago básico y greening)
+  - **Eco-regímenes**
+  - **Condicionalidad reforzada** (BCAM)
+- Prioridades: sostenibilidad ambiental y climática, relevo generacional, digitalización, organizaciones de productores, resiliencia ante crisis
 
 ## 4.2. Organización Común de Mercados (OCM)
 
-- Regulada por el **Reglamento (UE) 1308/2013**, modificado por el **Reglamento (UE) 2021/2117**, sobre unidad de mercado, solidaridad financiera y preferencia comunitaria
-- Establece intervención pública, ayudas al almacenamiento privado, normas de comercialización, intercambios con terceros países y organizaciones de productores
-- Las normas de comercialización de frutas y hortalizas están en el **Reglamento Delegado (UE) 2023/2429**, que **no** incluye cereales ni semillas. Estos se rigen por el Código Alimentario, el **Real Decreto 677/2016** y el **Real Decreto 1094/1987**, con las normas-cuadro de la Sección II del WP7 CEPE/NU
-- El régimen de intervención lo gestionan el **FEGA** y el **FEAGA**.
+- Norma base: **Reglamento (UE) 1308/2013**, modificado por el 2021/2117
+- Principios: **unidad de mercado**, **preferencia comunitaria**, **solidaridad financiera**
+- Objetivos: estabilizar mercados, nivel de vida equitativo del agricultor, competitividad, abastecimiento
+- Cinco pilares
+  - **Normas de comercialización**: cereales y semillas fuera del Reglamento Delegado 2023/2429
+    - Marco propio: **Decreto 2484/1967**, **RD 677/2016** (harinas, sémolas, pastas), **RD 1094/1987** (copos y expandidos)
+    - Base CEPE/ONU (WP.7), Sección II (secos y desecados). Esquema: definición, calidad, calibrado, tolerancias, presentación, marcado
+    - Controles en todas las fases, obligatorios para terceros países
+  - **Organizaciones de productores (OP)**: concentran oferta, planifican, reducen costes
+  - **Organizaciones interprofesionales**: art. 157 del Reglamento 1308/2013 y **Ley 38/1994**
+    - Defensa y promoción. **ORIGEN** (cereales), Cooperativas Agroalimentarias de España. Asociaciones: ASAJA, **ANPROGRASOL** (girasol)
+  - **Régimen de intervención**: estabilidad del mercado
+    - Intervención pública y almacenamiento privado
+    - FEGA gestiona, FEAGA financia
+  - **Intercambios con terceros países**: aranceles, contingentes, salvaguardias, certificados de importación y exportación
+    - **Reglamento Delegado 2023/2835** y **Reglamento de Ejecución 2023/2834** (arroz, cereales, azúcar, lúpulo)
 
 ## 4.3. Normativa voluntaria
 
-- **Normas CEPE/UN (WP7)**, de la Comisión Económica de la ONU para Europa, Sección II para productos secos, incluye cereales y semillas
-- La **OCDE** desarrolla folletos interpretativos de las normas CEPE/UN
-- Normas **CODEX**: Codex Stan 153 (harina de trigo), 154 (harina de maíz), 198 (arroz) y 199 (trigo), y códigos de prácticas sobre aflatoxinas
-- **Producción controlada**: normas **UNE** de AENOR (Comité AEN/CTN 155)
-- **Producción ecológica**: **Reglamento (UE) 2018/848**. Exige a terceros países cumplir estándares comunitarios desde 2023. Modificado por el **Reglamento de Ejecución (UE) 2016/1842**, sobre certificado electrónico y controles del SOIVRE (**Orden ECC/1936/2014**)
-- **Producción integrada**: **Real Decreto 1201/2002**, logotipo nacional regulado por la **Orden APA/1/2004**
-- **DOP, IGP y ETG**: **Reglamento (UE) 2024/1143**, ejecutado por la **Ley 6/2015**
+- **CEPE/UN (WP7)**: normas voluntarias, base de las de comercialización
+  - Sección II: secos y desecados (cereales y semillas)
+  - Trabajo actual: desperdicio alimentario, trazabilidad, ODS 2030
+  - **Folletos interpretativos** (trigo, maíz, arroz). La **OCDE** los elabora con norma, textos, ilustraciones de defectos y referencias técnicas
+- **CODEX**: normas voluntarias mundiales, coordinadas con CEPE/UN para evitar OTC
+  - **Codex Stan 153** (harinas de trigo), **154** (harina de maíz), **198** (arroz), **199** (trigo)
+  - Códigos contra aflatoxinas en cereales
+- **Producción controlada**: normas **UNE** de AENOR (AEN/CTN 155)
+- **Producción ecológica**: **Reglamento (UE) 2018/848** (deroga el 834/2007, 889/2008 y 1235/2008). Terceros países con estándares UE desde **2023**
+  - **Reglamento de Ejecución 2016/1842**: certificado electrónico de importación
+  - **SOIVRE** controla importaciones ecológicas (**Orden ECC/1936/2014**): productos no transformados, transformados, piensos, material de reproducción y semillas, levaduras
+- **Producción integrada**: **RD 1201/2002**, desarrollada por las CCAA, logotipo según **Orden APA/1/2004**
+- **DOP, IGP y ETG**: **Reglamento (UE) 2024/1143**, **Ley 6/2015** (AICA controla la comercialización). Ej.: IGP Gofio de Canarias, DOP Arroz de Valencia
+- **Buenas prácticas agrícolas**: Tesco Nurture, Carrefour Quality Lines, GLOBALG.A.P., SQF
 
 ## 4.4. Normativa general
 
-- **Real Decreto 175/2004**, designa a la Secretaría de Estado de Comercio como autoridad de control
-- **Reglamento (CE) 396/2005**, límites máximos de residuos de plaguicidas
-- **Reglamento (UE) 1169/2011**, información al consumidor y etiquetado
-- **Real Decreto 1055/2022**, de envases y residuos de envases
-- Paquete de higiene: **Reglamentos (CE) 852 y 853/2004** y **Reglamento (UE) 2017/625**, sobre controles oficiales
-- **Ley 28/2015**, de defensa de la calidad alimentaria. **Ley 1/2025**, sobre pérdidas y desperdicio alimentario
-- **Reglamento (UE) 2023/915**, límites máximos de contaminantes, relevante para las aflatoxinas
-- **Orden PRE/3026/2003**, sobre inspección de calidad comercial, ejecutada por el **SOIVRE**
+- **RD 175/2004**: autoridad de controles de conformidad (Secretaría de Estado de Comercio)
+- **Reglamento (CE) 396/2005**: límites de residuos de plaguicidas
+- **Reglamento (UE) 1169/2011**: información al consumidor
+- **RD 1055/2022**: envases y residuos de envases
+- Higiene: **Reglamentos (CE) 852 y 853/2004**. Controles: **Reglamento (UE) 2017/625**
+- **Ley 28/2015**: calidad alimentaria y régimen sancionador
+- **Ley 1/2025**: pérdidas y desperdicio alimentario
+- **Reglamento (UE) 2023/915**: contaminantes (deroga el 1881/2006)
+  - Aflatoxinas en cacahuetes, pistachos y nueces de Brasil. Lotes no conformes de pistachos de Turquía e Irán
+  - Límites más altos si el producto va a transformación posterior
+- **Orden PRE/3026/2003** (modificada por ECC/2257/2013 y ECC/2566/2015): control de calidad comercial del **SOIVRE** en importación y exportación de semillas y frutos oleaginosos, semillas y frutos diversos, plantas industriales o medicinales, paja y forraje
 
 # 5. ANÁLISIS SECTORIAL
 
-- La producción mundial de cereales alcanzó **3.100 millones de toneladas** en 2023 según la **FAO**, con previsión de **3.040 millones** para 2025
-- **Maíz**: 1.220 millones de toneladas en 2023/24, liderado por EE.UU. y Brasil (**42%** conjunto)
-- **Trigo**: 788,5 millones de toneladas, liderado por China (**17%**), India (**14%**) y Rusia (**11%**)
-- **Arroz**: 523 millones de toneladas, principales productores China, India, Indonesia, Vietnam y Tailandia. En la UE, Italia (**50%**) y España (**30%**)
-- **Cebada**: en torno al **5-6%** de la producción mundial, liderada por Rusia, Australia y Francia
-- En **España**, la cosecha de cereales 2024 se estimó en **22,53 millones de toneladas** sobre 5,6 millones de hectáreas, tras la sequía de 2023 (10,38 millones de toneladas). La cebada es el cereal dominante, seguida del trigo blando y el maíz
-- La balanza comercial de cereales y molinería es deficitaria, con déficit superior a **3.500 M€** en 2025, y de unos **1.450 M€** en semillas
-- El **maíz** es el cereal más importado (cerca de **2.000 M€**), y el **arroz** el más exportado (**193 M€**)
+- **Mundial**: producción de cereales **3.100 Mt** en 2023 (FAO), previsión **3.040 Mt** en 2025. Ratio stocks/utilización **32%**. Volatilidad por clima y guerra de Ucrania
+- **Maíz**: cosecha 2023/24 **1.220 Mt**. EE. UU. y Brasil **42%**
+- **Trigo**: **788,5 Mt**. China 17%, India 14%, Rusia 11%. UE: Francia y Alemania (blando), Italia (duro)
+- **Arroz**: **523 Mt**, previsión **563 Mt** en 2025/26. China, India, Indonesia, Vietnam, Tailandia. UE: Italia ~50%, España ~30%
+- **Cebada**: 5-6% de los cereales. Rusia 14%, Australia 9%, Francia 8%
+- **Oleaginosas**
+  - Colza y mostaza: UE, China, India
+  - Soja: Brasil, EE. UU., Argentina (**80%**)
+  - Girasol: Rusia, Ucrania, Argentina. UE ~20%
+- **España**
+  - Cereales: **5,45 M ha**. Cosecha 2024 **22,53 Mt** (4 t/ha), frente a **10,38 Mt** en 2023 por sequía
+  - Cebada dominante (8,7 Mt), trigo blando (7,2 Mt), maíz (3,48 Mt)
+  - Oleaginosas: girasol, colza, soja escasa. Castilla y León y Andalucía
+  - Leguminosas grano: Castilla-La Mancha, Castilla y León, Andalucía
+- **Comercio 2025** (DATACOMEX)
+  - Déficit: cereales y molinería **>3.500 M€**, semillas **~1.450 M€**
+  - Importaciones: cereales **-11,6%**, semillas **-13,1%**. Exportaciones: cereales **-5,8%**, semillas **+23%**
+  - **Trigo**: exportaciones ~75 M€ (Túnez, Italia, Portugal). Importaciones casi 1.500 M€, **-18%** (Francia, Ucrania, Canadá)
+  - **Maíz**: importaciones ~2.000 M€, el más importado (EE. UU., Francia, Ucrania). Exportaciones 100 M€, **-15%**
+  - **Arroz**: exportaciones 193 M€, **+14,7%**, el más exportado (Portugal, Francia, Reino Unido). Importaciones 260 M€ (Argentina, Myanmar, India)
+  - **Cebada**: exportaciones 22 M€, flujos comunitarios
+  - **Semillas**: exportaciones >990 M€ (destino UE, Emiratos Árabes Unidos). Importaciones >2.500 M€ (Brasil, EE. UU., Francia)
 
 # 6. CONCLUSIÓN
 
-- España es importadora neta estructural de cereales panificables, maíz y semillas oleaginosas, sin capacidad de cobertura de la demanda interna
-- El **Acuerdo de Asociación UE-Mercosur** tiene efecto ambivalente: no incrementa la presión competitiva exportadora, pero puede intensificar la entrada de grano sudamericano más barato, favorable para la industria transformadora y perjudicial para el productor nacional
-- Brasil y Argentina son grandes exportadores mundiales de soja, maíz y girasol, con fuerte presencia en las compras españolas
-- El sector afronta retos de minifundismo, dependencia climática y costes elevados, lo que exige diferenciación, especialización y reciprocidad sanitaria y fitosanitaria frente a terceros países
+- **Saldo deficitario crónico**: importador neto de cereales panificables, maíz y oleaginosas
+- **Mercosur**: efecto ambivalente
+  - Favorable a industria transformadora y ganadera por precios de importación
+  - Riesgo para productores cerealistas por grano sudamericano más barato
+  - Ventajas de Mercosur: superficie, costes bajos, capacidad exportadora (soja, maíz, girasol)
+- Retos: minifundismo, clima, costes de insumos, márgenes
+- Estrategia: diferenciación, especialización varietal, calidad, integración vertical
+- Exigir a las importaciones estándares equivalentes (fitosanitarios, residuos, OGM)

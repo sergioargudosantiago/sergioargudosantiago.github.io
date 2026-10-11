@@ -1,167 +1,180 @@
 # 1. INTRODUCCIÓN
 
-- Los aceites y grasas comestibles son compuestos de origen vegetal y animal, mezclas complejas de ésteres de ácidos grasos con glicerina.
-- El aceite es líquido a temperatura ambiente por su mayor contenido en ácidos grasos insaturados, la grasa es sólida por su mayor contenido en saturados.
-- El **80%** se destina a alimentación humana, con usos también industriales y en alimentación animal.
-- España es el principal país productor, consumidor y exportador de aceite de oliva.
-- El **GTISA** (Grupo de Trabajo para la Internacionalización del Sector Agroalimentario), dentro del MAPA, cuenta con un grupo específico de Aceites y Aceituna, con objetivos como eliminar barreras comerciales, consolidar mercados, coordinar organismos y promocionar los productos españoles.
-- Clasificación general:
-  - Aceites vegetales comestibles (frutos o semillas oleaginosas) y no comestibles (industriales)
-  - Aceites animales (pescados)
-  - Grasas vegetales (coco, palmiste, palma) y animales (cerdo, sebos)
+- **Aceites y grasas comestibles**: mezclas de ésteres de ácidos grasos con glicerina, de origen vegetal y animal
+  - Aceite: líquido a temperatura ambiente (más ácidos grasos insaturados)
+  - Grasa: sólida (más ácidos grasos saturados)
+  - **80 %** a alimentación humana, también usos industriales y alimentación animal
+- **España**: primer productor, consumidor y exportador de **aceite de oliva**
+- **GTISA** (Grupo de Trabajo para la Internacionalización del Sector Agroalimentario), presidido por la Secretaría General de Agricultura y Alimentación del MAPA
+  - 7 grupos de trabajo, uno de **Aceites y Aceituna**
+  - Objetivos: eliminar barreras comerciales, consolidar y abrir mercados, coordinar organismos, mejorar la información, aumentar la dimensión empresarial, promocionar, adaptar productos
+- Productos: **aceite de oliva**, **aceite de semillas oleaginosas**, **grasas comestibles**
+- Clasificación inicial
+  - Aceites: vegetales comestibles (de fruto o de semilla), no comestibles (lino) y animales (pescado)
+  - Grasas: vegetales (coco, palmiste, palma) y animales (manteca de cerdo, sebos)
 
-# 2. ACEITE DE OLIVA
+# 2. DESCRIPCIÓN, DESIGNACIÓN, FACTORES DE CALIDAD, ANÁLISIS SECTORIAL Y NORMATIVA APLICABLE DE LOS PRINCIPALES PRODUCTOS
 
-- Se obtiene de la aceituna del olivo (*Olea europaea*), zumo natural sin aditivos. Variedades principales: hojiblanca, cornicabra, picual y arbequina.
-- El **Reglamento (UE) 1308/2013** clasifica los tipos según método de obtención y acidez libre:
-  - Virgen extra: acidez máxima **0,8%**
-  - Virgen: acidez máxima **2%**
-  - Lampante: acidez superior al **2%**, no apto para consumo directo
-  - Refinado: obtenido del refino de vírgenes, acidez inferior al **0,3%**
-  - Aceite de oliva: mezcla de refinado y virgen, acidez inferior al **1%**
-  - Orujo de oliva crudo: extraído con disolvente (hexano) o medios físicos del orujo
-  - Orujo de oliva refinado: acidez inferior al **0,3%**
-  - Orujo de oliva: mezcla de orujo refinado y virgen, acidez inferior al **1%**
-- Sólo se autoriza la venta de virgen extra, virgen, aceite de oliva y orujo de oliva.
+## 2.1. Aceite de oliva
 
-## 2.1. Factores de calidad comercial
+- Zumo de aceitunas sanas (*Olea europaea*), sin aditivos ni disolventes
+- Variedades: hojiblanca, cornicabra, picual, arbequina
+- Tipos (**Reglamento (UE) 1308/2013**) según procedimiento y acidez libre en ácido oleico
+  - **Virgen** (solo medios mecánicos o físicos)
+    - **Virgen extra**: acidez máxima **0,8 %**
+    - **Virgen**: máxima **2 %**
+    - **Lampante**: superior al 2 %, no apto para consumo directo
+  - **Refinado**: acidez inferior al **0,3 %**
+  - **Aceite de oliva**: refinado más virgen no lampante, acidez inferior al **1 %**
+  - **Orujo**: crudo (disolvente, hexano), refinado (< 0,3 %) y aceite de orujo de oliva (mezcla con virgen, < 1 %)
+- Comercialización autorizada: virgen extra, virgen, aceite de oliva y aceite de orujo
 
-- Regulados por el **Reglamento de Ejecución (UE) 2022/2104** (normas de comercialización) y el **Reglamento de Ejecución (UE) 2022/2105** (control de conformidad y métodos de análisis).
-- Ausencia de mezclas: prohibidas para la UE, permitidas para exportación a terceros países.
-- Parámetros físico-químicos: índice de acidez, índice de peróxidos, absorbancia UV (**K232, K268/K270, ΔK**), humedad e impurezas insolubles.
-- Contaminantes externos: antioxidantes prohibidos en vírgenes, residuos de plaguicidas bajo los **Límites Máximos de Residuos (LMR)**.
-- Análisis sensorial (Panel de Cata): obligatorio, catadores oficiales acreditados, método del **COI**, mediana del defecto igual a cero para el AOVE.
-- Control de envases: **Real Decreto 1055/2022**, sobre envases y residuos de envases.
-- Etiquetado: **Reglamento de Ejecución (UE) 2022/2104**, indicación obligatoria de origen en determinadas categorías.
+- **Factores de calidad comercial**
+  - Calidad de la aceituna y tres fases: obtención, refinado y envasado
+  - **Reglamento (UE) 2022/2104**, normas de comercialización · **Reglamento de Ejecución (UE) 2022/2105**, controles de conformidad y métodos de análisis
+  - Autenticidad y ausencia de mezclas
+    - Mezcla con otros aceites vegetales: fraude, prohibida en la UE (permitida solo para exportación a terceros)
+    - Orujo: ceras y alcoholes alifáticos
+    - Esterificados: ácidos grasos en posición 2 del triglicérido
+    - Desodorizados: alquil ésteres (FAMEs, FAEEs)
+  - Parámetros: acidez, peróxidos, absorbancia UV (K232, K268/K270, ΔK), humedad e impurezas
+  - Contaminantes: antioxidantes prohibidos en vírgenes, residuos de plaguicidas (LMR)
+  - **Panel de cata** oficial, método COI, mediana del defecto igual a cero en AOVE
+  - Envases (**RD 1055/2022**) y etiquetado con origen obligatorio
 
-## 2.2. Análisis sectorial
+- **Análisis sectorial**
+  - Campaña 2024/2025: récord mundial de **3,5 Mt** (COI), +38,6 %. UE 60 %, no UE 40 %
+  - **España**: 1,4 Mt (40 % mundial, 65 % UE), +65 % tras dos campañas de sequía
+    - 400.000 propietarios, 2,4 millones de ha, **1.835 almazaras**. Andalucía más del 75 %
+  - Competidores: Grecia y Portugal al alza, Italia -24,5 %, Turquía y Túnez emergentes (hasta 15 %), Marruecos, Argelia, Australia, Argentina, Chile, México
+  - Precios en caída desde máximos de más de 9 €/kg. Demanda mundial +26 %, consumo español +37 %
+  - **Exportaciones**: casi **5.000 M€**, cerca del 10 % de las agroalimentarias. Primer exportador mundial
+    - Destinos: Italia, EEUU, Portugal, Francia, Reino Unido, Australia, China
+    - Reto estructural: más del **60 % a granel** (Italia), pérdida de valor añadido
+  - **Importaciones**: -50 %, más de 700 M€, de Portugal, Túnez (acceso preferente) y Marruecos
+  - Sanidad vegetal: **Xylella fastidiosa**, casos en Baleares desde 2016, Plan de Contingencia del MAPA
+  - Promoción **ICEX**: Brasil, México, EEUU, Francia, Alemania
+  - **SOIVRE**: certificados físico-químicos en China (cuota 60 %), certificado de ausencia de clorofilas cúpricas en Taiwán
+  - Fraude de origen: Operación Mamma Mia (2.000 t retiradas)
+  - EEUU: acuerdo UE-EEUU de junio de 2026, tope del **15 %** a agroalimentarios transformados
+  - **ASOLIVA**: asociación exportadora
 
-- Campaña **2024/2025**: récord mundial de **3,5 millones de toneladas** (COI), **+38,6%** interanual. **60%** UE, **40%** extracomunitario.
-- España produjo **1,4 millones de toneladas** (**65%** de la UE, **40%** mundial), con **+65%** respecto a la campaña anterior, tras dos campañas bajas por sequía.
-- España cuenta con más de **400.000** propietarios olivareros, **2,4 millones** de hectáreas y **1.835** almazaras, concentradas en Andalucía (más del **75%**), Extremadura, centro, Murcia, valle del Ebro y Comunidad Valenciana.
-- Italia cayó un **24,5%** (unas 225.000 t). Turquía y Túnez son productores emergentes, junto con Marruecos, Argelia y nuevos países como Australia, Argentina, Chile y México.
-- Tras precios máximos (superiores a **9 €/kg**), la recuperación de la oferta impulsó la demanda mundial (**+26%**) y el consumo doméstico español (**+37%**).
-- Según DATACOMEX, España exporta cerca de **5.000 M€**, casi el **10%** de las exportaciones agroalimentarias, siendo primer exportador mundial a granel y envasado. Principales destinos: Italia, EEUU, Portugal, Francia, Reino Unido, Australia y China.
-- Más del **60%** de las exportaciones son a granel, sobre todo a Italia, que reenvasa con mayor valor añadido.
-- Importaciones: caída del **50%**, superan **700 M€**, procedentes de Portugal, Túnez y Marruecos.
-- Sanidad vegetal: la bacteria **Xylella fastidiosa** devastó el olivar apuliano desde 2013, con casos confirmados en Baleares desde 2016 y Plan de Contingencia del MAPA.
-- ICEX realiza campañas de promoción en Brasil, México, EEUU, Francia y Alemania. En China (cuota del **60%**), el **SOIVRE** emite certificados físico-químicos clave para el acceso.
-- Casos de fraude: retirada en Taiwán por adulteración y por clorofila cúprica (requiere certificado SOIVRE), y la Operación Mamma Mia (2016), con retirada de **2.000 toneladas** por fraude de origen.
-- El acuerdo arancelario UE-EEUU de junio de 2026 fija un tope del **15%** para agroalimentarios transformados.
-- Sector asociado en **ASOLIVA** (Asociación Española de la Industria y el Comercio Exportador del Aceite de Oliva).
+- **Normativa aplicable**
+  - **Reglamentos (UE) 2022/2104 y 2022/2105** (este modificado por el **2024/2707**, métodos analíticos)
+  - **COI** (sede en Madrid): métodos de referencia oficiales
+  - SOIVRE: reconocimiento mutuo con Brasil. **Orden PRE/3026/2003** (modificada por ECC/2257/2013 y ECC/2566/2015), control de calidad comercial en comercio exterior
+  - **RD 895/2013**, envases irrellenables en hostelería
+  - **RD 760/2021**, norma de calidad del aceite de oliva y orujo
 
-## 2.3. Normativa aplicable
+## 2.2. Semillas oleaginosas
 
-- **Reglamento de Ejecución (UE) 2022/2104**, normas de comercialización del aceite de oliva.
-- **Reglamento de Ejecución (UE) 2022/2105**, control de conformidad y métodos de análisis, con métodos de referencia del COI, modificado por el **Reglamento de Ejecución (UE) 2024/2707**.
-- **COI** (Consejo Oleícola Internacional), sede en Madrid, referente en normalización y control de calidad.
-- **SOIVRE**: clave en China (certificados físico-químicos) y en Brasil (reconocimiento mutuo de controles).
-- **Orden PRE/3026/2003**, modificada por las Órdenes **ECC/2257/2013** y **ECC/2566/2015**, sobre inspección de calidad comercial en comercio exterior.
-- **Real Decreto 895/2013**, medidas de comercialización del aceite de oliva y orujo, obliga a hostelería a usar envases irrellenables y etiquetados.
-- **Real Decreto 760/2021**, norma de calidad del aceite de oliva y orujo de oliva.
+- Aceites refinados de girasol, soja, cacahuete, germen de maíz, colza, cártamo, pepita de uva y mezclas de semillas
+- Obtención física, química o combinada, y refinado posterior
 
-# 3. SEMILLAS OLEAGINOSAS
+- **Factores de calidad comercial**
+  - Materia prima sana, limpia y madura
+  - Organolépticas, acidez (máximo **0,3 %** en refinados), humedad y volátiles (< **0,1 %**)
+  - Peróxidos, jabón y disolvente nulos, LMR
 
-- Principales aceites refinados: girasol (rico en vitamina E), soja, cacahuete, germen de maíz, colza, cártamo, pepita de uva y mezclas de semillas.
-- Obtención por métodos físicos, químicos o combinados, seguidos de refinamiento.
+- **Análisis sectorial**
+  - **Palma**: primer aceite, unos 80 Mt, Indonesia y Malasia más del 85 %. UE exige no deforestación desde 2020
+  - **Soja**: unos 60 Mt, Brasil, EEUU y Argentina. Demanda de biocombustibles
+  - **Girasol**: unos 20 Mt, Ucrania, Rusia y Argentina. Guerra de Ucrania desde 2022 (más del 60 % de la producción entre Ucrania y Rusia)
+  - **Colza**: unos 30 Mt, mayor aceite de la UE (Alemania, Francia, Polonia)
+  - UE: Alemania, Francia y España. En España, girasol y colza
+  - Girasol: exportación más de 360 M€, déficit, importa de Ucrania. Soja: exportación unos 300 M€, superávit
 
-## 3.1. Factores de calidad comercial
+- **Normativa aplicable**
+  - Dentro de la OCM única
+  - **RD 351/2025**, norma de calidad de aceites vegetales comestibles: aceite crudo, indicar si es refinado o prensado, prohíbe "virgen" salvo oliva
+  - **Reglamento (UE) 2023/915**, contaminantes (HAP, glicidil ésteres)
+  - **ISO 542** (semillas) e **ISO 5555** (aceites), normas UNE de AENOR
 
-- Materia prima sana, limpia y madura.
-- Características organolépticas: aspecto limpio, color, olor y sabor propios.
-- Acidez: límite máximo del **0,3%** en refinados.
-- Humedad y materias volátiles inferiores al **0,1%**.
-- Índice de peróxidos, residuos de jabón y disolvente nulos, y límites máximos de residuos.
+## 2.3. Grasas comestibles
 
-## 3.2. Análisis sectorial
+- Reglamentación Técnico-Sanitaria (**RD 1011/1981**), actualizada por el **RD 142/2026**
+- Clasificación
+  - Vegetales (coco, palma, cacao) y animales (manteca y grasa de cerdo)
+  - **Anhidras**: humedad no superior al **0,5 %**
+  - **Margarina** y **minarina** (bajo contenido graso): emulsiones sin grasa láctea
+  - **Preparados grasos** (mayonesa)
 
-- Según la FAO, el aceite de palma es el primero en producción mundial (**~80 millones de toneladas**), concentrado en Indonesia y Malasia (más del **85%**), seguidos de Tailandia, Colombia y Nigeria. La UE refuerza el control de importaciones ligadas a deforestación desde 2020.
-- El aceite de soja es el segundo (**~60 millones de toneladas**), liderado por Brasil, EEUU y Argentina, con demanda creciente para biocombustibles.
-- El aceite de girasol es el tercero (**~20 millones de toneladas**), con Ucrania, Rusia y Argentina como principales productores. El conflicto en Ucrania desde 2022 generó tensiones al concentrar ambos países más del **60%** de la producción y exportación mundial.
-- El aceite de colza (**~30 millones de toneladas**) es el principal en la UE, con Alemania, Francia y Polonia como productores comunitarios.
-- España destaca en girasol y colza. Exportaciones de girasol superiores a **360 M€**, principalmente a Francia, Portugal y EEUU, con déficit comercial e importaciones de Ucrania, Bulgaria y Francia.
-- Exportaciones de soja en torno a **300 M€**, dirigidas a Marruecos, Italia y Francia, con superávit e importaciones a la baja (**-25%**) desde Países Bajos, Portugal y Turquía.
-- Creciente uso como biocombustibles, factor de presión al alza sobre los precios.
+- **Factores de calidad comercial**
+  - Fundidas claras, color y sabor neutros
+  - Acidez, humedad e impurezas, peróxidos, metales pesados, **punto de solidificación**
 
-## 3.3. Normativa aplicable
+- **Análisis sectorial**
+  - Sector difícil de cuantificar, **déficit** comercial
+  - Exportación a Portugal, Francia, Italia, EEUU y Corea del Sur. Importación de UE, China y Malasia
+  - Mercado en contracción por salud. **Margarina** con superávit (Francia, Portugal, EEUU)
 
-- Englobadas en la **OCM Única**.
-- **Real Decreto 351/2025**, norma de calidad de los aceites vegetales comestibles, introduce el concepto de aceite crudo, exige indicar si el aceite es refinado o de presión, y prohíbe los términos "virgen" o "virgen extra" fuera del aceite de oliva.
-- Normas **UNE** de AENOR sobre características y métodos analíticos.
-- **Reglamento (UE) 2023/915**, límites máximos de contaminantes (hidrocarburos aromáticos policíclicos, ésteres de ácidos grasos de glicidilo).
-- Normas **ISO 542** (semillas oleaginosas) e **ISO 5555** (aceites vegetales) para control y muestreo.
+- **Normativa aplicable**
+  - Dentro de la OCM única
+  - Internacional: ISO y Codex para muestreo
+  - UE: **Reglamento 1308/2013** (grasas de untar), contaminantes y ácidos grasos trans, **Reglamento 1169/2011** (etiquetado)
+  - España: **RD 142/2026** y normas UNE
 
-# 4. GRASAS COMESTIBLES
+# 3. NORMATIVA APLICABLE
 
-- Reguladas por la **Reglamentación Técnico-Sanitaria (RTS)**, aprobada por el **Real Decreto 1011/1981** y actualizada por el **Real Decreto 142/2026**.
-- Clasificación: grasas vegetales (coco, palma, cacao), grasas animales (cerdo), grasas anhidras (humedad no superior al **0,5%**), margarina, minarina y preparados grasos (ej. mayonesa).
+## 3.1. Política Agrícola Común (PAC)
 
-## 4.1. Factores de calidad comercial
+- **PAC 2023-2027**: modelo orientado al mercado, la sostenibilidad y la simplificación
+- Reglamentos
+  - **(UE) 2021/2115**: planes estratégicos (FEAGA y FEADER). En España, **PEPAC**
+  - **(UE) 2021/2116**: financiación, gestión y seguimiento
+  - **(UE) 2021/2117**: modifica la OCM única (**1308/2013**)
+- **Ayudas directas**
+  - **BISS**, ayuda básica a la renta para la sostenibilidad (sustituye pago básico y greening)
+  - **Eco-regímenes**
+  - **Condicionalidad reforzada** (BCAM)
+- Prioridades: sostenibilidad ambiental y climática, relevo generacional, digitalización, organizaciones de productores, resiliencia ante crisis
 
-- Materia prima sana, limpia y madura.
-- Claridad y transparencia en estado fundido, color y sabor agradables o neutros.
-- Determinación de acidez, humedad e impurezas.
-- Índices de peróxidos, límites máximos de residuos (metales pesados) y punto de solidificación.
+## 3.2. Organización Común de Mercados (OCM)
 
-## 4.2. Análisis sectorial
+- Norma base: **Reglamento (UE) 1308/2013**, modificado por el 2021/2117
+- Principios: **unidad de mercado**, **preferencia comunitaria**, **solidaridad financiera**
+- Objetivos: estabilizar mercados, nivel de vida equitativo del agricultor, competitividad, abastecimiento
+- Cinco pilares
+  - **Normas de comercialización**: en aceite de oliva, **Reglamentos 2022/2104** y **2022/2105**
+    - Controles en todas las fases y a terceros países (normas UE o equivalentes). **RD 175/2004**: autoridad coordinadora
+  - **Organizaciones de productores (OP)**: concentran oferta, planifican, reducen costes
+  - **Organizaciones interprofesionales**: art. 157 del Reglamento 1308/2013 y **Ley 38/1994**
+    - Defensa y promoción. Ejemplo del sector: **ASOLIVA**
+  - **Régimen de intervención**: estabilidad del mercado
+    - FEGA gestiona, FEAGA financia
+    - En aceite de oliva se mantienen los **pagos acoplados** en la PAC 2023-2027
+  - **Intercambios con terceros países**: aranceles, contingentes, salvaguardias, certificados
+    - **Contingente arancelario preferencial con Túnez**: aranceles reducidos o nulos hasta un volumen, renovado periódicamente
 
-- Sector difícil de cuantificar por su diversidad de usos. España presenta déficit comercial según DATACOMEX.
-- Exportaciones a Portugal, Francia, Italia, EEUU y Corea del Sur. Importaciones desde la UE y de productores de grasas tropicales como China y Malasia.
-- Mercado en contracción por la preocupación por la salud, que reduce el consumo de grasas sólidas frente a aceites vegetales.
-- El subsector de margarina presenta superávit, con destino principal en Francia, Portugal y EEUU.
+## 3.3. Normativa voluntaria
 
-## 4.3. Normativa aplicable
+- Papel limitado de CEPE/ONU en el sector
+- **COI** y **Codex Alimentarius** (norma **CXS 33-1981** de aceites de oliva y orujo)
+- **Producción controlada**: normas UNE de AENOR
+- **Producción ecológica**: **Reglamento (UE) 2018/848** (terceros países con estándares UE desde 2023)
+  - **Reglamento de Ejecución 2016/1842**: certificado electrónico de importación
+  - **Orden ECC/1936/2014**: SOIVRE controla importación de no transformados, transformados, piensos, material de reproducción y levaduras
+- **Producción integrada**: **RD 1201/2002** y logotipo (**Orden APA/1/2004**)
+- **DOP, IGP y ETG**: **Reglamento (UE) 2024/1143**
+  - **Ley 6/2015**: AICA controla la comercialización (DOP Priego de Córdoba, Montes de Toledo, Sierra de Cádiz, Sierra Mágina)
 
-- Englobadas en la **OCM Única**.
-- Normas ISO y **CODEX Alimentarius** para muestreo (sólo incluidas para aceites vegetales, no grasas).
-- **Reglamento (UE) 1308/2013**, normas de comercialización para grasas de untar.
-- **Reglamento (UE) 1169/2011**, etiquetado.
-- **Real Decreto 142/2026**, actualiza la ordenación de grasas comestibles y preparados grasos.
-- Normas **UNE** de AENOR con metodologías analíticas oficiales.
+## 3.4. Normativa general
 
-# 5. NORMATIVA APLICABLE
+- **RD 175/2004**: autoridad de controles de conformidad (Secretaría de Estado de Comercio)
+- **Reglamento (CE) 396/2005**: LMR de plaguicidas
+- **Reglamento (UE) 2023/915**: contaminantes
+- **Reglamento (UE) 1169/2011**: información al consumidor
+- **RD 1055/2022**: envases y residuos de envases
+- Higiene: **Reglamentos (CE) 852 y 853/2004** y **(UE) 2017/625** (controles oficiales)
+- **Ley 28/2015**: calidad alimentaria y régimen sancionador
+- **Ley 1/2025**: prevención del desperdicio alimentario
 
-## 5.1. Política Agrícola Común (PAC)
+# 4. CONCLUSIÓN
 
-- La PAC evolucionó desde las reformas de 2003 hacia la sostenibilidad, competitividad y simplificación administrativa. El **Reglamento (CE) 1234/2007** fue sustituido por el **Reglamento (UE) 1308/2013**, que crea la **OCM Única**.
-- La PAC 2023-2027 se articula mediante:
-  - **Reglamento (UE) 2021/2115**, planes estratégicos financiados por FEAGA y FEADER
-  - **Reglamento (UE) 2021/2116**, financiación, gestión y seguimiento
-  - **Reglamento (UE) 2021/2117**, modifica la OCM Única y los regímenes de calidad diferenciada, actualmente en el **Reglamento (UE) 2024/1143**
-- Énfasis en sostenibilidad, eco-regímenes, condicionalidad reforzada, relevo generacional y digitalización.
-- El **Reglamento Ómnibus (UE) 2017/2393** introdujo simplificación: mayor flexibilidad en la definición de agricultor activo, ayudas a jóvenes agricultores hasta el **50%** del pago básico, refuerzo de organizaciones de productores y adaptación del coeficiente de pastos mediterráneos.
-
-## 5.2. Organización Común de Mercados (OCM)
-
-- Regulada por el **Reglamento (UE) 1308/2013**, modificado por el **Reglamento (UE) 2021/2117**, basada en unidad de mercado, solidaridad financiera y preferencia comunitaria.
-- Establece clasificación de productos mediante normas de comercialización (para aceite de oliva, **Reglamento Delegado (UE) 2022/2104** y **Reglamento de Ejecución (UE) 2022/2105**).
-- Permite la constitución de Organizaciones de Productores e Interprofesionales, como **ASOLIVA**.
-- Régimen de intervención a cargo del FEGA y el FEAGA. La PAC 2023-2027 sustituyó el Pago Único por el **Pago Básico a la Sostenibilidad (BISS)**, con eco-regímenes y **Buenas Condiciones Agrarias y Medioambientales (BCAM)**. En aceite de oliva se mantienen los pagos acoplados.
-- Medidas de intercambio con terceros países: aranceles, contingentes y salvaguardias. Destaca el contingente arancelario preferencial con Túnez, mecanismo de apoyo tras la Primavera Árabe, renovado periódicamente.
-
-## 5.3. Normativa voluntaria
-
-- El papel de **CEPE/UN** es limitado en este sector. Destacan los estándares del **COI** y del **Codex Alimentarius** (Norma **CXS 33-1981** para aceites de oliva y orujo).
-- **Producción controlada**: normas UNE de AENOR.
-- **Producción ecológica**: **Reglamento (UE) 2018/848**. Modificado por el **Reglamento de Ejecución (UE) 2016/1842** en certificación electrónica. El SOIVRE, según la **Orden ECC/1936/2014**, controla importaciones de productos vivos, transformados, piensos, materiales de reproducción y levaduras.
-- **Producción integrada**: **Real Decreto 1201/2002**, con logotipo regulado por la **Orden APA/1/2004**.
-- **DOP, IGP y ETG**: **Reglamento (UE) 2024/1143**, aplicado en España mediante la **Ley 6/2015**, que atribuye a la **AICA** el control de comercialización. Ejemplos: DOP Priego de Córdoba, Montes de Toledo, Sierra de Cádiz y Sierra Mágina.
-
-## 5.4. Normativa general
-
-- **Real Decreto 175/2004**, designa la autoridad de control de normas de comercialización en la Secretaría de Estado de Comercio.
-- **Reglamento (CE) 396/2005**, límites máximos de residuos de plaguicidas.
-- **Reglamento (UE) 2023/915**, límites máximos de contaminantes en alimentos.
-- **Reglamento (UE) 1169/2011**, información al consumidor y etiquetado nutricional.
-- **Real Decreto 1055/2022**, envases y residuos de envases.
-- Paquete de higiene: **Reglamentos (CE) 852/2004 y 853/2004** y **Reglamento (UE) 2017/625**, sobre controles oficiales.
-- **Ley 28/2015**, defensa de la calidad alimentaria, con régimen sancionador.
-- **Ley 1/2025**, prevención de pérdidas y desperdicio alimentario.
-
-# 6. CONCLUSIÓN
-
-- España es primer productor y exportador mundial de aceite de oliva, con en torno al **40%** de la producción mundial y cerca del **10%** del valor de las exportaciones agroalimentarias, sobre una estructura de más de **400.000** olivareros, **2,4 millones** de hectáreas y **1.835** almazaras.
-- Retos: el Acuerdo UE-Mercosur introduce presión competitiva de Argentina, Uruguay y Chile en aceite de oliva, y de aceites de semillas de Mercosur, junto con las grasas tropicales de Indonesia y Malasia.
-- Con EEUU, primer mercado extracomunitario, persiste incertidumbre arancelaria sobre el aceite envasado, mientras más del **60%** de las exportaciones a Italia se realizan a granel, con pérdida de valor añadido.
-- La variabilidad productiva por el cambio climático, especialmente por la disponibilidad hídrica en Andalucía, dificulta la planificación exportadora.
-- Es necesario avanzar en diferenciación, envasado en origen, diversificación de mercados y en exigir a terceros países estándares medioambientales y de sostenibilidad equivalentes a los comunitarios.
+- España: primer productor y exportador de aceite de oliva (**40 %** de la producción mundial, cerca del **10 %** de las exportaciones agroalimentarias)
+- Retos
+  - **Mercosur**: Argentina, Uruguay y Chile con costes menores, más entrada de aceites de semillas. Competencia de grasas tropicales
+  - **EEUU**: incertidumbre arancelaria en el aceite envasado
+  - Más del **60 % a granel**, pérdida de valor añadido
+  - Variabilidad por cambio climático y agua en Andalucía
+- Respuesta: diferenciar y envasar en origen, diversificar mercados (EEUU e Italia), adaptar el olivar y exigir reciprocidad de estándares a las importaciones

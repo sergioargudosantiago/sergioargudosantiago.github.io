@@ -1,117 +1,172 @@
 # 1. INTRODUCCIÓN
 
-- Los cambios sociológicos (incorporación de la mujer al trabajo, ocio) han reducido el tiempo dedicado a cocinar, favoreciendo los **platos preparados**, posibles gracias a la tecnología alimentaria.
-- El tema se estructura en descripción y designación de productos (**condimentos y especias** y **platos preparados**), factores de calidad comercial, análisis sectorial y normativa aplicable (OCM, Normas de Comercialización UE, CEPE/UN, CODEX, folletos OCDE, producción controlada, ecológica e integrada, y legislación general).
+- Cambios sociológicos (mujer en el mercado de trabajo, ocio) reducen el tiempo de cocina y cambian los hábitos
+  - Demanda de rapidez, simplicidad, fácil conservación y consumo inmediato: **platos preparados** (tecnología alimentaria)
+- Estructura
+  - Productos: **condimentos y especias** y **platos preparados**
+  - Calidad comercial: características mínimas y parámetros para el comercio exterior
+  - Análisis sectorial y normativa: OCM, normas de comercialización UE, CEPE/UN, CODEX, folletos OCDE, normas UNE, producción ecológica, producción integrada, legislación general alimentaria
 
 # 2. DESCRIPCIÓN Y DESIGNACIÓN DE LOS PRINCIPALES PRODUCTOS
 
 ## 2.1. Condimentos y especias
 
-- Los condimentos y especias actúan como colorante y conservante, limitando la actividad microbiana.
-- **Azafrán**: estigmas de *Crocus sativus*, con color por la crocina y sabor por la picrocrocina. La norma **ISO 3632** lo clasifica en categoría I (máxima calidad), II (media) y III (estándar). Denominaciones comerciales tradicionales en España (no normalizadas): Coupé, Mancha, Río y Sierra.
-- **Pimentón**: de *Capsicum annuum*, con carotenoides (color) y capsaicina (picante). Variedades dulce, picante y agridulce.
-- **Alcaparra**: botones florales de *Capparis spinosa*, conservados y fermentados.
-- **Pimienta negra y blanca**: de *Piper nigrum*, principio activo la piperina. La negra se recolecta inmadura (5-9 % piperina) y la blanca madura y macerada (5-7 %).
-- **Vainilla**: fruto de *Vanilla planifolia*, sabor por la vainillina.
-- **Canela**: corteza del género *Cinnamomum*, principios activos el aldehído cinámico y el eugenol.
-- **Sal**: según el **Código Alimentario Español**, cloruro sódico apto para consumo. Tipos: de piedra o gema, de fuente o mineral, marina, común y especiales.
-- **Vinagre**: regulado por el **Real Decreto 661/2012**, que define su norma de calidad según materia prima (vino, frutas, sidra, alcohol, cereales, malta, miel).
+- **Azafrán** (Crocus sativus): estigmas de la flor, cultivo y mondado a mano
+  - Color (crocina), sabor (picrocrocina) y aroma (safranal)
+  - **ISO 3632**: categoría I (máxima calidad), II (media, más estilos), III (estándar o inferior). Azafrán molido, mismos criterios
+  - Denominaciones comerciales no normalizadas: **coupé**, **mancha**, **río**, **sierra**
+- **Pimentón** (Capsicum annuum): secado y molido de pimientos rojos
+  - Color (capsantina, capsorrubina), picante (capsaicina)
+  - Dulce, picante, agridulce
+- **Alcaparra** (Capparis spinosa): botones florales en vinagre, salmuera o sal seca, fermentación más de un mes
+- **Pimienta** (Piper nigrum), principio activo piperina
+  - Negra: fruto inmaduro secado al sol, **5-9 %**
+  - Blanca: fruto maduro sin pericarpio, **5-7 %**
+- **Vainilla** (Vanilla planifolia): vaina desecada y fermentada, vainillina
+- **Canela** (Cinnamomum): corteza interna, aldehído cinámico y eugenol
+- **Sal** (CAE: cloruro sódico apto): 5 tipos
+  - Gema, fuente o mineral, marina, común (refinada), especiales (yodada, fluorada)
+- **Vinagre**: **Real Decreto 661/2012**, doble fermentación alcohólica y acética
+  - Tipos: vino, frutas, sidra, alcohol, cereales, malta, miel
+- **2.1.1. Factores de calidad comercial**
+  - Calidad comercial: valor añadido por selección, clasificación, envasado y transporte
+  - Azafrán: humedad, cenizas totales e insolubles en HCl, extracto etéreo, fibra bruta, nitrógeno
+    - Fraude: **tartrazina (E-102)** y colorantes artificiales, detección por **HPLC**
+  - Pimentón: aceites vegetales para brillo y colorantes **Sudán** no autorizados
+- **2.1.2. Análisis sectorial**
+  - Saldo comercial positivo (DATACOMEX 2025), diversificación de destinos
+  - Azafrán: producción española del 45-50 % mundial al **3 %**, Irán **80 %**
+    - España, principal exportador de calidad. **DOP Azafrán de La Mancha** (Toledo)
+    - Superávit cercano a **4 M€**. Exporta a EEUU, Suecia, Italia. Importa de Irán y Afganistán
+  - Pimentón: Murcia y Cáceres (**DOP Pimentón de la Vera**). Superávit superior a **140 M€**. Importa de China, Perú y Zambia
+  - Sal: España **3.ª** exportadora europea (Cantabria, Cataluña, C. Valenciana). Superávit superior a **140 M€**
+  - Vinagre: **90 %** de vino. Superávit superior a **45 M€**. Exporta a EEUU, Reino Unido, Francia, Italia
 
-## 2.2. Factores de calidad comercial de condimentos y especias
+## 2.2. Platos preparados y precocinados
 
-- La **calidad comercial** es el valor añadido tras selección, clasificación, verificación, acondicionamiento, envasado y transporte.
-- Azafrán: se evalúan humedad, cenizas totales e insolubles, extracto etéreo, fibra bruta y nitrógeno, y se detectan adulteraciones (tartrazina E-102) mediante **HPLC**.
-- Pimentón: parámetros equivalentes, con control de adulteración por aceites vegetales o colorantes Sudán no autorizados.
+- **Real Decreto 1021/2022**, requisitos de higiene en comercio minorista (derogó el RD 3484/2000)
+- Definición: elaboración culinaria envasada o no, lista para consumo directo o tras calentar
+- Categorías
+  - **Precocinados**: elaboración incompleta
+  - **Cocinados**: elaboración completa, conservación por frío o calor
+  - **Cocinados de consumo inmediato**: más de **65 ºC**, consumo en el día
 
-## 2.3. Análisis sectorial de condimentos y especias
+## 2.3. Alimentos dietéticos
 
-- El comercio exterior del sector presenta saldo positivo según **DataComex 2025**, con diversificación geográfica creciente.
-- Azafrán: España pasó de producir el 45-50 % mundial al 3 % actual, siendo Irán el primer productor (80 %), seguido de Afganistán y Grecia. España es primer productor UE y principal exportador de calidad, con **DOP Azafrán de La Mancha** en Toledo. Superávit de casi 4 M€, exportando a EEUU, Suecia, Italia, Argentina, Francia y EAU, e importando de Irán y Afganistán.
-- Pimentón: producido en China e India, y en España en Murcia y Cáceres (**DOP Pimentón de la Vera**). Superávit superior a 140 M€, exportando a EEUU, Alemania, Reino Unido y Francia, e importando de China, Perú y Zambia.
-- Sal: principales productores China, EEUU, India y Alemania. España, 3er exportador europeo, produce en Cantabria, Cataluña y Comunidad Valenciana. Superávit superior a 140 M€, exportando a EEUU, Bélgica, Francia y Portugal.
-- Vinagre: destacan Alemania en vinagre de alcohol e Italia y España en vinagre de vino (90 % de la producción española). Superávit superior a 45 M€, exportando a EEUU, Reino Unido, Francia e Italia.
+- **Reglamento (UE) 609/2013**, alimentos para satisfacer necesidades nutritivas
+- Tipos
+  - Personas sanas, incluidos lactantes
+  - Situaciones especiales (embarazadas, mayores, diabéticos)
+  - Regímenes dietéticos de adelgazamiento (levaduras, germen de trigo, polen, jalea real)
 
-## 2.4. Platos preparados y precocinados
+## 2.4. Caldos y sopas deshidratadas
 
-- El **Real Decreto 1021/2022** regula los requisitos de higiene de los platos preparados en el comercio minorista, definiéndolos como elaboración culinaria de vegetal o animal, envasada o no, lista para consumo directo o tras tratamiento. Distingue:
-  - Platos precocinados: elaboración incompleta, requieren tratamiento adicional.
-  - Platos cocinados: elaboración completa, con o sin calentamiento previo.
-  - Platos cocinados de consumo inmediato: a más de 65 ºC, consumo en el día.
+- Sólidos o líquidos para consumo mezclados con agua hasta ebullición
+  - **Caldos**: sal, grasas, extracto de carne o vegetales, condimentos, aditivos
+  - **Sopas**: pastas, harinas y sémolas
 
-## 2.5. Alimentos dietéticos
+## 2.5. Salsas de mesa
 
-- Regulados por el **Reglamento (UE) 609/2013**, para necesidades nutritivas específicas. Dos tipos:
-  - Para personas sanas, incluyendo lactantes.
-  - Para situaciones especiales: embarazadas, personas mayores, diabéticos, y regímenes dietéticos (levaduras, germen de trigo, polen, jalea real).
+- Mezcla de ingredientes comestibles para acompañar la comida
+- Principales
+  - **Tomate frito**, **kétchup**, **mostaza**, **mayonesa**
 
-## 2.6. Caldos, sopas deshidratadas y salsas de mesa
+## 2.6. Factores de calidad comercial del resto de productos
 
-- Caldos y sopas deshidratadas: sólidos o líquidos para mezcla con agua hasta ebullición, distinguiéndose preparados para caldos (sal, grasas, extractos, especias) y para sopas (pastas, harinas, sémolas).
-- Salsas de mesa más producidas: tomate frito, kétchup, mostaza y mayonesa.
+- Platos preparados: materias primas sanas, sin materias extrañas, envasado y etiquetado adecuados, tratamiento culinario y de conservación, sin patógenos ni metales pesados
+- Dietéticos
+  - Comunes: productos sanos, técnicas correctas, normativa microbiológica
+  - Lactantes: proteínas por cada **100 kcal** (mínimos y máximos según leche de vaca, soja o hidrolizadas)
+  - Limitado número de azúcares
+- Caldos y sopas: humedad menor del **20 %**, sal menor del **65 %** del extracto seco
 
-## 2.7. Factores de calidad comercial del resto de productos
+## 2.7. Análisis sectorial del resto de productos del tema
 
-- Platos preparados: materias primas sanas, exentas de materias extrañas, envasado y etiquetado adecuados, tratamiento culinario correcto y ausencia de patógenos y contaminantes.
-- Alimentos dietéticos: elaborados con productos sanos y técnicas correctas, ajustados a normativa microbiológica. Los lactantes requieren valores mínimos y máximos de proteína por 100 kcal, según el tipo de proteína.
-- Caldos y sopas deshidratadas: humedad inferior al **20 %** y sal inferior al **65 %** en seco.
-
-## 2.8. Análisis sectorial del resto de productos
-
-- El comercio exterior de platos preparados encuentra dificultades por costes de transporte y almacenamiento.
-- Materia prima importada de China y Perú (verduras) y China, Vietnam, Marruecos y otros Estados miembros (pescado). Exportación de hamburguesas, gazpachos y cremas a Francia. Mercado dominado por multinacionales como McCain, Pescanova y Findus.
-- Salsas y sopas: superávit notable, exportando a Francia, Reino Unido, Italia y Portugal, e importando de Italia, Países Bajos, Alemania y Francia.
-- Pastas alimenticias: déficit de unos 150 M€, importando principalmente de Italia y exportando a Francia y Portugal.
+- Barreras exportadoras: transporte y almacenamiento costosos
+- Éxitos: pizzas, pastas, sopas, cremas, tortillas, croquetas. Materia prima importada (verdura de China y Perú, pescado de China, Vietnam, Marruecos y UE)
+- Exportación de hamburguesas, gazpachos y cremas refrigeradas a **Francia**
+- Mercado dominado por McCain, Pescanova y Findus
+- Salsas y sopas: superávit notable, exporta a Francia, Reino Unido, Italia, Portugal
+- Pastas: déficit de unos **150 M€**, importa de Italia
 
 # 3. NORMATIVA APLICABLE
 
-## 3.1. Política Agrícola Común
+## 3.1. Política Agrícola Común (PAC)
 
-- La PAC evolucionó desde 2003 hacia sostenibilidad y simplificación. El **Reglamento (CE) 1234/2007** fue sustituido por el **Reglamento (UE) 1308/2013**, que crea la OCM Única.
-- La PAC 2023-2027 se articula mediante el **Reglamento (UE) 2021/2115** (planes estratégicos financiados por FEAGA y FEADER), el **Reglamento (UE) 2021/2116** (financiación y gestión) y el **Reglamento (UE) 2021/2117** (modifica la OCM Única y los regímenes de calidad diferenciada, hoy en el **Reglamento (UE) 2024/1143**).
-- El **Reglamento Ómnibus (UE) 2017/2393** introdujo simplificaciones: flexibilidad en la definición de agricultor activo, ayudas a jóvenes agricultores hasta el **50 %** del pago básico, refuerzo de organizaciones de productores, flexibilización de pagos acoplados y mejora de la gestión de riesgos.
+- **PAC 2023-2027**: modelo orientado al mercado, la sostenibilidad y la simplificación
+- Reglamentos
+  - **(UE) 2021/2115**: planes estratégicos (FEAGA y FEADER). En España, **PEPAC**
+  - **(UE) 2021/2116**: financiación, gestión y seguimiento
+  - **(UE) 2021/2117**: modifica la OCM única (**1308/2013**)
+- Ayudas directas: **BISS** (sustituye pago básico y greening), eco-regímenes, condicionalidad reforzada (**BCAM**)
+- Prioridades: sostenibilidad, relevo generacional, digitalización, organizaciones de productores, resiliencia
 
-## 3.2. Organización Común de Mercados
+## 3.2. Organización Común de Mercados (OCM)
 
-- Regulada por el **Reglamento (UE) 1308/2013**, modificado por el **Reglamento (UE) 2021/2117**, sobre unidad de mercado, solidaridad financiera y preferencia comunitaria.
-- Establece la clasificación de productos mediante las **Normas de Comercialización de la UE**, referenciadas en las normas **WP7** de CEPE/UN.
-- Prevé la constitución de organizaciones de productores e interprofesionales (ej. **FIAB**).
-- Establece un régimen de intervención (**FEGA** y **FEAGA**), con el **Pago Básico a la Sostenibilidad (BISS)** sustituyendo al antiguo Pago Único, junto con eco-regímenes y las **Buenas Condiciones Agrarias y Medioambientales (BCAM)**.
-- Prevé medidas de intercambio con terceros países: aranceles, contingentes, salvaguardias y certificados de importación o exportación.
+- Norma base: **Reglamento (UE) 1308/2013**, modificado por el 2021/2117
+- Principios: **unidad de mercado**, **preferencia comunitaria**, **solidaridad financiera**
+- Objetivos: estabilizar mercados, nivel de vida equitativo del agricultor, competitividad, abastecimiento
+- Cinco pilares
+  - **Normas de comercialización**: base CEPE/ONU (WP.7)
+    - Controles en todas las fases y a terceros países
+    - Azafrán regulado en el 1308/2013
+    - **RD 175/2004**: autoridad de coordinación
+  - **Organizaciones de productores**: concentran oferta, planifican, reducen costes
+  - **Organizaciones interprofesionales**: art. 157 del Reglamento 1308/2013 y **Ley 38/1994**
+    - Defensa y promoción del sector. Ejemplo sectorial: **FIAB**
+  - **Régimen de intervención**: estabilidad del mercado
+    - FEGA gestiona, FEAGA financia
+  - **Intercambios con terceros países**: aranceles, contingentes, salvaguardias, certificados de importación y exportación
 
 ## 3.3. Normativa voluntaria
 
-- Las normas **CEPE/UN**, elaboradas por el grupo de trabajo **WP7**, son voluntarias y sirven de base a las normas de comercialización. Para condimentos y especias tienen aplicación limitada, primando las normas **ISO** específicas de cada especia.
-- Los folletos interpretativos de la **OCDE** no aplican de forma general a este sector.
-- El **CODEX** elabora normas voluntarias para proteger la salud del consumidor y el comercio justo, destacando el **Codex Stan 188-1993** para el azafrán y la **ISO 3632**.
-- La **producción controlada** se desarrolla mediante normas UNE de **AENOR**.
-- La **producción ecológica** se rige por el **Reglamento (UE) 2018/848**, que exige desde 2023 a terceros países cumplir los estándares comunitarios. Ha sido modificado por el **Reglamento de Ejecución (UE) 2016/1842**, sobre certificado electrónico y controles del **SOIVRE**. Según la **Orden ECC/1936/2014**, el SOIVRE controla la importación de productos agrarios vivos o no transformados, transformados para alimentación humana, piensos, materiales de reproducción vegetativa y levaduras para consumo humano.
-- La **producción integrada** se regula por el **Real Decreto 1201/2002**, con logotipo según la **Orden APA/1/2004**.
-- Las indicaciones **DOP, IGP y ETG** se regulan por el **Reglamento (UE) 2024/1143**. La **Ley 6/2015** encomienda a la **AICA** los controles de comercialización (ej. DOP Pimentón de la Vera, DOP Azafrán de La Mancha, DOP Vinagre de Jerez).
+- **CEPE/UN (WP7)**: base de las normas de comercialización
+  - Temas actuales: desperdicio alimentario y trazabilidad
+  - En especias, aplicación limitada. Pesan las normas **ISO** de cada especia
+- **Folletos OCDE**: no aplican de forma general a especias
+- **CODEX**: voluntarias, protegen la salud y el comercio justo
+  - **Codex Stan 188-1993** (azafrán), **ISO 3632**
+- **Producción controlada**: normas UNE de AENOR
+- **Producción ecológica**: **Reglamento (UE) 2018/848** (derogó el 834/2007, 889/2008 y 1235/2008)
+  - Terceros países cumplen estándares comunitarios desde **2023**
+  - **Reglamento de Ejecución (UE) 2016/1842**: certificado electrónico de importación
+  - **Orden ECC/1936/2014**: controles SOIVRE a la importación
+    - Agrarios vivos o no transformados, transformados para alimentación humana, piensos, material de reproducción y semillas, levaduras
+- **Producción integrada**: **Real Decreto 1201/2002**, logotipo según **Orden APA/1/2004**
+- **DOP, IGP y ETG**: **Reglamento (UE) 2024/1143**
+  - **Ley 6/2015**, controles de comercialización por la AICA
+  - Ejemplos: Pimentón de la Vera, Azafrán de La Mancha, Vinagre de Jerez
 
 ## 3.4. Normativa específica del sector
 
-- **Real Decreto 176/2013**: RTS para elaboración, circulación y comercio de condimentos y especias, incluida la sal.
-- **Real Decreto 661/2012**: norma de calidad de los vinagres.
-- Azafrán: a nivel comunitario el **Reglamento (UE) 1308/2013**, a nivel de comercio exterior la **Orden ECC/2566/2015** (tipos para exportación) y a nivel internacional la **ISO 3632**.
-- **Real Decreto 1021/2022**: requisitos higiénicos de platos preparados en comercio minorista.
-- **Reglamento (UE) 609/2013**: alimentos para lactantes, usos médicos especiales y control de peso.
-- Normas de calidad nacionales remanentes: para caldos, consomés, sopas y cremas (Reglamento de 1984) y para salsas de mesa (**Real Decreto 858/1984**).
-- La **Orden PRE/3026/2003**, modificada por la **Orden ECC/2257/2013** y la **Orden ECC/2566/2015**, regula la inspección de la calidad comercial en comercio exterior. El **SOIVRE** no controla la calidad comercial de los productos de este tema, salvo el azafrán, por su elevado riesgo de fraude de origen, mediante técnicas de **espectroscopía RMN** y **HPLC**, bajo pago de precios públicos.
+- **Real Decreto 176/2013**: RTS de condimentos y especias, incluida la sal
+- **Real Decreto 661/2012**: norma de calidad de vinagres
+- Azafrán: **Reglamento 1308/2013**, **Orden ECC/2566/2015** (tipos para exportación), **ISO 3632**
+- **Real Decreto 1021/2022**: higiene de platos preparados
+- **Reglamento (UE) 609/2013**: alimentos para lactantes, usos médicos especiales y control del peso
+- Normas nacionales de calidad remanentes: caldos, consomés, sopas y cremas (1984), salsas de mesa (**RD 858/1984**)
+- **Orden PRE/3026/2003**, modificada por **ECC/2257/2013** y **ECC/2566/2015**: inspección de calidad comercial
+  - SOIVRE **no controla** la calidad comercial de estos productos
+  - Excepción: **azafrán**, por fraude de origen (precios públicos), con RMN y HPLC
 
 ## 3.5. Normativa general
 
-- **Real Decreto 175/2004**: designa a la Secretaría de Estado de Comercio como autoridad de los controles de las normas de comercialización.
-- **Reglamento (CE) 396/2005**: límites máximos de residuos de plaguicidas.
-- **Reglamento (UE) 2023/915**: límites máximos de contaminantes en alimentos.
-- **Reglamento (UE) 1169/2011**: información al consumidor, etiquetado general y nutricional.
-- **Real Decreto 1055/2022**: envases y residuos de envases.
-- Paquete de higiene: **Reglamentos (CE) 852/2004 y 853/2004** y **Reglamento (UE) 2017/625**, sobre controles oficiales de alimentos y piensos.
-- **Ley 28/2015**: defensa de la calidad alimentaria, con régimen sancionador.
-- **Ley 1/2025**: prevención de las pérdidas y el desperdicio alimentario.
+- **RD 175/2004**: autoridad de controles de conformidad
+- **Reglamento (CE) 396/2005**: límites máximos de residuos
+- **Reglamento (UE) 2023/915**: contaminantes
+- **Reglamento (UE) 1169/2011**: información al consumidor
+- **Real Decreto 1055/2022**: envases y residuos de envases
+- Higiene: **Reglamentos (CE) 852 y 853/2004**, **(UE) 2017/625** (controles oficiales)
+- **Ley 28/2015**: defensa de la calidad alimentaria, régimen sancionador
+- **Ley 1/2025**: prevención del desperdicio alimentario
 
 # 4. CONCLUSIÓN
 
-- El sector de condimentos, especias y platos preparados presenta heterogeneidad comercial. España mantiene superávit en pimentón, sal y vinagre, apoyado en denominaciones de origen como el **Pimentón de la Vera** o el **Azafrán de La Mancha**.
-- El **Acuerdo UE-Mercosur** podría facilitar el acceso de condimentos y especias procesadas desde Argentina, Brasil, Uruguay y Paraguay. El caso del azafrán, con caída de la cuota española del 50 % al 3 %, ilustra la vulnerabilidad frente a países de bajo coste.
-- En platos preparados, el mercado está dominado por multinacionales, y las pastas presentan déficit estructural frente a Italia. Los aranceles de la administración Trump de 2025 han afectado a las exportaciones de salsas y condimentos hacia EEUU.
-- La consolidación del sector exige reforzar la calidad diferenciada, la certificación de origen y la exigencia de estándares equivalentes a los productos importados.
+- Sector heterogéneo. Superávit en pimentón, sal y vinagre, con arraigo territorial y DOP
+- Tensiones
+  - Acuerdo UE-**Mercosur**: acceso de especias procesadas y transformados
+  - Azafrán: cuota española del 50 % al **3 %**, fortaleza en calidad y trazabilidad
+  - Platos preparados dominados por multinacionales. Déficit en pastas (Italia)
+  - Aranceles de EEUU de 2025 sobre salsas y condimentos
+- Estrategia: calidad diferenciada, certificación de origen, autenticidad frente a imitaciones
+- UE: exigir a las importaciones los mismos estándares sanitarios, de trazabilidad y etiquetado

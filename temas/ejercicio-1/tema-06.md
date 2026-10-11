@@ -1,80 +1,191 @@
 # 1. INTRODUCCIÓN
 
-- El sector cárnico se ha visto transformado por la reforma de la **PAC**, orientada a transparencia, calidad, seguridad, medio ambiente y bienestar animal, y por la política europea **"de la granja a la mesa"**.
-- El **Plan de Internacionalización del Sector Agroalimentario**, a través del **GTISA** (MAPA), incluye un Grupo de Trabajo para el sector cárnico centrado en eliminar barreras comerciales, consolidar y abrir mercados y promocionar los productos españoles.
-- El tema aborda la descripción de la carne de abasto y otros productos cárnicos, los factores de calidad comercial y la normativa aplicable.
+- Reforma profunda de la **PAC**: transparencia, calidad, seguridad, medio ambiente y bienestar
+- Impulso de las crisis alimentarias (**EEB**, **fiebre aftosa**) y de la política **De la Granja a la Mesa**
+- **GTISA** (Plan de Internacionalización del Sector Agroalimentario)
+  - Preside la Secretaría General de Agricultura y Alimentación (MAPA)
+  - 7 grupos de trabajo, uno del **sector cárnico**
+  - Objetivos: barreras comerciales, mercados, coordinación, información, dimensión empresarial, promoción, adaptación de productos
+- Estructura: descripción (carne de abasto y otros productos cárnicos), calidad comercial y normativa
 
 # 2. DESCRIPCIÓN DE LOS PRINCIPALES PRODUCTOS
 
 ## 2.1. Ganado vacuno
-- Doble aprovechamiento (carne y leche). Razas: **Asturiana de los valles**, **Rubia gallega**, **Avileña negra ibérica**, **Extremeña Retinta**.
-- Tipos según edad: lechal (8 meses), añojo (1-2 años), novillo (2-3 años) y vacuno mayor.
-- **Canal**: cuerpo del animal sacrificado, eviscerado y desollado.
-- Clasificación **SEUROP** según desarrollo muscular: **S**uperior, **E**xcelente, **U** muy buena, **R** buena, **O** suficiente, **P** insuficiente, con grados de engrasamiento de débil a muy alto.
-- Categorías UE para vacuno pesado (>300 kg): **A** machos sin castrar 12-24 meses, **B** machos sin castrar ≥24 meses, **C** machos castrados ≥12 meses, **D** hembras que hayan parido, **E** otras hembras ≥12 meses, **Z** animales de 8 a menos de 12 meses.
+
+- Doble aprovechamiento (carne y leche)
+- Razas: **asturiana de los valles**, **rubia gallega**, **avileña negra ibérica**, **retinta extremeña**
+- Tipos por edad: lechal (8 meses), añojo (1-2 años), novillo (2-3 años), vacuno mayor
+- **Canal**: cuerpo sacrificado, eviscerado y desollado. **Media canal**: separada por el plano de simetría
+- **SEUROP**: conformación (cadera, lomo, paletilla)
+  - **S** superior, **E** excelente, **U** muy buena, **R** buena, **O** suficiente, **P** insuficiente
+  - Engrasamiento: débil, ligero, medio, alto, muy alto
+- Categorías UE de vacuno pesado (>300 kg)
+  - **A** machos sin castrar 12-24 meses, **B** otros machos sin castrar, **C** castrados, **D** hembras que han parido, **E** otras hembras, **Z** 8 a menos de 12 meses
 
 ## 2.2. Ganado porcino
-- Especie más suministradora de carne del mundo, con aprovechamiento superior al **95%** y rendimiento en canal del **75-80%**, en tres bloques genéticos y unas **300 razas**.
-- Razas españolas: extremeña negra, andaluza rubia y manchada, extremeña retinta. Foráneas: **Large White** (madre en cruces) y **Duroc** (padre, carne magra).
-- Clasificación SEUROP según carne magra: S ≥60%, E 55-60%, U 50-55%, R 45-50%, O 40-45%, P <40%.
+
+- Especie que más carne suministra en el mundo
+- Aprovecha más del **95%**, rendimiento en canal **75-80%**
+- 3 bloques genéticos: chinos, europeos y mediterráneos
+- Razas españolas: extremeña negra lampiña y entrepelada, andaluza rubia y manchada, extremeña retinta
+- Foráneas
+  - **Large White**: madre en cruces industriales
+  - **Duroc**: padre en cruces
+- Clasificación **SEUROP** por carne magra
+  - **S** 60% o más, **E** 55-60%, **U** 50-55%, **R** 45-50%, **O** 40-45%, **P** menos del 40%
 
 ## 2.3. Ganado ovino
-- Cuádruple aprovechamiento: lana, pieles, carne y leche. Razas de carne: aragonesa, segureña, alcarreña. Mixtas: manchega y castellana. Rendimiento de canal del 50-60%.
-- España está autorizada a producir corderos ligeros (<13 kg), con categorías por peso y dos calidades: **A** (≤7 kg, lechal), **B** (7-10 kg, recental) y **C** (10-13 kg, pascual ligero). El cordero >13 kg sigue la clasificación SEUROP.
+
+- Cuádruple aprovechamiento (lana, pieles, carne, leche)
+- Razas: carne (aragonesa, segureña, alcarreña), carne y leche (manchega, castellana)
+- Rendimiento en canal **50-60%**. Clasificación UE **voluntaria**
+- **Corderos ligeros** (menos de 13 kg), España autorizada
+  - **A** hasta 7 kg (lechal), **B** 7-10 kg (recental), **C** 10-13 kg (pascual ligero)
+  - Dos calidades por color y grasa
+- Más de 13 kg: **SEUROP** y cinco grados de engrasamiento
 
 ## 2.4. Ganado caprino
-- Cuádruple aprovechamiento: carne, leche, pieles y fibra. Razas cárnicas: Blanca andaluza y Negra serrana. Mixtas: Pirenaica, Guadarrama, Retinta extremeña.
-- Clasificación por edad: cabrito lechal (20-25 días), cabrito pascual (35-40 días), chivo (hasta un año) y caprino mayor.
+
+- Cuádruple aprovechamiento (carne, leche, pieles, fibra)
+- En países desarrollados solo cabritos y chivos
+- Razas cárnicas: blanca andaluza, negra serrana. Mixtas: pirenaica, guadarrama, retinta extremeña
+- Por edad: cabrito lechal (20-25 días), cabrito pascual (35-40 días), chivo (hasta un año), caprino mayor
 
 ## 2.5. Aves
-- Razas españolas de pollos y gallinas: Castellana, Prat, Menorca, Andaluza. Pavos, patos y gansos (hígado graso de oca).
 
-## 2.6. Productos cárnicos elaborados
-- **Productos cárnicos**: elaborados con carnes, despojos, grasas y subproductos, con ingredientes vegetales, condimentos, especias y aditivos.
-- Clasificación internacional: frescos, crudos adobados, embutidos crudos curados, tratados por calor, salazones, platos preparados y otros derivados.
-- **Embutidos crudos curados**: carnes y grasas maduradas embutidas en tripa (salchichón, salami, chorizo, lomo).
-- **Tratados por calor**: coagulación de proteínas por el calor (jamón cocido, mortadela, patés, morcillas).
-- **Salazones**: acción de sal, nitratos o nitritos, con adobado, secado y ahumado opcionales (jamón curado, lacón, cecina, bacon).
+- Pollos y gallinas (castellana, prat, menorca, andaluza), pavos, patos, gansos (hígado graso de oca) y palomas
+
+## 2.6. Conservas, semiconservas, salazones cárnicas y embutidos crudos y curados
+
+- **Producto cárnico**: elaborado total o parcialmente con carnes, despojos, grasas y subproductos de animales de abasto
+- Clasificación internacional: frescos, crudos adobados, embutidos crudos curados, tratados por calor, salazones, platos preparados y otros derivados
+- **Embutidos crudos curados**: carne picada y condimentada, en tripa, con maduración y desecación. Salchichón, salami, fuet, chorizo, longaniza, lomo
+- **Tratados por calor** (conservas y semiconservas): coagulación de proteínas. Jamón cocido, mortadela, patés, morcillas
+- **Salazones**: sal y nitratos o nitritos. Jamón curado, lacón, cecina, bacon
 
 # 3. FACTORES DE CALIDAD COMERCIAL
 
-- La **calidad comercial** es el valor añadido de selección, clasificación, verificación, acondicionamiento, envasado y transporte, recogido en las **Normas de Comercialización** de la UE.
-- Factores de la carne fresca: peso, edad, sexo, rendimiento de la canal, conformación SEUROP, engrasamiento, color, consistencia y humedad, y ausencia de defectos.
-- Factores de los transformados: materias primas (a mayor carne magra y menor grasa y tejido conjuntivo, mayor calidad, con límites de humedad/proteína, grasa e hidroxiprolina), proceso de elaboración, ingredientes, índices microbiológicos y hermeticidad de envases, clave en conservas.
+- **Calidad comercial**: valor añadido por selección, clasificación, calibres, verificación, envasado, almacenaje y transporte
+- Criterios y categorías fijados por las **normas de comercialización** de la UE
+- **Carne fresca**
+  - Peso, edad y sexo
+  - Rendimiento, conformación **SEUROP** y engrasamiento de la canal
+  - Grasa de la cavidad torácica
+  - Color, consistencia y humedad
+  - Ausencia de defectos (olores anómalos, limosidad, pigmentaciones)
+- **Productos transformados**
+  - Materias primas: más carne magra, menos grasa y tejido conjuntivo. Límites de humedad/proteína, grasa e hidroxiprolina
+  - Proceso de elaboración e ingredientes
+  - Calidad microbiológica: límites de enterobacterias, estafilococos y sulfitorreductores. Ausencia de salmonellas y shigellas
+  - **Hermeticidad** del envase, principal factor en conservas
 
 # 4. NORMATIVA APLICABLE
 
-## 4.1. Política Agrícola Común
-- El **Reglamento (UE) 1308/2013** crea la **OCM Única**. La PAC 2023-2027 se articula mediante el **Reglamento (UE) 2021/2115** (planes estratégicos, FEAGA y FEADER), el **Reglamento (UE) 2021/2116** (financiación y control) y el **Reglamento (UE) 2021/2117** (modifica la OCM y el régimen de calidad).
-- Prioriza sostenibilidad, eco-regímenes, condicionalidad reforzada y relevo generacional.
-- El **Reglamento (UE) 2017/2393** (Ómnibus) simplificó la PAC anterior, con ayudas a jóvenes agricultores hasta el 50% del pago básico.
+## 4.1. Política Agrícola Común (PAC)
 
-## 4.2. Organización Común de Mercados
-- Regulada por el **Reglamento (UE) 1308/2013**, con los principios de unidad de mercado, solidaridad financiera y preferencia comunitaria.
-- Establece intervención pública, ayudas al almacenamiento privado, normas de comercialización e intercambios con terceros países.
-- El **Reglamento Delegado (UE) 2017/1182** fija las escalas SEUROP y la comunicación de precios, con referencia en las normas **WP7 (CEPE/UN)**.
-- El **Reglamento (CE) 1760/2000** regula la identificación, registro y etiquetado del vacuno.
-- El régimen de intervención corresponde al **FEGA** y al **FEAGA**. La PAC 2023-2027 sustituye el Pago Único por el **Pago Básico a la Sostenibilidad (BISS)**, con eco-regímenes y **BCAM**.
+- **PAC 2023-2027**: sostenibilidad, competitividad y simplificación
+- Reglamentos
+  - **(UE) 2021/2115**: planes estratégicos (FEAGA y FEADER)
+  - **(UE) 2021/2116**: financiación, gestión y seguimiento
+  - **(UE) 2021/2117**: modifica la OCM única (**1308/2013**) y el **1151/2012** (regímenes de calidad)
+- **Ayudas directas**
+  - **BISS**, ayuda básica a la renta para la sostenibilidad
+  - **Eco-regímenes**
+  - **Condicionalidad reforzada** (BCAM)
+- Prioridades: sostenibilidad ambiental y climática, relevo generacional, digitalización, organizaciones de productores, resiliencia ante crisis
+
+## 4.2. Organización Común de Mercados (OCM)
+
+- Norma base: **Reglamento (UE) 1308/2013**, modificado por el 2021/2117
+- Principios: **unidad de mercado**, **preferencia comunitaria**, **solidaridad financiera**
+- Objetivos: estabilizar mercados, nivel de vida equitativo del agricultor, competitividad, abastecimiento
+- Cinco pilares
+  - **Normas de comercialización**: clasificación de productos
+    - **Reglamento Delegado (UE) 2017/1182**: escalas de canales de bovino adulto, porcino y ovino (**SEUROP**) y comunicación de precios
+    - **Reglamento (CE) 1760/2000**: identificación, trazabilidad y etiquetado del vacuno
+    - Base CEPE/ONU (**WP.7**)
+    - Controles en todas las fases y a terceros países (normas UE o equivalentes)
+  - **Organizaciones de productores (OP)**: concentran oferta, planifican, reducen costes
+  - **Organizaciones interprofesionales**: defensa y promoción del sector
+    - **PROVACUNO**, **INVAC**, **INTERPORC**. Asociación: **FIAB**
+  - **Régimen de intervención**: estabilidad del mercado, intervención pública, ayudas al almacenamiento privado y retirada con compensación
+    - FEGA gestiona, FEAGA financia
+    - Pagos acoplados mantenidos: vacuno nodriza, vacuno de leche, vacuno de cebo, ovino y caprino
+  - **Intercambios con terceros países**: aranceles, contingentes, salvaguardias, certificados de importación y exportación
 
 ## 4.3. Normativa voluntaria
-- Las normas **CEPE/UN (WP7)** son voluntarias y base de las normas de comercialización. El **CODEX** regula el jamón curado cocido y la carne curada picada y cocida.
-- La **producción controlada** se rige por normas **UNE** de AENOR.
-- La **producción ecológica** se regula por el **Reglamento (UE) 2018/848**, con el **SOIVRE**, según la **Orden ECC/1936/2014**, controlando productos agrarios, transformados y piensos.
-- La **producción integrada** se rige por el **Real Decreto 1201/2002** y su logotipo por la **Orden APA/1/2004**.
-- Las **DOP, IGP y ETG** se regulan por el **Reglamento (UE) 2024/1143**, aplicado por la **Ley 6/2015**, con la **AICA** como órgano de control.
 
-## 4.4. Normativa específica y general
-- Sector cárnico: **Reglamento (CE) 1831/2003** (aditivos), **Reglamento (CE) 566/2008** (bovinos ≤12 meses), **Reglamento Delegado (UE) 2026/343** (aves), **Real Decreto 4/2014** (jamón y paleta ibéricos), **Real Decreto 474/2014** (derivados cárnicos), **Real Decreto 993/2014** (autocontroles SAE), **Reglamento (UE) 2016/429** (sanidad animal), **Reglamento Delegado (UE) 2024/1141** (higiene y carne madurada) y **Reglamento (UE) 2019/6** (medicamentos veterinarios).
-- General: **Real Decreto 175/2004** (autoridad de control), **Reglamento (CE) 396/2005** (residuos de plaguicidas), **Reglamento (UE) 2023/915** (contaminantes), **Reglamento (UE) 1169/2011** (información al consumidor), **Real Decreto 1055/2022** (envases), **Reglamentos (CE) 852 y 853/2004** y **Reglamento (UE) 2017/625** (higiene y controles), **Ley 28/2015** (calidad alimentaria), **Ley 1/2025** (desperdicio alimentario) y **Orden PRE/3026/2003** (inspección SOIVRE).
+- **CEPE/UN (WP.7)**: base de las normas de comercialización. 4 secciones, una de carne
+  - Temas: desperdicio alimentario y trazabilidad (ODS 2030)
+- **OCDE**: sin folletos interpretativos para carne (no aplica)
+- **CODEX**: normas del jamón curado cocido y de la carne curada picada y cocida
+- **Producción controlada**: normas **UNE** de AENOR (AEN/CTN 155)
+- **Producción ecológica**: **Reglamento (UE) 2018/848**, deroga el 834/2007
+  - Terceros países con estándares comunitarios desde 2023
+  - **Reglamento de Ejecución (UE) 2016/1842**: certificado electrónico de importación
+  - SOIVRE controla importaciones según la **Orden ECC/1936/2014**
+- **Producción integrada**: **RD 1201/2002**, logotipo según **Orden APA/1/2004**
+- **DOP, IGP y ETG**: **Reglamento (UE) 2024/1143**, **Ley 6/2015** (control por la AICA)
+  - IGP Ternera Gallega, DOP Guijuelo, DOP Jamón de Teruel
+- **Buenas prácticas ganaderas**: GLOBAL G.A.P. (Certified Meat), SQF, Tesco Nurture, Carrefour Quality Lines
+
+## 4.4. Normativa específica del sector cárnico
+
+- **Reglamento Delegado (UE) 2017/1182**: escalas SEUROP
+- **Reglamento (CE) 1760/2000**: identificación y etiquetado de vacuno
+- **Reglamento (CE) 566/2008**: carne de bovinos de hasta doce meses
+- **Reglamento Delegado (UE) 2026/343**: carne de aves de corral
+- **Real Decreto 4/2014**: calidad de carne, jamón, paleta y caña de lomo ibérico
+- **Real Decreto 474/2014**: calidad de derivados cárnicos
+- **Real Decreto 993/2014**: **SAE** para exportar a terceros países con requisitos adicionales o listas de establecimientos
+- **Reglamento (UE) 2016/429**: sanidad animal
+- **Reglamento Delegado (UE) 2024/1141**: carne madurada en seco (35 días), transporte de canales (30 horas), mataderos móviles, marcado UE
+- **Reglamento (UE) 2019/6**: medicamentos veterinarios y resistencia antimicrobiana
+- **Reglamento (CE) 1831/2003**: aditivos en alimentación animal
+
+## 4.5. Normativa general
+
+- **RD 175/2004**: autoridad de controles de conformidad (Secretaría de Estado de Comercio)
+- **Reglamento (CE) 396/2005**: residuos de plaguicidas
+- **Reglamento (UE) 2023/915**: contaminantes
+- **Reglamento (UE) 1169/2011**: información al consumidor
+- **RD 1055/2022**: envases
+- Higiene: **Reglamentos (CE) 852 y 853/2004** y **(UE) 2017/625** (controles oficiales)
+- **Ley 28/2015**: calidad alimentaria y sanciones
+- **Ley 1/2025**: pérdidas y desperdicio alimentario
+- **Orden PRE/3026/2003**: control SOIVRE de calidad comercial en importación de determinadas carnes y despojos
 
 # 5. ANÁLISIS SECTORIAL
 
-- **Vacuno**: principales productores mundiales EEUU, Brasil, China y Argentina. España es quinta en la UE. Saldo negativo de **120 M€** en 2025, con importaciones creciendo un **22,5%** frente a exportaciones del **6%**.
-- **Porcino**: España lidera la producción en la UE y es tercera mundial tras China y EEUU. Superávit de **7.877 M€**, con el **67,8%** de las exportaciones cárnicas. En **noviembre de 2025** se detectó **peste porcina africana** en Cerdanyola del Vallès, primer foco desde 1994, con pérdida temporal del estatus de país libre ante la **OMSA**, más de 120 certificados bloqueados en 24 países y riesgo sobre más de 3.000 M€. Marco normativo: **Reglamento de Ejecución (UE) 2023/594**, actualizado por el **Reglamento de Ejecución (UE) 2026/985**.
-- **Ovino-caprino**: superávit de **476 M€**, con exportaciones a la UE y Argelia.
-- **Aves**: saldo positivo de **36 M€** en 2025, afectado por la influenza aviar. El Acuerdo **UE-Mercosur** prevé una cuota adicional de **180.000 toneladas** de carne avícola.
-- Las exportaciones **halal y kosher**, con base en la **Ley 26/1992**, crecen hacia Argelia, Marruecos y Arabia Saudita.
+- Productores
+  - Vacuno: EEUU, Brasil, China y Argentina. España quinta en la UE
+  - Porcino: España primera en la UE y tercera mundial
+  - Ovino: España séptima mundial y segunda en la UE
+  - Caprino: China, India y Pakistán
+  - Aves: EEUU, China, Brasil y México. Crisis de gripe aviar
+- Superávit cárnico: porcino el **67,8%** de las exportaciones
+- **Bovino** (2025): saldo de **-120 M€**, importaciones **+22,5%** y exportaciones **+6%**
+  - Compra la UE (**78%**). Importaciones UE (**90%**), Brasil y Uruguay
+  - OMSA 2016: riesgo insignificante de EEB
+- **Porcino**: superávit de **7.877 M€**
+  - Exportaciones **-1,5%**. UE algo más del 50%, China segundo cliente, Japón, Corea del Sur
+  - Importaciones **+8,5%**
+  - **Peste porcina africana**: foco del 28-11-2025 en Cerdanyola del Vallès (primero desde 1994)
+    - Pérdida temporal del estatus ante la OMSA
+    - **Reglamento de Ejecución (UE) 2023/594**, actualizado por el **2026/985**. **Orden APA/1387/2025**
+    - Más de 120 certificados bloqueados en unos 24 países, más de **3.000 M€** en riesgo
+    - China regionaliza (provincia de Barcelona). Filipinas levantó el veto en mayo de 2026
+- **Ovino-caprino**: superávit de **476 M€**, exportaciones **+20%**, Argelia
+- **Aves**: saldo de **36 M€**, exportaciones **+18,3%**, importaciones **+20,7%**. Influenza aviar
+- **Halal y kosher**: crecimiento, **Ley 26/1992**
 
 # 6. CONCLUSIÓN
 
-- El sector cárnico es la principal industria alimentaria española, con liderazgo en porcino y fuerte superávit comercial, aunque afronta la crisis de la PPA, la competencia del acuerdo UE-Mercosur y crecientes exigencias de sostenibilidad y trazabilidad, lo que exige diversificar mercados y reforzar la calidad diferenciada.
+- Principal industria alimentaria de España. Primer productor porcino de la UE y tercero mundial
+- Superávit impulsado por el porcino (**67,8%**, **7.877 M€**)
+- Riesgos
+  - **PPA**: certificados bloqueados, reapertura de Japón y México prioritaria
+  - **Mercosur**: cuota adicional de **180.000 t** de carne de aves
+  - Sostenibilidad, bienestar animal, trazabilidad y resistencia antimicrobiana
+  - Costes de materias primas
+- Estrategia: certificación, diversificación de mercados, valor añadido, respuesta ante crisis y competencia equilibrada (mismos estándares a las importaciones)
