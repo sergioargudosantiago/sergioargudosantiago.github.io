@@ -1,119 +1,154 @@
 # 1. INTRODUCCIÓN
-- **Consolidación de la Unión Aduanera (1993):**
-  - Creación del Mercado Único.
-  - Desaparición de fronteras interiores.
-  - Frontera exterior común frente a TTPP.
-  - Legislación común: Código Aduanero Comunitario CAC.
-- **Marco Legislativo:**
-  - **Código Aduanero Comunitario:** Reglamento (CEE) 2913/1992.
-  - **Código Aduanero Comunitario Modernizado:** Reglamento (CE) 450/2008 (derogado antes de su aplicación completa).
-  - **Código Aduanero de la Unión (CAU):** Reglamento (UE) 952/2013 derogando a los anteriores.
-- **Objetivos del CAU:**
-  - Simplificación normativa y de procedimientos.
-  - **Comunicaciones electrónicas:** Entre autoridades y con operadores.
-  - **Ventanilla Única Aduanera:** Centralización de procedimientos (Sanidad, SOIVRE, AEAT, etc.) para agilizar despachos y reducir costes.
-  - **Autorización centralizada:** Declarar y pagar en el lugar de establecimiento del operador, independientemente del lugar físico de importación.
-  - Armonización de garantías aduaneras.
-  - Refuerzo del papel del Operador Económico Autorizado (OEA).
-- **Novedades en Regímenes:**
-  - El Depósito Temporal (ADT) deja de ser un régimen especial.
-  - Cambio de denominación de "regímenes aduaneros económicos" a "regímenes especiales".
-  - **Categorías de Regímenes Especiales:**
-    - Tránsito (interno y externo).
-    - Depósito (depósito aduanero y zonas francas).
-    - Destinos especiales (importación temporal y destino final).
-    - Perfeccionamiento (activo y pasivo).
-- **Destinos Aduaneros:**
-  - Inclusión en un régimen aduanero (Despacho a libre práctica, Exportación, Regímenes especiales). Introducción en una zona franca. Reexportación. Destrucción bajo control aduanero. Abandono.
-- **Principio general:** Las mercancías deben recibir un destino aduanero, salvo excepciones por orden público, moralidad, seguridad, salud, patrimonio o propiedad industrial.
+- **Mercado Único** (1 enero 1993): sin controles interiores, **única frontera exterior**
+- **Código Aduanero de la Unión (CAU)**, **Reglamento (UE) 952/2013**, aplicable desde 1 mayo 2016
+  - Desarrollo: **Reglamento Delegado (UE) 2015/2446** (RD-CAU) y **Reglamento de Ejecución (UE) 2015/2447**
+  - Transitorio de sistemas electrónicos hasta 31 diciembre 2025 (**Reglamento (UE) 2019/632**)
+- **Reglamento (UE) 2026/2108**: nuevo CAU y **Autoridad Aduanera de la UE**
+  - En vigor 20 septiembre 2026, aplicación general 21 septiembre 2027, deroga el 952/2013
+  - Declaración tradicional hasta 30 junio 2028
+  - **Centro de Datos Aduaneros**: obligatorio comercio electrónico desde 1 julio 2028, resto voluntario desde marzo 2031 y obligatorio desde marzo 2034
+  - Hasta entonces rige el **952/2013**
 
-# 2. DESPACHO A LIBRE PRÁCTICA
-- **Definición (Art. 201 CAU):** Procedimiento para conferir el estatuto aduanero de Mercancía de la Unión a una mercancía no comunitaria.
-- **Requisitos:**
-  - Cumplimiento de trámites de importación.
-  - Pago de derechos de arancel y otros gravámenes exigibles.
-  - Aplicación de medidas de política comercial.
-- **Efectos:** La mercancía circula libremente por la UE. No implica necesariamente el pago de IVA ni Impuestos Especiales (IIEE) en el momento del despacho (se pagan en el país de consumo).
+# 2. GENERALIDADES DE LOS REGÍMENES ADUANEROS
+## 2.1. Concepto y principios
+- **Régimen aduanero** (art. 5.16 CAU): libre práctica, regímenes especiales y exportación
+- **Estatuto aduanero**
+  - **Mercancías de la Unión**: obtenidas en el territorio, o introducidas y despachadas a libre práctica. Presunción salvo prueba en contrario
+  - **No Unión**: las demás
+- **Libertad de elección del régimen**, limitada por prohibiciones y restricciones (**art. 134 CAU**, **art. 36 TFUE**)
+  - Motivos: moralidad, orden y seguridad públicos, salud, medio ambiente, patrimonio, propiedad intelectual, política comercial
 
-## 2.1. Proceso de Importación
-Se distingue entre Régimen Comercial (documentos comerciales) y Régimen Aduanero (procedimiento).
-**Régimen Comercial en la Importación**
-- Principio de libertad comercial (norma general).
-- **Excepciones (Regímenes específicos):**
-  - **Régimen de Vigilancia:** Requiere Documento de Vigilancia Comunitaria (DVC) o Notificación Previa de Importación (medida nacional).
-  - **Régimen de Certificación:** Para productos agrícolas/pesca. Requiere Certificado de Importación (AGRIM).
-  - **Régimen de Autorización:** Restricciones cuantitativas. Requiere Licencia de Importación Comunitaria (LIC) o Autorización Administrativa de Importación (AAI).
-  - **CITES:** Protección de especies. Permisos de importación (Anexos A y B), Notificación (Anexos C y D) o Certificado Comunitario.
-**Régimen Aduanero en la Importación**
-**Fase 1: Importación como Transporte**
-- **Título de Transporte:** Justifica la propiedad y responsabilidad sobre la mercancía ante la Aduana.
-Marítimo: Bill of Lading (B/L) o Póliza de Fletamento. Aéreo: Air Way Bill (AWB). Aéreo/Marítimo: Manifiesto de Carga. Carretera: CMR. Ferrocarril: CIM. Multimodal: FIATA Bill of Lading.
-- **Documentos de Seguro:** Póliza de seguro o Certificado de seguro.
-- **Documentos Comerciales:** Factura y Packing List.
-**Fase 2: Llegada y Presentación**
-- **Llegada a Recinto Aduanero:** Convencionales (puertos/aeropuertos), privados habilitados o áreas exentas.
-- **Declaración Sumaria:** Identificación de la mercancía para análisis de riesgos.
-  - Plazo: Máximo 1 día hábil siguiente a la llegada.
-- **Depósito Temporal (ADT):**
-  - Situación desde la descarga hasta el despacho.
-  - Bajo vigilancia aduanera. No devenga impuestos.
-  - Plazo: **45 días** (transporte marítimo) y **20 días** (transporte terrestre), prorrogables hasta un **máximo de 90 días**.
-  - Operaciones permitidas: Saneamiento, reconocimiento previo, extracción de muestras.
-  - Finalización: Inclusión en régimen aduanero o reexportación.
-**Fase 3: Procedimiento Administrativo**
-- **Declaración Aduanera (DUA):** Documento Único Administrativo.
-  - Declaración de la deuda aduanera y del destino de la mercancía.
-  - Sistema INTRASTAT para intercambios intracomunitarios.
-- **Documentación complementaria al DUA:**
-  - Factura comercial y Packing List.
-  - Documento de transporte.
-  - **DV1:** Declaración de Valor en Aduana (para cálculo de deuda).
-  - **Certificado de Origen:** Cámaras de Comercio (arancel general).
-  - **Certificado de Circulación (EUR-1 / EUR-2 / FORM A / ATR):** Para acuerdos preferenciales (arancel reducido/nulo).
-  - Documentos del régimen comercial (AGRIM, LIC, etc.).
-  - Certificados técnicos: SOIVRE, Sanitario, Fitosanitario, Veterinario, Farmacia, CITES.
-**Fase 4: Admisión y Despacho**
-- **Admisión del DUA:** Validación informática. Asignación de circuito (análisis de riesgo):
-  - **Circuito Verde:** Levante sin control.
-  - **Circuito Naranja:** Comprobación documental.
-  - **Circuito Rojo:** Reconocimiento físico de la mercancía.
-- **Levante:** Autorización para retirar la mercancía tras comprobar requisitos y garantizar/pagar deuda.
+## 2.2. Tipos de regímenes aduaneros
+- El CAU eliminó «destino aduanero» y «regímenes aduaneros económicos»
+- **Despacho a libre práctica** (arts. 201 a 203): da estatuto de la Unión
+- **Regímenes especiales** (arts. 210 a 262), cuatro categorías
+  - **Tránsito** externo e interno, sistema **NCTS**
+  - **Depósito**: depósito aduanero y zonas francas
+    - España: **siete zonas francas** (Barcelona, Cádiz, Vigo, Gran Canaria, Tenerife, Sevilla, Santander)
+  - **Destino especial**: importación temporal y destino final
+  - **Perfeccionamiento**: activo (absorbe la transformación bajo control aduanero) y pasivo
+- **Exportación** (arts. 269 a 272)
+- No son régimen: **depósito temporal**, **reexportación** (art. 270), destrucción y abandono (arts. 197 a 199)
 
-## 2.2. Despacho a Consumo
-- Concepto distinto al Despacho a Libre Práctica.
-- Implica: Cumplir formalidades de importación + Pago de aranceles + Pago de IVA e IIEE.
-- La mercancía entra en el circuito comercial para su consumo final.
+## 2.3. Elementos comunes a los regímenes
+- **Declaración en aduana**, por regla general electrónica
+  - España: el DUA se sustituye por el sistema **H1**, general desde 2025
+- **Declarante y representación**: directa o indirecta, y el representante indirecto también es deudor (**arts. 18 y 77**)
+- **Simplificaciones** (arts. 166 a 185): declaración simplificada y complementaria, inscripción en registros, despacho centralizado, autoevaluación
+  - Con autorización, facilitada por el **OEA**
+- **Garantía** de la deuda aduanera: individual o global, con reducción o dispensa
 
-# 3. EXPORTACIÓN
-- **Definición:** Salida de mercancía del Territorio Aduanero de la UE.
-- Debe incluirse en régimen de exportación (salvo Tránsito Interno o Perfeccionamiento Pasivo).
-- Implica aplicación de medidas de política comercial y pago de derechos.
+# 3. LA LLEGADA DE LAS MERCANCÍAS AL TERRITORIO ADUANERO
+## 3.1. La declaración sumaria de entrada
+- **ENS**: seguridad y análisis de riesgos, antes de la llegada, en la aduana de primera entrada, vía **ICS2**
+- La presenta el **transportista**, por vía electrónica
+- **Plazos** (arts. 105 a 109 RD-CAU)
+  - Marítimo contenedores: **24 horas** antes de la carga
+  - Marítimo granel: **4 horas** antes de llegar (trayectos cortos, 2 horas)
+  - Aéreo: datos mínimos **PLACI** antes de la carga. Completa, al despegue en vuelos de menos de 4 horas, 4 horas antes de llegar en los demás
+  - Ferrocarril: 1 o 2 horas según trayecto
+  - Carretera: **1 hora**
+  - Vías navegables interiores: **2 horas**
 
-## 3.1. Régimen Comercial en la Exportación
-- Excepciones a la libertad comercial:
-  - **Régimen de Vigilancia:** Notificación Previa de Exportación (NOPE) o Documento de Vigilancia Comunitaria (DVC).
-  - **Régimen de Certificación:** Certificado de Exportación (AGREX) para productos agrarios/pesca.
-  - **Régimen de Autorización:** Autorización Administrativa de Exportación (**AAE**) o Licencia de Exportación (**LE**).
-  - **Mercancías especiales:** Material de defensa, doble uso, precursores de drogas, bienes culturales, residuos, productos peligrosos (requieren control específico).
+## 3.2. Presentación, descarga y depósito temporal
+- Conducción y presentación a la aduana o lugar autorizado (arts. 135 a 139)
+- **Depósito temporal** (arts. 144 a 152): no Unión, bajo vigilancia, hasta régimen o reexportación
+  - Lugares autorizados, con garantía
+  - Plazo máximo **90 días** en todos los medios
+  - Solo manipulaciones usuales de conservación
+  - Vencido el plazo, la aduana puede vender o destruir
+- Depósito franco desaparecido el 1 mayo 2016. Depósito aduanero y zonas francas son régimen de depósito
 
-## 3.2. Régimen Aduanero en la Exportación
-- **Declaración (DUA de Exportación):**
-  - Importancia fiscal: Permite la exención/devolución del IVA (prueba de salida).
-  - Mayor control físico para evitar fraudes en devoluciones de IVA o restituciones.
-- **Documentación adjunta:** Factura, transporte, régimen precedente, documentos de cálculo de derechos/restituciones, certificados técnicos (Origen, SOIVRE, CITES, IIEE).
-- **Circuitos:** Verde, Naranja, Rojo.
-- **Levante:** Autorización de salida tras controles.
+# 4. EL DESPACHO A LIBRE PRÁCTICA
+## 4.1. Concepto y efectos
+- Introduce definitivamente en el mercado de la Unión mercancías no Unión
+- Efectos (**art. 201**)
+  - **Derechos de importación** y otros gravámenes
+  - Medidas de política comercial, prohibiciones y restricciones
+  - Demás formalidades de importación
+- Da **estatuto de mercancía de la Unión**
+- Sujeto activo: Administración. Sujeto pasivo: deudor, el declarante y, si es indirecta, su representante
+  - La deuda nace con la **admisión de la declaración** (**art. 77**)
 
-## 3.3. Procedimientos Simplificados
-- Aplicables a Importación y Exportación (preferencia OEA).
-- Tipos:
-  - Declaración en documento comercial.
-  - Inscripción en registros contables del operador (despacho en local autorizado).
-  - Declaraciones incompletas.
-- **Requisito:** Presentación posterior de una Declaración Complementaria (plazo general entre 10 días y 1 mes).
+## 4.2. El régimen comercial de importación
+- **Libertad comercial**, con regímenes específicos
+  - **Vigilancia**: documento de vigilancia (Unión) o notificación previa (nacional)
+  - **Certificación**: **AGRIM**. Reforma 2020 (**Reglamentos 2020/760 y 2020/761**), uso reducido
+  - **Autorización**: licencia de importación (Unión) o **AAI** (nacional)
+- **CITES** (**Reglamento (CE) 338/97**)
+  - Permiso de importación en anexos A y B, notificación en C y D
+  - Certificados CITES de la Unión: documento distinto, no amparan la introducción
+  - Control fronterizo del **SOIVRE** por encomienda de gestión
+- Otros controles en la **Ventanilla Única Aduanera**
+  - **SOIVRE**: calidad comercial y seguridad (**Orden PJC/161/2026**, art. 25 del **Reglamento (UE) 2019/1020**)
+  - Sanidad Exterior, sanidad animal y vegetal, Agencia Española de Medicamentos
+- **MAFC**: desde 1 enero 2026 declarante autorizado, salvo hasta **50 toneladas** anuales
 
-# 4. CONCLUSIÓN
-- Importancia vital de la Unión Aduanera como pilar de la UE y del Mercado Único.
-- Cesión de soberanía de los EEMM en favor de la integración.
-- **Contexto geopolítico:**
-  - Medidas restrictivas a Rusia (Régimen de autorización para ciertos productos industriales y tecnológicos.
+## 4.3. La declaración y su documentación
+- Declaración **H1**: de adeudo y de concreción del régimen
+- Documentos justificativos
+  - **Factura comercial** y lista de bultos. Desaparece la DV1
+  - **Transporte**
+    - Marítimo: **B/L**, único título valor, negociable
+    - Aéreo: **AWB**, no negociable
+    - Carretera **CMR**, ferrocarril **CIM**, multimodal **FBL**
+    - Manifiesto de carga: no es título de transporte
+  - **Seguro**
+  - **Pruebas de origen**
+    - Preferencial: **EUR.1** o declaraciones de origen. EUR.2 ya no existe
+    - SPG: exportadores inscritos en **REX** (sustituye al FORM A)
+    - **A.TR**: libre práctica en la unión aduanera UE-Turquía, no origen
+    - No preferencial (Cámaras de Comercio): solo si una norma lo exige
+  - Certificados técnicos: CITES, SOIVRE, sanitarios, fitosanitarios, veterinarios
+
+## 4.4. Admisión, control y levante
+- Admisión: nace la deuda
+- **Circuitos**: **verde** (sin control), **naranja** (documental), **rojo** (físico, con muestras)
+- **Levante**: controles conformes y deuda pagada o garantizada
+- Declaración complementaria en el plazo fijado
+
+## 4.5. Libre práctica y despacho a consumo
+- Fiscalidad indirecta: competencia de los Estados miembros
+- **Libre práctica**: concepto aduanero, derechos de aduana
+- **Despacho a consumo**: concepto fiscal, además IVA a la importación e impuestos especiales (**Ley 37/1992**, **Ley 38/1992**)
+- Habitual el despacho simultáneo
+- Libre práctica sin IVA en España: entrega intracomunitaria exenta o depósito distinto del aduanero
+- Entre Estados miembros no hay declaración: **Intrastat** (**Reglamento (UE) 2019/2152**)
+
+# 5. LA EXPORTACIÓN
+## 5.1. Concepto
+- Régimen de mercancías de la Unión que salen (**art. 269**)
+  - No aplica a perfeccionamiento pasivo, tránsito interno ni salidas temporales
+- Formalidades de salida, política comercial y derechos de exportación excepcionales
+- No Unión que salen: **reexportación**
+
+## 5.2. El régimen comercial de exportación
+- Libertad comercial (**Reglamento (UE) 2015/479**), con excepciones
+  - **Vigilancia**: documento de la Unión o notificación nacional
+  - **Certificación**: **AGREX**. Restituciones en cero desde 2013
+  - **Autorización**: licencia (Unión) o autorización administrativa (nacional)
+- Controles específicos, tramitados por la **Secretaría de Estado de Comercio**
+  - Defensa y doble uso: **Reglamento (UE) 2021/821**, **Ley 53/2007**, **Real Decreto 679/2014**
+  - Precursores de drogas, bienes de tortura, químicos peligrosos
+  - Bienes culturales: **Reglamento (CE) 116/2009**. Importación desde 28 junio 2025 (**Reglamento (UE) 2019/880**)
+  - Residuos: **Reglamento (UE) 2024/1157**, desde 21 mayo 2026
+  - Sanciones: **Reglamento (UE) 833/2014** (Rusia)
+
+## 5.3. El procedimiento aduanero de exportación
+- **Declaración de exportación**: electrónica, aduana de exportación, sistema **AES**, también declaración previa a la salida
+- Mismos circuitos. La presentación importa por la exención del IVA (**art. 21 Ley 37/1992**)
+- **Salida efectiva**: comunicada por la aduana de salida
+  - A los **150 días** sin pruebas, invalidación (**art. 248 RD-CAU**)
+  - Confirmación de salida: prueba para la exención del IVA
+- Documentos: factura, transporte, régimen comercial, certificados, documentos **EMCS**, certificado de origen del país de destino
+- Simplificaciones con autorización
+
+# 6. CONCLUSIÓN
+- Unión aduanera: competencia exclusiva de la Unión
+- Regímenes: adaptan el control a cada operación
+- Función más allá de la recaudación: seguridad, sanciones, especies, productos, carbono, con papel del **SOIVRE** en la Ventanilla Única Aduanera
+- Nuevo CAU: cambia la forma de aportar información, no el catálogo de regímenes
+  - Centro de Datos Aduaneros, Autoridad Aduanera de la UE
+  - Plataformas como importadores
+  - **Trust and Check**
+  - Al menos hasta 2028, referencia el **952/2013**

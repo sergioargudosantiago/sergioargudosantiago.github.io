@@ -1,78 +1,151 @@
-# 1. INTRODUCCIÓN Y CONTEXTO
-A pesar de la liberalización comercial multilateral y la integración en bloques, persisten barreras que dificultan el comercio. Las Barreras Técnicas al Comercio (OTC) son actualmente el mayor obstáculo para las empresas españolas, tanto en el Mercado Único como con TTPP.
-**Definición y requisitos de barrera comercial:** acciones o medidas que protegen la producción nacional, dificultan importaciones o estimulan artificialmente exportaciones. Para ser considerada barrera debe cumplir dos requisitos:
-- Derivar de una medida oficial (administración central, regional o local).
-- Suponer una limitación o carga para el libre comercio
-**Clasificación de obstáculos:**
-- **Acuerdos Internacionales (GATT, OCDE):**
-  - Arancelarias: Derechos de aduana, tasas equivalentes e imposiciones fiscales.
-  - No Arancelarias: Restricciones cuantitativas (cupos), medidas de efecto equivalente (OTC, normas, homologaciones), controles en frontera, ayudas estatales y monopolios comerciales.
-- **Comisión Europea (Libro Blanco 1985):**
-  - Físicas: Controles aduaneros.
-  - Fiscales: Aranceles e impuestos indirectos.
-  - Técnicas: Divergencias normativas, procesos de certificación, etiquetado, etc.
-**Evolución y Medidas de Armonización:** La reducción de aranceles (GATT) provocó un aumento del intervencionismo administrativo mediante normas técnicas (seguridad, salud, medioambiente). Esto generó diversidad de exigencias, opacidad normativa y abuso de normas como proteccionismo encubierto. Para combatirlo, la UE y la OMC han desarrollado medidas basadas en la **Armonización** y la **Transparencia** (Directiva 2015/1535 en la UE; Acuerdos TBT/SPS en la OMC).
+# 1. INTRODUCCIÓN
+- Reducción arancelaria desde el **GATT 1947**: ganan peso las demás barreras y las medidas restrictivas alternativas
+- Creciente intervencionismo administrativo: regulación de productos por salud, seguridad, consumidores y medio ambiente
+- Resultado
+  - **Diversidad y disparidad** de exigencias: sin economías de escala
+  - **Opacidad normativa**
+  - **Abuso normativo**: exigencias desproporcionadas, restricciones encubiertas
+- Respuestas
+  - OMC: Acuerdos **OTC** y **MSF**
+  - UE: **Directiva (UE) 2015/1535**, heredera de la Directiva 83/189/CEE y la 98/34/CE
 
-# 2. MEDIDAS DE ARMONIZACIÓN Y TRANSPARENCIA EN LA UE
-La libre circulación de mercancías es un pilar del Mercado Único, que requiere eliminar aranceles, adoptar un Arancel Común y eliminar restricciones cuantitativas y medidas de efecto equivalente.
-**Estrategia para eliminar barreras técnicas (Libro Blanco 1985):**
-- **Armonización de reglamentaciones:** Sustituir disposiciones nacionales divergentes por reglas comunes, respetando las excepciones del art. 36 TFUE (salud, seguridad).
-- **Nuevo Enfoque (desde 1985):** Armonización legislativa limitándose a requisitos esenciales de seguridad.
-- **Normalización europea:** Encargo a organismos como CEN/CENELEC.
-- **Reconocimiento Mutuo:** Aceptación de productos legalmente fabricados en otros EEMM si no hay armonización (Doctrina Cassis de Dijon).
-- **Prevención de nuevas barreras:** Mediante procedimientos de notificación previa (Directiva 2015/1535).
-- **Vigilancia:** Control de la Comisión y procedimientos de infracción.
+# 2. MEDIDAS DE ARMONIZACIÓN Y TRANSPARENCIA EN LA UNIÓN EUROPEA
 
-# 3. DIRECTIVA (UE) 2015/1535 (Procedimiento de Información)
-Esta Directiva deroga a la 98/34/CE (que a su vez derogó a la 83/189/CEE) para codificar y clarificar el sistema de prevención de barreras técnicas.
+## 2.1. La libre circulación de mercancías
+- Piedra angular del mercado interior. Exige
+  - Supresión de derechos de aduana y exacciones de efecto equivalente (art. **30 TFUE**)
+  - Arancel aduanero común (art. **31 TFUE**)
+  - Prohibición de restricciones cuantitativas y medidas de efecto equivalente (arts. **34 y 35 TFUE**)
+- **Art. 36 TFUE**: excepciones (moralidad, orden y seguridad públicos, salud, patrimonio, propiedad industrial y comercial)
+  - Sin discriminación arbitraria ni restricción encubierta
+- Jurisprudencia: **exigencias imperativas de interés general** (consumidores, medio ambiente)
+- **Dassonville (1974)**: medida de efecto equivalente es toda normativa que pueda obstaculizar directa o indirectamente, actual o potencialmente, el comercio
 
-## 3.1. Evolución Normativa
-- **Directiva 83/189/CEE:** Estableció la notificación previa de proyectos de normas y reglamentos técnicos. Fijaba un statu quo (espera) de 3 a 12 meses para la aprobación nacional si la Comisión presentaba objeciones o decidía armonizar. Excluía productos agrícolas, alimentos y medicamentos.
-- **Modificaciones posteriores:** Ampliaron el ámbito a productos agrícolas, alimentos, medicamentos y procedimientos de evaluación de la conformidad.
-- **Directiva 98/34/CE:** Consolidó el sistema y extendió el control a los Servicios de la Sociedad de la Información (Directiva 98/48/CE). Creó un Comité Permanente para asistir a la Comisión.
+## 2.2. El Libro Blanco de 1985 y el Nuevo Enfoque
+- **Consejo Europeo de Milán 1985** respalda el Libro Blanco: unas **300 medidas** antes de finales de **1992**
+- Tres barreras: **físicas**, **fiscales** (IVA e impuestos especiales) y **técnicas** (reglamentaciones, normas, certificación y homologación)
+- Estrategia en tres pilares
+- **Nuevo Enfoque** (Resolución del Consejo de 7 de mayo de 1985)
+  - Directivas fijan solo **requisitos esenciales**
+  - Detalle en **normas armonizadas** de **CEN, CENELEC y ETSI**
+  - Voluntarias, pero con referencia en el DOUE dan **presunción de conformidad**
+  - Completado por **Enfoque Global** (1989) y **Nuevo Marco Legislativo** (2008: **Reglamento (CE) 765/2008** y **Decisión 768/2008/CE**)
+  - Vigilancia del mercado: **Reglamento (UE) 2019/1020**, art. 25 obliga a designar autoridades de control. En España, entre ellas el **SOIVRE**
+- **Acta Única Europea 1986**: mayoría cualificada para aproximar legislaciones (art. **114 TFUE**)
+  - Excepciones: fiscalidad, libre circulación de personas, derechos de los trabajadores
+- **Reconocimiento mutuo** y procedimiento de información de la **Directiva 83/189/CEE**
 
-## 3.2. Directiva (UE) 2015/1535
-Establece un procedimiento de información para reglamentaciones técnicas y reglas de servicios de la sociedad de la información antes de su adopción.
-**Objetivos y Ventajas:**
-- Garantizar la transparencia y evitar proteccionismo.
-- Identificar barreras antes de que surjan y verificar compatibilidad con el Derecho UE.
-- Permitir a los operadores económicos adaptar sus actividades con antelación.
-- Fomentar el diálogo entre la Comisión y los EEMM.
-**Funcionamiento del Procedimiento:**
-- **Notificación:** Los EEMM deben comunicar a la Comisión todo proyecto de reglamento técnico (salvo que transponga una norma internacional/europea íntegra).
-- **Periodo de Statu Quo:**
-  - **3 meses (inicial):** El Estado no puede aprobar la norma. La Comisión y otros EEMM la analizan.
-  - **Prórroga a 4 o 6 meses:** Si la Comisión o un EM emiten un **dictamen motivado** advirtiendo de una posible barrera.
-  - **Prórroga a 12 o 18 meses:** Si la Comisión anuncia su intención de legislar sobre la materia a nivel europeo (bloqueo de la iniciativa nacional).
-- **Excepción de Urgencia:** Se permite la aprobación inmediata por razones graves e imprevisibles (salud, seguridad), que deben justificarse y son revisadas posteriormente por la Comisión.
-- **Transparencia:** Los proyectos son públicos y permiten la participación de los operadores económicos.
-**Gestión en España:** Los Ministerios competentes elaboran los reglamentos y el Ministerio de Asuntos Exteriores realiza la comunicación formal a la Comisión. Existe un grupo de trabajo en la CIOA (Comisión Interministerial para la Ordenación Alimentaria) con participación del SOIVRE para analizar notificaciones de otros países.
-**4. PROCEDIMIENTOS DE RESOLUCIÓN DE OBSTÁCULOS (MERCADO INTERIOR)**
-El Mercado Único requiere vigilancia constante. La Comisión actúa como Guardiana de los Tratados (Arts. 258 y 260 TFUE).
+## 2.3. El reconocimiento mutuo
+- **Cassis de Dijon** (20 de febrero de 1979, asunto 120/78): producto legalmente comercializado en un Estado miembro puede comercializarse en los demás
+  - Restricción solo con exigencia imperativa o art. 36 TFUE, y proporcionada
+- Se aplica en ámbitos **no armonizados**
+- **Reglamento (UE) 2019/515** (desde abril de 2020)
+  - **Declaración de reconocimiento mutuo** del operador
+  - Decisiones restrictivas **motivadas**
+  - Recurso a **SOLVIT**
+- **Puntos de Contacto de Productos**: informan a las empresas
 
-## 4.1. El Procedimiento de Infracción
-Es la vía formal para sancionar incumplimientos del Derecho de la UE por parte de los EEMM. La Comisión es la única legitimada para iniciarlo, actuando de oficio o por denuncia.
-**Fases del Procedimiento:**
-- **Denuncia / Queja:** Puede presentarla cualquier persona física o jurídica (ciudadanos, empresas, asociaciones). Debe ser por escrito e identificar al Estado infractor.
-- **Fase Pre-contenciosa (Administrativa):**
-  - **Investigación preliminar:** Diálogo informal para resolver el problema rápidamente.
-  - **Carta de Emplazamiento:** Demanda formal de información. El Estado debe justificar su actuación en un plazo fijado.
-  - **Dictamen Motivado:** Si el Estado no contesta o no convence, la Comisión expone formalmente la violación del Tratado y exige medidas correctoras en un plazo determinado.
-- **Fase Contenciosa (Judicial):**
-  - Si el Estado no cumple el Dictamen Motivado, la Comisión demanda ante el Tribunal de Justicia de la UE (TJUE).
-  - La sentencia del TJUE es vinculante. Si el Estado no la ejecuta, se puede iniciar un nuevo procedimiento para imponer multas coercitivas (Art. 260 TFUE).
-**Recurso de Urgencia:** Posibilidad de solicitar al Tribunal medidas cautelares si existe riesgo de daño irreparable antes de la sentencia.
+# 3. LA DIRECTIVA (UE) 2015/1535 Y SUS ANTECEDENTES
 
-## 4.2. Mecanismos de Resolución Alternativa y Apoyo
-Ante la lentitud de la vía judicial, se han desarrollado herramientas prácticas:
-- **Proyecto "Línea Abierta" (SEC / ICEX / CEOE):**
-  - Detecta problemas reales de empresas españolas en la UE.
-  - Los obstáculos más frecuentes son las normas técnicas seguidos de envases/embalajes.
-- **Red SOLVIT :**
-  - Red de resolución de problemas extrajudicial y gratuita.
-  - Conecta a las administraciones nacionales.
-  - Ámbito: Mala aplicación de normas del Mercado Interior por administraciones públicas
-  - Plazo objetivo: 10 semanas para encontrar solución.
-  - Punto de contacto en España: Ministerio de Asuntos Exteriores.
-- **Programa EU Pilot:**
-  - Mecanismo de diálogo informal previo al procedimiento de infracción para aclarar dudas sobre la aplicación de la legislación y corregir infracciones en una etapa temprana.
+## 3.1. Evolución normativa
+- **Directiva 83/189/CEE**: **información previa** de proyectos de normas y reglamentos técnicos
+  - **Comité permanente** presidido por la Comisión
+  - **Normas** (voluntarias) frente a **reglamentos técnicos** (obligatorios)
+- **Directivas 88/182/CEE y 94/10/CE**: amplían especificación técnica, evaluación de la conformidad y «otros requisitos»
+- **Directiva 98/34/CE**: **refundición**
+  - Concepto amplio de reglamento técnico, incluidos los **de facto**
+  - **Doble procedimiento**: programas de normalización y notificación con statu quo
+  - **Directiva 98/48/CE**: extensión a **servicios de la sociedad de la información**
+- **Reglamento (UE) 1025/2012**: normas voluntarias. Por eso la Directiva se centra en reglamentos técnicos
+- **Directiva (UE) 2015/1535** (9 de septiembre de 2015): codifica la 98/34/CE sin cambios sustanciales
+
+## 3.2. Objetivo y ámbito
+- Examen previo por la Comisión y los Estados de los **reglamentos técnicos** proyectados, para productos (industriales, agrícolas, pesqueros) y servicios de la sociedad de la información
+- **AELC/EEE**: procedimiento paralelo. **Suiza y Turquía**: intercambio de información con otro estatuto
+- Reglamento técnico: especificaciones técnicas, «otros requisitos» y reglas de servicios obligatorias, **de iure o de facto**
+- **Art. 7**: exime las normas que
+  - transponen actos vinculantes de la Unión
+  - cumplen acuerdos internacionales
+  - aplican cláusulas de salvaguardia
+  - ejecutan una sentencia del Tribunal de Justicia
+
+## 3.3. El procedimiento de notificación
+- **Notificación** a la Comisión, traslado a los Estados y publicación traducida en **TRIS**
+- **Statu quo de 3 meses**
+- **Observaciones**: no amplían plazo
+- **Dictamen circunstanciado**: hasta **4 meses** (acuerdos voluntarios y servicios) o **6 meses** (demás)
+  - No es el dictamen motivado de infracción
+- **Bloqueo por armonización**: **12 meses**, hasta **18** si el Consejo adopta posición en primera lectura
+- **Nueva notificación** si hay cambios sustanciales
+- **Urgencia**: sin statu quo ante circunstancias graves e imprevisibles. No exime de notificar
+- Comunicación del **texto definitivo**
+
+## 3.4. Ventajas y aplicación en España
+- Ventajas
+  - **Prevención**: más barata que una infracción
+  - **Transparencia** (TRIS gratuito) y **diálogo**
+  - Detección de necesidades de armonización
+  - **Seguridad** para operadores
+  - El reglamento no notificado o adoptado durante el statu quo **no es oponible a particulares**
+- España: **Real Decreto 1337/1999**
+  - Vía **Comisión Interministerial para Asuntos de la Unión Europea**
+  - Alimentación: grupo de trabajo de la **CIOA**, con la **Subdirección General de Inspección, Certificación y Asistencia Técnica del Comercio Exterior (SOIVRE)**
+
+# 4. PROCEDIMIENTOS PARA LA RESOLUCIÓN DE OBSTÁCULOS EN EL MERCADO INTERIOR
+- Persisten barreras en ámbitos no armonizados y servicios (**Directiva 2006/123/CE**)
+
+## 4.1. El procedimiento de infracción
+- Comisión, guardiana de los Tratados. Arts. **258 a 260 TFUE**
+  - **Art. 259**: un Estado puede recurrir contra otro
+- **Inicio**: de oficio o por **denuncia** (decisión en **un año**, sin obligación de actuar)
+- **Fase precontenciosa**
+  - **EU Pilot** informal previo
+  - **Carta de emplazamiento**: observaciones, normalmente en **dos meses**
+  - **Dictamen motivado**: fija plazo y objeto del litigio
+- **Fase contenciosa**
+  - Recurso ante el Tribunal. Sentencia **declarativa** (art. **260.1**)
+  - **Art. 260.2**: **suma a tanto alzado y multas coercitivas**
+  - **Art. 260.3**: sanciones en el primer recurso si no se comunica la transposición
+- **Medidas urgentes**: provisionales (art. **279 TFUE**), con apariencia de buen derecho, urgencia y ponderación favorable
+  - Con multas coercitivas: **Białowieża** (2017)
+
+## 4.2. La defensa ante los tribunales nacionales
+- La infracción no indemniza: la vía nacional es complementaria
+- **Efecto directo y primacía**: invocar el art. **34 TFUE** y la falta de notificación (**CIA Security**)
+  - Cuestión prejudicial (art. **267 TFUE**)
+- **Medidas cautelares**: **Factortame** (C-213/89, 1990)
+- **Responsabilidad patrimonial del Estado**: **Francovich** (1991)
+  - **Brasserie du Pêcheur y Factortame** (1996), tres requisitos
+    - norma que confiere derechos a particulares
+    - violación suficientemente caracterizada
+    - causalidad directa
+  - Límites: **equivalencia y efectividad**
+  - **Comisión contra España** (C-278/20, 2022): requisitos de la **Ley 40/2015** contrarios a la efectividad
+
+## 4.3. La red SOLVIT
+- Desde **2002**: solución **gratuita, rápida y extrajudicial** de problemas por aplicación incorrecta del Derecho de la Unión por otra administración
+  - Fuera de tribunales. Soluciones **no vinculantes**
+- Red: Estados miembros, Islandia, Liechtenstein y Noruega. Parte del **Portal Digital Único**
+- Funcionamiento
+  - Caso en línea en el centro del país del interesado
+  - Centro del Estado del problema acepta en **una semana**
+  - **Diez semanas** para solucionar
+- España: **Ministerio de Asuntos Exteriores, Unión Europea y Cooperación**
+
+## 4.4. Otros instrumentos
+- **EU Pilot** (2008): diálogo informal previo a la infracción
+- **Reglamento (CE) 2679/98** («Reglamento fresas»): obstáculos graves a la libre circulación
+  - Modificado, no derogado, por el **Reglamento (UE) 2024/2747** (**IMERA**), aplicable desde el **29 de mayo de 2026**
+- **SMET** (2020): Comisión y Estados abordan las barreras más graves
+- **Proyecto Línea Abierta** (1993): Secretaría de Estado de Comercio, **ICEX** y **CEOE**
+  - Predominan obstáculos de normas técnicas, luego envases y etiquetado
+- **Estrategia para el Mercado Único** (21 de mayo de 2025): **«Terrible Ten»**
+  - Refuerzo de SOLVIT y SMET, y responsable de alto nivel por Estado
+
+# 5. CONCLUSIÓN
+- Tres posibilidades prácticas
+  - **Conocer** las reglamentaciones (**TRIS**, **ePing**)
+  - **Anticiparse**: observaciones a los proyectos
+  - **Defenderse**: Comisión o SOLVIT, tribunales nacionales, indemnización
+- Mercado único inacabado: Estrategia 2025 e **IMERA**
+- La Directiva 2015/1535 sigue siendo la mejor herramienta preventiva
