@@ -1,123 +1,137 @@
 # 1. INTRODUCCIÓN
 
-- El envasado alimentario responde a una doble exigencia, productos naturales y mayor vida útil, con un papel técnico e industrial estratégico.
-- La legislación sobre seguridad alimentaria adopta un enfoque integral y preventivo, "del campo a la mesa".
-- El marco europeo se articula en España mediante el **Real Decreto 1055/2022**, de envases y residuos de envases, en consonancia con la **Ley 7/2022** de residuos y el **Reglamento (UE) 2025/40** (PPWR).
+- Consumidor: productos **naturales** y con **mayor vida útil**, el envasado es estratégico
+- Libre circulación de alimentos sanos y seguros, principio del **Mercado Interior UE**
+- Enfoque **global y preventivo** "del campo a la mesa"
+- UE armoniza envases: protección ambiental, economía circular, sin barreras ni distorsiones
+- Marco nacional: **Real Decreto 1055/2022**, en consonancia con **Ley 7/2022** y **Reglamento (UE) 2025/40 (PPWR)**
 
 # 2. ENVASES Y EMBALAJES
 
-## 2.1. Definición
-
-- El **Real Decreto 1055/2022** define envase como todo producto para contener, proteger, manipular, distribuir y presentar mercancías, incluidos los desechables.
-- Clasificación en tres categorías:
-  - **Envases primarios**: unidad de venta destinada al consumidor final.
-  - **Envases secundarios**: agrupación de unidades de venta, separable sin alterar el producto.
-  - **Envases terciarios**: facilitan manipulación y transporte, evitando deterioro logístico.
-- El envase es también fuente de información legal, trazabilidad y etiquetado.
-
-## 2.2. Funciones
-
-- **Protección física**: frente a luz, suciedad y golpes, por ejemplo envases opacos que evitan la fotodegradación de la riboflavina.
-- **Protección química**: barrera frente a gases y control de la migración de humedad.
-- **Protección microbiológica**: frena contaminaciones cruzadas y el paso de patógenos.
-
-## 2.3. Técnicas de envasado
-
-- **Envasado tradicional**: aislamiento físico simple.
-- **Envasado al vacío**: extracción total del aire, frena microorganismos aerobios.
-- **Atmósferas controladas (AC)**: mezcla de gases (N2, CO2, O2) monitorizada y ajustada de forma constante, típica de cámaras frigoríficas.
-- **Atmósferas modificadas (MAP)**: sustitución del aire en el sellado, composición dinámica, exige cadena de frío estricta.
-- El vacío y el MAP son las técnicas más extendidas para alimentos grasos y perecederos.
-
-## 2.4. Materiales empleados
-
-- **Papel y cartón**: envolturas, cajas de transporte, huevos o congelados.
-- **Vidrio**: inerte, higiénico e impermeable, para líquidos y conservas.
-- **Plásticos**: **PET**, **PE** y **PP**, con restricción creciente del PVC.
-- **Metales**: hojalata, acero libre de estaño (TFS) y aluminio, para tratamiento térmico.
-- **Otros**: madera, textiles, cerámica o caucho.
-- Tecnologías avanzadas en MCA:
-  - **Envases activos**: absorbedores de oxígeno, reguladores de humedad, liberación antioxidante o antimicrobiana.
-  - **Envases inteligentes**: indicadores tiempo-temperatura (TTI) o sensores de frescura.
+- **Definición** (RD 1055/2022, sustituye a la Ley 11/1997)
+  - Todo producto de cualquier material para **contener, proteger, manipular, distribuir y presentar** mercancías, en cualquier fase de la cadena
+  - Incluye artículos desechables o de un solo uso
+- **Clasificación**
+  - **Venta o primarios**: unidad de venta al consumidor final
+  - **Colectivos o secundarios**: agrupación de unidades de venta, separable sin alterar el producto
+  - **Transporte o terciarios**: facilitan manipulación y transporte, evitan deterioro físico
+- El envase es fuente de **información legal, trazabilidad y etiquetado**
+- **Funciones**: conservar, reducir deterioro y aditivos
+  - **Física**: luz, suciedad, golpes (opacos evitan fotodegradación de la riboflavina)
+  - **Química**: barrera a gases (oxígeno, vapor de agua) o intercambio selectivo, evita oxidación
+  - **Microbiológica**: frena contaminación cruzada y paso de patógenos y alterantes
+- **Técnicas de envasado**
+  - **Tradicional**: aislamiento físico
+  - **Vacío**: extrae el aire, frena aerobios y oxidación
+  - **Atmósferas controladas (AC)**: mezcla de gases (nitrógeno, CO2, oxígeno) monitorizada y ajustada de continuo, cámaras frigoríficas
+  - **Atmósferas modificadas (MAP)**: gas sustituido al sellar, composición evoluciona por respiración y permeabilidad, exige **cadena de frío**
+  - Vacío y MAP, las más extendidas para alimentos grasos y perecederos (enranciamiento)
+- **Materiales** (según alimento, temperatura, humedad, fotosensibilidad)
+  - **Papel y cartón**: envolturas, bolsas, cartón ondulado, cartoncillo
+  - **Vidrio**: inerte, higiénico, impermeable
+  - **Plásticos**: PET, PE, PP, PVC restringido
+  - **Metales**: hojalata, acero libre de estaño (TFS), aluminio
+  - Otros: madera, textiles, cerámica, caucho
+- **Envases activos**: absorbedores de oxígeno, reguladores de humedad, liberación de antioxidantes o antimicrobianos
+- **Envases inteligentes**: indicadores tiempo-temperatura (TTI), sensores de frescura
 
 # 3. LEGISLACIÓN Y NORMALIZACIÓN
 
-## 3.1. Materiales en contacto con alimentos (MCA)
+- Objetivos UE: eliminar divergencias entre Estados sobre MCA, armonizar polímeros y metales, pautas sobre contenido efectivo y residuos
 
-- Los MCA comprenden todo material en contacto directo o indirecto con alimentos, incluidos envases de bebida y redes de agua potable.
-- Deben ser suficientemente inertes para evitar migración de sustancias que dañen la salud o alteren la composición u organolépticas del alimento.
-- Norma pilar: **Reglamento (CE) 1935/2004**, sobre materiales y objetos en contacto con alimentos, modificado por el **Reglamento (UE) 2019/1381** sobre transparencia y sostenibilidad de la evaluación del riesgo. Establece:
-  - Requisitos generales de inocuidad (art. 3).
-  - Requisitos especiales para envases activos e inteligentes (art. 4).
-  - Normas de etiquetado, símbolo de "copa y tenedor" (art. 15).
-  - Declaración de Conformidad y documentación de apoyo (art. 16).
-  - Trazabilidad obligatoria en todas las etapas (art. 17).
-- Las Buenas Prácticas de Fabricación (BPF) se recogen en el **Reglamento (CE) 2023/2006**, y la **EFSA** evalúa el riesgo científico.
-- Quedan fuera los recubrimientos comestibles que forman parte del alimento, pero sí se incluyen los de corteza de quesos, embutidos o ceras de frutas si no son de consumo.
-- En España, la normalización técnica se coordina a través de **UNE** y sus Comités Técnicos de Normalización (CTN).
+## 3.1. Legislación específica de materiales en contacto con los alimentos
 
-## 3.2. Residuos de envases
+- **MCA**: materiales en contacto directo o indirecto con alimentos (fabricación, transformación, transporte, comercialización), incluidos envases de bebida y redes de agua potable
+- Deben ser **inertes**: sin migración que dañe la salud, altere la composición o las características organolépticas
+- **Reglamento (CE) 1935/2004**, marco de MCA (derogó Directivas 80/590/CEE y 89/109/CEE), modificado por **Reglamento (UE) 2019/1381** (transparencia y sostenibilidad del riesgo)
+  - **Art. 3**: requisitos generales de inocuidad
+  - **Art. 4**: envases activos e inteligentes
+  - **Art. 15**: etiquetado (símbolo "copa y tenedor")
+  - **Art. 16**: **Declaración de Conformidad** (DoC) y documentación
+  - **Art. 17**: trazabilidad obligatoria
+- **Buenas Prácticas de Fabricación**: Reglamento (CE) 2023/2006
+- **EFSA**: evaluación científica del riesgo
+- Fuera del ámbito: recubrimientos comestibles. Dentro: cortezas de queso, embutidos, ceras de fruta no consumibles
+- Normalización en España: **UNE**, Comités Técnicos (CTN), dimensiones, capacidades y ensayos de migración
 
-- Norma central europea: **Reglamento (UE) 2025/40** (PPWR), de aplicación directa e inmediata, que sustituye a la **Directiva 94/62/CE**. Requerimientos:
-  - Ecodiseño y reciclabilidad obligatoria desde el **1 de enero de 2030**, con grados A, B o C.
-  - Eliminación de envases superfluos, dobles paredes o falsos fondos.
-  - Reducción de residuos del **5 %** en 2030, **10 %** en 2035 y **15 %** en 2040 (base 2018).
-- En España, el **Real Decreto 1055/2022**, en el marco de la **Ley 7/2022** de residuos y suelos contaminados. Introduce:
-  - **Responsabilidad Ampliada del Productor (RAP)**, para envases comerciales, industriales y domésticos.
-  - Registro de Productores de Producto, con reporte periódico de toneladas puestas en el mercado.
-  - Venta a granel obligatoria de frutas y hortalizas frescas (salvo lotes de **1,5 kg** o más u otras excepciones), y destino de al menos el **20 %** de la superficie de venta a productos sin embalaje primario en comercios de **400 m²** o más.
-  - Adaptación progresiva al PPWR.
-- La RAP se articula mediante Sistemas Colectivos (**SCRAP**) como **ECOEMBES**, **ECOVIDRIO**, **CICLOPLAST**, **IMPLICA** o **VALORORA**, con equivalentes internacionales como el Sistema Dual alemán, ARA (Austria), Citéo (Francia) o Fost Plus (Bélgica).
-- La **Directiva (UE) 2019/904** sobre plásticos de un solo uso (SUP) está integrada en la **Ley 7/2022** y el **Real Decreto 1055/2022**, con prohibición de pajitas, cubiertos y poliestireno expandido, y el Impuesto especial sobre envases de plástico no reutilizables.
-- Se enmarcan en la Estrategia España Circular 2030, con metas para 2030: reducción del **30 %** de consumo de materiales respecto al PIB, **15 %** en generación de residuos, **50 %/20 %** de desperdicio alimentario (hogares/cadena) y **10 %** de reutilización en residuos municipales.
+## 3.2. Legislación europea sobre residuos de envases
 
-## 3.3. Otras disposiciones de normalización
+- **Reglamento (UE) 2025/40 (PPWR)**, deroga la Directiva 94/62/CE, aplicación **directa y uniforme**
+  - **Reciclabilidad**: desde el **1 de enero de 2030** todos los envases reciclables, grados A, B o C
+  - Prohibidos envases superfluos: dobles paredes, falsos fondos
+  - Reducción de residuos de envases (base 2018): **5 % en 2030, 10 % en 2035, 15 % en 2040**
+- **Real Decreto 1055/2022**, norma de cabecera en España (derogó Ley 11/1997 y RD 782/1998), en el marco de la **Ley 7/2022**
+  - **Responsabilidad Ampliada del Productor (RAP)**: coste total de gestión, también envases comerciales e industriales
+  - **Registro de Productores de Producto**: toneladas puestas en el mercado
+  - **Granel**: frutas y hortalizas frescas enteras a granel (salvo lotes de 1,5 kg o más, variedades protegidas o calidad diferenciada, riesgo de deterioro)
+  - Comercios de **400 m² o más**: al menos **20 %** de la sala de ventas sin embalaje primario
+  - Adaptación progresiva al PPWR
+- **SCRAP**: ECOEMBES (ligeros y papel/cartón), ECOVIDRIO, CICLOPLAST, industriales IMPLICA y VALORORA
+  - Modelos: Sistema Dual (Alemania), ARA (Austria), Citéo (Francia), Fost Plus (Bélgica)
+- **Plásticos de un solo uso**: Directiva (UE) 2019/904 integrada en Ley 7/2022 y RD 1055/2022
+  - Prohíbe pajitas, cubiertos, bastoncillos, recipientes de poliestireno expandido
+  - Impuesto especial sobre envases de plástico no reutilizables
+- **España Circular 2030**, metas 2030
+  - **30 %** menos consumo de materiales respecto al PIB
+  - **15 %** menos residuos
+  - Desperdicio alimentario: **50 %** menos en hogares y minoristas, **20 %** en producción
+  - **10 %** de reutilización en residuos municipales
 
-- **Directiva 2007/45/CE**: liberaliza tamaños nominales, salvo gamas obligatorias para vinos y bebidas espirituosas.
-- **Reglamento (CE) 1272/2008** (CLP): clasificación, etiquetado y envasado de sustancias y mezclas peligrosas.
-- Normativa sobre contenido efectivo y marcado "e".
-- Código CODEX Alimentarius: prácticas de envasado y transporte de frutas y hortalizas tropicales frescas.
+## 3.3. Otras disposiciones legislativas sobre normalización de envases y embalajes
+
+- **Directiva 2007/45/CE**: libera tamaños nominales, quedan gamas obligatorias (vinos y espirituosas)
+- **Reglamento (CE) 1272/2008 (CLP)**: clasificación, etiquetado y envasado de sustancias y mezclas
+- **Contenido efectivo**: cantidades nominales y marcado **"e"**
+- **CODEX Alimentarius**: código de envasado y transporte de frutas y hortalizas tropicales frescas
 
 # 4. INTERACCIONES PRODUCTO-ENVASE
 
-- Según el Código Alimentario Español, todo material en contacto con alimentos debe estar fabricado con materias primas de listas positivas, ser impermeable y hermético, no absorber producto, no ceder sustancias extrañas y cumplir los límites de migración.
-- La migración es la transferencia de sustancias desde el envase al alimento por fenómenos físico-químicos.
-- **Metales**: hojalata, TFS y aluminio, con riesgo de corrosión ácida (abombamiento) y cesión de hierro/estaño, prevenido con barnices epoxídicos.
-- **Vidrio**: inerte, aunque puede ceder iones de fundentes colorantes.
-- **Plásticos**: riesgo de migración de monómeros y aditivos, regulados por el **Reglamento (UE) 10/2011**, con:
-  - Lista positiva de sustancias autorizadas.
-  - Límite de Migración Global (**LMG**), fijado en **10 mg/dm2** de superficie de contacto.
-  - Límites de Migración Específica (**LME**), en mg/kg de alimento.
-- Plástico reciclado: **Reglamento (UE) 2022/1616**, sobre tecnologías de descontaminación.
-- Derivados epoxídicos: el **Reglamento (CE) 1895/2005** prohíbe el BFDGE y el NOGE, mientras el BADGE queda autorizado con límites.
-- **Cerámica**: riesgo de cesión de plomo y cadmio, regulado por la **Directiva 84/500/CEE** y, a nivel nacional, por el **Real Decreto 891/2006**, con límites y declaración de conformidad obligatoria.
-- **Maderas, cartón y celulosa**: riesgo por tratamientos químicos, regulado por la **Directiva 2007/42/CE** para celulosa regenerada y, en España, por el **Real Decreto 1413/1994**.
-- **Caucho**: riesgo de N-nitrosaminas en tetinas y chupetes, regulado por la **Directiva 93/11/CEE**, transpuesta por el **Real Decreto 1184/1994**.
+- **Código Alimentario Español**: materiales con listas positivas, impermeables y herméticos, sin absorber producto, sin trasladar sustancias extrañas, dentro de límites de migración
+- **Migración**: transferencia de sustancias del envase al producto, riesgo para la salud o alteración inaceptable, con límites máximos comunitarios
+- **Metales**: hojalata, TFS, aluminio
+  - Corrosión ácida con hidrógeno (abombamiento), cesión de hierro y estaño (color, sabor metálico)
+  - Prevención: barnices epoxídicos o poliméricos
+- **Vidrio**: inerte, puede ceder iones de fundentes colorantes
+- **Plásticos**: migración de monómeros, aditivos (plastificantes, antioxidantes), oligómeros
+  - **Reglamento (UE) 10/2011**: lista positiva, **LMG** (migración global), **LME** (migración específica, con simulantes alimentarios)
+  - Reciclado: **Reglamento (UE) 2022/1616** (derogó Reglamento (CE) 282/2008), procesos de descontaminación
+- **Derivados epoxídicos**: **Reglamento (CE) 1895/2005**, prohibidos BFDGE y NOGE, BADGE y derivados hidratados autorizados con límites
+- **Cerámica**: cesión de plomo y cadmio
+  - **Directiva 84/500/CEE**: cantidades máximas
+  - **Real Decreto 891/2006**: método, límites y declaración de conformidad
+- **Madera, cartón y celulosa**: riesgo en fungicidas y tratamientos
+  - Celulosa regenerada: **Directiva 2007/42/CE**, caras impresas sin contacto con el alimento
+  - **Real Decreto 1413/1994**, modificado por **RD 691/2005**
+- **Caucho**: **Directiva 93/11/CEE**, N-nitrosaminas en tetinas y chupetes, transpuesta por **RD 1184/1994**
 
 # 5. ENSAYOS Y DEFECTOS. PROCEDIMIENTOS
 
-- Se controlan las características intrínsecas y extrínsecas mediante ensayos físico-químicos y mecánicos.
-- **Envases flexibles**: propiedades de barrera (impermeabilidad, conductividad) y propiedades ópticas (impresión, brillo, resistencia a abrasión).
-- **Envases metálicos**: propiedades mecánicas, geométricas, conductividad, integridad del barniz y resistencia a la corrosión.
-- **Envases de vidrio**: hermeticidad, resistencia térmica y mecánica, inercia frente a óxidos, densidad y microdureza.
-- Defectos críticos destacados:
-  - Cesión de metales pesados (plomo, cadmio) o sílice.
-  - Defectos en maderas y papel, tratamientos no autorizados u olores extraños.
-  - Defectos en plásticos, coloración no uniforme, sellado defectuoso o permeabilidad excesiva.
-  - Defectos en metálicos, oquedades, fisuras o corrosión.
-  - Incumplimientos de etiquetado, impresión interna sin barrera, menciones engañosas o desviaciones de peso neto.
+- Control más allá de la migración: características intrínsecas y extrínsecas, procedimientos físico-químicos y mecánicos
+- **Envases flexibles** (papel, cartón, plástico)
+  - Barrera: absorción, porosidad, impermeabilidad (agua, vapor, gases, aceites), compatibilidad
+  - Mecánicos: pinchazo, rasgado, tracción, impacto, flexión
+  - Ópticos: impresión, anti-fog, brillo, abrasión, envejecimiento, desteñido
+- **Envases metálicos**: dureza, tracción, compresión, torsión, geometría, integridad del barniz, corrosión, porosidad, hermeticidad de soldadura y doble cierre
+- **Envases de vidrio**: hermeticidad de cierres, choque térmico y mecánico, inercia frente a óxidos, densidad, índice de refracción, microdureza
+- **Defectos críticos**
+  - Cesión de **metales pesados** (plomo, cadmio) o sílice en vidrio y cerámica
+  - **Madera y papel**: parasitadas, nudos, fungicidas no autorizados, cloruro de magnesio, olores, humedad
+  - **Plásticos**: color no uniforme, sellado defectuoso, permeabilidad excesiva, acidez y saponificación en aceites
+  - **Metálicos**: poros, fisuras, grietas de enfriamiento, pestañado o doble cierre defectuoso, corrosión
+  - **Etiquetado e impresión**: impresión interna sin barrera, menciones engañosas, desviación del contenido neto, capacidades nominales no autorizadas
 
 # 6. IMPLICACIONES COMERCIALES
 
-- Los envases, tras su función protectora, se integran en los residuos sólidos urbanos (RSU), un reto ambiental y punto de tensión entre libre comercio y protección ambiental.
-- El Decreto Töpfer alemán de 1991 originó un efecto dominó que derivó en la **Directiva 94/62/CE**, hoy sustituida por el **Reglamento (UE) 2025/40**.
-- La regulación afecta a la competitividad industrial y los costes logísticos, evitando barreras encubiertas al comercio.
-- El **Real Decreto 1055/2022** y el **Reglamento (UE) 2025/40** generalizan la RAP y los SCRAP, con definiciones estándar y criterios homogéneos de reutilización y reciclabilidad.
-- La estrategia de economía circular busca reducir el vertido, maximizar la valorización y el reciclado, y reducir emisiones de gases de efecto invernadero.
-- Se promueve el ecodiseño y los materiales compostables bajo normas como la **UNE-EN 13432**, y se prohíben los plásticos oxodegradables por la Directiva SUP y la **Ley 7/2022**.
+- Envases pasan a residuos sólidos urbanos, tensión entre **libre comercio y medio ambiente**
+- **Decreto Töpfer alemán (1991)**: efecto dominó (Francia, Austria, Bélgica), armonización con la Directiva 94/62/CE, hoy **PPWR**
+- Impacto en competitividad y costes logísticos, evitar barreras encubiertas y deslocalizaciones
+- RD 1055/2022 y PPWR: **RAP** y **SCRAP**, definiciones y criterios homogéneos de reutilización y reciclabilidad
+- Economía circular: menos vertedero, reciclado de calidad, menos GEI y materias primas vírgenes
+- Ecodiseño: compostables o biodegradables (**UNE-EN 13432**), menos sobreenvasado
+- **Plásticos oxodegradables** prohibidos (Directiva SUP, Ley 7/2022): microplásticos
 
 # 7. CONCLUSIÓN
 
-- Los envases y embalajes confluyen en tres pilares, la protección del alimento, la garantía de inocuidad mediante el control de la migración bajo el **Reglamento (CE) 1935/2004** y el **Reglamento (UE) 10/2011**, y la gestión ambiental tras el **Reglamento (UE) 2025/40** y el **Real Decreto 1055/2022**.
-- La evolución hacia reglamentos de aplicación directa frente a directivas asegura armonización uniforme en los 27 Estados Miembros.
-- Para el Servicio de Inspección SOIVRE, el conocimiento de este doble marco, seguridad del envase (MCA) y calidad comercial, etiquetado y sostenibilidad ambiental, resulta imprescindible para el control del comercio exterior agroalimentario.
+- Tres pilares: **protección** del alimento, **inocuidad** (MCA: Reglamentos (CE) 1935/2004 y (UE) 10/2011), **gestión ambiental** y economía circular (PPWR, RD 1055/2022, Ley 7/2022)
+- Tendencia a **Reglamentos** de aplicación directa: armonización uniforme en 27 Estados
+- SOIVRE: doble marco, seguridad envase-alimento (MCA) y calidad comercial, etiquetado y sostenibilidad

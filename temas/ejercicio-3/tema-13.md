@@ -1,122 +1,192 @@
-# 1. Introducción
-- **Evolución económica de España:**
-  - Años 50: Estructura autárquica, dependencia tecnológica y sectores intensivos en mano de obra.
-  - Liberalización: Plan de Estabilización (1959), ingreso en la CEE (1986) y en la OMC (1995).
-  - Escenario actual: Mayor apertura, fuerte competencia internacional y necesidad de internacionalización.
-- **Problemática del exportador:**
-  - Complejidad de los mercados (inestabilidad, normas distintas).
-  - Venta a crédito como norma habitual: La empresa financia sus ventas y asume el riesgo de crédito (insolvencia).
-- **Instrumentos de apoyo:**
-  - Públicos: ICEX, Cámaras, CESCE, ICO, FIEM.
-  - Privados (cobertura de riesgos financieros):
-    - Medios de pago con garantía (crédito documentario).
-    - Seguro de crédito.
-    - Instrumentos de financiación: Factoring, Forfaiting y Leasing.
+# 1. INTRODUCCIÓN
 
-# 2. El Factoring
+- **Apoyo público** a la internacionalización: instrumentos comerciales, fiscales y financieros (temas anteriores)
+- Este tema: **instrumentos privados** de financiación y gestión del crédito comercial
+- **Crédito comercial**
+  - Fuente de financiación para el comprador
+  - Necesidad de financiación y exposición al **riesgo de crédito** para el vendedor
+  - Riesgo: impago a vencimiento, mayor en operaciones internacionales (distancia, diferencias jurídicas, sistemas de pago, divisas)
+- **Alternativas de cobertura**
+  - Medios de pago con garantías (**crédito documentario**)
+  - **Seguro de crédito** a la exportación (CESCE)
+  - **Factoring** y **Forfaiting**
+  - **Leasing** para activos productivos
+  - **Confirming**
+- Distintas características, costes y asunción de riesgos: utilidad según necesidades de la empresa y naturaleza de la operación
+
+# 2. EL FACTORING. CONCEPTO, CARACTERÍSTICAS GENERALES Y OPERATIVA
 
 ## 2.1. Concepto
-- Fórmula de administración y financiación basada en la cesión de facturas (crédito comercial) a una compañía especializada.
-- **Función:** Gestión de cobros y adelanto de fondos a cambio de comisiones e intereses.
-- **Público objetivo:** Especialmente diseñado para PYMES (satisface necesidades de circulante y suple falta de infraestructura exportadora).
+
+- Gestión y, en su caso, **financiación** del crédito comercial mediante **cesión a un factor** de créditos frente a clientes (facturas)
+- El factor
+  - Gestiona y cobra los créditos
+  - Si se pacta, **anticipa** el importe al cedente
+  - Cobra comisiones y, con financiación, coste financiero
+  - Asume o no el **riesgo de impago** según contrato
+- Útil para todo tamaño, sobre todo **PYME**
+  - Externaliza gestión, mejora liquidez, reduce plazo efectivo de cobro
+  - En internacional, facilita gestión de clientes en otros mercados sin estructura ni información crediticia
+- No elimina las obligaciones del exportador ni los riesgos no asumidos por el factor
 
 ## 2.2. Características
-- Contrato atípico (mencionado en Ley 3/94 y R.D. 309/2020).
-- **Intervinientes:**
-  - Factor (Compañía de Factoring, vinculada a entidad financiera).
-  - Cedente (Empresa vendedora/exportadora).
-  - Deudor (Comprador/importador).
-- **Tipos de Servicios:**
-  - **Administrativo:** Gestión y seguimiento integral de facturas (genera comisiones).
-  - **Financiero:**
-    - Estudio de solvencia de clientes (líneas de crédito).
-    - Pago anticipado (límite habitual 80-90%). Genera intereses.
-  - **Aseguramiento (Opcional):** Cobertura del riesgo de insolvencia.
-- **Modalidades:**
-  - **Factoring con recurso:** El Factor anticipa fondos pero no asume riesgo de insolvencia (devuelve la factura si no se cobra).
-  - **Factoring sin recurso:** El Factor asume el riesgo de insolvencia del deudor.
-    - Condición: Créditos legítimos (no cubre disputas comerciales o productos defectuosos).
-    - Coste: Más elevado por asunción de riesgo.
+
+- **Marco jurídico**
+  - Sin regulación contractual específica y completa: rige lo pactado y las normas generales
+  - Actividad de los **establecimientos financieros de crédito**: **Ley 5/2015** de fomento de la financiación empresarial
+  - Régimen desarrollado por el **Real Decreto 309/2020**
+  - No son entidades de crédito, pero sí regulados y supervisados
+- **Sujetos**
+  - **Factor**: adquiere o gestiona créditos, financia y asume insolvencia
+  - **Cedente**: vendió a crédito y cede los derechos de cobro
+  - **Deudor**: comprador obligado al pago
+- **Tres servicios**
+  - **Administrativo**: gestión y seguimiento de facturas, informes de incidencias y estado de cuentas, genera comisiones
+  - **Financiero**
+    - Análisis de deudores y límites de crédito
+    - Anticipo total o parcial
+    - Coste financiero más comisiones de gestión y de cobertura
+  - **Asunción del riesgo de impago**
+    - **Con recurso**: el factor no asume la insolvencia, el cedente responde
+    - **Sin recurso**: el factor asume la insolvencia dentro de límites pactados
+    - El cedente sigue respondiendo de existencia, legitimidad y validez de los créditos
+    - Sin recurso suele costar más
 
 ## 2.3. Operativa
-- **Fase de estudio:** El Factor evalúa costes basándose en:
-  - Empresa: Sector, volumen de facturas, importes, plazos.
-  - Deudor: Estudio de solvencia (a veces mediante corresponsales).
-  - Tipo de contrato: Con/sin recurso y nivel de anticipo.
-- **Fase contractual:** Firma y cambio de titularidad de los créditos. Requisitos: existencia de factura, venta lícita y a crédito.
-- **Notificación:** Carta al deudor indicando que debe pagar al Factor.
 
-## 2.4. Ventajas e Inconvenientes
-- **Ventajas:** Disminuye carga administrativa, información actualizada de deudores, liquidez anticipada y previsible, eliminación de riesgo (en modalidad sin recurso).
-- **Inconvenientes:** Alto coste (intereses altos) y pérdida de contacto directo/información del cliente.
-- **Perfil ideal:** Actividad exportadora estable, clientes habituales y ventas distribuidas.
+- **Contratación**
+  - Información de la empresa: sector, número e importe de facturas mensuales, forma y plazo medio de cobro
+  - Información del deudor: país, antigüedad de la relación y, en sin recurso, estudio de solvencia (apoyo en sociedades de factoring del país del comprador)
+  - La empresa elige tipo de contrato (con o sin recurso) y anticipación deseada
+- **Contrato**
+  - Créditos cedibles, límites de financiación, condiciones del anticipo, comisiones, régimen de riesgo
+  - Créditos de operaciones comerciales reales, válidas y exigibles
+  - Se informa a los deudores de la cesión, el pago puede hacerse al factor
+- **Ventajas**
+  - Mejora de liquidez por anticipo
+  - Menor carga administrativa
+  - Información sobre solvencia de clientes
+  - Sin recurso: menor riesgo de insolvencia
+  - Externalización recurrente de la cartera
+- **Inconvenientes**
+  - Comisiones y coste financiero
+  - Pérdida parcial de control de cobros
+  - Criterios de aceptación y límites de crédito del factor
+- Adecuado para empresas con alto volumen de ventas a crédito, cartera diversificada y necesidades recurrentes
 
-# 3. El Forfaiting
+# 3. EL FORFAITING. CONCEPTO, CARACTERÍSTICAS GENERALES Y OPERATIVA
 
 ## 3.1. Concepto
-- Instrumento financiero de ayuda a la exportación.
-- Venta en firme (sin recurso) a una entidad financiera de documentos de pago aceptados internacionalmente (letras o pagarés).
-- **Finalidad:** Solución para PYMES que exportan a países de elevado riesgo (difícil financiación) o para penetración en nuevos mercados.
 
-## 3.2. Características y Diferencias con Factoring
-- Intervinientes: Cedente, Deudor y Forfaiter (Tenedor).
-- **Rasgos distintivos:**
-  - Uso exclusivo para operaciones internacionales.
-  - Cesión de documentos ejecutivos (letras/pagarés), no facturas.
-  - Siempre es venta "sin recurso" (el banco asume el riesgo total).
-  - Plazos medios/largos (6 meses a 5 años).
-  - Operaciones de importe elevado, número reducido de efectos y pocos clientes.
-  - Suele requerir aval del banco importador.
+- Financiación del comercio exterior: el exportador **cede de forma definitiva y sin recurso** los derechos de cobro
+  - Instrumentados en efectos comerciales u otros documentos de pago
+  - Recibe el importe anticipado, descontados los costes
+  - Transmite el riesgo de impago al **Forfaiter** dentro de los límites del contrato
+- Útil en operaciones internacionales de **importe elevado** y pago aplazado, con plazos superiores a los del factoring
+- La entidad analiza solvencia del deudor, garantías, país y divisa, y puede exigir **avales**
+- Riesgos del forfaiter cubribles con seguro o garantía
 
-## 3.3. Operativa y Costes
-- Exportador recibe efectos aceptados del importador.
-- Banco (Forfaiter) evalúa riesgo y compra los efectos.
-- Anticipo de fondos al exportador (descontando costes).
-- **Costes:**
-  - Intereses: Por el tiempo de anticipo (según divisa).
-  - Comisiones: Por riesgo y gestión administrativa.
+## 3.2. Características
 
-## 3.4. Ventajas e Inconvenientes
-- **Ventajas:** Liquidez, eliminación de riesgos (político, comercial, cambio, administrativo), tipo fijo conocido a priori.
-- **Inconvenientes:** Alto coste, dificultad para obtener avales de importadores.
+- Gran similitud con el factoring, con rasgos distintivos
+- Instrumento principal de **comercio internacional** con pago aplazado
+- Créditos en **letras de cambio**, pagarés u otros documentos, respaldados por garantías
+- Venta **sin recurso**: el forfaiter asume el impago del deudor
+- Vencimientos superiores a los del factoring, hasta **varios años**
+- Operaciones de mayor importe con pocos efectos y deudores (factoring: cartera numerosa y recurrente)
 
-# 4. El Leasing
+## 3.3. Operativa
+
+- **Proceso**
+  - El exportador suministra y pacta pago aplazado (letras, pagarés)
+  - Solicita la operación a una entidad especializada
+  - La entidad analiza deudor, país, operación, divisa y garantías
+  - Cesión sin recurso y cobro anticipado menos costes financieros y comisiones
+  - Conoce desde el inicio las condiciones económicas
+  - Si el deudor no paga, el forfaiter soporta el riesgo asumido
+- **Ventajas**
+  - Liquidez inmediata
+  - Eliminación del riesgo de impago asumido
+  - Transferencia de riesgos comerciales y políticos
+  - Coste previsible, sobre todo con tipo fijo
+  - Menor carga administrativa y capacidad de ofrecer financiación aplazada al importador
+- **Inconvenientes**
+  - Coste financiero y comisiones
+  - Posible exigencia de avales
+  - Riesgo aceptable del deudor y del país
+  - Poco adecuado para pequeños importes o carteras amplias y recurrentes
+
+# 4. EL LEASING. CONCEPTO, CARACTERÍSTICAS GENERALES Y OPERATIVA
 
 ## 4.1. Concepto
-- Contrato de arrendamiento financiero de bienes muebles o inmuebles con opción de compra final a precio prefijado (valor residual).
-- Bien destinado a explotación económica (capital productivo).
+
+- **Leasing o arrendamiento financiero**: una entidad adquiere un bien elegido por el usuario y lo cede a cambio de **cuotas periódicas** durante un plazo
+- Normalmente con **opción de compra** final por valor previamente establecido
+- Muebles y determinados inmuebles
+- Financia activos productivos sin desembolso íntegro inicial
 
 ## 4.2. Características
-- **Financiación del 100%** de la inversión (sin desembolso inicial).
-- **Opción de compra:** Al final del contrato (valor residual suele ser bajo, equivalente a una cuota más). Opciones alternativas: devolver el bien o renovar contrato.
-- **Cuotas:** Incluyen intereses + amortización.
-- **Mantenimiento:** A cargo del arrendatario (usuario).
-- **Seguro:** Obligación de asegurar el bien contra pérdida.
-- **Duración mínima legal (RD 309/2020):** 2 años (muebles), 10 años (inmuebles).
 
-## 4.3. Modalidades
-- **Leasing Financiero:** Estándar descrito. Entidad compra y arrienda.
-- **Lease-Back (Retroleasing):** Empresa vende su activo a la sociedad de Leasing y lo alquila de nuevo.
-  - Objetivo: Obtener liquidez (convertir activo fijo en líquido).
-- **Leasing Operativo:** Arrendador es el fabricante/distribuidor.
-  - Revocable en cualquier momento.
-  - Cuotas más altas.
-  - Mantenimiento a cargo del arrendador.
-- **Leasing Apalancado (Leveraged):** Operaciones de alto importe con intervención de un tercer prestamista.
+- La arrendadora conserva la **propiedad** durante el contrato y cede el uso
+  - Útil para bienes de alto valor: maquinaria, bienes de equipo, instalaciones, vehículos
+- **Cuotas periódicas**
+  - Importe según valor del bien, plazo, coste financiero y condiciones
+  - El arrendatario asume gastos de uso y conservación, y puede exigirse seguro
+- **Opción de compra** final por importe establecido o determinable
+  - Adquirir la propiedad u otras alternativas si el contrato lo permite
 
-## 4.4. Ventajas e Inconvenientes
-- **Ventajas:** Cuotas deducibles fiscalmente, financiación total sin afectar circulante, rapidez frente a préstamos, acceso a propiedad final.
-- **Inconvenientes:** Coste financiero (interés) superior al de un préstamo hipotecario.
+## 4.3. Operativa
 
-# Conclusión
-**El Confirming**
-- **Concepto:** Servicio financiero de gestión de pagos a proveedores
-- **Operativa:**
-  - Cliente conforma la factura y avisa al banco.
-  - Banco confirma al proveedor y ofrece anticipo.
-  - Proveedor decide si anticipar (coste financiero) o esperar al vencimiento.
-- **Ventajas:**
-  - **Empresa (Cliente):** Flexibilidad de tesorería, rentabilización de puntas de tesorería.
-  - **Proveedor:** Financiación inmediata sin consumir riesgo bancario propio (CIRBE), cobro asegurado.
-  - **Banco:** Acceso a nuevos clientes, concentración de riesgo en empresa confirmadora.
-- **Inconvenientes:** Pérdida de iniciativa de cobro para el proveedor y obligación de trabajar con entidad concreta.
+- **Proceso**
+  - La empresa selecciona el activo y sus condiciones
+  - La arrendadora (entidad de crédito o establecimiento financiero de crédito) lo adquiere y lo cede por contrato
+  - Se fijan cuotas y, en su caso, opción de compra
+- **Régimen fiscal**: **artículo 106 de la Ley 27/2014** del Impuesto sobre Sociedades
+  - Arrendador: entidad de crédito o establecimiento financiero de crédito
+  - Duración mínima: **2 años** muebles, **10 años** inmuebles o establecimientos industriales
+  - Deducción de la carga financiera y, con límites, de la parte de cuota que recupera el coste del bien
+- **Otras modalidades**
+  - **Lease-Back (Retroleasing)**
+    - Se vende a la sociedad de leasing un bien propio (generalmente inmueble) y se arrienda
+    - Convierte activo fijo en liquidez y mantiene la opción de compra
+    - Efecto similar a préstamo hipotecario, más fácil de conceder, mayor riesgo de perder el bien
+  - **Leasing Operativo**
+    - Arrendador: fabricante, distribuidor o empresa especializada
+    - Orientado al uso, no necesariamente a la adquisición
+    - Plazos cortos, servicios adicionales (mantenimiento, asistencia técnica)
+    - Resolución, renovación o devolución según pacto
+  - **Leasing Apalancado (Leveraged Leasing)**
+    - Operaciones de elevado importe
+    - Una entidad financiera presta a largo plazo un porcentaje elevado
+    - Derecho preferente sobre pagos y bien arrendado
+- **Ventajas**
+  - Financia activos productivos con cuotas
+  - Menor desembolso inicial
+  - Facilita renovar equipos
+  - Adquisición mediante opción de compra
+  - Régimen fiscal del artículo 106
+- **Inconvenientes**
+  - Coste financiero
+  - Obligación de pagar cuotas
+  - Costes o restricciones de cancelación anticipada
+  - Propiedad del arrendador durante el contrato
+  - Uso, conservación y seguros según contrato
+
+# 5. CONCLUSIÓN
+
+- **Confirming**
+  - Entidad que gestiona los pagos de una empresa a sus proveedores y permite a estos anticipar el cobro
+  - Iniciativa de la compradora, que comunica facturas conformadas y vencimientos
+  - Proveedor: anticipa asumiendo coste financiero o espera al vencimiento
+  - Relacionado con el **Factoring inverso (Reverse Factoring)**
+  - Ventajas: gestión y planificación de pagos del cliente, financiación del proveedor, centralización para la entidad sobre el riesgo de la confirmadora
+- **Propuesta de Reglamento contra la morosidad**
+  - Comisión Europea, **septiembre de 2023**, para sustituir la **Directiva 2011/7/UE**
+  - Límite general de **30 días** para plazos de pago
+  - Limita procedimientos de aceptación o verificación que retrasen el pago
+  - Refuerzo de intereses y compensaciones por demora
+  - Control y ejecución más efectivos
+  - Parlamento Europeo: posición en primera lectura el **23 de abril de 2024**
+  - Sigue en tramitación: evolución pendiente, no Derecho vigente
+- Los instrumentos privados (Factoring, Forfaiting, Leasing, Confirming) gestionan liquidez, financiación y riesgo
+- **Complementan** los públicos: ICO, FIEM, CESCE, ICEX

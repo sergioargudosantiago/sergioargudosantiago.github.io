@@ -1,160 +1,204 @@
 # 1. INTRODUCCIÓN
-
-- Gran parte de la labor del **Servicio de Inspección SOIVRE** se desarrolla en los laboratorios de su Red, algunos acreditados por la **Entidad Nacional de Acreditación (ENAC)**.
-- Los Laboratorios SOIVRE están acreditados según la **Norma UNE-EN ISO/IEC 17025:2017**, que:
-  - Regula la implantación de un Sistema de Gestión de la Calidad en laboratorios de ensayo y calibración
-  - Establece los requisitos para demostrar la competencia en la realización de ensayos
-- **ENAC** es una asociación sin ánimo de lucro declarada, según el **Real Decreto 1715/2010**, único organismo con potestad pública para otorgar acreditaciones conforme al **Reglamento (CE) 765/2008**.
-- Las Marcas de ENAC (Ensayos, Inspección, Calibración, Verificación Medioambiental, Certificación, Inter-comparaciones, Verificación de emisiones) cuentan con el respaldo de Acuerdos Multilaterales de Reconocimiento suscritos por más de **120 países**, gestionados por **EA** (European Cooperation for Accreditation) y **Global Accreditation Cooperation Incorporated (Global ACI)**, resultante desde el **1 de enero de 2026** de la fusión entre ILAC e IAF.
-- La Red de Laboratorios SOIVRE consta de **16 laboratorios de ensayo** en la red periférica (entre otros, Vigo, Bilbao, Pamplona, Figueras, Barcelona, Valencia, Alicante, Murcia, Almería, Málaga, Sevilla, Algeciras, Huelva, Tenerife, Las Palmas y Madrid-Barajas) y un **Laboratorio Central en Madrid**, acreditado, encuadrado en la Subdirección General de Inspección, Certificación y Asistencia Técnica de Comercio Exterior.
-- Se aprecia una progresiva especialización de cada laboratorio en un campo determinado.
-- El **Laboratorio Central SOIVRE** (Centro Analítico de Inspección y Control de la Calidad del Comercio Exterior), creado en **1989**, coordina la red periférica, las aplicaciones informáticas, las adquisiciones de material, el asesoramiento técnico y de seguridad, la formación, el apoyo documental y el programa de acreditación.
-- Un laboratorio analítico debe garantizar datos de alta calidad mediante un **control de calidad** planificado y documentado, conjunto de medidas para conservar la fiabilidad de un método analítico.
-- Tipos de control de calidad:
-  - **Interno o intralaboratorio**: evaluación diaria de la fiabilidad de las determinaciones rutinarias, con tres fases: preanalítica (toma y tratamiento de muestras), analítica (validación de métodos, muestras de control, gráficos de control) y postanalítica (procesamiento estadístico y archivo)
-  - **Externo o interlaboratorio**: participación en pruebas de intercomparación entre laboratorios
+- **Red de Laboratorios SOIVRE**: 16 laboratorios periféricos + **Laboratorio Central** (Madrid, creado 1989)
+  - Dependen de la Subdirección Gral. de Inspección, Certificación y Asistencia Técnica de Comercio Exterior (Secretaría de Estado de Comercio, MECE)
+- **Acreditación** según **UNE-EN ISO/IEC 17025:2017**: sistema de gestión de la calidad y requisitos de competencia en ensayos
+- **ENAC**: único organismo con potestad pública para acreditar (**Real Decreto 1715/2010**, **Reglamento (CE) 765/2008**)
+  - Marca ENAC: cumplimiento y aceptación internacional
+  - Acuerdos de Reconocimiento (más de 120 países) en **EA** y **Global ACI** (ILAC + IAF desde 1-1-2026)
+- Funciones del Laboratorio Central
+  - Coordinar y armonizar la red
+  - Adquisiciones, reactivos, calibración y seguridad
+  - Nuevas metodologías y soporte analítico
+  - Intercomparaciones, acreditación, formación
+- **Control de calidad**
+  - **Interno**: preanalítica (muestreo), analítica (validación, muestras y gráficos de control), postanalítica (estadística y archivo)
+  - **Externo**: pruebas de intercomparación
 
 # 2. FUNDAMENTOS GENERALES DE LA ESPECTROMETRÍA
-
-- Las ondas electromagnéticas transmiten energía propia a los receptores en su propagación.
-- Interacciones materia-radiación sin intercambio de energía: difracción, refracción, rotación óptica.
-- Interacciones con intercambio de energía (relevantes analíticamente): absorbancia UV/V, fluorescencia/fosforescencia y reacción fotoquímica.
-- Las especies absorben energía pasando de estado fundamental a excitado, y al regresar desprenden la energía sobrante. La relación energía-frecuencia sigue la **ecuación de Planck**: ΔE = h · ν.
-- Las transiciones electrónicas requieren más energía que las vibracionales y rotacionales.
-- Principales técnicas espectrofotométricas:
-  - **UV/V**: radiación UV (200-400 nm) o visible (400-700 nm), transición de electrones de valencia por absorción
-  - **Fluorescencia molecular**: mide la intensidad de luz fluorescente emitida tras recibir radiación UV próxima
-  - **Absorción infrarroja**: técnica de absorción molecular, IR cercano, medio y lejano (700 nm a 1.000 µm), produce vibraciones y rotaciones
-  - **Raman**: mide la diferencia de longitud de onda entre radiación incidente y dispersa, similar al espectro IR
-  - **Absorción atómica**: mide la absorción de radiación por partículas atómicas
-  - **Emisión atómica**: mide la radiación emitida por partículas atómicas, usada para Na, K, Li y Ca
+- Interacciones materia-radiación
+  - Sin intercambio de energía: difracción, refracción, rotación óptica
+  - Con intercambio (analíticamente más importantes): absorbancia UV/V, fluorescencia/fosforescencia, reacción fotoquímica
+- Especie pasa del estado fundamental a uno excitado y regresa liberando energía
+- Energías cuantificadas y características de cada especie
+  - **Ecuación de Planck**: ΔE = h · ν
+  - Longitud de onda absorbida o emitida = variable cualitativa
+  - Transiciones electrónicas requieren mucha más energía que vibracionales y rotacionales
+- Técnicas
+  - **UV/V**: UV 200-400 nm, visible 400-700 nm, mide energía absorbida
+  - **Fluorescencia molecular**: mide energía emitida
+  - **Absorción IR**: 700 nm a 1.000 µm, solo vibraciones y rotaciones
+  - **Raman**: diferencia de longitud de onda entre radiación incidente y dispersada
+  - **Absorción atómica** y **emisión atómica** (esta, sobre todo Na, K, Li y Ca)
 
 # 3. ESPECTROFOTOMETRÍA UV/VIS
-
-- Se basa en la propiedad de ciertas sustancias con grupos cromóforos de absorber radiación UV o visible, permitiendo determinar concentración e identificar características.
+- Base: **grupos cromóforos** absorben radiación visible o UV
+- Intensidad absorbida da la concentración, tipo de radiación identifica características
 
 ## 3.1. Instrumentación y metodología
-
-- **Fuente de radiación**: continua y estable, lámparas de arco de deuterio (UV) y de vidrio halógeno de wolframio (visible)
-- **Monocromador**: descompone la radiación policromática, de longitud de onda fija (análisis cuantitativo) o variable/barrido (cuantitativo y cualitativo)
-- **Celda**: cuarzo o sílice fundida (UV), vidrio, cuarzo o plástico (visible)
-- **Detectores**: tubo fotodiodo o fotomultiplicador, o matriz de fotodiodos en equipos modernos
-- **Registrador**: recoge la información en el espectrograma
-- Los instrumentos de doble haz restan la absorción del disolvente mediante celda de referencia
+- **Fuente**: continua, estable y uniforme
+  - UV: arco de deuterio
+  - Visible: halógena de wolframio
+- **Monocromador**: longitud de onda fija (cuantitativo) o de barrido (cuantitativo y cualitativo)
+- **Celda**: UV de cuarzo o sílice fundida, visible de vidrio, cuarzo o plástico
+- **Detector**: señal de luz a eléctrica, compara energía transmitida e incidente (fotodiodo, fotomultiplicador, matriz de fotodiodos)
+- **Registrador**: espectrograma
+- **Doble haz**: celda de referencia, se resta la absorción del disolvente
 
 ## 3.2. Procedimiento de calibración
-
-- Calibración **semestral**, controlando:
-  - Exactitud y repetibilidad de la longitud de onda
-  - Exactitud y repetibilidad fotométrica (absorbancia) en UV y visible
+- **Semestral**
+  - Exactitud y repetibilidad de longitud de onda
+  - Exactitud y repetibilidad fotométrica en UV y visible
   - Límite de luz difusa
   - Poder de resolución
-  - Verificación de cubetas en equipos de doble haz
+  - Cubetas (doble haz)
 
 ## 3.3. Métodos de identificación y cuantificación
-
-- **Identificación**: comparación del espectro problema con el espectro patrón, usando derivadas para resaltar diferencias entre espectros similares
-- **Cuantificación**: según la **Ley de Lambert-Beer**: Abs = log(I₀/I) = ε · b · c, donde ε es la absortividad molar, b el espesor y c la concentración
+- **Identificación**: máximo de absorción característico, comparar espectro problema con patrón, derivadas si son muy similares
+- **Cuantificación**: aplicación más importante
+  - **Ley de Lambert-Beer**: Abs = log(I0/I) = ε · b · c
+  - ε absortividad molar, b espesor, c concentración
 
 ## 3.4. Aplicaciones en el ámbito alimentario y de seguridad industrial
-
-- Alimentario: carnes (hidroxiprolina, nitritos y nitratos), fungicidas (ortofenilfenol, tiabendazol), aguardientes (furfural), pimentón y azafrán (poder colorante, safranal, picrocrocina), aceites esenciales (terpenos), aceites (extinción a 270 y 232 nm, delta K), bebidas alcohólicas (cafeína, quinina), abonos (Biuret, Boro soluble)
-- Seguridad industrial:
-  - **Cromo VI** en calzado: límite ≤ **3,0 mg/kg** en cuero (**Reglamento (UE) 301/2014**, referencia UNE-EN ISO 20345:2022) y ≤ **1,0 mg/kg** en textil (**Reglamento (UE) 2018/1513**)
-  - **Formaldehído** en utensilios de melamina, regulado por el **Reglamento (UE) 10/2011** (materiales en contacto con alimentos) y el **Reglamento (UE) 284/2011** (límite de migración de **15 mg/kg** para poliamida y melamina de China y Hong Kong)
+- Alimentario
+  - Carnes: hidroxiprolina, nitritos, nitratos
+  - Fungicidas ortofenilfenol y tiabendazol en frutas y hortalizas
+  - Aguardientes compuestos: furfural
+  - Pimentón y azafrán: poder colorante, safranal, picrocrocina
+  - Aceites: extinción a 270 y 232 nm, delta K
+  - Bebidas alcohólicas: cafeína y quinina
+  - Abonos: Biuret en urea, boro soluble
+- Seguridad industrial
+  - **Cromo VI** en calzado o guantes
+    - Cuero ≤ 3,0 mg/kg (**Reglamento (UE) 301/2014**, **UNE-EN ISO 20345:2022**)
+    - Textil ≤ 1,0 mg/kg (**Reglamento (UE) 2018/1513**)
+  - **Formaldehído** en melamina
+    - **Reglamento (UE) 10/2011**, plásticos en contacto con alimentos
+    - **Reglamento (UE) 284/2011**, poliamida y melamina de China y Hong Kong, migración específica 15 mg/kg
 
 # 4. ESPECTROMETRÍA DE ABSORCIÓN Y EMISIÓN ATÓMICA
 
-## 4.1. Espectrometría de emisión atómica
+## 4.1. Espectrometría de emisión atómica: fundamentos y descripción
+- Átomos o iones libres excitados vuelven al fundamental y emiten radiación característica (espectro de líneas)
+  - Placa fotográfica: cualitativo
+  - Receptor fotoeléctrico: cuantitativo (fotones proporcionales a átomos excitados)
+- Instrumentación: fuente de excitación, monocromador, detector
+- **Fuente de excitación**: gasifica la muestra y excita el máximo de átomos
+  - **Llama** (fotometría de llama): combustible + oxidante, muestra líquida nebulizada, espectros sencillos
+  - **Arco y chispa**: más energéticos, electrodos de grafito, muestra normalmente sólida
+  - **Plasma**: gas noble, por encima de 8.000 K
+- **Monocromador**: prismas, filtros interferenciales o red de difracción
+- **Detector**
+  - Fotometría de llama (cuantitativa): fotocélulas o fotomultiplicadores
+  - Emisión (cualitativa): fotográfico o fotoeléctrico
 
-- Una muestra gaseosa excitada emite radiación al regresar al estado fundamental, dispersada por un monocromador, obteniéndose un espectro de líneas
-- La instrumentación consta de fuente de excitación, monocromador y detector
-- Fuentes de excitación:
-  - **Llama** (fotometría de llama): mezcla de gas combustible y oxidante, muestra líquida nebulizada, espectros sencillos
-  - **Arco y chispa eléctrica**: entre electrodos de grafito, permite excitar más elementos, admite muestras sólidas, líquidas o gaseosas
-  - **Plasma**: excitación electrónica de un gas noble, temperaturas superiores a **8.000 K**
-- Detectores: fotocélulas o fotomultiplicadores (fotometría de llama, cuantitativa) o fotográfico/fotoeléctrico (espectrometría de emisión, cualitativa)
-
-## 4.2. Espectrometría de absorción atómica
-
-- Una radiación monocromática atraviesa una llama con la muestra vaporizada, y los átomos en estado fundamental absorben parte de la radiación, proceso inverso al de la emisión atómica
-- Instrumentación:
-  - **Fuente de emisión**: lámparas de descarga de cátodo hueco (ánodo de tungsteno, cátodo del elemento a analizar), o lámparas multielemento
-  - **Sistema atomizador**: de llama fría, de cámara de grafito (secado a 100 ºC, incineración a 800-1.000 ºC, atomización a más de 2.650 ºC), o técnicas alternativas de vapor frío (Hg) y generación de hidruros (As, Se, Te, Sb, Bi, Sn, Ge)
-  - Sistemas monocromadores y detectores (tubos fotomultiplicadores)
+## 4.2. Espectrometría de absorción atómica: fundamentos y descripción
+- Radiación monocromática atraviesa la llama, átomos en estado fundamental absorben, disminución lineal con la concentración
+- Proceso inverso a la emisión atómica
+- **Fuente**: lámpara de **cátodo hueco** (argón o helio, ánodo de wolframio, cátodo del elemento), también multielemento
+- **Atomizador**
+  - **Llama fría**: átomos sin excitar, gotas uniformes
+  - **Cámara de grafito**: secado 100 ºC, incineración 800-1.000 ºC, atomización por encima de 2.650 ºC, muestras pequeñas y difíciles
+  - **Vapor frío**: Hg, con cloruro de estaño o borohidruro sódico
+  - **Generación de hidruros**: As, Se, Te, Sb, Bi, Sn, Ge, con borohidruro sódico, separa analito y matriz
+- **Monocromadores**: prisma, red, filtros
+- **Detector**: fotomultiplicadores (absorbancia o transmitancia)
 
 ## 4.3. Procedimientos de calibración
-
-- Control de desgaste de la lámpara, exactitud de la escala de longitud de onda, sensibilidad, límite de detección y cuantificación, y linealidad y precisión de la curva de calibrado
+- Desgaste de la lámpara
+- Exactitud de la escala de longitud de onda
+- Sensibilidad próxima a la del fabricante
+- Límites de detección y cuantificación
+- Linealidad y precisión de la curva de calibrado
 
 ## 4.4. Métodos de cuantificación
+- **Fotometría de llama**: eminentemente cuantitativa, alcalinos y alcalinotérreos
+  - **Curva de calibración**: concentración frente a intensidad de emisión
+  - **Adición de patrón**: muestra (I1) y muestra + igual volumen de patrón (I2)
+  - **Patrón interno**: elemento ausente en la muestra, cociente de intensidades
+- **Emisión atómica**: fundamentalmente cualitativa
+  - Comparar con patrones puros y atlas, hasta 70 elementos, rayas características (últimas)
+  - Cuantitativo menor: ennegrecimiento proporcional a la concentración, con patrón interno
+- **Absorción atómica**: eminentemente cuantitativa, metales a concentraciones muy pequeñas
+  - T = I/I0 y Abs = log(I0/I) = ε · b · c
+  - Recta absorbancia-concentración por el origen, pendiente ε·b
+  - Curva de calibrado con patrones, resultado en ppm
 
-- **Fotometría de llama**: técnica directa o curva de calibración, método de adición de patrón y método de patrón interno
-- **Espectrometría de emisión atómica**: fundamentalmente cualitativa, comparación con espectrogramas patrón, identificando hasta **70 elementos**
-- **Espectrometría de absorción atómica**: eminentemente cuantitativa, aplicando la Ley de Lambert-Beer y expresando resultados en ppm
-
-## 4.5. Aplicaciones
-
-- Fotometría de llama: Na en pan dietético, neutralización de la leche, control del vino por Na y K
-- Emisión atómica: oligoelementos en aguas minerales y metales en productos dietéticos
-- Absorción atómica: metales pesados (Pb, Cd, Hg) en productos de pesca, Cu, Cr, Fe en alimentos elaborados, Na, Ca, Fe, K en alimentos en general, Sn y Pb en vinos y conservas, Cu y Zn en vinagre y cerveza, Fe, Pb y Cu en aceites, Cd y Pb en cárnicos, metales pesados en aguas, aguardientes, leche y lácteos, Pb y Cd en cerámica alimentaria, y migración de As, Ba, Cd, Cr, Hg, Pb, Sb y Se en juguetes (**Norma UNE-EN 71-3:2020+A2:2024**)
+## 4.5. Aplicaciones en el ámbito alimentario y de seguridad industrial
+- **Fotometría de llama**: Na en pan dietético, neutralización de la leche, vino con intercambio catiónico (Na y K)
+- **Emisión atómica**: poco usada por coste, oligoelementos en aguas minerales y metales en productos dietéticos
+- **Absorción atómica**: metales pesados
+  - Pb, Cd y Hg en productos de pesca
+  - Sn y Pb en vinos y conservas
+  - Cu y Zn en vinagre y cerveza
+  - Cd y Pb en cárnicos y cerámica alimentaria
+  - Juguetes: migración de As, Ba, Cd, Cr, Hg, Pb, Sb y Se (**UNE-EN 71-3:2020+A2:2024**)
 
 # 5. ESPECTROMETRÍA DE MASAS
-
-- Una de las técnicas más utilizadas en la Red de Laboratorios SOIVRE.
+- Una de las técnicas más usadas en la Red de Laboratorios SOIVRE
 
 ## 5.1. Fundamento
-
-- Bombardeo de una muestra gaseosa con un haz de electrones en el espectrómetro de masas, fragmentando las moléculas en iones
-- Un campo eléctrico acelera los iones en función inversa de su masa, y un campo magnético los agrupa por relación masa/carga
-- Se calculan con exactitud las masas relativas de los iones, y los aparatos de recepción eléctrica permiten el registro automático de los componentes
-- La reproducibilidad depende de controlar cuidadosamente las condiciones de excitación
+- Mezclas complejas de gases, líquidos o sólidos, rápido y exacto
+- Bombardeo electrónico de muestra gaseosa: fragmentos con carga positiva
+- Campo eléctrico acelera los iones, campo magnético los separa por **relación masa/carga**
+- Reproducibilidad: mismas condiciones de excitación dan los mismos iones
 
 ## 5.2. Descripción
+- **Entrada de muestra**: gasificada a unos 400 ºC, cámara de ionización
+- **Acelerador**: 3 ranuras
+- **Separador**: campo magnético, vacío elevado
+  - Un enfoque (180º), de sector (60-90º), **doble enfoque** (preferido)
+- **Detector** con amplificadores y registrador
+- **Espectrograma de masas**
+  - Abscisas: masa/carga
+  - Ordenadas: abundancia relativa
+  - **Pico base** = 100
 
-- **Sistema de entrada de muestras**: conversión a gas por calentamiento a unos **400 ºC** e ionización por bombardeo electrónico
-- **Acelerador**: tres ranuras que aceleran las partículas por diferencias de potencial
-- **Sistema separador**: campo magnético de alto vacío, de un solo enfoque, de sector, o de doble enfoque (preferido actualmente)
-- **Detector**: cátodo emisor de electrones, con amplificadores que producen el espectrograma de masas
-- El espectrograma representa en abscisas el orden de llegada según masa/carga y en ordenadas la abundancia relativa, siendo el pico mayor el **pico base**
-
-## 5.3. Aplicaciones
-
-- Suele combinarse con cromatografía de gases o HPLC
-- Cualitativas: determinación del peso molecular mediante la masa patrón, determinación de la fórmula molecular e identificación de compuestos por su fragmentación patrón, usada en caracterización de polímeros y en cinética química
-- Cuantitativas: deducción de proporciones por intensidad relativa de picos, calibración con patrones conocidos, cuantificación de isótopos
-- Seguridad industrial, combinada con cromatografía de gases: biocidas como el DMF en muebles, textiles y calzado (**Reglamento (CE) 1907/2006**), ftalatos en juguetes, calzado y prendas, y Pentaclorofenol y sus sales en textiles (**UNE 59510:2007**) y calzado
+## 5.3. Aplicaciones en el ámbito alimentario y de seguridad industrial
+- Se combina con cromatografía de gases o HPLC
+- **Cualitativas**
+  - Peso molecular: pico de mayor m/e = **masa patrón**
+  - Fórmula molecular
+  - Identificación por **fragmentación patrón**
+  - Polímeros, productos de reacción, metabolitos, impurezas a pocas ppm
+- **Cuantitativas**: intensidad relativa de picos, calibración con patrones, sobre todo isótopos
+- **Seguridad industrial** (con cromatografía de gases)
+  - Biocida **DMF** en muebles, textiles, calzado y desecantes (**Reglamento (CE) 1907/2006**)
+  - Ftalatos en juguetes, calzado y prendas
+  - **Pentaclorofenol (PCP)** en textiles (**UNE 59510:2007**) y calzado
 
 # 6. ESPECTROMETRÍA DE INFRARROJOS
 
 ## 6.1. Fundamento
-
-- Técnica de absorción que utiliza la región infrarroja del espectro electromagnético para identificar compuestos o investigar la composición de una muestra
-- Se basa en que los enlaces químicos tienen frecuencias de vibración específicas, dependientes de la geometría molecular, las masas atómicas y el acoplamiento vibracional
-- Para aparecer en el espectro, la vibración debe suponer un cambio en el momento dipolar. Los enlaces vibran de seis maneras: estiramiento simétrico, estiramiento asimétrico, tijera, rotación, giro y balanceo
-- Se transmite un rayo monocromo de luz IR y se registra la energía absorbida en un rango habitual de **4.000-400 cm⁻¹**
-- Funciona casi exclusivamente en enlaces covalentes, con aplicación destacada en química orgánica
+- Absorción en la región infrarroja, identifica compuestos y composición
+- Enlaces con frecuencias de vibración específicas
+  - Requisito: cambio del momento dipolar
+  - 6 vibraciones: estiramiento simétrico y asimétrico, tijera, rotación, giro (twisting), balanceo (wagging)
+- Rango habitual 4.000-400 cm-1
+- Casi solo enlaces covalentes, útil en química orgánica y mezclas complejas
 
 ## 6.2. Preparación de la muestra
+- **Líquidas**: entre placas de NaCl, muestra y medio anhidros
+- **Sólidas**: mezcla con KBr, pastilla prensada a alta presión
+- Las sales no absorben IR
 
-- Muestras líquidas: prensadas entre placas de sal de alta pureza (NaCl), en medio anhidro
-- Muestras sólidas: mezcladas con sal purificada (KBr), trituradas y prensadas en pastilla translúcida
+## 6.3. Aplicaciones en el ámbito alimentario y de seguridad industrial
+- Rápida y fiable: medidas, control de calidad, análisis dinámicos
+- Equipos portátiles, medidas de campo
+- Identificación automática con espectros de referencia
+- Grado de polimerización en fabricación de polímeros
+- CO2 en invernaderos y cámaras de crecimiento
+- Análisis forense y pigmentos en arte
 
-## 6.3. Aplicaciones
-
-- Técnica rápida y fiable en control de calidad, medidas dinámicas y análisis forense
-- Los instrumentos actuales son portátiles y permiten identificación automática mediante espectros de referencia almacenados
-- Uso en medición del grado de polimerización, monitoreo de CO2 en invernaderos, identificación de degradación de polímeros, determinación de alcohol en sangre e identificación de pigmentos en pinturas y manuscritos
-
-## 6.4. Espectrometría de infrarrojos por transformada de Fourier (FTIR)
-
-- Técnica más rápida que la convencional, en la que la luz IR se guía a través de un interferómetro, obteniéndose el interferograma
-- La transformada de Fourier de la señal produce un espectro idéntico al de la espectrometría IR dispersiva
-- Los equipos FTIR son más baratos, más rápidos y permiten promediar múltiples lecturas, por lo que casi todos los espectrofotómetros IR modernos son FTIR
+## 6.4. Espectrometría de infrarrojos por transformada de Fourier
+- **FTIR**: luz con todas las longitudes de onda por un **interferómetro**, transformada de Fourier del interferograma
+- Ventajas
+  - Más barato (interferómetro más simple que monocromador)
+  - Más rápido, todas las frecuencias a la vez
+  - Promedio de lecturas aumenta la sensibilidad
+- Casi todos los equipos modernos
 
 # 7. CONCLUSIÓN
-
-- Las técnicas descritas, espectrofotometría UV/Vis, espectrometría de absorción y emisión atómica, espectrometría de masas y espectrometría de infrarrojos, comparten el fundamento de la interacción entre radiación electromagnética y materia, con respuestas complementarias
-- La UV/Vis y la absorción atómica destacan en capacidad cuantitativa de metales pesados y compuestos cromóforos, mientras que la espectrometría de masas aporta identificación estructural, sobre todo combinada con cromatografía
-- La espectrometría de infrarrojos amplía las aplicaciones al control de calidad dinámico y al análisis forense
-- El dominio de fundamentos, instrumentación y calibración de estas técnicas es indispensable para el inspector del SOIVRE, como soporte analítico de los controles de seguridad alimentaria e industrial de la Red de Laboratorios
+- Mismo fundamento físico, respuestas complementarias
+- UV/Vis y absorción atómica: cuantitativas
+- Masas: identificación estructural
+- IR: control dinámico y análisis forense

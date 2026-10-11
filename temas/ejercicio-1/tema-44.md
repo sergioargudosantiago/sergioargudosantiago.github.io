@@ -1,81 +1,160 @@
 # 1. INTRODUCCIÓN
 
-- **Normalización**: actividad voluntaria basada en el consenso, desarrollada por y para las partes interesadas, con transparencia, para adoptar normas de cumplimiento voluntario.
-- **Norma** (definición del **Acuerdo TBT** de la OMC): documento aprobado por una institución reconocida que prevé, para uso común y repetido, reglas o características para productos o procesos, de observancia no obligatoria. Puede incluir terminología, símbolos, embalaje, marcado o etiquetado.
-- La normalización internacional facilita el comercio al crear un lenguaje técnico común entre fabricantes, administraciones y consumidores.
-- Grado de internacionalidad de las normas, en escalones:
-  - **Las Tres Hermanas**: **CODEX Alimentarius**, **OMSA/WOAH** y **CIPF**, reconocidas como organismos internacionales de normalización por el **Acuerdo SPS** de la OMC.
-  - **ISO**, organismo de referencia del **Acuerdo TBT**.
-  - Organismos regionales: **CEPE/NU**, **OCDE**, **UE**.
-  - Organismos regionales de ámbito más limitado: **COPANT**, **ARSO**, **ACCSQ**, y en Europa **CEN**, **CENELEC**, **ETSI** y, en España, **AENOR**.
-- El **Acuerdo TBT** insta a los Miembros de la OMC a utilizar normas internacionales cuando existan.
+- **Normalización**: actividad **voluntaria**, basada en el **consenso**, desarrollada por y para las partes interesadas en organismos independientes y reconocidos, para adoptar normas de cumplimiento voluntario
+- **Norma** (Acuerdo **TBT** de la OMC): documento aprobado por institución reconocida, para uso común y repetido, con reglas, directrices o características de productos o procesos, **no obligatoria**
+  - Puede incluir terminología, símbolos, embalaje, marcado, etiquetado
+- Importancia comercial
+  - Indica calidad y seguridad del producto
+  - Norma internacional reconocida, menos dificultades en otros mercados
+  - **Lenguaje común** entre fabricantes, administraciones, comercializadores y consumidores
+  - Su no seguimiento crea obstáculos al comercio
+- Una norma es más internacional cuanto más países participan en su elaboración. Escalones:
+  - **Las Tres Hermanas**: **CODEX Alimentarius**, **OMSA** (antigua OIE), **CIPF** (FAO). Reconocidas expresamente por el Acuerdo **SPS**
+  - **ISO**: organismo de referencia permanente en el Acuerdo TBT, considerado implícitamente internacional
+  - **CEPE/NU**, **OCDE**, **UE**: carácter regional, menor internacionalidad
+  - Regionales: **COPANT**, **ARSO**, **ACCSQ**, y europeos **CEN**, **CENELEC**, **ETSI** (en España, AENOR), clave en productos industriales y **Nuevo Enfoque**
+- Acuerdo TBT: obliga a los Miembros de la OMC a usar normas internacionales cuando existan
+- Estructura del tema: ámbito geográfico (internacional, regional, nacional) y subclasificación gubernamental o privado. Después normalización privada (ISO, CEN, CENELEC, AENOR) y protocolos de buenas prácticas (GLOBAL/GAP y otros)
 
 # 2. ORGANISMOS INTERNACIONALES DE NORMALIZACIÓN
 
 ## 2.1. Organismos internacionales de carácter gubernamental
 
-- **CODEX Alimentarius**: Programa Conjunto **FAO/OMS**, referencia mundial en normas alimentarias. La Comisión del CODEX integra **189 Miembros** (188 Estados y la **UE**).
-  - Objetivos: proteger la salud de los consumidores, asegurar prácticas equitativas en el comercio, coordinar trabajos entre instituciones y preparar proyectos de normas.
-  - **Plan Estratégico del CODEX 2026-2031**, adoptado en la 47ª reunión de la Comisión y en vigor desde el **1 de enero de 2026**, sustituye al Plan 2020-2025.
-- **OMSA/WOAH**: fundada en **1924** como Oficina Internacional de Epizootias (OIE), denominación sustituida en 2022. Organización intergubernamental con **183 Miembros**, integrante de Las Tres Hermanas.
-  - Objetivos: transparencia sobre enfermedades animales, asesoramiento y solidaridad internacional, y salvaguarda del comercio mediante normas de salud animal (el **Código**).
-  - El **7º Plan Estratégico** (2021-2025) se prolongó en fase de transición en 2026. El **8º Plan Estratégico**, adoptado el 20 de mayo de 2026, cubrirá 2027-2031, con enfoque **One Health**.
-- **CIPF/IPPC**: tratado internacional con **185 partes contratantes**, tercera de Las Tres Hermanas. Elabora normas de protección de plantas y certificación fitosanitaria, como la Guía de análisis de riesgo de plagas o las Directrices para el comercio internacional de envases de madera.
-- **IMO/OMI**: organización de Naciones Unidas con **176 Miembros** y **3 Miembros Asociados**, especializada en asuntos marítimos (**MARPOL**, **SOLAS**, **ARQUEO**).
-- **ITU/UIT**: organización del sistema de Naciones Unidas con **193 países** y más de **900 entidades** del sector privado. Se rige por su Plan Estratégico 2024-2027, centrado en conectividad inclusiva y transformación digital sostenible.
+- **CODEX Alimentarius**
+  - Programa Conjunto **FAO/OMS** de Normalización Alimentaria, referencia mundial
+  - Comisión: **189 Miembros** (188 Estados y la UE)
+  - Objetivos
+    - Proteger la salud de los consumidores
+    - Prácticas equitativas en el comercio internacional, proceso transparente con todas las partes
+    - Coordinar trabajos sobre normas alimentarias
+    - Preparar proyectos de norma y publicarlos como norma regional o mundial
+  - **Plan Estratégico 2026-2031**: adoptado en la 47ª reunión de la Comisión, en vigor desde 1 enero 2026, sustituye al 2020-2025
+- **OMSA/WOAH**
+  - Fundada en **1924** como OIE, acrónimo WOAH desde **2022**. Organización intergubernamental, **183 Miembros**
+  - Objetivos
+    - Transparencia sobre enfermedades animales (peste porcina, gripe aviar, EEB, fiebre aftosa)
+    - Asesoramiento y solidaridad internacional
+    - Salvaguardar el comercio por mandato del Acuerdo SPS
+  - **Código**: criterios para el comercio de animales y productos afectados por enfermedad (ej. EEB, productos sin riesgo)
+  - **8º Plan Estratégico 2027-2031**, adoptado el 20 de mayo de 2026, en vigor en 2027. Sustituye al 7º (2021-2025, prolongado en 2026 como transición). Normas, sistemas de salud animal, One Health
+- **CIPF/IPPC**
+  - Tratado internacional, **185 partes contratantes**
+  - Normas de protección de plantas y certificación fitosanitaria
+  - Normas relevantes: análisis de riesgo de plagas, programas de erradicación, embalajes de madera
+  - Embalaje de madera: tratamiento para eliminar plagas, incorporado a la legislación de muchos países
+  - Primera disputa en su seno: **Citrus Black Spot**
+- **IMO/OMI**
+  - Organización de Naciones Unidas, **176 Miembros** y 3 Asociados, exclusivamente marítima
+  - Seguridad marítima, eficiencia de la navegación, prevención de contaminación por buques (**MARPOL**, **SOLAS**, **ARQUEO**)
+- **ITU/UIT**
+  - Sistema de Naciones Unidas: **193 países** y más de **900** entidades privadas
+  - Coordina servicios y redes de telecomunicaciones, normalización como actividad principal
+  - **Plan Estratégico 2024-2027** (Bucarest 2022): conectividad inclusiva y segura, transformación digital sostenible
 
 ## 2.2. Organismos internacionales de carácter no gubernamental
 
-- **IEC/CEI**: organización no gubernamental del área eléctrica, con **63 miembros de pleno derecho** y **27 asociados**. Incluye el comité **CISPR** sobre interferencias radioeléctricas.
-- **ISO**: federación de organismos nacionales de normalización, uno por país, con **175 miembros**. Organismo de referencia del **Acuerdo TBT**, suscriptor de su Código de Buena Conducta.
-  - Financiación: cuotas de Miembros y venta de normas.
-  - Estructura en más de **300 comités técnicos (TC)**, como el **TC34** de productos alimenticios.
-  - Normas voluntarias, adoptadas por consenso, un voto por Miembro.
-  - Vigente la **Estrategia 2030**, sucesora de la Estrategia 2016-2020, alineada con la Agenda 2030 de Naciones Unidas. Relevancia de la norma **ISO 22000** de seguridad alimentaria.
-  - Proceso de elaboración en **3 etapas**: definición del alcance técnico por grupos de expertos, desarrollo de especificaciones por consenso, y aprobación formal con al menos **dos terceras partes** de los Miembros participantes.
-  - Más de **26.000 normas** elaboradas. Destacan la codificación de países, **ISOFIX**, los códigos de monedas y las normas de gestión **ISO 9000** (calidad) e **ISO 14000** (medioambiente).
+- **IEC/CEI**
+  - ONG del área eléctrica: **63** miembros de pleno derecho y **27** asociados
+  - Normalización electrotécnica y evaluación de la conformidad en eléctrico, electrónico y afines
+  - Comité especial **CISPR**: interferencias radioeléctricas
+- **ISO**
+  - Federación de organismos nacionales, uno por país, **175 miembros**
+  - Misión: fomentar la normalización mundial para favorecer intercambios y cooperación intelectual, científica, tecnológica y económica
+  - Organismo de referencia del Acuerdo TBT, suscribe su **Código de Buena Conducta**
+  - Financiación: cuotas de Miembros y venta de normas
+  - Más de **300 comités técnicos** (TC), con subcomités y grupos de trabajo. Mayoría de productos no alimenticios, excepción **TC34** (Food Products). Presididos por un Miembro
+  - Normas voluntarias, algunas incorporadas a legislación (seguridad, salud). Consenso, un voto por Miembro
+  - **Estrategia 2030** desde 2021, sustituye a la 2016-2020, alineada con Agenda 2030 de la ONU, horizonte cercano a diez años
+  - Coordinación con CODEX: revisión periódica de **ISO 22000** (seguridad alimentaria)
+  - Elaboración en **3 etapas**
+    - Necesidad pedida por la industria a su organismo nacional, que la transmite a ISO. Alcance técnico por grupos de expertos
+    - Especificaciones técnicas por consenso
+    - Aprobación formal: al menos **dos tercios** de los Miembros participantes
+  - Más de **26.000** normas. Destacadas
+    - Códigos de países (tres letras) y de monedas (tres dígitos)
+    - **ISOFIX**: seguridad de pasajeros en vehículos, sillas infantiles
+    - Gestión: **ISO 9000** (calidad) e **ISO 14000** (medioambiente)
 
 # 3. ORGANISMOS REGIONALES DE NORMALIZACIÓN
 
 ## 3.1. Organismos regionales de carácter gubernamental
 
-- **CEPE/NU**: creada en **1947** por el ECOSOC, una de las 5 Comisiones Regionales de la ONU. Reúne a **56 países Miembros**, con sede en Ginebra.
-  - Desarrolla Normas-Cuadro que concretan el **Acuerdo de Ginebra**, base de las normas de calidad agroalimentarias de la UE bajo la **OCM Única**.
+- **CEPE/NU**
+  - Creada en **1947** por el ECOSOC, una de las 5 Comisiones Regionales de la ONU
+  - **56 países** (europeos, EEUU, Canadá, Israel, Turquía, Asia Central). Sede en **Ginebra**
+  - **Normas-Cuadro**: esquema y contenido básico de una norma de calidad, desarrollan el **Acuerdo o Entendimiento de Ginebra** (sustituye al Protocolo de Ginebra)
+  - Sus normas son base de las normas de calidad agroalimentarias de la UE, según las OCM y la actual **OCM Única**
 
-## 3.2. Organismos regionales europeos de carácter no gubernamental
+## 3.2. Organismos regionales europeos de carácter no gubernamental (privados)
 
-- Vinculados al **Nuevo Enfoque**, diseñado para culminar el Mercado Único en **1993**, basado en:
-  - Armonización legislativa limitada a requisitos esenciales.
-  - Especificaciones técnicas fijadas en **Normas Armonizadas**.
-  - Aplicación voluntaria de las Normas Armonizadas.
-  - Presunción de conformidad para productos fabricados conforme a ellas.
-- **CEN**: creado en **1961**, agrupa a los organismos de normalización nacionales de **34 Estados** (entre ellos **UNE**, **AFNOR**, **BSI**). Colabora con CENELEC, ETSI e ISO, y ha suscrito el Código de Buena Conducta del **Acuerdo TBT**. Destaca el **Acuerdo de Viena** (1991) de cooperación técnica ISO-CEN. Estructura en Comités Técnicos (CEN/TC), normas adoptadas por mayoría cualificada.
-- **CENELEC**: creado en **1973**, sede en Bruselas, integrado por los Comités Electrotécnicos Nacionales de **34 países**.
-  - Procedimiento: elaboración de un borrador, estudio durante **6 meses**, votación (aprobación si la mayoría de Comités Nacionales están a favor y al menos el **71 %** de los votos es positivo), identificación con las letras **EN** más número y año.
-- **ETSI**: creado en **1988**, en torno a **900 Miembros** de más de **60 países**, normaliza el área de telecomunicaciones mediante consenso en Comités Técnicos.
+- **Nuevo Enfoque**: técnica de reglamentación para culminar el Mercado Único en 1993 y eliminar obstáculos a la libre circulación. Principios
+  - Armonización legislativa limitada a **requisitos esenciales**
+  - Especificaciones técnicas en **Normas Armonizadas**
+  - Aplicación voluntaria, el fabricante puede usar otras especificaciones
+  - **Presunción de conformidad** para productos conformes a normas armonizadas
+- Normas armonizadas: normas europeas de organismos europeos, según Directrices Generales Comisión-organismos y **mandato** de la Comisión previa consulta a los Estados Miembros
+- **CEN**
+  - Creado en **1961**. Promueve normas armonizadas voluntarias: menos barreras técnicas, seguridad de productos, trabajadores y consumidores, medioambiente
+  - Miembros: organismos nacionales de **34 Estados** (UNE, AFNOR, BSI, EFTA, Europa del Este y Central)
+  - Colabora con CENELEC y ETSI y con **ISO**. Suscribe el Código de Buena Conducta del TBT. **Acuerdo de Viena (1991)**: cooperación técnica ISO-CEN
+  - Comités técnicos (CEN/TC) con subcomités y grupos de trabajo. Participan todas las partes interesadas. **Mayoría cualificada**
+  - Coherencia: norma nacional en conflicto con una europea se retira y sustituye
+  - Normas armonizadas para Directivas de Nuevo Enfoque (ascensores, materiales de construcción)
+- **CENELEC**
+  - Creado en **1973** bajo ley belga, sede en **Bruselas**. Comités electrotécnicos nacionales de **34 países**, otros como asociados
+  - Normas voluntarias electrotécnicas, por mercado o mandato de la Comisión. Colabora con CEN y ETSI
+  - Procedimiento
+    - Borrador
+    - Estudio de **6 meses**, comentarios en el TC
+    - Votación: mayoría de Comités Nacionales y al menos **71 %** de votos positivos. Votos según tamaño del país
+    - Identificación: letras **EN**, número y año (EN 50225:1996)
+- **ETSI**
+  - Creado en **1988**, telecomunicaciones. En torno a **900 Miembros** de más de **60 países** (Full y Associate): fabricantes, operadores, administraciones, proveedores
+  - Armonización global. Normas por necesidad de la industria, consenso en Comités Técnicos. También normas de Nuevo Enfoque
 
 # 4. ORGANISMOS NACIONALES DE NORMALIZACIÓN
 
 ## 4.1. Organismos nacionales privados
 
-- En España, la normalización corresponde a **UNE** (Asociación Española de Normalización). Históricamente unida a la certificación en **AENOR**, entidad designada por Orden de Industria y Energía conforme al **Real Decreto 1614/1985**, y reconocida por el **Real Decreto 2200/1995**, en desarrollo de la **Ley 21/1992 de Industria**.
-- En **2017** se desdobló la actividad en dos organizaciones: **UNE** (normalización y cooperación internacional) y **AENOR** (evaluación de la conformidad, formación y publicaciones).
-- UNE es el miembro español ante **ISO**, **IEC**, **CEN**, **CENELEC** y **ETSI**, y miembro de **COPANT**. Reconocida como organismo nacional de normalización de España por la reglamentación de la UE.
-- Punto de información para reglamentos técnicos: la Subdirección General de Inspección, Certificación y Asistencia Técnica del Comercio Exterior, del **MECE**.
-- Proceso de elaboración de una norma UNE mediante Comités Técnicos de Normalización (**CTN**): trabajos preliminares, elaboración del proyecto, información pública en el **BOE**, aprobación por la Junta Directiva, y registro y difusión con publicación en el **BOE**.
-- Norma UNE: especificación técnica de aplicación repetitiva, no obligatoria, elaborada con participación de todas las partes.
-- Muchas normas UNE son transposición de normas **EN** del CEN, ISO o IEC. Ejemplo histórico: la norma española **UNE 150301** (2003) de ecodiseño dio origen a la norma internacional **UNE-EN ISO 14006**.
-- Ejemplo de esquema de calidad: **UNE-EN ISO/IEC 17020**, sobre requisitos para organismos de inspección.
+- **España**: normalización a cargo de **UNE** (Asociación Española de Normalización)
+  - Antes unida a certificación en **AENOR**: **RD 1614/1985**, reconocida por **RD 2200/1995**, en desarrollo de la **Ley 21/1992** de Industria
+  - **2017**: desdoblamiento por exigencias europeas de transparencia
+    - **UNE**: normalización y cooperación internacional, en exclusiva
+    - **AENOR**: entidad mercantil, evaluación de la conformidad (certificación), formación y venta de publicaciones
+- UNE es miembro español en **ISO**, **IEC**, **CEN**, **CENELEC**, **ETSI** y **COPANT**. Coopera con AFNOR, BSI y DIN
+- Reconocida por la UE como organismo nacional de normalización (procedimiento de información de normas y reglamentaciones técnicas)
+- Puntos de información del TBT
+  - Normas: el organismo nacional de normalización
+  - Reglamentos técnicos: Subdirección General de Inspección, Certificación y Asistencia Técnica del Comercio Exterior, Secretaría de Estado de Comercio, **MECE**
+- Actividad: materiales, productos, métodos de ensayo, temas generales. Por **Comités Técnicos de Normalización (CTN)**
+- Proceso de elaboración
+  - Trabajos preliminares
+  - Proyecto de norma en el CTN, por consenso
+  - Información pública en el **BOE**
+  - Aprobación por la Junta Directiva
+  - Registro, edición y difusión, resolución de normas aprobadas en el BOE por el Ministerio de Industria
+- **Norma UNE**: especificación técnica de aplicación repetitiva y continuada, no obligatoria, con participación de todas las partes interesadas, aprobada por UNE. Muchas son transposición de normas EN, ISO o IEC
+- **Ecodiseño**: **UNE-EN ISO 14006**, basada en la norma española pionera **UNE 150301** (2003). Certificable por AENOR u otras entidades acreditadas. Considera el impacto ambiental en todo el ciclo de vida
+- **UNE-EN ISO/IEC 17020**: requisitos de organismos de inspección (transparencia, competencia técnica, buenas prácticas)
 
 # 5. OTROS ORGANISMOS DE CARÁCTER PRIVADO
 
-- Proliferación de organismos de buenas prácticas voluntarias, orientados a la calidad y a valores medioambientales, sociales o agrícolas.
-- **GLOBAL-GAP**: hasta 2007 denominado EUREP-GAP, creado en **1997** por distribuidores europeos. Desarrolla normas de buenas prácticas agrícolas (**GAP**) centradas en inocuidad, trazabilidad, bienestar laboral y medio ambiente, limitadas a la producción y manejo poscosecha en finca.
-- **BRCGS**: creado en la década de **1990** por el sector de la distribución del Reino Unido. Normas de seguridad alimentaria y buenas prácticas en envasado, almacenamiento, logística y distribución, hoy requisito habitual de los grandes distribuidores.
-- **AINIA**: instituto tecnológico agroalimentario de Valencia, asociación privada sin ánimo de lucro creada en **1987** junto con el **IMPIVA**, orientada a la innovación y la competitividad del sector agroalimentario.
+- Proliferan esquemas voluntarios de normas y certificación, de buenas prácticas medioambientales, sociales o agrícolas, para atraer a consumidores de mercados exigentes
+- **GLOBAL-GAP**
+  - Hasta 2007 **EUREP-GAP**, creado en **1997** por distribuidores europeos. **GAP**: Good Agricultural Practices
+  - Riesgos de inocuidad, trazabilidad, seguridad laboral, contaminación y conservación del medio
+  - Solo producción y manejo poscosecha en finca. No procesamiento ni empacadoras externas
+  - Normas: frutas y hortalizas, flores y ornamentales, producción vegetal y animal, salmón, café verde
+  - Ámbito antes europeo, hoy con distribuidores no europeos
+- **BRCGS** (British Retail Consortium Global Standards)
+  - Década de 1990, distribución británica. Seguridad alimentaria y buenas prácticas: envasado, almacenamiento, logística, distribución
+  - Certificación exigida por grandes distribuidores a sus proveedores
+- **AINIA** (Instituto Tecnológico Agroalimentario de Valencia)
+  - Asociación privada sin ánimo de lucro, creada en **1987** con IMPIVA
+  - I+D, calidad, competitividad y modernización del sector agroalimentario
 
 # 6. CONCLUSIÓN
 
-- El sistema de normalización es estratificado y complementario: organismos internacionales gubernamentales (**OMSA/WOAH**, **CIPF**, **OMI**, **UIT**), no gubernamentales (**ISO**, **IEC**), regionales (**CEPE/NU**, **CEN**, **CENELEC**, **ETSI**) y nacional (**UNE**), todos orientados a facilitar el comercio mediante un lenguaje técnico común.
-- A ello se suman esquemas privados de buenas prácticas, como **GLOBAL-GAP** o **BRCGS**, que en la práctica se han convertido en condición de acceso a determinados canales de distribución.
-- Conocer esta arquitectura completa resulta indispensable para el **Servicio de Inspección SOIVRE** en el control de calidad comercial y de seguridad de los productos objeto de comercio exterior.
+- Sistema **estratificado y complementario**: gubernamentales internacionales (OMSA, CIPF, OMI, UIT), no gubernamentales (ISO, IEC), regionales (CEPE/NU, CEN, CENELEC, ETSI) y nacional (UNE). Fin común: facilitar el comercio con un lenguaje técnico común
+- Esquemas privados (GLOBAL-GAP, BRCGS): exigencias de mercado por encima del mínimo legal, condición de facto de acceso a canales de distribución
+- Para el **SOIVRE**: conocer esta arquitectura permite interpretar origen, alcance y exigencia de normas y certificaciones en el control de calidad comercial y seguridad

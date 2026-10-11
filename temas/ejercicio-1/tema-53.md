@@ -1,123 +1,164 @@
 # 1. INTRODUCCIÓN
-
-- En el comercio entre partes que no se conocen, la calidad convenida se garantiza mediante **inspecciones**, **ensayos** y **certificaciones**.
-- El auge de la calidad como elemento comercial (años setenta) y la aplicación de las normas **ISO 9000** (años noventa) multiplicaron los organismos de evaluación de la conformidad, incluyendo algunos carentes de rigor técnico, lo que generó desconfianza.
-- El tema desarrolla el concepto de **acreditación** y **certificación** y su regulación en España y la UE, la **Entidad Nacional de Acreditación (ENAC)**, el procedimiento y criterios de acreditación, las auditorías del sistema de calidad, y las normas **UNE-EN ISO/IEC 17020** y **UNE-EN ISO/IEC 17025**.
+- Problema: garantizar la **calidad convenida** entre partes que no se conocen
+  - Herramientas: **inspecciones**, **ensayos** y **certificaciones**
+- Años setenta (calidad como elemento del comercio) y noventa (**ISO 9000**): auge de organismos de evaluación de la conformidad
+  - Entidades sin competencia ni rigor: **desconfianza** generalizada hacia el sistema
+- Estructura: concepto y regulación, **ENAC**, procedimientos y criterios, auditorías, normas **17020** y **17025**
 
 # 2. CERTIFICACIÓN Y ACREDITACIÓN. CONCEPTO Y REGULACIÓN EN ESPAÑA
+- **Certificación**: organismo independiente da garantía escrita de que producto, proceso o servicio cumple requisitos especificados (**certificado**)
+- **Acreditación**: evaluación de la **competencia y eficacia** de una entidad frente a un modelo estándar
+  - Solo una entidad **acreditada** puede emitir certificados a otras empresas
+- **Organismo de Acreditación**: evaluaciones independientes e imparciales de los evaluadores de la conformidad
+- Tres objetivos
+  - Confianza del comprador y consumidor
+  - Confianza de la Administración: **Nuevo Marco Legislativo (NML)**, marcado CE, **Organismos Notificados** acreditados
+  - Facilitación del comercio nacional e internacional
+- **Obstáculo Técnico al Comercio (OTC)**: costes por evaluaciones múltiples y falta de confianza en evaluadores
+  - **Acuerdo OTC/TBT de la OMC**: no discriminación, transparencia, normas internacionales
+- **MLA** (Acuerdos Multilaterales de Reconocimiento) en **EA**, **ILAC** e **IAF**: «evaluado una vez, aceptado en todas partes»
+- **MRA** (Acuerdos de Reconocimiento Mutuo) entre gobiernos
+  - Ejemplos: UE con EE. UU., Canadá, Japón, Australia, Nueva Zelanda, Suiza, Israel
+  - Sectores: productos sanitarios, telecomunicaciones, embarcaciones de recreo
+- **Reglamento (CE) 765/2008**: un único **Organismo Nacional de Acreditación** por Estado miembro, público y sin ánimo de lucro
+  - COFRAC, DAkkS, ACCREDIA, ENAC
+  - **UKAS** (Reino Unido): fuera de la UE tras el Brexit
 
-- **Certificación**: procedimiento por el que un organismo independiente garantiza por escrito que un producto, proceso o servicio cumple unos requisitos especificados, emitiendo un **certificado**.
-- **Acreditación**: proceso de evaluación de la competencia y eficacia de una entidad que implanta un modelo estándar, es revisada externamente y demuestra su cumplimiento.
-- Solo una entidad **acreditada** puede emitir certificados a terceros. El **Organismo de Acreditación** comprueba mediante evaluaciones independientes e imparciales la competencia de los evaluadores de la conformidad, con tres objetivos:
-  - Dar confianza al comprador y consumidor.
-  - Dar confianza a la Administración, pilar del **Nuevo Marco Legislativo (NML)** de la UE, donde los Organismos Notificados privados actúan gracias a su condición de acreditados.
-  - Facilitar el comercio nacional e internacional, evitando que la falta de confianza mutua entre evaluadores genere un **Obstáculo Técnico al Comercio (OTC)**.
-- La **OMC**, en el **Acuerdo sobre Obstáculos Técnicos al Comercio (Acuerdo OTC/TBT)**, fija principios de no discriminación, transparencia y uso de normas internacionales, considerando la acreditación herramienta clave.
-- Los requisitos homogéneos permiten suscribir **Acuerdos Multilaterales de Reconocimiento (MLA)** en el seno de **EA**, **ILAC** e **IAF**, con el principio «evaluado una vez, aceptado en todas partes».
-- Estos esquemas respaldan los **Acuerdos de Reconocimiento Mutuo (MRA)** entre gobiernos (UE con EE. UU., Canadá, Japón, Australia, Nueva Zelanda, Suiza o Israel) en sectores como productos sanitarios, telecomunicaciones o embarcaciones de recreo.
-- El **Reglamento (CE) 765/2008** obliga a cada Estado miembro a designar un único **Organismo Nacional de Acreditación (ONA)**, público y sin ánimo de lucro (COFRAC en Francia, DAkkS en Alemania, ACCREDIA en Italia, ENAC en España).
-
-## Regulación en España
-
-- La infraestructura para la calidad y la seguridad industrial se regula en el **Título III de la Ley 21/1992, de Industria**, desarrollada por el **Real Decreto 2200/1995** (Reglamento de la Infraestructura para la Calidad y la Seguridad Industrial), modificado por el **Real Decreto 338/2010**, el **Real Decreto 1072/2015**, el **Real Decreto 145/2023** y el **Real Decreto 164/2025**.
-- **UNE** (Asociación Española de Normalización) es el único organismo nacional de normalización, tras la separación en 2017 de las actividades que realizaba la antigua AENOR, hoy centrada en certificación comercial como **AENOR Internacional**.
-- **ENAC** es el único **Organismo Nacional de Acreditación** en España, conforme al **Reglamento (CE) 765/2008**, entidad privada, independiente y sin ánimo de lucro, con la finalidad de acreditar:
-  - Laboratorios de ensayo y calibración.
-  - Entidades de certificación (productos, sistemas de gestión y personas).
-  - Entidades de inspección y unidades técnicas.
-  - Organismos de control (OCA) y Organismos Notificados ante la UE.
-  - Verificadores medioambientales (EMAS, comercio de derechos de emisión) y de informes de sostenibilidad.
+## 2.1. Regulación en España
+- **Ley 21/1992 de Industria**, Título III, infraestructura para la calidad y la seguridad industrial
+- **Real Decreto 2200/1995**, Reglamento de la Infraestructura para la Calidad y la Seguridad Industrial
+  - Modificado por **RD 338/2010**, **RD 1072/2015**, **RD 145/2023** y **RD 164/2025**
+- **UNE**: único organismo nacional de normalización
+  - Separación en 2017 de la antigua **AENOR**, centrada en certificación (**AENOR Internacional**)
+- **ENAC**: único ONA en España
+  - Privada, independiente y sin ánimo de lucro, bajo auspicio y control de la Administración
+  - Acredita laboratorios de ensayo y calibración
+  - Acredita entidades de certificación (productos, sistemas de gestión, personas)
+  - Acredita entidades de inspección y unidades técnicas
+  - Acredita organismos de control (**OCA**) y Organismos Notificados
+  - Acredita verificadores medioambientales (**EMAS**, derechos de emisión) y de informes de sostenibilidad
 
 # 3. ENAC
+- Auspiciada y tutelada por la Administración, conforme a Ley 21/1992 y RD 2200/1995
+  - Privada, independiente, de **utilidad pública**, sin ánimo de lucro
+  - Coordina un sistema de acreditación **único** según criterios internacionales
+- Acredita a todos los **OEC** (organismos de evaluación de la conformidad), sin distinción de sector, tamaño o titularidad
+- Administraciones estatal y autonómica usan sus acreditaciones: industria, agroalimentario, medioambiente, defensa, construcción, sanidad, metrología, telecomunicaciones, **comercio exterior**
+- **Ámbito industrial**: evalúa para designación como **Organismos Notificados** (NML)
+  - Ejemplos: Productos de la Construcción, Directiva de Ascensores
+- **Agroalimentario y control oficial**: **Reglamento (UE) 2017/625** exige laboratorios de control oficial acreditados en **ISO/IEC 17025**
+- **Buenas Prácticas de Laboratorio (BPL)**: ENAC designada por el **MAPA** para ensayos no clínicos de productos fitosanitarios
 
-- ENAC es una organización auspiciada y tutelada por la Administración, constituida al amparo de la **Ley 21/1992** y el **Real Decreto 2200/1995**, declarada único ONA en cumplimiento del **Reglamento (CE) 765/2008**. Coordina y dirige un sistema de acreditación único conforme a criterios internacionales.
-- Acredita a todos los **Organismos de Evaluación de la Conformidad (OEC)**, con independencia de su sector, tamaño o carácter público o privado.
-- La Administración utiliza sus acreditaciones en sectores como industria, agroalimentación, medioambiente, defensa, construcción, sanidad, metrología, telecomunicaciones o comercio exterior:
-  - **Ámbito industrial**: designación de **Organismos Notificados (ON)** dentro del NML, en aplicación de reglamentos y directivas como la de productos de la construcción o la de ascensores.
-  - **Ámbito agroalimentario y de control oficial**: el **Reglamento (UE) 2017/625** exige que los laboratorios de control oficial estén acreditados conforme a la **UNE-EN ISO/IEC 17025**.
-  - **Buenas Prácticas de Laboratorio (BPL)**: ENAC, designada por el **MAPA**, evalúa su cumplimiento en ensayos no clínicos sobre productos fitosanitarios.
+## 3.1. Objetivos de ENAC
+- Integración en redes internacionales y suscripción de acuerdos de reconocimiento mutuo
+- Cooperación bilateral con otros ONA
+- Difusión y capacitación, sobre todo con Iberoamérica
+- Colaboración con normalización (UNE, ISO, IEC) y metrología (CEM, BIPM)
+- Apoyo reglamentario a las Administraciones
+- Participación en programas europeos
+- Divulgación: jornadas, seminarios y formación
 
-## Objetivos de ENAC
+## 3.2. Estructura de ENAC
+- Representación equilibrada de entidades acreditadas, Administraciones, sectores industriales y consumidores
+- **Órganos de gobierno y representación**
+  - **Asamblea General**: órgano supremo, aprueba cuentas, presupuesto y Plan Anual
+  - **Junta Directiva**: gestión y dirección delegada
+  - **Comité Permanente**: supervisa el funcionamiento ordinario
+    - Participa la Subdirección General de Inspección, Certificación y Asistencia Técnica del Comercio Exterior
+  - **Presidente**: representación legal
+- **Órganos técnicos e independientes**
+  - **Secretariado Ejecutivo / Dirección Técnica**: operativa, solicitudes y evaluaciones
+  - **Comisión de Acreditación**: decide concesión, mantenimiento, ampliación, suspensión y retirada
+  - **Comités Técnicos Asesores (CTA)**: más de **500** expertos independientes, criterios y guías
 
-- Integración en redes internacionales, suscribiendo acuerdos de reconocimiento mutuo.
-- Cooperación bilateral con otros ONA, armonizando criterios.
-- Difusión y capacitación, con especial atención a Iberoamérica.
-- Colaboración con organizaciones de normalización (UNE, ISO, IEC) y metrología (CEM, BIPM).
-- Apoyo reglamentario a las Administraciones Públicas en la acreditación de entidades que lo requieran por disposición legal.
-- Participación en instituciones y programas europeos de infraestructura de la calidad.
-- Divulgación mediante jornadas, seminarios y formación técnica.
+## 3.3. Dimensión internacional de ENAC
+- Reconocimiento en más de **120 países**, sin reevaluación
 
-## Estructura de ENAC
+## 3.3.1. Estructura de Acuerdos Internacionales
+- **EA**: coordina los ONA de la UE, EFTA y países candidatos
+- **ILAC**: laboratorios de ensayo, calibración, médicos y entidades de inspección
+- **IAF**: certificación de productos, sistemas de gestión, personas y validación/verificación
 
-- **Órganos de Gobierno y Representación**:
-  - **Asamblea General**: órgano supremo, aprueba cuentas, presupuesto y Plan Anual de Actividades.
-  - **Junta Directiva**: gestión y dirección general delegada.
-  - **Comité Permanente**: supervisa el funcionamiento ordinario (participan representantes de las Administraciones tutelares, incluida la Subdirección General de Inspección, Certificación y Asistencia Técnica del Comercio Exterior).
-  - **Presidente**: representación legal de la entidad.
-- **Órganos Técnicos e Independientes**:
-  - **Secretariado Ejecutivo/Dirección Técnica**: funcionamiento operativo y gestión de evaluaciones.
-  - **Comisión de Acreditación**: decide sobre concesión, mantenimiento, ampliación, suspensión o retirada de acreditaciones.
-  - **Comités Técnicos Asesores (CTA)**: más de 500 expertos independientes que asesoran sobre criterios técnicos.
-
-## Dimensión internacional de ENAC
-
-- Las acreditaciones de ENAC se reconocen en más de **120 países**.
-- Históricamente, los MLA se sustentaban en **EA** (coordina los ONA de la UE, EFTA y candidatos), **ILAC** (laboratorios y entidades de inspección) e **IAF** (organismos de certificación).
-- **ILAC** e **IAF** se han fusionado en la **Global Accreditation Cooperation Incorporated (Global ACI)**, entidad mundial única que asume sus competencias. La **EA** se mantiene como infraestructura regional europea, alineada con el **Reglamento (CE) 765/2008**.
-- Mediante evaluaciones periódicas por pares, las redes garantizan la equivalencia de sus sistemas, convirtiendo la acreditación en un pasaporte técnico para el comercio internacional y facilitando los **MRA** interestatales.
+## 3.3.2. Evolución Organizativa Internacional (Global ACI)
+- ILAC e IAF fusionadas en **Global Accreditation Cooperation Incorporated (Global ACI)**
+  - Asume todos los esquemas de reconocimiento global
+- **EA** se mantiene como referencia regional europea
+- **Evaluaciones por pares** entre organismos de acreditación garantizan equivalencia
+- Acreditación como «pasaporte técnico»: facilita los MRA y elimina barreras técnicas
 
 # 4. PROCEDIMIENTO Y CRITERIOS DE ACREDITACIÓN. NORMAS ISO 17020 E ISO 17025
+- Etapas del procedimiento ante ENAC
+  - **Solicitud** con documentación (sistema de gestión, alcances, procedimientos)
+  - **Estudio documental** y designación del equipo auditor (auditor líder y expertos técnicos)
+  - **Evaluación in situ**: competencia técnica, personal, equipos, instalaciones, sistema de gestión
+  - **Informe** con no conformidades y **plan de acciones correctoras**
+  - **Decisión de la Comisión de Acreditación**: certificado de acreditación y anexo técnico
+  - **Seguimiento** periódico y **reevaluación completa** como máximo cada **5 años**
+- ENAC puede mantener, reducir, suspender o retirar la acreditación
+- **Marca ENAC**: garantía de competencia técnica y aceptación internacional
+  - Uso fraudulento: acciones legales
 
-- El proceso de acreditación ante ENAC consta de las siguientes etapas:
-  - **Solicitud de acreditación**, con la documentación requerida.
-  - **Estudio documental y designación del equipo auditor** (un auditor líder y expertos técnicos).
-  - **Evaluación in situ (auditoría)** de la competencia técnica, personal, equipos, instalaciones e implantación del sistema.
-  - **Informe de evaluación y plan de acciones correctoras** ante las no conformidades detectadas.
-  - **Decisión de la Comisión de Acreditación**, que emite el Certificado de Acreditación y su anexo técnico.
-  - **Seguimiento y reevaluación**, con reevaluación completa en plazos máximos de **5 años**.
-- ENAC puede mantener, reducir el alcance, suspender o retirar una acreditación. Las entidades acreditadas usan la marca ENAC, y su uso fraudulento puede derivar en acciones legales.
+## 4.1. Criterios de la acreditación
+- Normas ISO/IEC adoptadas como EN y UNE, que reemplazaron a la serie **EN 45000**
+- **UNE-EN ISO/IEC 17025:2017**: laboratorios de ensayo y calibración
+- **UNE-EN ISO 15189:2023**: laboratorios clínicos
+  - Transición de ISO 15189:2022 terminada el 6 de diciembre de 2025
+- **UNE-EN ISO/IEC 17020:2012**: organismos de inspección
+- **UNE-EN ISO/IEC 17065:2012**: certificación de productos, procesos y servicios (sustituyó a EN 45011)
+- **UNE-EN ISO/IEC 17021-1:2015**: auditoría y certificación de sistemas de gestión
 
-## Criterios de la acreditación
+## 4.2. Norma UNE-EN ISO/IEC 17020:2012
+- Sustituyó a la EN 45004
+- Requisitos para organismos de inspección: competencia técnica, sistema de gestión, resultados válidos e imparciales
+  - Distinta de 17025 (laboratorios) y 17065 (certificación de producto)
+- Áreas de requisitos
+  - **Generales**: imparcialidad e independencia, **Tipo A, B o C** según independencia, y confidencialidad
+  - **Estructura**: administrativos, organización y gestión
+  - **Recursos**: personal, instalaciones, equipos, subcontratación
+  - **Proceso**: métodos, manipulación de ítems, registros, informes y certificados, quejas y apelaciones
+  - **Sistema de gestión**: **opciones A o B**, control de documentos, auditorías internas, revisión por la dirección, acciones correctivas
+- Abierta a entidades públicas o privadas de cualquier tamaño
 
-- ENAC evalúa conforme a normas internacionales ISO/IEC, adoptadas como EN y UNE, que sustituyeron a la antigua serie EN 45000:
-  - **UNE-EN ISO/IEC 17025:2017**: laboratorios de ensayo y calibración.
-  - **UNE-EN ISO 15189:2023**: laboratorios clínicos.
-  - **UNE-EN ISO/IEC 17020:2012**: organismos de inspección.
-  - **UNE-EN ISO/IEC 17065:2012**: certificación de productos, procesos y servicios.
-  - **UNE-EN ISO/IEC 17021-1:2015**: auditoría y certificación de sistemas de gestión.
-
-## Norma UNE-EN ISO/IEC 17020:2012
-
-- Establece los requisitos de funcionamiento de los organismos de inspección, sustituyendo a la antigua norma EN 45004, y se distingue de las normas para laboratorios (17025) y certificación de producto (17065). Se estructura en:
-  - **Requisitos generales**: imparcialidad e independencia (organismos Tipo A, B o C) y confidencialidad.
-  - **Requisitos de la estructura**: aspectos administrativos, organización y gestión.
-  - **Requisitos de recursos**: personal, instalaciones, equipos y subcontratación.
-  - **Requisitos del proceso**: métodos, manipulación de ítems, registros, informes y gestión de quejas.
-  - **Requisitos del sistema de gestión**: opciones A o B, control documental, auditorías internas y acciones correctivas.
-- Es aplicable a entidades públicas o privadas de cualquier tamaño que examinen materiales, productos, instalaciones, procesos o servicios.
-
-## Acreditación de laboratorios: norma UNE-EN ISO/IEC 17025:2017
-
-- Referencia de acreditación aplicable a los laboratorios de los **Servicios de Inspección SOIVRE**, pertenecientes a las Direcciones Territoriales y Provinciales de Comercio.
-- Sustituyó a la versión de 2005 y organiza sus requisitos con enfoque basado en procesos y riesgos:
-  - **Requisitos generales y de estructura**: imparcialidad, confidencialidad y personalidad jurídica del laboratorio.
-  - **Requisitos de recursos**: personal competente, instalaciones y condiciones ambientales controladas, y trazabilidad metrológica al **Sistema Internacional (SI)**.
-  - **Requisitos del proceso**: revisión de solicitudes y contratos, validación de métodos con declaración de incertidumbre, muestreo estadísticamente sólido, controles de calidad y ensayos de aptitud, e informes de resultados.
-  - **Requisitos del sistema de gestión**: control documental y de registros (conservación de al menos **5 años**), gestión de riesgos y oportunidades, acciones correctivas, y auditorías internas anuales con revisión por la dirección.
+## 4.3. Acreditación de laboratorios: norma UNE-EN ISO/IEC 17025:2017
+- Caso próximo al SOIVRE: laboratorios de Direcciones Territoriales y Provinciales de Comercio
+- Sustituye a la de 2005: ya no dos bloques (gestión y técnicos), sino **enfoque basado en procesos y riesgos**
+- **Generales y de estructura**
+  - Imparcialidad y confidencialidad
+  - Personalidad jurídica, dirección responsable y alcance
+- **Recursos**
+  - Personal competente y supervisado
+  - Instalaciones y condiciones ambientales controladas y registradas
+  - Equipos identificados, mantenidos y calibrados, con **trazabilidad metrológica** al SI
+- **Proceso**
+  - Revisión de solicitudes, ofertas y contratos
+  - Selección, verificación y **validación de métodos**, con **incertidumbre** de medida
+  - **Muestreo**: plan estadísticamente sólido
+  - **Validez de resultados**: controles internos e **intercomparaciones** o ensayos de aptitud obligatorios
+  - Informes: método, resultados, incertidumbre, responsables técnicos
+- **Sistema de gestión**
+  - Documentos y registros, conservación mínima general de **5 años**
+  - **Riesgos y oportunidades**
+  - Acciones correctivas: causa raíz y prevención de recurrencia
+  - **Auditoría interna** al menos anual y **revisión por la dirección** anual
 
 # 5. AUDITORÍAS EXTERNAS E INTERNAS DEL SISTEMA DE CALIDAD
-
-- Las auditorías son herramienta de diagnóstico de deficiencias que permiten proponer acciones correctoras en cualquier entidad acreditada.
-- La **UNE-EN ISO/IEC 17025** exige auditorías internas, realizadas por personal independiente de la organización, habitualmente encomendadas a la **Unidad de Garantía de Calidad (UGC)**.
-- Las auditorías internas pueden ser:
-  - **Totales** (todo el sistema) o **parciales** (un aspecto concreto).
-  - **Ordinarias y programadas** (plan anual de la UGC) o **no programadas** (ante sospechas de mal funcionamiento).
-- Tras la auditoría se emite un informe con las deficiencias detectadas, se comunica a los responsables, se proponen acciones correctoras en un plazo determinado y el equipo auditor verifica su eficacia.
-- Las **auditorías externas** las realiza una empresa ajena a la organización, con carácter voluntario para reforzar la imparcialidad u obligatorio, como las que ENAC realiza en las entidades acreditadas para comprobar el mantenimiento de los requisitos de la norma de acreditación, siendo requisito imprescindible para conservar dicho estatus.
+- Herramienta de diagnóstico de deficiencias para proponer acciones correctoras
+- **Auditoría interna**: requisito de gestión de la ISO/IEC 17025
+  - Verifica funcionamiento del sistema, desviaciones y mejoras
+  - Personal de la organización, independiente y sin responsabilidad en lo auditado
+  - Suele encargarse a la **Unidad de Garantía de Calidad (UGC)**
+  - Tipos: **totales**, **parciales**, ordinarias (plan anual) o **no programadas** (sospecha de fallo)
+  - Informe con deficiencias, comunicado al responsable máximo y a los responsables de áreas
+  - Acciones correctoras en plazo y **verificación posterior** de su eficacia
+- **Auditoría externa**: empresa auditora ajena
+  - Voluntaria, dentro del plan del laboratorio, para máxima imparcialidad
+  - Obligatoria: las de **ENAC** a entidades acreditadas, imprescindibles para mantener la acreditación
+    - Examinan aspectos organizativos, de calidad y técnicos, de forma gradual
 
 # 6. CONCLUSIÓN
-
-- La certificación y la acreditación son piezas complementarias de un mismo sistema de confianza: la primera atestigua el cumplimiento de requisitos por un producto, proceso o sistema, y la segunda la competencia técnica, independencia e imparcialidad de la entidad evaluadora.
-- En España, **ENAC** actúa como único ONA desde el marco de la **Ley 21/1992**, el **Real Decreto 2200/1995** y el **Reglamento (CE) 765/2008**.
-- En el plano internacional, la integración en **Global ACI** consolida una infraestructura técnica unificada, mientras la **EA** asegura la armonización en el Mercado Único de la UE.
-- Para los **Servicios de Inspección SOIVRE**, la acreditación de su Red de Laboratorios y unidades de inspección conforme a las normas **UNE-EN ISO/IEC 17025** y **UNE-EN ISO/IEC 17020** garantiza el rigor técnico y el reconocimiento internacional de los certificados e informes emitidos.
+- Certificación y acreditación son complementarias
+  - Certificación: el producto, proceso o sistema cumple requisitos
+  - Acreditación: la entidad evaluadora es competente, independiente e imparcial
+- ENAC, único ONA: Ley 21/1992, RD 2200/1995 y Reglamento (CE) 765/2008
+- **Global ACI** a escala mundial y **EA** en el Mercado Único
+- SOIVRE: acreditación de su Red de Laboratorios (**ISO/IEC 17025**) y unidades de inspección (**ISO/IEC 17020**) refuerza rigor, reconocimiento internacional y seguridad jurídica

@@ -1,117 +1,201 @@
 # 1. INTRODUCCIÓN
 
-- Una parte importante de la labor del Servicio de Inspección **SOIVRE** se realiza en la **Red de Laboratorios del SOIVRE**, algunos acreditados por la **Entidad Nacional de Acreditación (ENAC)**.
-- Los laboratorios SOIVRE están acreditados según la Norma **UNE-EN ISO/IEC 17025:2017**, que:
-  - Regula la implantación de un Sistema de Gestión de la Calidad en laboratorios de ensayo y calibración
-  - Establece los requisitos para demostrar competencia en la realización de ensayos
-- **ENAC** es una asociación sin ánimo de lucro, declarada por el **Real Decreto 1715/2010** único organismo con potestad pública para otorgar acreditaciones conforme al **Reglamento (CE) 765/2008**.
-- La marca ENAC (Ensayos, Inspección, Calibración, Verificación Medioambiental, Certificación, Inter-comparaciones, Verificación de emisiones) cuenta con el respaldo de los **Acuerdos Multilaterales de Reconocimiento**, suscritos por más de **120 países**, gestionados por **EA (European Cooperation for Accreditation)** y **Global Accreditation Cooperation Incorporated (Global ACI)**, resultante desde el **1 de enero de 2026** de la fusión de **ILAC** e **IAF**.
-- La Red periférica cuenta con **16 laboratorios de ensayo**: Pontevedra (Vigo), Bizkaia (Bilbao), Navarra (Pamplona), Girona (Figueras), Barcelona, Valencia, Alicante, Murcia, Almería, Málaga, Sevilla, Cádiz (Algeciras), Huelva, Santa Cruz de Tenerife, Las Palmas de Gran Canaria y Madrid (Barajas), más un **Laboratorio Central** en Madrid, adscritos a la Subdirección General de Inspección, Certificación y Asistencia Técnica de Comercio Exterior del **MECE**.
-- El **Laboratorio Central SOIVRE** (Centro Analítico de Inspección y Control de la Calidad del Comercio Exterior), creado en **1989**, coordina la red periférica, las aplicaciones informáticas, la adquisición de material, la formación, el apoyo documental y el programa de acreditación.
-- El **control de calidad** es el conjunto de medidas para observar y conservar la fiabilidad de un método analítico. Se distingue:
-  - **Control interno o intralaboratorio**: evaluación diaria de la fiabilidad de las determinaciones rutinarias, con tres fases: preanalítica, analítica y postanalítica
-  - **Control externo o interlaboratorio**: participación en pruebas de intercomparación entre laboratorios
+- **Red de Laboratorios SOIVRE**
+  - Parte importante de las labores del Servicio de Inspección SOIVRE
+  - Acreditación (ENAC) por necesidad de ofrecer servicio de calidad a operadores, sobre todo exportadores
+  - Acreditados según **UNE-EN ISO/IEC 17025:2017**
+    - Sistema de Gestión de la Calidad en laboratorios de ensayo y calibración
+    - Requisitos para demostrar competencia en ensayos
+  - Composición: **16 laboratorios** de ensayo periféricos (algunos acreditados) + **Laboratorio Central** en Madrid (acreditado)
+  - Dependen de la Subdirección Gral. de Inspección, Certificación y Asistencia Técnica de Comercio Exterior (Secretaría de Estado de Comercio, MECE)
+  - Tendencia actual: especialización de cada laboratorio
+- **ENAC**
+  - Asociación sin ánimo de lucro, único organismo con potestad pública para acreditar (**RD 1715/2010**, **Reglamento (CE) 765/2008**)
+  - Marca ENAC: declara públicamente el cumplimiento y garantiza aceptación internacional
+  - Acuerdos Multilaterales de Reconocimiento, más de 120 países, en **EA** y **Global ACI** (desde 1-1-2026, fusión de ILAC e IAF)
+- **Laboratorio Central** (Centro Analítico de Inspección y Control de la Calidad del Comercio Exterior), desde **1989**
+  - Coordinar y armonizar la red periférica y las aplicaciones informáticas
+  - Planificar adquisiciones de instrumental y asesorar en reactivos, calibración y seguridad
+  - Poner a punto metodologías y dar soporte analítico
+  - Organizar intercomparaciones, seguimiento de la acreditación, formación y apoyo documental
+- **Control de calidad**: medidas para conservar la fiabilidad de un método analítico
+  - **Interno o intralaboratorio**: evalúa a diario las determinaciones rutinarias
+    - Preanalítica: toma y tratamiento de muestra
+    - Analítica: validación de métodos, muestras de control, gráficos de control
+    - Postanalítica: procesamiento estadístico y archivo
+  - **Externo o interlaboratorio**: pruebas de intercomparación
+- Objeto del tema: fundamentos, tipos (capa fina, gases, HPLC), detección, identificación y cuantificación, aplicaciones alimentarias y de seguridad industrial
 
 # 2. FUNDAMENTOS GENERALES DE LA CROMATOGRAFÍA
 
-- La cromatografía es un conjunto de técnicas basadas en la **retención selectiva**, cuyos objetivos son separar los componentes de una mezcla, identificar su naturaleza y determinar su cantidad.
-- Toda técnica cromatográfica implica una **fase móvil** (gas o líquido) que arrastra la muestra a través de una **fase estacionaria** (sólida o líquida), hasta un detector.
-- Clasificación según la fase estacionaria (si es sólida):
-  - **Cromatografía de adsorción**: fuerzas de Van der Waals
-  - **Cromatografía de cambio iónico**: fuerzas electrostáticas
-  - **Cromatografía de exclusión (geles)**: retención según tamaño molecular
-  - **Cromatografía de afinidad**: ligando de afinidad, propia de bioquímica
-  - Si la fase estacionaria es líquida soportada en un sólido inerte: **cromatografía de partición**
-- Clasificación según la fase móvil:
-  - **Cromatografía líquida**: líquido-líquido o líquido-sólido
-  - **Cromatografía de gases**: gas-líquido o gas-sólido
-- Tercera clasificación, según soporte: **cromatografía de columna** y **cromatografía de placa**
+- **Definición**: técnicas basadas en la **retención selectiva**
+  - Objetivos: separar componentes, identificarlos, cuantificarlos
+  - Origen: inicios del siglo XX, pigmentos vegetales (clorofilas, carotenoides) en columna de carbonato cálcico
+- **Fase móvil** (gas o líquido) arrastra la muestra por la **fase estacionaria** (sólida o líquida)
+  - Cada componente interacciona distinto, avanza a distinta velocidad y se separa
+  - Después pasan por un **detector**, que genera señal según concentración y tipo de compuesto
+- **Clasificación por fase estacionaria sólida**
+  - **Adsorción**: fuerzas de Van der Waals
+  - **Cambio iónico**: fuerzas electrostáticas
+  - **Exclusión (geles)**: polímeros no iónicos porosos, separan por tamaño
+  - **Afinidad**: adsorción con ligando enlazado (inhibidor enzimático, anticuerpo), uso bioquímico
+- **Partición**: fase estacionaria líquida soportada en sólido inerte, el soluto se reparte entre las fases
+- **Clasificación por fase móvil**
+  - **Líquida**: líquido-líquido y líquido-sólido
+  - **Gases**: gas-líquido y gas-sólido
+- **Clasificación por soporte**: de **columna** y de **placa**
 
 # 3. CROMATOGRAFÍA EN CAPA FINA
 
 ## 3.1. Descripción
 
-- Es la técnica más simple, del tipo de cromatografía plana.
-- Fase estacionaria: sólido adsorbente sobre una placa, siendo los más habituales la **alúmina activa** y el **gel de sílice**. Fase móvil: líquido.
-- La muestra se aplica en la placa, que se introduce verticalmente en el eluyente, ascendiendo este por capilaridad y separando los compuestos según su polaridad.
-- Revelado: bajo **luz UV** (si el adsorbente lleva indicador fluorescente) o pulverizando reactivos (ácido sulfúrico, yodo) que originan color o fluorescencia.
-- Identificación cualitativa mediante el **Rf o Factor de Retención**, comparado con un patrón. La cuantificación admite tres métodos:
-  - Comparación del tamaño de la mancha
-  - Método fotodensitométrico
-  - Método de elución, con posterior valoración espectroscópica
+- **Cromatografía plana**, la más simple de todas
+- Fase estacionaria: sólido adsorbente en una placa (**alúmina activa**, **gel de sílice**). Fase móvil: líquido (eluyente)
+- **Procedimiento**
+  - Aplicar la muestra (mancha o banda) cerca de la base y evaporar el disolvente
+  - Introducir la placa en el recipiente con eluyente, que asciende por capilaridad
+  - Mayor polaridad del analito, mayor atracción por la fase estacionaria y menor recorrido
+  - Sacar la placa al acercarse el eluyente al extremo superior
+- **Revelado** (los solutos suelen ser incoloros)
+  - Luz UV si el adsorbente lleva indicador fluorescente
+  - Pulverizar reactivos que den productos coloreados o fluorescentes (ácido sulfúrico, yodo)
+- **Identificación**: **Rf** o factor de retención = distancia recorrida por el compuesto / distancia recorrida por la fase móvil
+  - Típico de cada compuesto en las mismas condiciones, se compara con patrón (cualitativo)
+- **Cuantificación**: con patrones de cantidad conocida en la placa
+  - Tamaño de la mancha (el área es proporcional a la cantidad)
+  - **Fotodensitometría**: luz reflejada, la absorbida es proporcional a la cantidad
+  - **Elución**: rascar la placa, disolver y valorar por espectroscopia
 
 ## 3.2. Aplicaciones en el ámbito alimentario
 
-- Determinación de colorantes alimenticios, ácido ascórbico, fosfolípidos, tocoferoles, vitamina D, quinina en agua tónica, cafeína en café y teobromina en cacao y té.
+- Colorantes alimenticios, ácido ascórbico, fosfolípidos, tocoferoles
+- Vitamina D (revelado por espectrofotometría UV)
+- Quinina en agua tónica, cafeína en café
+- Teobromina en cacao y té (espectrofotometría de emisión o reflexión)
 
 # 4. CROMATOGRAFÍA DE GASES
 
 ## 4.1. Descripción
 
-- Técnica de rutina y control, en auge desde los **años 50**, en la que los componentes se volatilizan para su detección en fase gaseosa.
-- La muestra se introduce por un inyector, se volatiliza por calentamiento y es arrastrada por el **gas portador** (fase móvil) hasta la columna con la fase estacionaria.
-- El gas portador debe ser inerte, ya que no debe interaccionar con el analito: **nitrógeno**, **helio** o **hidrógeno**.
-- Técnicas de introducción de muestra: líquidas (jeringas), gaseosas (válvulas rotatorias) y sólidas (disueltas y tratadas como líquidas).
-- Tipos de columna: **empaquetada o rellena** y **abierta o capilar**, siendo esta última más habitual por su rapidez y eficiencia. Los inyectores típicos en columnas capilares son los **split/splitless**.
-- Según la fase estacionaria: **cromatografía gas-sólido** (adsorción, con carbón activo, gel de sílice o alúmina activada) o **cromatografía gas-líquido** (partición), esta última la más utilizada.
-- La fase líquida se elige según afinidad química con la muestra: fases polares (polietilenglicoles, Carbowax) para compuestos polares, fases parafínicas (escualeno) para no polares.
+- Auge desde los **años 50**, técnica de rutina y control
+- Los componentes se **volatilizan** y se detectan en fase gaseosa, sea la muestra gas, líquido o sólido
+- **Esquema**: inyector (volatiliza por calentamiento), gas portador, columna con fase estacionaria, detector, registrador
+- **Gas portador**: inerte, solo transporta, no interacciona con el analito
+  - Nitrógeno, helio o hidrógeno
+- **Muestra**: componentes volátiles a la temperatura de trabajo
+  - Líquidas: las más empleadas, jeringa de inyección
+  - Gaseosas: válvulas rotatorias (más reproducibles y automatizables)
+  - Sólidas: se disuelven y se inyectan como líquidas
+  - Cámara de inyección: volatiliza sin descomponer térmicamente
+  - Temperatura de columna regulada, factor clave en la separación
+- **Columna** enrollada
+  - Empaquetada o rellena
+  - **Capilar** (abierta): más común, más rápida y eficiente, menor diámetro y menos muestra
+  - Inyectores **split/splitless** con capilares: la mayor parte del flujo va a desecho
+- **Fase estacionaria**
+  - Sólida (gas-sólido o adsorción): carbón activo, gel de sílice, alúmina activada
+  - Líquida inmovilizada (gas-líquido o partición): la más usada
+  - Elección: estructura química similar a la muestra. Polares en fases polares (polietilenglicoles, **Carbowax**), no polares en parafínicas (escualeno)
+- **Separación**: por diferencias de volatilidad y solubilidad en la fase estacionaria
+- **Sistemas de detección**
+  - **TCD** (conductividad térmica): pérdida de calor según el gas, baja sensibilidad
+  - **ECD** (captura electrónica): muy selectivo, mide descenso de corriente por analitos que captan electrones
+    - Ideal para compuestos halogenados, mejor detector para **pesticidas**
+    - Insensible a hidrocarburos, alcoholes y cetonas
+  - **FID** (ionización de llama): universal, llama de hidrógeno ioniza las moléculas orgánicas
+  - **NPD** (llama con sal sódica): selectivo para nitrógeno, fósforo y halógenos, pesticidas y muestras biológicas
+  - **MSD** (espectrometría de masas): el más reciente
+    - Ionización por impacto electrónico o ionización química
+    - Identifica por tiempo de retención y por espectro de masas ("huella digital")
+- **Identificación y cuantificación**
+  - Cromatograma: picos por analito
+  - Posición del pico, **tiempo de retención** (volatilidad y solubilidad): análisis cualitativo
+  - **Área del pico**: análisis cuantitativo
+  - Requiere datos de patrones previos
 
-## 4.2. Sistemas de detección
+## 4.2. Aplicaciones en el ámbito alimentario
 
-- **Detector de conductividad térmica (TCD)**: mide la velocidad de pérdida de calor, con baja sensibilidad.
-- **Detector de captura electrónica (ECD)**: muy selectivo, apto para compuestos orgánicos halogenados y análisis de pesticidas.
-- **Detector de ionización de llama (FID)**: universal, basado en la conductividad eléctrica generada por combustión con llama de hidrógeno.
-- **Detector de ionización de llama con sal sódica (NPD)**: selectivo a compuestos con nitrógeno, fósforo o halógenos.
-- **Detector de espectrometría de masas (MSD)**: identifica por tiempo de retención y espectro de masas, considerado la huella digital del compuesto.
-- El cromatograma resultante permite análisis cualitativo (tiempo de retención) y cuantitativo (área del pico).
+- Análisis cada vez más específicos, reproducibles y selectivos, con menores límites de detección
+- **Residuos de plaguicidas**: análisis más rutinario del control de alimentos, sobre todo frutas y hortalizas
+  - LMR: **Reglamento (CE) 396/2005**, **Reglamento (CE) 1107/2009**, **Reglamento (CE) 178/2002**
+  - Dificultades
+    - Descomposición por altas temperaturas
+    - Gran número de plaguicidas, nuevos constantemente (actualizar métodos y patrones)
+    - Límites muy bajos (0,001 ppm o menos), el límite de detección debe ser aún menor
+    - Características físico-químicas muy distintas (varias extracciones, detectores y columnas), exige equipamiento y personal
+  - Métodos **multirresiduos** habituales, algunos plaguicidas requieren método específico
+- **Perfil de ácidos grasos**: identifica aceites y grasas
+- **Esteroles**: identifican la materia grasa y dan el colesterol
+- Alcoholes y graduación en bebidas alcohólicas. Metanol y acetona en vinagres
+- Otras
+  - Productos lácteos: componentes, residuos, contaminantes, conservadores, antioxidantes, aromas
+  - Zumo de naranja: volátiles hidrosolubles (metanol, acetaldehído)
+  - Azúcares
+  - Aminoácidos y compuestos nitrogenados en carnes, pescados y huevos
+  - Aditivos, aromas volátiles y vitaminas
 
-## 4.3. Aplicaciones en el ámbito alimentario
+## 4.3. Aplicaciones en el ámbito de la seguridad industrial
 
-- Análisis de residuos de plaguicidas, muy frecuente en frutas y hortalizas, con LMR regulados por el **Reglamento (CE) 396/2005**, el **Reglamento (CE) 1107/2009** y el **Reglamento (CE) 178/2002**.
-- Dificultades del control: descomposición térmica de plaguicidas, elevado número de sustancias, límites admisibles muy bajos (del orden de 0,001 ppm) y gran heterogeneidad físico-química entre plaguicidas, que exige métodos multirresiduo y equipamiento variado.
-- Identificación de aceites y grasas por su perfil de ácidos grasos y de esteroles, incluida la determinación de colesterol.
-- Determinación de alcoholes y graduación alcohólica en bebidas, y de metanol y acetona en vinagres.
-- Otras aplicaciones: control de calidad de lácteos, componentes volátiles del zumo de naranja, análisis de azúcares, aminoácidos y compuestos nitrogenados en carnes, pescados y huevos, aditivos, aromas volátiles y vitaminas.
-
-## 4.4. Aplicaciones en el ámbito de la seguridad industrial
-
-- Con espectrómetro de masas: determinación de biocidas como el **DMF (dimetilfumarato)** en muebles, textiles, calzado y desecantes, conforme al **Reglamento (CE) 1907/2006**.
-- Determinación de **ftalatos** en juguetes, calzado y prendas de vestir.
-- Determinación de **pentaclorofenol (PCP)** y sus sales en textiles, según la Norma **UNE 59510:2007**, y en calzado.
+- Siempre con **espectrómetro de masas**
+- Biocida **DMF** (dimetilfumarato) en muebles, textiles, calzado, bolsitas desecantes y parches antihumedad (**Reglamento (CE) 1907/2006**)
+- **Ftalatos** en juguetes, calzado y prendas
+- **Pentaclorofenol (PCP)** y sales en textiles (**UNE 59510:2007**) y calzado
 
 # 5. CROMATOGRAFÍA LÍQUIDA DE ALTA RESOLUCIÓN
 
 ## 5.1. Descripción
 
-- Conocida como **HPLC (High Performance Liquid Chromatography)**, versión moderna de la cromatografía líquida en columna, destaca por su alta resolución, rapidez y capacidad de detectar cantidades muy pequeñas.
-- La fase móvil es líquida e interacciona con los analitos, siendo su naturaleza el factor clave de separación, junto con la presión y el caudal.
-- Tipos según la fase móvil: **cromatografía líquida normal** (ambas fases polares) y **fase invertida o reversa** (fase móvil polar, estacionaria no polar), esta última la más empleada.
-- Según la composición de la fase móvil: modalidad **isocrática** (constante) o **elución por gradiente** (variable), con mayor capacidad de discriminación.
-- La fase móvil se introduce mediante una bomba de alta presión, elemento esencial del equipo.
-- Principios de separación: **adsorción** (fase sólida polar, sílice o alúmina), **reparto** (fase líquida o fases enlazadas), **intercambio iónico** y **exclusión**.
+- **HPLC**: versión moderna de la cromatografía líquida en columna
+  - Alta resolución, rapidez y detección de cantidades muy pequeñas
+  - Como la de gases, pero la fase móvil es **líquida** y sí interacciona con los analitos
+- **Metodología**: muestra disuelta (a veces directa), inyector con jeringa o automático, arrastre por fase móvil, columna, detector
+  - Factor clave: naturaleza de la fase móvil, además de presión y caudal
+- **Tipos según fase móvil**
+  - **Normal**: fase móvil y estacionaria polares
+  - **Fase invertida o reversa**: móvil polar, estacionaria no polar, la más empleada
+- **Modalidad**
+  - **Isocrática**: composición constante
+  - **Gradiente**: composición variable, más poder de separación, para polaridades muy distintas
+- **Bomba de alta presión**: parte esencial, de su funcionamiento depende la separación
+- **Columna**: no obligatoriamente termostatizada, la temperatura no es factor clave
+  - Ayuda a reducir la viscosidad de la fase móvil y aumentar la solubilidad de la muestra
+- **Principios de separación**
+  - **Adsorción**: sólido activo polar (sílice, alúmina)
+  - **Reparto**: líquido sobre soporte sólido, hoy **fases enlazadas** (compuesto ligado químicamente al soporte), retención según solubilidad
+  - Intercambio iónico
+  - Exclusión
+- **Sistemas de detección**
+  - Señal eléctrica continua, amplificada y registrada: cromatograma
+  - Identificación por **tiempo de retención**, cuantificación por **área del pico**
+  - Detectores **ópticos** (microcubeta atravesada por un rayo de luz)
+    - **Índice de refracción**: mide el cambio frente a fase móvil pura, máxima sensibilidad con máxima diferencia muestra-fase móvil
+    - **UV-visible**: absorción de energía por grupos funcionales, el más utilizado
+    - **Fluorescencia**: tercer tipo más usado, compuestos fluorescentes naturales o por **derivatización**, muy selectivo
 
-## 5.2. Sistemas de detección
+## 5.2. Aplicaciones en el ámbito alimentario
 
-- **Detector de índice de refracción**: mide el cambio de refracción respecto a la fase móvil pura.
-- **Detector de espectroscopia ultravioleta-visible**: el más utilizado, basado en la absorción de energía por grupos funcionales.
-- **Detector de fluorescencia**: empleado con compuestos fluorescentes naturales o derivatizados, con alta selectividad.
-- El cromatograma resultante permite igualmente análisis cualitativo por tiempo de retención y cuantitativo por área de pico.
+- **Aditivos**
+  - Colorantes (UV-VIS a la longitud de onda del color, sin interferencias)
+  - Conservantes: ácido sórbico y benzoico
+  - **Tartracina**, usada para adulterar el poder colorante del **azafrán**, muy frecuente en el SOIVRE
+- **Azúcares** (sacarosa, fructosa, glucosa): detector de índice de refracción
+  - Composición o adición no declarada (azúcar en zumo)
+- **Aminas biogénicas en pescados**: histamina, serotonina, tiramina y otras
+  - Histamina elevada asociada a intoxicaciones
+  - Derivatización y detector de **fluorescencia**
+  - Muy frecuente en Vigo, Bilbao y Laboratorio Central
+- **Residuos de plaguicidas**: la mayoría por gases, pero algunos por HPLC (se descomponen con el calor)
+  - Plaguicidas **bencimidazólicos**
+- **Vitaminas**: cereales de desayuno y lácteos, en el Laboratorio Central
 
-## 5.3. Aplicaciones en el ámbito alimentario
+## 5.3. Aplicaciones en el ámbito de la seguridad industrial
 
-- Determinación de aditivos: colorantes (por ejemplo, tartracina, usada para adulterar el azafrán) y conservantes como el ácido sórbico y el benzoico.
-- Determinación de azúcares (sacarosa, fructosa, glucosa) con detector de índice de refracción, para composición o detección de adulteración.
-- Determinación de aminas biogénicas en pescados (histamina, serotonina, tiramina, entre otras), mediante derivatización y detector de fluorescencia, análisis frecuente en Vigo, Bilbao y el Laboratorio Central.
-- Determinación de residuos de plaguicidas termosensibles a la cromatografía de gases, como los de estructura bencimidazólica.
-- Determinación de vitaminas, especialmente en cereales de desayuno y productos lácteos, en el Laboratorio Central del SOIVRE.
-
-## 5.4. Aplicaciones en el ámbito de la seguridad industrial
-
-- Determinación de **colorantes azoicos**, según la Norma **UNE-EN ISO 14362-1:2017**, en textiles y calzado, con detector de espectroscopia UV-visible.
+- **Colorantes azoicos** (**UNE-EN ISO 14362-1:2017**) en textiles y calzado, con detector UV-visible
 
 # 6. CONCLUSIÓN
 
-- La cromatografía constituye el conjunto de técnicas analíticas más versátil de la Red SOIVRE, por su capacidad de separar, identificar y cuantificar componentes de mezclas complejas.
-- La cromatografía en capa fina actúa como cribado rápido y económico, mientras que la cromatografía de gases y la HPLC, acopladas a detectores selectivos, sustentan el control de residuos de plaguicidas, aditivos, contaminantes y aminas biogénicas.
-- La elección entre cromatografía de gases y HPLC depende de la naturaleza físico-química del analito, siendo técnicas complementarias.
-- En seguridad industrial, su combinación con la espectrometría de masas extiende el control a sustancias restringidas en textiles, calzado y juguetes, reforzando el papel del SOIVRE en la seguridad de los productos que acceden al mercado.
+- Conjunto de técnicas más versátil y extendido en la Red SOIVRE
+- Capa fina: cribado rápido y económico
+- **Gases** y **HPLC**: complementarias, la elección depende de la naturaleza físico-química del analito
+- Núcleo del control de residuos de plaguicidas, aditivos, contaminantes y aminas biogénicas
+- Con espectrometría de masas, control de sustancias restringidas en textiles, calzado y juguetes

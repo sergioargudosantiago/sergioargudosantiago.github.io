@@ -1,63 +1,157 @@
 # 1. INTRODUCCIÓN
+- **Red de Laboratorios SOIVRE**
+  - 16 laboratorios de ensayo en la red periférica y **Laboratorio Central en Madrid**
+  - Algunos acreditados por **ENAC**, el Central también
+  - Dependen de la Subdirección Gral. de Inspección, Certificación y Asistencia Técnica de Comercio Exterior (Secretaría de Estado de Comercio, MECE)
+- **Acreditación**
+  - Nace de la necesidad de ofrecer un servicio de calidad a operadores, sobre todo exportadores
+  - Norma **UNE-EN ISO/IEC 17025:2017**: implanta un sistema de gestión de la calidad y establece requisitos de competencia en ensayos
+  - **ENAC**: asociación sin ánimo de lucro, único organismo con potestad pública para acreditar (**Real Decreto 1715/2010**, **Reglamento (CE) 765/2008**)
+  - Marca ENAC: declara públicamente el cumplimiento y da aceptación internacional
+  - Acuerdos Multilaterales de Reconocimiento, más de 120 países, en **EA** y **Global ACI** (desde 1 de enero de 2026, fusión de ILAC e IAF)
+- **Laboratorio Central** (Centro Analítico de Inspección y Control de la Calidad del Comercio Exterior, creado en **1989**)
+  - Coordinar y armonizar la red periférica y las aplicaciones informáticas
+  - Asesorar en reactivos, calibración y seguridad, poner a punto metodologías
+  - Planificar y organizar ejercicios de intercomparación
+  - Seguimiento del programa de acreditación y formación
+- **Control de calidad**: conjunto de medidas para observar y conservar la fiabilidad de un método analítico
+  - **Interno o intralaboratorio**: evaluación diaria de determinaciones rutinarias
+    - Fase **preanalítica**: toma de muestras y tratamiento previo
+    - Fase **analítica**: validación de métodos, muestras de control, gráficos de control
+    - Fase **postanalítica**: procesamiento estadístico y archivo
+  - **Externo o interlaboratorio**: participación en pruebas de intercomparación
 
-- Gran parte de la labor del Servicio de Inspección **SOIVRE** se desarrolla en la **Red de Laboratorios del SOIVRE**, algunos acreditados por la **Entidad Nacional de Acreditación (ENAC)**.
-- La acreditación responde a la necesidad de ofrecer un servicio de calidad a los operadores comerciales, especialmente exportadores. Los laboratorios están acreditados según la Norma **UNE-EN ISO/IEC 17025:2017**, que:
-  - Regula la implantación de un Sistema de Gestión de la Calidad en laboratorios de ensayo y calibración.
-  - Establece los requisitos para demostrar competencia en la realización de ensayos.
-- **ENAC** es una asociación sin ánimo de lucro declarada, por el **Real Decreto 1715/2010**, único organismo con potestad pública para otorgar acreditaciones conforme al **Reglamento (CE) 765/2008**.
-- Las Marcas de ENAC cuentan con el respaldo de Acuerdos Multilaterales de Reconocimiento, suscritos por más de **120 países**, gestionados por **EA** y por **Global Accreditation Cooperation Incorporated (Global ACI)**, resultante desde el 1 de enero de 2026 de la fusión de **ILAC** e **IAF**.
-- La Red periférica cuenta con **16 laboratorios de ensayo**: Pontevedra (Vigo), Bizkaia (Bilbao), Navarra (Pamplona), Girona (Figueras), Barcelona, Valencia, Alicante, Murcia, Almería, Málaga, Sevilla, Cádiz (Algeciras), Huelva, Santa Cruz de Tenerife, Las Palmas de Gran Canaria y Madrid (Barajas), además de un **Laboratorio Central** en Madrid, todos adscritos a la Subdirección General de Inspección, Certificación y Asistencia Técnica de Comercio Exterior (MECE).
-- El **Laboratorio Central SOIVRE** (Centro Analítico de Inspección y Control de la Calidad del Comercio Exterior), creado en **1989**, coordina la red periférica, las aplicaciones informáticas, las adquisiciones, el asesoramiento técnico, la puesta a punto de metodologías, el soporte analítico, los ejercicios de intercomparación, la acreditación, la formación, el apoyo documental y la seguridad.
-- El objetivo de todo laboratorio analítico es producir datos de alta calidad mediante un **control de calidad** planificado y documentado, entendido como el conjunto de medidas para conservar la fiabilidad de un método analítico. Existen dos tipos:
-  - **Control de calidad interno o intralaboratorio**: evalúa diariamente la fiabilidad de las determinaciones rutinarias, en tres fases: **preanalítica** (toma y tratamiento de muestras), **analítica** (validación de métodos, muestras de control, gráficos de control) y **postanalítica** (tratamiento estadístico y archivo).
-  - **Control de calidad externo o interlaboratorio**: participación en ejercicios de intercomparación entre laboratorios.
+# 2. GRÁFICO DE CONTROL
+- **Definición**: representación gráfica de los valores de una muestra de control introducida en la rutina con frecuencia preestablecida
+  - Evidencia diferencias en el proceso analítico y permite acciones correctivas lo antes posible
+  - Basado en un valor esperado y unos límites, **un gráfico por parámetro**
+  - Contrasta valor individual, valor medio, % de recuperación, desviación estándar y recorrido
+- **Muestras de control**: líquidos de referencia o analitos de concentración conocida, sometidos al mismo procedimiento que la rutina
+- **Requisitos del material de control**
+  - Estable largo tiempo, poca variabilidad entre viales
+  - Representativo en matriz y concentración
+  - Cantidad suficiente, recipiente sin influencia
+- **Tipos de muestras de control**
+  - **Disoluciones estándar o patrón**: composición conocida, alta pureza, pesada con precisión mínima del 0,1 %
+    - Patrón primario y patrón secundario (disolución valorante)
+  - **Blancos**: exentos del analito, sirven para establecer el nivel del blanco
+  - **Muestras naturales**: pool de sueros o plasmas del laboratorio, concentración desconocida, controlan la precisión, no la exactitud
+  - **Muestras naturales fortificadas**: estándar añadido a una alícuota, % de recuperación (adición estándar)
+  - **Muestras sintéticas**: analito e interferencias conocidos, verifican precisión y exactitud
+  - **Calibradores**: curvas de calibración y calibración de aparatos
+  - **Materiales de referencia certificados**: elaborados por organismos de normalización, los más caros, no se usan en rutina
 
-# 2. GRÁFICOS DE CONTROL
+## 2.1. Tipos de gráficos de control y su construcción
+- Tres tipos principales: **Shewhart**, **Recorrido** y **Cusum** (Cumulative Sum)
+- **Gráficos de Shewhart (Levey-Jennings o convencionales)**
+  - Informan de la **exactitud** del proceso, los más usados
+  - Ordenadas: valores (individuales o medias) o diferencias entre repeticiones. Abscisas: tiempo o número de muestra. Línea central
+  - **Construcción**
+    - Determinaciones repetidas del analito en un control comercial, al menos **veinte** y en días distintos
+    - Cálculo de media y DE
+    - Línea central en la media y líneas a media +/- 1, 2 y 3 DE
+    - Cada día se anota el valor del control, gráfica de un mes (31 días)
+  - **Límites**
+    - **Aviso**: media +/- 1 DE, confianza del **68 %**
+    - **Alarma**: media +/- 2 DE, confianza del **95 %**
+    - **Acción**: media +/- 3 DE, confianza del **99,73 %**
+  - **Alteraciones**
+    - **Desplazamiento**: todos los valores por encima o debajo de la media, progresivo es tendencia, indica error sistemático
+    - **Oscilación**: muchos valores muy por encima y por debajo, un solo valor alejado es salto, ambos por errores aleatorios
+  - **Normas de fuera de control**
+    - Un resultado fuera del límite de aviso: sin acción si el siguiente está dentro de los límites de alarma
+    - Dos consecutivos fuera de aviso pero dentro de acción: revisar el proceso
+      - Mismo lado de la media: error sistemático
+      - Lados distintos: errores aleatorios considerables
+    - Un resultado fuera del límite de acción: fuera de control estadístico
+      - Se rechazan los datos desde el último resultado dentro de límites y se corrige
+      - Se restablece con **tres** resultados consecutivos nuevos dentro de límites
+- **Variantes de Shewhart**
+  - **Gráficos de media**: medias de varias repeticiones, límites a +/- 2σ/√n y +/- 3σ/√n (n = medidas repetidas)
+  - **Gráficos de blancos**: tipo de gráfico de media, controlan reactivos y sistemas de medida
+    - Se representa la señal, detectan derivas y errores de reactivos
+  - **Gráficos de recuperación**: detectan errores de la matriz, control limitado de exactitud
+    - Errores sistemáticos proporcionales
+    - Muestras control: naturales fortificadas
+- **Gráficos de Recorrido y de Desviación Estándar**
+  - Evalúan la **precisión**, a diferencia de Shewhart
+  - Se representan recorridos de repeticiones sobre la muestra control en el tiempo
+  - Línea central: R̅ = ΣRi / K
+    - Ri = recorrido (valor más alto menos más bajo del subgrupo), con más de 2 medidas
+    - K = número de subgrupos
+  - Límites: múltiplos de R̅ según tablas estadísticas (repeticiones y nivel de confianza)
+  - Recorridos de medidas duplicadas: aviso a +2,512 R̅ y acción a +3,267 R̅
+  - Valores consecutivos bajo R̅: mejora de la precisión, no falta de control
+  - Gráficos de DE: usan las desviaciones estándar de los subgrupos
+  - Un gráfico por tipo de matriz, muestras control al principio y al final de la serie
+  - Combinados con gráficos de valor central distinguen errores sistemáticos y aleatorios
+- **Gráficos de Cusum**
+  - Para cambios graduales y errores pequeños (deriva de instrumentos), donde Shewhart responde lento
+  - Ordenadas: suma acumulativa de diferencias entre valor diario y media previa
+  - Rumbo muy vertical: error sistemático
+  - Uso: errores sistemáticos (falta de exactitud y derivas)
 
-- Un **gráfico de control** representa los valores de una muestra de control introducida con frecuencia preestablecida en el análisis de rutina, para detectar desviaciones e imponer acciones correctivas. Es necesario un gráfico por parámetro.
-- Permiten contrastar valor individual, valor medio, porcentaje de recuperación, desviación estándar y recorrido.
-- Las **muestras de control** son líquidos de referencia o analitos de concentración conocida. Deben ser estables, homogéneas entre viales, representativas de la matriz y concentración de rutina, disponibles en cantidad suficiente y no verse afectadas por el envase.
-- Tipos de muestras de control:
-  - **Disoluciones estándar o patrón**: composición conocida y elevada pureza, con precisión mínima de pesada del **0,1 %**. Existen patrones primarios y secundarios (estos últimos necesitan del primario para fijar su concentración).
-  - **Blancos**: muestras exentas del analito, para fijar el nivel del blanco.
-  - **Muestras naturales**: pool de sueros o plasmas de concentración desconocida, útiles para controlar la precisión.
-  - **Muestras naturales fortificadas**: se añade una concentración conocida de estándar a una alícuota, para calcular el porcentaje de recuperación (método de adición estándar).
-  - **Muestras sintéticas**: comerciales, con analito e interferencias en concentraciones conocidas, para verificar precisión y exactitud.
-  - **Calibradores**: para curvas de calibración o calibrar equipos.
-  - **Materiales de referencia certificados**: establecidos por organismos de normalización, los más caros y menos usados en rutina.
-
-## 2.1. Tipos de gráficos de control
-
-- Existen tres tipos: **Shewhart**, **de Recorrido** y **de Cusum**.
-- **Gráficos de Shewhart (Levey-Jennings)**: los más utilizados, muestran la exactitud. Se construyen a partir de al menos **veinte determinaciones** repetidas en días distintos, calculando media y desviación estándar (DE), y trazando una línea central y tres pares de líneas equidistantes (media ± 1, 2 y 3 DE), normalmente para un mes (31 días).
-  - **Límite de aviso** (media ± 1 DE): confianza del **68 %**.
-  - **Límite de alarma** (media ± 2 DE): confianza del **95 %**.
-  - **Límite de acción** (media ± 3 DE): confianza del **99,73 %**.
-  - Alteraciones detectables: **desplazamiento** (desviación sostenida hacia un lado, por error sistemático) y **oscilación** o **salto** (por errores aleatorios).
-  - Reglas de control: un resultado fuera del límite de aviso no requiere acción si el siguiente vuelve a los límites de alarma, dos consecutivos fuera de aviso pero dentro de acción exigen revisión (mismo lado: error sistemático, lados distintos: errores aleatorios), un resultado fuera del límite de acción implica sistema fuera de control, rechazo de los datos posteriores al último válido y necesidad de tres resultados consecutivos dentro de límites para restablecer el control.
-  - Variantes: **gráficos de media** (límites en ±2σ/√n y ±3σ/√n), **gráficos de blancos** (control de reactivos y sistemas de medida) y **gráficos de recuperación** (con muestras naturales fortificadas, para errores sistemáticos proporcionales).
-- **Gráficos de Recorrido y de Desviación Estándar**: evalúan la precisión, no la exactitud. La línea central es la media aritmética de los recorridos (R̅ = ΣRi/K). Para medidas duplicadas, el límite de aviso se sitúa en **+2,512 R̅** y el de acción en **+3,267 R̅**. Deben construirse gráficos distintos por matriz, con muestras reales introducidas al inicio y al final de la serie.
-- **Gráficos de Cusum**: representan la suma acumulativa de las diferencias entre el valor diario y la media histórica. Son más sensibles que los de Shewhart ante cambios graduales (deriva instrumental) y detectan errores sistemáticos.
-
-# 3. EVALUACIÓN EXTERNA DE LA CALIDAD: EJERCICIOS INTERLABORATORIO
-
-- La exactitud de un laboratorio puede verificarse comparando métodos, empleando materiales de referencia certificados o mediante **ejercicios interlaboratorio**: ensayos sobre una misma muestra realizados por dos o más laboratorios, sin metodología impuesta, organizados por una entidad independiente.
-- Según su finalidad:
-  - **Ejercicios de aptitud**: comparan la competencia de los laboratorios con su propio método.
-  - **Ejercicios colaborativos**: comprueban la idoneidad de una metodología nueva o modificada.
-  - **Ejercicios de certificación**: establecen el valor de referencia y la incertidumbre de un material de referencia.
+# 3. EVALUACIÓN EXTERNA DE LA CALIDAD DE UN LABORATORIO: EJERCICIOS INTERLABORATORIO. CUESTIONES GENERALES. EVALUACIÓN ESTADÍSTICA DE LOS RESULTADOS
+- **Verificación de la exactitud**, tres vías
+  - Comparar el método A con otro método B
+  - Materiales de referencia certificados
+  - Comparar con otros laboratorios: **ejercicios interlaboratorio**
+- **Ejercicio interlaboratorio**
+  - Mismos ensayos sobre la misma muestra por dos o más laboratorios y comparación crítica
+  - Sin metodología fijada, solo se evalúa el resultado final
+  - Objetivo: evaluar el buen funcionamiento (ensayos de pericia, de aptitud o de intercalibración)
+- **Tipos según finalidad**
+  - **Aptitud**: comparar competencia de laboratorios, cada uno con su método
+  - **Colaborativos**: comprobar idoneidad de un método nuevo o modificado
+  - **Certificación**: establecer valor de referencia e incertidumbre de un material de referencia
 
 ## 3.1. Evaluación estadística de los resultados
-
-- Cada laboratorio calcula la media y la desviación estándar de sus réplicas (habitualmente 5), que la organización trata mediante representación gráfica y análisis estadístico basado en contrastes de hipótesis (hipótesis nula H0 frente a hipótesis alternativa Ha).
-- Principales pruebas:
-  - **Test C de Cochran**: elimina laboratorios con varianza intralaboratorio significativamente mayor, mediante C = S²máx/ΣS². También sirve como alternativa al test de Levene de homoscedasticidad.
-  - **Criterio R de Grubbs**: identifica valores medios extremos mediante R = (Xq – X̅)/S. Variante simplificada: **Z-Score**, con puntuaciones **Z < 2** satisfactorias, **2 < Z < 3** cuestionables y **Z > 3** no satisfactorias.
-  - **Test Q de Dixon**: compara la diferencia entre el valor sospechoso y su vecino con el recorrido total de la serie ordenada.
-  - **Análisis de la varianza (ANOVA)**: detecta si algún laboratorio difiere significativamente de los demás, mediante revisión y eliminación de valores no válidos, cálculo de parámetros, detección de discrepantes (Cochran y Grubbs) y contraste mediante el **Test F de Snedecor**, comparando la variabilidad entre laboratorios (QE) y dentro de laboratorios (QD). Si Fexp supera el valor tabulado, se rechaza H0 y se concluye que existe error sistemático. ANOVA indica que hay diferencias, pero no cuáles, por lo que requiere contrastes posteriores (LSD, Tukey, Bonferroni, Dunnet).
+- Se calcula media y DE entre réplicas de cada laboratorio (por lo general **5**)
+- **Representación gráfica**: muestra a simple vista resultados anómalos
+- **Análisis estadístico**: detección y rechazo de resultados aberrantes mediante **contrastes de hipótesis**
+  - **Ho** (hipótesis nula): la que se somete a comprobación
+  - **Ha** (alternativa): se acepta si se rechaza Ho
+  - Se rechaza Ho si hay diferencias significativas entre valores muestrales y teóricos, medidas con el estadístico de contraste
+- Criterios habituales: **Cochran**, **Grubbs** simple y doble, **Dixon**, **ANOVA**
+- **Test C de Cochran**
+  - Elimina laboratorios con varianza intralaboratorio significativamente mayor
+  - C = S²máx / ΣS²
+  - Si supera el valor crítico tabulado: laboratorio aberrante, eliminable
+  - Alternativa simple a pruebas de homoscedasticidad como Levene
+- **Criterio R de Grubbs**
+  - Elimina laboratorios con medias extremas, inconsistentes con distribución gaussiana
+  - R = (Xq – X̅) / S
+    - Xq = valor atípico informado
+    - Xq y X̅ calculados con el conjunto completo
+    - S = desviación estándar de la muestra
+  - Si R supera el valor tabulado (nivel de significancia y grados de libertad): valor discrepante confirmado
+  - Variante: **Z-Score** (tipificación)
+    - Z < 2 satisfactorio
+    - 2 < Z < 3 cuestionable
+    - Z > 3 no satisfactorio
+- **Test Q de Dixon**
+  - Relaciones de diferencias entre datos que parecen atípicos
+  - Valores ordenados por magnitud: diferencia entre sospechoso Xq y vecino Xq-1, dividida por la diferencia entre X1 y Xn
+  - Si |Qcal| supera Q tabulado: resultado discrepante
+- **Análisis de la varianza (ANOVA)**
+  - Detecta si algún laboratorio difiere de forma estadísticamente significativa
+  - **Etapas**
+    - Eliminación de valores no válidos (fuera de protocolo)
+    - Cálculo de media, DE, repetibilidad y reproducibilidad
+    - Eliminación de discrepantes con Cochran y Grubbs y recálculo
+    - Interpretación ANOVA: contraste de igualdad de medias con más de dos grupos
+  - Ho: todas las medias poblacionales son iguales. Ha: no todas son iguales
+  - Compara medias de K laboratorios mediante dos varianzas con el **Test F de Snedecor**
+    - Variabilidad total Q = QD (dentro, solo azar) + QE (entre, azar y diferencias de medias)
+    - QD / (N-K) = varianza dentro de laboratorios
+    - QE / (K-1) = varianza entre laboratorios
+    - Estadístico: cociente entre y dentro, F con K-1 y N-K grados de libertad
+  - Fexp mayor que F tabulado: se rechaza Ho, hay error sistemático (σE² > σD²) y algún laboratorio difiere
+  - Sin diferencia significativa: predominan errores aleatorios
+  - Prueba global: no dice qué pares difieren, requiere contrastes posteriores (**LSD, Tukey, Bonferroni, Dunnet**)
 
 # 4. CONCLUSIÓN
-
-- El control de calidad interno y externo permite a los laboratorios del SOIVRE demostrar de forma continuada la fiabilidad de sus determinaciones analíticas.
-- Los gráficos de control ofrecen una herramienta visual para detectar desviaciones antes de que comprometan los resultados, mientras que los ejercicios interlaboratorio aportan una evaluación externa objetiva de cada laboratorio.
-- Esta aplicación sistemática resulta especialmente relevante para una red distribuida como la del SOIVRE, al garantizar resultados comparables entre laboratorios y reforzar la confianza de operadores y administraciones de terceros países.
+- Control de calidad interno y externo: demuestran de forma continuada la fiabilidad de las determinaciones
+- Gráficos de control: herramienta visual e inmediata para detectar desviaciones antes de comprometer resultados
+- Ejercicios interlaboratorio: evaluación externa objetiva frente al resto de la red
+- Relevancia para una red distribuida por el territorio: mismo producto, resultados comparables entre laboratorios, confianza de operadores y de administraciones de terceros países

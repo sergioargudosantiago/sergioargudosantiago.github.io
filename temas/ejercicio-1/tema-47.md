@@ -1,100 +1,169 @@
 # 1. INTRODUCCIÓN
-
-- La **calidad** no admite una definición única, dada su subjetividad
-- Se distingue entre **calidad sanitaria** y **calidad comercial**
-- La calidad comercial puede tener consecuencias comerciales relevantes aun cuando el producto sea seguro sanitariamente
-- El tema se centra en la calidad comercial, su evaluación y certificación, los servicios oficiales de control (en especial los **Servicios de Inspección SOIVRE**) y las normas de comercialización comunitarias e internacionales
+- **Calidad**: concepto subjetivo
+  - Sentido amplio: grado de adecuación a **necesidades humanas**
+  - Sentido estricto: cumplimiento de características y parámetros de **normas de calidad**
+- Dos aspectos: **calidad sanitaria** y **calidad comercial**
+- Producto seguro puede ser rechazado por calidad comercial inadecuada
+- Órgano: **SOIVRE** en DT y DP de Comercio, de la **SG de Inspección, Certificación y Asistencia Técnica del Comercio Exterior**, dentro de la **DG de Política Comercial y Seguridad Económica**, Secretaría de Estado de Comercio, **MECE**
 
 # 2. CALIDAD COMERCIAL
-
-- Conjunto de factores y parámetros, externos e internos, que debe cumplir un producto para estar en los circuitos comerciales y satisfacer al mercado de destino
-- **Calidad comercial externa**: características aparentes (forma, tamaño, color, defectos superficiales, frescura, firmeza), evaluada mediante ensayos no destructivos
-- **Calidad comercial interna**: factores de madurez apreciables internamente o por cata (aroma, sabor), requiere ensayos destructivos (azúcares, ácidos, grasa)
-- Estos requisitos se recogen en las **Normas de Comercialización de la UE**, antes llamadas Normas de Calidad Comercial
-- El **Acuerdo sobre Obstáculos Técnicos al Comercio (OTC/TBT)** de la OMC define norma como el documento aprobado por una institución reconocida que prevé reglas, directrices o características de observancia no obligatoria
-- La normalización internacional facilita el comercio al crear un lenguaje común entre fabricantes, administraciones y consumidores
+- **Definición**: factores y parámetros externos e internos exigidos para estar en circuitos comerciales y satisfacer al mercado de destino
+  - Sector alimentario: valor añadido por selección, categorías, calibres, verificación, acondicionamiento, envasado, almacenaje y transporte
+- **Calidad externa**: características aparentes (naturaleza, forma, tamaño, color, integridad, defectos, frescura, firmeza, humedad, suciedad, olores)
+  - Ensayos **no destructivos**
+- **Calidad interna**: madurez comercial, aroma y sabor (cata)
+  - Ensayos **destructivos** (azúcares, ácidos, grasa)
+- Requisitos recogidos en **Normas de Comercialización de la UE** (antes Normas de Calidad Comercial)
+  - Criterios de selección, valores de parámetros y categorías
+- **Norma** (Acuerdo **OTC/TBT** de la OMC): documento aprobado por institución reconocida, para uso común y repetido, de observancia **no obligatoria**
+- Normalización internacional: facilita el comercio, lenguaje común entre fabricantes, administraciones, comercializadores y consumidores
 
 # 3. EVALUACIÓN Y CERTIFICACIÓN DE LA CALIDAD COMERCIAL
+- Fin de la evaluación y certificación
+  - Adecuación a la norma
+  - Competencia leal
+  - Eliminar productos de escasa calidad
+  - Proteger al consumidor
+  - Facilitar relaciones comerciales exteriores
+- Certificación: conformidad con la norma y documento válido ante terceros
+- Evaluación con muestreos, inspecciones y ensayos, dos tipos complementarios
+  - **Subjetiva**: sensorial, caracteres organolépticos
+  - **Objetiva**: métodos físicos (calibradores, regla) y químicos o bioquímicos (madurez, guía **OCDE**)
+- Norma base **obligatoria u oficial** o **voluntaria**
+- Dos enfoques
+  - **Control oficial** impuesto por ley
+  - **Sistemas voluntarios** de certificación (productor o cliente)
 
-- La certificación garantiza la adecuación a la norma, la competencia leal, la eliminación de productos de escasa calidad, los derechos de los consumidores y la facilitación de las relaciones comerciales
-- **Evaluación subjetiva**: sensorial, a través de los órganos de los sentidos, para caracteres organolépticos
-- **Evaluación objetiva**: métodos físicos (calibradores, reglas) o químicos/bioquímicos (madurez, constituyentes)
-- Dos enfoques: **control oficial**, impuesto por la legislación, y **certificación voluntaria**, para valorizar el producto
+## 3.1. Control oficial de la calidad comercial. Servicios oficiales de control
+- Control de Reglamentos comunitarios en comercio exterior por **tres organismos**
+  - **SOIVRE**: certifica cumplimiento de normas de comercialización
+    - Cuerpo de Inspectores (A1) y Cuerpo de Ingenieros Técnicos (A2)
+  - **SG de Sanidad Exterior** (Ministerio de Sanidad): aptitud para el consumo
+  - **SG de Acuerdos Sanitarios y Control en Frontera** (MAPA): evitar propagación de plagas en vegetales
+- **SOIVRE**: organismo nacional responsable de la calidad comercial
+- Normativa de funciones
+  - **Orden PRE/3026/2003**, anexos actualizados por **Órdenes ECC/2257/2013** y **ECC/2566/2015**
+  - **Real Decreto 330/2008**
+- **Nueve funciones**
+  - Inspección y control de calidad comercial y seguridad
+  - Asistencia técnica al exportador
+  - Política Comercial Común
+  - Promoción comercial
+  - Normalización
+  - CITES
+  - Red de Laboratorios
+  - Comercio interior
+  - Precios
+- Destinos: MECE (DT y DP, servicios centrales), **OFECOMES**, **REPER** (Bruselas), OMC y UNCTAD (Ginebra)
+  - También CNMC, MAEUEC, MAPA, Sanidad, Comisión Europea, Banco Mundial
+- **Inspección, control de calidad comercial y seguridad**
+  - **Orden Ministerial 31 julio 1989**: SOIVRE vela por las normas de comercialización
+  - Productos del anexo de la **Orden PRE/3026/2003**
+  - Antes **CATICE**
+  - Lugar: **PIF** y centros de inspección, recintos aduaneros o instalaciones del operador
+    - Resolución 11 abril 2006: PIF 24 horas, como **Algeciras**
+  - Solicitud: notificar operaciones
+    - Exentas: expediciones sin carácter comercial y exenciones del **Reglamento Delegado (UE) 2023/2429**
+    - Certificación voluntaria gratuita en instalaciones del operador, aviso **24 horas** antes
+  - Resultado
+    - Conforme: **Certificado de Control de Calidad Comercial SOIVRE** (terceros países) o **Certificado CEE/SOIVRE** (frutas y hortalizas)
+    - No conforme: **Acta de No Conformidad**, sin presentar en otro centro sin autorización
+  - Colaboración con organismos extranjeros: equivalencia de controles en origen, envíos con certificado SOIVRE libres de control en destino
+    - **Canadá**: semiconservas (histaminas), conservas de baja acidez
+    - **EEUU**: clementinas y cerámicas en contacto con alimentos
+    - **Francia**: fraude en certificado de cítricos sin tratamiento postcosecha
+    - **Taiwán**: clorofilas cúpricas en aceites de orujo y pepita de uva
+  - Promoción con **ICEX**: certificación SOIVRE asegura mínimo de residuos de pesticidas y cumplimiento de normas
+  - Frutas y hortalizas a la UE: inspección en almacenes del operador, **Reglamento Delegado (UE) 2023/2429** y **Reglamento de Ejecución (UE) 2023/2430**
+  - Productos industriales: **Real Decreto 330/2008**, Anexo I modificado por **Orden PRE/735/2010** y **Orden PJC/161/2026**
+    - Calzado, textil, juguetes, pequeño material eléctrico, EPI, muebles y madera
+- **Asistencia técnica al exportador**: evitar **OTC** en la UE y con terceros países
+  - Mercado Único
+    - Remoción de obstáculos: servicio de quejas de DG de Comercio Internacional e Inversiones y DG de Política Comercial y Seguridad Económica
+    - **Proyecto Línea Abierta** con **CEOE** desde 1993
+    - Punto de contacto **Directiva (UE) 2015/1535**, canal con **ANFE**
+  - Terceros países
+    - Punto de contacto y notificación del **Acuerdo OTC**, Comité una vez al año
+    - Punto de contacto del **Acuerdo MSF**, Comité tres veces al año
+- **Política Comercial Común**
+  - **Comité de Política Comercial** (antes Comité 133): semanal en Bruselas, coordina la política comercial de la UE
+  - **ARM** (Acuerdos de Reconocimiento Mutuo): EEUU, Canadá, Australia, Nueva Zelanda, Suiza, Japón e Israel
+- **Promoción comercial** desde 1994: certificados de conformidad, boletines de análisis, informes de condiciones de producción, toma de muestras
+- **Normalización**, participa en
+  - **WP.7** de la CEPE/NU
+  - **REN**, grupo de expertos del Comité de Gestión de la OCM Única
+  - Régimen **OCDE** de frutas y hortalizas
+  - Comités **CODEX** de Sistemas de Inspección y Certificación (Australia) y Frutas y Hortalizas Frescas (México)
+  - Comités técnicos de **AENOR** (normas UNE)
+- **CITES**
+  - **Real Decreto 986/2021**, vigente desde 2 enero 2022, deroga el **Real Decreto 1739/1997**
+  - Autoridad Administrativa: DG de Biodiversidad, Bosques y Desertificación (**MITECO**)
+  - Autoridad Científica: **CSIC**
+  - **Encomienda de gestión** MITECO y Comercio, 4 años hasta 28 enero 2027
+    - SOIVRE: verificaciones documentales, de identidad y físicas en frontera y documentos **DIESAC**, bajo supervisión de la Autoridad Administrativa
+    - MITECO: autorizaciones, permisos, certificados, registro de colecciones, representación de España
+    - Asistencia a Aduanas, SEPRONA y Guardia Civil
+  - **12 puntos** autorizados: Vigo, Málaga, Bilbao, Algeciras, Barcelona, Sevilla, Valencia, Palma, Alicante, Las Palmas, Madrid, Tenerife
+    - Maderas CITES: Vilagarcía de Arousa, Marín, Santander
+- **Red de Laboratorios**
+  - Coordinada por el **Centro Analítico de Inspección y Control de Calidad del Comercio Exterior** (laboratorio central, Madrid)
+  - **17 laboratorios** (16 periféricos más el central), algunos con acreditación **ENAC**
+  - Análisis de oficio (gratuitos), a solicitud de país Parte, voluntarios (precios públicos) y de contraste
+- **Comercio interior**: Cámaras de Comercio, planes de competitividad del comercio minorista
+- **Precios**: recogida y análisis de precios nacionales e internacionales, en desuso por internet
 
-## Control oficial de la calidad comercial. Servicios oficiales de control
-
-- Tres organismos de control de productos alimentarios en comercio exterior
-  - **Servicios de Inspección SOIVRE**, de la Subdirección General de Inspección, Certificación y Asistencia Técnica del Comercio Exterior, dentro de la Dirección General de Política Comercial y Seguridad Económica, de la Secretaría de Estado de Comercio del **MECE**. Integrado por el Cuerpo de Inspectores (A1) y el Cuerpo de Ingenieros Técnicos (A2) del SOIVRE, certifican el cumplimiento de las normas de comercialización
-  - **Subdirección General de Sanidad Exterior**, del Ministerio de Sanidad, determina la aptitud para el consumo
-  - **Subdirección General de Acuerdos Sanitarios y Control en Frontera**, del **MAPA**, evita la propagación de plagas vegetales
-- El **SOIVRE** (Servicio Oficial de Inspección, Vigilancia y Regulación del Comercio Exterior) es el organismo nacional responsable del control de la calidad comercial
-- Sus funciones se recogen en la **Orden PRE/3026/2003** (anexos actualizados por las Órdenes **ECC/2257/2013** y **ECC/2566/2015**) y en el **Real Decreto 330/2008**, entre otras disposiciones
-
-## Funciones del SOIVRE
-
-- **Inspección, control de calidad comercial y seguridad** de productos agroalimentarios e industriales de comercio exterior
-  - Desde 1989, mediante la Orden Ministerial de 31 de julio de 1989, controla el cumplimiento de las Normas de Comercialización
-  - La inspección se realiza en Puntos de Inspección Fronterizos (**PIF**), recintos aduaneros o instalaciones del operador
-  - La **Resolución de 11 de abril de 2006** amplió el horario de determinados PIF a 24 horas todos los días
-  - Deben notificarse las operaciones sujetas a control, salvo expediciones sin carácter comercial o exentas según el **Reglamento Delegado (UE) 2023/2429**
-  - La mercancía conforme obtiene el **Certificado de Control de Calidad Comercial SOIVRE** o el **Certificado CEE/SOIVRE**, y la no conforme, un **Acta de No Conformidad**
-  - Existen acuerdos de colaboración con servicios de control extranjeros (Canadá, Estados Unidos, Francia, Taiwán) que reconocen la equivalencia de los controles SOIVRE en origen
-  - Cooperación con el **ICEX** en campañas de promoción de productos españoles
-  - El control de frutas y hortalizas a Estados Miembros se rige por el **Reglamento Delegado (UE) 2023/2429** y su **Reglamento de Ejecución (UE) 2023/2430**
-  - El **Real Decreto 330/2008** (Anexo I modificado por la Orden PRE/735/2010 y la Orden PJC/161/2026) extendió las competencias a productos industriales (calzado, textil, juguetes, material eléctrico, EPI, muebles y madera)
-- **Asistencia técnica al exportador** frente a Obstáculos Técnicos al Comercio (OTC)
-  - En el Mercado Único: remoción de obstáculos, el Proyecto Línea Abierta con la **CEOE** desde 1993, y punto de contacto de la **Directiva (UE) 2015/1535**, en relación con la **ANFE**
-  - Con terceros países: punto de contacto y notificación del Acuerdo OTC y del Acuerdo MSF de la OMC, con representación en sus Comités
-- **Participación en la Política Comercial Común**, en el Comité de Política Comercial (antes Comité 133), y en los Acuerdos de Reconocimiento Mutuo (ARM) con socios como Estados Unidos, Canadá, Australia, Nueva Zelanda, Suiza, Japón e Israel
-- **Colaboración en promoción comercial**, desde 1994, mediante certificados de conformidad, boletines de análisis e informes
-- **Normalización**, con participación en el WP.7 de la CEPE/NU, el REN de la OCM Única, el Régimen de la OCDE, los Comités del CODEX y los Comités Técnicos de AENOR
-- **Inspección y control CITES**
-  - La Autoridad Administrativa CITES corresponde al **MITECO** y la Autoridad Científica al **CSIC**
-  - Mediante encomienda de gestión con el MITECO (plazo hasta el 28 de enero de 2027), el SOIVRE ejecuta las verificaciones en frontera y expide los **DIESAC**
-  - Existen 12 puntos autorizados para especímenes CITES y otros puntos adicionales para maderas CITES
-- **Red de Laboratorios del SOIVRE**, coordinada por el Centro Analítico de Inspección y Control de Calidad del Comercio Exterior, con 17 laboratorios (16 periféricos y el Central en Madrid), algunos con acreditación **ENAC**
-- **Actuaciones en regulación y modernización del comercio interior**, en colaboración con otros ministerios
-- **Recogida y análisis de precios internacionales y nacionales**, función en desuso por el auge de internet
-
-## Sistemas voluntarios de certificación de calidad
-
-- **Distintivos de calidad diferenciada**: DOP, IGP y ETG, creados por la UE en 1992, regulados por el **Reglamento (UE) 2024/1143**
-- **Producción ecológica**: logotipo comunitario de la «eurohoja», regulado por el **Reglamento (UE) 2018/848**
-- **Producción integrada**: normativa marco nacional, desarrollada por las Comunidades Autónomas
-- **Certificación voluntaria de calidad comercial del SOIVRE**, al margen de los controles oficiales
-- **Norma ISO 9001**: no fija requisitos de calidad comercial del producto, sino de gestión de procesos
-- **Certificación GLOBALG.A.P.**: así denominada desde 2007, sustituyó a la EUREP-GAP creada en 1997, norma privada centrada en inocuidad, trazabilidad, seguridad laboral y medio ambiente en explotaciones agrícolas
+## 3.2. Sistemas voluntarios de certificación de calidad
+- Preferencia de pequeñas empresas por procedimientos colectivos y marca común
+- **DOP, IGP, ETG**: creadas en 1992, hoy **Reglamento (UE) 2024/1143**
+- **Producción ecológica**: logotipo comunitario («eurohoja»), **Reglamento (UE) 2018/848**
+- **Producción integrada**: normativa marco nacional, normas por cultivo de las Comunidades Autónomas, logotipo tras evaluación
+- **Certificación voluntaria SOIVRE**: certificado de conformidad en origen aunque no sea exigido oficialmente
+- **ISO 9001**: calidad de gestión de procesos, no requisitos de calidad comercial del producto
+- **GLOBALG.A.P.**: nombre desde 2007 (antes **EUREP-GAP**, 1997), norma privada
+  - Inocuidad, trazabilidad, seguridad y bienestar laboral, medio ambiente en explotaciones
+  - Frutas y hortalizas, flores, producción vegetal y animal, acuicultura, café verde
 
 # 4. NORMAS DE COMERCIALIZACIÓN DE LA UE
-
-- Persiguen aplicar criterios homogéneos a las producciones agrícolas comunitarias
-- Son reglamentos técnicos de obligado cumplimiento en todos los Estados Miembros y en todas las fases de comercialización, de aplicación directa
-- Tienen en cuenta las normas del **WP.7** de la **CEPE/NU**
-- Los productos que no se ajusten no pueden venderse en la UE ni importarse o exportarse
-- La **OCM Única** exige Normas de Calidad Obligatorias
-  - Para frutas y hortalizas frescas y transformadas, rigen el **Reglamento Delegado (UE) 2023/2429** y el **Reglamento de Ejecución (UE) 2023/2430**, que desde el 1 de enero de 2025 sustituyeron al **Reglamento de Ejecución (UE) 543/2011**
-- Esquema clásico de las Normas-Cuadro, heredero del antiguo Protocolo de Ginebra, sustituido en octubre de 2015 por el Geneva Understanding
+- Fin: criterios homogéneos para producciones agrícolas de todas las zonas comunitarias
+- Naturaleza: **reglamentos técnicos obligatorios** en todas sus partes
+  - En todos los Estados Miembros y todas las fases (importación, exportación, intracomunitario, interior)
+  - Aplicación inmediata, sin transposición
+  - Tienen en cuenta normas del **WP.7** de la CEPE/NU
+- Productos no conformes: no pueden exponerse, comercializarse, importarse ni exportarse
+- **OCM Única**: normas de calidad obligatorias
+  - Frutas y hortalizas: **Reglamento Delegado (UE) 2023/2429** y **Reglamento de Ejecución (UE) 2023/2430**, desde 1 enero 2025 sustituyen al **Reglamento (UE) 543/2011**
+- **Esquema de la Norma-Cuadro** (heredero del Protocolo de Ginebra, sustituido en octubre 2015 por el **Geneva Understanding**)
   - Definición del producto
-  - Disposiciones relativas a la calidad, con la clasificación en categorías Extra, I y II
-  - Disposiciones relativas al calibrado
-  - Disposiciones relativas a las tolerancias
-  - Disposiciones de presentación
-  - Disposiciones relativas al marcado
-- Los productos importados deben ajustarse a estas normas o a normas equivalentes, y los comunitarios de exportación deben cumplirlas
-- Para productos no incluidos en la OCM Única, los Estados Miembros deciden si controlan las importaciones o exportaciones
+  - Calidad: características mínimas, madurez, categorías (**Extra, I, II**)
+  - Calibrado
+  - Tolerancias
+  - Presentación
+  - Marcado: envasador, naturaleza, origen, características comerciales, marca oficial de control
+- Controles en todas las fases
+  - Importados: normas iguales o equivalentes
+  - Exportación: productos comunitarios cumplen normas comunitarias
+- Productos fuera de la OCM Única: el Estado Miembro decide si controla
 
 # 5. OTRAS NORMAS DE CALIDAD INTERNACIONALES
-
-- **CODEX Alimentarius**: Programa Conjunto FAO/OMS para la Normalización Alimentaria, creado en 1963, con 189 Miembros (188 Estados y la UE)
-  - Referencia clave para el Acuerdo OTC y el Acuerdo MSF de la OMC
-  - Forma parte, junto a la **OMSA** y la **CIPF**, del grupo «Las Tres Hermanas» reconocido por el Acuerdo MSF
-- **CEPE/NU**: creada en 1947 por el ECOSOC, con sede en Ginebra y 56 países Miembros
-  - Su **WP.7** sirve de base a las normas de comercialización de la OCM Única
-- **OCDE**: escasa actividad armonizadora, destaca por sus folletos ilustrativos en el marco de su Régimen para frutas y hortalizas
-- **ISO**: organismo internacional de normalización privado, con el Comité Técnico **ISO/TC 34** dedicado a productos agrícolas y alimentarios
+- **CODEX Alimentarius**
+  - Programa conjunto **FAO/OMS**, creado en 1963
+  - Comisión con **189 Miembros** (188 Estados y la UE)
+  - Atención a aspectos sanitarios, higiene y calidad comercial
+  - Referencia de los Acuerdos **OTC** y **MSF**, base en conflictos (caso sardinas Perú contra UE)
+  - «Las Tres Hermanas»: Codex, **OMSA** (sanidad animal) y **CIPF** (protección fitosanitaria)
+- **CEPE/NU**
+  - Creada en 1947 por el **ECOSOC**, una de las cinco Comisiones Regionales, sede en Ginebra, **56 países**
+  - **WP.7**: base directa de las normas de la OCM Única, solo requisitos de calidad comercial
+- **OCDE**
+  - Armonización poco relevante
+  - Folletos ilustrativos del Régimen para frutas y hortalizas
+- **ISO**
+  - Organismo privado, normas sobre todo de productos industriales
+  - **ISO/TC 34** (Food Products): productos agrícolas y alimentarios
 
 # 6. CONCLUSIÓN
-
-- La calidad comercial y la seguridad son los dos pilares del control oficial del comercio exterior de productos
-- Los Servicios de Inspección SOIVRE desempeñan funciones que evolucionan con el marco normativo, como ilustra la transformación de su papel en materia CITES tras el **Real Decreto 986/2021**
-- Las Normas de Comercialización de la UE, articuladas hoy por el **Reglamento Delegado (UE) 2023/2429** y el **Reglamento de Ejecución (UE) 2023/2430**, constituyen el instrumento jurídico central, complementadas por el CODEX Alimentarius, la CEPE/NU, la OCDE y la ISO
+- Calidad comercial y seguridad: dos pilares del control oficial en comercio exterior
+- Funciones del SOIVRE evolucionan con el marco normativo (ejemplo: CITES, **Real Decreto 986/2021**)
+- Normas de Comercialización de la UE: instrumento jurídico central
+  - Complementadas por CODEX, CEPE/NU, OCDE e ISO
+- Dos planos: certificación oficial y sistemas voluntarios

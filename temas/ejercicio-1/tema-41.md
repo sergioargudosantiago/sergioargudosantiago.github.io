@@ -1,104 +1,139 @@
 # 1. INTRODUCCIÓN
-
-- **Normalización**: actividad voluntaria y basada en consenso, para adoptar normas de cumplimiento no obligatorio.
-- **Norma** (Acuerdo TBT de la OMC): documento aprobado por institución reconocida que fija reglas, directrices o características de productos o procesos, de observancia no obligatoria.
-- La normalización internacional facilita el comercio al crear un lenguaje común entre fabricantes, administraciones y consumidores.
-- Jerarquía de organismos según su carácter internacional
-  - **Las Tres Hermanas**: CODEX Alimentarius, **OMSA** (antigua OIE) y **CIPF** de la FAO, reconocidas explícitamente por el **Acuerdo SPS** de la OMC.
-  - **ISO**, organismo de referencia del Acuerdo TBT.
-  - Organismos regionales como **CEPE/NU**, la OCDE o la UE.
-  - Organismos de ámbito regional más restringido: COPANT, ARSO, ACCSQ, CEN, CENELEC, ETSI y AENOR en España.
-- El Acuerdo TBT insta a los Miembros de la OMC a utilizar normas internacionales cuando existan.
+- **Normalización**: actividad voluntaria, basada en consenso, por y para las partes interesadas, en organismos independientes y reconocidos, para adoptar normas de cumplimiento voluntario
+- **Norma** (Acuerdo TBT de la OMC): documento aprobado por institución reconocida, para uso común y repetido, reglas, directrices o características de productos y procesos, observancia no obligatoria
+  - Puede incluir terminología, símbolos, embalaje, marcado y etiquetado
+- Importancia: lenguaje común entre fabricantes, administraciones, comercializadores y consumidores, facilita el comercio
+- Una norma es más internacional cuantos más países participan en su elaboración. Escalones:
+  - **Las tres hermanas**: CODEX Alimentarius, **OMSA** (antes OIE) y **CIPF** (FAO), reconocidas explícitamente por el **Acuerdo SPS**
+  - **ISO**: referencia permanente en el Acuerdo TBT, implícitamente internacional
+  - **CEPE/NU** (base de las normas de calidad UE por la OCM única), OCDE y UE: carácter regional
+  - Regionales: COPANT, ARSO, ACCSQ, CEN, CENELEC, ETSI y AENOR (Nuevo Enfoque)
+- Acuerdo TBT: los Miembros de la OMC deben usar normas internacionales cuando existan
+- Acuerdo SPS: el CODEX es organismo de referencia internacional
+- Esquema: descripción general, estructura y funcionamiento, elaboración de normas, Comités
 
 # 2. CODEX ALIMENTARIUS
+- Antecedentes: FAO (1945) y OMS (1948), países actuaban por separado, reglamentaciones que obstaculizaban el comercio y protegían poco al consumidor
+- Reuniones conjuntas FAO/OMS de expertos sobre nutrición y aditivos
+- **1961**: 11ª Conferencia de la FAO, con apoyo de OMS, CEPE/NU y OCDE, recomienda crear la Comisión
+- **1963**: Comisión del CODEX formalmente establecida, primera sesión en Roma
+- Programa conjunto FAO/OMS sobre normas alimentarias, cuyo principal logro es el CODEX Alimentarius
+- Punto de referencia mundial para consumidores, productores, elaboradores, organismos de control y comercio
+- El Acuerdo SPS elige sus normas, directrices y recomendaciones como medidas preferentes para facilitar el comercio de alimentos
 
-- Antecedentes: tras la creación de la **FAO** (1945) y la **OMS** (1948), se detectó la falta de armonización en reglamentación alimentaria.
-- La **11ª Conferencia de la FAO** (1961), con apoyo de la OMS, la CEPE/UN y la OCDE, recomendó crear la **Comisión del CODEX Alimentarius**.
-- La Comisión quedó establecida en **1963**, celebrando su primera sesión en Roma.
-- El CODEX Alimentarius es el principal logro del programa conjunto FAO/OMS y punto de referencia mundial para consumidores, productores y comercio de alimentos.
-- El **Acuerdo SPS** de la OMC elige las normas, directrices y recomendaciones del CODEX como medida preferente para facilitar el comercio de alimentos.
+# 3. OBJETIVOS DEL CODEX
+- **Proteger la salud de los consumidores**: crear o reforzar organismos de control, seguridad alimentaria en las políticas de gobierno
+- **Prácticas equitativas en el comercio internacional**: que la norma no sea obstáculo
+  - Proceso transparente con científicos, consumidores, industria, control y comerciantes
+- **Coordinar** los trabajos sobre normas de instituciones gubernamentales y no gubernamentales
+- **Preparar proyectos de normas** y publicarlas como norma regional o mundial
+- **Plan Estratégico 2026-2031**: adoptado en la 47ª reunión, en vigor desde 1-1-2026, sustituye al 2020-2025
+  - Seguimiento y evaluación adoptado en la 48ª reunión (Roma, noviembre 2025)
+  - Prioridades: enfoque **One Health** y modernización digital
 
-## 2.1. Objetivos del CODEX
+# 4. ESTRUCTURA Y FUNCIONAMIENTO
+## 4.1. Estructura
+- FAO y OMS adoptaron los **Estatutos y el Reglamento** de la Comisión
+- **Comité Ejecutivo**: Presidente, 3 Vicepresidentes y 7 Miembros elegidos por la Comisión
+  - Zonas: África, Asia, Europa, América Latina y Caribe, América del Norte, Oriente Próximo, Pacífico Sudoccidental
+  - 6 Coordinadores Regionales para 7 regiones (América del Norte y Pacífico Sudoccidental comparten)
+  - Funciones: propuestas y orientación sobre programa de trabajo, sesiones, votación, órganos auxiliares, procedimientos de normas, presupuesto
+- **Comisión**: se reúne cada dos años en principio, alternando Roma (FAO) y Ginebra (OMS), en la práctica anualmente
+  - **189 Miembros**: 188 Estados y la UE (Timor Leste en 2018)
+  - Más de 240 observadores, organizaciones intergubernamentales y no gubernamentales
+  - Un voto por Miembro, decisión por mayoría, normas por consenso y solo si falla, votación
+- **Puntos de Contacto** nacionales. España: **AESAN** (Ministerio de Derechos Sociales, Consumo y Agenda 2030)
+  - MECE (Secretaría de Estado de Comercio) y MAPA colaboran en los Comités
+  - Frutas y Hortalizas Frescas: DG de Política Comercial y Seguridad Económica, SG de Inspección, Certificación y Asistencia Técnica del Comercio Exterior
+  - Reuniones cada uno o dos años, normalmente en México, última en 2025
+- **Órganos auxiliares** (2 categorías):
+  - **Comités Regionales de Coordinación**: 6, intereses regionales y países en desarrollo, reuniones anuales, sin anfitrión permanente, el presidente es Coordinador Regional
+  - **Comités CODEX**:
+    - **Asuntos Generales (horizontales)**: principios aplicables a todos los alimentos, ratificar disposiciones, salud y seguridad del consumidor
+      - 10 activos: Principios Generales, Residuos de Plaguicidas, Aditivos, Contaminantes, Etiquetado, Higiene, Métodos de Análisis y Toma de Muestras, Nutrición y Regímenes Especiales, Residuos de Medicamentos Veterinarios, Sistemas de Inspección y Certificación de Importaciones y Exportaciones
+    - **Productos (verticales)**: normas de alimentos o grupos, reunión normalmente cada dos años, se suspenden o disuelven al terminar
+      - Activos: Frutas y Hortalizas Frescas, Grasas y Aceites, Especias y Hierbas Culinarias
+      - Aplazados sine die: Leche y Productos Lácteos, Azúcares, Frutas y Hortalizas Elaboradas (suspendido 2020, cinco sesiones sin quórum)
+      - Pescado y Productos Pesqueros: intermedio, reactivado por correspondencia en 2021 y 2024
+      - Cereales, Legumbres y Leguminosas: inactivo desde 1994, reactivación tras la 47ª reunión (granos enteros de mijo)
 
-- **Protección de la salud de los consumidores**, reforzando los organismos nacionales de control de alimentos.
-- **Asegurar prácticas equitativas y justas** en el comercio internacional, evitando que las normas se conviertan en obstáculos.
-- **Promover la coordinación** de los trabajos sobre normas de alimentos entre instituciones gubernamentales y no gubernamentales.
-- **Preparar proyectos de normas** a través de las organizaciones adecuadas para su publicación como norma regional o mundial.
-- **Plan Estratégico del CODEX 2026-2031**, adoptado en la 47ª reunión de la Comisión, en vigor desde el 1 de enero de 2026, que sustituye al Plan 2020-2025, con especial atención al enfoque **One Health** y a la modernización digital.
+## 4.2. Funcionamiento
+- CODEX Alimentarius: conjunto de normas, códigos de prácticas, directrices y recomendaciones, elaborados por los órganos auxiliares
+- **Normas Generales**: regulan una sola característica
+  - Ejemplos: Etiquetado de Alimentos Preenvasados, LMR de plaguicidas
+- **Normas para Productos**: todas las características, grupo más numeroso (ejemplo: norma 86, manteca de cacao)
+  - Estructura fija: ámbito, descripción, composición y factores de calidad, aditivos, contaminantes, higiene, pesos y medidas, etiquetado, métodos de análisis y muestreo
+  - Aditivos: autorizados por FAO y OMS, según Norma General de Aditivos
+  - Contaminantes: según Norma General de Contaminantes y Toxinas, con referencia a LMR de plaguicidas y medicamentos veterinarios
+  - Etiquetado: según Norma General de Etiquetado de Alimentos Preenvasados
+- **Códigos de Prácticas**: producción, elaboración, transporte y almacenamiento esenciales para inocuidad y aptitud
+  - Higiene: **Principios Generales de Higiene de los Alimentos**, introducen el **APPCC**
+- **Directrices**, dos categorías:
+  - **Principios**: políticas en ámbitos fundamentales (inspección y certificación, criterios microbiológicos)
+  - **Directrices**: interpretación de Principios o de Normas Generales
 
-# 3. ESTRUCTURA Y FUNCIONAMIENTO
+# 5. ELABORACIÓN DE NORMAS CODEX
+- Normas CODEX son internacionales: amplia participación y reconocimiento explícito del Acuerdo SPS
+- Los Miembros de la OMC las toman como base y toda desviación debe justificarse, o puede ser obstáculo innecesario al comercio
+  - Caso Perú contra UE, conservas de sardinas: el Órgano de Solución de Diferencias vio incumplido el Acuerdo TBT, la UE modificó su reglamentación (Reglamento (CE) 1181/2003)
+- Dos procedimientos del Reglamento de la Comisión:
+  - **Uniforme**, 8 etapas:
+    - Comisión decide elaborar la norma y qué órgano
+    - Anteproyecto de norma
+    - Consulta a Miembros e instituciones
+    - Valoración de comentarios y enmienda
+    - Adopción como proyecto de norma
+    - Segunda consulta
+    - Valoración y enmienda
+    - Adopción como norma CODEX
+  - **Acelerado**, 5 etapas:
+    - Inicio por la Comisión o el Comité Ejecutivo, mayoría de dos tercios de votos emitidos
+    - Anteproyecto, consulta, enmienda
+    - Adopción directa como norma CODEX
+- Publicación: se distribuyen a miembros de FAO y OMS, más de **200 normas de productos** además de normas generales, directrices y códigos
+- No todos los productos tienen norma: solo si se detecta necesidad, y el proceso es laborioso y exige conformidad de todos
+- **Normas regionales** (Comités Regionales de Coordinación): mismo procedimiento, votan solo los Miembros de la región, con traslado y valoración de comentarios del resto
+- Normas dinámicas: se revisan, las regionales pueden extenderse o ser anuladas por una norma CODEX
 
-## 3.1. Estructura
+## 5.1. Comités de Asuntos Generales, Sectoriales y Mixtos
+- Comités Mixtos y reuniones mixtas FAO/OMS: fuera de la estructura de la Comisión, asesoramiento científico independiente
+- **Etiquetado de los Alimentos** (general): disposiciones para todos los alimentos
+  - Elaboró la Norma General de Etiquetado de Alimentos Preenvasados
+  - Ratifica etiquetado de otros Comités, examina declaraciones de propiedades y descripciones engañosas
+- **Sistemas de Inspección y Certificación de Importaciones y Exportaciones** (general): principios y directrices para armonizar métodos y proteger la salud
+  - Cada dos años, anfitrión Australia
+- **Frutas y Hortalizas Frescas** (sectorial): creado para productos tropicales, luego ampliado
+  - Normas y códigos mundiales, consultas con el Grupo de Trabajo de la CEPE/NU para evitar duplicidades
+  - Cada uno o dos años, principalmente en México
+  - Códigos: Inspección y Certificación de la Calidad, Envasado y Transporte
+  - Formato de normas según la CEPE/NU: definición, calidad (requisitos mínimos, madurez, categorías), calibres, tolerancias, presentación, marcado o etiquetado, contaminantes e higiene
+  - Sesión 23ª (México, 2025): dátil fresco y hojas frescas de curry a la Comisión, nuevos trabajos sobre cúrcuma fresca
+- **JECFA**: Comité Mixto FAO/OMS de Expertos en Aditivos, fuera del CODEX
+  - Establecido en 1955, se reúne desde 1956
+  - Aditivos, contaminantes, toxinas naturales y residuos de medicamentos veterinarios
+  - Expertos independientes, no representantes de gobiernos
+  - Coopera con los Comités de Medicamentos Veterinarios, Contaminantes y Aditivos
+  - Más de 2.600 aditivos, unos 50 contaminantes, unos 75 medicamentos veterinarios evaluados
+- **JMPR**: Reuniones Conjuntas sobre Residuos de Plaguicidas
+  - Desde 1963, una vez al año, expertos independientes
+  - Recomienda LMR, el Comité de Residuos de Plaguicidas los discute y los eleva a la Comisión
+- **JEMRA**: Evaluación de Riesgos Microbiológicos, desde el año 2000
+- **TFAMR**: Grupo de Acción sobre Resistencia a los Antimicrobianos
+  - Temporal, 2007-2011, reactivado en 2017, anfitrión Corea
+  - Revisó el Código de Prácticas y elaboró las Directrices de Vigilancia Integrada, aprobados por la Comisión
+  - Sigue siendo prioritario bajo One Health
+- **JEMNU**: Reuniones Conjuntas sobre Nutrición, creadas en 2010
+  - A petición del Comité de Nutrición y Regímenes Especiales u otro órgano
+  - Secretaría conjunta FAO/OMS selecciona expertos y evalúa la calidad de las pruebas
 
-- Los **Estatutos y el Reglamento** de la Comisión, adoptados por FAO y OMS, describen su estructura y funcionamiento.
-- **Comité Ejecutivo**: Presidente, 3 Vicepresidentes y 7 Miembros elegidos por región (África, Asia, Europa, América Latina y el Caribe, América del Norte, Oriente Próximo y Pacífico Sudoccidental), más 6 Coordinadores Regionales.
-- El Comité Ejecutivo propone orientaciones sobre el programa de trabajo, sesiones, votaciones y presupuesto.
-- La Comisión se reúne teóricamente cada dos años, en la práctica con carácter anual, alternando sede entre Roma (FAO) y Ginebra (OMS).
-- Integrada por **189 Miembros** (188 Estados y la Unión Europea), tras la incorporación de Timor Leste en 2018, y más de 240 observadores.
-- **Puntos de Contacto del CODEX**: en España, la **AESAN**, adscrita al Ministerio de Derechos Sociales, Consumo y Agenda 2030, con colaboración del MECE y el MAPA según competencias.
-- Las decisiones se adoptan por mayoría, un voto por Miembro, y las normas se aprueban preferentemente por **consenso**.
-- La Comisión puede establecer dos tipos de órganos auxiliares
-  - **Comités Regionales de Coordinación**: 6, uno por región, sin sede fija, presididos por el Coordinador Regional.
-  - **Comités CODEX**: se dividen en Comités de Asuntos Generales (u horizontales) y Comités de Productos (o verticales).
-- Existen **10 Comités de Asuntos Generales** activos, entre ellos los de Principios Generales, Residuos de Plaguicidas, Aditivos Alimentarios, Contaminantes, Etiquetado, Higiene, Métodos de Análisis, Nutrición, Residuos de Medicamentos Veterinarios y Sistemas de Inspección y Certificación.
-- Los **Comités de Productos** activos son los de Frutas y Hortalizas Frescas, Grasas y Aceites, y Especias y Hierbas Culinarias, mientras otros permanecen aplazados o en situación intermedia.
+## 5.2. Actividades realizadas por la FAO
+- **Código Internacional de Conducta para la Distribución y Uso de Plaguicidas**: adoptado por la Conferencia de la FAO en 1985, confianza internacional y referencia para la reglamentación
+- **Consentimiento Fundamentado Previo (PIC)**: años ochenta, un producto químico peligroso listado solo se exporta con consentimiento del importador
+  - **Convenio de Rotterdam** (1998), en vigor el **24-2-2004**: vínculo jurídico, regula importaciones y exportaciones de químicos y plaguicidas peligrosos, exige información detallada
+- Formación y asistencia técnica: protección de plantas, uso y control de plaguicidas
 
-## 3.2. Funcionamiento
-
-- El CODEX Alimentarius comprende **normas, códigos de prácticas, directrices y recomendaciones**.
-- **Normas Generales**: regulan una sola característica, como el etiquetado de alimentos preenvasados o los Límites Máximos de Residuos (LMR).
-- **Normas para Productos**: describen todas las características del alimento regulado y constituyen el grupo más numeroso.
-- Estructura habitual de las normas para productos
-  - Ámbito de aplicación.
-  - Descripción.
-  - Composición y factores de calidad.
-  - Aditivos alimentarios, conforme a la Norma General del CODEX para los Aditivos Alimentarios.
-  - Contaminantes, conforme a la Norma General del CODEX para los Contaminantes y las Toxinas en los Alimentos.
-  - Higiene, con referencia a los Códigos de Prácticas de Higiene del CODEX.
-  - Pesos y medidas.
-  - Etiquetado, conforme a la Norma General del CODEX para el Etiquetado de los Alimentos Preenvasados.
-  - Métodos de análisis y muestreo.
-- Los **Códigos de Prácticas** definen prácticas de producción, elaboración, transporte y almacenamiento.
-- Los **Principios Generales del CODEX de Higiene de los Alimentos** introducen el sistema **APPCC** (Análisis de Peligros y Puntos Críticos de Control).
-- Las **Directrices** se dividen en Principios (fijan políticas) y Directrices propiamente dichas (interpretan Principios o Normas Generales).
-
-# 4. ELABORACIÓN DE NORMAS CODEX
-
-- Las normas CODEX son normas internacionales reconocidas explícitamente por el **Acuerdo SPS** de la OMC.
-- Cualquier desviación de una norma CODEX debe justificarse, so pena de constituir obstáculo al comercio, como ocurrió en la diferencia planteada por Perú contra la UE sobre las conservas de sardinas, resuelta contra la UE por incumplir el Acuerdo TBT.
-- Existen dos procedimientos de elaboración, previstos en el Reglamento de la Comisión
-  - **Procedimiento Uniforme**, de 8 etapas: decisión de iniciar la norma, anteproyecto, consulta, enmienda, adopción como proyecto, nueva consulta, nueva enmienda y adopción final como norma del CODEX.
-  - **Procedimiento Acelerado**, de 5 etapas: inicio por mayoría de dos tercios de la Comisión o el Comité Ejecutivo, anteproyecto, consulta, enmienda y adopción como norma.
-- Existen actualmente **más de 200 normas** de productos alimentarios, además de normas generales, directrices y códigos de prácticas transversales.
-- No todos los productos cuentan con norma CODEX, bien porque no se ha detectado la necesidad, bien porque no se alcanza el consenso suficiente.
-- Los **Comités Regionales de Coordinación** pueden elaborar normas de ámbito regional, votadas solo por los Miembros de esa región, aunque con traslado y valoración de comentarios del resto de la Comisión.
-- Las normas CODEX son dinámicas, pueden revisarse y las normas regionales pueden extenderse a otras regiones o ser sustituidas por una norma CODEX general.
-
-# 5. COMITÉS DE ASUNTOS GENERALES, SECTORIALES Y MIXTOS
-
-- Los **Comités Mixtos** y reuniones mixtas FAO/OMS no pertenecen a la estructura de la Comisión, pero aportan asesoramiento científico independiente.
-- **Comité del CODEX sobre Etiquetado de los Alimentos**: elaboró la Norma General para el Etiquetado de los Alimentos Preenvasados y examina el resto de disposiciones de etiquetado.
-- **Comité del CODEX sobre los Sistemas de Inspección y Certificación de Importaciones y Exportaciones de Alimentos**: elabora principios y directrices de armonización, se reúne cada dos años, normalmente en Australia.
-- **Comité del CODEX sobre Frutas y Hortalizas Frescas**: Comité Sectorial, elabora normas y códigos de prácticas para frutas y hortalizas frescas, coordinándose con la CEPE/UN. Se reúne cada uno o dos años, normalmente en México.
-  - Ha elaborado el Código de Prácticas para la Inspección y Certificación de la Calidad de Frutas y Hortalizas Frescas y el Código de Prácticas para el Envasado y Transporte.
-  - Sus normas siguen un formato propio: definición del producto, disposiciones de calidad, clasificación por calibres, tolerancias, presentación, marcado o etiquetado, y contaminantes e higiene.
-  - En su vigésimo tercera sesión (México, 2025) avanzó en las normas para dátil fresco y hojas frescas de curry, e inició trabajos sobre cúrcuma fresca.
-- **JECFA** (Comité Mixto FAO/OMS de Expertos en Aditivos Alimentarios): establecido en 1955, evalúa aditivos, contaminantes y residuos de medicamentos veterinarios. Ha evaluado más de **2.600 aditivos**, unos 50 contaminantes y residuos de unos 75 medicamentos veterinarios.
-- **JMPR** (Reuniones Conjuntas FAO/OMS sobre Residuos de Plaguicidas): establecidas en 1963, recomiendan los LMR de plaguicidas que el Comité del CODEX sobre Residuos de Plaguicidas eleva a la Comisión.
-- **JEMRA** (Evaluación de Riesgos Microbiológicos): activas desde 2000, aplican el mecanismo de Evaluación de los Riesgos Microbiológicos.
-- **TFAMR** (Grupo de Acción sobre la Resistencia a los Antimicrobianos): constituido en 2007, disuelto en 2011 y reactivado en 2017 con sede en Corea, revisó el Código de Prácticas sobre resistencia a los antimicrobianos bajo el enfoque One Health.
-- **JEMNU** (Reuniones Conjuntas de Expertos sobre Nutrición): creadas en 2010, asesoran al Comité del CODEX sobre Nutrición y Alimentos para Regímenes Especiales.
-
-# 6. ACTIVIDADES REALIZADAS POR LA FAO
-
-- **Código Internacional de Conducta para la Distribución y Uso de Plaguicidas**, adoptado por la Conferencia de la FAO en 1985, para reforzar la confianza en la reglamentación y comercialización segura de plaguicidas.
-- **Procedimiento de Consentimiento Fundamentado Previo (PIC)**, establecido en la década de 1980, exige el consentimiento previo del importador para exportar sustancias peligrosas.
-- **Convenio de Rotterdam**, adoptado en 1998 para dar respaldo jurídico al PIC, en vigor desde el 24 de febrero de 2004, regula importaciones y exportaciones de productos químicos y plaguicidas peligrosos.
-- Actividades de formación y capacitación de la FAO en protección de plantas y uso y control de plaguicidas en los alimentos.
-
-# 7. CONCLUSIÓN
-
-- El CODEX Alimentarius es el principal referente internacional de normalización alimentaria, reconocido por el Acuerdo SPS como base preferente de los reglamentos técnicos de sus Miembros.
-- Su estructura, con la Comisión, el Comité Ejecutivo y los Comités de Asuntos Generales, Sectoriales y Mixtos, permite abordar aspectos horizontales y específicos de cada producto.
-- El **Plan Estratégico 2026-2031** confirma su adaptación a los retos actuales, con el enfoque One Health y la digitalización de sus procedimientos.
-- Para España, y en particular para el **Servicio de Inspección SOIVRE**, el conocimiento del CODEX es esencial, dado que buena parte de las normas de calidad aplicadas al comercio exterior agroalimentario se originan en sus trabajos.
+# 6. CONCLUSIÓN
+- CODEX: principal referente internacional de normalización alimentaria, base preferente según el Acuerdo SPS
+- Estructura: Comisión, Comité Ejecutivo, Comités de Asuntos Generales, Sectoriales y Mixtos
+- Plan 2026-2031: One Health y digitalización, con consenso, transparencia e inclusión
+- Relevancia para España y el SOIVRE: normas de calidad y seguridad del comercio exterior agroalimentario, interacción constante con CEPE/NU y OCDE (tema siguiente)

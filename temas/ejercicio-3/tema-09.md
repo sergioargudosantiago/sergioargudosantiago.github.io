@@ -1,101 +1,187 @@
-# 1. Introducción y Contexto
-- **Evolución económica**: España ha pasado de la autarquía a una gran apertura exterior. Hitos: Plan de Estabilización (1959), ingreso CEE (1986) y OMC (1995).
-- **Necesidad de apoyo**: El entorno internacional complejo y los riesgos inherentes exigen respaldo público.
-- **Clasificación de instrumentos de apoyo**:
-  - Comerciales: ICEX.
-  - Fiscales.
-  - Financieros:
-    - Financiación comercial: CESCE y CARI.
-    - Financiación concesional: FIEM.
+# 1. INTRODUCCIÓN
 
-# 2. Antecedentes: Del FAD al FIEM
-- **Contexto de cambio**: Crisis económica y restricciones de crédito exigieron adaptar los instrumentos.
-- **Ley 11/2010**: Reforma del Sistema de Apoyo Financiero.
-  - Extinción del Fondo de Ayuda al Desarrollo (FAD).
-  - Creación del Fondo para la Internacionalización de la Empresa (FIEM).
-- **El Fondo de Ayuda al Desarrollo (FAD)**:
-  - Objetivo doble: Apoyo a la exportación y contribución al desarrollo (Ayuda Oficial al Desarrollo - AOD).
-  - Instrumento principal: Crédito FAD (Estado a Estado, largo plazo, bajo interés).
-  - Características:
-    - Elemento de liberalidad (donación implícita): Mínimo 35% (ligados) o 50% (PMA).
-    - Limitaciones: Solo para proyectos no viables comercialmente en países de renta media-baja.
-- **Fondo de Estudios de Viabilidad (FEV)**: Financiaba estudios de consultoría/ingeniería.
+- Instrumentos públicos de apoyo a la internacionalización
+  - **Comerciales** de apoyo a la exportación
+  - **Fiscales** no aduaneros
+  - **Financieros**
+    - Financiación comercial: **Seguro de Crédito a la Exportación (CESCE)** y **crédito CARI-ICO**
+    - Financiación directa e inversión exterior: **FIEM** y fondos de **COFIDES**
+- **FIEM**: principal instrumento financiero público de apoyo directo a la exportación y a la inversión española en el exterior
+  - Sustituyó al **FAD** en su vertiente de internacionalización
+  - Absorbió la financiación de estudios de viabilidad del **FEV**
+- **FIEX** y **FONPYME**: gestionados por COFIDES, apoyo a la inversión en el exterior
 
-# 3. El Fondo para la Internacionalización de la Empresa (FIEM)
+# 2. ANTECEDENTES
 
-## 3.1. Objeto y Naturaleza
-- **Gestión**: Secretaría de Estado de Comercio.
-- **Objetivo único**: Promover la internacionalización de la economía y empresas españolas (separado de la cooperación al desarrollo).
-- **Diferencias con el FAD**:
-  - Incluye financiación comercial (además de concesional).
-  - Apoya tanto exportación como inversión.
-  - Ampliación de beneficiarios (empresas privadas extranjeras, organismos multilaterales).
-  - Enfoque en sectores estratégicos para España, no solo desarrollo.
-  - Mayor flexibilidad de garantías y control parlamentario (Memoria Anual).
+- Contexto de crisis desde **2008**: restricciones de crédito, menos financiación privada, más competencia
+- **Ley 11/2010** de Reforma del Sistema de Apoyo Financiero a la Internacionalización
+  - Extingue el **FAD**
+  - Crea el **FIEM**, gestionado por la **Secretaría de Estado de Comercio**
 
-## 3.2. Objetivos Estratégicos (Referencia 2021)
-- Promoción en contexto de incertidumbre (Estrategia 2017-2027).
-- Apoyo a PYMES (Línea FIEM-PYME).
-- Sostenibilidad y lucha contra el cambio climático (Línea ECOFIEM).
-- Colaboración con otros agentes (cofinanciación y blending).
-- Digitalización de procedimientos.
+## 2.1. Fondo de Ayuda al Desarrollo (FAD)
 
-## 3.3. Tramitación de Operaciones
-- **Entrada**: Solicitud del exportador/inversor.
-- **Análisis**: Valoración geográfica/sectorial y financiera (riesgo y garantías).
-- **Aprobación**: Comité FIEM y posterior aprobación por Secretaría de Estado o Consejo de Ministros.
-- **Ejecución**: El ICO actúa como agente financiero (firma de convenio y desembolsos).
+- Creado por el **Real Decreto-ley 16/1976**, financiación concesional de exportaciones de bienes y servicios españoles
+- Doble objetivo: internacionalización y desarrollo de los países receptores
+  - Mayoría de operaciones computaban como **AOD**
+  - Contribuciones a instituciones financieras multilaterales de desarrollo
+- **Crédito FAD**: de Estado a Estado, largos plazos, elemento de liberalidad (concesionalidad)
+- **Línea FEV** (1995): estudios de viabilidad, asistencias técnicas y consultorías de empresas españolas
+  - Tras 2010 se integra en el FIEM
 
-## 3.4. Modalidades de Financiación
-- **Concesional**: Para proyectos no viables en países elegibles (renta media-baja). Garantía soberana. Tendencia decreciente.
-- **Comercial (Exportación)**: Crédito al comprador en términos de mercado o Consenso OCDE. Complementaria al sector privado.
-- **Inversión**: Financiación corporativa o project finance para empresas españolas en el exterior.
+# 3. OBJETO Y CARACTERÍSTICAS GENERALES DEL FIEM
 
-## 3.5. Líneas Específicas
-- **Línea FIEM-PYME**:
-- **Línea ECOFIEM**:
-- **Línea EVATIC**:
-- **Línea FIEM-Facilidades UE (Blending)**:
-- **Líneas País**: Convenios globales con países específicos (ej. Egipto, Túnez)
-- **Línea no reembolsable de estudios FIEM**
+## 3.1. Objeto del FIEM
 
-## 3.6. Criterios de Valoración
-- **Interés del País/Sector**: Política comercial y endeudamiento.
-- **Interés del Proyecto**: Valor añadido, tecnología, marca España, impacto medioambiental.
-- **Efecto Arrastre**: Cuantitativo (material español exportado) y cualitativo. Valoración positiva de participación de PYMES.
-- **Viabilidad y Solvencia**: Técnica, financiera y calidad de garantías.
-- **Complementariedad**: Coste de oportunidad y cofinanciación privada.
+- Separa la política de internacionalización de la cooperación al desarrollo
+- Objetivo: incorporar empresas a la exportación y proyectar presencia estable (redes comerciales o productivas, proyectos de inversión)
+- **Diferencias con el FAD**
+  - Más flexibilidad de modalidades: financiación reembolsable concesional o comercial, y no reembolsable en supuestos previstos
+  - Objeto ampliado: exportación e **inversión directa** en el exterior
+  - Beneficiarios ampliados: Estados, Administraciones públicas, instituciones, empresas o consorcios extranjeros, organismos internacionales
+  - Mayor amplitud geográfica y sectorial
+  - Más flexibilidad en garantías y análisis de riesgos
+  - Más transparencia y control parlamentario: **Memoria anual**
+- **Ejes estratégicos** (reorientados cada año por las **Líneas Orientativas**)
+  - Internacionalización según la **Estrategia 2017-2027** y su actualización de 2023
+  - Apoyo a la PYME: **Línea FIEM-PYME**
+  - Cambio climático y financiación sostenible: **Línea ECOFIEM**
+  - Cofinanciación con otros agentes públicos o privados, multilaterales o de la UE
+  - Digitalización: plataforma online de tramitación desde **2021**
+  - Perspectiva de género en la valoración
+  - Prioridad a operaciones en **condiciones comerciales** (autosostenibilidad financiera)
+  - Proyectos vinculados a **Global Gateway**
+- Aranceles de **EEUU**: **Real Decreto-ley 4/2025** y Plan de Respuesta y Relanzamiento Comercial
+  - **Kit Exporta** en 2026
+  - Empresa afectada: criterio de valoración positiva, nunca excluyente
+- Moneda: euro o cualquier divisa con cotización oficial del **BCE**, generalmente euros o dólares
+- **Fases de tramitación**
+  - Solicitud del exportador o inversor
+  - Análisis por la **Subdirección General regional** competente
+    - Áreas: Iberoamérica y América del Norte, Europa UE, Mediterráneo, África y Oriente Medio, Asia, Oceanía y Europa no UE
+    - Puede emitir carta de intenciones y, tras el Grupo de Trabajo, carta de oferta financiera
+  - Aprobación
+    - **Comité FIEM** propone y la **Secretaría de Estado de Comercio** decide
+    - Al **Consejo de Ministros**: créditos concesionales, donaciones y operaciones de especial relevancia
+  - Entrada en vigor: el **ICO**, agente financiero, negocia el convenio de crédito y paga al exportador por hitos, con banco pagador
 
-## 3.7. Líneas Orientativas
-- **Geográficas**:
-  - Países HIPC (Pobres Altamente Endeudados): Financiación excepcional.
-  - Países PASE (Actuación Sectorial Estratégica): Prioritarios.
-  - Latinoamérica: Especial interés en inversión.
-- **Sectoriales**: Bienes de equipo, Energía (renovables), Agua, Medio ambiente, TIC/Digitalización, Ferrocarril, Naval e Infraestructuras.
-**4. Marco Regulador (Ley 11/2010)**
-- **Principios Rectores**: Coherencia con política económica, complementariedad con el mercado, coordinación y eficiencia.
-- **Financiación**: Préstamos y créditos para operaciones de interés estratégico.
-  - Exclusiones: Material de defensa/policial (salvo excepciones legales) y servicios sociales básicos (salud/educación) bajo ciertas condiciones.
-- **Beneficiarios**: Estados, administraciones públicas extranjeras y empresas/consorcios (públicos o privados).
-  - Requisitos: Cumplimiento de acuerdos internacionales (RSC, derechos laborales, anticorrupción).
-**5. Fondos Gestionados por COFIDES**
-**COFIDES** (Cía. Española de Financiación del Desarrollo) es una sociedad mercantil estatal (capital mixto público-privado) que financia proyectos privados viables en el exterior. Gestiona fondos propios y fondos del Estado:
+## 3.2. Características Generales del FIEM
 
-## 5.1. FIEX (Fondo para Inversiones en el Exterior)
-- **Objeto**: Promover la internacionalización de la empresa y economía española.
-- **Naturaleza**: Fondo fiduciario estatal.
-- **Proyectos**: Inversión en el exterior (cualquier país salvo España).
-- **Instrumentos**: Participaciones en capital (minoritarias y temporales), préstamos participativos, subordinados o de coinversión.
-- **Importes**: De 250.000 € a 30 M€.
+- **Límite anual** fijado por la Ley de Presupuestos Generales del Estado
+  - **Real Decreto-ley 4/2025**: de **500 a 700 millones de euros** en 2025
+  - Operaciones **no reembolsables** hasta **20 millones de euros** para diversificar mercados de empresas afectadas por aranceles de EEUU
+- **Real Decreto 519/2026**: modifica el Reglamento para la reconstrucción de **Ucrania**
+  - Flexibilidad en garantías ucranianas, límite acumulado de **100 millones de euros**
+  - Financiación no reembolsable más allá de asistencias técnicas y consultorías, límite acumulado de **100 millones de euros**
+  - Incorpora la Oficina Española para la Reconstrucción de Ucrania al Comité FIEM
+- Exige maximizar el **efecto arrastre exportador** (directo e indirecto)
+- **Modalidades de financiación**
+  - Reembolsable **concesional**: proyectos de especial interés no viables comercialmente, requisitos del **Consenso de la OCDE**
+  - Reembolsable **comercial** para exportación: créditos al comprador extranjero, oferta competitiva, diferencia clave con el FAD
+  - Reembolsable **comercial** para inversión: préstamos a inversiones productivas y **project finance**
+- **Líneas de crédito**
+  - **FIEM-PYME** (2019): hasta **10 millones de euros** por proyecto, más de **400 millones de euros** de dotación, riesgo por **CESCE** (exportación) o **COFIDES** (inversión)
+  - **ECOFIEM** (2019): hasta **200 millones de euros**, mitigación o adaptación al cambio climático
+  - **EVATIC**: **20 millones de euros**, estudios de viabilidad y consultorías, heredera del FEV
+    - Desde junio de 2017 a diciembre de 2025: **218 operaciones**, **263 millones de euros**, remanente de **137 millones de euros**, más del **87%** sector privado
+    - **Línea no reembolsable de estudios** (2021): renovada en 2025 con **20 millones de euros** anuales hasta 2028
+  - **FIEM-Facilidades UE** (Blending FIEM-UE): 2014, modificada en 2017, **50 millones de euros**, COFIDES con ejecución delegada del presupuesto de la UE desde 2016
+  - **Líneas País**: convenio de crédito por importe global, aprobación del Consejo de Ministros y tramitación ágil
+    - Línea PYME con **Egipto y Túnez** y cooperación reforzada con **Marruecos**
+- **Criterios de valoración** (Líneas Orientativas)
+  - Interés del país, del sector y del proyecto
+  - Efecto de arrastre, con PYME proveedoras
+  - Viabilidad técnica y financiera
+  - Experiencia de la empresa adjudicataria
+  - Solvencia del beneficiario y calidad de garantías
+  - Equilibrio de riesgos de la cartera
+  - Coste de oportunidad y cofinanciación privada
+  - Respeto al **Consenso OCDE** y acuerdos anticorrupción y medioambientales
+- **Prioridades geográficas 2026**: orientativas y no excluyentes
+  - América: Brasil, Chile, Colombia, Estados Unidos, México, Perú, Uruguay
+  - Europa: Serbia, Ucrania
+  - Asia y Oceanía: Filipinas, India, Indonesia, Vietnam, Australia
+  - África: Senegal, Mauritania, Angola, Costa de Marfil, Nigeria, Sudáfrica, Tanzania, Uganda
+  - Mediterráneo: Egipto, Marruecos, Túnez, Turquía
+  - Oriente Medio: Arabia Saudí, Emiratos Árabes Unidos, Qatar
+  - Países al corriente de obligaciones financieras con España, salvo atrasos técnicos
+  - **HIPC**: financiación reembolsable con condiciones específicas
+- **Prioridades sectoriales 2026**
+  - Bienes de equipo, energía renovable (eólica y fotovoltaica), agua
+  - Medio ambiente y cambio climático, TIC
+  - Ferrocarril (material rodante y señalización), sector naval
+  - Infraestructuras (equipamiento aeroportuario y portuario)
+  - Educación, salud y nutrición: solo suministro y puesta en marcha de equipamiento con gran efecto de arrastre y contenido tecnológico
 
-## 5.2. FONPYME (Fondo para Operaciones en el exterior de la PYME)
-- **Objeto**: Similar al FIEX pero exclusivo para PYMES.
-- **Instrumentos**: Participaciones en capital y préstamos diversos.
-- **Importes**: De 75.000 € a 5 M€.
-- **Cofinanciación**: Si el país es elegible para COFIDES, esta cofinancia con sus recursos propios.
-**6. Conclusión y Estrategia PASE**
-- El FIEM ofrece respuesta adaptada y flexible para igualar competitividad financiera internacional.
-- **Estrategia PASE (Países con Actuación Sectorial Estratégica)**:
-  - Reestructuración de los antiguos Planes Integrales (PIDM).
-  - Enfoque sectorial en países prioritarios (EEUU, China, México, India, etc.).
-  - Objetivo: Aprovechar oportunidades donde la presencia española es inferior al potencial real.
+# 4. MARCO REGULADOR
+
+- **Ley 11/2010**: crea el FIEM en sustitución del FAD y del FEV
+- **Real Decreto 1797/2010**: Reglamento del FIEM, modificado por el **Real Decreto 519/2026**
+- **FONPRODE**: **Ley 36/2010**, cooperación al desarrollo, gestionado por el Ministerio de Asuntos Exteriores, la Secretaría de Estado correspondiente y la **AECID**
+  - Sucedido por el **FEDES**: **Ley 1/2023**, Reglamento por **Real Decreto 810/2025**, gestión de la AECID con el ICO y COFIDES
+- **Contenido de la Ley 11/2010**
+  - **Arts. 1 y 2**: crean el FIEM, gestionado por la Secretaría de Estado de Comercio, para exportación e inversión directa en el exterior
+  - **Art. 3** (principios rectores)
+    - Coherencia e integración con otras políticas públicas
+    - Internacionalización como objeto exclusivo
+    - Coordinación por lealtad institucional (Leyes 39/2015 y 40/2015)
+    - Complementariedad con el mercado privado, nunca sustitutiva
+    - Coherencia con el marco internacional y eficiencia de recursos
+  - **Art. 4** (financiación)
+    - Operaciones de interés especial y asistencias técnicas o consultorías
+    - Préstamos, créditos y líneas de crédito, y no reembolsable en casos justificados
+    - Excluidos con carácter general los servicios sociales básicos (educación, salud, nutrición), con excepciones reglamentarias
+  - **Art. 5** (beneficiarios y garantías)
+    - Estados, Administraciones públicas extranjeras, instituciones públicas y empresas o consorcios, de países desarrollados o en desarrollo
+    - Garantía **soberana** o de organismo internacional como regla general
+    - Reglamento admite garantías de Administraciones subestatales, instituciones y empresas con solvencia, con valoración específica del riesgo
+    - Organismos internacionales pueden recibir recursos
+    - **HIPC**: limitaciones y excepciones de la Ley
+
+# 5. FONDOS COFIDES
+
+- **COFIDES, S.M.E.**: sociedad mercantil estatal de **1988**, financia proyectos privados viables de inversión exterior con interés español
+  - Recursos propios y gestión por cuenta del Estado de **FIEX** y **FONPYME**
+  - Participa en mecanismos de **blending** con fondos de la UE
+- **Capital**
+  - Público (en torno al **53%**): **ICEX** 25,74%, **ICO** 20,31%, **ENISA** 7,63%
+  - Privado: Banco Santander 20,17%, BBVA 16,68%, Banco Sabadell 8,33%, CAF 1,14%
+- Acreditada para gestionar presupuesto de cooperación de la UE, avanza en la acreditación ante el **Fondo Verde para el Clima**
+- Desde **2023** gestiona dos fondos de sentido inverso con fondos del **PRTR**
+
+## 5.1. Fondo para las Inversiones en el Exterior (FIEX)
+
+- Fin: internacionalización de empresas y economía con proyectos de inversión exterior con interés español
+- Regulación: **Ley 66/1997** y **Real Decreto 1226/2006**
+- Productos de **250 mil a 30 millones de euros**
+- Participaciones **temporales y minoritarias**, directas o indirectas, en empresas españolas o del exterior, vehículos de capital expansión y fondos privados
+- Instrumentos de **capital y cuasi-capital**: capital, préstamos subordinados, participativos o convertibles
+- Cualquier país excepto España
+- Gestión de COFIDES por cuenta del Estado
+
+## 5.2. Fondo para Operaciones en el Exterior de PYME (FONPYME)
+
+- Fin: internacionalización de **PYME** mediante inversión exterior
+- Mismas fórmulas que el FIEX: participaciones temporales y minoritarias, fondos y otros instrumentos participativos
+- Productos de **75 mil a 5 millones de euros**
+- Cofinancia con COFIDES o, en ciertos supuestos, financia sin COFIDES
+- Cualquier país, gestión de COFIDES por cuenta del Estado
+- **FIEM frente a FIEX y FONPYME**
+  - FIEM: operaciones de exportación e inversión, principalmente reembolsable
+  - FIEX y FONPYME: solo inversión exterior, capital y cuasi-capital
+  - FONPYME: centrado en PYME
+
+## 5.3. Otros fondos de COFIDES
+
+- **FOCO** (Fondo de Coinversión): **2.000 millones de euros**, atrae inversión extranjera a España
+- **FIS** (Fondo de Impacto Social): **400 millones de euros**, impacto social y medioambiental en España
+- Ambos con recursos del **PRTR**, fuera del núcleo del tema
+- En **2026** culminó la fase de inversión de ambos, con dotaciones comprometidas
+
+# 6. CONCLUSIÓN
+
+- **FIEM**: principal instrumento público de financiación directa de exportación e inversión exterior, principalmente reembolsable, con atención al efecto de arrastre
+  - Evolución del FAD: separación entre internacionalización y cooperación al desarrollo
+  - 2025: límite de **500 a 700 millones de euros**
+  - 2026: refuerzo para la reconstrucción de **Ucrania** con la modificación del Reglamento
+- **COFIDES** completa el sistema con **FIEX** (capital y cuasi-capital) y **FONPYME** (PYME)
+- Cubre la financiación de la exportación y la implantación e inversión en mercados exteriores

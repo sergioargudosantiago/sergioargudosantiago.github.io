@@ -1,129 +1,183 @@
-# 1. Introducción
-- **Contexto actual:**
-  - El comercio de mercancías ha crecido por encima del PIB debido a la internacionalización y globalización.
-  - Existe una interrelación y dependencia creciente entre economías.
-- **Cambios relevantes en la configuración de los mercados:**
-  - Protagonismo adquirido por las PYMES.
-  - Proliferación de nuevas formas de acceso a los mercados.
-  - Cooperación empresarial.
-- **Consecuencias:** Incremento de la competencia y aparición de nuevas oportunidades.
-- **Estrategia:** La internacionalización es clave para la supervivencia y requiere un Plan de Marketing Internacional.
-  - Definición: Estudio y desarrollo de los mercados externos.
-  - Fases: 1ª Estudio; 2ª Acción u operación en el mercado.
+# 1. INTRODUCCIÓN
 
-# 2. El Marketing Internacional: Concepto y Funciones
-- **Definición:** Interacción entre las necesidades y deseos del consumidor de los mercados exteriores y las respuestas de las empresas (productos y servicios).
-- **Función principal:** Elaborar el Plan de Marketing Internacional.
-  - Elaboración de estudios de mercado previos (análisis del entorno y selección).
-  - Elección de la forma de acceso e implantación.
-  - Elaboración de la estrategia de marketing.
-  - Implantación y puesta en práctica del plan.
-- **Consideraciones para PYMES:**
-  - Limitaciones: Recursos financieros escasos, falta de expertos y campaña de impacto limitado.
-  - Alternativa: Cooperación empresarial.
-  - Condiciones para cooperar: Productos complementarios (no competitivos), compatibles en calidad/tecnología y mismo poder de decisión en la planificación.
+- **Internacionalización**: el comercio de mercancías crece por encima del PIB mundial
+  - Protagonismo de las **PYME**, nuevas formas de acceso, auge de la **cooperación empresarial**
+- Estrategia clave de supervivencia, exige un **Plan de Marketing Internacional**
+- **Marketing Internacional**: actividades de negocio para dirigir el flujo de bienes y servicios de la empresa hacia consumidores o usuarios de más de una nación
+  - Estudio y desarrollo de los mercados exteriores
+- **Dos fases**
+  - Fase de **estudio** del mercado
+  - Fase de **acción u operación** en el mercado (marketing mix)
 
-# 3. La Investigación de Mercados y las Fuentes de Información (1ª Fase)
+# 2. EL MARKETING INTERNACIONAL. CONCEPTO Y FUNCIONES
+
+- **Concepto**: interacción entre necesidades y deseos de consumidores y usuarios de mercados exteriores y respuestas de las empresas en forma de productos y servicios
+- **Función principal**: elaborar el **Plan de Marketing Internacional**
+  - Estudios de mercado previos y selección de mercados
+  - Elección de la forma de acceso e implantación
+  - Estrategia de marketing e implantación del plan
+- **PYME**: consideraciones especiales
+  - Recursos financieros limitados
+  - Falta de personal experto en marketing
+  - Impacto limitado en el mercado de destino, campañas poco eficaces
+- **Alternativa**: cooperación empresarial, asociarse con otras empresas para el marketing exterior
+  - Productos complementarios, no competitivos, compatibles en calidad y tecnología
+  - Mismo poder de decisión en la planificación de las ventas
+
+# 3. LA INVESTIGACIÓN DE MERCADOS Y LAS FUENTES DE INFORMACIÓN
+
+- Primera fase (estudio): investigación de mercados y fuentes de información
 
 ## 3.1. La investigación de mercados
-- Decisión inicial sobre el alcance.
-**Estrategias de alcance**
-- **Concentración (uno o pocos mercados):**
-  - Focalización de recursos y penetración intensa. Crecimiento inicial más lento.
-  - Ventajas: Mejor conocimiento y adaptación al mercado, reducción de costes logísticos/administrativos y mayor control del riesgo de clientes.
-  - Uso recomendado: Elevados costes de penetración/seguimiento, etapa intermedia de internacionalización o producto en etapa intermedia de su ciclo de vida.
-  - Inconveniente: Mayor riesgo por dependencia de pocos mercados.
-- **Diversificación (muchos mercados):**
-  - Bajo nivel de penetración inicial simultáneo. Crecimiento más rápido al inicio.
-  - Ventajas: Aprovechamiento de economías de escala, información comparada global, explotación de ventajas competitivas a corto plazo y evitar enfrentamientos directos.
-  - Uso recomendado: Importancia de economías de escala, gran competencia vía precio, alta especialización del segmento, fase inicial o muy introducida, producto en nacimiento o madurez.
-  - Inconveniente: Mayor dispersión de recursos y posición vulnerable.
-**Etapas de selección de mercados**
-La investigación debe responder a 5 cuestiones claves: selección, forma de acceso, clientes potenciales, precio y recursos/rentabilidad.
-- **1ª Fase: Preselección:**
-  - Información secundaria obtenida desde el despacho para determinar el atractivo.
-  - Variables analizadas:
-    - **Potencial:** Capacidad de compra. Datos necesarios: PIB, población, renta, tasa de paro, perspectivas de crecimiento, volumen de importación y tasa de apertura.
-    - **Accesibilidad:** Obstáculos. Situación geográfica (distancia/transporte), factores socioculturales, barreras arancelarias y barreras no arancelarias/técnicas (salud, seguridad, calidad).
-    - **Seguridad:** Riesgos comerciales y de inversiones (ej. nacionalizaciones).
-- **2ª Fase: Investigación en profundidad:**
-  - Obtención de información primaria para la toma de decisiones.
-  - Aspectos a investigar:
-    - **Consumidores:** Hábitos de compra (lugar, frecuencia, motivación). Necesidad de adaptación del producto (sabores, envases, normativa) e imagen del país de origen.
-    - **Competencia:** Fabricantes locales y productos importados, cuotas de mercado, precios y márgenes.
-    - **Canales de distribución:** Tipos de intermediarios, peso de mayoristas/minoristas, logística.
-  - Diferencias con mercado doméstico: Mayor complejidad (variables legales/costumbres), necesidad de adaptar técnicas, mayor coste por distancia y mayor porcentaje de error.
-- **3ª Fase: Selección de los mercados objetivo:**
-  - Criterios: Tamaño del mercado, fase de crecimiento, precio, ventaja comparativa, canales de distribución y relación coste-rentabilidad.
-**Forma de obtener los datos**
-- Métodos básicos: Cuestionarios (estructurados y no estructurados) y Observación.
-**3.2. Las fuentes de información**
-- **Información Secundaria:** Datos de dominio público (búsqueda propia en internet/bibliotecas).
-- **Información Primaria:** Investigación a fondo del mercado.
-**Principales fuentes:**
-- **ICEX España Exportación e Inversiones:**
-  - Entidad pública empresarial adscrita a la Secretaría de Estado de Comercio.
-  - Misión: Promover internacionalización y atraer inversiones exteriores.
-  - Red: Alrededor 30 Direcciones en España, de 100 Oficinas Económicas y Comerciales (OFECOMES) y 30 Centros de Negocio en el extranjero.
-  - Servicios: Información, Formación, Asesoramiento, Promoción comercial, Apoyo directo, Foros de inversión y Producción editorial.
-  - Estrategia: Enmarcada en la Estrategia de Internacionalización 2017-2027 y Planes de Acción Bienales. Objetivos: Aumentar base exportadora, diversificar mercados, incrementar valor añadido y atraer inversión.
-  - Plan Estratégico ICEX 2021-2022: Misión de resiliencia y sostenibilidad. 6 objetivos principales (incluye digitalización, atracción de talento y mejora de gobernanza).
-  - Actuaciones recientes: Ventana Global (2014), colaboración con COFIDES, Departamento de Tecnologías Facilitadoras Esenciales, Red de Inversores.
-- **Oficinas Económicas y Comerciales (OFECOMES):**
-  - Alrededor de 100 oficinas. Funciones: Representación oficial y apoyo a empresas (estadísticas, aranceles, normativa, ferias, contactos).
-- **Cámaras de Comercio:**
-  - Casi 90 en España. Objetivo: Fomento del comercio exterior. Servicios: Asesoramiento, estudios de mercado, bases de datos, censo de exportadores.
-- **Servicios de la Secretaría de Estado de Comercio (MINECO):**
-  - DATA-COMEX: Estadísticas de comercio exterior (desde 1995).
-  - DATA-INVEX: Estadísticas de inversiones (desde 1993).
-  - GLOBALINVEX: Herramienta gráfica de visualización de inversiones (creada a finales de 2020).
-- **Unión Europea:**
-  - EUROSTAT (datos económicos/población; en España INE).
-  - Instrumentos: Access 2 Markets (barreras, aranceles, requisitos técnicos), Euroventanillas (red de información), Red BC-net (cooperación empresarial).
-- **Otras fuentes:**
-  - Públicas: Delegaciones comerciales de Embajadas extranjeras (ej. JETRO), Cámaras de Comercio españolas en el extranjero, Asociaciones de exportadores, Entidades de Promoción de las CCAA (ej. Extenda, Acció).
-  - Privadas: Consultoras especializadas (ej. AC Nielsen).
-  - Internet: Herramienta fundamental de búsqueda.
 
-# 4. Marketing Mix: Concepto y Componentes
-- **Concepto:** Fase de acción u operación. Planificación estratégica de 4 variables (4Ps): Producto, Precio, Promoción/Comunicación y Posicionamiento/Distribución (Place).
-- **Requisito fundamental:** Coherencia entre los componentes. A corto plazo solo se pueden variar precio y promoción.
+- **Alcance de la internacionalización**: número óptimo de mercados, dos estrategias
+  - **Concentración**: pocos mercados, crecimiento inicial más lento pero ascendente
+    - Ventajas: mejor conocimiento del mercado, menores costes logísticos y de administración, mayor control de clientes de riesgo
+    - Adecuada si el producto se adapta lenta y costosamente o en etapa intermedia del ciclo
+    - Inconveniente: mayor riesgo por dependencia de pocos mercados
+  - **Diversificación**: muchos mercados a la vez, crecimiento inicial rápido que decrece
+    - Ventajas: economías de escala, información comparada, ventajas competitivas a corto plazo, oportunidades de precio
+    - Adecuada con fuerte competencia en precio, segmento muy especializado, o fase inicial o muy avanzada
+    - Inconvenientes: dispersión de recursos, posición más vulnerable
+- **Cinco cuestiones clave** de la investigación
+  - Selección de mercados (la más relevante)
+  - Selección de la forma de acceso
+  - Identificación de clientes potenciales
+  - Establecimiento del precio
+  - Recursos necesarios y rentabilidad
+- **Selección de mercados en tres fases**
+  - **1ª, preselección**: investigación de gabinete o **desk research**, sin desplazamiento
+    - Fuentes secundarias de organismos públicos o privados
+    - **Potencial del mercado**: situación económica, demanda, datos básicos (PIB, población, renta per cápita, paro, inflación), importaciones y exportaciones españolas
+    - **Accesibilidad**: situación geográfica, factores socioculturales, barreras arancelarias y contingentarias (en descenso por OMC e integración regional), barreras no arancelarias
+    - **Seguridad** del mercado a nivel comercial, ej. amenaza de nacionalización de empresas extranjeras
+  - **2ª, investigación en profundidad**: información primaria sobre
+    - Consumidores: hábitos de compra, adaptación del producto, normativas y certificados
+    - Competencia: cuotas, precios, condiciones de venta
+    - Canales de distribución: intermediarios, mayoristas y minoristas, márgenes
+    - Más compleja que la doméstica, mayor margen de error por distancia física, cultural e idiomática
+  - **3ª, selección de mercados objetivo**: tamaño, fase de crecimiento, precio, ventaja comparativa, canales de distribución, relación coste-rentabilidad
+- **Obtención de datos**: cuestionarios y observación
+  - Cuestionario, el más habitual: estructurado (preguntas cerradas, opción múltiple o escalas) o no estructurado (abiertas)
 
-## 4.1. Política de Producto
-- Elemento imprescindible del programa. Combinación de elementos tangibles e intangibles.
-- **Atributos físicos (tangibles):**
-  - Intrínsecos: Composición y calidad. Deben ser acordes a normas técnicas y gustos del consumidor. Importancia de la responsabilidad civil por productos defectuosos.
-  - Extrínsecos: Envase y embalaje (presentación), etiquetado. Funciones: Identificación, protección y adaptación (ej. conciencia ecológica).
-- **Atributos intangibles:**
-  - Marca: Identifica, individualiza y garantiza calidad. Decisiones estratégicas: Marca propia vs. blanca; Marca global vs. local.
-  - País de origen: Efecto "made in" como valor añadido de imagen.
-  - Garantía y Servicio postventa: Elemento de diferenciación y confianza (clave en servicios).
-- **Estandarización vs. Adaptación:** La decisión depende de la relevancia de costumbres/cultura local (productos industriales admiten más estandarización; consumo requieren más adaptación) y de la importancia de las economías de escala.
+## 3.2. Las fuentes de información
 
-## 4.2. Política de Precio
-- Elemento clave por su relación estrecha con la demanda. Instrumento a corto plazo, competitivo y único generador de ingresos.
-- **Pasos para la fijación de precios:**
-  - Cálculo de costes (Precio Mínimo).
-  - Valoración de precios de la competencia (Precio Máximo), salvo que exista alta diferenciación.
-  - Estimación de la demanda (Precio Óptimo).
-- **Factores adicionales internacionales:** Tipo de cambio, regulaciones (precios máximos, antidumping, IVA), precios de transferencia.
-- **Estrategia:** Tendencia actual a la **estandarización** para mayor coherencia e imagen global. Posibilidad de precios de penetración iniciales para ganar cuota.
+- Las empresas carecen de estructura para la **información primaria** (investigación en profundidad)
+- La **información secundaria** (dominio público, preselección) la obtienen ellas por internet
+- **ICEX España Exportación e Inversiones**: entidad pública empresarial adscrita a la Secretaría de Estado de Comercio del **MECE**
+  - Misión: promover la internacionalización y atraer inversión exterior
+  - Red: Direcciones Provinciales y Territoriales de Comercio, en torno a un centenar de **OFECOMES**, Centros de Negocio (incubadoras temporales)
+  - Recursos
+    - Información sobre mercados (precios públicos) y formación
+    - Asesoramiento: **Plan ICEX Next**, Conecta2 a ICEX
+    - Promoción comercial: Plan País USA, ICEX Impact+, Desafía
+    - Foros de inversión y cooperación: Plan ICEX Integra, Plan ICEX Gran Distribución
+    - Becas y revista **El Exportador**
+  - Marco: **Estrategia de Internacionalización de la Economía Española 2017-2027**, con planes de acción bienales
+  - **Plan Estratégico 2025-2027 de ICEX**, aprobado el 29 de mayo de 2025: captar y fidelizar inversión extranjera de alto valor añadido (transición energética, digital, autonomía estratégica abierta)
+  - **Plan ICEX de Alto Impacto en Competitividad**, presentado el 19 de mayo de 2025 ante los aranceles de EEUU
+    - Atención personalizada a las 500 empresas con más exportaciones a EEUU
+    - Observatorio de Seguimiento del impacto arancelario
+    - Refuerzo del programa **AFIN** de financiación pública
+  - Objetivos de la Estrategia: más empresas exportadoras regulares (en torno a **53.700**, ejercicio 2025), diversificar destinos, más valor añadido, atraer inversión
+- **OFECOMES**: cerca de un centenar de oficinas
+  - Doble función: representación oficial ante gobiernos de destino y apoyo a exportadoras
+  - Información sobre estadísticas, aranceles, normativa, ferias y distribuidores
+- **Cámaras de Comercio**: cerca de noventa, constitución legal y actividad privada
+  - Asesoramiento, estudios de mercado, bases de datos, censos de exportadores
+- **DATACOMEX, DATAINVEX y GLOBALINVEX**: servicios gratuitos de la Secretaría de Estado de Comercio del MECE, desde 2006
+  - DATACOMEX: comercio exterior español y europeo, desde **1995**
+  - DATAINVEX: inversiones extranjeras en España y españolas en el exterior, desde **1993**
+  - GLOBALINVEX: visualización gráfica creada a finales de 2020, datos desde 1993
+- **Unión Europea**
+  - **Eurostat**, prestado en España por el INE
+  - **Access2Markets** (antigua Market Access Database): aranceles, procedimientos, estadísticas, obstáculos técnicos y sanitarios en terceros países
+  - **Euroventanillas**: información empresarial
+  - **Red BC-Net**: búsqueda de socios
+- **Otras fuentes**
+  - Embajadas extranjeras (JETRO), Cámaras españolas en el extranjero, asociaciones de exportadores
+  - **España Expansión Exterior** (antigua P4R, integrada en ICEX desde 2015)
+  - Comunidades autónomas: Extenda, ACCIÓ, IVACE Internacional, Extremadura Avante
+  - Consultoras: AC Nielsen, Trade Compass
+  - **Internet**: principal herramienta, la dificultad es localizar la información
 
-## 4.3. Política de Comunicación/Promoción
-- **Objetivos:** Informar, fidelizar y persuadir al cliente.
-- **Instrumentos:**
-  - Publicidad: Medios masivos o selectivos. Admite mayor estandarización (mensaje global con adaptación local).
-  - Promoción de ventas: Incentivos de corta duración (muestras, concursos, mailing). Difícil estandarización.
-  - Relaciones Públicas: Reuniones de directivos para abrir camino.
-  - Esponsorización: Patrocinio de eventos acordes a la imagen del producto.
-  - Venta personal: Ferias y misiones comerciales (apoyo del ICEX).
+# 4. MARKETING MIX: CONCEPTO Y COMPONENTES
 
-## 4.4. Política de Distribución
-- **Objetivo:** Poner el producto a disposición del consumidor en lugar, cantidad y momento adecuados.
-- **Control:** Depende de la vía de entrada (Agentes/Licencias = mínimo control; Venta directa/Filial = mayor control).
-- **Factores de selección del canal:**
-  - Características del canal: Longitud (distribución larga, corta o directa), márgenes, servicios prestados, cobertura y normativa.
-  - Características del producto (ej. industriales vs. consumo).
-  - Características del mercado (hábitos de compra, dispersión).
-  - Competencia (costumbre del cliente).
-- **Tendencias:** Aumento de poder de las grandes empresas de distribución, lo que exige gestión de Trade Marketing. En España destaca la ANGED (Asociación Nacional de Grandes Empresas de Distribución).
+- Segunda fase, **acción u operación** en el mercado: estrategia de penetración con cuatro variables, las **4Ps** (product, price, place, promotion)
+  - Precio, producto, promoción y distribución (posicionamiento)
+- A corto plazo solo se modifican con agilidad **precio y promoción**
+- **Coherencia** entre las cuatro variables, ej. no vender productos de lujo en tiendas de descuento
+- Se desarrolla de forma **individualizada para cada producto**
+
+## 4.1. La política de producto
+
+- Producto: combinación de elementos tangibles e intangibles
+- **Atributos físicos**
+  - **Intrínsecos**: características funcionales, composición y calidad, adaptados a normas técnicas y gustos
+  - **Extrínsecos**: presentación, envase, embalaje y etiquetado, con sensibilidad medioambiental
+- **Atributos intangibles**
+  - **Marca**: individualiza y garantiza calidad
+    - Global: menos costes de publicidad, imagen coherente
+    - Locales: más adaptadas a cada mercado
+  - **País de origen** o efecto **made in**: valor añadido
+  - **Garantías y servicio postventa**: relevantes en exportación de servicios
+- **Estandarizar o adaptar**
+  - Según costumbres y cultura locales: más estandarización en productos industriales, más adaptación en productos de consumo
+  - Según economías de escala en producción, I+D y comercialización
+  - Aplicable a la exportación de servicios
+
+## 4.2. La política de precio
+
+- Elemento ligado directamente a la **demanda**: el consumidor asocia un valor según utilidad
+- Instrumento de corto plazo, competitivo, el único que genera ingresos, con repercusiones psicológicas
+- **Tres pasos** para fijar el precio internacional
+  - Cálculo de **costes** (producción, margen de gestión de la exportación, distribución, gastos generales): precio mínimo
+  - Precios de la **competencia**: precio máximo (menos peso si el producto está diferenciado)
+  - Estimación de la **demanda**: precio óptimo según objetivos y elasticidad
+- **Factores de mercados exteriores**
+  - Tipo de cambio, su cobertura es un coste adicional
+  - Regulaciones de precios: precios autorizados, antidumping, IVA y otros impuestos indirectos
+  - Precios de transferencia dentro de grupos multinacionales
+- Tendencia de las multinacionales a **homogeneizar** el precio
+- Penetración: precios con escaso o nulo beneficio para ganar cuota
+
+## 4.3. La política de comunicación y promoción
+
+- Contacto entre empresa y consumidores exteriores, triple objetivo
+  - **Informar** a clientes potenciales
+  - **Fidelizar** a los existentes
+  - **Persuadir** a los potenciales para que compren
+- Instrumentos similares a los nacionales
+  - **Publicidad**: medios de masas o selectivos (folletos, revistas especializadas, adecuados para PYME)
+    - Idea principal exportable, idea creativa que soporte adaptaciones y traducciones, carácter definido
+    - La que admite mayor estandarización
+  - **Promoción de ventas**: corta duración (muestras, concursos, demostraciones, mailing, catálogo, escaparatismo), difícil de estandarizar, más económica, menor alcance
+  - **Relaciones públicas**: reuniones y exhibiciones de directivos para abrirse camino
+  - **Esponsorización**: patrocinio de eventos coherente con la imagen del producto
+  - **Venta personal**: ferias y misiones comerciales
+    - Misiones: visitas colectivas organizadas entre países para impulsar el comercio bilateral
+    - Ferias: contacto directo con clientes, con apoyo financiero y logístico de ICEX
+    - ICEX organiza varios cientos de actividades al año
+
+## 4.4. La política de distribución
+
+- Objetivo: producto disponible en el lugar, cantidad y momento adecuados
+- Canal según la **vía de acceso**
+  - Agentes, distribuidores o licencias de fabricación: control mínimo
+  - Alianzas comerciales (joint ventures, **AEIE**): control dependiente del acuerdo
+  - Venta directa, sucursales, filiales o centros de producción propios: mayor control y conocimiento de la demanda
+- **Criterios de selección del canal**
+  - Características de los canales disponibles
+  - Longitud: **larga** (mayorista y minoristas), **corta** (un intermediario), **directa** (sin intermediarios)
+  - Márgenes, servicios prestados, cuota y segmentos cubiertos, normativa
+  - Características del producto (refrigeración, postventa) y del mercado (hábitos de consumo, poder adquisitivo, dispersión geográfica, canal de la competencia)
+- **Tendencia**: más poder de las grandes empresas de distribución, sobre todo en alimentación
+  - **Trade Marketing**: gestionar la relación con ellas como con clientes (presencia en el lineal, espacio, precios, promociones)
+  - En España, concentración en torno a **ANGED**
+
+# 5. CONCLUSIÓN
+
+- Instrumento para que la internacionalización se traduzca en éxito comercial sostenido
+- La **fase de estudio** es tan determinante como la de acción: sin conocimiento del mercado, el marketing mix falla
+- Red institucional de apoyo (ICEX, OFECOMES, Cámaras, DATA-COMEX, DATA-INVEX, UE), clave para las **PYME**
+- Actualización: **Plan Estratégico 2025-2027 de ICEX** y **Plan ICEX de Alto Impacto en Competitividad**, ante el proteccionismo arancelario

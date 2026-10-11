@@ -1,127 +1,142 @@
 # 1. INTRODUCCIÓN
 
-- **Normalización**: actividad voluntaria basada en el consenso, desarrollada por organismos independientes y reconocidos, para adoptar normas cuyo cumplimiento no es obligatorio.
-- **Norma** (Acuerdo TBT de la OMC): documento aprobado por una institución reconocida que prevé reglas, directrices o características para productos o procesos, de observancia no obligatoria.
-- La normalización internacional facilita el comercio al crear un lenguaje común entre fabricantes, administraciones y consumidores.
-- Jerarquía de organismos según su carácter internacional:
-  - **Las Tres Hermanas**: CODEX Alimentarius, **OMSA** (antigua OIE) y **CIPF** de la FAO, reconocidos por el **Acuerdo SPS** de la OMC.
-  - **ISO**, organismo de referencia dentro del Acuerdo TBT.
-  - Organismos regionales: **CEPE/NU**, OCDE, UE.
-  - Organismos de ámbito regional más restringido: COPANT, ARSO, ACCSQ, y en Europa CEN, CENELEC, ETSI (en España, **AENOR**).
-- El Acuerdo TBT insta a los Miembros de la OMC a utilizar normas internacionales cuando existan.
+- **Normalización**: actividad voluntaria, por consenso, de y para las partes interesadas, en organismos independientes y reconocidos, para adoptar normas de cumplimiento voluntario
+- **Norma** (Acuerdo **TBT** de la OMC): documento aprobado por institución reconocida, de uso común y repetido, de observancia **no obligatoria**
+- Lenguaje común entre fabricantes, administraciones, comercializadores y consumidores. Su no seguimiento crea obstáculos al comercio
+- Más internacional cuanto más países participan en su elaboración. Escalones:
+  - **Las tres hermanas**: **CODEX Alimentarius**, **OMSA** (antigua OIE), **CIPF** de la FAO. Reconocidas por el Acuerdo **SPS**
+  - **ISO**: referencia permanente en el Acuerdo TBT
+  - **CEPE/NU** (base de las normas de calidad agroalimentarias de la UE), OCDE, UE
+  - **Regionales**: COPANT, ARSO, ACCSQ. En Europa **CEN, CENELEC, ETSI** (en España **AENOR**), clave en productos industriales y Nuevo Enfoque
+- Acuerdo TBT: los Miembros de la OMC deben usar normas internacionales cuando existan
 
 # 2. NORMALIZACIÓN EN LA UE
 
-- Desde la entrada en vigor del **Mercado Único Europeo** (1 de enero de 1993), la armonización legislativa y de normas técnicas es pieza esencial del mercado interior.
-- La normalización europea, junto con el **principio de reconocimiento mutuo**, garantiza la libre circulación de mercancías.
-- Refuerza la competitividad de la industria europea, en coordinación con los organismos internacionales de normalización.
+- Política en línea con los Acuerdos **TBT** y **SPS**
+- **Mercado Único Europeo**: en vigor el **1 de enero de 1993**. Armonización legislativa y de normas técnicas
+- Pieza esencial del mercado interior: con el **reconocimiento mutuo** garantiza la libre circulación de mercancías
+- Refuerza la competitividad de la industria europea y su papel en el comercio internacional
 
 # 3. NORMALIZACIÓN EN EL ÁMBITO AGROALIMENTARIO
 
-- Actualmente la **OCM Única** abarca prácticamente todos los productos agroalimentarios, antes regulados por 21 OCM sectoriales.
-- Objetivo: mejorar la rentabilidad de la producción y adaptarla a la demanda de los consumidores.
+- Antes, cada OCM sectorial fijaba normas obligatorias. Hoy la **OCM Única** abarca prácticamente todos los productos, antes en **21 OCM**
+- Frutas y hortalizas: sector con mayor desarrollo normalizador
+- Objetivo: rentabilidad, adaptar la producción al consumidor y excluir productos no satisfactorios
 
 ## 3.1. Las OCM
 
-- Existen dos grandes OCM: **Política Agrícola Común (PAC)** y **Política Pesquera Común (PPC)**.
-- OCM Única de frutas y hortalizas, basada en tres principios:
-  - **Unidad de Mercado**: libre circulación, armonización de legislaciones y controles, protección uniforme en frontera exterior.
-  - **Preferencia Comunitaria**: protección arancelaria frente a la competencia exterior.
-  - **Solidaridad Financiera**: participación conjunta de los Estados Miembros en los costes.
-- La **PAC** entró en vigor en **1962**. Ejes actuales: competitividad de los agricultores y desarrollo de zonas rurales.
-- En **2008** se pasó de un planteamiento sectorial (una OCM por sector) a una **OCM Única**, que cubre intervenciones públicas, cuotas y ayudas, intercambios con terceros países y normas de comercialización y producción.
-- **PPC**: fundamento jurídico compartido con la PAC. Objetivos: protección de poblaciones pesqueras, renta de los pescadores, suministro regular a precios razonables y explotación sostenible.
-- La OCM de pesca y acuicultura se creó en **1970**. Exige normas de comercialización sobre categoría de calidad, tamaño, peso, embalaje, presentación y etiquetado, con información al consumidor sobre especie, método de producción y zona de captura.
-- Los Estados Miembros controlan la conformidad con las normas de comercialización.
+- Reglas y mecanismos de la UE para producción y comercio. Dos grandes OCM: **PAC** y **PPC**
+- **OCM Única** (frutas y hortalizas), tres principios:
+  - **Unidad de mercado**: libre circulación, armonización, competencia común, protección en frontera exterior
+  - **Preferencia comunitaria**: protección arancelaria frente a terceros
+  - **Solidaridad financiera**: costes compartidos por los Estados Miembros
+- **PAC**: en vigor en **1962**. Ejes: competitividad de los agricultores y desarrollo rural
+- **2008**: de una OCM por sector a una **OCM Única**, manteniendo los principios de la PAC
+  - Regula intervenciones públicas, cuotas y ayudas, intercambios con terceros países, normas de comercialización y de producción
+- **OCM de la pesca y la acuicultura**: creada en **1970**, primer elemento de la **PPC**
+  - Objetivos PPC: protección frente a la sobrepesca, renta de pescadores, suministro regular, explotación sostenible
+  - Normas de comercialización: categoría de calidad, tamaño o peso, embalaje, presentación, etiquetado
+  - Información al consumidor: especie, método de producción, zona de captura
+  - Los Estados Miembros controlan la conformidad
 
 ## 3.2. Base jurídica de la normalización de frutas y hortalizas
 
-- **Reglamento (UE) 1308/2013**, por el que se crea la OCM Única de productos agrarios.
-- **Reglamento Delegado (UE) 2023/2429**, sobre normas de comercialización para frutas y hortalizas, productos transformados y plátanos, junto con el **Reglamento de Ejecución (UE) 2023/2430**, sobre controles de conformidad y notificaciones. Aplicables desde el **1 de enero de 2025**, el Reglamento de Ejecución (UE) 1333/2011 y el Reglamento (CE) 1666/1999, unificando la normativa dispersa.
-- El **Artículo 1** del Reglamento (UE) 1308/2013 remite a la Parte IX (frutas y hortalizas), Parte X (transformados) y Parte XI (plátanos) del Anexo I, correspondientes en general a los capítulos 07 y 08 del Sistema Armonizado, con excepciones como las patatas.
-- El **Artículo 75** otorga a la Comisión poderes para adoptar actos delegados sobre normas de comercialización, excepciones e inaplicaciones.
-- La UE colabora estrechamente con la **CEPE/NU**, en particular a través del Grupo de Trabajo sobre Normas de Calidad Agrícola. Las normas de la UE se ajustan a la Norma-Cuadro de la CEPE/NU y al Geneve Understanding.
-- Las normas son obligatorias y se aplican en todas las fases de comercialización, incluidas importación y exportación.
-- Tipos de normas de comercialización:
-  - **Norma de Comercialización General**: aplicable a productos sin norma específica, remite a las normas CEPE/NU.
-  - **Normas de Comercialización Específicas**: aplicables a 10 productos (manzanas, cítricos, kiwis, lechugas y escarolas, melocotones y nectarinas, peras, fresas, pimientos dulces, uvas de mesa y tomates).
-- Antes de la reforma de 2008 existían 34 normas específicas, reducidas por un procedimiento de simplificación.
-- Con el Reglamento Delegado (UE) 2023/2429, la norma de comercialización de los plátanos queda integrada en el mismo instrumento que la norma general y las específicas.
-- Las normas cumplen el **Principio de no Discriminación** de los Acuerdos TBT y SPS.
-- Los Estados Miembros efectúan controles selectivos antes de la salida de las regiones de producción, y para terceros países antes del despacho a libre práctica.
+- **Reglamento (UE) 1308/2013**, OCM Única
+  - Art. 1: Anexo I Parte IX (frutas y hortalizas), X (transformados), XI (plátanos). Capítulos **07 y 08** del SA, patatas no reguladas
+  - **Art. 75**: poderes de la Comisión para actos delegados sobre normas de comercialización y excepciones
+- Desarrollo vigente, aplicable desde el **1 de enero de 2025**:
+  - **Reglamento Delegado (UE) 2023/2429**, normas de comercialización de frutas y hortalizas, transformados y plátanos
+  - **Reglamento de Ejecución (UE) 2023/2430**, controles de conformidad y notificaciones
+  - Derogan **543/2011**, **1333/2011** y **1666/1999**
+- Colaboración UE y **CEPE/NU** (Grupo de Trabajo sobre Normas de Calidad Agrícola)
+  - Normas UE prácticamente idénticas. Siguen la **Norma-Cuadro** y el **Geneve Understanding**
+  - Regulan calidad, categorías, peso, calibre, envase, transporte, presentación, origen, etiquetado
+- **Obligatorias**, en todas las fases, incluidas importación y exportación. Responsable: el **tenedor**
+- Dos tipos:
+  - **Norma general**: productos sin norma específica. Conforme a la norma CEPE/NU aplicable, conforme
+  - **10 normas específicas**: manzanas, cítricos, kiwis, lechugas y escarolas, melocotones y nectarinas, peras, fresas, pimientos dulces, uvas de mesa, tomates (antes de 2008, **34**)
+  - Plátanos integrados en el Reglamento Delegado 2023/2429
+- Cumplen el **principio de no discriminación** de TBT y SPS
+- Controles de los Estados Miembros: selectivos, por análisis de riesgos, antes de la salida de la región de producción. Terceros países: antes del despacho a libre práctica
 
-## 3.3. Sistema de elaboración y adopción de normas de comercialización
+## 3.3. Sistema de elaboración y adopción de las normas de comercialización en el sector de frutas y hortalizas
 
-- La **Comisión** es el órgano competente para adoptar las normas de comercialización y sus excepciones.
-- Está asistida por el **Comité de Gestión de la OCM Agrícola**, integrado por representantes de los Estados Miembros, conforme a las reglas de comitología.
-- Un representante de la Comisión somete al Comité un proyecto de norma, asistido por el subgrupo de normalización de frutas y hortalizas (carácter consultivo).
-- El Comité emite dictamen por votación según **mayoría cualificada**. Si es favorable, la propuesta se incorpora a la legislación de la UE.
+- La **Comisión** adopta normas y excepciones
+- Asistida por el **Comité de Gestión de la OCM** (Estados Miembros), con **comitología**
+- Proyecto presentado por la Comisión, con apoyo del **subgrupo de normalización de frutas y hortalizas**, consultivo, no decisorio
+- Dictamen del Comité por **mayoría cualificada**
+- Si es favorable, se incorpora a la legislación de la UE
 
-## 3.4. Otras normas en el ámbito agroalimentario
+## 3.4. Otras normas en el ámbito agroalimentario de la UE
 
-- **Aceite de oliva**: **Reglamento Delegado (UE) 2022/2104** y **Reglamento de Ejecución (UE) 2022/2105**, aplicables desde el 24 de noviembre de 2022. En España, **Real Decreto 760/2021**, norma de calidad para el aceite de oliva y de orujo.
-- **Leche y productos lácteos**: deben ajustarse a las definiciones de la OCM Única. Ejemplo: **Real Decreto 271/2014**, norma de calidad del yogur.
-- **Materias grasas**: la OCM Única regula las lácteas y no lácteas (10 %-90 % de contenido graso). Ejemplo: **Real Decreto 1011/1981**, reglamentación técnico-sanitaria de grasas comestibles y margarinas.
-- **Productos de la pesca y acuicultura**: **Reglamento (UE) 1379/2013** (Capítulo I), para los capítulos 03 y 16 del Sistema Armonizado. Normas específicas:
-  - **Reglamento (CEE) 1536/92**, normas comunes para conservas de atún y bonito.
-  - **Reglamento (CE) 2406/96**, normas comunes para determinados productos pesqueros.
-  - **Reglamento (CE) 1181/2003**, normas comunes para conservas de sardinas, resultado de una denuncia de Perú ante la OMC por disconformidad con la norma CODEX homóloga.
+- **Aceite de oliva**: definiciones obligatorias en la OCM Única
+  - **Reglamento Delegado (UE) 2022/2104**, comercialización · **Reglamento de Ejecución (UE) 2022/2105**, controles y métodos de análisis. Aplicables desde el **24 de noviembre de 2022**
+  - Derogan **Reglamento (CEE) 2568/91** y **(UE) 29/2012**
+  - España: **Real Decreto 760/2021**
+- **Leche y lácteos**: solo con las denominaciones de la OCM Única. Evita falseamientos de competencia
+  - **Real Decreto 271/2014**, yogur
+- **Materias grasas**: lácteas y no lácteas (**10 %-90 %** de grasa)
+  - **Real Decreto 1011/1981**, grasas comestibles y margarinas
+- **Pesca y acuicultura**: **Reglamento (UE) 1379/2013**, Capítulo I. Capítulo 03 y conservas del capítulo 16
+  - **Reglamento (CEE) 1536/92**, atún y bonito en conserva
+  - **Reglamento (CE) 2406/96**, determinados productos pesqueros
+  - **Reglamento (CE) 1181/2003**, conservas de sardinas, tras la denuncia de **Perú** ante la OMC por contravenir el CODEX
 
 # 4. NORMALIZACIÓN EN EL ÁMBITO INDUSTRIAL
 
-- Dos vías de armonización legislativa:
-  - **Antiguo Enfoque**: reglamentación pormenorizada de todos los requisitos de un producto.
-  - **Nuevo Enfoque**: armonización solo de requisitos esenciales, con normas armonizadas de referencia voluntaria.
-- La UE aplica el Antiguo Enfoque en alimentos, piensos, cosméticos y medicamentos, y el Nuevo Enfoque en productos industriales.
+- Armonización de legislaciones. Dos opciones:
+  - **Enfoque Tradicional o Antiguo**: reglamentación pormenorizada. Aplicado a alimentos y piensos, cosméticos, medicamentos
+  - **Nuevo Enfoque**: solo **requisitos esenciales** de seguridad, recomendando **normas armonizadas**. Aplicado a productos industriales
+- **Antiguo Enfoque**
+  - Una norma única y detallada por producto, vía Directivas del Consejo
+  - CEN, CENELEC y ETSI no elaboraban especificaciones complementarias
+  - Lento: proceso muy técnico y **unanimidad** del Consejo
+- **Nuevo Enfoque**
+  - Resolución del Consejo de **7 de mayo de 1985**, ligado a la sentencia **Cassis de Dijon** (TJUE, **20 de febrero de 1979**)
+  - El fabricante elige cómo cumplir las exigencias esenciales, con apoyo de CEN, CENELEC, ETSI y organismos nacionales
+  - Directivas de Nuevo Enfoque: requisitos mínimos de seguridad
+- **Nuevo Marco Legislativo (NML)**, paquete de **9 de julio de 2008**:
+  - **Reglamento (UE) 2019/515** (derogó al 764/2008)
+  - **Reglamento (CE) 765/2008**: acreditación y marcado CE. Vigilancia del mercado sustituida por el **Reglamento (UE) 2019/1020**
+  - **Decisión 768/2008/CE**: definiciones y criterios de notificación de organismos de evaluación de la conformidad
+  - Complementa el **Reglamento (UE) 2023/988**, Seguridad General de los Productos
 
-## 4.1. Antiguo Enfoque
+## 4.1. Normas armonizadas
 
-- Objetivo de una norma única y detallada por producto o grupo de productos, mediante Directivas del Consejo.
-- Se aplicó a vehículos de motor, productos químicos, farmacéuticos, cosméticos, metrología legal, envasado, textiles, calzado y cristal.
-- Ejemplo: **Directiva 70/220/CEE**, sobre contaminación del aire por gases de motores de vehículos.
-- Proceso lento por su carácter muy técnico y por exigir unanimidad del Consejo.
+- **Norma Armonizada**: norma europea adoptada a raíz de un **mandato** de la Comisión para aplicar legislación de armonización de la UE
+  - Definición del **Reglamento (UE) 1025/2012**
+- No obligatorias. Su seguimiento **presupone la conformidad** con la Directiva. Muchas equivalen a normas ISO
+- **Norma Europea**: especificación técnica de CEN, CENELEC o ETSI, no obligatoria. Se transpone idéntica y se retiran las nacionales en conflicto
+- Reciben **mandatos**: CEN, CENELEC y ETSI. Procedimiento:
+  - **Emisión del mandato** por la Comisión
+  - **Aceptación** por el organismo
+  - **Elaboración**: Directrices Generales de cooperación, partes interesadas, Comité Técnico
+  - **Consulta pública**
+  - **Votación**: nacionales votan, europeos ratifican
+  - **Evaluación por la Comisión**: análisis técnico y jurídico, acto de ejecución, publicación en el **DOUE** y **presunción de conformidad**
+  - **Transposición nacional** (en España **UNE**) y publicación de referencias
 
-## 4.2. Nuevo Enfoque
+## 4.2. Evaluación de la conformidad
 
-- Sus comienzos se remontan a la **Resolución del Consejo de 7 de mayo de 1985**, relacionada con la sentencia **Cassis de Dijon** del TJUE, de 20 de febrero de 1979.
-- Solo se señalan exigencias esenciales de seguridad, con mayor libertad y flexibilidad para el fabricante.
-- Apoyo de los organismos de normalización **CEN**, **CENELEC** y **ETSI**.
-- **Paquete Ayral** (9 de julio de 2008): el **Reglamento (UE) 2019/515**, el **Reglamento (CE) 765/2008** y la **Decisión 768/2008/CE**, que conforman el **Nuevo Marco Legislativo (NML)**.
-- El Reglamento (CE) 765/2008 estableció la base jurídica de la acreditación y el marcado CE. Sus disposiciones de vigilancia del mercado fueron sustituidas por el **Reglamento (UE) 2019/1020**, complementado por el **Reglamento (UE) 2023/988** de Seguridad General de los Productos.
+- Previa a la comercialización, según la Directiva aplicable
+- Actividad para determinar si se cumplen los requisitos especificados
+- Cuatro elementos: normas o especificaciones, inspección, ensayo, tiempo de cumplimiento durante la vida del producto
+- Dos grupos:
+  - **Primera parte**: declaración del fabricante (**autocertificación**)
+  - **Tercera parte**: **organismo notificado**, independiente
+- Con normas armonizadas, **presunción de conformidad**. Sin ellas, el fabricante aporta documentación y pruebas
 
-## 4.3. Normas armonizadas
+## 4.3. Marcado CE
 
-- **Norma Armonizada**: norma europea adoptada a petición (mandato) de la Comisión para aplicar la legislación de armonización de la UE, según el **Reglamento (UE) 1025/2012**, que modifica la Directiva 98/34/CE.
-- No tienen carácter obligatorio, pero su seguimiento presupone la conformidad del producto con la Directiva de Nuevo Enfoque correspondiente.
-- **Norma Europea**: especificación técnica elaborada por CEN, CENELEC o ETSI, de cumplimiento no obligatorio, que debe transponerse a escala nacional.
-- Procedimiento de elaboración:
-  - **Emisión del mandato** por la Comisión.
-  - **Aceptación del mandato** por los organismos de normalización.
-  - **Elaboración de la norma** por el Comité Técnico correspondiente.
-  - **Consulta pública** del proyecto.
-  - **Votación** de los organismos nacionales y ratificación por los europeos.
-  - **Evaluación y publicación** por la Comisión en el **DOUE**, momento en que adquiere presunción de conformidad.
-  - **Transposición y publicación nacional** (en España, **UNE**).
-
-## 4.4. Evaluación de la conformidad
-
-- Actividad para determinar si un producto cumple los requisitos especificados antes de su comercialización.
-- Elementos básicos: normas o especificaciones técnicas, inspección, ensayo y seguimiento en el tiempo.
-- Sistemas de evaluación:
-  - **De primera parte**: autocertificación del fabricante o proveedor.
-  - **De tercera parte**: evaluación por un **organismo notificado**, independiente de las partes.
-- El uso de normas armonizadas genera **presunción de conformidad**. En caso contrario, el fabricante debe aportar documentación y pruebas.
-
-## 4.5. Marcado CE
-
-- Indica que el producto cumple los requisitos esenciales de las Directivas o Reglamentos aplicables y que se han superado los procedimientos de evaluación de la conformidad.
-- Es obligatorio cuando la normativa lo exige, y debe colocarse antes de la comercialización o puesta en servicio.
-- Si interviene un organismo notificado, el marcado debe ir seguido de su número de identificación.
-- Debe colocarse de forma visible, legible e indeleble en el producto o su placa de características, o en el embalaje y documentos de acompañamiento si no es posible.
+- Elemento fundamental del Nuevo Enfoque. Obligatorio en muchas Directivas, no en todas
+- Indica conformidad con los requisitos esenciales y evaluación realizada
+- Antes de comercializar o poner en servicio. Con organismo notificado, seguido de su **número de identificación**
+- Solo si una normativa lo dispone. Con varias, presume conformidad con todas
+- **Visible, legible e indeleble**, en producto o placa. Si no es posible, en embalaje y documentos
 
 # 5. CONCLUSIÓN
 
-- La normalización de la UE es un instrumento esencial del mercado interior, que combina armonización legislativa y reconocimiento mutuo.
-- En el ámbito agroalimentario, la integración en la OCM Única y la colaboración con la CEPE/NU garantizan coherencia con los estándares internacionales, actualizada por el Reglamento Delegado (UE) 2023/2429.
-- En el ámbito industrial, el Nuevo Enfoque sustituye la reglamentación detallada por requisitos esenciales de seguridad, apoyados en normas armonizadas, el Nuevo Marco Legislativo, la evaluación de la conformidad y el marcado CE.
-- Para el **Servicio de Inspección SOIVRE**, el conocimiento de este doble marco resulta indispensable para el control de calidad comercial y de seguridad de los productos objeto de comercio exterior.
+- Normalización UE: instrumento del mercado interior, con armonización y reconocimiento mutuo
+- Agroalimentario: **OCM Única** y colaboración con CEPE/NU, actualizada por el **Reglamento Delegado (UE) 2023/2429**
+- Industrial: Nuevo Enfoque con normas armonizadas de CEN, CENELEC y ETSI, y NML (765/2008, 768/2008/CE, 2019/1020)
+- Para el **SOIVRE**, este doble marco determina requisitos del control de calidad comercial y de seguridad

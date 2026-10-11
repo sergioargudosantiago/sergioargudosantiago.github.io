@@ -1,104 +1,172 @@
-# 1. Introducción
-- **Contexto de internacionalización:**
-  - Aumento de flujos de capitales y expansión de multinacionales.
-  - La inversión extranjera complementa el ahorro nacional, aumenta la competencia, transfiere tecnología (know-how) y favorece el empleo.
-  - Funciona como alternativa al endeudamiento externo y disciplina políticas económicas.
+# 1. INTRODUCCIÓN
 
-# 2. Inversión Extranjera en España: Características
+- **Internacionalización** de los mercados: comercio intra e interindustrial, mercados financieros, flujos de capitales, multinacionales
+- Funciones de la **inversión extranjera**
+  - Complementa el ahorro nacional
+  - Más competencia e innovación
+  - Transferencia de tecnología y *know-how*
+  - Crecimiento y empleo
+  - Financiación exterior distinta del endeudamiento
+  - Disciplina de las políticas económicas
 
-## 2.1. Marco General
-- **Principio básico:** Libertad de movimientos de capitales.
-- **Excepciones:**
-  - Sectores con regulación específica (Juego, TV/Radio, Transporte aéreo, Defensa).
-  - Suspensión por motivos de orden público, seguridad o salud pública.
-- **Titulares:** Personas físicas no residentes y personas jurídicas/entidades públicas extranjeras.
-- **Obligación administrativa:** Declaración al **Registro de Inversiones Exteriores** (Ministerio de Economía/Comercio).
-  - Regla general: Declaración posterior en el plazo de un mes (inversiones > 3.005.060,52 €).
-  - Excepción: Declaración previa si procede de paraísos fiscales.
+# 2. INVERSIÓN EXTRANJERA EN ESPAÑA
 
-## 2.2. Tipos de Inversión
-- **Directa:** ≥ 10% del capital o participación en gestión; sucursales; préstamos a largo plazo (> 5 años).
-- **Valores Negociables (Cartera):** < 10% del capital (acciones, bonos, pagarés, fondos de inversión).
-- **Inmuebles:** Propiedad, derechos reales o tiempo compartido.
-- **Otras:** Cuentas en participación, fundaciones, cooperativas, agrupaciones de interés económico.
+## 2.1. Características generales
 
-# 3. Normativa y Tramitación
+- Principio general: **libertad de movimientos de capitales**
+- Dos excepciones
+  - Sectores con regulación específica, en particular **defensa nacional**
+  - Suspensión de la liberalización si afecta al **orden, seguridad o salud públicos**
+- Titulares: personas físicas no residentes, personas jurídicas domiciliadas en el extranjero, entidades públicas de soberanía extranjera
+- Declaración al **Registro de Inversiones Exteriores**
+  - General: posterior y **estadística**, según **RD 571/2023** y **Orden ECM/57/2024**
+  - **Jurisdicciones no cooperativas**: declaración cualquiera que sea la cuantía
+  - Declaración **previa** si la participación extranjera supera el **50 %** o si son inmuebles
 
-## 3.1. Legislación Aplicable
-- **Nivel Comunitario:** Tratado de Maastricht (Art 73 libertad de capitales) y Reglamento (UE) 2019/452 (control de inversiones).
-- **Nivel Nacional:**
-  - **Ley 19/2003:** Régimen jurídico de movimientos de capitales.
-    - Establece libertad y definiciones (residente/no residente).
-    - Régimen sancionador (infracciones muy graves, graves y leves).
-    - Cláusulas de salvaguardia (suspensión de liberalización).
-  - **Real Decreto 571/2023:** Regula inversiones exteriores y adecúa el ordenamiento a la normativa UE.
-  - **Régimen de suspensión ("Escudo anti-opas"):** R.D.-ley 34/2020 (y prórrogas). Requiere autorización para inversiones extranjeras directas (>500M€ o estratégicas) de residentes UE/EFTA y extracomunitarios por razones de seguridad/salud pública.
+## 2.2. Tipos de inversión
 
-## 3.2. Tramitación
-- **Normativa de desarrollo:** Resolución de enero de 2024 y Orden ECM/57/2024.
-- **Modelos principales (Inversión Extranjera en España):**
-  - **DP-1 / DP-2:** Declaración previa desde paraísos fiscales (sociedades / inmuebles).
-  - **D-1A / D-1B:** Inversión/Desinversión en sociedades no cotizadas y sucursales.
-  - **D-2A / D-2B:** Inversión/Desinversión en bienes inmuebles.
-  - **D-4:** Memoria anual de la inversión extranjera.
-- **Herramienta:** Programa **AFORIX** para la cumplimentación telemática.
+- **Inversión directa**: relación duradera y participación **≥ 10 %** del capital o votos, o control
+- **Inversión de cartera**: por debajo del 10 %
+- **RD 571/2023**: ajuste al concepto internacional, umbral general del 10 %
+- Conceptos incluidos
+  - Cotizadas e instituciones de inversión colectiva al alcanzar el 10 %
+  - Aportaciones de socios al patrimonio
+  - **Financiación intragrupo**: más de **1 millón de euros** y plazo superior a un año
+  - Reinversión de beneficios y sucursales
+  - **Inmuebles**: desde **500.000 euros**
+  - Otras formas (cuentas en participación, UTE, fundaciones): más de **1 millón de euros** y 10 %
 
-# 4. Registro de Inversiones
-- **Función:** Registro administrativo y estadístico de operaciones declaradas.
-- **Contenido:**
-  - Incluye participación en capital y préstamos capitalizados.
-  - Excluye financiación entre empresas relacionadas y reinversión de beneficios (salvo capitalización).
-- **Entidades de Tenencia de Valores Extranjeros (ETVE):** Tratamiento diferenciado en estadísticas por ser instrumentales (sin impacto directo en empleo/activos, solo canalizan dividendos).
-- **Diferencias con Balanza de Pagos (Banco de España):**
-  - **Conceptos:** BP incluye reinversión de beneficios y financiación inter-empresas; RIE no.
-  - **Criterio temporal:** BP usa criterio de caja (pagos); RIE usa criterio de devengo (formalización).
-  - **Criterio geográfico:** BP asigna al país inmediato (primera contrapartida); RIE asigna al país del inversor final (origen último).
-  - **Valoración:** BP registra flujos netos (activos pasivos); RIE registra valores brutos y desinversiones por separado.
+# 3. NORMATIVA Y TRAMITACIÓN
 
-# 5. Análisis de Flujos (Datos 2023)
+## 3.1. Normativa en España
 
-## 5.1. Conceptos Previos
-- **Posición de Inversión Internacional (PII):** Stock de activos y pasivos externos.
-- **PII Neta:** Diferencia entre activos y pasivos (posición acreedora o deudora). Depende de transacciones, valoración (tipo de cambio/precios) y otros ajustes.
+- **Unión Europea**
+  - **Art. 63 TFUE**: libertad de movimientos de capitales
+  - **Reglamento (UE) 2019/452**: control de inversiones extranjeras directas
+  - Será derogado por **Reglamento (UE) 2026/1386**, efectos desde el **17 de enero de 2028**
+- **Ley 19/2003**, movimientos de capitales y transacciones con el exterior
+  - Régimen general, libertad, concepto de residente, tramitación de declaraciones
+  - **Sanciones**
+    - Muy graves: desde **30.000 euros** hasta el **100 %** de la operación
+    - Graves: hasta la **mitad**, mínimo **6.000 euros**
+    - Leves: hasta un **cuarto**, mínimo **3.000 euros**
+- **RD 571/2023**, inversiones exteriores
+  - Régimen para inversión extranjera en España y otro para la española en el exterior
+  - Declaración **ex post**, con declaración previa en ciertas inversiones de jurisdicciones no cooperativas
+  - **RD 867/2025**: Registro en la **SG de Regulación de Inversiones**, control en la **SG de Inversiones Exteriores**, ambas en la **DG de Política Comercial y Seguridad Económica**
+- **Escudo antiopas**
+  - **Art. 7 bis Ley 19/2003**, por **RDL 8/2020**
+  - **Autorización previa** de inversiones directas de residentes fuera de UE y AELC en sectores estratégicos
+  - **RDL 34/2020**: extensión transitoria a residentes UE y AELC, en cotizadas o no cotizadas por más de **500 millones de euros**
+  - Última prórroga por **RDL 1/2025**, hasta el **31 de diciembre de 2026**
+- **Informe de Control 2025**
+  - **130** operaciones autorizadas: 116 sin condiciones, 14 con compromisos, **40 %** más que en 2024, sin denegaciones
+  - Cerca del **80 %** de fuera de la UE: EEUU (**40 %**), Reino Unido, Emiratos Árabes Unidos
 
-## 5.2. Inversión Bruta 2023
-- **Volumen:**
-  - Total: 32.639 M€ (ligero aumento sobre media quinquenal).
-  - Productiva (No ETVE): 28.215 M€ (descenso del 18,5% respecto a 2022).
-- **Tipología:** Predominio absoluto de sociedades no cotizadas (97%). Las nuevas aportaciones (Greenfield/Brownfield) superan a las adquisiciones.
-- **Geografía (País Último):**
-  - **EEUU (29%):** Principal inversor (creciente protagonismo de fondos privados).
-  - **Reino Unido:** Segundo inversor, aunque con retroceso.
-  - **Otros:** Alemania, Francia (caída notable), Australia (relevante), Suiza y México.
-- **Sectores:**
-  - **Servicios (54%):** Liderado por Comercio mayorista y Telecomunicaciones.
-  - **Industria (42%):** Aumento significativo, especialmente en Energía (Petróleo/Gas y Electricidad).
-  - Tendencia: Reorientación desde construcción/inmobiliario hacia TIC e Industria manufacturera.
-- **Destino (CC.AA.):**
-  - **Madrid (54%):** Líder indiscutible, aunque pierde peso relativo.
-  - **Cataluña y Valencia:** Mejoran su posición.
+## 3.2. Tramitación en España
 
-## 5.3. Desinversiones
-- **Tendencia:** Fuerte descenso (-37,4%).
-- **Modalidad:** Preferencia por venta a residentes (permite continuidad de actividad) frente a liquidaciones.
-- **Origen:** Concentradas en **Francia** (41% del total), seguida de EEUU.
-- **Sectores:** Información y Comunicaciones (principal sector desinvertido).
+- **Orden ECM/57/2024** y **Resolución de 31 de enero de 2024**: modelos normalizados, en vigor desde el **1 de febrero de 2024**
+- Modelos de **inversión extranjera en España**
+  - **DP-1** y **DP-2**: declaración previa de jurisdicciones no cooperativas, sociedades e inmuebles
+  - **D-1A** y **D-1B**: inversión y desinversión en sociedades, sucursales y otras formas
+  - **D-2A** y **D-2B**: inversión y desinversión en inmuebles
+  - **D-4**: memoria anual
+- Inversión española en el exterior: DP-3, DP-4, D-5A, D-5B, D-7A, D-7B y D-8
+- Cotizadas al 10 %: modelos generales
+- Presentación obligatoria por **AFORIX**, con primera validación
+- Plazos: **un mes** desde la operación, memorias anuales **siete meses** tras el cierre del ejercicio
 
-# 6. Efectos de la Inversión Extranjera
-- **Impacto Económico:**
-  - Factor clave de competitividad y modernización.
-  - Concentración en industria manufacturera (automoción), comercio y energía.
-- **Cualitativo:** Desarrollo de sectores de alto valor añadido (Biotecnología, Agroalimentación).
-- **Empleo:** Aportación significativa en industria (20,9% del empleo total del sector) y servicios.
-- **I+D+i:** España es el 3er país de la UE con más centros de I+D de multinacionales. Las filiales extranjeras aportan más del 26% de la inversión total en I+D.
+# 4. REGISTRO DE INVERSIONES
 
-# 7. Atracción de Inversiones: ICEX-Invest in Spain
-- **Origen:** Sociedad estatal creada en 2005, integrada en ICEX en 2012.
-- **Dependencia:** Secretaría de Estado de Comercio (Ministerio de Economía).
-- **Misión:** Promoción, atracción y fidelización de inversión extranjera.
-- **Líneas de Actuación:**
-  - Captación de nuevas inversiones (generadoras de empleo/riqueza).
-  - Servicios al inversor (Aftercare) en todas las etapas (pre y post inversión).
-  - Mejora del clima de negocios (identificación de barreras).
-  - Promoción de imagen país (moderno e innovador).
-- **Ejemplos de éxito:** Costco, Huawei, Volkswagen, Nissan, Amazon, Hitachi Energy, Chery, etc.
+- **Registro de Inversiones Exteriores**: datos declarados conforme al **RD 571/2023**
+  - Participación desde el **10 %** y financiación intragrupo desde **2024**
+  - **Reinversión de beneficios**: sin modelo, sale de las memorias anuales
+  - **Inmuebles**: más de **500.000 euros** (en España) y **300.000 euros** (en el exterior)
+  - **Memorias anuales**: capital o patrimonio superior a **3 millones** (España) y **1,5 millones** (exterior), con inversor al 10 %
+- **DataInvex** (Secretaría de Estado de Comercio): flujos trimestrales, posición anual, inversión **bruta y neta**
+- **ETVE**: sociedades residentes con participaciones en no residentes
+  - Régimen fiscal especial (**Ley 27/2014**)
+  - Poco empleo y activos fijos, importes elevados con efecto limitado
+  - Estadísticas separan **ETVE y no ETVE**, esta última es **inversión productiva**
+- **Dos fuentes** de inversión directa
+  - **Balanza de Pagos y PII**, **Banco de España** (directrices FMI y OCDE)
+  - **Registro de Inversiones Exteriores**, Secretaría de Estado de Comercio
+  - Convenio de intercambio de datos
+- **Diferencias**
+  - **Cobertura**
+    - Banco de España: reinversión de beneficios, inmuebles y toda la financiación entre relacionadas
+    - Registro: financiación intragrupo a más de un año y 1 millón, reinversión por memorias
+    - Financiación a corto plazo y cuentas interempresa: solo Banco de España
+    - Inmuebles: declarados, pero fuera de los datos publicados
+  - **Operaciones**: Banco de España, transacciones **netas**. Registro, bruta y desinversiones, por **devengo**
+  - **Geografía**: ambos país de primera contrapartida. Registro, además, **inversor último**
+  - **Entidades instrumentales**: Banco de España, **SPE**. Registro, ETVE y no ETVE
+  - **Posición**: Registro anual, desfase de **dos años**, patrimonio neto contable. Banco de España trimestral, precios de cotización
+
+# 5. ANÁLISIS DE FLUJOS DE LAS INVERSIONES EXTRANJERAS EN ESPAÑA
+
+- **PII**: stock de activos y pasivos financieros frente al exterior
+  - **PIIN** = activos menos pasivos
+  - Evolución: transacciones, **efectos de valoración**, otros ajustes
+  - España: PIIN **deudora**, muy reducida en la última década
+- **Stock de IED productiva** 2024 (Registro)
+  - **627.795 millones de euros**, **+1,6 %**
+  - Orígenes: **EEUU, Alemania, Francia, Reino Unido**
+  - Sectores: manufacturas, energía, comercio, servicios financieros
+  - Más de **2 millones de empleos**, en torno al **10 %** del total
+- **Flujos 2025**
+  - Total **34.016 millones de euros**, **–20,5 %**
+    - Capital y patrimonio: **31.571 millones** (–12,6 %)
+    - Financiación intragrupo: **2.445 millones** (–63,3 %)
+  - **Inversión productiva**: **30.764 millones** (–21,8 %), **98,6 %** en no cotizadas
+    - Neta en capital y patrimonio: **19.706 millones** (+8,2 %)
+    - Desinversiones: **9.228 millones** (–42,0 %), 51,6 % por liquidación
+  - **Tipo de operación**: nueva aportación **69,8 %** (–33,2 %), adquisiciones **9.281 millones** (+29,1 %)
+  - **Origen**
+    - **EEUU** primer inversor: **32,5 %** (10.009 millones), +55,5 %
+    - Francia 10,6 %, Reino Unido 8,7 % (–78,7 %), Alemania 7,5 %
+    - Europa **48,9 %** (UE27 35,7 %), resto de América **39,0 %**
+  - **Sectores**: servicios **73,1 %** (22.486 millones), industria **22,5 %**
+  - **Comunidades**: **Madrid** 51,9 % (15.970 millones, –40,0 %), **Cataluña** 14,7 %, **Aragón** 11,0 % (+262,9 %, servicios de información)
+  - **6.065** inversores y **8.133** declaraciones
+- 2025 baja desde un nivel muy alto, comparación afectada por la financiación intragrupo
+- **Primer trimestre de 2026**: **+22,6 %**, **6.567 millones**
+
+# 6. EFECTOS DE LA INVERSIÓN EXTRANJERA EN ESPAÑA
+
+- Fuerte entrada de capital desde la adhesión a la CEE en **1986**, sensible al ciclo y a la incertidumbre
+- Efectos sobre **crecimiento, empleo y competitividad**
+  - Cuantitativo: manufacturas, comercio, energía, y servicios de información por **centros de datos**
+  - Cualitativo: sectores de alto valor añadido
+    - **Automoción**, hoy hacia la electromovilidad
+    - **Biotecnología y farmacéutica**, con I+D propia
+    - **Agroalimentación**: distribución e internacionalización
+- **INE, pertenencia a grupos** (2024)
+  - **17.898** filiales de empresas extranjeras
+  - Cifra de negocios **851.179 millones de euros**
+  - **2.561.593** personas ocupadas
+  - Industria **41,0 %** de la facturación, **82,9 %** en material de transporte
+  - Zona del euro **56,7 %** de la matriz
+  - Mayor productividad y más exportaciones que las nacionales
+
+# 7. ATRACCIÓN DE INVERSIONES HACIA ESPAÑA
+
+- **ICEX-Invest in Spain**
+  - Origen: Sociedad Estatal para la Promoción y Atracción de las Inversiones Exteriores (**2005**), incorporada a **ICEX** por el **RDL 20/2012**
+  - Dependencia funcional del **MECE** vía Secretaría de Estado de Comercio
+  - Objeto
+    - Captar inversión con empleo y valor añadido
+    - Apoyo en pre-inversión, inversión y post-inversión
+    - Identificar necesidades de inversores
+    - Promover la imagen de España
+    - Colaborar con instituciones estatales, autonómicas y locales
+- **Proyectos**: **PowerCo** en Sagunto, **Stellantis y CATL** en Figueruelas, **Chery** en Barcelona, centros de datos de **Amazon Web Services** en Aragón
+
+# 8. CONCLUSIÓN
+
+- Stock de IED cercano a **628.000 millones** en 2024
+- Flujos de 2025 **–20,5 %**, **34.016 millones**, desde un nivel muy elevado
+  - EEUU casi un tercio, mayor peso de Aragón
+  - Primeros datos de 2026 apuntan a recuperación
+- Reforzar la **promoción** (ICEX) y mantener el **control** en sectores estratégicos (escudo antiopas hasta finales de 2026)
+- Papel estructural: contribución al empleo y a las exportaciones, y modernización de sectores estratégicos

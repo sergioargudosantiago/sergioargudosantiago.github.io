@@ -1,84 +1,160 @@
 # 1. INTRODUCCIÓN
 
-- La seguridad alimentaria en la **UE** se articula en torno a varios elementos, entre ellos la **seguridad química**, la **seguridad biológica**, la **biotecnología** (OGM), el **etiquetado y nutrición**, la **trazabilidad** y los **controles oficiales**.
-- El texto de referencia es el **Reglamento (CE) 178/2002**, que crea la **Autoridad Europea de Seguridad Alimentaria (EFSA)** y da lugar al **Paquete de Higiene**.
-- Este tema se centra en la **seguridad biológica**, es decir, los microorganismos patógenos y alterantes.
-- La industria alimentaria debe garantizar productos salubres e inocuos y evitar el deterioro microbiológico, conociendo la calidad microbiológica de materias primas, procesos y producto final.
-- El crecimiento bacteriano se desarrolla en cuatro fases sucesivas:
-  - **Fase de latencia**: ajuste al nuevo medio, sin división celular.
-  - **Fase exponencial**: crecimiento rápido y constante.
-  - **Fase estacionaria**: el número de células viables se estabiliza.
-  - **Fase de declive**: predominan las muertes celulares.
+- **Sustancias biológicas** en alimentos: en ciertas cantidades dañan la salud del consumidor
+- UE: crisis alimentarias (**dioxinas**, **EEB**) llevan a amplia normativa
+  - **Reglamento (CE) 178/2002**, fundador de la nueva legislación alimentaria: crea la **EFSA** y fija procedimientos de seguridad alimentaria, origen del **Paquete de Higiene**
+- Elementos de la seguridad alimentaria en la UE
+  - **Seguridad química**: aditivos, contaminantes, residuos veterinarios, materiales en contacto, hormonas
+  - **Seguridad biológica**: patógenos y alterantes, **objeto principal del tema**
+  - **Biotecnología** (OGM)
+  - **Etiquetado y nutrición**
+  - **Trazabilidad**
+  - **Controles oficiales**
+- El alimento es fuente de nutrientes para microorganismos y patógenos
+  - Pérdida de calidad por **patógenos** o **alterantes**
+  - La industria debe conocer la calidad microbiológica de materias primas, procesos y producto final
+  - Cometido: abastecimiento salubre e inocuo, evitar deterioro microbiológico
+- **Fases del crecimiento bacteriano**
+  - **Latencia**: aumenta el tamaño celular, sin división, ajuste al medio
+  - **Exponencial**: crecimiento rápido y constante
+  - **Estacionaria**: células viables constantes, crecimiento igual a muerte
+  - **Declive**: muertes superan divisiones, el ciclo vuelve a empezar
+- Plan: influencia de la temperatura, clasificación por temperatura de crecimiento, métodos de conservación (calor, frío), otras técnicas, estándares microbiológicos
 
 # 2. MICROBIOLOGÍA DE LOS ALIMENTOS
 
 ## 2.1. Influencia de la temperatura
 
-- La vida microbiana es posible entre **-7 ºC y 90 ºC**, aunque cada microorganismo tiene un rango propio que raramente supera 35 ºC.
-- Al acercarse a la temperatura óptima el crecimiento se acelera, mientras que superar la máxima resulta letal por desnaturalización de proteínas y enzimas, siendo la fase exponencial la más sensible.
-- Las temperaturas inferiores a la mínima inhiben el desarrollo (en general **-7 ºC** para bacterias, **-4 ºC** para hongos y **-2 ºC** para levaduras), aunque el efecto letal del frío es menor que el del calor.
-- Existen patógenos **psicrótrofos** capaces de crecer por debajo de 5 ºC, como **Listeria monocytogenes** o **Clostridium botulinum tipo E** (hasta 0 ºC). **Salmonella** spp. tiene su límite en 5-6 ºC y **Clostridium perfringens** en 8 ºC.
+- Factor extrínseco principal
+- Vida microbiana de **-7 ºC a 90 ºC**, pero cada microorganismo rara vez supera un margen de **35 ºC**
+- De mínima a óptima: crecimiento se acelera, baja el **tiempo de generación**
+- Sobre la máxima: **letal** por desnaturalización de proteínas y enzimas, la fase exponencial es la más sensible
+- Bajo la mínima: inhibición del desarrollo
+  - **-7 ºC** bacterias, **-4 ºC** hongos, **-2 ºC** levaduras
+  - Congelación mucho menos letal que el calor
+  - Sobreviven: **Salmonella** en aves, **Staphylococcus**, **Micrococcus** y **Streptococcus** en carnes y platos preparados, levaduras y bacterias lácticas en zumos
+- **Patógenos psicrótrofos** crecen bajo 5 ºC
+  - **Listeria monocytogenes** y **Clostridium botulinum tipo E**, hasta 0 ºC
+  - **Salmonella** mínimo 5-6 ºC, **Clostridium perfringens** 8 ºC
 
-## 2.2. Clasificación según temperatura de crecimiento
+## 2.2. Clasificación de los microorganismos según su temperatura de crecimiento
 
-- **Termófilos**: óptima 55-70 ºC (rango 40-90 ºC). Destacan **Bacillus** spp. y **Clostridium** spp., por la termorresistencia de sus endosporas en conservas.
-- **Mesófilos**: óptima 30-45 ºC (rango 5-50 ºC). Incluye la mayoría de patógenos humanos y zoonóticos.
-- **Psicrótrofos**: óptima 25-30 ºC (rango -5 a 35 ºC). Incluyen **Pseudomonas** spp. y mohos como **Penicillium**, **Cladosporium** y **Aspergillus**. Principal causa de deterioro en refrigeración.
-- **Psicrófilos estrictos**: óptima 10-15 ºC (rango -5 a 20 ºC), de origen marino, afectan a productos de la pesca conservados por frío.
-- La temperatura interactúa con otros factores como la **actividad de agua (aw)**, el **pH**, el oxígeno y el sustrato.
+- **Termófilos**: óptima 55-70 ºC (rango 40-90 ºC)
+  - **Bacillus** y **Clostridium** esporulados, alteran conservas térmicas por termorresistencia de endosporas
+- **Mesófilos**: óptima 30-45 ºC (rango 5-50 ºC)
+  - Mayoría de patógenos humanos y zoonóticos, flora alterante a temperatura ambiente
+- **Psicrótrofos**: óptima 25-30 ºC (rango -5 a 35 ºC)
+  - **Pseudomonas**, mohos (**Penicillium**, **Cladosporium**, **Aspergillus**) y levaduras
+  - Causa principal de deterioro de refrigerados
+- **Psicrófilos estrictos**: óptima 10-15 ºC (rango -5 a 20 ºC)
+  - Origen marino, termosensibles, impacto en productos de la pesca conservados por frío
+- Otros factores que interactúan: **actividad de agua**, **pH**, oxígeno, composición del sustrato
 
 # 3. MÉTODOS DE CONSERVACIÓN
 
-- La conservación busca inhibir o destruir agentes extrínsecos (bacterias, mohos, levaduras) y endógenos (enzimas del alimento). Las técnicas fundamentales son los tratamientos por **calor** y por **frío**.
+- Objetivo: inhibir o destruir agentes biológicos extrínsecos (bacterias, mohos, levaduras) y **enzimas** endógenas
+- Técnicas fundamentales: **calor** y **frío**
 
 ## 3.1. Alimentos tratados por el calor
 
-- El tratamiento térmico inactiva microorganismos y enzimas, equilibrando seguridad y calidad, y se diseña en función de la termorresistencia microbiana (**valor D** y **valor z**).
-- **Pasteurización**: temperaturas generalmente inferiores a 100 ºC, destruye formas vegetativas patógenas y alterantes. Objetivos: eliminar riesgos sanitarios (leche, huevos), evitar alteración (mosto, zumo) o servir de método complementario (vino). Resisten microorganismos **termodúricos** y **termofílicos**.
-- **Esterilización**: temperaturas superiores a 100 ºC en autoclave, destruye formas vegetativas y esporas, con envasado hermético permanente. La intensidad depende del pH:
-  - Alimentos de **baja acidez** (pH > 4,6): tratamientos drásticos (concepto **12D** frente a **Clostridium botulinum**).
-  - Alimentos **ácidos** (pH < 4,6): tratamientos menos severos, ya que la acidez inhibe la germinación de esporas.
-- **Uperización o UHT**: 135-150 ºC durante 1-4 segundos, con envasado aséptico. Minimiza pérdidas nutricionales frente a la esterilización convencional (115-120 ºC, 15-20 minutos). Es la tecnología de la leche UHT, natas y bebidas vegetales.
+- Busca inactivación microbiana y enzimática con mínima pérdida organoléptica y nutricional
+- Diseño según **termorresistencia** (valor **D** y valor **z**)
+- Efecto **acumulativo**: escaldado o cocción previa aumentan la eficacia posterior
+- **Pasteurización**
+  - Destruye la mayoría de formas vegetativas alterantes y patógenas, generalmente **< 100 ºC**
+  - Tratamiento moderado, se combina con acidificación, reducción de agua disponible o bajas temperaturas
+  - Tres objetivos
+    - **Sanitario**: consumo crudo y conservación corta (leche, huevos)
+    - **Anti-alteración**: conservación más larga (mosto, zumo)
+    - **Método complementario**: alimentos que fermentarán (vino)
+  - Queso y yogur con leche pasteurizada cumplen los tres a la vez
+  - Resisten: **termodúricos** (resisten sin crecer necesariamente) y **termofílicos** (resisten y se reproducen)
+- **Esterilización**
+  - **> 100 ºC**, calor húmedo a presión en autoclave, destruye formas vegetativas y esporas
+  - Logra la **esterilidad comercial**, con envasado hermético permanente
+  - Según pH
+    - **Baja acidez (pH > 4,6)**: carnes, pescados, aves, hortalizas, sopas
+      - Tratamientos drásticos, referencia **12D** de esporas de **C. botulinum**
+      - Riesgo de **Bacillus** y **Clostridium**
+    - **Ácidos (pH < 4,6)**: tomates, peras, melocotones, piñas, encurtidos, salsas
+      - No permiten desarrollo ni toxina de C. botulinum
+      - Tratamiento menos severo, frecuentemente **< 100 ºC**
+- **Uperización o UHT**
+  - Continuo, **135-150 ºC**, **1 a 4 segundos**, envasado **aséptico**
+  - Menos pérdida nutricional y organoléptica (Maillard) que autoclave (115-120 ºC, 15-20 min)
+  - Leche UHT, natas, bebidas vegetales, cremas
 
 ## 3.2. Alimentos tratados por el frío
 
-- El frío ralentiza o inhibe la actividad microbiana y enzimática. Los microorganismos **psicrófilos** y **psicrótrofos** son los más relevantes.
-- **Enfriamiento** (10-15 ºC): frutas y hortalizas sensibles al frío.
-- **Refrigeración** (-1 a 7 ºC): alimentos perecederos animales y vegetales. Inhibe termófilos y mesófilos, dejando el deterioro a cargo de psicrótrofos y psicrófilos, con **Pseudomonas** como principal género deteriorante.
-- La refrigeración rápida por debajo de 5 ºC frena a los patógenos mesófilos (**Salmonella**, **Staphylococcus aureus**), pero no a psicrótrofos como **Listeria monocytogenes**, **Clostridium botulinum tipo E** o **Yersinia enterocolitica**.
-- **Congelación**: temperaturas inferiores a **-18 ºC**, que detienen la multiplicación microbiana al reducir la aw.
-  - **Congelación lenta** (3-72 horas): cristales grandes, daño estructural.
-  - **Congelación rápida** (-20 ºC en menos de 30 minutos): microcristales, mejor textura.
-  - Etapas: enfriamiento inicial, cambio de estado (cristalización) y enfriamiento posterior hasta -18 ºC.
-  - Sobreviven mejor las bacterias Gram-positivas, las endosporas y las toxinas preformadas (**C. botulinum**, **S. aureus**). La descongelación debe hacerse en refrigeración (≤ 4 ºC).
+- Ralentiza o inhibe actividad microbiana y enzimática
+- Relevan **psicrófilos** y **psicrótrofos**
+- **Enfriamiento y refrigeración**
+  - Al bajar de la óptima: menor metabolismo, mayor tiempo de generación
+  - **Enfriamiento**: **10-15 ºC**, frutas y hortalizas sensibles al frío
+  - **Refrigeración**: **-1 a 7 ºC**, sobre el punto de congelación, perecederos animales y vegetales
+  - Acción **selectiva** a < 7 ºC: se inhiben termófilos y mayoría de mesófilos alterantes
+  - Deterioro por psicrótrofos y psicrófilos
+    - **Pseudomonas** (aerobiosis)
+    - **Lactobacillus** (vacío o atmósfera modificada)
+    - Mohos **Penicillium**, **Cladosporium**, **Aspergillus**
+  - **Punto crítico de inocuidad**
+    - Refrigeración rápida **< 5 ºC** frena mesófilos patógenos (**Salmonella**, **Staphylococcus aureus**)
+    - No garantiza inocuidad frente a psicrótrofos: **Listeria monocytogenes**, **C. botulinum tipo E** (no proteolítico), **Yersinia enterocolitica**
+- **Congelación**
+  - **< -18 ºC**, baja la actividad de agua al pasar el agua libre a hielo, detiene la multiplicación de casi todas las especies
+  - Límite inferior: **-8 a -12 ºC** en mohos y levaduras halófilos u osmofílicos
+  - Según velocidad
+    - **Lenta** (3 a 72 horas): cristales grandes extracelulares, daño tisular, adaptación microbiana
+    - **Rápida** (-20 ºC en menos de 30 minutos): microcristales intra y extracelulares, preserva textura, choque térmico en vegetativas
+  - Tres etapas
+    - **Enfriamiento inicial**: frena psicrotolerantes, lesiona flora sensible
+    - **Cambio de estado**: calor latente, cristales, lesiones en membranas
+    - **Enfriamiento posterior**: hasta **≤ -18 ºC**, cesa el metabolismo microbiano
+  - Supervivencia
+    - Más sensibles: bacilos **Gram-negativos**
+    - Resisten: Gram-positivas, **endosporas** y **toxinas preformadas** (C. botulinum, S. aureus)
+    - Lesiones subletales se reparan y multiplican al descongelar
+  - Descongelación controlada **≤ 4 ºC**
 
 # 4. OTRAS TÉCNICAS DE CONSERVACIÓN
 
-- **Alimentos de IV Gama**: frescos, lavados y cortados, envasados en atmósfera modificada (EAM), bajo cadena de frío.
-- **Alimentos de V Gama**: cocinados o pasteurizados, listos para consumo, en refrigeración.
-- Platos preparados: **precocinados** (requieren tratamiento posterior), **cocinados** (listos para consumir) y **cocinados de consumo inmediato** (≥ 63-65 ºC o refrigerados, consumo el mismo día).
-- Tecnologías no térmicas:
-  - **Altas Presiones Hidrostáticas (HHP)**: 400-600 MPa, inactiva células vegetativas y enzimas sin dañar vitaminas ni aromas.
-  - **Campos Eléctricos Pulsados (PEF)**: 10-50 kV/cm, produce electroporación de membranas con mínimo efecto térmico.
-  - **Radiación ionizante**: inactiva el ADN microbiano mediante rayos gamma o electrones (radurización, radicidación, radappertización).
-  - Otras: ultrasonidos de potencia, UV-C y homogeneización a alta presión.
+- Demanda de frescura, valor nutricional y mínimo procesado: tecnologías **no térmicas** y gamas de conveniencia
+- **IV Gama**: hortalizas y frutas frescas, lavadas, cortadas, envasadas (atmósfera modificada), cadena de frío estricta
+- **V Gama**: cocinados o pasteurizados, listos para consumo, refrigerados, vida útil limitada
+- Platos preparados
+  - **Precocinados**: requieren elaboración o tratamiento térmico posterior
+  - **Cocinados**: elaboración completa, consumo con o sin calentamiento
+  - **Cocinados de consumo inmediato**: calientes (**≥ 63-65 ºC**) o refrigerados, consumo el mismo día
+- Tecnologías no térmicas
+  - **Altas presiones hidrostáticas** (HHP, pascalización): **400-600 MPa**, inactiva vegetativas y enzimas, respeta vitaminas y aromas
+  - **Campos eléctricos pulsados** (PEF): **10-50 kV/cm**, microsegundos, fluidos, electroporación irreversible
+  - **Radiación ionizante**: rayos gamma o haces de electrones, daño al ADN
+    - Radurización, radicidación, radappertización
+  - Ultrasonidos, **UV-C**, homogeneización a alta presión (**HPH**)
 
 # 5. ESTÁNDARES MICROBIOLÓGICOS
 
-- Los criterios microbiológicos definen la aceptabilidad de un producto o proceso según ausencia, presencia o concentración de microorganismos o sus toxinas.
-- El **Reglamento (CE) 2073/2005** distingue dos categorías:
-  - **Criterios de seguridad alimentaria**: aplican a **Salmonella**, **Listeria monocytogenes**, **Cronobacter sakazakii** (fórmulas infantiles), enterotoxinas estafilocócicas e histamina. Su incumplimiento exige retirada del producto.
-  - **Criterios de higiene del proceso**: recuentos de **Escherichia coli**, **Enterobacteriaceae** o colonia a 30 ºC, cuyo incumplimiento exige medidas correctoras en fabricación.
-- El **Reglamento (UE) 2024/2895** modifica el **Reglamento (CE) 2073/2005** reforzando los criterios para **Listeria monocytogenes** en alimentos listos para el consumo, exigiendo ausencia en 25 g salvo que se demuestre que no se superarán los **100 ufc/g** al final de la vida útil.
-- El **Reglamento (CE) 2073/2005** fija criterios para productos cárnicos, lácteos, ovoproductos, de la pesca y frutas y hortalizas.
-- El **CODEX Alimentarius** ha desarrollado los *Principios para el establecimiento y la aplicación de criterios microbiológicos a los alimentos*, usados como guía internacional.
-- Normativa nacional:
-  - **Real Decreto 640/2006**, sobre aplicación del Paquete de Higiene en España.
-  - **Real Decreto 1420/2006**, sobre congelación preventiva frente a **Anisakis** en productos de la pesca (≤ -20 ºC durante al menos 24 horas, o ≤ -35 ºC durante al menos 15 horas), complementado por el **Real Decreto 1021/2022**, sobre requisitos de higiene en el comercio al por menor y obligaciones informativas en restauración.
-  - **Real Decreto 1109/1991**, que aprueba la Norma General relativa a los alimentos ultracongelados, exigiendo temperaturas ≤ -18 ºC en toda la cadena de distribución.
+- **Criterios microbiológicos**: definen aceptabilidad de producto o proceso por ausencia, presencia o concentración de microorganismos, toxinas o metabolitos
+- **Reglamento (CE) 2073/2005**, referencia UE, dos categorías
+  - **Seguridad alimentaria**: aceptabilidad de producto en el mercado, incumplimiento exige **retiro o recuperación**
+    - **Salmonella**, **Listeria monocytogenes**, **Cronobacter sakazakii** (fórmulas infantiles), enterotoxinas estafilocócicas, histamina en pesca
+  - **Higiene del proceso**: verifican el proceso, incumplimiento exige **medidas correctoras**
+    - Recuentos de **E. coli**, **Enterobacteriaceae**, colonias a 30 ºC
+  - Categorías de producto: cárnicos, lácteos, ovoproductos, pesca, frutas y hortalizas
+- **Reglamento (UE) 2024/2895**, modifica el 2073/2005
+  - **Listeria monocytogenes** en alimentos listos para el consumo
+  - **Ausencia en 25 g** durante toda la vida útil si el producto favorece su crecimiento
+  - Salvo estudios de vida útil que demuestren **≤ 100 ufc/g** al final
+- **CODEX Alimentarius**: *Principios para el establecimiento y la aplicación de criterios microbiológicos a los alimentos*, guía para países sin regulación propia
+- Normativa nacional
+  - **Real Decreto 640/2006**, aplicación del Paquete de Higiene en producción y comercialización
+  - **Real Decreto 1420/2006**, congelación obligatoria frente a **Anisakis** en pesca
+    - **≤ -20 ºC durante 24 horas** o **≤ -35 ºC durante 15 horas**
+  - **Real Decreto 1021/2022**, higiene en comercio minorista y obligaciones informativas en restauración
+  - **Real Decreto 1109/1991**, Norma General de **ultracongelados**, **≤ -18 ºC** en toda la cadena de distribución
 
 # 6. CONCLUSIÓN
 
-- La microbiología de los alimentos es el pilar técnico de la labor de inspección del **Servicio de Inspección SOIVRE**.
-- El control de los métodos de conservación por calor, por frío y de las tecnologías no térmicas garantiza el control de la flora patógena y alterante en los intercambios comerciales.
-- El marco normativo de criterios microbiológicos, encabezado por el **Reglamento (CE) 2073/2005** y sus actualizaciones como el **Reglamento (UE) 2024/2895**, resulta imprescindible para auditar la inocuidad, calidad y conformidad de las mercancías en comercio exterior.
+- Microbiología de alimentos: pilar técnico de la inspección del **SOIVRE**
+- Control de métodos de conservación (calor, frío, no térmicos) garantiza el control de flora patógena y alterante en intercambios comerciales
+- Imprescindible dominar grupos fisiológicos, supervivencia al calor y al frío y criterios del **Reglamento (CE) 2073/2005** y **(UE) 2024/2895**

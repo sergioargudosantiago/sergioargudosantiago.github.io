@@ -1,137 +1,188 @@
 # 1. INTRODUCCIÓN
-
-- La **calidad** carece de definición única, muy dependiente del bien o servicio al que se aplique.
-- En sentido amplio, es el grado de adecuación de un producto para cubrir necesidades humanas. En sentido estricto, depende del cumplimiento de características y parámetros recogidos en normas.
-- Se distinguen dos grandes vertientes: **calidad sanitaria** (seguridad alimentaria) y **calidad comercial**.
-- En mercados con altos estándares sanitarios, la calidad comercial puede motivar el rechazo del producto por el consumidor aunque sea seguro desde el punto de vista sanitario.
-- El tema aborda los criterios de calidad comercial de productos agroalimentarios, su composición físico-química y nutricional, y la clasificación en categorías comerciales.
+- **Calidad**: concepto subjetivo
+  - Sentido amplio: grado de adecuación para cubrir necesidades humanas
+  - Sentido estricto: cumplimiento de características y parámetros de **normas de calidad**
+- Dos aspectos: **calidad sanitaria** (seguridad alimentaria) y **calidad comercial**
+- Producto seguro puede ser rechazado por calidad comercial inadecuada
+- Esquema de la exposición: factores y parámetros, composición físico-química y nutricional, categorías comerciales
 
 # 2. CRITERIOS DE CALIDAD COMERCIAL
-
-- La **calidad comercial** es el conjunto de factores y parámetros, externos e internos, exigidos a un producto para estar en los circuitos comerciales y satisfacer al mercado de destino.
-- En alimentación, supone un valor añadido respecto al estado natural, derivado de selección, clasificación, calibrado, acondicionamiento, envasado y transporte.
-
-## 2.1. Calidad comercial externa e interna
-
-- **Externa**: características aparentes (forma, tamaño, color, frescura, firmeza, suciedad, olores), evaluada mediante ensayos no destructivos.
-- **Interna**: factores de desarrollo y madurez apreciables por análisis sensorial (aroma, sabor) y ensayos destructivos (azúcares, ácidos, grasa).
-
-## 2.2. Marco normativo de la UE
-
-- Base jurídica: **Reglamento (UE) 1308/2013**, que crea la OCM Única. Su artículo 75 habilita a la Comisión para desarrollar las Normas de Comercialización mediante actos delegados.
-- Para frutas y hortalizas, desde el **1 de enero de 2025**: **Reglamento Delegado (UE) 2023/2429**, criterios de selección y parámetros de calidad, y **Reglamento de Ejecución (UE) 2023/2430**, controles de conformidad.
-- Ambos sustituyeron al **Reglamento de Ejecución (UE) 543/2011** y permiten clasificar en categorías Extra, I y II.
-
-## 2.3. Requisitos mínimos (Norma General de Comercialización)
-
-- Intactos, sanos, limpios.
-- Prácticamente exentos de plagas y de daños de plagas en la pulpa.
-- Exentos de humedad exterior anormal y de olores o sabores extraños.
-- Según el **Reglamento Delegado (UE) 2023/2429**, condiciones de desarrollo y madurez: desarrollo suficiente no excesivo, estado de maduración satisfactorio y aptitud para soportar transporte y manipulación.
-- Los contaminantes y **límites máximos de residuos (LMR)** pertenecen a la legislación horizontal de seguridad alimentaria (**Reglamento (UE) 2023/915**), separada de las normas de comercialización.
-
-## 2.4. Madurez comercial
-
-- Concepto clave ligado a oferta, demanda y precio. Una gestión inadecuada arruina la experiencia del consumidor.
-- **Frutos climatéricos**: siguen madurando tras la recolección por el pico de respiración y producción de etileno. La madurez comercial puede ser anterior a la gustativa. Ejemplos: manzana, pera, melocotón, ciruela, plátano, mango, aguacate, papaya, tomate.
-- **Frutos no climatéricos**: no maduran organolépticamente tras la recolección, madurez comercial y gustativa coinciden. Ejemplos: cítricos, fresa, uva, piña, pimiento, pepino, melón, sandía.
-
-## 2.5. Índices objetivos de madurez
-
-- **Firmeza** de la pulpa (penetrómetro): manzana, pera, melocotón, kiwi.
-- **Color** (cartas o colorímetros): manzana, cítricos, mango, tomate.
-- **Contenido en almidón** (test con yodo/yoduro potásico): manzana, pera.
-- **Sólidos solubles totales** (grados Brix, refractómetro): piña, melón, uva de mesa, sandía.
-- **Relación de madurez** (índice S/A o E/A): índice legal clave en cítricos y uva de mesa.
-- **Contenido en aceite o materia seca**: índice indispensable en el aguacate.
-- Otros factores: fisiopatías (bitter pit, arrugamiento), daños climatológicos, defectos de presentación, ausencia de plagas activas y cumplimiento de límites de seguridad alimentaria.
+- **Calidad comercial**: factores y parámetros externos e internos exigidos para estar en los circuitos comerciales y satisfacer al mercado de destino
+  - En alimentos: valor añadido sobre el estado natural (selección, clasificación por categorías y calibres, verificación, acondicionamiento, envasado, almacenaje, transporte)
+- **Externa**: características aparentes
+  - Naturaleza, forma, tamaño, color, integridad, defectos, frescura, firmeza, humedad exterior, suciedad, olores
+  - Ensayos no destructivos
+- **Interna**: desarrollo y madurez, análisis sensorial (aroma, sabor)
+  - Ensayos destructivos (azúcares, ácidos, grasa)
+- **Normas de Comercialización de la UE**
+  - Base: **Reglamento (UE) 1308/2013** (OCM Única), art. 75: actos delegados
+  - Frutas y hortalizas, desde 1-1-2025: **Reglamento Delegado (UE) 2023/2429** (criterios de selección y parámetros) y **Reglamento de Ejecución (UE) 2023/2430** (controles de conformidad)
+  - Sustituyen al Reglamento de Ejecución (UE) 543/2011
+  - Permiten clasificar en Extra, I y II
+- **Norma General de Comercialización (NGC)**, mínimos
+  - Intactos, sanos, limpios
+  - Prácticamente exentos de plagas y de daños por plagas en pulpa
+  - Sin humedad exterior anormal ni olores o sabores extraños
+- Estado fisiológico (2023/2429)
+  - Desarrollo suficiente, no excesivo
+  - Maduración satisfactoria, sin sobremadurez
+  - Capaces de soportar transporte y manipulación
+- Calidad comercial separada de seguridad alimentaria
+  - Contaminantes y **LMR** de plaguicidas: legislación horizontal, **Reglamento (UE) 2023/915**
+  - Obligatorios, pero no forman parte de las normas de comercialización
+- **Madurez comercial**: afecta a oferta, demanda y precio
+- **Frutos climatéricos**
+  - Siguen madurando tras la recolección (pico de respiración y etileno)
+  - Madurez comercial anterior a la gustativa, hidrólisis del almidón en azúcares
+  - Manzana, pera, melocotón, ciruela, plátano, mango, aguacate, papaya, tomate (excepto cerezas)
+- **Frutos no climatéricos**
+  - No maduran tras la recolección: madurez comercial = gustativa
+  - Cítricos, fresa, uva, piña, pimiento, pepino, melón, sandía
+- Índices de madurez objetivos (CEPE/ONU, Codex, UE)
+  - **Firmeza** (penetrómetro)
+  - **Color** (cartas, colorímetros)
+  - **Almidón** (test de yodo)
+  - **SST** en °Brix (refractómetro)
+  - **Relación S/A o E/A**: cítricos y uva de mesa
+  - **Aceite o materia seca**: aguacate
+- Otros defectos
+  - Fisiopatías (bitter pit, arrugamiento, sobremaduración)
+  - Daños climáticos (helada, granizo, sol)
+  - Falta de homogeneidad en el envase
+- Exigen ausencia de factores de sanidad vegetal y respetan límites de seguridad alimentaria
 
 # 3. FACTORES Y PARÁMETROS DE CALIDAD COMERCIAL DE LOS PRODUCTOS ALIMENTICIOS
+- Tres ejes: salud humana, salud vegetal, calidad comercial
 
 ## 3.1. Factores que determinan la salud humana
-
-- Requisito absoluto: la **inocuidad alimentaria**.
-- Vías de pérdida de inocuidad: transmisión de enfermedades (zoonosis y epizootias en origen animal) y aporte de contaminantes tóxicos (residuos de plaguicidas, antibióticos, hormonas).
-- Distinción entre materia activa prohibida en la UE y materia activa permitida que supera los **LMR**.
-- **Micotoxinas**: aflatoxinas (B1, B2, G1, G2 y M1 en leche), producidas por *Aspergillus flavus* y *A. parasiticus*, presentes en frutos secos, desecados y cereales. Genotóxicas y carcinógenas, reguladas por el **Reglamento (UE) 2023/915**.
+- Requisito absoluto: **inocuidad**
+- Dos vías de pérdida
+  - Transmisión de enfermedades
+    - Vegetales: poca incidencia (contaminación cruzada, riego con aguas residuales)
+    - Origen animal: epizootias y zoonosis (tuberculosis, brucelosis, salmonelosis)
+  - Contaminantes tóxicos
+    - Plaguicidas, medicamentos veterinarios, hormonas, promotores de engorde
+- Distinguir materia activa prohibida en la UE y materia permitida que supera el **LMR**
+- Comercio internacional: conocer legislación del país receptor, divergencias pese al Codex
+- **Aflatoxinas** (B1, B2, G1, G2, M1 en leche)
+  - Hongos *Aspergillus flavus* y *parasiticus*
+  - Cacahuete, pistacho, almendra, nuez de Brasil, higos, albaricoques secos, maíz
+  - Genotóxicas y carcinógenas (hepatocarcinoma)
+  - Límites en **Reglamento (UE) 2023/915**
 
 ## 3.2. Factores que determinan la salud vegetal
-
-- Distinción entre plagas de cuarentena (introducción prohibida) y plagas reguladas no de cuarentena.
-- **Plagas que deterioran el producto**: mosca de la fruta (*Ceratitis capitata*), carpocapsa (*Cydia pomonella*), polilla oriental (*Cydia molesta*), mosca del olivo (*Bactrocera oleae*), oruga del tomate (*Helicoverpa armigera*), gorgojo de los ajos, nitidúlidos, gasterópodos.
-- **Plagas de impacto estético**: cochinillas (piojo de San José), chinches de campo, ácaros y trips.
-- **Enfermedades bacterianas y víricas**: podredumbres de la patata (*Pectobacterium*, *Dickeya*, *Clavibacter sepedonicus*), virus del enrollado de la patata (PLRV), Sharka (PPV), tristeza de los cítricos (CTV), mosaicos (TMV, CMV), *Ralstonia solanacearum*, *Xylella fastidiosa*.
-- **Enfermedades fúngicas**: *Penicillium*, *Phytophthora*, *Cladosporium*, *Rhizopus*, *Fusarium oxysporum* f. sp. *cubense* (mal de Panamá), *Phyllosticta citricarpa* (mancha negra de los cítricos), mildiu, sarna común, antracnosis.
+- Ausencia de plagas y enfermedades
+- Controles fitosanitarios: plagas de **cuarentena** (prohibida su introducción) y reguladas no de cuarentena
+- Plagas que deterioran el producto
+  - Mosca de la fruta (*Ceratitis capitata*)
+  - Carpocapsa (*Cydia pomonella*): pepita
+  - Polilla oriental del melocotonero (*Cydia molesta*)
+  - Mosca del olivo (*Bactrocera oleae*): sube la acidez del aceite
+  - Oruga del tomate (*Helicoverpa armigera*)
+  - Gorgojo de los ajos, nitidúlidos de frutos secos, gasterópodos
+- Plagas de impacto comercial (estético)
+  - Cochinillas (piojo de San José): rechazo en categorías superiores
+  - Chinches de campo (avellana)
+  - Ácaros y trips
+- Enfermedades bacterianas y víricas
+  - Podredumbre húmeda de la patata
+  - Podredumbre anular (*Clavibacter sepedonicus*): cuarentena
+  - Virus del enrollado de la patata (PLRV), Sharka (PPV), tristeza de los cítricos (CTV), mosaicos (TMV, CMV)
+  - *Ralstonia solanacearum*, *Xylella fastidiosa*
+- Enfermedades fúngicas
+  - Postcosecha: *Penicillium*, *Phytophthora*, *Cladosporium*, *Rhizopus*
+  - Mal de Panamá (*Fusarium oxysporum* f. sp. *cubense*): plátano
+  - Mancha negra de los cítricos (*Phyllosticta citricarpa*): controles fronterizos
+  - Hortalizas: mildiu, sarna común, antracnosis
 
 ## 3.3. Factores que determinan la calidad comercial
-
-- La calidad sanitaria evalúa apto/no apto. La calidad comercial evalúa atributos de valor que segmentan el mercado.
-- **Frutas y hortalizas frescas**: firmeza, color, almidón, sólidos solubles totales, relación de madurez E/A, contenido en aceite o materia seca.
-- **Resto de sectores** (parámetros específicos):
-  - Frutos secos y desecados: humedad máxima, frutos vanos, rancidez.
-  - Granos y semillas: peso hectolítrico, humedad, granos rotos o dañados.
-  - Harinas y pastas: cenizas, gluten, fuerza panadera (W), acidez de la grasa.
-  - Sector cárnico: clasificación **SEUROP**, engrasamiento, pH (DFD/PSE), color.
-  - Pesca: método **QIM**, ausencia de Anisakis, peso escurrido en conservas.
-  - Lácteo: punto crioscópico, materia grasa, extracto seco magro, células somáticas.
-  - Miel, azúcar y huevos: HMF y diastasa, polarización, unidades Haugh, categoría de cámara de aire.
-  - Conservas vegetales: peso escurrido, homogeneidad, vacío de envase.
-  - Vino y cerveza: graduación, extracto seco, acidez, SO2, espuma.
-  - Aceite de oliva virgen: acidez libre (**≤0,8%** para Virgen Extra), índice de peróxidos, absorbancia UV, panel de cata.
-  - Condimentos y platos preparados: poder colorante, cenizas, estabilidad térmica, etiquetado.
+- Calidad sanitaria: apto o no apto. Calidad comercial: atributos que segmentan el mercado
+- **Frutas y hortalizas frescas**: ausencia de defectos e índices de madurez
+  - **Firmeza**: penetrómetro, pectinas (kiwi, manzana, fruta de hueso)
+  - **Color**: reflectómetros y cartas OCDE (clorofila, carotenoides, antocianinas)
+  - **Almidón**: test de regresión, madurez en árbol de manzana y pera
+  - **SST** (°Brix): melón, sandía, piña
+  - **E/A o S/A**: Brix / acidez valorable (cítrico, málico, tartárico), parámetro legal para cítricos y uva de mesa
+  - **Aceite o materia seca**: aguacate, obligatorio
+- **Resto de sectores**
+  - Frutos secos: humedad máxima (almendra sin cáscara <7%, con cáscara <11%), frutos vanos, rancidez
+  - Granos y semillas: peso específico, humedad, granos rotos, impurezas, daños por insectos
+  - Harinas, sémolas y pastas: cenizas, gluten, fuerza panadera (W), proteínas, acidez de la grasa
+  - Cárnico
+    - Canales: **SEUROP** y engrasamiento (1 a 5), pH (DFD, PSE), color
+    - Transformados: tejido muscular, humedad, proteínas, colágeno, nitritos/nitratos, hermeticidad
+  - Pesca
+    - Fresco: **QIM**, parásitos (*Anisakis*)
+    - Conservas: líquido de cobertura, peso escurrido, cierre
+  - Lácteo: punto crioscópico, materia grasa, extracto seco magro, células somáticas y gérmenes, estabilidad térmica
+  - Miel: HMF, diastasa, humedad <20%
+  - Azúcar: polarización, color ICUMSA, solubilidad
+  - Huevos: peso (XL, L, M, S), Unidades Haugh, cámara de aire (Categoría A frente a B)
+  - Conservas vegetales: peso neto y escurrido, tamaños, vacío, defectos del envase
+  - Vino: alcohol adquirido y en potencia, extracto seco, acidez total y volátil, anhídrido sulfuroso, tipicidad
+  - Cerveza: extracto seco primitivo (ESP), espuma, brillo
+  - Aceite de oliva virgen: acidez libre (hasta 0,8% en Virgen Extra), índice de peróxidos, absorbancia UV, medianas del defecto y del frutado (panel de cata)
+  - Condimentos: poder colorante, cenizas, extracto etéreo
+  - Platos preparados: estabilidad térmica, homogeneidad, patógenos, etiquetado nutricional
 
 # 4. COMPOSICIÓN FÍSICO-QUÍMICA Y NUTRICIONAL DE LOS ALIMENTOS
+- Clasificar matrices, composición bromatológica primaria, etiquetado nutricional
 
 ## 4.1. Tipos de alimentos
-
-- Frutas y hortalizas: agua, fibra, minerales, vitamina C y carotenoides.
-- Cereales: hidratos de carbono complejos, fibra, vitaminas del grupo B, zinc, hierro, manganeso.
-- Legumbres: almidón y proteína vegetal limitante en aminoácidos azufrados.
-- Carnes, pescados y huevos: proteínas de alto valor biológico. Carne magra: ~20% proteína, ~60-75% agua. Pescados azules: omega-3 (EPA, DHA), vitaminas A y D.
-- Leche y derivados: caseínas, proteínas del suero, calcio y fósforo.
-- Azúcares y confituras: hidratos de carbono sencillos.
-- Grasas y aceites: mayor densidad energética (**9 kcal/g**), ácidos grasos esenciales, vitaminas liposolubles.
+- **Frutas y hortalizas**: agua, fibra, minerales, vitaminas hidrosolubles (vitamina C), carotenoides
+- **Granos y cereales**: almidón, fibra, vitaminas B, zinc, hierro, manganeso
+- **Legumbres**: almidón, proteína vegetal (limitante en aminoácidos azufrados)
+- **Carnes, pescados y huevos**: proteínas de alto valor biológico
+  - Carne magra: ~20% proteína, 60-75% agua
+  - Pescado azul: omega-3 (EPA, DHA), vitaminas A y D
+  - Clara de huevo: proteína muy pura y biodisponible
+- **Lácteos**: caseínas y proteínas del suero, vitaminas A, D, B, calcio y fósforo
+- **Azúcares, confituras y almíbares**: hidratos de carbono sencillos
+- **Grasas y aceites**: **9 kcal/g**, ácidos grasos esenciales, vitaminas liposolubles
 
 ## 4.2. Composición primaria
-
-- Principios inmediatos: proteínas, lípidos, hidratos de carbono, vitaminas, minerales, agua.
-- **Alteración voluntaria**: procesamiento tecnológico (concentración, fermentación, aditivos).
-- **Alteración involuntaria**: contaminación química (plaguicidas, metales pesados, toxinas, antibióticos, hormonas prohibidas en la UE).
-- Sistema de control obligatorio: **APPCC** (Análisis de Peligros y Puntos Críticos de Control).
-- Modelos de producción sostenible: producción integrada y producción ecológica, regulada por el **Reglamento (UE) 2018/848**.
+- **Principios inmediatos**: proteínas, lípidos, hidratos de carbono, vitaminas, minerales, agua
+- Preservarla es fin primordial para nutrición e inocuidad
+- Alteración **voluntaria**: procesamiento (concentración, fermentación, aditivos)
+- Alteración **involuntaria**: contaminación química
+  - Plaguicidas, metales pesados (plomo, cadmio, mercurio), toxinas, antibióticos, hormonas (prohibidas como promotores de engorde)
+- Garantías: **APPCC** obligatorio, producción integrada, producción ecológica (**Reglamento (UE) 2018/848**)
 
 ## 4.3. Etiquetado nutricional
-
-- Marco histórico: **Directiva 90/496/CEE**, traspuesta por el **Real Decreto 930/1992** sobre información alimentaria al consumidor.
-- Según el artículo 30, la información nutricional obligatoria debe figurar en tabla e incluir: valor energético (kJ y kcal), grasas, ácidos grasos saturados, hidratos de carbono, azúcares, proteínas y sal.
-- Declaración voluntaria adicional: ácidos grasos mono/poliinsaturados, polialcoholes, almidón, fibra, vitaminas y minerales.
-- Los artículos 31 a 35 exigen el cálculo por **100 g o 100 ml**, con posibilidad de expresión por porción.
-- En Estados Unidos, la **FDA** exige el panel Nutrition Facts, centrado en las raciones habituales de consumo (RACC).
+- **Reglamento (UE) 1169/2011**, información alimentaria al consumidor: unifica etiquetado general y nutricional
+- Art. 30: tabla obligatoria
+  - Valor energético (kJ y kcal), grasas, saturadas, hidratos de carbono, azúcares, proteínas, sal
+- Voluntarios: monoinsaturados, poliinsaturados, polialcoholes, almidón, fibra, vitaminas y minerales
+- Arts. 31 a 35: valores por **100 g o 100 ml**, adicionalmente por porción
+- EE.UU.: FDA, panel Nutrition Facts, raciones habituales (RACC)
 
 # 5. CLASIFICACIÓN POR CATEGORÍAS COMERCIALES DE CALIDAD
+- Referencia: **CEPE/NU**, base de OCDE, Codex y normas UE
+- Formato **Normas-Cuadro** (Protocolo de Ginebra, Geneva Understanding)
+- Estructura de la norma
+  - Definición
+  - Calidad: mínimos, madurez, categorías (Extra, I, II)
+  - Calibrado
+  - Tolerancias de calidad y calibrado
+  - Presentación: acondicionamiento, homogeneidad
+  - Marcado: identificación, origen, marca oficial de control
 
-## 5.1. Normas-Cuadro internacionales
+## 5.1. Categorías Comerciales de Calidad
+- **Extra**: calidad superior, forma, desarrollo y color típicos, sin defectos salvo alteraciones superficiales inapreciables
+- **I**: buena calidad, defectos leves de forma, color o piel (rozaduras cicatrizadas)
+- **II**: cumple mínimos, defectos más marcados, apto para consumo
+- Hoy casi todos los productos pueden ir en Extra
+- **NGC**: sin división por categorías, solo mínimos y origen en etiqueta
 
-- Referencias clave: Normas de Calidad Agrícola de la **CEPE/NU**, base de los estándares de la OCDE, el Codex Alimentarius y las Normas de Comercialización de la UE.
-- Formato de Normas-Cuadro del antiguo Protocolo de Ginebra, actualizado por el **Geneva Understanding**.
-- Estructura estandarizada: definición, disposiciones de calidad (características mínimas, madurez, categorías), calibrado, tolerancias, presentación y marcado.
-
-## 5.2. Categorías comerciales
-
-- **Extra**: calidad superior, forma y color típicos de la variedad, sin defectos salvo alteraciones superficiales inapreciables.
-- **Categoría I**: buena calidad, se admiten defectos leves de forma, color o piel que no perjudiquen el aspecto general.
-- **Categoría II**: cumple los requisitos mínimos, admite defectos más marcados siempre que conserve sus características esenciales y sea apto para el consumo.
-- Bajo la Norma General de Comercialización no se exige división por categorías, solo requisitos mínimos y etiquetado de origen.
-
-## 5.3. Régimen de tolerancias comerciales
-
-- **Categoría Extra**: 5% de producto de Categoría I, con un máximo de 0,5% de Categoría II.
-- **Categoría I**: 10% de producto de Categoría II, con un máximo de 1% que no cumpla ni Categoría II ni requisitos mínimos.
-- **Categoría II**: 10% de producto que no cumpla los requisitos de su categoría ni los mínimos, con un máximo del 2% afectado por podredumbre.
-- **Tolerancia de calibre**: 10% en peso o número de frutos por lote, uniforme para todas las categorías.
+## 5.2. Régimen de Tolerancias Comerciales
+- Absorben errores accidentales de calibrado, selección y envasado
+- En % en peso o número de frutos
+- **Extra**: 5% de Categoría I, dentro de él máx. 0,5% de Categoría II
+- **I**: 10% de Categoría II, dentro de él máx. 1% fuera de II y mínimos (incluye podredumbre)
+- **II**: 10% fuera de categoría y mínimos, sin frutos impropios, máx. 2% con podredumbre
+- **Calibre**: 10% en peso o número de frutos, todas las categorías
 
 # 6. CONCLUSIÓN
-
-- Los criterios de calidad comercial (factores externos e internos, madurez, sanidad vegetal y humana, composición y categorías) constituyen el fundamento técnico de la inspección y certificación.
-- La distinción entre calidad externa e interna, entre frutos climatéricos y no climatéricos, y el esquema de Normas-Cuadro heredado del Protocolo de Ginebra proporcionan un marco estable aplicable a la generalidad de los productos agroalimentarios.
-- Para el Servicio de Inspección **SOIVRE**, el dominio de estos criterios técnicos es tan indispensable como el marco jurídico, pues son los factores verificados en cada inspección para determinar la conformidad de la mercancía con su categoría comercial declarada.
+- Base técnica de la inspección y certificación SOIVRE
+- Conceptos clave: calidad externa e interna, climatéricos y no climatéricos, Normas-Cuadro
+- Se verifica en cada inspección la conformidad con la categoría declarada
