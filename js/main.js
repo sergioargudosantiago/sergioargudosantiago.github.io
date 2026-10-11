@@ -392,9 +392,11 @@ function generateTopics(exerciseNumber, topicCount) {
             message: null
         };
 
-        // Exercise 1: All topics 1-55 visible but coming-soon
+        // Exercise 1: All topics 1-55 available
         if (exerciseNumber === 1) {
-            // Keep status as 'coming-soon' by default
+            if (i >= 1 && i <= 55) {
+                topic.status = 'available';
+            }
         }
         // Exercise 3: Topics 1-58 available (except 12, 33, 43)
         else if (exerciseNumber === 3) {
@@ -433,11 +435,6 @@ function renderTopics() {
 // Una fila por tema. Las clases t-* están en el <style> de temario.html.
 function renderTopicItem(topic) {
     const nombre = `<span class="t-tema-nombre"><span class="t-tema-num">${topic.number}</span>${topic.titulo}</span>`;
-
-    // El primer ejercicio se enseña entero, pero sus esquemas aún no están publicados
-    if (currentExercise && currentExercise.number === 1) {
-        return `<div class="t-tema t-apagado">${nombre}<span class="t-tema-nota">En preparación</span></div>`;
-    }
 
     switch (topic.status) {
         case 'available':
@@ -522,13 +519,14 @@ function handleGlobalSearch(query) {
 }
 
 function openGlobalSearch(query) {
-    currentExercise = { number: 'all', count: 104, title: 'BÚSQUEDA GLOBAL' };
+    currentExercise = { number: 'all', count: 159, title: 'BÚSQUEDA GLOBAL' };
     document.getElementById('modalTitle').textContent = `Resultados de búsqueda: "${query}"`;
 
-    // Combine all topics from Ejercicio 3 and 5
+    // Combine all topics from Ejercicio 1, 3 and 5
+    const topics1 = generateTopics(1, 55);
     const topics3 = generateTopics(3, 58);
     const topics5 = generateTopics(5, 46);
-    currentTopics = [...topics3, ...topics5];
+    currentTopics = [...topics1, ...topics3, ...topics5];
 
     filteredTopics = currentTopics.filter(topic =>
         topic.name.toLowerCase().includes(query.toLowerCase())
