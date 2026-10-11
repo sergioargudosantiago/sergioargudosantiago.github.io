@@ -99,10 +99,14 @@
     }
     function sinDatos(el) { el.innerHTML = '<p class="c-nota">Sin datos para este periodo.</p>'; el.dataset.w = String(Math.round(el.clientWidth)); }
     function tablaAccesible(el, cabecera, filas) {
+        // La clase va en un envoltorio y no en la tabla: una tabla ignora width: 1px,
+        // crece hasta su contenido y ensancha la página en el móvil.
+        const caja = document.createElement('div');
+        caja.className = 'sr-only';
         const t = document.createElement('table');
-        t.className = 'sr-only';
         t.innerHTML = `<thead><tr>${cabecera.map(c => `<th scope="col">${c}</th>`).join('')}</tr></thead><tbody>${filas.map(f => `<tr>${f.map((c, i) => i ? `<td>${c}</td>` : `<th scope="row">${c}</th>`).join('')}</tr>`).join('')}</tbody>`;
-        el.appendChild(t);
+        caja.appendChild(t);
+        el.appendChild(caja);
     }
 
     // Tooltip único, con ratón, toque y teclado

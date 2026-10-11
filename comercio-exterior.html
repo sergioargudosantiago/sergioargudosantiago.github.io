@@ -420,8 +420,14 @@
             <!-- ===== NOTAS, FUENTES Y DESCARGAS ===== -->
             <section class="c-seccion" aria-labelledby="notasTitulo">
                 <h2 class="c-seccion-titulo" id="notasTitulo">Notas, fuentes y descargas</h2>
-                <div class="c-aviso">
-                    <p> Los datos mostrados provienen de fuentes oficiales (DataComex, Banco de España). Si detectas algún dato extraño o tienes alguna sugerencia, <a href="sobre-mi.html" >contacta conmigo</a>. </p>
+                <!-- Un aviso por pestaña: switchMainTab() muestra el que toca -->
+                <div class="c-aviso" id="avisoNotasBalanza" hidden>
+                    <p> Los datos de balanza de pagos proceden del Banco de España (Boletín Estadístico, capítulo 17). Si detectas algún dato extraño o tienes alguna sugerencia, <a href="sobre-mi.html" >contacta conmigo</a>. </p>
+                    <p> <strong>Cobertura:</strong> los gráficos anuales solo usan años completos. El Banco de España revisa periodos ya publicados y esas revisiones se incorporan en cada actualización. </p>
+                    <p> <strong>No es la cifra de Aduanas:</strong> el saldo de bienes de la balanza de pagos no coincide con el de la pestaña «Flujos comerciales». La balanza de pagos registra las operaciones por cambio de propiedad entre residentes y no residentes y valora las importaciones sin fletes ni seguros. </p>
+                </div>
+                <div class="c-aviso" id="avisoNotasFlujos">
+                    <p> Los datos de flujos comerciales proceden de la estadística de comercio exterior de Aduanas, vía DataComex. Si detectas algún dato extraño o tienes alguna sugerencia, <a href="sobre-mi.html" >contacta conmigo</a>. </p>
                     <p> <strong>Cobertura:</strong> exportación, importación, TVA, cuota de la UE y países destino/origen están disponibles para <strong>todos los años 2021&ndash;2025</strong>. La TVA de 2021 se calcula frente a 2020. Los datos de <strong>2024 y 2025 son provisionales</strong> y la estadística de Aduanas los revisa en meses posteriores, casi siempre al alza. </p>
                     <p> <strong>Cuota UE27:</strong> porcentaje del valor en euros con destino (o procedencia) en los 27 Estados miembros sobre el valor total del sector. Se calcula a nivel de partida de la Nomenclatura Combinada y se agrega ponderando por valor, no promediando porcentajes. No cuentan como UE el avituallamiento ni las operaciones intracomunitarias sin país determinado. </p>
                 </div>
@@ -432,11 +438,10 @@
                         <li><a href="https://www.bde.es/webbe/es/estadisticas/otras-clasificaciones/publicaciones/boletin-estadistico/capitulo-17.html" target="_blank" rel="noopener noreferrer">Boletín Estadístico Capítulo 17 &mdash; Banco de España</a></li>
                 </ul>
                 <p>Los datos de Balanza de Pagos se descargan de la <a href="https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html" target="_blank" rel="noopener noreferrer">API de estadísticas del Banco de España</a> y se publican aquí solo después de comprobar que cuadran sus identidades contables. El último dato disponible figura junto al título de cada serie.</p>
-                <p>Metodología completa, jerarquía de sectores y correspondencia con los códigos de la Nomenclatura Combinada en la <a href="metodologia.html">ficha metodológica</a>.</p>
+                <p>Metodología completa y clasificación de sectores en la <a href="metodologia.html">ficha metodológica</a>.</p>
                 <div class="c-acciones">
                     <button type="button" id="btnDownloadView" class="c-boton c-boton-descarga">Vista actual (CSV)</button>
                     <a href="data/flujos_data.csv" download class="c-boton c-boton-descarga">Dataset completo 2021–2025 (CSV)</a>
-                    <a href="data/correspondencias-sectores-nc8.csv" download class="c-boton c-boton-descarga">Sectores ↔ códigos NC8 (CSV)</a>
                 </div>
                 <p class="c-nota">Los CSV se generan en UTF-8 con marca de orden de bytes, de modo que Excel abre las tildes correctamente con doble clic.</p>
             </section>
@@ -455,7 +460,7 @@
                 <div class="sitio-pie-redes">
                     <a href="https://www.linkedin.com/in/sergio-argudo-santiago/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
                     <a href="mailto:contacto@sergioargudo.es" aria-label="Correo: contacto@sergioargudo.es"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></a>
-                    <a href="feed.xml" aria-label="Artículos por RSS"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11a8 8 0 018 8M5 5a14 14 0 0114 14"/><circle cx="6" cy="18" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://github.com/sergioargudosantiago" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
                 </div>
             </div>
             <nav aria-label="Secciones del sitio">
@@ -1757,6 +1762,8 @@
             });
             document.getElementById('flujosView').classList.toggle('hidden', tab !== 'flujos');
             document.getElementById('balanzaView').classList.toggle('hidden', tab !== 'balanza');
+            document.getElementById('avisoNotasFlujos').hidden = tab !== 'flujos';
+            document.getElementById('avisoNotasBalanza').hidden = tab !== 'balanza';
             if (tab === 'balanza') {
                 initBalanzaDeP();
             }

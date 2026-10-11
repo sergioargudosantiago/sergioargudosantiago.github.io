@@ -239,7 +239,6 @@ ${art.html}
                 <div class="c-compartir">
                     <a class="c-boton c-boton-principal" href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}" target="_blank" rel="noopener noreferrer">Compartir en LinkedIn</a>
                     <button type="button" class="c-boton" id="btnCopiarEnlace" data-url="${url}">Copiar enlace</button>
-                    <a class="c-boton" href="../feed.xml">RSS</a>
                 </div>
             </footer>
 
@@ -323,7 +322,7 @@ ${partes.cabecera}
                 <p class="c-antetitulo">Análisis</p>
                 <h1 class="c-titular">Artículos</h1>
                 <p class="c-entradilla">Comercio exterior, política comercial y preparación de la oposición. Con fuentes y datos que puedes comprobar.</p>
-                <p><a class="c-boton" href="../feed.xml">Suscribirse por RSS</a></p>
+                <p><a class="c-boton" href="https://www.linkedin.com/in/sergio-argudo-santiago/" target="_blank" rel="noopener noreferrer">Seguir en LinkedIn</a></p>
             </header>
 
             <div class="c-lista-articulos">

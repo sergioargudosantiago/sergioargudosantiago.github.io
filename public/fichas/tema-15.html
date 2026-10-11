@@ -65,7 +65,7 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .detalle.bp td, .detalle.bp th { width: auto; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap; }
 .detalle.bp td:first-child, .detalle.bp th:first-child { text-align: left; font-family: 'Public Sans', sans-serif; white-space: normal; }
 .detalle.bp th { font-family: 'Public Sans', sans-serif; }
-.detalle.bp + h2 { margin-top: 6px; }
+.tabla-env.bp + h2 { margin-top: 6px; }
 .detalle .ue { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; white-space: nowrap; }
 .barra-ue { display: inline-block; width: 36px; height: 7px; background: #E2E7DF; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
 .barra-ue i { display: block; height: 100%; background: #2B6CA3; border-radius: 2px; }
@@ -73,6 +73,22 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .pos, .neg { color: inherit; font-weight: 600; }
 .sup { color: color-mix(in srgb, #2B6CA3 75%, #1F2A1D); font-weight: 600; } .def { color: color-mix(in srgb, #B5893A 70%, #1F2A1D); font-weight: 600; }
 .tenue { color: #6B7568; font-family: 'Public Sans', sans-serif; font-size: 11.5px; }
+/* En pantalla estrecha la hoja deja de ser un A4 fijo: ocupa el ancho, crece en alto,
+   apila las columnas y las tablas anchas se desplazan dentro de su caja. Solo
+   «screen»: la impresión y los PDF (794 px de ancho) no deben entrar aquí. Va al
+   final para ganar a las reglas de arriba, que tienen la misma especificidad. */
+@media screen and (max-width: 820px) {
+  .pagina { width: auto; height: auto; margin: 10px; padding: 18px 14px 14px; gap: 14px; overflow: visible; }
+  .cab h1 { font-size: 25px; }
+  .h1-det { font-size: 20px; }
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dos { grid-template-columns: minmax(0, 1fr); }
+  .notas { display: none; }
+  .tabla-env { overflow-x: auto; }
+  .tabla-env .detalle { min-width: 560px; }
+  .pie { flex-direction: column; gap: 4px; }
+  .pie .url { white-space: normal; }
+}
 </style>
 </head>
 <body>
@@ -127,10 +143,10 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
     <h1 class="h1-det">Sector de semimanufacturas: metales, químicos y otros · exportación por subsector</h1>
     <span class="sub">2025, millones de euros. Variación frente a 2024 y parte que va a la UE27.</span>
   </div>
-  <table class="detalle">
+  <div class="tabla-env"><table class="detalle">
     <thead><tr><th>Subsector</th><th>M€</th><th>Var. 25/24</th><th>Cuota UE</th><th>Principales destinos</th></tr></thead>
     <tbody><tr class="grupo"><td>PRODUCTOS QUÍMICOS</td><td>66.023</td><td></td><td></td><td></td></tr><tr><td>Medicamentos</td><td>21.153</td><td><span class="pos">+14,3 %</span></td><td class="ue"><span class="barra-ue"><i style="width:49.7%"></i></span>49,7 %</td><td>Alemania, Reino Unido, Suiza</td></tr><tr><td>Plásticos</td><td>12.985</td><td><span class="neg">−3,0 %</span></td><td class="ue"><span class="barra-ue"><i style="width:67.2%"></i></span>67,2 %</td><td>Francia, Portugal, Alemania</td></tr><tr><td>Aceites esenciales y perfumados</td><td>11.302</td><td><span class="pos">+6,7 %</span></td><td class="ue"><span class="barra-ue"><i style="width:48.2%"></i></span>48,2 %</td><td>Francia, Portugal, Estados Unidos</td></tr><tr><td>Productos químicos orgánicos</td><td>8.469</td><td><span class="pos">+4,6 %</span></td><td class="ue"><span class="barra-ue"><i style="width:70.1%"></i></span>70,1 %</td><td>Países Bajos, Bélgica, Panamá</td></tr><tr><td>Otros productos químicos</td><td>6.136</td><td><span class="neg">−2,1 %</span></td><td class="ue"><span class="barra-ue"><i style="width:65.9%"></i></span>65,9 %</td><td>Francia, Italia, Alemania</td></tr><tr><td>Colorantes y curtientes</td><td>2.941</td><td><span class="neg">−2,1 %</span></td><td class="ue"><span class="barra-ue"><i style="width:52.4%"></i></span>52,4 %</td><td>Italia, Portugal, Francia</td></tr><tr><td>Productos químicos inorgánicos</td><td>1.616</td><td><span class="pos">+7,7 %</span></td><td class="ue"><span class="barra-ue"><i style="width:63.8%"></i></span>63,8 %</td><td>Francia, Portugal, Italia</td></tr><tr><td>Abonos</td><td>1.421</td><td><span class="neg">−0,8 %</span></td><td class="ue"><span class="barra-ue"><i style="width:43.1%"></i></span>43,1 %</td><td>Portugal, Francia, Brasil</td></tr><tr class="grupo"><td>OTRAS SEMIMANUFACTURAS</td><td>19.553</td><td></td><td></td><td></td></tr><tr><td>Material de construcción</td><td>7.721</td><td><span class="neg">−1,5 %</span></td><td class="ue"><span class="barra-ue"><i style="width:49.2%"></i></span>49,2 %</td><td>Francia, Estados Unidos, Portugal</td></tr><tr><td>Papel</td><td>4.977</td><td><span class="neg">−1,6 %</span></td><td class="ue"><span class="barra-ue"><i style="width:68.4%"></i></span>68,4 %</td><td>Francia, Portugal, Italia</td></tr><tr><td>Neumáticos y cámaras</td><td>3.604</td><td><span class="pos">+1,2 %</span></td><td class="ue"><span class="barra-ue"><i style="width:69.3%"></i></span>69,3 %</td><td>Francia, Alemania, Portugal</td></tr><tr><td>Resto otras semimanufacturas</td><td>3.252</td><td><span class="neg">−0,4 %</span></td><td class="ue"><span class="barra-ue"><i style="width:60.1%"></i></span>60,1 %</td><td>Francia, Portugal, Alemania</td></tr><tr class="grupo-fila"><td>METALES NO FERROSOS</td><td>9.086</td><td><span class="pos">+6,5 %</span></td><td class="ue"><span class="barra-ue"><i style="width:64.6%"></i></span>64,6 %</td><td>Italia, Francia, Portugal</td></tr><tr class="grupo-fila"><td>HIERRO Y ACERO</td><td>8.866</td><td><span class="neg">−2,6 %</span></td><td class="ue"><span class="barra-ue"><i style="width:72.4%"></i></span>72,4 %</td><td>Francia, Portugal, Italia</td></tr></tbody>
-  </table>
+  </table></div>
   <footer class="pie"><span>Variación calculada sobre el valor en euros. Cuota UE: % del valor con destino en la UE27. Fuente: DataComex (Ministerio de Economía, Comercio y Empresa). Datos de 2024 y 2025 provisionales.</span><span class="url">sergioargudo.es · 2 / 3</span></footer>
 </section>
 <section class="pagina">
@@ -142,10 +158,10 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
     <h1 class="h1-det">Sector de semimanufacturas: metales, químicos y otros · importación por subsector</h1>
     <span class="sub">2025, millones de euros. Variación frente a 2024 y parte que llega desde la UE27.</span>
   </div>
-  <table class="detalle">
+  <div class="tabla-env"><table class="detalle">
     <thead><tr><th>Subsector</th><th>M€</th><th>Var. 25/24</th><th>Desde la UE</th><th>Principales orígenes</th></tr></thead>
     <tbody><tr class="grupo"><td>PRODUCTOS QUÍMICOS</td><td>72.150</td><td></td><td></td><td></td></tr><tr><td>Medicamentos</td><td>26.579</td><td><span class="pos">+15,8 %</span></td><td class="ue"><span class="barra-ue"><i style="width:55.6%"></i></span>55,6 %</td><td>Estados Unidos, Italia, Alemania</td></tr><tr><td>Plásticos</td><td>14.984</td><td><span class="pos">+0,6 %</span></td><td class="ue"><span class="barra-ue"><i style="width:67.5%"></i></span>67,5 %</td><td>Alemania, Francia, Italia</td></tr><tr><td>Productos químicos orgánicos</td><td>9.807</td><td><span class="neg">−13,2 %</span></td><td class="ue"><span class="barra-ue"><i style="width:44.9%"></i></span>44,9 %</td><td>China, Alemania, Francia</td></tr><tr><td>Otros productos químicos</td><td>7.080</td><td><span class="pos">+10,6 %</span></td><td class="ue"><span class="barra-ue"><i style="width:77.8%"></i></span>77,8 %</td><td>Alemania, Francia, Países Bajos</td></tr><tr><td>Aceites esenciales y perfumados</td><td>6.972</td><td><span class="pos">+8,7 %</span></td><td class="ue"><span class="barra-ue"><i style="width:83.8%"></i></span>83,8 %</td><td>Francia, Italia, Alemania</td></tr><tr><td>Productos químicos inorgánicos</td><td>3.298</td><td><span class="pos">+8,5 %</span></td><td class="ue"><span class="barra-ue"><i style="width:31.9%"></i></span>31,9 %</td><td>Reino Unido, Alemania, China</td></tr><tr><td>Colorantes y curtientes</td><td>1.918</td><td><span class="neg">−0,7 %</span></td><td class="ue"><span class="barra-ue"><i style="width:74.6%"></i></span>74,6 %</td><td>Alemania, Francia, Italia</td></tr><tr><td>Abonos</td><td>1.512</td><td><span class="pos">+32,5 %</span></td><td class="ue"><span class="barra-ue"><i style="width:41.5%"></i></span>41,5 %</td><td>Egipto, Bélgica, Marruecos</td></tr><tr class="grupo"><td>OTRAS SEMIMANUFACTURAS</td><td>12.627</td><td></td><td></td><td></td></tr><tr><td>Papel</td><td>4.851</td><td><span class="pos">+2,1 %</span></td><td class="ue"><span class="barra-ue"><i style="width:83.5%"></i></span>83,5 %</td><td>Alemania, Francia, Italia</td></tr><tr><td>Resto otras semimanufacturas</td><td>2.942</td><td><span class="pos">+0,0 %</span></td><td class="ue"><span class="barra-ue"><i style="width:69.5%"></i></span>69,5 %</td><td>Francia, Portugal, Alemania</td></tr><tr><td>Neumáticos y cámaras</td><td>2.479</td><td><span class="pos">+6,0 %</span></td><td class="ue"><span class="barra-ue"><i style="width:59.1%"></i></span>59,1 %</td><td>China, Italia, Alemania</td></tr><tr><td>Material de construcción</td><td>2.355</td><td><span class="pos">+5,0 %</span></td><td class="ue"><span class="barra-ue"><i style="width:55.1%"></i></span>55,1 %</td><td>China, Italia, Francia</td></tr><tr class="grupo-fila"><td>HIERRO Y ACERO</td><td>10.138</td><td><span class="neg">−7,4 %</span></td><td class="ue"><span class="barra-ue"><i style="width:58.0%"></i></span>58,0 %</td><td>Francia, Alemania, Italia</td></tr><tr class="grupo-fila"><td>METALES NO FERROSOS</td><td>8.451</td><td><span class="pos">+15,3 %</span></td><td class="ue"><span class="barra-ue"><i style="width:50.6%"></i></span>50,6 %</td><td>R. D. del Congo, Italia, Alemania</td></tr></tbody>
-  </table>
+  </table></div>
   <footer class="pie"><span>Variación calculada sobre el valor en euros. Desde la UE: % del valor con origen en la UE27. Fuente: DataComex (Ministerio de Economía, Comercio y Empresa). Datos de 2024 y 2025 provisionales.</span><span class="url">sergioargudo.es · 3 / 3</span></footer>
 </section>
 </body>

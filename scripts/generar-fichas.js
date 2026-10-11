@@ -407,10 +407,10 @@ function paginaDetalle(d, nTema, flujo) {
     <h1 class="h1-det">${esc(d.tema.titulo)} · ${exp ? 'exportación' : 'importación'} por subsector</h1>
     <span class="sub">${ULTIMO}, millones de euros. Variación frente a ${PREVIO} y parte que ${exp ? 'va a' : 'llega desde'} la UE27.${avisoHeredado}</span>
   </div>
-  <table class="detalle">
+  <div class="tabla-env"><table class="detalle">
     <thead><tr><th>Subsector</th><th>M€</th><th>Var. ${ULTIMO.slice(2)}/${PREVIO.slice(2)}</th><th>${exp ? 'Cuota UE' : 'Desde la UE'}</th><th>${exp ? 'Principales destinos' : 'Principales orígenes'}</th></tr></thead>
     <tbody>${filas}</tbody>
-  </table>
+  </table></div>
   ${pie(exp ? '2 / 3' : '3 / 3', `Variación calculada sobre el valor en euros. ${exp ? 'Cuota UE: % del valor con destino' : 'Desde la UE: % del valor con origen'} en la UE27.`)}
 </section>`;
 }
@@ -478,7 +478,7 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .detalle.bp td, .detalle.bp th { width: auto; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap; }
 .detalle.bp td:first-child, .detalle.bp th:first-child { text-align: left; font-family: 'Public Sans', sans-serif; white-space: normal; }
 .detalle.bp th { font-family: 'Public Sans', sans-serif; }
-.detalle.bp + h2 { margin-top: 6px; }
+.tabla-env.bp + h2 { margin-top: 6px; }
 .detalle .ue { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; white-space: nowrap; }
 .barra-ue { display: inline-block; width: 36px; height: 7px; background: #E2E7DF; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
 .barra-ue i { display: block; height: 100%; background: ${EXP}; border-radius: 2px; }
@@ -486,6 +486,22 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .pos, .neg { color: inherit; font-weight: 600; }
 .sup { color: color-mix(in srgb, ${EXP} 75%, #1F2A1D); font-weight: 600; } .def { color: color-mix(in srgb, ${IMP} 70%, #1F2A1D); font-weight: 600; }
 .tenue { color: #6B7568; font-family: 'Public Sans', sans-serif; font-size: 11.5px; }
+/* En pantalla estrecha la hoja deja de ser un A4 fijo: ocupa el ancho, crece en alto,
+   apila las columnas y las tablas anchas se desplazan dentro de su caja. Solo
+   «screen»: la impresión y los PDF (794 px de ancho) no deben entrar aquí. Va al
+   final para ganar a las reglas de arriba, que tienen la misma especificidad. */
+@media screen and (max-width: 820px) {
+  .pagina { width: auto; height: auto; margin: 10px; padding: 18px 14px 14px; gap: 14px; overflow: visible; }
+  .cab h1 { font-size: 25px; }
+  .h1-det { font-size: 20px; }
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dos { grid-template-columns: minmax(0, 1fr); }
+  .notas { display: none; }
+  .tabla-env { overflow-x: auto; }
+  .tabla-env .detalle { min-width: 560px; }
+  .pie { flex-direction: column; gap: 4px; }
+  .pie .url { white-space: normal; }
+}
 `;
 
 // Las fichas viven en public/fichas/: las fuentes se sirven desde la propia web.

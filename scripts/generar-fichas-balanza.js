@@ -97,8 +97,8 @@ function tablaSimple(cabeceras, filas) {
 
 /** Tabla ancha de la página de detalle: filas con sangría por nivel. */
 function tablaDetalle(cabeceras, filas) {
-    return `<table class="detalle bp"><thead><tr>${cabeceras.map(c => `<th>${c}</th>`).join('')}</tr></thead>
-<tbody>${filas.map(f => `<tr class="${f.clase || ''}">${f.celdas.map((c, k) => `<td${k === 0 && f.nivel ? ` style="padding-left:${4 + f.nivel * 14}px"` : ''}>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+    return `<div class="tabla-env bp"><table class="detalle bp"><thead><tr>${cabeceras.map(c => `<th>${c}</th>`).join('')}</tr></thead>
+<tbody>${filas.map(f => `<tr class="${f.clase || ''}">${f.celdas.map((c, k) => `<td${k === 0 && f.nivel ? ` style="padding-left:${4 + f.nivel * 14}px"` : ''}>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
 }
 
 const varHTML = (a, b) => b ? `<span class="${a >= b ? 'pos' : 'neg'}">${pctSigno((a / b - 1) * 100)}</span>` : '—';

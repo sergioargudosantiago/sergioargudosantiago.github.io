@@ -65,7 +65,7 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .detalle.bp td, .detalle.bp th { width: auto; text-align: right; font-family: 'IBM Plex Mono', monospace; white-space: nowrap; }
 .detalle.bp td:first-child, .detalle.bp th:first-child { text-align: left; font-family: 'Public Sans', sans-serif; white-space: normal; }
 .detalle.bp th { font-family: 'Public Sans', sans-serif; }
-.detalle.bp + h2 { margin-top: 6px; }
+.tabla-env.bp + h2 { margin-top: 6px; }
 .detalle .ue { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; white-space: nowrap; }
 .barra-ue { display: inline-block; width: 36px; height: 7px; background: #E2E7DF; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
 .barra-ue i { display: block; height: 100%; background: #2B6CA3; border-radius: 2px; }
@@ -73,6 +73,22 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 .pos, .neg { color: inherit; font-weight: 600; }
 .sup { color: color-mix(in srgb, #2B6CA3 75%, #1F2A1D); font-weight: 600; } .def { color: color-mix(in srgb, #B5893A 70%, #1F2A1D); font-weight: 600; }
 .tenue { color: #6B7568; font-family: 'Public Sans', sans-serif; font-size: 11.5px; }
+/* En pantalla estrecha la hoja deja de ser un A4 fijo: ocupa el ancho, crece en alto,
+   apila las columnas y las tablas anchas se desplazan dentro de su caja. Solo
+   «screen»: la impresión y los PDF (794 px de ancho) no deben entrar aquí. Va al
+   final para ganar a las reglas de arriba, que tienen la misma especificidad. */
+@media screen and (max-width: 820px) {
+  .pagina { width: auto; height: auto; margin: 10px; padding: 18px 14px 14px; gap: 14px; overflow: visible; }
+  .cab h1 { font-size: 25px; }
+  .h1-det { font-size: 20px; }
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dos { grid-template-columns: minmax(0, 1fr); }
+  .notas { display: none; }
+  .tabla-env { overflow-x: auto; }
+  .tabla-env .detalle { min-width: 560px; }
+  .pie { flex-direction: column; gap: 4px; }
+  .pie .url { white-space: normal; }
+}
 </style>
 </head>
 <body>
@@ -128,10 +144,10 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
     <h1 class="h1-det">Sector de aceites y grasas comestibles · exportación por subsector</h1>
     <span class="sub">2025, millones de euros. Variación frente a 2024 y parte que va a la UE27.</span>
   </div>
-  <table class="detalle">
+  <div class="tabla-env"><table class="detalle">
     <thead><tr><th>Subsector</th><th>M€</th><th>Var. 25/24</th><th>Cuota UE</th><th>Principales destinos</th></tr></thead>
     <tbody><tr class="grupo"><td>GRASAS Y ACEITES</td><td>7.615</td><td></td><td></td><td></td></tr><tr><td>Aceite de oliva</td><td>5.144</td><td><span class="neg">−21,8 %</span></td><td class="ue"><span class="barra-ue"><i style="width:52.5%"></i></span>52,5 %</td><td>Italia, Estados Unidos, Portugal</td></tr><tr><td>Las demás grasas y aceites vegetales</td><td>863</td><td><span class="pos">+32,8 %</span></td><td class="ue"><span class="barra-ue"><i style="width:61.6%"></i></span>61,6 %</td><td>Italia, Estados Unidos, Portugal</td></tr><tr><td>Residuos</td><td>455</td><td><span class="pos">+31,1 %</span></td><td class="ue"><span class="barra-ue"><i style="width:97.1%"></i></span>97,1 %</td><td>Suecia, Portugal, Países Bajos</td></tr><tr><td>Margarina</td><td>375</td><td><span class="pos">+10,5 %</span></td><td class="ue"><span class="barra-ue"><i style="width:60.2%"></i></span>60,2 %</td><td>Francia, Portugal, Estados Unidos</td></tr><tr><td>Aceite de girasol</td><td>367</td><td><span class="pos">+1,4 %</span></td><td class="ue"><span class="barra-ue"><i style="width:64.4%"></i></span>64,4 %</td><td>Portugal, Francia, Estados Unidos</td></tr><tr><td>Aceite de soja</td><td>294</td><td><span class="neg">−1,8 %</span></td><td class="ue"><span class="barra-ue"><i style="width:43.3%"></i></span>43,3 %</td><td>Marruecos, Italia, Francia</td></tr><tr><td>Las demás grasas y aceites animales</td><td>118</td><td><span class="pos">+4,8 %</span></td><td class="ue"><span class="barra-ue"><i style="width:73.0%"></i></span>73,0 %</td><td>Italia, Francia, Países Bajos</td></tr></tbody>
-  </table>
+  </table></div>
   <footer class="pie"><span>Variación calculada sobre el valor en euros. Cuota UE: % del valor con destino en la UE27. Fuente: DataComex (Ministerio de Economía, Comercio y Empresa). Datos de 2024 y 2025 provisionales.</span><span class="url">sergioargudo.es · 2 / 3</span></footer>
 </section>
 <section class="pagina">
@@ -143,10 +159,10 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
     <h1 class="h1-det">Sector de aceites y grasas comestibles · importación por subsector</h1>
     <span class="sub">2025, millones de euros. Variación frente a 2024 y parte que llega desde la UE27.</span>
   </div>
-  <table class="detalle">
+  <div class="tabla-env"><table class="detalle">
     <thead><tr><th>Subsector</th><th>M€</th><th>Var. 25/24</th><th>Desde la UE</th><th>Principales orígenes</th></tr></thead>
     <tbody><tr class="grupo"><td>GRASAS Y ACEITES</td><td>5.166</td><td></td><td></td><td></td></tr><tr><td>Las demás grasas y aceites vegetales</td><td>1.434</td><td><span class="pos">+11,6 %</span></td><td class="ue"><span class="barra-ue"><i style="width:31.6%"></i></span>31,6 %</td><td>Indonesia, Filipinas, Francia</td></tr><tr><td>Residuos</td><td>1.302</td><td><span class="pos">+21,2 %</span></td><td class="ue"><span class="barra-ue"><i style="width:30.3%"></i></span>30,3 %</td><td>China, Indonesia, Malasia</td></tr><tr><td>Aceite de girasol</td><td>1.033</td><td><span class="pos">+7,1 %</span></td><td class="ue"><span class="barra-ue"><i style="width:32.7%"></i></span>32,7 %</td><td>Ucrania, Bulgaria, Francia</td></tr><tr><td>Aceite de oliva</td><td>824</td><td><span class="neg">−50,7 %</span></td><td class="ue"><span class="barra-ue"><i style="width:58.3%"></i></span>58,3 %</td><td>Portugal, Túnez, Italia</td></tr><tr><td>Las demás grasas y aceites animales</td><td>234</td><td><span class="pos">+4,0 %</span></td><td class="ue"><span class="barra-ue"><i style="width:57.9%"></i></span>57,9 %</td><td>Francia, Italia, Uruguay</td></tr><tr><td>Aceite de soja</td><td>205</td><td><span class="neg">−25,8 %</span></td><td class="ue"><span class="barra-ue"><i style="width:68.3%"></i></span>68,3 %</td><td>Países Bajos, Portugal, Turquía</td></tr><tr><td>Margarina</td><td>133</td><td><span class="pos">+6,3 %</span></td><td class="ue"><span class="barra-ue"><i style="width:92.5%"></i></span>92,5 %</td><td>Bélgica, Portugal, Países Bajos</td></tr></tbody>
-  </table>
+  </table></div>
   <footer class="pie"><span>Variación calculada sobre el valor en euros. Desde la UE: % del valor con origen en la UE27. Fuente: DataComex (Ministerio de Economía, Comercio y Empresa). Datos de 2024 y 2025 provisionales.</span><span class="url">sergioargudo.es · 3 / 3</span></footer>
 </section>
 </body>

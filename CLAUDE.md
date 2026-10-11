@@ -45,7 +45,7 @@ Todo el contenido, la interfaz y los commits están en **español**.
 | `comercio-exterior.html`, `metodologia.html` | Visualizador y su metodología |
 | `js/main.js` | Navegación, modales y **títulos oficiales del temario** (ejercicios 1, 3 y 5) |
 | `js/graficos.js` | Gráficos SVG de la web (líneas, apiladas, ranking, mancuernas) |
-| `data/` | Datos que carga la web (`balanza_data.js`, `flujos_data.csv`, correspondencias NC8) y la paleta (`paleta.json`) |
+| `data/` | Datos que carga la web (`balanza_data.js`, `flujos_data.csv`) y la paleta (`paleta.json`) |
 | `articulos/` | Artículos: los `.md` son la fuente; los `.html` se generan |
 | `public/temas/ejercicio-N/` | PDFs y Word del temario |
 | `scripts/` | Generadores y pipelines (Node y R) |
@@ -88,11 +88,13 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
   conexión). Si cambia el icono, subir `?v=N` en los tres enlaces de iconos (PNG, `favicon.ico` y
   `apple-touch-icon.png`) de las páginas y de
   `scripts/build-articulos.js`.
-- **Flujos comerciales**: `data/flujos_data.csv` y
-  `data/correspondencias-sectores-nc8.csv` salen de un pipeline privado del autor que
-  **no está en este repositorio** (a propósito: solo se publican los CSV). Lee la
+- **Flujos comerciales**: `data/flujos_data.csv` sale de un pipeline privado del autor
+  que **no está en este repositorio** (a propósito: solo se publica el CSV). Lee la
   estadística de Aduanas, valida cobertura, cuota UE y desgloses antes de escribir y
-  sustituye los dos ficheros enteros. No editarlos a mano. Tras regenerarlos:
+  sustituye el fichero entero. No editarlo a mano. La correspondencia de sectores con
+  códigos NC8 que también escribe el pipeline **no se publica** (decisión del autor,
+  11 oct): `.gitignore` la deja fuera y la metodología solo nombra las clasificaciones
+  (balanza comercial agroalimentaria y sectores económicos R3). Tras regenerarlos:
   `npm run fichas && npm run fichas:pdf`.
 - **Temario**: `npm run temas:revisar` extrae texto de los PDF y lanza la auditoría
   determinista (`scripts/auditar-temas.js`); la salida va a `review/`.

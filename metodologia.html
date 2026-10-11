@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#3B4533">
     <meta name="description"
-        content="De dónde vienen los datos del visualizador de comercio exterior, cómo se calcula cada indicador y qué códigos NC8 componen cada sector.">
+        content="De dónde vienen los datos del visualizador de comercio exterior, cómo están organizados los sectores y cómo se calcula cada indicador.">
     <title>Metodología y fuentes de los datos — Sergio Argudo Santiago</title>
     <link rel="canonical" href="https://sergioargudo.es/metodologia.html">
     <link rel="icon" href="logos/png/SAS-icono-claro.png?v=3" type="image/png">
@@ -16,14 +16,14 @@
     <!-- SEO & Social Meta Tags -->
     <meta name="author" content="Sergio Argudo Santiago">
     <meta name="keywords"
-        content="Metodología comercio exterior, DataComex, Nomenclatura Combinada, NC8, TARIC, cuota UE27, Banco de España">
+        content="Metodología comercio exterior, DataComex, sectores económicos, balanza comercial agroalimentaria, cuota UE27, Banco de España">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sergioargudo.es/metodologia.html">
     <meta property="og:title" content="Metodología y fuentes de los datos — Sergio Argudo Santiago">
     <meta property="og:description"
-        content="De dónde vienen los datos del visualizador de comercio exterior, cómo se calcula cada indicador y qué códigos NC8 componen cada sector.">
+        content="De dónde vienen los datos del visualizador de comercio exterior, cómo están organizados los sectores y cómo se calcula cada indicador.">
     <meta property="og:image" content="https://sergioargudo.es/images/og-cover.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -33,7 +33,7 @@
     <meta name="twitter:url" content="https://sergioargudo.es/metodologia.html">
     <meta name="twitter:title" content="Metodología y fuentes de los datos — Sergio Argudo Santiago">
     <meta name="twitter:description"
-        content="De dónde vienen los datos del visualizador de comercio exterior, cómo se calcula cada indicador y qué códigos NC8 componen cada sector.">
+        content="De dónde vienen los datos del visualizador de comercio exterior, cómo están organizados los sectores y cómo se calcula cada indicador.">
     <meta name="twitter:image" content="https://sergioargudo.es/images/og-cover.png">
 
 
@@ -45,7 +45,7 @@
       "@context": "https://schema.org",
       "@type": "Dataset",
       "name": "Comercio exterior de España por sectores, 2021-2025",
-      "description": "Exportaciones e importaciones españolas por sector agroalimentario e industrial, en millones de euros, con tasa de variación anual, cuota de la UE27 y tres principales destinos u orígenes. Elaborado a partir de DataComex, con la correspondencia de cada sector agroalimentario con los códigos NC8.",
+      "description": "Exportaciones e importaciones españolas por sector agroalimentario e industrial, en millones de euros, con tasa de variación anual, cuota de la UE27 y tres principales destinos u orígenes. Elaborado a partir de DataComex.",
       "url": "https://sergioargudo.es/metodologia.html",
       "inLanguage": "es",
       "isAccessibleForFree": true,
@@ -54,8 +54,7 @@
       "isBasedOn": "https://datacomex.comercio.es/",
       "creator": { "@type": "Person", "@id": "https://sergioargudo.es/#autor", "name": "Sergio Argudo Santiago", "url": "https://sergioargudo.es/sobre-mi.html" },
       "distribution": [
-        { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://sergioargudo.es/data/flujos_data.csv" },
-        { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://sergioargudo.es/data/correspondencias-sectores-nc8.csv" }
+        { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://sergioargudo.es/data/flujos_data.csv" }
       ]
     }
     </script>
@@ -111,10 +110,8 @@
                     <li><a href="#origen"><span class="c-num">1</span>Origen de los datos</a></li>
                     <li><a href="#sectores"><span class="c-num">2</span>Cómo están organizados los sectores</a></li>
                     <li><a href="#indicadores"><span class="c-num">3</span>Cómo se calcula cada indicador</a></li>
-                    <li><a href="#codigos"><span class="c-num">4</span>Correspondencia con los códigos de producto</a></li>
-                    <li><a href="#limitaciones"><span class="c-num">5</span>Limitaciones conocidas</a></li>
-                    <li><a href="#descarga"><span class="c-num">6</span>Descarga de los datos</a></li>
-                    <li><a href="#buscador"><span class="c-num">7</span>Buscador de correspondencias sector &harr; NC8</a></li>
+                    <li><a href="#limitaciones"><span class="c-num">4</span>Limitaciones conocidas</a></li>
+                    <li><a href="#descarga"><span class="c-num">5</span>Descarga de los datos</a></li>
                 </ol>
             </nav>
 
@@ -129,20 +126,22 @@
             </section>
             <section class="c-seccion" id="sectores">
                     <h2 class="c-seccion-titulo"><span class="c-num">2</span>Cómo están organizados los sectores</h2>
-                    <p>El visualizador usa la clasificación sectorial de DataComex, dividida en dos macro-sectores que no comparten taxonomía:</p>
-                    <div class="c-tabla-envoltorio" tabindex="0" role="region" aria-label="Niveles de cada macro-sector">
+                    <p>El visualizador trabaja con dos macro-sectores que no comparten taxonomía. El agroalimentario replica los sectores de la balanza comercial agroalimentaria. El industrial usa los sectores económicos R3 de la Secretaría de Estado de Comercio.</p>
+                    <div class="c-tabla-envoltorio" tabindex="0" role="region" aria-label="Clasificación y niveles de cada macro-sector">
                         <table class="c-tabla">
                             <thead>
-                                <tr><th>Macro-sector</th><th>Niveles</th><th>Ejemplo de ruta</th></tr>
+                                <tr><th>Macro-sector</th><th>Clasificación</th><th>Niveles</th><th>Ejemplo de ruta</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td><strong>Agroalimentario</strong></td>
+                                    <td>Sectores de la balanza comercial agroalimentaria</td>
                                     <td>3 niveles (algunos sectores abren un 4.º)</td>
                                     <td>Sectores Cárnicos &rarr; Bovino &rarr; Animales vivos de bovinos</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Industrial</strong></td>
+                                    <td>Sectores económicos R3 de la Secretaría de Estado de Comercio</td>
                                     <td>4 niveles</td>
                                     <td>Productos energéticos &rarr; Carbón &rarr; Carbón &rarr; Carbón</td>
                                 </tr>
@@ -170,29 +169,8 @@
                         <dd>Los <strong>tres</strong> países con mayor valor en ese sector, flujo y año. No es una lista exhaustiva ni incluye su peso porcentual. Las categorías &laquo;Avituallamiento&raquo; e &laquo;Indeterminado&raquo; son rúbricas propias de la estadística aduanera, no países.</dd>
                     </dl>
             </section>
-            <section class="c-seccion" id="codigos">
-                    <h2 class="c-seccion-titulo"><span class="c-num">4</span>Correspondencia con los códigos de producto</h2>
-                    <p>Cada sector agroalimentario del visualizador agrupa un conjunto de códigos arancelarios concretos. Publicar esa correspondencia es lo que permite reproducir las cifras desde la fuente original. Incluye todos los códigos con comercio en algún año de la serie, también los que ya no existen en la nomenclatura vigente.</p>
-
-                    <div class="c-aviso">
-                        <p><strong>Precisión sobre la nomenclatura.</strong> Los códigos publicados aquí tienen <strong>ocho dígitos</strong>: son de la <strong>Nomenclatura Combinada (NC8)</strong>, el arancel comunitario. <strong>No son códigos TARIC</strong>, que tienen diez dígitos y añaden dos posiciones para medidas comunitarias específicas (contingentes, antidumping, suspensiones). Los seis primeros dígitos coinciden con el Sistema Armonizado de la OMA.</p>
-                    </div>
-
-                    <div class="c-tabla-envoltorio" tabindex="0" role="region" aria-label="Sectores con correspondencia NC8">
-                        <table class="c-tabla">
-                            <thead>
-                                <tr><th>Macro-sector</th><th>Sectores de nivel 3</th><th>Con correspondencia NC8</th><th>Códigos publicados</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>Agroalimentario</td><td>124</td><td><strong>124 (100&nbsp;%)</strong></td><td>2.572</td></tr>
-                                <tr><td>Industrial</td><td>54</td><td><strong>0</strong></td><td>&mdash;</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <p class="c-nota">El bloque industrial usa la clasificación de &laquo;sectores económicos&raquo; de DataComex, cuya tabla de correspondencia con la Nomenclatura Combinada no está publicada aquí todavía. Prefiero decirlo a dejar el hueco en blanco: si necesitas esa equivalencia para un sector industrial concreto, escríbeme.</p>
-            </section>
             <section class="c-seccion" id="limitaciones">
-                    <h2 class="c-seccion-titulo"><span class="c-num">5</span>Limitaciones conocidas</h2>
+                    <h2 class="c-seccion-titulo"><span class="c-num">4</span>Limitaciones conocidas</h2>
                     <ul class="c-lista">
                         <li><strong>2024 y 2025 son provisionales.</strong> La estadística de Aduanas revisa los datos en meses posteriores, casi siempre al alza. Las cifras de esos dos años cambiarán.</li>
                         <li><strong>Tomate en 2025.</strong> La Nomenclatura Combinada de 2025 partió el tomate fresco en dos códigos nuevos (0702 00 91 y 0702 00 99) que la clasificación oficial de sectores todavía no recoge. Aquí se asignan al sector Tomate, como el código al que sustituyen.</li>
@@ -202,29 +180,13 @@
                     </ul>
             </section>
             <section class="c-seccion" id="descarga">
-                    <h2 class="c-seccion-titulo"><span class="c-num">6</span>Descarga de los datos</h2>
-                    <p>Todo lo que alimenta el visualizador se puede descargar. Los ficheros van en UTF-8 con marca de orden de bytes, de modo que Excel abre las tildes correctamente con doble clic.</p>
+                    <h2 class="c-seccion-titulo"><span class="c-num">5</span>Descarga de los datos</h2>
+                    <p>Los datos de flujos comerciales que alimentan el visualizador se pueden descargar. El fichero va en UTF-8 con marca de orden de bytes, de modo que Excel abre las tildes correctamente con doble clic.</p>
                     <div class="c-acciones">
                         <a href="data/flujos_data.csv" download class="c-boton c-boton-descarga">Flujos comerciales 2021&ndash;2025 (CSV)</a>
-                        <a href="data/correspondencias-sectores-nc8.csv" download class="c-boton c-boton-descarga">Sectores &harr; NC8 (CSV)</a>
                         <a href="comercio-exterior.html" class="c-boton c-boton-principal">Ir al visualizador</a>
                     </div>
                     <p class="c-nota">Puedes reutilizar estos datos citando la fuente original (DataComex &mdash; Ministerio de Economía, Comercio y Empresa; Banco de España). Si detectas un error, agradezco el aviso: <a href="sobre-mi.html">contacto</a>.</p>
-            </section>
-            <section class="c-seccion" id="buscador">
-                    <h2 class="c-seccion-titulo"><span class="c-num">7</span>Buscador de correspondencias sector &harr; NC8</h2>
-                    <p>Escribe el nombre de un sector o un código para ver qué partidas de la Nomenclatura Combinada lo componen.</p>
-                    <input type="search" id="corrSearch" class="c-campo" placeholder="Ej.: aceite de oliva, bovino, 08051010&hellip;" autocomplete="off">
-                    <p id="corrStatus" class="c-nota">Cargando correspondencias&hellip;</p>
-                    <div class="c-tabla-envoltorio c-tabla-alta" tabindex="0" role="region" aria-label="Resultados del buscador de correspondencias">
-                        <table class="c-tabla c-tabla-codigos" id="corrTable">
-                            <thead>
-                                <tr><th>Sector (nivel 1)</th><th>Nivel 2</th><th>Nivel 3</th><th>Código NC8</th></tr>
-                            </thead>
-                            <tbody id="corrBody"></tbody>
-                        </table>
-                    </div>
-                    <p id="corrMore" class="c-nota hidden"></p>
             </section>
 
         </div>
@@ -239,7 +201,7 @@
                 <div class="sitio-pie-redes">
                     <a href="https://www.linkedin.com/in/sergio-argudo-santiago/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
                     <a href="mailto:contacto@sergioargudo.es" aria-label="Correo: contacto@sergioargudo.es"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></a>
-                    <a href="feed.xml" aria-label="Artículos por RSS"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11a8 8 0 018 8M5 5a14 14 0 0114 14"/><circle cx="6" cy="18" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://github.com/sergioargudosantiago" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
                 </div>
             </div>
             <nav aria-label="Secciones del sitio">
@@ -269,88 +231,6 @@
     <!-- pie:fin -->
 
     <script src="js/main.js"></script>
-    <script>
-    // Buscador de correspondencias sector -> NC8. Carga el mismo CSV que se ofrece
-    // en descarga, así lo que se ve y lo que se descarga no pueden divergir.
-    (function () {
-        var rows = [];
-        var LIMIT = 200;
-        var body = document.getElementById('corrBody');
-        var status = document.getElementById('corrStatus');
-        var more = document.getElementById('corrMore');
-        var input = document.getElementById('corrSearch');
-        if (!body || !input) return;
-
-        function splitCSVLine(line) {
-            var out = [], cur = '', q = false;
-            for (var i = 0; i < line.length; i++) {
-                var c = line[i];
-                if (c === '"') { if (q && line[i + 1] === '"') { cur += '"'; i++; } else { q = !q; } }
-                else if (c === ',' && !q) { out.push(cur); cur = ''; }
-                else { cur += c; }
-            }
-            out.push(cur);
-            return out;
-        }
-
-        function esc(s) {
-            return String(s == null ? '' : s)
-                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-        }
-
-        function render(query) {
-            var q = (query || '').trim().toLowerCase();
-            var hits = q ? rows.filter(function (r) { return r.hay.indexOf(q) !== -1; }) : rows;
-            var shown = hits.slice(0, LIMIT);
-            body.innerHTML = shown.map(function (r) {
-                return '<tr><td>' + esc(r.lit1) + '</td><td>' + esc(r.lit2) +
-                       '</td><td>' + esc(r.lit3) + '</td><td>' + esc(r.nc) + '</td></tr>';
-            }).join('');
-            if (!hits.length) {
-                status.textContent = q ? 'Sin resultados para "' + query + '".'
-                                       : 'No hay correspondencias cargadas.';
-                more.classList.add('hidden');
-                return;
-            }
-            status.textContent = hits.length + ' código' + (hits.length === 1 ? '' : 's') +
-                                 ' NC8' + (q ? ' coinciden con la búsqueda' : ' en total') + '.';
-            if (hits.length > LIMIT) {
-                more.textContent = 'Se muestran los ' + LIMIT + ' primeros. Afina la búsqueda o descarga el CSV completo.';
-                more.classList.remove('hidden');
-            } else {
-                more.classList.add('hidden');
-            }
-        }
-
-        fetch('data/correspondencias-sectores-nc8.csv')
-            .then(function (r) {
-                if (!r.ok) throw new Error('HTTP ' + r.status);
-                return r.text();
-            })
-            .then(function (text) {
-                var lines = text.replace(/^\uFEFF/, '').split(/\r?\n/).filter(function (l) { return l.trim(); });
-                rows = lines.slice(1).map(function (l) {
-                    var v = splitCSVLine(l);
-                    // macro_sector, lv1, lit_lv1, lv2, lit_lv2, lv3, lit_lv3, codigo_nc8
-                    return {
-                        lit1: v[2], lit2: v[4], lit3: v[6], nc: v[7],
-                        hay: (v[2] + ' ' + v[4] + ' ' + v[6] + ' ' + v[7]).toLowerCase()
-                    };
-                });
-                render('');
-            })
-            .catch(function (e) {
-                console.warn('No se pudieron cargar las correspondencias:', e.message);
-                status.textContent = 'No se han podido cargar las correspondencias. Puedes descargar el CSV completo con el botón de arriba.';
-            });
-
-        var t = null;
-        input.addEventListener('input', function () {
-            clearTimeout(t);
-            t = setTimeout(function () { render(input.value); }, 150);
-        });
-    })();
-    </script>
     <!-- Analítica ligera y sin cookies (GoatCounter, gratis para uso no comercial).
          Para activarla: 1) crea una cuenta en https://www.goatcounter.com con el código "sergioargudosantiago";
          2) descomenta este script. No usa cookies, no requiere consentimiento.
