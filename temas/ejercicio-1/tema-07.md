@@ -41,8 +41,8 @@
 - Factores externos: piel, ojo, branquias, opérculo, rigidez muscular
 - Factores internos: peritoneo, espina dorsal
 - Categorías: **EXTRA, A y B**
-- Etiqueta (**RD 418/2015**): origen, calibre, frescura y fecha, peso neto, nombre científico y comercial, presentación, expedidor
-- **RD 1082/2025**: denominaciones comerciales nacionales
+- Etiqueta (**Real Decreto 418/2015**): origen, calibre, frescura y fecha, peso neto, nombre científico y comercial, presentación, expedidor
+- **Real Decreto 1082/2025**: denominaciones comerciales nacionales
   - Listado anual por resolución de la Secretaría General de Pesca
   - Extiende el sistema a conservas y preparados (partidas **1604 y 1605**)
   - Las autonómicas son complementarias
@@ -60,7 +60,7 @@
 ## 3.4. Mariscos
 
 - Normas microbiológicas, pH, toxinas, metales pesados
-- Vitalidad, frescura, especie conforme al **RD 1082/2025**, tamaño, zona de captura
+- Vitalidad, frescura, especie conforme al **Real Decreto 1082/2025**, tamaño, zona de captura
 - **Prohibida** la venta de hembras con huevos
 - Congelados: igual que el pescado congelado
 
@@ -78,7 +78,7 @@
   - **Septentrionales**: gestión conjunta con Reino Unido, Noruega, Islandia y Feroe
 - **España**
   - Primera de la UE en valor desembarcado 2024 (**21 %**), puesto 18 mundial
-  - Flota a 31-12-2025: **8.324** buques, **301.135 GT**, cerca del **24 %** del arqueo UE
+  - Flota a 31 de diciembre de 2025: **8.324** buques, **301.135 GT**, cerca del **24 %** del arqueo UE
   - Edad media **37 años** (UE 36)
   - Primer productor acuícola de la UE (**25,3 %**, APROMAR): trucha, mejillón, dorada, túnidos
   - Hitos: langostinos en secano, MSC del pulpo, atún rojo en cautividad, ISO 9001:2015 del control pesquero
@@ -94,7 +94,7 @@
 - **Reglamento (UE) 1379/2013**, OCM
 - **Reglamento (CE) 853/2004**, requisitos sanitarios, modificado por el **Reglamento Delegado (UE) 2024/1141**
 - **Reglamento (UE) 2021/1139**, **FEMPA**, sustituye al FEMP
-- **Real Decreto 956/2017**, modifica el RD 418/2015
+- **Real Decreto 956/2017**, modifica el Real Decreto 418/2015
 - **Real Decreto 277/2016**, organizaciones profesionales
 - **Reglamento (CE) 2073/2005**, criterios microbiológicos, modificado por el **Reglamento (UE) 2024/2895** (Listeria)
 - **Real Decreto 1021/2022**, higiene en comercio minorista
@@ -171,7 +171,7 @@
 
 - **Reglamento (UE) 1379/2013**, capítulo IV, sin perjuicio del **Reglamento (UE) 1169/2011**
 - Obligatorio: denominación y nombre científico, método de producción, zona de captura y arte, descongelado, duración mínima, alérgenos, información nutricional, operador
-- **RD 1082/2025**: solo la denominación de los listados anuales
+- **Real Decreto 1082/2025**: solo la denominación de los listados anuales
 
 ## 9.4. Indicaciones Geográficas Protegidas
 

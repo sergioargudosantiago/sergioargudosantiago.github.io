@@ -129,7 +129,7 @@
   - **Normas de comercialización**: Reglamento Delegado **2023/2429** y Reglamento de Ejecución **2023/2430** (controles de conformidad)
     - Base CEPE/ONU (WP.7). Esquema: definición, calidad, calibrado, tolerancias, presentación, marcado
     - Frutos de cáscara con cáscara: norma general. Sin cáscara y desecadas: solo origen
-    - Controles en todas las fases y a terceros países (normas UE o equivalentes). **RD 175/2004**: autoridad coordinadora
+    - Controles en todas las fases y a terceros países (normas UE o equivalentes). **Real Decreto 175/2004**: autoridad coordinadora
   - **Organizaciones de productores (OP)**: concentran oferta, planifican, reducen costes
     - Programas operativos con fondo operativo, intervención sectorial del PEPAC
   - **Organizaciones interprofesionales**: art. 157 del Reglamento 1308/2013 y **Ley 38/1994**
@@ -149,7 +149,7 @@
   - Normas: pistacho con cáscara, cacahuete, pasas, dátiles. Códigos contra aflatoxinas
 - Regímenes voluntarios
   - **Producción controlada**: UNE 155000 (CTN 155), certificable por AENOR
-  - **Producción integrada**: **RD 1201/2002**, desarrollo autonómico, logotipo **Orden APA/1/2004**
+  - **Producción integrada**: **Real Decreto 1201/2002**, desarrollo autonómico, logotipo **Orden APA/1/2004**
   - **Producción ecológica**: **Reglamento (UE) 2018/848**, desde 1 de enero de 2022
     - Importación: certificado de inspección (COI) electrónico en **TRACES** (Reglamento Delegado 2021/2306, Reglamento de Ejecución 2021/2307)
     - **SOIVRE** controla la importación ecológica (**Orden ECC/1936/2014**)
@@ -163,9 +163,9 @@
   - Paquete de higiene: **852/2004** y **853/2004**
   - **Reglamento (CE) 396/2005**: límites de residuos de plaguicidas
   - **Reglamento (UE) 1169/2011**: información al consumidor
-  - **Reglamento (UE) 2017/625**: controles oficiales. España: **RD 562/2025**
+  - **Reglamento (UE) 2017/625**: controles oficiales. España: **Real Decreto 562/2025**
   - **Ley 28/2015**: calidad alimentaria y sanciones
-  - **Reglamento (UE) 2025/40** y **RD 1055/2022**: envases
+  - **Reglamento (UE) 2025/40** y **Real Decreto 1055/2022**: envases
   - **Ley 1/2025**: pérdidas y desperdicio alimentario
   - **Reglamento (UE) 2023/915**: contaminantes. Límites de **aflatoxinas** (B1 y suma B1, B2, G1, G2), más estrictos en consumo directo
   - **Reglamento de Ejecución (UE) 2019/1793**: controles reforzados (pistachos, cacahuetes, avellanas, higos secos). Sanidad Exterior, distinto del control de calidad

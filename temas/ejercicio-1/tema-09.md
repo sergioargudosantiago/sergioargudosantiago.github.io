@@ -21,9 +21,9 @@
   - **Virgen o de gota**: escurrido
   - **Centrifugada**: la más común
   - **Extraída por presión**: Tª < 45 ºC
-  - **Miel para uso industrial**: sustituye a la «miel filtrada», prohibida su venta al consumidor final, solo ingrediente industrial (**RD 68/2025**)
+  - **Miel para uso industrial**: sustituye a la «miel filtrada», prohibida su venta al consumidor final, solo ingrediente industrial (**Real Decreto 68/2025**)
 - **Factores de calidad comercial de la miel**
-  - Marco: **Directiva 2001/110/CE**, **RD 1049/2003**, **RD 523/2020**, **RD 68/2025** (transpone **Directiva UE 2024/1438**)
+  - Marco: **Directiva 2001/110/CE**, **Real Decreto 1049/2003**, **Real Decreto 523/2020**, **Real Decreto 68/2025** (transpone **Directiva UE 2024/1438**)
   - Etiquetado: países de origen y **porcentaje de cada uno**, orden decreciente
   - **Madurez**: sacarosa **máx. 5 %**, agua **máx. 20 %** (**23 %** Calluna)
   - **Frescura**: índice diastásico y **HMF**
@@ -42,15 +42,15 @@
   - Precio exportación **3,48 €/kg**, importación **2,52 €/kg**
   - Problemas sanitarios de la miel china, ya normalizados
 - **Normativa aplicable a la miel**
-  - **Directiva 2001/110/CE** y **RD 1049/2003** (modificado por **RD 287/2015** y **523/2020**), actualizado por **RD 68/2025**
+  - **Directiva 2001/110/CE** y **Real Decreto 1049/2003** (modificado por **Real Decreto 287/2015** y **523/2020**), actualizado por **Real Decreto 68/2025**
   - Ayudas: **Reglamento (UE) 2021/2115**, intervención apícola en el **PEPAC**
   - Medidas: asistencia técnica, lucha contra la varroosis, trashumancia, laboratorios, repoblación, investigación, seguimiento del mercado
-  - Análisis: **Orden Ministerial de 12-6-1986**
+  - Análisis: **Orden Ministerial de 12 de junio de 1986**
 
 ## 2.2. Azúcar
 
 - **Azúcar**: sacarosa pura de **caña** (*Saccharum officinarum*) o **remolacha** (*Beta vulgaris*)
-- **RD 1052/2003** (RTS): terciario, moreno de caña, semiblanco/blanco/refinado/extrablanco, líquido o invertido, jarabe de glucosa, dextrosa, fructosa
+- **Real Decreto 1052/2003** (RTS): terciario, moreno de caña, semiblanco/blanco/refinado/extrablanco, líquido o invertido, jarabe de glucosa, dextrosa, fructosa
 - Melazas: residuo de fabricación
 - **Factores de calidad comercial del azúcar**
   - **Pureza**: poder edulcorante, color, humedad, solubilidad, densidad, polarización, acidez, cenizas, ausencia de metales pesados
@@ -63,7 +63,7 @@
   - Importa de Francia, Portugal, Brasil, Sudáfrica. Exporta a Francia, Portugal, Reino Unido
   - **Déficit de 729 M€** (2025)
 - **Normativa aplicable al azúcar**
-  - **Directiva 2001/111/CE** y **RD 1052/2003**: variedades, composición, envasado y etiquetado
+  - **Directiva 2001/111/CE** y **Real Decreto 1052/2003**: variedades, composición, envasado y etiquetado
   - **Codex Alimentarius**: límite de aditivos
   - Fiscal: **IBAE** (Cataluña, 2017), IVA bebidas azucaradas del 10 % al **21 %** (reforma 2021), azúcar sólido al 10 %
 
@@ -87,7 +87,7 @@
 - **Normativa aplicable a los huevos y ovoproductos**
   - **Reglamento Delegado 2023/2465** y **2023/2464** (marcado en explotación, excepción en centro de embalaje)
   - Códigos de cría: 0 ecológica, 1 camperas, 2 «gallinas sueltas en el gallinero», 3 «jaulas acondicionadas»
-  - **RD 1027/2024**: deroga **RD 226/2008** y **372/2003**, excluye lavado, admite huevos aromatizados, pliegos en **ETIMUES**
+  - **Real Decreto 1027/2024**: deroga **Real Decreto 226/2008** y **372/2003**, excluye lavado, admite huevos aromatizados, pliegos en **ETIMUES**
   - **Reglamento (CE) 617/2008**: huevos para incubar y pollitos
 
 # 3. NORMATIVA APLICABLE
@@ -112,7 +112,7 @@
 - Objetivos: estabilizar mercados, nivel de vida equitativo del agricultor, competitividad, abastecimiento
 - Cinco pilares
   - **Normas de comercialización**: base CEPE/ONU (WP.7), controles de conformidad
-    - Miel: **RD 1049/2003** y **68/2025**. Azúcar: **RD 1052/2003**. Huevos: **2023/2465**
+    - Miel: **Real Decreto 1049/2003** y **68/2025**. Azúcar: **Real Decreto 1052/2003**. Huevos: **2023/2465**
   - **Organizaciones de productores (OP)**: concentran oferta, planifican, reducen costes
   - **Organizaciones interprofesionales**: art. 157 del Reglamento 1308/2013 y **Ley 38/1994**
     - Huevo: **INPROVO**
@@ -129,21 +129,21 @@
 - **Producción controlada**: normas **UNE** (AENOR)
 - **Producción ecológica**: **Reglamento (UE) 2018/848** (deroga **CE 834/2007**), terceros países con estándares UE desde 2023
   - **SOIVRE** controla importaciones ecológicas (**Orden ECC/1936/2014**)
-- **Producción integrada**: **RD 1201/2002**, logotipo **Orden APA/1/2004**
+- **Producción integrada**: **Real Decreto 1201/2002**, logotipo **Orden APA/1/2004**
 - **DOP, IGP y ETG**: **Reglamento (UE) 2024/1143**, **Ley 6/2015** (AICA). Miel de la Alcarria, Miel de Galicia, IGP Miel de Extremadura
 - **Orden PRE/3026/2003** (modificada por **ECC/2257/2013** y **ECC/2566/2015**): SOIVRE controla calidad comercial de huevos frescos de gallina
 
 ## 3.4. Normativa general
 
-- **RD 175/2004**: autoridad de controles de conformidad
+- **Real Decreto 175/2004**: autoridad de controles de conformidad
 - **Reglamento (CE) 396/2005**: límites de residuos de plaguicidas
 - **Reglamento (UE) 2023/915**: contaminantes
 - **Reglamento (UE) 1169/2011**: información al consumidor
-- **RD 1055/2022**: envases
+- **Real Decreto 1055/2022**: envases
 - Higiene: **Reglamentos (CE) 852 y 853/2004**, **(UE) 2017/625**
 - **Ley 28/2015**: calidad alimentaria y sanciones
 - **Ley 1/2025**: desperdicio alimentario
-- **RD 993/2014**: **SAE**, exportación a terceros países
+- **Real Decreto 993/2014**: **SAE**, exportación a terceros países
 
 # 4. CONCLUSIÓN
 

@@ -9,29 +9,29 @@
 - Competencia normativa: **SG de Calidad y Seguridad Industrial** del MINTUR
 - Base industrial
   - **Ley 21/1992**, de Industria
-  - **RD 559/2010**, Registro Integrado Industrial
-  - **RD 1072/2015**, Infraestructura para la Calidad y la Seguridad Industrial: **AENOR** normalización, **ENAC** acreditación
+  - **Real Decreto 559/2010**, Registro Integrado Industrial
+  - **Real Decreto 1072/2015**, Infraestructura para la Calidad y la Seguridad Industrial: **AENOR** normalización, **ENAC** acreditación
 - Etiquetado y sustancias
-  - **RD 1468/1988**, etiquetado de productos industriales sin norma específica: real, veraz, fácil de entender
+  - **Real Decreto 1468/1988**, etiquetado de productos industriales sin norma específica: real, veraz, fácil de entender
   - Datos mínimos: denominación, composición, plazo de uso, contenido neto, lote, empresa, origen, alérgenos, potencia, tensión y consumo
   - Exportación a terceros países no conforme: identificada por si va al mercado interior
-  - **RD 1406/1989**, limitaciones de sustancias (benceno, amianto, dimetilfumarato, pentaclorofenol, termómetros de mercurio desde 2009)
+  - **Real Decreto 1406/1989**, limitaciones de sustancias (benceno, amianto, dimetilfumarato, pentaclorofenol, termómetros de mercurio desde 2009)
 - Control en frontera
-  - **RD 330/2008**: control de conformidad previo al despacho por el **SOIVRE**, a partir de riesgos detectados por RAPEX
+  - **Real Decreto 330/2008**: control de conformidad previo al despacho por el **SOIVRE**, a partir de riesgos detectados por RAPEX
   - **Orden PJC/161/2026**: lista de productos controlados (drones, puericultura, textil, calzado, juguetes, EPIs, pequeño material eléctrico, muebles y derivados de madera)
-  - **RD 993/2022**: control de AEE, pilas y acumuladores de terceros países en RoHS y Registro Integrado Industrial
+  - **Real Decreto 993/2022**: control de AEE, pilas y acumuladores de terceros países en RoHS y Registro Integrado Industrial
 - Marco europeo
   - **Reglamento (CE) 765/2008**: acreditación y marcado CE (Nuevo Enfoque: EPIs, juguetes, pequeño material eléctrico). Vigilancia de mercado sustituida por el **Reglamento (UE) 2019/1020**, que refuerza a las AVM y los controles a terceros países
   - **Reglamento (UE) 2019/515**: reconocimiento mutuo
   - **Decisión 768/2008/CE**: base del Nuevo Marco Legislativo
-  - **Reglamento (UE) 2023/988 (RGSP)**: deroga la Directiva 2001/95/CE, aplicable desde el **13/12/2024**, refuerza **Safety Gate** (sustituye a RAPEX) y mercados en línea. El **RD 1801/2003** queda sin efecto autónomo
+  - **Reglamento (UE) 2023/988 (RGSP)**: deroga la Directiva 2001/95/CE, aplicable desde el **13 de diciembre de 2024**, refuerza **Safety Gate** (sustituye a RAPEX) y mercados en línea. El **Real Decreto 1801/2003** queda sin efecto autónomo
   - **REACH (CE) 1907/2006**: restricciones del Anexo XVII, crea la **ECHA**
   - **Reglamento (UE) 2023/2411**: indicaciones geográficas de productos artesanales e industriales, aplicable desde 2025
 
 # 2. SUBSECTOR DEL JUGUETE
 ## 2.1. Definición y ámbito de aplicación
 - Marco en transición
-  - **Directiva 2009/48/CE** (**RD 1205/2011**), vigente
+  - **Directiva 2009/48/CE** (**Real Decreto 1205/2011**), vigente
   - **Reglamento (UE) 2025/2509**: la sustituirá, aplicable desde el **1 de agosto de 2030**
 - Juguete: producto diseñado o previsto, exclusivamente o no, para jugar por **menores de 14 años**
 - Tres elementos
@@ -63,8 +63,8 @@
 - **ICEX**: iniciativa **Toys from Spain** en mercados PASE
 
 ## 2.4. Normativa aplicable
-- **Directiva 2009/48/CE** y **RD 1205/2011**: requisitos esenciales y marcado CE, rigen las inspecciones. CMR limitadas al níquel y límites para menores de 36 meses
-- **Reglamento (UE) 2025/2509**: obligatorio el 1/8/2030, deroga la Directiva
+- **Directiva 2009/48/CE** y **Real Decreto 1205/2011**: requisitos esenciales y marcado CE, rigen las inspecciones. CMR limitadas al níquel y límites para menores de 36 meses
+- **Reglamento (UE) 2025/2509**: obligatorio el 1 de agosto de 2030, deroga la Directiva
   - Pasaporte Digital de Producto, prohibiciones químicas (alteradores endocrinos), ciberseguridad y privacidad
 - **REACH**: máximo **0,1 %** de ftalatos en material plastificado susceptible de meterse en la boca
 - **RGSP**: refuerza controles en línea
@@ -100,7 +100,7 @@
 
 # 3. SUBSECTOR DEL PEQUEÑO MATERIAL ELÉCTRICO (PME)
 ## 3.1. Descripción y productos controlados
-- **RD 330/2008**: control centrado en productos sensibles para el consumidor doméstico
+- **Real Decreto 330/2008**: control centrado en productos sensibles para el consumidor doméstico
 - Clasificación arancelaria no nítida: identificar destino y uso
 - Riesgos: electrocución, incendio, sobrecalentamiento, fallo de aislamiento
 - Bajo valor unitario, alta rotación, comercio electrónico
@@ -123,12 +123,12 @@
 - Comercio electrónico: pequeños envíos de terceros países
 
 ## 3.3. Normativa aplicable
-- **RD 187/2016 (Baja Tensión)**: transpone la LVD 2014/35/UE, marcado CE de seguridad. Excluye bases, clavijas y adaptadores
-- **Directiva 2011/65/UE (RoHS)** (**RD 219/2013**): plomo 0,1 %, mercurio 0,1 %, cadmio 0,01 %. Marcado CE solo de sustancias
-- **RD 993/2022**: control SOIVRE de RoHS y Registro Integrado Industrial
-- **RD 27/2021**: SOIVRE como autoridad de control de AEE y pilas y acumuladores antes de la importación
-- **RD 842/2002 (REBT)**: instalaciones de baja tensión
-- **RD 110/2015 (RAEE)**: transpone la Directiva 2012/19/UE, recogida, tratamiento y reciclaje
+- **Real Decreto 187/2016 (Baja Tensión)**: transpone la LVD 2014/35/UE, marcado CE de seguridad. Excluye bases, clavijas y adaptadores
+- **Directiva 2011/65/UE (RoHS)** (**Real Decreto 219/2013**): plomo 0,1 %, mercurio 0,1 %, cadmio 0,01 %. Marcado CE solo de sustancias
+- **Real Decreto 993/2022**: control SOIVRE de RoHS y Registro Integrado Industrial
+- **Real Decreto 27/2021**: SOIVRE como autoridad de control de AEE y pilas y acumuladores antes de la importación
+- **Real Decreto 842/2002 (REBT)**: instalaciones de baja tensión
+- **Real Decreto 110/2015 (RAEE)**: transpone la Directiva 2012/19/UE, recogida, tratamiento y reciclaje
 - **RGSP**: obligaciones de mercados en línea
 - **Reglamento (UE) 2024/1781 (ESPR)**: diseño ecológico, requisitos por actos delegados
 
@@ -149,14 +149,14 @@
   - **RoHS**: solo sustancias, todos los AEE
 - **Productos sujetos a la Directiva de Baja Tensión**
   - Prolongadores, enrollacables, interruptores, regletas, portalámparas y guirnaldas
-  - CE ampara seguridad (RD 187/2016) y RoHS
+  - CE ampara seguridad (Real Decreto 187/2016) y RoHS
   - Exigible: Declaración UE de Conformidad e informe de laboratorio acreditado con la norma armonizada
 - **Productos excluidos**
   - Bases, clavijas y adaptadores, sin CE de seguridad
   - Seguridad por UNE 20315:2017 y RGSP
   - Verificar que su CE no se presente como seguridad eléctrica
 - **Control RAEE en la importación**
-  - RD 110/2015, responsabilidad ampliada del productor
+  - Real Decreto 110/2015, responsabilidad ampliada del productor
   - Inscripción en el **RII** con número RAEE
   - Símbolo de contenedor tachado
   - Sin marcado CE: obligación medioambiental y registral, con declaraciones trimestrales

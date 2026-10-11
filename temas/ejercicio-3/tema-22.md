@@ -8,8 +8,8 @@
 - Objetivos: reducir la pobreza y promover desarrollo sostenible, derechos humanos y laborales, medio ambiente y buena gobernanza
 - Coexiste con los **AAE** con países ACP
   - Sustituyen a Lomé y Cotonú. Compatibles con el **art. XXIV GATT**. Primero: **CARIFORUM** (2008)
-  - **Acuerdo de Samoa** (firmado 15-11-2023, provisional desde 1-1-2024) sustituye a Cotonú
-- Estructura: antecedentes, **Reglamento (UE) 978/2012** (hasta 31-12-2026) y nuevo SPG **Reglamento (UE) 2026/1395** (desde 1-1-2027)
+  - **Acuerdo de Samoa** (firmado 15 de noviembre de 2023, provisional desde 1 de enero de 2024) sustituye a Cotonú
+- Estructura: antecedentes, **Reglamento (UE) 978/2012** (hasta 31 de diciembre de 2026) y nuevo SPG **Reglamento (UE) 2026/1395** (desde 1 de enero de 2027)
 
 # 2. ANTECEDENTES
 
@@ -20,7 +20,7 @@
   - **II UNCTAD** (Nueva Delhi, 1968): sistema no recíproco y no discriminatorio
   - **Exención GATT 1971** (diez años): excepción a la cláusula de nación más favorecida (**art. I GATT**)
   - **Cláusula de Habilitación** (1979, Ronda Tokio): fundamento permanente, base actual en la OMC
-- Primer esquema: Comunidad Europea, **1-7-1971**
+- Primer esquema: Comunidad Europea, **1 de julio de 1971**
 
 ## 2.2. Características del SPG
 
@@ -29,13 +29,13 @@
 - En principio **no discriminatorio**, pero el donante determina los beneficiarios
 - **Esquemas**: listas de países, productos y preferencias (franquicia o modulación)
 - Mecanismos restrictivos: **graduación**, **salvaguardias**, **normas de origen**
-- **DS246 CE – Preferencias arancelarias** (India, 2004): preferencias adicionales a todos los países en situación similar con criterios objetivos. Llevó a crear el **SPG+**
+- **DS246 CE, Preferencias arancelarias** (India, 2004): preferencias adicionales a todos los países en situación similar con criterios objetivos. Llevó a crear el **SPG+**
 
 ## 2.3. Evolución del SPG de la Unión hasta 2013
 
 - **2001**: **TMA/EBA**, libre de derechos y contingentes para PMA salvo armas
 - **Reglamento (CE) 980/2005**: tres regímenes (general, **SPG+**, **TMA**)
-- **Reglamento (CE) 732/2008**, prorrogado por **Reglamento (UE) 512/2011** hasta 31-12-2013
+- **Reglamento (CE) 732/2008**, prorrogado por **Reglamento (UE) 512/2011** hasta 31 de diciembre de 2013
 - Pérdida de eficacia: erosión de preferencias, barreras no arancelarias, discrecionalidad, concentración en emergentes (**40 %** antes de 2012), complejidad del origen
 
 # 3. EL SPG DEL REGLAMENTO (UE) 978/2012 (2014-2026)
@@ -43,7 +43,7 @@
 ## 3.1. La reforma de 2012
 
 - Cuatro opciones (A a D), elegida la **C** (rediseño parcial)
-- **Reglamento (UE) 978/2012**: DOUE 31-10-2012, preferencias desde **1-1-2014**
+- **Reglamento (UE) 978/2012**: DOUE 31 de octubre de 2012, preferencias desde **1 de enero de 2014**
 - Novedades
   - Preferencias concentradas en quien más las necesita
   - Graduación revisada, no aplicable a SPG+
@@ -51,7 +51,7 @@
   - Retirada y salvaguardia más transparentes
   - Vigencia inicial de diez años
   - Lisboa: listas y umbrales por **actos delegados** (**art. 290 TFUE**), salvaguardias por **actos de ejecución**
-- **Reglamento (UE) 2023/2663** prorrogó el 978/2012 hasta 31-12-2027, pero será derogado el 1-1-2027
+- **Reglamento (UE) 2023/2663** prorrogó el 978/2012 hasta 31 de diciembre de 2027, pero será derogado el 1 de enero de 2027
 
 ## 3.2. Países beneficiarios
 
@@ -112,15 +112,15 @@
 
 - **Código Aduanero de la Unión** y **Reglamento Delegado (UE) 2015/2446**
 - **Acumulación**: bilateral (Unión, Noruega, Suiza, Turquía), regional (ASEAN, Asia Meridional) y ampliada
-- Prueba: comunicación de origen de exportadores registrados en **REX** (desde 2017, obligatorio desde 30-6-2020), sustituye a FORM A. Hasta **6.000 euros** sin registro
+- Prueba: comunicación de origen de exportadores registrados en **REX** (desde 2017, obligatorio desde 30 de junio de 2020), sustituye a FORM A. Hasta **6.000 euros** sin registro
 
 # 4. EL NUEVO SPG: REGLAMENTO (UE) 2026/1395 (2027-2036)
 
 ## 4.1. Tramitación y vigencia
 
 - Propuesta septiembre 2021, bloqueada por la readmisión
-- Acuerdo 1-12-2025, Parlamento 28-4-2026, **Reglamento (UE) 2026/1395** de 17-6-2026, DOUE 22-6-2026. Base **art. 207.2 TFUE**
-- Aplicable **1-1-2027 a 31-12-2036**. Deroga el 978/2012
+- Acuerdo 1 de diciembre de 2025, Parlamento 28 de abril de 2026, **Reglamento (UE) 2026/1395** de 17 de junio de 2026, DOUE 22 de junio de 2026. Base **art. 207.2 TFUE**
+- Aplicable **1 de enero de 2027 a 31 de diciembre de 2036**. Deroga el 978/2012
 - Mantiene tres regímenes y cobertura
 
 ## 4.2. Países beneficiarios
@@ -141,14 +141,14 @@
 - Convenios de **27 a 32**. **Acuerdo de París** sustituye a Kioto
 - Se suprime la cuota máxima y se mantiene la diversificación (**75 %**)
 - Solicitantes con **plan de acción**
-- Beneficiarios actuales: nueva solicitud antes del **31-12-2028**
+- Beneficiarios actuales: nueva solicitud antes del **31 de diciembre de 2028**
 - Más seguimiento, transparencia y sociedad civil
 
 ## 4.5. Condicionalidad y retirada de preferencias
 
 - **Condicionalidad negativa ampliada** a todos los beneficiarios: también convenios medioambientales, climáticos y de buena gobernanza (CITES)
 - **Retirada urgente**
-- **Readmisión**: retirada por deficiencias graves y sistemáticas, último recurso tras el diálogo del Código de visados. TMA desde **1-1-2029**
+- **Readmisión**: retirada por deficiencias graves y sistemáticas, último recurso tras el diálogo del Código de visados. TMA desde **1 de enero de 2029**
 
 ## 4.6. Salvaguardias
 

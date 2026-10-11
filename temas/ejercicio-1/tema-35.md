@@ -8,9 +8,9 @@
 - **Acreditación**
   - Motivo: servicio de calidad al operador comercial, sobre todo exportadores
   - Norma **UNE-EN ISO/IEC 17025:2017**: sistema de gestión de calidad y competencia en ensayos
-  - **ENAC**: asociación sin ánimo de lucro, único organismo con potestad pública para acreditar (**RD 1715/2010**, **Reglamento (CE) 765/2008**)
+  - **ENAC**: asociación sin ánimo de lucro, único organismo con potestad pública para acreditar (**Real Decreto 1715/2010**, **Reglamento (CE) 765/2008**)
   - Marca ENAC: declara públicamente el cumplimiento y da aceptación internacional
-  - Acuerdos Multilaterales de Reconocimiento, más de 120 países, en **EA** y **Global ACI** (fusión de ILAC e IAF desde 1-1-2026)
+  - Acuerdos Multilaterales de Reconocimiento, más de 120 países, en **EA** y **Global ACI** (fusión de ILAC e IAF desde 1 de enero de 2026)
 - **Laboratorio Central** (desde 1989)
   - Coordinar y armonizar la red y las aplicaciones informáticas
   - Planificar adquisiciones, asesorar en reactivos, calibración y seguridad
@@ -87,7 +87,7 @@
 - Dos vías: enmascaramiento en la misma disolución o separación del analito
 - Separación más eficaz: cromatografía
 - Otros medios: precipitación, extracción con disolventes, intercambio iónico y destilación
-- **2.2.1. Precipitaciones**
+- **Precipitaciones**
   - Requieren grandes diferencias de solubilidad, comprobables por cálculos de solubilidad
   - **Control de acidez** (pH)
     - Ácidos fuertes concentrados: óxidos hidratados de Sn (IV) y Sb (V)
@@ -99,7 +99,7 @@
   - **Trazas**: colectores que arrastran la especie minoritaria
   - **Precipitación electrolítica**: aísla la especie más fácilmente reducida
   - Aplicaciones: lactosa en lácteos, benzaldehído en almendras, colesterol en cereales, pectinas en zumos
-- **2.2.2. Extracciones con disolventes**
+- **Extracciones con disolventes**
   - Separación de un soluto repartido entre dos fases
   - **Sólido/líquido**
     - Muestra sólida fraccionada tratada con disolvente, da residuo y disolución

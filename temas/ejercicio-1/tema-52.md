@@ -8,7 +8,7 @@
 
 # 2. ENVASES Y EMBALAJES
 
-- **Definición** (RD 1055/2022, sustituye a la Ley 11/1997)
+- **Definición** (Real Decreto 1055/2022, sustituye a la Ley 11/1997)
   - Todo producto de cualquier material para **contener, proteger, manipular, distribuir y presentar** mercancías, en cualquier fase de la cadena
   - Incluye artículos desechables o de un solo uso
 - **Clasificación**
@@ -60,7 +60,7 @@
   - **Reciclabilidad**: desde el **1 de enero de 2030** todos los envases reciclables, grados A, B o C
   - Prohibidos envases superfluos: dobles paredes, falsos fondos
   - Reducción de residuos de envases (base 2018): **5 % en 2030, 10 % en 2035, 15 % en 2040**
-- **Real Decreto 1055/2022**, norma de cabecera en España (derogó Ley 11/1997 y RD 782/1998), en el marco de la **Ley 7/2022**
+- **Real Decreto 1055/2022**, norma de cabecera en España (derogó Ley 11/1997 y Real Decreto 782/1998), en el marco de la **Ley 7/2022**
   - **Responsabilidad Ampliada del Productor (RAP)**: coste total de gestión, también envases comerciales e industriales
   - **Registro de Productores de Producto**: toneladas puestas en el mercado
   - **Granel**: frutas y hortalizas frescas enteras a granel (salvo lotes de 1,5 kg o más, variedades protegidas o calidad diferenciada, riesgo de deterioro)
@@ -68,7 +68,7 @@
   - Adaptación progresiva al PPWR
 - **SCRAP**: ECOEMBES (ligeros y papel/cartón), ECOVIDRIO, CICLOPLAST, industriales IMPLICA y VALORORA
   - Modelos: Sistema Dual (Alemania), ARA (Austria), Citéo (Francia), Fost Plus (Bélgica)
-- **Plásticos de un solo uso**: Directiva (UE) 2019/904 integrada en Ley 7/2022 y RD 1055/2022
+- **Plásticos de un solo uso**: Directiva (UE) 2019/904 integrada en Ley 7/2022 y Real Decreto 1055/2022
   - Prohíbe pajitas, cubiertos, bastoncillos, recipientes de poliestireno expandido
   - Impuesto especial sobre envases de plástico no reutilizables
 - **España Circular 2030**, metas 2030
@@ -101,8 +101,8 @@
   - **Real Decreto 891/2006**: método, límites y declaración de conformidad
 - **Madera, cartón y celulosa**: riesgo en fungicidas y tratamientos
   - Celulosa regenerada: **Directiva 2007/42/CE**, caras impresas sin contacto con el alimento
-  - **Real Decreto 1413/1994**, modificado por **RD 691/2005**
-- **Caucho**: **Directiva 93/11/CEE**, N-nitrosaminas en tetinas y chupetes, transpuesta por **RD 1184/1994**
+  - **Real Decreto 1413/1994**, modificado por **Real Decreto 691/2005**
+- **Caucho**: **Directiva 93/11/CEE**, N-nitrosaminas en tetinas y chupetes, transpuesta por **Real Decreto 1184/1994**
 
 # 5. ENSAYOS Y DEFECTOS. PROCEDIMIENTOS
 
@@ -125,13 +125,13 @@
 - Envases pasan a residuos sólidos urbanos, tensión entre **libre comercio y medio ambiente**
 - **Decreto Töpfer alemán (1991)**: efecto dominó (Francia, Austria, Bélgica), armonización con la Directiva 94/62/CE, hoy **PPWR**
 - Impacto en competitividad y costes logísticos, evitar barreras encubiertas y deslocalizaciones
-- RD 1055/2022 y PPWR: **RAP** y **SCRAP**, definiciones y criterios homogéneos de reutilización y reciclabilidad
+- Real Decreto 1055/2022 y PPWR: **RAP** y **SCRAP**, definiciones y criterios homogéneos de reutilización y reciclabilidad
 - Economía circular: menos vertedero, reciclado de calidad, menos GEI y materias primas vírgenes
 - Ecodiseño: compostables o biodegradables (**UNE-EN 13432**), menos sobreenvasado
 - **Plásticos oxodegradables** prohibidos (Directiva SUP, Ley 7/2022): microplásticos
 
 # 7. CONCLUSIÓN
 
-- Tres pilares: **protección** del alimento, **inocuidad** (MCA: Reglamentos (CE) 1935/2004 y (UE) 10/2011), **gestión ambiental** y economía circular (PPWR, RD 1055/2022, Ley 7/2022)
+- Tres pilares: **protección** del alimento, **inocuidad** (MCA: Reglamentos (CE) 1935/2004 y (UE) 10/2011), **gestión ambiental** y economía circular (PPWR, Real Decreto 1055/2022, Ley 7/2022)
 - Tendencia a **Reglamentos** de aplicación directa: armonización uniforme en 27 Estados
 - SOIVRE: doble marco, seguridad envase-alimento (MCA) y calidad comercial, etiquetado y sostenibilidad

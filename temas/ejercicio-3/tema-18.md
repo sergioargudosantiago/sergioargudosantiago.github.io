@@ -11,7 +11,7 @@
 - Marco España
   - **Ley 19/2003**, movimientos de capitales y transacciones económicas con el exterior
   - **Ley 18/1992**, vigente solo en sectores con regulación específica (defensa nacional)
-  - **Real Decreto 571/2023**, inversiones exteriores (sustituyó al RD 664/1999)
+  - **Real Decreto 571/2023**, inversiones exteriores (sustituyó al Real Decreto 664/1999)
   - **Orden ECM/57/2024**, procedimientos de declaración
 - Esquema: características y tipos, flujos mundiales, efectos, acuerdos internacionales
 
@@ -20,11 +20,11 @@
 - Principio general: **libertad** de movimientos de capitales e inversiones
 - Excepciones
   - Sectores con regulación específica (defensa)
-  - Suspensión de la liberalización y **autorización previa** de IED que afecte a seguridad, orden o salud públicos (Ley 19/2003 y RD 571/2023)
+  - Suspensión de la liberalización y **autorización previa** de IED que afecte a seguridad, orden o salud públicos (Ley 19/2003 y Real Decreto 571/2023)
   - Complemento del marco europeo (Reglamentos 2019/452 y 2026/1386)
 - Titulares: no residentes en España, residentes para inversiones españolas en el exterior
 - **Declaración** de inversiones directas y desinversiones al **Registro de Inversiones**, con carácter posterior
-- RD 571/2023
+- Real Decreto 571/2023
   - Actualiza supuestos y umbrales según estándares internacionales
   - Elimina la declaración de ciertas inversiones en valores sin participación relevante ni influencia
 - Excepción: inversiones con origen en **jurisdicciones no cooperativas**, declaración previa y reglas específicas
@@ -33,7 +33,7 @@
 - **IED**
   - Relación duradera e influencia significativa
   - Referencia: participación **igual o superior al 10 %** del capital o derechos de voto
-  - RD 571/2023 incluye aportaciones de socios y financiación intragrupo
+  - Real Decreto 571/2023 incluye aportaciones de socios y financiación intragrupo
 - **Inversión de cartera**
   - Valores sin ese grado de participación ni influencia o control
   - Menores obligaciones de declaración estadística
@@ -46,11 +46,11 @@
 
 ## 2.3. Control de la inversiones extranjeras
 - **Escudo antiopas**
-  - Art. 7 bis Ley 19/2003 (Real Decreto-ley 8/2020), desarrollado por RD 571/2023
+  - Art. 7 bis Ley 19/2003 (Real Decreto-ley 8/2020), desarrollado por Real Decreto 571/2023
   - **Autorización previa** de IED de residentes fuera de UE y AELC en sectores estratégicos o con incidencia en seguridad, orden o salud públicos
 - Régimen transitorio para residentes UE y AELC
   - Real Decreto-ley 34/2020, prorrogado por Real Decreto-ley 1/2025 hasta el **31 de diciembre de 2026**
-  - Sociedades cotizadas o no cotizadas con inversión superior a **500 millones de euros** y requisitos sectoriales
+  - Sociedades cotizadas o no cotizadas con inversión superior a **500 M€** y requisitos sectoriales
   - Continuidad desde 2027 depende de nueva prórroga y adaptación al Reglamento europeo
 - Datos 2025
   - **130** operaciones analizadas, **116** sin condiciones, **14** con compromisos

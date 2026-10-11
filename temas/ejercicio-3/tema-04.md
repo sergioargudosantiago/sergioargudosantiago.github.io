@@ -43,14 +43,14 @@
 ## 3.1. Concepto de PYME y peso en la economía europea
 
 - Informe Anual sobre las PYME Europeas (Comisión Europea, edición **2023/2024**)
-  - PYME: en torno al **99,8%** de las empresas y al **65%** del empleo privado de la UE
-  - España, en **2023**, uno de siete Estados miembros con crecimiento real positivo de las PYME, en torno al **4,9%**
+  - PYME: en torno al **99,8 %** de las empresas y al **65 %** del empleo privado de la UE
+  - España, en **2023**, uno de siete Estados miembros con crecimiento real positivo de las PYME, en torno al **4,9 %**
 - **Recomendación 2003/361/CE**, referencia vigente para ayudas y apoyo a la internacionalización
   - **PYME**: menos de **250** personas y volumen de negocio hasta **50 M€** o balance hasta **43 M€**
   - **Pequeña**: menos de **50** personas y volumen de negocio o balance hasta **10 M€**
   - **Microempresa**: menos de **10** personas y volumen de negocio o balance hasta **2 M€**
 - No confundir con los umbrales de la **Directiva Contable (2013/34/UE)**, de información financiera y auditoría
-  - Actualizados por la **Directiva Delegada (UE) 2023/2775** (octubre 2023), cifras de balance y volumen de negocio en torno a un **25%** más
+  - Actualizados por la **Directiva Delegada (UE) 2023/2775** (octubre 2023), cifras de balance y volumen de negocio en torno a un **25 %** más
   - España no la había transpuesto, plazo **24 diciembre 2024**
   - Comisión demanda a España (y Malta) ante el TJUE el **23 marzo 2026**
 - España pasa de receptor neto a **emisor neto de inversión extranjera directa**
@@ -91,17 +91,17 @@
   - Descenso muy condicionado por el **cambio metodológico desde 2022**: NIF instrumental único para envíos de particulares de bajo importe y definición más restrictiva de exportador
   - **Exportadores regulares**: 53.691 en 2025 (54.509 en 2024)
 - **Concentración** del valor exportado en 2025
-  - Top **10**: 13,9% (14,5% en 2024, 15,0% en 2019)
-  - Top **100**: 36,2%
-  - Top **1.000**: 65,2%
+  - Top **10**: 13,9 % (14,5 % en 2024, 15,0 % en 2019)
+  - Top **100**: 36,2 %
+  - Top **1.000**: 65,2 %
   - Tendencia a ligera **desconcentración**
-- Estructura **dual** (2025): 83.522 empresas (65,7%) exportan hasta 50.000 €, solo **1.116** (0,9%) más de 50 M€
+- Estructura **dual** (2025): 83.522 empresas (65,7 %) exportan hasta 50.000 €, solo **1.116** (0,9 %) más de 50 M€
 - Patrón por tamaño
   - Micro y pequeñas: poco valor, bienes de consumo tradicional (agricultura, calzado, piel, madera)
   - Medianas: manufacturas (papel, construcción, textil, maquinaria)
-  - Grandes y multinacionales, en torno al **3%** de exportadoras: mayor parte del valor, vehículos y semimanufacturas, en especial productos químicos
+  - Grandes y multinacionales, en torno al **3 %** de exportadoras: mayor parte del valor, vehículos y semimanufacturas, en especial productos químicos
 - Por CCAA: **Cataluña**, **Comunitat Valenciana**, **Comunidad de Madrid**, después **Andalucía** y **País Vasco**. Menos, **Cantabria**
-- **DIRCE** (INE): **3.310.824** empresas activas a 1 enero 2025, **+1,7%** interanual
+- **DIRCE** (INE): **3.310.824** empresas activas a 1 enero 2025, **+1,7 %** interanual
 - Apoyo institucional: **Plan ICEX Next** (desde 2012)
   - Lo lanza la Secretaría de Estado de Comercio vía **ICEX**, con Cámaras de Comercio y CCAA
   - Reduce costes de acceso a mercados para PYME
@@ -126,7 +126,7 @@
   - **UE**: **Italia** (calzado, piel, textiles, muebles), **Alemania** (maquinaria, químicos, metal), **Francia** (alimentación, químicos, automóviles, textil)
   - Fuera de la UE: **China** (piel, calzado), **Argentina, Brasil y Chile** (alimentación, madera, muebles), **EEUU** (químicos), **Japón** (maquinaria), **Marruecos** (frutas y hortalizas frescas)
 - Problema clave: **tamaño reducido**
-  - Empresas de menos de 50 trabajadores, en torno al **99%**, muy por encima de Alemania o Reino Unido
+  - Empresas de menos de 50 trabajadores, en torno al **99 %**, muy por encima de Alemania o Reino Unido
   - Menos grandes empresas (más de 250 trabajadores), tamaño medio inferior al de las cuatro grandes economías de la UE
   - Consecuencias: menor resistencia a crisis, menor acceso a mercados, menor productividad, menos I+D+i, menor valor añadido, peor financiación
 

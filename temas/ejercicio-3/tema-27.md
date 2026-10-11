@@ -104,7 +104,7 @@
   - **Procedimiento de infracción** y Grupo de Trabajo para la Aplicación de las Normas del Mercado Único (**2020**)
 - Ámbito exterior
   - **Reglamento sobre Obstáculos al Comercio** y capítulos **OTC y MSF** de acuerdos comerciales, más allá del Acuerdo OTC
-  - **ARM** sectoriales con EE. UU., Canadá, Japón, Australia, Nueva Zelanda, Suiza e Israel
+  - **ARM** sectoriales con EEUU, Canadá, Japón, Australia, Nueva Zelanda, Suiza e Israel
   - Capítulo MSF del Acuerdo con **Chile (2002)**, pionero en bienestar animal
 
 # 4. EL PORTAL ACCESS2MARKETS DE LA COMISIÓN

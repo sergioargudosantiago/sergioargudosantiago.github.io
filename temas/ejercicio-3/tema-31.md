@@ -5,7 +5,7 @@
   - Principal **obstáculo técnico al comercio (OTC)**, más relevante al bajar los aranceles (GATT y OMC)
 - **Ámbito multilateral**: **Acuerdo OTC de la OMC** (en vigor 1 enero 1995, procede del Código de la Ronda Tokio) y Acuerdo MSF
   - Principios: no discriminación, necesidad, armonización con normas internacionales, transparencia, equivalencia
-  - **Artículo 6**: aceptar resultados de evaluación de otros miembros y negociar ARM
+  - **Art. 6**: aceptar resultados de evaluación de otros miembros y negociar ARM
 - **Ámbito regional UE**
   - Armonización: **Nuevo Enfoque** (1985), **Enfoque Global** (1989), **Nuevo Marco Legislativo** (2008)
   - Transparencia: **Directiva (UE) 2015/1535**
@@ -43,10 +43,10 @@
 # 3. LOS ARM SUSCRITOS POR LA UNIÓN EUROPEA
 ## 3.1. Base jurídica y negociación
 - **Resolución del Consejo de 21 de diciembre de 1989** (Enfoque Global): previó los ARM con terceros países
-- **Base jurídica**: política comercial común, hoy **artículos 207 y 218 TFUE** (antes art. 113 y 133 TCE)
+- **Base jurídica**: política comercial común, hoy **arts. 207 y 218 TFUE** (antes art. 113 y 133 TCE)
 - **Negociación**
   - El **Consejo** autoriza a la **Comisión**. En 1992 incorporó criterios de competencia técnica de los organismos
-  - Grupo técnico del **Comité de Política Comercial** (antes Comité del Artículo 133, hasta Lisboa, 1 diciembre 2009)
+  - Grupo técnico del **Comité de Política Comercial** (antes Comité del Art. 133, hasta Lisboa, 1 diciembre 2009)
   - **Subdirección General de Inspección, Certificación y Asistencia Técnica del Comercio Exterior** representa a España
   - No rebajar el nivel de protección de la UE y elegir sectores de interés exportador con obstáculos técnicos
 - **Efecto**: organismos designados evalúan según requisitos del otro mercado y el certificado da acceso a todo el mercado único
@@ -63,8 +63,8 @@
   - Suspensión de obligaciones de reconocimiento
 
 ## 3.3. Acuerdos suscritos y sectores cubiertos
-- ARM con **Estados Unidos, Canadá, Australia, Nueva Zelanda, Suiza, Japón e Israel**
-- **Estados Unidos**: firmado y en vigor en **1998** (1 diciembre)
+- ARM con **EEUU, Canadá, Australia, Nueva Zelanda, Suiza, Japón e Israel**
+- **EEUU**: firmado y en vigor en **1998** (1 diciembre)
   - Operativos solo telecomunicaciones, compatibilidad electromagnética y buenas prácticas de fabricación de medicamentos (ampliado en 2023 a veterinarios)
   - Seguridad eléctrica, productos sanitarios y embarcaciones de recreo no llegaron a ser operativos
   - Modificación de 2017: reconocimiento de inspecciones de fábricas de medicamentos
@@ -144,4 +144,4 @@
 - Alcance limitado de los ARM, con anexos no operativos: la UE integra estas disposiciones en los acuerdos de libre comercio
 - **Infraestructura de la calidad**: metrología, normalización, acreditación, evaluación de la conformidad, vigilancia del mercado
 - **Global ACI** (enero 2026, fusión de ILAC e IAF) coordina el reconocimiento entre organismos de acreditación
-- **SOIVRE**: autoridad designada por España (**artículo 25 del Reglamento (UE) 2019/1020**), acepta certificados de ARM o ACAA dentro del alcance, sin perjuicio de verificar conformidad y seguridad
+- **SOIVRE**: autoridad designada por España (**art. 25 del Reglamento (UE) 2019/1020**), acepta certificados de ARM o ACAA dentro del alcance, sin perjuicio de verificar conformidad y seguridad

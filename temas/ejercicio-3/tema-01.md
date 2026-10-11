@@ -18,7 +18,7 @@
   - Liberalización por rondas del GATT: comercio de bienes y servicios
 - **Actualidad**
   - Crecimiento casi continuo desde finales de los ochenta
-  - Caídas: **2009** (**–22%** mercancías, **–9%** servicios), **2015-2016** (**–15%** y **–4,5%**), **2019** (**–3,0%** y **+2,1%**), covid-19 en **2020**
+  - Caídas: **2009** (**-22 %** mercancías, **-9 %** servicios), **2015-2016** (**-15 %** y **-4,5 %**), **2019** (**-3,0 %** y **+2,1 %**), covid-19 en **2020**
   - Ralentización en **2023** y repunte en **2024** y **2025**, este por pedidos anticipados ante aranceles de EEUU
   - Factores: crecimiento económico, relaciones comerciales, fin de la Guerra Fría, incorporación del bloque soviético
 - **OMC**
@@ -33,12 +33,12 @@
   - Más servicios (digitales y telecomunicaciones) y alta tecnología
   - Comercio **intraindustrial** e **intraempresa**
 - **Datos OMC (World Trade Statistics 2025)**
-  - Bienes y servicios: **34,9 billones de dólares** en 2025, cerca de **+8%**
-  - **Mercancías**: **72,5%**
+  - Bienes y servicios: **34,9 billones de dólares** en 2025, cerca de **+8 %**
+  - **Mercancías**: **72,5 %**
     - **UE**, primer exportador e importador
     - Exportadores: China, EEUU, Japón, Corea del Sur. Importadores: EEUU, China, Japón
     - Manufacturas primero (la mitad, bienes de equipo), después combustibles y minería y agrícolas
-  - **Servicios**: **27,5%**, máximo desde 2005
+  - **Servicios**: **27,5 %**, máximo desde 2005
     - Impulso del **GATS**, concentrado en la **OCDE**
     - **EEUU** primero, seguido de UE y Reino Unido
     - Viajes, transporte, digitales y otros servicios comerciales
@@ -59,7 +59,7 @@
 - **Concentración (regionalismo)**
   - Interés político, más competencia, beneficios al consumidor
   - Amenaza y oportunidad para las empresas
-  - Más del **50%** del comercio mundial bajo estos acuerdos
+  - Más del **50 %** del comercio mundial bajo estos acuerdos
 - **Fases de integración**, de menor a mayor
   - **Acuerdo preferencial**: Commonwealth
   - **Zona de libre comercio**: arancel propio frente a terceros. **EFTA**
@@ -121,7 +121,7 @@
   - **Contratación Pública**: 1979, revisado en 2014
 - **Propiedad intelectual**: sistema multilateral de indicaciones geográficas sin completar. UE promueve el **Arreglo de Lisboa** en la **OMPI** y acuerdos sobre vinos
 - **Acuerdos bilaterales**
-  - **EEUU**: **TTIP** abandonado. Acuerdo marco de julio de **2025**, arancel general del **15%**
+  - **EEUU**: **TTIP** abandonado. Acuerdo marco de julio de **2025**, arancel general del **15 %**
   - **Canadá**: **CETA**, aplicación provisional desde el **21 de septiembre de 2017**, ratificado por 17 de 27 Estados
   - **Ecuador, Colombia y Perú**: **ACM**, aplicado desde 2013
   - **Centroamérica**: Acuerdo de Asociación, 2012

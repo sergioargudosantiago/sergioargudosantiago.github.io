@@ -27,7 +27,7 @@
   - Proceso transparente con científicos, consumidores, industria, control y comerciantes
 - **Coordinar** los trabajos sobre normas de instituciones gubernamentales y no gubernamentales
 - **Preparar proyectos de normas** y publicarlas como norma regional o mundial
-- **Plan Estratégico 2026-2031**: adoptado en la 47ª reunión, en vigor desde 1-1-2026, sustituye al 2020-2025
+- **Plan Estratégico 2026-2031**: adoptado en la 47ª reunión, en vigor desde 1 de enero de 2026, sustituye al 2020-2025
   - Seguimiento y evaluación adoptado en la 48ª reunión (Roma, noviembre 2025)
   - Prioridades: enfoque **One Health** y modernización digital
 
@@ -129,7 +129,7 @@
 ## 5.2. Actividades realizadas por la FAO
 - **Código Internacional de Conducta para la Distribución y Uso de Plaguicidas**: adoptado por la Conferencia de la FAO en 1985, confianza internacional y referencia para la reglamentación
 - **Consentimiento Fundamentado Previo (PIC)**: años ochenta, un producto químico peligroso listado solo se exporta con consentimiento del importador
-  - **Convenio de Rotterdam** (1998), en vigor el **24-2-2004**: vínculo jurídico, regula importaciones y exportaciones de químicos y plaguicidas peligrosos, exige información detallada
+  - **Convenio de Rotterdam** (1998), en vigor el **24 de febrero de 2004**: vínculo jurídico, regula importaciones y exportaciones de químicos y plaguicidas peligrosos, exige información detallada
 - Formación y asistencia técnica: protección de plantas, uso y control de plaguicidas
 
 # 6. CONCLUSIÓN

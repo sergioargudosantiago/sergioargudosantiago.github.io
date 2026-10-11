@@ -67,11 +67,11 @@
 ## 3.2. Características Generales del FIEM
 
 - **Límite anual** fijado por la Ley de Presupuestos Generales del Estado
-  - **Real Decreto-ley 4/2025**: de **500 a 700 millones de euros** en 2025
-  - Operaciones **no reembolsables** hasta **20 millones de euros** para diversificar mercados de empresas afectadas por aranceles de EEUU
+  - **Real Decreto-ley 4/2025**: de **500 a 700 M€** en 2025
+  - Operaciones **no reembolsables** hasta **20 M€** para diversificar mercados de empresas afectadas por aranceles de EEUU
 - **Real Decreto 519/2026**: modifica el Reglamento para la reconstrucción de **Ucrania**
-  - Flexibilidad en garantías ucranianas, límite acumulado de **100 millones de euros**
-  - Financiación no reembolsable más allá de asistencias técnicas y consultorías, límite acumulado de **100 millones de euros**
+  - Flexibilidad en garantías ucranianas, límite acumulado de **100 M€**
+  - Financiación no reembolsable más allá de asistencias técnicas y consultorías, límite acumulado de **100 M€**
   - Incorpora la Oficina Española para la Reconstrucción de Ucrania al Comité FIEM
 - Exige maximizar el **efecto arrastre exportador** (directo e indirecto)
 - **Modalidades de financiación**
@@ -79,12 +79,12 @@
   - Reembolsable **comercial** para exportación: créditos al comprador extranjero, oferta competitiva, diferencia clave con el FAD
   - Reembolsable **comercial** para inversión: préstamos a inversiones productivas y **project finance**
 - **Líneas de crédito**
-  - **FIEM-PYME** (2019): hasta **10 millones de euros** por proyecto, más de **400 millones de euros** de dotación, riesgo por **CESCE** (exportación) o **COFIDES** (inversión)
-  - **ECOFIEM** (2019): hasta **200 millones de euros**, mitigación o adaptación al cambio climático
-  - **EVATIC**: **20 millones de euros**, estudios de viabilidad y consultorías, heredera del FEV
-    - Desde junio de 2017 a diciembre de 2025: **218 operaciones**, **263 millones de euros**, remanente de **137 millones de euros**, más del **87%** sector privado
-    - **Línea no reembolsable de estudios** (2021): renovada en 2025 con **20 millones de euros** anuales hasta 2028
-  - **FIEM-Facilidades UE** (Blending FIEM-UE): 2014, modificada en 2017, **50 millones de euros**, COFIDES con ejecución delegada del presupuesto de la UE desde 2016
+  - **FIEM-PYME** (2019): hasta **10 M€** por proyecto, más de **400 M€** de dotación, riesgo por **CESCE** (exportación) o **COFIDES** (inversión)
+  - **ECOFIEM** (2019): hasta **200 M€**, mitigación o adaptación al cambio climático
+  - **EVATIC**: **20 M€**, estudios de viabilidad y consultorías, heredera del FEV
+    - Desde junio de 2017 a diciembre de 2025: **218 operaciones**, **263 M€**, remanente de **137 M€**, más del **87 %** sector privado
+    - **Línea no reembolsable de estudios** (2021): renovada en 2025 con **20 M€** anuales hasta 2028
+  - **FIEM-Facilidades UE** (Blending FIEM-UE): 2014, modificada en 2017, **50 M€**, COFIDES con ejecución delegada del presupuesto de la UE desde 2016
   - **Líneas País**: convenio de crédito por importe global, aprobación del Consejo de Ministros y tramitación ágil
     - Línea PYME con **Egipto y Túnez** y cooperación reforzada con **Marruecos**
 - **Criterios de valoración** (Líneas Orientativas)
@@ -97,7 +97,7 @@
   - Coste de oportunidad y cofinanciación privada
   - Respeto al **Consenso OCDE** y acuerdos anticorrupción y medioambientales
 - **Prioridades geográficas 2026**: orientativas y no excluyentes
-  - América: Brasil, Chile, Colombia, Estados Unidos, México, Perú, Uruguay
+  - América: Brasil, Chile, Colombia, EEUU, México, Perú, Uruguay
   - Europa: Serbia, Ucrania
   - Asia y Oceanía: Filipinas, India, Indonesia, Vietnam, Australia
   - África: Senegal, Mauritania, Angola, Costa de Marfil, Nigeria, Sudáfrica, Tanzania, Uganda
@@ -143,8 +143,8 @@
   - Recursos propios y gestión por cuenta del Estado de **FIEX** y **FONPYME**
   - Participa en mecanismos de **blending** con fondos de la UE
 - **Capital**
-  - Público (en torno al **53%**): **ICEX** 25,74%, **ICO** 20,31%, **ENISA** 7,63%
-  - Privado: Banco Santander 20,17%, BBVA 16,68%, Banco Sabadell 8,33%, CAF 1,14%
+  - Público (en torno al **53 %**): **ICEX** 25,74 %, **ICO** 20,31 %, **ENISA** 7,63 %
+  - Privado: Banco Santander 20,17 %, BBVA 16,68 %, Banco Sabadell 8,33 %, CAF 1,14 %
 - Acreditada para gestionar presupuesto de cooperación de la UE, avanza en la acreditación ante el **Fondo Verde para el Clima**
 - Desde **2023** gestiona dos fondos de sentido inverso con fondos del **PRTR**
 
@@ -152,7 +152,7 @@
 
 - Fin: internacionalización de empresas y economía con proyectos de inversión exterior con interés español
 - Regulación: **Ley 66/1997** y **Real Decreto 1226/2006**
-- Productos de **250 mil a 30 millones de euros**
+- Productos de **250 mil a 30 M€**
 - Participaciones **temporales y minoritarias**, directas o indirectas, en empresas españolas o del exterior, vehículos de capital expansión y fondos privados
 - Instrumentos de **capital y cuasi-capital**: capital, préstamos subordinados, participativos o convertibles
 - Cualquier país excepto España
@@ -162,7 +162,7 @@
 
 - Fin: internacionalización de **PYME** mediante inversión exterior
 - Mismas fórmulas que el FIEX: participaciones temporales y minoritarias, fondos y otros instrumentos participativos
-- Productos de **75 mil a 5 millones de euros**
+- Productos de **75 mil a 5 M€**
 - Cofinancia con COFIDES o, en ciertos supuestos, financia sin COFIDES
 - Cualquier país, gestión de COFIDES por cuenta del Estado
 - **FIEM frente a FIEX y FONPYME**
@@ -172,8 +172,8 @@
 
 ## 5.3. Otros fondos de COFIDES
 
-- **FOCO** (Fondo de Coinversión): **2.000 millones de euros**, atrae inversión extranjera a España
-- **FIS** (Fondo de Impacto Social): **400 millones de euros**, impacto social y medioambiental en España
+- **FOCO** (Fondo de Coinversión): **2.000 M€**, atrae inversión extranjera a España
+- **FIS** (Fondo de Impacto Social): **400 M€**, impacto social y medioambiental en España
 - Ambos con recursos del **PRTR**, fuera del núcleo del tema
 - En **2026** culminó la fase de inversión de ambos, con dotaciones comprometidas
 
@@ -181,7 +181,7 @@
 
 - **FIEM**: principal instrumento público de financiación directa de exportación e inversión exterior, principalmente reembolsable, con atención al efecto de arrastre
   - Evolución del FAD: separación entre internacionalización y cooperación al desarrollo
-  - 2025: límite de **500 a 700 millones de euros**
+  - 2025: límite de **500 a 700 M€**
   - 2026: refuerzo para la reconstrucción de **Ucrania** con la modificación del Reglamento
 - **COFIDES** completa el sistema con **FIEX** (capital y cuasi-capital) y **FONPYME** (PYME)
 - Cubre la financiación de la exportación y la implantación e inversión en mercados exteriores

@@ -140,7 +140,7 @@
   - **Reglamento (UE) 2015/2120**, modificado por **2017/920**: fin del roaming desde el **15 de junio de 2017**
   - **Reglamento (UE) 2017/1128**: portabilidad transfronteriza de contenidos digitales desde el **1 de abril de 2018**
 - **Programa Europa Digital 2021-2027**
-  - **7.588 millones de euros**
+  - **7.588 M€**
   - IA, ciberseguridad, computación de alto rendimiento, competencias digitales, interoperabilidad
   - Centros europeos de innovación digital
   - Coordinación: **ORECE**

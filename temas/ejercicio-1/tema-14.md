@@ -12,18 +12,18 @@
 
 - Competencia: SG de Calidad y Seguridad Industrial (MINTUR)
 - **Ley 21/1992, de Industria**, adaptación al Mercado Único
-- **RD 559/2010**, Registro Integrado Industrial
-- **RD 1072/2015**, infraestructura de calidad: AENOR (normalización), ENAC (acreditación)
-- **RD 1468/1988**, etiquetado de productos industriales: real, veraz y comprensible. Datos mínimos: denominación, composición, contenido neto, lote, empresa, origen
-- **RD 1406/1989**, limitaciones de sustancias (benceno, amianto, termómetros de mercurio)
-- **RD 330/2008**, control de seguridad en importación
+- **Real Decreto 559/2010**, Registro Integrado Industrial
+- **Real Decreto 1072/2015**, infraestructura de calidad: AENOR (normalización), ENAC (acreditación)
+- **Real Decreto 1468/1988**, etiquetado de productos industriales: real, veraz y comprensible. Datos mínimos: denominación, composición, contenido neto, lote, empresa, origen
+- **Real Decreto 1406/1989**, limitaciones de sustancias (benceno, amianto, termómetros de mercurio)
+- **Real Decreto 330/2008**, control de seguridad en importación
   - Riesgos RAPEX, SOIVRE responsable del control previo al despacho
   - Lista en la **Orden PJC/161/2026** (drones, juguetes, EPIs, textil, calzado, madera)
-  - **RD 993/2022**: aparatos eléctricos y electrónicos, pilas (RoHS)
+  - **Real Decreto 993/2022**: aparatos eléctricos y electrónicos, pilas (RoHS)
 - **Reglamento (CE) 765/2008**, acreditación y marcado CE. Vigilancia de mercado sustituida por **Reglamento (UE) 2019/1020**
 - **Reglamento (UE) 2019/515**, reconocimiento mutuo
 - **Decisión 768/2008/CE**, Nuevo Marco Legislativo
-- **Reglamento (UE) 2023/988 (RGSP)**: aplicable desde 13-12-2024, deroga la Directiva 2001/95/CE. Safety Gate sustituye a RAPEX
+- **Reglamento (UE) 2023/988 (RGSP)**: aplicable desde 13 de diciembre de 2024, deroga la Directiva 2001/95/CE. Safety Gate sustituye a RAPEX
 - **REACH (CE) 1907/2006**: Anexo XVII, ECHA
 - **Reglamento (UE) 2023/2411**, indicaciones geográficas artesanales e industriales, desde 2025
 
@@ -46,7 +46,7 @@
   - Déficit: **74,8 %** de las importaciones energéticas en 2025. Origen EEUU, Brasil, México, Nigeria, Arabia Saudí. Exportaciones bajas, a la UE
 - **Normativa aplicable**
   - **Ley 34/1998 (LSH)** y **Ley 12/2007** (liberaliza precios, abre CLH)
-  - **Ley 3/2013**, crea la CNMC (RD 657/2013, Estatuto)
+  - **Ley 3/2013**, crea la CNMC (Real Decreto 657/2013, Estatuto)
   - **Ley 11/2013**, apoyo al emprendedor
   - **Directiva 98/70/CE**, calidad de combustibles (modificada por 2015/1513)
   - **Directiva (UE) 2023/959**, ETS
@@ -85,7 +85,7 @@
   - **Reglamento (CE) 1407/2002**, ayudas estatales
   - **Decisión 2010/787/UE**, cierre de minas hasta 2018
   - **Acuerdo Marco Transición Justa 2019-2027**
-  - **RD 2020/1997**, reestructuración minera
+  - **Real Decreto 2020/1997**, reestructuración minera
   - **Reglamento (UE) 2023/956 (CBAM)**, aplicable al carbón desde 2026
 
 ## 2.4. Electricidad
@@ -119,7 +119,7 @@
 - Dificultades: competencia de nuevos EEMM, agotamiento, orografía, legislación ambiental
 - Normativa
   - **Ley 22/1973, de Minas**, y **Ley 54/1980**
-  - **RD 863/1985**, seguridad minera
+  - **Real Decreto 863/1985**, seguridad minera
   - **Directiva 2006/21/CE**, residuos de industrias extractivas
   - **Reglamento (UE) 2024/1252 (CRMA)**: 34 críticos y 17 estratégicos. Objetivos 2030: extracción **10 %**, procesado **40 %**, reciclaje **25 %**. Máximo **65 %** de un solo tercer país
 

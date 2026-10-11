@@ -5,7 +5,7 @@
   - Bebidas fermentadas (cerveza, whisky, sake, aguardientes)
   - Piensos e industria química
 - Seguimiento especial de la **FAO** por su peso en la seguridad alimentaria
-- **2025** (DATACOMEX): **7,6%** de las importaciones agroalimentarias, **4.517 M€**, descenso de más del **11%**
+- **2025** (DATACOMEX): **7,6 %** de las importaciones agroalimentarias, **4.517 M€**, descenso de más del **11 %**
 - Estructura: productos (cereales y semillas), calidad comercial y normativa (OCM, normas de comercialización, CEPE/UN, CODEX, OCDE, UNE, ecológica, integrada, legislación general)
 
 # 2. DESCRIPCIÓN Y DESIGNACIÓN DE LOS PRINCIPALES PRODUCTOS
@@ -20,8 +20,8 @@
   - *aestivum*: común, panificación
   - *durum*: duro o vítreo, pasta
 - **Arroz** (*Oryza sativa*): alimento básico de más de la mitad de la población, más calórico
-  - *indica*: grano largo, trópicos, **85%** del comercio (aromáticos jazmín y basmati)
-  - *japónica*: grano medio-corto, zonas templadas, **15%**
+  - *indica*: grano largo, trópicos, **85 %** del comercio (aromáticos jazmín y basmati)
+  - *japónica*: grano medio-corto, zonas templadas, **15 %**
 - **Maíz** (*Zea mays*): primer cereal por producción, usos en piensos, biocombustibles, consumo humano e industria química
   - *indurata*: córneo y vítreo
   - *indentata*: largo y harinoso
@@ -37,7 +37,7 @@
     - **Directiva (UE) 2015/412**: los Estados miembros pueden restringir o prohibir el cultivo, medidas en zonas fronterizas desde **3 abril 2017**
     - **Directiva (UE) 2018/350**: evaluación del riesgo ambiental
   - Seguridad alimentaria: **Reglamento (CE) 1829/2003** (alimentos y piensos GM), **1830/2003** (trazabilidad y etiquetado)
-  - España: **RD 178/2004** (desarrolla la Ley 9/2003), modificado por **RD 452/2019**
+  - España: **Real Decreto 178/2004** (desarrolla la Ley 9/2003), modificado por **Real Decreto 452/2019**
   - Evaluación de riesgos: **EFSA**
   - **Nuevas técnicas genómicas (NTG)**: acuerdo provisional **4 diciembre 2025**, Consejo **21 abril 2026**, aplicación prevista mediados de **2028**
     - **NTG-1**: equivalentes a convencionales, exentas de normativa OGM, etiquetado solo en semillas
@@ -60,18 +60,18 @@
   - Sin recalentar ni germinar
   - Sin olor ni sabor extraños
 - Nacional: **Código Alimentario Español (Decreto 2484/1967)** y normas específicas
-  - Cereales en copos o expandidos: **RD 1094/1987**, parcialmente modificado por **RD 176/2013**
+  - Cereales en copos o expandidos: **Real Decreto 1094/1987**, parcialmente modificado por **Real Decreto 176/2013**
 - **Factores principales** (también en legumbres)
   - **Peso específico**: más rendimiento en harina
   - **Humedad y temperatura**: hongos y fermentación
   - **Aflatoxinas**: de *Aspergillus flavus*, lesiones hepáticas y tumores
-- **Harinas, sémolas y pastas**: **RD 677/2016** (deroga el RD 1286/1984)
-  - Humedad máxima **15%**
-  - Proteínas mínimo **9%** (panificación)
-  - Acidez de la grasa máximo **30% o 50%**
-  - Harinas extrañas máximo **1%**
+- **Harinas, sémolas y pastas**: **Real Decreto 677/2016** (deroga el Real Decreto 1286/1984)
+  - Humedad máxima **15 %**
+  - Proteínas mínimo **9 %** (panificación)
+  - Acidez de la grasa máximo **30 % o 50 %**
+  - Harinas extrañas máximo **1 %**
   - Calidad panadera: cuatro tipos
-  - Cenizas: flor ≤0,50%, normal 0,50-0,80%, morena ≥0,80% y <2,5%
+  - Cenizas: flor ≤0,50 %, normal 0,50-0,80 %, morena ≥0,80 % y <2,5 %
   - Las mezclas cumplen las características de sus componentes
 
 # 4. NORMATIVA APLICABLE
@@ -96,7 +96,7 @@
 - Objetivos: estabilizar mercados, nivel de vida equitativo del agricultor, competitividad, abastecimiento
 - Cinco pilares
   - **Normas de comercialización**: cereales y semillas fuera del Reglamento Delegado 2023/2429
-    - Marco propio: **Decreto 2484/1967**, **RD 677/2016** (harinas, sémolas, pastas), **RD 1094/1987** (copos y expandidos)
+    - Marco propio: **Decreto 2484/1967**, **Real Decreto 677/2016** (harinas, sémolas, pastas), **Real Decreto 1094/1987** (copos y expandidos)
     - Base CEPE/ONU (WP.7), Sección II (secos y desecados). Esquema: definición, calidad, calibrado, tolerancias, presentación, marcado
     - Controles en todas las fases, obligatorios para terceros países
   - **Organizaciones de productores (OP)**: concentran oferta, planifican, reducen costes
@@ -121,16 +121,16 @@
 - **Producción ecológica**: **Reglamento (UE) 2018/848** (deroga el 834/2007, 889/2008 y 1235/2008). Terceros países con estándares UE desde **2023**
   - **Reglamento de Ejecución 2016/1842**: certificado electrónico de importación
   - **SOIVRE** controla importaciones ecológicas (**Orden ECC/1936/2014**): productos no transformados, transformados, piensos, material de reproducción y semillas, levaduras
-- **Producción integrada**: **RD 1201/2002**, desarrollada por las CCAA, logotipo según **Orden APA/1/2004**
+- **Producción integrada**: **Real Decreto 1201/2002**, desarrollada por las CCAA, logotipo según **Orden APA/1/2004**
 - **DOP, IGP y ETG**: **Reglamento (UE) 2024/1143**, **Ley 6/2015** (AICA controla la comercialización). Ej.: IGP Gofio de Canarias, DOP Arroz de Valencia
 - **Buenas prácticas agrícolas**: Tesco Nurture, Carrefour Quality Lines, GLOBALG.A.P., SQF
 
 ## 4.4. Normativa general
 
-- **RD 175/2004**: autoridad de controles de conformidad (Secretaría de Estado de Comercio)
+- **Real Decreto 175/2004**: autoridad de controles de conformidad (Secretaría de Estado de Comercio)
 - **Reglamento (CE) 396/2005**: límites de residuos de plaguicidas
 - **Reglamento (UE) 1169/2011**: información al consumidor
-- **RD 1055/2022**: envases y residuos de envases
+- **Real Decreto 1055/2022**: envases y residuos de envases
 - Higiene: **Reglamentos (CE) 852 y 853/2004**. Controles: **Reglamento (UE) 2017/625**
 - **Ley 28/2015**: calidad alimentaria y régimen sancionador
 - **Ley 1/2025**: pérdidas y desperdicio alimentario
@@ -141,15 +141,15 @@
 
 # 5. ANÁLISIS SECTORIAL
 
-- **Mundial**: producción de cereales **3.100 Mt** en 2023 (FAO), previsión **3.040 Mt** en 2025. Ratio stocks/utilización **32%**. Volatilidad por clima y guerra de Ucrania
-- **Maíz**: cosecha 2023/24 **1.220 Mt**. EE. UU. y Brasil **42%**
-- **Trigo**: **788,5 Mt**. China 17%, India 14%, Rusia 11%. UE: Francia y Alemania (blando), Italia (duro)
-- **Arroz**: **523 Mt**, previsión **563 Mt** en 2025/26. China, India, Indonesia, Vietnam, Tailandia. UE: Italia ~50%, España ~30%
-- **Cebada**: 5-6% de los cereales. Rusia 14%, Australia 9%, Francia 8%
+- **Mundial**: producción de cereales **3.100 Mt** en 2023 (FAO), previsión **3.040 Mt** en 2025. Ratio stocks/utilización **32 %**. Volatilidad por clima y guerra de Ucrania
+- **Maíz**: cosecha 2023/24 **1.220 Mt**. EEUU y Brasil **42 %**
+- **Trigo**: **788,5 Mt**. China 17 %, India 14 %, Rusia 11 %. UE: Francia y Alemania (blando), Italia (duro)
+- **Arroz**: **523 Mt**, previsión **563 Mt** en 2025/26. China, India, Indonesia, Vietnam, Tailandia. UE: Italia ~50 %, España ~30 %
+- **Cebada**: 5-6 % de los cereales. Rusia 14 %, Australia 9 %, Francia 8 %
 - **Oleaginosas**
   - Colza y mostaza: UE, China, India
-  - Soja: Brasil, EE. UU., Argentina (**80%**)
-  - Girasol: Rusia, Ucrania, Argentina. UE ~20%
+  - Soja: Brasil, EEUU, Argentina (**80 %**)
+  - Girasol: Rusia, Ucrania, Argentina. UE ~20 %
 - **España**
   - Cereales: **5,45 M ha**. Cosecha 2024 **22,53 Mt** (4 t/ha), frente a **10,38 Mt** en 2023 por sequía
   - Cebada dominante (8,7 Mt), trigo blando (7,2 Mt), maíz (3,48 Mt)
@@ -157,12 +157,12 @@
   - Leguminosas grano: Castilla-La Mancha, Castilla y León, Andalucía
 - **Comercio 2025** (DATACOMEX)
   - Déficit: cereales y molinería **>3.500 M€**, semillas **~1.450 M€**
-  - Importaciones: cereales **-11,6%**, semillas **-13,1%**. Exportaciones: cereales **-5,8%**, semillas **+23%**
-  - **Trigo**: exportaciones ~75 M€ (Túnez, Italia, Portugal). Importaciones casi 1.500 M€, **-18%** (Francia, Ucrania, Canadá)
-  - **Maíz**: importaciones ~2.000 M€, el más importado (EE. UU., Francia, Ucrania). Exportaciones 100 M€, **-15%**
-  - **Arroz**: exportaciones 193 M€, **+14,7%**, el más exportado (Portugal, Francia, Reino Unido). Importaciones 260 M€ (Argentina, Myanmar, India)
+  - Importaciones: cereales **-11,6 %**, semillas **-13,1 %**. Exportaciones: cereales **-5,8 %**, semillas **+23 %**
+  - **Trigo**: exportaciones ~75 M€ (Túnez, Italia, Portugal). Importaciones casi 1.500 M€, **-18 %** (Francia, Ucrania, Canadá)
+  - **Maíz**: importaciones ~2.000 M€, el más importado (EEUU, Francia, Ucrania). Exportaciones 100 M€, **-15 %**
+  - **Arroz**: exportaciones 193 M€, **+14,7 %**, el más exportado (Portugal, Francia, Reino Unido). Importaciones 260 M€ (Argentina, Myanmar, India)
   - **Cebada**: exportaciones 22 M€, flujos comunitarios
-  - **Semillas**: exportaciones >990 M€ (destino UE, Emiratos Árabes Unidos). Importaciones >2.500 M€ (Brasil, EE. UU., Francia)
+  - **Semillas**: exportaciones >990 M€ (destino UE, Emiratos Árabes Unidos). Importaciones >2.500 M€ (Brasil, EEUU, Francia)
 
 # 6. CONCLUSIÓN
 

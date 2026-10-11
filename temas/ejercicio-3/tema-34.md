@@ -58,7 +58,7 @@
 - **Capítulo VII**: **sanciones, embargos o uso de la fuerza**
 - Decisiones **obligan a todos** (art. 25). En la UE, medidas restrictivas
 - **15 miembros**
-  - **Cinco permanentes**: China, Estados Unidos, Francia, Reino Unido y Rusia
+  - **Cinco permanentes**: China, EEUU, Francia, Reino Unido y Rusia
   - **Diez no permanentes**: dos años, cinco cada año, sin reelección inmediata
 - **Votación**: procedimiento, nueve votos. Resto, nueve incluidos los cinco permanentes (**veto**). Abstención no es veto
 - **España**: cinco mandatos (último 2015-2016, presidió el Comité 1540)
@@ -155,7 +155,7 @@
   - **Acuerdo de París**: en vigor el 4 de noviembre de 2016, **1,5 °C**, contribuciones cada cinco años
   - COP29: **300.000 millones de dólares anuales para 2035**
   - COP31: Antalya, noviembre de 2026
-  - Estados Unidos fuera desde el 27 de enero de 2026
+  - EEUU fuera desde el 27 de enero de 2026
 
 # 5. OTROS ORGANISMOS INTERNACIONALES: EL CENTRO DE COMERCIO INTERNACIONAL (CCI)
 - Agencia conjunta de la **OMC y la ONU (UNCTAD)**, 1964, Ginebra. Directora Pamela Coke-Hamilton

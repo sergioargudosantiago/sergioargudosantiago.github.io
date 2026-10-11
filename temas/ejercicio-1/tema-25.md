@@ -59,14 +59,14 @@
 - Base de la protección: estatus biológico e impacto del comercio internacional
 
 ## 3.1. Apéndice I
-- Especies **en peligro de extinción** (en torno al **2%**)
+- Especies **en peligro de extinción** (en torno al **2 %**)
 - Comercio internacional **prohibido** con carácter general
   - Excepciones: investigación, cupos de trofeos de caza, cría en cautividad
 - Permisos de **exportación e importación**
   - Sin fines primordialmente comerciales y sin perjuicio para la supervivencia
 
 ## 3.2. Apéndice II
-- Mayoría de especies (en torno al **97%**)
+- Mayoría de especies (en torno al **97 %**)
 - No necesariamente en peligro, pero podrían estarlo sin control estricto
 - Incluye especies **similares**
 - Comercio con permisos válidos por envío
@@ -74,7 +74,7 @@
   - Importación sin permiso salvo legislación nacional
 
 ## 3.3. Apéndice III
-- Especies reguladas por una Parte que requiere la cooperación de las demás (menos del **1%**)
+- Especies reguladas por una Parte que requiere la cooperación de las demás (menos del **1 %**)
 - **Permiso de exportación** si procede del país que la incluyó
 - **Certificado de origen** si procede de otra Parte
 
@@ -135,7 +135,7 @@
 - **Maderas CITES**: también por Marín, Villagarcía de Arosa y Santander, sin emitir documentos CITES
 
 ## 5.3. Verificaciones de Aduanas e Impuestos Especiales
-- Disposición adicional primera RD 986/2021: verificación en frontera por la **AEAT**
+- Disposición adicional primera Real Decreto 986/2021: verificación en frontera por la **AEAT**
 - Funciones
   - Exigir documentación CITES antes del despacho y el DIESAC
   - Diligenciar documentos CITES
@@ -193,5 +193,5 @@
 # 8. CONCLUSIÓN
 - Sistema de **Apéndices y permisos** con red institucional (Secretaría, CoP, autoridades nacionales)
 - Inclusiones crecientes, en especial tiburones, rayas y madera tropical
-- España: RD 986/2021 traslada la Autoridad Administrativa al ámbito medioambiental
+- España: Real Decreto 986/2021 traslada la Autoridad Administrativa al ámbito medioambiental
   - SOIVRE mantiene el **DIESAC**, continuidad ligada a la encomienda (fin a comienzos de **2027**)

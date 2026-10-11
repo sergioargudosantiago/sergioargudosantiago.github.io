@@ -113,11 +113,11 @@
 - **Certificado de conformidad ATP**: ensayos en estaciones autorizadas, validez limitada, marcas distintivas
 
 ## 5.2. El Real Decreto 1202/2005
-- **RD 1202/2005**: extiende el ATP vigente al transporte nacional, sin perjuicio de seguridad alimentaria
+- **Real Decreto 1202/2005**: extiende el ATP vigente al transporte nacional, sin perjuicio de seguridad alimentaria
   - Competencias estatales: bases de planificación económica, sanidad exterior, bases de sanidad, transportes que pasan por varias comunidades
 - Normas UE de higiene: **Reglamento (CE) 852/2004** (vehículos y contenedores) y **Reglamento (CE) 37/2005** (temperaturas de ultracongelados)
 - Mercancías peligrosas: **ADR** (carretera) y **RID** (ferrocarril), **Directiva 2008/68/CE**
-- **RD 237/2000**: especificaciones técnicas de vehículos de temperatura regulada y control de conformidad
+- **Real Decreto 237/2000**: especificaciones técnicas de vehículos de temperatura regulada y control de conformidad
 
 # 6. LA DOCUMENTACIÓN: LA CARTA DE PORTE
 ## 6.1. La carta de porte ferroviaria CIM

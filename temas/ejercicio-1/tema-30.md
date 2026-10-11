@@ -1,13 +1,13 @@
 # 1. INTRODUCCIÓN
 
-- **CITES**: firmada en Washington el **3-3-1973**, en vigor **1-7-1975**
+- **CITES**: firmada en Washington el **3 de marzo de 1973**, en vigor **1 de julio de 1975**
   - 25 artículos, **185 Partes** (184 Estados y la UE, desde julio 2015)
-  - España Parte desde el **16-5-1986** (adhesión)
+  - España Parte desde el **16 de mayo de 1986** (adhesión)
 - **Artículo IX**: cada Parte designa Autoridades Administrativas (expiden permisos y certificados) previa consulta a Autoridades Científicas, y fija Puntos de Introducción Autorizados
 - **12 Servicios de Inspección SOIVRE** autorizados: Vigo, Barcelona, Bilbao, Alicante, Valencia, Sevilla, Málaga, Mallorca, Tenerife, Las Palmas, Algeciras y Madrid
   - El resto de Direcciones son colaboradoras (Badajoz, Almería, Gijón, Irún)
-- **Autoridad Administrativa**: Dirección General de Biodiversidad, Bosques y Desertificación (**MITECO**), según el **Real Decreto 986/2021** (en vigor 2-1-2022), para aplicar el **Reglamento (CE) 338/97**
-  - **Acuerdo de encomienda de gestión** (Resolución 20-1-2023): verificaciones previas al despacho aduanero a cargo de los SOIVRE (Secretaría de Estado de Comercio)
+- **Autoridad Administrativa**: Dirección General de Biodiversidad, Bosques y Desertificación (**MITECO**), según el **Real Decreto 986/2021** (en vigor 2 de enero de 2022), para aplicar el **Reglamento (CE) 338/97**
+  - **Acuerdo de encomienda de gestión** (Resolución 20 de enero de 2023): verificaciones previas al despacho aduanero a cargo de los SOIVRE (Secretaría de Estado de Comercio)
 - **Naturaleza**: adhesión voluntaria, vinculante, **Ley de mínimos**
   - Permite medidas internas más estrictas para Apéndices I, II y III
   - Permite restringir o prohibir comercio de especies no incluidas (**art. XIV**)

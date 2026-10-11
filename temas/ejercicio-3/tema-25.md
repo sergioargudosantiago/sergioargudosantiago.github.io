@@ -2,7 +2,7 @@
 
 - **Política comercial común (PCC)**: Tratado de Roma 1957, hoy **art. 207 TFUE**
   - Competencia **exclusiva** de la Unión (**art. 3.1.e) TFUE**)
-- **Tratado de Lisboa** (en vigor 1-12-2009):
+- **Tratado de Lisboa** (en vigor 1 de diciembre de 2009):
   - Amplía la PCC a servicios, propiedad intelectual y **inversión extranjera directa**
     - **Reglamento (UE) 1219/2012**, transitorio para los acuerdos bilaterales de inversión de los Estados miembros
   - **Procedimiento legislativo ordinario**: Parlamento Europeo en pie de igualdad con el Consejo
@@ -31,7 +31,7 @@
   - Práctica desleal: subvención del Estado exportador, perjuicio **importante**
   - Países y empresas investigados, **5 años** prorrogables
 - Diferencia esencial: antidumping y antisubvención corrigen prácticas **desleales**, la salvaguardia protege frente a un aumento de importaciones **leales**
-- **Datos** (informe anual de la Comisión, 17-9-2026):
+- **Datos** (informe anual de la Comisión, 17 de septiembre de 2026):
   - 2025: **32** nuevas investigaciones (**30** antidumping y **2** antisubvención), casi el récord de **33** de 2024
   - Fin de 2025: **232** medidas en vigor (**220** definitivas), unos **637.000** empleos industriales protegidos
   - Demanda concentrada en **químico** y **siderúrgico**, con foco en **China**
@@ -63,8 +63,8 @@
   - **Exclusión de países en desarrollo** con cuota hasta el **3 %**, y conjunto no superior al **9 %**
 - **Medidas regionales** posibles
 - Casos recientes:
-  - Salvaguardia del **acero** (2019), expiró el **30-6-2026** al llegar a 8 años
-  - Desde el **1-7-2026**, acero bajo régimen específico, **Reglamento (UE) 2026/1384** (sobrecapacidad mundial)
+  - Salvaguardia del **acero** (2019), expiró el **30 de junio de 2026** al llegar a 8 años
+  - Desde el **1 de julio de 2026**, acero bajo régimen específico, **Reglamento (UE) 2026/1384** (sobrecapacidad mundial)
 
 ## 3.3. Legislación aplicable
 

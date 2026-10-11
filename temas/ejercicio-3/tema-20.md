@@ -19,7 +19,7 @@
   - Suspensión de la liberalización si afecta al **orden, seguridad o salud públicos**
 - Titulares: personas físicas no residentes, personas jurídicas domiciliadas en el extranjero, entidades públicas de soberanía extranjera
 - Declaración al **Registro de Inversiones Exteriores**
-  - General: posterior y **estadística**, según **RD 571/2023** y **Orden ECM/57/2024**
+  - General: posterior y **estadística**, según **Real Decreto 571/2023** y **Orden ECM/57/2024**
   - **Jurisdicciones no cooperativas**: declaración cualquiera que sea la cuantía
   - Declaración **previa** si la participación extranjera supera el **50 %** o si son inmuebles
 
@@ -27,7 +27,7 @@
 
 - **Inversión directa**: relación duradera y participación **≥ 10 %** del capital o votos, o control
 - **Inversión de cartera**: por debajo del 10 %
-- **RD 571/2023**: ajuste al concepto internacional, umbral general del 10 %
+- **Real Decreto 571/2023**: ajuste al concepto internacional, umbral general del 10 %
 - Conceptos incluidos
   - Cotizadas e instituciones de inversión colectiva al alcanzar el 10 %
   - Aportaciones de socios al patrimonio
@@ -50,14 +50,14 @@
     - Muy graves: desde **30.000 euros** hasta el **100 %** de la operación
     - Graves: hasta la **mitad**, mínimo **6.000 euros**
     - Leves: hasta un **cuarto**, mínimo **3.000 euros**
-- **RD 571/2023**, inversiones exteriores
+- **Real Decreto 571/2023**, inversiones exteriores
   - Régimen para inversión extranjera en España y otro para la española en el exterior
   - Declaración **ex post**, con declaración previa en ciertas inversiones de jurisdicciones no cooperativas
-  - **RD 867/2025**: Registro en la **SG de Regulación de Inversiones**, control en la **SG de Inversiones Exteriores**, ambas en la **DG de Política Comercial y Seguridad Económica**
+  - **Real Decreto 867/2025**: Registro en la **SG de Regulación de Inversiones**, control en la **SG de Inversiones Exteriores**, ambas en la **DG de Política Comercial y Seguridad Económica**
 - **Escudo antiopas**
   - **Art. 7 bis Ley 19/2003**, por **RDL 8/2020**
   - **Autorización previa** de inversiones directas de residentes fuera de UE y AELC en sectores estratégicos
-  - **RDL 34/2020**: extensión transitoria a residentes UE y AELC, en cotizadas o no cotizadas por más de **500 millones de euros**
+  - **RDL 34/2020**: extensión transitoria a residentes UE y AELC, en cotizadas o no cotizadas por más de **500 M€**
   - Última prórroga por **RDL 1/2025**, hasta el **31 de diciembre de 2026**
 - **Informe de Control 2025**
   - **130** operaciones autorizadas: 116 sin condiciones, 14 con compromisos, **40 %** más que en 2024, sin denegaciones
@@ -78,7 +78,7 @@
 
 # 4. REGISTRO DE INVERSIONES
 
-- **Registro de Inversiones Exteriores**: datos declarados conforme al **RD 571/2023**
+- **Registro de Inversiones Exteriores**: datos declarados conforme al **Real Decreto 571/2023**
   - Participación desde el **10 %** y financiación intragrupo desde **2024**
   - **Reinversión de beneficios**: sin modelo, sale de las memorias anuales
   - **Inmuebles**: más de **500.000 euros** (en España) y **300.000 euros** (en el exterior)
@@ -110,24 +110,24 @@
   - Evolución: transacciones, **efectos de valoración**, otros ajustes
   - España: PIIN **deudora**, muy reducida en la última década
 - **Stock de IED productiva** 2024 (Registro)
-  - **627.795 millones de euros**, **+1,6 %**
+  - **627.795 M€**, **+1,6 %**
   - Orígenes: **EEUU, Alemania, Francia, Reino Unido**
   - Sectores: manufacturas, energía, comercio, servicios financieros
   - Más de **2 millones de empleos**, en torno al **10 %** del total
 - **Flujos 2025**
-  - Total **34.016 millones de euros**, **–20,5 %**
-    - Capital y patrimonio: **31.571 millones** (–12,6 %)
-    - Financiación intragrupo: **2.445 millones** (–63,3 %)
-  - **Inversión productiva**: **30.764 millones** (–21,8 %), **98,6 %** en no cotizadas
+  - Total **34.016 M€**, **-20,5 %**
+    - Capital y patrimonio: **31.571 millones** (-12,6 %)
+    - Financiación intragrupo: **2.445 millones** (-63,3 %)
+  - **Inversión productiva**: **30.764 millones** (-21,8 %), **98,6 %** en no cotizadas
     - Neta en capital y patrimonio: **19.706 millones** (+8,2 %)
-    - Desinversiones: **9.228 millones** (–42,0 %), 51,6 % por liquidación
-  - **Tipo de operación**: nueva aportación **69,8 %** (–33,2 %), adquisiciones **9.281 millones** (+29,1 %)
+    - Desinversiones: **9.228 millones** (-42,0 %), 51,6 % por liquidación
+  - **Tipo de operación**: nueva aportación **69,8 %** (-33,2 %), adquisiciones **9.281 millones** (+29,1 %)
   - **Origen**
     - **EEUU** primer inversor: **32,5 %** (10.009 millones), +55,5 %
-    - Francia 10,6 %, Reino Unido 8,7 % (–78,7 %), Alemania 7,5 %
+    - Francia 10,6 %, Reino Unido 8,7 % (-78,7 %), Alemania 7,5 %
     - Europa **48,9 %** (UE27 35,7 %), resto de América **39,0 %**
   - **Sectores**: servicios **73,1 %** (22.486 millones), industria **22,5 %**
-  - **Comunidades**: **Madrid** 51,9 % (15.970 millones, –40,0 %), **Cataluña** 14,7 %, **Aragón** 11,0 % (+262,9 %, servicios de información)
+  - **Comunidades**: **Madrid** 51,9 % (15.970 millones, -40,0 %), **Cataluña** 14,7 %, **Aragón** 11,0 % (+262,9 %, servicios de información)
   - **6.065** inversores y **8.133** declaraciones
 - 2025 baja desde un nivel muy alto, comparación afectada por la financiación intragrupo
 - **Primer trimestre de 2026**: **+22,6 %**, **6.567 millones**
@@ -143,7 +143,7 @@
     - **Agroalimentación**: distribución e internacionalización
 - **INE, pertenencia a grupos** (2024)
   - **17.898** filiales de empresas extranjeras
-  - Cifra de negocios **851.179 millones de euros**
+  - Cifra de negocios **851.179 M€**
   - **2.561.593** personas ocupadas
   - Industria **41,0 %** de la facturación, **82,9 %** en material de transporte
   - Zona del euro **56,7 %** de la matriz
@@ -165,7 +165,7 @@
 # 8. CONCLUSIÓN
 
 - Stock de IED cercano a **628.000 millones** en 2024
-- Flujos de 2025 **–20,5 %**, **34.016 millones**, desde un nivel muy elevado
+- Flujos de 2025 **-20,5 %**, **34.016 millones**, desde un nivel muy elevado
   - EEUU casi un tercio, mayor peso de Aragón
   - Primeros datos de 2026 apuntan a recuperación
 - Reforzar la **promoción** (ICEX) y mantener el **control** en sectores estratégicos (escudo antiopas hasta finales de 2026)

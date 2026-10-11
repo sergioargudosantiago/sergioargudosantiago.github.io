@@ -58,9 +58,9 @@
 ## 3.3. Principios del sistema comercial de la OMC
 
 - **Comercio sin discriminaciones**
-  - **CNMF**, artículo 1 GATT: igual trato a todos los interlocutores
+  - **CNMF**, art. 1 GATT: igual trato a todos los interlocutores
     - Excepciones: libre comercio, preferencias a países en desarrollo, comercio desleal
-  - **Trato Nacional**, artículo 3 GATT: igual trato a productos nacionales y extranjeros ya entrados
+  - **Trato Nacional**, art. 3 GATT: igual trato a productos nacionales y extranjeros ya entrados
   - Los derechos de aduana no vulneran el principio
 - **Comercio más libre**, gradual y por negociación
   - Reducción de aranceles, prohibiciones y contingentes
@@ -79,14 +79,14 @@
 - Más de **40.900 especies** protegidas (CoP19 Panamá 2022, CoP20 Samarkanda 2025)
 - Tres Apéndices (**artículo II**), según estatus biológico e impacto del comercio
   - Regulación en artículos **III, IV y V**
-- **Apéndice I**: en peligro de extinción (~**2%**)
+- **Apéndice I**: en peligro de extinción (~**2 %**)
   - Comercio prohibido con carácter general
   - Excepciones: investigación científica, cupos de trofeos de caza, cría en cautividad
   - Permisos de exportación **e** importación, sin fines primordialmente comerciales y sin perjuicio para la especie
-- **Apéndice II**: mayoría (~**97%**), podrían estarlo si no se controla, incluye especies "similares"
+- **Apéndice II**: mayoría (~**97 %**), podrían estarlo si no se controla, incluye especies "similares"
   - Solo permiso de exportación o certificado de reexportación
   - Permiso de importación solo si lo exige la legislación nacional
-- **Apéndice III**: regulación unilateral de una Parte con cooperación de otras (<**1%**)
+- **Apéndice III**: regulación unilateral de una Parte con cooperación de otras (<**1 %**)
   - Permiso de exportación del país que la incluyó, o certificado de origen de otro Estado Parte
 
 ## 4.2. Efecto sobre la legislación nacional (artículo XIV)
@@ -156,7 +156,7 @@
     - Marfil: solo cuatro Partes pueden exportar colmillos de elefante
 - **CoP10 Harare (1997)**: Zimbabue alegó violación del art. 11 GATT por la prohibición sobre *Loxodonta africana*
   - Resultado: elefantes de Zimbabue, Namibia y Botsuana pasan al Apéndice II
-- **Artículo 20 GATT**: excepciones de salud, vida animal o vegetal y recursos naturales agotables
+- **Art. 20 GATT**: excepciones de salud, vida animal o vegetal y recursos naturales agotables
   - Medida necesaria solo si no hay alternativa menos restrictiva
 - **CoP9 Fort Lauderdale (1994)**: **principio de precaución** de la Declaración de Río
   - En caso de duda, las Partes actúan en interés de preservar la especie

@@ -82,7 +82,7 @@
 ## 3.4. Aplicación en España
 - **Real Decreto 562/2025**, complementa el 2017/625
   - Digitalización, controles a distancia, Comisión Nacional de Coordinación del PNCOCA
-  - Deroga el RD 1749/1998 y, de forma general, el RD 1945/1983
+  - Deroga el Real Decreto 1749/1998 y, de forma general, el Real Decreto 1945/1983
 - **Ley 17/2011**, derecho a la seguridad alimentaria, Red de Laboratorios
 - **Real Decreto 49/1993**, controles veterinarios intracomunitarios, control en destino por CCAA
 - **Real Decreto 1977/1999**, controles veterinarios a la importación de origen animal, **PCF**

@@ -1,6 +1,6 @@
 # 1. INTRODUCCIÓN
 
-- **Frutas** 2025: **11.917,8 M€** (+9,7%), **15,5%** de las exportaciones agroalimentarias
+- **Frutas** 2025: **11.917,8 M€** (+9,7 %), **15,5 %** de las exportaciones agroalimentarias
   - Cítricos: superávit **> 3.300 M€**, exportaciones al alza
 - **GTISA** (Grupo de Trabajo para la Internacionalización del Sector Agroalimentario), presidido por la Secretaría General de Agricultura y Alimentación del MAPA
   - Siete grupos, uno de frutas y hortalizas: barreras, mercados, coordinación, dimensión empresarial, promoción
@@ -80,7 +80,7 @@
 - Índices objetivos: firmeza, color, **grados Brix**, acidez y relación azúcares/acidez, almidón, materia seca
   - Solo son legales si la norma los fija (Brix en kiwi y uva de mesa)
 - Madurez en cítricos: **zumo mínimo**, **relación azúcares/ácidos**, coloración típica
-  - **20%** de zumo en limones, **6,5:1** en naranjas
+  - **20 %** de zumo en limones, **6,5:1** en naranjas
   - **Desverdizado** admitido, con indicación de conservantes poscosecha
 - Tres ámbitos distintos de aptitud
   - **Calidad comercial**: categoría, calibre, defectos, madurez, marcado
@@ -112,7 +112,7 @@
 - Cinco pilares
   - **Normas de comercialización**: Reglamento Delegado **2023/2429** (sustituyó al 543/2011) y Reglamento de Ejecución **2023/2430** (controles de conformidad)
     - Base CEPE/ONU (WP.7). Esquema: definición, calidad, calibrado, tolerancias, presentación, marcado
-    - Controles en todas las fases y a terceros países (normas UE o equivalentes). **RD 175/2004**: autoridad coordinadora
+    - Controles en todas las fases y a terceros países (normas UE o equivalentes). **Real Decreto 175/2004**: autoridad coordinadora
   - **Organizaciones de productores (OP)**: concentran oferta, planifican, reducen costes
     - Programas operativos con fondo operativo, intervención sectorial del PEPAC
   - **Organizaciones interprofesionales**: art. 157 del Reglamento 1308/2013 y **Ley 38/1994**
@@ -131,7 +131,7 @@
   - Normas para naranja, pomelo y lima
 - Regímenes voluntarios
   - **Producción controlada**: normas **UNE 155000**, comité CTN 155, certificable por AENOR
-  - **Producción integrada**: **RD 1201/2002**, desarrollo autonómico, logotipo por **Orden APA/1/2004**
+  - **Producción integrada**: **Real Decreto 1201/2002**, desarrollo autonómico, logotipo por **Orden APA/1/2004**
   - **Producción ecológica**: **Reglamento (UE) 2018/848**, desde 1 de enero de 2022
     - Importaciones: conformidad, con equivalencia en acuerdos comerciales y transitoria
     - **COI** electrónico en TRACES: **Reglamento Delegado (UE) 2021/2306** y de Ejecución **2021/2307**
@@ -149,9 +149,9 @@
   - **(CE) 396/2005**: LMR de plaguicidas
   - **(UE) 2023/915**: contaminantes
   - **(UE) 1169/2011**: información al consumidor
-  - **(UE) 2017/625**: controles oficiales, en España **RD 562/2025**
+  - **(UE) 2017/625**: controles oficiales, en España **Real Decreto 562/2025**
   - **Ley 28/2015**: calidad alimentaria, régimen sancionador común
-  - **(UE) 2025/40** (envases, aplicable desde agosto de 2026) y **RD 1055/2022**
+  - **(UE) 2025/40** (envases, aplicable desde agosto de 2026) y **Real Decreto 1055/2022**
   - **Ley 1/2025**: pérdidas y desperdicio alimentario
 - **Orden PRE/3026/2003**: inspección de calidad comercial del **SOIVRE**
   - Anexo sustituido por **Orden ECM/1002/2026**, de 9 de septiembre, para adaptarlo a los Reglamentos 2023/2429 y 2023/2430
@@ -170,18 +170,18 @@
   - Limones y limas: India, México, China, Argentina, Turquía
   - Pomelos: China, Vietnam, EEUU, México, Sudáfrica
 - **Zonas en España**: de Tarragona a Huelva
-  - Levante y Andalucía. Comunidad Valenciana: **70%** de la exportación
+  - Levante y Andalucía. Comunidad Valenciana: **70 %** de la exportación
   - 2025: **3.697,8 M€** y **3.022.243 t**
   - Naranja: Comunitat Valenciana y Andalucía. Mandarina: C. Valenciana, clementinas. Limón: Murcia. Pomelo: Murcia
 - **Competidores**
   - Marruecos (tardías), Egipto (naranja, precio), Turquía (satsumas, limones, pomelos), Israel, Grecia, Italia
   - Hemisferio sur (Sudáfrica) solapa inicio y final de campaña
 - **Comercio 2025**
-  - Cítricos: **31,0%** de las exportaciones de frutas (antes en torno al 35%)
-  - **UE 86,4%**: Alemania, Francia, Países Bajos. Reino Unido entre terceros
-  - Caídas: Canadá **-39,1%**, EEUU **-76%**, China **-66%**
-  - Estructura: naranjas 33,5% en valor y 42,4% en volumen, mandarinas 33,8% y 38,5% (clementinas ~70%), limones 25,5% y 21,1%, pomelos 2,3% en valor
-  - Limón: Alemania 38,2%, Francia 19,5%, Reino Unido 7,8%
+  - Cítricos: **31,0 %** de las exportaciones de frutas (antes en torno al 35 %)
+  - **UE 86,4 %**: Alemania, Francia, Países Bajos. Reino Unido entre terceros
+  - Caídas: Canadá **-39,1 %**, EEUU **-76 %**, China **-66 %**
+  - Estructura: naranjas 33,5 % en valor y 42,4 % en volumen, mandarinas 33,8 % y 38,5 % (clementinas ~70 %), limones 25,5 % y 21,1 %, pomelos 2,3 % en valor
+  - Limón: Alemania 38,2 %, Francia 19,5 %, Reino Unido 7,8 %
 - **Protocolos fitosanitarios** bilaterales por la mosca mediterránea
   - EEUU (USDA): tratamiento de frío durante el transporte. Similares en China, Japón y Corea del Sur
 - **Importaciones**: Sudáfrica, Marruecos, Argentina, Egipto, Perú, Brasil, Portugal, Países Bajos

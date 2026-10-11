@@ -19,7 +19,7 @@
   - **Pasteurizada**: LTLT 63ºC 30 min o HTST 72ºC 15-30 s. Vida unas 72 horas
   - **Esterilizada**: 115-120ºC 15-20 min. Vida de meses, cambia color y sabor
   - **UHT**: 135-150ºC 1-4 s. Vida de meses, sustituye a la esterilización
-- **Real Decreto 1054/2003** (mod. **RD 1472/2008**): leche conservada o deshidratada
+- **Real Decreto 1054/2003** (mod. **Real Decreto 1472/2008**): leche conservada o deshidratada
   - **Evaporada**: según materia grasa y extracto seco (rica en grasa >15 % MG, desnatada <1 %)
   - **Condensada**: con sacarosa (entera >8 % MG)
   - **En polvo**: rica en grasa >42 % MG, desnatada <1,5 %
@@ -50,7 +50,7 @@
 
 ## 2.6. Queso
 
-- Separación del suero tras coagulación con cuajo. **Real Decreto 1113/2006** (mod. **RD 818/2015**), quesos y quesos fundidos
+- Separación del suero tras coagulación con cuajo. **Real Decreto 1113/2006** (mod. **Real Decreto 818/2015**), quesos y quesos fundidos
 - Por maduración
   - **Frescos**: humedad máx. 80 %, grasa mín. 4 %
   - **Maduros**: pasta blanda (humedad 50-60 %), prensada (cocida o no), hilada, rallados o en polvo
@@ -110,26 +110,26 @@
 - **Producción controlada**: normas UNE de AENOR (AEN/CTN 155)
 - **Producción ecológica**: **Reglamento (UE) 2018/848**, terceros países cumplen estándares UE desde 2023
   - SOIVRE controla importaciones ecológicas (**Orden ECC/1936/2014**)
-- **Producción integrada**: **RD 1201/2002**, logotipo (**Orden APA/1/2004**)
+- **Producción integrada**: **Real Decreto 1201/2002**, logotipo (**Orden APA/1/2004**)
 - **DOP, IGP, ETG**: **Reglamento (UE) 2024/1143**. **Ley 6/2015**: AICA controla comercialización
   - DOP lácteas: Cabrales, Manchego, Idiazábal, Tetilla, La Serena
 - Buenas prácticas ganaderas: GLOBALG.A.P., SQF, Tesco Nurture, Carrefour Quality Lines
 
 ## 4.4. Normativa específica del sector lácteo
 
-- **RD 1472/2008** (leche conservada), **RD 1113/2006** (quesos), **RD 271/2014** (yogur), **Reglamento (CE) 445/2007** (materias grasas para untar)
-- **RD 1181/2018**: origen de la leche en el etiquetado
+- **Real Decreto 1472/2008** (leche conservada), **Real Decreto 1113/2006** (quesos), **Real Decreto 271/2014** (yogur), **Reglamento (CE) 445/2007** (materias grasas para untar)
+- **Real Decreto 1181/2018**: origen de la leche en el etiquetado
 - **Reglamento (UE) 2019/6**: medicamentos veterinarios, resistencia antimicrobiana, prohíbe antibióticos preventivos sistemáticos
 - **Reglamento Delegado (UE) 2024/1141**: higiene (anexos II y III del 853/2004), sigla UE en el marcado
 - SOIVRE (**Orden PRE/3026/2003**, mod. **ECC/2257/2013** y **ECC/2566/2015**) no controla la calidad comercial de lácteos
 
 ## 4.5. Normativa general
 
-- **RD 175/2004**: autoridad de controles de conformidad (Secretaría de Estado de Comercio)
+- **Real Decreto 175/2004**: autoridad de controles de conformidad (Secretaría de Estado de Comercio)
 - **Reglamento (CE) 396/2005**: límites de residuos de plaguicidas
 - **Reglamento (UE) 2023/915**: contaminantes
 - **Reglamento (UE) 1169/2011**: información al consumidor
-- **RD 1055/2022**: envases
+- **Real Decreto 1055/2022**: envases
 - Higiene: **Reglamentos (CE) 852 y 853/2004**, **(UE) 2017/625** (controles oficiales)
 - **Ley 28/2015**: calidad alimentaria y sanciones
 - **Ley 1/2025**: desperdicio alimentario

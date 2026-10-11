@@ -40,8 +40,8 @@
   - **Letras o pagarés** aceptados por el importador
   - **Convenio de crédito** con la entidad para el descuento
 - **Reparto financiero (Consenso OCDE)**
-  - Importador abona anticipadamente al menos el **15%**
-  - Banco financia el **85%** restante al exportador
+  - Importador abona anticipadamente al menos el **15 %**
+  - Banco financia el **85 %** restante al exportador
   - Reembolso del importador al vencimiento
 - **Ventajas**
   - **Cobro al contado** de las exportaciones a plazo
@@ -49,7 +49,7 @@
   - Competir con financiación y plazo ventajosos
 - **Póliza de Crédito Suministrador de CESCE**
   - Descuento de derechos de cobro, con el banco como **beneficiario**
-  - Cobertura máxima **99%** en riesgos comerciales y **99%** en políticos y extraordinarios
+  - Cobertura máxima **99 %** en riesgos comerciales y **99 %** en políticos y extraordinarios
 
 # 4. EL CRÉDITO COMPRADOR
 - **Concepto**
@@ -59,7 +59,7 @@
 - **Mecánica**
   - Aprueba la operación la **agencia de seguro de crédito** (CESCE, **Bpifrance Assurance Export**)
   - El banco aprueba el riesgo no asegurado
-  - El importador firma el **convenio de crédito** y abona al menos el **15%** con fondos propios
+  - El importador firma el **convenio de crédito** y abona al menos el **15 %** con fondos propios
   - La entidad paga al exportador por cuenta del importador, que queda como deudor
 - **Apoyo oficial concreto**
   - Cobertura de riesgos por **CESCE**
@@ -81,7 +81,7 @@
   - No hay entidad supervisora
 - **Póliza de Crédito Comprador de CESCE**
   - Garantiza a la entidad el **reembolso** en caso de impago
-  - Máximo **99%** en riesgos comerciales y **99%** en políticos y extraordinarios
+  - Máximo **99 %** en riesgos comerciales y **99 %** en políticos y extraordinarios
   - Habitual el **CARI** del ICO
 
 # 5. EL CONSENSO OCDE
@@ -101,11 +101,11 @@
     - Hasta **22 años** para renovables, hidrógeno y amoníaco limpios, captura y almacenamiento de CO2, transporte de bajas emisiones y minerales críticos
     - Centrales de **combustibles fósiles**: máximo **12 años**
 - **Tipos de créditos**
-  - **Concesionales**: países bajo cierto umbral de renta del Banco Mundial, elemento mínimo de **donación del 35%** (**50%** en países menos avanzados)
+  - **Concesionales**: países bajo cierto umbral de renta del Banco Mundial, elemento mínimo de **donación del 35 %** (**50 %** en países menos avanzados)
   - **Comerciales**
     - Para empresas: bienes, servicios o refinanciación de deudas a corto plazo
     - Plazo máximo **15 años**, hasta **22** con CCSU
-    - **Pago al contado del 15%**
+    - **Pago al contado del 15 %**
     - **Tipos fijos** y cuotas **semestrales**, con perfiles flexibles tras la reforma de 2023
 - **Sostenibilidad**
   - Consejo de la UE (marzo de 2022): plazos para poner fin al apoyo a proyectos de **combustibles fósiles**, salvo excepciones compatibles con **1,5 ºC**
@@ -119,13 +119,13 @@
 - **Línea ICO Internacional**
   - Autónomos, emprendedores y empresas en España o en el extranjero (con capital español mínimo)
   - Inversión, liquidez o gastos fuera de España
-  - Hasta **12,5 millones de euros** por cliente
+  - Hasta **12,5 M€** por cliente
   - Préstamo, leasing, renting o línea de crédito, tipo **fijo o variable**
   - Amortización de **1 a 20 años**, hasta **3 años de carencia**
 - **Línea ICO Exportadores**
   - Autónomos, emprendedores y empresas con **domicilio social en España**
   - **Anticipo de facturas** o **costes previos de fabricación**
-  - Hasta **12,5 millones de euros** de saldo vivo por cliente y año, tipo **variable**
+  - Hasta **12,5 M€** de saldo vivo por cliente y año, tipo **variable**
 - **Línea ICO Canal Internacional**
   - Empresas y entidades con **interés español**, vía **entidad financiera internacional** o local con acuerdo con el ICO
   - **Sin límite** de importe
@@ -167,7 +167,7 @@
   - **Forfaiting**
 
 ## 7.1. Condiciones para el Crédito CARI
-- **Pago al contado** de al menos el **15%** del importe elegible, crédito de hasta el **85%**
+- **Pago al contado** de al menos el **15 %** del importe elegible, crédito de hasta el **85 %**
 - Importe financiable: determinados **bienes y servicios españoles y extranjeros**, gastos locales y comisiones
 - **Plazo máximo general de 15 años**, hasta **22** con CCSU
 - Tipo de interés según el **CIRR** correspondiente

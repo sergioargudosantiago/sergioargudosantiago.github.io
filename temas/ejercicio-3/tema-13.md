@@ -141,7 +141,7 @@
   - La empresa selecciona el activo y sus condiciones
   - La arrendadora (entidad de crédito o establecimiento financiero de crédito) lo adquiere y lo cede por contrato
   - Se fijan cuotas y, en su caso, opción de compra
-- **Régimen fiscal**: **artículo 106 de la Ley 27/2014** del Impuesto sobre Sociedades
+- **Régimen fiscal**: **art. 106 de la Ley 27/2014** del Impuesto sobre Sociedades
   - Arrendador: entidad de crédito o establecimiento financiero de crédito
   - Duración mínima: **2 años** muebles, **10 años** inmuebles o establecimientos industriales
   - Deducción de la carga financiera y, con límites, de la parte de cuota que recupera el coste del bien
@@ -164,7 +164,7 @@
   - Menor desembolso inicial
   - Facilita renovar equipos
   - Adquisición mediante opción de compra
-  - Régimen fiscal del artículo 106
+  - Régimen fiscal del art. 106
 - **Inconvenientes**
   - Coste financiero
   - Obligación de pagar cuotas

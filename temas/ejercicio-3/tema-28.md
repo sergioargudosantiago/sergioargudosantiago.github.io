@@ -161,11 +161,11 @@
   - 27 noviembre 2025: jabalíes de Cerdanyola del Vallès, primera detección desde 1994
   - Aceptaron regionalización China, Corea del Sur y Reino Unido (Filipinas en mayo de 2026)
   - Japón, México y Taiwán suspendieron todo el país
-  - Caída de unos 350 millones de euros en exportaciones a Japón y México en el primer semestre de 2026 (ANICE)
+  - Caída de unos 350 M€ en exportaciones a Japón y México en el primer semestre de 2026 (ANICE)
   - Ejemplo del art. 6
 - **Rusia: Porcino**
   - Prohibición de 2014 a toda la UE, incumple el Acuerdo (regionalización): grupo especial 2016, Órgano de Apelación 2017
-  - UE pidió suspender concesiones por unos 1.390 millones de euros anuales (diciembre de 2017)
+  - UE pidió suspender concesiones por unos 1.390 M€ anuales (diciembre de 2017)
 - **Cítricos (Sudáfrica frente a la UE)**
   - Mancha negra y polilla de la falsa manzana
   - **DS613** (2022) y **DS624** (2024), grupos especiales en julio de 2024

@@ -123,7 +123,7 @@
 - **Principal riesgo**: anulación o modificación del pedido
   - Se valora la **firmeza del pedido** y se exige **aval** o **seguro de crédito**
   - **CESCE**: cobertura en pólizas de **crédito suministrador**
-- **Línea ICO Exportadores**: anticipo de facturas y prefinanciación de costes, hasta **12,5 millones de euros** por cliente y año
+- **Línea ICO Exportadores**: anticipo de facturas y prefinanciación de costes, hasta **12,5 M€** por cliente y año
   - Se cancela la prefinanciación ICO antes de anticipar las facturas de esos bienes
 
 # 7. CONCLUSIÓN

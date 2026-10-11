@@ -13,24 +13,24 @@
 
 - Desarrollo normativo: **SG de Calidad y Seguridad Industrial** del MINTUR
 - **Ley 21/1992, de Industria**: adapta la actividad industrial a la UE y al Mercado Único
-- **RD 559/2010**: Reglamento del Registro Integrado Industrial (RII)
-- **RD 1072/2015**: Infraestructura para la Calidad y la Seguridad Industrial
+- **Real Decreto 559/2010**: Reglamento del Registro Integrado Industrial (RII)
+- **Real Decreto 1072/2015**: Infraestructura para la Calidad y la Seguridad Industrial
   - **AENOR** normalización, **ENAC** acreditación
-- **RD 1468/1988**: etiquetado, presentación y publicidad de productos industriales sin normativa específica
+- **Real Decreto 1468/1988**: etiquetado, presentación y publicidad de productos industriales sin normativa específica
   - Etiquetado real, veraz y fácil de entender
   - Datos mínimos: denominación, composición, plazo de uso, contenido neto, características, lote, empresa, origen, alérgenos y, si procede, potencia, tensión y consumo
   - Exportaciones a terceros países que no cumplan: identificadas
-- **RD 1406/1989**: limita sustancias (benceno, amianto, dimetilfumarato, pentaclorofenol) y prohíbe termómetros de mercurio desde 2009
-- **RD 330/2008**: control de importaciones en seguridad a partir de alertas RAPEX
+- **Real Decreto 1406/1989**: limita sustancias (benceno, amianto, dimetilfumarato, pentaclorofenol) y prohíbe termómetros de mercurio desde 2009
+- **Real Decreto 330/2008**: control de importaciones en seguridad a partir de alertas RAPEX
   - **SOIVRE** (Direcciones Territoriales y Provinciales de Comercio) controla la conformidad antes del despacho
   - Lista de productos en la **Orden PJC/161/2026**: drones, puericultura, textil, calzado, juguetes, ciertos EPIs, pequeño material eléctrico, determinados muebles y derivados de madera
-- **RD 993/2022**: control SOIVRE de AEEs en RoHS y en obligaciones del RII de AEEs, pilas y acumuladores de terceros países
+- **Real Decreto 993/2022**: control SOIVRE de AEEs en RoHS y en obligaciones del RII de AEEs, pilas y acumuladores de terceros países
 - **Reglamento (CE) 765/2008**: acreditación y marcado CE (directivas de Nuevo Enfoque)
   - Vigilancia de mercado sustituida por el **Reglamento (UE) 2019/1020** (poderes de las AVM, controles de terceros países)
 - **Reglamento (UE) 2019/515**: reconocimiento mutuo
 - **Decisión 768/2008/CE**: marco común, base del Nuevo Marco Legislativo
-- **Reglamento (UE) 2023/988 (RGSP)**: deroga la Directiva 2001/95/CE (RD 1801/2003 sin efecto autónomo)
-  - Aplicable desde el **13-12-2024**, seguridad general de productos
+- **Reglamento (UE) 2023/988 (RGSP)**: deroga la Directiva 2001/95/CE (Real Decreto 1801/2003 sin efecto autónomo)
+  - Aplicable desde el **13 de diciembre de 2024**, seguridad general de productos
   - Refuerza **Safety Gate** (sustituye a RAPEX) y obligaciones de mercados en línea
 - **Reglamento (CE) 1907/2006 REACH**: restricciones (Anexo XVII) y creación de la **ECHA**
 - **Reglamento (UE) 2023/2411**: indicaciones geográficas de productos artesanales e industriales, aplicable desde 2025
@@ -57,17 +57,17 @@
 
 - Sin directiva específica de producto, normativa general y normas técnicas **AENOR**
 - **Reglamento (UE) 2023/988**: marco transversal de seguridad, deberes de operadores y plataformas
-  - **RD 1801/2003**: sin efecto jurídico autónomo
-- **RD 330/2008 y Orden PJC/161/2026**: muebles y madera sujetos a control SOIVRE
+  - **Real Decreto 1801/2003**: sin efecto jurídico autónomo
+- **Real Decreto 330/2008 y Orden PJC/161/2026**: muebles y madera sujetos a control SOIVRE
   - Orden PRE/735/2010 derogada y CONFEMADERA sin actividad
-- **RD 841/1985**: tableros de partículas y contrachapados
-  - **Reglamento (UE) 2023/1464** (REACH, Anexo XVII): formaldehído de clase E1 (**0,124 mg/m³**) a E05 (**0,062 mg/m³**), aplicable desde el **6-8-2026**
+- **Real Decreto 841/1985**: tableros de partículas y contrachapados
+  - **Reglamento (UE) 2023/1464** (REACH, Anexo XVII): formaldehído de clase E1 (**0,124 mg/m³**) a E05 (**0,062 mg/m³**), aplicable desde el **6 de agosto de 2026**
 - **Reglamento (UE) 412/2012**: límites de dimetilfumarato (DMF)
 - **EUDR** (trazabilidad) y **ESPR** (requisitos por actos delegados)
 
 ## 2.3. Etiquetado de muebles importados
 
-- Según RD 330/2008 y Orden PJC/161/2026:
+- Según Real Decreto 330/2008 y Orden PJC/161/2026:
   - Nombre o razón social y dirección postal del importador
   - Referencia del modelo, trazable en factura
   - Cunas, moisés, tronas, literas: norma de cumplimiento y advertencias
@@ -94,7 +94,7 @@
 
 ## 2.5. Inspección en frontera
 
-- Procedimiento del RD 330/2008
+- Procedimiento del Real Decreto 330/2008
   - Notificación telemática del importador a la DT o DP Comercio con antelación
   - Análisis de riesgo automatizado de la Secretaría de Estado de Comercio decide control documental o físico, previo al despacho
 - Calificación:
@@ -113,8 +113,8 @@
   - **Línea blanca**: frío, lavado, cocción, climatización, impulsada por el encastre
   - **Electrónica de consumo (línea marrón)**: televisores, audio y vídeo, cámaras, instrumentos musicales, con pantalla plana, 4K/8K, streaming, smart home
   - **PAE** (pequeño aparato electrodoméstico): mantenimiento del hogar, preparación de alimentos, higiene y belleza
-- **RD 993/2022**: inspección SOIVRE en frontera (RoHS/RAEE)
-  - Control físico de AEEs: etiquetado y ausencia de sustancias restringidas (RD 219/2013)
+- **Real Decreto 993/2022**: inspección SOIVRE en frontera (RoHS/RAEE)
+  - Control físico de AEEs: etiquetado y ausencia de sustancias restringidas (Real Decreto 219/2013)
   - Control documental
   - Control de inscripción en el RII y declaraciones trimestrales
 - Producción mundial: UE, EEUU y Japón, con China emergente en línea marrón y PAE
@@ -140,11 +140,11 @@
   - **ESPR**: durabilidad, reparabilidad, actualizabilidad del software, material reciclado, DPP
   - **Plan RENOVE de Electrodomésticos** (MINCOTUR/IDAE y CCAA): sustituir 2 millones de unidades por clase A o superior
 - **Residuos y sustancias peligrosas**
-  - **RD 110/2015** RAEE: transpone la Directiva 2012/19/UE
-  - **Directiva 2011/65/UE RoHS y RD 219/2013**: plomo y mercurio máx. **0,1 %**, cadmio máx. **0,01 %**
+  - **Real Decreto 110/2015** RAEE: transpone la Directiva 2012/19/UE
+  - **Directiva 2011/65/UE RoHS y Real Decreto 219/2013**: plomo y mercurio máx. **0,1 %**, cadmio máx. **0,01 %**
 - **Compatibilidad electromagnética y baja tensión**
-  - **Directiva 2014/35/UE** Baja Tensión (RD 187/2016)
-  - **Directiva 2014/30/UE** CEM (RD 186/2016)
+  - **Directiva 2014/35/UE** Baja Tensión (Real Decreto 187/2016)
+  - **Directiva 2014/30/UE** CEM (Real Decreto 186/2016)
 
 # 4. OTROS BIENES DE CONSUMO DURADERO
 
@@ -172,7 +172,7 @@
 - **RGSP (UE 2023/988)**: bicicletas, relojes y joyería
 - **ESPR**: durabilidad y reparabilidad de e-bikes por actos delegados
 - **REACH**: cadmio, plomo y níquel en joyería
-- **RD 197/1988**: metales preciosos, marcaje, contraste y trazabilidad
+- **Real Decreto 197/1988**: metales preciosos, marcaje, contraste y trazabilidad
 
 # 5. CONCLUSIÓN
 

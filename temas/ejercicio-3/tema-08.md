@@ -87,14 +87,14 @@
     - Aprobado por el Consejo de Ministros en 2025
     - Grupo CESCE mantiene el **49 %**
 - **Datos de 2025**
-  - Beneficio consolidado: **92,7 millones de euros**
-  - Cuenta del Estado: máximo histórico de **6.300 millones de euros** de seguro emitido
-  - Operaciones apoyadas: **24.500 millones de euros**
+  - Beneficio consolidado: **92,7 M€**
+  - Cuenta del Estado: máximo histórico de **6.300 M€** de seguro emitido
+  - Operaciones apoyadas: **24.500 M€**
 - **Plan Estratégico 2026-2029, «Innovar para crecer»**: **pymes** en el centro, flexibilidad, digitalización y proximidad territorial
 - **Primer semestre de 2026**
-  - **3.392 millones de euros** por Cuenta del Estado, **+34 %**
-  - Operaciones apoyadas: unos **14.400 millones de euros**
-- **Ucrania**: en **julio de 2026** el riesgo asumible por cuenta del Estado pasa de **30 a 250 millones de euros**, en coherencia con el apoyo vía **FIEM**
+  - **3.392 M€** por Cuenta del Estado, **+34 %**
+  - Operaciones apoyadas: unos **14.400 M€**
+- **Ucrania**: en **julio de 2026** el riesgo asumible por cuenta del Estado pasa de **30 a 250 M€**, en coherencia con el apoyo vía **FIEM**
 
 # 4. PRINCIPALES MODALIDADES DE PÓLIZA OFRECIDAS POR CESCE
 
@@ -107,7 +107,7 @@
 - Soluciones para **carteras completas** o **deudores concretos**
 - **Modalidades**
   - **Póliza Máster Oro Integral**: impago de todas las exportaciones a crédito, sin cifra mínima de contratación
-  - **Póliza CESCE Fácil**: **pymes** con facturación de hasta **5 millones de euros**, cubre operaciones con España y otros **34 países**
+  - **Póliza CESCE Fácil**: **pymes** con facturación de hasta **5 M€**, cubre operaciones con España y otros **34 países**
   - **Póliza Industrial**: contrato y proyecto específicos, plazos de ejecución de hasta **36 meses**
   - Otras: **Clásica**, **Máster Flexible**, **Quantum Servicios**, **Factura Segura Exprés**, **Deudor Seguro Exprés**
 
@@ -159,5 +159,5 @@
 - La cobertura estatal protege a **exportadores, inversores y entidades financieras** frente a riesgos comerciales, políticos y extraordinarios
 - Atiende operaciones que por naturaleza, duración o complejidad pueden requerir apoyo público
 - Mejora la capacidad de competir de las empresas españolas en los mercados exteriores
-- **Evolución reciente**: máximo de **6.300 millones de euros** en 2025, expansión en 2026 y **Plan Estratégico 2026-2029**
+- **Evolución reciente**: máximo de **6.300 M€** en 2025, expansión en 2026 y **Plan Estratégico 2026-2029**
 - Complementa al **crédito oficial**, las **líneas ICO** y el **FIEM**

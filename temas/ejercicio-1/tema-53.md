@@ -18,7 +18,7 @@
   - **Acuerdo OTC/TBT de la OMC**: no discriminación, transparencia, normas internacionales
 - **MLA** (Acuerdos Multilaterales de Reconocimiento) en **EA**, **ILAC** e **IAF**: «evaluado una vez, aceptado en todas partes»
 - **MRA** (Acuerdos de Reconocimiento Mutuo) entre gobiernos
-  - Ejemplos: UE con EE. UU., Canadá, Japón, Australia, Nueva Zelanda, Suiza, Israel
+  - Ejemplos: UE con EEUU, Canadá, Japón, Australia, Nueva Zelanda, Suiza, Israel
   - Sectores: productos sanitarios, telecomunicaciones, embarcaciones de recreo
 - **Reglamento (CE) 765/2008**: un único **Organismo Nacional de Acreditación** por Estado miembro, público y sin ánimo de lucro
   - COFRAC, DAkkS, ACCREDIA, ENAC
@@ -27,7 +27,7 @@
 ## 2.1. Regulación en España
 - **Ley 21/1992 de Industria**, Título III, infraestructura para la calidad y la seguridad industrial
 - **Real Decreto 2200/1995**, Reglamento de la Infraestructura para la Calidad y la Seguridad Industrial
-  - Modificado por **RD 338/2010**, **RD 1072/2015**, **RD 145/2023** y **RD 164/2025**
+  - Modificado por **Real Decreto 338/2010**, **Real Decreto 1072/2015**, **Real Decreto 145/2023** y **Real Decreto 164/2025**
 - **UNE**: único organismo nacional de normalización
   - Separación en 2017 de la antigua **AENOR**, centrada en certificación (**AENOR Internacional**)
 - **ENAC**: único ONA en España
@@ -39,7 +39,7 @@
   - Acredita verificadores medioambientales (**EMAS**, derechos de emisión) y de informes de sostenibilidad
 
 # 3. ENAC
-- Auspiciada y tutelada por la Administración, conforme a Ley 21/1992 y RD 2200/1995
+- Auspiciada y tutelada por la Administración, conforme a Ley 21/1992 y Real Decreto 2200/1995
   - Privada, independiente, de **utilidad pública**, sin ánimo de lucro
   - Coordina un sistema de acreditación **único** según criterios internacionales
 - Acredita a todos los **OEC** (organismos de evaluación de la conformidad), sin distinción de sector, tamaño o titularidad
@@ -159,6 +159,6 @@
 - Certificación y acreditación son complementarias
   - Certificación: el producto, proceso o sistema cumple requisitos
   - Acreditación: la entidad evaluadora es competente, independiente e imparcial
-- ENAC, único ONA: Ley 21/1992, RD 2200/1995 y Reglamento (CE) 765/2008
+- ENAC, único ONA: Ley 21/1992, Real Decreto 2200/1995 y Reglamento (CE) 765/2008
 - **Global ACI** a escala mundial y **EA** en el Mercado Único
 - SOIVRE: acreditación de su Red de Laboratorios (**ISO/IEC 17025**) y unidades de inspección (**ISO/IEC 17020**) refuerza rigor, reconocimiento internacional y seguridad jurídica

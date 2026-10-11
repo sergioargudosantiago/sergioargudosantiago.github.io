@@ -16,7 +16,7 @@
   - Ensayos destructivos (azúcares, ácidos, grasa)
 - **Normas de Comercialización de la UE**
   - Base: **Reglamento (UE) 1308/2013** (OCM Única), art. 75: actos delegados
-  - Frutas y hortalizas, desde 1-1-2025: **Reglamento Delegado (UE) 2023/2429** (criterios de selección y parámetros) y **Reglamento de Ejecución (UE) 2023/2430** (controles de conformidad)
+  - Frutas y hortalizas, desde 1 de enero de 2025: **Reglamento Delegado (UE) 2023/2429** (criterios de selección y parámetros) y **Reglamento de Ejecución (UE) 2023/2430** (controles de conformidad)
   - Sustituyen al Reglamento de Ejecución (UE) 543/2011
   - Permiten clasificar en Extra, I y II
 - **Norma General de Comercialización (NGC)**, mínimos
@@ -105,7 +105,7 @@
   - **E/A o S/A**: Brix / acidez valorable (cítrico, málico, tartárico), parámetro legal para cítricos y uva de mesa
   - **Aceite o materia seca**: aguacate, obligatorio
 - **Resto de sectores**
-  - Frutos secos: humedad máxima (almendra sin cáscara <7%, con cáscara <11%), frutos vanos, rancidez
+  - Frutos secos: humedad máxima (almendra sin cáscara <7 %, con cáscara <11 %), frutos vanos, rancidez
   - Granos y semillas: peso específico, humedad, granos rotos, impurezas, daños por insectos
   - Harinas, sémolas y pastas: cenizas, gluten, fuerza panadera (W), proteínas, acidez de la grasa
   - Cárnico
@@ -115,13 +115,13 @@
     - Fresco: **QIM**, parásitos (*Anisakis*)
     - Conservas: líquido de cobertura, peso escurrido, cierre
   - Lácteo: punto crioscópico, materia grasa, extracto seco magro, células somáticas y gérmenes, estabilidad térmica
-  - Miel: HMF, diastasa, humedad <20%
+  - Miel: HMF, diastasa, humedad <20 %
   - Azúcar: polarización, color ICUMSA, solubilidad
   - Huevos: peso (XL, L, M, S), Unidades Haugh, cámara de aire (Categoría A frente a B)
   - Conservas vegetales: peso neto y escurrido, tamaños, vacío, defectos del envase
   - Vino: alcohol adquirido y en potencia, extracto seco, acidez total y volátil, anhídrido sulfuroso, tipicidad
   - Cerveza: extracto seco primitivo (ESP), espuma, brillo
-  - Aceite de oliva virgen: acidez libre (hasta 0,8% en Virgen Extra), índice de peróxidos, absorbancia UV, medianas del defecto y del frutado (panel de cata)
+  - Aceite de oliva virgen: acidez libre (hasta 0,8 % en Virgen Extra), índice de peróxidos, absorbancia UV, medianas del defecto y del frutado (panel de cata)
   - Condimentos: poder colorante, cenizas, extracto etéreo
   - Platos preparados: estabilidad térmica, homogeneidad, patógenos, etiquetado nutricional
 
@@ -133,7 +133,7 @@
 - **Granos y cereales**: almidón, fibra, vitaminas B, zinc, hierro, manganeso
 - **Legumbres**: almidón, proteína vegetal (limitante en aminoácidos azufrados)
 - **Carnes, pescados y huevos**: proteínas de alto valor biológico
-  - Carne magra: ~20% proteína, 60-75% agua
+  - Carne magra: ~20 % proteína, 60-75 % agua
   - Pescado azul: omega-3 (EPA, DHA), vitaminas A y D
   - Clara de huevo: proteína muy pura y biodisponible
 - **Lácteos**: caseínas y proteínas del suero, vitaminas A, D, B, calcio y fósforo
@@ -154,7 +154,7 @@
   - Valor energético (kJ y kcal), grasas, saturadas, hidratos de carbono, azúcares, proteínas, sal
 - Voluntarios: monoinsaturados, poliinsaturados, polialcoholes, almidón, fibra, vitaminas y minerales
 - Arts. 31 a 35: valores por **100 g o 100 ml**, adicionalmente por porción
-- EE.UU.: FDA, panel Nutrition Facts, raciones habituales (RACC)
+- EEUU: FDA, panel Nutrition Facts, raciones habituales (RACC)
 
 # 5. CLASIFICACIÓN POR CATEGORÍAS COMERCIALES DE CALIDAD
 - Referencia: **CEPE/NU**, base de OCDE, Codex y normas UE
@@ -177,10 +177,10 @@
 ## 5.2. Régimen de Tolerancias Comerciales
 - Absorben errores accidentales de calibrado, selección y envasado
 - En % en peso o número de frutos
-- **Extra**: 5% de Categoría I, dentro de él máx. 0,5% de Categoría II
-- **I**: 10% de Categoría II, dentro de él máx. 1% fuera de II y mínimos (incluye podredumbre)
-- **II**: 10% fuera de categoría y mínimos, sin frutos impropios, máx. 2% con podredumbre
-- **Calibre**: 10% en peso o número de frutos, todas las categorías
+- **Extra**: 5 % de Categoría I, dentro de él máx. 0,5 % de Categoría II
+- **I**: 10 % de Categoría II, dentro de él máx. 1 % fuera de II y mínimos (incluye podredumbre)
+- **II**: 10 % fuera de categoría y mínimos, sin frutos impropios, máx. 2 % con podredumbre
+- **Calibre**: 10 % en peso o número de frutos, todas las categorías
 
 # 6. CONCLUSIÓN
 - Base técnica de la inspección y certificación SOIVRE

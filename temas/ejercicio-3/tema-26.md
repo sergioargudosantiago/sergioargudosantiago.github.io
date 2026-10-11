@@ -2,12 +2,12 @@
 
 - Control específico por paz, seguridad, derechos humanos y no proliferación de armas de destrucción masiva
 - Marco español: **Ley 53/2007** y **Real Decreto 679/2014**. Tres grupos:
-  - **Material de defensa**: uso militar, **anexo I.1 del RD 679/2014**, **22 categorías** alineadas con la Lista Común Militar de la UE
+  - **Material de defensa**: uso militar, **anexo I.1 del Real Decreto 679/2014**, **22 categorías** alineadas con la Lista Común Militar de la UE
   - **Otro material**: policial y antidisturbios, armas de caza y tiro deportivo, **anexo II**
   - **Doble uso**: **anexo I del Reglamento (UE) 2021/821**, diez categorías, sustituyó al Reglamento (CE) 428/2009 el 9 de septiembre de 2021
     - **Cláusula catch-all** (escoba): productos no listados con indicios de uso final militar o de armas de destrucción masiva
 - **Competencias**
-  - Defensa: **artículo 346 TFUE**, control esencialmente nacional, coordinado en la PESC
+  - Defensa: **art. 346 TFUE**, control esencialmente nacional, coordinado en la PESC
   - Doble uso: política comercial común, competencia exclusiva de la UE, aplicación nacional
 
 # 2. NORMATIVA APLICABLE
@@ -17,14 +17,14 @@
 ## 2.1. Normativa nacional
 
 - **Ley 53/2007**: autoriza exportaciones, importaciones, transferencias y corretaje
-  - **Artículo 8**, motivos de denegación
-  - **Artículo 16**, información semestral al Congreso y comparecencia anual del Secretario de Estado de Comercio
+  - **Art. 8**, motivos de denegación
+  - **Art. 16**, información semestral al Congreso y comparecencia anual del Secretario de Estado de Comercio
 - **Real Decreto 679/2014**, Reglamento de control. Regula:
   - **Autorizaciones**: licencias individuales (un año en defensa), globales (tres años), generales, acuerdos previos, transferencia intracomunitaria
   - Documentos de control: certificados de último destino, compromisos de no reexportación
   - **REOCE** (registro de operadores) y **JIMDDU**
-  - Modificaciones: **RD 494/2020** (refuerza controles), **Orden ECM/551/2025** y **Orden ECM/536/2026** (en vigor desde el 5 de junio de 2026, transpone la **Directiva Delegada (UE) 2026/325** sobre la Lista Común Militar)
-- **LO 10/1995**, Código Penal, **artículos 566 y 567**: armas y municiones ilegales
+  - Modificaciones: **Real Decreto 494/2020** (refuerza controles), **Orden ECM/551/2025** y **Orden ECM/536/2026** (en vigor desde el 5 de junio de 2026, transpone la **Directiva Delegada (UE) 2026/325** sobre la Lista Común Militar)
+- **LO 10/1995**, Código Penal, **arts. 566 y 567**: armas y municiones ilegales
 - **LO 12/1995**, Contrabando, reformada por la **LO 6/2011**: delito el comercio sin autorización. Imprudencia grave y responsabilidad de personas jurídicas
 - **Estrategia Nacional contra la Proliferación de Armas de Destrucción Masiva**: aprobada el 16 de diciembre de 2025, **Orden PJC/89/2026**, primera específica
 - No son material de defensa: aviones civiles de transporte, buques de carga sin equipos militares, armas de caza de ánima lisa no automáticas (otro material)
@@ -67,7 +67,7 @@
 - **Tratado sobre el Comercio de Armas (TCA)**
   - Primer tratado vinculante sobre armas convencionales
   - Firma de España el 3 de junio de 2013, vigor el **24 de diciembre de 2014**, ratificación española el 2 de abril de 2014
-  - **Artículos 6** (transferencias prohibidas) y **7** (evaluación de exportaciones)
+  - **Arts. 6** (transferencias prohibidas) y **7** (evaluación de exportaciones)
   - Secretaría en Ginebra
 - **OPAQ** (La Haya): Convención sobre Armas Químicas (firma 1993, vigor 1997), verificación con inspección industrial, **193 Estados parte**
 - **OSCE** (Viena, 57 Estados): Documento sobre Armas Pequeñas y Ligeras (2000)
@@ -83,7 +83,7 @@
 
 ## 3.2. La Junta Interministerial Reguladora del Comercio Exterior de Material de Defensa y de Doble Uso (JIMDDU)
 
-- Constituida en **1988**, reunión normalmente mensual, **artículos 17 y 18 del RD 679/2014**
+- Constituida en **1988**, reunión normalmente mensual, **arts. 17 y 18 del Real Decreto 679/2014**
 - **Composición**
   - Presidente: Secretario de Estado de Comercio. Vicepresidente: Secretario de Estado de Asuntos Exteriores
   - Vocales: Asuntos Exteriores, Defensa (con CNI), Hacienda, Interior (Guardia Civil y Policía), Economía
@@ -134,7 +134,7 @@
 
 # 5. EL COMERCIO EXTERIOR ESPAÑOL DE MATERIAL DE DEFENSA Y DOBLE USO
 
-- Fuente: informe del primer semestre de 2025 (**artículo 16 de la Ley 53/2007**)
+- Fuente: informe del primer semestre de 2025 (**art. 16 de la Ley 53/2007**)
 - Realizadas / autorizadas / denegaciones
   - Defensa: **2.332,7 M€** / 19.727,6 M€ / 5 licencias
   - Armas de fuego: **74 M€** / 1.519,2 M€ / 6
@@ -155,11 +155,11 @@
 - **Israel**: ninguna licencia nueva desde octubre de 2023, sin exportaciones
 - **Rusia**: ninguna licencia ni exportación
 - **Ucrania**: 35,7 M€ exportados y 219 M€ en donaciones
-- **Denegaciones**: 5 licencias a 4 países (Israel, Níger, Bahréin, Cuba), por **artículo 8.1 Ley 53/2007**, artículo 7.1 RD 679/2014 y Posición Común 2008/944/PESC
+- **Denegaciones**: 5 licencias a 4 países (Israel, Níger, Bahréin, Cuba), por **art. 8.1 Ley 53/2007**, art. 7.1 Real Decreto 679/2014 y Posición Común 2008/944/PESC
 
 ## 5.2. Otro material
 
-- **Armas de fuego**: 74 M€, **+8,5 %**. Estados Unidos 59,4 %, 89 % a empresas privadas. 6 denegaciones a 5 países
+- **Armas de fuego**: 74 M€, **+8,5 %**. EEUU 59,4 %, 89 % a empresas privadas. 6 denegaciones a 5 países
 - **Antidisturbios**: 91.615 €, marginal, a policías de Lituania, Noruega y Uzbekistán
 
 ## 5.3. Productos y tecnologías de doble uso
@@ -167,7 +167,7 @@
 - **Evolución**: 128,6 M€ frente a 214,6 M€. El informe dice 60 % pero las cifras dan **40 %**
 - **Destinos**: China (16,3 %), Arabia Saudí (10 %), Turquía (8 %). Mayor autorizado: Arabia Saudí
 - **Categorías**: tratamiento de materiales (27,4 %), materiales especiales y químicos (22,9 %)
-- **Denegaciones**: 42, base **artículo 15 del Reglamento (UE) 2021/821**. India 12, Rusia 9, Israel 7
+- **Denegaciones**: 42, base **art. 15 del Reglamento (UE) 2021/821**. India 12, Rusia 9, Israel 7
 - **Catch-all**: 8 veces (7 Turquía, 1 China)
 
 # 6. CONCLUSIÓN

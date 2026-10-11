@@ -126,7 +126,7 @@
 - **Al menos 60 %** de la cartera al sector privado
 - Sin préstamos concesionales
 - Gran financiador de Ucrania desde 2022, suspendió a Rusia y Bielorrusia
-- **2023**: ampliación de capital de **4.000 millones de euros** y extensión limitada al África subsahariana e Irak
+- **2023**: ampliación de capital de **4.000 M€** y extensión limitada al África subsahariana e Irak
 
 # 4. LAS NUEVAS INSTITUCIONES DE LAS ECONOMÍAS EMERGENTES
 ## 4.1. El Nuevo Banco de Desarrollo
@@ -154,7 +154,7 @@
 - **Objetivos**: crecimiento, empleo y competitividad, **clima** (más de la mitad de la financiación), cohesión, políticas exteriores
   - Hoja de ruta 2024-2027: seguridad y defensa, digitalización, unión de mercados de capitales
 - **Productos**: préstamos, financiación combinada y asesoramiento
-  - Directos para proyectos de más de **25 millones de euros**, intermediarios para menores
+  - Directos para proyectos de más de **25 M€**, intermediarios para menores
   - Normalmente no más del **50 %** del coste
 - **Ámbito**: cerca del **90 %** en la UE, más de 160 países, exterior vía **BEI Global**
 - No es en sentido estricto banco de desarrollo, pero es la **mayor institución financiera multilateral** por volumen

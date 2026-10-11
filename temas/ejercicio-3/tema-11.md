@@ -29,7 +29,7 @@
   - Define la finalidad: **representación, promoción y defensa** de los intereses generales y prestación de servicios a todas las empresas
   - Regula ámbito territorial, organización y funcionamiento, sistema electoral y régimen económico
   - Regula la **Cámara de España**, que sustituyó al antiguo **Consejo Superior de Cámaras**
-- **Estructura de la Ley**: **38 artículos** (tras la adición del artículo 38 por la **Ley 20/2015**), **6 capítulos**, 3 disposiciones adicionales, 3 transitorias, 1 derogatoria y 3 finales
+- **Estructura de la Ley**: **38 artículos** (tras la adición del art. 38 por la **Ley 20/2015**), **6 capítulos**, 3 disposiciones adicionales, 3 transitorias, 1 derogatoria y 3 finales
   - Capítulo I: naturaleza y funciones
   - Capítulo II: ámbito territorial y organización
   - Capítulo III: régimen electoral de los órganos de gobierno (Pleno, Comité Ejecutivo y Presidente)
@@ -103,7 +103,7 @@
 - **Concepto**: actuaciones de **interés general** en formación e información
   - Promover la **adquisición en el exterior de bienes y servicios producidos en España**
   - Otras actuaciones relacionadas con la operativa del comercio internacional
-- **Aprobación**: **artículo 22** de la Ley 4/2014
+- **Aprobación**: **art. 22** de la Ley 4/2014
   - El ministerio competente en economía y comercio lo aprueba **anualmente**, a propuesta de la Cámara de España y previa consulta con las **Comunidades Autónomas**
   - La Cámara de España lo ejecuta mediante **convenio** y con las Cámaras territoriales
   - Posibles mecanismos de cooperación con las actuaciones de las Comunidades Autónomas
@@ -115,7 +115,7 @@
   - Firma del **convenio** entre esta y la Cámara de España
 - **Alcance**
   - Red de Cámaras territoriales promocionando la oferta exportadora en cerca de **100 países** de los cinco continentes
-  - Presupuesto de la última edición publicada: en torno a **8,9 millones de euros**, sobre todo para promoción exterior, formación e información
+  - Presupuesto de la última edición publicada: en torno a **8,9 M€**, sobre todo para promoción exterior, formación e información
 - **Objetivos**
   - **Ampliar la base exportadora**
   - Facilitar el acceso de las PYME a los mercados internacionales
@@ -132,7 +132,7 @@
 
 # 4. PLAN CAMERAL DE COMPETITIVIDAD
 
-- **Base legal**: **artículo 23** de la Ley 4/2014
+- **Base legal**: **art. 23** de la Ley 4/2014
   - Se suscribe **cada dos años** entre el ministerio competente en economía y comercio y la Cámara de España, previa consulta con las Comunidades Autónomas
   - Concreta los programas para mejorar la competitividad de las empresas, con especial atención a las PYME
   - Ejecución conjunta con las Cámaras territoriales y financiación mediante convenios con las Administraciones Públicas

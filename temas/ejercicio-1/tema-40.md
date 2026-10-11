@@ -1,8 +1,8 @@
 # 1. INTRODUCCIÓN
 - **Red de Laboratorios SOIVRE**: 16 laboratorios de ensayo periféricos + **Laboratorio Central** (Madrid, desde 1989), en la Subdirección Gral. de Inspección, Certificación y Asistencia Técnica de Comercio Exterior
   - Acreditados según **UNE-EN ISO/IEC 17025:2017**: sistema de gestión de la calidad y requisitos de competencia en ensayos
-  - **ENAC**: único organismo con potestad pública para acreditar (**RD 1715/2010**, **Reglamento (CE) 765/2008**)
-  - Acuerdos Multilaterales de Reconocimiento (más de 120 países) en EA y Global ACI (fusión de ILAC e IAF desde 1-1-2026)
+  - **ENAC**: único organismo con potestad pública para acreditar (**Real Decreto 1715/2010**, **Reglamento (CE) 765/2008**)
+  - Acuerdos Multilaterales de Reconocimiento (más de 120 países) en EA y Global ACI (fusión de ILAC e IAF desde 1 de enero de 2026)
 - Funciones del Laboratorio Central
   - Coordinar y armonizar la red y las aplicaciones informáticas
   - Gestionar adquisiciones, asesorar en reactivos, calibración y seguridad
@@ -65,19 +65,19 @@
 
 # 5. EL CONVENIO CITES
 - Tratado de Naciones Unidas de 1973 contra la explotación no sostenible, instrumento de política comercial: conservación y uso sostenible
-- **25 artículos**, firma en Washington 3-3-1973 (21 países), entrada en vigor 1-7-1975, origen en resolución de la UICN (Nairobi, 1963)
-- **185 Partes** (184 Estados + UE desde julio de 2015), España desde 16-5-1986
+- **25 artículos**, firma en Washington 3 de marzo de 1973 (21 países), entrada en vigor 1 de julio de 1975, origen en resolución de la UICN (Nairobi, 1963)
+- **185 Partes** (184 Estados + UE desde julio de 2015), España desde 16 de mayo de 1986
 - Contrabando de productos de alto valor (tigre, marfil)
   - Ocultación, presentación como especie no incluida
   - Falsa declaración de ejemplares vivos como criados en cautividad
 
 ## 5.1. Autoridades competentes y papel actual del SOIVRE
 - Aplicación en la UE por el **Reglamento (CE) 338/97**: Autoridad Administrativa y Autoridad Científica por Estado
-- **RD 986/2021**, en vigor desde 2-1-2022, deroga el RD 1739/1997 (que daba la Autoridad Administrativa al SOIVRE)
+- **Real Decreto 986/2021**, en vigor desde 2 de enero de 2022, deroga el Real Decreto 1739/1997 (que daba la Autoridad Administrativa al SOIVRE)
   - Autoridad Administrativa: Dirección General de Biodiversidad, Bosques y Desertificación (**MITECO**)
   - Autoridad Científica: **CSIC**
-- SOIVRE mantiene por **encomienda de gestión** (Resolución de 28-1-2023) las verificaciones en frontera y la expedición de **DIESAC**
-  - Cuatro años (hasta 28-1-2027), prorrogable hasta ocho (enero de 2031)
+- SOIVRE mantiene por **encomienda de gestión** (Resolución de 28 de enero de 2023) las verificaciones en frontera y la expedición de **DIESAC**
+  - Cuatro años (hasta 28 de enero de 2027), prorrogable hasta ocho (enero de 2031)
 - **PCF** (antes PIF) controlados por SOIVRE: Vigo, Barcelona, Bilbao, Alicante, Valencia, Sevilla, Málaga, Mallorca, Tenerife, Las Palmas, Algeciras, Madrid
   - Colaboradoras: Badajoz, Almería, Gijón, Irún
 - Identificar el espécimen para fijar Apéndice y Anexo, la observación visual no basta

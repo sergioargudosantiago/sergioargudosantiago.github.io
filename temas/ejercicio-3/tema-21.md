@@ -153,7 +153,7 @@
 ## 6.2. Normas de origen no preferencial
 - Arts. 59-63 CAU, RD-CAU (arts. 31-36, anexo 22-01)
 - **Art. 60 CAU**: última transformación sustancial, justificada, en empresa equipada, producto nuevo
-- **Reglamento (UE) 2026/1455**: derechos 0 % y contingentes para EE. UU.
+- **Reglamento (UE) 2026/1455**: derechos 0 % y contingentes para EEUU
 - **Reglamento de Ejecución 2026/1422**: prueba de origen no preferencial, certificados electrónicos
 - Certificado no preferencial solo si lo exige una norma o hay dudas
 

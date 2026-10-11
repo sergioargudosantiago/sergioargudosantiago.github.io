@@ -4,7 +4,7 @@
 - **Acreditación** según **UNE-EN ISO/IEC 17025:2017**: sistema de gestión de la calidad y requisitos de competencia en ensayos
 - **ENAC**: único organismo con potestad pública para acreditar (**Real Decreto 1715/2010**, **Reglamento (CE) 765/2008**)
   - Marca ENAC: cumplimiento y aceptación internacional
-  - Acuerdos de Reconocimiento (más de 120 países) en **EA** y **Global ACI** (ILAC + IAF desde 1-1-2026)
+  - Acuerdos de Reconocimiento (más de 120 países) en **EA** y **Global ACI** (ILAC + IAF desde 1 de enero de 2026)
 - Funciones del Laboratorio Central
   - Coordinar y armonizar la red
   - Adquisiciones, reactivos, calibración y seguridad

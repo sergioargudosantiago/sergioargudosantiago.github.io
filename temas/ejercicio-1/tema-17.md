@@ -1,31 +1,31 @@
 # 1. INTRODUCCIÓN
-- **Sector secundario**: 14,2% PIB, 15,6% VAB, 11,4% empleo (Informe Anual 2025 SG Estudios, Análisis y Planes de Actuación del MINTUR)
+- **Sector secundario**: 14,2 % PIB, 15,6 % VAB, 11,4 % empleo (Informe Anual 2025 SG Estudios, Análisis y Planes de Actuación del MINTUR)
   - Industria manufacturera: bienes intermedios, **bienes de equipo**, bienes de consumo
 - **Bienes de equipo**: máquinas e instalaciones destinadas a producir otros bienes o servicios, nivel tecnológico medio-alto
-- Con automoción, ~30% del VAB y del empleo industrial, muy exportador
-- **Automoción**: componentes (intermedios), vehículos industriales (equipo) y turismos (consumo), 10% PIB, 9% empleo, 12,8% exportaciones
+- Con automoción, ~30 % del VAB y del empleo industrial, muy exportador
+- **Automoción**: componentes (intermedios), vehículos industriales (equipo) y turismos (consumo), 10 % PIB, 9 % empleo, 12,8 % exportaciones
 - Transformación: globalización, electrificación, digitalización, descarbonización
 
 ## 1.1. Legislación general del sector industrial
 - Competencia normativa: SG de Calidad y Seguridad Industrial del MINTUR
 - **Ley 21/1992, de Industria**
-- **RD 559/2010**, Reglamento del Registro Integrado Industrial
-- **RD 1072/2015**, Infraestructura para la Calidad y la Seguridad Industrial: AENOR (normalización), ENAC (acreditación)
-- **RD 1468/1988**, etiquetado de productos industriales sin normativa específica
+- **Real Decreto 559/2010**, Reglamento del Registro Integrado Industrial
+- **Real Decreto 1072/2015**, Infraestructura para la Calidad y la Seguridad Industrial: AENOR (normalización), ENAC (acreditación)
+- **Real Decreto 1468/1988**, etiquetado de productos industriales sin normativa específica
   - Etiqueta real, veraz y comprensible
   - Datos mínimos: denominación, composición, plazo de uso, contenido neto, lote, empresa, origen, alérgenos
   - Exportación a terceros países incumplidora: identificada
-- **RD 1406/1989**, limitaciones de sustancias (benceno, amianto, termómetros de mercurio desde 2009)
-- **RD 330/2008**, control de importaciones en seguridad por riesgos RAPEX
+- **Real Decreto 1406/1989**, limitaciones de sustancias (benceno, amianto, termómetros de mercurio desde 2009)
+- **Real Decreto 330/2008**, control de importaciones en seguridad por riesgos RAPEX
   - SOIVRE controla antes del despacho aduanero
   - Lista en **Orden PJC/161/2026**: drones, puericultura, textil, calzado, juguetes, EPIs, pequeño material eléctrico, muebles
-- **RD 993/2022**, control SOIVRE de RoHS y Registro Integrado Industrial de AEEs, pilas y acumuladores
+- **Real Decreto 993/2022**, control SOIVRE de RoHS y Registro Integrado Industrial de AEEs, pilas y acumuladores
 - **Reglamento (CE) 765/2008**, acreditación y marcado CE (EPIs, juguetes, material eléctrico), vigilancia de mercado sustituida por 2019/1020
 - **Reglamento (UE) 2019/1020**, vigilancia del mercado, poderes de las AVM, controles de terceros países
 - **Reglamento (UE) 2019/515**, reconocimiento mutuo
 - **Decisión 768/2008/CE**, base del Nuevo Marco Legislativo
-- **Reglamento (UE) 2023/988 (RGSP)**: deroga Directiva 2001/95/CE y deja sin efecto el RD 1801/2003
-  - Aplicable desde 13-12-2024, fabricantes y distribuidores, **Safety Gate** (sustituye a RAPEX), mercados en línea
+- **Reglamento (UE) 2023/988 (RGSP)**: deroga Directiva 2001/95/CE y deja sin efecto el Real Decreto 1801/2003
+  - Aplicable desde 13 de diciembre de 2024, fabricantes y distribuidores, **Safety Gate** (sustituye a RAPEX), mercados en línea
 - **REACH, Reglamento (CE) 1907/2006**: restricciones (Anexo XVII), ECHA
 - **Reglamento (UE) 2023/2411**, indicaciones geográficas de productos artesanales e industriales, aplicable desde 2025
 
@@ -60,13 +60,13 @@
 ## 3.1. Normativa aplicable
 - **EC WVTA**, homologación de vehículo completo (art. 114 TFUE), válida en toda la UE
 - **Reglamento (UE) 2018/858**, homologación y vigilancia del mercado, controles poscomercialización
-- **Reglamento (UE) 2019/1242**, CO₂ de pesados nuevos: -15% en 2025 y -30% en 2030 sobre 2019
+- **Reglamento (UE) 2019/1242**, CO₂ de pesados nuevos: -15 % en 2025 y -30 % en 2030 sobre 2019
 - **Reglamento (UE) 2024/1257 (Euro VII)**, emisiones de ligeros y pesados, partículas de frenos y neumáticos, durabilidad de baterías
 
 # 4. BUQUES Y CONSTRUCCIÓN NAVAL
 - **Contenido**: diseño, construcción, reparación y mantenimiento de buques y equipos
 - Industria de síntesis, alta complejidad, intensiva en capital, ciclos largos
-- **Mercado mundial**: China, Corea del Sur y Japón, ~90% de los pedidos
+- **Mercado mundial**: China, Corea del Sur y Japón, ~90 % de los pedidos
   - Europa: crucero, militares, offshore, buques especiales
   - España: buques multifuncionales y artefactos para extracción de petróleo
 - **Navantia**: empresa pública, actividad militar y civil
@@ -95,12 +95,12 @@
   - Concentración: Madrid, País Vasco, Andalucía (Sevilla y Cádiz)
   - Motores: Airbus, ESA, relación con EEUU y Boeing
 - **Comercio**: saldo positivo
-  - 2025: exportaciones -20% a UE, Reino Unido, India y EEUU
+  - 2025: exportaciones -20 % a UE, Reino Unido, India y EEUU
   - Importaciones de EEUU, Francia, Alemania y Reino Unido
 - **Disputa Airbus-Boeing** (OMC, iniciada en 2004)
   - 2019: sanciones de EEUU por 7.500 M$ anuales
   - 2021: aranceles suspendidos 5 años, compromiso de no financiar si daña a la otra parte
-  - Tregua hasta 11-7-2026, la UE votó el 25-6-2026 prorrogar su parte (4.000 M$)
+  - Tregua hasta 11 de julio de 2026, la UE votó el 25 de junio de 2026 prorrogar su parte (4.000 M$)
 - **Nuevo Espacio**: actores privados (SpaceX, Blue Origin, OneWeb)
   - España: CDTI, INTA, GMV, Sener, Indra, Iberdrola Ingeniería
 
@@ -119,11 +119,11 @@
 ## 6.1. Características generales del sector
 - **Globalizado** y reestructurado: Stellantis, Volkswagen Group, Renault-Nissan-Mitsubishi, Toyota
 - **España**: 2.º fabricante europeo, 8.º mundial, líder europeo en vehículos industriales
-  - 2025: 2.274.026 unidades, -4,3% (ANFAC)
+  - 2025: 2.274.026 unidades, -4,3 % (ANFAC)
 - **Plantas**: Stellantis, Volkswagen, Renault, Ford, Mercedes-Benz, hacia modelos electrificados
   - Chery-Ebro en la antigua planta de Nissan Barcelona, SAIC/MG en Galicia para 2027
   - Hub de fabricantes chinos en Europa Occidental, pérdida de carga de Ford Valencia
-- **Peso**: 10% PIB, 9% empleo, 12,8% exportaciones
+- **Peso**: 10 % PIB, 9 % empleo, 12,8 % exportaciones
   - Superávit de 4.822 M€, tensionado por importaciones asiáticas
 
 ## 6.2. Transición hacia el vehículo eléctrico y planes de apoyo
@@ -142,9 +142,9 @@
 
 ## 6.3. Análisis sectorial
 - **Mundial**: China, EEUU, UE y Japón
-  - Europa >25% de la producción: Alemania, España, Francia, Chequia, Eslovaquia
+  - Europa >25 % de la producción: Alemania, España, Francia, Chequia, Eslovaquia
   - Fortaleza: innovación y redes, desventaja de costes frente a Asia y Europa del Este
-- **España**: exportaciones/producción ~85%
+- **España**: exportaciones/producción ~85 %
   - Destinos: Francia, Alemania, Reino Unido, Turquía
   - Orígenes: Alemania, Francia, Chequia, Japón, Turquía
   - China, 3.er proveedor de vehículos (híbridos y eléctricos)
@@ -160,9 +160,9 @@
   - Regula partículas de frenos y neumáticos y durabilidad de baterías
 
 ## 6.6. Normativa medioambiental
-- **Reglamento (UE) 2023/851** (modifica 2019/631): 100% de cero emisiones en 2035
-- **Reglamento (UE) 2019/1242**: pesados, -45% en 2030 y -90% en 2040 (revisión 2024)
-- **Directiva 2000/53/CE y RD 1383/2002**: vehículos al final de su vida útil
+- **Reglamento (UE) 2023/851** (modifica 2019/631): 100 % de cero emisiones en 2035
+- **Reglamento (UE) 2019/1242**: pesados, -45 % en 2030 y -90 % en 2040 (revisión 2024)
+- **Directiva 2000/53/CE y Real Decreto 1383/2002**: vehículos al final de su vida útil
 - **Ley 7/2021**: prohibición en 2040
 - **Reglamento (UE) 2023/1542 (Baterías)**: huella de carbono, materiales reciclados, Pasaporte Digital
 - **CBAM**: acero y aluminio, mayores costes de proveedores
@@ -176,9 +176,9 @@
 
 # 7. SUBSECTOR DE COMPONENTES DE AUTOMOCIÓN
 - Con los constructores forma la automoción en sentido amplio
-- 50% de empresas multinacionales, 77% del empleo
+- 50 % de empresas multinacionales, 77 % del empleo
 - **Segmentos**: neumáticos y caucho, motor y piezas, equipo eléctrico, carrocería y chasis
-- **España**: 4.º europeo, ~70% de las piezas son nacionales
+- **España**: 4.º europeo, ~70 % de las piezas son nacionales
 - **Comercio**: déficit
   - Exportaciones a UE, Marruecos y Reino Unido
   - Importaciones de UE, China, Turquía y Marruecos

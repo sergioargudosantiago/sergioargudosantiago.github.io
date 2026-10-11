@@ -124,7 +124,7 @@
 - Cada Parte designa Autoridades Científicas y Administrativas (artículo **IX**)
 - Administrativa emite permisos según opinión de la Científica
 - Aduanas y policía comprueban envíos y permisos
-- Esquema vigente desde el RD 986/2021
+- Esquema vigente desde el Real Decreto 986/2021
 
 ## 6.1. La Autoridad Administrativa y órgano de gestión principal
 
@@ -141,7 +141,7 @@
 
 ## 6.2. Las verificaciones previas al despacho aduanero: el papel del Servicio de Inspección SOIVRE
 
-- Disposición adicional primera del RD 986/2021: **AEAT** realiza inspección y control en frontera, con la Autoridad Administrativa y la Científica
+- Disposición adicional primera del Real Decreto 986/2021: **AEAT** realiza inspección y control en frontera, con la Autoridad Administrativa y la Científica
 - **Encomienda de gestión** (2023): ejecución por la **Secretaría de Estado de Comercio** mediante los **Servicios de Inspección SOIVRE**
   - SOIVRE no es Autoridad Administrativa, pero hace verificaciones **físicas y documentales** y emite el **DIESAC**
   - DIESAC acredita ante Aduanas si hay especímenes de Apéndices o Anexos
@@ -175,6 +175,6 @@
 # 7. CONCLUSIÓN
 
 - Marco UE sólido, más exigente que la Convención
-- RD 986/2021: Administrativa en MITECO, Científica en CSIC
+- Real Decreto 986/2021: Administrativa en MITECO, Científica en CSIC
 - La encomienda de 2023 mantiene el papel del **SOIVRE** en el control físico y documental en frontera
   - Continuidad ligada a la renovación, vigente hasta el **28 de enero de 2027**

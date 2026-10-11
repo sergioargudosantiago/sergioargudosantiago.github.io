@@ -8,19 +8,19 @@
 ## 1.1. Legislación general del sector industrial
 
 - Competencia normativa: **SG de Calidad y Seguridad Industrial** del MINTUR
-- **Ley 21/1992, de Industria** · **RD 559/2010**, Registro Integrado Industrial
-- **RD 1072/2015**, Infraestructura para la Calidad y Seguridad Industrial: **AENOR** normalización, **ENAC** acreditación
-- **RD 1468/1988**, etiquetado de productos industriales sin norma específica
+- **Ley 21/1992, de Industria** · **Real Decreto 559/2010**, Registro Integrado Industrial
+- **Real Decreto 1072/2015**, Infraestructura para la Calidad y Seguridad Industrial: **AENOR** normalización, **ENAC** acreditación
+- **Real Decreto 1468/1988**, etiquetado de productos industriales sin norma específica
   - Etiquetado real, veraz y fácil de entender
   - Datos mínimos: denominación, composición, contenido neto, lote, identificación de la empresa, origen
   - Exportación a terceros países no conforme: identificada
-- **RD 1406/1989**: prohibiciones de sustancias (benceno, amianto, dimetilfumarato, pentaclorofenol)
-- **RD 330/2008**: control previo al despacho por el **SOIVRE**, a partir de riesgos de RAPEX
+- **Real Decreto 1406/1989**: prohibiciones de sustancias (benceno, amianto, dimetilfumarato, pentaclorofenol)
+- **Real Decreto 330/2008**: control previo al despacho por el **SOIVRE**, a partir de riesgos de RAPEX
   - Lista en la **Orden PJC/161/2026**: drones, puericultura, textil, calzado, juguetes, EPIs, pequeño material eléctrico, muebles
-  - **RD 993/2022**: amplía a aparatos eléctricos y electrónicos, pilas y acumuladores (RoHS, residuos)
+  - **Real Decreto 993/2022**: amplía a aparatos eléctricos y electrónicos, pilas y acumuladores (RoHS, residuos)
 - **Reglamento (CE) 765/2008**: acreditación y marcado CE (EPIs, juguetes, material eléctrico) · vigilancia de mercado sustituida por el **Reglamento (UE) 2019/1020** (poderes de las AVM, controles a terceros países)
 - **Reglamento (UE) 2019/515**: reconocimiento mutuo · **Decisión 768/2008/CE**: base del Nuevo Marco Legislativo
-- **Reglamento (UE) 2023/988 (RGSP)**: aplicable desde el **13/12/2024**, productos seguros, **Safety Gate** (sustituye a RAPEX), mercados en línea
+- **Reglamento (UE) 2023/988 (RGSP)**: aplicable desde el **13 de diciembre de 2024**, productos seguros, **Safety Gate** (sustituye a RAPEX), mercados en línea
 - **REACH (CE) 1907/2006**: restricciones del Anexo XVII, **ECHA**
 - **Reglamento (UE) 2023/2411**: indicaciones geográficas de productos artesanales e industriales, aplicable desde 2025
 
@@ -60,7 +60,7 @@
 ## 2.4. Normativa aplicable
 
 - **Reglamento (UE) 1007/2011**: denominaciones y etiquetado de composición, base de la inspección en frontera
-- **RD 928/1987**: etiquetado de composición. Falta de NIF: Comunicación Informativa a Consumo
+- **Real Decreto 928/1987**: etiquetado de composición. Falta de NIF: Comunicación Informativa a Consumo
 - **RGSP 2023/988** · **ESPR 2024/1781**
 - **Directiva (UE) 2024/1799**: derecho a la reparación
 - **Directiva 2010/75/UE (IED)** y biocidas: estaño, metales pesados
@@ -72,7 +72,7 @@
 
 ## 2.6. Inspección en frontera (textil)
 
-- Base: **RD 330/2008** y **Orden PJC/161/2026**
+- Base: **Real Decreto 330/2008** y **Orden PJC/161/2026**
 - ¿Es EPI? Si lo es, **Reglamento (UE) 2016/425**
 - No EPI: etiquetado con importador (nombre/marca, dirección, referencia del modelo). Falta: **No Conformidad Subsanable**
 - Composición y NIF: exigibles para la puesta en el mercado, no para el despacho. Falta: **Comunicación Informativa**
@@ -83,16 +83,16 @@
 
 - **Biocidas (DMF)**: Decisión 2011/135/UE, REACH
 - **Colorantes azóicos**: Orden PRE/730/2003
-- **Pentaclorofenol**: Orden de 24/03/2000
+- **Pentaclorofenol**: Orden de 24 de marzo de 2000
 - **Formaldehído** y **metales pesados**: REACH
-- **Ftalatos**: RD 1114/2006
+- **Ftalatos**: Real Decreto 1114/2006
 - **pH en cuero**: UNE-EN ISO 4045:2019
 
 # 3. SUBSECTOR DEL CALZADO
 
 ## 3.1. Descripción y clasificación
 
-- **RD 1718/1995**: producto con suela que protege o cubre el pie
+- **Real Decreto 1718/1995**: producto con suela que protege o cubre el pie
 - Calzado **de piel** (señora, caballero, niño) y **no de piel** (caucho o plástico, textil, madera, otros incluido EPI)
 - Gamas alta, media y baja
 
@@ -106,7 +106,7 @@
 
 ## 3.3. Normativa aplicable
 
-- **RD 1718/1995**: etiquetado de materiales (empeine, forro/plantilla, suela). No obligatorio a la importación. No aplica a EPI
+- **Real Decreto 1718/1995**: etiquetado de materiales (empeine, forro/plantilla, suela). No obligatorio a la importación. No aplica a EPI
 - **Decisión (UE) 2016/1349**: etiqueta ecológica
 - **Reglamento (UE) 2018/1513**: **cromo VI** 1,0 mg/kg en cuero
 - **RGSP 2023/988**: mercado en línea
@@ -158,8 +158,8 @@
 ## 4.4. Normativa aplicable
 
 - **Reglamento (UE) 2016/425**: categorías, requisitos esenciales, evaluación de conformidad
-- **RD 1407/1992**: referencia interpretativa del SOIVRE si no contradice el Reglamento
-- **RD 773/1997**: uso de EPIs por trabajadores
+- **Real Decreto 1407/1992**: referencia interpretativa del SOIVRE si no contradice el Reglamento
+- **Real Decreto 773/1997**: uso de EPIs por trabajadores
 - **Anexo II** del Reglamento: requisitos esenciales, base de normas armonizadas
 
 ## 4.5. Normas armonizadas de referencia
@@ -172,7 +172,7 @@
 
 - Competencia asiática y exigencias de seguridad y trazabilidad: el **SOIVRE** es barrera de control en frontera
 - **Orden PJC/161/2026**: amplía el ámbito (prendas infantiles de punto y tejido plano, guantes de moto de cuero, EPIs textiles y calzado profesional)
-- **Acuerdo Interino UE-Mercosur**: aplicación provisional desde el **1/05/2026**
+- **Acuerdo Interino UE-Mercosur**: aplicación provisional desde el **1 de mayo de 2026**
   - Oportunidad exportadora, presión de Brasil y Argentina
   - Origen: Aduana · SOIVRE intensifica controles de seguridad y etiquetado
 - Futuro: calidad, diseño y sostenibilidad, **ESPR** y derecho a la reparación

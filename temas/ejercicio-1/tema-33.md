@@ -120,7 +120,7 @@
   - Alternativa simple a pruebas de homoscedasticidad como Levene
 - **Criterio R de Grubbs**
   - Elimina laboratorios con medias extremas, inconsistentes con distribución gaussiana
-  - R = (Xq – X̅) / S
+  - R = (Xq - X̅) / S
     - Xq = valor atípico informado
     - Xq y X̅ calculados con el conjunto completo
     - S = desviación estándar de la muestra

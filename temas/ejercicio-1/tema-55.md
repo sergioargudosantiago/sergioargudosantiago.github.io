@@ -16,7 +16,7 @@
 
 ## 2.1. Antecedentes del sistema HACCP
 - Nace en los **años 60** para las misiones espaciales de la **NASA**
-  - **Pillsbury** con los Laboratorios Natick del Ejército de EE. UU.
+  - **Pillsbury** con los Laboratorios Natick del Ejército de EEUU
   - Los análisis del producto final no garantizan el 100 %, hace falta control del proceso
 - **Codex Alimentarius**: internacionalización
   - Incorporación en **1991**
@@ -145,7 +145,7 @@
 - **Real Decreto 640/2006**: aplicación en España de los reglamentos del Paquete de Higiene
 - **AESAN**
   - Creada por la **Ley 11/2001**
-  - Organismo Autónomo adscrito al Ministerio de Derechos Sociales, Consumo y Agenda 2030 (**RD 495/2020 y RD 209/2024**)
+  - Organismo Autónomo adscrito al Ministerio de Derechos Sociales, Consumo y Agenda 2030 (**Real Decreto 495/2020 y Real Decreto 209/2024**)
   - Comparte competencias de protección al consumidor con la Dirección General de Consumo
 
 ## 4.3. Legislación internacional

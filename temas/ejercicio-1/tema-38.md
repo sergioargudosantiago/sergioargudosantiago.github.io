@@ -10,9 +10,9 @@
   - Dependen de la Subdirección Gral. de Inspección, Certificación y Asistencia Técnica de Comercio Exterior (Secretaría de Estado de Comercio, MECE)
   - Tendencia actual: especialización de cada laboratorio
 - **ENAC**
-  - Asociación sin ánimo de lucro, único organismo con potestad pública para acreditar (**RD 1715/2010**, **Reglamento (CE) 765/2008**)
+  - Asociación sin ánimo de lucro, único organismo con potestad pública para acreditar (**Real Decreto 1715/2010**, **Reglamento (CE) 765/2008**)
   - Marca ENAC: declara públicamente el cumplimiento y garantiza aceptación internacional
-  - Acuerdos Multilaterales de Reconocimiento, más de 120 países, en **EA** y **Global ACI** (desde 1-1-2026, fusión de ILAC e IAF)
+  - Acuerdos Multilaterales de Reconocimiento, más de 120 países, en **EA** y **Global ACI** (desde 1 de enero de 2026, fusión de ILAC e IAF)
 - **Laboratorio Central** (Centro Analítico de Inspección y Control de la Calidad del Comercio Exterior), desde **1989**
   - Coordinar y armonizar la red periférica y las aplicaciones informáticas
   - Planificar adquisiciones de instrumental y asesorar en reactivos, calibración y seguridad

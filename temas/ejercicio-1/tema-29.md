@@ -1,15 +1,15 @@
 # 1. INTRODUCCIÓN
 
-- **CITES**: firmada en Washington el **3-3-1973**, en vigor **1-7-1975**
+- **CITES**: firmada en Washington el **3 de marzo de 1973**, en vigor **1 de julio de 1975**
   - 25 artículos, **185 Partes** (184 Estados + UE, desde julio 2015)
-  - España Parte desde el **16-5-1986** (adhesión)
+  - España Parte desde el **16 de mayo de 1986** (adhesión)
 - **Artículo IX**: cada Parte designa Autoridades Administrativas (expiden permisos y certificados, previa consulta a Autoridades Científicas) y Puntos de Introducción Autorizados
 - **SOIVRE**: **12 Servicios de Inspección** autorizados
   - Vigo, Barcelona, Bilbao, Alicante, Valencia, Sevilla, Málaga, Mallorca, Tenerife, Las Palmas, Algeciras, Madrid
   - Resto de Direcciones colaboradoras (Badajoz, Almería, Gijón, Irún)
 - **Autoridad Administrativa** para el **Reglamento (CE) 338/97**: Dirección General de Biodiversidad, Bosques y Desertificación (MITECO)
-  - **Real Decreto 986/2021**, en vigor 2-1-2022
-  - **Encomienda de gestión** (Resolución de 20-1-2023): verificaciones previas al despacho en frontera por los SOIVRE (Secretaría de Estado de Comercio)
+  - **Real Decreto 986/2021**, en vigor 2 de enero de 2022
+  - **Encomienda de gestión** (Resolución de 20 de enero de 2023): verificaciones previas al despacho en frontera por los SOIVRE (Secretaría de Estado de Comercio)
 - **Naturaleza**: acuerdo voluntario, vinculante, **ley de mínimos**
   - Medidas internas más estrictas para Apéndices I, II y III
   - Puede restringir especies no incluidas (art. XIV)
@@ -18,14 +18,14 @@
   - Clasificación en Apéndices (art. II) según estatus biológico e impacto del comercio
   - Regulación del comercio en arts. III, IV y V
 - **Apéndices CITES**
-  - **I**: en peligro de extinción (~2%)
+  - **I**: en peligro de extinción (~2 %)
     - Comercio prohibido salvo excepciones (investigación, cupos de trofeos, cría en cautividad)
     - Permisos de exportación e importación, sin fines primordialmente comerciales ni perjuicio para la especie
-  - **II**: mayoría (~97%), podrían estar en peligro si no se controla, incluye especies "similares"
+  - **II**: mayoría (~97 %), podrían estar en peligro si no se controla, incluye especies "similares"
     - Solo permiso de exportación o certificado de reexportación
     - Importación sin permiso salvo legislación nacional
     - Permitidas las reproducidas artificialmente con certificados
-  - **III**: reguladas unilateralmente por una Parte (<1%)
+  - **III**: reguladas unilateralmente por una Parte (<1 %)
     - Permiso de exportación si procede del país que la incluyó, certificado de origen si procede de otra Parte
 - **Anexos UE**: **Reglamento (CE) 338/97** y **Reglamento (CE) 865/2006**, cuatro Anexos con protección decreciente, no coinciden exactamente con los Apéndices
   - Última actualización: **Reglamento (UE) 2023/966** (CoP19), pendiente la de la CoP20

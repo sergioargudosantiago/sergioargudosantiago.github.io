@@ -1,8 +1,8 @@
 # 1. INTRODUCCIÓN
 
-- **Hortalizas frescas**: pilar del comercio exterior agroalimentario, **11,7%** de las exportaciones agroalimentarias en 2025
+- **Hortalizas frescas**: pilar del comercio exterior agroalimentario, **11,7 %** de las exportaciones agroalimentarias en 2025
   - Entre los tres sectores con más superávit, junto a frutas frescas y cárnico (DATACOMEX)
-- 2025: importaciones **2.133,1 M€** (+3,4%), exportaciones **8.983,3 M€** (+11,5%), saldo **6.850,3 M€**
+- 2025: importaciones **2.133,1 M€** (+3,4 %), exportaciones **8.983,3 M€** (+11,5 %), saldo **6.850,3 M€**
 - **GTISA** (presidido por la Secretaría General de Agricultura y Alimentación del MAPA)
   - Siete grupos de trabajo, uno de frutas y hortalizas
   - Barreras comerciales, mercados, coordinación, dimensión empresarial, promoción
@@ -142,13 +142,13 @@
 
 # 5. ANÁLISIS SECTORIAL
 
-- **UE**: 5,1% de sus exportaciones. China principal productor mundial, luego India y la UE
+- **UE**: 5,1 % de sus exportaciones. China principal productor mundial, luego India y la UE
   - Principales exportadores UE 2025: España, Países Bajos, Francia, Bélgica, Italia
 - **España** 2025: gran superávit, salvo la **patata** (deficitaria)
   - Exportaciones: pimiento, pepino, tomate, lechuga
   - Importaciones: patata, tomate, pimiento
-- **Destinos**: UE **78%**. Alemania, Francia, Países Bajos, Italia (**70%**). Reino Unido, principal extracomunitario
-- **Proveedores**: UE 49% (Francia, Países Bajos, Portugal). Terceros: Marruecos, Perú, China, Estados Unidos
+- **Destinos**: UE **78 %**. Alemania, Francia, Países Bajos, Italia (**70 %**). Reino Unido, principal extracomunitario
+- **Proveedores**: UE 49 % (Francia, Países Bajos, Portugal). Terceros: Marruecos, Perú, China, EEUU
 - **Competidores**: Países Bajos (invernadero, reexportación), Bélgica, Francia, Italia, Marruecos, Turquía, Egipto
   - Perú en espárrago, China en ajo (contingente arancelario)
 - **Rusia**: embargo desde 2014, diversificación a Oriente Medio, Norteamérica y Asia

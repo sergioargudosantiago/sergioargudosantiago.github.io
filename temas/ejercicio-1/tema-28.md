@@ -104,7 +104,7 @@
 
 ## 4.1. La Organización Mundial de Aduanas
 - Organización intergubernamental independiente: mejorar eficacia y eficiencia de las aduanas
-- **186 administraciones** miembro, cerca del **98%** del comercio internacional
+- **186 administraciones** miembro, cerca del **98 %** del comercio internacional
 - Actividades: simplificación y armonización de procedimientos, seguridad de la cadena de comercio, lucha contra piratería y falsificación, **nomenclatura armonizada**
 - Coopera con la Secretaría CITES (asistencia técnica y formación)
 - España: aduanas de la **AEAT** establecen los controles fronterizos
@@ -149,13 +149,13 @@
 - **Delito de contrabando**
   - Valor igual o superior a **50.000 euros**
   - Importación, exportación, comercio, tenencia o circulación sin requisitos legales
-  - **Prisión de 1 a 5 años** y multa del tanto al **séxtuplo** del valor (hasta 600%)
+  - **Prisión de 1 a 5 años** y multa del tanto al **séxtuplo** del valor (hasta 600 %)
 - **Infracción administrativa**: valor inferior a **50.000 euros**
   - **Art. 11**, especies protegidas: leve (menos de **6.000 euros**) · grave (**6.000 a 18.000**) · muy grave (más de **18.000**)
   - **Art. 12**, multa proporcional al valor
-    - Leves **200% a 225%**
-    - Graves **225% a 275%**
-    - Muy graves **275% a 350%**
+    - Leves **200 % a 225 %**
+    - Graves **225 % a 275 %**
+    - Muy graves **275 % a 350 %**
     - Mínimo **1.000 euros**
   - Cierre del establecimiento o suspensión de actividad
     - Graves: 4 días a 6 meses

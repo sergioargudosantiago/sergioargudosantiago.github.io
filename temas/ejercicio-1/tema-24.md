@@ -93,7 +93,7 @@
 
 ## 6.2. Transporte por carretera
 - UE: **44 %** de mercancías y **85 %** de viajeros
-- **LOTT** (Ley 16/1987) y **ROTT** (RD 1211/1990). Ligero: <6 t de PMA o hasta 3,5 t de carga. Pesado: más
+- **LOTT** (Ley 16/1987) y **ROTT** (Real Decreto 1211/1990). Ligero: <6 t de PMA o hasta 3,5 t de carga. Pesado: más
 - Autorización internacional, cuatro tipos:
   - **Multilaterales**
   - **Licencia Comunitaria**: entre Estados miembros y cabotaje

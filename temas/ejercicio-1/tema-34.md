@@ -5,9 +5,9 @@
 - **Acreditación** según **UNE-EN ISO/IEC 17025:2017**
   - Implanta Sistema de Gestión de la Calidad en laboratorios de ensayo y calibración
   - Requisitos para demostrar competencia en ensayos
-- **ENAC**: asociación sin ánimo de lucro, único organismo con potestad pública para acreditar (**RD 1715/2010**, **Reglamento (CE) 765/2008**)
+- **ENAC**: asociación sin ánimo de lucro, único organismo con potestad pública para acreditar (**Real Decreto 1715/2010**, **Reglamento (CE) 765/2008**)
   - Marca ENAC: declara públicamente el cumplimiento y da aceptación internacional
-  - Acuerdos Multilaterales de Reconocimiento con más de **120 países**, gestionados por **EA** y **Global ACI** (fusión de ILAC e IAF desde 1-1-2026)
+  - Acuerdos Multilaterales de Reconocimiento con más de **120 países**, gestionados por **EA** y **Global ACI** (fusión de ILAC e IAF desde 1 de enero de 2026)
 - **Laboratorio Central** (creado en **1989**), funciones
   - Coordinar y armonizar la red y las aplicaciones informáticas
   - Planificar adquisiciones, asesorar en reactivos, material y calibración
@@ -58,7 +58,7 @@
   - **Ensayo de intercomparación**: precisión aceptable y calculada con datos reales
   - **Método de adiciones**: si faltan las anteriores, comparar muestra/muestra adicionada con el valor teórico de la adición
 - **Estadísticamente**: test **t de Student**
-  - `texp = (X̅ – µ) × √n / Sr`
+  - `texp = (X̅ - µ) × √n / Sr`
   - texp < t tabulado: sin diferencias significativas, método **trazable** al material de referencia
   - Con recuperación, se sustituye el valor medido por el % de recuperación
 - **Matemáticamente**: **% de recuperación** del analito

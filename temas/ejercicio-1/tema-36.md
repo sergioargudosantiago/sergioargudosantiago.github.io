@@ -8,10 +8,10 @@
   - Requisitos para demostrar competencia en ensayos
   - Origen: ofrecer servicio de calidad a operadores, sobre todo exportadores
 - **ENAC**
-  - Asociación sin ánimo de lucro, único organismo con potestad pública para acreditar (**RD 1715/2010**, **Reglamento (CE) 765/2008**)
+  - Asociación sin ánimo de lucro, único organismo con potestad pública para acreditar (**Real Decreto 1715/2010**, **Reglamento (CE) 765/2008**)
   - Marca ENAC: declara cumplimiento y da aceptación internacional
   - Acuerdos Multilaterales de Reconocimiento, más de 120 países
-  - Organizaciones: **EA** y **Global ACI** (desde 1-1-2026, fusión de ILAC e IAF)
+  - Organizaciones: **EA** y **Global ACI** (desde 1 de enero de 2026, fusión de ILAC e IAF)
 - **Laboratorio Central** (desde 1989), funciones
   - Coordinar y armonizar la red y las aplicaciones informáticas
   - Planificar adquisiciones de instrumental
@@ -92,7 +92,7 @@
 - **Indicadores externos**: se toma muestra y se prueba con reactivo en placa de porcelana o papel de filtro
 ## 3.2. Clasificación de los métodos volumétricos
 - Tres criterios: tipo de reacción, modo de valoración y cantidad de problema o reactivo
-- **3.2.1. Por el tipo de reacción química**
+- **Por el tipo de reacción química**
   - **Neutralización** (ácido-base): transferencia de H+
     - Bases con HCl, H2SO4, HNO3 o HClO4. Ácidos con NaOH o KOH
     - Alimentos: acidez y grado de saponificación (mg KOH por g de grasa) en grasas, acidez en zumos, vino y cerveza, nitrógeno por **Kjeldahl**
@@ -106,11 +106,11 @@
     - Calcio, hierro, ácido nitroso y agua oxigenada
   - **Precipitación**: final por aparición o cese del precipitado. Sulfatos en vinos
   - **Mohr** (cloruros) y **Volhard** (halógenos) en alimentos
-- **3.2.2. Por el modo de proceder**
+- **Por el modo de proceder**
   - **Directa**: reacción conocida, indicador marca el punto final
   - **Retorno o retroceso**: exceso de reactivo, se valora el exceso con un tercer reactivo
   - **Indirecta**: el analito se transforma en otro compuesto valorable, en alimentos sobre todo para H+
-- **3.2.3. Por la cantidad de problema o reactivo**
+- **Por la cantidad de problema o reactivo**
   - **Micrométodo**: 0,4-1 mL o 1-10 mg
   - **Semimicrométodo**: 1-10 mL o 10-100 mg
   - **Macrométodo**: 10-100 mL o 100-1.000 mg
@@ -128,7 +128,7 @@
 - **Pila galvánica**: dos electrodos de distinto metal separados por tabique poroso
   - **Ánodo** se oxida, **cátodo** se reduce
   - Electrones del ánodo al cátodo por circuito externo
-  - FEM: Epila = Ecátodo – Eánodo
+  - FEM: Epila = Ecátodo - Eánodo
 - Se mide la **FEM** y la **ecuación de Nernst** la relaciona con la concentración del analito
 ## 4.2. Descripción e instrumentación necesaria
 - **Potenciómetro**: electrodo de referencia, galvanómetro y electrodo indicador

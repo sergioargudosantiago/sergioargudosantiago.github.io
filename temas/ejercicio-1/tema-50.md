@@ -153,7 +153,7 @@
 
 ## 4.3. Juguetes
 
-- **Reglamento (UE) 2025/2509** sustituye progresivamente a la **Directiva 2009/48/CE** (RD 1205/2011)
+- **Reglamento (UE) 2025/2509** sustituye progresivamente a la **Directiva 2009/48/CE** (Real Decreto 1205/2011)
   - **Pasaporte Digital del Producto** (QR), refuerza prohibición de PFAS
 - Metales pesados: **UNE-EN 71-3:2020+A2:2025**
 - **Ftalatos**: Anexo XVII REACH (entradas 51 y 52, **Reglamento (UE) 2018/2005**), **0,1 %**

@@ -63,7 +63,7 @@
     - Ejecución y justificación hasta **24 meses**
     - **Club ICEX Next**: red de empresas internacionalizadas
 - **Promoción y acceso a mercados**
-  - **Plan País USA**: presencia y posicionamiento de empresas españolas en Estados Unidos
+  - **Plan País USA**: presencia y posicionamiento de empresas españolas en EEUU
   - **ICEX Gran Distribución y Sourcing**: acceso a grandes cadenas y contacto de compradores extranjeros con proveedores españoles
   - **ICEX Impact+**: diversificación hacia mercados de alto crecimiento, con modelos de negocio sostenibles e inclusivos
 - **Implantación y cooperación empresarial**
@@ -105,7 +105,7 @@
 - **Ley 14/2013**: marco legal fundamental de la política de internacionalización
 - **Título V**, «Internacionalización de la economía española»
   - Elementos institucionales, estratégicos y financieros, y movilidad internacional
-  - **Artículos 50 a 76**, en dos secciones
+  - **Arts. 50 a 76**, en dos secciones
 - **Sección 1.ª, Fomento de la internacionalización**
   - Marco estratégico
   - Instrumentos y organismos: **ICEX**, **COFIDES**, **ICO**, **CESCE** y fondos oficiales de financiación
@@ -113,7 +113,7 @@
 - **Sección 2.ª, Movilidad internacional**
   - Régimen específico de entrada y permanencia de inversores, emprendedores, profesionales altamente cualificados, investigadores y trabajadores desplazados
   - Objetivo: atraer inversión, actividad y talento
-- **Artículo 51**
+- **Art. 51**
   - La acción del Gobierno se plasma en el **Plan Estratégico de Internacionalización de la Economía Española**
   - Objetivo: competitividad y contribución del sector exterior al crecimiento y al empleo
   - Fija **prioridades geográficas y sectoriales** y planes de actuación de los organismos
@@ -155,7 +155,7 @@
   - Añade un componente **sectorial** a los mercados prioritarios
   - Identifica los sectores de mayor potencial por país
   - Se incorporó **Reino Unido** (Brexit) y se excluyó **Rusia** (invasión de Ucrania)
-  - Vigentes: **Estados Unidos, Canadá, México, Brasil, Marruecos, Sudáfrica, Turquía, Japón, Corea del Sur, China, India y Reino Unido**
+  - Vigentes: **EEUU, Canadá, México, Brasil, Marruecos, Sudáfrica, Turquía, Japón, Corea del Sur, China, India y Reino Unido**
   - Lista no excluyente
 
 # 6. CONCLUSIÓN
@@ -165,4 +165,4 @@
 - Desde **2025**, ante las tensiones comerciales y arancelarias
   - **Plan de Respuesta y Relanzamiento Comercial**
   - Integra el **Plan ICEX de Alto Impacto en Competitividad**, con atención a las empresas más expuestas al mercado estadounidense
-  - Apoyo personalizado a grandes exportadores, inteligencia comercial, programas de crecimiento para PYME, atención a filiales en Estados Unidos y terceros mercados, posicionamiento de España
+  - Apoyo personalizado a grandes exportadores, inteligencia comercial, programas de crecimiento para PYME, atención a filiales en EEUU y terceros mercados, posicionamiento de España

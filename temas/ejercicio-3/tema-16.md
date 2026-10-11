@@ -18,7 +18,7 @@
   - **Políticos y administrativos**: cambios normativos, restricciones, control de cambios, burocracia
 - **Principios**: **buena fe**, **diligencia de un buen comerciante**, **autonomía de la voluntad** (límite: normas imperativas)
 - **Régimen jurídico**
-  - **Convención de Viena (CISG)**, 11-4-1980, España desde el **1-8-1991**
+  - **Convención de Viena (CISG)**, 11 de abril de 1980, España desde el **1 de agosto de 1991**
     - Régimen uniforme de formación del contrato y obligaciones de vendedor y comprador
     - Se aplica con establecimientos en Estados contratantes distintos, exclusión posible (**art. 6**)
     - No regula validez ni transmisión de la propiedad
@@ -46,7 +46,7 @@
 
 - **Representante** promociona o capta clientes por cuenta de la **representada**, que concluye las operaciones, a cambio de remuneración
 - Tres figuras
-  - **Representante de comercio dependiente**: relación laboral especial, **RD 1438/1985**
+  - **Representante de comercio dependiente**: relación laboral especial, **Real Decreto 1438/1985**
   - **Agente**: intermediario independiente, **Ley 12/1992**. Presunción de dependencia si no organiza su actividad ni su tiempo, relación laboral
   - **Profesional independiente** sin encaje pleno: rige lo pactado
 - Contrato fija facultades, remuneración, territorio, duración y causas de terminación
@@ -87,7 +87,7 @@
 - Distribuidor: comprar y revender, territorio, condiciones de comercialización, existencias, información de ventas
 - Proveedor: suministro, información, asistencia técnica, materiales
 - Jurisprudencia del Tribunal Supremo: **indemnización por clientela** por analogía en ciertos supuestos
-- **Competencia**: **Reglamento (UE) 2022/720**, hasta el **31-5-2034**
+- **Competencia**: **Reglamento (UE) 2022/720**, hasta el **31 de mayo de 2034**
   - Exención por categorías de acuerdos verticales con cuota de mercado hasta el **30 %**
   - Sin restricciones graves, como precios mínimos o fijos de reventa
   - Directrices de la Comisión de 2022
@@ -110,7 +110,7 @@
 
 - La arrendadora adquiere un bien elegido por el cliente y le cede su uso a cambio de cuotas, normalmente con **opción de compra**
 - Sujetos: **proveedor**, **entidad de leasing**, **cliente o arrendatario**
-- Marco: **Ley 5/2015** de fomento de la financiación empresarial y **RD 309/2020** (establecimientos financieros de crédito)
+- Marco: **Ley 5/2015** de fomento de la financiación empresarial y **Real Decreto 309/2020** (establecimientos financieros de crédito)
 - **Leasing financiero**: financia la adquisición, con opción de compra
 - **Leasing operativo**: cesión de uso, sin fin de adquisición
 - Régimen fiscal del financiero, **Ley 27/2014** (Impuesto sobre Sociedades): duración mínima **2 años** en bienes muebles y **10 años** en inmuebles o establecimientos industriales
@@ -125,7 +125,7 @@
 
 - Primera edición en **1936**
 - Revisiones: 1953, 1967, 1976, 1980, 1990, 2000, 2010 y **2020**
-- **Incoterms 2020**: en vigor desde el **1-1-2020**, **11 reglas**, **DAT sustituido por DPU**
+- **Incoterms 2020**: en vigor desde el **1 de enero de 2020**, **11 reglas**, **DAT sustituido por DPU**
 - Nueva versión no deroga las anteriores, indicar siempre la edición
 - Revisión aproximadamente decenal, próxima en torno a 2030
 

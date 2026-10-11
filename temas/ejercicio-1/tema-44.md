@@ -117,7 +117,7 @@
 ## 4.1. Organismos nacionales privados
 
 - **España**: normalización a cargo de **UNE** (Asociación Española de Normalización)
-  - Antes unida a certificación en **AENOR**: **RD 1614/1985**, reconocida por **RD 2200/1995**, en desarrollo de la **Ley 21/1992** de Industria
+  - Antes unida a certificación en **AENOR**: **Real Decreto 1614/1985**, reconocida por **Real Decreto 2200/1995**, en desarrollo de la **Ley 21/1992** de Industria
   - **2017**: desdoblamiento por exigencias europeas de transparencia
     - **UNE**: normalización y cooperación internacional, en exclusiva
     - **AENOR**: entidad mercantil, evaluación de la conformidad (certificación), formación y venta de publicaciones

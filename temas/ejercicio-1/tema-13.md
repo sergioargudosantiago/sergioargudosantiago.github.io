@@ -28,12 +28,12 @@
   - Gema, fuente o mineral, marina, común (refinada), especiales (yodada, fluorada)
 - **Vinagre**: **Real Decreto 661/2012**, doble fermentación alcohólica y acética
   - Tipos: vino, frutas, sidra, alcohol, cereales, malta, miel
-- **2.1.1. Factores de calidad comercial**
+- **Factores de calidad comercial**
   - Calidad comercial: valor añadido por selección, clasificación, envasado y transporte
   - Azafrán: humedad, cenizas totales e insolubles en HCl, extracto etéreo, fibra bruta, nitrógeno
     - Fraude: **tartrazina (E-102)** y colorantes artificiales, detección por **HPLC**
   - Pimentón: aceites vegetales para brillo y colorantes **Sudán** no autorizados
-- **2.1.2. Análisis sectorial**
+- **Análisis sectorial**
   - Saldo comercial positivo (DATACOMEX 2025), diversificación de destinos
   - Azafrán: producción española del 45-50 % mundial al **3 %**, Irán **80 %**
     - España, principal exportador de calidad. **DOP Azafrán de La Mancha** (Toledo)
@@ -44,7 +44,7 @@
 
 ## 2.2. Platos preparados y precocinados
 
-- **Real Decreto 1021/2022**, requisitos de higiene en comercio minorista (derogó el RD 3484/2000)
+- **Real Decreto 1021/2022**, requisitos de higiene en comercio minorista (derogó el Real Decreto 3484/2000)
 - Definición: elaboración culinaria envasada o no, lista para consumo directo o tras calentar
 - Categorías
   - **Precocinados**: elaboración incompleta
@@ -110,7 +110,7 @@
   - **Normas de comercialización**: base CEPE/ONU (WP.7)
     - Controles en todas las fases y a terceros países
     - Azafrán regulado en el 1308/2013
-    - **RD 175/2004**: autoridad de coordinación
+    - **Real Decreto 175/2004**: autoridad de coordinación
   - **Organizaciones de productores**: concentran oferta, planifican, reducen costes
   - **Organizaciones interprofesionales**: art. 157 del Reglamento 1308/2013 y **Ley 38/1994**
     - Defensa y promoción del sector. Ejemplo sectorial: **FIAB**
@@ -144,14 +144,14 @@
 - Azafrán: **Reglamento 1308/2013**, **Orden ECC/2566/2015** (tipos para exportación), **ISO 3632**
 - **Real Decreto 1021/2022**: higiene de platos preparados
 - **Reglamento (UE) 609/2013**: alimentos para lactantes, usos médicos especiales y control del peso
-- Normas nacionales de calidad remanentes: caldos, consomés, sopas y cremas (1984), salsas de mesa (**RD 858/1984**)
+- Normas nacionales de calidad remanentes: caldos, consomés, sopas y cremas (1984), salsas de mesa (**Real Decreto 858/1984**)
 - **Orden PRE/3026/2003**, modificada por **ECC/2257/2013** y **ECC/2566/2015**: inspección de calidad comercial
   - SOIVRE **no controla** la calidad comercial de estos productos
   - Excepción: **azafrán**, por fraude de origen (precios públicos), con RMN y HPLC
 
 ## 3.5. Normativa general
 
-- **RD 175/2004**: autoridad de controles de conformidad
+- **Real Decreto 175/2004**: autoridad de controles de conformidad
 - **Reglamento (CE) 396/2005**: límites máximos de residuos
 - **Reglamento (UE) 2023/915**: contaminantes
 - **Reglamento (UE) 1169/2011**: información al consumidor

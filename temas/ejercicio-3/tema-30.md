@@ -1,7 +1,7 @@
 # 1. INTRODUCCIÓN
 - **Tratado de Roma (1957)**: mercado común con libre circulación de mercancías, servicios, personas y capitales
   - Suprimidos los aranceles en 1968, el obstáculo principal son las **barreras técnicas** (reglamentaciones y normas nacionales divergentes)
-- **Libro Blanco 1985** y **Acta Única Europea 1986**: mercado interior completo el **31-12-1992**
+- **Libro Blanco 1985** y **Acta Única Europea 1986**: mercado interior completo el **31 de diciembre de 1992**
 - Tres mecanismos complementarios contra las barreras técnicas
   - **Transparencia**: notificar proyectos de reglamentos técnicos, **Directiva (UE) 2015/1535**. Normas voluntarias, **Reglamento (UE) 1025/2012**
   - **Armonización técnica**: Nuevo Enfoque, Enfoque Global y Nuevo Marco Legislativo, sobre normalización europea
@@ -11,16 +11,16 @@
 - **Antiguo enfoque**, lento: directivas muy detalladas y unanimidad en el Consejo
 - Nueva estrategia de la Comisión con cuatro elementos
   - Orientaciones de 1984 con **CEN, CENELEC** y **ETSI** (1988)
-  - **Nuevo Enfoque**: Resolución del Consejo de **7-5-1985**
+  - **Nuevo Enfoque**: Resolución del Consejo de **7 de mayo de 1985**
   - Mayoría cualificada (Acta Única), hoy **art. 114 TFUE**
-  - **Enfoque Global**: Resolución de **21-12-1989**
+  - **Enfoque Global**: Resolución de **21 de diciembre de 1989**
 - **Nuevo Marco Legislativo** en 2008
 
 # 3. LA POLÍTICA DE LA UNIÓN EN MATERIA DE NORMAS
 
 ## 3.1. La normalización europea
 - **Norma**: especificación técnica de uso común y repetido, **no obligatoria**
-- **Reglamento (UE) 1025/2012**, aplicable desde el 1-1-2013, reconoce tres organismos europeos
+- **Reglamento (UE) 1025/2012**, aplicable desde el 1 de enero de 2013, reconoce tres organismos europeos
   - **CEN** (general), **CENELEC** (electrotécnica), **ETSI** (telecomunicaciones)
 - Cooperación internacional
   - CEN con ISO, **Acuerdo de Viena** (1991)
@@ -39,7 +39,7 @@
 - Sin normas armonizadas: **especificaciones comunes** por actos de ejecución
 - Jurisprudencia
   - **James Elliott** (C-613/14, 2016): forman parte del Derecho de la Unión
-  - **Public.Resource.Org** (C-588/21 P, 5-3-2024): interés público superior en su divulgación, cuestiona el acceso de pago
+  - **Public.Resource.Org** (C-588/21 P, 5 de marzo de 2024): interés público superior en su divulgación, cuestiona el acceso de pago
 - **Estrategia de Normalización 2022** y revisión del Reglamento 1025/2012 prevista en 2026
 
 # 4. LAS DIRECTIVAS DE NUEVO ENFOQUE
@@ -60,16 +60,16 @@
   - **Marcado CE**
   - **Libre circulación**: no se puede prohibir ni restringir productos conformes
   - **Cláusula de salvaguardia**: el Estado adopta medidas y las notifica a la Comisión y a los demás Estados
-    - Riesgo grave: **Safety Gate** (antes RAPEX), **Reglamento (UE) 2023/988** desde 13-12-2024
+    - Riesgo grave: **Safety Gate** (antes RAPEX), **Reglamento (UE) 2023/988** desde 13 de diciembre de 2024
   - **Vigilancia del mercado**: **Reglamento (UE) 2019/1020**, art. 25 designa autoridades de control. En España, entre ellas el **SOIVRE**
 - Tendencia a sustituir directivas por **reglamentos**
   - **2023/1230** máquinas (desde enero de 2027), **2024/3110** construcción, **2025/2509** juguetes, **2023/1542** baterías
-- Productos defectuosos: **Directiva 85/374/CEE**, derogada por la **Directiva (UE) 2024/2853** desde el 9-12-2026, sigue para productos introducidos antes. Extiende el régimen a software y plataformas en línea
+- Productos defectuosos: **Directiva 85/374/CEE**, derogada por la **Directiva (UE) 2024/2853** desde el 9 de diciembre de 2026, sigue para productos introducidos antes. Extiende el régimen a software y plataformas en línea
 
 # 5. EL ENFOQUE GLOBAL EN MATERIA DE EVALUACIÓN DE LA CONFORMIDAD
 
 ## 5.1. Principios
-- **Resolución del Consejo de 21-12-1989**: procedimientos homogéneos, fiables y reconocidos en toda la Unión
+- **Resolución del Consejo de 21 de diciembre de 1989**: procedimientos homogéneos, fiables y reconocidos en toda la Unión
 - Enfoque coherente basado en **módulos**
 - Criterios para procedimientos, organismos y marcado CE
 - Normas de gestión de calidad (**EN ISO 9000**) y de organismos (familia **EN ISO/IEC 17000**)
@@ -91,7 +91,7 @@
 - **B** solo cubre diseño: se combina con C, D, E o F
 - Completos por sí mismos: A, G, H, D1, E1 y F1
 - D, E y H se basan en la serie ISO 9000. **ISO 9001** facilita pero no es obligatoria
-  - **ISO 9001:2026** publicada el 16-9-2026, transición de unos tres años
+  - **ISO 9001:2026** publicada el 16 de septiembre de 2026, transición de unos tres años
 
 ## 5.3. Documentación exigida al fabricante
 - **Documentación técnica**: diseño, fabricación y funcionamiento, con análisis de riesgos. Conservación **diez años** salvo otro plazo
@@ -120,7 +120,7 @@
 
 # 7. EL NUEVO MARCO LEGISLATIVO
 - Adoptado en **2008**, tras la Comunicación y Resolución de 2003. Componentes
-  - **Reglamento (CE) 765/2008**: acreditación, marcado CE y vigilancia. Vigilancia sustituida desde 16-7-2021 por el **Reglamento (UE) 2019/1020**
+  - **Reglamento (CE) 765/2008**: acreditación, marcado CE y vigilancia. Vigilancia sustituida desde 16 de julio de 2021 por el **Reglamento (UE) 2019/1020**
   - **Decisión 768/2008/CE**: marco común con definiciones, obligaciones, módulos y salvaguardia
   - **Reglamento (UE) 2019/515** sobre reconocimiento mutuo, sustituye al 764/2008. Con el 2019/1020 forma el **paquete de mercancías** (diciembre de 2017)
 - Aportaciones
@@ -136,7 +136,7 @@
 
 # 8. EL PRINCIPIO DE RECONOCIMIENTO MUTUO
 - Tercer mecanismo con armonización y transparencia
-- **Cassis de Dijon** (asunto 120/78, 20-2-1979)
+- **Cassis de Dijon** (asunto 120/78, 20 de febrero de 1979)
   - Alemania exigía un mínimo del 25 % de alcohol en licores de frutas
   - Medida de efecto equivalente a restricción cuantitativa (hoy **art. 34 TFUE**), no justificada: bastaba el etiquetado
 - Principios
@@ -147,7 +147,7 @@
   - **Keck y Mithouard** (1993): excluye modalidades de venta aplicadas por igual
   - **Fresas** (1997): el Estado incumple si no actúa frente a obstáculos de particulares
   - **Foie gras** (1998): cláusula de reconocimiento mutuo en normativas nacionales
-- **Reglamento (UE) 2019/515**, aplicable desde el 19-4-2020, en ámbitos no o parcialmente armonizados
+- **Reglamento (UE) 2019/515**, aplicable desde el 19 de abril de 2020, en ámbitos no o parcialmente armonizados
   - **Declaración de reconocimiento mutuo** del operador
   - Decisiones restrictivas motivadas y notificadas por **ICSMS**
   - **SOLVIT**, con dictamen de la Comisión
@@ -160,7 +160,7 @@
   - Fabricantes y organismos notificados acreditados: conformidad
   - Autoridades de vigilancia: control posterior
 - Retos
-  - Digitalización, **Pasaporte Digital de Producto** (primer hito obligatorio en baterías desde el 18-2-2027)
+  - Digitalización, **Pasaporte Digital de Producto** (primer hito obligatorio en baterías desde el 18 de febrero de 2027)
   - Economía circular y comercio electrónico
   - Acceso a las normas tras Public.Resource.Org
   - **Ley Europea de Productos** (programa 2026), revisará NML, vigilancia del mercado y normalización

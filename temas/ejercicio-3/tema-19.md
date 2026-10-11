@@ -11,7 +11,7 @@
 - **Liberalización erga omnes**: UE y terceros países
 - Titulares: personas físicas residentes en España (españolas o extranjeras) y personas jurídicas domiciliadas en España
 - Declaración al **Registro de Inversiones Exteriores**
-  - Con carácter general **ex post** y estadística (**RD 571/2023**, **Orden ECM/57/2024**)
+  - Con carácter general **ex post** y estadística (**Real Decreto 571/2023**, **Orden ECM/57/2024**)
   - **Jurisdicciones no cooperativas** (directo o indirecto): siempre, sin importar cuantía
   - **Previa** si participación **>10 %** o inmuebles, con umbrales
 
@@ -19,7 +19,7 @@
 
 - **Directa**: relación duradera, **≥10 %** del capital o votos, o control
 - **Cartera**: por debajo del 10 %
-- **RD 571/2023**: concepto internacional de inversión directa, umbral 10 %
+- **Real Decreto 571/2023**: concepto internacional de inversión directa, umbral 10 %
   - Sociedades cotizadas e IIC con gestora no residente al alcanzar el 10 %
   - Aportaciones de socios
   - **Financiación intragrupo**: >**1 M€** y plazo >1 año
@@ -33,15 +33,15 @@
 
 - **UE**
   - **Art. 63 TFUE**: libre movimiento de capitales
-  - **Reglamento (UE) 2019/452**, control de inversiones extranjeras directas, será derogado por **Reglamento (UE) 2026/1386** desde el 17-1-2028, con disposiciones aplicables desde julio de 2026
+  - **Reglamento (UE) 2019/452**, control de inversiones extranjeras directas, será derogado por **Reglamento (UE) 2026/1386** desde el 17 de enero de 2028, con disposiciones aplicables desde julio de 2026
 - **Ley 19/2003**: régimen de movimientos de capitales y transacciones con el exterior
   - Libertad, residente y no residente, mecanismo de declaraciones
   - **Sanciones**
     - Muy graves: de 30.000 € al 100 % de la operación
     - Graves: hasta 50 %, mínimo 6.000 €
     - Leves: hasta 25 %, mínimo 3.000 €
-- **RD 571/2023**: régimen para inversión extranjera en España y española en el exterior, declaración **ex post**
-- **RD 867/2025**
+- **Real Decreto 571/2023**: régimen para inversión extranjera en España y española en el exterior, declaración **ex post**
+- **Real Decreto 867/2025**
   - Registro: **SG de Regulación de Inversiones**
   - Control de inversiones: **SG de Inversiones Exteriores**
   - Ambas en la DG de Política Comercial y Seguridad Económica
@@ -50,7 +50,7 @@
 ## 3.2. Tramitación en España
 
 - **Orden ECM/57/2024**: procedimientos de declaraciones y memorias anuales
-- **Resolución de 31-1-2024** (DG de Comercio Internacional e Inversiones): modelos normalizados, en vigor desde 1-2-2024
+- **Resolución de 31 de enero de 2024** (DG de Comercio Internacional e Inversiones): modelos normalizados, en vigor desde 1 de febrero de 2024
 - **Modelos de inversión española en el exterior**
   - **DP-3, DP-4**: declaración previa
   - **D-5A, D-5B**: inversión y desinversión en sociedades, sucursales y otras formas
@@ -65,7 +65,7 @@
 
 # 4. REGISTRO DE INVERSIONES
 
-- Recoge datos del **RD 571/2023**
+- Recoge datos del **Real Decreto 571/2023**
   - Participación al alcanzar el 10 %
   - **Financiación intragrupo** desde 2024
   - **Reinversión de beneficios**: de las memorias anuales, sin modelo propio

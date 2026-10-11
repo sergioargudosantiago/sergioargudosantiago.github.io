@@ -1,6 +1,6 @@
 # 1. INTRODUCCIÓN
 
-- **Mercado Único** desde el **1-1-1993**: eliminación de barreras interiores
+- **Mercado Único** desde el **1 de enero de 1993**: eliminación de barreras interiores
   - UE armoniza legislaciones, protege consumidores y empresas, evita obstáculos técnicos
 - Mercancía importada recibe trato de comunitaria tras aduana, de ahí el **control oficial en frontera**
   - Verifica **seguridad** y **etiquetado**
@@ -19,7 +19,7 @@
   - **Dirección General de Consumo** (Ministerio de Derechos Sociales, Consumo y Agenda 2030)
     - Seguridad general de productos
     - Punto de contacto de alertas: **Safety Gate** (antiguo RAPEX) y red **SIRI**
-- **6 familias** del RD 330/2008 y modificaciones (**Orden PJC/161/2026**)
+- **6 familias** del Real Decreto 330/2008 y modificaciones (**Orden PJC/161/2026**)
   - Textiles, calzado, juguetes, Pequeño Material Eléctrico (PME), Equipos de Protección Individual (EPI), madera y muebles
   - Sin duplicidad: aduanas delegan la comprobación técnica en el SOIVRE
 - **Análisis de riesgos (ESTACICE)**: 3 circuitos
@@ -48,8 +48,8 @@
 ## 2.2. Legislación general sobre seguridad de los productos industriales
 
 - **Reglamento (UE) 2023/988**, seguridad general de los productos
-  - Aplicación directa desde el **13-12-2024**
-  - Deroga la **Directiva 2001/95/CE** y deja sin efecto el **RD 1801/2003**
+  - Aplicación directa desde el **13 de diciembre de 2024**
+  - Deroga la **Directiva 2001/95/CE** y deja sin efecto el **Real Decreto 1801/2003**
   - **Evaluación de seguridad**: características, presentación, etiquetado, instrucciones, consumidores en riesgo
   - **Deberes de operadores**: fabricantes, importadores, distribuidores
     - Importador: garantiza seguridad, verifica documentación técnica, asegura trazabilidad
@@ -59,26 +59,26 @@
 - **Real Decreto 330/2008**: control a la importación respecto a normas de seguridad
   - **Anexo I**: productos sometidos a control obligatorio previo al despacho
   - Coordinación **MECE**, **Hacienda (AEAT/Aduanas)** y Consumo
-  - **Artículo 6**, resultado del control
+  - **Art. 6**, resultado del control
     - Favorable: **Certificado de Conformidad SOIVRE**, imprescindible para el despacho a libre práctica
     - No conforme: se deniega el certificado y se notifica por escrito al importador, motivando
     - Incumplimiento subsanable: despacho condicionado por compromiso firmado de no comercializar hasta subsanar. Se notifica a Consumo
-  - **Artículo 7**: inspección en recintos aduaneros e instalaciones autorizadas
+  - **Art. 7**: inspección en recintos aduaneros e instalaciones autorizadas
   - **Orden PRE/735/2010**: primera modificación del Anexo I, añade madera y muebles y amplía textil, PME y juguetes
   - **Orden PJC/161/2026**, de 24 de febrero
-    - En vigor desde el **4-4-2026**
+    - En vigor desde el **4 de abril de 2026**
     - Añade material eléctrico, puericultura, EPI, mecheros, escaleras de mano
     - Gestión telemática por **Ventanilla Única Aduanera (PUE COM)**
-    - Certificado exigible a los nuevos productos desde el **18-5-2026**
-- **Real Decreto 1468/1988** (modificado por **RD 1182/1989**): etiquetado, presentación y publicidad de productos industriales
+    - Certificado exigible a los nuevos productos desde el **18 de mayo de 2026**
+- **Real Decreto 1468/1988** (modificado por **Real Decreto 1182/1989**): etiquetado, presentación y publicidad de productos industriales
   - Norma marco horizontal y supletoria, excluye productos con normativa específica
   - Exige país de origen, el calzado no lo exige y prevalece la norma específica
 - **Real Decreto 820/1990**: prohíbe productos de apariencia engañosa
-  - Sustituido materialmente por el Reglamento 2023/988 desde el 13-12-2024
+  - Sustituido materialmente por el Reglamento 2023/988 desde el 13 de diciembre de 2024
 
 ## 2.3. Legislación específica sobre seguridad aplicable a determinados productos industriales
 
-- **2.3.1. Textil**
+- **Textil**
   - **Reglamento (UE) 1007/2011**: denominaciones de fibras y etiquetado de composición
   - **Real Decreto 928/1987**: desarrollo español, norma fundamental de inspección
   - Normas: **UNE-EN 14682** (cordones en ropa infantil hasta 14 años), **UNE 40902** (bebés hasta 3 años, no es EN)
@@ -88,46 +88,46 @@
     - Composición y NIF: no impiden el despacho, generan **Comunicación Informativa** a consumo autonómico
     - Lengua: al menos castellano (art. 18.1 **RDL 1/2007**)
     - Prendas ordinarias sin marcado CE
-- **2.3.2. Calzado**
+- **Calzado**
   - **Real Decreto 1718/1995**: etiquetado de materiales (empeine, forro/plantilla, suela)
     - Ausencias dan Comunicación Informativa
-    - Excluidos: usado, EPI, RD 1406/1989, calzado juguete
+    - Excluidos: usado, EPI, Real Decreto 1406/1989, calzado juguete
   - **REACH (CE) 1907/2006**: **DMF** prohibido en artículos de consumo, **cromo VI** máximo **3 mg/kg** en cuero en contacto con la piel
   - **Decisión (UE) 2016/1349**: Ecolabel de calzado
   - **UNE 40902** orientativa en calzado de menores de 36 meses
-- **2.3.3. EPI**
+- **EPI**
   - **Reglamento (UE) 2016/425**: deroga la Directiva 89/686/CEE, cubre textil y calzado EPI
   - 3 categorías (Anexo I)
     - **I**: riesgos mínimos
     - **II**: riesgos intermedios, examen UE de tipo
     - **III**: riesgos mortales o irreversibles, examen de tipo y control de producción, número de **4 dígitos** del Organismo Notificado junto al CE
-  - **RD 773/1997**: uso de EPI por trabajadores
+  - **Real Decreto 773/1997**: uso de EPI por trabajadores
   - Normas: **UNE-EN ISO 21420** (guantes), **13688** (ropa)
   - Calzado: **ISO 20345** seguridad (**200 J**, 15 kN), **20346** protección (100 J, 10 kN), **20347** trabajo (sin tope)
-- **2.3.4. Juguetes**
-  - **Directiva 2009/48/CE**, traspuesta por **RD 1205/2011**
+- **Juguetes**
+  - **Directiva 2009/48/CE**, traspuesta por **Real Decreto 1205/2011**
     - Apéndice A del Anexo II: sustancias CMR
     - Apéndice C: migración en menores de 36 meses o de boca
   - **Reglamento 2025/2509**: sustituirá a la Directiva
-    - Obligatorio pleno **1-8-2030**, entrada parcial 1-1-2026
+    - Obligatorio pleno **1 de agosto de 2030**, entrada parcial 1 de enero de 2026
     - Prohíbe PFAS intencionados, restringe disruptores endocrinos
     - **Pasaporte Digital de Producto (DPP)**
     - Ciberseguridad en juguetes conectados
   - Normas: **UNE-EN 71-1** (mecánicas), **71-2** (inflamabilidad), **71-3** (migración), **UNE-EN 62115** (eléctricos)
-- **2.3.5. Pequeño material eléctrico**
+- **Pequeño material eléctrico**
   - **Real Decreto 187/2016**: transpone Baja Tensión **2014/35/UE**
   - Dos marcados CE distintos
     - **LVD**: bases y clavijas domésticas excluidas, sin CE, se evalúan por **UNE 20315** y Reglamento 2023/988
-    - **RoHS** (**RD 219/2013**): sí CE, finalidad medioambiental
-  - **RAEE**: **RD 110/2015**, inscripción **RII-RAEE** y contenedor tachado, sin marcado CE
-  - **RD 842/2002 (REBT)**, **UNE-EN 60998**, **UNE-EN 61058**
-- **2.3.6. Madera y muebles**
+    - **RoHS** (**Real Decreto 219/2013**): sí CE, finalidad medioambiental
+  - **RAEE**: **Real Decreto 110/2015**, inscripción **RII-RAEE** y contenedor tachado, sin marcado CE
+  - **Real Decreto 842/2002 (REBT)**, **UNE-EN 60998**, **UNE-EN 61058**
+- **Madera y muebles**
   - **Madera para construcción**
     - **Reglamento (UE) 305/2011**: marcado CE y **Declaración de Prestaciones (DoP)**
     - Normas: **UNE-EN 13986** (tableros), **14342** (parqué), **14915** (frisos)
-    - **EUDR, Reglamento (UE) 2023/1115**: diligencia debida contra deforestación, exigible **30-12-2026** (grandes y medianas) y **30-6-2027** (micro y pequeñas)
+    - **EUDR, Reglamento (UE) 2023/1115**: diligencia debida contra deforestación, exigible **30 de diciembre de 2026** (grandes y medianas) y **30 de junio de 2027** (micro y pequeñas)
   - **Muebles**
-    - Sin norma europea específica: Reglamento 2023/988 y RD 1468/1988
+    - Sin norma europea específica: Reglamento 2023/988 y Real Decreto 1468/1988
     - Sin marcado CE, salvo componentes eléctricos o motorizados
     - Etiquetado: importador, dirección, modelo, instrucciones en castellano
     - Normas: **UNE-EN 1130**, **UNE-EN 716** (cunas), **UNE-EN 16139**
@@ -137,7 +137,7 @@
 
 # 3. NUEVO MARCO LEGISLATIVO EUROPEO PARA LA COMERCIALIZACIÓN DE PRODUCTOS
 
-- **Paquete Ayral** (9-7-2008): 2 Reglamentos y 1 Decisión
+- **Paquete Ayral** (9 de julio de 2008): 2 Reglamentos y 1 Decisión
 - Origen: el **Nuevo Enfoque** carecía de vigilancia tras el marcado CE
   - NML pasa del momento de entrada al **ciclo de vida** del producto
 - **Tres pilares**
@@ -158,9 +158,9 @@
 # 4. CONCLUSIÓN
 
 - Reparto de papeles
-  - **SOIVRE**: seguridad en frontera (RD 330/2008, **Orden PRE/735/2010**, **Orden PJC/161/2026**)
+  - **SOIVRE**: seguridad en frontera (Real Decreto 330/2008, **Orden PRE/735/2010**, **Orden PJC/161/2026**)
   - **DG de Consumo**: vigila el mercado interior, punto de contacto de **Safety Gate**
 - Marco dinámico
-  - Reglamento 2023/988 sustituye a RD 1801/2003 y RD 820/1990
+  - Reglamento 2023/988 sustituye a Real Decreto 1801/2003 y Real Decreto 820/1990
   - Reglamento 2025/2509 sustituirá a la Directiva 2009/48/CE
   - Tendencia: reglamentos de aplicación directa

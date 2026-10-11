@@ -25,20 +25,20 @@
 ## 2.2. Ganado porcino
 
 - Especie que más carne suministra en el mundo
-- Aprovecha más del **95%**, rendimiento en canal **75-80%**
+- Aprovecha más del **95 %**, rendimiento en canal **75-80 %**
 - 3 bloques genéticos: chinos, europeos y mediterráneos
 - Razas españolas: extremeña negra lampiña y entrepelada, andaluza rubia y manchada, extremeña retinta
 - Foráneas
   - **Large White**: madre en cruces industriales
   - **Duroc**: padre en cruces
 - Clasificación **SEUROP** por carne magra
-  - **S** 60% o más, **E** 55-60%, **U** 50-55%, **R** 45-50%, **O** 40-45%, **P** menos del 40%
+  - **S** 60 % o más, **E** 55-60 %, **U** 50-55 %, **R** 45-50 %, **O** 40-45 %, **P** menos del 40 %
 
 ## 2.3. Ganado ovino
 
 - Cuádruple aprovechamiento (lana, pieles, carne, leche)
 - Razas: carne (aragonesa, segureña, alcarreña), carne y leche (manchega, castellana)
-- Rendimiento en canal **50-60%**. Clasificación UE **voluntaria**
+- Rendimiento en canal **50-60 %**. Clasificación UE **voluntaria**
 - **Corderos ligeros** (menos de 13 kg), España autorizada
   - **A** hasta 7 kg (lechal), **B** 7-10 kg (recental), **C** 10-13 kg (pascual ligero)
   - Dos calidades por color y grasa
@@ -124,7 +124,7 @@
   - Terceros países con estándares comunitarios desde 2023
   - **Reglamento de Ejecución (UE) 2016/1842**: certificado electrónico de importación
   - SOIVRE controla importaciones según la **Orden ECC/1936/2014**
-- **Producción integrada**: **RD 1201/2002**, logotipo según **Orden APA/1/2004**
+- **Producción integrada**: **Real Decreto 1201/2002**, logotipo según **Orden APA/1/2004**
 - **DOP, IGP y ETG**: **Reglamento (UE) 2024/1143**, **Ley 6/2015** (control por la AICA)
   - IGP Ternera Gallega, DOP Guijuelo, DOP Jamón de Teruel
 - **Buenas prácticas ganaderas**: GLOBAL G.A.P. (Certified Meat), SQF, Tesco Nurture, Carrefour Quality Lines
@@ -145,11 +145,11 @@
 
 ## 4.5. Normativa general
 
-- **RD 175/2004**: autoridad de controles de conformidad (Secretaría de Estado de Comercio)
+- **Real Decreto 175/2004**: autoridad de controles de conformidad (Secretaría de Estado de Comercio)
 - **Reglamento (CE) 396/2005**: residuos de plaguicidas
 - **Reglamento (UE) 2023/915**: contaminantes
 - **Reglamento (UE) 1169/2011**: información al consumidor
-- **RD 1055/2022**: envases
+- **Real Decreto 1055/2022**: envases
 - Higiene: **Reglamentos (CE) 852 y 853/2004** y **(UE) 2017/625** (controles oficiales)
 - **Ley 28/2015**: calidad alimentaria y sanciones
 - **Ley 1/2025**: pérdidas y desperdicio alimentario
@@ -163,26 +163,26 @@
   - Ovino: España séptima mundial y segunda en la UE
   - Caprino: China, India y Pakistán
   - Aves: EEUU, China, Brasil y México. Crisis de gripe aviar
-- Superávit cárnico: porcino el **67,8%** de las exportaciones
-- **Bovino** (2025): saldo de **-120 M€**, importaciones **+22,5%** y exportaciones **+6%**
-  - Compra la UE (**78%**). Importaciones UE (**90%**), Brasil y Uruguay
+- Superávit cárnico: porcino el **67,8 %** de las exportaciones
+- **Bovino** (2025): saldo de **-120 M€**, importaciones **+22,5 %** y exportaciones **+6 %**
+  - Compra la UE (**78 %**). Importaciones UE (**90 %**), Brasil y Uruguay
   - OMSA 2016: riesgo insignificante de EEB
 - **Porcino**: superávit de **7.877 M€**
-  - Exportaciones **-1,5%**. UE algo más del 50%, China segundo cliente, Japón, Corea del Sur
-  - Importaciones **+8,5%**
-  - **Peste porcina africana**: foco del 28-11-2025 en Cerdanyola del Vallès (primero desde 1994)
+  - Exportaciones **-1,5 %**. UE algo más del 50 %, China segundo cliente, Japón, Corea del Sur
+  - Importaciones **+8,5 %**
+  - **Peste porcina africana**: foco del 28 de noviembre de 2025 en Cerdanyola del Vallès (primero desde 1994)
     - Pérdida temporal del estatus ante la OMSA
     - **Reglamento de Ejecución (UE) 2023/594**, actualizado por el **2026/985**. **Orden APA/1387/2025**
     - Más de 120 certificados bloqueados en unos 24 países, más de **3.000 M€** en riesgo
     - China regionaliza (provincia de Barcelona). Filipinas levantó el veto en mayo de 2026
-- **Ovino-caprino**: superávit de **476 M€**, exportaciones **+20%**, Argelia
-- **Aves**: saldo de **36 M€**, exportaciones **+18,3%**, importaciones **+20,7%**. Influenza aviar
+- **Ovino-caprino**: superávit de **476 M€**, exportaciones **+20 %**, Argelia
+- **Aves**: saldo de **36 M€**, exportaciones **+18,3 %**, importaciones **+20,7 %**. Influenza aviar
 - **Halal y kosher**: crecimiento, **Ley 26/1992**
 
 # 6. CONCLUSIÓN
 
 - Principal industria alimentaria de España. Primer productor porcino de la UE y tercero mundial
-- Superávit impulsado por el porcino (**67,8%**, **7.877 M€**)
+- Superávit impulsado por el porcino (**67,8 %**, **7.877 M€**)
 - Riesgos
   - **PPA**: certificados bloqueados, reapertura de Japón y México prioritaria
   - **Mercosur**: cuota adicional de **180.000 t** de carne de aves
