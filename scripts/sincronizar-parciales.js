@@ -20,8 +20,8 @@ const RAIZ = path.resolve(__dirname, '..');
 // Página -> sección que se marca como actual en la navegación.
 const PAGINAS = {
     'index.html': 'inicio',
-    'temario.html': 'temario',
-    'fichas.html': 'temario',
+    'esquemas.html': 'esquemas',
+    'fichas.html': 'esquemas',
     'comercio-exterior.html': 'comercio',
     'metodologia.html': 'comercio',
     'enlaces.html': 'enlaces',
@@ -33,7 +33,10 @@ const PAGINAS = {
 // profundidad: sus enlaces tienen que ser absolutos.
 const RAIZ_PROPIA = { '404.html': '/' };
 
-const sueltas = fs.readdirSync(RAIZ).filter(f => f.endsWith('.html'));
+// Páginas que solo redirigen a otra (URL antigua): no llevan cabecera ni pie.
+const REDIRECCIONES = ['temario.html'];
+
+const sueltas = fs.readdirSync(RAIZ).filter(f => f.endsWith('.html') && !REDIRECCIONES.includes(f));
 const sinSeccion = sueltas.filter(f => !(f in PAGINAS));
 if (sinSeccion.length) {
     console.error(`Páginas sin sección asignada en PAGINAS: ${sinSeccion.join(', ')}`);

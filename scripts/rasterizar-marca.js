@@ -50,7 +50,7 @@ function ogCover() {
     return `<div style="width:1200px;height:630px;box-sizing:border-box;padding:0 96px;background:#3B4533;color:#FFFFFF;display:flex;align-items:center;justify-content:space-between;gap:64px;font-family:'Public Sans',sans-serif">
 <div style="display:flex;flex-direction:column;gap:24px;max-width:660px">
 <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.08em;color:#E0C46B">SERGIOARGUDO.ES</span>
-<span style="font-family:Newsreader,serif;font-weight:600;font-size:66px;line-height:1.05">Temario, esquemas y datos para opositar al SOIVRE</span>
+<span style="font-family:Newsreader,serif;font-weight:600;font-size:66px;line-height:1.05">Esquemas y datos para opositar al SOIVRE</span>
 <span style="font-size:28px;color:#C2D9C2">Sergio Argudo Santiago · Inspector del SOIVRE</span>
 </div>
 <svg viewBox="0 0 120 120" width="320" height="320" style="flex-shrink:0">${piezas(VARIANTES.color)}</svg>

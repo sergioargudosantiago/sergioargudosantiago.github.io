@@ -324,7 +324,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Close modal on backdrop click.
-// Estos modales solo existen en temario.html, pero main.js se carga en todas las
+// Estos modales solo existen en esquemas.html, pero main.js se carga en todas las
 // páginas: sin el encadenamiento opcional, aquí se lanza un TypeError que aborta la
 // evaluación del resto del fichero en index, comercio-exterior, enlaces y sobre-mí.
 document.getElementById('topicModal')?.addEventListener('click', (e) => {
@@ -359,35 +359,34 @@ function generateTopics(exerciseNumber, topicCount) {
             displayName = `TEMA ${i}. ${titleOnly}`;
         }
 
-        // Clean filename for storage (must match renaming script)
-        // Remove trailing dots and replace illegal characters (like :) and remove other illegal chars
+        // Dos formatos conviven. Los esquemas rehechos con las pautas vigentes son
+        // una p\u00e1gina (tema-NN.html) con su PDF al lado, los genera
+        // scripts/generar-esquemas.js y tienen fecha en js/esquemas-fechas.js (solo
+        // se carga en esquemas.html). Los dem\u00e1s siguen con el Word y el PDF
+        // antiguos, y el listado avisa de que est\u00e1n en actualizaci\u00f3n.
+        const nn = String(i).padStart(2, '0');
+        const dir = `./public/temas/ejercicio-${exerciseNumber}`;
+        const fechas = typeof ESQUEMAS_ACTUALIZADO !== 'undefined' ? ESQUEMAS_ACTUALIZADO : {};
+        const actualizado = fechas[`ejercicio-${exerciseNumber}-${nn}`] || null;
+
+        // Nombre de los ficheros antiguos: el PDF lleva el t\u00edtulo sin acentos ni
+        // caracteres no v\u00e1lidos, y el Word se llama \u00abESQUEMA TEMA N.docx\u00bb.
         const safeTitle = displayName
-            .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Remove accents
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
             .replace(/:/g, ".")
             .replace(/[<>:"/\\|?*]/g, "")
             .replace(/\.$/, "");
-
-        const fileNameWord = `${safeTitle}.docx`;
-        const fileNamePdf = `${safeTitle}.pdf`;
-
-        // Encode the filenames
-        const encodedSafeTitle = encodeURIComponent(safeTitle);
-        const encodedOriginalName = encodeURIComponent(`ESQUEMA TEMA ${i}.docx`);
-
-        // Paths
-        // Word: Use original filename for path (since renaming failed), but try to use safe title for download attribute
-        const pathWord = `./public/temas/ejercicio-${exerciseNumber}/${encodedOriginalName}`;
-        // PDF: Assume new PDFs will be uploaded with the correct safe title
-        const pathPdf = `./public/temas/ejercicio-${exerciseNumber}/${encodedSafeTitle}.pdf`;
 
         const topic = {
             number: i,
             name: displayName,
             titulo: titleOnly || displayName,
-            pathWord: pathWord,
-            filenameWord: fileNameWord,
-            pathPdf: pathPdf,
-            filenamePdf: fileNamePdf,
+            actualizado,
+            pathVer: `${dir}/tema-${nn}.html`,
+            pathPdf: actualizado ? `${dir}/tema-${nn}.pdf` : `${dir}/${encodeURIComponent(safeTitle)}.pdf`,
+            filenamePdf: actualizado ? `Esquema tema ${i} (ejercicio ${exerciseNumber}).pdf` : `${safeTitle}.pdf`,
+            pathWord: `${dir}/${encodeURIComponent(`ESQUEMA TEMA ${i}.docx`)}`,
+            filenameWord: `${safeTitle}.docx`,
             status: 'coming-soon', // Default status
             message: null
         };
@@ -398,9 +397,9 @@ function generateTopics(exerciseNumber, topicCount) {
                 topic.status = 'available';
             }
         }
-        // Exercise 3: Topics 1-58 available (except 12, 33, 43)
+        // Exercise 3: Topics 1-58 available (except 12, 43)
         else if (exerciseNumber === 3) {
-            if ([12, 33, 43].includes(i)) {
+            if ([12, 43].includes(i)) {
                 topic.status = 'discarded';
                 topic.message = 'No disponible, era mi tema de descarte';
             } else if (i >= 1 && i <= 58) {
@@ -432,9 +431,23 @@ function renderTopics() {
     topicList.innerHTML = filteredTopics.map(topic => renderTopicItem(topic)).join('');
 }
 
-// Una fila por tema. Las clases t-* están en el <style> de temario.html.
+const MESES_ESQUEMA = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+
+// «2026-09-07» → «7 de septiembre de 2026».
+function fechaEsquema(iso) {
+    const [a, m, d] = iso.split('-').map(Number);
+    return `${d} de ${MESES_ESQUEMA[m - 1]} de ${a}`;
+}
+
+// Una fila por tema. Las clases t-* están en el <style> de esquemas.html.
 function renderTopicItem(topic) {
-    const nombre = `<span class="t-tema-nombre"><span class="t-tema-num">${topic.number}</span>${topic.titulo}</span>`;
+    let fecha = '';
+    if (topic.status === 'available') {
+        fecha = topic.actualizado
+            ? `<span class="t-tema-fecha">Actualizado el <time datetime="${topic.actualizado}">${fechaEsquema(topic.actualizado)}</time></span>`
+            : '<span class="t-tema-fecha">En actualización</span>';
+    }
+    const nombre = `<span class="t-tema-nombre"><span class="t-tema-num">${topic.number}</span>${topic.titulo}${fecha}</span>`;
 
     switch (topic.status) {
         case 'available':
@@ -442,8 +455,13 @@ function renderTopicItem(topic) {
                 <div class="t-tema">
                     ${nombre}
                     <span class="t-tema-acciones">
-                        <a class="t-descarga" href="${topic.pathPdf}" download="${topic.filenamePdf}" target="_blank" rel="noopener" aria-label="Tema ${topic.number} en PDF">PDF</a>
-                        <a class="t-descarga" href="${topic.pathWord}" download="${topic.filenameWord}" aria-label="Esquema del tema ${topic.number} en Word">Word</a>
+                        ${topic.actualizado
+                            ? `<a class="t-descarga" href="${topic.pathVer}" aria-label="Ver el esquema del tema ${topic.number}">Ver</a>`
+                            : ''}
+                        <a class="t-descarga" href="${topic.pathPdf}" download="${topic.filenamePdf}" target="_blank" rel="noopener" aria-label="Esquema del tema ${topic.number} en PDF">PDF</a>
+                        ${topic.actualizado
+                            ? ''
+                            : `<a class="t-descarga" href="${topic.pathWord}" download="${topic.filenameWord}" aria-label="Esquema del tema ${topic.number} en Word">Word</a>`}
                     </span>
                 </div>`;
         case 'discarded':
@@ -509,12 +527,12 @@ function filterTopics() {
 function handleGlobalSearch(query) {
     if (!query) return;
     const currentPath = window.location.pathname;
-    if (currentPath.includes('temario.html')) {
-        // If already on temario, open global search modal
+    if (currentPath.includes('esquemas.html')) {
+        // If already on esquemas, open global search modal
         openGlobalSearch(query);
     } else {
-        // Otherwise redirect to temario with query
-        window.location.href = `temario.html?q=${encodeURIComponent(query)}`;
+        // Otherwise redirect to esquemas with query
+        window.location.href = `esquemas.html?q=${encodeURIComponent(query)}`;
     }
 }
 
@@ -550,7 +568,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check for search query in URL
     const urlParams = new URLSearchParams(window.location.search);
     const query = urlParams.get('q');
-    if (query && window.location.pathname.includes('temario.html')) {
+    if (query && window.location.pathname.includes('esquemas.html')) {
         openGlobalSearch(query);
     }
 });

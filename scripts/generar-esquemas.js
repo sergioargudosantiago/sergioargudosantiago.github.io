@@ -2,7 +2,7 @@
 'use strict';
 
 /**
- * Genera los esquemas del temario para leer en línea y para imprimir.
+ * Genera los esquemas de los temas para leer en línea y para imprimir.
  *
  *   npm run esquemas                   todos, a review/esquemas/ (vista previa)
  *   npm run esquemas -- 1/6            solo el tema 6 del ejercicio 1
@@ -10,13 +10,16 @@
  *   npm run esquemas:pdf [-- --publicar] PDF A4 al lado de cada HTML (Playwright)
  *
  * Por defecto NO publica: escribe en review/ (no versionado ni servido) para
- * revisar la plantilla. Los esquemas de public/temas/ siguen siendo los Word y
- * PDF antiguos hasta que el autor rehaga el contenido y decida publicarlos;
- * entonces hay que cambiar también los enlaces de js/main.js (ver CLAUDE.md).
+ * revisar un esquema antes de subirlo. Con --publicar escribe lo que sirve la
+ * web y, además, js/esquemas-fechas.js con la fecha de cada esquema. Solo
+ * publica los que tienen fecha en temas/actualizado.json, que son los rehechos
+ * con las pautas vigentes: el listado ofrece los demás con su Word y su PDF
+ * antiguos y el aviso «en actualización».
  *
  * La fuente son los Markdown de temas/ejercicio-N/tema-NN.md. Los títulos
  * oficiales salen de js/main.js (EXERCISE_N_TITLES), que es también lo que
- * enseña el listado de temario.html: así no hay dos copias que mantener.
+ * enseña el listado de esquemas.html: así no hay dos copias que mantener. La
+ * fecha de «Actualizado» sale de temas/actualizado.json.
  *
  * Aspecto: el de las fichas (diseño C), con los apartados en rótulo «arcade»
  * (franja verde salvia con el número en dorado y sombra de píxel). En pantalla
@@ -269,8 +272,18 @@ h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
 // Texto para un content: "…" de CSS: escapa comillas y barras invertidas.
 const cadenaCSS = (t) => String(t).replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/</g, '\\3C ');
 
-function pagina({ ejercicio, numero, titulo, cuerpo, indice }) {
+const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+
+// «2026-09-07» → «7 de septiembre de 2026».
+function fechaEnLetra(iso) {
+    const [a, m, d] = iso.split('-').map(Number);
+    return `${d} de ${MESES[m - 1]} de ${a}`;
+}
+
+function pagina({ ejercicio, numero, titulo, cuerpo, indice, actualizado }) {
     const nn = dosCifras(numero);
+    const fecha = actualizado
+        ? ` · Actualizado el <time datetime="${actualizado}">${fechaEnLetra(actualizado)}</time>` : '';
     const tituloTema = `Tema ${numero}. ${titulo}`;
     const pdf = `tema-${nn}.pdf`;
     const descarga = `Esquema tema ${numero} (ejercicio ${ejercicio}).pdf`;
@@ -294,7 +307,7 @@ function pagina({ ejercicio, numero, titulo, cuerpo, indice }) {
 <body>
 <header class="barra">
   <div class="barra-in">
-    <a class="marca" href="../../../temario.html">← TEMARIO</a>
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
     <div class="acciones"><a class="boton" href="${pdf}" download="${escapeHTML(descarga)}">Descargar PDF</a></div>
   </div>
 </header>
@@ -303,7 +316,7 @@ function pagina({ ejercicio, numero, titulo, cuerpo, indice }) {
     <div class="cab-txt">
       <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
       <h1>${escapeHTML(titulo)}</h1>
-      <div class="sub-cab">Ejercicio ${ejercicio} · Esquema del tema ${numero} · ${indice.length} apartados</div>
+      <div class="sub-cab">Ejercicio ${ejercicio} · Esquema del tema ${numero}${fecha}</div>
     </div>
     <div class="sello" aria-label="Ejercicio ${ejercicio}, tema ${numero}"><span>EJ. ${ejercicio} · TEMA</span><b>${numero}</b></div>
   </div>
@@ -321,6 +334,10 @@ ${cuerpo}  </div>
 
 function main() {
     const titulos = leerTitulos();
+    // Fecha de «Actualizado» de cada esquema (la escribe el repositorio privado de
+    // herramientas): la del último guardado del tema del que sale.
+    const rutaFechas = path.join(FUENTE, 'actualizado.json');
+    const fechas = fs.existsSync(rutaFechas) ? JSON.parse(fs.readFileSync(rutaFechas, 'utf8')) : {};
     let total = 0;
     const avisos = [];
     for (const ej of EJERCICIOS) {
@@ -335,10 +352,20 @@ function main() {
             if (!titulo) { avisos.push(`ejercicio ${ej}, tema ${numero}: sin título en js/main.js`); continue; }
             const { html, indice } = htmlCuerpo(analizar(fs.readFileSync(path.join(dir, f), 'utf8')));
             if (!indice.length) avisos.push(`ejercicio ${ej}, tema ${numero}: sin apartados de primer nivel`);
+            // Solo se publican los esquemas con fecha: los rehechos con las pautas
+            // vigentes. Los demás siguen en la web con su Word y su PDF antiguos.
+            const actualizado = fechas[`ejercicio-${ej}-${dosCifras(numero)}`];
+            if (PUBLICAR && !actualizado) continue;
             const salida = path.join(destino, f.replace('.md', '.html'));
-            fs.writeFileSync(salida, pagina({ ejercicio: ej, numero, titulo, cuerpo: html, indice }));
+            fs.writeFileSync(salida, pagina({ ejercicio: ej, numero, titulo, cuerpo: html, indice, actualizado }));
             total++;
         }
+    }
+    // El listado de esquemas.html enseña la misma fecha junto a cada tema.
+    if (PUBLICAR) {
+        fs.writeFileSync(path.join(RAIZ, 'js', 'esquemas-fechas.js'),
+            '// Generado por scripts/generar-esquemas.js desde temas/actualizado.json. No editar a mano.\n'
+            + `const ESQUEMAS_ACTUALIZADO = ${JSON.stringify(fechas)};\n`);
     }
     console.log(`${total} esquemas en ${path.relative(RAIZ, SALIDA)}/.`);
     for (const a of avisos) console.warn(`  aviso: ${a}`);

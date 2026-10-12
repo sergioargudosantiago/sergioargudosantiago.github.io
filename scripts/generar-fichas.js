@@ -2,7 +2,7 @@
 'use strict';
 
 /**
- * Fichas imprimibles del temario (ejercicio 1, temas 1 a 20): tres páginas A4
+ * Fichas imprimibles de estudio (ejercicio 1, temas 1 a 20): tres páginas A4
  * por tema con los datos de comercio exterior de su sector.
  *
  *   node scripts/generar-fichas.js          (o: npm run fichas)
@@ -345,7 +345,7 @@ function paginaResumen(d, nTema) {
     return `<section class="pagina">
   <header class="cab">
     <div class="cab-txt">
-      <span class="marca">SAS · FICHAS DEL TEMARIO</span>
+      <span class="marca">SAS · FICHAS SOIVRE</span>
       <h1>${esc(d.tema.titulo)}</h1>
       <span class="sub">Comercio exterior de España · ${ULTIMO} y evolución desde 2021</span>
     </div>
@@ -400,7 +400,7 @@ function paginaDetalle(d, nTema, flujo) {
         ? ` En este sector DataComex solo da países y cuota UE para el grupo completo: ${esc(grupos[0].filas[0].paises)}.` : '';
     return `<section class="pagina">
   <header class="cab-det">
-    <span class="marca">SAS · FICHAS DEL TEMARIO · TEMA ${nTema}</span>
+    <span class="marca">SAS · FICHAS SOIVRE · TEMA ${nTema}</span>
     <span class="pag">${exp ? '2 / 3' : '3 / 3'}</span>
   </header>
   <div>

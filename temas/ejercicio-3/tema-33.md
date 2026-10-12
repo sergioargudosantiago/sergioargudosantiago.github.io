@@ -1,143 +1,155 @@
 # 1. INTRODUCCIÓN
-- Transporte: consecuencia del comercio internacional y área clave de la logística
-  - Decisiones: **elección del medio** (técnica, comercial, financiera) y **programación** (rutas y volúmenes)
-- **Carretera**: flexibilidad, puerta a puerta sin ruptura de carga, distancias cortas y medias, predominante con Europa
-- **Ferrocarril**: grandes volúmenes y largas distancias, ventajas ambientales
-  - Cuota en España **~4 %** del transporte terrestre de mercancías (ancho ibérico, longitud de trenes, poca integración con puertos)
-- Contenido: CIM/TIF, CMR/TIR, ATP y documentación
+
+El transporte es consecuencia directa del comercio internacional y un área clave de la logística de la empresa. Sus dos decisiones fundamentales son la elección del medio, que depende de aspectos técnicos, comerciales y financieros, y la programación de los transportes (rutas y volúmenes). Dentro del transporte terrestre, la **carretera** destaca por su flexibilidad y el servicio puerta a puerta, y predomina en el comercio de España con Europa. El **ferrocarril** es competitivo para grandes volúmenes y largas distancias y tiene ventajas ambientales, pero su cuota en España es de en torno al 4 % por el ancho de vía ibérico, la longitud de los trenes y la escasa integración con los puertos.
 
 # 2. ASPECTOS GENERALES DEL TRANSPORTE TERRESTRE
+
 ## 2.1. Fases de la operación de transporte
-- **Fase estática**: protección física (envase, embalaje, estiba, almacenaje) y jurídico-económica (seguro)
-- **Fase dinámica**: vehículos, aspectos jurídicos y documentales, contratación
-- **UTI**: **caja móvil** (transporte combinado carretera-ferrocarril, normalizada por el CEN, no apilable) y semirremolques en **autopista ferroviaria**
-- Intervinientes: operador logístico, transitario, grupajista
-  - España: **Ley de Ordenación de los Transportes Terrestres**, figura del **operador de transporte** (contrata en nombre propio y subcontrata)
+
+La operación tiene una **fase estática** de preparación, que incluye la protección física de la mercancía (envase, embalaje, estiba, almacenaje) y la jurídico-económica (seguro), y una **fase dinámica** de movimiento, que abarca vehículos, aspectos jurídicos y documentales y formas de contratación.
+
+La **caja móvil** es la unidad de transporte intermodal propia del transporte combinado carretera-ferrocarril. Está normalizada en Europa por el CEN y, a diferencia del contenedor ISO, no es apilable. Los semirremolques pueden cargarse en vagones especiales (autopista ferroviaria).
+
+Intervienen el operador logístico, el transitario y el grupajista. La Ley de Ordenación de los Transportes Terrestres agrupa a los intermediarios por carretera en el **operador de transporte**, que contrata en nombre propio con el cargador y subcontrata con transportistas efectivos.
 
 ## 2.2. Aspectos técnicos del ferrocarril
-- **Ancho de vía**: ibérico **1.668 mm** frente a UIC **1.435 mm**
-  - Soluciones: transbordo, cambio de ejes, ejes intercambiables o ancho variable
-  - Ancho estándar en corredores mediterráneo y atlántico, red mixta durante tiempo
-- **Gálibo**, **capacidad de tracción**, longitud máxima de trenes
-- Carga máxima por vagón (UIC) y por eje
-- Material: vagones cerrados, abiertos, portacontenedores, cisternas, tolvas, portaautomóviles, frigoríficos
+
+Las principales limitaciones son:
+
+- **Ancho de vía**: el ibérico (1.668 mm) es mayor que el estándar UIC (1.435 mm). Obliga a transbordar, cambiar ejes o usar vagones de ejes intercambiables o ancho variable. Se implanta el ancho estándar en los corredores mediterráneo y atlántico, pero la red seguirá siendo mixta
+- **Gálibo**: dimensiones máximas del vagón y de la carga
+- **Tracción y longitud máxima de los trenes**, según la potencia de las locomotoras, la orografía y el trazado
+- **Carga máxima** por vagón (normas de la UIC) y por eje que admite la infraestructura
+
+El material lo forman locomotoras y vagones de tipos muy diversos: cerrados, abiertos, portacontenedores, cisternas, tolvas, portaautomóviles y frigoríficos.
 
 ## 2.3. Aspectos técnicos de la carretera
-- **Directiva 96/53/CE**: longitud máxima **16,50 m** (articulado) y **18,75 m** (tren de carretera)
-- Masa máxima en tráfico internacional **40 t**, hasta **42 o 44 t** en intermodal
-  - Incrementos para combustibles alternativos o cero emisiones
-- **Carga útil** = masa máxima autorizada menos tara
-- Vehículos: **articulados** (cabeza tractora y semirremolque) y **trenes de carretera** (camión y remolque)
+
+- **Dimensiones y masas**: la Directiva 96/53/CE fija una longitud máxima de 16,50 m para el vehículo articulado y de 18,75 m para el tren de carretera. La masa máxima de referencia en tráfico internacional es de 40 toneladas, con 42 o 44 en ciertas operaciones intermodales. Hay incrementos para vehículos de combustibles alternativos o cero emisiones
+- **Carga útil**: masa máxima autorizada menos tara, sin superar lo que admite la vía
+- **Estiba y resistencia estructural**, con límites por eje
+
+Los vehículos habituales son los **articulados** (cabeza tractora y semirremolque de lona, caja cerrada, frigorífico, cisterna o portacontenedores) y los **trenes de carretera** (camión y remolque).
 
 ## 2.4. Formas de contratación
-- **Contratación libre**: grandes volúmenes, precios por oferta y demanda
-  - Carretera: transporte discrecional, carga completa o fraccionada, sin tarifas oficiales, bolsas de carga digitales
-  - Ferrocarril: trenes completos o bloque, liberalización con operadores privados junto a Renfe Mercancías, Transfesa (ejes intercambiables)
-- **Línea regular**: itinerarios, frecuencias y tarifas preestablecidos
-  - En ferrocarril también mercancías (contenedores, intermodal)
-- **Consolidación o grupaje**: pequeñas partidas reunidas por el grupajista
+
+Depende del volumen y la frecuencia de los envíos:
+
+- **Contratación libre**: grandes volúmenes, con arrendamiento de vehículos o trenes completos y precios según oferta y demanda. Es el transporte discrecional en carretera y los trenes completos o trenes bloque en ferrocarril
+  - En carretera puede ser carga completa o fraccionada (grupaje). Los precios internacionales no están sujetos a tarifas oficiales. Las bolsas de carga son hoy plataformas digitales
+  - En ferrocarril, liberalizado el sector, operan en España empresas privadas junto a Renfe Mercancías. Transfesa fue pionera con Europa, con vagones de ejes intercambiables
+- **Línea regular**: volúmenes menores, con itinerarios, frecuencias y tarifas preestablecidos. En carretera es propia del transporte de viajeros. En ferrocarril se aplica también a mercancías, con servicios regulares de contenedores e intermodales entre puertos y terminales interiores
+- **Consolidación o grupaje**: pequeñas partidas reunidas por el grupajista, con tarifas que separan recogida, entrega y servicios accesorios
 
 ## 2.5. Régimen administrativo del transporte internacional por carretera
-- Acceso sometido a autorización
-  - UE: **licencia comunitaria**, **Reglamento (CE) 1072/2009**, hasta **10 años** renovable
-  - Terceros países: acuerdos bilaterales (a veces contingentados) o autorizaciones multilaterales **CEMT**
-- **Paquete de Movilidad I** (**Reglamentos (UE) 2020/1054 y 2020/1055**, **Directiva (UE) 2020/1057**)
-  - Cabotaje: **3 operaciones en 7 días**, espera de **4 días**
-  - Desplazamiento de trabajadores, tacógrafo inteligente, vehículos ligeros de más de 2,5 t (desde mayo de 2022)
-  - Regreso cada 8 semanas anulado por el TJUE (octubre de 2024)
-- Ferrocarril: paquetes ferroviarios y **Ley 38/2015**, Adif separa infraestructura y servicios
+
+El acceso al mercado está sometido a autorización:
+
+- Dentro de la Unión, los transportistas que cumplen los requisitos de acceso a la profesión obtienen la **licencia comunitaria** (Reglamento (CE) 1072/2009), por periodos renovables de hasta diez años
+- El **Paquete de Movilidad I** (Reglamentos (UE) 2020/1054 y 2020/1055 y Directiva (UE) 2020/1057) limitó el cabotaje a tres operaciones en siete días, con cuatro días de espera. Aplicó el desplazamiento de trabajadores a ciertos conductores, impuso el tacógrafo inteligente y extendió el acceso al mercado a los vehículos ligeros de más de 2,5 toneladas desde mayo de 2022. El Tribunal de Justicia de la UE anuló en octubre de 2024 el regreso obligatorio de vehículos cada ocho semanas
+- Con terceros países rigen acuerdos bilaterales, a veces con autorizaciones contingentadas, o las autorizaciones multilaterales CEMT del Foro Internacional del Transporte
+
+En el ferrocarril, la Unión liberalizó el transporte de mercancías mediante los paquetes ferroviarios. La **Ley 38/2015** del sector ferroviario separa la infraestructura (Adif y Adif Alta Velocidad) de la prestación de los servicios.
 
 # 3. EL TRANSPORTE INTERNACIONAL POR FERROCARRIL: EL CONVENIO CIM Y EL RÉGIMEN TIF
+
 ## 3.1. El Convenio COTIF y las Reglas Uniformes CIM
-- **COTIF** de **9 de mayo de 1980**, modificado por **Protocolo de Vilna** (1999, en vigor **1 de julio de 2006**)
-  - **OTIF** (Berna), medio centenar de Estados y UE desde 2011
-- **Reglas Uniformes CIM** = apéndice B del COTIF, junto al **RID** (mercancías peligrosas)
-- **Ámbito**: contrato oneroso, recepción y entrega en dos Estados, uno al menos parte
-- **Expedidor**: datos exactos de la carta de porte, documentos de aduanas, embalaje
-- **Derecho de disposición**: modificar destinatario o lugar de entrega
-- **Responsabilidad del transportista**: pérdida, avería y retraso
-  - Exoneración: culpa del derechohabiente, vicio propio, circunstancias inevitables, riesgos particulares
-- **Indemnización**: **17 DEG/kg** bruto, retraso hasta el **cuádruple** del precio, sin límite en dolo o temeridad
-- Acciones prescriben al **año**
-- **SMGS** (OSJD) con Europa oriental y espacio euroasiático
-  - Carta de porte común **CIM/SMGS**, útil con China
+
+El **COTIF** (9 de mayo de 1980), modificado por el Protocolo de Vilna de 3 de junio de 1999 (en vigor desde el 1 de julio de 2006), regula el transporte internacional de mercancías por ferrocarril. Lo administra la **OTIF**, con sede en Berna, con medio centenar de Estados y, desde 2011, la Unión Europea. Sustituyó a los antiguos Convenios CIM y CIV de 1970. Las **Reglas Uniformes CIM** son su apéndice B, junto a otros como el RID (mercancías peligrosas). Sus aspectos principales son:
+
+- **Ámbito**: contrato oneroso de transporte ferroviario con lugares de recepción y entrega en dos Estados distintos, al menos uno parte del Convenio
+- **Expedidor**: facilita los datos exactos de la carta de porte, aporta los documentos exigidos por aduanas y embala adecuadamente. Responde de los daños por inexactitudes u omisiones
+- **Derecho de disposición**: el expedidor, y en casos determinados el destinatario, puede modificar el contrato, por ejemplo cambiando destinatario o lugar de entrega
+- **Responsabilidad del transportista**: responde de pérdida total o parcial, avería y retraso. Se exonera por culpa del derechohabiente, vicio propio o circunstancias inevitables, y en riesgos particulares como vagones abiertos o embalaje deficiente
+- **Indemnización**: por pérdida o avería, hasta **17 derechos especiales de giro por kilogramo** bruto. Por retraso, hasta el cuádruple del precio del transporte. No hay límites en caso de dolo o temeridad
+- **Reclamaciones**: prescriben, en general, al año
+
+Con Europa oriental y el espacio euroasiático, incluida China, se aplica el **Acuerdo SMGS** (OSJD). La carta de porte común CIM/SMGS permite un único documento entre ambos sistemas y ha facilitado los servicios ferroviarios Europa-China.
 
 ## 3.2. El régimen TIF
-- Origen: Convenio de Ginebra de **10 de enero de 1952** (CEPE/ONU)
-  - Tránsito en vagones precintados hasta estación interior de destino
-- UE: tránsito simplificado con carta de porte CIM como declaración y la empresa ferroviaria como titular
-- Hoy sustituido por tránsito electrónico **NCTS** (fase 6 desde 2025, integrada con **ICS2**)
-- TIF = antecedente histórico
+
+El **régimen TIF** (Transporte Internacional por Ferrocarril) nace del Convenio de Ginebra de 10 de enero de 1952, bajo la CEPE/ONU, para facilitar el paso de fronteras. Las mercancías circulaban en tránsito en vagones precintados hasta estaciones interiores de destino habilitadas, donde se despachaban.
+
+En la Unión evolucionó a un procedimiento simplificado de tránsito en el que la carta de porte CIM en papel servía de declaración de tránsito y la empresa ferroviaria era titular del régimen y garante. Con el Código Aduanero de la Unión lo sustituyó el tránsito electrónico **NCTS**, cuya fase 6, desplegada desde 2025, lo integra con el sistema de seguridad ICS2. Hoy el TIF es un antecedente histórico.
 
 # 4. EL TRANSPORTE INTERNACIONAL POR CARRETERA: EL CONVENIO CMR Y EL RÉGIMEN TIR
+
 ## 4.1. El Convenio CMR
-- Ginebra, **19 de mayo de 1956** (CEPE/ONU), España adhesión **1974**
-- **Ámbito**: contrato oneroso por carretera, dos países, uno al menos parte
-  - Disposiciones **imperativas**
-- **Expedidor**: información exacta, documentos, embalaje, **derecho de disposición** (detener, cambiar lugar o destinatario)
-- **Transportista**: responde de pérdida, avería, retraso y actos de sus auxiliares
-- **Exoneraciones**: culpa del derechohabiente, vicio propio, circunstancias inevitables
-  - Riesgos particulares: vehículos abiertos, falta de embalaje, carga por el expedidor, naturaleza de la mercancía
-- **Límite**: **8,33 DEG/kg** bruto (Protocolo de 1978), retraso hasta el precio del transporte, sin límite en dolo
-- **Reservas**: avería aparente en la entrega, no aparente en **7 días**, retraso en **21 días**
-  - Prescripción **1 año**, **3 años** en dolo
-- Interior español: **Ley 15/2009**, un tercio del IPREM diario por kilogramo
+
+El **Convenio CMR** (Ginebra, 19 de mayo de 1956, CEPE/ONU) regula el contrato de transporte internacional de mercancías por carretera. España se adhirió en 1974. Sus aspectos principales son:
+
+- **Ámbito**: contrato oneroso en vehículos con recepción y entrega en dos países, al menos uno parte. Sus disposiciones son imperativas
+- **Expedidor**: informa con exactitud sobre la mercancía, aporta los documentos para las formalidades aduaneras y administrativas y embala adecuadamente. Tiene derecho de disposición: detener el transporte o cambiar lugar de entrega o destinatario
+- **Responsabilidad**: el transportista responde de pérdida, avería y retraso desde que recibe la mercancía hasta su entrega, y de los actos de sus auxiliares
+- **Exoneraciones**: culpa del derechohabiente, vicio propio, circunstancias inevitables y riesgos particulares (vehículos abiertos, embalaje defectuoso, carga o estiba por el expedidor, naturaleza de ciertas mercancías)
+- **Límite**: **8,33 derechos especiales de giro por kilogramo** bruto (Protocolo de 1978), salvo declaración de valor o de interés especial en la entrega. Por retraso, hasta el precio del transporte. No hay límites en caso de dolo
+- **Reservas y reclamaciones**: las averías aparentes se notifican en la entrega y las no aparentes en siete días, sin domingos ni festivos. El retraso se reclama en 21 días. Las acciones prescriben al año, o a los tres años en caso de dolo
+
+En el transporte interior español rige la **Ley 15/2009**, inspirada en el CMR, que limita la indemnización por pérdida o avería a un tercio del IPREM diario por kilogramo bruto.
 
 ## 4.2. El régimen TIR
-- Convenio de Ginebra de **14 de noviembre de 1975** (CEPE/ONU), sustituye al de 1959
-  - Más de **75** partes, UE incluida, extensión a China, Pakistán, India
-- Transporte entre aduana de partida y destino sin controles sistemáticos en fronteras intermedias
-- **Principios**:
-  - Vehículos o contenedores seguros y precintados
-  - Garantía internacional gestionada por la **IRU**, en España **ASTIC**
-  - **Cuaderno TIR**
-  - Reconocimiento mutuo de controles
-  - Acceso controlado a transportistas autorizados
-- **eTIR**: anexo 11, en vigor desde **25 de mayo de 2021**
-- En la UE no vale para movimientos solo entre Estados miembros
+
+El **Convenio TIR** (Transports Internationaux Routiers) se adoptó en Ginebra el 14 de noviembre de 1975, bajo la CEPE/ONU, y sustituyó al de 1959. Tiene más de 75 partes, entre ellas la Unión Europea, y se ha extendido a China, Pakistán o la India. Permite transportar mercancías de una aduana de partida a una de destino, atravesando varios países, sin controles aduaneros sistemáticos en las fronteras intermedias ni garantías nacionales en cada país. Se basa en:
+
+- Vehículos o contenedores seguros, aprobados técnicamente y precintados por la aduana
+- **Garantía internacional** válida en todos los países, gestionada por la **IRU** mediante asociaciones nacionales. En España es **ASTIC**
+- **Cuaderno TIR**, documento aduanero internacional que acompaña a la mercancía
+- Reconocimiento mutuo de los controles hechos en el país de partida
+- Acceso reservado a transportistas autorizados por las autoridades nacionales
+
+Desde el 25 de mayo de 2021 está en vigor el anexo 11, que regula el **eTIR**, versión totalmente electrónica. Dentro de la Unión, único territorio aduanero, el cuaderno TIR no puede usarse en un movimiento exclusivamente entre Estados miembros, y debe intervenir un tercer país.
 
 # 5. EL TRANSPORTE DE MERCANCÍAS PERECEDERAS: EL ACUERDO ATP Y EL REAL DECRETO 1202/2005
+
 ## 5.1. El Acuerdo ATP
-- Ginebra, **1 de septiembre de 1970** (CEPE/ONU), BOE **22 de noviembre de 1976**, enmiendas periódicas
-- Objetivo: temperatura óptima y normas técnicas comunes de vehículos
-- **Ámbito**: transporte internacional por ferrocarril, carretera o ambos, incluidos trayectos marítimos de menos de **150 km**, carga y descarga en Estados distintos
-- **Temperaturas máximas**:
-  - Congelados: helados **−20 °C**, pescados y ultracongelados **−18 °C**, otros **−12 °C**, mantequilla **−10 °C**
-  - Refrigerados: despojos rojos 3 °C, mantequilla 6 °C, caza 4 °C, leche en cisterna 4 °C, leche industrial 6 °C, lácteos frescos 4 °C, productos cárnicos 6 °C, carne 7 °C, aves y conejos 4 °C
-  - Pescado en hielo fundente
-- **Vehículos especiales**:
-  - **Isotermo**: paredes aislantes, normal o reforzado
-  - **Refrigerante**: fuente de frío no mecánica, de +7 °C a −20 °C
-  - **Frigorífico**: equipo mecánico, de +12 °C a −20 °C
-  - **Calorífico**: calor, mínimo 12 °C durante 12 horas
-- **Certificado de conformidad ATP**: ensayos en estaciones autorizadas, validez limitada, marcas distintivas
+
+El **Acuerdo ATP** (Ginebra, 1 de septiembre de 1970, CEPE/ONU, publicado en España en el BOE de 22 de noviembre de 1976) garantiza que las mercancías perecederas se transporten en condiciones óptimas de temperatura y que los vehículos cumplan normas técnicas comunes. Se actualiza mediante enmiendas. Se aplica al transporte internacional de ciertas mercancías perecederas, por cuenta ajena o propia, por ferrocarril, carretera o ambos, incluidos trayectos marítimos de menos de 150 km, cuando carga y descarga están en Estados diferentes y la descarga ocurre en una parte contratante.
+
+Fija temperaturas máximas de transporte:
+
+- **Ultracongelados y congelados**: helados, −20 °C. Pescados, moluscos, crustáceos y cualquier otro ultracongelado, −18 °C. Otros congelados, −12 °C salvo la mantequilla, −10 °C
+- **Refrigerados**: despojos rojos 3 °C, caza 4 °C, aves y conejos 4 °C, lácteos frescos 4 °C, mantequilla 6 °C, productos cárnicos 6 °C, carne 7 °C. El pescado se transporta en hielo fundente
+
+Distingue los vehículos especiales:
+
+- **Isotermo**: caja de paredes aislantes que limitan el intercambio de calor, normal o reforzado según su coeficiente de transmisión térmica
+- **Refrigerante**: isotermo con fuente de frío no mecánica (hielo, placas eutécticas, gases licuados), que mantiene la caja vacía entre +7 °C y −20 °C según su clase, con 30 °C exteriores
+- **Frigorífico**: isotermo con equipo mecánico de frío, que mantiene entre +12 °C y −20 °C según su clase
+- **Calorífico**: isotermo con producción de calor, que mantiene al menos 12 °C durante 12 horas sin reabastecimiento
+
+Los vehículos superan ensayos en estaciones autorizadas, obtienen un **certificado de conformidad ATP** de validez limitada y renovable, y llevan marcas de su categoría y clase.
 
 ## 5.2. El Real Decreto 1202/2005
-- **Real Decreto 1202/2005**: extiende el ATP vigente al transporte nacional, sin perjuicio de seguridad alimentaria
-  - Competencias estatales: bases de planificación económica, sanidad exterior, bases de sanidad, transportes que pasan por varias comunidades
-- Normas UE de higiene: **Reglamento (CE) 852/2004** (vehículos y contenedores) y **Reglamento (CE) 37/2005** (temperaturas de ultracongelados)
-- Mercancías peligrosas: **ADR** (carretera) y **RID** (ferrocarril), **Directiva 2008/68/CE**
-- **Real Decreto 237/2000**: especificaciones técnicas de vehículos de temperatura regulada y control de conformidad
+
+El **Real Decreto 1202/2005** extiende las normas del ATP vigentes en cada momento a los transportes dentro del territorio nacional, sin perjuicio de la seguridad alimentaria. Se dicta al amparo de las competencias exclusivas del Estado en bases de la planificación económica, sanidad exterior, bases de la sanidad y transportes terrestres que discurran por más de una comunidad autónoma. También se aplican los acuerdos suscritos por España conforme al ATP.
+
+Se suman otras normas:
+
+- **Reglamento (CE) 852/2004**: higiene, vehículos y contenedores de alimentos
+- **Reglamento (CE) 37/2005**: control de temperaturas de ultracongelados
+- **ADR** (carretera) y **RID** (ferrocarril): mercancías peligrosas, aplicables también al transporte interior (Directiva 2008/68/CE)
+- **Real Decreto 237/2000**: especificaciones técnicas de los vehículos especiales para alimentos a temperatura regulada y control de su conformidad
 
 # 6. LA DOCUMENTACIÓN: LA CARTA DE PORTE
+
 ## 6.1. La carta de porte ferroviaria CIM
-- Prueba, salvo prueba en contrario, de la recepción y del estado aparente de la mercancía
-- **No es título valor**, ni negociable ni representa la mercancía
-- Modelo uniforme (**CIT**), la completa el expedidor, formato electrónico posible
-- Una carta de porte por envío, ampara todo el trayecto
-- Reservas del transportista y reparto de carga y descarga
+
+La **carta de porte CIM** documenta el contrato de transporte internacional por ferrocarril. Es prueba, salvo prueba en contrario, de la recepción de la mercancía y, cuando el transportista ha realizado la carga, de su estado aparente. No es título valor: ni negociable ni representa la mercancía. Sus características son:
+
+- Modelo uniforme elaborado por el Comité Internacional de Transportes Ferroviarios (CIT)
+- La completa el expedidor y puede ser electrónica
+- Ampara la mercancía todo el trayecto, con una por envío
+- El transportista puede formular reservas, y refleja a quién corresponde la carga y descarga
 
 ## 6.2. La carta de porte por carretera CMR
-- Prueba del contrato y de la recepción, no es título valor
-- Sin modelo oficial obligatorio, generalizado el de la **IRU**
-- **Tres ejemplares** originales: expedidor, destinatario (acompaña la mercancía), transportista
-- Reservas motivadas, responde de los documentos confiados, sigue instrucciones del expedidor
-- **e-CMR**: Protocolo adicional de **2008**
-  - **Reglamento (UE) 2020/1056 (eFTI)**: plataformas certificadas, aplicable desde agosto de 2024, obligación de aceptación por autoridades desde julio de 2027
+
+La **carta de porte CMR** documenta el contrato de transporte por carretera. Como la CIM, prueba el contrato y la recepción, no es título valor y refleja las condiciones del transporte. Sus rasgos diferenciales son:
+
+- No hay modelo oficial obligatorio, aunque se usa el de la IRU
+- Tres originales firmados por expedidor y transportista: expedidor, destinatario (acompaña a la mercancía) y transportista
+- El transportista formula reservas motivadas sobre el estado aparente de mercancía y embalaje, responde del uso de los documentos y sigue las instrucciones del expedidor
+- El Protocolo adicional de 2008 permite la **e-CMR**. El **Reglamento (UE) 2020/1056 (eFTI)** crea el marco para presentar la información regulatoria en plataformas certificadas. Se aplica desde agosto de 2024, y la obligación de las autoridades de aceptarla en formato electrónico está prevista desde julio de 2027
 
 # 7. CONCLUSIÓN
-- Carretera dominante con Europa, ferrocarril con cuota muy inferior a la media europea
-- Corredores ferroviarios e intermodalidad, prioridad de la política europea de transportes
-- Multimodal: operador de transporte multimodal, documento único como **FBL de FIATA**
-- Digitalización: e-CMR, CIM electrónica, eTIR, eFTI, tránsito electrónico en lugar de TIF
-- Para el SOIVRE: ATP y documentación útiles en el control de perecederos en frontera
+
+La carretera domina el comercio de España con Europa por su flexibilidad y el servicio puerta a puerta. El ferrocarril tiene una cuota muy inferior a la media europea por el ancho ibérico y las limitaciones de la infraestructura, y los corredores ferroviarios y el transporte intermodal son prioridad de la política europea para reducir emisiones y congestión. El transporte multimodal, con un operador que asume todo el trayecto, puede documentarse con un único contrato, como el conocimiento de embarque multimodal FIATA (FBL). La digitalización (e-CMR, carta de porte CIM electrónica, eTIR, eFTI) y la sustitución de procedimientos en papel como el TIF por el tránsito electrónico transformarán la gestión del transporte terrestre. Para el SOIVRE son especialmente útiles el ATP y la documentación en el control de perecederos en frontera, donde la temperatura condiciona la calidad comercial.

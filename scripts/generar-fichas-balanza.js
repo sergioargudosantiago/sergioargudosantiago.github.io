@@ -59,7 +59,7 @@ const fuente = (b, series) => `Banco de España, Boletín Estadístico, capítul
 function cabecera(titulo, sub, ejercicio, tema) {
     return `<header class="cab">
     <div class="cab-txt">
-      <span class="marca">SAS · FICHAS DEL TEMARIO · BALANZA DE PAGOS</span>
+      <span class="marca">SAS · FICHAS SOIVRE · BALANZA DE PAGOS</span>
       <h1>${esc(titulo)}</h1>
       <span class="sub">${esc(sub)}</span>
     </div>
@@ -68,7 +68,7 @@ function cabecera(titulo, sub, ejercicio, tema) {
 }
 
 function cabeceraDetalle(tema, pag) {
-    return `<header class="cab-det"><span class="marca">SAS · FICHAS DEL TEMARIO · ${esc(tema)}</span><span class="pag">${pag}</span></header>`;
+    return `<header class="cab-det"><span class="marca">SAS · FICHAS SOIVRE · ${esc(tema)}</span><span class="pag">${pag}</span></header>`;
 }
 
 function kpis(lista) {
@@ -167,7 +167,7 @@ function fichaBalanza(b) {
   ${tablaDetalle(['Mes', 'Cta. corriente', 'Bienes y serv.', 'Rentas', 'Cta. capital', 'Cap. financ.'], meses)}
   ${pie('2 / 2', 'Capacidad de financiación: cuenta corriente más cuenta de capital.', fuente(b, 'serie 17.1'))}
 </section>`;
-    return documento('La balanza de pagos de España — ficha del temario', p1 + '\n' + p2);
+    return documento('La balanza de pagos de España — ficha de estudio', p1 + '\n' + p2);
 }
 
 // --- Ficha 2: turismo (ejercicio 1, tema 23) ---------------------------------------------
@@ -234,7 +234,7 @@ function fichaTurismo(b) {
   ${tablaDetalle(['Origen del viajero', String(ult), String(prev), `Var. ${String(ult).slice(2)}/${String(prev).slice(2)}`, 'Peso'], filas)}
   ${pie('2 / 2', 'Los países están dentro de sus zonas: no se suman a ellas.', fuente(b, 'serie 17.4, ingresos por turismo por país'))}
 </section>`;
-    return documento('Turismo en la balanza de pagos — ficha del temario', p1 + '\n' + p2);
+    return documento('Turismo en la balanza de pagos — ficha de estudio', p1 + '\n' + p2);
 }
 
 // --- Ficha 3: servicios no turísticos (ejercicio 1, tema 24) -------------------------------
@@ -294,7 +294,7 @@ function fichaServicios(b) {
   ${tablaDetalle(['Tipo de servicio', 'Ingresos', 'Var.', 'Pagos', 'Var.', 'Saldo'], filas)}
   ${pie('2 / 2', 'I+D, consultoría y servicios técnicos están dentro de otros servicios empresariales: no se suman aparte.', fuente(b, 'serie 17.4, servicios no turísticos por tipo'))}
 </section>`;
-    return documento('Servicios no turísticos en la balanza de pagos — ficha del temario', p1 + '\n' + p2);
+    return documento('Servicios no turísticos en la balanza de pagos — ficha de estudio', p1 + '\n' + p2);
 }
 
 // --- Principal ------------------------------------------------------------------------

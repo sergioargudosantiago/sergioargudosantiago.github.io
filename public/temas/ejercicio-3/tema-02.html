@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-3/tema-02.md. No editar a mano. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 2. Balanza de Pagos. Concepto. Presentaciones, metodología y estructura — esquema del ejercicio 3</title>
+<link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="stylesheet" href="../../../css/fuentes.css">
+<style>
+@page { size: A4; margin: 14mm 12.5mm 15mm;
+  @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #D9DED6; font-family: 'Public Sans', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #C8A951; outline-offset: 2px; }
+
+/* Barra superior (solo pantalla) */
+.barra { background: #3B4533; color: #C2D9C2; }
+.barra-in { max-width: 210mm; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.barra a { color: #C2D9C2; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.barra a:hover { color: #FFFFFF; }
+.barra .marca { font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: .14em; font-size: 13px; color: #FFFFFF; }
+.barra .acciones { display: flex; gap: 10px; align-items: center; }
+.barra .boton { background: #E0C46B; color: #1F2A1D; font-weight: 700; padding: 0 14px; box-shadow: 3px 3px 0 #1F2A1D; }
+.barra .boton:hover { background: #FFFFFF; color: #1F2A1D; }
+
+/* Hoja */
+.hoja { max-width: 210mm; margin: 20px auto 40px; padding: 40px 47px 28px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.5; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+.sub-cab { font-size: 14px; color: #4A5546; }
+.sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+
+.indice { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.indice a { display: flex; flex-direction: column; gap: 1px; height: 100%; padding: 6px 9px; background: #3B4533; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.indice a:hover { background: #1F2A1D; }
+.indice b { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 13px; color: #E0C46B; letter-spacing: 0; }
+
+/* Cuerpo del esquema */
+.esq { min-width: 0; }
+.sec { margin: 26px 4px 12px 0; display: flex; align-items: stretch; background: #3B4533; color: #FFFFFF; box-shadow: 4px 4px 0 #A8862F; font-size: 16px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; scroll-margin-top: 12px; break-inside: avoid; break-after: avoid; }
+.esq > .sec:first-child { margin-top: 0; }
+.sec .n { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0; background: #E0C46B; color: #1F2A1D; min-width: 46px; display: flex; align-items: center; justify-content: center; }
+.sec .t { padding: 9px 12px; display: flex; align-items: center; flex-grow: 1; min-width: 0; }
+.sec .px { display: flex; align-items: flex-end; gap: 3px; padding: 0 10px 8px 0; }
+.sec .px i { display: block; width: 5px; height: 5px; background: #E0C46B; }
+.sec .px i:nth-child(2) { height: 9px; opacity: .7; }
+.sec .px i:nth-child(3) { height: 13px; opacity: .45; }
+.sub { margin: 16px 0 5px; font-size: 1em; font-weight: 700; line-height: 1.3; display: flex; align-items: baseline; gap: 8px; break-after: avoid; }
+.sub span { flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: .78em; color: #3B4533; background: #EEF3EB; border: 1px solid #3B4533; box-shadow: 2px 2px 0 #C9D1C5; padding: 0 5px; }
+.sub::after { content: ""; flex: 1 0 24px; align-self: center; border-bottom: 2px dotted #C9D1C5; }
+h4.sub { font-size: .94em; margin-top: 12px; }
+h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
+.sec + .sub { margin-top: 0; }
+.esq p { margin: 6px 0; }
+.esq ul, .esq ol { margin: 0; padding-left: 18px; }
+.esq li { margin: 2px 0; }
+.esq li::marker { color: #A8862F; }
+.esq ol > li::marker { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.esq li > ul { list-style: none; padding-left: 16px; }
+.esq li > ul > li { position: relative; }
+.esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
+.esq b { font-weight: 700; }
+
+.pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; }
+
+@media screen and (min-width: 821px) {
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+}
+@media screen and (max-width: 820px) {
+  .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
+  h1 { font-size: 27px; }
+  .sello { min-width: 74px; padding: 6px 10px; }
+  .sello b { font-size: 22px; }
+  .sec { font-size: 14.5px; }
+}
+
+/* Impresión y PDF: dos columnas, cuerpo pequeño, sin barra ni pie propio (el pie
+   y la numeración van en los márgenes de @page). */
+@media print {
+  body { background: #FFFFFF; }
+  .barra, .pie { display: none; }
+  .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
+  h1 { font-size: 31px; }
+  .sub-cab { font-size: 13px; }
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+  .indice a { padding: 5px 8px; font-size: 9.5px; }
+  .indice b { font-size: 12px; }
+  .esq { column-count: 2; column-gap: 24px; }
+  .sec { font-size: 12.5px; margin: 14px 4px 9px 0; }
+  .sec .n { font-size: 15px; min-width: 38px; }
+  .sec .t { padding: 6px 10px; }
+  .sub { margin: 9px 0 3px; }
+  .esq li { margin: 1px 0; }
+  .esq ul, .esq ol { padding-left: 14px; }
+  .esq li > ul { padding-left: 14px; }
+  .esq li > ul > li::before { left: -11px; }
+}
+
+@page { @bottom-left { content: "Esquema · Tema 2. Balanza de Pagos. Concepto. Presentaciones, metodología y estructura"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
+    <div class="acciones"><a class="boton" href="tema-02.pdf" download="Esquema tema 2 (ejercicio 3).pdf">Descargar PDF</a></div>
+  </div>
+</header>
+<main class="hoja">
+  <div class="cab">
+    <div class="cab-txt">
+      <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
+      <h1>Balanza de Pagos. Concepto. Presentaciones, metodología y estructura</h1>
+      <div class="sub-cab">Ejercicio 3 · Esquema del tema 2 · Actualizado el <time datetime="2026-09-07">7 de septiembre de 2026</time></div>
+    </div>
+    <div class="sello" aria-label="Ejercicio 3, tema 2"><span>EJ. 3 · TEMA</span><b>2</b></div>
+  </div>
+  <nav aria-label="Apartados del esquema"><ol class="indice" style="--cols: 5"><li><a href="#apartado-1"><b>01</b>INTRODUCCIÓN</a></li><li><a href="#apartado-2"><b>02</b>BALANZA DE PAGOS: CONCEPTO, PRESENTACIONES, METODOLOGÍA Y ESTRUCTURA</a></li><li><a href="#apartado-3"><b>03</b>EQUILIBRIO Y DESEQUILIBRIO DE LA BALANZA</a></li><li><a href="#apartado-4"><b>04</b>SITUACIÓN ACTUAL DE LA BALANZA DE PAGOS ESPAÑOLA</a></li><li><a href="#apartado-5"><b>05</b>CONCLUSIÓN</a></li></ol></nav>
+  <div class="esq">
+<h2 class="sec" id="apartado-1"><span class="n">01</span><span class="t">INTRODUCCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Igual que una familia o una empresa, los residentes de un país efectúan pagos y cobros con los de otros países, y su suma determina si la economía incurre en déficit o superávit con el exterior. Ningún país es hoy un ente aislado, porque ninguna economía produce todo lo que demandan sus residentes y la globalización ha creado una fuerte interdependencia entre mercados.</p>
+<p><b>Balanza de Pagos.</b> Documento contable que recoge de forma sistemática todas las transacciones económicas de un país con el exterior. El tema analiza su concepto, presentaciones, metodología y estructura, después su equilibrio y desequilibrio, y termina con la situación actual de la Balanza de Pagos española.</p>
+<h2 class="sec" id="apartado-2"><span class="n">02</span><span class="t">BALANZA DE PAGOS: CONCEPTO, PRESENTACIONES, METODOLOGÍA Y ESTRUCTURA</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>2.1</span>Concepto</h3>
+<p>En España la elabora el <b>Banco de España</b> desde 1991 (antes lo hacía la Secretaría de Estado de Comercio), siguiendo la metodología del <b>FMI</b> recogida en el <b>Sexto Manual de Balanza de Pagos (MBP6)</b>. Es una estadística esencial para la política monetaria, por lo que el BCE y Eurostat impulsan su armonización metodológica continua. En marzo de 2025 el FMI publicó la versión provisional de la séptima edición (BPM7), con publicación definitiva prevista para el último trimestre de 2026 e implementación recomendada en 2029-2030, junto con la actualización del Sistema de Cuentas Nacionales (SCN 2025). Hasta entonces el Banco de España aplica el MBP6.</p>
+<p><b>Balanza de Pagos.</b> Registro estadístico sistemático de las transacciones, reales y financieras, realizadas entre los residentes de un país y los del resto del mundo durante un periodo determinado. Sus elementos son:</p>
+<ul><li><b>Registro sistemático</b>: método de partida doble, con dos anotaciones de igual valor por transacción. En las cuentas corriente y de capital se anotan ingresos (créditos) y pagos (débitos), y en la cuenta financiera variaciones netas de activos y de pasivos. La suma de todos los saldos es siempre cero</li><li><b>Transacciones económicas</b>: cinco grupos, desde el trueque de bienes y servicios hasta las operaciones sin compensación</li><li><b>Residencia</b>: cuenta el centro de interés económico principal, con independencia de la nacionalidad. Las personas físicas son residentes con residencia habitual de un año o más, y las jurídicas por su actividad en el territorio, incluidas las filiales extranjeras</li><li><b>Valoración</b>: en moneda nacional, y en euros desde 1999 en la Balanza española. La Posición de Inversión Internacional (PII) es el stock de activos y pasivos financieros, y la Balanza de Pagos es el flujo o variación de ese stock entre el principio y el final del periodo</li><li><b>Momento de registro</b>: principio de devengo, es decir, cuando se crea, transforma, intercambia, transfiere o extingue el valor económico y no cuando se cobra o paga. El criterio de caja se aplica a algunas operaciones, como parte del comercio de mercancías y los intereses de la deuda pública emitida en euros</li><li><b>Ordenación de los flujos financieros</b>: la cuenta financiera se registra como Variación Neta de Activos (VNA) y Variación Neta de Pasivos (VNP), con signo positivo si aumentan y negativo si disminuyen. Su saldo es VNA menos VNP y refleja la financiación proporcionada o recibida frente al exterior</li><li><b>Fuentes</b>: el sistema ITRS desapareció en 2014. Hoy se usan la Estadística de Comercio Exterior de Aduanas, FRONTUR y EGATUR, la Encuesta de Comercio Internacional de Servicios del INE, datos de la Seguridad Social y el Registro de Inversiones Exteriores</li><li><b>Periodicidad</b>: estimaciones mensuales sintéticas con un desfase de unos 60 días, y series trimestrales y anuales con mayor desglose</li></ul>
+<h3 class="sub"><span>2.2</span>Presentaciones de la Balanza de Pagos</h3>
+<p>Cada país decide las normas con que elabora su Balanza, aunque conviene usar normas comunes para poder comparar. Las dicta el <b>FMI</b>, cuyo primer manual es de 1948. Casi todos los países siguen hoy el MBP6 (2009), que sustituyó al MBP5 (1993) y se coordinó con el SCN 2008. El Manual distingue dos presentaciones:</p>
+<ul><li><b>Detallada</b>: clasifica todas las operaciones en 112 apartados</li><li><b>Agregada</b>: las agrupa en 8 grandes apartados</li></ul>
+<p>Los países eligen libremente el grado de agregación según la importancia relativa de sus operaciones, y también si elaboran balanzas mensuales o trimestrales.</p>
+<h3 class="sub"><span>2.3</span>Metodología</h3>
+<p>Históricamente la Balanza se basaba en un sistema cerrado de información bancaria, el ITRS, que descansaba en la autocomprobación de saldos por el declarante. La liberalización financiera, la supresión de los controles de cambios y el uso de fuentes estadísticas independientes (aduanas, encuestas, registros administrativos) han dado lugar a un sistema directo e integrado.</p>
+<p>Como la información sobre activos, pasivos, ingresos y pagos procede de orígenes diversos y no de un registro contable único, aparecen discrepancias entre la cuenta financiera y las cuentas corriente y de capital. Se recogen en <b>Errores y Omisiones</b>, una partida de ajuste estadístico que equilibra la Balanza.</p>
+<h3 class="sub"><span>2.4</span>Estructura</h3>
+<p>Las operaciones se clasifican en tres cuentas básicas, la corriente, la de capital y la financiera, subdivididas en sub-balanzas y rúbricas. Además hay una partida de ajuste, errores y omisiones.</p>
+<p><b>Cuenta corriente.</b> Recoge los ingresos y pagos por transacciones corrientes con el resto del mundo. Su saldo es el saldo de la cuenta corriente y se divide en cuatro balanzas básicas:</p>
+<ul><li><b>Balanza comercial</b>: tráfico de mercancías, con las importaciones valoradas FOB a partir de los datos del Departamento de Aduanas e Impuestos Especiales</li><li><b>Balanza de servicios</b>: ingresos y pagos por servicios entre residentes y no residentes, en doce rúbricas</li><li><b>Renta primaria</b>: sustituye a la balanza de rentas del MBP5</li><li><b>Renta secundaria</b>: sustituye a las transferencias corrientes del MBP5</li></ul>
+<p><b>Balanza de servicios.</b> Sus doce rúbricas son las siguientes:</p>
+<ul><li><b>Turismo y viajes</b>: bienes y servicios adquiridos por viajeros en otra economía. Es viajero quien permanece menos de un año, con excepciones como determinados estudiantes y pacientes</li><li><b>Transportes</b>: fletes, pasajeros, otros servicios de transporte y servicios postales y de mensajería. Los seguros de transporte van a seguros y las reparaciones a mantenimiento y reparación</li><li><b>Construcción</b>: se registra según la residencia de las empresas participantes</li><li><b>Seguros y pensiones</b>: muy modificada por el MBP6. Se valora el servicio de intermediación y no el total de las primas. El servicio va a la cuenta de servicios, los suplementos de primas a la renta primaria, las primas netas y las indemnizaciones a la renta secundaria y las reservas técnicas a la cuenta financiera</li><li><b>Servicios financieros</b>: de intermediarios y auxiliares financieros, excepto aseguradoras y fondos de pensiones, incluidos los SIFMI (servicios de intermediación financiera medidos indirectamente)</li><li><b>Telecomunicaciones, informática e información</b>: agrupación consolidada por el MBP6. Los derechos para reproducir o distribuir obras o programas van a propiedad intelectual</li><li><b>Otros servicios empresariales</b>: I+D+i, consultoría, arquitectura e ingeniería, servicios relacionados con el comercio y arrendamiento operativo. El arrendamiento financiero equivale a adquirir un activo y da lugar a registro financiero e intereses</li><li><b>Servicios personales, culturales y recreativos</b>: audiovisuales y otros</li><li><b>Bienes y servicios del Gobierno n.i.o.p.</b>: enclaves como embajadas y bases militares, y compras del personal diplomático y militar en el extranjero</li><li><b>Manufactura sobre insumos físicos de otros</b>: introducida por el MBP6. Transformación de bienes que siguen siendo del propietario no residente, que paga un servicio. Ejemplo: la licuefacción de gas natural</li><li><b>Mantenimiento y reparación n.i.o.p.</b>: reparaciones sobre bienes de no residentes y viceversa</li><li><b>Cargos por el uso de la propiedad intelectual n.i.o.p.</b>: pagos por patentes, marcas, derechos de autor, franquicias y licencias. Pagar por usarla es un servicio, mientras que adquirirla puede ser una operación con un activo</li></ul>
+<p><b>Renta primaria.</b> Es el rendimiento que reciben las unidades institucionales por su contribución a la producción, por aportar trabajo, activos financieros o recursos naturales. El MBP6 reorganizó y amplió la antigua balanza de rentas, por lo que es una nueva clasificación y no una cuenta nueva. Comprende:</p>
+<ul><li><b>Remuneración de los asalariados</b>: pagada a residentes por unidades no residentes y viceversa, incluidos los trabajadores transfronterizos y temporeros</li><li><b>Rentas de la inversión</b>: dividendos, beneficios reinvertidos e intereses, clasificados por categoría funcional</li><li><b>Otras rentas primarias</b>: impuestos sobre la producción y las importaciones y subvenciones</li></ul>
+<p><b>Renta secundaria.</b> Recoge las transferencias corrientes entre residentes y no residentes. A diferencia de la renta primaria, no remunera la producción ni la propiedad de activos sino que redistribuye renta, y afecta a la renta disponible, mientras que las transferencias de capital afectan al patrimonio. Sus partidas principales son:</p>
+<ul><li><b>Transferencias personales</b>: entre hogares, incluidas las remesas</li><li><b>Transferencias de las Administraciones Públicas</b>: en España, sobre todo con la UE, con pagos como los recursos propios basados en la renta nacional bruta y en el IVA</li></ul>
+<p><b>Cuenta de capital.</b> Recoge las transferencias de capital y la adquisición y disposición de activos no financieros no producidos:</p>
+<ul><li><b>Transferencias de capital</b>: afectan al patrimonio del receptor o se relacionan con la adquisición de activos. Incluyen las condonaciones de deuda y las destinadas a financiar inversiones. En España son relevantes las de la UE. Desde el MBP6, el cambio de residencia de emigrantes no genera por sí mismo una transacción de capital</li><li><b>Activos no financieros no producidos</b>: recursos naturales y derechos sobre ellos, contratos, arrendamientos y licencias transferibles. La compra de tierras por un no residente se hace a través de una unidad residente hipotética</li></ul>
+<p><b>Cuenta financiera.</b> Registra las transacciones de activos y pasivos financieros entre residentes y no residentes como VNA y VNP. Su saldo, VNA menos VNP, es positivo si hay salida neta de fondos al exterior y negativo si hay entrada neta. Conceptualmente equivale al saldo conjunto de las cuentas corriente y de capital, que da la capacidad o necesidad de financiación, y las diferencias van a errores y omisiones. En la estadística española se separa el Banco de España del resto de sectores.</p>
+<p><b>Cuenta financiera excluido el Banco de España.</b> Se clasifica en cuatro categorías funcionales, desglosadas también por sectores institucionales (otras instituciones financieras monetarias, Administraciones Públicas y otros sectores residentes). Las categorías son:</p>
+<ul><li><b>Inversión directa</b>: operaciones con una relación de inversión directa, que implica control o influencia significativa y se presume cuando el inversor posee al menos el <b>10 %</b> de los derechos de voto. Comprende acciones y otras participaciones, aportaciones a sucursales y financiación entre empresas relacionadas. España presenta además la inversión en inmuebles, dentro de la inversión directa</li><li><b>Inversión de cartera</b>: valores negociables que no son inversión directa, es decir, acciones, participaciones y fondos de inversión, y títulos de deuda. Se registra por el valor de la transacción, sin comisiones, que son servicios financieros</li><li><b>Otra inversión</b>: categoría residual, con préstamos, depósitos, créditos comerciales y anticipos</li><li><b>Derivados financieros</b>: instrumentos cuyo valor depende del de otro activo, como futuros, opciones y swaps. Se registran en términos netos y, por convención, en la variación neta de activos</li></ul>
+<p><b>Cuenta financiera del Banco de España.</b> Recoge las variaciones de sus activos y pasivos exteriores:</p>
+<ul><li><b>Activos de reserva</b>: activos exteriores bajo control directo y efectivo de las autoridades monetarias, utilizables para financiación exterior o intervención en divisas. Son oro monetario, derechos especiales de giro (DEG), posición de reserva en el FMI y activos en moneda extranjera</li><li><b>Posición frente al Eurosistema</b>: activos y pasivos frente al BCE y los bancos centrales del euro</li><li><b>Otros activos y pasivos exteriores</b>: los no incluidos en las dos anteriores</li></ul>
+<p><b>Errores y omisiones.</b> Partida de ajuste que concilia las cuentas, porque es imposible registrar con precisión todas las transacciones. Se calcula como la diferencia entre el saldo de la cuenta financiera y el saldo conjunto de las cuentas corriente y de capital, y no es una cuarta cuenta. Un signo positivo puede deberse a una infravaloración de los ingresos o de la VNP, o a una sobrevaloración de los pagos o de la VNA, y el contrario da signo negativo. No mide un error concreto sino el resultado neto de las discrepancias entre fuentes.</p>
+<h3 class="sub"><span>2.5</span>Clasificación de las operaciones por sectores institucionales</h3>
+<p>Las rúbricas de renta primaria y secundaria, de capital y de la cuenta financiera se clasifican en tres sectores institucionales:</p>
+<ul><li><b>Instituciones Financieras Monetarias</b>: el Banco de España, entidades de crédito (incluido el ICO) y fondos del mercado monetario</li><li><b>Administraciones Públicas</b>: Administración Central, comunidades autónomas, corporaciones locales y Seguridad Social</li><li><b>Otros sectores residentes</b>: instituciones financieras no monetarias, aseguradoras, fondos de pensiones, empresas no financieras y hogares</li></ul>
+<h2 class="sec" id="apartado-3"><span class="n">03</span><span class="t">EQUILIBRIO Y DESEQUILIBRIO DE LA BALANZA</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>La Balanza de Pagos está siempre equilibrada en sentido contable, porque la suma de ingresos, créditos o entradas es igual a la de pagos, débitos o salidas. Hablar de equilibrio o desequilibrio es, por tanto, hablar en sentido económico, analizando por separado el saldo de ciertas transacciones. Para ello se dividen en dos grupos:</p>
+<ul><li><b>Transacciones autónomas</b>: se realizan por motivos económicos (beneficio) o políticos (ayudas), con independencia del resto de partidas. Son las exportaciones e importaciones de bienes y servicios, las remesas de emigrantes y las inversiones directas y de cartera</li><li><b>Transacciones acomodantes o financiadoras</b>: compensan el desequilibrio generado por las autónomas, como las salidas de reservas para financiar un déficit o las donaciones</li></ul>
+<p>No hay un único criterio para identificar las autónomas, y se consideran acomodantes todas las que no lo sean. Hay tres saldos principales.</p>
+<p><b>Saldo de la cuenta corriente.</b> Suma de los saldos de bienes, servicios, renta primaria y renta secundaria. Desde el punto de vista macroeconómico es igual al ahorro nacional bruto menos la formación bruta de capital. Si es cero, el ahorro basta para financiar la inversión. Si es positivo hay superávit y la economía financia al exterior, y si es negativo hay déficit y la inversión interna supera al ahorro, por lo que se recurre al ahorro exterior. Un déficit puede acompañar a más inversión productiva, aunque si es persistente aumenta el endeudamiento exterior.</p>
+<p><b>Capacidad (+) o necesidad (−) de financiación.</b> Es la suma del saldo de la cuenta corriente y el de la cuenta de capital. Si es positivo, la economía aumenta en términos netos sus activos frente al exterior o reduce sus pasivos. Si es negativo, necesita financiación exterior mediante más pasivos, menos activos o ambos. Su contrapartida está en la cuenta financiera, una vez considerados los errores y omisiones.</p>
+<p><b>Saldo de liquidaciones oficiales.</b> Concepto tradicional, ligado a sistemas en que las autoridades usaban las reservas internacionales para ajustar los desequilibrios. Con los tipos de cambio flexibles y la pertenencia de España a la Unión Económica y Monetaria ha perdido importancia y el Banco de España ya no lo usa como medida principal.</p>
+<p>Otros saldos analíticos son:</p>
+<ul><li><b>Balanza básica</b>: cuenta corriente más capitales a largo plazo. Un déficit financiado a largo plazo preocupa menos, pero algunos de esos capitales pueden ser acomodantes y ocultar endeudamiento exterior</li><li><b>Balanza de desarrollo</b>: cuenta corriente más inversiones directas extranjeras, que compensan un déficit sin devolución ni intereses, con el riesgo de que las principales empresas pasen a capital extranjero</li></ul>
+<h2 class="sec" id="apartado-4"><span class="n">04</span><span class="t">SITUACIÓN ACTUAL DE LA BALANZA DE PAGOS ESPAÑOLA</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Según los datos de avance del Banco de España para 2025 (doce meses, publicados el 27 de febrero de 2026), los rasgos son los siguientes:</p>
+<ul><li><b>Cuenta corriente</b>: superávit de <b>49.400 M€</b>, el 2,9 % del PIB, frente a 50.700 M€ y el 3,2 % en 2024<ul><li>Turismo y viajes: superávit de 70.500 M€ (4,2 % del PIB), frente a 68.200 M€</li><li>Servicios no turísticos: superávit de 43.000 M€ (2,6 % del PIB), frente a 32.000 M€</li><li>Bienes: déficit de 49.000 M€ (2,9 % del PIB), frente a 33.900 M€. Los servicios compensaron solo en parte el mayor déficit</li><li>Renta primaria: déficit de 1.100 M€. Renta secundaria: déficit de 14.000 M€</li></ul></li><li><b>Cuenta de capital</b>: superávit de 17.200 M€, en torno al 1,0 % del PIB, frente a 18.100 M€ en 2024. Su elevado saldo se debe en buena medida a las transferencias de capital de la UE, en especial los fondos Next Generation EU</li><li><b>Cuenta financiera (excluido el Banco de España)</b>: saldo de unos 32.900 M€ (2,0 % del PIB), frente a 132.100 M€ (8,3 %) en 2024. La caída se debe sobre todo a la otra inversión, que pasó de 106.500 M€ a un saldo negativo de 10.100 M€. No debe interpretarse como una simple entrada neta de capitales, sino en conjunto con la estructura de VNA y VNP</li></ul>
+<p><b>Capacidad de financiación.</b> La suma de las cuentas corriente y de capital dio una capacidad de financiación de <b>66.600 M€</b> en 2025 (<b>4,0 % del PIB</b>), algo inferior a los 68.700 M€ (4,3 %) de 2024 pero en niveles históricamente elevados. El ahorro de la economía, descontada la inversión interna, financió netamente al exterior. España tiene capacidad de financiación ininterrumpida desde 2013, cuando el saldo conjunto fue positivo por primera vez desde 1997.</p>
+<h2 class="sec" id="apartado-5"><span class="n">05</span><span class="t">CONCLUSIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>La Balanza de Pagos es el instrumento contable de referencia para analizar las relaciones económicas con el exterior, y exige distinguir el equilibrio contable, que se cumple siempre, del económico, que se analiza con los saldos de transacciones autónomas. En 2025, pese al notable deterioro del saldo comercial de mercancías, el turismo y el conjunto de los servicios permitieron mantener una capacidad de financiación próxima a máximos, en torno al 4 % del PIB, en una fase de solidez externa iniciada en 2013.</p>
+<p>La transición al BPM7, con implementación prevista en 2029-2030, adaptará el registro a la digitalización y a la sofisticación de los mercados financieros.</p>
+  </div>
+  <footer class="pie"><span>Esquema propio a partir del tema desarrollado</span><span class="url">sergioargudo.es</span></footer>
+</main>
+</body>
+</html>

@@ -245,16 +245,32 @@ artículo que tiene pensado el autor. Para generar los PDF hace falta Playwright
   La plantilla está en `scripts/generar-esquemas.js` (`npm run esquemas`) y el PDF
   en `scripts/esquemas-pdf.js` (`npm run esquemas:pdf`; `CHROMIUM=<ruta>` usa un
   Chromium ya instalado). Por defecto escriben en `review/esquemas/` (vista previa,
-  ni se versiona ni se publica); `-- 1/6` hace solo un tema. **No generar ni
-  publicar todavía**: el autor va a dar pautas nuevas para redactar los esquemas y
-  rehará muchos. Hasta entonces la web sigue con los Word y PDF antiguos.
-  Para activarla cuando el contenido esté listo: `npm run esquemas -- --publicar &&
-  npm run esquemas:pdf -- --publicar` (escribe `public/temas/ejercicio-N/tema-NN.html`
-  y `.pdf`); borrar los `.docx` y los `TEMA N. ….pdf` antiguos; en `js/main.js`,
-  que cada tema enlace «Ver» a `tema-NN.html` y «PDF» a `tema-NN.pdf` (sin Word);
-  cambiar «PDF y Word» por «en línea y PDF» en `temario.html` (meta y tarjetas) e
-  `index.html`; adaptar `scripts/extraer-temas.sh` (lee `TEMA N.….pdf`) y los
-  textos de `scripts/auditar-temas.js` que hablan del `.docx`.
+  ni se versiona ni se publica); `-- 1/6` hace solo un tema.
+
+- **La web ofrece esquemas, no temario** (12 oct, decisión del autor). No se usa la
+  palabra «temario» en nada que lea el visitante: son esquemas de cada tema, de
+  unas cinco páginas, para estudiar, repasar o desarrollar un tema propio. La
+  página es `esquemas.html` y `temario.html` solo redirige (conserva `?q=`), para
+  no romper enlaces. Las fichas llevan la marca «SAS · FICHAS SOIVRE».
+  - **Conviven dos formatos** (12 oct). Los esquemas rehechos con las pautas nuevas
+    (síntesis de 3 a 5 páginas, con frases y párrafos además de viñetas) se
+    ofrecen en línea y en PDF con la plantilla, y enseñan su **fecha de
+    actualización** en la página y en el listado. Hoy son los temas 1 a 36 del
+    ejercicio 3 (el 12 es descarte). El resto (ejercicio 1, ejercicio 5 y temas 37
+    a 58 del ejercicio 3) sigue con su Word y su PDF antiguos y el listado dice
+    «En actualización».
+  - `temas/actualizado.json` manda: lo escribe el repositorio privado de
+    herramientas al rehacer un esquema, con la fecha del último guardado en Word
+    del tema del que sale. Un esquema está en el formato nuevo si tiene fecha ahí.
+    `npm run esquemas -- --publicar` solo publica esos y escribe
+    `js/esquemas-fechas.js`, que es lo que lee `js/main.js` para decidir si una
+    fila lleva «Ver» y «PDF» o «PDF» y «Word».
+  - **Para pasar un esquema al formato nuevo**: rehacerlo y sellar su fecha en el
+    repositorio privado, `npm run esquemas -- --publicar && npm run esquemas:pdf --
+    --publicar`, borrar de `public/temas/ejercicio-N/` su `ESQUEMA TEMA N.docx` y
+    su `TEMA N. ….pdf`, y actualizar las cifras de las tarjetas de `esquemas.html`.
+    Cuando no quede ninguno antiguo, adaptar `scripts/extraer-temas.sh` (lee
+    `TEMA N.….pdf`) y los textos de `scripts/auditar-temas.js` que hablan del `.docx`.
 
 Después del lanzamiento: actualización mensual de la balanza de pagos con GitHub
 Actions y validaciones; página «qué ha cambiado» en el temario. El chat con IA sobre

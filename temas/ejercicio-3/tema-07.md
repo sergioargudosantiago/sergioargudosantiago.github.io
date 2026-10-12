@@ -1,182 +1,113 @@
 # 1. INTRODUCCIÓN
-- **Financiación** = variable clave del exportador
-  - Da **seguridad en el cobro**
-  - Aumenta la **competitividad** con facilidades de pago al cliente
-- **Justificación del respaldo oficial**
-  - Esquemas equivalentes en países competidores
-  - Países, plazos y riesgos que el sector privado no cubre bien
-  - Incentivo y complemento del sector privado
-  - Sostener relaciones económicas, en especial en crisis financieras
-- **Instrumentos del Gobierno español**
-  - **Crédito Oficial a la Exportación**
-  - **Seguro de crédito a la exportación** por cuenta del Estado
-  - **CARI**
-  - **Líneas de financiación del ICO**
-  - Enmarcados, en distinta medida, en el **Consenso OCDE**
+
+Para exportar con éxito ya no basta un producto competitivo en calidad y precio: hay que conceder al cliente condiciones financieras que hagan la oferta más atractiva. El pago al contado inmoviliza fondos del exportador, mientras que el bien genera beneficios al importador durante su vida útil, por lo que se prefiere financiar el aplazamiento con esos ingresos. La financiación aporta seguridad de cobro y competitividad.
+
+El respaldo oficial se justifica por la existencia de esquemas equivalentes en los países competidores, por países, plazos y riesgos no cubiertos adecuadamente por el sector privado, por su papel de incentivo y complemento del sector financiero privado y por ser una vía para sostener las relaciones económicas, en especial en crisis financieras. En España se materializa en el **Crédito Oficial a la Exportación**, el seguro de crédito a la exportación por cuenta del Estado, el **CARI** y las líneas del **ICO**, enmarcados en distinta medida en el **Consenso OCDE**.
 
 # 2. EL CRÉDITO OFICIAL: CARACTERÍSTICAS PRINCIPALES
-- **Definición**
-  - Financiación con **apoyo oficial** del pago de un contrato de exportación de **bienes de equipo y servicios de origen español**
-- **Formas del apoyo oficial**
-  - **Subvención del tipo de interés**
-  - **Tipo de interés fijo** durante toda la vida del crédito
-  - **Plazos de amortización largos**
-  - **Aseguramiento por el Estado** de riesgos políticos que las aseguradoras privadas no asumen
-- **Doble regulación**
-  - Supranacional: **Consenso OCDE**
-  - Legislación nacional específica
+
+**Crédito Oficial a la Exportación.** Modalidades de financiación con algún apoyo oficial que financian total o parcialmente el pago de un contrato de exportación de bienes de equipo y servicios de origen español.
+
+El apoyo oficial puede ser:
+
+- Subvención del tipo de interés
+- Tipo de interés fijo durante toda la vida del crédito, que permite conocer con seguridad el coste financiero exacto
+- Plazos de amortización largos
+- Aseguramiento por el Estado de los riesgos políticos que las aseguradoras privadas no asumen
+
+Estos créditos están sujetos a una regulación supranacional (el Consenso OCDE) y a la legislación nacional específica de cada país.
 
 # 3. EL CRÉDITO SUMINISTRADOR
-- **Concepto**
-  - La **empresa española suministradora** recibe la financiación de la entidad financiera
-  - **Medio y largo plazo**, para bienes de equipo, maquinaria y productos asimilados
-  - Apoyo oficial si cumple la **Reglamentación de Crédito Oficial** (Consenso OCDE) en plazo, bienes o servicios, país de destino e importe
-- **Mecánica**
-  - El exportador concede el crédito al comprador extranjero mediante **aplazamiento de pago** y asume inicialmente el riesgo de impago
-  - Después **descuenta o cede los derechos de cobro** a la entidad financiadora
-  - La entidad puede exigir cobertura del **seguro de crédito a la exportación**: **CESCE**, Agencia Española de Crédito a la Exportación
-- **Documentación**
-  - **Contrato comercial** con pago a plazos
-  - **Letras o pagarés** aceptados por el importador
-  - **Convenio de crédito** con la entidad para el descuento
-- **Reparto financiero (Consenso OCDE)**
-  - Importador abona anticipadamente al menos el **15 %**
-  - Banco financia el **85 %** restante al exportador
-  - Reembolso del importador al vencimiento
-- **Ventajas**
-  - **Cobro al contado** de las exportaciones a plazo
-  - Eliminación de riesgos, salvo el **recurso del banco** en disputas comerciales
-  - Competir con financiación y plazo ventajosos
-- **Póliza de Crédito Suministrador de CESCE**
-  - Descuento de derechos de cobro, con el banco como **beneficiario**
-  - Cobertura máxima **99 %** en riesgos comerciales y **99 %** en políticos y extraordinarios
+
+**Crédito suministrador.** Financiación a medio y largo plazo en la que la empresa española suministradora recibe la financiación de la entidad financiera. Se dirige a exportadores de bienes de equipo, maquinaria y productos asimilados, y puede tener apoyo oficial si cumple la Reglamentación de Crédito Oficial vigente (Consenso OCDE) en plazo, características de los bienes o servicios, país de destino e importe.
+
+El exportador concede el crédito al comprador extranjero mediante aplazamiento de pago y asume inicialmente el riesgo de impago. Después puede descontar o ceder los derechos de cobro a la entidad financiadora, que le anticipa el importe. La entidad puede exigir cobertura del seguro de crédito de **CESCE**, la Agencia Española de Crédito a la Exportación, que reduce los riesgos del exportador y de la entidad dentro de los límites de la póliza.
+
+- El exportador firma con el importador un contrato comercial con pago a plazos y obtiene letras o pagarés aceptados, y firma con la entidad un convenio de crédito para su descuento
+- Según el Consenso, el importador abona anticipadamente al menos el **15 %** del contrato y el banco financia el **85 %** restante al exportador, que se reembolsa del importador al vencimiento de las letras o pagarés
+- Ventajas: cobro al contado de las ventas a plazo, eliminación de los riesgos de la operación (salvo el recurso del banco en disputas comerciales) y posibilidad de ofrecer financiación ventajosa a los importadores
+
+**Póliza de Crédito Suministrador de CESCE.** Permite financiarse descontando los derechos de cobro de un contrato, con el banco como beneficiario designado. Cobertura máxima del **99 %** en riesgos comerciales, políticos y extraordinarios.
 
 # 4. EL CRÉDITO COMPRADOR
-- **Concepto**
-  - La entidad financiera concede el crédito al **importador extranjero**
-  - **Medio y largo plazo**: bienes de equipo, líneas de producción, plantas llave en mano, buques, aeronaves, proyectos y tecnología
-  - Con **apoyo oficial** si cumple el Consenso OCDE, o a **tipos de mercado** para bienes de consumo y otros no acogibles
-- **Mecánica**
-  - Aprueba la operación la **agencia de seguro de crédito** (CESCE, **Bpifrance Assurance Export**)
-  - El banco aprueba el riesgo no asegurado
-  - El importador firma el **convenio de crédito** y abona al menos el **15 %** con fondos propios
-  - La entidad paga al exportador por cuenta del importador, que queda como deudor
-- **Apoyo oficial concreto**
-  - Cobertura de riesgos por **CESCE**
-  - Condiciones a **tipo fijo** conforme al Consenso
-  - Mecanismo **CARI**
-- **Ventajas**
-  - Una de las **principales modalidades** de financiación de las exportaciones españolas
-  - El exportador **cobra al contado** sin endeudamiento, el **prestatario es el importador**
-  - Plazos de reembolso largos y fondos durante la **fabricación**
-- **Dos modalidades**
-  - **Crédito individual**, para un contrato
-  - **Línea de crédito**: montante global a un prestatario (habitualmente un **banco del país importador**) para varios contratos, con más agilidad y más exportadores beneficiados
-- **Agentes**
-  - España: exportador, banco, **ICO** (subvenciona el tipo), **Dirección General de Inteligencia Económica y Comercial** del MECE (autoridad administrativa), **CESCE**
-  - Extranjero: comprador, prestatario, garante y entidad supervisora (**Bureau Veritas, SGS**) en prefinanciación
-- **Diferencias con el crédito suministrador**
-  - El **exportador es el prestatario**
-  - El garante avala al comprador
-  - No hay entidad supervisora
-- **Póliza de Crédito Comprador de CESCE**
-  - Garantiza a la entidad el **reembolso** en caso de impago
-  - Máximo **99 %** en riesgos comerciales y **99 %** en políticos y extraordinarios
-  - Habitual el **CARI** del ICO
+
+**Crédito comprador.** Financiación a medio y largo plazo en la que la entidad financiera concede el crédito al importador extranjero para comprar los bienes o servicios. Se dirige a bienes de equipo, maquinaria, líneas de producción completas, plantas llave en mano, buques, aeronaves, proyectos y tecnología de origen español. Puede tener apoyo oficial si cumple el Consenso OCDE o financiarse a tipos de mercado, sin apoyo, en el caso de bienes de consumo u otros productos no acogibles al Consenso.
+
+Si la agencia de seguro de crédito (CESCE en España, Bpifrance Assurance Export en Francia) aprueba la operación y el banco aprueba la parte de riesgo no asegurado, el importador firma el convenio de crédito y aporta con fondos propios al menos el **15 %** del contrato. A medida que el exportador cumple, el banco le paga por cuenta del importador y nace la deuda de este con la entidad. El apoyo oficial puede ser la cobertura de riesgos políticos y comerciales por CESCE, el tipo fijo conforme al Consenso y, cuando corresponda, el CARI.
+
+Es una de las principales modalidades de financiación de las exportaciones españolas: el exportador cobra al contado sin asumir el endeudamiento, pues el prestatario es el importador, que obtiene condiciones competitivas y plazos largos. En ciertos casos aporta fondos durante la fabricación. Tiene dos modalidades:
+
+- **Crédito individual o por operación**, negociado para un contrato de exportación
+- **Línea de crédito**, genérica: el banco concede a un prestatario, habitualmente un banco del país importador, un montante global para varios contratos de importación de bienes españoles, con más agilidad y para más exportadores
+
+**Agentes que intervienen**
+
+- En España: exportador, banco financiador, ICO (subvenciona el tipo de interés), Dirección General de Inteligencia Económica y Comercial del MECE (autoridad administrativa) y CESCE (aseguradora)
+- En el extranjero: comprador, prestatario, garante y, en su caso, una entidad supervisora de prestigio internacional (Bureau Veritas, SGS) que vigila al exportador en operaciones de prefinanciación
+
+**Diferencias con el suministrador.** En este el prestatario es el propio exportador, el garante avala al comprador (no al prestatario) y no hay entidad supervisora.
+
+**Póliza de Crédito Comprador de CESCE.** Garantiza a la entidad financiera el reembolso del crédito en caso de impago, con cobertura máxima del **99 %** en riesgos comerciales y del **99 %** en políticos y extraordinarios. Es habitual que la entidad se beneficie además de la financiación CARI del ICO.
 
 # 5. EL CONSENSO OCDE
-- **Origen y naturaleza**
-  - **Acuerdo sobre Líneas Directrices en materia de Crédito a la Exportación con Apoyo Oficial** (1976)
-  - Evita créditos en **condiciones insostenibles** y fija un marco de **disciplina**
-  - Modificado numerosas veces, en especial hacia la **sostenibilidad ambiental**
-- **Características**
-  - Condiciones básicas: **porcentaje de financiación, plazo de reembolso y tipos de interés**
-  - Regula **medio y largo plazo** (dos o más años), el corto plazo queda fuera
-  - **Entendimientos sectoriales**: aeronaves civiles, buques, energía nuclear, proyectos de cambio climático
-- **Modernización de 2023**
-  - Acordada en **abril de 2023**, en vigor desde el **15 de julio de 2023**
-  - Derecho de la UE: **Reglamento Delegado (UE) 2023/2738**, que modifica el anexo II del **Reglamento (UE) 1233/2011**
-  - **Plazo general máximo de 15 años**, ligado a la vida económica del bien
-  - **Climate Change Sector Understanding (CCSU)**
-    - Hasta **22 años** para renovables, hidrógeno y amoníaco limpios, captura y almacenamiento de CO2, transporte de bajas emisiones y minerales críticos
-    - Centrales de **combustibles fósiles**: máximo **12 años**
-- **Tipos de créditos**
-  - **Concesionales**: países bajo cierto umbral de renta del Banco Mundial, elemento mínimo de **donación del 35 %** (**50 %** en países menos avanzados)
-  - **Comerciales**
-    - Para empresas: bienes, servicios o refinanciación de deudas a corto plazo
-    - Plazo máximo **15 años**, hasta **22** con CCSU
-    - **Pago al contado del 15 %**
-    - **Tipos fijos** y cuotas **semestrales**, con perfiles flexibles tras la reforma de 2023
-- **Sostenibilidad**
-  - Consejo de la UE (marzo de 2022): plazos para poner fin al apoyo a proyectos de **combustibles fósiles**, salvo excepciones compatibles con **1,5 ºC**
+
+**Consenso OCDE.** Acuerdo sobre Líneas Directrices en materia de Crédito a la Exportación con Apoyo Oficial, alcanzado en 1976 para evitar que la competencia por contratos llevase a conceder créditos en condiciones insostenibles. Establece un marco de disciplina para los participantes y se ha modificado numerosas veces, sobre todo por los objetivos de sostenibilidad ambiental.
+
+Fija las condiciones básicas de los créditos con apoyo oficial (porcentaje de financiación, plazo de reembolso y tipos de interés) para una competencia ordenada. Regula las operaciones a medio y largo plazo, con reembolso de dos o más años, y se complementa con entendimientos sectoriales (aeronaves civiles, buques, energía nuclear, proyectos de cambio climático). Los créditos a corto plazo quedan en general fuera.
+
+**Modernización de 2023.** En vigor desde el 15 de julio de 2023, se incorporó al Derecho de la UE por el **Reglamento Delegado (UE) 2023/2738**, que modifica el anexo II del **Reglamento (UE) 1233/2011**. Fija un **plazo general máximo de 15 años** vinculado a la vida económica del bien.
+
+**Climate Change Sector Understanding (CCSU).** Permite hasta **22 años** para energías renovables, hidrógeno y amoníaco limpios, captura y almacenamiento de CO2, transporte de bajas emisiones y minerales críticos. Las centrales eléctricas de combustibles fósiles quedan limitadas a **12 años**.
+
+**Tipos de créditos**
+
+- **Concesionales**: reservados a países por debajo de un umbral de renta del Banco Mundial, con un elemento mínimo de donación del 35 %, o del 50 % en los países menos avanzados
+- **Comerciales**: para empresas que adquieren bienes, pagan servicios o refinancian deuda a corto plazo, con plazo máximo de 15 años (22 en operaciones CCSU), pago al contado del 15 %, tipos fijos y cuotas semestrales, sin perjuicio de los perfiles flexibles admitidos desde 2023
+
+**Evolución en sostenibilidad.** En marzo de 2022 el Consejo de la UE instó a fijar, antes de finales de 2023, plazos para poner fin al apoyo oficial al crédito a la exportación de proyectos de energía de combustibles fósiles, salvo circunstancias limitadas compatibles con el objetivo de 1,5 ºC. Es la evolución más relevante del Consenso en los últimos años.
 
 # 6. LÍNEAS ICO DE APOYO A LA INTERNACIONALIZACIÓN
-- **El ICO**
-  - **Banco público**, entidad pública empresarial adscrita al **MECE** (Secretaría de Estado de Economía y Apoyo a la Empresa)
-  - **Agencia Financiera del Estado**
-  - **Líneas de Mediación**: el ICO aporta los **fondos**, las entidades de crédito tramitan, aprueban y **asumen el riesgo**
-  - Vigencia **anual renovable**
-- **Línea ICO Internacional**
-  - Autónomos, emprendedores y empresas en España o en el extranjero (con capital español mínimo)
-  - Inversión, liquidez o gastos fuera de España
-  - Hasta **12,5 M€** por cliente
-  - Préstamo, leasing, renting o línea de crédito, tipo **fijo o variable**
-  - Amortización de **1 a 20 años**, hasta **3 años de carencia**
-- **Línea ICO Exportadores**
-  - Autónomos, emprendedores y empresas con **domicilio social en España**
-  - **Anticipo de facturas** o **costes previos de fabricación**
-  - Hasta **12,5 M€** de saldo vivo por cliente y año, tipo **variable**
-- **Línea ICO Canal Internacional**
-  - Empresas y entidades con **interés español**, vía **entidad financiera internacional** o local con acuerdo con el ICO
-  - **Sin límite** de importe
-  - Préstamos globales con **CAF** (América Latina y Caribe) y **BCIE** (Centroamérica y República Dominicana)
-- **Línea ICO Crecimiento Exportadores** (2026)
-  - Empresas afectadas por el **nuevo entorno arancelario**
-- **Instrumentos extraordinarios**
-  - **Líneas de Avales** de la pandemia de COVID-19 y medidas por la guerra de Ucrania
-  - Colaboración con el **BEI**
-- **Papel del ICO**: **complementa** la financiación privada
+
+**Instituto de Crédito Oficial (ICO).** Banco público, entidad pública empresarial adscrita al MECE a través de la Secretaría de Estado de Economía y Apoyo a la Empresa. Como Agencia Financiera del Estado gestiona los fondos de financiación oficial a la exportación y al desarrollo. En las Líneas de Mediación, de vigencia anual renovable, el ICO aporta los fondos y las entidades de crédito adheridas tramitan, aprueban y asumen el riesgo.
+
+- **Línea ICO Internacional**: para autónomos, emprendedores y empresas domiciliadas en España o en el extranjero (con capital español mínimo) que inviertan, desarrollen actividad o cubran liquidez fuera de España. Hasta **12,5 M€** por cliente, en préstamo, leasing, renting o línea de crédito, tipo fijo o variable, amortización de 1 a 20 años y hasta 3 de carencia
+- **Línea ICO Exportadores**: para autónomos, emprendedores y empresas domiciliadas en España que necesiten liquidez mediante anticipo de facturas de exportación o financiación de costes previos de fabricación. Hasta **12,5 M€** de saldo vivo por cliente y año, a tipo variable
+- **Línea ICO Canal Internacional**: para quienes con interés español financien su actividad o inversión por una entidad financiera internacional o local con acuerdo con el ICO. Sin límite de importe. Hay préstamos globales con el CAF (América Latina y Caribe, proyectos medioambientales y sostenibles) y con el BCIE (inversiones y exportaciones españolas a Centroamérica y República Dominicana)
+
+En 2026 se ha puesto en marcha la **Línea ICO Crecimiento Exportadores**, para empresas afectadas por el nuevo entorno arancelario internacional.
+
+El ICO gestiona también instrumentos extraordinarios de garantía y financiación en situaciones de crisis y colabora con el Banco Europeo de Inversiones (BEI) para movilizar financiación y compartir riesgos. Complementa la financiación de las entidades privadas.
 
 # 7. EL CONVENIO DE AJUSTE RECÍPROCO DE INTERESES (CARI)
-- **Concepto**
-  - Incentiva créditos a la exportación a **largo plazo (2 o más años)** y a **tipos fijos** (tipos de Consenso)
-  - Gestionado por el **ICO**
-- **Normativa vigente**
-  - **Ley 14/2013**, de apoyo a los emprendedores y su internacionalización
-  - **Real Decreto 677/1993**, Reglamento de procedimiento para el apoyo mediante CARI
-  - **Orden ICT/1281/2022**, que alinea la cobertura del **riesgo de tipo de interés** con la del **riesgo de crédito** y simplifica trámites
-- **Anteproyecto de Ley de regulación del CARI**
-  - **Consejo de Ministros, 24 de marzo de 2026**, en tramitación
-  - Amplía el ámbito a determinados **proyectos de inversión**
-  - Integra la cobertura en el **Fondo de Reserva de los Riesgos de la Internacionalización**
-  - **Órgano colegiado interministerial único**
-- **Mecanismo**
-  - Convenio entre el banco financiador y el ICO
-  - Mantiene fijo el tipo, compensando la diferencia entre el **CIRR** y el **coste de mercado** del banco
-  - **Liquidación periódica** entre ICO y entidad
-- **Agentes**
-  - Exportadores, importadores y entidades financieras privadas
-  - **ICO**, gestiona la operativa
-  - **Dirección General de Inteligencia Económica y Comercial** del MINECO, autoridad administrativa
-  - **CESCE**, Estado accionista mayoritario, según la **Ley 8/2014**
-- **Créditos beneficiarios** (con o sin subvención CARI)
-  - **Crédito comprador** (el más utilizado)
-  - **Crédito suministrador** (ha perdido importancia)
-  - **Línea de crédito comprador**
-  - **Leasing** equivalente a una venta
-  - **Forfaiting**
+
+**CARI.** Sistema de apoyo a las exportaciones españolas que incentiva que las entidades financieras concedan créditos a la exportación a largo plazo (2 o más años) y a tipos fijos (tipos de Consenso), de acuerdo con el Consenso OCDE. Lo gestiona el ICO.
+
+**Normativa vigente**
+
+- **Ley 14/2013**, de apoyo a los emprendedores y su internacionalización
+- **Real Decreto 677/1993**, Reglamento de procedimiento para el apoyo oficial al crédito a la exportación mediante CARI
+- **Orden ICT/1281/2022**, que alinea la cobertura del riesgo de tipo de interés con la del riesgo de crédito y simplifica la gestión
+
+El **Anteproyecto de Ley de regulación del CARI**, aprobado por el Consejo de Ministros el 24 de marzo de 2026 y en tramitación, prevé ampliar el CARI a determinados proyectos de inversión española en el exterior y en España, integrar los activos y pasivos de cobertura del riesgo de interés en el Fondo de Reserva de los Riesgos de la Internacionalización y crear un órgano colegiado interministerial único para aprobar las operaciones.
+
+**Mecanismo.** Mediante un convenio entre el banco financiador y el ICO se mantiene fijo el tipo del crédito, compensando la diferencia entre el Tipo de Interés Comercial de Referencia del Consenso (**CIRR**), actualizado periódicamente, y el coste de mercado de los recursos del banco. La liquidación es periódica entre el ICO y la entidad.
+
+**Agentes.** Exportadores, importadores y entidades financieras privadas españolas, el ICO (operativa del CARI), la Dirección General de Inteligencia Económica y Comercial (autoridad administrativa) y CESCE, de mayoría estatal, que gestiona por cuenta del Estado la cobertura de riesgos de la internacionalización según la **Ley 8/2014**.
+
+**Créditos beneficiarios**, con o sin subvención del tipo:
+
+- Crédito comprador extranjero, el más utilizado
+- Crédito suministrador español, que ha perdido gran parte de su importancia relativa
+- Línea de crédito comprador
+- Leasing de exportación equivalente a una venta
+- Descuento sin recurso de derechos de cobro (forfaiting)
 
 ## 7.1. Condiciones para el Crédito CARI
-- **Pago al contado** de al menos el **15 %** del importe elegible, crédito de hasta el **85 %**
-- Importe financiable: determinados **bienes y servicios españoles y extranjeros**, gastos locales y comisiones
-- **Plazo máximo general de 15 años**, hasta **22** con CCSU
-- Tipo de interés según el **CIRR** correspondiente
+
+Se exige un pago al contado de al menos el **15 %** del importe elegible y el crédito puede financiar hasta el **85 %** restante. El importe financiable puede incluir, con límites, bienes y servicios españoles y extranjeros, gastos locales y comisiones. El plazo máximo general es de **15 años**, ampliable a **22** en determinadas operaciones CCSU, y el tipo se determina conforme al CIRR.
 
 # 8. CONCLUSIÓN
-- **Pilar de la competitividad exterior** de la empresa española
-  - Enmarcado en el **Consenso OCDE**
-  - **Iguala condiciones** entre países
-  - Capacidad de adaptación en crisis con nuevas líneas y garantías
-- **Tendencias de futuro**
-  - **Sostenibilidad ambiental** en el Consenso: limita combustibles fósiles, refuerza renovables
-  - Competencia de **países no adheridos al Consenso**, sin su disciplina
+
+El Crédito Oficial, el seguro de crédito a la exportación, las Líneas ICO y el CARI, enmarcados en el Consenso OCDE, siguen siendo un pilar de la competitividad exterior de la empresa española: facilitan financiación competitiva, igualan las condiciones entre países para que el apoyo público no decida la adjudicación de contratos y han mostrado capacidad de adaptación en las crisis recientes.
+
+Dos tendencias marcan el futuro. Una es la incorporación de criterios de sostenibilidad al Consenso, que limitará el apoyo a combustibles fósiles y reforzará el de renovables y transición energética. La otra es la competencia de países no adheridos al Consenso, no sujetos a su disciplina, cuya financiación oficial supone un desafío creciente para los miembros de la OCDE, entre ellos España.
