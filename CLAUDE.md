@@ -234,6 +234,28 @@ artículo que tiene pensado el autor. Para generar los PDF hace falta Playwright
   desarrollados y activarlos en `temario.html` y `js/main.js`, que aún dicen «en
   preparación».
 
+- **Plantilla de los esquemas: fijada, sin aplicar** (12 oct). Decisiones del autor:
+  los esquemas se verán **en línea y en PDF, como las fichas, sin Word**; diseño
+  **A1 «rótulo arcade»** (cabecera y sello de las fichas, índice de apartados en
+  casillas verdes, cada apartado en franja verde salvia con el número en Orbitron
+  sobre bloque dorado y sombra de píxel, subapartados con etiqueta en IBM Plex Mono
+  y línea de puntos; en pantalla una columna, al imprimir dos columnas A4 con pie
+  «Esquema · Tema N» y «sergioargudo.es · n / N»). Maquetas:
+  <https://claude.ai/artifact/6cRBowcKYJ57z2o5n9WUjr> (privado, del autor).
+  La plantilla está en `scripts/generar-esquemas.js` (`npm run esquemas`) y el PDF
+  en `scripts/esquemas-pdf.js` (`npm run esquemas:pdf`; `CHROMIUM=<ruta>` usa un
+  Chromium ya instalado). Por defecto escriben en `review/esquemas/` (vista previa,
+  ni se versiona ni se publica); `-- 1/6` hace solo un tema. **No generar ni
+  publicar todavía**: el autor va a dar pautas nuevas para redactar los esquemas y
+  rehará muchos. Hasta entonces la web sigue con los Word y PDF antiguos.
+  Para activarla cuando el contenido esté listo: `npm run esquemas -- --publicar &&
+  npm run esquemas:pdf -- --publicar` (escribe `public/temas/ejercicio-N/tema-NN.html`
+  y `.pdf`); borrar los `.docx` y los `TEMA N. ….pdf` antiguos; en `js/main.js`,
+  que cada tema enlace «Ver» a `tema-NN.html` y «PDF» a `tema-NN.pdf` (sin Word);
+  cambiar «PDF y Word» por «en línea y PDF» en `temario.html` (meta y tarjetas) e
+  `index.html`; adaptar `scripts/extraer-temas.sh` (lee `TEMA N.….pdf`) y los
+  textos de `scripts/auditar-temas.js` que hablan del `.docx`.
+
 Después del lanzamiento: actualización mensual de la balanza de pagos con GitHub
 Actions y validaciones; página «qué ha cambiado» en el temario. El chat con IA sobre
 los temas queda aparcado (necesita servidor y API de pago).

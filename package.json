@@ -14,6 +14,8 @@
     "parciales": "node scripts/sincronizar-parciales.js && node scripts/build-articulos.js",
     "fichas": "node scripts/generar-fichas.js && node scripts/generar-fichas-balanza.js",
     "fichas:pdf": "node scripts/fichas-pdf.js",
+    "esquemas": "node scripts/generar-esquemas.js",
+    "esquemas:pdf": "node scripts/esquemas-pdf.js",
     "paleta": "node scripts/generar-paleta.js",
     "capturas": "node scripts/capturar-graficos.js",
     "balanza": "node scripts/update_balanza_data.js && npm run fichas",
