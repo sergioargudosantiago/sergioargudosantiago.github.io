@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-1/tema-50.md. No editar a mano. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 50. Aditivos — esquema del ejercicio 1</title>
+<link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="stylesheet" href="../../../css/fuentes.css">
+<style>
+@page { size: A4; margin: 14mm 12.5mm 15mm;
+  @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #D9DED6; font-family: 'Public Sans', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #C8A951; outline-offset: 2px; }
+
+/* Barra superior (solo pantalla) */
+.barra { background: #3B4533; color: #C2D9C2; }
+.barra-in { max-width: 210mm; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.barra a { color: #C2D9C2; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.barra a:hover { color: #FFFFFF; }
+.barra .marca { font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: .14em; font-size: 13px; color: #FFFFFF; }
+.barra .acciones { display: flex; gap: 10px; align-items: center; }
+.barra .boton { background: #E0C46B; color: #1F2A1D; font-weight: 700; padding: 0 14px; box-shadow: 3px 3px 0 #1F2A1D; }
+.barra .boton:hover { background: #FFFFFF; color: #1F2A1D; }
+
+/* Hoja */
+.hoja { max-width: 210mm; margin: 20px auto 40px; padding: 40px 47px 28px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.5; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+/* Los enunciados del BOE pueden ser largos: el título baja de cuerpo por tramos. */
+h1.largo { font-size: 28px; line-height: 1.12; }
+h1.muy-largo { font-size: 23px; line-height: 1.16; }
+.enunciado { margin: 3px 0 2px; max-width: 78ch; font-size: 14.5px; line-height: 1.42; color: #4A5546; text-wrap: pretty; }
+.sub-cab { font-size: 14px; color: #4A5546; }
+.sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+
+.indice { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.indice a { display: flex; flex-direction: column; gap: 1px; height: 100%; padding: 6px 9px; background: #3B4533; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.indice a:hover { background: #1F2A1D; }
+.indice b { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 13px; color: #E0C46B; letter-spacing: 0; }
+
+/* Cuerpo del esquema */
+.esq { min-width: 0; }
+.sec { margin: 26px 4px 12px 0; display: flex; align-items: stretch; background: #3B4533; color: #FFFFFF; box-shadow: 4px 4px 0 #A8862F; font-size: 16px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; scroll-margin-top: 12px; break-inside: avoid; break-after: avoid; }
+.esq > .sec:first-child { margin-top: 0; }
+.sec .n { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0; background: #E0C46B; color: #1F2A1D; min-width: 46px; display: flex; align-items: center; justify-content: center; }
+.sec .t { padding: 9px 12px; display: flex; align-items: center; flex-grow: 1; min-width: 0; }
+.sec .px { display: flex; align-items: flex-end; gap: 3px; padding: 0 10px 8px 0; }
+.sec .px i { display: block; width: 5px; height: 5px; background: #E0C46B; }
+.sec .px i:nth-child(2) { height: 9px; opacity: .7; }
+.sec .px i:nth-child(3) { height: 13px; opacity: .45; }
+.sub { margin: 16px 0 5px; font-size: 1em; font-weight: 700; line-height: 1.3; display: flex; align-items: baseline; gap: 8px; break-after: avoid; }
+.sub span { flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: .78em; color: #3B4533; background: #EEF3EB; border: 1px solid #3B4533; box-shadow: 2px 2px 0 #C9D1C5; padding: 0 5px; }
+.sub::after { content: ""; flex: 1 0 24px; align-self: center; border-bottom: 2px dotted #C9D1C5; }
+h4.sub { font-size: .94em; margin-top: 12px; }
+h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
+.sec + .sub { margin-top: 0; }
+.esq p { margin: 6px 0; }
+.esq ul, .esq ol { margin: 0; padding-left: 18px; }
+.esq li { margin: 2px 0; }
+.esq li::marker { color: #A8862F; }
+.esq ol > li::marker { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.esq li > ul { list-style: none; padding-left: 16px; }
+.esq li > ul > li { position: relative; }
+.esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
+.esq b { font-weight: 700; }
+
+.pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; }
+
+@media screen and (min-width: 821px) {
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+}
+@media screen and (max-width: 820px) {
+  .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
+  h1 { font-size: 27px; }
+  h1.largo { font-size: 23px; }
+  h1.muy-largo { font-size: 20px; }
+  .enunciado { font-size: 14px; }
+  .sello { min-width: 74px; padding: 6px 10px; }
+  .sello b { font-size: 22px; }
+  .sec { font-size: 14.5px; }
+}
+
+/* Impresión y PDF: dos columnas, cuerpo pequeño, sin barra ni pie propio (el pie
+   y la numeración van en los márgenes de @page). */
+@media print {
+  body { background: #FFFFFF; }
+  .barra, .pie { display: none; }
+  .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
+  h1 { font-size: 31px; }
+  h1.largo { font-size: 25px; }
+  h1.muy-largo { font-size: 21px; }
+  .enunciado { max-width: none; font-size: 11.5px; line-height: 1.36; }
+  .sub-cab { font-size: 13px; }
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+  .indice a { padding: 5px 8px; font-size: 9.5px; }
+  .indice b { font-size: 12px; }
+  .esq { column-count: 2; column-gap: 24px; }
+  .sec { font-size: 12.5px; margin: 14px 4px 9px 0; }
+  .sec .n { font-size: 15px; min-width: 38px; }
+  .sec .t { padding: 6px 10px; }
+  .sub { margin: 9px 0 3px; }
+  .esq li { margin: 1px 0; }
+  .esq ul, .esq ol { padding-left: 14px; }
+  .esq li > ul { padding-left: 14px; }
+  .esq li > ul > li::before { left: -11px; }
+}
+
+@page { @bottom-left { content: "Esquema · Tema 50. Aditivos"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
+    <div class="acciones"><a class="boton" href="tema-50.pdf" download="Esquema tema 50 (ejercicio 1).pdf">Descargar PDF</a></div>
+  </div>
+</header>
+<main class="hoja">
+  <div class="cab">
+    <div class="cab-txt">
+      <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
+      <h1>Aditivos</h1>
+      <p class="enunciado">Contaminantes y otras sustancias relacionadas con la seguridad química de los alimentos y de los productos industriales.</p>
+      <div class="sub-cab">Ejercicio 1 · Esquema del tema 50 · Actualizado el <time datetime="2026-08-31">31 de agosto de 2026</time></div>
+    </div>
+    <div class="sello" aria-label="Ejercicio 1, tema 50"><span>EJ. 1 · TEMA</span><b>50</b></div>
+  </div>
+  <nav aria-label="Apartados del esquema"><ol class="indice" style="--cols: 5"><li><a href="#apartado-1"><b>01</b>INTRODUCCIÓN</a></li><li><a href="#apartado-2"><b>02</b>ADITIVOS ALIMENTARIOS</a></li><li><a href="#apartado-3"><b>03</b>CONTAMINANTES Y OTRAS SUSTANCIAS PRESENTES EN LA ALIMENTACIÓN HUMANA</a></li><li><a href="#apartado-4"><b>04</b>CONTAMINANTES Y OTRAS SUSTANCIAS PRESENTES EN LOS PRODUCTOS INDUSTRIALES</a></li><li><a href="#apartado-5"><b>05</b>CONCLUSIÓN</a></li></ol></nav>
+  <div class="esq">
+<h2 class="sec" id="apartado-1"><span class="n">01</span><span class="t">INTRODUCCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Los aditivos, los contaminantes y otras sustancias químicas no deseables pueden entrar en la cadena alimentaria en cualquier punto, de la producción al consumo. Que un contaminante suponga un riesgo real depende de la absorción, la toxicidad, el nivel de contaminación, la cantidad consumida y el tiempo de exposición. La legislación de la UE busca aprovechar las sustancias usadas de forma intencionada y reducir los contaminantes, en línea con el art. 168 del TFUE.</p>
+<p>Pueden aparecer tres tipos de sustancias con riesgo:</p>
+<ul><li><b>Residuos de sustancias usadas en origen</b>: plaguicidas, medicamentos veterinarios y disolventes de extracción</li><li><b>Contaminantes naturales y ambientales</b>: metales pesados y toxinas biológicas (micotoxinas, toxinas marinas)</li><li><b>Aditivos alimentarios</b>, añadidos voluntariamente con un fin tecnológico</li></ul>
+<p>Los organismos de referencia son estos:</p>
+<ul><li><b>Acuerdo MSF de la OMC</b>: reconoce el derecho a adoptar medidas con fundamento científico, siempre que no sean discriminatorias</li><li><b>EFSA</b>: creada por el <b>Reglamento (CE) 178/2002</b>, evalúa riesgos y emite dictámenes para la Comisión Europea</li><li><b>AESAN</b>: ejerce esa función en España, como organismo autónomo adscrito al Ministerio de Derechos Sociales, Consumo y Agenda 2030</li><li><b>Codex Alimentarius</b>: sus comités CCFA (aditivos), CCPR (plaguicidas) y CCCF (contaminantes) dan las normas de referencia internacional</li></ul>
+<h2 class="sec" id="apartado-2"><span class="n">02</span><span class="t">ADITIVOS ALIMENTARIOS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p><b>Aditivo alimentario.</b> Según el <b>Reglamento (CE) 1333/2008</b>, que prevalece sobre la definición conceptual del Código Alimentario Español, es cualquier sustancia que no se consume normalmente como alimento ni se usa como ingrediente característico, tenga o no valor nutritivo, y cuya adición intencionada con un fin tecnológico hace que se convierta en componente del alimento.</p>
+<p>Todo aditivo debe cumplir tres principios:</p>
+<ul><li><b>Inocuidad</b>: no suponer peligro para la salud en las dosis propuestas</li><li><b>Necesidad tecnológica</b>: responder a una necesidad útil demostrable que no se logre por otros métodos económica y tecnológicamente practicables</li><li><b>No inducir a error</b>: no camuflar materias primas defectuosas ni prácticas higiénicas deficientes</li></ul>
+<p>La UE reconoce 27 clases funcionales, agrupadas en dos bloques:</p>
+<ul><li><b>Bloque I, cualidades sensoriales y textura</b>: colorantes (tartracina), edulcorantes de carga o polioles (sorbitol) e intensos (sacarina, aspartamo), potenciadores del sabor (glutamato monosódico), modificadores de textura (emulsionantes como la lecitina, estabilizantes, espesantes, gelificantes) y otros como correctores de acidez, antiaglomerantes y antiespumantes</li><li><b>Bloque II, estabilidad y conservación</b>: antioxidantes, que protegen de la oxidación (ácido ascórbico), y conservantes, que protegen frente a microorganismos (nitratos y nitritos en cárnicos curados)</li></ul>
+<h3 class="sub"><span>2.1</span>Marco legislativo de los aditivos</h3>
+<p>El antiguo marco de Directivas quedó superado para evitar las asimetrías de la transposición nacional. El paquete vigente son Reglamentos de aplicación directa:</p>
+<ul><li><b>Reglamento (CE) 1331/2008</b>: procedimiento de autorización común para aditivos, enzimas y aromas</li><li><b>Reglamento (CE) 1333/2008</b>: reglamento pilar, con listas positivas por categorías de alimentos (Anexo II)</li><li><b>Reglamento (UE) 231/2012</b>: criterios de pureza de los aditivos autorizados</li></ul>
+<p>Rige el principio de <b>lista positiva</b>: lo que no está expresamente autorizado está prohibido. Cada aditivo lleva un código oficial, la letra E seguida de tres o cuatro cifras. Si no hay límite numérico máximo, se aplica <b>Quantum Satis</b>: la cantidad mínima necesaria para el efecto tecnológico, según las buenas prácticas de fabricación.</p>
+<p>La EFSA evalúa los estudios toxicológicos para fijar la <b>Ingesta Diaria Admisible (IDA)</b>, la cantidad de aditivo, expresada en miligramos por kilogramo de peso corporal, que puede ingerirse a diario durante toda la vida sin riesgo apreciable. En el plano internacional, el <b>JECFA</b> (Comité Mixto FAO/OMS) elabora las especificaciones de identidad y pureza que sirven de base al Codex.</p>
+<h3 class="sub"><span>2.2</span>Control e identificación analítica de aditivos</h3>
+<p>La verificación analítica es indispensable para el control oficial:</p>
+<ul><li><b>Colorantes</b>: cromatografía (capa fina o HPLC) y cuantificación por espectrofotometría UV-Visible</li><li><b>Edulcorantes y antioxidantes</b>: HPLC o cromatografía de gases</li><li><b>Nitritos y nitratos</b>: los nitritos por la reacción de Griess, colorimétrica. Los nitratos se reducen antes a nitritos, generalmente con columna de cadmio</li><li><b>Reguladores del pH y acidulantes</b>: potenciometría para el valor global, y HPLC o cromatografía iónica para cada ácido orgánico</li></ul>
+<h2 class="sec" id="apartado-3"><span class="n">03</span><span class="t">CONTAMINANTES Y OTRAS SUSTANCIAS PRESENTES EN LA ALIMENTACIÓN HUMANA</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>3.1</span>Residuos de plaguicidas</h3>
+<p><b>Plaguicida.</b> Sustancia o combinación de sustancias destinada a eliminar o combatir plagas y especies indeseables que dañan alimentos, productos agrícolas y piensos, o que se administra a animales contra parásitos. Se distinguen los <b>productos fitosanitarios</b>, de uso agrícola, y los <b>biocidas</b>, de uso fuera de la agricultura (desinfección, madera, usos domésticos).</p>
+<ul><li><b>Reglamento (CE) 396/2005</b>: norma de referencia sobre límites máximos de residuos (LMR). Fija LMR por matriz y un límite general por defecto de <b>0,01 mg/kg</b> si no hay valor específico</li><li><b>Reglamento (CE) 1107/2009</b>: comercialización de fitosanitarios. Crea una lista positiva de sustancias activas aprobadas en la UE, sobre la que los Estados Miembros conceden autorizaciones nacionales. La UE se divide en tres zonas (norte, centro y sur) con reconocimiento mutuo obligatorio</li><li><b>Planes de Acción Nacionales</b>: articulan el uso sostenible y prohíben con carácter general la pulverización aérea</li></ul>
+<p>En España el control en el comercio exterior lo ejecutan los laboratorios de los Servicios de Inspección SOIVRE, con GC-MS/MS y LC-MS/MS, esta última idónea para plaguicidas termolábiles.</p>
+<h3 class="sub"><span>3.2</span>Residuos de medicamentos veterinarios</h3>
+<p>Son las sustancias farmacológicamente activas, excipientes, productos de degradación y metabolitos que permanecen en alimentos de animales tratados. La EMA, a través del Comité CVMP, evalúa su seguridad y tramita los LMR.</p>
+<ul><li><b>Reglamento (CE) 470/2009</b>: procedimientos comunitarios para fijar los límites de residuos</li><li><b>Reglamento (UE) 37/2010</b>: lista positiva de sustancias permitidas con sus LMR, y lista de prohibidas</li></ul>
+<p>El Reglamento 470/2009 descansa en dos pilares. La <b>protección de la salud pública</b>: toda sustancia se evalúa para determinar su IDA y fijar el LMR o, si no hay margen seguro, prohibirla. La <b>disponibilidad de medicamentos</b>: permite extrapolar LMR entre especies o matrices afines e incorpora los LMR del Codex si la UE no presentó reservas. Introdujo el <b>valor de referencia a efectos de intervención (VRE)</b>, la concentración mínima de residuo de una sustancia no autorizada que los laboratorios oficiales deben detectar y confirmar.</p>
+<p>Están prohibidos en animales productores de alimentos, entre otros, cloranfenicol, nitroimidazoles (metronidazol, dimetridazol, ronidazol) y nitrofuranos como la furazolidona. El control sigue el <b>Reglamento (UE) 2017/625</b>, con el Plan Nacional de Investigación de Residuos (PNIR). La <b>Directiva 96/22/CE</b> prohíbe las sustancias hormonales, tireostáticas y betaagonistas con fines de engorde.</p>
+<h3 class="sub"><span>3.3</span>Residuos de disolventes de extracción</h3>
+<p><b>Disolvente de extracción.</b> Sustancia usada en la extracción de materias primas o ingredientes, que se elimina después pero puede dejar residuos en el producto final, de forma involuntaria pero técnicamente inevitable.</p>
+<p>La norma europea es la <b>Directiva 2009/32/CE</b>. En España, el <b>Real Decreto 1101/2011</b> aprueba la lista positiva de disolventes autorizados, actualizada con sustancias evaluadas por la EFSA. La última es la <b>Orden CSM/882/2023</b>, que añadió el 2-metiloxolano. La lista tiene tres partes:</p>
+<ul><li><b>Parte I</b>: uso en todas las condiciones conformes a las buenas prácticas de fabricación, con residuos inevitables pero inocuos (etanol, dióxido de carbono)</li><li><b>Parte II</b>: condiciones específicas y límites cuantitativos estrictos de residuo, como el hexano en aceites de semillas. La EFSA reevalúa ahora su seguridad</li><li><b>Parte III</b>: solo para preparar aromas a partir de materias primas naturales (éter dietílico)</li></ul>
+<p>El aceite de oliva virgen se obtiene solo por procedimientos mecánicos o físicos, de modo que cualquier disolvente está prohibido y su detección denota fraude. En el de orujo, la norma fija límites estrictos para los disolventes halogenados.</p>
+<h3 class="sub"><span>3.4</span>Contaminantes naturales: metales pesados y toxinas</h3>
+<p>El <b>Reglamento (UE) 2023/915</b> unifica el marco y derogó el Reglamento (CE) 1881/2006. Fija los contenidos máximos de contaminantes en alimentos, tanto en la parte comestible como en los ingredientes de alimentos compuestos. Lo complementa el <b>Reglamento (CEE) 315/93</b>, que establece los procedimientos comunitarios sobre contaminantes y faculta el uso de cláusulas de salvaguardia sanitarias.</p>
+<h3 class="sub"><span>3.5</span>Nitratos</h3>
+<p>Son contaminantes de origen sobre todo agrario, por el uso intensivo de fertilizantes nitrogenados, que se acumulan en hortalizas de hoja verde como espinacas y lechugas. Su interés toxicológico está en que se reducen en el organismo a nitritos, capaces de causar metahemoglobinemia, sobre todo en lactantes, y de reaccionar con aminas secundarias para formar N-nitrosaminas, de elevada acción carcinógena. Se determinan por cromatografía iónica o espectrofotometría.</p>
+<h3 class="sub"><span>3.6</span>Micotoxinas</h3>
+<p>Son metabolitos secundarios tóxicos de hongos de los géneros <em>Aspergillus</em>, <em>Penicillium</em>, <em>Fusarium</em>, <em>Claviceps</em> y <em>Alternaria</em>. Sus límites se unifican en el Reglamento (UE) 2023/915.</p>
+<ul><li><b>Aflatoxinas (B1, B2, G1, G2 y M1)</b>: de <em>Aspergillus flavus</em> y <em>A. parasiticus</em>. La B1 es el carcinógeno biológico natural más potente conocido. La M1 se excreta en la leche de animales alimentados con piensos contaminados con B1. Afectan a frutos secos, cacahuetes, maíz y especias</li><li><b>Ocratoxina A (OTA)</b>: de <em>Penicillium verrucosum</em> y <em>Aspergillus ochraceus</em>, nefrotóxica y carcinógena. Contamina cereales, café, cacao, vino y frutos desecados</li><li><b>Patulina</b>: hepatotóxica, de <em>Penicillium expansum</em>, asociada a manzanas y derivados. Indica la calidad higiénica de la fruta</li></ul>
+<p>El SOIVRE las analiza por HPLC con detector de fluorescencia o MS/MS, con purificación previa en columnas de inmunoafinidad.</p>
+<h3 class="sub"><span>3.7</span>Metales Pesados</h3>
+<p>Sustancias de alta persistencia ambiental y carácter bioacumulable.</p>
+<ul><li><b>Plomo y cadmio</b>: neurotóxicos, nefrotóxicos y con disrupción ósea. Se acumulan en cereales, hortalizas y despojos</li><li><b>Mercurio</b>: los microorganismos acuáticos lo transforman en metilmercurio, de altísima toxicidad neurológica. Se bioamplifica en la cadena marina y llega a concentraciones críticas en grandes depredadores (tiburón, pez espada, atún rojo)</li></ul>
+<p>Se determinan por ICP-MS o ETAAS. El mercurio, por vapor frío (CV-AAS) o con analizadores directos.</p>
+<h3 class="sub"><span>3.8</span>Contaminantes de proceso tecnológico</h3>
+<p>Se generan industrial o domésticamente durante el procesado del alimento.</p>
+<ul><li><b>3-MCPD y sus ésteres grasos</b>: carcinógenos que se forman en la hidrólisis ácida de proteínas vegetales y en el refino de aceites vegetales a altas temperaturas. El muestreo y análisis oficial se rige por el <b>Reglamento (CE) 333/2007</b></li><li><b>Dioxinas y PCB</b>: contaminantes orgánicos persistentes originados en la combustión industrial. Muy liposolubles, se acumulan en grasas de alimentos de origen animal (pescado, carne, lácteos), con toxicidad reproductiva e inmunológica y potencial carcinógeno</li></ul>
+<h2 class="sec" id="apartado-4"><span class="n">04</span><span class="t">CONTAMINANTES Y OTRAS SUSTANCIAS PRESENTES EN LOS PRODUCTOS INDUSTRIALES</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Una de las causas más frecuentes de no conformidad en productos industriales es la presencia de sustancias químicas prohibidas o por encima de los límites autorizados. La legislación combina disposiciones horizontales con normativas sectoriales muy específicas.</p>
+<h3 class="sub"><span>4.1</span>Marco horizontal: el Reglamento REACH</h3>
+<p>El <b>Reglamento (CE) 1907/2006</b>, REACH, regula el registro, la evaluación, la autorización y la restricción de sustancias y mezclas químicas. Entró en vigor el <b>1 de junio de 2007</b> y sustituyó a cerca de cuarenta actos previos para proteger la salud humana y el medioambiente. Introdujo tres cambios:</p>
+<ul><li><b>Sistema único</b>: desaparece la distinción entre sustancias nuevas (posteriores a 1981) y existentes</li><li><b>Inversión de la carga de la prueba</b>: fabricantes e importadores deben demostrar que sus sustancias son seguras para comercializarlas</li><li><b>Principio de sustitución</b>: obliga a reemplazar las sustancias altamente preocupantes (SVHC) por alternativas más seguras técnica y económicamente viables</li></ul>
+<p>La <b>ECHA</b>, con sede en Helsinki, gestiona los aspectos científicos y técnicos. Culminado en 2018 el registro por tramos de tonelaje, el foco actual es la restricción de familias completas de contaminantes persistentes, como las sustancias per- y polifluoroalquílicas (PFAS), y los microplásticos.</p>
+<h3 class="sub"><span>4.2</span>Disposiciones sectoriales</h3>
+<p>Se desarrollan los sectores de juguetes, calzado, textil y pequeño material eléctrico y electrónico.</p>
+<h3 class="sub"><span>4.3</span>Juguetes</h3>
+<p>El <b>Reglamento (UE) 2025/2509</b> sobre seguridad de los juguetes sustituye de forma progresiva a la Directiva 2009/48/CE, transpuesta por el Real Decreto 1205/2011. Introduce el Pasaporte Digital del Producto (DPP), con trazabilidad mediante códigos de datos como los QR, e intensifica la prohibición de contaminantes genéricos como los PFAS. La seguridad química se evalúa así:</p>
+<ul><li><b>Metales pesados</b>: migración conforme a la norma armonizada UNE-EN 71-3:2020+A2:2025</li><li><b>Ftalatos</b>: limitados por el Anexo XVII de REACH (entradas 51 y 52, modificadas por el Reglamento (UE) 2018/2005) al <b>0,1 %</b> en peso del material plastificado de juguetes y artículos de puericultura</li><li><b>Bisfenol A (BPA)</b>: límite de migración de <b>0,1 mg/l</b> según la Directiva (UE) 2017/898, medido con la norma EN 71-19. Figura en la lista SVHC de la ECHA como disruptor endocrino. En materiales en contacto con alimentos, el Reglamento (UE) 2024/3190 prohíbe su uso con carácter general desde enero de 2025</li></ul>
+<h3 class="sub"><span>4.4</span>Calzado</h3>
+<p>Se controlan sustancias peligrosas que pueden pasar a la piel.</p>
+<ul><li><b>Cromo VI</b>: alergénico y carcinógeno, resulta de una mala estabilización del curtido. La entrada 47 del Anexo XVII de REACH prohíbe los artículos de cuero en contacto con la piel con concentración igual o superior a <b>3,0 mg/kg</b>. El SOIVRE nunca lo determina por gravimetría, por su nula sensibilidad para trazas, sino por espectrofotometría UV-Visible tras extracción y reacción con difenilcarbazida (ISO 17075)</li><li><b>Dimetilfumarato (DMFu)</b>: biocida antifúngico de bolsitas desecantes. Está completamente prohibido en cualquier artículo de consumo porque causa dermatitis de contacto graves. Se detecta por GC-ECD o GC-MS</li><li><b>Colorantes azoicos y ftalatos</b>: regulados de forma unificada en el Anexo XVII de REACH. El pH del cuero se controla por potenciometría para asegurar que no irrite la piel</li></ul>
+<h3 class="sub"><span>4.5</span>Productos Textiles</h3>
+<p>Las normas españolas anteriores han quedado desplazadas en la práctica inspectora por el Anexo XVII de REACH, marco único de referencia:</p>
+<ul><li><b>Colorantes azoicos (entrada 43)</b>: prohibidos en prendas en contacto directo y prolongado con la piel si liberan aminas aromáticas restringidas por encima de <b>30 mg/kg</b>. Se determinan por GC-MS o HPLC-MS</li><li><b>Ftalatos</b>: restringidos en los acabados de estampación textil (tintas plastisol)</li><li><b>Pentaclorofenol (PCP)</b>: conservante textil con límite drásticamente restrictivo, determinado por cromatografía de gases</li><li><b>Sustancias CMR (Reglamento UE 2018/1513)</b>: introdujo la entrada 72 del Anexo XVII, con límites muy estrictos (como 1,0 mg/kg) para una treintena de sustancias carcinógenas, mutágenas o tóxicas para la reproducción en prendas de vestir y calzado de tejido textil</li></ul>
+<h3 class="sub"><span>4.6</span>Pequeño Material Eléctrico y Electrónico</h3>
+<p>Se rige por la <b>Directiva 2011/65/UE</b> (RoHS), transpuesta por el <b>Real Decreto 219/2013</b>. Restringe sustancias peligrosas en aparatos eléctricos y electrónicos. Tras la Directiva Delegada (UE) 2015/863 son 10 las sustancias restringidas, con concentraciones máximas en peso en materiales homogéneos:</p>
+<ul><li>Plomo, mercurio, cromo hexavalente, PBB y PBDE (retardantes de llama): <b>0,1 %</b> cada uno</li><li>Cadmio: <b>0,01 %</b></li><li>Ftalatos DEHP, BBP, DBP y DIBP (plastificantes): <b>0,1 %</b> cada uno</li></ul>
+<h2 class="sec" id="apartado-5"><span class="n">05</span><span class="t">CONCLUSIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Todas las sustancias estudiadas, alimentarias e industriales, comparten un principio regulador: la evaluación científica del riesgo, a cargo de organismos independientes como la EFSA, la EMA, la ECHA o, en el plano internacional, el JECFA, precede siempre a la fijación de un límite legal, sea una IDA, un límite máximo de residuos o una concentración máxima tolerada.</p>
+<p>El tránsito, casi completo, de las Directivas de transposición nacional a Reglamentos de aplicación directa (1333/2008, 396/2005, 2023/915 y REACH) da seguridad jurídica y evita los desajustes de 27 transposiciones nacionales. Para los laboratorios del SOIVRE, conocer los límites legales es inseparable de dominar las técnicas analíticas que los verifican.</p>
+  </div>
+  <footer class="pie"><span>Esquema propio a partir del tema desarrollado</span><span class="url">sergioargudo.es</span></footer>
+</main>
+</body>
+</html>

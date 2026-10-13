@@ -1,154 +1,122 @@
 # 1. INTRODUCCIÓN
 
-- **CITES**: firmada en Washington el **3 de marzo de 1973**, en vigor **1 de julio de 1975**
-  - 25 artículos, **185 Partes** (184 Estados y la UE, desde julio 2015)
-  - España Parte desde el **16 de mayo de 1986** (adhesión)
-- **Artículo IX**: cada Parte designa Autoridades Administrativas (expiden permisos y certificados) previa consulta a Autoridades Científicas, y fija Puntos de Introducción Autorizados
-- **12 Servicios de Inspección SOIVRE** autorizados: Vigo, Barcelona, Bilbao, Alicante, Valencia, Sevilla, Málaga, Mallorca, Tenerife, Las Palmas, Algeciras y Madrid
-  - El resto de Direcciones son colaboradoras (Badajoz, Almería, Gijón, Irún)
-- **Autoridad Administrativa**: Dirección General de Biodiversidad, Bosques y Desertificación (**MITECO**), según el **Real Decreto 986/2021** (en vigor 2 de enero de 2022), para aplicar el **Reglamento (CE) 338/97**
-  - **Acuerdo de encomienda de gestión** (Resolución 20 de enero de 2023): verificaciones previas al despacho aduanero a cargo de los SOIVRE (Secretaría de Estado de Comercio)
-- **Naturaleza**: adhesión voluntaria, vinculante, **Ley de mínimos**
-  - Permite medidas internas más estrictas para Apéndices I, II y III
-  - Permite restringir o prohibir comercio de especies no incluidas (**art. XIV**)
-- **Alcance**: más de **40.900 especies**, unas **6.610 animales**, en crecimiento tras CoP19 (Panamá 2022) y CoP20 (Samarkanda 2025)
-- **Apéndices** (art. II), según estatus biológico e impacto del comercio. Regulación en **arts. III, IV y V**
-  - **Apéndice I**: en peligro de extinción (~2 %)
-    - Comercio prohibido salvo excepciones: investigación, cupos de trofeos (león, elefante africano), cría en cautividad (halcón peregrino)
-    - Permisos de exportación e importación, sin fines primordialmente comerciales ni perjuicio para la especie
-  - **Apéndice II**: mayoría (~97 %), podrían estarlo si no se controla, incluye especies "similares"
-    - Solo permiso de exportación o certificado de reexportación
-    - Importación sin permiso salvo legislación nacional
-    - Permitidas las reproducidas artificialmente con certificados
-  - **Apéndice III**: reguladas unilateralmente por una Parte (<1 %)
-    - Permiso de exportación si procede del país que la incluyó (antílope cervicapra, Nepal)
-    - Certificado de origen si procede de otro Estado Parte
-- **UE**: **Reglamento (CE) 338/97** y **Reglamento (CE) 865/2006**, cuatro **Anexos** A-D de protección decreciente, no equivalentes a los Apéndices
-  - Última actualización: **Reglamento (UE) 2023/966** (CoP19), pendiente de transposición CoP20
-  - **Anexo A**: todo el Apéndice I, parte de II y III con medidas más estrictas, especies no CITES de Directivas de Aves y Hábitats. Comercio prohibido (lince ibérico, oso pardo, halcón peregrino)
-  - **Anexo B**: resto del Apéndice II, Apéndice I con reservas, parte de III, no CITES con amenaza ecológica (caimán de anteojos, pitón real)
-  - **Anexo C**: resto del Apéndice III y II con reservas (morsa, Canadá)
-  - **Anexo D**: lista de vigilancia sin equivalente CITES, importaciones supervisadas sin permiso (rana toro)
-- **Regla general**: solo se importa, exporta o reexporta con documento apropiado presentado en punto de entrada o salida
-- **Exenciones (art. VII)**: tránsito, Pre-Convención, efectos personales o bienes del hogar, cautividad y reproducción artificial, intercambio entre instituciones científicas
+La **Convención CITES** sobre el Comercio Internacional de Especies Amenazadas de Fauna y Flora Silvestres fue firmada en Washington el **3 de marzo de 1973** y entró en vigor el **1 de julio de 1975**. Consta de 25 artículos y cuenta con 185 Partes (184 Estados y la Unión Europea). Es vinculante pero funciona como una ley de mínimos: cada Parte la desarrolla con su legislación y puede adoptar medidas internas más estrictas para las especies de los Apéndices, e incluso restringir o prohibir el comercio de especies no incluidas (art. XIV).
+
+Según el **artículo IX**, cada Parte designa Autoridades Administrativas, que expiden permisos y certificados previa consulta a las Autoridades Científicas, y establece Puntos de Introducción Autorizados. En España:
+
+- La Autoridad Administrativa es la **Dirección General de Biodiversidad, Bosques y Desertificación** del MITECO, conforme al **Real Decreto 986/2021**, que aplica el Reglamento (CE) 338/97
+- Por el Acuerdo de encomienda de gestión (Resolución de 20 de enero de 2023), los **Servicios de Inspección SOIVRE** de la Secretaría de Estado de Comercio siguen realizando las verificaciones previas al despacho aduanero y controlan en la práctica el comercio CITES en frontera
+- Hay 12 Servicios SOIVRE autorizados para la inspección CITES (Vigo, Barcelona, Bilbao, Alicante, Valencia, Sevilla, Málaga, Mallorca, Tenerife, Las Palmas, Algeciras y Madrid). Las demás Direcciones son colaboradoras
+
+CITES protege a más de **40.900 especies**, unas **6.610** animales. Su clasificación en tres Apéndices (art. II) depende del estatus biológico de la especie y del impacto del comercio internacional, y los artículos III, IV y V regulan el comercio de cada uno:
+
+- **Apéndice I.** Especies en peligro de extinción (en torno al 2 % del total). Comercio prohibido con carácter general, salvo circunstancias excepcionales como la investigación científica, los cupos de trofeos de caza (león, elefante africano) o la cría en cautividad (halcón peregrino). Exige permisos de exportación e importación, solo si no hay fines primordialmente comerciales y la importación no perjudica a la especie
+- **Apéndice II.** La mayoría de las especies (en torno al 97 %), que podrían estar en peligro sin control del comercio, incluidas las «similares». Exige solo permiso de exportación o certificado de reexportación, y permiso de importación solo si lo dispone la legislación nacional
+- **Apéndice III.** Especies reguladas unilateralmente por una Parte con cooperación de las demás (menos del 1 %). Exige permiso de exportación si procede del país que la incluyó, como el antílope negro (*Antilope cervicapra*) incluido por Nepal, o certificado de origen si procede de otro Estado Parte
+
+En la UE se aplican el **Reglamento (CE) 338/97** y el **Reglamento (CE) 865/2006**, que clasifican las especies en cuatro Anexos de protección decreciente que no se corresponden exactamente con los Apéndices. La actualización más reciente es el **Reglamento (UE) 2023/966** (CoP19), y está pendiente de transposición la de la CoP20.
+
+- **Anexo A.** Todo el Apéndice I, algunas especies de los Apéndices II y III con medidas más estrictas y ciertas especies no CITES protegidas por las Directivas de Aves y de Hábitats. Comercio prohibido con carácter general (lince ibérico, oso pardo)
+- **Anexo B.** El resto del Apéndice II, las del I con reservas y determinadas especies no CITES cuya introducción amenaza a las autóctonas (caimán de anteojos, pitón real)
+- **Anexo C.** El resto del Apéndice III y las del II con reservas (morsa)
+- **Anexo D.** «Lista de vigilancia» sin equivalente en CITES, con importaciones supervisadas sin permiso para valorar su paso a un anexo superior (rana toro americana)
+
+Solo puede importarse, exportarse o reexportarse un espécimen de los Anexos con el documento apropiado, presentado en un punto de entrada o salida. El **artículo VII** prevé exenciones: tránsito, especímenes Pre-Convención, efectos personales o bienes del hogar, animales criados en cautividad y plantas reproducidas artificialmente, e intercambio entre instituciones científicas.
 
 # 2. ESPECÍMENES DE ORIGEN ANIMAL SUJETOS AL CONVENIO CITES
 
-- **Especie**: especie, subespecie o población geográficamente aislada
-- **Espécimen animal**: animal vivo o muerto y, en Apéndices I y II, parte o derivado fácilmente identificable salvo exención
-  - **Partes**: pieles, huesos, conchas, cuernos, colmillos o dientes, plumas, huevos, carne
-  - **Derivados**: sangre, almizcle, objetos fabricados (teclas de marfil, abrigos, correas, zapatos), medicinas, preparados de carne
-- **~6.610 especies animales** de más de 40.900. Cifras por Apéndice a verificar en la Secretaría CITES
-- **CoP20**: 82 nuevas inclusiones (medio centenar marinas, reptiles endémicos, perezosos, gacela dorcas, aves) y retirada del bontebok
-- Agrupación por amenaza: a veces órdenes enteros (primates, cetáceos, tortugas marinas), a veces subespecie o población aislada
+**Espécimen animal.** Cualquier animal vivo o muerto y, para los Apéndices I y II, cualquier parte o derivado fácilmente identificable, salvo exención expresa. Por especie se entiende toda especie, subespecie o población geográficamente aislada. Las partes son pieles, huesos, conchas, cuernos, colmillos, plumas, huevos o carne. Los derivados incluyen la sangre, el almizcle, los objetos fabricados a partir de partes (teclas de marfil, abrigos de piel, zapatos), las medicinas con especies CITES y los preparados de carne.
+
+La distribución por Apéndices cambia tras cada Conferencia de las Partes, así que las cifras deben verificarse en la versión vigente de la Secretaría CITES. La **CoP20** (Samarkanda, 2025) incorporó 82 nuevas inclusiones, entre ellas medio centenar de especies marinas. Las especies se agrupan según su amenaza, a veces por órdenes enteros (primates, cetáceos, tortugas marinas) y otras por una sola subespecie o población aislada.
 
 ## 2.1. Animales vivos
 
-- **Animales de compañía**: mayor parte del comercio CITES (aves, reptiles, anfibios, insectos)
-- **Colecciones** particulares y zoológicas
-- **Cetrería** y exhibiciones de rapaces
-- **Circos**: elefantes, tigres, leones, chimpancés
+Se aprecian como animales de compañía (la mayor parte del comercio CITES de animales), en colecciones particulares y zoológicas, en cetrería y exhibiciones de rapaces, y en circos, donde aún se usan elefantes, tigres, leones y chimpancés.
 
 ## 2.2. Partes y derivados
 
-- **Trofeos de caza**: cráneos, cuernos, colmillos, piel, cola, patas, taxidermia
-- **Manufacturas de piel**: reptiles en bolsos, zapatos, cinturones
-- **Peletería**: pieles de felinos, todos en Apéndices
-- **Medicina tradicional oriental**: almizcle, vesículas biliares de oso, tigre, cuerno de rinoceronte
-- **Marfil**: pieza dental de mamífero con valor ornamental, en la práctica de elefante
+- **Trofeos de caza.** Cráneos, cuernos, colmillos, piel y especímenes taxidermizados
+- **Manufacturas de piel.** Pieles de reptiles en bolsos, zapatos o cinturones
+- **Peletería.** Sobre todo felinos, hoy incluidos en su totalidad en los Apéndices
+- **Medicina tradicional oriental.** Almizcle, vesículas biliares de oso, productos de tigre o cuerno de rinoceronte
+- **Marfil.** En sentido estricto, cualquier pieza dental de mamífero con valor ornamental, aunque en la práctica se identifica con el de elefante
 
 # 3. VERTEBRADOS
 
-- Cinco clases con representación: **mamíferos, aves, reptiles, anfibios, peces**
+Cinco clases de vertebrados están representadas en los Apéndices: mamíferos, aves, reptiles, anfibios y peces.
 
 ## 3.1. Clase Mamíferos
 
-- **Primates**: orden íntegro en Apéndices I y II. Trofeo: cercopiteco verde, babuino chacma
-- **Carnivora**
-  - **Ursidae**: íntegra en I y II. Oso negro americano, oso pardo (poblaciones de Bhután, China, México y Mongolia en Apéndice I), oso polar
-  - **Felidae**: salvo gato doméstico, todos en I y II. Con el elefante, única familia con Apéndice I explotable como trofeo mediante **cupos**
-    - Pieles con **precintos** homologados: país de origen, año del cupo, referencia al cupo total
-    - Apéndice I: leopardo, guepardo. Apéndice II: león, puma, lince canadiense
-  - **Odobenidae**: morsa (Apéndice III, Canadá), colmillos como trofeo
-- **Proboscidea**: CoP20 reconoce dos especies de elefante africano (sabana *Loxodonta africana* y bosque *L. cyclotis*)
-  - Sabana: Apéndice II en Botsuana, Namibia, Sudáfrica y Zimbabue (cupos, anotación sin comercio comercial de marfil, solo vivos y trofeos), resto Apéndice I
-  - Elefante asiático (*Elephas maximus*): Apéndice I, sin cupos
-  - **Marfil**, legislación muy restrictiva: Pre-Convención (incluido fósil de mamut), en bruto no comercial de trofeos, existencias gubernamentales registradas, tallas no comerciales
-- **Perissodactyla**
-  - Equidae: I y II. Cebra de montaña de Hartmann
-  - Rhinocerotidae: Apéndice I salvo rinoceronte blanco (*C. s. simum*, II, trofeo)
-- **Artiodactyla**
-  - Hippopotamidae: hipopótamo común, Apéndice II, piezas dentales sustituyen al marfil
-  - Cervidae: protegida una fracción mínima
-  - Bovidae: antílope cervicapra (III, Nepal), duiquero azul (II), argalí (*Ovis ammon*)
+- **Primates.** Todo el orden está en los Apéndices I y II. Como trofeo destacan el cercopiteco verde (*Chlorocebus aethiops*) y el babuino chacma
+- **Osos (Ursidae).** Íntegramente en los Apéndices I y II. Como trofeo, el oso negro americano, el oso pardo (poblaciones de Bhután, China, México y Mongolia en el Apéndice I) y el oso polar
+- **Félidos (Felidae).** Todos salvo el gato doméstico están en los Apéndices I y II. Junto con el elefante, son la única familia con representantes del Apéndice I explotables como trofeo mediante cupos aprobados por las Partes, y sus pieles llevan precintos homologados con el país de origen, el año del cupo y la referencia al cupo total. Leopardo y guepardo están en el Apéndice I, y león, puma y lince canadiense en el II
+- **Morsa (Odobenidae).** Apéndice III por Canadá, con los colmillos como principal objeto de comercio
+- **Elefantes (Proboscidea).** La CoP20 reconoció dos especies africanas, la de sabana (*Loxodonta africana*) y la de bosque (*Loxodonta cyclotis*). La de sabana tiene poblaciones en el Apéndice II (Botsuana, Namibia, Sudáfrica y Zimbabue), con cupos de caza y una anotación que excluye el comercio comercial de marfil y solo permite animales vivos a destinos apropiados y trofeos. El resto está en el Apéndice I, igual que el elefante asiático
+- **Marfil.** Su comercio sigue una de las legislaciones más restrictivas. Se distingue el marfil Pre-Convención (incluido el fósil de mamut lanudo), el marfil en bruto sin fines comerciales de trofeos de caza, las existencias registradas propiedad de gobiernos y la exportación de tallas con fines no comerciales
+- **Perisodáctilos.** Los équidos tienen especies en los Apéndices I y II (cebra de montaña de Hartmann como trofeo). Los rinocerontes están en el Apéndice I salvo el rinoceronte blanco (*Ceratotherium simum simum*), en el II y explotado como trofeo
+- **Artiodáctilos.** El hipopótamo común está en el Apéndice II y se explota como trofeo por sus piezas dentales, que a veces sustituyen al marfil en tallas. De los cérvidos solo está protegida una fracción mínima. Entre los bóvidos destacan como trofeo el antílope negro indio, el duiquero azul y varias subespecies de argalí
 
 ## 3.2. Clase Aves
 
-- Con mamíferos, clase con más órdenes y especies listadas
-- Importancia: vivos para mascotas, menos cetrería
-- Importación casi desaparecida desde finales de 2005 por **gripe aviar**
-- **Psittaciformes** (Psittacidae): loro gris africano, aratingas, amazonas, agapornis
-- **Falconiformes** (Accipitridae, Falconidae): aguililla de Harris, halcones sacre y peregrino
+Junto con los mamíferos, es la clase con más órdenes y especies listadas. Su importancia comercial está en los ejemplares vivos para tiendas de animales de compañía y, en menor medida, en la cetrería. Desde finales de 2005 la importación de aves cayó casi a cero por las restricciones de la gripe aviar.
+
+- **Psittaciformes.** Tradicionalmente los más relevantes (amazonas, cacatúas, cotorras, guacamayos y loros), con el loro gris africano (*Psittacus erithacus*) a la cabeza
+- **Falconiformes.** Menor volumen pero importantes en cetrería: aguililla de Harris y halcones sacre y peregrino
 
 ## 3.3. Clase Reptiles
 
-- Pieles y manufacturas: **principal comercio de partes y derivados en España**. Primera posición también en animales vivos
-- **Testudinata**: tortugas terrestres (Testudinidae), patas rojas y de espolones africana, Apéndice II
-- **Crocodylia**: íntegro en Apéndices. Aligátor del Misisipi, caimán de anteojos, cocodrilo del Nilo
-- **Sauria**: vivos, iguana verde y camaleones. Pieles, tegú blanco y negro (II) y varanos (Nilo, acuático)
-- **Serpentes**: pieles, pitón de Seba y reticulada. Vivos, pitón bola. Culebra rata oriental
+Las pieles y manufacturas de reptiles son el principal artículo de comercio de partes y derivados en España. Los reptiles ocupan además la primera posición en animales vivos, tras el descenso de las aves. Cuatro de los cinco órdenes tienen especial relevancia:
+
+- **Testudinata.** En vivo, las tortugas terrestres de la familia Testudinidae, como la de patas rojas y la de espolones africana, ambas en el Apéndice II
+- **Crocodylia.** Íntegramente en los Apéndices. Por su piel se comercian sobre todo el aligátor americano, el caimán de anteojos y el cocodrilo del Nilo
+- **Sauria.** En vivo, la iguana verde y los camaleones. En pieles y manufacturas, el tegú blanco y negro (Apéndice II) y los varanos
+- **Serpentes.** En pieles y manufacturas, la pitón de Seba y la pitón reticulada. En vivo, la pitón bola o real
 
 ## 3.4. Clase Anfibios
 
-- Importancia menor
-- Ranas flecha (Dendrobatidae) vivas y ancas de rana
+Su importancia comercial es mucho menor. Destacan las ranas flecha (Dendrobatidae) en animales vivos y las ancas de rana entre las partes y derivados.
 
 ## 3.5. Clase Peces
 
-- Incidencia mínima
-- **Caviar de esturión** (*Huso*, *Acipenser*, Acipenseridae)
-- Vivos: caballito de mar hocico largo
+Son pocas las especies incluidas y su incidencia comercial es mínima. Destaca el caviar de esturión (géneros *Huso* y *Acipenser*) y, en vivo, el caballito de mar hocico largo.
 
 # 4. INVERTEBRADOS
 
-- Dos clases (**Arácnida**, **Insecta**) y los **corales**
+CITES incluye entre los invertebrados dos clases, Arácnida e Insecta, y un grupo especial, los corales.
 
 ## 4.1. Clase Arácnida
 
-- Tarántulas mexicanas de patas rojas (*Brachypelma*), tarántula rosada chilena (ampliación CoP20), escorpiones emperador
-- Comercio de vivos
+Comprende las tarántulas mexicanas de patas rojas (*Brachypelma* spp.), la tarántula rosada chilena tras la ampliación de la CoP20 y los escorpiones emperador (*Pandinus* spp.). El comercio se centra en animales vivos.
 
 ## 4.2. Clase Insecta
 
-- **Lepidoptera**, familia Papilionidae (macaones), incidencia mínima, colecciones. Alas de pájaro (*Ornithoptera*)
+Destacan las mariposas del orden Lepidoptera incluidas en CITES, de la familia Papilionidae, con incidencia comercial mínima y generalmente en colecciones. Entre ellas, las alas de pájaro (*Ornithoptera* spp.).
 
 ## 4.3. Corales
 
-- **Anthozoa**: corales rojos y rosados, negros, pétreos (Scleractinia, los más comerciados: *Goniopora*, *Acropora*)
-- **Hydrozoa**: corales de fuego (Milleporidae) y de encaje (Stylasteridae)
+Se clasifican en dos clases:
+
+- **Anthozoa.** Corales rojos y rosados, corales negros y corales pétreos del orden Scleractinia, los más abundantes en el comercio
+- **Hydrozoa.** Corales de fuego y corales de encaje
 
 # 5. COMERCIO EXTERIOR DE ANIMALES VIVOS, PARTES, DERIVADOS Y MANUFACTURAS
 
-- **Exportación mundial**: América del Sur y Central, África, Asia. **Importación**: América del Norte, Europa, Asia Oriental
-- **España**, frontera exterior de la UE
-  - Entrada de pieles de reptil (cocodrilos, pitones) y animales vivos
-  - Reexportación de marroquinería y de psitácidas y halcones criados en cautividad
-- **CITES Trade Database 2023, España**: importación de partes y derivados, luego vivos, menos pieles y flancos
-- **Especies destacadas**
-  - Halcones para cetrería: gerifalte, peregrino, sacre, híbridos (encabezan)
-  - Macaco cangrejero (fin científico)
-  - Elefante africano de sabana e hipopótamo (trofeos)
-  - Tintorera y marrajo (marinas)
-  - Cocodrilo del Nilo, aligátor americano, pitón reticulada (pieles y manufacturas)
-  - Loro gris africano (aves vivas)
-  - Leopardo, león, caracal, babuino chacma, jirafa, oso negro (trofeos)
-- **Mundo 2023**: partes y derivados y vivos. Destacan corales pétreos, elefantes, cocodrilos, tortugas marinas
-- **Angula europea** (*Anguilla anguilla*): Apéndice II desde 2009, **cupo de exportación cero UE desde 2010**
-  - **Operación Elver** (SEPRONA, 2018), exportación ilícita a Asia, ligada a operación "Lake" de Europol
-  - Único registro reciente de exportación española: 2022, cantidad testimonial
+Las principales zonas de exportación de especímenes animales son América del Sur y Central, África y Asia, y las de importación son América del Norte, Europa y Asia Oriental. **España**, como frontera exterior de la UE, es un importante punto de entrada de pieles de reptil (cocodrilos, pitones) y de animales vivos. Es además un relevante reexportador de manufacturas de marroquinería elaboradas con esas pieles y de aves psitácidas y halcones criados en cautividad.
+
+Según la CITES Trade Database de 2023, el comercio español se concentra sobre todo en la importación de partes y derivados, seguida de los animales vivos y, en menor medida, de las pieles y flancos. Entre las especies con mayor presencia destacan:
+
+- Halcones para cetrería (gerifalte, peregrino, sacre e híbridos), que encabezan el comercio español
+- Macaco cangrejero, con destino principalmente científico
+- Elefante africano de sabana y hipopótamo común, en su mayoría como trofeos de caza
+- Tintorera y marrajo, entre las especies marinas
+- Cocodrilo del Nilo, aligátor americano y pitón reticulada, para pieles y manufacturas
+- Loro gris africano, en aves vivas
+- Leopardo, león, caracal, babuino chacma, jirafa y oso negro americano, como trofeos de caza
+
+A escala mundial en 2023 dominaron las partes y derivados y los animales vivos, con peso destacado de corales pétreos, elefantes, cocodrilos y tortugas marinas, lo que refleja el comercio de corales y de marfil.
+
+La **Operación Elver** desmanteló en 2018 una red de exportación ilícita de angulas desde España a mercados asiáticos. La angula europea (*Anguilla anguilla*) está en el Apéndice II desde 2009 y tiene un cupo de exportación cero de la UE desde 2010. Su tráfico ilícito sigue siendo una de las principales prioridades de la lucha contra el tráfico de especies en España y en la UE.
 
 # 6. CONCLUSIÓN
 
-- Gran diversidad taxonómica: trofeos de mamíferos, pieles de reptil para la marroquinería, aves, anfibios, peces e invertebrados de menor incidencia
-- España, frontera exterior y centro reexportador de manufacturas de piel
-- Control por **SOIVRE**, con DG de Biodiversidad, Bosques y Desertificación, **CSIC** y **SEPRONA**
+El comercio de especímenes animales CITES tiene una enorme diversidad taxonómica, desde los grandes mamíferos de los trofeos de caza hasta las pieles de reptil que sostienen parte de la industria española de marroquinería. España, como frontera exterior de la UE y centro reexportador de manufacturas de piel, ocupa una posición estratégica. Corresponde a los Servicios SOIVRE, junto con la Dirección General de Biodiversidad, Bosques y Desertificación, la Agencia Estatal CSIC y el SEPRONA, garantizar que este comercio se ajuste a la Convención y a la reglamentación de la UE.

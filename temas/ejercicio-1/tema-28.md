@@ -1,173 +1,107 @@
 # 1. INTRODUCCIÓN
-- **CITES**: Convención sobre el Comercio Internacional de Especies Amenazadas de Fauna y Flora Silvestres
-  - Firma en **Washington, 3 marzo 1973** · entrada en vigor **1 julio 1975**
-  - **25 artículos** · protección de más de **40.900 especies** (crece con CoP19 Panamá 2022 y CoP20 Samarkanda 2025)
-  - **185 Partes** (184 Estados y la **UE**, desde julio 2015)
-  - España Parte desde el **16 mayo 1986** (adhesión)
-- Doble naturaleza: Acuerdo Multilateral sobre Medio Ambiente e instrumento de **política comercial**
-- Regula importación, exportación y reexportación de especies amenazadas, vivas o muertas, partes y derivados, mediante **permisos y certificados**
-- Estructura: controles administrativos y policiales, normativa, OMA e INTERPOL, legislación sancionadora
+
+La **Convención CITES** sobre el Comercio Internacional de Especies Amenazadas de Fauna y Flora Silvestres fue firmada en Washington el **3 de marzo de 1973** y entró en vigor el **1 de julio de 1975**. Protege a más de 40.900 especies y cuenta con 185 Partes (184 Estados y la Unión Europea). Es un acuerdo multilateral sobre medio ambiente y a la vez un instrumento de política comercial: regula la importación, exportación y reexportación de especies amenazadas, sus partes y derivados, mediante permisos y certificados.
 
 # 2. CONTROLES ADMINISTRATIVOS Y POLICIALES DE PRODUCTOS DE FAUNA Y FLORA SILVESTRE
-- Permisos y certificados condicionados al cumplimiento de requisitos y exigidos para autorizar entrada o salida
-- Comprueban los envíos: organismos nacionales de cumplimiento, **aduanas** y **policía**
+
+Los permisos y certificados se exigen para autorizar la entrada o salida de los especímenes. Comprobar que los envíos los cumplen corresponde a los organismos nacionales de cumplimiento, las aduanas y la policía.
 
 ## 2.1. Controles administrativos: estructura
-- Comercio de especies de los Apéndices solo si **no es perjudicial para su supervivencia**
-- Cada Parte designa **Autoridad Administrativa** (emite permisos) y **Autoridad Científica** (opinión previa)
-- **Comisión Europea**: supervisa la aplicación de los reglamentos en la UE y revisa periódicamente la legislación
-- Organismos UE, convocados y presididos por la Comisión
-  - **Comité sobre el Comercio de Fauna y Flora Silvestres**
-    - Autoridades Administrativas de los Estados miembros · 3 o 4 reuniones al año
-    - Medidas de aplicación del **Reglamento (CE) 338/97**: adopta la Comisión con opinión positiva del Comité
-    - Sin mayoría cualificada, la propuesta va al Consejo
-  - **Grupo de Revisión Científica (SRG)**
-    - Autoridades Científicas · 3 o 4 reuniones al año
-    - Examina si una importación cumple los requisitos de conservación y traslada opinión al Comité
-  - **Grupo de Observancia o Vigilancia**
-    - Aduanas, policía, inspectores de fauna y flora · unas 2 reuniones al año
-    - Sigue la práctica de vigilancia, recomienda mejoras, intercambia información sobre comercio ilegal, investigaciones y aprehensiones
+
+El comercio de una especie de los Apéndices solo se permite si no perjudica su supervivencia en la naturaleza. Cada Estado Parte designa una **Autoridad Administrativa**, que emite los permisos, y una **Autoridad Científica**, cuya opinión debe tener en cuenta.
+
+La **Comisión Europea** supervisa la aplicación de los reglamentos en la UE y convoca y preside tres organismos con representantes de los Estados miembros:
+
+- **Comité sobre el Comercio de Fauna y Flora Silvestres**: Autoridades Administrativas, tres o cuatro reuniones al año. La Comisión adopta las medidas de aplicación del Reglamento (CE) 338/97 con su opinión positiva. Sin mayoría cualificada, la propuesta pasa al Consejo
+- **Grupo de Revisión Científica (SRG)**: Autoridades Científicas. Examina si una importación cumple los requisitos de conservación y traslada sus opiniones al Comité
+- **Grupo de Observancia o Vigilancia**: aduanas, policía e inspectores de fauna y flora, unas dos reuniones al año. Formula recomendaciones de mejora y promueve el intercambio de información sobre comercio ilegal y aprehensiones significativas
 
 ## 2.2. Seguimiento y control
-- **Cooperación entre Autoridades Administrativas y Científicas**
-  - Científicas comparan permisos de exportación (Apéndices I y II) con exportaciones reales
-  - Pueden recomendar **limitar o suspender** permisos
-  - En la UE, intercambio de información entre Estados miembros
-- **Informes anuales**
-  - Registros de comercio e informe anual a la Secretaría (importaciones, exportaciones, reexportaciones)
-  - Permite contrastar exportaciones con importaciones declaradas
-  - No presentarlo: sanción máxima, **suspensión del comercio** con ese país
-  - UE: **art. 15 Reglamento (CE) 338/97** (aplica el **art. VIII** de la Convención) · la Comisión publica el **Libro Anual**
-- **Informes bienales**
-  - Cada **dos años**: medidas legislativas, reglamentarias y administrativas, envíos aprehendidos y confiscados (**art. VIII**)
-- **Control del comercio interno UE**
-  - Sin fronteras internas desde el Mercado Único (**1993**): sin permisos para Anexos **B, C o D** dentro de la UE
-  - Cada Estado puede restringir la tenencia
-  - Hace clave el seguimiento para detectar actividades ilegales
+
+Supervisar la intensidad del comercio es esencial para evaluar su efecto sobre la conservación. Se articula en cuatro vías.
+
+- **Cooperación entre Autoridades**: las Autoridades Científicas vigilan que los permisos de exportación de especies de los Apéndices I y II concuerden con las exportaciones reales y pueden recomendar limitar o suspender la emisión de permisos
+- **Informes anuales**: las Partes informan cada año a la Secretaría de las importaciones, exportaciones y reexportaciones amparadas en permisos y certificados. Comparar lo declarado por unos y otros permite evaluar el estado de las especies. No presentarlos puede acarrear hasta la suspensión del comercio con ese país. En la UE se rigen por el art. 15 del Reglamento (CE) 338/97 y la Comisión publica su análisis en el Libro Anual
+- **Informes bienales**: cada dos años informan de las medidas legislativas, reglamentarias y administrativas adoptadas, incluidos los envíos aprehendidos y confiscados (art. VIII)
+- **Control del comercio interno en la UE**: sin fronteras internas desde el Mercado Único de 1993, no se necesitan permisos ni certificados para mover especímenes de los Anexos B, C o D dentro de la UE, aunque cada Estado puede restringir su tenencia. Por eso el seguimiento es clave para detectar actividades ilegales
 
 ## 2.3. Controles policiales
-- UE: **mayor mercado mundial** de vida silvestre · comercio ilegal de miles de millones de euros al año, móvil entre Estados miembros
-- Servicios policiales con grupos especializados en crimen contra fauna y flora o medioambiental
-- España
-  - **SEPRONA** (Guardia Civil): grupo especializado en crímenes medioambientales
-  - Asistido por **Cuerpo Nacional de Policía** y **Policías Autonómicas** (detención de infractores)
-  - **Inspectores del SOIVRE**
-    - Ya no son Autoridad Administrativa CITES
-    - Asistencia técnica en puntos de entrada, por **encomienda de gestión de la AEAT**
-    - Verificaciones físicas y documentales previas al despacho y emisión del **DIESAC**
-- Tres tipos legislativos en la UE: medioambiental y de conservación, **aduanera**, **penal**
-- Tipos de comercio ilegal
-  - **Contrabando**: introducción clandestina sin trámites aduaneros, normalmente sin documentación CITES · aduanas y policía
-  - **Disconformidades en declaraciones**
-    - Especie declarada distinta de la real
-    - Número declarado inferior al real (vivos peligrosos)
-    - Fuente de origen (silvestre, cautividad, reproducción artificial) o país de origen
-    - Las detecta el SOIVRE en frontera
-  - **Documentación falsa o no válida**
-    - Documentos falsificados, obtenidos con declaración falsa, imitaciones o sellos y firmas falsos
-    - Frecuentes: medicinas tradicionales asiáticas, **caviar**, especies del Anexo B salvajes declaradas como criadas en cautividad
+
+La UE es el mayor mercado mundial de vida silvestre y, al ser un Mercado Único, su comercio ilegal se mueve con facilidad entre Estados miembros. En España intervienen:
+
+- **SEPRONA** de la Guardia Civil: grupo especializado en crímenes medioambientales
+- **Cuerpo Nacional de Policía y Policías Autonómicas**: asisten en la detención de infractores
+- **Cuerpo de Inspectores del SOIVRE**: ya no es Autoridad Administrativa CITES, pero presta asistencia técnica en los puntos de entrada, por encomienda de gestión de la AEAT. Realiza las verificaciones físicas y documentales previas al despacho aduanero y emite el **DIESAC**
+
+Frente a estos delitos la UE cuenta con leyes medioambientales, aduaneras y penales. Los tipos de comercio ilegal más frecuentes son:
+
+- **Contrabando**: introducción clandestina sin cumplir los trámites aduaneros, generalmente sin documentación CITES
+- **Disconformidades en las declaraciones**: la especie declarada no es la real, el número declarado es inferior al real o hay discrepancias en la fuente u origen (silvestre, criado en cautividad o reproducido artificialmente). Las detectan los Inspectores del SOIVRE en frontera
+- **Documentación falsa o no válida**: documentos falsificados, obtenidos con declaración falsa o con sellos y firmas falsos. Destacan las medicinas tradicionales asiáticas, el caviar y especies del Anexo B capturadas en el medio natural e introducidas como criadas en cautividad
 
 # 3. NORMATIVA COMUNITARIA E INTERNACIONAL
 
 ## 3.1. Normativa internacional
-- Marco legal común y mismos mecanismos de procedimiento para las Partes
-- Obligaciones de las Partes
-  - Aplicar la Convención
-  - Adoptar **Resoluciones** (orientación a largo plazo) y **Decisiones** (a un órgano concreto, plazo fijado) de las CoP, no vinculantes por sí mismas
-  - Legislación nacional: **confiscación**, **sanciones** por comercio ilegal, designación de Autoridades Administrativas y Científicas
-- **Art. XIV**: legislaciones nacionales más estrictas (comercio, captura, posesión, transporte, incluso prohibición) en Apéndices I, II y III
-- No afecta a otras obligaciones de tratados (aduanas, salud pública, cuarentena animal o vegetal)
+
+La CITES da un marco legal común a todas las Partes. Se les exige aplicar la Convención, adoptar las Resoluciones y Decisiones de cada Conferencia de las Partes (ninguna es jurídicamente vinculante por sí misma) y promulgar legislación nacional que permita confiscar especímenes ilícitos, sancionar el comercio ilegal y designar Autoridades Administrativas y Científicas.
+
+El **art. XIV** permite legislaciones nacionales más estrictas sobre comercio, captura, posesión o transporte de especímenes de los Apéndices I, II y III, e incluso prohibirlos. La Convención no afecta a otras obligaciones sobre aduanas, salud pública o cuarentena vegetal o animal.
 
 ## 3.2. Normativa comunitaria
-- Reglamentos de Comercio de Fauna y Flora Silvestre: aplicación directa, en algunos aspectos más allá de la Convención
-- **Legislación marco**
-  - **Reglamento (CE) 338/97** del Consejo: cuatro **Anexos A, B, C y D**, protección decreciente
-  - Última actualización sustancial de Anexos: **Reglamento (UE) 2023/966** (CoP19) · pendiente transponer la de la CoP20
-  - **Reglamento (CE) 865/2006** de la Comisión: disposiciones de aplicación
-- **Legislación complementaria**
-  - **Reglamento de Ejecución (UE) 2025/6**: suspensiones (se actualiza periódicamente)
-  - **Recomendación 2007/425/CE**: planes nacionales de vigilancia, multas elevadas, evaluación de riesgos, concienciación, cooperación con **INTERPOL** y **OMA**
-- **Nacional**
-  - **Ley 32/2007**: tasas por permisos y certificados CITES
-  - **Resolución de 29 noviembre 2016** (DG Comercio Internacional e Inversiones)
-    - Designa Direcciones Territoriales y Provinciales de Comercio emisoras
-    - Regula tramitación electrónica, incluido el **DIESAC**
-    - **12 Servicios de Inspección SOIVRE** autorizados: Vigo, Bilbao, Barcelona, Valencia, Alicante, Málaga, Algeciras, Sevilla, Palma de Mallorca, Las Palmas, Tenerife y Madrid
-  - **Real Decreto 7/2018**: documentación, tenencia y marcado
-  - **Real Decreto 986/2021** (en vigor 2 enero 2022)
-    - **Autoridad Administrativa**: DG de Biodiversidad, Bosques y Desertificación (**MITECO**)
-    - **Autoridad Científica**: Agencia Estatal **CSIC**
-    - **Encomienda de gestión** (Resolución 20 enero 2023): AEAT encomienda las verificaciones previas al despacho a la Secretaría de Estado de Comercio, que las ejecuta por los **Servicios de Inspección SOIVRE**
+
+En la UE la CITES se aplica mediante reglamentos directamente aplicables, que en algunos aspectos van más allá de la Convención.
+
+- **Reglamento (CE) 338/97** del Consejo: legislación marco. Clasifica las especies en cuatro Anexos (A, B, C y D) según un grado de protección decreciente. Su última actualización sustancial de Anexos es el **Reglamento (UE) 2023/966** (CoP19), y está pendiente de transposición la de la CoP20
+- **Reglamento (CE) 865/2006** de la Comisión: disposiciones de aplicación del anterior
+- **Reglamento de Ejecución (UE) 2025/6**: reglamento de suspensiones vigente, que derogó al Reglamento de Ejecución (UE) 2023/2770
+- **Recomendación 2007/425/CE**: acciones para reforzar la ejecución, como planes nacionales de vigilancia, multas suficientemente elevadas y cooperación con INTERPOL y la OMA
+
+En el ámbito nacional destacan:
+
+- **Ley 32/2007**: tasas por gestión y tramitación de permisos y certificados CITES
+- **Resolución de 29 de noviembre de 2016**: designa las Direcciones Territoriales y Provinciales de Comercio que emiten permisos y certificados y regula la tramitación electrónica, entre ellos el DIESAC. Hay 12 Servicios de Inspección SOIVRE autorizados: Vigo, Bilbao, Barcelona, Valencia, Alicante, Málaga, Algeciras, Sevilla, Palma de Mallorca, Las Palmas, Tenerife y Madrid
+- **Real Decreto 7/2018**: documentación, tenencia y marcado en el comercio de especies amenazadas
+- **Real Decreto 986/2021**: en vigor desde el 2 de enero de 2022, derogó al Real Decreto 1739/1997. Designa a la Dirección General de Biodiversidad, Bosques y Desertificación (MITECO) como **Autoridad Administrativa** y a la Agencia Estatal CSIC como **Autoridad Científica**. Por el Acuerdo de encomienda de gestión (Resolución de 20 de enero de 2023), la AEAT encomendó las verificaciones previas al despacho aduanero a la Secretaría de Estado de Comercio, que las ejecuta a través de los Servicios de Inspección SOIVRE
 
 # 4. RELACIÓN CON LA ORGANIZACIÓN MUNDIAL DE ADUANAS E INTERPOL
-- Crimen medioambiental: problema creciente, valor de varios **miles de millones de dólares** anuales, control limitado en muchas regiones
+
+El crimen medioambiental es un problema internacional grave y creciente, valorado en varios miles de millones de dólares anuales, quizá más porque buena parte se da en regiones de control limitado.
 
 ## 4.1. La Organización Mundial de Aduanas
-- Organización intergubernamental independiente: mejorar eficacia y eficiencia de las aduanas
-- **186 administraciones** miembro, cerca del **98 %** del comercio internacional
-- Actividades: simplificación y armonización de procedimientos, seguridad de la cadena de comercio, lucha contra piratería y falsificación, **nomenclatura armonizada**
-- Coopera con la Secretaría CITES (asistencia técnica y formación)
-- España: aduanas de la **AEAT** establecen los controles fronterizos
+
+La **OMA** es una organización intergubernamental independiente que busca mejorar la efectividad y eficiencia de las administraciones aduaneras. Tiene 186 miembros, que gestionan aproximadamente el 98 % del comercio internacional. Trabaja en la armonización de procedimientos, la seguridad de la cadena de comercio, la lucha contra la piratería y la falsificación, y el sistema de nomenclatura armonizada. Coopera con la Secretaría CITES contra el tráfico ilícito mediante asistencia técnica y formación. En España, las aduanas de la AEAT establecen los controles fronterizos.
 
 ## 4.2. La INTERPOL
-- Organización Internacional de Policía Criminal (ICPO INTERPOL) · creada en **1923**
-- Mayor organización policial mundial, **196 países**
-- Cooperación policial transfronteriza
-- Desde **1992** contra el crimen medioambiental: grupos de trabajo de **Polución y Vida Silvestre**
+
+La **INTERPOL** es la mayor organización internacional de policía, con 196 países miembros, y facilita la cooperación policial transfronteriza. Desde 1992 combate el crimen medioambiental mediante sus grupos de trabajo de Polución y Vida Silvestre, presididos por oficiales de policía especializados.
 
 ## 4.3. El Consorcio Internacional para Combatir los Delitos contra la Vida Silvestre (ICCWC)
-- Creado en **2010**, delitos contra vida silvestre y bosques, transnacionales y sofisticados
-- Alianza: **CITES**, **INTERPOL**, **UNODC**, **Banco Mundial**, **OMA**
-- Misión: respuesta enérgica y coordinada a los autores de delitos graves
-- Cinco objetivos
-  - Reforzar cooperación y coordinación
-  - Facilitar análisis de respuestas nacionales
-  - Generar capacidad de prevención y respuesta
-  - Crear conciencia
-  - Mejorar uso del conocimiento y la innovación
+
+El **ICCWC**, creado en 2010, es una alianza entre la CITES, la INTERPOL, la UNODC, el Banco Mundial y la OMA. Busca que los autores de delitos graves contra la vida silvestre y los bosques enfrenten medidas enérgicas y coordinadas, con cinco objetivos: reforzar la cooperación y coordinación, facilitar el análisis de las respuestas nacionales, generar capacidad de prevención y respuesta, crear conciencia y mejorar el uso del conocimiento y la innovación.
 
 # 5. LEGISLACIÓN SANCIONADORA EN ESPAÑA
-- Reglamentos UE de aplicación directa, pero las **sanciones** son competencia de cada Estado: se transponen y complementan con ley nacional
-- **Art. 16 Reglamento (CE) 338/97**: sancionar como mínimo
-  - Comercio sin documentación correcta
-  - Solicitudes o documentación falsas
-  - Incumplir condiciones de los permisos
-  - Comercio de Anexo A sin certificados de exención
-  - Usar permisos o certificados para especímenes distintos
-- Medidas adecuadas a la naturaleza y gravedad, con **decomiso** en su caso
+
+Los reglamentos de la UE son de aplicación directa, pero las sanciones siguen bajo la soberanía de cada Estado, que debe transponerlas con legislación nacional. Según el art. 16 del Reglamento (CE) 338/97, deben sancionarse como mínimo el comercio sin documentación correcta, las solicitudes o documentación falsas, el incumplimiento de las condiciones de los permisos, el comercio de especímenes del Anexo A sin certificados de exención y el uso de permisos para especímenes distintos de los autorizados. Las medidas deben ser adecuadas a la gravedad e incluir, en su caso, el decomiso.
 
 ## 5.1. La vía penal
-- **Ley Orgánica 10/1995, Código Penal**: cuando **no hay contrabando** (declaraciones disconformes o documentos falsos)
-- **Art. 334**: cazar, pescar, adquirir, poseer o destruir especies protegidas, traficar con ellas, partes o derivados, o impedir su reproducción o migración
-  - **Prisión 6 meses a 2 años** o **multa 8 a 24 meses**
-  - Siempre inhabilitación especial para profesión u oficio y para caza o pesca de **2 a 4 años**
-  - **Mitad superior** si especie en peligro de extinción
-  - Imprudencia grave: prisión de **3 meses a 1 año** o multa de **4 a 8 meses**
+
+La **Ley Orgánica 10/1995, del Código Penal**, se aplica cuando no ha habido contrabando, es decir, ante declaraciones disconformes o documentos falsos. El **art. 334** castiga a quien cace, pesque, adquiera, posea o destruya especies protegidas de fauna silvestre, trafique con ellas o impida su reproducción o migración.
+
+- Pena: prisión de seis meses a dos años o multa de ocho a veinticuatro meses, e inhabilitación especial para profesión u oficio y para caza o pesca de dos a cuatro años
+- Especies catalogadas en peligro de extinción: pena en su mitad superior
+- Imprudencia grave: prisión de tres meses a un año o multa de cuatro a ocho meses
 
 ## 5.2. La vía aduanera
-- **Ley Orgánica 12/1995, Represión del Contrabando** (modificada, entre otras, por LO 6/2011): cuando hay contrabando de especímenes CITES
-- **Delito de contrabando**
-  - Valor igual o superior a **50.000 euros**
-  - Importación, exportación, comercio, tenencia o circulación sin requisitos legales
-  - **Prisión de 1 a 5 años** y multa del tanto al **séxtuplo** del valor (hasta 600 %)
-- **Infracción administrativa**: valor inferior a **50.000 euros**
-  - **Art. 11**, especies protegidas: leve (menos de **6.000 euros**) · grave (**6.000 a 18.000**) · muy grave (más de **18.000**)
-  - **Art. 12**, multa proporcional al valor
-    - Leves **200 % a 225 %**
-    - Graves **225 % a 275 %**
-    - Muy graves **275 % a 350 %**
-    - Mínimo **1.000 euros**
-  - Cierre del establecimiento o suspensión de actividad
-    - Graves: 4 días a 6 meses
-    - Muy graves: 6 meses y 1 día a 12 meses
-    - Muy graves reiteradas: puede ser definitivo
-- **Real Decreto 1649/1998**: desarrolla el Título II, procedimiento y criterios de graduación
-- **Real Decreto 1333/2006**: destino de los especímenes decomisados, cerrado el procedimiento
+
+La **Ley Orgánica 12/1995, de Represión del Contrabando** (modificada, entre otras, por la Ley Orgánica 6/2011), se aplica cuando se demuestra contrabando de especímenes CITES. Distingue dos infracciones.
+
+- **Delito de contrabando**: valor de los bienes igual o superior a **50.000 euros**. Prisión de uno a cinco años y multa del tanto al séxtuplo del valor (hasta el 600 %)
+- **Infracción administrativa de contrabando**: valor inferior a 50.000 euros. El art. 11 la clasifica en leve (menos de 6.000 euros), grave (de 6.000 a 18.000) y muy grave (más de 18.000)
+
+Según el art. 12, la multa es proporcional al valor de las mercancías, con un mínimo de 1.000 euros: del 200 % al 225 % las leves, del 225 % al 275 % las graves y del 275 % al 350 % las muy graves. Puede añadirse el cierre del establecimiento o la suspensión de la actividad, de cuatro días a seis meses en las graves y de seis meses y un día a doce meses en las muy graves (definitiva si las muy graves son reiteradas).
+
+El **Real Decreto 1649/1998** desarrolla el Título II de la Ley con las normas de procedimiento y graduación de las sanciones. El **Real Decreto 1333/2006** regula el destino de los especímenes decomisados, una vez cerrado el procedimiento.
 
 # 6. CONCLUSIÓN
-- Control en varios niveles
-  - Administrativo: DG de Biodiversidad, Bosques y Desertificación y CSIC
-  - Operativo: SOIVRE en los Puntos de Inspección Fronteriza
-  - Policial y judicial: SEPRONA, Policía Nacional y AEAT
-  - Cooperación internacional: OMA, INTERPOL, ICCWC
-- Sanción graduada por gravedad y valor (Código Penal y Ley de Represión del Contrabando) · España como frontera exterior de la UE
+
+La observancia de la CITES en España combina la actuación administrativa de la Dirección General de Biodiversidad, Bosques y Desertificación y la Agencia Estatal CSIC, la operativa del Servicio de Inspección SOIVRE en frontera y la policial y judicial del SEPRONA, el Cuerpo Nacional de Policía y la AEAT, con cooperación internacional de la OMA, la INTERPOL y el ICCWC. La legislación sancionadora, en torno al Código Penal y la Ley de Represión del Contrabando, gradúa la respuesta según la gravedad y el valor de cada infracción.

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-1/tema-55.md. No editar a mano. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 55. Control higiénico-sanitario basado en el sistema APPCC (análisis de peligros y puntos críticos de control) — esquema del ejercicio 1</title>
+<link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="stylesheet" href="../../../css/fuentes.css">
+<style>
+@page { size: A4; margin: 14mm 12.5mm 15mm;
+  @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #D9DED6; font-family: 'Public Sans', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #C8A951; outline-offset: 2px; }
+
+/* Barra superior (solo pantalla) */
+.barra { background: #3B4533; color: #C2D9C2; }
+.barra-in { max-width: 210mm; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.barra a { color: #C2D9C2; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.barra a:hover { color: #FFFFFF; }
+.barra .marca { font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: .14em; font-size: 13px; color: #FFFFFF; }
+.barra .acciones { display: flex; gap: 10px; align-items: center; }
+.barra .boton { background: #E0C46B; color: #1F2A1D; font-weight: 700; padding: 0 14px; box-shadow: 3px 3px 0 #1F2A1D; }
+.barra .boton:hover { background: #FFFFFF; color: #1F2A1D; }
+
+/* Hoja */
+.hoja { max-width: 210mm; margin: 20px auto 40px; padding: 40px 47px 28px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.5; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+/* Los enunciados del BOE pueden ser largos: el título baja de cuerpo por tramos. */
+h1.largo { font-size: 28px; line-height: 1.12; }
+h1.muy-largo { font-size: 23px; line-height: 1.16; }
+.enunciado { margin: 3px 0 2px; max-width: 78ch; font-size: 14.5px; line-height: 1.42; color: #4A5546; text-wrap: pretty; }
+.sub-cab { font-size: 14px; color: #4A5546; }
+.sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+
+.indice { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.indice a { display: flex; flex-direction: column; gap: 1px; height: 100%; padding: 6px 9px; background: #3B4533; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.indice a:hover { background: #1F2A1D; }
+.indice b { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 13px; color: #E0C46B; letter-spacing: 0; }
+
+/* Cuerpo del esquema */
+.esq { min-width: 0; }
+.sec { margin: 26px 4px 12px 0; display: flex; align-items: stretch; background: #3B4533; color: #FFFFFF; box-shadow: 4px 4px 0 #A8862F; font-size: 16px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; scroll-margin-top: 12px; break-inside: avoid; break-after: avoid; }
+.esq > .sec:first-child { margin-top: 0; }
+.sec .n { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0; background: #E0C46B; color: #1F2A1D; min-width: 46px; display: flex; align-items: center; justify-content: center; }
+.sec .t { padding: 9px 12px; display: flex; align-items: center; flex-grow: 1; min-width: 0; }
+.sec .px { display: flex; align-items: flex-end; gap: 3px; padding: 0 10px 8px 0; }
+.sec .px i { display: block; width: 5px; height: 5px; background: #E0C46B; }
+.sec .px i:nth-child(2) { height: 9px; opacity: .7; }
+.sec .px i:nth-child(3) { height: 13px; opacity: .45; }
+.sub { margin: 16px 0 5px; font-size: 1em; font-weight: 700; line-height: 1.3; display: flex; align-items: baseline; gap: 8px; break-after: avoid; }
+.sub span { flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: .78em; color: #3B4533; background: #EEF3EB; border: 1px solid #3B4533; box-shadow: 2px 2px 0 #C9D1C5; padding: 0 5px; }
+.sub::after { content: ""; flex: 1 0 24px; align-self: center; border-bottom: 2px dotted #C9D1C5; }
+h4.sub { font-size: .94em; margin-top: 12px; }
+h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
+.sec + .sub { margin-top: 0; }
+.esq p { margin: 6px 0; }
+.esq ul, .esq ol { margin: 0; padding-left: 18px; }
+.esq li { margin: 2px 0; }
+.esq li::marker { color: #A8862F; }
+.esq ol > li::marker { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.esq li > ul { list-style: none; padding-left: 16px; }
+.esq li > ul > li { position: relative; }
+.esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
+.esq b { font-weight: 700; }
+
+.pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; }
+
+@media screen and (min-width: 821px) {
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+}
+@media screen and (max-width: 820px) {
+  .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
+  h1 { font-size: 27px; }
+  h1.largo { font-size: 23px; }
+  h1.muy-largo { font-size: 20px; }
+  .enunciado { font-size: 14px; }
+  .sello { min-width: 74px; padding: 6px 10px; }
+  .sello b { font-size: 22px; }
+  .sec { font-size: 14.5px; }
+}
+
+/* Impresión y PDF: dos columnas, cuerpo pequeño, sin barra ni pie propio (el pie
+   y la numeración van en los márgenes de @page). */
+@media print {
+  body { background: #FFFFFF; }
+  .barra, .pie { display: none; }
+  .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
+  h1 { font-size: 31px; }
+  h1.largo { font-size: 25px; }
+  h1.muy-largo { font-size: 21px; }
+  .enunciado { max-width: none; font-size: 11.5px; line-height: 1.36; }
+  .sub-cab { font-size: 13px; }
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+  .indice a { padding: 5px 8px; font-size: 9.5px; }
+  .indice b { font-size: 12px; }
+  .esq { column-count: 2; column-gap: 24px; }
+  .sec { font-size: 12.5px; margin: 14px 4px 9px 0; }
+  .sec .n { font-size: 15px; min-width: 38px; }
+  .sec .t { padding: 6px 10px; }
+  .sub { margin: 9px 0 3px; }
+  .esq li { margin: 1px 0; }
+  .esq ul, .esq ol { padding-left: 14px; }
+  .esq li > ul { padding-left: 14px; }
+  .esq li > ul > li::before { left: -11px; }
+}
+
+@page { @bottom-left { content: "Esquema · Tema 55. Control higiénico-sanitario basado en el sistema APPCC (análisis de peligros y…"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
+    <div class="acciones"><a class="boton" href="tema-55.pdf" download="Esquema tema 55 (ejercicio 1).pdf">Descargar PDF</a></div>
+  </div>
+</header>
+<main class="hoja">
+  <div class="cab">
+    <div class="cab-txt">
+      <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
+      <h1 class="muy-largo">Control higiénico-sanitario basado en el sistema APPCC (análisis de peligros y puntos críticos de control)</h1>
+      <p class="enunciado">Aplicación del sistema APPCC en la industria agroalimentaria de productos no transformados y transformados. Legislación comunitaria y nacional.</p>
+      <div class="sub-cab">Ejercicio 1 · Esquema del tema 55 · Actualizado el <time datetime="2026-09-06">6 de septiembre de 2026</time></div>
+    </div>
+    <div class="sello" aria-label="Ejercicio 1, tema 55"><span>EJ. 1 · TEMA</span><b>55</b></div>
+  </div>
+  <nav aria-label="Apartados del esquema"><ol class="indice" style="--cols: 5"><li><a href="#apartado-1"><b>01</b>INTRODUCCIÓN</a></li><li><a href="#apartado-2"><b>02</b>CONTROL HIGIÉNICO-SANITARIO BASADO EN EL SISTEMA HACCP</a></li><li><a href="#apartado-3"><b>03</b>APLICACIÓN DEL SISTEMA HACCP EN LA INDUSTRIA AGROALIMENTARIA DE PRODUCTOS NO TRANSFORMADOS Y TRANSFORMADOS</a></li><li><a href="#apartado-4"><b>04</b>LEGISLACIÓN COMUNITARIA Y NACIONAL</a></li><li><a href="#apartado-5"><b>05</b>CONCLUSIÓN</a></li></ol></nav>
+  <div class="esq">
+<h2 class="sec" id="apartado-1"><span class="n">01</span><span class="t">INTRODUCCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Las enfermedades de transmisión alimentaria afectan a la salud pública y a la economía, porque los alimentos contaminados perjudican al consumidor, al comercio y al turismo y reducen la confianza en el mercado. El aumento del comercio internacional y de los desplazamientos acelera la propagación de peligros sanitarios, y los nuevos patrones de consumo han impulsado nuevas tecnologías de producción, transformación, envasado y distribución.</p>
+<p>La higiene en toda la cadena alimentaria descansa en tres pilares: los gobiernos (políticas de inocuidad y educación sanitaria), la industria (transporte, conservación y etiquetado claro) y los consumidores (prácticas higiénicas e instrucciones de uso). El <b>Sistema HACCP / APPCC</b> es el estándar preventivo por excelencia: un enfoque científico, racional y sistemático para identificar, evaluar y controlar peligros microbiológicos, químicos y físicos, que actúa a lo largo de todo el proceso y fija medidas correctoras ante las desviaciones.</p>
+<h2 class="sec" id="apartado-2"><span class="n">02</span><span class="t">CONTROL HIGIÉNICO-SANITARIO BASADO EN EL SISTEMA HACCP</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>2.1</span>Antecedentes del sistema HACCP</h3>
+<p>El sistema nació en la década de 1960 para garantizar la inocuidad en las misiones espaciales de la NASA, desarrollado por Pillsbury con los Laboratorios Natick del Ejército de EEUU Surgió al comprobar que analizar el producto final no garantiza al 100 % la seguridad, por lo que se necesitaba controlar el proceso. El <b>Codex Alimentarius</b> lo internacionalizó y publicó en 1993 las Directrices para su aplicación, con <b>7 principios</b>.</p>
+<p>La revisión de 2020 del Código de Prácticas <b>CXC 1-1969</b> unificó los Principios Generales de Higiene de los Alimentos y el Anexo del HACCP en un solo texto. Novedades:</p>
+<ul><li><b>Cultura de inocuidad alimentaria</b>, como compromiso de la dirección y de los trabajadores</li><li><b>Distinción entre prerrequisitos y HACCP</b>, es decir, entre las Buenas Prácticas de Higiene (BPH) y los Puntos Críticos de Control (PCC)</li><li><b>Nuevos anexos</b> con herramientas de comparación y plantillas del Plan HACCP</li></ul>
+<h3 class="sub"><span>2.2</span>Características generales del sistema HACCP</h3>
+<p>El HACCP es un sistema de autocontrol lógico, estructurado y preventivo que integra conocimientos de microbiología, química, tecnología alimentaria e higiene. Exige colaboración estrecha entre la industria y las autoridades sanitarias.</p>
+<p>La dirección de la empresa debe liderar la asignación de recursos y la formación continua, con el compromiso de directivos, técnicos y personal de planta. La Administración debe promover su adopción, capacitar al personal inspector para la verificación y velar por la armonización con la normativa internacional. El enfoque es integral, &quot;de la granja a la mesa&quot;, y la FAO y los Ministerios de Sanidad han elaborado manuales de capacitación.</p>
+<h3 class="sub"><span>2.3</span>Ventajas e inconvenientes del sistema HACCP</h3>
+<p>Controlar el proceso es más económico y eficaz que analizar el producto final. Ventajas principales:</p>
+<ul><li>Reduce costes y desperdicio</li><li>Traslada la gestión del riesgo a la propia empresa alimentaria</li><li>Usa indicadores de medición rápida (temperatura, tiempo, pH, humedad) y permite aplicar medidas correctoras antes de que el producto llegue al mercado</li><li>Aumenta la competitividad y la imagen de marca, al reforzar la confianza de consumidores y autoridades</li></ul>
+<p>La principal barrera es la capacitación técnica y la inversión inicial. Como inconvenientes se señalan la necesidad de personal cualificado para diseñar el sistema y la resistencia interna al cambio por la percepción de costes administrativos iniciales.</p>
+<h3 class="sub"><span>2.4</span>Principios generales del sistema HACCP</h3>
+<p>Los <b>7 principios del Codex</b> son la base científica de cualquier plan de inocuidad:</p>
+<ul><li><b>Principio 1, análisis de peligros</b>: identificar los peligros potenciales (biológicos, químicos, físicos y alérgenos) en cada etapa y las medidas de control correspondientes</li><li><b>Principio 2, determinar los PCC</b>: señalar las etapas en las que un control es esencial para prevenir, eliminar o reducir un peligro a un nivel aceptable</li><li><b>Principio 3, límites críticos</b>: criterios cuantificables, mínimos o máximos, que separan lo aceptable de lo inaceptable en cada PCC</li><li><b>Principio 4, vigilancia</b>: observaciones o mediciones planificadas para comprobar que el PCC está bajo control, con registro sistemático</li><li><b>Principio 5, medidas correctoras</b>: acciones cuando la vigilancia indica que un PCC no está bajo control, incluida la gestión del producto afectado</li><li><b>Principio 6, verificación</b>: métodos, pruebas y auditorías adicionales para confirmar que el sistema funciona</li><li><b>Principio 7, documentación y registro</b>: registros adecuados y accesibles que demuestren la aplicación de las medidas de control</li></ul>
+<h3 class="sub"><span>2.5</span>Implantación del sistema HACCP</h3>
+<p>La implantación consta de <b>12 etapas consecutivas</b>. Las siete últimas corresponden a los siete principios:</p>
+<ul><li><b>Equipo HACCP</b>: grupo multidisciplinar (procesos, microbiología, calidad, análisis físico-químico, higiene) que define los términos de referencia del estudio</li><li><b>Descripción del producto</b> (ingredientes, aditivos, estabilidad, proceso, envasado) y <b>uso esperado</b> por el consumidor y grupos diana</li><li><b>Diagrama de flujo</b> de todas las fases, desde la recepción de materias primas hasta la venta final, y su <b>verificación in situ</b> a pie de planta</li><li><b>Peligros y medidas preventivas (Principio 1)</b>, según probabilidad y gravedad en cada etapa</li><li><b>Determinación de los PCC (Principio 2)</b> mediante el árbol de decisiones</li><li><b>Límites críticos (Principio 3)</b> y <b>sistema de vigilancia (Principio 4)</b>, con mediciones periódicas o continuas por personal competente</li><li><b>Medidas correctoras (Principio 5)</b>, con procedimientos y registros obligatorios</li><li><b>Documentación y registro (Principio 7)</b>, proporcionado al tamaño de la empresa</li><li><b>Verificación y capacitación (Principio 6)</b>: auditorías internas y de la autoridad competente, con formación continua</li></ul>
+<h2 class="sec" id="apartado-3"><span class="n">03</span><span class="t">APLICACIÓN DEL SISTEMA HACCP EN LA INDUSTRIA AGROALIMENTARIA DE PRODUCTOS NO TRANSFORMADOS Y TRANSFORMADOS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>3.1</span>Productos no transformados: el ejemplo de las frutas y hortalizas frescas</h3>
+<p>Las frutas y hortalizas frescas exigen un control preventivo centrado en el riesgo microbiológico, con patógenos como <em>E. coli</em> (lechugas y vegetales de hoja) o <em>Cyclospora</em> (frutos rojos). En producción primaria es vector de riesgo todo elemento en contacto con el vegetal: agua de riego o lavado, estiércol, abonos orgánicos, higiene del personal, transporte y trazabilidad. De ahí se derivan los siguientes puntos de control:</p>
+<ul><li><b>Calidad del agua de riego y procesado</b>: las aguas subterráneas y superficiales pueden tener elevada carga patógena por contaminación fecal. Se supervisan el método de riego (el goteo presenta menor riesgo que la aspersión), el intervalo entre el último riego y la cosecha y la higienización de los tanques de lavado</li><li><b>Estiércol y enmiendas orgánicas</b>: exigen tratamientos activos (compostaje, pasteurización, secado térmico o digestión anaerobia) o pasivos que eliminen patógenos. El estiércol sin tratar se aplica con una antelación mínima de 60 a 120 días antes de la recolección</li><li><b>Higiene y salud de los manipuladores</b>: en España rige el <b>Real Decreto 109/2010</b>. Se excluye al personal con síntomas activos por <em>Salmonella</em> Typhi, <em>E. coli</em> u hepatitis A y se exige formación continuada en higiene</li><li><b>Transporte y distribución</b>: se inspeccionan cajas, contenedores y camiones (sin suciedad ni malos olores) y se mantiene la cadena de frío</li><li><b>Rastreo y trazabilidad</b>: identificar el lote es complejo por la vida útil corta de estos productos, que suelen consumirse antes de notificarse un brote. Acelerar el rastreo es clave para contener alertas de salud pública</li></ul>
+<h3 class="sub"><span>3.2</span>Productos transformados: el ejemplo de las conservas de vegetales</h3>
+<p>En las conservas vegetales el análisis de peligros se centra en el tratamiento térmico y el sellado de los envases. Son puntos clave la carga microbiana de la materia prima, la eficacia del tratamiento térmico y la calidad higiénica del agua de refrigeración. Los PCC son:</p>
+<ul><li><b>Recepción y acondicionamiento de la materia prima</b>: debe llegar limpia y sana, con la menor tierra o arena adherida (alta carga de esporas), y con control de la temperatura previa al proceso</li><li><b>Integridad y hermeticidad de los envases</b>: el desaireado previo (<em>exhausting</em>) reduce la corrosión y logra el vacío, y el cierre hermético (doble cierre) es un PCC de primer orden contra la recontaminación posterior al proceso</li><li><b>Tratamiento térmico (cocción botulínica)</b>: es el PCC principal. Busca destruir las esporas de <em>Clostridium botulinum</em> (reducción 12D) y el pH del alimento condiciona el baremo de esterilización<ul><li>Alimentos de baja acidez (pH &gt; 4,6): esterilización en autoclave a más de 121 °C</li><li>Productos acidificados (como el pimiento del piquillo): si no soportan esterilización extrema, se acidifican de forma controlada hasta pH &lt; 4,6 y se pasteurizan. Se controlan de forma continua temperatura, tiempo y curvas de penetración de calor en latas testigo</li></ul></li><li><b>Enfriamiento de envases</b>: el enfriamiento por aire requiere controlar la velocidad para evitar colapsos por presión. En el enfriamiento por agua, el más extendido, se garantiza agua potable clorada, con control del cloro residual libre, para evitar la recontaminación por microfugas durante la contracción del envase</li></ul>
+<h2 class="sec" id="apartado-4"><span class="n">04</span><span class="t">LEGISLACIÓN COMUNITARIA Y NACIONAL</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>4.1</span>Legislación comunitaria</h3>
+<p>El <b>Paquete de Higiene</b> armoniza la normativa europea sobre inocuidad bajo el enfoque &quot;de la granja a la mesa&quot;. Entró en vigor en 2006, extendió las obligaciones de higiene a la producción primaria e integró las antiguas directivas sectoriales en un marco único.</p>
+<p>El <b>Reglamento (CE) 178/2002</b> es la norma marco de la legislación alimentaria europea. Crea la Autoridad Europea de Seguridad Alimentaria (EFSA) y reparte responsabilidades: el operador debe garantizar la seguridad de los alimentos mediante el HACCP y la trazabilidad, y las autoridades competentes ejercen la tutela, el control oficial y la supervisión. También articula las herramientas de emergencia:</p>
+<ul><li>Sistema de Alerta Rápida para Alimentos y Piensos (<b>RASFF</b>), coordinado por la Comisión Europea para notificar riesgos entre Estados miembros</li><li>Medidas de emergencia y Planes Generales de Gestión de Crisis</li><li>Comité Permanente de Vegetales, Animales, Alimentos y Piensos (<b>Comité PAFF</b>), denominación actual del antiguo Comité Permanente de la Cadena Alimentaria</li></ul>
+<p>Los reglamentos específicos del Paquete de Higiene son:</p>
+<ul><li><b>Reglamento (CE) 852/2004</b>: requisitos generales de higiene para todos los productos alimenticios y obligación de implantar sistemas de autocontrol basados en los principios del HACCP, salvo en producción primaria, donde se aplican Buenas Prácticas de Higiene</li><li><b>Reglamento (CE) 853/2004</b>: normas específicas de higiene para los alimentos de origen animal</li><li><b>Reglamento (UE) 2017/625</b>: controles oficiales y demás actividades oficiales en alimentos y piensos, que derogó los Reglamentos (CE) 854/2004 y 882/2004 y ha sido actualizado en aspectos logísticos y aduaneros por Reglamentos Delegados como el (UE) 2019/2127</li></ul>
+<h3 class="sub"><span>4.2</span>Legislación nacional</h3>
+<p>La normativa nacional adapta los reglamentos europeos al marco español:</p>
+<ul><li><b>Real Decreto 640/2006</b>: condiciones de aplicación en España de los reglamentos comunitarios del Paquete de Higiene</li><li><b>AESAN</b>: la Agencia Española de Seguridad Alimentaria y Nutrición, creada por la <b>Ley 11/2001</b>, es un Organismo Autónomo adscrito al Ministerio de Derechos Sociales, Consumo y Agenda 2030 (según los Reales Decretos 495/2020 y 209/2024). Comparte las competencias de protección al consumidor con la Dirección General de Consumo del mismo departamento</li></ul>
+<h3 class="sub"><span>4.3</span>Legislación internacional</h3>
+<p>La norma <b>UNE-EN ISO 22000:2018</b> integra los principios del HACCP en un sistema global de gestión de la seguridad alimentaria, con la finalidad de armonizar a escala internacional los requisitos de inocuidad en toda la cadena de suministro. Combina la metodología del Codex Alimentarius con la estructura de alto nivel de las normas de gestión. Sus objetivos son:</p>
+<ul><li>Reforzar la protección del consumidor y su confianza</li><li>Integrar los Programas de Prerrequisitos (PPR) con los principios del HACCP y la gestión del riesgo operativo</li><li>Facilitar la certificación voluntaria y la trazabilidad internacional entre productores, industria, distribuidores y Administraciones</li></ul>
+<h2 class="sec" id="apartado-5"><span class="n">05</span><span class="t">CONCLUSIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>El HACCP es el eje de la inocuidad alimentaria en el comercio mundial. Tras más de tres décadas de aplicación y su exigencia obligatoria en la UE desde el Reglamento (CE) 852/2004, su enfoque preventivo sobre el proceso ha resultado más eficaz y económico que los controles analíticos del producto final. La revisión del Codex (CXC 1-1969) con la cultura de inocuidad y la norma ISO 22000:2018 muestran su evolución continua.</p>
+<p>Para el Servicio de Inspección SOIVRE, el control del HACCP es un pilar de la supervisión del comercio exterior: verificar la implantación del autocontrol y comprobar la trazabilidad de los operadores es determinante en las inspecciones de inocuidad y calidad comercial de las mercancías de importación y exportación.</p>
+  </div>
+  <footer class="pie"><span>Esquema propio a partir del tema desarrollado</span><span class="url">sergioargudo.es</span></footer>
+</main>
+</body>
+</html>

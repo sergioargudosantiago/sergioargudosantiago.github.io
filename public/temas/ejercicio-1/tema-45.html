@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-1/tema-45.md. No editar a mano. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 45. Control oficial de productos alimenticios — esquema del ejercicio 1</title>
+<link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="stylesheet" href="../../../css/fuentes.css">
+<style>
+@page { size: A4; margin: 14mm 12.5mm 15mm;
+  @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #D9DED6; font-family: 'Public Sans', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #C8A951; outline-offset: 2px; }
+
+/* Barra superior (solo pantalla) */
+.barra { background: #3B4533; color: #C2D9C2; }
+.barra-in { max-width: 210mm; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.barra a { color: #C2D9C2; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.barra a:hover { color: #FFFFFF; }
+.barra .marca { font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: .14em; font-size: 13px; color: #FFFFFF; }
+.barra .acciones { display: flex; gap: 10px; align-items: center; }
+.barra .boton { background: #E0C46B; color: #1F2A1D; font-weight: 700; padding: 0 14px; box-shadow: 3px 3px 0 #1F2A1D; }
+.barra .boton:hover { background: #FFFFFF; color: #1F2A1D; }
+
+/* Hoja */
+.hoja { max-width: 210mm; margin: 20px auto 40px; padding: 40px 47px 28px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.5; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+/* Los enunciados del BOE pueden ser largos: el título baja de cuerpo por tramos. */
+h1.largo { font-size: 28px; line-height: 1.12; }
+h1.muy-largo { font-size: 23px; line-height: 1.16; }
+.enunciado { margin: 3px 0 2px; max-width: 78ch; font-size: 14.5px; line-height: 1.42; color: #4A5546; text-wrap: pretty; }
+.sub-cab { font-size: 14px; color: #4A5546; }
+.sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+
+.indice { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.indice a { display: flex; flex-direction: column; gap: 1px; height: 100%; padding: 6px 9px; background: #3B4533; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.indice a:hover { background: #1F2A1D; }
+.indice b { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 13px; color: #E0C46B; letter-spacing: 0; }
+
+/* Cuerpo del esquema */
+.esq { min-width: 0; }
+.sec { margin: 26px 4px 12px 0; display: flex; align-items: stretch; background: #3B4533; color: #FFFFFF; box-shadow: 4px 4px 0 #A8862F; font-size: 16px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; scroll-margin-top: 12px; break-inside: avoid; break-after: avoid; }
+.esq > .sec:first-child { margin-top: 0; }
+.sec .n { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0; background: #E0C46B; color: #1F2A1D; min-width: 46px; display: flex; align-items: center; justify-content: center; }
+.sec .t { padding: 9px 12px; display: flex; align-items: center; flex-grow: 1; min-width: 0; }
+.sec .px { display: flex; align-items: flex-end; gap: 3px; padding: 0 10px 8px 0; }
+.sec .px i { display: block; width: 5px; height: 5px; background: #E0C46B; }
+.sec .px i:nth-child(2) { height: 9px; opacity: .7; }
+.sec .px i:nth-child(3) { height: 13px; opacity: .45; }
+.sub { margin: 16px 0 5px; font-size: 1em; font-weight: 700; line-height: 1.3; display: flex; align-items: baseline; gap: 8px; break-after: avoid; }
+.sub span { flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: .78em; color: #3B4533; background: #EEF3EB; border: 1px solid #3B4533; box-shadow: 2px 2px 0 #C9D1C5; padding: 0 5px; }
+.sub::after { content: ""; flex: 1 0 24px; align-self: center; border-bottom: 2px dotted #C9D1C5; }
+h4.sub { font-size: .94em; margin-top: 12px; }
+h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
+.sec + .sub { margin-top: 0; }
+.esq p { margin: 6px 0; }
+.esq ul, .esq ol { margin: 0; padding-left: 18px; }
+.esq li { margin: 2px 0; }
+.esq li::marker { color: #A8862F; }
+.esq ol > li::marker { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.esq li > ul { list-style: none; padding-left: 16px; }
+.esq li > ul > li { position: relative; }
+.esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
+.esq b { font-weight: 700; }
+
+.pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; }
+
+@media screen and (min-width: 821px) {
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+}
+@media screen and (max-width: 820px) {
+  .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
+  h1 { font-size: 27px; }
+  h1.largo { font-size: 23px; }
+  h1.muy-largo { font-size: 20px; }
+  .enunciado { font-size: 14px; }
+  .sello { min-width: 74px; padding: 6px 10px; }
+  .sello b { font-size: 22px; }
+  .sec { font-size: 14.5px; }
+}
+
+/* Impresión y PDF: dos columnas, cuerpo pequeño, sin barra ni pie propio (el pie
+   y la numeración van en los márgenes de @page). */
+@media print {
+  body { background: #FFFFFF; }
+  .barra, .pie { display: none; }
+  .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
+  h1 { font-size: 31px; }
+  h1.largo { font-size: 25px; }
+  h1.muy-largo { font-size: 21px; }
+  .enunciado { max-width: none; font-size: 11.5px; line-height: 1.36; }
+  .sub-cab { font-size: 13px; }
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+  .indice a { padding: 5px 8px; font-size: 9.5px; }
+  .indice b { font-size: 12px; }
+  .esq { column-count: 2; column-gap: 24px; }
+  .sec { font-size: 12.5px; margin: 14px 4px 9px 0; }
+  .sec .n { font-size: 15px; min-width: 38px; }
+  .sec .t { padding: 6px 10px; }
+  .sub { margin: 9px 0 3px; }
+  .esq li { margin: 1px 0; }
+  .esq ul, .esq ol { padding-left: 14px; }
+  .esq li > ul { padding-left: 14px; }
+  .esq li > ul > li::before { left: -11px; }
+}
+
+@page { @bottom-left { content: "Esquema · Tema 45. Control oficial de productos alimenticios"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
+    <div class="acciones"><a class="boton" href="tema-45.pdf" download="Esquema tema 45 (ejercicio 1).pdf">Descargar PDF</a></div>
+  </div>
+</header>
+<main class="hoja">
+  <div class="cab">
+    <div class="cab-txt">
+      <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
+      <h1>Control oficial de productos alimenticios</h1>
+      <p class="enunciado">Legislación comunitaria y nacional. La reglamentación de la UE sobre el control de frutas y hortalizas frescas. Control a la importación de productos ecológicos.</p>
+      <div class="sub-cab">Ejercicio 1 · Esquema del tema 45 · Actualizado el <time datetime="2026-08-23">23 de agosto de 2026</time></div>
+    </div>
+    <div class="sello" aria-label="Ejercicio 1, tema 45"><span>EJ. 1 · TEMA</span><b>45</b></div>
+  </div>
+  <nav aria-label="Apartados del esquema"><ol class="indice" style="--cols: 6"><li><a href="#apartado-1"><b>01</b>INTRODUCCIÓN</a></li><li><a href="#apartado-2"><b>02</b>CONTROL OFICIAL DE ALIMENTOS</a></li><li><a href="#apartado-3"><b>03</b>CONTROL DE LA SEGURIDAD ALIMENTARIA</a></li><li><a href="#apartado-4"><b>04</b>CONTROL DE LA CALIDAD COMERCIAL</a></li><li><a href="#apartado-5"><b>05</b>CONTROL A LA IMPORTACIÓN DE PRODUCTOS ECOLÓGICOS</a></li><li><a href="#apartado-6"><b>06</b>CONCLUSIÓN</a></li></ol></nav>
+  <div class="esq">
+<h2 class="sec" id="apartado-1"><span class="n">01</span><span class="t">INTRODUCCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>La legislación alimentaria española protege la vida y la salud de las personas, los intereses de los consumidores, la salud y el bienestar de los animales, la sanidad vegetal y el medioambiente, y garantiza la libre circulación de alimentos y piensos en el Mercado Único. Su cumplimiento por los operadores se verifica mediante controles oficiales de las autoridades competentes. El tema recorre el control oficial, el de la seguridad alimentaria y el de la calidad comercial, con referencia a las frutas y hortalizas frescas (FHF).</p>
+<h2 class="sec" id="apartado-2"><span class="n">02</span><span class="t">CONTROL OFICIAL DE ALIMENTOS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p><b>Control oficial.</b> Según el art. 2 del <b>Reglamento (UE) 2017/625</b>, que derogó el Reglamento (CE) 882/2004, es toda forma de control de la autoridad competente para verificar el cumplimiento de la legislación sobre alimentos y piensos y de las normas de salud y bienestar animal.</p>
+<p>Los Estados miembros garantizan controles regulares, basados en el análisis de riesgos y con la frecuencia apropiada. El art. 5 fija los criterios de ese análisis:</p>
+<ul><li>Los riesgos identificados en animales, piensos, alimentos, empresas o procesos</li><li>El historial de cumplimiento del explotador</li><li>La fiabilidad de los autocontroles ya realizados</li><li>Cualquier dato que pueda indicar un incumplimiento</li></ul>
+<p>Los controles se efectúan sin previo aviso, salvo casos como las auditorías, que exigen notificación previa. También pueden hacerse controles ad hoc.</p>
+<p>La <b>Ley 17/2011</b>, de seguridad alimentaria y nutrición, regula en su capítulo VI los laboratorios de control oficial. Los laboratorios nacionales de referencia mantienen actualizadas las técnicas de determinación de residuos y contaminantes. Prevé una Red de Laboratorios de Control Oficial, abierta a laboratorios públicos o privados designados.</p>
+<p><b>Autoridad competente</b> (art. 3 de la Ley 17/2011). La forman:</p>
+<ul><li>Los órganos de las Comunidades Autónomas y de Ceuta y Melilla</li><li>Los órganos de la Administración General del Estado para la coordinación y la sanidad exterior</li><li>Los órganos de las entidades locales, en las funciones que les encomienden la Ley 7/1985 y las leyes sectoriales</li></ul>
+<h2 class="sec" id="apartado-3"><span class="n">03</span><span class="t">CONTROL DE LA SEGURIDAD ALIMENTARIA</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>La UE ha hecho de la seguridad alimentaria una gran prioridad, integrada en la PAC, el medioambiente, la salud pública, la protección de los consumidores y el Mercado Interior. El marco jurídico cubre toda la cadena bajo el principio «de la granja a la mesa».</p>
+<p>El <b>Reglamento (CE) 178/2002</b> es el fundador de la nueva legislación alimentaria y crea la EFSA. Establece la separación entre evaluación y gestión del riesgo, el análisis de riesgos basado en pruebas científicas, el derecho a una información clara y transparente, la responsabilidad primaria de los explotadores y la trazabilidad en todas las etapas.</p>
+<p>De esta norma marco deriva el <b>Paquete de Higiene</b>, que incluye:</p>
+<ul><li><b>Reglamento (CE) 852/2004</b>, higiene de los productos alimenticios</li><li><b>Reglamento (CE) 853/2004</b>, higiene de los alimentos de origen animal</li><li><b>Reglamento (UE) 2017/625</b>, controles oficiales, que derogó los Reglamentos (CE) 854/2004 y 882/2004</li><li><b>Reglamento (CE) 183/2005</b>, higiene de los piensos</li><li>Complementarios como el Reglamento (CE) 2073/2005 (criterios microbiológicos)</li></ul>
+<h3 class="sub"><span>3.1</span>Descripción del control de la seguridad alimentaria</h3>
+<p>El Reglamento (UE) 2017/625 es la pieza clave del control oficial. Persigue prevenir, eliminar o reducir a niveles aceptables los riesgos para la salud humana, animal y vegetal, y garantizar prácticas leales en el comercio y la protección de los consumidores. No regula los controles de las normas de comercialización de la OCM. Exige además planes de contingencia para emergencias alimentarias y sistemas de auditoría interna.</p>
+<p>Para el comercio exterior de alimentos de origen no animal y piensos, establece estos principios:</p>
+<ul><li>Controles regulares a la importación en cualquier fase, antes o después del despacho a libre práctica</li><li>Listas europeas de alimentos de alto riesgo no animal, con controles reforzados en frontera</li><li>Tres tipos de control: documental, de identidad y físico</li><li>Posible homologación de controles en origen en terceros países, para reducir la frecuencia de control en las fronteras de la UE</li></ul>
+<p>El <b>Plan Nacional de Control Plurianual</b> es obligatorio en todos los Estados miembros (art. 109). En España está operativo el <b>PNCOCA 2026-2030</b>, que coordina cuatro Ministerios: MAPA, Derechos Sociales, Consumo y Agenda 2030 (al que se adscribe la AESAN), Sanidad, y Economía, Comercio y Empresa. Tiene <b>5 objetivos estratégicos y 54 programas</b> de control, desde la producción primaria hasta la venta al consumidor, y es la garantía técnica para los protocolos de exportación a terceros países.</p>
+<p>La Dirección de Auditorías y Análisis Sanitarios y Alimentarios de la Comisión audita periódicamente el sistema español y puede controlar también en terceros países, exigiéndoles planes de control similares a los europeos. Si un Estado miembro presenta defectos graves, la Comisión puede suspender la comercialización o fijar condiciones especiales.</p>
+<p>La organización institucional de la UE se apoya en tres pilares:</p>
+<ul><li><b>Comité PAFF</b>, órgano regulador presidido por la Comisión y formado por representantes de los Estados miembros</li><li><b>EFSA</b>, organismo científico independiente que evalúa riesgos</li><li><b>DG SANTE</b> (Dirección de Auditorías y Análisis Sanitarios y Alimentarios), que controla in situ los sistemas de verificación en Estados miembros y terceros países exportadores</li></ul>
+<h3 class="sub"><span>3.2</span>La Autoridad Europea de Seguridad Alimentaria</h3>
+<p>La <b>EFSA</b>, con sede en Parma (Italia), es la fuente independiente de asesoramiento científico y comunicación sobre los riesgos de la cadena alimentaria. Sus funciones son:</p>
+<ul><li>Dar dictámenes científicos y asistencia técnica a las instituciones comunitarias y a los Estados miembros</li><li>Evaluar la seguridad de sustancias sujetas a autorización previa o listas positivas (aditivos, enzimas, OGM, alegaciones nutricionales)</li><li>Encargar y coordinar estudios científicos evitando duplicidades</li><li>Apoyar científicamente la Red de Alerta Rápida para Alimentos y Piensos (RASFF), cuya gestión operativa corresponde a la Comisión (DG SANTE)</li><li>Promover una comunicación transparente del riesgo</li></ul>
+<h3 class="sub"><span>3.3</span>Dirección de Auditorías y Análisis Sanitarios y Alimentarios</h3>
+<p>Integrada en la DG SANTE, supervisa la aplicación de la legislación mediante auditorías e inspecciones in situ en Estados miembros y terceros países. Actúa en cuatro ámbitos:</p>
+<ul><li>Productos de origen animal: sistemas de control, medicamentos veterinarios, residuos y condiciones de importación</li><li>Productos de origen vegetal: residuos de plaguicidas (LMR) en frutas y hortalizas e integridad de la producción ecológica</li><li>Sanidad vegetal, salud y bienestar animal: epizootias, bienestar en transporte y sacrificio, y plagas de cuarentena</li><li>Productos sanitarios: auditoría del marco regulatorio específico delegado</li></ul>
+<h3 class="sub"><span>3.4</span>Aplicación en España</h3>
+<p>Los Reglamentos de la UE se aplican directamente. España tiene además su propia normativa de desarrollo:</p>
+<ul><li><b>Real Decreto 562/2025</b>, marco nacional que complementa el Reglamento (UE) 2017/625. Incorpora la digitalización, los controles oficiales a distancia y la Comisión Nacional de Coordinación del PNCOCA. Deroga expresamente el Real Decreto 1749/1998 y de forma general el Real Decreto 1945/1983</li><li><b>Ley 17/2011</b>, derecho a la seguridad alimentaria, Red de Laboratorios de Control Oficial y estrategia contra la obesidad</li><li><b>Real Decreto 49/1993</b>, controles veterinarios intracomunitarios, con el control en destino a cargo de las Comunidades Autónomas</li><li><b>Real Decreto 1977/1999</b>, controles veterinarios a la importación de productos de origen animal, con actuaciones en los Puestos de Control Fronterizo (PCF, antes PIF)</li><li><b>Ley 43/2002</b> de Sanidad Vegetal y <b>Real Decreto 58/2005</b>, inspecciones fitosanitarias a la importación y exportación gestionadas por el MAPA, en consonancia con el Reglamento (UE) 2016/2031</li><li><b>Real Decreto 1418/1986</b>, competencias de Sanidad Exterior del Ministerio de Sanidad sobre los alimentos en el comercio internacional</li></ul>
+<h3 class="sub"><span>3.5</span>Agencia Española de Seguridad Alimentaria y Nutrición (AESAN)</h3>
+<p>La <b>AESAN</b> es el organismo autónomo de referencia nacional en evaluación y comunicación de riesgos alimentarios. Está adscrita orgánicamente al Ministerio de Derechos Sociales, Consumo y Agenda 2030 (Secretaría General de Consumo y Juego) y vinculada funcionalmente también a Sanidad y al MAPA. Su estatuto es el <b>Real Decreto 697/2022</b>.</p>
+<ul><li>Objetivos: promover la seguridad alimentaria con garantías e información objetiva, y fomentar la educación y la promoción de la salud en nutrición, en particular contra la obesidad</li><li>Funciones:<ul><li>Punto de contacto nacional del sistema comunitario RASFF</li><li>Coordinar la red de alerta nacional (SCIRI) y la red internacional INFOSAN</li><li>Evaluar los riesgos y coordinar la ejecución homogénea de los programas de control entre las Comunidades Autónomas</li></ul></li></ul>
+<h2 class="sec" id="apartado-4"><span class="n">04</span><span class="t">CONTROL DE LA CALIDAD COMERCIAL</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Hay que distinguir entre el control de la calidad comercial de los alimentos en general y el que verifica las normas de comercialización de la OCM Única, establecida en el <b>Reglamento (UE) 1308/2013</b>.</p>
+<h3 class="sub"><span>4.1</span>Calidad comercial de los alimentos</h3>
+<p>Este control abarca la generalidad de los alimentos del mercado interior. Lo regulan el Reglamento (UE) 2017/625, el <b>Real Decreto 562/2025</b> (que sustituye, en lo pertinente, al Real Decreto 1945/1983) y la Ley 17/2011. Lo ejercen las Comunidades Autónomas, coordinadas por el MAPA.</p>
+<p>La <b>Mesa de Coordinación de la Calidad Alimentaria</b> es el órgano de coordinación interterritorial. La integran los Servicios Autonómicos de Control de la Calidad y Defensa contra Fraudes y la Dirección General de la Industria Alimentaria del MAPA, con expertos del sector con voz pero sin voto. Se reúne en pleno al menos una vez por semestre.</p>
+<p>Coordina el Programa de Control de la Calidad Comercial Alimentaria, incluido en el PNCOCA 2026-2030. Junto con los esquemas de Calidad Diferenciada (DOP, IGP y ETG) y de Producción Ecológica, forma un Plan Plurianual de Control de la Calidad Comercial que busca la lealtad en las transacciones, la unidad de mercado y la calidad en origen.</p>
+<h3 class="sub"><span>4.2</span>Normas de comercialización según la OCM</h3>
+<p>El Reglamento (UE) 1308/2013, que derogó el Reglamento (CE) 1234/2007, prevé normas de comercialización sobre calidad, clasificación, peso, calibre, envase, presentación, origen y etiquetado. El Reglamento (UE) 2017/625 excluye de su ámbito el control de estas normas.</p>
+<p>Desde el 1 de enero de 2025 las normas y los controles de conformidad de las FHF los regulan el <b>Reglamento Delegado (UE) 2023/2429</b> y el <b>Reglamento de Ejecución (UE) 2023/2430</b>, que derogaron el Reglamento de Ejecución (UE) 543/2011. El primero prevé excepciones y exenciones, y amplía los supuestos con menor carga burocrática, como la donación de alimentos. Quedan exentos, entre otros:</p>
+<ul><li>Los productos destinados a transformación industrial, alimentación animal u otros usos no alimentarios, con la mención correspondiente</li><li>Los destinados a donación de alimentos</li><li>Los que el productor cede en su explotación al consumidor para sus necesidades personales</li><li>Los vendidos al por menor en la misma región o para un consumo local tradicional, previa autorización de la Comisión</li><li>Los «listos para consumir» o «listos para cocinar» (IV Gama) y los brotes comestibles</li><li>Los vendidos o enviados entre productor, centros de almacenamiento y centros de envasado dentro de la misma región</li></ul>
+<h3 class="sub"><span>4.3</span>Autoridades y Organismos de Control</h3>
+<p>Cada Estado miembro designa una autoridad única de coordinación. En España es la <b>Subdirección General de Inspección, Certificación y Asistencia Técnica del Comercio Exterior</b> (Secretaría de Estado de Comercio del MECE), según el Real Decreto 175/2004.</p>
+<p>Para el comercio exterior con terceros países, la <b>Orden de 31 de julio de 1989</b> designa a los Servicios de Inspección SOIVRE de las Direcciones Territoriales y Provinciales de Comercio como organismo competente. Existe además una base de datos nacional de agentes económicos que comercializan FHF.</p>
+<h3 class="sub"><span>4.4</span>Tipos de Controles de Conformidad</h3>
+<ul><li>Mercado interior: control por muestreo basado en el análisis de riesgo. Los agentes de menor riesgo pueden obtener autorización de autocontrol por periodos mínimos de un año prorrogable</li><li>Exportación: antes de la salida del territorio aduanero, el organismo de control verifica la conformidad y emite el Certificado de Conformidad, exigible para el despacho aduanero</li><li>Importación: antes del despacho a libre práctica se controla la conformidad para expedir el certificado. En partidas de muy bajo riesgo pueden reducirse las frecuencias</li></ul>
+<p>Los controles hechos en origen por terceros países pueden ser homologados por la Comisión tras auditorías técnicas, lo que permite reducir las frecuencias de control a la importación en la UE.</p>
+<p>Para productos destinados a transformación industrial se expide un <b>Certificado de Destino Industrial</b>, que la empresa transformadora debe devolver para acreditar que no se desviaron a fresco.</p>
+<h3 class="sub"><span>4.5</span>Métodos de Control</h3>
+<ul><li>Control documental y de identidad: verificación de la documentación y de su correspondencia con el lote</li><li>Control físico: inspección visual y analítica por muestreo del lote (Circuito Rojo)</li></ul>
+<p>Con resultado de conformidad se emite el Certificado de Conformidad. Con no conformidad se levanta Acta de No Conformidad y las mercancías quedan retenidas, sin poder movilizarse sin autorización del SOIVRE, que puede condicionar su destino a reetiquetado, subsanación, transformación industrial, alimentación animal o destrucción. Si la no conformidad es en importación o en tránsito hacia otros Estados miembros, se notifica a la Comisión y a los países afectados.</p>
+<p>Existen <b>10 normas de comercialización específicas</b> para los productos de mayor volumen: manzanas, cítricos, kiwi, lechugas, melocotones y nectarinas, pimientos, fresas, uvas de mesa, tomates y peras. El resto se rige por la Norma General de Comercialización.</p>
+<p>La <b>Orden PRE/3026/2003</b>, modificada por la Orden ECC/2257/2013 y la Orden ECC/2566/2015, es la norma nacional de referencia para la actuación del SOIVRE en el control de calidad comercial en el comercio exterior. Regula las obligaciones de los operadores, las solicitudes de inspección, los puntos habilitados y la operativa de control.</p>
+<h2 class="sec" id="apartado-5"><span class="n">05</span><span class="t">CONTROL A LA IMPORTACIÓN DE PRODUCTOS ECOLÓGICOS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>La <b>Orden ECC/1936/2014</b> regula a nivel nacional el control a la importación de productos ecológicos de terceros países, y su ejecución in situ corresponde al SOIVRE. Se aplica a productos de agricultura y acuicultura destinados a comercializarse como ecológicos: productos agrarios vivos o no transformados, transformados para alimentación humana, piensos, material de reproducción vegetativa y semillas, y levaduras. Los productos de la caza y de la pesca extractiva de animales salvajes quedan excluidos.</p>
+<h3 class="sub"><span>5.1</span>Digitalización y Procedimiento Adicional (PUE ECO)</h3>
+<p>Antes del despacho a libre práctica, el SOIVRE efectúa el control documental, de identidad y físico. La gestión telemática es obligatoria a través del <b>PUE ECO</b> (Punto Único de Entrada para productos ecológicos), ventanilla única aduanera desarrollada por la AEAT e integrada con las plataformas del SOIVRE y con TRACES. Tras verificar el Certificado de Inspección (COI), se emite automáticamente en la declaración aduanera el Certificado SOIVRE de Control Ecológico.</p>
+<p>Si el dictamen es de no conformidad, la mercancía no puede comercializarse como ecológica. El importador puede retirar del etiquetado y la documentación las menciones, marcas y logotipos ecológicos para despacharla como producto convencional.</p>
+<h3 class="sub"><span>5.2</span>Marco Europeo: Reglamento (UE) 2018/848</h3>
+<p>El <b>Reglamento (UE) 2018/848</b> determina el marco de la producción ecológica y su importación, y derogó el Reglamento (CE) 834/2007. Supuso pasar de un modelo de «equivalencia» a un régimen basado con carácter general en la plena conformidad de los operadores de terceros países. Para importarse como ecológico, el producto debe estar en una de estas situaciones:</p>
+<ul><li><b>Plena conformidad</b> (art. 46): cumplimiento íntegro de las normas de la UE, verificado por autoridades u organismos de control reconocidos por la Comisión</li><li><b>Acuerdos comerciales de equivalencia</b> (art. 47): países con acuerdos internacionales bilaterales con la UE</li><li><b>Régimen transitorio de países reconocidos</b> (art. 48): equivalencia heredada del Reglamento (CE) 834/2007, cuyo periodo de transición se extingue el <b>31 de diciembre de 2026</b></li></ul>
+<p>En España el SOIVRE es la autoridad competente para el control oficial físico y documental en frontera, y la Dirección General de la Industria Alimentaria (MAPA) lo es para la gestión institucional y las autorizaciones de importación. El desarrollo se completa con el <b>Reglamento de Ejecución (UE) 2021/2307</b> (notificaciones y documentos) y el <b>Reglamento de Ejecución (UE) 2021/1378</b> (listas de organismos de control y certificados de inspección).</p>
+<h2 class="sec" id="apartado-6"><span class="n">06</span><span class="t">CONCLUSIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>El control oficial de alimentos en España se articula sobre un doble pilar. El Reglamento (UE) 2017/625 y el Real Decreto 562/2025 forman un marco unificado para la seguridad alimentaria, y el control de la calidad comercial tiene sus propios instrumentos: el Reglamento Delegado (UE) 2023/2429, el Reglamento de Ejecución (UE) 2023/2430 y la Orden PRE/3026/2003 para el SOIVRE. A ello se suma el control de productos ecológicos, que pasa de la equivalencia a la plena conformidad, tránsito que culmina a finales de 2026 con la extinción de los últimos reconocimientos de equivalencia heredados.</p>
+  </div>
+  <footer class="pie"><span>Esquema propio a partir del tema desarrollado</span><span class="url">sergioargudo.es</span></footer>
+</main>
+</body>
+</html>
