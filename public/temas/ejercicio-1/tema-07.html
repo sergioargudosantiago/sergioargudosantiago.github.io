@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-1/tema-07.md. No editar a mano. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 7. Sector de productos de la pesca — esquema del ejercicio 1</title>
+<link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="stylesheet" href="../../../css/fuentes.css">
+<style>
+@page { size: A4; margin: 14mm 12.5mm 15mm;
+  @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #D9DED6; font-family: 'Public Sans', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #C8A951; outline-offset: 2px; }
+
+/* Barra superior (solo pantalla) */
+.barra { background: #3B4533; color: #C2D9C2; }
+.barra-in { max-width: 210mm; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.barra a { color: #C2D9C2; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.barra a:hover { color: #FFFFFF; }
+.barra .marca { font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: .14em; font-size: 13px; color: #FFFFFF; }
+.barra .acciones { display: flex; gap: 10px; align-items: center; }
+.barra .boton { background: #E0C46B; color: #1F2A1D; font-weight: 700; padding: 0 14px; box-shadow: 3px 3px 0 #1F2A1D; }
+.barra .boton:hover { background: #FFFFFF; color: #1F2A1D; }
+
+/* Hoja */
+.hoja { max-width: 210mm; margin: 20px auto 40px; padding: 40px 47px 28px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.5; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+.sub-cab { font-size: 14px; color: #4A5546; }
+.sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+
+.indice { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.indice a { display: flex; flex-direction: column; gap: 1px; height: 100%; padding: 6px 9px; background: #3B4533; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.indice a:hover { background: #1F2A1D; }
+.indice b { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 13px; color: #E0C46B; letter-spacing: 0; }
+
+/* Cuerpo del esquema */
+.esq { min-width: 0; }
+.sec { margin: 26px 4px 12px 0; display: flex; align-items: stretch; background: #3B4533; color: #FFFFFF; box-shadow: 4px 4px 0 #A8862F; font-size: 16px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; scroll-margin-top: 12px; break-inside: avoid; break-after: avoid; }
+.esq > .sec:first-child { margin-top: 0; }
+.sec .n { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0; background: #E0C46B; color: #1F2A1D; min-width: 46px; display: flex; align-items: center; justify-content: center; }
+.sec .t { padding: 9px 12px; display: flex; align-items: center; flex-grow: 1; min-width: 0; }
+.sec .px { display: flex; align-items: flex-end; gap: 3px; padding: 0 10px 8px 0; }
+.sec .px i { display: block; width: 5px; height: 5px; background: #E0C46B; }
+.sec .px i:nth-child(2) { height: 9px; opacity: .7; }
+.sec .px i:nth-child(3) { height: 13px; opacity: .45; }
+.sub { margin: 16px 0 5px; font-size: 1em; font-weight: 700; line-height: 1.3; display: flex; align-items: baseline; gap: 8px; break-after: avoid; }
+.sub span { flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: .78em; color: #3B4533; background: #EEF3EB; border: 1px solid #3B4533; box-shadow: 2px 2px 0 #C9D1C5; padding: 0 5px; }
+.sub::after { content: ""; flex: 1 0 24px; align-self: center; border-bottom: 2px dotted #C9D1C5; }
+h4.sub { font-size: .94em; margin-top: 12px; }
+h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
+.sec + .sub { margin-top: 0; }
+.esq p { margin: 6px 0; }
+.esq ul, .esq ol { margin: 0; padding-left: 18px; }
+.esq li { margin: 2px 0; }
+.esq li::marker { color: #A8862F; }
+.esq ol > li::marker { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.esq li > ul { list-style: none; padding-left: 16px; }
+.esq li > ul > li { position: relative; }
+.esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
+.esq b { font-weight: 700; }
+
+.pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; }
+
+@media screen and (min-width: 821px) {
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+}
+@media screen and (max-width: 820px) {
+  .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
+  h1 { font-size: 27px; }
+  .sello { min-width: 74px; padding: 6px 10px; }
+  .sello b { font-size: 22px; }
+  .sec { font-size: 14.5px; }
+}
+
+/* Impresión y PDF: dos columnas, cuerpo pequeño, sin barra ni pie propio (el pie
+   y la numeración van en los márgenes de @page). */
+@media print {
+  body { background: #FFFFFF; }
+  .barra, .pie { display: none; }
+  .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
+  h1 { font-size: 31px; }
+  .sub-cab { font-size: 13px; }
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+  .indice a { padding: 5px 8px; font-size: 9.5px; }
+  .indice b { font-size: 12px; }
+  .esq { column-count: 2; column-gap: 24px; }
+  .sec { font-size: 12.5px; margin: 14px 4px 9px 0; }
+  .sec .n { font-size: 15px; min-width: 38px; }
+  .sec .t { padding: 6px 10px; }
+  .sub { margin: 9px 0 3px; }
+  .esq li { margin: 1px 0; }
+  .esq ul, .esq ol { padding-left: 14px; }
+  .esq li > ul { padding-left: 14px; }
+  .esq li > ul > li::before { left: -11px; }
+}
+
+@page { @bottom-left { content: "Esquema · Tema 7. Sector de productos de la pesca"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
+    <div class="acciones"><a class="boton" href="tema-07.pdf" download="Esquema tema 7 (ejercicio 1).pdf">Descargar PDF</a></div>
+  </div>
+</header>
+<main class="hoja">
+  <div class="cab">
+    <div class="cab-txt">
+      <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
+      <h1>Sector de productos de la pesca</h1>
+      <div class="sub-cab">Ejercicio 1 · Esquema del tema 7 · Actualizado el <time datetime="2026-10-12">12 de octubre de 2026</time></div>
+    </div>
+    <div class="sello" aria-label="Ejercicio 1, tema 7"><span>EJ. 1 · TEMA</span><b>7</b></div>
+  </div>
+  <nav aria-label="Apartados del esquema"><ol class="indice" style="--cols: 5"><li><a href="#apartado-1"><b>01</b>INTRODUCCIÓN</a></li><li><a href="#apartado-2"><b>02</b>DESCRIPCIÓN Y DESIGNACIÓN DE LOS PRINCIPALES PRODUCTOS</a></li><li><a href="#apartado-3"><b>03</b>FACTORES DE CALIDAD COMERCIAL</a></li><li><a href="#apartado-4"><b>04</b>ANÁLISIS SECTORIAL</a></li><li><a href="#apartado-5"><b>05</b>NORMATIVA APLICABLE</a></li><li><a href="#apartado-6"><b>06</b>DESCRIPCIÓN Y DESIGNACIÓN DE CONSERVAS, SEMICONSERVAS Y SALAZONES DE PESCADO</a></li><li><a href="#apartado-7"><b>07</b>FACTORES DE CALIDAD COMERCIAL</a></li><li><a href="#apartado-8"><b>08</b>ANÁLISIS SECTORIAL</a></li><li><a href="#apartado-9"><b>09</b>NORMATIVA APLICABLE</a></li><li><a href="#apartado-10"><b>10</b>CONCLUSIÓN</a></li></ol></nav>
+  <div class="esq">
+<h2 class="sec" id="apartado-1"><span class="n">01</span><span class="t">INTRODUCCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>El sector pesquero se distingue del resto de sectores agroalimentarios porque su materia prima depende de un recurso natural limitado y compartido, que debe gestionarse con criterios de sostenibilidad biológica. Eso condiciona todo su marco normativo, articulado en torno a la <b>Política Pesquera Común (PPC)</b> y a los <b>Totales Admisibles de Captura (TAC)</b> y sus cuotas nacionales, que el Consejo de la UE fija cada año a partir de los dictámenes del CIEM/ICES y del CCTEP.</p>
+<p>En 2025 el sector representó el <b>15,7 %</b> de las importaciones y el <b>6,7 %</b> de las exportaciones agroalimentarias (DATACOMEX). España tiene la flota de mayor capacidad de la UE, es el primer productor acuícola de la UE en volumen y cuenta con una potente industria conservera. El <b>GTISA</b>, presidido por la Secretaría General de Agricultura y Alimentación del MAPA, tiene entre sus siete grupos de trabajo uno de pesca y acuicultura, centrado en eliminar barreras, consolidar y abrir mercados y adaptar la oferta a cada mercado.</p>
+<h2 class="sec" id="apartado-2"><span class="n">02</span><span class="t">DESCRIPCIÓN Y DESIGNACIÓN DE LOS PRINCIPALES PRODUCTOS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>El Código Alimentario Español (CAE), complementado por la normativa europea, clasifica los pescados según su naturaleza y forma de conservación.</p>
+<h3 class="sub"><span>2.1</span>Pescados</h3>
+<p>Son los peces comestibles, marinos o de agua dulce, destinados al consumo humano. Según su presentación se distinguen:</p>
+<ul><li><b>Fresco o refrigerado</b>: solo ha sufrido evisceración y adición de hielo, o se conserva a bordo en agua de mar próxima a 0 ºC (merluza, besugo, lubina, dorada, salmón)</li><li><b>Congelado</b>: sometido a congelación rápida hasta alcanzar <b>−18 ºC o menos</b> en el centro térmico, temperatura que debe mantenerse en almacenamiento y distribución, con tolerancias breves en el transporte</li></ul>
+<h3 class="sub"><span>2.2</span>Mariscos</h3>
+<p>Según el CAE son animales comestibles marinos o continentales, frescos o conservados por tratamientos autorizados. Los tipos principales son:</p>
+<ul><li><b>Moluscos</b><ul><li>Bivalvos: almejas, berberechos, ostras, mejillones y vieiras</li><li>Gasterópodos: bígaros, burgados y orejas de mar</li><li>Cefalópodos: pulpo, calamar, sepia y pota</li></ul></li><li><b>Crustáceos</b><ul><li>Decápodos: cigalas, bogavante, langosta, gamba y langostino</li><li>Cirrípedos: percebes</li></ul></li></ul>
+<p>El marisco se presenta vivo, fresco o refrigerado, congelado (−18 ºC) o cocido (vapor o agua en ebullición y enfriado posterior).</p>
+<p>Los moluscos bivalvos vivos tienen un régimen sanitario propio. Las zonas de producción se clasifican en <b>A, B y C</b> según su calidad microbiológica, y de ello depende que el producto se comercialice directamente o pase por depuración o reinstalación. Se controlan además las biotoxinas marinas (paralizantes, amnésicas y lipofílicas).</p>
+<h2 class="sec" id="apartado-3"><span class="n">03</span><span class="t">FACTORES DE CALIDAD COMERCIAL</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>La calidad comercial es el conjunto de características externas e internas que determinan la aptitud de un producto para comercializarse y satisfacer al mercado. En el pescado hay tres factores muy importantes: <b>frescura, calibre y homogeneidad</b>.</p>
+<p>Las categorías de frescura y calibre se fijan en el <b>Reglamento (CE) 2406/96</b>, dentro de la OCM de la pesca y la acuicultura (<b>Reglamento (UE) 1379/2013</b>). A nivel nacional, el <b>Real Decreto 418/2015</b> regula la primera venta de productos pesqueros y la <b>Ley 12/2013</b> introdujo novedades en trazabilidad, contratos alimentarios y régimen sancionador.</p>
+<h3 class="sub"><span>3.1</span>Frescura</h3>
+<p>La frescura se valora con factores externos (pigmentación cutánea, ojo y su coloración, color y olor de las branquias, opérculo y rigidez muscular) e internos (aspecto del peritoneo, espina dorsal y color de la carne en torno a ella). El Reglamento (CE) 2406/96 establece las categorías <b>Extra, A y B</b>.</p>
+<p>En la venta mayorista el producto debe llevar etiqueta con:</p>
+<ul><li>País de origen</li><li>Categoría de calibre</li><li>Categoría de frescura y su fecha</li><li>Peso neto en kg, si está envasado</li><li>Denominación comercial y nombre científico, según el listado admitido en España</li><li>Modo de presentación y tratamiento</li><li>Expedidor, con número de autorización oficial y domicilio</li></ul>
+<p>El <b>Real Decreto 1082/2025</b> regula el procedimiento para fijar las denominaciones comerciales nacionales y las de alimentos en conserva o preparados, en aplicación del art. 37 del Reglamento (UE) 1379/2013, y extiende el sistema a las partidas 1604 y 1605 de la Nomenclatura Combinada. El listado oficial se actualiza por resolución de la Secretaría General de Pesca. Su denominación es la oficial en todo el territorio y las reconocidas por las comunidades autónomas son complementarias en su territorio.</p>
+<h3 class="sub"><span>3.2</span>Composición química y calibre</h3>
+<p>Según su porcentaje de lípidos hay tres tipos de pescado. Cuanto mayor es, más ácidos grasos poliinsaturados y omega-3:</p>
+<ul><li>Magros: menos del <b>2 %</b> (merluza)</li><li>Medio-grasos: entre <b>2 y 6 %</b> (dorada)</li><li>Grasos: más del <b>6 %</b> (salmón)</li></ul>
+<h3 class="sub"><span>3.3</span>Pescado congelado</h3>
+<p>Al pescado congelado se añaden factores adicionales:</p>
+<ul><li>Espécimen sano e higiénico desde la captura</li><li>Ausencia de materias extrañas y consistencia firme</li><li>Olor a fresco, sin olores de deterioro (trimetilamina, amoníaco)</li><li>Especie, condiciones de captura, cadena de frío y tratamiento a bordo</li></ul>
+<h3 class="sub"><span>3.4</span>Mariscos</h3>
+<p>Deben cumplir normas microbiológicas, pH adecuado, límites de toxinas, bases nitrogenadas y metales pesados, y estar bien envasados y etiquetados. Se valoran:</p>
+<ul><li>Vitalidad (vivo) y frescura (fresco)</li><li>Especie y variedad conforme al Real Decreto 1082/2025</li><li>Tamaño y zona geográfica de captura</li><li>Ausencia de materias extrañas</li><li>Ausencia de huevos en hembras, pues su comercialización está prohibida</li><li>Calidad del proceso de refrigeración</li></ul>
+<h2 class="sec" id="apartado-4"><span class="n">04</span><span class="t">ANÁLISIS SECTORIAL</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Según la FAO (SOFIA 2026), la producción mundial alcanzó en 2024 un récord de <b>235 millones de toneladas</b>, algas incluidas. La acuicultura de animales acuáticos superó por primera vez los 100 millones y aporta el <b>53 %</b>, mientras la pesca de captura se mantiene en torno a 92 millones. El consumo mundial ronda los 21 kg por habitante. China es el principal productor y exportador.</p>
+<p>La UE es el mayor mercado importador del mundo y tiene una balanza claramente deficitaria, por lo que importan los acuerdos con terceros países:</p>
+<ul><li><b>Acuerdos de colaboración de pesca sostenible</b>: la UE aporta contrapartida financiera y apoyo sectorial a cambio de posibilidades de pesca, sobre todo en África, el Pacífico y Groenlandia. El de Marruecos, el más importante para la flota española, carece de protocolo en vigor desde julio de 2023. En octubre de 2024 el Tribunal de Justicia de la UE confirmó la anulación de las decisiones que lo celebraron. Se negocia un nuevo marco, prioritario para las flotas andaluza, gallega y canaria</li><li><b>Acuerdos septentrionales</b>: gestión conjunta de recurso compartido con UK, Noruega, Islandia e Islas Feroe</li></ul>
+<p>España es el primer país de la UE por valor desembarcado en 2024 (<b>21 %</b> de la captura de la flota comunitaria, por delante de Francia y Dinamarca). A 31 de diciembre de 2025 su flota cuenta con <b>8.324 embarcaciones</b> y 301.135 GT, aproximadamente el <b>24 %</b> del arqueo de la UE, con una edad media de 37 años frente a 36 de la media comunitaria. Es también el primer productor acuícola de la UE, con el <b>25,3 %</b> (APROMAR), fuerte en trucha arco iris y mejillón. Hay tres tipos de flota:</p>
+<ul><li><b>Bajura o artes menores</b>: la más numerosa, faena cerca de la costa y suministra pescado fresco de alto valor</li><li><b>Altura</b>: faena en aguas comunitarias y suministra pescado fresco y refrigerado</li><li><b>Gran altura</b>: con base en Galicia, País Vasco y Canarias, incluye la bacaladera (NAFO y Atlántico nordeste), la arrastrera congeladora (Atlántico sur) y la atunera congeladora (Atlántico, Índico y Pacífico), moderna y de las más importantes del mundo</li></ul>
+<p>El comercio español es deficitario en los tres grupos:</p>
+<ul><li><b>Frescos y refrigerados</b>: importaciones de Suecia, Grecia, Francia, Portugal, Marruecos, Noruega e Islas Feroe. Se exporta a Portugal, Francia e Italia y a EEUU</li><li><b>Congelados</b>: proceden de Namibia, China, Portugal o Sudáfrica. Destinos Portugal e Italia, y China o Ecuador entre los terceros</li><li><b>Mariscos</b>: importaciones de Marruecos, Ecuador, Mauritania, Argentina, China, Perú e Islas Malvinas. Se exporta a Portugal, Francia, Italia y EEUU</li></ul>
+<h2 class="sec" id="apartado-5"><span class="n">05</span><span class="t">NORMATIVA APLICABLE</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>5.1</span>Normativa específica del sector de la pesca y la acuicultura</h3>
+<p>El <b>Reglamento (UE) 1379/2013</b> reformó la OCM del sector por la caída de las poblaciones de peces, los cambios de consumo, la globalización y la fuerte dependencia de las importaciones. Los requisitos sanitarios se recogen en el <b>Reglamento (CE) 853/2004</b> (sección VIII del anexo III para pesca y sección VII para bivalvos vivos), actualizado por el Reglamento Delegado (UE) 2024/1141. Los controles oficiales se rigen por el <b>Reglamento (UE) 2017/625</b>, que incluye la clasificación de zonas de moluscos y la vigilancia de biotoxinas.</p>
+<p>Las ayudas se financian con el <b>FEMPA</b>, creado por el Reglamento (UE) 2021/1139. En España, el Real Decreto 956/2017 modificó el Real Decreto 418/2015 sobre venta de productos pesqueros y el <b>Real Decreto 277/2016</b> regula las organizaciones profesionales del sector. Los criterios microbiológicos se fijan en el <b>Reglamento (CE) 2073/2005</b>, modificado por el Reglamento (UE) 2024/2895, que refuerza los de <em>Listeria monocytogenes</em>.</p>
+<p>En la legislación nacional destacan:</p>
+<ul><li><b>Real Decreto 1021/2022</b>, higiene en el comercio al por menor. Fija las condiciones de exposición, los tratamientos contra la anisakiasis (congelación a −20 ºC o menos durante al menos 24 horas, o a −35 ºC o menos durante al menos 15 horas) y la obligación de informar si el producto ha sido congelado o procede de acuicultura con garantía de ausencia de anisakis</li><li><b>Real Decreto 1082/2025</b>, denominaciones comerciales. Los productos solo se ofrecen al consumidor final con la denominación admitida en los listados de la Secretaría General de Pesca</li></ul>
+<h2 class="sec" id="apartado-6"><span class="n">06</span><span class="t">DESCRIPCIÓN Y DESIGNACIÓN DE CONSERVAS, SEMICONSERVAS Y SALAZONES DE PESCADO</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>El CAE define las conservas como productos perecederos de origen animal o vegetal, en envases herméticos, tratados exclusivamente por calor para asegurar su conservación.</p>
+<h3 class="sub"><span>6.1</span>Conservas de pescado</h3>
+<p>Son conservas de baja acidez (pH superior a 4,5), por lo que requieren esterilización que garantice la destrucción de las esporas de <em>Clostridium botulinum</em>, con temperatura de referencia de <b>121,1 ºC</b>. El envase debe ser hermético para evitar la recontaminación. Las normas fijan un peso escurrido mínimo respecto al peso neto para evitar fraudes y el control se hace por muestreo estadístico. Las especies de mayor éxito son:</p>
+<ul><li>Sardinas: enteras, en lomos o en filetes</li><li>Túnidos (atún y bonito): enteros, en filetes, ventresca, trozos, migas o pasta</li><li>Mejillones y berberechos: generalmente sin concha</li></ul>
+<h3 class="sub"><span>6.2</span>Semiconservas y salazones de pescado</h3>
+<p>Según el CAE son productos preparados para un tiempo limitado, mantenidos en recipientes impermeables al agua, y su duración puede prolongarse con frío. Las principales técnicas son:</p>
+<ul><li><b>Salazón</b>: la sal actúa por ósmosis, extrae agua, reduce la actividad de agua e inhibe el crecimiento microbiano<ul><li>Salado en seco o en pila: bacalao, mojama y huevas</li><li>Anchoado: salazón seguida de maduración, base de la anchoa en aceite</li></ul></li><li><b>Ahumado</b>: humo de madera no resinosa que modifica sabor, color, olor y textura, con deshidratación parcial. Debe conservarse refrigerado para evitar <em>Clostridium botulinum</em>, con sal entre <b>3 y 3,5 %</b></li><li><b>Escabechado</b>: acción conjunta de sal y vinagre, con NaCl al 7-8 % y ácido acético al 5 %<ul><li>Frío: el pescado madura varios días en baño (boquerones en vinagre)</li><li>Cocido: conserva en escabeche esterilizada (sardinas y atún)</li><li>Frito: pescado frito que, refrigerado, se conserva un año</li></ul></li></ul>
+<h2 class="sec" id="apartado-7"><span class="n">07</span><span class="t">FACTORES DE CALIDAD COMERCIAL</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Para comercializar una conserva debe superar controles técnicos: inspección del cierre, protección e inspección de latas vacías, control del envase lleno cerrado, test de esterilidad del producto final y prevención de oxidaciones en el almacenamiento. Se desechan las conservas con abombamientos, óxidos o contenido con olores, colores o textura desagradables.</p>
+<p>Los dos factores principales son:</p>
+<ul><li><b>Tratamiento térmico</b>: de él depende la carga microbiana. En conservas de baja acidez se aportan dos valores<ul><li>Factor esterilizante F: tiempo necesario para la esterilización completa a 121,1 ºC</li><li>Nº Z: elevación de temperatura necesaria para reducir un 90 % el tiempo de esterilización. A mayor Z, mayor resistencia del microorganismo</li></ul></li><li><b>Envases</b>: punto crítico de control en los sistemas HACCP. Se regulan el contenido (peso escurrido mínimo), el cierre hermético y la rotulación y etiquetado, que cumplen las normas generales y la rotulación específica de productos pesqueros</li></ul>
+<p>Los factores específicos de las salazones son aroma, sabor, consistencia y contenido en sal. En los ahumados, la consistencia firme y el control de la temperatura de conservación. En los desecados, la humedad máxima y la ausencia de olores, sabores y manchas anómalas.</p>
+<h2 class="sec" id="apartado-8"><span class="n">08</span><span class="t">ANÁLISIS SECTORIAL</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>El mercado exterior de las conservas de pescado ha crecido en volumen y valor, con el atún y la sardina como productos más aceptados. El sector tuvo en 2025 un superávit de unos <b>50 M€</b> (DATACOMEX). España es el primer exportador comunitario de conservas de pescado y de crustáceos, moluscos y demás invertebrados acuáticos (<b>1.603 M€</b>, en torno al <b>20 %</b> de la UE) y está en el top 5 mundial, por detrás de China, Tailandia o Ecuador.</p>
+<p>Los principales destinos en la UE son Italia, Francia, Portugal y Alemania, y entre los terceros EEUU y Reino Unido. En las importaciones destacan Ecuador y China en atún, Marruecos en caballa, sardina y anchoas, y Argentina y Chile en anchoas. Ecuador y Chile se benefician de acuerdos con la UE que eliminan aranceles a sus conservas, igual que los países con acuerdos de asociación económica.</p>
+<p>El principal organismo representativo es <b>ANFACO-CECOPESCA</b>.</p>
+<h2 class="sec" id="apartado-9"><span class="n">09</span><span class="t">NORMATIVA APLICABLE</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>9.1</span>Normativa específica de conservas de pescado</h3>
+<ul><li><b>Reglamento (CE) 1345/2008</b>, normas de comercialización y denominaciones comerciales de las conservas de sardinas y de productos tipo sardina. Sustituyó al Reglamento (CEE) 2136/89, modificado tras la diferencia planteada por Perú ante la OMC, cuyo órgano de solución de diferencias consideró en 2002 que reservar «sardinas» a <em>Sardina pilchardus</em> no era conforme con la norma Codex</li><li><b>Reglamento (CE) 1181/2003</b>, normas de comercialización de conservas de sardinas, resultado de la denuncia de Perú ante la OMC. Fue modificado por el 1345/2008, que amplió su ámbito a las denominaciones comerciales de productos tipo sardina</li><li><b>Reglamento (CEE) 1536/92</b>, normas de comercialización de conservas de atún y bonito</li><li><b>Reglamento (CE) 2406/96</b>, normas de comercialización de determinados productos pesqueros</li></ul>
+<p>Sin legislación comunitaria se aplican normas de comercio interior para sardinas, atún, mejillones, cefalópodos, almejas, berberechos y anchoas, y de comercio exterior para sardinas, atún y cefalópodos. Existe además un acuerdo de reconocimiento mutuo con <b>Canadá</b> sobre el control del cierre de envases: las partidas inspeccionadas por el SOIVRE conformes a la legislación canadiense se exportan sin nueva inspección en frontera.</p>
+<h3 class="sub"><span>9.2</span>Organización Común de Mercados (OCM) pesquera</h3>
+<p>La norma principal es el <b>Reglamento (UE) 1379/2013</b>, independiente de la OCM única agraria (Reglamento (UE) 1308/2013) y obligatorio para todos los productos comercializados en la UE, sea cual sea su origen. Sus objetivos figuran en el art. 35 del Reglamento (UE) 1380/2013 (PPC). Para lograrlos establece:</p>
+<ul><li><b>Normas de comercialización</b>: calidad, calibre, presentación y etiquetado, iguales para productos de la UE e importados</li><li><b>Organizaciones de productores</b>: de pescadores o acuicultores, elaboran planes de producción y comercialización para adaptar la oferta a la demanda y pueden recibir ayudas del FEMPA</li><li><b>Organizaciones interprofesionales</b>: integran las ramas de la cadena para mejorar coordinación y comercialización</li><li><b>Información al consumidor</b>: requisitos específicos de etiquetado</li><li><b>Medidas de intercambio con terceros países</b>: la UE, primer importador mundial, abastece a su industria transformadora con suspensión total o parcial de derechos arancelarios y contingentes arancelarios autónomos</li></ul>
+<h3 class="sub"><span>9.3</span>Etiquetado de productos pesqueros</h3>
+<p>El capítulo IV del Reglamento (UE) 1379/2013 exige, sin perjuicio del Reglamento (UE) 1169/2011, indicar en el etiquetado para vender al consumidor final o a colectivos:</p>
+<ul><li>Denominación comercial y nombre científico</li><li>Método de producción (capturado, capturado en agua dulce o de cría), por lote si es una mezcla</li><li>Zona de captura o cría y categoría de arte de pesca</li><li>Si ha sido descongelado</li><li>Fecha de duración mínima, cuando proceda</li><li>Alérgenos</li><li>Información nutricional, obligatoria en transformados envasados pero no en frescos sin transformar de un solo ingrediente</li><li>Nombre o razón social y dirección del operador</li></ul>
+<p>El Real Decreto 1082/2025, en vigor desde el <b>2 de enero de 2026</b>, exige que figure la denominación comercial admitida en los listados que la Secretaría General de Pesca aprueba anualmente por resolución publicada en el BOE.</p>
+<h3 class="sub"><span>9.4</span>Indicaciones Geográficas Protegidas</h3>
+<p>DOP, IGP y ETG se regulan por el <b>Reglamento (UE) 2024/1143</b>. En España la <b>Ley 6/2015</b> regula las de ámbito supraautonómico, controladas por el MAPA a través de la AICA, y el resto compete a las comunidades autónomas. Ejemplos: DOP Mejillón de Galicia, IGP Caballa de Andalucía e IGP Melva de Andalucía. En el ámbito privado destacan las certificaciones MSC (pesca extractiva) y ASC (acuicultura).</p>
+<h3 class="sub"><span>9.5</span>CODEX Alimentarius</h3>
+<p>El Codex ha elaborado normas para sardinas en conserva, atún y bonito en conserva y pescado congelado rápidamente, además del Código de prácticas para el pescado y los productos pesqueros y niveles máximos de metilmercurio en determinadas especies.</p>
+<h3 class="sub"><span>9.6</span>Normativa general</h3>
+<p>Se aplica la legislación alimentaria general:</p>
+<ul><li><b>Reglamento (CE) 178/2002</b>, principios generales de la legislación alimentaria, incluida la trazabilidad</li><li><b>Paquete de higiene</b>: Reglamentos (CE) 852/2004 (higiene, también en producción primaria) y 853/2004 (alimentos de origen animal)</li><li><b>Reglamento (UE) 2023/915</b>, límites de contaminantes, relevante por mercurio, plomo y cadmio</li><li><b>Reglamento (UE) 1169/2011</b>, información alimentaria al consumidor</li><li><b>Reglamento (UE) 2017/625</b>, controles oficiales, desarrollado en España por el Real Decreto 562/2025</li><li><b>Ley 28/2015</b>, defensa de la calidad alimentaria, con régimen sancionador común</li><li><b>Reglamento (CE) 1005/2008</b>, contra la pesca ilegal, no declarada y no reglamentada (INDNR), modificado por el Reglamento (UE) 2023/2842. Exige a los productos de terceros países un certificado de captura validado por el Estado de pabellón, gestionado desde enero de 2026 por el sistema CATCH, y su verificación corresponde en España a la Secretaría General de Pesca</li><li><b>Real Decreto 993/2014</b>, Sistema Auditado de Autocontroles Específicos (SAE), exigido desde el 1 de marzo de 2016 a los establecimientos que exporten productos para consumo humano a terceros países</li></ul>
+<p>La <b>Orden PRE/3026/2003</b>, modificada entre otras por la Orden ECM/1002/2026, regula la inspección y el control de la calidad comercial en el comercio exterior. La última sustituyó el anexo de productos sometidos a control para adaptarlo a los Reglamentos (UE) 2023/2429 y 2023/2430. El <b>SOIVRE</b> controla la calidad comercial en la importación desde terceros países de pescados, crustáceos, moluscos y demás invertebrados acuáticos.</p>
+<h2 class="sec" id="apartado-10"><span class="n">10</span><span class="t">CONCLUSIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>El sector pesquero y acuícola español es estratégico, con liderazgo europeo basado en una flota de gran capacidad, una acuicultura destacada y una industria conservera exportadora. Su sostenibilidad depende del estado biológico de los caladeros. La PPC avanza hacia el <b>Rendimiento Máximo Sostenible (RMS)</b> con TAC y cuotas según los dictámenes del CIEM, lo que a veces supone recortes de esfuerzo con impacto socioeconómico, y la obligación de desembarque de las capturas sujetas a TAC plantea retos de control.</p>
+<p>Persisten otros retos:</p>
+<ul><li>Ausencia de acuerdo pesquero UE-Marruecos desde julio de 2023, que afecta a las flotas andaluza, gallega y canaria</li><li>Consumo per cápita de productos del mar de <b>17,99 kg</b> en 2024, a la baja, con envejecimiento de la flota y menos embarcaciones</li><li>Acuerdo Interino de Comercio con Mercosur, firmado en enero de 2026 y aplicado provisionalmente desde el 1 de mayo de 2026, cuyos menores aranceles favorecerán la entrada de langostino, merluza o calamar de Argentina, abaratando el abastecimiento de la industria pero aumentando la presión competitiva sobre la flota comunitaria</li></ul>
+<p>Mantener el liderazgo exigirá compatibilizar viabilidad económica y sostenibilidad biológica, con diferenciación, certificación (MSC) y diversificación de mercados. La UE debe además garantizar competencia equilibrada con cláusulas espejo que exijan a lo importado estándares de sostenibilidad y trazabilidad equivalentes, y el control del SOIVRE contribuye a que compita con las mismas reglas de calidad comercial.</p>
+  </div>
+  <footer class="pie"><span>Esquema propio a partir del tema desarrollado</span><span class="url">sergioargudo.es</span></footer>
+</main>
+</body>
+</html>

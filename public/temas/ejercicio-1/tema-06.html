@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-1/tema-06.md. No editar a mano. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 6. Sector cárnico — esquema del ejercicio 1</title>
+<link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="stylesheet" href="../../../css/fuentes.css">
+<style>
+@page { size: A4; margin: 14mm 12.5mm 15mm;
+  @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #D9DED6; font-family: 'Public Sans', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #C8A951; outline-offset: 2px; }
+
+/* Barra superior (solo pantalla) */
+.barra { background: #3B4533; color: #C2D9C2; }
+.barra-in { max-width: 210mm; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.barra a { color: #C2D9C2; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.barra a:hover { color: #FFFFFF; }
+.barra .marca { font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: .14em; font-size: 13px; color: #FFFFFF; }
+.barra .acciones { display: flex; gap: 10px; align-items: center; }
+.barra .boton { background: #E0C46B; color: #1F2A1D; font-weight: 700; padding: 0 14px; box-shadow: 3px 3px 0 #1F2A1D; }
+.barra .boton:hover { background: #FFFFFF; color: #1F2A1D; }
+
+/* Hoja */
+.hoja { max-width: 210mm; margin: 20px auto 40px; padding: 40px 47px 28px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.5; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+.sub-cab { font-size: 14px; color: #4A5546; }
+.sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+
+.indice { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.indice a { display: flex; flex-direction: column; gap: 1px; height: 100%; padding: 6px 9px; background: #3B4533; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.indice a:hover { background: #1F2A1D; }
+.indice b { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 13px; color: #E0C46B; letter-spacing: 0; }
+
+/* Cuerpo del esquema */
+.esq { min-width: 0; }
+.sec { margin: 26px 4px 12px 0; display: flex; align-items: stretch; background: #3B4533; color: #FFFFFF; box-shadow: 4px 4px 0 #A8862F; font-size: 16px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; scroll-margin-top: 12px; break-inside: avoid; break-after: avoid; }
+.esq > .sec:first-child { margin-top: 0; }
+.sec .n { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0; background: #E0C46B; color: #1F2A1D; min-width: 46px; display: flex; align-items: center; justify-content: center; }
+.sec .t { padding: 9px 12px; display: flex; align-items: center; flex-grow: 1; min-width: 0; }
+.sec .px { display: flex; align-items: flex-end; gap: 3px; padding: 0 10px 8px 0; }
+.sec .px i { display: block; width: 5px; height: 5px; background: #E0C46B; }
+.sec .px i:nth-child(2) { height: 9px; opacity: .7; }
+.sec .px i:nth-child(3) { height: 13px; opacity: .45; }
+.sub { margin: 16px 0 5px; font-size: 1em; font-weight: 700; line-height: 1.3; display: flex; align-items: baseline; gap: 8px; break-after: avoid; }
+.sub span { flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: .78em; color: #3B4533; background: #EEF3EB; border: 1px solid #3B4533; box-shadow: 2px 2px 0 #C9D1C5; padding: 0 5px; }
+.sub::after { content: ""; flex: 1 0 24px; align-self: center; border-bottom: 2px dotted #C9D1C5; }
+h4.sub { font-size: .94em; margin-top: 12px; }
+h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
+.sec + .sub { margin-top: 0; }
+.esq p { margin: 6px 0; }
+.esq ul, .esq ol { margin: 0; padding-left: 18px; }
+.esq li { margin: 2px 0; }
+.esq li::marker { color: #A8862F; }
+.esq ol > li::marker { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.esq li > ul { list-style: none; padding-left: 16px; }
+.esq li > ul > li { position: relative; }
+.esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
+.esq b { font-weight: 700; }
+
+.pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; }
+
+@media screen and (min-width: 821px) {
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+}
+@media screen and (max-width: 820px) {
+  .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
+  h1 { font-size: 27px; }
+  .sello { min-width: 74px; padding: 6px 10px; }
+  .sello b { font-size: 22px; }
+  .sec { font-size: 14.5px; }
+}
+
+/* Impresión y PDF: dos columnas, cuerpo pequeño, sin barra ni pie propio (el pie
+   y la numeración van en los márgenes de @page). */
+@media print {
+  body { background: #FFFFFF; }
+  .barra, .pie { display: none; }
+  .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
+  h1 { font-size: 31px; }
+  .sub-cab { font-size: 13px; }
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+  .indice a { padding: 5px 8px; font-size: 9.5px; }
+  .indice b { font-size: 12px; }
+  .esq { column-count: 2; column-gap: 24px; }
+  .sec { font-size: 12.5px; margin: 14px 4px 9px 0; }
+  .sec .n { font-size: 15px; min-width: 38px; }
+  .sec .t { padding: 6px 10px; }
+  .sub { margin: 9px 0 3px; }
+  .esq li { margin: 1px 0; }
+  .esq ul, .esq ol { padding-left: 14px; }
+  .esq li > ul { padding-left: 14px; }
+  .esq li > ul > li::before { left: -11px; }
+}
+
+@page { @bottom-left { content: "Esquema · Tema 6. Sector cárnico"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
+    <div class="acciones"><a class="boton" href="tema-06.pdf" download="Esquema tema 6 (ejercicio 1).pdf">Descargar PDF</a></div>
+  </div>
+</header>
+<main class="hoja">
+  <div class="cab">
+    <div class="cab-txt">
+      <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
+      <h1>Sector cárnico</h1>
+      <div class="sub-cab">Ejercicio 1 · Esquema del tema 6 · Actualizado el <time datetime="2026-10-12">12 de octubre de 2026</time></div>
+    </div>
+    <div class="sello" aria-label="Ejercicio 1, tema 6"><span>EJ. 1 · TEMA</span><b>6</b></div>
+  </div>
+  <nav aria-label="Apartados del esquema"><ol class="indice" style="--cols: 6"><li><a href="#apartado-1"><b>01</b>INTRODUCCIÓN</a></li><li><a href="#apartado-2"><b>02</b>DESCRIPCIÓN DE LOS PRINCIPALES PRODUCTOS</a></li><li><a href="#apartado-3"><b>03</b>FACTORES DE CALIDAD COMERCIAL</a></li><li><a href="#apartado-4"><b>04</b>NORMATIVA APLICABLE</a></li><li><a href="#apartado-5"><b>05</b>ANÁLISIS SECTORIAL</a></li><li><a href="#apartado-6"><b>06</b>CONCLUSIÓN</a></li></ol></nav>
+  <div class="esq">
+<h2 class="sec" id="apartado-1"><span class="n">01</span><span class="t">INTRODUCCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>El sector cárnico ha vivido numerosos cambios normativos acordes con los objetivos de la PAC y de la seguridad alimentaria de la UE: transparencia, calidad, medio ambiente y bienestar animal. Muchos se impulsaron tras crisis como la encefalopatía espongiforme bovina (EEB) o la fiebre aftosa y cristalizaron en el enfoque «de la granja a la mesa» del <b>Reglamento (CE) 178/2002</b>. La peste porcina africana (PPA), detectada en España en noviembre de 2025, ha mostrado la vulnerabilidad comercial del sector ante las crisis sanitarias.</p>
+<p>El <b>GTISA</b>, presidido por la Secretaría General de Agricultura y Alimentación del MAPA, desarrolla el Plan de Internacionalización del Sector Agroalimentario. Uno de sus siete grupos de trabajo se dedica al sector cárnico y busca eliminar barreras comerciales, consolidar mercados y abrir nuevos destinos, aumentar la dimensión empresarial y adaptar la oferta a cada mercado.</p>
+<h2 class="sec" id="apartado-2"><span class="n">02</span><span class="t">DESCRIPCIÓN DE LOS PRINCIPALES PRODUCTOS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p><b>Canal.</b> Cuerpo del animal sacrificado tras el sangrado, eviscerado y desollado. La media canal se obtiene al separarla por el plano de simetría que pasa por el centro de las vértebras y del esternón.</p>
+<h3 class="sub"><span>2.1</span>Ganado vacuno</h3>
+<p>El vacuno produce carne y leche. En leche predomina la Frisona (Holstein) y entre las razas cárnicas autóctonas destacan Asturiana de los Valles, Rubia Gallega, Avileña-Negra Ibérica, Retinta, Morucha y Pirenaica. La producción española se basa en el cebo intensivo de terneros de vacas nodrizas, cruces y razas lecheras.</p>
+<p>La OCM fija las categorías de los bovinos menores de 12 meses:</p>
+<ul><li>Categoría V: menos de 8 meses, «ternera blanca»</li><li>Categoría Z: de 8 a menos de 12 meses, «ternera»</li></ul>
+<p>Desde los 12 meses hay denominaciones comerciales como añojo (12 a 24 meses), novillo (24 a 48 meses) y cebón o buey.</p>
+<p>No deben confundirse las categorías comerciales de las piezas del despiece (extra, primera, segunda y tercera), que dependen de la región anatómica, con la clasificación de canales. Esta sigue la escala SEUROP de la Unión, que valora la conformación, es decir, el desarrollo de los perfiles musculares de cadera, lomo y paleta:</p>
+<ul><li><b>S</b> superior, <b>E</b> excelente, <b>U</b> muy buena, <b>R</b> buena, <b>O</b> suficiente, <b>P</b> insuficiente</li><li>Engrasamiento en cinco grados: débil, ligero, medio, alto y muy alto</li></ul>
+<p>Las categorías de canales de bovinos de 8 meses o más son:</p>
+<ul><li>A: machos sin castrar de 12 a 24 meses</li><li>B: otros machos sin castrar de 24 meses o más</li><li>C: machos castrados de 12 meses o más</li><li>D: hembras que hayan parido</li><li>E: otras hembras de 12 meses o más</li><li>Z: animales de 8 a menos de 12 meses</li></ul>
+<h3 class="sub"><span>2.2</span>Ganado porcino</h3>
+<p>El cerdo es la especie que más carne suministra en el mundo. Se aprovecha más del 95 %, aunque la canal solo rinde un 75 a 80 %. Entre las razas españolas destacan la extremeña negra lampiña, la extremeña negra entrepelada, la andaluza rubia, la andaluza manchada y la extremeña retinta. Entre las foráneas, la Large White se usa como madre en cruces industriales y la Duroc, de carne magra, como padre.</p>
+<p>La canal y el despiece son como en vacuno y la clasificación SEUROP se basa en el contenido de carne magra:</p>
+<ul><li>S: 60 % o más</li><li>E: de 55 % a menos de 60 %</li><li>U: de 50 % a menos de 55 %</li><li>R: de 45 % a menos de 50 %</li><li>O: de 40 % a menos de 45 %</li><li>P: menos de 40 %</li></ul>
+<h3 class="sub"><span>2.3</span>Ganado ovino</h3>
+<p>El ovino ofrece carne, leche, lana y pieles. Tienen aptitud cárnica la Rasa Aragonesa, Segureña, Merina, Navarra y Alcarreña, y aptitud lechera o mixta la Manchega, Churra, Castellana y Latxa, junto a Assaf y Lacaune. El rendimiento de la canal ronda el 45 o 50 %. La escala SEUROP es facultativa para los Estados miembros.</p>
+<p>Los Estados miembros pueden clasificar con criterio propio los corderos de menos de 13 kg de canal, como hace España, según el peso y dos calidades que dependen del color de la carne y de la grasa:</p>
+<ul><li>Categoría A: hasta 7 kg, lechal</li><li>Categoría B: de 7 a 10 kg, recental</li><li>Categoría C: de 10 a 13 kg, pascual ligero</li><li>Calidad 1ª: carne pálida o rosa y poca grasa. Calidad 2ª: más oscura y con mayor engrasamiento</li></ul>
+<p>El cordero de más de 13 kg sigue la escala SEUROP con cinco grados de engrasamiento.</p>
+<h3 class="sub"><span>2.4</span>Ganado caprino</h3>
+<p>El caprino ofrece carne, leche, pieles y fibra. En países desarrollados solo se aprovechan para carne los cabritos y los chivos, porque la carne de cabras y machos cabríos es grasienta. Tienen aptitud cárnica la Blanca andaluza y la Negra serrana. Las canales se clasifican por edad:</p>
+<ul><li>Cabrito lechal: de 20 a 25 días y de 5 a 7 kg</li><li>Cabrito pascual: de 35 a 40 días y de 8 a 11 kg</li><li>Chivo, hasta un año, y caprino mayor</li></ul>
+<h3 class="sub"><span>2.5</span>Aves</h3>
+<p>Las aves aportan carne y huevos. Pollos y gallinas se producen con estirpes híbridas de crecimiento rápido, y las razas autóctonas (Castellana, Prat, Menorca, Andaluza) interesan en producciones diferenciadas como el Pollo y Capón del Prat. Los pavos tienen consumo creciente, patos y ocas se destinan en parte al foie gras y palomas y codornices son minoritarias.</p>
+<p>La carne de aves de corral se rige por normas de comercialización propias de la UE, con clases de calidad A y B, presentaciones, métodos de refrigeración, límites de contenido de agua e indicaciones facultativas sobre la cría.</p>
+<h3 class="sub"><span>2.6</span>Conservas, semiconservas, salazones cárnicas y embutidos crudos y curados</h3>
+<p><b>Productos cárnicos.</b> Alimentos preparados total o parcialmente con carnes, despojos, grasas y subproductos comestibles de animales de abasto, con ingredientes vegetales, condimentos, especias y aditivos. El <b>Real Decreto 474/2014</b>, norma de calidad de los derivados cárnicos, los clasifica en frescos, crudos adobados, embutidos crudos curados, tratados por calor, salazones, platos preparados y otros derivados.</p>
+<ul><li><b>Embutidos crudos curados</b>: carnes y grasas picadas con condimentos, embutidas en tripa, madurados y desecados y opcionalmente ahumados. Salchichón, salami, fuet, chorizo, longaniza y lomo</li><li><b>Tratados por calor</b> (conservas y semiconservas): el calor alcanza en su punto crítico una temperatura que coagula total o parcialmente las proteínas. Jamón cocido, mortadela, salchichas, patés y morcillas</li><li><b>Salazones cárnicas</b>: piezas no picadas tratadas con sal común y nitratos o nitritos, en seco o en salmuera, y a veces adobadas, secadas o ahumadas. Jamón curado, lacón, cecina y bacon</li></ul>
+<h2 class="sec" id="apartado-3"><span class="n">03</span><span class="t">FACTORES DE CALIDAD COMERCIAL</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p><b>Calidad comercial.</b> Conjunto de características externas e internas que determinan la aptitud de un producto para comercializarse y satisfacer las exigencias del mercado. Se entiende también como el valor añadido que obtiene el producto por la selección, clasificación, acondicionamiento, envasado, almacenamiento y transporte.</p>
+<p>La UE no tiene normas de comercialización comparables a las de frutas y hortalizas. Tiene escalas de clasificación de canales de vacuno, porcino y ovino y normas de comercialización para la carne de bovinos menores de 12 meses y de aves de corral. Los productos elaborados se rigen por normas de calidad nacionales.</p>
+<p>Factores de calidad de la carne fresca, según la especie:</p>
+<ul><li>Peso, edad y sexo del animal</li><li>Rendimiento de la canal en carne, conformación SEUROP y estado de engrasamiento</li><li>Proporción de grasa de la cavidad torácica</li><li>Color de la carne y de la grasa, consistencia y humedad</li><li>Ausencia de defectos y alteraciones, como olores anómalos, limosidad superficial o cambios de color</li></ul>
+<p>Factores de calidad de los productos transformados:</p>
+<ul><li><b>Materias primas</b>: la calidad aumenta con más carne magra y menos grasa y tejido conjuntivo. Se fijan límites a la relación humedad y proteína, la grasa y la hidroxiprolina</li><li><b>Proceso de elaboración e ingredientes</b></li><li><b>Índices microbiológicos</b>: el <b>Reglamento (CE) 2073/2005</b> fija los criterios, entre ellos la ausencia de <em>Salmonella</em> y <em>Listeria monocytogenes</em> en determinados productos y límites de <em>Escherichia coli</em> y enterobacterias</li><li><b>Hermeticidad de los envases</b>: principal factor de calidad de las conservas cárnicas</li></ul>
+<h2 class="sec" id="apartado-4"><span class="n">04</span><span class="t">NORMATIVA APLICABLE</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>4.1</span>Política Agrícola Común (PAC)</h3>
+<p>La PAC ha evolucionado desde 2003 hacia un modelo orientado al mercado, la sostenibilidad y la simplificación. El <b>Reglamento (UE) 1308/2013</b> crea la OCM única. El Reglamento (UE) 2017/2393 (Ómnibus) reforzó las organizaciones de productores y la gestión de riesgos.</p>
+<p>La PAC 2023-2027 se articula a través de:</p>
+<ul><li><b>Reglamento (UE) 2021/2115</b>, planes estratégicos financiados por el FEAGA y el FEADER, que en España es el PEPAC</li><li><b>Reglamento (UE) 2021/2116</b>, financiación, gestión y seguimiento</li><li><b>Reglamento (UE) 2021/2117</b>, que modifica entre otros el Reglamento (UE) 1308/2013</li></ul>
+<p>En ayudas directas establece la ayuda básica a la renta para la sostenibilidad (BISS), los eco-regímenes y una condicionalidad reforzada con las BCAM. Prioriza la sostenibilidad ambiental y climática, el relevo generacional, la digitalización, las organizaciones de productores y la resiliencia ante las crisis.</p>
+<h3 class="sub"><span>4.2</span>Organización Común de Mercados (OCM) y normas de comercialización</h3>
+<p>La OCM, regulada en el <b>Reglamento (UE) 1308/2013</b>, se apoya en la unidad de mercado, la preferencia comunitaria y la solidaridad financiera. Busca estabilizar los mercados, asegurar un nivel de vida equitativo a los agricultores, mejorar la competitividad y garantizar el abastecimiento. Establece:</p>
+<ul><li><b>Clasificación de productos.</b> Las escalas SEUROP para canales de bovinos de 8 meses o más, porcino y ovino están en el Reglamento Delegado (UE) 2017/1182 y el Reglamento de Ejecución (UE) 2017/1184, que regulan también la comunicación de precios. Se completan con las normas para la carne de bovinos menores de 12 meses (anexo VII del Reglamento 1308/2013) y de aves de corral. El <b>Reglamento (CE) 1760/2000</b> regula la identificación del bovino y el etiquetado de su carne. Los controles oficiales siguen el Reglamento (UE) 2017/625</li><li><b>Organizaciones de productores (OP).</b> Nacen por iniciativa de los productores para concentrar la oferta, planificar la producción, reducir costes y reforzar su posición negociadora</li><li><b>Organizaciones interprofesionales.</b> Reconocidas por el art. 157 del Reglamento 1308/2013 y la Ley 38/1994, defienden y promocionan el sector. Son INTERPORC (porcino de capa blanca), ASICI (cerdo ibérico), PROVACUNO, INVAC (vacuno autóctono), INTEROVIC (ovino y caprino) y PROPOLLO. La FIAB es empresarial y no interprofesional</li><li><b>Régimen de intervención.</b> Comprende la intervención pública del vacuno por licitación, las ayudas al almacenamiento privado de vacuno, porcino, ovino y caprino en crisis y las medidas excepcionales por enfermedades animales (art. 220), relevantes ante la PPA</li><li><b>Medidas con terceros países.</b> Aranceles, contingentes, salvaguardias y certificados. Destacan los contingentes de vacuno, como la cuota Hilton, y de aves</li></ul>
+<p>En su gestión interviene el FEGA y la financiación corre a cargo del FEAGA. En el sector se mantienen las ayudas asociadas a la vaca nodriza, el vacuno de cebo y de leche y el ovino y caprino, junto a la BISS, los eco-regímenes (entre ellos el pastoreo extensivo) y las BCAM. El acceso a mercados depende sobre todo de los requisitos sanitarios de destino y de los certificados veterinarios de exportación.</p>
+<h3 class="sub"><span>4.3</span>Normativa internacional y voluntaria</h3>
+<p>Las normas <b>CEPE/ONU</b>, voluntarias, nacen de la sección de carne del Grupo de Trabajo WP.7. Describen canales y cortes de vacuno, porcino, ovino, caprino y aves con un lenguaje común codificado que facilita el comercio. La OCDE no tiene folletos interpretativos para carne, pues su régimen se limita a frutas y hortalizas.</p>
+<p>El <b>Codex Alimentarius</b>, creado por la FAO y la OMS, protege la salud de los consumidores y asegura prácticas leales en el comercio. Sus normas son voluntarias pero sirven de referencia en los Acuerdos MSF y OTC de la OMC. Hay normas del jamón curado cocido, la paleta de cerdo curada cocida, la carne curada picada cocida y el corned beef, y un código de higiene para la carne.</p>
+<p>Regímenes voluntarios de calidad diferenciada:</p>
+<ul><li><b>Normas UNE</b>: de AENOR y otros, destacan bienestar animal y métodos de análisis de carne</li><li><b>Producción integrada</b>: <b>Real Decreto 1201/2002</b> y Orden APA/1/2004 para el logotipo. Se aplica a la producción vegetal y no a la ganadera</li><li><b>Producción ecológica</b>: excluye con carácter general los productos químicos de síntesis. Se rige por el <b>Reglamento (UE) 2018/848</b>, aplicable desde el 1 de enero de 2022. Cada partida importada lleva un certificado de inspección (COI) electrónico en TRACES. El SOIVRE, conforme a la Orden ECC/1936/2014, controla en importación los productos agrarios vivos o no transformados, los transformados para alimentación humana, los piensos, el material de reproducción vegetativa y semillas, y las levaduras</li><li><b>DOP, IGP y ETG</b>: <b>Reglamento (UE) 2024/1143</b>, que sustituyó al Reglamento (UE) 1151/2012. La Ley 6/2015 regula las de ámbito supraautonómico, controladas por el MAPA a través de la AICA, y el resto compete a las comunidades. Ejemplos son la IGP Ternera Gallega, la IGP Ternasco de Aragón, las DOP Guijuelo y Jabugo y la ETG Jamón Serrano</li><li><b>Protocolos privados</b>: certificaciones exigidas por la distribución sobre bienestar animal, sostenibilidad o seguridad, como GLOBALG.A.P., IFS, BRCGS, SQF, Welfair e Interporc Animal Welfare Spain</li></ul>
+<h3 class="sub"><span>4.4</span>Normativa específica del sector cárnico</h3>
+<ul><li><b>Reglamento Delegado (UE) 2017/1182 y Reglamento de Ejecución (UE) 2017/1184</b>, escalas de clasificación de canales y comunicación de precios</li><li><b>Reglamento Delegado (UE) 2026/343</b>, comercialización de la carne de aves de corral, que deroga el Reglamento (CE) 543/2008. Fija las clases A y B, los límites de agua y las indicaciones facultativas como «campero». Lo completa el Reglamento de Ejecución (UE) 2026/344 sobre métodos de análisis del agua</li><li><b>Reglamento Delegado (UE) 2024/1141</b>, que modifica los anexos II y III del Reglamento (CE) 853/2004. Regula la carne madurada en seco de bovino (máximo 35 días), el transporte de canales de ovino, caprino y bovino (máximo 30 horas) y los mataderos móviles, y sustituye el marcado CE por UE</li><li><b>Reglamento (CE) 1760/2000</b>, identificación del bovino y etiquetado de su carne</li><li><b>Reglamento (CE) 1831/2003</b>, aditivos en alimentación animal</li><li><b>Real Decreto 4/2014</b>, calidad de la carne, jamón, paleta y caña de lomo ibérico</li><li><b>Real Decreto 474/2014</b>, calidad de los derivados cárnicos</li><li><b>Real Decreto 993/2014</b>, sistema auditado de autocontroles específicos (SAE), exigido desde marzo de 2016 a los establecimientos exportadores a terceros países que exijan requisitos adicionales o listas de establecimientos autorizados</li><li><b>Reglamento (UE) 2016/429</b>, enfermedades transmisibles de los animales</li><li><b>Reglamento (UE) 2019/6</b>, medicamentos veterinarios, en aplicación desde enero de 2022. Refuerza la lucha contra la resistencia antimicrobiana y prohíbe el uso preventivo sistemático de antibióticos</li></ul>
+<h3 class="sub"><span>4.5</span>Normativa general y control SOIVRE</h3>
+<p>Se aplica la legislación alimentaria general:</p>
+<ul><li><b>Reglamento (CE) 178/2002</b>, principios generales y trazabilidad</li><li><b>Reglamentos (CE) 852/2004 y 853/2004</b>, paquete de higiene, general y para alimentos de origen animal</li><li><b>Reglamento (CE) 396/2005</b>, límites máximos de residuos de plaguicidas</li><li><b>Reglamento (UE) 1169/2011</b>, información alimentaria al consumidor</li><li><b>Reglamento (UE) 2017/625</b>, controles oficiales, desarrollado en España por el Real Decreto 562/2025</li><li><b>Ley 28/2015</b>, defensa de la calidad alimentaria, con régimen sancionador común</li><li><b>Reglamento (UE) 2025/40</b> y <b>Real Decreto 1055/2022</b>, envases y residuos de envases</li><li><b>Ley 1/2025</b>, prevención del desperdicio alimentario</li></ul>
+<p>La <b>Orden PRE/3026/2003</b>, modificada entre otras por la Orden ECC/2257/2013, la Orden ECC/2566/2015 y la Orden ECM/1002/2026, regula la inspección y el control de la calidad comercial en el comercio exterior. La última sustituyó íntegramente el anexo de productos controlados para adaptarlo a los Reglamentos (UE) 2023/2429 y 2023/2430. El SOIVRE controla en la importación desde terceros países la carne y despojos comestibles de aves de corral, frescos, refrigerados o congelados, y verifica la clase de calidad, la presentación, el contenido de agua y las indicaciones facultativas.</p>
+<h2 class="sec" id="apartado-5"><span class="n">05</span><span class="t">ANÁLISIS SECTORIAL</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p><b>Productores mundiales.</b> Varían según la carne:</p>
+<ul><li>Vacuno: EEUU, Brasil (primer exportador) y China, seguidos de la UE, Argentina y Australia. En la UE, Francia, Alemania, Irlanda, Italia y España</li><li>Porcino: España lidera la producción europea y es tercera mundial tras China y EEUU</li><li>Ovino: China, Australia y Nueva Zelanda, estos dos grandes exportadores</li><li>Caprino: China, India y Pakistán</li><li>Aves: EEUU, China y Brasil (primer exportador). En la UE, Polonia, España, Francia y Alemania. La influenza aviar de alta patogenicidad provoca restricciones comerciales</li></ul>
+<p>El sector español tiene un fuerte superávit impulsado por el porcino, que supone el 67,8 % de las exportaciones cárnicas. Las importaciones las lidera el bovino, seguido de aves y porcino.</p>
+<ul><li><b>Bovino.</b> Saldo negativo de 120 M€ en 2025, porque las importaciones crecieron un 22,5 % y las exportaciones un 6 %. El 78 % de lo exportado va a la UE, sobre todo Italia y Portugal, y el 90 % de lo importado procede de la UE. La OMSA reconoce a España riesgo insignificante de EEB</li><li><b>Porcino.</b> Superávit de 7.877 M€. Las exportaciones bajaron un 1,5 %. Algo más del 50 % va a la UE y China es el segundo cliente, con Japón y Corea del Sur. Las importaciones subieron un 8,5 % y proceden casi todas de la UE</li><li><b>Ovino y caprino.</b> Superávit de 476 M€ con exportaciones al alza de más del 20 %. Algo más del 50 % va a la UE y Argelia es el principal tercer país</li><li><b>Aves.</b> Saldo positivo de 36 M€. Las exportaciones subieron un 18,3 % y las importaciones un 20,7 %</li></ul>
+<p>El 28 de noviembre de 2025 se detectaron en Cerdanyola del Vallès (Barcelona) jabalíes positivos a la <b>PPA</b>, primer foco desde 1994, solo en fauna silvestre. La UE aplica la regionalización (Reglamento de Ejecución (UE) 2023/594), pero varios terceros países no la aceptan y han restringido el porcino de toda España, con pérdidas estimadas de cientos de millones de euros. China aplica la regionalización a escala provincial. Recuperar el estatus de país libre y reabrir mercados es hoy la prioridad.</p>
+<p><b>Halal y kosher.</b> Crecen con fuerza, con pollo, vacuno, ovino y pavo hacia Argelia, Marruecos, Arabia Saudita, Francia y Reino Unido. La base legal son la Ley 26/1992 (Comisión Islámica de España) y la Ley 25/1992 (Federación de Comunidades Judías de España).</p>
+<h2 class="sec" id="apartado-6"><span class="n">06</span><span class="t">CONCLUSIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>El sector cárnico es la principal industria alimentaria española por facturación. España es el primer productor porcino de la UE y el tercero mundial, con competitividad basada en capacidad productiva, diversificación de destinos y presencia en China, Japón y Corea del Sur. El superávit lo impulsa el porcino, con el 67,8 % de las exportaciones cárnicas y un saldo de 7.877 M€.</p>
+<p>La PPA en jabalíes de Cataluña crea incertidumbre. No afecta a explotaciones domésticas y la UE aplica la regionalización, pero las restricciones de los terceros países que no la reconocen han reducido de forma notable las exportaciones.</p>
+<p>El <b>Acuerdo Interino de Comercio con Mercosur</b>, firmado en enero de 2026, se aplica provisionalmente desde el 1 de mayo de 2026 en su pilar comercial, y el Acuerdo de Asociación sigue pendiente de ratificación. La liberalización es progresiva, con contingentes y salvaguardia bilateral. Los contingentes de la UE son de 99.000 toneladas de vacuno y 180.000 de aves, además de porcino. La presión será mayor en vacuno y aves por los menores costes de producción de Brasil, Argentina, Uruguay y Paraguay, y menor en porcino.</p>
+<p>Entre los retos estructurales figuran las exigencias de sostenibilidad, bienestar animal y trazabilidad de la estrategia De la Granja a la Mesa, la normativa de medicamentos veterinarios y resistencia antimicrobiana del Reglamento (UE) 2019/6 y la presión sobre márgenes por la volatilidad de las materias primas.</p>
+<p>Mantener el liderazgo exige certificación de calidad y bienestar animal, diversificar destinos, crear productos de mayor valor añadido y responder con agilidad a las crisis sanitarias. La UE debe además exigir a los productos importados los mismos estándares sanitarios, medioambientales, de trazabilidad y de bienestar animal que a los comunitarios.</p>
+  </div>
+  <footer class="pie"><span>Esquema propio a partir del tema desarrollado</span><span class="url">sergioargudo.es</span></footer>
+</main>
+</body>
+</html>

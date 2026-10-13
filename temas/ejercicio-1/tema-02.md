@@ -1,199 +1,175 @@
 # 1. INTRODUCCIÓN
 
-- **Frutas** 2025: **11.917,8 M€** (+9,7 %), **15,5 %** de las exportaciones agroalimentarias
-  - Cítricos: superávit **> 3.300 M€**, exportaciones al alza
-- **GTISA** (Grupo de Trabajo para la Internacionalización del Sector Agroalimentario), presidido por la Secretaría General de Agricultura y Alimentación del MAPA
-  - Siete grupos, uno de frutas y hortalizas: barreras, mercados, coordinación, dimensión empresarial, promoción
-- **Clementinización**: reconversión a fruta de fácil pelado y sin semillas
-  - Márgenes a la baja, sustitución por **aguacate** y otros cultivos
-- Bloques
-  - Productos: mandarina, naranja dulce, naranja amarga, limón, pomelo, lima
-  - Calidad comercial
-  - Normativa: PAC y OCM, CEPE/ONU, OCDE, Codex, regímenes voluntarios, legislación general y **SOIVRE**
-  - Análisis sectorial
+El sector de frutas alcanzó en 2025 unas exportaciones de **11.917,8 M€** (datos provisionales de DATACOMEX), un 9,7 % más que en 2024 y el 15,5 % de las exportaciones agroalimentarias. Los cítricos registran un superávit superior a **3.300 M€**. Los frutos frescos forman parte del Plan de Internacionalización del Sector Agroalimentario mediante el GTISA, presidido por la Secretaría General de Agricultura y Alimentación del MAPA, que dedica uno de sus siete grupos de trabajo a frutas y hortalizas. España ha hecho una reconversión varietal hacia la clementinización (fruta de fácil pelado y sin semillas), pero la caída del margen lleva a sustituir superficie citrícola por cultivos más rentables, como el aguacate.
 
 # 2. DESCRIPCIÓN Y DESIGNACIÓN DE LOS PRINCIPALES PRODUCTOS
 
-- Familia **Rutáceas**, género **Citrus**
-- Fruto: **hesperidio**, **no climatérico** (se recolecta maduro)
-  - **Flavedo** (epicarpio): color y glándulas de aceites esenciales
-  - **Albedo** (mesocarpio): capa blanca esponjosa
-  - **Endocarpio**: comestible, **6 a 15 gajos** con vesículas de zumo
+Los cítricos son rutáceas del género *Citrus*. El fruto es un **hesperidio**, baya modificada, y es no climatérico, por lo que debe recolectarse ya maduro. La corteza tiene dos partes y el endocarpio es la parte comestible.
 
-## 2.1. Mandarina (Citrus reticulata)
+- **Epicarpio o flavedo**: zona exterior coloreada, con clorofilas, carotenoides y glándulas de aceites esenciales
+- **Mesocarpio o albedo**: capa blanca y esponjosa entre el flavedo y la pulpa
+- **Endocarpio**: de 6 a 15 gajos según la especie, con vesículas de zumo
 
-- Mayor dinamismo varietal: fácil pelado, sin semillas
-- **Clementinas** (C. clementina): las más cultivadas
-  - Precoces Marisol y Oronules (sep-oct), **Clemenules** (nov-ene), tardía Hernandina (ene-feb)
-- **Satsumas** (C. unshiu): Japón, sin semillas, muy precoces, menor calidad gustativa
-  - Okitsu y Hashimoto, Owari (industria de gajos)
-- **Híbridos**: alargan la campaña
-  - Nova o Clemenvilla, Ortanique (feb-may), protegidas Nadorcott, Tango, Orri
-  - Fortune en retroceso por alternaria
+## 2.1. Mandarina (*Citrus reticulata*)
 
-## 2.2. Naranja dulce (Citrus sinensis)
+Es el cítrico con mayor dinamismo varietal en España, por la reconversión hacia variedades de fácil pelado y sin semillas. Tiene tres grupos.
 
-- **Navel**: grandes, sin semillas, con ombligo, para mesa (limonina provoca amargor en zumo)
-  - Navelina (oct-ene), Washington Navel, tardías Navel Late, Lane Late, Powell (ene-may)
-- **Sangre**: color por antocianinas, Sanguinelli (ene-mar)
-- **Blancas**: sin ombligo, bajo en limonina, aptas para zumo
-  - Salustiana (dic-mar), Valencia Late (mar-jun)
+- **Clementinas** (*C. clementina*): las más cultivadas. Marisol y Oronules (precoces), Clemenules (de noviembre a enero) y Hernandina (tardía)
+- **Satsumas** (*C. unshiu*): de origen japonés, sin semillas y muy precoces, con calidad gustativa inferior. Okitsu, Hashimoto y Owari (industria de gajos)
+- **Híbridos**: más tardíos, alargan la campaña exportadora. Nova o Clemenvilla, Ortanique y variedades protegidas como Nadorcott, Tango u Orri. Fortune ha perdido peso por su sensibilidad a la alternaria
 
-## 2.3. Naranja amarga (Citrus aurantium)
+## 2.2. Naranja dulce (*Citrus sinensis*)
 
-- Híbrido de C. maxima y C. reticulata, muy ácida, no se consume cruda
-- Usos: mermelada (marmalade), aceites esenciales, agua de azahar
-- Patrón tradicional, sustituido por patrones tolerantes a la tristeza
+Fruto esférico, de pulpa jugosa, dulce y algo ácida. Se distinguen tres grupos según el ombligo, el color y el uso.
 
-## 2.4. Limón (Citrus limon)
+- **Navel**: gran tamaño, sin semillas y con ombligo. Va sobre todo a mesa porque su limonina da amargor diferido en el zumo. Navelina, Washington Navel y las tardías Navel Late, Lane Late y Powell
+- **Sangre**: corteza y pulpa rojas por antocianinas. Sanguinelli
+- **Blancas**: sin ombligo, poca limonina y muy buena aptitud para zumo. Salustiana y Valencia Late (de marzo a junio)
 
-- Ovalado, 8 a 10 gajos, más condimento que fruta de postre
-- **Fino o Primofiori**: unos dos tercios de la producción (oct-feb), mucho zumo, más semillas
-- **Verna**: tardía (feb-jul), corteza gruesa, refloreciente (rodrejos)
-- Eureka y Lisbon: dominan en EEUU, Argentina, Sudáfrica y Australia
+## 2.3. Naranja amarga (*Citrus aurantium*)
 
-## 2.5. Pomelo (Citrus paradisi)
+Híbrido natural de *Citrus maxima* y *Citrus reticulata*, muy ácido y amargo, no se consume en crudo. Se usa para mermeladas (marmalade), aceites esenciales de la corteza y agua de azahar por destilación de la flor. Fue el patrón tradicional de la citricultura española, hoy sustituido por patrones tolerantes al virus de la tristeza.
 
-- 10 a 12 gajos, amargor por **naringina**
-- Marsh Seedless: pulpa amarilla, blanca de referencia
-- Star Ruby y Rio Red: pulpa roja por **licopeno**, las más demandadas
+## 2.4. Limón (*Citrus limon*)
 
-## 2.6. Lima (Citrus latifolia / Citrus aurantifolia)
+De forma ovalada y zumo muy ácido, es más un condimento que una fruta de postre. Destacan tres variedades.
 
-- Pequeña, piel verde, pulpa muy ácida, se comercializa en verde
-- **Tahití / Persian lime**: sin semillas, la más comercializada
-- **Lima mexicana / Key lime**: con semillas, más aromática
+- **Fino o Primofiori**: mayoritaria en España (en torno a dos tercios), de octubre a febrero, corteza fina y mucho zumo
+- **Verna**: tardía (de febrero a julio), corteza gruesa y menos zumo. Es refloreciente y da una segunda cosecha de verano (rodrejos)
+- **Eureka y Lisbon**: muy aromáticas, predominan en EEUU, Argentina, Sudáfrica y Australia y casi no están en España
+
+## 2.5. Pomelo (*Citrus paradisi*)
+
+Fruto esférico algo achatado, de pulpa amarilla, rosada o roja (de 10 a 12 gajos) y sabor ligeramente amargo por la naringina. Se consume en fresco y en zumo.
+
+- **Marsh Seedless**: pulpa amarilla clara, la variedad blanca de referencia
+- **Star Ruby y Rio Red**: pulpa roja intensa por el licopeno (no por antocianinas), más dulces y de mayor demanda actual
+
+## 2.6. Lima (*Citrus latifolia* / *Citrus aurantifolia*)
+
+Hesperidio pequeño de piel verde lisa y pulpa muy ácida, con poco azúcar. Se comercializa en verde y se usa como condimento, en zumos, cócteles, cosmética y farmacia.
+
+- **Tahití o Persian lime** (*C. latifolia*): sin semillas, la más comercializada del mundo
+- **Lima mexicana o Key lime** (*C. aurantifolia*): con semillas, más aromática, de producción tropical
 
 # 3. FACTORES DE CALIDAD COMERCIAL
 
-- Calidad comercial: características externas e internas que determinan la aptitud para comercializar
-- Normas UE: **Reglamento Delegado (UE) 2023/2429**, aplicable desde el **1 de enero de 2025**
-  - **Norma general**: pomelos y limas
-  - **Norma específica de cítricos**: limones, naranjas y mandarinas
-    - Categorías **Extra, I y II**, calibrado por diámetro, tolerancias, presentación, marcado
-- **Requisitos mínimos**: enteros, sanos, limpios, prácticamente exentos de plagas y de sus daños en pulpa, sin humedad exterior anormal, sin olores ni sabores extraños, aptos para transporte
-  - Marcado: destaca el **país de origen**
-- Madurez
-  - **Fisiológica**, **comercial** (según mercado y norma) y **de consumo** (gustativa)
-  - Presión del mercado puede incentivar cosechar verde, de ahí los parámetros objetivos
-- Frutos **climatéricos** (manzana, pera, aguacate, kiwi) frente a **no climatéricos** (cítricos, uva, fresa)
-- Índices objetivos: firmeza, color, **grados Brix**, acidez y relación azúcares/acidez, almidón, materia seca
-  - Solo son legales si la norma los fija (Brix en kiwi y uva de mesa)
-- Madurez en cítricos: **zumo mínimo**, **relación azúcares/ácidos**, coloración típica
-  - **20 %** de zumo en limones, **6,5:1** en naranjas
-  - **Desverdizado** admitido, con indicación de conservantes poscosecha
-- Tres ámbitos distintos de aptitud
-  - **Calidad comercial**: categoría, calibre, defectos, madurez, marcado
-  - **Sanidad vegetal**: **Reglamento (UE) 2016/2031**
-    - Mosca mediterránea, cochinillas, trips, virus de la tristeza
-    - Cuarentena: **mancha negra** (Phyllosticta citricarpa), **falsa polilla** (frío a cítricos sudafricanos), **HLB o greening**
-  - **Seguridad alimentaria**: **LMR** de plaguicidas y contaminantes
+**Calidad comercial.** Conjunto de características externas e internas que determinan la aptitud de un producto para ser comercializado y satisfacer al mercado. Incluye el valor añadido por selección, clasificación por categorías y calibres, acondicionamiento, envasado, almacenamiento y transporte.
+
+Los requisitos se recogen en las normas de comercialización de la UE, reguladas por el **Reglamento Delegado (UE) 2023/2429**, aplicable desde el 1 de enero de 2025. Distingue dos niveles.
+
+- Norma general, para frutas y hortalizas sin norma específica (aquí, pomelos y limas)
+- Norma específica de cítricos (limones, naranjas y mandarinas), que añade categorías (Extra, I y II), calibrado por diámetro, tolerancias, presentación y marcado
+
+Los requisitos mínimos exigen productos enteros, sanos, limpios, prácticamente exentos de plagas y de daños en la pulpa, sin humedad exterior anormal ni olores y sabores extraños, y en estado de soportar el transporte. A ello se suman la madurez, las tolerancias y el marcado, con el país de origen.
+
+Hay tres conceptos de madurez distintos. La **fisiológica** es cuando el fruto completa su desarrollo. La **comercial** es la que reúne las condiciones exigidas por el mercado y la norma, y como depende de oferta, demanda y precios puede incentivar cosechar fruta verde, de ahí la necesidad de parámetros objetivos. La **de consumo o gustativa** es la de mejores características organolépticas.
+
+Por su respiración tras la recolección, los frutos son climatéricos (completan la maduración si se cosechan tras la madurez fisiológica, como manzana o aguacate) o **no climatéricos** (no mejoran tras la cosecha, como los cítricos). Los índices objetivos de recolección son firmeza, color, sólidos solubles (grados Brix), acidez y relación azúcares/acidez, almidón y materia seca. Solo son exigibles cuando la norma los fija.
+
+En cítricos la norma fija la madurez con tres parámetros: contenido mínimo de zumo, relación mínima azúcares/ácidos y coloración típica. Por ejemplo, **20 %** de zumo en limones y **6,5:1** en naranjas. Se admite el desverdizado y el marcado debe indicar los conservantes poscosecha.
+
+La aptitud de una partida depende de tres ámbitos con normas y controles distintos.
+
+- **Calidad comercial**: categoría, calibre, defectos, madurez, presentación y marcado
+- **Sanidad vegetal**: Reglamento (UE) 2016/2031. Preocupan la mosca mediterránea (*Ceratitis capitata*), cochinillas, trips y virus de la tristeza, y sobre todo las plagas de cuarentena: la mancha negra (*Phyllosticta citricarpa*), la falsa polilla (*Thaumatotibia leucotreta*), que motivó el tratamiento de frío a los cítricos sudafricanos, y el HLB o greening, la enfermedad más grave
+- **Seguridad alimentaria**: materias activas autorizadas, límites máximos de residuos (LMR) de plaguicidas y de contaminantes
 
 # 4. NORMATIVA APLICABLE
 
 ## 4.1. Política Agrícola Común (PAC)
 
-- **PAC 2023-2027**: modelo orientado al mercado, la sostenibilidad y la simplificación
-- Reglamentos
-  - **(UE) 2021/2115**: planes estratégicos (FEAGA y FEADER). En España, **PEPAC**
-  - **(UE) 2021/2116**: financiación, gestión y seguimiento
-  - **(UE) 2021/2117**: modifica la OCM única (**1308/2013**)
-- **Ayudas directas**
-  - **BISS**, ayuda básica a la renta para la sostenibilidad (sustituye pago básico y greening)
-  - **Eco-regímenes**
-  - **Condicionalidad reforzada** (BCAM)
-- Prioridades: sostenibilidad ambiental y climática, relevo generacional, digitalización, organizaciones de productores, resiliencia ante crisis
+La PAC evolucionó desde 2003 hacia un modelo orientado al mercado, la sostenibilidad y la simplificación. El **Reglamento (UE) 1308/2013** crea la OCM única. El Reglamento (UE) 2017/2393 (Ómnibus) reforzó las organizaciones de productores y la gestión de riesgos. La PAC 2023-2027 se articula en tres reglamentos.
+
+- **Reglamento (UE) 2021/2115**: planes estratégicos financiados por FEAGA y FEADER (en España, el PEPAC)
+- **Reglamento (UE) 2021/2116**: financiación, gestión y seguimiento
+- **Reglamento (UE) 2021/2117**: modifica, entre otros, el Reglamento 1308/2013
+
+En ayudas directas rigen la ayuda básica a la renta para la sostenibilidad (BISS), los eco-regímenes y la condicionalidad reforzada (BCAM). Se prioriza la sostenibilidad, el relevo generacional, la digitalización, las organizaciones de productores y la resiliencia ante crisis.
 
 ## 4.2. Organización Común de Mercados (OCM) y normas de comercialización
 
-- Norma base: **Reglamento (UE) 1308/2013**, modificado por el 2021/2117
-- Principios: **unidad de mercado**, **preferencia comunitaria**, **solidaridad financiera**
-- Objetivos: estabilizar mercados, nivel de vida equitativo del agricultor, competitividad, abastecimiento
-- Cinco pilares
-  - **Normas de comercialización**: Reglamento Delegado **2023/2429** (sustituyó al 543/2011) y Reglamento de Ejecución **2023/2430** (controles de conformidad)
-    - Base CEPE/ONU (WP.7). Esquema: definición, calidad, calibrado, tolerancias, presentación, marcado
-    - Controles en todas las fases y a terceros países (normas UE o equivalentes). **Real Decreto 175/2004**: autoridad coordinadora
-  - **Organizaciones de productores (OP)**: concentran oferta, planifican, reducen costes
-    - Programas operativos con fondo operativo, intervención sectorial del PEPAC
-  - **Organizaciones interprofesionales**: art. 157 del Reglamento 1308/2013 y **Ley 38/1994**
-    - Defensa y promoción. **AILIMPO**, **INTERCITRUS**. Asociación: **FEPEX**
-  - **Régimen de intervención**: prevención y gestión de crisis, retirada con compensación
-    - FEGA gestiona, FEAGA financia
-  - **Intercambios con terceros países**: aranceles, contingentes, salvaguardias, certificados
-    - **Precios de entrada** en naranjas, clementinas, mandarinas y limones
+La OCM, regulada en el Reglamento (UE) 1308/2013 modificado por el 2021/2117, se apoya en la unidad de mercado, la preferencia comunitaria y la solidaridad financiera. Busca estabilizar los mercados, asegurar un nivel de vida equitativo a los agricultores, mejorar la competitividad y garantizar el abastecimiento. Actúa en cinco frentes.
+
+- **Normas de comercialización**: en frutas y hortalizas, el Reglamento Delegado (UE) 2023/2429 y el Reglamento de Ejecución (UE) 2023/2430 sobre controles de conformidad. Siguen la norma marco de la CEPE/ONU (WP.7): definición, calidad, calibrado, tolerancias, presentación y marcado. Los controles alcanzan a todas las fases y a los terceros países, que deben cumplir normas UE o equivalentes. En España, el **Real Decreto 175/2004** designa la autoridad de coordinación en la Secretaría de Estado de Comercio
+- **Organizaciones de productores (OP)**: concentran la oferta, planifican la producción y refuerzan la posición negociadora. Ejecutan programas operativos cofinanciados por la UE mediante un fondo operativo, integrados desde 2023 en el PEPAC como intervención sectorial
+- **Organizaciones interprofesionales**: reconocidas por el **art. 157** del Reglamento 1308/2013 y la Ley 38/1994, defienden y promocionan el sector (AILIMPO, INTERCITRUS). Junto a ellas actúa FEPEX
+- **Intervención**: la gestión de crisis incluye la retirada de productos, con compensación si se cumplen condiciones de calidad, volumen y destino. Gestiona el FEGA y financia el FEAGA
+- **Intercambio con terceros países**: aranceles, contingentes, salvaguardias y certificados. Destaca el **régimen de precios de entrada**, que modula el arancel según el precio de la partida y afecta a naranjas, clementinas, mandarinas y limones
 
 ## 4.3. Normativa internacional y voluntaria
 
-- **CEPE/ONU** (WP.7): normas voluntarias, base técnica de las de la UE
-  - Marco: **Acuerdo de Ginebra** (sustituyó al Protocolo)
-- **OCDE**: folletos interpretativos con fotografías de defectos y cartas colorimétricas
-- **Codex Alimentarius** (FAO y OMS): voluntario, referencia en Acuerdos **MSF y OTC** de la OMC
-  - Normas para naranja, pomelo y lima
-- Regímenes voluntarios
-  - **Producción controlada**: normas **UNE 155000**, comité CTN 155, certificable por AENOR
-  - **Producción integrada**: **Real Decreto 1201/2002**, desarrollo autonómico, logotipo por **Orden APA/1/2004**
-  - **Producción ecológica**: **Reglamento (UE) 2018/848**, desde 1 de enero de 2022
-    - Importaciones: conformidad, con equivalencia en acuerdos comerciales y transitoria
-    - **COI** electrónico en TRACES: **Reglamento Delegado (UE) 2021/2306** y de Ejecución **2021/2307**
-    - **SOIVRE** controla la importación (**Orden ECC/1936/2014**)
-  - **DOP, IGP y ETG**: **Reglamento (UE) 2024/1143**
-    - **Ley 6/2015**: ámbito supraautonómico, control del MAPA por la AICA
-    - IGP Cítricos Valencianos, IGP Clementinas de las Tierras del Ebro
-  - **Protocolos privados**: GLOBALG.A.P., Tesco Nurture, GFSI (IFS, BRCGS, SQF)
+Las **normas CEPE/ONU** las elabora el WP.7, voluntarias pero base técnica de las normas de la UE, que las hace obligatorias al incorporarlas. Su marco es el Acuerdo de Ginebra. La **OCDE** publica folletos interpretativos con comentarios, fotografías de defectos y cartas colorimétricas. El **Codex Alimentarius** (FAO y OMS) protege la salud del consumidor y el comercio leal, sirve de referencia en los Acuerdos MSF y OTC de la OMC y tiene normas para naranja, pomelo y lima.
+
+Los regímenes voluntarios de producción y calidad diferenciada son:
+
+- **Producción controlada**: normas UNE de la serie 155000 (comité CTN 155), certificables por entidades como AENOR
+- **Producción integrada**: uso racional de insumos. **Real Decreto 1201/2002** (carácter básico) y desarrollo autonómico. La Orden APA/1/2004 fija el logotipo de garantía nacional
+- **Producción ecológica**: **Reglamento (UE) 2018/848**, aplicable desde el 1 de enero de 2022. En importaciones tiende a sustituir la equivalencia por la conformidad de los organismos de control, y mantiene la equivalencia en acuerdos comerciales y, transitoriamente, para países reconocidos. Cada partida lleva un certificado de inspección (COI) electrónico en TRACES. El SOIVRE controla la importación según la **Orden ECC/1936/2014**: productos agrarios vivos o no transformados, transformados para alimentación humana, piensos, material de reproducción vegetativa y semillas, y levaduras
+- **DOP, IGP y ETG**: Reglamento (UE) 2024/1143, que sustituyó al 1151/2012. La Ley 6/2015 regula las de ámbito supraautonómico, controladas por el MAPA a través de la AICA. Ejemplos: IGP Cítricos Valencianos e IGP Clementinas de las Tierras del Ebro
+- **Protocolos privados**: GLOBALG.A.P. y estándares reconocidos por GFSI (IFS, BRCGS, SQF), exigidos contractualmente por la distribución
 
 ## 4.4. Normativa general y control SOIVRE
 
-- Legislación alimentaria general
-  - **(CE) 178/2002**: principios y trazabilidad
-  - Paquete de higiene: **(CE) 852/2004** y **853/2004**
-  - **(CE) 396/2005**: LMR de plaguicidas
-  - **(UE) 2023/915**: contaminantes
-  - **(UE) 1169/2011**: información al consumidor
-  - **(UE) 2017/625**: controles oficiales, en España **Real Decreto 562/2025**
-  - **Ley 28/2015**: calidad alimentaria, régimen sancionador común
-  - **(UE) 2025/40** (envases, aplicable desde agosto de 2026) y **Real Decreto 1055/2022**
-  - **Ley 1/2025**: pérdidas y desperdicio alimentario
-- **Orden PRE/3026/2003**: inspección de calidad comercial del **SOIVRE**
-  - Anexo sustituido por **Orden ECM/1002/2026**, de 9 de septiembre, para adaptarlo a los Reglamentos 2023/2429 y 2023/2430
-  - Dos grupos: control de conformidad (importación y exportación con terceros países) o solo indicación de origen (frutos secos sin cáscara, desecadas, cortadas)
-  - Selección por **análisis de riesgos**
-  - **Certificado de conformidad** (Reglamento 2023/2430), necesario para el despacho
-  - Inspecciona **agrios frescos** a la importación y exportación
+A los frutos frescos se aplica la legislación alimentaria general.
+
+- **Reglamento (CE) 178/2002**: principios generales y trazabilidad
+- **Reglamentos (CE) 852/2004 y 853/2004**: paquete de higiene
+- **Reglamento (CE) 396/2005**: LMR de plaguicidas
+- **Reglamento (UE) 2023/915**: contaminantes
+- **Reglamento (UE) 1169/2011**: información al consumidor
+- **Reglamento (UE) 2017/625**: controles oficiales, desarrollado en España por el Real Decreto 562/2025
+- **Ley 28/2015**: calidad alimentaria, con régimen sancionador común
+- **Reglamento (UE) 2025/40** y **Real Decreto 1055/2022**: envases y residuos de envases
+- **Ley 1/2025**: pérdidas y desperdicio alimentario
+
+En comercio exterior la norma de referencia es la **Orden PRE/3026/2003**, que regula la inspección de la calidad comercial por el Servicio de Inspección SOIVRE de las Direcciones Territoriales y Provinciales de Comercio. Su anexo fue sustituido por la **Orden ECM/1002/2026**, de 9 de septiembre, para adaptarlo a los Reglamentos 2023/2429 y 2023/2430. Distingue los productos con control de conformidad (importación y exportación a terceros países) de aquellos en que solo se verifica el país de origen, como frutos secos sin cáscara o frutas desecadas. Las partidas se seleccionan por análisis de riesgos, y el resultado es el certificado de conformidad del Reglamento de Ejecución 2023/2430, necesario para el despacho aduanero. El SOIVRE inspecciona los agrios frescos en importación y exportación.
 
 # 5. ANÁLISIS SECTORIAL
 
-- Producción y consumo mundial al alza desde los 80 (transporte y envasado), sobre todo mandarinas, naranjas, limones y pomelos
-- **Producción mundial**
-  - Cítricos: China, Brasil, India y México, luego EEUU, España, Turquía y Egipto. España, primer productor de la UE
-  - Naranja: Brasil (zumo), China, India, México, Egipto. EEUU cae por el HLB
-  - Mandarinas: China, España, Turquía, Marruecos, Japón
-  - Limones y limas: India, México, China, Argentina, Turquía
-  - Pomelos: China, Vietnam, EEUU, México, Sudáfrica
-- **Zonas en España**: de Tarragona a Huelva
-  - Levante y Andalucía. Comunidad Valenciana: **70 %** de la exportación
-  - 2025: **3.697,8 M€** y **3.022.243 t**
-  - Naranja: Comunitat Valenciana y Andalucía. Mandarina: C. Valenciana, clementinas. Limón: Murcia. Pomelo: Murcia
-- **Competidores**
-  - Marruecos (tardías), Egipto (naranja, precio), Turquía (satsumas, limones, pomelos), Israel, Grecia, Italia
-  - Hemisferio sur (Sudáfrica) solapa inicio y final de campaña
-- **Comercio 2025**
-  - Cítricos: **31,0 %** de las exportaciones de frutas (antes en torno al 35 %)
-  - **UE 86,4 %**: Alemania, Francia, Países Bajos. Reino Unido entre terceros
-  - Caídas: Canadá **-39,1 %**, EEUU **-76 %**, China **-66 %**
-  - Estructura: naranjas 33,5 % en valor y 42,4 % en volumen, mandarinas 33,8 % y 38,5 % (clementinas ~70 %), limones 25,5 % y 21,1 %, pomelos 2,3 % en valor
-  - Limón: Alemania 38,2 %, Francia 19,5 %, Reino Unido 7,8 %
-- **Protocolos fitosanitarios** bilaterales por la mosca mediterránea
-  - EEUU (USDA): tratamiento de frío durante el transporte. Similares en China, Japón y Corea del Sur
-- **Importaciones**: Sudáfrica, Marruecos, Argentina, Egipto, Perú, Brasil, Portugal, Países Bajos
-- Sustitución por caqui, granada y aguacate (DOP Kaki Ribera del Xúquer, DOP Granada Mollar de Elche)
+La producción y el consumo mundiales han crecido mucho desde los años 80 por la mejora del transporte y envasado, sobre todo en mandarinas, naranjas, limones y pomelos.
+
+**Producción mundial**
+
+- Entre los grandes productores figuran China, Brasil, India y México, seguidos de EEUU, España, Turquía y Egipto. España es el primer productor de la UE y uno de los primeros exportadores mundiales en fresco
+- Naranja: Brasil lidera y la destina a zumo. En EEUU la producción cae por el HLB en Florida
+- Mandarinas: China a gran distancia, y España, Turquía, Marruecos y Japón
+- Limones y limas: India, México, China, Argentina y Turquía. España es de los primeros exportadores de limón fresco
+- Pomelos: China, Vietnam, EEUU, México y Sudáfrica
+
+**Zonas productoras en España**
+
+La producción va de Tarragona a Huelva, en zonas libres de heladas: Levante y Andalucía. La Comunidad Valenciana es la mayor productora y supone el **70 %** de la exportación de cítricos. En 2025 España exportó **3.697,8 M€** y **3.022.243 t**.
+
+- Naranja: Comunitat Valenciana y Andalucía, luego Murcia. Navelina, Navel Late y Valencia Late son las más exportadas
+- Mandarinas: Comunitat Valenciana, Cataluña y Huelva. Predominan las clementinas
+- Limones: Murcia, Alicante y Málaga
+- Pomelos: Murcia y Andalucía, con producción menor
+
+**Competidores.** Están en la cuenca mediterránea, más el hemisferio sur en los extremos de la campaña.
+
+- Marruecos: mandarinas y naranjas tardías de alto valor
+- Egipto: gran exportador de naranja por volumen, con precios muy competitivos
+- Turquía: satsumas, limones y pomelos, con menores costes
+- Israel: pomelo y mandarinas tardías
+- Grecia exporta naranjas a Europa central y del Este, e Italia destina su producción al mercado interno y a la industria
+- Hemisferio sur, con Sudáfrica: producen en contraestación pero solapan con el inicio y el final de la campaña española
+
+**Comercio exterior 2025.** Hay un importante superávit. Los cítricos son el **31,0 %** de las exportaciones españolas de frutas, con pérdida de peso (antes cerca del 35 %). La UE concentra el **86,4 %** de lo exportado, con Alemania, Francia y Países Bajos, y Reino Unido entre los terceros países. Canadá cae un 39,1 % (cerca de 24 M€), y EEUU y China bajan un 76 % y un 66 %. La estructura de exportaciones es:
+
+- Naranjas: 33,5 % en valor y 42,4 % en volumen
+- Mandarinas: 33,8 % en valor y 38,5 % en volumen, con las clementinas en torno al 70 %
+- Limones: 25,5 % en valor y 21,1 % en volumen. Alemania (38,2 %), Francia (19,5 %) y Reino Unido (7,8 %). Caída del 76 % en EEUU
+- Pomelos: 2,3 % del valor, con Alemania y Francia en el 64 %
+
+La apertura de terceros mercados exige **protocolos fitosanitarios** bilaterales por la mosca mediterránea. Con EEUU (USDA) el protocolo fija tratamiento de frío durante el transporte, y los hay similares con China, Japón y Corea del Sur, además de los límites de residuos del destino.
+
+En importaciones, llegan cítricos de Sudáfrica, Marruecos, Argentina, Egipto, Perú y Brasil, y de Portugal y Países Bajos. Los pomelos vienen también de Sudáfrica y Portugal, y las mandarinas de Marruecos y Sudáfrica.
+
+Por la caída de márgenes, parte de los productores sustituye cítricos por caqui, granada o aguacate, algunos con DOP Kaki Ribera del Xúquer o DOP Granada Mollar de Elche.
 
 # 6. CONCLUSIÓN
 
-- Cítricos: partida exportadora estratégica y clave de la balanza agroalimentaria
-- **Mercosur**: Acuerdo Interino de Comercio firmado en enero de 2026, aplicación provisional desde el **1 de mayo de 2026** (pilar comercial)
-  - Acuerdo de Asociación pendiente de ratificación
-  - Liberalización progresiva con contingentes y **salvaguardia bilateral**
-- Competencia: menores costes de Mercosur, Brasil (zumo de naranja), Argentina (limón), Sudáfrica, Egipto, Turquía
-  - Riesgo fitosanitario: mancha negra
-- Estrategia: diferenciación, innovación varietal, calidad, sostenibilidad, estándares equivalentes en la UE
-- **SOIVRE**: mismas reglas de calidad comercial para importación y exportación
+Los cítricos son un ámbito estratégico y una de las principales partidas exportadoras hortofrutícolas, clave en la balanza comercial agroalimentaria, y España es de los primeros productores y exportadores de la UE. Esta posición está condicionada por Mercosur. El Acuerdo Interino de Comercio, firmado en enero de 2026 junto con el Acuerdo de Asociación, se aplica provisionalmente desde el 1 de mayo de 2026 en el pilar comercial, mientras que el Acuerdo de Asociación sigue pendiente de ratificación. La liberalización es progresiva, con contingentes y salvaguardia bilateral para productos agrícolas sensibles.
+
+Mercosur tiene menores costes y gran capacidad exportadora. Brasil es el primer exportador de zumo de naranja y Argentina es relevante en limón. Su producción, de contraestación, puede solaparse con el inicio y el final de la campaña española, y se suman Sudáfrica, Egipto y Turquía y el riesgo de plagas de cuarentena como la mancha negra. Procede reforzar la diferenciación, la innovación varietal, la calidad y la sostenibilidad, y que la UE exija estándares equivalentes. El control de conformidad del SOIVRE asegura que el producto importado y el exportado compiten con las mismas reglas de calidad comercial.

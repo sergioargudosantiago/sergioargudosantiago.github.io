@@ -256,8 +256,9 @@ artículo que tiene pensado el autor. Para generar los PDF hace falta Playwright
     (síntesis de 3 a 5 páginas, con frases y párrafos además de viñetas) se
     ofrecen en línea y en PDF con la plantilla, y enseñan su **fecha de
     actualización** en la página y en el listado. Hoy son los temas 1 a 36 del
-    ejercicio 3 (el 12 es descarte). El resto (ejercicio 1, ejercicio 5 y temas 37
-    a 58 del ejercicio 3) sigue con su Word y su PDF antiguos y el listado dice
+    ejercicio 3 (el 12 es descarte) y los temas 1 a 13 del ejercicio 1 (13 oct).
+    El resto (temas 14 a 55 del ejercicio 1, ejercicio 5 y temas 37 a 58 del
+    ejercicio 3) sigue con su Word y su PDF antiguos y el listado dice
     «En actualización».
   - `temas/actualizado.json` manda: lo escribe el repositorio privado de
     herramientas al rehacer un esquema, con la fecha del último guardado en Word
