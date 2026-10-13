@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-1/tema-21.md. No editar a mano. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 21. Definición de servicio según el sistema de cuentas nacionales — esquema del ejercicio 1</title>
+<link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="stylesheet" href="../../../css/fuentes.css">
+<style>
+@page { size: A4; margin: 14mm 12.5mm 15mm;
+  @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #D9DED6; font-family: 'Public Sans', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #C8A951; outline-offset: 2px; }
+
+/* Barra superior (solo pantalla) */
+.barra { background: #3B4533; color: #C2D9C2; }
+.barra-in { max-width: 210mm; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.barra a { color: #C2D9C2; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.barra a:hover { color: #FFFFFF; }
+.barra .marca { font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: .14em; font-size: 13px; color: #FFFFFF; }
+.barra .acciones { display: flex; gap: 10px; align-items: center; }
+.barra .boton { background: #E0C46B; color: #1F2A1D; font-weight: 700; padding: 0 14px; box-shadow: 3px 3px 0 #1F2A1D; }
+.barra .boton:hover { background: #FFFFFF; color: #1F2A1D; }
+
+/* Hoja */
+.hoja { max-width: 210mm; margin: 20px auto 40px; padding: 40px 47px 28px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.5; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+/* Los enunciados del BOE pueden ser largos: el título baja de cuerpo por tramos. */
+h1.largo { font-size: 28px; line-height: 1.12; }
+h1.muy-largo { font-size: 23px; line-height: 1.16; }
+.enunciado { margin: 3px 0 2px; max-width: 78ch; font-size: 14.5px; line-height: 1.42; color: #4A5546; text-wrap: pretty; }
+.sub-cab { font-size: 14px; color: #4A5546; }
+.sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+
+.indice { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.indice a { display: flex; flex-direction: column; gap: 1px; height: 100%; padding: 6px 9px; background: #3B4533; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.indice a:hover { background: #1F2A1D; }
+.indice b { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 13px; color: #E0C46B; letter-spacing: 0; }
+
+/* Cuerpo del esquema */
+.esq { min-width: 0; }
+.sec { margin: 26px 4px 12px 0; display: flex; align-items: stretch; background: #3B4533; color: #FFFFFF; box-shadow: 4px 4px 0 #A8862F; font-size: 16px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; scroll-margin-top: 12px; break-inside: avoid; break-after: avoid; }
+.esq > .sec:first-child { margin-top: 0; }
+.sec .n { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0; background: #E0C46B; color: #1F2A1D; min-width: 46px; display: flex; align-items: center; justify-content: center; }
+.sec .t { padding: 9px 12px; display: flex; align-items: center; flex-grow: 1; min-width: 0; }
+.sec .px { display: flex; align-items: flex-end; gap: 3px; padding: 0 10px 8px 0; }
+.sec .px i { display: block; width: 5px; height: 5px; background: #E0C46B; }
+.sec .px i:nth-child(2) { height: 9px; opacity: .7; }
+.sec .px i:nth-child(3) { height: 13px; opacity: .45; }
+.sub { margin: 16px 0 5px; font-size: 1em; font-weight: 700; line-height: 1.3; display: flex; align-items: baseline; gap: 8px; break-after: avoid; }
+.sub span { flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: .78em; color: #3B4533; background: #EEF3EB; border: 1px solid #3B4533; box-shadow: 2px 2px 0 #C9D1C5; padding: 0 5px; }
+.sub::after { content: ""; flex: 1 0 24px; align-self: center; border-bottom: 2px dotted #C9D1C5; }
+h4.sub { font-size: .94em; margin-top: 12px; }
+h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
+.sec + .sub { margin-top: 0; }
+.esq p { margin: 6px 0; }
+.esq ul, .esq ol { margin: 0; padding-left: 18px; }
+.esq li { margin: 2px 0; }
+.esq li::marker { color: #A8862F; }
+.esq ol > li::marker { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.esq li > ul { list-style: none; padding-left: 16px; }
+.esq li > ul > li { position: relative; }
+.esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
+.esq b { font-weight: 700; }
+
+.pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; }
+
+@media screen and (min-width: 821px) {
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+}
+@media screen and (max-width: 820px) {
+  .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
+  h1 { font-size: 27px; }
+  h1.largo { font-size: 23px; }
+  h1.muy-largo { font-size: 20px; }
+  .enunciado { font-size: 14px; }
+  .sello { min-width: 74px; padding: 6px 10px; }
+  .sello b { font-size: 22px; }
+  .sec { font-size: 14.5px; }
+}
+
+/* Impresión y PDF: dos columnas, cuerpo pequeño, sin barra ni pie propio (el pie
+   y la numeración van en los márgenes de @page). */
+@media print {
+  body { background: #FFFFFF; }
+  .barra, .pie { display: none; }
+  .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
+  h1 { font-size: 31px; }
+  h1.largo { font-size: 25px; }
+  h1.muy-largo { font-size: 21px; }
+  .enunciado { max-width: none; font-size: 11.5px; line-height: 1.36; }
+  .sub-cab { font-size: 13px; }
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+  .indice a { padding: 5px 8px; font-size: 9.5px; }
+  .indice b { font-size: 12px; }
+  .esq { column-count: 2; column-gap: 24px; }
+  .sec { font-size: 12.5px; margin: 14px 4px 9px 0; }
+  .sec .n { font-size: 15px; min-width: 38px; }
+  .sec .t { padding: 6px 10px; }
+  .sub { margin: 9px 0 3px; }
+  .esq li { margin: 1px 0; }
+  .esq ul, .esq ol { padding-left: 14px; }
+  .esq li > ul { padding-left: 14px; }
+  .esq li > ul > li::before { left: -11px; }
+}
+
+@page { @bottom-left { content: "Esquema · Tema 21. Definición de servicio según el sistema de cuentas nacionales"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
+    <div class="acciones"><a class="boton" href="tema-21.pdf" download="Esquema tema 21 (ejercicio 1).pdf">Descargar PDF</a></div>
+  </div>
+</header>
+<main class="hoja">
+  <div class="cab">
+    <div class="cab-txt">
+      <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
+      <h1 class="largo">Definición de servicio según el sistema de cuentas nacionales</h1>
+      <p class="enunciado">Análisis de la evolución internacional del comercio de servicios. La regulación del comercio internacional de servicios: El Acuerdo General sobre Comercio de Servicios.</p>
+      <div class="sub-cab">Ejercicio 1 · Esquema del tema 21 · Actualizado el <time datetime="2026-10-13">13 de octubre de 2026</time></div>
+    </div>
+    <div class="sello" aria-label="Ejercicio 1, tema 21"><span>EJ. 1 · TEMA</span><b>21</b></div>
+  </div>
+  <nav aria-label="Apartados del esquema"><ol class="indice" style="--cols: 4"><li><a href="#apartado-1"><b>01</b>INTRODUCCIÓN</a></li><li><a href="#apartado-2"><b>02</b>DEFINICIÓN DE SERVICIO EN EL SISTEMA DE CUENTAS NACIONALES</a></li><li><a href="#apartado-3"><b>03</b>ANÁLISIS DE LA EVOLUCIÓN INTERNACIONAL DEL COMERCIO DE SERVICIOS</a></li><li><a href="#apartado-4"><b>04</b>REGULACIÓN DEL COMERCIO INTERNACIONAL DE SERVICIOS</a></li><li><a href="#apartado-5"><b>05</b>EL MERCADO ÚNICO DIGITAL Y EL PROGRAMA EUROPA DIGITAL 2021-2027</a></li><li><a href="#apartado-6"><b>06</b>EL TURISMO EN EL MUNDO</a></li><li><a href="#apartado-7"><b>07</b>CONCLUSIÓN</a></li></ol></nav>
+  <div class="esq">
+<h2 class="sec" id="apartado-1"><span class="n">01</span><span class="t">INTRODUCCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>El sector servicios es el mayor generador de empleo del planeta, la principal fuente de valor añadido de las economías industrializadas y el segmento más dinámico del comercio internacional. Pesa en torno al <b>70 %</b> de la producción de las economías avanzadas, el <b>55 %</b> de las de renta media y el <b>44 %</b> de las de renta baja. Lo impulsan la externalización de actividades antes internas de las empresas y las TIC, que han creado servicios nuevos y han hecho comercializables actividades antes estrictamente locales.</p>
+<h2 class="sec" id="apartado-2"><span class="n">02</span><span class="t">DEFINICIÓN DE SERVICIO EN EL SISTEMA DE CUENTAS NACIONALES</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p><b>Servicios.</b> Según el Sistema de Cuentas Nacionales (SCN), son las actividades que producen algo intangible, no almacenable, de cierta duración e invisible, y constituyen el sector terciario. La definición refleja la heterogeneidad del sector, que agrupa todo lo que no es actividad primaria ni secundaria.</p>
+<h3 class="sub"><span>2.1</span>Clasificación según la Contabilidad Nacional de España (CNE)</h3>
+<p>La Contabilidad Nacional de España distingue dos categorías.</p>
+<ul><li><b>Servicios de mercado</b>, diez subsectores: comercio, recuperación y reparación, restaurantes, hoteles y cafés, transporte, comunicaciones, seguros y crédito, alquiler de bienes e inmuebles, enseñanza, sanidad, servicios a empresas y otros servicios</li><li><b>Servicios no de mercado</b>, cuatro subsectores: servicios generales de las Administraciones Públicas, enseñanza pública, sanidad pública y servicio doméstico</li></ul>
+<h3 class="sub"><span>2.2</span>Clasificación según destino</h3>
+<p>Servicios de <b>consumo final</b> y servicios <b>intermedios</b>, integrados en los procesos productivos de otras actividades.</p>
+<h3 class="sub"><span>2.3</span>Clasificación según las actividades que los integran</h3>
+<ul><li><b>De producción</b>: servicios a empresas y profesionales (construcción, diseño, contabilidad, publicidad)</li><li><b>De distribución</b>: transporte, comunicación, almacenamiento y comercio</li><li><b>Personales</b>: servicio doméstico, hostelería, esparcimiento y ocio</li><li><b>Sociales</b>: sanidad, educación y asistencia social</li><li><b>Públicos</b>: prestados por las Administraciones Públicas (justicia, defensa, relaciones exteriores)</li></ul>
+<h3 class="sub"><span>2.4</span>Características del sector servicios</h3>
+<ul><li>Gran heterogeneidad, que dificulta el análisis agregado</li><li>Servicios no de mercado, cuya producción no responde a criterios de precio ni de competencia</li><li>Dificultad para separar los servicios integrados en la industria de su producción global, por la generalización de la externalización</li><li>Rápido avance tecnológico, que complica valorar los cambios de calidad</li><li>Mayor peso de la economía sumergida, por el carácter intangible de la producción</li></ul>
+<h2 class="sec" id="apartado-3"><span class="n">03</span><span class="t">ANÁLISIS DE LA EVOLUCIÓN INTERNACIONAL DEL COMERCIO DE SERVICIOS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Hasta los años ochenta los servicios se consideraban <b>bienes no transables</b>, consumibles solo donde se producían. La liberalización comercial y sobre todo las TIC cambiaron esa percepción. La globalización ha impulsado la externalización a países de bajo coste: <b>India</b> lidera el mercado y <b>Filipinas</b> emerge como alternativa por su dominio del inglés y su personal cualificado.</p>
+<p>Los servicios representan <b>dos tercios</b> de la producción mundial y en torno a <b>una cuarta parte</b> del comercio internacional, con exportaciones multiplicadas por cuatro en veinte años. La OMC distingue cuatro categorías de servicios comerciales: transportes, viajes, servicios relacionados con los bienes y otros servicios comerciales, la de mayor crecimiento.</p>
+<p>Según la OMC (Global Trade Outlook 2026), las exportaciones mundiales de servicios comerciales alcanzaron en 2025 los <b>9,56 billones de dólares</b> (+8 %), frente a 26,26 billones de mercancías. Los otros servicios comerciales crecieron en torno a un 10 %, con los informáticos (+11 %) a la cabeza. Los viajes avanzaron un 8 %, las telecomunicaciones un 7 % y el transporte apenas un 2 %, por la moderación de los fletes. Los servicios prestados digitalmente sumaron <b>5,26 billones</b>, en torno al 15 % del comercio mundial de bienes y servicios.</p>
+<p><b>Europa</b> es el principal exportador en todas las categorías, aunque su cuota baja por el ascenso de Asia, con China a la cabeza. América del Norte es también un exportador notable, mientras que la CEI y América del Sur y Central tienen una participación reducida o marginal.</p>
+<h2 class="sec" id="apartado-4"><span class="n">04</span><span class="t">REGULACIÓN DEL COMERCIO INTERNACIONAL DE SERVICIOS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>La liberalización genera beneficios netos: más competencia, menores precios y mejor calidad. Un sector protegido sufre <b>inflación dual</b>: los precios de los bienes se contienen por su exposición a la competencia internacional, mientras que los de los servicios crecen de forma persistente y más deprisa, lo que desestabiliza la economía. Los instrumentos principales son el <b>GATS</b> en la OMC y, en la UE, la <b>Directiva 2006/123/CE</b> (Bolkestein).</p>
+<h3 class="sub"><span>4.1</span>El Acuerdo General sobre el Comercio de Servicios (GATS/AGCS)</h3>
+<p>Primer acuerdo multilateral específico sobre servicios, en vigor desde <b>1995</b> dentro de la OMC junto al GATT de 1994 y el Acuerdo sobre los ADPIC. Busca expandir el comercio con transparencia y liberalización progresiva, asegurando la previsibilidad de las normas y promoviendo la apertura mediante rondas sucesivas.</p>
+<p><b>Los cuatro modos de suministro.</b> El artículo I define el comercio de servicios según la presencia territorial de proveedor y consumidor.</p>
+<ul><li><b>Modo 1, comercio transfronterizo</b>: el servicio cruza la frontera sin desplazamiento de personas (consultoría telemática)</li><li><b>Modo 2, consumo en el extranjero</b>: el consumidor se desplaza al territorio del proveedor (turismo, estudiantes)</li><li><b>Modo 3, presencia comercial</b>: filial, sucursal u oficina de representación en el territorio del consumidor (bancos, cadenas hoteleras)</li><li><b>Modo 4, movimiento de personas físicas</b>: una persona del país proveedor se desplaza temporalmente, como independiente o como empleado de una empresa de servicios</li></ul>
+<p><b>Sectores y clasificación.</b> Los miembros usan una clasificación de <b>doce sectores</b>: servicios a empresas, comunicaciones, construcción e ingeniería, distribución, enseñanza, medioambiente, financieros, sociales y de salud, turismo y viajes, esparcimiento y cultura, transporte y otros.</p>
+<p><b>Estructura de obligaciones.</b> Se articula en dos niveles.</p>
+<ul><li><b>Generales incondicionales</b>, para todos los sectores y miembros:<ul><li><b>Cláusula de la Nación Más Favorecida</b>, piedra angular del sistema: las condiciones más favorables concedidas a un miembro se extienden a todos. Se permiten exenciones, sobre todo por acuerdos de integración económica</li><li><b>Transparencia</b>: publicar con rapidez las medidas de aplicación general, notificar los cambios al Consejo del Comercio de Servicios y designar puntos de contacto para países en desarrollo</li></ul></li><li><b>Generales condicionales</b>, solo para los sectores con compromisos específicos:<ul><li><b>Reglamentación nacional</b>: revisión legal de las decisiones administrativas</li><li><b>Monopolios</b>: no pueden actuar de forma incompatible con la CNMF</li><li><b>Prácticas comerciales y subvenciones</b>: cooperación contra las restrictivas de la competencia y consultas con el miembro que subvenciona</li></ul></li><li><b>Compromisos específicos</b>: <b>acceso a los mercados</b>, con posibles limitaciones al número de proveedores, al valor de las operaciones, a la forma jurídica o al capital extranjero, y <b>trato nacional</b>, sin discriminación en favor de los proveedores nacionales en los sectores consignados</li><li><b>Otras disposiciones</b>:<ul><li><b>Integración económica (art. V)</b>: exime de la CNMF a los acuerdos con cobertura sectorial sustancial. El art. V bis regula los de mercados de trabajo</li><li><b>Reconocimiento (art. VII)</b>: de formación, títulos y certificaciones obtenidos en otro país</li><li><b>Excepciones</b> por balanza de pagos, salud pública, orden público o seguridad esencial</li></ul></li></ul>
+<h3 class="sub"><span>4.2</span>Futuro del GATS: Ronda Doha y acuerdos posteriores</h3>
+<p>El artículo XIX prevé rondas sucesivas. Las negociaciones se encuadran desde noviembre de 2001 en el <b>Programa de Doha para el Desarrollo</b>, suspendido en 2006, restablecido en 2007 y aún formalmente abierto.</p>
+<p>El <b>waiver para los PMA</b>, aprobado en la Conferencia de Ginebra de 2011, permite conceder preferencias unilaterales a sus proveedores de servicios sin extenderlas al resto por la cláusula NMF. Está prorrogado hasta el <b>31 de diciembre de 2030</b>. Los PMA reclaman mejoras, sobre todo en el Modo 4.</p>
+<p>La <b>Iniciativa Conjunta sobre Reglamentación Nacional de los Servicios (SDR)</b> es el avance más significativo. Sus disciplinas, incorporadas como compromisos adicionales en las listas GATS, entraron en vigor en <b>febrero de 2024</b>, con la CM13, para los miembros que habían completado su certificación. La integran <b>72 miembros</b>, en torno al 90 % del comercio mundial de servicios. Exige procedimientos de autorización, licencias y cualificaciones transparentes, objetivos, imparciales y no más gravosos de lo necesario, e incluye la primera cláusula de no discriminación por género negociada en la OMC.</p>
+<p>Las últimas conferencias ministeriales no han aportado nuevos compromisos de liberalización en servicios:</p>
+<ul><li><b>CM12 (Ginebra, 2022)</b>: respaldó los trabajos sobre reglamentación nacional y participación de los PMA</li><li><b>CM13 (Abu Dabi, 2024)</b>: reafirmó el sistema multilateral basado en normas y prorrogó la moratoria sobre derechos de aduana a las transmisiones electrónicas</li><li><b>CM14 (Yaundé, clausurada el 30 de marzo de 2026)</b>: no logró prorrogar la moratoria, que expiró tras 28 años. El paquete pendiente (comercio electrónico, reforma de la OMC, PMA) pasó al Consejo General, que en mayo de 2026 concluyó sin decisiones. Evidenció que los miembros siguen reconociendo el valor de la OMC, pero ya no asumen que se sostendrá sin una reforma profunda de la solución de diferencias y de la transparencia</li></ul>
+<h3 class="sub"><span>4.3</span>El Acuerdo sobre el Comercio de Servicios (TiSA)</h3>
+<p>En <b>2013</b>, 23 miembros de la OMC, entre ellos la UE, EEUU, Japón, Canadá y Australia, iniciaron la negociación del <b>Trade in Services Agreement</b>, acuerdo regional con vocación de multilateralizarse. Tras 21 rondas hasta noviembre de 2016, las negociaciones quedaron en stand-by por la coyuntura política. La UE es uno de sus principales impulsores, por las barreras que encuentran sus prestadores.</p>
+<h3 class="sub"><span>4.4</span>La Directiva Bolkestein: Directiva 2006/123/CE</h3>
+<p>Establece el marco de la libertad de establecimiento y la libre prestación de servicios entre los Estados miembros, para construir un mercado interior de servicios competitivo. Sus principios:</p>
+<ul><li>Separación del regulador y el regulado</li><li>Delimitación del monopolio natural frente a los ámbitos abiertos a la competencia</li><li>Acceso no discriminatorio a las redes y apertura del accionariado del gestor de red</li><li>Acceso al mercado en igualdad para nuevos competidores y refuerzo de la defensa de la competencia</li><li>Garantía del servicio universal y de su financiación</li></ul>
+<p>El <b>art. 16</b> garantiza la libre prestación: los Estados no pueden imponer requisitos discriminatorios por nacionalidad o Estado de establecimiento, no justificados por orden público, seguridad, salud o medioambiente (principio de necesidad), o desproporcionados.</p>
+<p>La transposición en España se hizo con la <b>Ley 17/2009</b> (Ley Paraguas), sobre libre acceso a las actividades de servicio, y la <b>Ley 25/2009</b> (Ley Ómnibus), que modifica 47 leyes estatales, entre ellas la de colegios profesionales. La <b>Ley 1/2010</b> reformó la Ley 7/1996 de Ordenación del Comercio Minorista y suprimió con carácter general la autorización previa para abrir establecimientos.</p>
+<h2 class="sec" id="apartado-5"><span class="n">05</span><span class="t">EL MERCADO ÚNICO DIGITAL Y EL PROGRAMA EUROPA DIGITAL 2021-2027</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>El <b>Mercado Único Digital</b> aplica el principio del mercado interior al entorno digital, eliminando barreras nacionales a las transacciones en línea. Se enmarca en la Agenda Digital para Europa, iniciativa de Europa 2020. La Estrategia de la Comisión, de 6 de mayo de 2015, tiene tres pilares:</p>
+<ul><li><b>Acceso</b> de consumidores y empresas a bienes y servicios digitales: comercio electrónico transfronterizo, fin del bloqueo geográfico, derechos de autor y menor carga del IVA transfronterizo</li><li><b>Entorno</b> para redes e innovación: telecomunicaciones, plataformas, ciberseguridad y protección de datos</li><li><b>Economía y sociedad digitales</b>: libre circulación de datos, interoperabilidad y competencias digitales</li></ul>
+<p>Entre sus logros están el fin de los recargos por itinerancia desde el 15 de junio de 2017 (<b>Reglamento (UE) 2015/2120</b>, prorrogado hasta 2032 por el <b>Reglamento (UE) 2022/612</b>), la portabilidad transfronteriza de contenidos en línea (<b>Reglamento (UE) 2017/1128</b>) y la prohibición del bloqueo geográfico injustificado (<b>Reglamento (UE) 2018/302</b>).</p>
+<p>El <b>Programa Europa Digital 2021-2027</b>, creado por el <b>Reglamento (UE) 2021/694</b> y dotado con <b>7.588 M€</b>, financia tecnologías avanzadas en cinco áreas: supercomputación, inteligencia artificial, ciberseguridad, competencias digitales avanzadas y despliegue e interoperabilidad. Se ejecuta con una red de Centros Europeos de Innovación Digital (EDIH). La Comisión gestiona el programa y encomienda parte de las convocatorias a la agencia HaDEA. Lo completan la <b>Década Digital 2030</b> (Decisión (UE) 2022/2481), la Ley de Servicios Digitales (Reglamento (UE) 2022/2065), la Ley de Mercados Digitales (Reglamento (UE) 2022/1925) y el Reglamento de Inteligencia Artificial (Reglamento (UE) 2024/1689).</p>
+<h2 class="sec" id="apartado-6"><span class="n">06</span><span class="t">EL TURISMO EN EL MUNDO</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>El turismo, medido por la rúbrica de viajes, supone en torno a una quinta parte de las exportaciones mundiales de servicios comerciales (<b>1,89 billones de dólares</b> sobre 9,56 billones en 2025). A diferencia de otros servicios, concentrados en países de renta alta, alcanza también a los países en desarrollo, para quienes genera divisas y crecimiento con inversiones modestas. ONU Turismo pronosticó un crecimiento medio anual del <b>3,3 %</b> hasta 2030.</p>
+<p>La COVID-19 hizo de <b>2020 el peor año de su historia</b>: 1.000 millones de viajeros menos que en 2019 (−74 %) y pérdidas de 1,3 billones de dólares en exportaciones. Asia y el Pacífico sufrieron la mayor caída relativa (84 %) y Europa la absoluta.</p>
+<p>La recuperación desde 2022 ha sido intensa: en <b>2025</b> hubo unos <b>1.520 millones</b> de llegadas internacionales (+4 %), con ingresos próximos a 1,9 billones de dólares, y Europa, principal receptora, superó los 790 millones. ONU Turismo advierte de que el conflicto en Oriente Medio y la incertidumbre económica podrían restar entre 1 y 2 puntos al crecimiento previsto para 2026, del 3 % al 4 %.</p>
+<p><b>España</b> fue en 2019 segunda del mundo en llegadas (83,7 millones), tras Francia, y segunda en ingresos tras EEUU. Marcó en 2025 un récord de <b>96,8 millones</b> de turistas internacionales.</p>
+<h2 class="sec" id="apartado-7"><span class="n">07</span><span class="t">CONCLUSIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Los servicios son el eje de las economías contemporáneas y su integración en el comercio internacional los hace clave en las negociaciones multilaterales. El GATS ha avanzado en la liberalización, con hitos como la Iniciativa SDR, cuyas disciplinas entraron en vigor en febrero de 2024. Sin embargo, el estancamiento de la Ronda Doha, la suspensión del TiSA y el resultado de la CM14 muestran que el consenso en servicios es más arduo que en mercancías, en un contexto de proteccionismo y fragmentación del comercio internacional.</p>
+  </div>
+  <footer class="pie"><span>Esquema propio a partir del tema desarrollado</span><span class="url">sergioargudo.es</span></footer>
+</main>
+</body>
+</html>

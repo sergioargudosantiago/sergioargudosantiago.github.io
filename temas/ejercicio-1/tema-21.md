@@ -1,167 +1,134 @@
 # 1. INTRODUCCIÓN
-- **Servicios**: mayor generador de empleo, principal fuente de valor añadido en economías industrializadas, segmento más dinámico del comercio internacional
-- Peso en la producción según renta: avanzadas **~70 %**, media **55 %**, baja **44 %**
-- Dos motores del crecimiento
-  - **Externalización** de actividades antes internas
-  - **TIC**: servicios nuevos, fin de barreras de distancia, comercialización internacional
-- Cuatro bloques: definición según el SCN, evolución del comercio de servicios, regulación (**GATS/AGCS** y normativa comunitaria), turismo mundial
+
+El sector servicios es el mayor generador de empleo del planeta, la principal fuente de valor añadido de las economías industrializadas y el segmento más dinámico del comercio internacional. Pesa en torno al **70 %** de la producción de las economías avanzadas, el **55 %** de las de renta media y el **44 %** de las de renta baja. Lo impulsan la externalización de actividades antes internas de las empresas y las TIC, que han creado servicios nuevos y han hecho comercializables actividades antes estrictamente locales.
+
 # 2. DEFINICIÓN DE SERVICIO EN EL SISTEMA DE CUENTAS NACIONALES
-- **SCN**: marco estadístico de referencia del análisis macroeconómico
-- Servicios: actividades que producen algo **intangible, no almacenable, de cierta duración e invisible**, sector terciario
-- Heterogéneo: todo lo que no es actividad primaria ni secundaria
-## 2.1. Clasificación según la Contabilidad Nacional del Estado (CNE)
-- **De mercado** (destinados a la venta), 10 subsectores
-  - Comercio, recuperación y reparación
-  - Restaurantes, hoteles y cafés
-  - Transporte y actividades conexas
-  - Comunicaciones
-  - Seguros y crédito
-  - Alquiler de bienes e inmuebles
-  - Enseñanza
-  - Sanidad
-  - Servicios prestados a empresas
-  - Otros servicios
-- **No de mercado**, 4 subsectores
-  - Servicios generales de las AAPP
-  - Enseñanza pública
-  - Sanidad pública
-  - Servicio doméstico
+
+**Servicios.** Según el Sistema de Cuentas Nacionales (SCN), son las actividades que producen algo intangible, no almacenable, de cierta duración e invisible, y constituyen el sector terciario. La definición refleja la heterogeneidad del sector, que agrupa todo lo que no es actividad primaria ni secundaria.
+
+## 2.1. Clasificación según la Contabilidad Nacional de España (CNE)
+
+La Contabilidad Nacional de España distingue dos categorías.
+
+- **Servicios de mercado**, diez subsectores: comercio, recuperación y reparación, restaurantes, hoteles y cafés, transporte, comunicaciones, seguros y crédito, alquiler de bienes e inmuebles, enseñanza, sanidad, servicios a empresas y otros servicios
+- **Servicios no de mercado**, cuatro subsectores: servicios generales de las Administraciones Públicas, enseñanza pública, sanidad pública y servicio doméstico
+
 ## 2.2. Clasificación según destino
-- Servicios de **consumo final**
-- Servicios **intermedios** a procesos productivos de otras actividades
+
+Servicios de **consumo final** y servicios **intermedios**, integrados en los procesos productivos de otras actividades.
+
 ## 2.3. Clasificación según las actividades que los integran
-- **Producción**: servicios a empresas y profesionales
-- **Distribución**: transporte, comunicación, almacenamiento, comercio
-- **Personales**: servicio doméstico, hostelería, esparcimiento, ocio
-- **Sociales**: sanidad, educación, asistencia social
-- **Públicos**: prestados por las AAPP (justicia, defensa, relaciones exteriores)
+
+- **De producción**: servicios a empresas y profesionales (construcción, diseño, contabilidad, publicidad)
+- **De distribución**: transporte, comunicación, almacenamiento y comercio
+- **Personales**: servicio doméstico, hostelería, esparcimiento y ocio
+- **Sociales**: sanidad, educación y asistencia social
+- **Públicos**: prestados por las Administraciones Públicas (justicia, defensa, relaciones exteriores)
+
 ## 2.4. Características del sector servicios
-- Gran **heterogeneidad**, dificulta el análisis agregado
-- Servicios **no de mercado**: producción sin criterios de precio ni competencia
-- Difícil separar servicios integrados en la industria (**outsourcing**)
-- Alto ritmo tecnológico, complica valorar cambios de calidad
-- Mayor peso de la **economía sumergida**
+
+- Gran heterogeneidad, que dificulta el análisis agregado
+- Servicios no de mercado, cuya producción no responde a criterios de precio ni de competencia
+- Dificultad para separar los servicios integrados en la industria de su producción global, por la generalización de la externalización
+- Rápido avance tecnológico, que complica valorar los cambios de calidad
+- Mayor peso de la economía sumergida, por el carácter intangible de la producción
+
 # 3. ANÁLISIS DE LA EVOLUCIÓN INTERNACIONAL DEL COMERCIO DE SERVICIOS
-- Hasta los **años ochenta** los servicios eran **bienes no transables**
-- Cambio: liberalización comercial y sobre todo **TIC**
-- Externalización a países de bajo coste: **India** lidera, **Filipinas** emerge, **call centres** en crecimiento
-- Peso actual
-  - **Dos tercios** de la producción mundial
-  - **~Una cuarta parte** del comercio internacional
-  - Exportaciones **x4** en veinte años
-- Servicios comerciales OMC: transportes, viajes, servicios relacionados con los bienes, **otros servicios comerciales** (mayor crecimiento)
-- Informe Anual OMC 2025 (datos 2024)
-  - Viajes **~+13 %**, información **+14 %**, informática **+12 %**
-  - Única caída: telecomunicaciones **-4 %**
-- Regiones
-  - **Europa**, primer exportador en todas las categorías, cuota a la baja por el ascenso de **Asia** (China)
-  - **América del Norte**, exportador notable
-  - **CEI** y **América del Sur y Central**, cuota reducida o marginal
+
+Hasta los años ochenta los servicios se consideraban **bienes no transables**, consumibles solo donde se producían. La liberalización comercial y sobre todo las TIC cambiaron esa percepción. La globalización ha impulsado la externalización a países de bajo coste: **India** lidera el mercado y **Filipinas** emerge como alternativa por su dominio del inglés y su personal cualificado.
+
+Los servicios representan **dos tercios** de la producción mundial y en torno a **una cuarta parte** del comercio internacional, con exportaciones multiplicadas por cuatro en veinte años. La OMC distingue cuatro categorías de servicios comerciales: transportes, viajes, servicios relacionados con los bienes y otros servicios comerciales, la de mayor crecimiento.
+
+Según la OMC (Global Trade Outlook 2026), las exportaciones mundiales de servicios comerciales alcanzaron en 2025 los **9,56 billones de dólares** (+8 %), frente a 26,26 billones de mercancías. Los otros servicios comerciales crecieron en torno a un 10 %, con los informáticos (+11 %) a la cabeza. Los viajes avanzaron un 8 %, las telecomunicaciones un 7 % y el transporte apenas un 2 %, por la moderación de los fletes. Los servicios prestados digitalmente sumaron **5,26 billones**, en torno al 15 % del comercio mundial de bienes y servicios.
+
+**Europa** es el principal exportador en todas las categorías, aunque su cuota baja por el ascenso de Asia, con China a la cabeza. América del Norte es también un exportador notable, mientras que la CEI y América del Sur y Central tienen una participación reducida o marginal.
+
 # 4. REGULACIÓN DEL COMERCIO INTERNACIONAL DE SERVICIOS
-- Liberalización: más competencia, menos precios, mejor calidad
-- Sector protegido: **inflación dual** (bienes contenidos por competencia internacional, servicios con precios crecientes), factor desestabilizador
-- Instrumentos: **GATS** (OMC) y **Directiva 2006/123/CE** (Bolkestein) en la UE
+
+La liberalización genera beneficios netos: más competencia, menores precios y mejor calidad. Un sector protegido sufre **inflación dual**: los precios de los bienes se contienen por su exposición a la competencia internacional, mientras que los de los servicios crecen de forma persistente y más deprisa, lo que desestabiliza la economía. Los instrumentos principales son el **GATS** en la OMC y, en la UE, la **Directiva 2006/123/CE** (Bolkestein).
+
 ## 4.1. El Acuerdo General sobre el Comercio de Servicios (GATS/AGCS)
-- Primer acuerdo multilateral específico de servicios
-- Entra en vigor en **1995**, con el **GATT 1994** y los **ADPIC**
-- Objetivo: expansión con transparencia y liberalización progresiva (previsibilidad de normas, apertura mediante rondas)
-- **Los cuatro modos de suministro** (art. I)
-  - **Modo 1**, transfronterizo: sin desplazar personas
-  - **Modo 2**, consumo en el extranjero: se desplaza el consumidor
-  - **Modo 3**, presencia comercial: filial, sucursal u oficina de representación
-  - **Modo 4**, movimiento de personas físicas: temporal, independiente o empleado de empresa
-- **Sectores y clasificación**: 12 sectores básicos
-  - Servicios a empresas
-  - Comunicaciones
-  - Construcción e ingeniería conexos
-  - Distribución
-  - Enseñanza
-  - Medioambiente
-  - Financieros
-  - Sociales y de salud
-  - Turismo y viajes
-  - Esparcimiento, culturales y deportivos
-  - Transporte
-  - Otros no comprendidos
-- **Estructura de obligaciones**
-  - Generales **incondicionales**, todos los sectores y miembros
-    - **Cláusula NMF**, piedra angular, con exenciones (sobre todo acuerdos de integración)
-    - **Transparencia**: publicar medidas, notificar al Consejo del Comercio de Servicios, puntos de contacto
-  - Generales **condicionales**, solo sectores con compromisos específicos
-    - **Reglamentación nacional**: revisión legal de decisiones administrativas
-    - **Monopolios**: no actuar contra la NMF
-    - **Prácticas comerciales**: cooperar contra las restrictivas
-    - **Subvenciones**: consultas con el miembro otorgante
-  - **Compromisos específicos**
-    - **Acceso a los mercados**: limitaciones posibles (número de proveedores, valor, forma jurídica, capital extranjero)
-    - **Trato nacional**: sin discriminación a favor de nacionales
-  - Otras disposiciones
-    - **Art. V**: acuerdos de integración económica, exención de la NMF. **Art. V bis**: integración de mercados de trabajo
-    - **Art. VII**: reconocimiento de formación, títulos y certificaciones
-    - **Excepciones**: balanza de pagos, salud pública, orden público, seguridad esencial
+
+Primer acuerdo multilateral específico sobre servicios, en vigor desde **1995** dentro de la OMC junto al GATT de 1994 y el Acuerdo sobre los ADPIC. Busca expandir el comercio con transparencia y liberalización progresiva, asegurando la previsibilidad de las normas y promoviendo la apertura mediante rondas sucesivas.
+
+**Los cuatro modos de suministro.** El artículo I define el comercio de servicios según la presencia territorial de proveedor y consumidor.
+
+- **Modo 1, comercio transfronterizo**: el servicio cruza la frontera sin desplazamiento de personas (consultoría telemática)
+- **Modo 2, consumo en el extranjero**: el consumidor se desplaza al territorio del proveedor (turismo, estudiantes)
+- **Modo 3, presencia comercial**: filial, sucursal u oficina de representación en el territorio del consumidor (bancos, cadenas hoteleras)
+- **Modo 4, movimiento de personas físicas**: una persona del país proveedor se desplaza temporalmente, como independiente o como empleado de una empresa de servicios
+
+**Sectores y clasificación.** Los miembros usan una clasificación de **doce sectores**: servicios a empresas, comunicaciones, construcción e ingeniería, distribución, enseñanza, medioambiente, financieros, sociales y de salud, turismo y viajes, esparcimiento y cultura, transporte y otros.
+
+**Estructura de obligaciones.** Se articula en dos niveles.
+
+- **Generales incondicionales**, para todos los sectores y miembros:
+  - **Cláusula de la Nación Más Favorecida**, piedra angular del sistema: las condiciones más favorables concedidas a un miembro se extienden a todos. Se permiten exenciones, sobre todo por acuerdos de integración económica
+  - **Transparencia**: publicar con rapidez las medidas de aplicación general, notificar los cambios al Consejo del Comercio de Servicios y designar puntos de contacto para países en desarrollo
+- **Generales condicionales**, solo para los sectores con compromisos específicos:
+  - **Reglamentación nacional**: revisión legal de las decisiones administrativas
+  - **Monopolios**: no pueden actuar de forma incompatible con la CNMF
+  - **Prácticas comerciales y subvenciones**: cooperación contra las restrictivas de la competencia y consultas con el miembro que subvenciona
+- **Compromisos específicos**: **acceso a los mercados**, con posibles limitaciones al número de proveedores, al valor de las operaciones, a la forma jurídica o al capital extranjero, y **trato nacional**, sin discriminación en favor de los proveedores nacionales en los sectores consignados
+- **Otras disposiciones**:
+  - **Integración económica (art. V)**: exime de la CNMF a los acuerdos con cobertura sectorial sustancial. El art. V bis regula los de mercados de trabajo
+  - **Reconocimiento (art. VII)**: de formación, títulos y certificaciones obtenidos en otro país
+  - **Excepciones** por balanza de pagos, salud pública, orden público o seguridad esencial
+
 ## 4.2. Futuro del GATS: Ronda Doha y acuerdos posteriores
-- **Art. XIX**: rondas sucesivas de negociación
-- Nuevas negociaciones desde **enero de 2000**, en la Ronda Doha desde **noviembre de 2001**, formalmente abierta
-- **Waiver PMA** (Ginebra 2011): preferencias unilaterales a proveedores de PMA sin NMF, prorrogado hasta el **31 de diciembre de 2030**, PMA reclaman mejoras en Modo 4
-- **Iniciativa Conjunta SDR** (reglamentación nacional de servicios)
-  - Aplicable desde el **5 de julio de 2024**, **72 miembros**, ~**90 %** del comercio mundial de servicios
-  - Autorizaciones, licencias y cualificaciones transparentes, objetivas, imparciales y no más gravosas de lo necesario
-- **CM13** (Abu Dabi, 2024): declaración sobre no discriminación de género en permisos de servicios, primera en la OMC, renueva la moratoria de aranceles al comercio electrónico
-- **CM14** (Yaundé, 2026)
-  - Sin nuevos compromisos GATS, respalda el SDR
-  - Comercio electrónico y moratoria sobre transmisiones digitales sin resolver, trasladados al Consejo General
-  - Tensión de fondo: reforma de solución de diferencias y transparencia
+
+El artículo XIX prevé rondas sucesivas. Las negociaciones se encuadran desde noviembre de 2001 en el **Programa de Doha para el Desarrollo**, suspendido en 2006, restablecido en 2007 y aún formalmente abierto.
+
+El **waiver para los PMA**, aprobado en la Conferencia de Ginebra de 2011, permite conceder preferencias unilaterales a sus proveedores de servicios sin extenderlas al resto por la cláusula NMF. Está prorrogado hasta el **31 de diciembre de 2030**. Los PMA reclaman mejoras, sobre todo en el Modo 4.
+
+La **Iniciativa Conjunta sobre Reglamentación Nacional de los Servicios (SDR)** es el avance más significativo. Sus disciplinas, incorporadas como compromisos adicionales en las listas GATS, entraron en vigor en **febrero de 2024**, con la CM13, para los miembros que habían completado su certificación. La integran **72 miembros**, en torno al 90 % del comercio mundial de servicios. Exige procedimientos de autorización, licencias y cualificaciones transparentes, objetivos, imparciales y no más gravosos de lo necesario, e incluye la primera cláusula de no discriminación por género negociada en la OMC.
+
+Las últimas conferencias ministeriales no han aportado nuevos compromisos de liberalización en servicios:
+
+- **CM12 (Ginebra, 2022)**: respaldó los trabajos sobre reglamentación nacional y participación de los PMA
+- **CM13 (Abu Dabi, 2024)**: reafirmó el sistema multilateral basado en normas y prorrogó la moratoria sobre derechos de aduana a las transmisiones electrónicas
+- **CM14 (Yaundé, clausurada el 30 de marzo de 2026)**: no logró prorrogar la moratoria, que expiró tras 28 años. El paquete pendiente (comercio electrónico, reforma de la OMC, PMA) pasó al Consejo General, que en mayo de 2026 concluyó sin decisiones. Evidenció que los miembros siguen reconociendo el valor de la OMC, pero ya no asumen que se sostendrá sin una reforma profunda de la solución de diferencias y de la transparencia
+
 ## 4.3. El Acuerdo sobre el Comercio de Servicios (TiSA)
-- **2013**: 23 miembros OMC (UE, EEUU, Japón, Canadá, Australia) inician la negociación
-- Acuerdo regional con vocación de multilateralizarse
-- **21 rondas** hasta noviembre de 2016, en **stand-by**
-- UE, uno de los principales impulsores
+
+En **2013**, 23 miembros de la OMC, entre ellos la UE, EEUU, Japón, Canadá y Australia, iniciaron la negociación del **Trade in Services Agreement**, acuerdo regional con vocación de multilateralizarse. Tras 21 rondas hasta noviembre de 2016, las negociaciones quedaron en stand-by por la coyuntura política. La UE es uno de sus principales impulsores, por las barreras que encuentran sus prestadores.
+
 ## 4.4. La Directiva Bolkestein: Directiva 2006/123/CE
-- Marco de **libertad de establecimiento** y **libre prestación de servicios** en la UE
-- Principios
-  - Separación regulador y regulado
-  - Delimitar monopolio natural y ámbitos con competencia
-  - Acceso no discriminatorio a redes
-  - Acceso al mercado en igualdad para nuevos competidores
-  - Refuerzo de la defensa de la competencia
-  - **Servicio universal** y su financiación
-- **Art. 16**, libre prestación: sin requisitos discriminatorios, injustificados por orden público, seguridad, salud o medioambiente (**necesidad**), ni desproporcionados
-- Transposición a España
-  - **Ley 17/2009** ("Ley Paraguas"), libre acceso a actividades de servicio
-  - **Ley 25/2009** ("Ley Ómnibus"), modifica **47 leyes** sectoriales
+
+Establece el marco de la libertad de establecimiento y la libre prestación de servicios entre los Estados miembros, para construir un mercado interior de servicios competitivo. Sus principios:
+
+- Separación del regulador y el regulado
+- Delimitación del monopolio natural frente a los ámbitos abiertos a la competencia
+- Acceso no discriminatorio a las redes y apertura del accionariado del gestor de red
+- Acceso al mercado en igualdad para nuevos competidores y refuerzo de la defensa de la competencia
+- Garantía del servicio universal y de su financiación
+
+El **art. 16** garantiza la libre prestación: los Estados no pueden imponer requisitos discriminatorios por nacionalidad o Estado de establecimiento, no justificados por orden público, seguridad, salud o medioambiente (principio de necesidad), o desproporcionados.
+
+La transposición en España se hizo con la **Ley 17/2009** (Ley Paraguas), sobre libre acceso a las actividades de servicio, y la **Ley 25/2009** (Ley Ómnibus), que modifica 47 leyes estatales, entre ellas la de colegios profesionales. La **Ley 1/2010** reformó la Ley 7/1996 de Ordenación del Comercio Minorista y suprimió con carácter general la autorización previa para abrir establecimientos.
+
 # 5. EL MERCADO ÚNICO DIGITAL Y EL PROGRAMA EUROPA DIGITAL 2021-2027
-- **Mercado Único Digital**: mercado interior aplicado al entorno digital
-- Dentro de la **Agenda Digital para Europa** (Europa 2020), objetivos de banda ancha: **100 %** cobertura básica, **30 Mbps** para el 100 %, **100 Mbps** para el **50 %** de hogares
-- **Estrategia MUD**, 6 de mayo de 2015, tres pilares
-  - **Acceso** a bienes y servicios digitales
-  - **Entorno** para redes digitales e innovación
-  - **Economía y sociedad digitales**
-- Logros
-  - **Reglamento (UE) 2015/2120**, modificado por **2017/920**: fin del roaming desde el **15 de junio de 2017**
-  - **Reglamento (UE) 2017/1128**: portabilidad transfronteriza de contenidos digitales desde el **1 de abril de 2018**
-- **Programa Europa Digital 2021-2027**
-  - **7.588 M€**
-  - IA, ciberseguridad, computación de alto rendimiento, competencias digitales, interoperabilidad
-  - Centros europeos de innovación digital
-  - Coordinación: **ORECE**
+
+El **Mercado Único Digital** aplica el principio del mercado interior al entorno digital, eliminando barreras nacionales a las transacciones en línea. Se enmarca en la Agenda Digital para Europa, iniciativa de Europa 2020. La Estrategia de la Comisión, de 6 de mayo de 2015, tiene tres pilares:
+
+- **Acceso** de consumidores y empresas a bienes y servicios digitales: comercio electrónico transfronterizo, fin del bloqueo geográfico, derechos de autor y menor carga del IVA transfronterizo
+- **Entorno** para redes e innovación: telecomunicaciones, plataformas, ciberseguridad y protección de datos
+- **Economía y sociedad digitales**: libre circulación de datos, interoperabilidad y competencias digitales
+
+Entre sus logros están el fin de los recargos por itinerancia desde el 15 de junio de 2017 (**Reglamento (UE) 2015/2120**, prorrogado hasta 2032 por el **Reglamento (UE) 2022/612**), la portabilidad transfronteriza de contenidos en línea (**Reglamento (UE) 2017/1128**) y la prohibición del bloqueo geográfico injustificado (**Reglamento (UE) 2018/302**).
+
+El **Programa Europa Digital 2021-2027**, creado por el **Reglamento (UE) 2021/694** y dotado con **7.588 M€**, financia tecnologías avanzadas en cinco áreas: supercomputación, inteligencia artificial, ciberseguridad, competencias digitales avanzadas y despliegue e interoperabilidad. Se ejecuta con una red de Centros Europeos de Innovación Digital (EDIH). La Comisión gestiona el programa y encomienda parte de las convocatorias a la agencia HaDEA. Lo completan la **Década Digital 2030** (Decisión (UE) 2022/2481), la Ley de Servicios Digitales (Reglamento (UE) 2022/2065), la Ley de Mercados Digitales (Reglamento (UE) 2022/1925) y el Reglamento de Inteligencia Artificial (Reglamento (UE) 2024/1689).
+
 # 6. EL TURISMO EN EL MUNDO
-- **~Un tercio** del sector servicios mundial
-- Distribuido también en países en desarrollo: divisas y crecimiento con poca inversión
-- **Tourism Towards 2030** (ONU Turismo): **+3,3 %** anual hasta 2030
-- **2020**, peor año por la COVID-19
-  - **1.000 millones** de viajeros menos, **-74 %**
-  - Pérdidas de **1,3 billones de dólares** en exportaciones
-  - Asia y Pacífico mayor caída relativa (**-84 %**), Europa mayor absoluta
-- Recuperación desde 2022
-  - Primer trimestre 2026: **307 millones** de llegadas, **+2 %**
-  - Europa más de **130 millones** (**+4 %**)
-  - Previsión 2026 rebajada de **3-4 %** a **1-2 %**
-- **España**
-  - 2019: **2.º** en llegadas (**83,7 millones**) y en ingresos
-  - Récord **96,8 millones** en 2025
+
+El turismo, medido por la rúbrica de viajes, supone en torno a una quinta parte de las exportaciones mundiales de servicios comerciales (**1,89 billones de dólares** sobre 9,56 billones en 2025). A diferencia de otros servicios, concentrados en países de renta alta, alcanza también a los países en desarrollo, para quienes genera divisas y crecimiento con inversiones modestas. ONU Turismo pronosticó un crecimiento medio anual del **3,3 %** hasta 2030.
+
+La COVID-19 hizo de **2020 el peor año de su historia**: 1.000 millones de viajeros menos que en 2019 (−74 %) y pérdidas de 1,3 billones de dólares en exportaciones. Asia y el Pacífico sufrieron la mayor caída relativa (84 %) y Europa la absoluta.
+
+La recuperación desde 2022 ha sido intensa: en **2025** hubo unos **1.520 millones** de llegadas internacionales (+4 %), con ingresos próximos a 1,9 billones de dólares, y Europa, principal receptora, superó los 790 millones. ONU Turismo advierte de que el conflicto en Oriente Medio y la incertidumbre económica podrían restar entre 1 y 2 puntos al crecimiento previsto para 2026, del 3 % al 4 %.
+
+**España** fue en 2019 segunda del mundo en llegadas (83,7 millones), tras Francia, y segunda en ingresos tras EEUU. Marcó en 2025 un récord de **96,8 millones** de turistas internacionales.
+
 # 7. CONCLUSIÓN
-- Servicios, eje de las economías contemporáneas
-- **GATS** ha avanzado en liberalización progresiva
-- **SDR**, certificado en la CM13 (2024), primeras disciplinas multilaterales para reducir costes regulatorios
-- Obstáculos: Ronda Doha estancada, TiSA, limitados avances de la CM14 (2026)
-- Consenso en servicios más arduo que en mercancías, con proteccionismo y fragmentación
+
+Los servicios son el eje de las economías contemporáneas y su integración en el comercio internacional los hace clave en las negociaciones multilaterales. El GATS ha avanzado en la liberalización, con hitos como la Iniciativa SDR, cuyas disciplinas entraron en vigor en febrero de 2024. Sin embargo, el estancamiento de la Ronda Doha, la suspensión del TiSA y el resultado de la CM14 muestran que el consenso en servicios es más arduo que en mercancías, en un contexto de proteccionismo y fragmentación del comercio internacional.
