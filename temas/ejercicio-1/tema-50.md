@@ -90,6 +90,13 @@ El aceite de oliva virgen se obtiene solo por procedimientos mecánicos o físic
 
 El **Reglamento (UE) 2023/915** unifica el marco y derogó el Reglamento (CE) 1881/2006. Fija los contenidos máximos de contaminantes en alimentos, tanto en la parte comestible como en los ingredientes de alimentos compuestos. Lo complementa el **Reglamento (CEE) 315/93**, que establece los procedimientos comunitarios sobre contaminantes y faculta el uso de cláusulas de salvaguardia sanitarias.
 
+Entre los contaminantes que regula destacan cuatro grupos, que se desarrollan en los apartados siguientes:
+
+- **Nitratos**, de origen principalmente agrario, que se acumulan en hortalizas de hoja verde
+- **Micotoxinas**, metabolitos tóxicos de hongos: aflatoxinas, ocratoxina A y patulina
+- **Metales pesados**, persistentes y bioacumulables: plomo, cadmio y mercurio
+- **Contaminantes de proceso tecnológico**: 3-MCPD y sus ésteres, junto a las dioxinas y los PCB
+
 ## 3.5. Nitratos
 
 Son contaminantes de origen sobre todo agrario, por el uso intensivo de fertilizantes nitrogenados, que se acumulan en hortalizas de hoja verde como espinacas y lechugas. Su interés toxicológico está en que se reducen en el organismo a nitritos, capaces de causar metahemoglobinemia, sobre todo en lactantes, y de reaccionar con aminas secundarias para formar N-nitrosaminas, de elevada acción carcinógena. Se determinan por cromatografía iónica o espectrofotometría.
@@ -136,7 +143,12 @@ La **ECHA**, con sede en Helsinki, gestiona los aspectos científicos y técnico
 
 ## 4.2. Disposiciones sectoriales
 
-Se desarrollan los sectores de juguetes, calzado, textil y pequeño material eléctrico y electrónico.
+Junto al marco horizontal de REACH, cada familia de productos tiene disposiciones propias que concretan las sustancias restringidas, sus límites y los métodos de ensayo. Varias se apoyan en el **Anexo XVII de REACH**, que actúa como marco de referencia común.
+
+- **Juguetes**: **Reglamento (UE) 2025/2509**, que sustituye de forma progresiva a la Directiva 2009/48/CE
+- **Calzado**: restricciones del Anexo XVII de REACH y prohibición del dimetilfumarato
+- **Productos textiles**: aplicación directa del Anexo XVII de REACH
+- **Pequeño material eléctrico y electrónico**: **Directiva 2011/65/UE** (RoHS), transpuesta por el **Real Decreto 219/2013**
 
 ## 4.3. Juguetes
 
