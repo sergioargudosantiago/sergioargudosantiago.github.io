@@ -81,20 +81,30 @@
         .t-cerrar:hover { background: var(--c-acento-suave); }
         .t-modal-buscar { display: grid; gap: 0.35rem; padding: 0.9rem 1.4rem; border-bottom: 1px solid var(--c-linea); }
         .t-modal-buscar .c-campo { max-width: none; }
-        .t-modal-lista { overflow-y: auto; padding: 0.5rem 1.4rem 1.25rem; }
-        .t-tema { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.75rem 0; border-bottom: 1px solid var(--c-linea); }
+        .t-modal-lista { overflow-y: auto; padding: 0 1.4rem 1.25rem; }
+        /* Parte del programa oficial: rótulo que se queda arriba mientras se recorren sus temas */
+        .t-parte { position: sticky; top: 0; z-index: 1; display: flex; align-items: baseline; gap: 0.6rem; margin: 0; padding: 0.85rem 0 0.45rem; background: var(--c-fondo); border-bottom: 2px solid var(--c-acento); font-family: var(--f-titular); font-weight: 600; font-size: 1rem; line-height: 1.3; }
+        .t-parte span { flex-shrink: 0; font-family: var(--f-marca); font-weight: 800; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--c-tenue); }
+        .t-tema + .t-parte { margin-top: 0.6rem; }
+        .t-tema { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; padding: 0.75rem 0; border-bottom: 1px solid var(--c-linea); }
         .t-tema:last-child { border-bottom: 0; }
-        .t-tema-nombre { flex: 1; min-width: 0; line-height: 1.4; }
-        .t-tema-num { font-family: var(--f-cifras); color: var(--c-tenue); margin-right: 0.4rem; }
+        /* El nombre es el enunciado del BOE: la primera frase como título y el resto debajo, en letra menor */
+        .t-tema-nombre { flex: 1; min-width: 0; display: grid; grid-template-columns: 1.9rem minmax(0, 1fr); column-gap: 0.35rem; line-height: 1.4; }
+        .t-tema-num { font-family: var(--f-cifras); color: var(--c-tenue); }
+        .t-tema-txt { display: block; min-width: 0; }
+        .t-tema-titulo { display: block; font-weight: 600; text-wrap: pretty; }
+        .t-tema-resto { display: block; margin-top: 0.2rem; max-width: 62ch; font-size: 0.84rem; line-height: 1.45; color: var(--c-tenue); text-wrap: pretty; }
         .t-tema-acciones { display: flex; gap: 0.4rem; flex-shrink: 0; }
         .t-descarga { font-family: var(--f-cifras); font-size: 0.8rem; font-weight: 600; padding: 0.3rem 0.6rem; border: 1px solid var(--c-acento); border-radius: 3px; color: var(--c-tinta); text-decoration: none; }
         .t-descarga:hover { background: var(--c-acento); color: var(--c-fondo); }
-        .t-tema-fecha { display: block; margin-top: 0.15rem; font-family: var(--f-cifras); font-size: 0.75rem; color: var(--c-tenue); }
+        .t-tema-fecha { display: block; margin-top: 0.3rem; font-family: var(--f-cifras); font-size: 0.75rem; color: var(--c-tenue); }
         .t-tema-nota { font-size: 0.85rem; color: var(--c-tenue); flex-shrink: 0; text-align: right; }
         .t-tema.t-apagado .t-tema-nombre { color: var(--c-tenue); }
         .t-vacio { padding: 2rem 0; text-align: center; color: var(--c-tenue); }
         @media (max-width: 560px) {
             .t-tema { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+            .t-tema-nombre { width: 100%; }
+            .t-tema-acciones, .t-tema-nota { margin-left: 2.25rem; }
             .t-tema-nota { text-align: left; }
         }
     </style>
@@ -271,6 +281,7 @@
     <div id="comingSoonModal" class="modal" hidden></div>
 
     <script src="js/esquemas-fechas.js"></script>
+    <script src="js/esquemas-programa.js"></script>
     <script src="js/main.js"></script>
     <!-- Analítica ligera y sin cookies (GoatCounter, gratis para uso no comercial).
          Para activarla: 1) crea una cuenta en https://www.goatcounter.com con el código "sergioargudosantiago";

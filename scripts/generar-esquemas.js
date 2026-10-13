@@ -11,15 +11,18 @@
  *
  * Por defecto NO publica: escribe en review/ (no versionado ni servido) para
  * revisar un esquema antes de subirlo. Con --publicar escribe lo que sirve la
- * web y, además, js/esquemas-fechas.js con la fecha de cada esquema. Solo
+ * web y, además, js/esquemas-fechas.js con la fecha de cada esquema y
+ * js/esquemas-programa.js con los nombres oficiales de los temas. Solo
  * publica los que tienen fecha en temas/actualizado.json, que son los rehechos
  * con las pautas vigentes: el listado ofrece los demás con su Word y su PDF
  * antiguos y el aviso «en actualización».
  *
- * La fuente son los Markdown de temas/ejercicio-N/tema-NN.md. Los títulos
- * oficiales salen de js/main.js (EXERCISE_N_TITLES), que es también lo que
- * enseña el listado de esquemas.html: así no hay dos copias que mantener. La
- * fecha de «Actualizado» sale de temas/actualizado.json.
+ * La fuente son los Markdown de temas/ejercicio-N/tema-NN.md. Los nombres de
+ * los temas son los enunciados oficiales del BOE, de temas/programa.json (lo
+ * escribe scripts/programa-boe.js), que es también lo que enseña el listado de
+ * esquemas.html: así no hay dos copias que mantener. La primera frase del
+ * enunciado hace de título y el resto va debajo, en letra menor. La fecha de
+ * «Actualizado» sale de temas/actualizado.json.
  *
  * Aspecto: el de las fichas (diseño C), con los apartados en rótulo «arcade»
  * (franja verde salvia con el número en dorado y sombra de píxel). En pantalla
@@ -35,6 +38,7 @@
 const fs = require('fs');
 const path = require('path');
 const { renderInline, escapeHTML } = require('./lib/markdown');
+const { partirEnunciado, sinPuntoFinal } = require('./lib/enunciado');
 
 const RAIZ = path.resolve(__dirname, '..');
 const FUENTE = path.join(RAIZ, 'temas');
@@ -43,20 +47,33 @@ const SALIDA = PUBLICAR ? path.join(RAIZ, 'public', 'temas') : path.join(RAIZ, '
 const FILTRO = (process.argv.find(a => /^\d\/\d+$/.test(a)) || '').split('/').map(Number);
 const EJERCICIOS = [1, 3, 5];
 
-// --- Títulos oficiales ------------------------------------------------------
+// --- Enunciados oficiales ---------------------------------------------------
 
-function leerTitulos() {
-    const js = fs.readFileSync(path.join(RAIZ, 'js', 'main.js'), 'utf8');
-    const titulos = {};
+// Programa del BOE (temas/programa.json, lo escribe scripts/programa-boe.js). Cada
+// enunciado se parte en su primera frase, que hace de título, y el resto.
+function leerPrograma() {
+    const programa = JSON.parse(fs.readFileSync(path.join(FUENTE, 'programa.json'), 'utf8'));
+    const enunciados = {};
     for (const n of EJERCICIOS) {
-        const bloque = js.match(new RegExp(`const EXERCISE_${n}_TITLES = \\{([\\s\\S]*?)\\n\\};`));
-        if (!bloque) throw new Error(`No encuentro EXERCISE_${n}_TITLES en js/main.js`);
-        titulos[n] = {};
-        for (const m of bloque[1].matchAll(/(\d+):\s*"((?:[^"\\]|\\.)*)"/g)) {
-            titulos[n][Number(m[1])] = m[2].replace(/\\"/g, '"').replace(/\.\s*$/, '');
+        enunciados[n] = {};
+        for (const [num, texto] of Object.entries(programa.ejercicios[n].temas)) {
+            enunciados[n][Number(num)] = partirEnunciado(texto);
         }
     }
-    return titulos;
+    return { programa, enunciados };
+}
+
+// Lo que lee js/main.js para el listado de esquemas.html: las partes de cada
+// ejercicio y, de cada tema, [título, resto].
+function programaParaLaWeb({ programa, enunciados }) {
+    const web = {};
+    for (const n of EJERCICIOS) {
+        web[n] = {
+            partes: programa.ejercicios[n].partes.map(({ letra, titulo, desde, hasta }) => ({ letra, titulo, desde, hasta })),
+            temas: Object.fromEntries(Object.entries(enunciados[n]).map(([num, e]) => [num, [e.titulo, e.resto]])),
+        };
+    }
+    return web;
 }
 
 // --- Markdown → bloques -----------------------------------------------------
@@ -196,6 +213,10 @@ a { color: inherit; }
 .cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
 h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+/* Los enunciados del BOE pueden ser largos: el título baja de cuerpo por tramos. */
+h1.largo { font-size: 28px; line-height: 1.12; }
+h1.muy-largo { font-size: 23px; line-height: 1.16; }
+.enunciado { margin: 3px 0 2px; max-width: 78ch; font-size: 14.5px; line-height: 1.42; color: #4A5546; text-wrap: pretty; }
 .sub-cab { font-size: 14px; color: #4A5546; }
 .sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
 .sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
@@ -241,6 +262,9 @@ h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
 @media screen and (max-width: 820px) {
   .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
   h1 { font-size: 27px; }
+  h1.largo { font-size: 23px; }
+  h1.muy-largo { font-size: 20px; }
+  .enunciado { font-size: 14px; }
   .sello { min-width: 74px; padding: 6px 10px; }
   .sello b { font-size: 22px; }
   .sec { font-size: 14.5px; }
@@ -253,6 +277,9 @@ h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
   .barra, .pie { display: none; }
   .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
   h1 { font-size: 31px; }
+  h1.largo { font-size: 25px; }
+  h1.muy-largo { font-size: 21px; }
+  .enunciado { max-width: none; font-size: 11.5px; line-height: 1.36; }
   .sub-cab { font-size: 13px; }
   .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
   .indice a { padding: 5px 8px; font-size: 9.5px; }
@@ -280,10 +307,19 @@ function fechaEnLetra(iso) {
     return `${d} de ${MESES[m - 1]} de ${a}`;
 }
 
-function pagina({ ejercicio, numero, titulo, cuerpo, indice, actualizado }) {
+// Recorta por palabras para el pie de página del PDF, que es una sola línea.
+function recortar(texto, max) {
+    if (texto.length <= max) return texto;
+    return texto.slice(0, max).replace(/\s+\S*$/, '').replace(/[,:;.]$/, '') + '…';
+}
+
+function pagina({ ejercicio, numero, enunciado, cuerpo, indice, actualizado }) {
     const nn = dosCifras(numero);
     const fecha = actualizado
         ? ` · Actualizado el <time datetime="${actualizado}">${fechaEnLetra(actualizado)}</time>` : '';
+    const titulo = sinPuntoFinal(enunciado.titulo);
+    const claseTitulo = titulo.length > 95 ? ' class="muy-largo"' : titulo.length > 55 ? ' class="largo"' : '';
+    const resto = enunciado.resto ? `\n      <p class="enunciado">${escapeHTML(enunciado.resto)}</p>` : '';
     const tituloTema = `Tema ${numero}. ${titulo}`;
     const pdf = `tema-${nn}.pdf`;
     const descarga = `Esquema tema ${numero} (ejercicio ${ejercicio}).pdf`;
@@ -301,7 +337,7 @@ function pagina({ ejercicio, numero, titulo, cuerpo, indice, actualizado }) {
 <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
 <link rel="stylesheet" href="../../../css/fuentes.css">
 <style>${ESTILOS}
-@page { @bottom-left { content: "${cadenaCSS(`Esquema · ${tituloTema}`)}"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+@page { @bottom-left { content: "${cadenaCSS(`Esquema · ${recortar(tituloTema, 88)}`)}"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
 </style>
 </head>
 <body>
@@ -315,7 +351,7 @@ function pagina({ ejercicio, numero, titulo, cuerpo, indice, actualizado }) {
   <div class="cab">
     <div class="cab-txt">
       <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
-      <h1>${escapeHTML(titulo)}</h1>
+      <h1${claseTitulo}>${escapeHTML(titulo)}</h1>${resto}
       <div class="sub-cab">Ejercicio ${ejercicio} · Esquema del tema ${numero}${fecha}</div>
     </div>
     <div class="sello" aria-label="Ejercicio ${ejercicio}, tema ${numero}"><span>EJ. ${ejercicio} · TEMA</span><b>${numero}</b></div>
@@ -333,7 +369,7 @@ ${cuerpo}  </div>
 // --- Principal --------------------------------------------------------------
 
 function main() {
-    const titulos = leerTitulos();
+    const oficial = leerPrograma();
     // Fecha de «Actualizado» de cada esquema (la escribe el repositorio privado de
     // herramientas): la del último guardado del tema del que sale.
     const rutaFechas = path.join(FUENTE, 'actualizado.json');
@@ -348,8 +384,8 @@ function main() {
         for (const f of fs.readdirSync(dir).filter(x => /^tema-\d+\.md$/.test(x)).sort()) {
             const numero = Number(f.match(/\d+/)[0]);
             if (FILTRO[0] && (FILTRO[0] !== ej || FILTRO[1] !== numero)) continue;
-            const titulo = titulos[ej][numero];
-            if (!titulo) { avisos.push(`ejercicio ${ej}, tema ${numero}: sin título en js/main.js`); continue; }
+            const enunciado = oficial.enunciados[ej][numero];
+            if (!enunciado) { avisos.push(`ejercicio ${ej}, tema ${numero}: sin enunciado en temas/programa.json`); continue; }
             const { html, indice } = htmlCuerpo(analizar(fs.readFileSync(path.join(dir, f), 'utf8')));
             if (!indice.length) avisos.push(`ejercicio ${ej}, tema ${numero}: sin apartados de primer nivel`);
             // Solo se publican los esquemas con fecha: los rehechos con las pautas
@@ -357,7 +393,7 @@ function main() {
             const actualizado = fechas[`ejercicio-${ej}-${dosCifras(numero)}`];
             if (PUBLICAR && !actualizado) continue;
             const salida = path.join(destino, f.replace('.md', '.html'));
-            fs.writeFileSync(salida, pagina({ ejercicio: ej, numero, titulo, cuerpo: html, indice, actualizado }));
+            fs.writeFileSync(salida, pagina({ ejercicio: ej, numero, enunciado, cuerpo: html, indice, actualizado }));
             total++;
         }
     }
@@ -366,6 +402,11 @@ function main() {
         fs.writeFileSync(path.join(RAIZ, 'js', 'esquemas-fechas.js'),
             '// Generado por scripts/generar-esquemas.js desde temas/actualizado.json. No editar a mano.\n'
             + `const ESQUEMAS_ACTUALIZADO = ${JSON.stringify(fechas)};\n`);
+        // Y los nombres oficiales de los temas, agrupados por las partes del programa.
+        fs.writeFileSync(path.join(RAIZ, 'js', 'esquemas-programa.js'),
+            '// Generado por scripts/generar-esquemas.js desde temas/programa.json (anexo I de la\n'
+            + `// convocatoria, ${oficial.programa.fuente.cve}). No editar a mano.\n`
+            + `const ESQUEMAS_PROGRAMA = ${JSON.stringify(programaParaLaWeb(oficial))};\n`);
     }
     console.log(`${total} esquemas en ${path.relative(RAIZ, SALIDA)}/.`);
     for (const a of avisos) console.warn(`  aviso: ${a}`);

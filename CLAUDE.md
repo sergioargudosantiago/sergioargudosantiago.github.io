@@ -266,6 +266,17 @@ artículo que tiene pensado el autor. Para generar los PDF hace falta Playwright
     `npm run esquemas -- --publicar` solo publica esos y escribe
     `js/esquemas-fechas.js`, que es lo que lee `js/main.js` para decidir si una
     fila lleva «Ver» y «PDF» o «PDF» y «Word».
+  - **Los nombres de los temas son los enunciados oficiales del BOE** (13 oct,
+    decisión del autor), copiados tal cual del anexo I de la convocatoria
+    (BOE-A-2025-26899). Están en `temas/programa.json`, que escribe
+    `scripts/programa-boe.js` desde el texto del PDF, con las partes de cada
+    ejercicio. Como algunos pasan de 400 caracteres, se enseñan con dos pesos: la
+    primera frase como título y el resto debajo en letra menor
+    (`scripts/lib/enunciado.js`), tanto en el listado, agrupado por partes, como
+    en la cabecera de cada esquema. `npm run esquemas -- --publicar` escribe
+    `js/esquemas-programa.js` para el listado. Los `EXERCISE_N_TITLES` de
+    `js/main.js` ya no se enseñan: solo dan el nombre de fichero de los PDF
+    antiguos, así que no se tocan mientras quede alguno.
   - **Para pasar un esquema al formato nuevo**: rehacerlo y sellar su fecha en el
     repositorio privado, `npm run esquemas -- --publicar && npm run esquemas:pdf --
     --publicar`, borrar de `public/temas/ejercicio-N/` su `ESQUEMA TEMA N.docx` y

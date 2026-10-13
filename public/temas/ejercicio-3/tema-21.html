@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
-<title>Tema 21. El régimen aduanero del comercio exterior: política aduanera comunitaria — esquema del ejercicio 3</title>
+<title>Tema 21. El régimen aduanero del comercio exterior: la política aduanera comunitaria — esquema del ejercicio 3</title>
 <link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
 <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
 <link rel="stylesheet" href="../../../css/fuentes.css">
@@ -35,6 +35,10 @@ a { color: inherit; }
 .cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
 h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+/* Los enunciados del BOE pueden ser largos: el título baja de cuerpo por tramos. */
+h1.largo { font-size: 28px; line-height: 1.12; }
+h1.muy-largo { font-size: 23px; line-height: 1.16; }
+.enunciado { margin: 3px 0 2px; max-width: 78ch; font-size: 14.5px; line-height: 1.42; color: #4A5546; text-wrap: pretty; }
 .sub-cab { font-size: 14px; color: #4A5546; }
 .sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
 .sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
@@ -80,6 +84,9 @@ h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
 @media screen and (max-width: 820px) {
   .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
   h1 { font-size: 27px; }
+  h1.largo { font-size: 23px; }
+  h1.muy-largo { font-size: 20px; }
+  .enunciado { font-size: 14px; }
   .sello { min-width: 74px; padding: 6px 10px; }
   .sello b { font-size: 22px; }
   .sec { font-size: 14.5px; }
@@ -92,6 +99,9 @@ h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
   .barra, .pie { display: none; }
   .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
   h1 { font-size: 31px; }
+  h1.largo { font-size: 25px; }
+  h1.muy-largo { font-size: 21px; }
+  .enunciado { max-width: none; font-size: 11.5px; line-height: 1.36; }
   .sub-cab { font-size: 13px; }
   .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
   .indice a { padding: 5px 8px; font-size: 9.5px; }
@@ -107,7 +117,7 @@ h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
   .esq li > ul > li::before { left: -11px; }
 }
 
-@page { @bottom-left { content: "Esquema · Tema 21. El régimen aduanero del comercio exterior: política aduanera comunitaria"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+@page { @bottom-left { content: "Esquema · Tema 21. El régimen aduanero del comercio exterior: la política aduanera comunitaria"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
 </style>
 </head>
 <body>
@@ -121,7 +131,8 @@ h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
   <div class="cab">
     <div class="cab-txt">
       <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
-      <h1>El régimen aduanero del comercio exterior: política aduanera comunitaria</h1>
+      <h1 class="largo">El régimen aduanero del comercio exterior: la política aduanera comunitaria</h1>
+      <p class="enunciado">El código aduanero. El arancel de aduanas. Economía arancelaria. El origen de las mercancías. El valor en aduana.</p>
       <div class="sub-cab">Ejercicio 3 · Esquema del tema 21 · Actualizado el <time datetime="2026-10-04">4 de octubre de 2026</time></div>
     </div>
     <div class="sello" aria-label="Ejercicio 3, tema 21"><span>EJ. 3 · TEMA</span><b>21</b></div>

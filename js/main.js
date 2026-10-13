@@ -108,6 +108,10 @@ let currentExercise = null;
 let currentTopics = [];
 let filteredTopics = [];
 
+// Estos títulos abreviados ya no se enseñan: el listado usa los enunciados oficiales
+// del BOE (js/esquemas-programa.js). Siguen aquí porque de ellos sale el nombre de
+// fichero de los PDF antiguos («TEMA N. título.pdf»): no cambiarlos mientras quede
+// algún esquema en el formato antiguo.
 // Topic Titles for Exercise 1 (Primer ejercicio)
 const EXERCISE_1_TITLES = {
     1: "Sector de frutos frescos, excepto cítricos.",
@@ -377,10 +381,21 @@ function generateTopics(exerciseNumber, topicCount) {
             .replace(/[<>:"/\\|?*]/g, "")
             .replace(/\.$/, "");
 
+        // Lo que se enseña es el enunciado oficial del BOE, partido en su primera
+        // frase (título) y el resto. Lo genera scripts/generar-esquemas.js en
+        // js/esquemas-programa.js, que solo se carga en esquemas.html.
+        const programa = typeof ESQUEMAS_PROGRAMA !== 'undefined' ? ESQUEMAS_PROGRAMA[exerciseNumber] : null;
+        const [titulo, resto] = (programa && programa.temas[i]) || [titleOnly || displayName, ''];
+        const parte = programa ? programa.partes.find(p => i >= p.desde && i <= p.hasta) : null;
+
         const topic = {
             number: i,
-            name: displayName,
-            titulo: titleOnly || displayName,
+            ejercicio: exerciseNumber,
+            // Texto en el que busca el filtro: número y enunciado completo.
+            name: `TEMA ${i}. ${titulo} ${resto}`,
+            titulo,
+            resto,
+            parte: parte || null,
             actualizado,
             pathVer: `${dir}/tema-${nn}.html`,
             pathPdf: actualizado ? `${dir}/tema-${nn}.pdf` : `${dir}/${encodeURIComponent(safeTitle)}.pdf`,
@@ -428,7 +443,20 @@ function renderTopics() {
         return;
     }
 
-    topicList.innerHTML = filteredTopics.map(topic => renderTopicItem(topic)).join('');
+    // Los temas van agrupados por las partes del programa oficial. En la búsqueda
+    // global se mezclan ejercicios, así que el rótulo dice también de cuál es.
+    const variosEjercicios = currentExercise && currentExercise.number === 'all';
+    let anterior = null;
+    topicList.innerHTML = filteredTopics.map(topic => {
+        let rotulo = '';
+        const clave = topic.parte ? `${topic.ejercicio}-${topic.parte.letra}` : null;
+        if (clave && clave !== anterior) {
+            const etiqueta = `${variosEjercicios ? `Ejercicio ${topic.ejercicio} · ` : ''}Parte ${topic.parte.letra}`;
+            rotulo = `<h3 class="t-parte"><span>${etiqueta}</span>${topic.parte.titulo}</h3>`;
+        }
+        anterior = clave;
+        return rotulo + renderTopicItem(topic);
+    }).join('');
 }
 
 const MESES_ESQUEMA = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
@@ -447,7 +475,8 @@ function renderTopicItem(topic) {
             ? `<span class="t-tema-fecha">Actualizado el <time datetime="${topic.actualizado}">${fechaEsquema(topic.actualizado)}</time></span>`
             : '<span class="t-tema-fecha">En actualización</span>';
     }
-    const nombre = `<span class="t-tema-nombre"><span class="t-tema-num">${topic.number}</span>${topic.titulo}${fecha}</span>`;
+    const resto = topic.resto ? `<span class="t-tema-resto">${topic.resto}</span>` : '';
+    const nombre = `<span class="t-tema-nombre"><span class="t-tema-num">${topic.number}</span><span class="t-tema-txt"><span class="t-tema-titulo">${topic.titulo}</span>${resto}${fecha}</span></span>`;
 
     switch (topic.status) {
         case 'available':
