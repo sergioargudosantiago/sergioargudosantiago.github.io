@@ -118,7 +118,7 @@ La OCM, regulada por el Reglamento (UE) 1308/2013 modificado por el 2021/2117, s
 
 ## 3.3. Normativa voluntaria
 
-En este sector el papel de CEPE/ONU y de los folletos de la OCDE es limitado. La referencia son las normas ISO de cada especia, como la ISO 3632, y las del **Codex Alimentarius**, voluntarias pero referencia en los Acuerdos MSF y OTC de la OMC. El Comité del Codex sobre Especias y Hierbas Culinarias aprobó en 2022 las normas del azafrán y del pimiento seco y pimentón. También destacan las de sal (CXS 1501985), caldos y consomés (CXS 1171981) y, a escala regional europea, vinagre (CXS 1621987).
+En este sector el papel de CEPE/ONU y de los folletos de la OCDE es limitado. La referencia son las normas ISO de cada especia, como la ISO 3632, y las del **Codex Alimentarius**, voluntarias pero referencia en los Acuerdos MSF y OTC de la OMC. El Comité del Codex sobre Especias y Hierbas Culinarias aprobó en 2022 las normas del azafrán y del pimiento seco y pimentón. También destacan las de sal (CXS 150-1985), caldos y consomés (CXS 117-1981) y, a escala regional europea, vinagre (CXS 162-1987).
 
 - **Producción ecológica.** El **Reglamento (UE) 2018/848**, aplicable desde el 1 de enero de 2022, derogó el Reglamento (CE) 834/2007 y sustituye progresivamente la equivalencia con terceros países por el cumplimiento de las normas de la UE. Las importaciones se amparan en el certificado de inspección electrónico (COI) en TRACES, regulado por el Reglamento Delegado (UE) 2021/2306 y el Reglamento de Ejecución (UE) 2021/2307. Según la **Orden ECC/1936/2014**, el SOIVRE controla en importación
   - Productos agrarios vivos o no transformados
