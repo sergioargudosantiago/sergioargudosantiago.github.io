@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-1/tema-32.md. No editar a mano. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 32. Errores en análisis instrumental: regresión y correlación — esquema del ejercicio 1</title>
+<link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="stylesheet" href="../../../css/fuentes.css">
+<style>
+@page { size: A4; margin: 14mm 12.5mm 15mm;
+  @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #D9DED6; font-family: 'Public Sans', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #C8A951; outline-offset: 2px; }
+
+/* Barra superior (solo pantalla) */
+.barra { background: #3B4533; color: #C2D9C2; }
+.barra-in { max-width: 210mm; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.barra a { color: #C2D9C2; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.barra a:hover { color: #FFFFFF; }
+.barra .marca { font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: .14em; font-size: 13px; color: #FFFFFF; }
+.barra .acciones { display: flex; gap: 10px; align-items: center; }
+.barra .boton { background: #E0C46B; color: #1F2A1D; font-weight: 700; padding: 0 14px; box-shadow: 3px 3px 0 #1F2A1D; }
+.barra .boton:hover { background: #FFFFFF; color: #1F2A1D; }
+
+/* Hoja */
+.hoja { max-width: 210mm; margin: 20px auto 40px; padding: 40px 47px 28px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.5; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+/* Los enunciados del BOE pueden ser largos: el título baja de cuerpo por tramos. */
+h1.largo { font-size: 28px; line-height: 1.12; }
+h1.muy-largo { font-size: 23px; line-height: 1.16; }
+.enunciado { margin: 3px 0 2px; max-width: 78ch; font-size: 14.5px; line-height: 1.42; color: #4A5546; text-wrap: pretty; }
+.sub-cab { font-size: 14px; color: #4A5546; }
+.sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+
+.indice { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.indice a { display: flex; flex-direction: column; gap: 1px; height: 100%; padding: 6px 9px; background: #3B4533; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.indice a:hover { background: #1F2A1D; }
+.indice b { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 13px; color: #E0C46B; letter-spacing: 0; }
+
+/* Cuerpo del esquema */
+.esq { min-width: 0; }
+.sec { margin: 26px 4px 12px 0; display: flex; align-items: stretch; background: #3B4533; color: #FFFFFF; box-shadow: 4px 4px 0 #A8862F; font-size: 16px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; scroll-margin-top: 12px; break-inside: avoid; break-after: avoid; }
+.esq > .sec:first-child { margin-top: 0; }
+.sec .n { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0; background: #E0C46B; color: #1F2A1D; min-width: 46px; display: flex; align-items: center; justify-content: center; }
+.sec .t { padding: 9px 12px; display: flex; align-items: center; flex-grow: 1; min-width: 0; }
+.sec .px { display: flex; align-items: flex-end; gap: 3px; padding: 0 10px 8px 0; }
+.sec .px i { display: block; width: 5px; height: 5px; background: #E0C46B; }
+.sec .px i:nth-child(2) { height: 9px; opacity: .7; }
+.sec .px i:nth-child(3) { height: 13px; opacity: .45; }
+.sub { margin: 16px 0 5px; font-size: 1em; font-weight: 700; line-height: 1.3; display: flex; align-items: baseline; gap: 8px; break-after: avoid; }
+.sub span { flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: .78em; color: #3B4533; background: #EEF3EB; border: 1px solid #3B4533; box-shadow: 2px 2px 0 #C9D1C5; padding: 0 5px; }
+.sub::after { content: ""; flex: 1 0 24px; align-self: center; border-bottom: 2px dotted #C9D1C5; }
+h4.sub { font-size: .94em; margin-top: 12px; }
+h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
+.sec + .sub { margin-top: 0; }
+.esq p { margin: 6px 0; }
+.esq ul, .esq ol { margin: 0; padding-left: 18px; }
+.esq li { margin: 2px 0; }
+.esq li::marker { color: #A8862F; }
+.esq ol > li::marker { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.esq li > ul { list-style: none; padding-left: 16px; }
+.esq li > ul > li { position: relative; }
+.esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
+.esq b { font-weight: 700; }
+
+.pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; }
+
+@media screen and (min-width: 821px) {
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+}
+@media screen and (max-width: 820px) {
+  .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
+  h1 { font-size: 27px; }
+  h1.largo { font-size: 23px; }
+  h1.muy-largo { font-size: 20px; }
+  .enunciado { font-size: 14px; }
+  .sello { min-width: 74px; padding: 6px 10px; }
+  .sello b { font-size: 22px; }
+  .sec { font-size: 14.5px; }
+}
+
+/* Impresión y PDF: dos columnas, cuerpo pequeño, sin barra ni pie propio (el pie
+   y la numeración van en los márgenes de @page). */
+@media print {
+  body { background: #FFFFFF; }
+  .barra, .pie { display: none; }
+  .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
+  h1 { font-size: 31px; }
+  h1.largo { font-size: 25px; }
+  h1.muy-largo { font-size: 21px; }
+  .enunciado { max-width: none; font-size: 11.5px; line-height: 1.36; }
+  .sub-cab { font-size: 13px; }
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+  .indice a { padding: 5px 8px; font-size: 9.5px; }
+  .indice b { font-size: 12px; }
+  .esq { column-count: 2; column-gap: 24px; }
+  .sec { font-size: 12.5px; margin: 14px 4px 9px 0; }
+  .sec .n { font-size: 15px; min-width: 38px; }
+  .sec .t { padding: 6px 10px; }
+  .sub { margin: 9px 0 3px; }
+  .esq li { margin: 1px 0; }
+  .esq ul, .esq ol { padding-left: 14px; }
+  .esq li > ul { padding-left: 14px; }
+  .esq li > ul > li::before { left: -11px; }
+}
+
+@page { @bottom-left { content: "Esquema · Tema 32. Errores en análisis instrumental: regresión y correlación"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
+    <div class="acciones"><a class="boton" href="tema-32.pdf" download="Esquema tema 32 (ejercicio 1).pdf">Descargar PDF</a></div>
+  </div>
+</header>
+<main class="hoja">
+  <div class="cab">
+    <div class="cab-txt">
+      <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
+      <h1 class="largo">Errores en análisis instrumental: regresión y correlación</h1>
+      <p class="enunciado">Gráficas de calibración en análisis instrumental. Coeficiente de correlación. Rectas de regresión. Errores en la pendiente y ordenada en el origen de la recta de regresión. Cálculo de una concentración.</p>
+      <div class="sub-cab">Ejercicio 1 · Esquema del tema 32 · Actualizado el <time datetime="2026-07-09">9 de julio de 2026</time></div>
+    </div>
+    <div class="sello" aria-label="Ejercicio 1, tema 32"><span>EJ. 1 · TEMA</span><b>32</b></div>
+  </div>
+  <nav aria-label="Apartados del esquema"><ol class="indice" style="--cols: 5"><li><a href="#apartado-1"><b>01</b>INTRODUCCIÓN</a></li><li><a href="#apartado-2"><b>02</b>ERRORES EN ANÁLISIS INSTRUMENTAL: REGRESIÓN Y CORRELACIÓN</a></li><li><a href="#apartado-3"><b>03</b>GRÁFICAS DE CALIBRACIÓN, RECTAS DE REGRESIÓN, COEFICIENTE DE CORRELACIÓN Y ERRORES EN LA PENDIENTE Y LA ORDENADA</a></li><li><a href="#apartado-4"><b>04</b>CÁLCULO DE UNA CONCENTRACIÓN</a></li><li><a href="#apartado-5"><b>05</b>CONCLUSIÓN</a></li></ol></nav>
+  <div class="esq">
+<h2 class="sec" id="apartado-1"><span class="n">01</span><span class="t">INTRODUCCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Buena parte de las labores del SOIVRE se realiza en su Red de Laboratorios, algunos de ellos acreditados por la <b>ENAC</b> según la norma <b>UNE-EN ISO/IEC 17025:2017</b>. Esta norma regula el Sistema de Gestión de la Calidad de los laboratorios de ensayo y calibración y establece los requisitos para demostrar su competencia. La acreditación nació de la necesidad de ofrecer un servicio de calidad a los operadores, sobre todo a los exportadores.</p>
+<ul><li><b>ENAC</b>: asociación sin ánimo de lucro, único organismo con potestad pública para acreditar según el <b>Real Decreto 1715/2010</b> y el <b>Reglamento (CE) 765/2008</b></li><li><b>Marca de ENAC</b>: declara públicamente el cumplimiento de los requisitos y garantiza su aceptación internacional, con el respaldo de los Acuerdos Multilaterales de Reconocimiento de más de 120 países</li><li><b>Organizaciones internacionales</b>: EA y Global ACI, resultante desde el 1 de enero de 2026 de la fusión de ILAC e IAF</li><li><b>Red de Laboratorios SOIVRE</b>: 16 laboratorios de ensayo en la red periférica, algunos acreditados, y un Laboratorio Central en Madrid, también acreditado, dentro de la Subdirección General de Inspección, Certificación y Asistencia Técnica de Comercio Exterior, con una creciente especialización de cada laboratorio</li><li><b>Funciones del Laboratorio Central</b> (creado en 1989): coordinar y armonizar la red y las aplicaciones informáticas, gestionar adquisiciones de instrumental, asesorar sobre reactivos, calibración y seguridad, poner a punto metodologías, dar soporte analítico, organizar ejercicios de intercomparación, seguir el programa de acreditación, formar y apoyar documentalmente</li></ul>
+<h2 class="sec" id="apartado-2"><span class="n">02</span><span class="t">ERRORES EN ANÁLISIS INSTRUMENTAL: REGRESIÓN Y CORRELACIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Si se repite una medida en las mismas condiciones no se obtiene siempre el mismo resultado, porque la muestra, los patrones, las operaciones, los equipos y el personal introducen variabilidad. El <b>error en el análisis instrumental</b> es la desviación entre el valor obtenido y el valor real de la muestra. Se procura que sea mínimo porque indica la calidad del método. Se distinguen errores sistemáticos y aleatorios.</p>
+<h3 class="sub"><span>2.1</span>Errores sistemáticos</h3>
+<p><b>Errores sistemáticos.</b> Son inherentes al método, al personal o a los instrumentos y se deben a imperfecciones del método, de los equipos o a malas prácticas. Son detectables y corregibles durante la puesta a punto, tienen el mismo signo y magnitud en mediciones del mismo tipo y se ligan a la <b>exactitud</b>, que indica cuán cerca del valor real está el valor medido.</p>
+<ul><li>Causas: poca recuperación del analito en las extracciones (con una recuperación del 60 % todas las determinaciones arrastran un error por defecto del 40 %), calibración deficiente por un patrón en mal estado o impuro, blancos de muestra no detectados, errores del personal, defectos del material volumétrico, muestreo incorrecto e interferencias</li><li>Para detectarlos y minimizarlos se calibran los equipos con patrones de referencia certificados y conviene trabajar con un patrón interno</li><li>Lo ideal son muestras certificadas de valor conocido, pero no existen para todos los análisis, sobre todo en alimentos por la variabilidad de las matrices. Un método válido para sodio en leche puede no serlo en aceite, así que se recurre a otros procedimientos según el caso</li><li>Clasificación: <b>errores aditivos</b>, de valor constante e independiente de la cantidad de analito, y <b>errores proporcionales</b>, que varían en proporción a ella</li></ul>
+<h3 class="sub"><span>2.2</span>Errores aleatorios</h3>
+<p><b>Errores aleatorios.</b> Son impredecibles, se deben al azar y persisten una vez eliminadas todas las causas de error sistemático. No tienen causa asignable, solo se definen por un rango de variación alrededor de un valor central y se tratan con procedimientos estadísticos. Se ligan a la <b>precisión</b>, que es la dispersión de los valores de mediciones repetidas: cuanto menor la dispersión, mayor la precisión.</p>
+<ul><li>Origen en los instrumentos: distinta sensibilidad influida por las condiciones atmosféricas, tiempo desde la última calibración y fluctuaciones de la red eléctrica</li><li>Origen en el personal: distinta atención y percepción visual y variaciones imperceptibles del modo de trabajo</li></ul>
+<p>Para obtener valores respuesta de las muestras se emplean dos técnicas.</p>
+<ul><li><b>Análisis de correlación</b>: responde si existe dependencia estocástica entre las variables y cuál es su grado. La dependencia estocástica es Y = a + bX + e, donde e es el error o residuo. La dependencia funcional es Y = F(X) = a + bX</li><li><b>Análisis de regresión</b>: responde cuál es el tipo de dependencia y si pueden estimarse los valores de Y a partir de los de X, y con qué precisión</li></ul>
+<p>Hay regresión cuando una línea, la <b>línea de regresión</b>, se ajusta a la nube de puntos, y su ecuación es la <b>ecuación de regresión</b>. La variable conocida de las muestras es la <b>variable independiente X</b> y la obtenida por el análisis es la <b>variable dependiente Y</b>. Los errores del análisis hacen que los puntos no se ajusten exactamente a la línea.</p>
+<h2 class="sec" id="apartado-3"><span class="n">03</span><span class="t">GRÁFICAS DE CALIBRACIÓN, RECTAS DE REGRESIÓN, COEFICIENTE DE CORRELACIÓN Y ERRORES EN LA PENDIENTE Y LA ORDENADA</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Este apartado describe los gráficos de calibración, el coeficiente de correlación y las rectas de regresión.</p>
+<h3 class="sub"><span>3.1</span>Calibración analítica</h3>
+<p>La mayoría de los métodos analíticos incluyen una etapa de calibración, normalmente la final, que relaciona la respuesta instrumental con la propiedad buscada, generalmente la concentración del analito, mediante un modelo de línea recta. En química la calibración tiene un doble significado.</p>
+<ul><li><b>Calibración instrumental</b>: expresa el valor conocido de un patrón en la misma magnitud que mide el instrumento, por ejemplo la absorbancia frente a disoluciones de dicromato potásico. Interesa porque las medidas instrumentales son relativas y permite estimar la incertidumbre de cada medida</li><li><b>Calibración analítica</b>: relaciona la respuesta del instrumento (área, absorbancia) con las concentraciones del analito. La respuesta no tiene que ser lineal, como en los métodos enzimáticos, pero conviene trabajar en intervalos lineales porque disminuye la incertidumbre de las medidas finales</li></ul>
+<h3 class="sub"><span>3.2</span>Ecuación y recta de regresión</h3>
+<p>Para calcular la ecuación de regresión se parte de valores conocidos de X en muestras llamadas <b>patrones</b>. Es el procedimiento de construcción de la gráfica de calibración, que permite después hallar el valor desconocido de una muestra a partir de la lectura del aparato.</p>
+<ul><li><b>Regresión lineal simple</b>: las variables siguen una línea recta, Y = a + bX</li><li><b>Regresión no lineal o curvilínea</b>: la relación es curva (parabólica, exponencial, potencial)</li><li><b>Regresión múltiple</b>: hay varias variables independientes (X1, X2, ..., Xp), llamadas regresoras o predictoras, y una sola dependiente Y</li></ul>
+<p>La más simple y común es la recta. Si una recta no sirve, se puede buscar una función polinómica de ajuste mínimo cuadrático, pero resulta más práctico reducir el rango de aplicación al intervalo lineal. La dificultad está en detectar dónde empieza la curvatura, para lo cual se analizan los residuos eliminando sucesivamente valores extremos mientras mejore la dispersión.</p>
+<p><b>Linealización.</b> Los modelos potencial y exponencial se reducen a una recta tomando logaritmos.</p>
+<ul><li><b>Modelo potencial</b> Y = AXᵇ: log(Y) = log(A) + b·log(X). Se ajusta una recta a log(Y) frente a log(X), b coincide con la pendiente y A = antilog(a)</li><li><b>Modelo exponencial</b> Y = ABˣ: log(Y) = log(A) + X·log(B). Se ajusta log(Y) frente a X, A = antilog(a) y B = antilog(b)</li><li><b>Modelo logarítmico</b> Y = a + b·log(X): es una recta referida a log(X) e Y</li></ul>
+<p>También se cambia de variable. En las potenciometrías se representa el pH en lugar de la concentración de hidrogeniones, por la ecuación de Nernst. En las espectrometrías de absorción la relación es lineal si se representa la absorbancia, por la Ley de Lambert-Beer.</p>
+<p><b>Mínimos cuadrados.</b> Por la nube de puntos pasan infinitas rectas y se elige la que actúa como línea media y pasa lo más cerca posible de todos los puntos. El método de los mínimos cuadrados elige la recta que hace mínima la suma de los cuadrados de las distancias verticales de los puntos a la recta, llamadas errores o residuos. La pendiente es el sumatorio del producto de las desviaciones de X e Y respecto a sus medias dividido por el sumatorio de los cuadrados de las desviaciones de X respecto a su media. El cuadrado es siempre positivo aunque los puntos queden por encima o por debajo de la recta.</p>
+<p><b>Bondad de ajuste.</b> Haber obtenido la mejor recta no garantiza que sea buena, por lo que debe acompañarse de una medida de su representatividad. Con dispersiones pequeñas la bondad de ajuste es alta y con dispersiones grandes es baja. El <b>coeficiente de determinación</b> R² = σxy² / (σx²·σy²) indica el porcentaje de variaciones explicado por el modelo y está entre 0 y 1.</p>
+<ul><li>Si R² ≈ 1 no hay residuos y existe dependencia funcional. Cuanto más cerca de 1, mayor poder explicativo</li><li>Si R² ≈ 0, X no explica las variaciones de Y, y el modelo es inadecuado o las variables son independientes</li></ul>
+<p>Un R² alto puede no servir para predecir, porque justo en el rango de interés los puntos pueden alejarse de la recta. El poder predictivo solo se evalúa observando los gráficos de residuales.</p>
+<h3 class="sub"><span>3.3</span>Coeficiente de correlación</h3>
+<p>Los datos que teóricamente siguen una relación lineal pueden apartarse de la recta calculada. Las medidas de correlación cuantifican esa dispersión y, con ella, la magnitud de los errores accidentales.</p>
+<p><b>Covarianza.</b> Mide la variación conjunta de dos variables, en el mismo sentido o en sentido contrario. Es el sumatorio del producto de las desviaciones de X e Y respecto a sus medias dividido por el número de parejas de valores. Si es positiva, la relación es directa, si es negativa, inversa, y si las variables son independientes vale aproximadamente 0.</p>
+<p><b>Coeficiente de correlación de Pearson (r).</b> La covarianza depende de las unidades de medida. Dividirla entre el producto de las desviaciones típicas de X e Y da una medida adimensional de la relación lineal. Tiene el signo de la covarianza.</p>
+<ul><li>Solo analiza relaciones lineales. Si las variables son independientes, r = 0, pero r = 0 no implica independencia, solo que la relación no es lineal</li><li>Orientación: r de 0,9 permite buenos ajustes y valores de 0,5 o inferiores se rechazan generalmente</li><li>En regresión lineal simple por mínimos cuadrados, r² = R², por lo que r está acotado entre −1 y +1. Con r = +1 la correlación positiva es perfecta y con r = −1, negativa perfecta</li></ul>
+<h3 class="sub"><span>3.4</span>Errores en la pendiente y ordenada en el origen</h3>
+<p>Los errores de la pendiente y de la ordenada en el origen miden la fiabilidad del ajuste y la significación de los parámetros de mínimos cuadrados, lo que permite validar o no la recta obtenida. La desviación estándar (error estándar) de la pendiente y la de la ordenada se calculan a partir de la varianza de la variable independiente, pues sus incertidumbres derivan de los errores al medir X. Esa varianza refleja la desviación de los valores de Y respecto a la media y es una medida de la precisión del análisis.</p>
+<h2 class="sec" id="apartado-4"><span class="n">04</span><span class="t">CÁLCULO DE UNA CONCENTRACIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p><b>Calibración.</b> Es el conjunto de operaciones que establecen la relación entre los valores indicados por el instrumento y los valores conocidos de analito, patrón o magnitud medida. Permite corregir los errores sistemáticos del equipo, como defectos de construcción o deterioro del sistema óptico, y calcular la concentración de una muestra a partir de la relación entre respuesta y concentración.</p>
+<p>Los pasos son los siguientes.</p>
+<ul><li>Conseguir <b>patrones</b> de cantidades conocidas de analito y de elevada calidad, para evitar errores sistemáticos, y someterlos al método analítico para asociar una señal a cada concentración</li><li>Con relación lineal, la ecuación es Y = a + bX, donde Y es la respuesta medida, X la concentración del analito, a la ordenada en el origen y b la pendiente</li><li>Por los errores analíticos, los puntos se disponen alrededor de una recta sin formarla, así que se aplica el método de mínimos cuadrados, que hace mínima la suma de los cuadrados de las desviaciones de los puntos a la recta y da la pendiente y la ordenada</li><li>Se mide la señal de la muestra problema Y0 y se obtiene su concentración X0 <b>gráficamente</b>, prolongando Y0 hasta la recta y leyendo X en el eje, o <b>directamente</b>, introduciendo Y0 en la ecuación y despejando X0</li></ul>
+<p>Para trazar la recta hacen falta <b>al menos 3 patrones</b> distintos, y cuantos más, mayor fiabilidad. La muestra problema debe caer dentro del tramo definido por los patrones, y si no, hay que ampliarlos. No deben extrapolarse resultados fuera del rango de X usado en el ajuste. La fiabilidad de la recta se conoce con la desviación estándar de la pendiente y la de la ordenada en el origen.</p>
+<h2 class="sec" id="apartado-5"><span class="n">05</span><span class="t">CONCLUSIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Conocer los errores del análisis instrumental y las técnicas de regresión y correlación es imprescindible para que los resultados de los laboratorios SOIVRE tengan la fiabilidad que exigen los operadores y las autoridades de terceros países. La calibración analítica, bien ejecutada y validada estadísticamente, convierte una respuesta instrumental en un dato de concentración con trazabilidad. Dominar el coeficiente de correlación, la bondad de ajuste y los errores de pendiente y ordenada garantiza determinaciones reproducibles, defendibles ante reclamaciones y coherentes con la acreditación ENAC.</p>
+  </div>
+  <footer class="pie"><span>Esquema propio a partir del tema desarrollado</span><span class="url">sergioargudo.es</span></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-1/tema-39.md. No editar a mano. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 39. Técnicas espectrométricas — esquema del ejercicio 1</title>
+<link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="stylesheet" href="../../../css/fuentes.css">
+<style>
+@page { size: A4; margin: 14mm 12.5mm 15mm;
+  @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #D9DED6; font-family: 'Public Sans', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #C8A951; outline-offset: 2px; }
+
+/* Barra superior (solo pantalla) */
+.barra { background: #3B4533; color: #C2D9C2; }
+.barra-in { max-width: 210mm; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.barra a { color: #C2D9C2; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.barra a:hover { color: #FFFFFF; }
+.barra .marca { font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: .14em; font-size: 13px; color: #FFFFFF; }
+.barra .acciones { display: flex; gap: 10px; align-items: center; }
+.barra .boton { background: #E0C46B; color: #1F2A1D; font-weight: 700; padding: 0 14px; box-shadow: 3px 3px 0 #1F2A1D; }
+.barra .boton:hover { background: #FFFFFF; color: #1F2A1D; }
+
+/* Hoja */
+.hoja { max-width: 210mm; margin: 20px auto 40px; padding: 40px 47px 28px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.5; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+/* Los enunciados del BOE pueden ser largos: el título baja de cuerpo por tramos. */
+h1.largo { font-size: 28px; line-height: 1.12; }
+h1.muy-largo { font-size: 23px; line-height: 1.16; }
+.enunciado { margin: 3px 0 2px; max-width: 78ch; font-size: 14.5px; line-height: 1.42; color: #4A5546; text-wrap: pretty; }
+.sub-cab { font-size: 14px; color: #4A5546; }
+.sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+
+.indice { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.indice a { display: flex; flex-direction: column; gap: 1px; height: 100%; padding: 6px 9px; background: #3B4533; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.indice a:hover { background: #1F2A1D; }
+.indice b { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 13px; color: #E0C46B; letter-spacing: 0; }
+
+/* Cuerpo del esquema */
+.esq { min-width: 0; }
+.sec { margin: 26px 4px 12px 0; display: flex; align-items: stretch; background: #3B4533; color: #FFFFFF; box-shadow: 4px 4px 0 #A8862F; font-size: 16px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; scroll-margin-top: 12px; break-inside: avoid; break-after: avoid; }
+.esq > .sec:first-child { margin-top: 0; }
+.sec .n { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0; background: #E0C46B; color: #1F2A1D; min-width: 46px; display: flex; align-items: center; justify-content: center; }
+.sec .t { padding: 9px 12px; display: flex; align-items: center; flex-grow: 1; min-width: 0; }
+.sec .px { display: flex; align-items: flex-end; gap: 3px; padding: 0 10px 8px 0; }
+.sec .px i { display: block; width: 5px; height: 5px; background: #E0C46B; }
+.sec .px i:nth-child(2) { height: 9px; opacity: .7; }
+.sec .px i:nth-child(3) { height: 13px; opacity: .45; }
+.sub { margin: 16px 0 5px; font-size: 1em; font-weight: 700; line-height: 1.3; display: flex; align-items: baseline; gap: 8px; break-after: avoid; }
+.sub span { flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: .78em; color: #3B4533; background: #EEF3EB; border: 1px solid #3B4533; box-shadow: 2px 2px 0 #C9D1C5; padding: 0 5px; }
+.sub::after { content: ""; flex: 1 0 24px; align-self: center; border-bottom: 2px dotted #C9D1C5; }
+h4.sub { font-size: .94em; margin-top: 12px; }
+h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
+.sec + .sub { margin-top: 0; }
+.esq p { margin: 6px 0; }
+.esq ul, .esq ol { margin: 0; padding-left: 18px; }
+.esq li { margin: 2px 0; }
+.esq li::marker { color: #A8862F; }
+.esq ol > li::marker { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.esq li > ul { list-style: none; padding-left: 16px; }
+.esq li > ul > li { position: relative; }
+.esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
+.esq b { font-weight: 700; }
+
+.pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; }
+
+@media screen and (min-width: 821px) {
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+}
+@media screen and (max-width: 820px) {
+  .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
+  h1 { font-size: 27px; }
+  h1.largo { font-size: 23px; }
+  h1.muy-largo { font-size: 20px; }
+  .enunciado { font-size: 14px; }
+  .sello { min-width: 74px; padding: 6px 10px; }
+  .sello b { font-size: 22px; }
+  .sec { font-size: 14.5px; }
+}
+
+/* Impresión y PDF: dos columnas, cuerpo pequeño, sin barra ni pie propio (el pie
+   y la numeración van en los márgenes de @page). */
+@media print {
+  body { background: #FFFFFF; }
+  .barra, .pie { display: none; }
+  .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
+  h1 { font-size: 31px; }
+  h1.largo { font-size: 25px; }
+  h1.muy-largo { font-size: 21px; }
+  .enunciado { max-width: none; font-size: 11.5px; line-height: 1.36; }
+  .sub-cab { font-size: 13px; }
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+  .indice a { padding: 5px 8px; font-size: 9.5px; }
+  .indice b { font-size: 12px; }
+  .esq { column-count: 2; column-gap: 24px; }
+  .sec { font-size: 12.5px; margin: 14px 4px 9px 0; }
+  .sec .n { font-size: 15px; min-width: 38px; }
+  .sec .t { padding: 6px 10px; }
+  .sub { margin: 9px 0 3px; }
+  .esq li { margin: 1px 0; }
+  .esq ul, .esq ol { padding-left: 14px; }
+  .esq li > ul { padding-left: 14px; }
+  .esq li > ul > li::before { left: -11px; }
+}
+
+@page { @bottom-left { content: "Esquema · Tema 39. Técnicas espectrométricas"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
+    <div class="acciones"><a class="boton" href="tema-39.pdf" download="Esquema tema 39 (ejercicio 1).pdf">Descargar PDF</a></div>
+  </div>
+</header>
+<main class="hoja">
+  <div class="cab">
+    <div class="cab-txt">
+      <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
+      <h1>Técnicas espectrométricas</h1>
+      <p class="enunciado">Fundamentos generales de la espectrometría. Especial referencia a la espectrofotometría de ultravioleta-visible, espectrometría de absorción y emisión atómica, espectrometría de masas y espectrometría de infrarrojos. Métodos de identificación y de cuantificación. Aplicaciones en el ámbito alimentario y de seguridad industrial.</p>
+      <div class="sub-cab">Ejercicio 1 · Esquema del tema 39 · Actualizado el <time datetime="2026-07-27">27 de julio de 2026</time></div>
+    </div>
+    <div class="sello" aria-label="Ejercicio 1, tema 39"><span>EJ. 1 · TEMA</span><b>39</b></div>
+  </div>
+  <nav aria-label="Apartados del esquema"><ol class="indice" style="--cols: 4"><li><a href="#apartado-1"><b>01</b>INTRODUCCIÓN</a></li><li><a href="#apartado-2"><b>02</b>FUNDAMENTOS GENERALES DE LA ESPECTROMETRÍA</a></li><li><a href="#apartado-3"><b>03</b>ESPECTROFOTOMETRÍA UV/VIS</a></li><li><a href="#apartado-4"><b>04</b>ESPECTROMETRÍA DE ABSORCIÓN Y EMISIÓN ATÓMICA</a></li><li><a href="#apartado-5"><b>05</b>ESPECTROMETRÍA DE MASAS</a></li><li><a href="#apartado-6"><b>06</b>ESPECTROMETRÍA DE INFRARROJOS</a></li><li><a href="#apartado-7"><b>07</b>CONCLUSIÓN</a></li></ol></nav>
+  <div class="esq">
+<h2 class="sec" id="apartado-1"><span class="n">01</span><span class="t">INTRODUCCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Algunos Laboratorios del SOIVRE están acreditados según la <b>Norma UNE-EN ISO/IEC 17025:2017</b>, que regula el sistema de gestión de la calidad de los laboratorios de ensayo y calibración y establece los requisitos para demostrar su competencia. La <b>ENAC</b> es el único organismo con potestad pública para acreditar (Real Decreto 1715/2010, Reglamento (CE) 765/2008) y su marca cuenta con el respaldo de acuerdos multilaterales de reconocimiento suscritos por más de 120 países, gestionados por EA y Global ACI (fusión de ILAC e IAF desde el 1 de enero de 2026).</p>
+<p>La Red de Laboratorios SOIVRE tiene <b>16 laboratorios de ensayo</b> en la red periférica, algunos acreditados, y un <b>Laboratorio Central en Madrid</b> (creado en 1989), también acreditado, integrados en la Subdirección General de Inspección, Certificación y Asistencia Técnica de Comercio Exterior. El Laboratorio Central coordina y armoniza la red, pone a punto metodologías, da soporte analítico, organiza ejercicios de intercomparación, sigue el programa de acreditación y asesora en reactivos, calibración y seguridad.</p>
+<p><b>Control de calidad.</b> Conjunto de medidas para conservar la fiabilidad de un método analítico. Puede ser interno (evaluación diaria de las determinaciones rutinarias, con fases preanalítica, analítica y postanalítica) o externo (pruebas de intercomparación entre laboratorios).</p>
+<h2 class="sec" id="apartado-2"><span class="n">02</span><span class="t">FUNDAMENTOS GENERALES DE LA ESPECTROMETRÍA</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Las radiaciones electromagnéticas transportan energía y la ceden a los receptores adecuados. Algunas interacciones con la materia solo modifican las características ondulatorias (difracción, refracción, rotación óptica). Analíticamente importan las que intercambian energía: absorción y emisión de energía radiante (absorbancia UV/V, fluorescencia y fosforescencia, reacción fotoquímica).</p>
+<p>Átomos, iones o moléculas absorben energía y pasan del estado fundamental a un estado excitado, y después regresan a él desprendiendo la energía sobrante, con frecuencia como calor y a veces como radiación. Las energías de ambos estados están cuantificadas y son características de cada especie. Cuando hay absorción o emisión de radiación, la <b>ecuación de Planck</b> relaciona energía y frecuencia: ΔE = h · ν, donde ΔE es la diferencia de energía entre los dos estados, h la constante de Planck y ν la frecuencia de la radiación absorbida o emitida. Por eso las frecuencias o longitudes de onda son variables cualitativas características. Las transiciones electrónicas requieren mucha más energía que las vibracionales y rotacionales.</p>
+<p>Técnicas espectrofotométricas:</p>
+<ul><li><b>UV/V</b>: radiación UV (200-400 nm) o visible (400-700 nm) que provoca transiciones de electrones de valencia, y mide la energía absorbida</li><li><b>Fluorescencia molecular</b>: mide la luz fluorescente que emiten muchas sustancias al recibir radiación UV próxima (energía emitida)</li><li><b>Absorción infrarroja</b>: absorción molecular entre 700 nm y 1.000 µm, menos energética, que solo produce vibraciones y rotaciones</li><li><b>Raman</b>: mide la diferencia de longitud de onda entre la radiación incidente y la dispersa, que corresponde a la región IR, por lo que ambos espectros se parecen</li><li><b>Absorción atómica</b>: mide la absorción de radiación por partículas atómicas</li><li><b>Emisión atómica</b>: mide la radiación emitida por partículas atómicas, sobre todo para Na, K, Li y Ca</li></ul>
+<h2 class="sec" id="apartado-3"><span class="n">03</span><span class="t">ESPECTROFOTOMETRÍA UV/VIS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Técnica basada en que sustancias con <b>grupos cromóforos</b> absorben radiación visible o ultravioleta y sus electrones pasan a un estado superior de energía. La intensidad absorbida da la concentración y el tipo de radiación absorbida permite identificar características de la sustancia.</p>
+<h3 class="sub"><span>3.1</span>Instrumentación y metodología</h3>
+<ul><li><b>Fuente de radiación</b>: continua, estable y uniforme en toda la región. Arco de deuterio para UV y lámpara halógena de wolframio para visible, y la mayoría de equipos llevan ambas</li><li><b>Monocromador</b>: descompone la radiación policromática (rendijas, prisma y espejos). De longitud de onda fija (solo cuantitativo) o de barrido (cuantitativo y cualitativo)</li><li><b>Celda</b>: de cuarzo o sílice fundida para UV, y de vidrio, cuarzo o plástico para visible</li><li><b>Detector</b>: convierte la señal de luz en eléctrica y compara la energía transmitida con la incidente. Fotodiodo, fotomultiplicador o, en los modernos, matriz de fotodiodos</li><li><b>Registrador</b>: recoge el espectrograma</li></ul>
+<p>Los equipos de doble haz dividen el haz en una parte que pasa por la muestra y otra por la referencia, y así restan la absorción del disolvente.</p>
+<h3 class="sub"><span>3.2</span>Procedimiento de calibración</h3>
+<p>Se calibra <b>semestralmente</b>, controlando exactitud y repetibilidad de la longitud de onda, exactitud y repetibilidad fotométrica (UV y visible), límite de luz difusa, poder de resolución y verificación de las cubetas en equipos de doble haz.</p>
+<h3 class="sub"><span>3.3</span>Métodos de identificación y cuantificación</h3>
+<p><b>Identificación.</b> Cada molécula absorbe al máximo a una longitud de onda determinada, según sus dobles enlaces y los grupos acompañantes. Se compara el espectro de la sustancia problema con el patrón, y si son muy similares se emplean las derivadas de los espectros para resaltar diferencias.</p>
+<p><b>Cuantificación.</b> Determinar la concentración de sustancias con grupos cromóforos en solución es la aplicación más importante. Se basa en la <b>Ley de Lambert-Beer</b>: la radiación absorbida es proporcional al número de iones o moléculas absorbentes. Abs = log(I₀/I) = ε · b · c, donde I₀ es la intensidad incidente, I la saliente, ε la absortividad molar, b el espesor atravesado y c la concentración de la especie absorbente.</p>
+<h3 class="sub"><span>3.4</span>Aplicaciones en el ámbito alimentario y de seguridad industrial</h3>
+<p>Alimentarias:</p>
+<ul><li>Carnes y derivados: hidroxiprolina, nitritos y nitratos</li><li>Frutas y hortalizas: fungicidas ortofenilfenol y tiabendazol</li><li>Aguardientes compuestos: furfural</li><li>Pimentón y azafrán: poder colorante, safranal y picrocrocina</li><li>Aceites: extinción a 270 y 232 nm y delta K, y adición de terpenos en aceites esenciales</li><li>Bebidas alcohólicas: cafeína y quinina</li><li>Abonos: Biuret en urea y boro soluble en agua (complejo con azometina-H)</li></ul>
+<p>Seguridad industrial:</p>
+<ul><li><b>Cromo VI en calzado o guantes</b>: en partes de cuero, límite de ≤ 3,0 mg/kg (Reglamento (UE) 301/2014, con referencia a la norma UNE-EN ISO 20345:2022), y en partes textiles, ≤ 1,0 mg/kg (Reglamento (UE) 2018/1513)</li><li><b>Formaldehído en utensilios de cocina de melamina</b>: Reglamento (UE) 10/2011 sobre materiales plásticos en contacto con alimentos y Reglamento (UE) 284/2011 para artículos de poliamida y melamina de China y Hong Kong, con límite de migración específica de <b>15 mg/kg</b></li></ul>
+<h2 class="sec" id="apartado-4"><span class="n">04</span><span class="t">ESPECTROMETRÍA DE ABSORCIÓN Y EMISIÓN ATÓMICA</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>4.1</span>Espectrometría de emisión atómica: fundamentos y descripción</h3>
+<p>Una muestra gaseosa, en forma de átomos libres o iones, se excita térmica o eléctricamente y, al volver al estado fundamental, emite una radiación característica que dispersa un monocromador. El espectro de líneas se registra en placa fotográfica (información cualitativa) o en un receptor fotoeléctrico (información cuantitativa, pues los fotones captados son proporcionales a los átomos excitados). El equipo tiene fuente de excitación, monocromador y detector.</p>
+<p>La fuente de excitación debe llevar la muestra a estado gaseoso, como átomos o iones libres, y excitar el máximo de átomos. Puede ser:</p>
+<ul><li><b>Llama</b> (fotometría de llama): combustible más oxidante, con muestra líquida nebulizada. Da espectros sencillos, pero su bajo poder solo excita pocos elementos</li><li><b>Arco y chispa</b>: descarga entre electrodos de grafito de alta pureza, que permite excitar muchos elementos. Las muestras orgánicas sólidas se calcinan y la ceniza va a un cráter del electrodo, las líquidas llegan por incisión porosa y las gaseosas se usan en tubos de descarga a baja presión</li><li><b>Plasma</b>: excitación de un gas noble a más de <b>8.000 K</b></li></ul>
+<p>El monocromador usa prismas, filtros interferenciales o red de difracción. En fotometría de llama (cuantitativa) el detector es fotocélula o fotomultiplicador, y en emisión (cualitativa) es sobre todo fotográfico, aunque hay detectores fotoeléctricos que miden la intensidad.</p>
+<h3 class="sub"><span>4.2</span>Espectrometría de absorción atómica: fundamentos y descripción</h3>
+<p>Se hace pasar radiación monocromática de un cátodo por una llama donde se ha vaporizado la muestra. Los átomos en estado fundamental absorben parte de la radiación y la intensidad disminuye linealmente con la concentración del elemento. Es el proceso inverso al de la emisión atómica.</p>
+<ul><li><b>Fuente</b>: lámpara de cátodo hueco (ampolla con argón o helio, ánodo de tungsteno y cátodo del elemento a analizar), que emite en la línea de resonancia de máxima absorción. Las lámparas multielemento facilitan el análisis de muestras complejas</li><li><b>Atomizador de llama fría</b>: lleva la muestra al estado atómico sin producir átomos excitados, en gotas uniformes y a velocidad constante</li><li><b>Cámara de grafito</b> (sin llama): calentada eléctricamente, con inyección, secado a 100 ºC, incineración a 800-1.000 ºC y atomización por encima de 2.650 ºC. Sirve para muestras pequeñas y materiales difíciles como aceites pesados o tejidos</li><li><b>Vapor frío</b>: para el Hg, que está atómico a temperatura ambiente, y se reduce con cloruro de estaño o borohidruro sódico</li><li><b>Generación de hidruros</b>: para As, Se, Te, Sb, Bi, Sn y Ge, con borohidruro sódico en solución ácida. Separa analito y matriz, minimiza interferencias y es muy sensible</li><li><b>Monocromador y detector</b>: prisma, red o filtros interferenciales, y fotomultiplicador calibrado en absorbancia o transmitancia</li></ul>
+<h3 class="sub"><span>4.3</span>Procedimientos de calibración</h3>
+<p>Se controlan el desgaste de la lámpara, la exactitud de la escala de longitud de onda, la sensibilidad (próxima a la del fabricante), los límites de detección y cuantificación, y la linealidad y precisión de la curva de calibrado.</p>
+<h3 class="sub"><span>4.4</span>Métodos de cuantificación</h3>
+<p><b>Fotometría de llama.</b> Método eminentemente cuantitativo para trazas, sobre todo de metales alcalinos y alcalinotérreos. Se cuantifica por tres métodos:</p>
+<ul><li><b>Curva de calibración</b>: concentraciones conocidas frente a intensidad de emisión, y la concentración de la muestra se deduce de la recta</li><li><b>Adición de patrón</b>: se mide la muestra (I1) y la muestra con un volumen igual de patrón conocido (I2), y a la cantidad deducida de I2 se le resta la añadida</li><li><b>Patrón interno</b>: se añade una cantidad fija de un elemento ausente de la muestra y se representa el cociente de intensidades frente a la concentración</li></ul>
+<p><b>Emisión atómica.</b> Fundamentalmente cualitativa. Se compara el espectrograma con el de patrones puros en las mismas condiciones y se identifican hasta <b>70 elementos</b> mediante atlas, sobre ciertas rayas características (rayas últimas, las que persisten a concentraciones pequeñas). El interés cuantitativo es menor: el ennegrecimiento de las líneas es proporcional a la concentración, y se mide frente a un patrón interno con densitómetros o fotómetros.</p>
+<p><b>Absorción atómica.</b> Eminentemente cuantitativa, para concentraciones muy pequeñas de muchos elementos, sobre todo metálicos. Transmitancia: T = I/I₀. Absorbancia: Abs = log(I₀/I) = ε · b · c, donde I₀ es la intensidad incidente, I la transmitida, ε la absortividad molar, b el espesor y c la concentración en moles/L. La transmitancia baja al subir la concentración. Absorbancia frente a concentración da una recta por el origen de pendiente ε·b, con patrones de concentración conocida, y el resultado se expresa en ppm.</p>
+<h3 class="sub"><span>4.5</span>Aplicaciones en el ámbito alimentario y de seguridad industrial</h3>
+<ul><li><b>Fotometría de llama</b>: Na en pan dietético, neutralización de la leche (Na) y vino con intercambio catiónico (Na y K)</li><li><b>Emisión atómica</b>: poco usada por el coste de los instrumentos, y empleada en oligoelementos en aguas minerales y metales en productos dietéticos</li><li><b>Absorción atómica</b>: metales pesados en bebidas y alimentos, como Pb, Cd y Hg en productos de pesca, Sn y Pb en vinos y conservas, Cu y Zn en vinagre y cerveza, Fe, Pb y Cu en aceites, y Cd y Pb en productos cárnicos y cerámicos de uso alimentario</li><li><b>Seguridad de juguetes</b>: migración de As, Ba, Cd, Cr, Hg, Pb, Sb y Se (UNE-EN 71-3:2020+A2:2024)</li></ul>
+<h2 class="sec" id="apartado-5"><span class="n">05</span><span class="t">ESPECTROMETRÍA DE MASAS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Es una de las técnicas más utilizadas en la Red de Laboratorios del SOIVRE.</p>
+<h3 class="sub"><span>5.1</span>Fundamento</h3>
+<p>Permite analizar mezclas muy complejas de gases, líquidos o sólidos en muy poco tiempo y con exactitud razonable. La muestra gaseosa se bombardea con electrones y las moléculas se rompen en fragmentos con carga positiva. Un campo eléctrico los acelera en función inversa a su masa y un campo magnético los agrupa en haces según su relación masa/carga, de modo que los más ligeros se desvían más. Medir la desviación y la intensidad de cada haz permite calcular las masas relativas. La reproducibilidad se basa en que, con las mismas condiciones de excitación, que hay que controlar con cuidado, se obtienen siempre los mismos iones.</p>
+<h3 class="sub"><span>5.2</span>Descripción</h3>
+<ul><li><b>Sistema de entrada</b>: la muestra pasa a gas por calentamiento a unos 400 ºC y entra en la cámara de ionización, donde electrones de un cátodo incandescente la fragmentan e ionizan</li><li><b>Acelerador</b>: tres ranuras con diferencias de potencial</li><li><b>Sistema separador</b>: campo magnético potente y vacío elevado para evitar choques. Puede ser de un solo enfoque (circular de 180º), de sector (60 a 90º) o de doble enfoque, el preferido hoy</li><li><b>Detector y registrador</b>: cátodo emisor que libera electrones al recibir las partículas, con amplificadores, y da el espectrograma de masas</li></ul>
+<p>El <b>espectrograma</b> muestra en abscisas el orden de llegada, que depende de la relación masa/carga, y en ordenadas la abundancia relativa de los iones. El pico mayor es el <b>pico base</b>, con valor 100, y los demás se expresan como porcentaje de él.</p>
+<h3 class="sub"><span>5.3</span>Aplicaciones en el ámbito alimentario y de seguridad industrial</h3>
+<p>Se combina con cromatografía de gases o HPLC, que aportan el poder separador, mientras el espectrómetro aporta la detección e identificación.</p>
+<ul><li><b>Cualitativas</b>: el pico de mayor m/e corresponde a la molécula ionizada sin fragmentar (masa patrón) y da el peso molecular, y también la fórmula molecular. Una molécula rota en las mismas condiciones da una fragmentación patrón característica, que permite identificar componentes por comparación, caracterizar polímeros de alto peso molecular y detectar impurezas y metabolitos a pocas ppm</li><li><b>Cuantitativas</b>: la intensidad relativa de los picos da la proporción de cada componente. Conviene que cada uno tenga al menos un pico distinto, y la calibración con patrones se aplica sobre todo a isótopos</li><li><b>Seguridad industrial</b> (con cromatografía de gases): biocida DMF (dimetilfumarato) en muebles, textiles y calzado (Reglamento (CE) 1907/2006), ftalatos en juguetes, calzado y prendas, y pentaclorofenol (PCP) y sus sales en textiles (UNE 59510:2007) y calzado</li></ul>
+<h2 class="sec" id="apartado-6"><span class="n">06</span><span class="t">ESPECTROMETRÍA DE INFRARROJOS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>6.1</span>Fundamento</h3>
+<p>Es una espectrometría de absorción en la región infrarroja, útil para identificar compuestos o investigar la composición de una muestra. Se basa en que los enlaces químicos tienen frecuencias de vibración específicas, que dependen de la geometría molecular, las masas atómicas y el acoplamiento vibracional. La luz con la energía de esa vibración se absorbe, pero la vibración solo aparece en el espectro si hay cambio en el momento dipolar. Los enlaces vibran de seis maneras: estiramiento simétrico y asimétrico, tijera, rotación, giro y balanceo.</p>
+<p>Se transmite un rayo monocromo por la muestra y se registra la energía absorbida en el rango de interés, por lo general <b>4.000-400 cm⁻¹</b>. Funciona casi solo en enlaces covalentes y es muy usada en química orgánica, con sustancias puras y también con mezclas complejas.</p>
+<h3 class="sub"><span>6.2</span>Preparación de la muestra</h3>
+<ul><li><b>Líquidos</b>: se prensan entre dos planchas de una sal de alta pureza transparente al IR, como NaCl. Son solubles en agua, así que todo ha de ser anhidro</li><li><b>Sólidos</b>: se mezclan con sal purificada, por lo general KBr, y se prensan a altas presiones (prensa hidráulica) hasta formar una pastilla translúcida. El KBr no absorbe el IR, y así las líneas son solo del analito</li></ul>
+<h3 class="sub"><span>6.3</span>Aplicaciones en el ámbito alimentario y de seguridad industrial</h3>
+<p>Es una técnica rápida y fiable, con equipos pequeños y transportables incluso para medidas de campo. El tratamiento computacional permite medir muestras en solución (el agua da una banda larga de absorbancia) y algunos equipos identifican la sustancia con miles de espectros de referencia.</p>
+<ul><li>Seguimiento de un enlace a una frecuencia específica a lo largo del tiempo, útil para el grado de polimerización</li><li>Control de calidad y monitoreo, como CO2 en invernaderos y cámaras de crecimiento con analizadores de gases infrarrojos</li><li>Análisis forense, como la degradación de polímeros o el alcohol en sangre</li><li>Identificación de pigmentos en pinturas y objetos de arte</li></ul>
+<h3 class="sub"><span>6.4</span>Espectrometría de infrarrojos por transformada de Fourier</h3>
+<p>La <b>FTIR</b> guía la luz IR con todas las longitudes de onda a través de un interferómetro, y la señal medida es el interferograma. Su transformada de Fourier da un espectro idéntico al de la espectrometría dispersiva. Es más barata, porque un interferómetro es más simple que un monocromador, y más rápida, porque se toman todas las frecuencias a la vez. Permite promediar varias lecturas y aumentar la sensibilidad, y por eso casi todos los equipos modernos son FTIR.</p>
+<h2 class="sec" id="apartado-7"><span class="n">07</span><span class="t">CONCLUSIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Las técnicas comparten un mismo fundamento físico, la interacción entre radiación electromagnética y materia, y ofrecen respuestas complementarias. UV/Vis y absorción atómica destacan en la cuantificación de metales pesados y compuestos cromóforos, la espectrometría de masas aporta identificación estructural, sobre todo con cromatografía previa, y el infrarrojo amplía el uso al control de calidad dinámico y al análisis forense. Su dominio es indispensable para el inspector del SOIVRE, pues sostienen gran parte de los controles de seguridad alimentaria e industrial de la Red de Laboratorios.</p>
+  </div>
+  <footer class="pie"><span>Esquema propio a partir del tema desarrollado</span><span class="url">sergioargudo.es</span></footer>
+</main>
+</body>
+</html>

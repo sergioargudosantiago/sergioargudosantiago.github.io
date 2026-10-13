@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-1/tema-34.md. No editar a mano. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 34. Validación de métodos — esquema del ejercicio 1</title>
+<link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="stylesheet" href="../../../css/fuentes.css">
+<style>
+@page { size: A4; margin: 14mm 12.5mm 15mm;
+  @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #D9DED6; font-family: 'Public Sans', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #C8A951; outline-offset: 2px; }
+
+/* Barra superior (solo pantalla) */
+.barra { background: #3B4533; color: #C2D9C2; }
+.barra-in { max-width: 210mm; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.barra a { color: #C2D9C2; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.barra a:hover { color: #FFFFFF; }
+.barra .marca { font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: .14em; font-size: 13px; color: #FFFFFF; }
+.barra .acciones { display: flex; gap: 10px; align-items: center; }
+.barra .boton { background: #E0C46B; color: #1F2A1D; font-weight: 700; padding: 0 14px; box-shadow: 3px 3px 0 #1F2A1D; }
+.barra .boton:hover { background: #FFFFFF; color: #1F2A1D; }
+
+/* Hoja */
+.hoja { max-width: 210mm; margin: 20px auto 40px; padding: 40px 47px 28px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.5; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+/* Los enunciados del BOE pueden ser largos: el título baja de cuerpo por tramos. */
+h1.largo { font-size: 28px; line-height: 1.12; }
+h1.muy-largo { font-size: 23px; line-height: 1.16; }
+.enunciado { margin: 3px 0 2px; max-width: 78ch; font-size: 14.5px; line-height: 1.42; color: #4A5546; text-wrap: pretty; }
+.sub-cab { font-size: 14px; color: #4A5546; }
+.sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+
+.indice { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.indice a { display: flex; flex-direction: column; gap: 1px; height: 100%; padding: 6px 9px; background: #3B4533; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.indice a:hover { background: #1F2A1D; }
+.indice b { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 13px; color: #E0C46B; letter-spacing: 0; }
+
+/* Cuerpo del esquema */
+.esq { min-width: 0; }
+.sec { margin: 26px 4px 12px 0; display: flex; align-items: stretch; background: #3B4533; color: #FFFFFF; box-shadow: 4px 4px 0 #A8862F; font-size: 16px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; scroll-margin-top: 12px; break-inside: avoid; break-after: avoid; }
+.esq > .sec:first-child { margin-top: 0; }
+.sec .n { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0; background: #E0C46B; color: #1F2A1D; min-width: 46px; display: flex; align-items: center; justify-content: center; }
+.sec .t { padding: 9px 12px; display: flex; align-items: center; flex-grow: 1; min-width: 0; }
+.sec .px { display: flex; align-items: flex-end; gap: 3px; padding: 0 10px 8px 0; }
+.sec .px i { display: block; width: 5px; height: 5px; background: #E0C46B; }
+.sec .px i:nth-child(2) { height: 9px; opacity: .7; }
+.sec .px i:nth-child(3) { height: 13px; opacity: .45; }
+.sub { margin: 16px 0 5px; font-size: 1em; font-weight: 700; line-height: 1.3; display: flex; align-items: baseline; gap: 8px; break-after: avoid; }
+.sub span { flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: .78em; color: #3B4533; background: #EEF3EB; border: 1px solid #3B4533; box-shadow: 2px 2px 0 #C9D1C5; padding: 0 5px; }
+.sub::after { content: ""; flex: 1 0 24px; align-self: center; border-bottom: 2px dotted #C9D1C5; }
+h4.sub { font-size: .94em; margin-top: 12px; }
+h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
+.sec + .sub { margin-top: 0; }
+.esq p { margin: 6px 0; }
+.esq ul, .esq ol { margin: 0; padding-left: 18px; }
+.esq li { margin: 2px 0; }
+.esq li::marker { color: #A8862F; }
+.esq ol > li::marker { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.esq li > ul { list-style: none; padding-left: 16px; }
+.esq li > ul > li { position: relative; }
+.esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
+.esq b { font-weight: 700; }
+
+.pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; }
+
+@media screen and (min-width: 821px) {
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+}
+@media screen and (max-width: 820px) {
+  .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
+  h1 { font-size: 27px; }
+  h1.largo { font-size: 23px; }
+  h1.muy-largo { font-size: 20px; }
+  .enunciado { font-size: 14px; }
+  .sello { min-width: 74px; padding: 6px 10px; }
+  .sello b { font-size: 22px; }
+  .sec { font-size: 14.5px; }
+}
+
+/* Impresión y PDF: dos columnas, cuerpo pequeño, sin barra ni pie propio (el pie
+   y la numeración van en los márgenes de @page). */
+@media print {
+  body { background: #FFFFFF; }
+  .barra, .pie { display: none; }
+  .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
+  h1 { font-size: 31px; }
+  h1.largo { font-size: 25px; }
+  h1.muy-largo { font-size: 21px; }
+  .enunciado { max-width: none; font-size: 11.5px; line-height: 1.36; }
+  .sub-cab { font-size: 13px; }
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+  .indice a { padding: 5px 8px; font-size: 9.5px; }
+  .indice b { font-size: 12px; }
+  .esq { column-count: 2; column-gap: 24px; }
+  .sec { font-size: 12.5px; margin: 14px 4px 9px 0; }
+  .sec .n { font-size: 15px; min-width: 38px; }
+  .sec .t { padding: 6px 10px; }
+  .sub { margin: 9px 0 3px; }
+  .esq li { margin: 1px 0; }
+  .esq ul, .esq ol { padding-left: 14px; }
+  .esq li > ul { padding-left: 14px; }
+  .esq li > ul > li::before { left: -11px; }
+}
+
+@page { @bottom-left { content: "Esquema · Tema 34. Validación de métodos"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
+    <div class="acciones"><a class="boton" href="tema-34.pdf" download="Esquema tema 34 (ejercicio 1).pdf">Descargar PDF</a></div>
+  </div>
+</header>
+<main class="hoja">
+  <div class="cab">
+    <div class="cab-txt">
+      <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
+      <h1>Validación de métodos</h1>
+      <p class="enunciado">Criterios fundamentales de validación. Exactitud. Precisión. Linealidad. Sensibilidad. Límites de detección. Límites de cuantificación. Selectividad y Especificidad. Cálculo de la incertidumbre de un método. Comparación de métodos analíticos.</p>
+      <div class="sub-cab">Ejercicio 1 · Esquema del tema 34 · Actualizado el <time datetime="2026-07-21">21 de julio de 2026</time></div>
+    </div>
+    <div class="sello" aria-label="Ejercicio 1, tema 34"><span>EJ. 1 · TEMA</span><b>34</b></div>
+  </div>
+  <nav aria-label="Apartados del esquema"><ol class="indice" style="--cols: 6"><li><a href="#apartado-1"><b>01</b>INTRODUCCIÓN</a></li><li><a href="#apartado-2"><b>02</b>VALIDACIÓN DE MÉTODOS</a></li><li><a href="#apartado-3"><b>03</b>CRITERIOS FUNDAMENTALES DE VALIDACIÓN</a></li><li><a href="#apartado-4"><b>04</b>CÁLCULO DE LA INCERTIDUMBRE DEL MÉTODO</a></li><li><a href="#apartado-5"><b>05</b>COMPARACIÓN DE MÉTODOS ANALÍTICOS</a></li><li><a href="#apartado-6"><b>06</b>CONCLUSIÓN</a></li></ol></nav>
+  <div class="esq">
+<h2 class="sec" id="apartado-1"><span class="n">01</span><span class="t">INTRODUCCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>La Red de Laboratorios del SOIVRE consta de 16 laboratorios de ensayo en la red periférica, algunos acreditados, y un Laboratorio Central en Madrid (creado en 1989), también acreditado. Los acredita la <b>ENAC</b> según la norma <b>UNE-EN ISO/IEC 17025:2017</b>, que regula el sistema de gestión de la calidad de los laboratorios de ensayo y calibración y los requisitos para demostrar su competencia. La ENAC es el único organismo con potestad pública para acreditar (<b>Real Decreto 1715/2010</b> y <b>Reglamento (CE) 765/2008</b>), y su marca cuenta con el respaldo de acuerdos multilaterales de reconocimiento suscritos por más de 120 países.</p>
+<p><b>Control de calidad.</b> Conjunto de medidas necesarias para observar y conservar la fiabilidad de un método analítico. Puede ser interno o intralaboratorio (evaluación diaria de las determinaciones rutinarias) y externo o interlaboratorio (pruebas de intercomparación).</p>
+<p>El control interno tiene tres fases:</p>
+<ul><li><b>Preanalítica</b>: toma de muestras y su tratamiento previo</li><li><b>Analítica</b>: validación de métodos, muestras de control y gráficos de control</li><li><b>Postanalítica</b>: procesamiento estadístico y archivo de resultados</li></ul>
+<h2 class="sec" id="apartado-2"><span class="n">02</span><span class="t">VALIDACIÓN DE MÉTODOS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p><b>Validación.</b> Obtención de pruebas documentadas de que un método es lo bastante fiable como para dar resultados con una incertidumbre adecuada al uso previsto, sin errores sistemáticos, en los rangos y el tipo de muestra ensayados.</p>
+<p>Un método debe validarse cuando se desarrolla uno nuevo, se revisa uno establecido, se amplían o modifican métodos normalizados, el control de calidad indica que el método cambia con el tiempo, un método establecido se usa en otro laboratorio o se quiere comparar con otro método.</p>
+<p>Las fases de la validación son:</p>
+<ul><li><b>Protocolo de validación</b>: define el sistema, los parámetros a validar y los criterios de aceptación</li><li><b>Realización</b>: se ejecuta el método recogiendo todos los datos primarios</li><li><b>Evaluación de resultados</b>: frente a los límites fijados en el procedimiento normalizado de trabajo (PNT), y si difieren de lo esperado se justifican los cambios en el protocolo</li><li><b>Informes técnicos</b>: calibración y cualificación de instrumentos, método definitivo, resultados con datos primarios y criterios de aceptación y conclusiones</li><li><b>Certificado de validación</b>: lo firman el Jefe de Servicio de Laboratorio (A1) o el Jefe de Sección de Laboratorio (A2)</li><li><b>Archivo</b> de todos los documentos generados</li></ul>
+<p>La <b>revalidación</b>, total o parcial, se exige cuando cambian de forma significativa las condiciones originales (aparatos, materiales, muestra, técnica) o cuando el método lleva mucho tiempo utilizándose.</p>
+<h2 class="sec" id="apartado-3"><span class="n">03</span><span class="t">CRITERIOS FUNDAMENTALES DE VALIDACIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Los métodos deben presentar tres tipos de características de funcionamiento:</p>
+<ul><li><b>Fiabilidad</b>: capacidad de mantener los criterios de validación a lo largo del tiempo, con cinco criterios, no siempre aplicables<ul><li>Proporcionalidad entre concentración y respuesta: linealidad, intervalo y sensibilidad</li><li>Dispersión alrededor de un valor central: precisión, repetibilidad, reproducibilidad y robustez</li><li>Diferencia entre valor hallado y valor verdadero: exactitud y recuperación</li><li>Cantidad mínima de analito para un resultado significativo: sensibilidad, límite de detección y de cuantificación</li><li>Determinación sin interferencias: selectividad y especificidad</li></ul></li><li><b>Practicabilidad</b>: si el método es realizable en la práctica (tiempo, coste, tamaño de muestra, personal, seguridad, equipo)</li><li><b>Idoneidad</b>: parámetros que garantizan que el sistema responde en el momento del análisis a lo fijado en la validación, normalmente la verificación del buen funcionamiento de los instrumentos</li></ul>
+<h3 class="sub"><span>3.1</span>Exactitud</h3>
+<p><b>Exactitud.</b> Grado de concordancia entre el resultado experimental y el valor de referencia aceptado (valor real). Debe evaluarse en puntos suficientes para asegurarla en todo el rango de medida y presupone disponer de un valor de referencia.</p>
+<p>El valor de referencia puede provenir de:</p>
+<ul><li><b>Material de referencia certificado o patrón químico</b>: el test debe tener en cuenta la incertidumbre del valor certificado y la repetibilidad del método</li><li><b>Método alternativo normalizado</b>: la muestra debe tener homogeneidad conocida y valor de la propiedad con su incertidumbre, por lo que el método debe estar evaluado con rigor</li><li><b>Ensayo de intercomparación</b>: su precisión debe ser aceptable y estar calculada con datos reales del experimento</li><li><b>Método de adiciones</b>: a falta de lo anterior, se compara la diferencia entre muestra y muestra adicionada con el valor teórico de la adición</li></ul>
+<p>Se determina de dos formas. Estadísticamente, con el test t de Student, para ver si la media medida y el valor verdadero no difieren a una probabilidad dada: texp = (X̅ − µ) × √n / Sr, donde X̅ es la media medida, µ el valor verdadero, n el número de repeticiones y Sr la desviación estándar. Si texp es menor que la t teórica tabulada, no hay diferencias significativas y el método es trazable al material de referencia. Con el porcentaje de recuperación se calcula de forma análoga. Matemáticamente, se expresa como porcentaje de recuperación del analito presente en la muestra.</p>
+<h3 class="sub"><span>3.2</span>Precisión</h3>
+<p><b>Precisión.</b> Grado de concordancia entre los resultados de aplicar repetidas veces el procedimiento bajo condiciones establecidas.</p>
+<ul><li><b>Repetibilidad</b>: mismas condiciones (operador, laboratorio, aparato, corto intervalo de tiempo y misma muestra)</li><li><b>Reproducibilidad</b>: misma muestra con condiciones distintas (analista, días, aparatos)</li></ul>
+<p>Se compara la reproducibilidad con la repetibilidad según su diferencia:</p>
+<ul><li>Por debajo del 10 %: reproducibilidad aceptable y condiciones compatibles</li><li>Entre el 10 % y el 30 %: puede ser aceptable según la importancia de la aplicación y los costes de medición, calibración o reparación</li><li>Por encima del 30 %: debe mejorarse el sistema de medición</li></ul>
+<p>También se expresa como <b>coeficiente de variación</b>, adimensional y útil para comparar medidas en distintos rangos o unidades: C.V. = (Sx / X̅) × 100, donde Sx es la desviación estándar y X̅ la media. La precisión contribuye a la incertidumbre del ensayo, por lo que debe conocerse y estar por debajo de un nivel fijado según el uso de las medidas.</p>
+<h3 class="sub"><span>3.3</span>Linealidad y proporcionalidad</h3>
+<p><b>Linealidad.</b> Capacidad de un método instrumental de dar resultados linealmente proporcionales a la concentración de analito dentro de un rango. Se ensaya con soluciones patrón o con muestras de concentración creciente.</p>
+<p>Las fases del ensayo son:</p>
+<ul><li>Comprobar con un tanteo previo que el intervalo lineal del instrumento es más amplio que el que se va a estudiar</li><li>Preparar entre 3 y 10 patrones de concentración creciente</li><li>Analizar al menos por duplicado (por triplicado en cromatografía, salvo patrón interno)</li><li>Trazar la curva de calibrado por mínimos cuadrados. Si la recta no pasa por el origen, indica un error sistemático</li><li>Tratamiento estadístico con el coeficiente de correlación y los límites de confianza de la recta (anchura de las hipérbolas)</li></ul>
+<h3 class="sub"><span>3.4</span>Sensibilidad</h3>
+<p><b>Sensibilidad.</b> Capacidad de un método de registrar ligeras variaciones de concentración.</p>
+<ul><li><b>De calibrado</b>: pendiente de la recta de calibración, es decir, señal por unidad de concentración</li><li><b>Analítica</b>: sensibilidad de calibrado dividida por la desviación estándar de la respuesta</li></ul>
+<p>Dos técnicas con la misma sensibilidad de calibrado tienen mayor sensibilidad analítica la más precisa.</p>
+<h3 class="sub"><span>3.5</span>Límite de detección y Límite de cuantificación</h3>
+<ul><li><b>Límite de detección</b>: menor concentración de analito que puede detectarse, no necesariamente cuantificarse. Se determina con análisis repetidos de un blanco y corresponde a la respuesta media del blanco más 3 desviaciones típicas</li><li><b>Límite de cuantificación</b>: menor concentración que puede determinarse con precisión y exactitud aceptables. Es mayor que el de detección, se establece con una muestra o material de referencia apropiado y suele corresponder al punto inferior de la curva de calibración (sin el blanco), por lo que no se determina por extrapolación</li></ul>
+<p>El límite de detección es la mínima cantidad detectable y el de cuantificación, la mínima medible. Su determinación es laboriosa y se emplean la relación señal/ruido, la menor cantidad detectable, el análisis repetido del blanco, la extrapolación a concentración cero de muestras de baja concentración o la ordenada en el origen expresada en unidades de concentración.</p>
+<h3 class="sub"><span>3.6</span>Selectividad y Especificidad</h3>
+<p><b>Selectividad.</b> Capacidad de un método de dar resultados correctos para un analito en una muestra compleja, sin interferencia de impurezas, productos de degradación o componentes de la matriz. Se refiere sobre todo a los métodos químicos y es un parámetro a considerar al fijar el alcance del método.</p>
+<p>Un método perfectamente selectivo para un analito o grupo de analitos se dice <b>específico</b>.</p>
+<h2 class="sec" id="apartado-4"><span class="n">04</span><span class="t">CÁLCULO DE LA INCERTIDUMBRE DEL MÉTODO</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Al repetir una medida en las mismas condiciones no siempre se obtiene el mismo resultado, por la variabilidad de la muestra, los patrones, las operaciones, los equipos y el personal.</p>
+<p><b>Incertidumbre.</b> Estimación unida al resultado de un ensayo que caracteriza el intervalo en el que se espera que esté el valor verdadero. Se expresa como Valor +/− Incertidumbre y debe considerar todas las fuentes de error del proceso de medida.</p>
+<p>Se distinguen dos tipos de errores:</p>
+<ul><li><b>Errores aleatorios o tipo A</b>: causas accidentales e impredecibles, ligadas a la precisión (distinta sensibilidad de equipos, derivas desde la última calibración)</li><li><b>Errores sistemáticos o tipo B</b>: ligados a la exactitud, por imperfecciones del método (patrones, curvas de calibración), de los equipos, malas prácticas, muestreo incorrecto o patrón en mal estado o de baja pureza</li></ul>
+<h3 class="sub"><span>4.1</span>Estimación de los errores tipo A</h3>
+<p>Se parte de los resultados de la validación (exactitud, precisión). Si no se conoce el modelo de distribución de la medida y las repeticiones son menos de 10, la varianza de la media se estima con Chi-cuadrado, usando Sr (desviación estándar muestral en condiciones de reproducibilidad), σ (desviación poblacional), n (repeticiones) y el factor de Wecc (W), que varía con el número de determinaciones. Con ello se cubre aproximadamente el 95 % de probabilidad de que el valor verdadero esté en el intervalo. Si la distribución es normal, en lugar de W se usa la t de Student, que varía con el número de repeticiones.</p>
+<h3 class="sub"><span>4.2</span>Estimación de los errores tipo B</h3>
+<p>Solo se dispone de un único valor de xi, procedente de una única medida, de la experiencia o de la literatura científica o información previa, como un certificado de calibración.</p>
+<h3 class="sub"><span>4.3</span>Cálculo de la incertidumbre combinada</h3>
+<p>Primero se estima la varianza o magnitud asociada a cada variable, con tres aproximaciones:</p>
+<ul><li>Si se conoce la distribución de la población, la varianza se estima en función del número de repeticiones</li><li>Si solo se conoce un intervalo máximo de variación 2a, se supone una distribución rectangular</li><li>Si viene de una fuente externa como un certificado de calibración, se divide la incertidumbre expandida por K, el factor de seguridad que acompaña al certificado</li></ul>
+<p>Estas incertidumbres están en las unidades de las magnitudes de entrada, no del mensurando, y existe una función que las une. La incertidumbre combinada se calcula por:</p>
+<ul><li><b>Propagación de varianzas</b>: si las magnitudes Xi son independientes, se calculan las desviaciones estándar relativas de cada etapa y se combinan por raíz cuadrática</li><li><b>Derivadas parciales</b>, fijando consecutivamente todas las variables menos una</li><li><b>Incertidumbre final o expandida</b>: combina las contribuciones A y B (raíz cuadrada de su suma cuadrática) con un factor de seguridad K, que normalmente vale entre 2 y 3 y da niveles de confianza del 95 % y 99 %, respectivamente</li></ul>
+<h2 class="sec" id="apartado-5"><span class="n">05</span><span class="t">COMPARACIÓN DE MÉTODOS ANALÍTICOS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Entre las pruebas más usadas están:</p>
+<ul><li><b>Método de las adiciones</b>: compara el resultado de la muestra con posibles interferencias con el de otra sin ellas, mediante el test t de Student</li><li><b>Método de confirmación</b>: analiza repetidamente una misma muestra con ambos métodos para identificar errores sistemáticos, es decir, si el nuevo método da resultados significativamente más altos o más bajos que el inicial</li></ul>
+<p>En el método de confirmación se obtienen dos conjuntos de resultados con sus medias y dispersiones. La trazabilidad se verifica comparando las medias con un test t de Student, tras comprobar con un test de Levene, que usa el estadígrafo F de Fisher, si las varianzas difieren significativamente. Si las diferencias no son significativas, el nuevo método no presenta sesgo sistemático respecto al de referencia.</p>
+<h2 class="sec" id="apartado-6"><span class="n">06</span><span class="t">CONCLUSIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>La validación permite al SOIVRE acreditar documentalmente que sus procedimientos son aptos para el fin previsto, con la seguridad jurídica y técnica que exige un ámbito en el que los resultados pueden determinar la admisión o el rechazo de una partida.</p>
+<p>Dominar los parámetros de validación y el cálculo de la incertidumbre permite al inspector defender la solidez de un resultado analítico. Un método no validado no es una herramienta fiable de control oficial, por avanzada que sea la instrumentación.</p>
+  </div>
+  <footer class="pie"><span>Esquema propio a partir del tema desarrollado</span><span class="url">sergioargudo.es</span></footer>
+</main>
+</body>
+</html>

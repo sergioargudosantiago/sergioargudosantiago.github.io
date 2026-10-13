@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-1/tema-38.md. No editar a mano. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 38. Técnicas de análisis cromatográfico — esquema del ejercicio 1</title>
+<link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="stylesheet" href="../../../css/fuentes.css">
+<style>
+@page { size: A4; margin: 14mm 12.5mm 15mm;
+  @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #D9DED6; font-family: 'Public Sans', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #C8A951; outline-offset: 2px; }
+
+/* Barra superior (solo pantalla) */
+.barra { background: #3B4533; color: #C2D9C2; }
+.barra-in { max-width: 210mm; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.barra a { color: #C2D9C2; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.barra a:hover { color: #FFFFFF; }
+.barra .marca { font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: .14em; font-size: 13px; color: #FFFFFF; }
+.barra .acciones { display: flex; gap: 10px; align-items: center; }
+.barra .boton { background: #E0C46B; color: #1F2A1D; font-weight: 700; padding: 0 14px; box-shadow: 3px 3px 0 #1F2A1D; }
+.barra .boton:hover { background: #FFFFFF; color: #1F2A1D; }
+
+/* Hoja */
+.hoja { max-width: 210mm; margin: 20px auto 40px; padding: 40px 47px 28px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.5; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+/* Los enunciados del BOE pueden ser largos: el título baja de cuerpo por tramos. */
+h1.largo { font-size: 28px; line-height: 1.12; }
+h1.muy-largo { font-size: 23px; line-height: 1.16; }
+.enunciado { margin: 3px 0 2px; max-width: 78ch; font-size: 14.5px; line-height: 1.42; color: #4A5546; text-wrap: pretty; }
+.sub-cab { font-size: 14px; color: #4A5546; }
+.sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+
+.indice { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.indice a { display: flex; flex-direction: column; gap: 1px; height: 100%; padding: 6px 9px; background: #3B4533; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.indice a:hover { background: #1F2A1D; }
+.indice b { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 13px; color: #E0C46B; letter-spacing: 0; }
+
+/* Cuerpo del esquema */
+.esq { min-width: 0; }
+.sec { margin: 26px 4px 12px 0; display: flex; align-items: stretch; background: #3B4533; color: #FFFFFF; box-shadow: 4px 4px 0 #A8862F; font-size: 16px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; scroll-margin-top: 12px; break-inside: avoid; break-after: avoid; }
+.esq > .sec:first-child { margin-top: 0; }
+.sec .n { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0; background: #E0C46B; color: #1F2A1D; min-width: 46px; display: flex; align-items: center; justify-content: center; }
+.sec .t { padding: 9px 12px; display: flex; align-items: center; flex-grow: 1; min-width: 0; }
+.sec .px { display: flex; align-items: flex-end; gap: 3px; padding: 0 10px 8px 0; }
+.sec .px i { display: block; width: 5px; height: 5px; background: #E0C46B; }
+.sec .px i:nth-child(2) { height: 9px; opacity: .7; }
+.sec .px i:nth-child(3) { height: 13px; opacity: .45; }
+.sub { margin: 16px 0 5px; font-size: 1em; font-weight: 700; line-height: 1.3; display: flex; align-items: baseline; gap: 8px; break-after: avoid; }
+.sub span { flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: .78em; color: #3B4533; background: #EEF3EB; border: 1px solid #3B4533; box-shadow: 2px 2px 0 #C9D1C5; padding: 0 5px; }
+.sub::after { content: ""; flex: 1 0 24px; align-self: center; border-bottom: 2px dotted #C9D1C5; }
+h4.sub { font-size: .94em; margin-top: 12px; }
+h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
+.sec + .sub { margin-top: 0; }
+.esq p { margin: 6px 0; }
+.esq ul, .esq ol { margin: 0; padding-left: 18px; }
+.esq li { margin: 2px 0; }
+.esq li::marker { color: #A8862F; }
+.esq ol > li::marker { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.esq li > ul { list-style: none; padding-left: 16px; }
+.esq li > ul > li { position: relative; }
+.esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
+.esq b { font-weight: 700; }
+
+.pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; }
+
+@media screen and (min-width: 821px) {
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+}
+@media screen and (max-width: 820px) {
+  .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
+  h1 { font-size: 27px; }
+  h1.largo { font-size: 23px; }
+  h1.muy-largo { font-size: 20px; }
+  .enunciado { font-size: 14px; }
+  .sello { min-width: 74px; padding: 6px 10px; }
+  .sello b { font-size: 22px; }
+  .sec { font-size: 14.5px; }
+}
+
+/* Impresión y PDF: dos columnas, cuerpo pequeño, sin barra ni pie propio (el pie
+   y la numeración van en los márgenes de @page). */
+@media print {
+  body { background: #FFFFFF; }
+  .barra, .pie { display: none; }
+  .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
+  h1 { font-size: 31px; }
+  h1.largo { font-size: 25px; }
+  h1.muy-largo { font-size: 21px; }
+  .enunciado { max-width: none; font-size: 11.5px; line-height: 1.36; }
+  .sub-cab { font-size: 13px; }
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+  .indice a { padding: 5px 8px; font-size: 9.5px; }
+  .indice b { font-size: 12px; }
+  .esq { column-count: 2; column-gap: 24px; }
+  .sec { font-size: 12.5px; margin: 14px 4px 9px 0; }
+  .sec .n { font-size: 15px; min-width: 38px; }
+  .sec .t { padding: 6px 10px; }
+  .sub { margin: 9px 0 3px; }
+  .esq li { margin: 1px 0; }
+  .esq ul, .esq ol { padding-left: 14px; }
+  .esq li > ul { padding-left: 14px; }
+  .esq li > ul > li::before { left: -11px; }
+}
+
+@page { @bottom-left { content: "Esquema · Tema 38. Técnicas de análisis cromatográfico"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
+    <div class="acciones"><a class="boton" href="tema-38.pdf" download="Esquema tema 38 (ejercicio 1).pdf">Descargar PDF</a></div>
+  </div>
+</header>
+<main class="hoja">
+  <div class="cab">
+    <div class="cab-txt">
+      <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
+      <h1>Técnicas de análisis cromatográfico</h1>
+      <p class="enunciado">Fundamentos generales de la cromatografía. Tipos de cromatografía: Cromatografía en placa fina, Cromatografía de gases, Cromatografía líquida de alta resolución. Sistemas de detección en su caso. Métodos de identificación y de cuantificación. Aplicaciones en el ámbito alimentario y de seguridad industrial.</p>
+      <div class="sub-cab">Ejercicio 1 · Esquema del tema 38 · Actualizado el <time datetime="2026-07-27">27 de julio de 2026</time></div>
+    </div>
+    <div class="sello" aria-label="Ejercicio 1, tema 38"><span>EJ. 1 · TEMA</span><b>38</b></div>
+  </div>
+  <nav aria-label="Apartados del esquema"><ol class="indice" style="--cols: 6"><li><a href="#apartado-1"><b>01</b>INTRODUCCIÓN</a></li><li><a href="#apartado-2"><b>02</b>FUNDAMENTOS GENERALES DE LA CROMATOGRAFÍA</a></li><li><a href="#apartado-3"><b>03</b>CROMATOGRAFÍA EN CAPA FINA</a></li><li><a href="#apartado-4"><b>04</b>CROMATOGRAFÍA DE GASES</a></li><li><a href="#apartado-5"><b>05</b>CROMATOGRAFÍA LÍQUIDA DE ALTA RESOLUCIÓN</a></li><li><a href="#apartado-6"><b>06</b>CONCLUSIÓN</a></li></ol></nav>
+  <div class="esq">
+<h2 class="sec" id="apartado-1"><span class="n">01</span><span class="t">INTRODUCCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Una parte importante de las labores del Servicio de Inspección SOIVRE se realiza en la <b>Red de Laboratorios del SOIVRE</b>, integrada en la Subdirección General de Inspección, Certificación y Asistencia Técnica de Comercio Exterior de la Secretaría de Estado de Comercio. Consta de 16 laboratorios de ensayo en la red periférica, algunos acreditados, y un Laboratorio Central en Madrid, también acreditado. Los acredita la <b>ENAC</b> según la norma <b>UNE-EN ISO/IEC 17025:2017</b>. La acreditación nació de la necesidad de ofrecer un servicio de calidad a los exportadores.</p>
+<ul><li><b>UNE-EN ISO/IEC 17025:2017</b>: regula la implantación de un sistema de gestión de la calidad en laboratorios de ensayo y calibración y establece los requisitos para demostrar la competencia en los ensayos</li><li><b>ENAC</b>: asociación sin ánimo de lucro, único organismo con potestad pública para acreditar según el <b>Real Decreto 1715/2010</b> y el <b>Reglamento (CE) 765/2008</b></li><li><b>Marca ENAC</b>: garantiza la aceptación internacional gracias a los Acuerdos Multilaterales de Reconocimiento, suscritos por más de 120 países y gestionados por EA y por Global ACI, resultante desde el 1 de enero de 2026 de la fusión de ILAC e IAF</li></ul>
+<p>El <b>Laboratorio Central</b> (Centro Analítico de Inspección y Control de la Calidad del Comercio Exterior, creado en 1989) coordina y armoniza la red periférica. Planifica adquisiciones de instrumental, pone a punto nuevas metodologías, da soporte analítico, organiza ejercicios de intercomparación, hace el seguimiento de la acreditación, asesora en reactivos, calibración y seguridad, y coordina y realiza actividades formativas.</p>
+<p><b>Control de calidad.</b> Conjunto de medidas necesarias para observar y conservar la fiabilidad de un método analítico, con el fin de producir datos de alta calidad mediante un control planificado y documentado. Puede ser de dos tipos:</p>
+<ul><li><b>Interno o intralaboratorio</b>: evalúa a diario la fiabilidad de las determinaciones rutinarias y tiene tres fases<ul><li>Preanalítica: toma de muestras y tratamiento previo</li><li>Analítica: validación de métodos, muestras de control y gráficos de control</li><li>Postanalítica: procesamiento estadístico y archivo de resultados</li></ul></li><li><b>Externo o interlaboratorio</b>: participación en pruebas de intercomparación entre laboratorios</li></ul>
+<p>El tema describe de cada técnica cromatográfica su fundamento, detección, identificación, cuantificación y aplicaciones alimentarias y de seguridad industrial.</p>
+<h2 class="sec" id="apartado-2"><span class="n">02</span><span class="t">FUNDAMENTOS GENERALES DE LA CROMATOGRAFÍA</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p><b>Cromatografía.</b> Conjunto de técnicas basadas en el principio de retención selectiva, cuyo objetivo es separar los componentes de una mezcla, identificar su naturaleza si se desconoce y determinar su cantidad. Su nombre viene de la primera experiencia, a comienzos del siglo XX, que separó sobre una columna de carbonato cálcico los pigmentos vegetales de un extracto de hojas.</p>
+<p>En todas las técnicas un fluido, la <b>fase móvil</b> (gas o líquido), arrastra la muestra a través de una <b>fase estacionaria</b> (sólida o líquida). Los componentes interaccionan de distinta forma con ambas fases, atraviesan la estacionaria a velocidades distintas y se separan. Tras la separación pasan por un detector que genera una señal que puede depender de la concentración y del tipo de compuesto.</p>
+<p>Las técnicas se clasifican de tres maneras. Según la fase estacionaria sólida:</p>
+<ul><li><b>Adsorción</b>: el sólido adsorbe al componente de la fase móvil mediante fuerzas de Van der Waals</li><li><b>Cambio iónico</b>: el sólido es un cambiador de iones y la separación se produce por fuerzas electrostáticas</li><li><b>Exclusión o de geles</b>: el sólido es un gel de polímeros no iónicos porosos que retienen las moléculas según su tamaño</li><li><b>Afinidad</b>: tipo especial de adsorción, usado en bioquímica, en que el sólido lleva enlazado un ligando como un inhibidor enzimático o un anticuerpo</li></ul>
+<p>Si la fase estacionaria es un líquido soportado en un sólido inerte, se trata de <b>cromatografía de partición</b>, en la que el soluto se reparte entre ambas fases.</p>
+<p>Según la fase móvil:</p>
+<ul><li><b>Cromatografía líquida</b>: líquido-líquido o líquido-sólido, según la fase estacionaria</li><li><b>Cromatografía de gases</b>: gas-líquido o gas-sólido</li></ul>
+<p>Por último, según el soporte, se distingue la cromatografía de <b>columna</b> y la de <b>placa</b>.</p>
+<h2 class="sec" id="apartado-3"><span class="n">03</span><span class="t">CROMATOGRAFÍA EN CAPA FINA</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>3.1</span>Descripción</h3>
+<p>La cromatografía de capa fina es de tipo plano y es la más simple de las técnicas cromatográficas. La fase estacionaria es un sólido adsorbente dispuesto en una capa fina denominada placa, y la fase móvil es un líquido. Los adsorbentes más corrientes son la alúmina activa y el gel de sílice.</p>
+<p><b>Fundamento.</b> La muestra se aplica en mancha o banda cerca de la base de la placa. Evaporado el disolvente, la placa se introduce verticalmente en un recipiente con la fase móvil o eluyente, que asciende por capilaridad y arrastra los compuestos. Cuanto más polar es un analito, mayor atracción siente por la fase estacionaria y menor recorrido hace. La placa se saca cuando la fase móvil está próxima al extremo superior.</p>
+<p><b>Revelado.</b> Los solutos suelen ser incoloros, por lo que tras evaporar el eluyente se localizan de dos formas:</p>
+<ul><li>Bajo luz UV, si el adsorbente lleva un indicador fluorescente</li><li>Pulverizando reactivos que originen productos coloreados o fluorescentes, como el ácido sulfúrico o el yodo</li></ul>
+<p><b>Identificación.</b> Se calcula el cociente entre la distancia recorrida por el compuesto y la recorrida por la fase móvil, denominado <b>Rf o Factor de Retención</b>. Es típico de cada compuesto en las mismas condiciones cromatográficas, de modo que, comparado con un patrón, permite la determinación cualitativa.</p>
+<p><b>Cuantificación.</b> Es posible si se desarrollan en la placa cantidades conocidas de patrones, por tres procedimientos:</p>
+<ul><li>Comparación del tamaño de la mancha, pues el área es proporcional a la cantidad de sustancia</li><li>Método fotodensitométrico, que mide la luz reflejada, ya que la luz absorbida es proporcional a la cantidad fijada en la placa</li><li>Método de elución, que raspa la parte del adsorbente de la fracción, la disuelve y la valora por un método espectroscópico</li></ul>
+<h3 class="sub"><span>3.2</span>Aplicaciones en el ámbito alimentario</h3>
+<p>Se usa para determinar colorantes alimenticios, ácido ascórbico, fosfolípidos y tocoferoles, vitamina D (con revelado por espectrofotometría UV), quinina en agua tónica, cafeína en café y teobromina en cacao y té (con revelado por espectrofotometría de emisión o de reflexión).</p>
+<h2 class="sec" id="apartado-4"><span class="n">04</span><span class="t">CROMATOGRAFÍA DE GASES</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>4.1</span>Descripción</h3>
+<p>Técnica analítica en auge desde los años 50 y empleada hoy como técnica de rutina y control. Se llama así porque los componentes se volatilizan para ser detectados en fase gaseosa, aunque la muestra sea originariamente gaseosa, líquida o sólida.</p>
+<p><b>Metodología.</b> La muestra entra por el inyector, donde se volatiliza por calentamiento, y es arrastrada por el gas portador hasta la columna. La fase estacionaria retarda el flujo de cada componente según su composición o polaridad, y los componentes salen separados en el tiempo hacia el detector.</p>
+<p><b>Gas portador.</b> A diferencia de otras cromatografías, no debe interaccionar con el analito: solo lo transporta. Se eligen gases inertes como nitrógeno, helio o hidrógeno.</p>
+<p><b>Inyección.</b> Vale cualquier muestra cuyos componentes sean volátiles a la temperatura de trabajo. La cámara de inyección está a temperatura suficiente para volatilizar todo sin descomposición térmica.</p>
+<ul><li>Líquidas: las más empleadas, con jeringas de inyección</li><li>Gaseosas: se prefieren válvulas rotatorias, más reproducibles y automatizables</li><li>Sólidas: se disuelven en un disolvente adecuado y se inyectan como las líquidas</li></ul>
+<p><b>Columna.</b> Va enrollada para ocupar menos espacio y su temperatura se regula, siendo un factor clave en la separación. Puede ser empaquetada o rellena, o abierta o capilar, más común hoy por su rapidez y eficiencia. La capilar tiene un diámetro mucho menor y admite menos muestra, por lo que usa inyectores <b>split/splitless</b>: con división, la mayor parte del flujo va al desecho y la menor entra en la columna.</p>
+<p><b>Fase estacionaria.</b> Puede ser sólida (gas-sólido o adsorción, con carbón activo, gel de sílice o alúmina activada) o un líquido inmovilizado (gas-líquido o partición), la más usada. La fase líquida debe tener estructura química similar a la de la muestra: los compuestos polares se separan mejor en fases polares, como los polietilenglicoles (Carbowax), y los no polares, como los hidrocarburos, en fases parafínicas como el escualeno.</p>
+<p><b>Separación.</b> Se debe a las diferencias de volatilidad y a la solubilidad de los solutos en la fase estacionaria, que los retiene más o menos tiempo. Al salir, atraviesan el detector junto con el gas portador y generan una señal que se envía a un microprocesador.</p>
+<p><b>Sistemas de detección.</b> Los detectores más utilizados son:</p>
+<ul><li><b>TCD (conductividad térmica)</b>: mide la composición del gas por la velocidad a la que un cuerpo caliente pierde calor. Su desventaja principal es la baja sensibilidad</li><li><b>ECD (captura electrónica)</b>: muy selectivo, mide el descenso de corriente entre dos electrodos causado por analitos que captan electrones. Es insensible a hidrocarburos, alcoholes y cetonas, y es el mejor para halogenados y para el análisis de pesticidas</li><li><b>FID (ionización de llama)</b>: universal, responde a casi todas las sustancias. Una llama de hidrógeno ioniza las moléculas orgánicas, y las partículas cargadas originan un flujo de corriente</li><li><b>NPD (ionización de llama con sal sódica)</b>: similar al FID, con un lecho de sal sódica que aumenta la conductividad de la llama de forma específica con compuestos de nitrógeno, fósforo o halógenos. Se usa mucho en pesticidas y muestras biológicas</li><li><b>MSD (espectrometría de masas)</b>: de desarrollo reciente, ioniza el analito por impacto electrónico o ionización química y detecta los iones. Identifica el analito por su tiempo de retención y también por su espectro de masas, que es su huella digital</li></ul>
+<p><b>Cromatograma, identificación y cuantificación.</b> La señal se amplifica y se registra como un gráfico de picos, uno por analito. La posición del pico da el <b>tiempo de retención</b>, que depende de la volatilidad y de la solubilidad en la fase estacionaria, y permite el análisis cualitativo. El área del pico da la concentración, es decir, el análisis cuantitativo. El ordenador necesita previamente los datos de los patrones.</p>
+<h3 class="sub"><span>4.2</span>Aplicaciones en el ámbito alimentario</h3>
+<p>Su desarrollo ha aumentado el número, la variedad y la calidad de los análisis, que son más específicos, reproducibles y selectivos, con límites de detección cada vez menores.</p>
+<p><b>Residuos de plaguicidas.</b> Es uno de los análisis más rutinarios del control de alimentos, sobre todo en frutas y hortalizas. Los LMR están sometidos a legislación (<b>Reglamento (CE) 396/2005</b>, <b>Reglamento (CE) 1107/2009</b> y <b>Reglamento (CE) 178/2002</b>). Su control no es sencillo por varias razones:</p>
+<ul><li>Descomposición de los plaguicidas en la preparación de la muestra o, más a menudo, por las altas temperaturas de la separación</li><li>Gran número de plaguicidas, con nuevas sustancias constantemente, lo que obliga a actualizar métodos y adquirir patrones</li><li>Límites admisibles muy bajos, del orden de 0,001 ppm o menos, que exigen un límite de detección aún más bajo</li><li>Características físico-químicas muy distintas, lo que requiere varios métodos, extracciones, detectores y columnas, y un laboratorio con varios cromatógrafos, detectores y personal cualificado</li></ul>
+<p>Lo habitual son los <b>métodos multirresiduos</b>, que analizan a la vez varios plaguicidas, aunque muchos requieren un método específico.</p>
+<p>Otras aplicaciones:</p>
+<ul><li><b>Aceites y grasas</b>: cada uno tiene un perfil de ácidos grasos característico que permite identificarlo. Lo mismo ocurre con los esteroles, que sirven además para conocer el colesterol de un alimento</li><li><b>Bebidas alcohólicas</b>: contenido de alcoholes y graduación alcohólica. El metanol se detecta también en vinagres, junto con la acetona</li><li><b>Productos lácteos</b>: componentes, residuos, contaminantes, conservadores, antioxidantes y compuestos del aroma</li><li><b>Zumo de naranja</b>: volátiles hidrosolubles mayoritarios como metanol o acetaldehído</li><li><b>Otros</b>: azúcares, aminoácidos y compuestos nitrogenados en carnes, pescados y huevos, aditivos, aromas y vitaminas hidrosolubles y liposolubles</li></ul>
+<h3 class="sub"><span>4.3</span>Aplicaciones en el ámbito de la seguridad industrial</h3>
+<p>Siempre con espectrómetro de masas:</p>
+<ul><li>Biocidas como el DMF (dimetilfumarato) en muebles, textiles, calzado, bolsitas desecantes y parches antihumedad (<b>Reglamento (CE) 1907/2006</b>)</li><li>Ftalatos en juguetes, calzado y prendas de vestir</li><li>Pentaclorofenol (PCP) y sus sales en textiles (<b>UNE 59510:2007</b>) y calzado</li></ul>
+<h2 class="sec" id="apartado-5"><span class="n">05</span><span class="t">CROMATOGRAFÍA LÍQUIDA DE ALTA RESOLUCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>5.1</span>Descripción</h3>
+<p>La <b>HPLC</b> (High Performance Liquid Chromatography) es la versión moderna de la cromatografía líquida en columna, valorada por su alta resolución, rapidez y capacidad de detectar cantidades muy pequeñas. Su fundamento es parecido al de la cromatografía de gases, pero la fase móvil es líquida e interacciona con los analitos. Por eso su naturaleza es el factor clave de la discriminación, y la presión y el caudal también son muy importantes.</p>
+<p><b>Metodología.</b> La muestra, disuelta en un disolvente adecuado (a veces directamente), se introduce con jeringa o inyector automático. La fase móvil la arrastra a la columna, donde los componentes se desplazan a distintas velocidades y se separan antes de llegar al detector. La fase móvil se impulsa con una bomba de alta presión, pieza esencial de la que depende la separación.</p>
+<p>Según la fase móvil:</p>
+<ul><li><b>Fase normal</b>: fase móvil y estacionaria polares</li><li><b>Fase invertida o reversa</b>: fase móvil polar y estacionaria no polar, la modalidad más empleada</li></ul>
+<p>Según su composición en el tiempo, la elución es <b>isocrática</b> si permanece constante y <b>por gradiente</b> si varía, cambiando la polaridad. El gradiente aumenta mucho la capacidad de separación y se usa con componentes de polaridades muy diferentes. Suele empezar con un único disolvente al que se añaden otros de forma lineal o no.</p>
+<p><b>Columna.</b> No tiene que estar termostatizada, porque la temperatura no es clave, aunque ayuda a reducir la viscosidad de la fase móvil y a aumentar la solubilidad de la muestra. Los principios de separación son:</p>
+<ul><li><b>Adsorción</b>: la fase estacionaria es un sólido activo polar, como gel de sílice o alúmina</li><li><b>Reparto o absorción</b>: la fase estacionaria es un líquido sobre un soporte sólido. Hoy las fases impregnadas se sustituyen por <b>fases enlazadas</b>, con el compuesto orgánico ligado químicamente al soporte, y la retención depende de la solubilidad en ella</li><li><b>Intercambio iónico y exclusión</b></li></ul>
+<p><b>Sistemas de detección.</b> Igual que en cromatografía de gases, el detector está a la salida de la columna y genera una señal eléctrica que, amplificada y registrada, forma el cromatograma de picos. La posición del pico (tiempo de retención) permite el análisis cualitativo y su área el cuantitativo. Los más empleados son los detectores ópticos, en que la corriente líquida atraviesa una microcubeta por la que pasa un rayo de luz, y los cambios de intensidad se registran como variaciones de voltaje:</p>
+<ul><li><b>Índice de refracción</b>: equilibra el sistema con fase móvil pura y mide el cambio de índice cuando aparece la muestra eluida. Da la máxima sensibilidad cuando es máxima la diferencia entre muestra y fase móvil</li><li><b>UV-visible</b>: los grupos funcionales absorben energía a su longitud de onda específica y disminuye la luz que llega a la fotocélula, de modo que la línea de base es la máxima transmitancia. Sirve para la mayoría de los compuestos orgánicos y es el más usado</li><li><b>Fluorescencia</b>: el tercero más utilizado, para compuestos con fluorescencia natural o que se vuelven fluorescentes por derivatización (modificación química que genera un derivado más fácil de analizar). Es selectivo y permite elegir las longitudes de onda de excitación y de emisión</li></ul>
+<h3 class="sub"><span>5.2</span>Aplicaciones en el ámbito alimentario</h3>
+<ul><li><b>Aditivos</b>: los colorantes absorben a longitudes de onda muy distintas del visible, así que fijando en el detector UV-VIS la de los compuestos amarillos solo se detectan estos, aun sin separación perfecta. También conservantes como el ácido sórbico y el benzoico. Muy usada en los laboratorios SOIVRE es la determinación de <b>tartracina</b>, colorante con el que se adultera el poder colorante del azafrán</li><li><b>Azúcares</b>: con detector de índice de refracción, de forma rápida y sencilla, como sacarosa, fructosa o glucosa en caramelos o refrescos. Sirve para establecer la composición o detectar adiciones no declaradas, como azúcar en un zumo</li><li><b>Aminas biogénicas en pescados</b>: aminas no volátiles como histamina, serotonina y tiramina, y en menor medida putrescina, cadaverina, triptamina, espermina y espermidina. En pequeñas cantidades son normales, pero la histamina elevada se relaciona con intoxicaciones alimentarias. Se derivatizan para formar compuestos fluorescentes y se usa detector de fluorescencia. Es un análisis frecuente en Vigo, Bilbao y el Laboratorio Central</li><li><b>Residuos de plaguicidas</b>: la mayoría se analizan por cromatografía de gases, pero algunos van por HPLC, sobre todo porque se descomponen a las temperaturas muy altas de aquella. Es el caso de los plaguicidas bencimidazólicos, uno de los análisis principales de los laboratorios SOIVRE</li><li><b>Vitaminas</b>: aplicación de desarrollo creciente por los nuevos métodos y la mayor exigencia del consumidor, como en cereales de desayuno y lácteos, análisis que se hace en el Laboratorio Central</li></ul>
+<h3 class="sub"><span>5.3</span>Aplicaciones en el ámbito de la seguridad industrial</h3>
+<p>Determinación de colorantes azoicos en textiles y calzado (<b>UNE-EN ISO 14362-1:2017</b>), con detector UV-visible.</p>
+<h2 class="sec" id="apartado-6"><span class="n">06</span><span class="t">CONCLUSIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>La cromatografía es probablemente el conjunto de técnicas analíticas más versátil de los laboratorios de la Red SOIVRE para separar, identificar y cuantificar los componentes de mezclas complejas. La capa fina sirve como cribado rápido y económico, y la cromatografía de gases y la HPLC, con detectores selectivos, forman el núcleo del control de residuos de plaguicidas, aditivos, contaminantes y aminas biogénicas.</p>
+<p>La elección entre cromatografía de gases y HPLC depende de la naturaleza físico-química del analito, no de una jerarquía, y ambas son complementarias. En seguridad industrial, su combinación con la espectrometría de masas permite controlar sustancias restringidas en textiles, calzado y juguetes.</p>
+  </div>
+  <footer class="pie"><span>Esquema propio a partir del tema desarrollado</span><span class="url">sergioargudo.es</span></footer>
+</main>
+</body>
+</html>

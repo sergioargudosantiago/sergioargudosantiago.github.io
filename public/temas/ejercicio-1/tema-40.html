@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-1/tema-40.md. No editar a mano. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 40. Técnicas de identificación de especies — esquema del ejercicio 1</title>
+<link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="stylesheet" href="../../../css/fuentes.css">
+<style>
+@page { size: A4; margin: 14mm 12.5mm 15mm;
+  @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #D9DED6; font-family: 'Public Sans', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #C8A951; outline-offset: 2px; }
+
+/* Barra superior (solo pantalla) */
+.barra { background: #3B4533; color: #C2D9C2; }
+.barra-in { max-width: 210mm; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.barra a { color: #C2D9C2; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.barra a:hover { color: #FFFFFF; }
+.barra .marca { font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: .14em; font-size: 13px; color: #FFFFFF; }
+.barra .acciones { display: flex; gap: 10px; align-items: center; }
+.barra .boton { background: #E0C46B; color: #1F2A1D; font-weight: 700; padding: 0 14px; box-shadow: 3px 3px 0 #1F2A1D; }
+.barra .boton:hover { background: #FFFFFF; color: #1F2A1D; }
+
+/* Hoja */
+.hoja { max-width: 210mm; margin: 20px auto 40px; padding: 40px 47px 28px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.5; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+/* Los enunciados del BOE pueden ser largos: el título baja de cuerpo por tramos. */
+h1.largo { font-size: 28px; line-height: 1.12; }
+h1.muy-largo { font-size: 23px; line-height: 1.16; }
+.enunciado { margin: 3px 0 2px; max-width: 78ch; font-size: 14.5px; line-height: 1.42; color: #4A5546; text-wrap: pretty; }
+.sub-cab { font-size: 14px; color: #4A5546; }
+.sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+
+.indice { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.indice a { display: flex; flex-direction: column; gap: 1px; height: 100%; padding: 6px 9px; background: #3B4533; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.indice a:hover { background: #1F2A1D; }
+.indice b { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 13px; color: #E0C46B; letter-spacing: 0; }
+
+/* Cuerpo del esquema */
+.esq { min-width: 0; }
+.sec { margin: 26px 4px 12px 0; display: flex; align-items: stretch; background: #3B4533; color: #FFFFFF; box-shadow: 4px 4px 0 #A8862F; font-size: 16px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; scroll-margin-top: 12px; break-inside: avoid; break-after: avoid; }
+.esq > .sec:first-child { margin-top: 0; }
+.sec .n { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0; background: #E0C46B; color: #1F2A1D; min-width: 46px; display: flex; align-items: center; justify-content: center; }
+.sec .t { padding: 9px 12px; display: flex; align-items: center; flex-grow: 1; min-width: 0; }
+.sec .px { display: flex; align-items: flex-end; gap: 3px; padding: 0 10px 8px 0; }
+.sec .px i { display: block; width: 5px; height: 5px; background: #E0C46B; }
+.sec .px i:nth-child(2) { height: 9px; opacity: .7; }
+.sec .px i:nth-child(3) { height: 13px; opacity: .45; }
+.sub { margin: 16px 0 5px; font-size: 1em; font-weight: 700; line-height: 1.3; display: flex; align-items: baseline; gap: 8px; break-after: avoid; }
+.sub span { flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: .78em; color: #3B4533; background: #EEF3EB; border: 1px solid #3B4533; box-shadow: 2px 2px 0 #C9D1C5; padding: 0 5px; }
+.sub::after { content: ""; flex: 1 0 24px; align-self: center; border-bottom: 2px dotted #C9D1C5; }
+h4.sub { font-size: .94em; margin-top: 12px; }
+h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
+.sec + .sub { margin-top: 0; }
+.esq p { margin: 6px 0; }
+.esq ul, .esq ol { margin: 0; padding-left: 18px; }
+.esq li { margin: 2px 0; }
+.esq li::marker { color: #A8862F; }
+.esq ol > li::marker { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.esq li > ul { list-style: none; padding-left: 16px; }
+.esq li > ul > li { position: relative; }
+.esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
+.esq b { font-weight: 700; }
+
+.pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; }
+
+@media screen and (min-width: 821px) {
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+}
+@media screen and (max-width: 820px) {
+  .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
+  h1 { font-size: 27px; }
+  h1.largo { font-size: 23px; }
+  h1.muy-largo { font-size: 20px; }
+  .enunciado { font-size: 14px; }
+  .sello { min-width: 74px; padding: 6px 10px; }
+  .sello b { font-size: 22px; }
+  .sec { font-size: 14.5px; }
+}
+
+/* Impresión y PDF: dos columnas, cuerpo pequeño, sin barra ni pie propio (el pie
+   y la numeración van en los márgenes de @page). */
+@media print {
+  body { background: #FFFFFF; }
+  .barra, .pie { display: none; }
+  .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
+  h1 { font-size: 31px; }
+  h1.largo { font-size: 25px; }
+  h1.muy-largo { font-size: 21px; }
+  .enunciado { max-width: none; font-size: 11.5px; line-height: 1.36; }
+  .sub-cab { font-size: 13px; }
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+  .indice a { padding: 5px 8px; font-size: 9.5px; }
+  .indice b { font-size: 12px; }
+  .esq { column-count: 2; column-gap: 24px; }
+  .sec { font-size: 12.5px; margin: 14px 4px 9px 0; }
+  .sec .n { font-size: 15px; min-width: 38px; }
+  .sec .t { padding: 6px 10px; }
+  .sub { margin: 9px 0 3px; }
+  .esq li { margin: 1px 0; }
+  .esq ul, .esq ol { padding-left: 14px; }
+  .esq li > ul { padding-left: 14px; }
+  .esq li > ul > li::before { left: -11px; }
+}
+
+@page { @bottom-left { content: "Esquema · Tema 40. Técnicas de identificación de especies"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
+    <div class="acciones"><a class="boton" href="tema-40.pdf" download="Esquema tema 40 (ejercicio 1).pdf">Descargar PDF</a></div>
+  </div>
+</header>
+<main class="hoja">
+  <div class="cab">
+    <div class="cab-txt">
+      <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
+      <h1>Técnicas de identificación de especies</h1>
+      <p class="enunciado">Técnicas moleculares, electroforesis y enfoque isoeléctrico. Fundamento y aplicaciones. Especial referencia al control de especímenes sujetos al Convenio CITES y fraude comercial.</p>
+      <div class="sub-cab">Ejercicio 1 · Esquema del tema 40 · Actualizado el <time datetime="2026-07-27">27 de julio de 2026</time></div>
+    </div>
+    <div class="sello" aria-label="Ejercicio 1, tema 40"><span>EJ. 1 · TEMA</span><b>40</b></div>
+  </div>
+  <nav aria-label="Apartados del esquema"><ol class="indice" style="--cols: 4"><li><a href="#apartado-1"><b>01</b>INTRODUCCIÓN</a></li><li><a href="#apartado-2"><b>02</b>ELECTROFORESIS</a></li><li><a href="#apartado-3"><b>03</b>ENFOQUE ISOELÉCTRICO O ISOELECTROENFOQUE</a></li><li><a href="#apartado-4"><b>04</b>MÉTODOS DE DETECCIÓN Y APLICACIONES</a></li><li><a href="#apartado-5"><b>05</b>EL CONVENIO CITES</a></li><li><a href="#apartado-6"><b>06</b>PRUEBAS PARA LA IDENTIFICACIÓN DE ESPECIES</a></li><li><a href="#apartado-7"><b>07</b>CONCLUSIÓN</a></li></ol></nav>
+  <div class="esq">
+<h2 class="sec" id="apartado-1"><span class="n">01</span><span class="t">INTRODUCCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Los Laboratorios del SOIVRE, algunos de ellos acreditados por la <b>ENAC</b> según la norma <b>UNE-EN ISO/IEC 17025:2017</b> (sistema de gestión de la calidad y requisitos de competencia en ensayos), ofrecen un servicio de calidad a los operadores del sector exterior. La ENAC es, según el <b>Real Decreto 1715/2010</b>, el único organismo con potestad pública para acreditar conforme al <b>Reglamento (CE) 765/2008</b>. Su marca cuenta con el respaldo de acuerdos multilaterales de reconocimiento de más de 120 países, gestionados por EA y por Global ACI (fusión de ILAC e IAF desde el 1 de enero de 2026).</p>
+<p>La Red de Laboratorios consta de 16 laboratorios periféricos, algunos acreditados, y un <b>Laboratorio Central</b> en Madrid, también acreditado, en la Subdirección General de Inspección, Certificación y Asistencia Técnica de Comercio Exterior. Desde 1989 el Laboratorio Central:</p>
+<ul><li>Coordina y armoniza la red y sus aplicaciones informáticas</li><li>Gestiona adquisiciones y asesora sobre reactivos, calibración y seguridad</li><li>Pone a punto metodologías, da soporte analítico y organiza intercomparaciones</li><li>Coordina la acreditación, la formación y el apoyo documental</li></ul>
+<p><b>Control de calidad.</b> Conjunto de medidas para conservar la fiabilidad de un método analítico. Puede ser interno o intralaboratorio, que evalúa a diario las determinaciones rutinarias, o externo o interlaboratorio, mediante pruebas de intercomparación. El interno tiene tres fases:</p>
+<ul><li><b>Preanalítica</b>: toma y tratamiento de la muestra</li><li><b>Analítica</b>: validación de métodos, muestras de control y gráficos de control</li><li><b>Postanalítica</b>: tratamiento estadístico y archivo de resultados</li></ul>
+<h2 class="sec" id="apartado-2"><span class="n">02</span><span class="t">ELECTROFORESIS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>2.1</span>Fundamento y descripción</h3>
+<p><b>Electroforesis.</b> Técnica instrumental que separa los componentes de mezclas complejas de macromoléculas biológicas y coloides. Se basa en que las partículas, al tener cargas distintas, se desplazan de forma diferente bajo un campo eléctrico. La carga puede deberse a:</p>
+<ul><li>Ionización de la propia molécula, como los grupos amino y carboxilo de las proteínas</li><li>Frotamiento de las partículas con el líquido</li><li>Adsorción de iones del medio sobre partículas coloidales</li></ul>
+<p>Se deposita la mezcla sobre un soporte poroso, empapado en una disolución reguladora conductora (electrolito), y se aplica un campo eléctrico. Cada especie migra a velocidad distinta según su carga y su movilidad iónica, y así se separan.</p>
+<h3 class="sub"><span>2.2</span>Tipos de electroforesis</h3>
+<ul><li><b>Microelectroforesis</b>: observación directa al microscopio del movimiento de partículas coloidales. Sirve sobre todo para determinar puntos isoeléctricos de anfolitos (moléculas con grupos de carga positiva y negativa, cuya carga neta depende del pH). El punto isoeléctrico es el pH de carga neta nula</li><li><b>De límite móvil o libre</b>: en un tubo en U, el frente coloidal migra según su carga y los coloides se separan. Apenas se usa porque, sin corriente, se remezclan por difusión</li><li><b>De zona</b>: la más utilizada. Las partículas migran sobre un soporte sólido (papel de filtro, acetato de celulosa, agarosa) que estabiliza la separación</li><li><b>Inmunoelectroforesis</b>: técnica cualitativa que combina electroforesis e inmunodifusión (reacción antígeno-anticuerpo)</li><li><b>Preparativa</b>: electroforesis continua para obtener cantidades apreciables de proteínas y aminoácidos puros</li></ul>
+<h2 class="sec" id="apartado-3"><span class="n">03</span><span class="t">ENFOQUE ISOELÉCTRICO O ISOELECTROENFOQUE</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>3.1</span>Fundamento y descripción</h3>
+<p><b>Enfoque isoeléctrico.</b> Variante de la electroforesis en la que la separación se hace sobre un gradiente de pH continuo, estable y lineal, en lugar de en una disolución de pH y fuerza iónica constantes. Cada anfolito migra hasta la zona cuyo pH coincide con su punto isoeléctrico, donde pierde su carga neta, se detiene y se concentra en una banda muy estrecha.</p>
+<p>A pH bajo predomina la protonación de los grupos amino y la proteína queda con carga positiva. A pH alto predomina la disociación de los grupos carboxílicos y queda con carga negativa. Entre ambos hay un pH único donde se compensan: el punto isoeléctrico, constante fisicoquímica que depende solo de la composición de la proteína.</p>
+<p>El gradiente de pH se consigue de tres formas:</p>
+<ul><li>Anfolitos sintéticos o transportadores de anfolitos, los más usados</li><li>Mezclas de péptidos, ácidos débiles o bases débiles, o gradientes generados térmicamente</li><li>Gradientes inmovilizados o inmovilinas, fijados en el gel durante su polimerización, sin generarlos con la corriente</li></ul>
+<p>Los soportes habituales son el acetato de celulosa, los geles de poliacrilamida y los gradientes de densidad de sacarosa. Combinado con la electroforesis en gel SDS (electroforesis bidimensional), separa mezclas complejas de proteínas con mucha mayor resolución.</p>
+<h2 class="sec" id="apartado-4"><span class="n">04</span><span class="t">MÉTODOS DE DETECCIÓN Y APLICACIONES</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Los métodos de detección son comunes a ambas técnicas y permiten análisis cualitativo y cuantitativo:</p>
+<ul><li><b>Tinción con azul de Coomassie</b>: detecta hasta 0,1 µg de proteína y se cuantifica por densitometría</li><li><b>Métodos inmunológicos</b>: formación de complejos antígeno-anticuerpo</li><li><b>Procedimientos enzimáticos</b>: el gel se impregna con reactivos que reaccionan con las enzimas separadas</li><li><b>Métodos radiactivos</b>: exigen marcar antes las proteínas con un isótopo y se cuantifican por densitometría</li></ul>
+<h3 class="sub"><span>4.1</span>Aplicaciones en el ámbito alimentario</h3>
+<p>La electroforesis se usa en alimentación para analizar proteínas y determinar aminoácidos (prolina en la miel) y aminas biógenas (vinos). Por tipo:</p>
+<ul><li><b>Capa fina</b>: aminoácidos y aminas biógenas en pescado, enzimas en judías verdes</li><li><b>Gel de poliacrilamida</b>: proteínas de yema en clara de huevo, proteínas en carne y vino</li><li><b>Gel de almidón</b>: proteínas del suero lácteo en leche en polvo</li></ul>
+<p>El isoelectroenfoque se aplica en:</p>
+<ul><li><b>Alimentación</b>: identificar la especie de pescado envasado, aunque no sirve con proteínas desnaturalizadas (cocción) y entonces se recurre a técnicas de ADN o ARN. También identifica el tipo de leche de los quesos, para evitar sustituciones de leche de oveja o cabra, y comprueba la especie de carnes y embutidos</li><li><b>Agricultura</b>: identificación rápida de variedades vegetales</li><li><b>Taxonomía</b>: permite analizar varias muestras a la vez en idénticas condiciones y comparar sus patrones proteicos. Identifica peces vivos, determina paternidad y analiza manufacturas de especies protegidas CITES</li></ul>
+<h2 class="sec" id="apartado-5"><span class="n">05</span><span class="t">EL CONVENIO CITES</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>El comercio de especies silvestres mueve millones de ejemplares y miles de millones de euros, y la sobreexplotación llevó a redactar en 1973, en el seno de las Naciones Unidas, la <b>Convención sobre el Comercio Internacional de Especies Amenazadas de Fauna y Flora Silvestres (CITES)</b>. Consta de 25 artículos, se firmó en Washington el 3 de marzo de 1973 y entró en vigor el 1 de julio de 1975. Tiene 185 Partes (184 Estados y la Unión Europea desde julio de 2015) y España es Parte desde el 16 de mayo de 1986.</p>
+<p>Es un instrumento de política comercial cuyo principio es la conservación y el uso sostenible de las especies. Busca el equilibrio entre desarrollo y conservación mediante la regulación y, en su caso, la prohibición del comercio de especies amenazadas.</p>
+<p>El alto valor de ciertos productos (derivados del tigre, marfil) fomenta el contrabando. Se oculta en las fronteras, se presenta como procedente de especies no incluidas o, en vivos, se declara falsamente como criado en cautividad.</p>
+<h3 class="sub"><span>5.1</span>Autoridades competentes y papel actual del SOIVRE</h3>
+<p>El <b>Reglamento (CE) 338/97</b> aplica CITES en la UE y exige a cada Estado una Autoridad Administrativa y una Autoridad Científica. El <b>Real Decreto 986/2021</b>, en vigor desde el 2 de enero de 2022, derogó el Real Decreto 1739/1997, que daba al SOIVRE la condición de Autoridad Administrativa. Desde entonces:</p>
+<ul><li><b>Autoridad Administrativa</b>: Dirección General de Biodiversidad, Bosques y Desertificación del MITECO</li><li><b>Autoridad Científica</b>: Agencia Estatal CSIC</li></ul>
+<p>El SOIVRE conserva el papel operativo por una <b>encomienda de gestión</b> (Resolución del 28 de enero de 2023): ejecuta las verificaciones en frontera y expide los <b>DIESAC</b>. Dura cuatro años, hasta el 28 de enero de 2027, y es prorrogable hasta ocho (enero de 2031).</p>
+<p>Los <b>Puestos de Control Fronterizo (PCF)</b>, antes PIF, están en Vigo, Barcelona, Bilbao, Alicante, Valencia, Sevilla, Málaga, Mallorca, Tenerife, Las Palmas, Algeciras y Madrid. Las demás DT y DP colaboran, como Badajoz, Almería, Gijón o Irún.</p>
+<p>Hay que identificar el espécimen para saber su Apéndice y Anexo, y el inspector suele tener pequeñas porciones de material elaborado donde la vista no basta. Se usan técnicas de complejidad variable, desde el microscopio hasta la paternidad o consanguinidad mediante el cariotipo.</p>
+<h2 class="sec" id="apartado-6"><span class="n">06</span><span class="t">PRUEBAS PARA LA IDENTIFICACIÓN DE ESPECIES</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>6.1</span>Técnicas de identificación genética</h3>
+<p>Hay dos grupos: las <b>citogenéticas</b>, que estudian los cromosomas completos, y las <b>moleculares</b>, que estudian regiones concretas del ADN.</p>
+<h3 class="sub"><span>6.2</span>Técnicas citogenéticas</h3>
+<p>Cada especie tiene un número, tamaño y forma de cromosomas característicos. Se obtiene el <b>cariotipo</b>, el mapa cromosómico ordenado por tamaño y morfología. Se cultivan in vitro células de sangre u otros tejidos hasta que se dividen, se aíslan los núcleos y se observan los cromosomas tras teñirlos. Además de la especie, permite:</p>
+<ul><li>Identificar el sexo en especies sin dimorfismo fenotípico</li><li>Identificar taxonómicamente un individuo</li><li>Diferenciar poblaciones separadas de una misma especie</li></ul>
+<p>Tiene limitaciones: hay especies distintas con el mismo cariotipo, individuos con más de uno, y no permite pruebas de consanguinidad. Por eso se desarrollaron las técnicas moleculares.</p>
+<h3 class="sub"><span>6.3</span>Técnicas moleculares</h3>
+<p>Se basan en regiones no codificantes del ADN formadas por una secuencia repetida un número de veces. Mutan con el tiempo, de modo que su longitud varía entre individuos y sirven como marcadores genéticos de género, especie o parentesco.</p>
+<ul><li><b>Huella genética o fingerprint</b>: identifica la especie, el individuo concreto y la consanguinidad. Se basa en <b>minisatélites</b>, secuencias hipervariables de 15 a 100 pares de bases repetidas hasta unas 50 veces</li></ul>
+<p>El ADN se extrae con Proteinasa K y se digiere con enzimas de restricción. Los fragmentos se separan por electroforesis, se transfieren a una membrana de nylon y se hibridan con sondas de minisatélites. La autorradiografía (rayos X, 1 a 3 horas) da un patrón de bandas propio de cada individuo. Si hay poco ADN, se amplifica antes por <b>PCR</b>. Exige bastante ADN de buena calidad y analizar todas las muestras en el mismo gel. Se usa en medicina forense, tráfico ilegal, paternidad e identificación de mezclas de especies en carnes (ADN mitocondrial).</p>
+<ul><li><b>Microsatélites</b>: secuencias hipervariables de 1 a 5 pares de bases. Admiten cantidades mínimas de ADN, incluso degradado (pelo, saliva, huesos, plumas, restos de hasta 100 años), porque se apoyan en la PCR</li></ul>
+<p>Se separan las hebras del ADN y se añaden cebadores (primers), con lo que se amplifican y marcan los microsatélites. Se separan por electroforesis en gel de poliacrilamida y se tiñen con bromuro de etidio. Sus secuencias son específicas de cada especie, bastan 8 a 12 sondas para diferenciar genomas y la lectura de bandas es sencilla, por lo que es rápida y de manejo fácil.</p>
+<h3 class="sub"><span>6.4</span>Control de paternidad</h3>
+<p>Ambas técnicas sirven en pruebas de consanguinidad. Los especímenes del Apéndice I nacidos en cautividad reciben, a efectos comerciales, el trato menos restrictivo del Apéndice II. Eso propicia el fraude de presentar como criados en cautividad ejemplares capturados en la naturaleza, como el expolio de nidos de aves rapaces.</p>
+<h3 class="sub"><span>6.5</span>Determinación de la especie por el estudio del pelo</h3>
+<p>Se basa en las características del pelo de cada especie y en su distribución en el cuerpo. Se monta en portaobjetos con xileno o flo-tex y se observa con lente de 10 aumentos o al microscopio. El corte transversal muestra pigmento, grosor de la cutícula y médula, y se compara con muestras de referencia. Caso destacado: <em>Pantholops hodgsonii</em> (antílope tibetano, chirú), cuya lana, el shahtoosh, hay que distinguir de la pashmina o cachemira (cabra doméstica) y de la lana de oveja merina.</p>
+<h3 class="sub"><span>6.6</span>Identificación de huevos de tortuga marina</h3>
+<p>Limpios y secos, se pesan y se mide su diámetro mayor con calibrador. Para cada puesta se comparan número, rangos y medias con los datos publicados de las especies.</p>
+<h3 class="sub"><span>6.7</span>Identificación del marfil y sus sustitutos</h3>
+<p>Se basa en características macroscópicas y microscópicas y en pruebas físicas y químicas.</p>
+<ul><li><b>Líneas de Schreger</b>: en cortes transversales pulidos de dentina se entrecruzan en rombos o zigzags. Los ángulos medios inferiores a 100º sugieren marfil fósil (mamut) y los superiores a 100º, marfil de proboscídeos actuales. Entre 90º y 115º se superponen, así que no basta por sí sola, y además es destructiva</li><li><b>Luz ultravioleta</b>: el marfil de mamut contiene vivianita (fosfato ferroso hidratado), que da una coloración púrpura. El marfil no fósil no la tiene. El barniz de las piezas talladas puede ocultarla o dar reflejos parecidos</li><li><b>Sucedáneos</b>: se identifican por espectroscopia de infrarrojos por Transformada de Fourier. El marfil auténtico no arde con llama, se consume lentamente con olor a cuerno quemado</li></ul>
+<h3 class="sub"><span>6.8</span>Determinación del caviar</h3>
+<p>Se rompe un huevo de esturión, se purifica su ADN mitocondrial, se amplifica por PCR el gen del citocromo b y su secuencia se compara con la de especies conocidas.</p>
+<h3 class="sub"><span>6.9</span>Test inmunológicos de identificación</h3>
+<p>Junto con el enfoque isoeléctrico y el inmunoblot, son de las herramientas más importantes en CITES. Determinan el espécimen a nivel de familia o género y solo a veces de especie, y detectan más de un animal en una misma muestra de carne o sangre. Se usan la difusión en gel de agarosa de antígenos de sangre o tejidos frente a anticuerpos de un antisuero y la inmunoelectroforesis, donde antígeno (carga positiva) y anticuerpo (carga negativa) migran uno hacia otro y precipitan en una banda visible comparable con muestras conocidas.</p>
+<h3 class="sub"><span>6.10</span>Inmunoblot</h3>
+<p>Usa la <b>albúmina</b> como indicador monoespecífico de cada especie. Es la proteína más abundante del suero y plasma, está en sangre y tejidos, y permanece identificable cuando otras enzimas marcadoras ya se han desnaturalizado. Se combina enfoque isoeléctrico en rangos estrechos de pH sobre geles finos de poliacrilamida con la transferencia de las bandas a una membrana. Como la albúmina no tiene actividad enzimática, se revela con anticuerpos específicos.</p>
+<h3 class="sub"><span>6.11</span>Identificación de plantas por su ADN</h3>
+<p>Sirvió de prueba en un juicio por el comercio ilegal de árboles de palo verde. Se amplifican por PCR secuencias de interés con distintos cebadores, se separan en geles de agarosa o poliacrilamida y se tiñen con bromuro de etidio o plata (o con radionucleótidos o nucleótidos fluorescentes). La exactitud depende del ADN diana, de la longitud del cebador y de la temperatura, por lo que las condiciones han de ser muy estrictas.</p>
+<h3 class="sub"><span>6.12</span>Identificación de maderas</h3>
+<p>Parte de caracteres macroscópicos: color, olor, dureza, densidad, corteza, anillos de crecimiento, textura, grano, duramen y albura.</p>
+<ul><li><b>Peso específico</b>: relación peso y volumen, muy influida por la humedad. Se fijan dos referencias: anhidro (P0, 0 % de humedad) y normal (P12, 12 %)</li><li><b>Volumen</b>: método estereométrico (medida directa de la probeta) o desplazamiento de un fluido, el más usado. Se emplea mercurio para el volumen aparente y helio para el real (aparente menos huecos internos)</li><li><b>Microscopía</b>: cortes finos transversal, tangencial y radial, de madera ablandada por cocción y deshidratada. Son la prueba pericial habitual en infracciones CITES</li></ul>
+<p>Muchas partidas se tramitan por el <b>Circuito Verde</b>, sin controles físicos sistemáticos, y es una vía potencial de entrada de maderas fraudulentas que debe tenerse en cuenta al planificar los controles.</p>
+<h3 class="sub"><span>6.13</span>Otras identificaciones</h3>
+<ul><li><b>Bilis de osos</b> (Ursidae): sales biliares específicas, por cromatografía en capa fina o extracción en columna y HPLC</li><li><b>Huesos de tigre</b> (<em>Panthera tigris</em>) en productos medicinales: la hidroxiapatita se detecta por espectroscopia de infrarrojos por Transformada de Fourier</li><li><b>Almizcle</b>: cromatografía de gases y espectrometría de masas</li><li><b>Pieles y manufacturas de reptiles</b>:<ul><li>Serpentes: escamas dorsales en fila diagonal, escamas ventrales cada 10-15 cm, y forma y dibujo de la piel</li><li>Crocodylia: escudos ventrales en filas, con valor taxonómico el número por fila y de filas entre collar y cloaca. En el caimán (<em>Caiman crocodilus</em>), escamas granulares en los flancos</li><li>Sauria: modo en que escamas menores unen las ventrales y laterales, útil para distinguir géneros como los varánidos</li></ul></li></ul>
+<h2 class="sec" id="apartado-7"><span class="n">07</span><span class="t">CONCLUSIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Electroforesis, enfoque isoeléctrico y técnicas genéticas moleculares son el soporte científico para que el control de especies amenazadas no dependa solo de la vista del inspector, insuficiente ante pequeñas porciones elaboradas. La combinación de técnicas citogenéticas, moleculares, inmunológicas y morfológicas (pelo, marfil, madera, escamas) dota al SOIVRE de un arsenal analítico para la diversidad de especímenes en frontera.</p>
+<p>Aunque la Autoridad Administrativa y la Científica residen hoy en el MITECO y el CSIC tras la reforma de 2021, el SOIVRE mantiene por la encomienda vigente un papel operativo de primer orden en los controles fronterizos y los DIESAC. Exige conocer el marco competencial y las técnicas, pues de la correcta identificación puede depender la supervivencia de una especie y la lucha contra un fraude de beneficios millonarios.</p>
+  </div>
+  <footer class="pie"><span>Esquema propio a partir del tema desarrollado</span><span class="url">sergioargudo.es</span></footer>
+</main>
+</body>
+</html>

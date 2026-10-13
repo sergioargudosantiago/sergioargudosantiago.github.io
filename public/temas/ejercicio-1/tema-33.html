@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-1/tema-33.md. No editar a mano. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 33. Control de calidad en laboratorios — esquema del ejercicio 1</title>
+<link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="stylesheet" href="../../../css/fuentes.css">
+<style>
+@page { size: A4; margin: 14mm 12.5mm 15mm;
+  @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #D9DED6; font-family: 'Public Sans', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #C8A951; outline-offset: 2px; }
+
+/* Barra superior (solo pantalla) */
+.barra { background: #3B4533; color: #C2D9C2; }
+.barra-in { max-width: 210mm; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.barra a { color: #C2D9C2; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.barra a:hover { color: #FFFFFF; }
+.barra .marca { font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: .14em; font-size: 13px; color: #FFFFFF; }
+.barra .acciones { display: flex; gap: 10px; align-items: center; }
+.barra .boton { background: #E0C46B; color: #1F2A1D; font-weight: 700; padding: 0 14px; box-shadow: 3px 3px 0 #1F2A1D; }
+.barra .boton:hover { background: #FFFFFF; color: #1F2A1D; }
+
+/* Hoja */
+.hoja { max-width: 210mm; margin: 20px auto 40px; padding: 40px 47px 28px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.5; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+/* Los enunciados del BOE pueden ser largos: el título baja de cuerpo por tramos. */
+h1.largo { font-size: 28px; line-height: 1.12; }
+h1.muy-largo { font-size: 23px; line-height: 1.16; }
+.enunciado { margin: 3px 0 2px; max-width: 78ch; font-size: 14.5px; line-height: 1.42; color: #4A5546; text-wrap: pretty; }
+.sub-cab { font-size: 14px; color: #4A5546; }
+.sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+
+.indice { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.indice a { display: flex; flex-direction: column; gap: 1px; height: 100%; padding: 6px 9px; background: #3B4533; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.indice a:hover { background: #1F2A1D; }
+.indice b { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 13px; color: #E0C46B; letter-spacing: 0; }
+
+/* Cuerpo del esquema */
+.esq { min-width: 0; }
+.sec { margin: 26px 4px 12px 0; display: flex; align-items: stretch; background: #3B4533; color: #FFFFFF; box-shadow: 4px 4px 0 #A8862F; font-size: 16px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; scroll-margin-top: 12px; break-inside: avoid; break-after: avoid; }
+.esq > .sec:first-child { margin-top: 0; }
+.sec .n { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0; background: #E0C46B; color: #1F2A1D; min-width: 46px; display: flex; align-items: center; justify-content: center; }
+.sec .t { padding: 9px 12px; display: flex; align-items: center; flex-grow: 1; min-width: 0; }
+.sec .px { display: flex; align-items: flex-end; gap: 3px; padding: 0 10px 8px 0; }
+.sec .px i { display: block; width: 5px; height: 5px; background: #E0C46B; }
+.sec .px i:nth-child(2) { height: 9px; opacity: .7; }
+.sec .px i:nth-child(3) { height: 13px; opacity: .45; }
+.sub { margin: 16px 0 5px; font-size: 1em; font-weight: 700; line-height: 1.3; display: flex; align-items: baseline; gap: 8px; break-after: avoid; }
+.sub span { flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: .78em; color: #3B4533; background: #EEF3EB; border: 1px solid #3B4533; box-shadow: 2px 2px 0 #C9D1C5; padding: 0 5px; }
+.sub::after { content: ""; flex: 1 0 24px; align-self: center; border-bottom: 2px dotted #C9D1C5; }
+h4.sub { font-size: .94em; margin-top: 12px; }
+h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
+.sec + .sub { margin-top: 0; }
+.esq p { margin: 6px 0; }
+.esq ul, .esq ol { margin: 0; padding-left: 18px; }
+.esq li { margin: 2px 0; }
+.esq li::marker { color: #A8862F; }
+.esq ol > li::marker { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.esq li > ul { list-style: none; padding-left: 16px; }
+.esq li > ul > li { position: relative; }
+.esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
+.esq b { font-weight: 700; }
+
+.pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; }
+
+@media screen and (min-width: 821px) {
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+}
+@media screen and (max-width: 820px) {
+  .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
+  h1 { font-size: 27px; }
+  h1.largo { font-size: 23px; }
+  h1.muy-largo { font-size: 20px; }
+  .enunciado { font-size: 14px; }
+  .sello { min-width: 74px; padding: 6px 10px; }
+  .sello b { font-size: 22px; }
+  .sec { font-size: 14.5px; }
+}
+
+/* Impresión y PDF: dos columnas, cuerpo pequeño, sin barra ni pie propio (el pie
+   y la numeración van en los márgenes de @page). */
+@media print {
+  body { background: #FFFFFF; }
+  .barra, .pie { display: none; }
+  .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
+  h1 { font-size: 31px; }
+  h1.largo { font-size: 25px; }
+  h1.muy-largo { font-size: 21px; }
+  .enunciado { max-width: none; font-size: 11.5px; line-height: 1.36; }
+  .sub-cab { font-size: 13px; }
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+  .indice a { padding: 5px 8px; font-size: 9.5px; }
+  .indice b { font-size: 12px; }
+  .esq { column-count: 2; column-gap: 24px; }
+  .sec { font-size: 12.5px; margin: 14px 4px 9px 0; }
+  .sec .n { font-size: 15px; min-width: 38px; }
+  .sec .t { padding: 6px 10px; }
+  .sub { margin: 9px 0 3px; }
+  .esq li { margin: 1px 0; }
+  .esq ul, .esq ol { padding-left: 14px; }
+  .esq li > ul { padding-left: 14px; }
+  .esq li > ul > li::before { left: -11px; }
+}
+
+@page { @bottom-left { content: "Esquema · Tema 33. Control de calidad en laboratorios"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
+    <div class="acciones"><a class="boton" href="tema-33.pdf" download="Esquema tema 33 (ejercicio 1).pdf">Descargar PDF</a></div>
+  </div>
+</header>
+<main class="hoja">
+  <div class="cab">
+    <div class="cab-txt">
+      <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
+      <h1>Control de calidad en laboratorios</h1>
+      <p class="enunciado">Gráficos de control. Definición y conceptos generales. Muestras de control. Tipos de gráficos de control y su construcción. Aplicaciones de los gráficos de control. Evaluación externa de la calidad de un laboratorio: Ejercicios interlaboratorio. Cuestiones generales. Evaluación estadística de los resultados.</p>
+      <div class="sub-cab">Ejercicio 1 · Esquema del tema 33 · Actualizado el <time datetime="2026-07-21">21 de julio de 2026</time></div>
+    </div>
+    <div class="sello" aria-label="Ejercicio 1, tema 33"><span>EJ. 1 · TEMA</span><b>33</b></div>
+  </div>
+  <nav aria-label="Apartados del esquema"><ol class="indice" style="--cols: 4"><li><a href="#apartado-1"><b>01</b>INTRODUCCIÓN</a></li><li><a href="#apartado-2"><b>02</b>GRÁFICO DE CONTROL</a></li><li><a href="#apartado-3"><b>03</b>EVALUACIÓN EXTERNA DE LA CALIDAD DE UN LABORATORIO: EJERCICIOS INTERLABORATORIO. CUESTIONES GENERALES. EVALUACIÓN ESTADÍSTICA DE LOS RESULTADOS</a></li><li><a href="#apartado-4"><b>04</b>CONCLUSIÓN</a></li></ol></nav>
+  <div class="esq">
+<h2 class="sec" id="apartado-1"><span class="n">01</span><span class="t">INTRODUCCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>Los laboratorios de la Red de Laboratorios del SOIVRE, algunos acreditados por la Entidad Nacional de Acreditación (ENAC), responden a la necesidad de ofrecer un servicio de calidad a los operadores del sector exterior, sobre todo exportadores. La acreditación se concede según la <b>Norma UNE-EN ISO/IEC 17025:2017</b>, que regula la implantación de un Sistema de Gestión de la Calidad en laboratorios de ensayo y calibración y establece los requisitos para demostrar la competencia en los ensayos.</p>
+<p><b>ENAC.</b> Asociación sin ánimo de lucro declarada por el <b>Real Decreto 1715/2010</b> como único organismo con potestad pública para otorgar acreditaciones según el <b>Reglamento (CE) 765/2008</b>. Su marca en los informes garantiza las ventajas de la acreditación, incluida su aceptación internacional, gracias a los Acuerdos Multilaterales de Reconocimiento suscritos por más de 120 países y gestionados por EA y por Global Accreditation Cooperation Incorporated (Global ACI), resultante desde el 1 de enero de 2026 de la fusión de ILAC e IAF.</p>
+<p><b>Red de Laboratorios SOIVRE.</b> Consta de 16 laboratorios de ensayo en la red periférica, algunos acreditados, y un Laboratorio Central en Madrid, también acreditado, integrados en la Subdirección General de Inspección, Certificación y Asistencia Técnica de Comercio Exterior. Cada laboratorio tiende a especializarse en un campo.</p>
+<p><b>Funciones del Laboratorio Central</b> (creado en 1989):</p>
+<ul><li>Coordinar y armonizar la red periférica y las aplicaciones informáticas</li><li>Planificar adquisiciones de instrumental y asesorar sobre reactivos, suministradores, material y calibración</li><li>Poner a punto nuevas metodologías y dar soporte analítico</li><li>Planificar y organizar ejercicios de intercomparación</li><li>Coordinar el programa de acreditación, la formación, el apoyo documental y el asesoramiento en seguridad</li></ul>
+<p><b>Control de calidad.</b> Conjunto de medidas necesarias para observar y conservar la fiabilidad de un método analítico. Un laboratorio debe producir datos de alta calidad mediante medidas estrictas, fiables y adecuadas al fin propuesto, y lo logra con un control planificado y documentado que compruebe la validez de los ensayos y calibraciones.</p>
+<ul><li><b>Control interno o intralaboratorio</b>: evalúa a diario la fiabilidad de las determinaciones rutinarias</li><li><b>Control externo o interlaboratorio</b>: participación en pruebas de intercomparación entre laboratorios</li></ul>
+<p>El control interno tiene tres fases: la <b>preanalítica</b> (toma de muestras y tratamiento previo), la <b>analítica</b> (validación de métodos, muestras de control y gráficos de control) y la <b>postanalítica</b> (procesamiento estadístico y archivo de resultados).</p>
+<h2 class="sec" id="apartado-2"><span class="n">02</span><span class="t">GRÁFICO DE CONTROL</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p><b>Gráfico de control.</b> Representación gráfica de los valores de una muestra de control introducida en el análisis de rutina con una frecuencia preestablecida. Permite evidenciar diferencias en el proceso analítico e imponer acciones correctivas lo antes posible. Es una representación visual de la calidad basada en un valor esperado y unos límites establecidos, y hace falta un gráfico por parámetro. Permite contrastar el valor individual, el valor medio, el porcentaje de recuperación, la desviación estándar y el recorrido.</p>
+<p><b>Muestras de control.</b> Líquidos de referencia o analitos de concentración conocida que se someten al mismo procedimiento que las muestras de rutina para evaluar el funcionamiento analítico del laboratorio. El material de control debe cumplir estos requisitos:</p>
+<ul><li>Ser estable, en condiciones de conservación definidas, durante largos periodos</li><li>Tener poca variabilidad entre viales</li><li>Ser representativo de la matriz y la concentración del analito de las muestras de rutina</li><li>Haber en cantidad suficiente para usarse como control durante un periodo relativamente largo</li><li>Estar en recipientes que no influyan en la muestra ni cambien su cantidad restante, por ejemplo por evaporación al abrirlos</li></ul>
+<p><b>Tipos de muestras de control:</b></p>
+<ul><li><b>Disoluciones estándar o patrón</b>: composición conocida, elevada pureza y estables a temperatura ambiente, pesadas con una precisión mínima del 0,1 %. El patrón primario sirve de referencia en valoraciones o estandarizaciones. El patrón secundario o disolución valorante necesita casi siempre al primario para conocer su concentración exacta</li><li><b>Blancos</b>: muestra sin los componentes a determinar. Siguen el proceso de las muestras de rutina y sirven para establecer el nivel del blanco</li><li><b>Muestras naturales</b>: normalmente un pool de sueros o plasmas del propio laboratorio, con analitos dentro de la normalidad y concentración desconocida. Controlan la precisión, no la exactitud</li><li><b>Muestras naturales fortificadas</b>: dan una matriz representativa en experiencias de recuperación. Se añade una concentración conocida de estándar a una alícuota de la muestra original, se analizan ambas y se calcula el porcentaje de recuperación (método de adición estándar)</li><li><b>Muestras sintéticas</b>: contienen el analito y otros componentes, posibles interferencias, en concentraciones conocidas. Normalmente comerciales, verifican precisión y exactitud</li><li><b>Calibradores</b>: sirven para hacer curvas de calibración o calibrar aparatos de medida</li><li><b>Materiales de referencia certificados</b>: materiales naturales o artificiales cuyo contenido se establece con un estricto proceso de organismos de normalización. Son las muestras más caras, por lo que no suelen usarse en el control rutinario</li></ul>
+<h3 class="sub"><span>2.1</span>Tipos de gráficos de control y su construcción</h3>
+<p>Hay tres tipos principales: los de Shewhart, los de Recorrido y los de Cusum (Cumulative Sum).</p>
+<p><b>Gráficos de Shewhart (de Levey-Jennings o convencionales).</b> Son los más utilizados y sirven para conocer la exactitud del proceso. En ordenadas se representan los valores obtenidos (observaciones individuales o medias) o diferencias entre resultados repetidos, y en abscisas el tiempo o el número de muestra. Llevan una línea central con la mejor estimación del valor central de la variable.</p>
+<p>Para construir la gráfica de Levey-Jennings:</p>
+<ul><li>Antes de analizar muestras, se hacen determinaciones repetidas del analito en un control comercial, al menos veinte y en días distintos</li><li>Se calcula la media (x̅) y la desviación estándar (DE) de esos valores</li><li>Se traza una línea central en la media y tres líneas a cada lado, a la media +/− 1, 2 y 3 DE</li><li>Una vez iniciado el análisis simultáneo de muestras y control, cada día se anota el valor del control. Una gráfica suele recoger un mes (31 días)</li></ul>
+<p>La media y los límites se fijan antes de empezar el control, con el análisis previo y repetido. Los límites son:</p>
+<ul><li><b>Límite de aviso</b>: media +/− 1 DE, nivel de confianza del 68 %</li><li><b>Límite de alarma</b>: media +/− 2 DE, nivel de confianza del 95 %</li><li><b>Límite de acción</b>: media +/− 3 DE, nivel de confianza del 99,73 %</li></ul>
+<p>La inspección visual descubre alteraciones de la determinación:</p>
+<ul><li><b>Desplazamiento</b>: desviación de todos los valores por encima o por debajo de la media. Si es progresivo se llama tendencia al alza o a la baja. Indica inexactitud por error sistemático</li><li><b>Oscilación</b>: numerosos valores muy superiores e inferiores a la media. Si solo se aleja un valor, se llama salto. Ambos se deben a errores aleatorios</li></ul>
+<p>Las normas para detectar resultados fuera de control son:</p>
+<ul><li>Un resultado fuera del límite de aviso no exige acción si el siguiente cae dentro de los límites de alarma</li><li>Dos resultados consecutivos fuera de los límites de aviso pero dentro de los de acción obligan a revisar el proceso. Si están al mismo lado de la media indican un error sistemático. Si están en lados distintos, errores aleatorios considerables</li><li>Un resultado fuera del límite de acción significa que el sistema está fuera de control estadístico. Se rechazan todos los datos desde el último resultado dentro de los límites y se actúa para corregirlo. El control se restablece cuando tres resultados consecutivos nuevos de la muestra de control están dentro de los límites</li></ul>
+<p>Los gráficos de Shewhart detectan errores de gran magnitud, errores sistemáticos (tendencias, cambios de la media) y aleatorios (dispersión de valores individuales), y controlan la exactitud. Tienen variantes:</p>
+<ul><li><b>Gráficos de media</b>: representan las medias de varias repeticiones sobre la misma muestra. Los límites de control se fijan en +/− 2σ/√n y +/− 3σ/√n, donde n es el número de medidas repetidas</li><li><b>Gráficos de blancos</b>: tipo especial de gráfico de media para controlar reactivos y sistemas de medida. Se representa la señal medida, no resultados ni concentraciones. Dan un valor preciso del blanco y detectan derivas, errores instrumentales y desviaciones debidas a los reactivos</li><li><b>Gráficos de recuperación</b>: detectan errores producidos por la matriz y ofrecen un control limitado de la exactitud, en concreto de errores sistemáticos proporcionales. Exigen muestras naturales fortificadas</li></ul>
+<p><b>Gráficos de Recorrido y de Desviación Estándar.</b> A diferencia de los de Shewhart, evalúan la precisión. Representan los recorridos de repeticiones del mismo análisis sobre la muestra control a lo largo del tiempo. La línea central es la media de los recorridos de experiencias previas: R̅ = ΣRi / K, donde Ri es el recorrido (diferencia entre el valor más alto y el más bajo del subgrupo, con más de 2 medidas) y K el número de subgrupos.</p>
+<p>Los límites de aviso y de control son múltiplos de R̅, con factores de tablas estadísticas que dependen del número de repeticiones y del nivel de confianza. Para recorridos de medidas duplicadas, el límite de aviso está a +2,512 R̅ y el de acción a +3,267 R̅. Una serie de valores por debajo de R̅ no es una tendencia fuera de control, sino una mejora de la precisión. En los gráficos de desviación estándar se usan las desviaciones de los subgrupos en lugar de los recorridos.</p>
+<ul><li>Desviación estándar y recorridos varían con la concentración del analito, por lo que se construye un gráfico para cada tipo de matriz</li><li>Las muestras control suelen ser muestras reales de la serie, introducidas al principio y al final de la serie</li><li>Combinados con los gráficos de valor central, permiten saber si el proceso sufre errores sistemáticos, aleatorios o ambos</li></ul>
+<p><b>Gráficos de Cusum.</b> Ante cambios graduales por errores pequeños, como la deriva de instrumentos, los de Shewhart responden con lentitud. En Cusum el eje de ordenadas muestra la suma acumulativa de las diferencias entre el valor de cada día y la media calculada con determinaciones previas. Sin error significativo, las sumas oscilan en una línea quebrada alrededor de la horizontal de la media. Si el rumbo se vuelve muy vertical, hay un error sistemático. Se emplean por tanto para descubrir errores sistemáticos, falta de exactitud y derivas.</p>
+<h2 class="sec" id="apartado-3"><span class="n">03</span><span class="t">EVALUACIÓN EXTERNA DE LA CALIDAD DE UN LABORATORIO: EJERCICIOS INTERLABORATORIO. CUESTIONES GENERALES. EVALUACIÓN ESTADÍSTICA DE LOS RESULTADOS</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>La exactitud de los resultados de un laboratorio puede verificarse de tres maneras:</p>
+<ul><li>Comparando los resultados de un método A con los de otro método B</li><li>Empleando materiales de referencia certificados</li><li>Comparando con los resultados de otros laboratorios, mediante ejercicios interlaboratorio</li></ul>
+<p><b>Ejercicios interlaboratorio.</b> Consisten en realizar ensayos sobre la misma muestra en dos o más laboratorios y comparar críticamente los resultados. No se fija metodología: cada laboratorio usa su propio procedimiento y se evalúa solo el resultado final. Los diseña, planifica, desarrolla y dirige una organización competente e independiente. Permiten la evaluación externa de la calidad (ensayos de pericia, de aptitud o de intercalibración) y su objetivo principal es evaluar el buen funcionamiento de los laboratorios.</p>
+<p>Según su finalidad se distingue entre:</p>
+<ul><li><b>Ejercicios de aptitud</b>: comparan la competencia de los laboratorios, cada uno con su propio método analítico</li><li><b>Ejercicios colaborativos</b>: comprueban la idoneidad de una metodología nueva o recién modificada</li><li><b>Ejercicios de certificación</b>: establecen el valor de referencia y la incertidumbre de la propiedad certificada en un material de referencia</li></ul>
+<h3 class="sub"><span>3.1</span>Evaluación estadística de los resultados</h3>
+<p>La organización recibe los datos de los laboratorios y calcula el valor medio y la desviación estándar entre las réplicas de cada uno, por lo general 5. Después los representa y los analiza estadísticamente.</p>
+<ul><li><b>Representación gráfica</b>: de medias y desviaciones estándar. La simple observación revela resultados anómalos que se desvían claramente de los de los otros laboratorios</li><li><b>Análisis estadístico</b>: detecta y rechaza resultados aberrantes mediante contrastes de hipótesis, que son procedimientos para aceptar o rechazar hipótesis sobre un parámetro u otra característica de la población</li></ul>
+<p><b>Contraste de hipótesis.</b> La hipótesis nula (Ho) es la que se somete a comprobación y se acepta o rechaza como conclusión. La alternativa (Ha) se acepta si se rechaza Ho. Se rechaza la nula cuando hay diferencias significativas entre valores muestrales y teóricos, y se acepta en caso contrario. Esas diferencias se miden con el estadístico de contraste, que sigue una distribución conocida y toma un valor particular para cada muestra.</p>
+<p>Los criterios habituales son el Test C de Cochran, el Test de Grubbs simple y doble, el Test Q de Dixon y el análisis de la varianza ANOVA.</p>
+<p><b>Test C de Cochran.</b> Elimina los resultados de laboratorios cuya varianza intralaboratorio es significativamente mayor que la de los demás para un material dado. Se calcula la varianza intralaboratorio (S²) de cada laboratorio y se divide la máxima entre la suma de todas: C = S²máx / ΣS². Si C supera el valor crítico tabulado, el laboratorio es aberrante y eliminable. También sirve como alternativa simple a pruebas de homoscedasticidad (varianza de los errores constante) como el test de Levene.</p>
+<p><b>Criterio R de Grubbs.</b> Elimina laboratorios con valores medios extremos, inconsistentes con una distribución gaussiana de las medias (valores atípicos o sospechosos). Se calcula R = (Xq − X̅) / S, donde Xq es el valor informado de concentración que se sospecha atípico, X̅ la media y S la desviación estándar de la muestra, con Xq y X̅ calculados sobre el conjunto completo de resultados. Si R supera el valor tabulado para el nivel de significancia y los grados de libertad, se confirma el valor discrepante.</p>
+<p>Una variante más sencilla, usada por algunas organizaciones, es el <b>Z-Score</b> (tipificación, de cálculo similar a R):</p>
+<ul><li>Z &lt; 2: satisfactorio</li><li>2 &lt; Z &lt; 3: cuestionable</li><li>Z &gt; 3: no satisfactorio</li></ul>
+<p><b>Test Q de Dixon.</b> Usa relaciones entre las diferencias de los datos que parecen atípicos. Con los valores ordenados por magnitud, Q es la diferencia entre el valor sospechoso Xq y su vecino Xq−1 dividida por la diferencia entre el primer valor X1 y el último Xn. Si el valor absoluto de Qcal supera el Q tabulado, el valor sospechoso es discrepante para el nivel de significancia elegido.</p>
+<p><b>Análisis de la varianza (ANOVA).</b> Detecta si algún laboratorio da resultados que difieren de forma estadísticamente significativa de los demás. Sus etapas son:</p>
+<ul><li>Revisar los valores y eliminar los no válidos, es decir, los que no siguieron el protocolo de trabajo</li><li>Calcular media, desviación estándar, repetibilidad y reproducibilidad</li><li>Detectar y eliminar datos discrepantes con los tests de Cochran y de Grubbs</li><li>Recalcular los parámetros sin los discrepantes</li><li>Interpretar según ANOVA, que contrasta la igualdad de medias cuando hay más de dos grupos experimentales</li></ul>
+<p>La hipótesis nula es que todas las medias poblacionales de las que provienen las muestras son iguales, y la alternativa que no todas lo son, con un nivel de significación prefijado. La lógica es que, si los laboratorios no tienen errores sistemáticos, las medias no diferirán mucho y su dispersión, debida a errores aleatorios, será comparable a la dispersión individual de cada laboratorio. Por eso se hallan dos varianzas y se comparan con el <b>Test F de Snedecor</b>:</p>
+<ul><li><b>Variabilidad total (Q)</b>: suma de la variabilidad dentro de cada muestra (QD, debida solo al azar) y la existente entre muestras (QE, debida al azar y, si Ha es cierta, a poblaciones con medias distintas)</li><li><b>QD</b>: mide las desviaciones entre las observaciones Xij de cada laboratorio y la media de su grupo. Dividida por N−K grados de libertad da la varianza dentro de los laboratorios</li><li><b>QE</b>: mide las desviaciones entre laboratorios y, dividida por K−1 grados de libertad, da la varianza entre laboratorios</li><li><b>Estadístico de contraste</b>: cociente entre la variabilidad entre y la variabilidad dentro, una vez hechas comparables, que sigue una F de Snedecor con K−1 y N−K grados de libertad</li></ul>
+<p>Si Fexp supera la F tabulada, se rechaza la igualdad de medias y se acepta que existe algún error sistemático (σE² &gt; σD²) y que al menos un laboratorio difiere de forma significativa. Si no hay diferencia significativa, predominan los errores aleatorios como causa de la discrepancia entre medias.</p>
+<p>ANOVA es una prueba de significación global: indica si hay diferencia pero no dónde. Por eso hacen falta contrastes posteriores para ver qué pares de medias difieren, como LSD, Tukey, Bonferroni o Dunnet, según las características de las muestras.</p>
+<h2 class="sec" id="apartado-4"><span class="n">04</span><span class="t">CONCLUSIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>El control de calidad, interno y externo, permite a los laboratorios del SOIVRE demostrar de forma continuada la fiabilidad de sus determinaciones. Los gráficos de control ofrecen una herramienta visual e inmediata para detectar desviaciones antes de que comprometan la validez de los resultados, y los ejercicios interlaboratorio dan una evaluación externa objetiva frente al resto de la red.</p>
+<p>Su aplicación sistemática garantiza que un mismo producto analizado en laboratorios distintos arroje resultados comparables y coherentes, lo que refuerza la confianza de los operadores comerciales y de las administraciones de terceros países en el control de calidad comercial español.</p>
+  </div>
+  <footer class="pie"><span>Esquema propio a partir del tema desarrollado</span><span class="url">sergioargudo.es</span></footer>
+</main>
+</body>
+</html>

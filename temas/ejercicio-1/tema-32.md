@@ -1,157 +1,107 @@
 # 1. INTRODUCCIÓN
-- **Red de Laboratorios SOIVRE**: 16 laboratorios de ensayo periféricos + **Laboratorio Central** en Madrid (Centro Analítico de Inspección y Control de la Calidad del Comercio Exterior, desde **1989**)
-  - Integrados en la Subdirección Gral. de Inspección, Certificación y Asistencia Técnica de Comercio Exterior (Secretaría de Estado de Comercio, MECE)
-  - Especialización creciente de cada laboratorio
-- **Acreditación ENAC** según **UNE-EN ISO/IEC 17025:2017**
-  - Sistema de Gestión de la Calidad en laboratorios de ensayo y calibración
-  - Requisitos para demostrar competencia en ensayos
-  - Motivo: servicio de calidad a operadores, sobre todo exportadores
-- **ENAC**: asociación sin ánimo de lucro, único organismo con potestad pública para acreditar (**Real Decreto 1715/2010**, **Reglamento (CE) 765/2008**)
-  - Marca ENAC: declara públicamente el cumplimiento, aceptación internacional
-  - Acuerdos Multilaterales de Reconocimiento: más de **120 países**, en **EA** y **Global ACI** (fusión de ILAC e IAF desde el 1 de enero de 2026)
-- Funciones del Laboratorio Central
-  - Coordinar y armonizar la red y las aplicaciones informáticas
-  - Planificar adquisiciones de instrumental, asesorar en reactivos, calibración y seguridad
-  - Poner a punto metodologías, dar soporte analítico
-  - Ejercicios de intercomparación, seguimiento de la acreditación, formación, apoyo documental
-- Objeto del tema: errores en el análisis instrumental y técnicas para detectarlos
+
+Buena parte de las labores del SOIVRE se realiza en su Red de Laboratorios, algunos de ellos acreditados por la **ENAC** según la norma **UNE-EN ISO/IEC 17025:2017**. Esta norma regula el Sistema de Gestión de la Calidad de los laboratorios de ensayo y calibración y establece los requisitos para demostrar su competencia. La acreditación nació de la necesidad de ofrecer un servicio de calidad a los operadores, sobre todo a los exportadores.
+
+- **ENAC**: asociación sin ánimo de lucro, único organismo con potestad pública para acreditar según el **Real Decreto 1715/2010** y el **Reglamento (CE) 765/2008**
+- **Marca de ENAC**: declara públicamente el cumplimiento de los requisitos y garantiza su aceptación internacional, con el respaldo de los Acuerdos Multilaterales de Reconocimiento de más de 120 países
+- **Organizaciones internacionales**: EA y Global ACI, resultante desde el 1 de enero de 2026 de la fusión de ILAC e IAF
+- **Red de Laboratorios SOIVRE**: 16 laboratorios de ensayo en la red periférica, algunos acreditados, y un Laboratorio Central en Madrid, también acreditado, dentro de la Subdirección General de Inspección, Certificación y Asistencia Técnica de Comercio Exterior, con una creciente especialización de cada laboratorio
+- **Funciones del Laboratorio Central** (creado en 1989): coordinar y armonizar la red y las aplicaciones informáticas, gestionar adquisiciones de instrumental, asesorar sobre reactivos, calibración y seguridad, poner a punto metodologías, dar soporte analítico, organizar ejercicios de intercomparación, seguir el programa de acreditación, formar y apoyar documentalmente
 
 # 2. ERRORES EN ANÁLISIS INSTRUMENTAL: REGRESIÓN Y CORRELACIÓN
-- Repetir una medida en las mismas condiciones no da siempre el mismo resultado
-  - Causas: muestra, patrones, operaciones, equipos, personal
-- **Error** = desviación entre valor analítico y valor real, indicador de la calidad del método
-- Dos tipos: **sistemáticos** y **aleatorios**
+
+Si se repite una medida en las mismas condiciones no se obtiene siempre el mismo resultado, porque la muestra, los patrones, las operaciones, los equipos y el personal introducen variabilidad. El **error en el análisis instrumental** es la desviación entre el valor obtenido y el valor real de la muestra. Se procura que sea mínimo porque indica la calidad del método. Se distinguen errores sistemáticos y aleatorios.
 
 ## 2.1. Errores sistemáticos
-- Inherentes al método, personal o instrumentos, por imperfecciones o malas prácticas
-- Se pueden **corregir y detectar** en la puesta a punto
-- Ligados a la **exactitud** (cercanía al valor real)
-- Mismo signo y magnitud en mediciones del mismo tipo
-- Causas
-  - Poca recuperación en extracciones sólido/líquido o líquido/líquido (recuperación 60 %, error por defecto 40 %)
-  - Calibración deficiente (patrón en mal estado o de baja pureza)
-  - Blancos de muestra no detectados
-  - Errores del personal, defectos del material volumétrico
-  - Muestreo incorrecto, interferencias
-- Detección y minimización
-  - Calibrar con **patrones de referencia certificados**
-  - Adición de **patrón interno**
-  - **Muestras certificadas** de valor conocido, no existen para todos los análisis (alimentos: gran variabilidad de matrices)
-  - Un método válido para una matriz puede no serlo para otra
-- Clasificación
-  - **Aditivos**: valor constante, independiente de la cantidad de analito
-  - **Proporcionales**: varían con la cantidad de analito
+
+**Errores sistemáticos.** Son inherentes al método, al personal o a los instrumentos y se deben a imperfecciones del método, de los equipos o a malas prácticas. Son detectables y corregibles durante la puesta a punto, tienen el mismo signo y magnitud en mediciones del mismo tipo y se ligan a la **exactitud**, que indica cuán cerca del valor real está el valor medido.
+
+- Causas: poca recuperación del analito en las extracciones (con una recuperación del 60 % todas las determinaciones arrastran un error por defecto del 40 %), calibración deficiente por un patrón en mal estado o impuro, blancos de muestra no detectados, errores del personal, defectos del material volumétrico, muestreo incorrecto e interferencias
+- Para detectarlos y minimizarlos se calibran los equipos con patrones de referencia certificados y conviene trabajar con un patrón interno
+- Lo ideal son muestras certificadas de valor conocido, pero no existen para todos los análisis, sobre todo en alimentos por la variabilidad de las matrices. Un método válido para sodio en leche puede no serlo en aceite, así que se recurre a otros procedimientos según el caso
+- Clasificación: **errores aditivos**, de valor constante e independiente de la cantidad de analito, y **errores proporcionales**, que varían en proporción a ella
 
 ## 2.2. Errores aleatorios
-- Impredecibles, debidos al azar, **sin causa asignable**
-- Origen instrumental
-  - Distinta sensibilidad de los equipos, condiciones atmosféricas
-  - Tiempo desde la última calibración
-  - Fluctuaciones de la red eléctrica
-- Origen en el personal
-  - Atención y percepción visual
-  - Modo de trabajo
-- Persisten tras eliminar los sistemáticos
-- Se definen por un rango alrededor de un valor central, tratamiento **estadístico**
-- Ligados a la **precisión**: dispersión de mediciones repetidas, menor dispersión = mayor precisión
-- Dos técnicas: **análisis de correlación** y **análisis de regresión**
-  - Correlación responde
-    - ¿Existe dependencia estocástica?
-    - ¿Qué grado tiene?
-  - **Dependencia estocástica**: Y = a + bX + e (e = error o residuo)
-  - **Dependencia funcional**: Y = F(X) = a + bX
-  - Regresión responde
-    - ¿Qué tipo de dependencia hay?
-    - ¿Pueden estimarse Y desde X y con qué precisión?
-- **Línea de regresión**: se ajusta a la nube de puntos, su ecuación es la **ecuación de regresión**
-- X: variable independiente (valores conocidos de las muestras) · Y: variable dependiente (valores obtenidos por el análisis)
-- Los errores impiden el ajuste exacto a la línea
 
-# 3. GRÁFICAS DE CALIBRACIÓN EN ANÁLISIS INSTRUMENTAL. RECTAS DE REGRESIÓN. COEFICIENTE DE CORRELACIÓN. ERRORES EN LA PENDIENTE Y ORDENADA EN EL ORIGEN DE LA RECTA DE REGRESIÓN
+**Errores aleatorios.** Son impredecibles, se deben al azar y persisten una vez eliminadas todas las causas de error sistemático. No tienen causa asignable, solo se definen por un rango de variación alrededor de un valor central y se tratan con procedimientos estadísticos. Se ligan a la **precisión**, que es la dispersión de los valores de mediciones repetidas: cuanto menor la dispersión, mayor la precisión.
+
+- Origen en los instrumentos: distinta sensibilidad influida por las condiciones atmosféricas, tiempo desde la última calibración y fluctuaciones de la red eléctrica
+- Origen en el personal: distinta atención y percepción visual y variaciones imperceptibles del modo de trabajo
+
+Para obtener valores respuesta de las muestras se emplean dos técnicas.
+
+- **Análisis de correlación**: responde si existe dependencia estocástica entre las variables y cuál es su grado. La dependencia estocástica es Y = a + bX + e, donde e es el error o residuo. La dependencia funcional es Y = F(X) = a + bX
+- **Análisis de regresión**: responde cuál es el tipo de dependencia y si pueden estimarse los valores de Y a partir de los de X, y con qué precisión
+
+Hay regresión cuando una línea, la **línea de regresión**, se ajusta a la nube de puntos, y su ecuación es la **ecuación de regresión**. La variable conocida de las muestras es la **variable independiente X** y la obtenida por el análisis es la **variable dependiente Y**. Los errores del análisis hacen que los puntos no se ajusten exactamente a la línea.
+
+# 3. GRÁFICAS DE CALIBRACIÓN, RECTAS DE REGRESIÓN, COEFICIENTE DE CORRELACIÓN Y ERRORES EN LA PENDIENTE Y LA ORDENADA
+
+Este apartado describe los gráficos de calibración, el coeficiente de correlación y las rectas de regresión.
 
 ## 3.1. Calibración analítica
-- Etapa que relaciona respuesta instrumental con concentración del analito, normalmente con modelo de recta, suele ser la etapa final del método
-- Doble significado
-  - **Calibración instrumental**: expresar el valor de un patrón en la magnitud que mide el instrumento (absorbancia frente a patrón de absorbancia conocida)
-    - Las medidas instrumentales son relativas, permite estimar la incertidumbre
-  - **Calibración analítica**: respuesta (área, absorbancia) frente a concentración
-    - No imprescindible linealidad (métodos enzimáticos con curva)
-    - Conviene trabajar en intervalos lineales, menor incertidumbre
+
+La mayoría de los métodos analíticos incluyen una etapa de calibración, normalmente la final, que relaciona la respuesta instrumental con la propiedad buscada, generalmente la concentración del analito, mediante un modelo de línea recta. En química la calibración tiene un doble significado.
+
+- **Calibración instrumental**: expresa el valor conocido de un patrón en la misma magnitud que mide el instrumento, por ejemplo la absorbancia frente a disoluciones de dicromato potásico. Interesa porque las medidas instrumentales son relativas y permite estimar la incertidumbre de cada medida
+- **Calibración analítica**: relaciona la respuesta del instrumento (área, absorbancia) con las concentraciones del analito. La respuesta no tiene que ser lineal, como en los métodos enzimáticos, pero conviene trabajar en intervalos lineales porque disminuye la incertidumbre de las medidas finales
 
 ## 3.2. Ecuación y recta de regresión
-- Se conocen X de los **patrones**, construir la ecuación = construir la **gráfica de calibración**
-  - Luego se calcula Y desconocida de una muestra a partir de la lectura
-- Tipos de regresión
-  - **Lineal simple**: Y = a + bX
-  - **No lineal o curvilínea**: parabólica, exponencial, potencial
-  - **Múltiple**: varias variables independientes (regresoras o predictoras) y una Y
-- Si la recta no sirve
-  - Función polinómica con ajuste mínimo cuadrático, o mejor reducir el rango al tramo lineal
-  - Detectar la curvatura con **análisis de residuales**, eliminando valores extremos
-- **Linealización** con logaritmos
-  - Potencial Y = AXᵇ: log(Y) = log(A) + b·log(X), A = antilog(a)
-  - Exponencial Y = ABˣ: log(Y) = log(A) + X·log(B), A = antilog(a), B = antilog(b)
-  - Logarítmico Y = a + b·log(X): recta respecto a log(X) e Y
-- **Cambio de variable**
-  - Potenciometría: pH (ecuación de **Nernst**, relación logarítmica)
-  - Espectrometría de absorción: absorbancia (**Ley de Lambert-Beer**)
-- Dependencia lineal: puntos agrupados en el **diagrama de dispersión** o nube de puntos
-  - Recta con carácter de línea media, lo más cerca posible de todos los puntos
-- **Mínimos cuadrados**
-  - Mínima suma de cuadrados de las distancias verticales (errores o residuos)
-  - Pendiente b = Σ(xi - x̄)(yi - ȳ) / Σ(xi - x̄)²
-  - Cuadrados siempre positivos, residuos positivos o negativos
-- **Bondad de ajuste**: representatividad de la recta, la mejor recta no garantiza que sea buena
-  - Dispersión pequeña = bondad alta
-- **Coeficiente de determinación**: R2 = σxy2 / (σx2·σy2), entre 0 y 1
-  - R² ≈ 1: sin residuos, dependencia funcional
-  - R² ≈ 0: X no explica Y, modelo inadecuado o variables independientes
-- Alto R² no garantiza buena predicción: los puntos pueden alejarse justo en el rango de interés
-  - El poder predictivo se evalúa con **gráficos de residuales**
+
+Para calcular la ecuación de regresión se parte de valores conocidos de X en muestras llamadas **patrones**. Es el procedimiento de construcción de la gráfica de calibración, que permite después hallar el valor desconocido de una muestra a partir de la lectura del aparato.
+
+- **Regresión lineal simple**: las variables siguen una línea recta, Y = a + bX
+- **Regresión no lineal o curvilínea**: la relación es curva (parabólica, exponencial, potencial)
+- **Regresión múltiple**: hay varias variables independientes (X1, X2, ..., Xp), llamadas regresoras o predictoras, y una sola dependiente Y
+
+La más simple y común es la recta. Si una recta no sirve, se puede buscar una función polinómica de ajuste mínimo cuadrático, pero resulta más práctico reducir el rango de aplicación al intervalo lineal. La dificultad está en detectar dónde empieza la curvatura, para lo cual se analizan los residuos eliminando sucesivamente valores extremos mientras mejore la dispersión.
+
+**Linealización.** Los modelos potencial y exponencial se reducen a una recta tomando logaritmos.
+
+- **Modelo potencial** Y = AXᵇ: log(Y) = log(A) + b·log(X). Se ajusta una recta a log(Y) frente a log(X), b coincide con la pendiente y A = antilog(a)
+- **Modelo exponencial** Y = ABˣ: log(Y) = log(A) + X·log(B). Se ajusta log(Y) frente a X, A = antilog(a) y B = antilog(b)
+- **Modelo logarítmico** Y = a + b·log(X): es una recta referida a log(X) e Y
+
+También se cambia de variable. En las potenciometrías se representa el pH en lugar de la concentración de hidrogeniones, por la ecuación de Nernst. En las espectrometrías de absorción la relación es lineal si se representa la absorbancia, por la Ley de Lambert-Beer.
+
+**Mínimos cuadrados.** Por la nube de puntos pasan infinitas rectas y se elige la que actúa como línea media y pasa lo más cerca posible de todos los puntos. El método de los mínimos cuadrados elige la recta que hace mínima la suma de los cuadrados de las distancias verticales de los puntos a la recta, llamadas errores o residuos. La pendiente es el sumatorio del producto de las desviaciones de X e Y respecto a sus medias dividido por el sumatorio de los cuadrados de las desviaciones de X respecto a su media. El cuadrado es siempre positivo aunque los puntos queden por encima o por debajo de la recta.
+
+**Bondad de ajuste.** Haber obtenido la mejor recta no garantiza que sea buena, por lo que debe acompañarse de una medida de su representatividad. Con dispersiones pequeñas la bondad de ajuste es alta y con dispersiones grandes es baja. El **coeficiente de determinación** R² = σxy² / (σx²·σy²) indica el porcentaje de variaciones explicado por el modelo y está entre 0 y 1.
+
+- Si R² ≈ 1 no hay residuos y existe dependencia funcional. Cuanto más cerca de 1, mayor poder explicativo
+- Si R² ≈ 0, X no explica las variaciones de Y, y el modelo es inadecuado o las variables son independientes
+
+Un R² alto puede no servir para predecir, porque justo en el rango de interés los puntos pueden alejarse de la recta. El poder predictivo solo se evalúa observando los gráficos de residuales.
 
 ## 3.3. Coeficiente de correlación
-- **Medidas de correlación**: cuantifican la dispersión respecto a la recta (errores accidentales)
-- **Covarianza**: variación conjunta de X e Y
-  - Σ(xi - x̄)(yi - ȳ) / n
-  - Positiva = relación directa · negativa = inversa · independientes = aprox. 0
-  - Depende de las unidades de medida
-- **Coeficiente de Pearson (r)**: covarianza / (σx·σy)
-  - **Adimensional**
-  - Solo mide relación **lineal**
-  - Independientes implica r = 0, pero r = 0 no implica independencia (relación no lineal)
-  - Mismo signo que la covarianza
-- Orientación: r de **0,9** permite buenos ajustes · **0,5** o menos, generalmente rechazados
-- En mínimos cuadrados (regresión lineal simple): **r2 = R2**
-- r entre **-1 y +1**: r = +1 correlación positiva perfecta · r = -1 negativa perfecta
+
+Los datos que teóricamente siguen una relación lineal pueden apartarse de la recta calculada. Las medidas de correlación cuantifican esa dispersión y, con ella, la magnitud de los errores accidentales.
+
+**Covarianza.** Mide la variación conjunta de dos variables, en el mismo sentido o en sentido contrario. Es el sumatorio del producto de las desviaciones de X e Y respecto a sus medias dividido por el número de parejas de valores. Si es positiva, la relación es directa, si es negativa, inversa, y si las variables son independientes vale aproximadamente 0.
+
+**Coeficiente de correlación de Pearson (r).** La covarianza depende de las unidades de medida. Dividirla entre el producto de las desviaciones típicas de X e Y da una medida adimensional de la relación lineal. Tiene el signo de la covarianza.
+
+- Solo analiza relaciones lineales. Si las variables son independientes, r = 0, pero r = 0 no implica independencia, solo que la relación no es lineal
+- Orientación: r de 0,9 permite buenos ajustes y valores de 0,5 o inferiores se rechazan generalmente
+- En regresión lineal simple por mínimos cuadrados, r² = R², por lo que r está acotado entre −1 y +1. Con r = +1 la correlación positiva es perfecta y con r = −1, negativa perfecta
 
 ## 3.4. Errores en la pendiente y ordenada en el origen
-- Miden la **fiabilidad del ajuste**: significación de los parámetros de mínimos cuadrados
-  - Permiten validar o no la recta
-- **Desviación estándar (error estándar) de la pendiente** y **de la ordenada en el origen**
-  - Se obtienen a partir de la varianza
-  - Las incertidumbres derivan de los errores al medir X
-  - La varianza refleja la desviación de Y respecto a la media, medida de la **precisión** del análisis
+
+Los errores de la pendiente y de la ordenada en el origen miden la fiabilidad del ajuste y la significación de los parámetros de mínimos cuadrados, lo que permite validar o no la recta obtenida. La desviación estándar (error estándar) de la pendiente y la de la ordenada se calculan a partir de la varianza de la variable independiente, pues sus incertidumbres derivan de los errores al medir X. Esa varianza refleja la desviación de los valores de Y respecto a la media y es una medida de la precisión del análisis.
 
 # 4. CÁLCULO DE UNA CONCENTRACIÓN
-- **Calibración**: operaciones que establecen la relación entre valores indicados por el instrumento y valores conocidos de analito, patrón o magnitud
-- Permite
-  - Corregir errores sistemáticos del equipo (defectos de construcción, deterioro del sistema óptico)
-  - Calcular la concentración de una muestra desde la relación respuesta-concentración
-- Pasos
-  - **Patrones**: cantidades conocidas de analito, alta calidad para evitar errores sistemáticos, sometidos al método para asociar señal a concentración
-  - Relación lineal: Y = a + bX
-    - Y respuesta medida · X concentración · a ordenada en el origen · b pendiente
-  - Los puntos rodean la recta sin formarla: **mínimos cuadrados** (mínima suma de cuadrados de desviaciones) da pendiente y ordenada
-  - Medir la señal Y0 de la muestra y obtener la concentración X0
-    - **Gráficamente**: prolongar Y0 hasta la recta y leer X en el eje
-    - **Directamente**: introducir Y0 en la ecuación y despejar X0
-- Condiciones
-  - Mínimo **3 patrones**, mejor más (más fiabilidad)
-  - Muestra problema dentro del tramo definido por los patrones, si no, ampliar patrones
-  - **No extrapolar** fuera del rango de X del ajuste
-- Fiabilidad de la recta: desviación estándar de la pendiente y de la ordenada en el origen
+
+**Calibración.** Es el conjunto de operaciones que establecen la relación entre los valores indicados por el instrumento y los valores conocidos de analito, patrón o magnitud medida. Permite corregir los errores sistemáticos del equipo, como defectos de construcción o deterioro del sistema óptico, y calcular la concentración de una muestra a partir de la relación entre respuesta y concentración.
+
+Los pasos son los siguientes.
+
+- Conseguir **patrones** de cantidades conocidas de analito y de elevada calidad, para evitar errores sistemáticos, y someterlos al método analítico para asociar una señal a cada concentración
+- Con relación lineal, la ecuación es Y = a + bX, donde Y es la respuesta medida, X la concentración del analito, a la ordenada en el origen y b la pendiente
+- Por los errores analíticos, los puntos se disponen alrededor de una recta sin formarla, así que se aplica el método de mínimos cuadrados, que hace mínima la suma de los cuadrados de las desviaciones de los puntos a la recta y da la pendiente y la ordenada
+- Se mide la señal de la muestra problema Y0 y se obtiene su concentración X0 **gráficamente**, prolongando Y0 hasta la recta y leyendo X en el eje, o **directamente**, introduciendo Y0 en la ecuación y despejando X0
+
+Para trazar la recta hacen falta **al menos 3 patrones** distintos, y cuantos más, mayor fiabilidad. La muestra problema debe caer dentro del tramo definido por los patrones, y si no, hay que ampliarlos. No deben extrapolarse resultados fuera del rango de X usado en el ajuste. La fiabilidad de la recta se conoce con la desviación estándar de la pendiente y la de la ordenada en el origen.
 
 # 5. CONCLUSIÓN
-- Conocer los errores y las técnicas de regresión y correlación da fiabilidad a los resultados ante operadores y autoridades de terceros países
-- Calibración correcta y validada estadísticamente: respuesta instrumental pasa a concentración con **trazabilidad**
-- Dominar r, bondad de ajuste y errores de pendiente y ordenada: determinaciones reproducibles, defendibles ante reclamación, acordes con la acreditación ENAC
+
+Conocer los errores del análisis instrumental y las técnicas de regresión y correlación es imprescindible para que los resultados de los laboratorios SOIVRE tengan la fiabilidad que exigen los operadores y las autoridades de terceros países. La calibración analítica, bien ejecutada y validada estadísticamente, convierte una respuesta instrumental en un dato de concentración con trazabilidad. Dominar el coeficiente de correlación, la bondad de ajuste y los errores de pendiente y ordenada garantiza determinaciones reproducibles, defendibles ante reclamaciones y coherentes con la acreditación ENAC.
