@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-3/tema-37.md. No editar a mano. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tema 37. La OCDE — esquema del ejercicio 3</title>
+<link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="stylesheet" href="../../../css/fuentes.css">
+<style>
+@page { size: A4; margin: 14mm 12.5mm 15mm;
+  @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #D9DED6; font-family: 'Public Sans', system-ui, sans-serif; color: #1F2A1D; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #C8A951; outline-offset: 2px; }
+
+/* Barra superior (solo pantalla) */
+.barra { background: #3B4533; color: #C2D9C2; }
+.barra-in { max-width: 210mm; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.barra a { color: #C2D9C2; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.barra a:hover { color: #FFFFFF; }
+.barra .marca { font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: .14em; font-size: 13px; color: #FFFFFF; }
+.barra .acciones { display: flex; gap: 10px; align-items: center; }
+.barra .boton { background: #E0C46B; color: #1F2A1D; font-weight: 700; padding: 0 14px; box-shadow: 3px 3px 0 #1F2A1D; }
+.barra .boton:hover { background: #FFFFFF; color: #1F2A1D; }
+
+/* Hoja */
+.hoja { max-width: 210mm; margin: 20px auto 40px; padding: 40px 47px 28px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.5; }
+.cab { display: flex; justify-content: space-between; gap: 16px; }
+.cab-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.marca-hoja { font-family: Orbitron, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .16em; color: #3B4533; }
+h1 { margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.08; text-wrap: balance; }
+/* Los enunciados del BOE pueden ser largos: el título baja de cuerpo por tramos. */
+h1.largo { font-size: 28px; line-height: 1.12; }
+h1.muy-largo { font-size: 23px; line-height: 1.16; }
+.enunciado { margin: 3px 0 2px; max-width: 78ch; font-size: 14.5px; line-height: 1.42; color: #4A5546; text-wrap: pretty; }
+.sub-cab { font-size: 14px; color: #4A5546; }
+.sello { background: #3B4533; color: #FFFFFF; padding: 8px 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 4px 4px 0 #A8862F; min-width: 92px; align-self: flex-start; }
+.sello span { white-space: nowrap; font-family: Orbitron, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: .14em; color: #E0C46B; }
+.sello b { font-family: Orbitron, sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1; }
+
+.indice { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.indice a { display: flex; flex-direction: column; gap: 1px; height: 100%; padding: 6px 9px; background: #3B4533; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.indice a:hover { background: #1F2A1D; }
+.indice b { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 13px; color: #E0C46B; letter-spacing: 0; }
+
+/* Cuerpo del esquema */
+.esq { min-width: 0; }
+.sec { margin: 26px 4px 12px 0; display: flex; align-items: stretch; background: #3B4533; color: #FFFFFF; box-shadow: 4px 4px 0 #A8862F; font-size: 16px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; scroll-margin-top: 12px; break-inside: avoid; break-after: avoid; }
+.esq > .sec:first-child { margin-top: 0; }
+.sec .n { font-family: Orbitron, sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 0; background: #E0C46B; color: #1F2A1D; min-width: 46px; display: flex; align-items: center; justify-content: center; }
+.sec .t { padding: 9px 12px; display: flex; align-items: center; flex-grow: 1; min-width: 0; }
+.sec .px { display: flex; align-items: flex-end; gap: 3px; padding: 0 10px 8px 0; }
+.sec .px i { display: block; width: 5px; height: 5px; background: #E0C46B; }
+.sec .px i:nth-child(2) { height: 9px; opacity: .7; }
+.sec .px i:nth-child(3) { height: 13px; opacity: .45; }
+.sub { margin: 16px 0 5px; font-size: 1em; font-weight: 700; line-height: 1.3; display: flex; align-items: baseline; gap: 8px; break-after: avoid; }
+.sub span { flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: .78em; color: #3B4533; background: #EEF3EB; border: 1px solid #3B4533; box-shadow: 2px 2px 0 #C9D1C5; padding: 0 5px; }
+.sub::after { content: ""; flex: 1 0 24px; align-self: center; border-bottom: 2px dotted #C9D1C5; }
+h4.sub { font-size: .94em; margin-top: 12px; }
+h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
+.sec + .sub { margin-top: 0; }
+.esq p { margin: 6px 0; }
+.esq ul, .esq ol { margin: 0; padding-left: 18px; }
+.esq li { margin: 2px 0; }
+.esq li::marker { color: #A8862F; }
+.esq ol > li::marker { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.esq li > ul { list-style: none; padding-left: 16px; }
+.esq li > ul > li { position: relative; }
+.esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
+.esq b { font-weight: 700; }
+.fig { margin: 14px 0; break-inside: avoid; }
+.fig img { display: block; width: 100%; height: auto; border: 1px solid #C9D1C5; }
+.fig figcaption { margin-top: 5px; font-size: .85em; color: #4A5546; }
+
+.pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
+.pie .url { font-family: 'IBM Plex Mono', monospace; }
+
+@media screen and (min-width: 821px) {
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+}
+@media screen and (max-width: 820px) {
+  .hoja { margin: 10px; padding: 20px 16px 16px; font-size: 16px; }
+  h1 { font-size: 27px; }
+  h1.largo { font-size: 23px; }
+  h1.muy-largo { font-size: 20px; }
+  .enunciado { font-size: 14px; }
+  .sello { min-width: 74px; padding: 6px 10px; }
+  .sello b { font-size: 22px; }
+  .sec { font-size: 14.5px; }
+}
+
+/* Impresión y PDF: dos columnas, cuerpo pequeño, sin barra ni pie propio (el pie
+   y la numeración van en los márgenes de @page). */
+@media print {
+  body { background: #FFFFFF; }
+  .barra, .pie { display: none; }
+  .hoja { max-width: none; margin: 0; padding: 0; box-shadow: none; gap: 12px; font-size: 11.5px; line-height: 1.38; }
+  h1 { font-size: 31px; }
+  h1.largo { font-size: 25px; }
+  h1.muy-largo { font-size: 21px; }
+  .enunciado { max-width: none; font-size: 11.5px; line-height: 1.36; }
+  .sub-cab { font-size: 13px; }
+  .indice { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); }
+  .indice a { padding: 5px 8px; font-size: 9.5px; }
+  .indice b { font-size: 12px; }
+  .esq { column-count: 2; column-gap: 24px; }
+  .sec { font-size: 12.5px; margin: 14px 4px 9px 0; }
+  .sec .n { font-size: 15px; min-width: 38px; }
+  .sec .t { padding: 6px 10px; }
+  .sub { margin: 9px 0 3px; }
+  .esq li { margin: 1px 0; }
+  .esq ul, .esq ol { padding-left: 14px; }
+  .esq li > ul { padding-left: 14px; }
+  .esq li > ul > li::before { left: -11px; }
+  /* Una figura no cabe en media columna: ocupa el ancho de la hoja. */
+  .fig { column-span: all; margin: 10px 0; }
+  .fig img { max-height: 200mm; width: auto; max-width: 100%; margin: 0 auto; border: 0; }
+  .fig figcaption { text-align: center; }
+}
+
+@page { @bottom-left { content: "Esquema · Tema 37. La OCDE"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
+    <div class="acciones"><a class="boton" href="tema-37.pdf" download="Esquema tema 37 (ejercicio 3).pdf">Descargar PDF</a></div>
+  </div>
+</header>
+<main class="hoja">
+  <div class="cab">
+    <div class="cab-txt">
+      <div class="marca-hoja">SERGIO ARGUDO · ESQUEMAS SOIVRE</div>
+      <h1>La OCDE</h1>
+      <p class="enunciado">Objetivo, estructura y funciones. Principales ámbitos de actividad. Líneas Directrices de la OCDE para multinacionales.</p>
+      <div class="sub-cab">Ejercicio 3 · Esquema del tema 37 · Actualizado el <time datetime="2026-10-11">11 de octubre de 2026</time></div>
+    </div>
+    <div class="sello" aria-label="Ejercicio 3, tema 37"><span>EJ. 3 · TEMA</span><b>37</b></div>
+  </div>
+  <nav aria-label="Apartados del esquema"><ol class="indice" style="--cols: 5"><li><a href="#apartado-1"><b>01</b>INTRODUCCIÓN</a></li><li><a href="#apartado-2"><b>02</b>LA OCDE: OBJETIVO, ESTRUCTURA Y FUNCIONES</a></li><li><a href="#apartado-3"><b>03</b>PRINCIPALES ÁMBITOS DE ACTIVIDAD</a></li><li><a href="#apartado-4"><b>04</b>LÍNEAS DIRECTRICES DE LA OCDE PARA EMPRESAS MULTINACIONALES</a></li><li><a href="#apartado-5"><b>05</b>CONCLUSIÓN</a></li></ol></nav>
+  <div class="esq">
+<h2 class="sec" id="apartado-1"><span class="n">01</span><span class="t">INTRODUCCIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>La <b>OCDE</b> es una organización intergubernamental de economías avanzadas con sistemas democráticos y de mercado. No es un banco ni concede préstamos o ayudas: es un foro donde los gobiernos comparan políticas, identifican buenas prácticas y coordinan su actuación.</p>
+<p>Su influencia descansa en la calidad de sus datos y análisis, en la presión de los exámenes entre pares y en su capacidad para elaborar estándares. Unos son vinculantes, como las Decisiones del Consejo o el Convenio contra el soborno. Otros son compromisos políticos voluntarios, como las Líneas Directrices para Empresas Multinacionales o el Consenso OCDE sobre créditos a la exportación, un pacto entre caballeros.</p>
+<h2 class="sec" id="apartado-2"><span class="n">02</span><span class="t">LA OCDE: OBJETIVO, ESTRUCTURA Y FUNCIONES</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>2.1</span>Origen y miembros</h3>
+<p>La OCDE sucede a la <b>OECE</b> (1948), creada para gestionar el Plan Marshall. El <b>Convenio de la OCDE</b> se firmó en París el <b>14 de diciembre de 1960</b> por veinte países, entre ellos EEUU, Canadá y España, miembro fundador, y entró en vigor el <b>30 de septiembre de 1961</b>.</p>
+<p>De una vocación europea pasó a otra transatlántica y después global: Japón (1964), Australia (1971), Nueva Zelanda (1973), México, Corea, Europa Central y Oriental, Chile e Israel. Las últimas adhesiones son Letonia (2016), Lituania (2018), Colombia (2020) y Costa Rica (2021), hasta los <b>38 miembros</b>.</p>
+<ul><li><b>Adhesión</b>: proceso largo, con hoja de ruta y revisión por una veintena de comités</li><li><b>Candidatos</b>: Argentina, Brasil, Bulgaria, Croacia, Perú y Rumanía (2022), e Indonesia y Tailandia (2024)</li><li><b>Rusia</b>: proceso cerrado en 2022 tras la invasión de Ucrania</li></ul>
+<h3 class="sub"><span>2.2</span>Objetivos</h3>
+<p>El art. 1 del Convenio fija tres objetivos:</p>
+<ul><li>Máxima expansión de la economía y del empleo y mayor nivel de vida en los miembros, con estabilidad financiera</li><li>Sana expansión económica de miembros y no miembros en vías de desarrollo</li><li>Expansión del comercio mundial sobre una base multilateral y no discriminatoria</li></ul>
+<p>Su lema es «Mejores políticas para una vida mejor». Para lograrlo analiza los cambios económicos, sociales y medioambientales, compara datos, anticipa tendencias y elabora estándares.</p>
+<h3 class="sub"><span>2.3</span>Estructura</h3>
+<p>Con sede en París (Château de la Muette), se articula en Consejo, comités y Secretaría.</p>
+<ul><li><b>Consejo</b>: órgano de decisión, con un representante por miembro y otro de la Comisión Europea sin voto. Se reúne a nivel de embajadores y una vez al año a nivel ministerial (en junio de 2026, bajo presidencia de Finlandia). Decide por consenso, aunque un miembro puede abstenerse. Aprueba programa y presupuesto, asistido por un Comité Ejecutivo</li><li><b>Comités</b>: unos 300 comités, grupos de trabajo y de expertos, donde funcionarios de los miembros examinan los análisis de la Secretaría y preparan recomendaciones. Destacan Política Económica, EDRC, Comercio, Inversiones, Asuntos Fiscales, CAD, Agricultura y el Grupo de Trabajo sobre el Soborno</li><li><b>Secretaría</b>: dirigida por el Secretario General, <b>Mathias Cormann</b> (desde el 1 de junio de 2021, mandato renovado hasta 2031), con direcciones temáticas que elaboran los análisis y estadísticas</li></ul>
+<p>La <b>Parte I</b> del presupuesto financia el programa común con contribuciones obligatorias según el tamaño de la economía. La <b>Parte II</b> financia programas de un grupo de miembros, como las agencias de energía. Hay además contribuciones voluntarias.</p>
+<h3 class="sub"><span>2.4</span>Instrumentos jurídicos y funciones</h3>
+<p>La OCDE ha adoptado más de 250 instrumentos jurídicos de distinto valor:</p>
+<ul><li><b>Decisiones</b>: vinculantes para los miembros que no se abstienen, como los Códigos de Liberalización</li><li><b>Recomendaciones</b>: no vinculantes, pero con compromiso político firme y seguimiento de su aplicación</li><li><b>Declaraciones</b>: compromisos políticos solemnes, como la Declaración sobre Inversión Internacional y Empresas Multinacionales, que incluye las Líneas Directrices</li><li><b>Acuerdos y entendimientos</b>: entre algunos miembros, como el Consenso OCDE</li><li><b>Convenios internacionales</b>: tratados en sentido estricto, como el Convenio de 1997 contra la corrupción</li></ul>
+<p>Con ellos cumple cuatro funciones:</p>
+<ul><li>Foro de diálogo y negociación entre gobiernos</li><li>Análisis e investigación, base técnica de negociaciones en la OMC o el G20</li><li>Producción de estadísticas comparables</li><li>Elaboración de estándares y supervisión mediante el <b>examen entre pares</b> (peer review), cuya presión de grupo es su principal instrumento de cumplimiento</li></ul>
+<h3 class="sub"><span>2.5</span>Órganos y organismos vinculados</h3>
+<p>Junto a su estructura central acoge organismos con distinta autonomía:</p>
+<ul><li><b>AIE</b>: creada en 1974 tras la crisis del petróleo, con 32 miembros desde la incorporación de Letonia en 2024</li><li><b>AEN</b>: creada en 1958, con su nombre actual desde 1972, para los usos pacíficos y la seguridad nuclear</li><li><b>Centro de Desarrollo</b> (1962), <b>Foro Internacional del Transporte</b> (2006), <b>CERI</b> (1968) y <b>Club del Sahel y de África Occidental</b> (1976)</li><li><b>Programa SIGMA</b> (1992): financiado por la Unión Europea, apoya la reforma administrativa de candidatos y vecinos</li><li><b>GAFI</b> (1989): organismo independiente contra el blanqueamiento y la financiación del terrorismo, con secretaría en la sede, donde también se alojan el Foro Global sobre Transparencia fiscal y el Marco Inclusivo sobre BEPS</li></ul>
+<h3 class="sub"><span>2.6</span>España y la OCDE</h3>
+<p>España participa mediante su Delegación Permanente en París, y cada ministerio interviene en los comités de su competencia. La <b>Secretaría de Estado de Comercio</b> participa en los Comités de Comercio e Inversiones, en el grupo de créditos a la exportación con CESCE y en el Punto Nacional de Contacto. El <b>SOIVRE</b>, a través de la Subdirección General de Inspección, Certificación y Asistencia Técnica del Comercio Exterior, representa a España en el Esquema para Frutas y Hortalizas.</p>
+<h2 class="sec" id="apartado-3"><span class="n">03</span><span class="t">PRINCIPALES ÁMBITOS DE ACTIVIDAD</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>La actividad de la OCDE gira en torno al crecimiento sostenible e inclusivo en sus dimensiones económica, social y medioambiental, con especial atención a lo que incide en el comercio exterior.</p>
+<h3 class="sub"><span>3.1</span>Política económica</h3>
+<p>Su Departamento de Economía vigila la macroeconomía de los miembros y analiza las reformas estructurales. Publicaciones de referencia:</p>
+<ul><li><b>Perspectivas Económicas</b>: previsiones mundiales dos veces al año, a finales de primavera y de otoño</li><li><b>Estudios Económicos</b> de cada país, aproximadamente cada dos años, examinados por pares en el Comité EDRC</li><li><b>Objetivo Crecimiento</b> (Going for Growth): recomendaciones de reforma estructural por país</li></ul>
+<h3 class="sub"><span>3.2</span>Comercio, inversión y créditos a la exportación</h3>
+<p>La OCDE defiende un sistema multilateral abierto y basado en normas. Su trabajo fue decisivo en la Ronda Uruguay. Hoy ofrece la base de comercio en valor añadido (TiVA), el Índice de Restricciones al Comercio de Servicios (STRI) y los Indicadores de Facilitación del Comercio.</p>
+<p>En inversión administra los <b>Códigos de Liberalización</b> de capital y de operaciones invisibles corrientes (1961), con forma de Decisiones vinculantes, y la <b>Declaración de 1976</b> sobre Inversión Internacional y Empresas Multinacionales, que incluye las Líneas Directrices.</p>
+<p>El <b>Consenso OCDE</b> (Acuerdo sobre Créditos a la Exportación con Apoyo Oficial, vigente desde 1978) es un pacto entre caballeros, no un tratado, aunque en la Unión Europea es obligatorio por el <b>Reglamento (UE) 1233/2011</b>. Participan once miembros, entre ellos EEUU, Japón, Reino Unido y la Unión Europea. Busca que los exportadores compitan por precio y calidad y no por la generosidad de la financiación oficial. Fija:</p>
+<ul><li>Plazos máximos de reembolso</li><li>Tipos de interés mínimos (CIRR), revisados mensualmente</li><li>Primas mínimas de riesgo según la categoría del país de destino</li><li>Entendimientos sectoriales para buques, aeronaves, centrales nucleares, ferrocarril y proyectos climáticos</li></ul>
+<p>La modernización de 2023, en vigor desde el <b>15 de julio de 2023</b>, amplió hasta 22 años los plazos del entendimiento climático, extendido al hidrógeno limpio, la captura de carbono y los minerales críticos.</p>
+<h3 class="sub"><span>3.3</span>Fiscalidad</h3>
+<p>Es el principal foro mundial de fiscalidad internacional. Elabora el <b>Modelo de Convenio</b> para evitar la doble imposición y las Directrices sobre precios de transferencia. Impulsa tres iniciativas:</p>
+<ul><li><b>Transparencia fiscal</b>: el Foro Global y el Estándar de intercambio automático de información financiera (CRS, 2014), con más de cien jurisdicciones, completado con el marco de criptoactivos (CARF, 2027)</li><li><b>Plan BEPS</b>: lanzado en 2013 con el G20 contra la erosión de bases y el traslado de beneficios, con 15 acciones aprobadas en 2015. Lo coordina el Marco Inclusivo, con 148 jurisdicciones desde enero de 2026</li><li><b>Dos pilares</b>, acordados en octubre de 2021. El <b>Pilar 2</b> fija un impuesto mínimo efectivo del <b>15 %</b> para grupos con ingresos de al menos 750 M€, aplicado por la Directiva (UE) 2022/2523 y en España por la Ley 7/2024. En enero de 2026 se aprobó el sistema «lado a lado», que exime de algunas reglas a los grupos con matriz en EEUU. El <b>Pilar 1</b>, sobre el reparto de derechos de imposición, sigue pendiente</li></ul>
+<h3 class="sub"><span>3.4</span>Agricultura y Códigos y Esquemas agrícolas</h3>
+<p>La Dirección de Comercio y Agricultura apoya a los Comités de Comercio, Agricultura y Pesca. Publica el informe de Seguimiento y Evaluación de las Políticas Agrarias (Estimación del Apoyo al Productor) y, con la FAO, las Perspectivas Agrícolas a diez años.</p>
+<p>Los <b>Códigos y Esquemas agrícolas</b> facilitan el comercio armonizando certificación, inspección y control. Son cuatro:</p>
+<ul><li><b>Semillas</b> (1958): certifica identidad y pureza varietal. Es el más amplio, con más de sesenta países y más de 200 especies</li><li><b>Tractores agrícolas y forestales</b> (1959): armoniza ensayos de rendimiento y seguridad</li><li><b>Frutas y Hortalizas</b> (1962)</li><li><b>Materiales Forestales de Reproducción</b> (1967): certifica identidad y calidad de semillas y plantas para reforestación</li></ul>
+<h3 class="sub"><span>3.5</span>El Esquema de la OCDE para Frutas y Hortalizas</h3>
+<p>La normalización comercial de frutas y hortalizas debe acompañarse de un control en origen por el país exportador, lo que exige normas comunes y métodos homogéneos. Con ese fin se creó en 1962 el <b>Esquema para la aplicación de normas internacionales a las frutas y hortalizas</b>. Está abierto a cualquier miembro de la ONU, sus organismos especializados o la OMC, y participan más de veinte países. España está representada por el SOIVRE.</p>
+<p>El Esquema no elabora normas de calidad, tarea del Grupo de Trabajo WP.7 de la CEPE/ONU, sino que impulsa su interpretación y aplicación uniformes. Sus actividades principales:</p>
+<ul><li>Folletos explicativos con fotografías, que dan una interpretación común de las normas CEPE/ONU y del Codex. Entre los recientes, el de frutos rojos (2024)</li><li>Cartas de color para productos cuyo color indica madurez</li><li>Armonización de la inspección, con directrices de conformidad y un modelo de certificado de control</li><li>Cursos para inspectores, reuniones de los jefes de los servicios y exámenes entre pares de estos</li><li>Propuestas de revisión de normas a la CEPE/ONU</li></ul>
+<p>Celebra una <b>Reunión Plenaria</b> anual con observadores (CEPE/ONU, Codex, Comisión Europea y sector). La 84.ª se celebró en Agadir en noviembre de 2025, y rige un Plan Estratégico de 2026. Sus propuestas se elevan al Comité de Agricultura y, en último término, al Consejo.</p>
+<h3 class="sub"><span>3.6</span>Energía</h3>
+<p>Trabaja a través de dos agencias semiautónomas.</p>
+<ul><li><b>AIE</b> (1974): coordina la respuesta a crisis de suministro de petróleo, con reservas de emergencia de 90 días de importaciones netas. Su informe de referencia es el World Energy Outlook</li><li><b>AEN</b>: aspectos científicos, técnicos, jurídicos y de seguridad del uso pacífico de la energía nuclear</li></ul>
+<h3 class="sub"><span>3.7</span>Cooperación al desarrollo</h3>
+<p>El <b>Comité de Ayuda al Desarrollo (CAD)</b>, con una treintena de donantes, define la Ayuda Oficial al Desarrollo (AOD), publica sus estadísticas y somete las políticas de sus miembros a examen entre pares, en línea con la Agenda 2030 y sus 17 ODS. Según los datos preliminares de abril de 2026, la AOD de 2025 registró la mayor caída desde que hay registros, sobre todo por la reducción de la ayuda de EEUU.</p>
+<h3 class="sub"><span>3.8</span>Gobernanza pública, educación y estadística</h3>
+<ul><li><b>Gobernanza pública</b>: mejora regulatoria, integridad y eficacia administrativa, extendida por SIGMA a candidatos y vecinos de la Unión</li><li><b>Educación</b>: el Informe PISA evalúa desde 2000 a alumnos de 15 años, y se completa con TALIS (profesorado) y PIAAC (adultos)</li><li><b>Estadística</b>: armoniza las estadísticas económicas y sociales para hacerlas comparables y las difunde en OECD Data Explorer</li></ul>
+<h3 class="sub"><span>3.9</span>Lucha contra la corrupción</h3>
+<p>El <b>Convenio de 1997</b> contra la corrupción de agentes públicos extranjeros en transacciones comerciales internacionales, en vigor desde 1999, obliga a tipificar el soborno de funcionarios extranjeros para obtener contratos o ventajas comerciales. Lo supervisa el Grupo de Trabajo sobre el Soborno mediante exámenes entre pares por fases, que pueden acabar en recomendaciones y, en casos graves, en advertencias públicas.</p>
+<h2 class="sec" id="apartado-4"><span class="n">04</span><span class="t">LÍNEAS DIRECTRICES DE LA OCDE PARA EMPRESAS MULTINACIONALES</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<h3 class="sub"><span>4.1</span>Naturaleza y evolución</h3>
+<p>Las <b>Líneas Directrices</b> sobre Conducta Empresarial Responsable son recomendaciones de los gobiernos a las multinacionales que operan en sus territorios o desde ellos, con normas voluntarias coherentes con la ley aplicable. Son el código de conducta empresarial responsable más completo acordado multilateralmente que los gobiernos se han comprometido a promover.</p>
+<p>Para las empresas son voluntarias y complementan, sin sustituir, la legislación nacional. Para los gobiernos adherentes existe una obligación vinculante: crear un Punto Nacional de Contacto que las promueva y atienda reclamaciones. Las empresas que las adoptan deben aplicarlas en todos los países donde operan, no solo en los adherentes.</p>
+<p>Se adoptaron en <b>1976</b> dentro de la Declaración sobre Inversión Internacional y Empresas Multinacionales y se revisaron en 1979, 1984, 1991, 2000, 2011 y 2023. La de 2011 incorporó el capítulo de derechos humanos y la diligencia debida. La de <b>8 de junio de 2023</b> añadió al título la conducta empresarial responsable. Las suscriben <b>51 países</b>: los 38 miembros y otros trece, como Argentina, Brasil o Marruecos. Entre los cambios de 2023:</p>
+<ul><li>Alineamiento de las empresas con los objetivos internacionales de clima y biodiversidad</li><li>Diligencia debida sobre el uso de productos y servicios y sobre las tecnologías, incluidos los datos</li><li>Mayor protección de quienes alertan de impactos negativos y de los pueblos indígenas</li><li>Diligencia debida ampliada a todas las formas de corrupción y recomendaciones sobre lobby</li><li>Refuerzo de la divulgación y de los procedimientos de los Puntos Nacionales de Contacto</li></ul>
+<h3 class="sub"><span>4.2</span>Contenido</h3>
+<p>Se dividen en dos partes. La primera recoge las recomendaciones a las empresas en <b>once capítulos</b>:</p>
+<ul><li><b>Conceptos y principios (I) y Políticas generales (II)</b>: respetar las políticas de los países y aplicar diligencia debida basada en el riesgo</li><li><b>Divulgación (III)</b>: información exacta y oportuna sobre actividades, resultados y gobierno corporativo</li><li><b>Derechos humanos (IV)</b>: respetarlos y reparar los impactos que causen</li><li><b>Empleo y relaciones laborales (V)</b>: no discriminación, eliminación del trabajo forzoso e infantil, libertad sindical</li><li><b>Medio ambiente (VI)</b>: gestión medioambiental, cambio climático y biodiversidad</li><li><b>Lucha contra la corrupción (VII)</b>: no ofrecer ni aceptar sobornos ni ventajas indebidas</li><li><b>Consumidores (VIII)</b>: prácticas leales y calidad y seguridad de los productos</li><li><b>Ciencia, tecnología e innovación (IX)</b>: difusión tecnológica y diligencia debida en el uso de tecnologías</li><li><b>Competencia (X)</b>: respetar las normas de todos los países donde su actividad tenga efectos</li><li><b>Cuestiones tributarias (XI)</b>: cumplir la letra y el espíritu de la normativa fiscal</li></ul>
+<p>La segunda parte regula los procedimientos de aplicación: los Puntos Nacionales de Contacto y el Comité de Inversiones, que interpreta las Líneas Directrices.</p>
+<h3 class="sub"><span>4.3</span>Los Puntos Nacionales de Contacto</h3>
+<p>Los <b>PNC</b> son el mecanismo singular de aplicación y tienen una doble función:</p>
+<ul><li><b>Promoción</b>: difunden las Líneas Directrices y orientan a las empresas</li><li><b>Casos específicos</b>: cualquier parte interesada (sindicato, ONG, comunidad afectada) puede plantear un caso sobre la conducta de una empresa. El PNC hace una evaluación inicial y, si lo admite, ofrece buenos oficios o mediación y concluye con una declaración final. No es un órgano judicial ni impone sanciones, pero sus declaraciones tienen notable efecto reputacional</li></ul>
+<p>Actúan con equivalencia funcional (visibilidad, accesibilidad, transparencia, imparcialidad, previsibilidad y compatibilidad con las Líneas Directrices) y se someten a exámenes entre pares.</p>
+<p>En España el PNC funciona desde 2001. La <b>Orden PRE/2167/2014</b> lo configuró como órgano colegiado interministerial, adscrito a la Secretaría de Estado de Comercio, con los ministerios competentes en las materias de las Líneas Directrices.</p>
+<h3 class="sub"><span>4.4</span>La diligencia debida y su proyección en la Unión Europea</h3>
+<p>La OCDE ha desarrollado la <b>Guía de Diligencia Debida para una Conducta Empresarial Responsable</b> (2018) y guías sectoriales. Han inspirado buena parte de la legislación europea reciente que afecta al comercio exterior:</p>
+<ul><li><b>Reglamento (UE) 2017/821</b>, minerales de zonas de conflicto (estaño, tantalio, wolframio y oro), aplicable desde 2021, con remisión expresa a la guía</li><li><b>Reglamento (UE) 2023/1115</b>, productos libres de deforestación, y <b>Reglamento (UE) 2023/1542</b>, baterías, con diligencia debida en la cadena de suministro</li><li><b>Directiva (UE) 2024/1760</b>, diligencia debida en sostenibilidad, cuyo alcance y calendario se han revisado en el paquete «Ómnibus»</li><li><b>Reglamento (UE) 2024/3015</b>, que prohibirá comercializar en la Unión productos fabricados con trabajo forzoso</li></ul>
+<p>Así, lo que nació como recomendaciones voluntarias se ha convertido, en parte, en obligaciones jurídicas para las empresas que operan en la Unión, muchas verificables en la importación.</p>
+<h2 class="sec" id="apartado-5"><span class="n">05</span><span class="t">CONCLUSIÓN</span><span class="px" aria-hidden="true"><i></i><i></i><i></i></span></h2>
+<p>En 2026 la OCDE cumple 65 años. Nacida para administrar el Plan Marshall, es hoy un laboratorio de políticas públicas y uno de los principales productores de estándares, de la fiscalidad a la educación. Su método, basado en el dato, el análisis comparado y la presión entre pares, le permite influir más allá de sus 38 miembros. Su agenda actual incluye la fragmentación geoeconómica, el impuesto mínimo global, la transición energética, la caída de la ayuda al desarrollo y ocho candidatos a la adhesión.</p>
+<p>Para el Inspector del SOIVRE tiene proyección práctica directa: el Esquema para Frutas y Hortalizas aporta folletos y métodos de inspección, el Consenso ordena el crédito a la exportación con apoyo oficial y las Líneas Directrices, por la legislación europea de diligencia debida, incorporan a los controles en frontera exigencias que hace una década eran solo recomendaciones.</p>
+  </div>
+  <footer class="pie"><span>Esquema propio a partir del tema desarrollado</span><span class="url">sergioargudo.es</span></footer>
+</main>
+</body>
+</html>

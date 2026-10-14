@@ -412,12 +412,9 @@ function generateTopics(exerciseNumber, topicCount) {
                 topic.status = 'available';
             }
         }
-        // Exercise 3: Topics 1-58 available (except 43)
+        // Exercise 3: All topics 1-58 available
         else if (exerciseNumber === 3) {
-            if (i === 43) {
-                topic.status = 'discarded';
-                topic.message = 'No disponible, era mi tema de descarte';
-            } else if (i >= 1 && i <= 58) {
+            if (i >= 1 && i <= 58) {
                 topic.status = 'available';
             }
         }

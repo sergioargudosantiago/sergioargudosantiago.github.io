@@ -32,7 +32,8 @@
  * Markdown admitido (lo que usan los esquemas): encabezados #, ## y ###; líneas
  * enteras en negrita que empiezan por número («**2.1. Título**») como encabezado;
  * listas con guion o numeradas, anidadas con dos espacios; párrafos; negrita y
- * cursiva en línea.
+ * cursiva en línea; una imagen sola en su línea («![pie](fichero.png)») como
+ * figura, con el fichero junto al Markdown (se copia junto al HTML).
  */
 
 const fs = require('fs');
@@ -106,6 +107,10 @@ function analizar(md) {
         let m = linea.match(/^(#{1,4})\s+(.*)$/);
         if (m) { cerrar(); bloques.push(encabezado(Math.min(m[1].length, 3), m[2])); continue; }
 
+        // Imagen sola en su línea: figura con el texto alternativo como pie.
+        m = linea.match(/^!\[([^\]]+)\]\(([^)\s]+)\)$/);
+        if (m) { cerrar(); bloques.push({ tipo: 'figura', pie: m[1], src: m[2] }); continue; }
+
         m = linea.match(/^\*\*(\d+(?:\.\d+)*)\.?\s+([^*]+)\*\*$/);
         if (m) {
             cerrar();
@@ -168,6 +173,11 @@ function htmlCuerpo(bloques) {
     for (const b of bloques) {
         if (b.tipo === 'lista') { html += htmlItems(b.items) + '\n'; continue; }
         if (b.tipo === 'p') { html += `<p>${enLinea(b.texto)}</p>\n`; continue; }
+        if (b.tipo === 'figura') {
+            html += `<figure class="fig"><a href="${escapeHTML(b.src)}"><img src="${escapeHTML(b.src)}" alt="${escapeHTML(b.pie)}" loading="lazy"></a>`
+                + `<figcaption>${enLinea(b.pie)}</figcaption></figure>\n`;
+            continue;
+        }
         if (b.nivel === 1) {
             apartado++;
             const num = b.numero && /^\d+$/.test(b.numero) ? Number(b.numero) : apartado;
@@ -252,6 +262,9 @@ h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
 .esq li > ul > li { position: relative; }
 .esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
 .esq b { font-weight: 700; }
+.fig { margin: 14px 0; break-inside: avoid; }
+.fig img { display: block; width: 100%; height: auto; border: 1px solid #C9D1C5; }
+.fig figcaption { margin-top: 5px; font-size: .85em; color: #4A5546; }
 
 .pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
 .pie .url { font-family: 'IBM Plex Mono', monospace; }
@@ -293,6 +306,10 @@ h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
   .esq ul, .esq ol { padding-left: 14px; }
   .esq li > ul { padding-left: 14px; }
   .esq li > ul > li::before { left: -11px; }
+  /* Una figura no cabe en media columna: ocupa el ancho de la hoja. */
+  .fig { column-span: all; margin: 10px 0; }
+  .fig img { max-height: 200mm; width: auto; max-width: 100%; margin: 0 auto; border: 0; }
+  .fig figcaption { text-align: center; }
 }
 `;
 
@@ -386,7 +403,8 @@ function main() {
             if (FILTRO[0] && (FILTRO[0] !== ej || FILTRO[1] !== numero)) continue;
             const enunciado = oficial.enunciados[ej][numero];
             if (!enunciado) { avisos.push(`ejercicio ${ej}, tema ${numero}: sin enunciado en temas/programa.json`); continue; }
-            const { html, indice } = htmlCuerpo(analizar(fs.readFileSync(path.join(dir, f), 'utf8')));
+            const bloques = analizar(fs.readFileSync(path.join(dir, f), 'utf8'));
+            const { html, indice } = htmlCuerpo(bloques);
             if (!indice.length) avisos.push(`ejercicio ${ej}, tema ${numero}: sin apartados de primer nivel`);
             // Solo se publican los esquemas con fecha: los rehechos con las pautas
             // vigentes. Los demás siguen en la web con su Word y su PDF antiguos.
@@ -394,6 +412,12 @@ function main() {
             if (PUBLICAR && !actualizado) continue;
             const salida = path.join(destino, f.replace('.md', '.html'));
             fs.writeFileSync(salida, pagina({ ejercicio: ej, numero, enunciado, cuerpo: html, indice, actualizado }));
+            // Las figuras viven junto al Markdown y se sirven junto al HTML.
+            for (const b of bloques.filter(x => x.tipo === 'figura')) {
+                const origen = path.join(dir, b.src);
+                if (fs.existsSync(origen)) fs.copyFileSync(origen, path.join(destino, path.basename(b.src)));
+                else avisos.push(`ejercicio ${ej}, tema ${numero}: falta la figura ${b.src}`);
+            }
             total++;
         }
     }
