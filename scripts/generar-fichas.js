@@ -21,6 +21,8 @@
 const fs = require('fs');
 const path = require('path');
 
+const { SITIO, actualizarBloque } = require('./lib/sitemap');
+
 const RAIZ = path.resolve(__dirname, '..');
 // Colores de datos: data/paleta.json (los mismos que la web). Las fichas se imprimen: modo claro.
 const PALETA = require(path.join(RAIZ, 'data', 'paleta.json'));
@@ -507,14 +509,23 @@ h2 { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform:
 // Las fichas viven en public/fichas/: las fuentes se sirven desde la propia web.
 const FUENTES = '../../css/fuentes.css';
 
-function documento(titulo, cuerpo) {
+// titulo y descripcion son lo que ve Google; archivo, el nombre en public/fichas/.
+function documento(titulo, cuerpo, { descripcion, archivo }) {
+    const url = `${SITIO}/public/fichas/${archivo}`;
     return `<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex">
 <title>${esc(titulo)}</title>
+<meta name="description" content="${esc(descripcion)}">
+<link rel="canonical" href="${url}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="${esc(titulo)}">
+<meta property="og:description" content="${esc(descripcion)}">
+<meta property="og:url" content="${url}">
+<meta property="og:image" content="${SITIO}/images/og-cover.png">
+<meta property="og:locale" content="es_ES">
 <link rel="stylesheet" href="${FUENTES}">
 <style>${ESTILO}</style>
 </head>
@@ -540,8 +551,12 @@ function main() {
     for (const tema of elegidos) {
         const d = calcular(tema, todas);
         const n = String(tema.tema).padStart(2, '0');
-        const html = documento(`Tema ${tema.tema}. ${tema.titulo} — ficha de comercio exterior`,
-            [paginaResumen(d, tema.tema), paginaDetalle(d, tema.tema, 'E'), paginaDetalle(d, tema.tema, 'I')].join('\n'));
+        const html = documento(`Ficha SOIVRE tema ${tema.tema}: ${tema.titulo} | Comercio exterior`,
+            [paginaResumen(d, tema.tema), paginaDetalle(d, tema.tema, 'E'), paginaDetalle(d, tema.tema, 'I')].join('\n'),
+            {
+                descripcion: `Ficha de comercio exterior del tema ${tema.tema} del ejercicio 1 del temario de Inspectores del SOIVRE (${tema.titulo}): exportaciones, importaciones y saldo de España por subsector.`,
+                archivo: `tema-${n}.html`,
+            });
         fs.writeFileSync(path.join(SALIDA, `tema-${n}.html`), html, 'utf8');
         resumen.push({ tema, e: d.E[4], i: d.I[4] });
         const filasMax = Math.max(...['exp', 'imp'].map(k => d[k].reduce((s, g) => s + g.filas.length + 1, 0)));
@@ -552,9 +567,20 @@ function main() {
         fs.writeFileSync(PAGINA_FICHAS, listadoFichas(fs.readFileSync(PAGINA_FICHAS, 'utf8'), resumen), 'utf8');
         console.log('  · fichas.html (listado de la web)');
     }
+    actualizarSitemapFichas();
     console.log(`${elegidos.length} ficha(s) en public/fichas/.`);
+}
+
+// Todas las fichas de public/fichas/ (también las de balanza de pagos, que escribe
+// generar-fichas-balanza.js) con la fecha de su última generación.
+function actualizarSitemapFichas() {
+    const entradas = fs.readdirSync(SALIDA).filter(f => f.endsWith('.html')).sort().map(f => ({
+        ruta: `public/fichas/${f}`,
+        lastmod: fs.statSync(path.join(SALIDA, f)).mtime.toISOString().slice(0, 10),
+    }));
+    actualizarBloque('fichas', entradas, { priority: '0.5' });
 }
 
 if (require.main === module) main();
 
-module.exports = { num, conSigno, pct, pctSigno, esc, grafico, pie, documento };
+module.exports = { num, conSigno, pct, pctSigno, esc, grafico, pie, documento, actualizarSitemapFichas };

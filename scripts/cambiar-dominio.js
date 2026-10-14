@@ -41,7 +41,10 @@ const ficheros = [
     'sitemap.xml',
     'robots.txt',
     'feed.xml',
-    path.join('scripts', 'build-articulos.js')
+    path.join('scripts', 'build-articulos.js'),
+    // Dominio de los esquemas y las fichas: tras cambiarlo, regenerarlos
+    // (npm run esquemas -- --publicar y npm run fichas).
+    path.join('scripts', 'lib', 'sitemap.js')
 ].filter(f => fs.existsSync(path.join(RAIZ, f)));
 
 let total = 0;

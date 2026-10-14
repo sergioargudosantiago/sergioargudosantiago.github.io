@@ -11,8 +11,9 @@
  *
  * Por defecto NO publica: escribe en review/ (no versionado ni servido) para
  * revisar un esquema antes de subirlo. Con --publicar escribe lo que sirve la
- * web y, además, js/esquemas-fechas.js con la fecha de cada esquema y
- * js/esquemas-programa.js con los nombres oficiales de los temas. Solo
+ * web y, además, js/esquemas-fechas.js con la fecha de cada esquema,
+ * js/esquemas-programa.js con los nombres oficiales de los temas y su bloque
+ * de sitemap.xml (los esquemas publicados se indexan en Google). Solo
  * publica los que tienen fecha en temas/actualizado.json, que son los rehechos
  * con las pautas vigentes: el listado ofrece los demás con su Word y su PDF
  * antiguos y el aviso «en actualización».
@@ -40,6 +41,7 @@ const fs = require('fs');
 const path = require('path');
 const { renderInline, escapeHTML } = require('./lib/markdown');
 const { partirEnunciado, sinPuntoFinal } = require('./lib/enunciado');
+const { SITIO, actualizarBloque } = require('./lib/sitemap');
 
 const RAIZ = path.resolve(__dirname, '..');
 const FUENTE = path.join(RAIZ, 'temas');
@@ -342,14 +344,52 @@ function pagina({ ejercicio, numero, enunciado, cuerpo, indice, actualizado }) {
     const descarga = `Esquema tema ${numero} (ejercicio ${ejercicio}).pdf`;
     const indiceHtml = indice.map(a =>
         `<li><a href="#${a.id}"><b>${dosCifras(a.num)}</b>${escapeHTML(a.texto.replace(/\*\*/g, ''))}</a></li>`).join('');
+    // Lo que ve Google. En la página manda el enunciado del BOE; el <title> es
+    // corto para que el buscador no lo recorte, y «temario» va en la descripción.
+    const url = `${SITIO}/public/temas/ejercicio-${ejercicio}/tema-${nn}.html`;
+    const tituloBuscador = `Tema ${numero} SOIVRE: ${titulo} | Esquema`;
+    const descripcion = `Esquema del tema ${numero} del ejercicio ${ejercicio} del temario de Inspectores del SOIVRE: ${titulo}. Para leer en línea o descargar en PDF.`;
+    const datos = {
+        '@context': 'https://schema.org',
+        '@graph': [
+            {
+                '@type': 'LearningResource',
+                name: tituloTema,
+                description: descripcion,
+                url,
+                inLanguage: 'es',
+                learningResourceType: 'Esquema',
+                ...(actualizado ? { dateModified: actualizado } : {}),
+                about: 'Oposiciones al Cuerpo de Inspectores del SOIVRE',
+                author: { '@type': 'Person', '@id': `${SITIO}/#autor`, name: 'Sergio Argudo Santiago', url: `${SITIO}/sobre-mi.html` },
+                isPartOf: { '@type': 'CollectionPage', name: 'Esquemas del temario de Inspectores del SOIVRE', url: `${SITIO}/esquemas.html` },
+            },
+            {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                    { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITIO}/` },
+                    { '@type': 'ListItem', position: 2, name: 'Esquemas', item: `${SITIO}/esquemas.html` },
+                    { '@type': 'ListItem', position: 3, name: `Ejercicio ${ejercicio}, tema ${numero}`, item: url },
+                ],
+            },
+        ],
+    };
     return `<!DOCTYPE html>
 <!-- Generado por scripts/generar-esquemas.js desde temas/ejercicio-${ejercicio}/tema-${nn}.md. No editar a mano. -->
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex">
-<title>${escapeHTML(tituloTema)} — esquema del ejercicio ${ejercicio}</title>
+<title>${escapeHTML(tituloBuscador)}</title>
+<meta name="description" content="${escapeHTML(descripcion)}">
+<link rel="canonical" href="${url}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="${escapeHTML(tituloBuscador)}">
+<meta property="og:description" content="${escapeHTML(descripcion)}">
+<meta property="og:url" content="${url}">
+<meta property="og:image" content="${SITIO}/images/og-cover.png">
+<meta property="og:locale" content="es_ES">
+<script type="application/ld+json">${JSON.stringify(datos).replace(/</g, '\\u003c')}</script>
 <link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
 <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
 <link rel="stylesheet" href="../../../css/fuentes.css">
@@ -432,6 +472,16 @@ function main() {
             '// Generado por scripts/generar-esquemas.js desde temas/programa.json (anexo I de la\n'
             + `// convocatoria, ${oficial.programa.fuente.cve}). No editar a mano.\n`
             + `const ESQUEMAS_PROGRAMA = ${JSON.stringify(programaParaLaWeb(oficial))};\n`);
+        // Y en el sitemap, todos los publicados (no solo los de esta ejecución):
+        // los que tienen fecha y página en public/temas/.
+        const publicados = Object.entries(fechas)
+            .map(([clave, lastmod]) => {
+                const [, ej, nn] = clave.match(/^ejercicio-(\d+)-(\d+)$/) || [];
+                return { ruta: `public/temas/ejercicio-${ej}/tema-${nn}.html`, lastmod };
+            })
+            .filter(e => fs.existsSync(path.join(RAIZ, e.ruta)))
+            .sort((a, b) => a.ruta.localeCompare(b.ruta));
+        actualizarBloque('esquemas', publicados, { priority: '0.7' });
     }
     console.log(`${total} esquemas en ${path.relative(RAIZ, SALIDA)}/.`);
     for (const a of avisos) console.warn(`  aviso: ${a}`);

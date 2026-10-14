@@ -19,7 +19,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
-const { num, conSigno, pct, pctSigno, esc, grafico, pie, documento } = require('./generar-fichas.js');
+const { num, conSigno, pct, pctSigno, esc, grafico, pie, documento, actualizarSitemapFichas } = require('./generar-fichas.js');
 
 const RAIZ = path.resolve(__dirname, '..');
 const PALETA = require(path.join(RAIZ, 'data', 'paleta.json'));
@@ -167,7 +167,10 @@ function fichaBalanza(b) {
   ${tablaDetalle(['Mes', 'Cta. corriente', 'Bienes y serv.', 'Rentas', 'Cta. capital', 'Cap. financ.'], meses)}
   ${pie('2 / 2', 'Capacidad de financiación: cuenta corriente más cuenta de capital.', fuente(b, 'serie 17.1'))}
 </section>`;
-    return documento('La balanza de pagos de España — ficha de estudio', p1 + '\n' + p2);
+    return documento('Balanza de pagos de España | Ficha SOIVRE', p1 + '\n' + p2, {
+        descripcion: 'Ficha de estudio del tema 2 del ejercicio 3 del temario de Inspectores del SOIVRE: la balanza de pagos de España por cuentas, con datos del Banco de España.',
+        archivo: 'bp-balanza.html',
+    });
 }
 
 // --- Ficha 2: turismo (ejercicio 1, tema 23) ---------------------------------------------
@@ -234,7 +237,10 @@ function fichaTurismo(b) {
   ${tablaDetalle(['Origen del viajero', String(ult), String(prev), `Var. ${String(ult).slice(2)}/${String(prev).slice(2)}`, 'Peso'], filas)}
   ${pie('2 / 2', 'Los países están dentro de sus zonas: no se suman a ellas.', fuente(b, 'serie 17.4, ingresos por turismo por país'))}
 </section>`;
-    return documento('Turismo en la balanza de pagos — ficha de estudio', p1 + '\n' + p2);
+    return documento('Turismo en la balanza de pagos de España | Ficha SOIVRE', p1 + '\n' + p2, {
+        descripcion: 'Ficha de estudio del tema 23 del ejercicio 1 del temario de Inspectores del SOIVRE: ingresos por turismo en la balanza de pagos de España por origen del viajero, con datos del Banco de España.',
+        archivo: 'bp-turismo.html',
+    });
 }
 
 // --- Ficha 3: servicios no turísticos (ejercicio 1, tema 24) -------------------------------
@@ -294,7 +300,10 @@ function fichaServicios(b) {
   ${tablaDetalle(['Tipo de servicio', 'Ingresos', 'Var.', 'Pagos', 'Var.', 'Saldo'], filas)}
   ${pie('2 / 2', 'I+D, consultoría y servicios técnicos están dentro de otros servicios empresariales: no se suman aparte.', fuente(b, 'serie 17.4, servicios no turísticos por tipo'))}
 </section>`;
-    return documento('Servicios no turísticos en la balanza de pagos — ficha de estudio', p1 + '\n' + p2);
+    return documento('Servicios no turísticos en la balanza de pagos | Ficha SOIVRE', p1 + '\n' + p2, {
+        descripcion: 'Ficha de estudio del tema 24 del ejercicio 1 del temario de Inspectores del SOIVRE: servicios no turísticos en la balanza de pagos de España por tipo, con datos del Banco de España.',
+        archivo: 'bp-servicios.html',
+    });
 }
 
 // --- Principal ------------------------------------------------------------------------
@@ -308,6 +317,7 @@ function main() {
         console.log(`  · ${fichero}`);
     }
     console.log(`${Object.keys(fichas).length} ficha(s) de balanza de pagos en public/fichas/.`);
+    actualizarSitemapFichas();
 }
 
 main();
