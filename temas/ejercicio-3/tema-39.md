@@ -140,7 +140,7 @@ El OSD es el propio Consejo General reunido en esa calidad.
 
 ## 6.3. Un ejemplo: las aceitunas negras españolas (DS577)
 
-Ilustra todas las etapas y afecta a un sector exportador español. En 2018 EEUU impuso derechos antidumping y compensatorios a la aceituna negra española, que en conjunto rondaban el 35 %. Los compensatorios se basaban en que las ayudas de la PAC beneficiaban indirectamente a la aceituna transformada.
+Ilustra todas las etapas y afecta a un sector exportador español. En 2018 EEUU impuso derechos antidumping y compensatorios a la aceituna negra española. Los compensatorios se basaban en que las ayudas de la PAC beneficiaban indirectamente a la aceituna transformada.
 
 La Unión Europea pidió consultas en enero de 2019 y el informe, adoptado en diciembre de 2021, le dio la razón por incompatibilidad con el Acuerdo sobre Subvenciones y Medidas Compensatorias. Un grupo especial de cumplimiento confirmó en marzo de 2024 el incumplimiento. En octubre de 2025 un árbitro fijó las contramedidas en un máximo de **13,64 millones de dólares anuales**, autorizadas por el OSD en diciembre de 2025.
 
