@@ -26,6 +26,7 @@ const PAGINAS = {
     'metodologia.html': 'comercio',
     'enlaces.html': 'enlaces',
     'sobre-mi.html': 'sobre-mi',
+    'legal.html': null,
     '404.html': null
 };
 
