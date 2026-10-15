@@ -40,25 +40,6 @@
     <!-- Tailwind CSS (compiled) -->
     <link rel="stylesheet" href="css/tailwind.css">
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Dataset",
-      "name": "Comercio exterior de España por sectores, 2021-2025",
-      "description": "Exportaciones e importaciones españolas por sector agroalimentario e industrial, en millones de euros, con tasa de variación anual, cuota de la UE27 y tres principales destinos u orígenes. Elaborado a partir de DataComex.",
-      "url": "https://sergioargudo.es/metodologia.html",
-      "inLanguage": "es",
-      "isAccessibleForFree": true,
-      "temporalCoverage": "2021/2025",
-      "spatialCoverage": { "@type": "Place", "name": "España" },
-      "isBasedOn": "https://datacomex.comercio.es/",
-      "creator": { "@type": "Person", "@id": "https://sergioargudo.es/#autor", "name": "Sergio Argudo Santiago", "url": "https://sergioargudo.es/sobre-mi.html" },
-      "distribution": [
-        { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://sergioargudo.es/data/flujos_data.csv" }
-      ]
-    }
-    </script>
-
     <!-- recursos:inicio -->
     <link rel="preload" href="fonts/public-sans-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/fuentes.css">
@@ -113,7 +94,6 @@
                     <li><a href="#sectores"><span class="c-num">2</span>Cómo están organizados los sectores</a></li>
                     <li><a href="#indicadores"><span class="c-num">3</span>Cómo se calcula cada indicador</a></li>
                     <li><a href="#limitaciones"><span class="c-num">4</span>Limitaciones conocidas</a></li>
-                    <li><a href="#descarga"><span class="c-num">5</span>Descarga de los datos</a></li>
                 </ol>
             </nav>
 
@@ -180,15 +160,6 @@
                         <li><strong>Los sectores no son mutuamente exhaustivos.</strong> La suma de los sectores mostrados no reproduce el comercio exterior español total: quedan fuera capítulos no clasificados en estos dos macro-sectores. Y al revés: cada macro-sector usa su propia clasificación, así que unos 2.500 M&euro; de exportación de 2025 (flores y plantas, alcohol, gomas y resinas vegetales, almidón) aparecen en los dos. No conviene sumarlos.</li>
                         <li><strong>Sin desagregación mensual ni por comunidad autónoma.</strong> Todo es anual y de ámbito nacional.</li>
                     </ul>
-            </section>
-            <section class="c-seccion" id="descarga">
-                    <h2 class="c-seccion-titulo"><span class="c-num">5</span>Descarga de los datos</h2>
-                    <p>Los datos de flujos comerciales que alimentan el visualizador se pueden descargar. El fichero va en UTF-8 con marca de orden de bytes, de modo que Excel abre las tildes correctamente con doble clic.</p>
-                    <div class="c-acciones">
-                        <a href="data/flujos_data.csv" download class="c-boton c-boton-descarga">Flujos comerciales 2021&ndash;2025 (CSV)</a>
-                        <a href="comercio-exterior.html" class="c-boton c-boton-principal">Ir al visualizador</a>
-                    </div>
-                    <p class="c-nota">Puedes reutilizar estos datos citando la fuente original (DataComex &mdash; Ministerio de Economía, Comercio y Empresa; Banco de España). Si detectas un error, agradezco el aviso: <a href="sobre-mi.html">contacto</a>.</p>
             </section>
 
         </div>
