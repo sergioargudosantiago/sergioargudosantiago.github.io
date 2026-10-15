@@ -55,6 +55,19 @@ document.addEventListener('click', (e) => {
     }
 });
 
+// Descargas de esquemas (PDF y Word) como eventos de GoatCounter. Los enlaces
+// se pintan después de cargar count.js, así que no sirve data-goatcounter-click.
+// El nombre coincide con el del botón «Descargar PDF» de cada esquema.
+document.addEventListener('click', (e) => {
+    const enlace = e.target.closest('a.t-descarga[download]');
+    if (!enlace || !window.goatcounter || !window.goatcounter.count) return;
+    window.goatcounter.count({
+        path: 'descarga: ' + decodeURIComponent(enlace.getAttribute('href')),
+        title: enlace.getAttribute('aria-label'),
+        event: true
+    });
+});
+
 /* =========================================
    Scroll Reveal Animations
    ========================================= */

@@ -353,6 +353,7 @@ function pagina({ ejercicio, numero, enunciado, cuerpo, indice, actualizado }) {
 <link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
 <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
 <link rel="stylesheet" href="../../../css/fuentes.css">
+<script>if (location.hostname === 'sergioargudo.es') { var gc = document.createElement('script'); gc.async = true; gc.src = 'https://gc.zgo.at/count.js'; gc.setAttribute('data-goatcounter', 'https://sergioargudo.goatcounter.com/count'); document.head.appendChild(gc); }</script>
 <style>${ESTILOS}
 @page { @bottom-left { content: "${cadenaCSS(`Esquema · ${recortar(tituloTema, 88)}`)}"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
 </style>
@@ -361,7 +362,7 @@ function pagina({ ejercicio, numero, enunciado, cuerpo, indice, actualizado }) {
 <header class="barra">
   <div class="barra-in">
     <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
-    <div class="acciones"><a class="boton" href="${pdf}" download="${escapeHTML(descarga)}">Descargar PDF</a></div>
+    <div class="acciones"><a class="boton" href="${pdf}" download="${escapeHTML(descarga)}" data-goatcounter-click="descarga: public/temas/ejercicio-${ejercicio}/${pdf}" data-goatcounter-title="Esquema del tema ${numero} en PDF">Descargar PDF</a></div>
   </div>
 </header>
 <main class="hoja">

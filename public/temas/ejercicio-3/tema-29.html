@@ -9,6 +9,7 @@
 <link rel="icon" href="../../../logos/png/SAS-icono-claro.png?v=3" type="image/png">
 <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
 <link rel="stylesheet" href="../../../css/fuentes.css">
+<script>if (location.hostname === 'sergioargudo.es') { var gc = document.createElement('script'); gc.async = true; gc.src = 'https://gc.zgo.at/count.js'; gc.setAttribute('data-goatcounter', 'https://sergioargudo.goatcounter.com/count'); document.head.appendChild(gc); }</script>
 <style>
 @page { size: A4; margin: 14mm 12.5mm 15mm;
   @bottom-right { content: "sergioargudo.es · " counter(page) " / " counter(pages); font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #4A5546; }
@@ -74,6 +75,9 @@ h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
 .esq li > ul > li { position: relative; }
 .esq li > ul > li::before { content: "–"; position: absolute; left: -13px; color: #6B7568; }
 .esq b { font-weight: 700; }
+.fig { margin: 14px 0; break-inside: avoid; }
+.fig img { display: block; width: 100%; height: auto; border: 1px solid #C9D1C5; }
+.fig figcaption { margin-top: 5px; font-size: .85em; color: #4A5546; }
 
 .pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; border-top: 1px solid #C9D1C5; padding-top: 8px; font-size: 12.5px; color: #4A5546; }
 .pie .url { font-family: 'IBM Plex Mono', monospace; }
@@ -115,6 +119,10 @@ h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
   .esq ul, .esq ol { padding-left: 14px; }
   .esq li > ul { padding-left: 14px; }
   .esq li > ul > li::before { left: -11px; }
+  /* Una figura no cabe en media columna: ocupa el ancho de la hoja. */
+  .fig { column-span: all; margin: 10px 0; }
+  .fig img { max-height: 200mm; width: auto; max-width: 100%; margin: 0 auto; border: 0; }
+  .fig figcaption { text-align: center; }
 }
 
 @page { @bottom-left { content: "Esquema · Tema 29. Medidas de armonización y transparencia en la Unión Europea"; font-family: 'Public Sans', sans-serif; font-size: 8.5pt; color: #4A5546; } }
@@ -124,7 +132,7 @@ h4.sub span { background: #FFFFFF; border-color: #C9D1C5; box-shadow: none; }
 <header class="barra">
   <div class="barra-in">
     <a class="marca" href="../../../esquemas.html">← ESQUEMAS</a>
-    <div class="acciones"><a class="boton" href="tema-29.pdf" download="Esquema tema 29 (ejercicio 3).pdf">Descargar PDF</a></div>
+    <div class="acciones"><a class="boton" href="tema-29.pdf" download="Esquema tema 29 (ejercicio 3).pdf" data-goatcounter-click="descarga: public/temas/ejercicio-3/tema-29.pdf" data-goatcounter-title="Esquema del tema 29 en PDF">Descargar PDF</a></div>
   </div>
 </header>
 <main class="hoja">
