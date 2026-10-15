@@ -123,6 +123,9 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
   el efecto para quien usa la web, no el cambio de código.
 - Las cifras publicadas citan fuente oficial (DataComex, AEAT, BdE, INE, Eurostat,
   Census) y periodo. Si un dato no se puede verificar, no se publica.
+- **DataComex no se cita como fuente** en `comercio-exterior.html`, `metodologia.html` ni en el
+  pie (decisión del autor, 15 oct): ahí la fuente de los flujos es la estadística de comercio
+  exterior de Aduanas (AEAT) y el enlace va a la Agencia Tributaria.
 - La navegación, el pie y las fuentes salen de `src/parciales/`; el resto del
   `<head>` (meta, Open Graph) sigue siendo propio de cada página.
 - El dominio absoluto aparece en canonical, Open Graph, sitemap, robots y feed:
