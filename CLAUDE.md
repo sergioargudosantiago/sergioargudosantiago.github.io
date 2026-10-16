@@ -51,12 +51,12 @@ Todo el contenido, la interfaz y los commits están en **español**.
 
 | Ruta | Qué es |
 |---|---|
-| `index.html`, `esquemas.html`, `fichas.html`, `sobre-mi.html`, `enlaces.html`, `legal.html` | Páginas del sitio. `temario.html` solo redirige a `esquemas.html` (conserva `?q=`) |
+| `index.html`, `esquemas.html`, `fichas.html`, `novedades.html`, `sobre-mi.html`, `enlaces.html`, `legal.html` | Páginas del sitio. `temario.html` solo redirige a `esquemas.html` (conserva `?q=`) |
 | `comercio-exterior.html`, `metodologia.html` | Visualizador y su metodología |
 | `js/main.js` | Navegación, modales y listado de esquemas |
 | `js/esquemas-fechas.js`, `js/esquemas-programa.js` | Generados por `npm run esquemas -- --publicar`: no editar |
 | `js/graficos.js` | Gráficos SVG de la web (líneas, apiladas, ranking, mancuernas) |
-| `data/` | Datos que carga la web (`balanza_data.js`, `flujos_data.csv`) y la paleta (`paleta.json`) |
+| `data/` | Datos que carga la web (`balanza_data.js`, `flujos_data.csv`), la paleta (`paleta.json`) y las novedades apuntadas a mano (`novedades.json`) |
 | `articulos/` | Artículos: los `.md` son la fuente; los `.html` se generan |
 | `temas/ejercicio-N/tema-NN.md` | Esquemas en Markdown: la fuente de `public/temas/` |
 | `temas/actualizado.json`, `temas/programa.json` | Fecha de cada esquema rehecho y enunciados oficiales del BOE |
@@ -79,9 +79,19 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
 - **Artículos**: escribir `articulos/<slug>.md` con frontmatter y ejecutar
   `npm run articulos`. Genera el `.html`, el índice, `feed.xml`, las entradas del
   sitemap, el bloque de último artículo de la portada (marcas `ultimo-articulo:`) y un
-  borrador de post de LinkedIn en `review/linkedin/`. **No editar a mano los `.html` de
-  `articulos/`**. Formato completo en `articulos/README.md`. Los gráficos interactivos
+  borrador de post de LinkedIn en `review/linkedin/`, y luego regenera las novedades.
+  El bloque de la portada lleva el gráfico que diga `portada:` en el frontmatter y, si
+  el artículo está `proximamente`, sale bloqueado con el sello de la fecha. **No editar
+  a mano los `.html` de `articulos/`**. Formato completo en `articulos/README.md`. Los gráficos interactivos
   salen de R (ggiraph) como fragmentos en `articulos/fragmentos/`.
+- **Novedades**: `scripts/generar-novedades.js` (`npm run novedades`) escribe la página
+  `novedades.html` (estado de esquemas, datos y artículos, y la lista por meses) y la
+  franja de la portada (las tres últimas), entre marcas `novedades:` y
+  `novedades-franja:`. Lee `data/novedades.json`, los artículos publicados y la fecha de
+  la última balanza de pagos. Lo llaman `npm run articulos` y `npm run balanza`. **Tras
+  publicar esquemas, fichas o flujos nuevos**, apuntarlo:
+  `npm run novedades -- --nueva esquemas "Los temas 47 a 53 del ejercicio 3 se leen en línea y en PDF" "Esquemas 47 a 53 del ej. 3" esquemas.html`
+  (tipos: `esquemas`, `fichas`, `datos`, `web`; la fecha es la del día).
 - **Balanza de pagos**: `npm run balanza` descarga de la API del Banco de España,
   valida y regenera `data/balanza_data.js` y las fichas (Node ≥ 18, sin dependencias).
   `npm run balanza:comprobar` valida sin escribir. Las validaciones están en
@@ -128,7 +138,7 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
   --publicar`, restaurar con `git checkout` los HTML/PDF de otros temas que solo cambian
   de fin de línea, borrar de `public/temas/ejercicio-N/` su `ESQUEMA TEMA N.docx` y su
   `TEMA N. ….pdf`, y actualizar las cifras de las tarjetas de `esquemas.html` y de la
-  portada.
+  portada, y apuntar la novedad (ver Novedades).
 - **Auditoría de temas**: `npm run temas:revisar` extrae texto de los PDF antiguos y
   lanza `scripts/auditar-temas.js`; la salida va a `review/`.
 - Servir en local: `python -m http.server 8000`. Para PDF y capturas hace falta
@@ -168,32 +178,29 @@ Viven solo en la máquina local; una sesión en la nube no los tiene.
   completo (55) y ejercicio 3 salvo los temas 47 a 53 (51 de 58). El ejercicio 5 (46) y
   los temas 47 a 53 del ejercicio 3 siguen con Word y PDF antiguos y el listado dice
   «En actualización».
-- **Artículos**: ninguno publicado todavía; el feed está vacío.
+- **Artículos**: ninguno publicado todavía; el de los 5 gráficos sale el martes 20 de
+  octubre (hoy en `estado: proximamente`).
 - **SEO**: la rama `claude/seo-indexar-esquemas` (esquemas y fichas indexables, sitemap
   de 122 URL) está sin fusionar y por detrás de `main`.
 
 ## Pendiente
 
-Por decidir o por hacer, sin orden de prioridad salvo la primera:
+Por decidir o por hacer, sin orden de prioridad salvo la primera. Maquetas de la
+portada y las novedades (16 oct, elegidas: portada 3 y novedades B):
+<https://claude.ai/artifact/HtiZLR1ksKyp9BKy8XLMs2> (privado, del autor).
 
-1. **Calendario del 27 de octubre**: el `.md` de los 5 gráficos lleva esa fecha y la
-   tabla de abajo ponía el de las dos estadísticas. Elegir uno y mover el otro.
-2. **Novedades**: página y bloque en portada que se escriban solos (fechas de
-   `temas/actualizado.json`, artículos y datos). Maquetas con tres alternativas de
-   portada y tres de novedades: <https://claude.ai/artifact/HtiZLR1ksKyp9BKy8XLMs2>
-   (privado, del autor).
-3. **Portada**: hoy solo habla a opositores; abrirla a quien busca datos y al cuerpo
-   (mismas maquetas).
-4. **SEO**: fusionar o rehacer la rama de indexación y añadir enlaces visibles a cada
+1. **Martes 20 de octubre**: publicar los 5 gráficos (quitar `estado: proximamente` y
+   `npm run articulos`).
+2. **SEO**: fusionar o rehacer la rama de indexación y añadir enlaces visibles a cada
    tema en `esquemas.html` (hoy solo aparecen al pulsar la tarjeta).
-5. **Balanza de pagos mensual con GitHub Actions**, con las validaciones actuales.
-6. **Visualizaciones nuevas** por elegir: <https://claude.ai/artifact/2fRUYTb3vMTJCnbyV63fGN>
+3. **Balanza de pagos mensual con GitHub Actions**, con las validaciones actuales.
+4. **Visualizaciones nuevas** por elegir: <https://claude.ai/artifact/2fRUYTb3vMTJCnbyV63fGN>
    (privado).
-7. **Autor**: revisar las «claves para el tema» de las fichas.
-8. Comprobar los enlaces externos (desde una red que llegue a ellos).
-9. Cuando no quede ningún esquema antiguo, adaptar `scripts/extraer-temas.sh` (lee
+5. **Autor**: revisar las «claves para el tema» de las fichas.
+6. Comprobar los enlaces externos (desde una red que llegue a ellos).
+7. Cuando no quede ningún esquema antiguo, adaptar `scripts/extraer-temas.sh` (lee
    `TEMA N.….pdf`) y los textos de `scripts/auditar-temas.js` que hablan del `.docx`.
-10. Ramas locales `articulo-5-graficos`, `dominio` y `claude/epic-edison-9bfk3y`: del
+8. Ramas locales `articulo-5-graficos`, `dominio` y `claude/epic-edison-9bfk3y`: del
     historial anterior a la reescritura del 10 de octubre; borrarlas si el autor lo confirma.
 
 Aparcado: chat con IA sobre los temas (necesita servidor y API de pago).
@@ -205,7 +212,7 @@ borrador). Comprobar normativa y datos vigentes antes de redactar cada uno.
 
 | Fecha | Artículo | Base |
 |---|---|---|
-| 27 oct | El comercio exterior español en 5 gráficos (fecha del `.md`; ver Pendiente 1) | `articulos/comercio-exterior-5-graficos.md` |
+| 20 oct | El comercio exterior español en 5 gráficos | `articulos/comercio-exterior-5-graficos.md` |
 | por fijar | Por qué dos estadísticas oficiales no dan la misma cifra de exportaciones | `balanza/informe_discrepancias_agroalimentario.md` |
 | 10 nov | Qué mide (y qué no) la cuota UE de un sector | `metodologia.html` |
 | 24 nov | La balanza de pagos de España en 2026 | `data/balanza_data.js` |

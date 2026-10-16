@@ -84,7 +84,7 @@
     <header class="sitio-cabecera">
         <div class="sitio-cabecera-int">
             <a class="sitio-marca" href="index.html" aria-label="SAS Sergio Argudo Santiago, inicio">
-                <svg viewBox="0 0 120 120" aria-hidden="true" fill="currentColor"><rect x="8" y="12" width="80" height="20"/><polygon points="86,2 114,22 86,42"/><rect x="8" y="12" width="20" height="48"/><rect x="8" y="50" width="104" height="20" opacity="0.55"/><rect x="92" y="50" width="20" height="58"/><rect x="32" y="88" width="80" height="20"/><polygon points="34,78 6,98 34,118"/></svg>
+                <svg viewBox="0 0 120 120" aria-hidden="true"><rect x="8" y="12" width="80" height="20" fill="#E0C46B"/><polygon points="86,2 114,22 86,42" fill="#E0C46B"/><rect x="8" y="12" width="20" height="48" fill="#E0C46B"/><rect x="8" y="50" width="104" height="20" fill="#FFFFFF"/><rect x="92" y="50" width="20" height="58" fill="#C2D9C2"/><rect x="32" y="88" width="80" height="20" fill="#C2D9C2"/><polygon points="34,78 6,98 34,118" fill="#C2D9C2"/></svg>
                 <span class="sitio-marca-sigla">SAS</span>
                 <span class="sitio-marca-nombre">Sergio Argudo Santiago</span>
             </a>
@@ -93,6 +93,7 @@
                 <a href="esquemas.html" data-seccion="esquemas">Esquemas</a>
                 <a href="comercio-exterior.html" data-seccion="comercio">Comercio exterior</a>
                 <a href="articulos/index.html" data-seccion="articulos">Artículos</a>
+                <a href="novedades.html" data-seccion="novedades">Novedades</a>
                 <a href="enlaces.html" data-seccion="enlaces">Enlaces</a>
                 <a href="sobre-mi.html" data-seccion="sobre-mi">Sobre mí</a>
             </nav>
@@ -123,6 +124,20 @@
             </div>
         </section>
 
+        <!-- novedades-franja:inicio -->
+        <aside class="c-franja" aria-labelledby="franja-titulo">
+            <div class="c-franja-int">
+                <h2 class="c-franja-rotulo" id="franja-titulo">Novedades</h2>
+                <ul class="c-franja-lista">
+                    <li><a href="esquemas.html"><time datetime="2026-10-15">15 oct</time> Esquemas 56 a 58 del ej. 3</a></li>
+                    <li><a href="esquemas.html"><time datetime="2026-10-15">15 oct</time> Esquemas 44 a 46, 54 y 55 del ej. 3</a></li>
+                    <li><a href="esquemas.html"><time datetime="2026-10-14">14 oct</time> Esquemas 37 a 43 del ej. 3</a></li>
+                </ul>
+                <a class="c-franja-todas" href="novedades.html">Todas &rarr;</a>
+            </div>
+        </aside>
+        <!-- novedades-franja:fin -->
+
         <div class="c-principal">
             <div class="c-columna-sitio">
 
@@ -137,14 +152,31 @@
                         <span class="c-cifra-grande">2021–2025</span>
                         <span>Exportaciones e importaciones por sector, saldo, cuota UE y principales mercados, y la balanza de pagos mensual.</span>
                     </a>
-                    <!-- ultimo-articulo:inicio -->
-                    <div class="c-tarjeta-enlace c-tarjeta-proxima" aria-disabled="true">
-                        <span class="c-antetitulo"><svg class="c-candado" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><rect x="3" y="7" width="10" height="8" rx="1.5" fill="currentColor"/><path d="M5 7V5a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> Próximo artículo</span>
-                        <span class="c-titulo-tarjeta">El comercio exterior español en 5 gráficos</span>
-                        <span>Cuánto exporta e importa España, qué sectores pesan, adónde van sus exportaciones, con quién tiene superávit y déficit y qué exporta a cada gran socio. Cinco gráficos con los datos de 2025.</span>
-                    </div>
-                    <!-- ultimo-articulo:fin -->
                 </section>
+
+                <!-- ultimo-articulo:inicio -->
+                <section class="c-seccion c-destacado c-destacado-proximo" aria-labelledby="destacado-titulo" aria-disabled="true">
+                    <div class="c-destacado-texto">
+                        <p class="c-antetitulo"><svg class="c-candado" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><rect x="3" y="7" width="10" height="8" rx="1.5" fill="currentColor"/><path d="M5 7V5a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> Próximo artículo · martes 20 de octubre de 2026</p>
+                        <h2 class="c-destacado-titulo" id="destacado-titulo">El comercio exterior español en 5 gráficos</h2>
+                        <p class="c-entradilla">Cuánto exporta e importa España, qué sectores pesan, adónde van sus exportaciones, con quién tiene superávit y déficit y qué exporta a cada gran socio. Cinco gráficos con los datos de 2025.</p>
+                    </div>
+                    <div class="c-destacado-grafico art-figura" data-alt="Exportaciones e importaciones de bienes, 2015-2025">
+                        <figure class="art-fig">
+                            <div class="art-fig-cabecera"><p class="art-fig-titulo">Exportaciones e importaciones de bienes, 2015-2025</p><span class="c-sello">Se publica el martes 20 de octubre</span></div>
+                            <p class="art-fig-unidad">Millones de euros</p>
+                            <div class="graficos-leyenda">
+    <span><i class="graficos-muestra" style="background:var(--p-flujos-exportaciones)"></i>Exportaciones</span>
+    <span><i class="graficos-muestra" style="background:var(--p-flujos-importaciones)"></i>Importaciones</span>
+  </div>
+                            <div class="graficos-lienzo" data-grafico="g1-flujos" data-h="250"></div>
+                            <figcaption class="art-fig-fuente" data-fuente></figcaption>
+                        </figure>
+                    </div>
+                    <script src="js/graficos.js"></script>
+                    <script src="articulos/recursos/comercio-5-graficos.js"></script>
+                </section>
+                <!-- ultimo-articulo:fin -->
 
                 <section class="c-seccion" aria-labelledby="porque">
                     <h2 class="c-seccion-titulo" id="porque">¿Por qué Inspector del SOIVRE?</h2>
@@ -188,6 +220,7 @@
                     <li><a href="esquemas.html">Esquemas</a></li>
                     <li><a href="comercio-exterior.html">Comercio exterior</a></li>
                     <li><a href="articulos/index.html">Artículos</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
                     <li><a href="enlaces.html">Enlaces</a></li>
                     <li><a href="sobre-mi.html">Sobre mí</a></li>
                 </ul>
@@ -209,12 +242,6 @@
     <!-- pie:fin -->
 
     <script src="js/main.js"></script>
-    <!-- Analítica ligera y sin cookies (GoatCounter, gratis para uso no comercial).
-         Para activarla: 1) crea una cuenta en https://www.goatcounter.com con el código "sergioargudosantiago";
-         2) descomenta este script. No usa cookies, no requiere consentimiento.
-    <script data-goatcounter="https://sergioargudosantiago.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
-    -->
 </body>
 
 </html>

@@ -7,6 +7,10 @@
 (function () {
     'use strict';
 
+    // Raíz del sitio a partir de la ruta de este script: así sirve igual en la
+    // página del artículo y en el bloque de la portada, que pinta solo uno.
+    const RAIZ = new URL('../../', document.currentScript.src);
+
     const NOMBRE_FLUJO = { exportaciones: 'Exportaciones', importaciones: 'Importaciones' };
     // ISO2 de los países con color propio en data/paleta.json (familia paises)
     const ISO_PALETA = { FR: 'francia', DE: 'alemania', IT: 'italia', PT: 'portugal', GB: 'reino-unido',
@@ -33,7 +37,7 @@
             nombres: ['Exportaciones', 'Importaciones'], colores: ['--p-flujos-exportaciones', '--p-flujos-importaciones'],
             desde: desde < 0 ? null : desde, yMin: 200000, titulo: alt('g1-flujos')
         });
-        Graficos.apiladas(lienzo('g1-saldo'), {
+        if (lienzo('g1-saldo')) Graficos.apiladas(lienzo('g1-saldo'), {
             x, etiquetas: x,
             series: [
                 { nombre: 'Saldo energético', valores: d.anual.map(a => a.saldo_energetico), color: '--p-sectores-energeticos' },
@@ -115,7 +119,7 @@
         let d, paleta;
         try {
             [d, paleta] = await Promise.all([
-                json('../data/articulos/comercio-5-graficos.json'), json('../data/paleta.json')]);
+                json(new URL('data/articulos/comercio-5-graficos.json', RAIZ)), json(new URL('data/paleta.json', RAIZ))]);
         } catch (e) {
             document.querySelectorAll('.art-fig .graficos-lienzo').forEach(el => {
                 el.innerHTML = '<p class="c-nota">No se han podido cargar los datos del gráfico.</p>';
@@ -126,10 +130,10 @@
         document.querySelectorAll('.art-fig [data-anio]').forEach(el => { el.textContent = d.anio; });
         const nombreSector = Object.fromEntries(paleta.sectores.map(s => [s.id, s.nombre]));
         g1(d);
-        g2(d, nombreSector);
-        conmutador('g3', flujo => g3(d, flujo));
-        g4(d);
-        conmutador('g5', flujo => g5(d, paleta, flujo));
+        if (lienzo('g2')) g2(d, nombreSector);
+        if (lienzo('g3')) conmutador('g3', flujo => g3(d, flujo));
+        if (lienzo('g4')) g4(d);
+        if (lienzo('g5')) conmutador('g5', flujo => g5(d, paleta, flujo));
         // Al cambiar de tema, los colores salen de otras variables
         new MutationObserver(() => Graficos.redibujarTodo())
             .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme', 'class'] });

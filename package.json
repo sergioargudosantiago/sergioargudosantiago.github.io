@@ -9,7 +9,7 @@
     "temas:extraer": "bash scripts/extraer-temas.sh",
     "temas:auditar": "node scripts/auditar-temas.js",
     "temas:revisar": "npm run temas:extraer && npm run temas:auditar",
-    "articulos": "node scripts/build-articulos.js",
+    "articulos": "node scripts/build-articulos.js && node scripts/generar-novedades.js",
     "articulos:previa": "node scripts/build-articulos.js --previa",
     "parciales": "node scripts/sincronizar-parciales.js && node scripts/build-articulos.js",
     "fichas": "node scripts/generar-fichas.js && node scripts/generar-fichas-balanza.js",
@@ -18,11 +18,12 @@
     "esquemas:pdf": "node scripts/esquemas-pdf.js",
     "paleta": "node scripts/generar-paleta.js",
     "capturas": "node scripts/capturar-graficos.js",
-    "balanza": "node scripts/update_balanza_data.js && npm run fichas",
+    "balanza": "node scripts/update_balanza_data.js && npm run fichas && npm run novedades",
     "balanza:comprobar": "node scripts/update_balanza_data.js --simular",
     "marca": "node scripts/generar-logos.js",
     "marca:png": "node scripts/rasterizar-marca.js",
-    "test": "node --test \"scripts/lib/*.test.js\""
+    "test": "node --test \"scripts/lib/*.test.js\"",
+    "novedades": "node scripts/generar-novedades.js"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.19"

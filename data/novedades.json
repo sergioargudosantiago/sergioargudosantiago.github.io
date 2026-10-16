@@ -1,0 +1,8 @@
+[
+  { "fecha": "2026-10-15", "tipo": "esquemas", "texto": "Los temas 56, 57 y 58 del ejercicio 3 se leen en línea y en PDF", "corto": "Esquemas 56 a 58 del ej. 3", "enlace": "esquemas.html" },
+  { "fecha": "2026-10-15", "tipo": "esquemas", "texto": "Los temas 44, 45, 46, 54 y 55 del ejercicio 3 se leen en línea y en PDF", "corto": "Esquemas 44 a 46, 54 y 55 del ej. 3", "enlace": "esquemas.html" },
+  { "fecha": "2026-10-14", "tipo": "esquemas", "texto": "Los temas 37 a 43 del ejercicio 3 se leen en línea y en PDF", "corto": "Esquemas 37 a 43 del ej. 3", "enlace": "esquemas.html" },
+  { "fecha": "2026-10-13", "tipo": "esquemas", "texto": "El ejercicio 1, completo: sus 55 esquemas se leen en línea y en PDF", "corto": "Ejercicio 1 completo", "enlace": "esquemas.html" },
+  { "fecha": "2026-10-13", "tipo": "esquemas", "texto": "Cada tema lleva su enunciado oficial del BOE", "corto": "Enunciados oficiales del BOE", "enlace": "esquemas.html" },
+  { "fecha": "2026-10-13", "tipo": "web", "texto": "Nace sergioargudo.es: esquemas, datos de comercio exterior y artículos", "corto": "Nace sergioargudo.es", "enlace": "index.html" }
+]

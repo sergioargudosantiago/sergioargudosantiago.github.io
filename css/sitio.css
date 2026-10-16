@@ -552,6 +552,34 @@ html.dark { --c-negativo: #F08A80; }
 .c-arcade .c-cifra-grande { color: var(--c-barra-activo); font-family: var(--f-marca); font-weight: 800; }
 .c-arcade-rotulo { font-family: var(--f-marca); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--c-oro-texto); }
 
+/* Franja de novedades bajo la cabecera de la portada (scripts/generar-novedades.js) */
+.c-franja { background: var(--c-barra); color: var(--c-barra-texto); }
+.c-franja-int { max-width: var(--ancho-sitio); margin: 0 auto; padding: 0.9rem 1rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.75rem; }
+.c-franja-rotulo { font-family: var(--f-marca) !important; font-size: 0.75rem !important; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--c-oro-texto); margin: 0; }
+.c-franja-lista { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.75rem; }
+.c-franja-lista a { color: var(--c-barra-activo); text-decoration: none; font-size: 0.95rem; }
+.c-franja-lista a:hover { text-decoration: underline; text-decoration-color: var(--c-oro-texto); text-underline-offset: 3px; }
+.c-franja-lista time { font-family: var(--f-cifras); color: var(--c-barra-texto); margin-right: 0.35rem; }
+.c-franja-todas { margin-left: auto; color: var(--c-oro-texto); font-weight: 700; font-size: 0.95rem; }
+@media (min-width: 768px) { .c-franja-int { padding-inline: 1.5rem; } }
+@media (max-width: 760px) { .c-franja-lista { flex-direction: column; } .c-franja-todas { margin-left: 0; } }
+
+/* Bloque del último artículo en la portada (scripts/build-articulos.js) */
+.c-destacado { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2rem; align-items: center; }
+.c-destacado-texto { display: grid; gap: 0.9rem; align-content: center; }
+.c-destacado-titulo { font-family: var(--f-titular) !important; font-weight: 600; font-size: clamp(1.7rem, 1.2rem + 1.6vw, 2.4rem); line-height: 1.12; }
+.c-destacado-proximo .c-destacado-texto { opacity: 0.72; }
+.c-destacado .art-fig { margin: 0; }
+.c-sello { font-size: 0.75rem; font-weight: 700; background: var(--c-acento); color: var(--c-fondo); padding: 0.2rem 0.55rem; border-radius: 3px; white-space: nowrap; }
+@media (max-width: 860px) { .c-destacado { grid-template-columns: 1fr; } }
+
+/* Lista de novedades (novedades.html) */
+.c-novedades { list-style: none; margin: 0; padding: 0; max-width: 70ch; }
+.c-novedades li { display: grid; grid-template-columns: 4rem 6.5rem minmax(0, 1fr); gap: 0.3rem 1rem; align-items: baseline; padding: 0.75rem 0; border-bottom: 1px solid var(--c-linea); }
+.c-novedades time { font-family: var(--f-cifras); color: var(--c-tenue); }
+.c-novedades-tipo { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--c-tenue); }
+@media (max-width: 760px) { .c-novedades li { grid-template-columns: 4rem minmax(0, 1fr); } .c-novedades li > :last-child { grid-column: 1 / -1; } }
+
 /* -------------------------------------------------------------------------
    Gráficos SVG (js/graficos.js). Los colores de datos son las --p-* del final.
    ------------------------------------------------------------------------- */

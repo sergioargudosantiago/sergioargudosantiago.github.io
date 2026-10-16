@@ -363,27 +363,73 @@ ${articulos.length ? `    <lastBuildDate>${fechaRFC822(articulos[0].fecha)}</las
 `;
 }
 
-/** Tarjeta del último artículo en la portada, entre marcas en index.html. */
+const DIAS = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+const diaSemana = iso => DIAS[new Date(`${iso}T12:00:00Z`).getUTCDay()];
+
+/**
+ * Figura del bloque de la portada: el título, la unidad, la leyenda y el lienzo
+ * de uno de los gráficos del artículo, sacados de su fragmento. Lo pinta el
+ * mismo script del artículo, así que coincide con lo publicado.
+ */
+function figuraPortada(art, sello) {
+    if (!art.portada) return '';
+    const [fichero, id] = art.portada.split('#');
+    const ruta = path.join(DIR_FRAGMENTOS, fichero);
+    if (!id || !fs.existsSync(ruta)) throw new Error(`${art.fichero}: portada "${art.portada}" no apunta a un fragmento y un lienzo`);
+    const frag = fs.readFileSync(ruta, 'utf8');
+    const pos = frag.indexOf(`data-grafico="${id}"`);
+    if (pos < 0) throw new Error(`${art.fichero}: el fragmento ${fichero} no tiene el lienzo ${id}`);
+    const antes = frag.slice(0, pos);
+    const ultimo = re => { const t = [...antes.matchAll(re)]; return t.length ? t[t.length - 1][0] : ''; };
+    const titulo = ultimo(/<p class="art-fig-titulo[^"]*">[\s\S]*?<\/p>/g).replace(/ art-fig-titulo-2/, '');
+    const unidad = ultimo(/<p class="art-fig-unidad">[\s\S]*?<\/p>/g);
+    const leyenda = ultimo(/<div class="graficos-leyenda">[\s\S]*?<\/div>/g);
+    const lienzo = frag.slice(frag.lastIndexOf('<div', pos), frag.indexOf('</div>', pos) + 6);
+    return `
+                    <div class="c-destacado-grafico art-figura" data-alt="${md.escapeAttr(titulo.replace(/<[^>]+>/g, '').trim())}">
+                        <figure class="art-fig">
+                            <div class="art-fig-cabecera">${titulo}${sello ? `<span class="c-sello">${sello}</span>` : ''}</div>
+                            ${unidad}
+                            ${leyenda}
+                            ${lienzo}
+                            <figcaption class="art-fig-fuente" data-fuente></figcaption>
+                        </figure>
+                    </div>
+                    ${art.js.map(j => `<script src="${j}"></script>`).join('\n                    ')}`;
+}
+
+/**
+ * Bloque del último artículo en la portada, entre marcas en index.html. Si el
+ * artículo está «próximamente», sale bloqueado (candado, sin enlace) pero con su
+ * gráfico y la fecha de publicación.
+ */
 function actualizarPortada(articulos) {
     const ruta = path.join(RAIZ, 'index.html');
     const html = fs.readFileSync(ruta, 'utf8');
     const re = /<!-- ultimo-articulo:inicio -->[\s\S]*?<!-- ultimo-articulo:fin -->/;
     if (!re.test(html)) return;
     const art = articulos[0];
-    const tarjeta = art && art.proximamente ? `
-                    <div class="c-tarjeta-enlace c-tarjeta-proxima" aria-disabled="true">
-                        <span class="c-antetitulo">${CANDADO} Próximo artículo</span>
-                        <span class="c-titulo-tarjeta">${md.escapeHTML(art.titulo)}</span>
-                        <span>${md.escapeHTML(art.resumen)}</span>
-                    </div>
-                    ` : art ? `
-                    <a class="c-tarjeta-enlace" href="articulos/${art.slug}.html">
-                        <span class="c-antetitulo">Último artículo · ${fechaLarga(art.fecha)}</span>
-                        <span class="c-titulo-tarjeta">${md.escapeHTML(art.titulo)}</span>
-                        <span>${md.escapeHTML(art.resumen)}</span>
-                    </a>
-                    ` : '';
-    const nuevo = html.replace(re, () => `<!-- ultimo-articulo:inicio -->${tarjeta}<!-- ultimo-articulo:fin -->`);
+    let bloque = '';
+    if (art) {
+        const prox = art.proximamente;
+        const fecha = `${diaSemana(art.fecha)} ${fechaLarga(art.fecha)}`;
+        const ante = prox ? `${CANDADO} Próximo artículo · ${fecha}` : `Último artículo · ${fechaLarga(art.fecha)}`;
+        const acciones = prox ? '' : `
+                        <div class="c-acciones">
+                            <a href="articulos/${art.slug}.html" class="c-boton c-boton-principal">Leer el artículo &rarr;</a>
+                            <a href="articulos/index.html" class="c-boton">Todos los artículos</a>
+                        </div>`;
+        bloque = `
+                <section class="c-seccion c-destacado${prox ? ' c-destacado-proximo' : ''}" aria-labelledby="destacado-titulo"${prox ? ' aria-disabled="true"' : ''}>
+                    <div class="c-destacado-texto">
+                        <p class="c-antetitulo">${ante}</p>
+                        <h2 class="c-destacado-titulo" id="destacado-titulo">${md.escapeHTML(art.titulo)}</h2>
+                        <p class="c-entradilla">${md.escapeHTML(art.resumen)}</p>${acciones}
+                    </div>${figuraPortada(art, prox ? `Se publica el ${fecha.replace(/ de \d{4}$/, '')}` : '')}
+                </section>
+                `;
+    }
+    const nuevo = html.replace(re, () => `<!-- ultimo-articulo:inicio -->${bloque}<!-- ultimo-articulo:fin -->`);
     if (nuevo !== html) fs.writeFileSync(ruta, nuevo, 'utf8');
 }
 
@@ -537,6 +583,8 @@ function main() {
                 // relativa a la raíz del sitio. Solo se cargan donde hacen falta.
                 css: [].concat(datos.css || []),
                 js: [].concat(datos.js || []),
+                // Gráfico del bloque de la portada: «fragmento.html#lienzo»
+                portada: datos.portada || '',
                 palabras,
                 minutos: Math.max(1, Math.round(palabras / PALABRAS_POR_MINUTO)),
                 html: incluirFragmentos(md.render(cuerpo), fichero)

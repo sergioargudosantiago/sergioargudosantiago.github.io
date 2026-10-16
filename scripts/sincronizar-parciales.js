@@ -25,6 +25,7 @@ const PAGINAS = {
     'comercio-exterior.html': 'comercio',
     'metodologia.html': 'comercio',
     'enlaces.html': 'enlaces',
+    'novedades.html': 'novedades',
     'sobre-mi.html': 'sobre-mi',
     'legal.html': null,
     '404.html': null

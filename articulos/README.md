@@ -40,11 +40,28 @@ fecha no tiene ese formato, o el `slug` choca con otro, el build aborta sin
 escribir nada. `autores` por defecto es `[sergio]`; `slug` se deriva del título
 si no lo pones; `imagen` cae en `images/og-cover.png`.
 
+## Bloque de la portada
+
+El artículo más reciente sale en la portada en un bloque con su título, su resumen
+y, si el frontmatter lo pide, uno de sus gráficos:
+
+```yaml
+portada: comercio-g1.html#g1-flujos
+```
+
+Es «fragmento#lienzo»: el generador copia del fragmento el título, la unidad, la
+leyenda y el lienzo de ese gráfico, y carga los `js` del artículo para pintarlo.
+El script del artículo debe pintar solo los lienzos que encuentre en la página y
+leer sus datos con rutas relativas a su propia ubicación (como
+`recursos/comercio-5-graficos.js`).
+
 ## Próximamente
 
 Con `estado: proximamente` en el frontmatter, el artículo aparece en el índice
-y en la portada como tarjeta bloqueada, sin enlace, y queda fuera del feed y
-del sitemap. Su `.html` no se genera, y si existe se borra.
+como tarjeta bloqueada, sin enlace, y queda fuera del feed y del sitemap. En la
+portada sale bloqueado (candado, texto atenuado, sin enlace), pero con su gráfico
+y el sello «Se publica el <fecha>». Su `.html` no se genera, y si existe se borra.
+Al publicarlo, `npm run articulos` también lo añade a las novedades.
 
 Para revisarlo en local:
 
