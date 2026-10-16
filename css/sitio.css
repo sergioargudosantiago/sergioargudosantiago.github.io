@@ -44,6 +44,7 @@
 
     /* Medidas */
     --ancho-lectura: 42rem;
+    --ancho-texto: 45.5rem;       /* línea de párrafos y avisos en secciones anchas (≈ 70ch) */
     --ancho-sitio: 72rem;
 }
 
@@ -426,7 +427,7 @@ hr + .art-metodologia { border-top: 0; padding-top: 0; }
 .c-columna-ancha { max-width: 54rem; margin: 0 auto; }
 .c-columna-sitio { max-width: var(--ancho-sitio); margin: 0 auto; }
 .c-cabecera-pagina { display: grid; gap: 0.9rem; margin-bottom: 2.25rem; }
-.c-cabecera-pagina .c-entradilla { max-width: 60ch; }
+.c-cabecera-pagina .c-entradilla { max-width: var(--ancho-texto); }
 
 .c-indice {
     display: grid;
@@ -454,7 +455,11 @@ hr + .art-metodologia { border-top: 0; padding-top: 0; }
     align-items: baseline;
 }
 .c-seccion-titulo .c-num { font-family: var(--f-cifras); font-size: 0.95rem; font-weight: 500; color: var(--c-tenue); }
-.c-seccion p { max-width: 70ch; }
+.c-seccion p { max-width: var(--ancho-texto); }
+/* Si hay una nota aclaratoria (caja verde), el texto de alrededor llega a su mismo ancho */
+.c-cabecera-pagina:has(> .c-aviso) > p,
+.c-seccion:has(> .c-aviso) p,
+.c-seccion:has(> .c-aviso) .c-lista li { max-width: none; }
 .c-seccion a:not(.c-boton) { text-decoration: underline; text-decoration-color: var(--c-oro); text-decoration-thickness: 2px; text-underline-offset: 3px; }
 
 .c-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
@@ -524,8 +529,12 @@ html.dark { --c-negativo: #F08A80; }
 .c-ilustracion svg { width: 100%; height: 100%; display: block; }
 @media (max-width: 860px) {
     .c-portada-int { grid-template-columns: 1fr; padding-block: 1.75rem 1.5rem; }
-    .c-portada-texto { padding-bottom: 0; }
-    .c-ilustracion { display: none; }
+    /* La S pequeña a la derecha del titular: los hijos del texto pasan a la rejilla */
+    .c-portada-int { grid-template-columns: minmax(0, 1fr) auto; gap: 1.1rem 1rem; }
+    .c-portada-texto { display: contents; }
+    .c-portada-texto > * { grid-column: 1 / -1; }
+    .c-portada-texto > .c-titular { grid-column: 1; grid-row: 2; }
+    .c-ilustracion { grid-column: 2; grid-row: 2; width: clamp(4.25rem, 3rem + 5vw, 6.5rem); aspect-ratio: 1; padding: 14%; border-radius: 10px; justify-self: end; align-self: center; }
 }
 
 .c-tres { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr)); gap: 1rem; margin-bottom: 1rem; }
