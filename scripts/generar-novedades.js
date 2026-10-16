@@ -183,7 +183,7 @@ function pagina(lista, arts, bp, fl, esq) {
 ${g.items.map(n => `                    <li><time datetime="${n.fecha}">${fechaCorta(n.fecha)}</time><span class="c-novedades-tipo">${TIPOS[n.tipo] || esc(n.tipo)}</span>${n.enlace ? `<a href="${esc(n.enlace)}">${esc(n.texto)}</a>` : `<span>${esc(n.texto)}</span>`}</li>`).join('\n')}
                 </ul>${i === meses.length - 1 ? `
                 <div class="c-acciones">
-                    <a class="c-boton" href="feed.xml">Artículos por RSS</a>
+                    <a class="c-boton" href="https://www.linkedin.com/in/sergio-argudo-santiago/" target="_blank" rel="noopener noreferrer">Seguir en LinkedIn</a>
                 </div>` : ''}
             </section>`).join('\n');
 
