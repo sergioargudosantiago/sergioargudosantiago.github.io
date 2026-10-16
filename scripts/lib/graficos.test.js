@@ -26,6 +26,7 @@ test('rangoLineas incluye siempre el cero, también con series solo negativas', 
     assert.deepStrictEqual(G.rangoLineas([-40000, -15000], null), [-40000, 0]);
     assert.deepStrictEqual(G.rangoLineas([100, 300], null), [0, 300]);
     assert.deepStrictEqual(G.rangoLineas([100, 300], 500), [0, 500]);
+    assert.deepStrictEqual(G.rangoLineas([250, 460], null, 200), [200, 460]);
 });
 
 test('variacionPct con base nula o cero devuelve null', () => {

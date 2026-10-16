@@ -31,7 +31,7 @@
         Graficos.lineas(lienzo('g1-flujos'), {
             x, a: d.anual.map(a => a.exportaciones), b: d.anual.map(a => a.importaciones),
             nombres: ['Exportaciones', 'Importaciones'], colores: ['--p-flujos-exportaciones', '--p-flujos-importaciones'],
-            desde: desde < 0 ? null : desde, titulo: alt('g1-flujos')
+            desde: desde < 0 ? null : desde, yMin: 200000, titulo: alt('g1-flujos')
         });
         Graficos.apiladas(lienzo('g1-saldo'), {
             x, etiquetas: x,

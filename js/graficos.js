@@ -16,7 +16,7 @@
         const r = Math.round(x), miles = String(Math.abs(r)).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
         return (r < 0 ? '−' : '') + miles;
     }
-    const rangoLineas = (vals, yMax) => [Math.min(0, ...vals), yMax ?? Math.max(0, ...vals)];
+    const rangoLineas = (vals, yMax, yMin) => [yMin ?? Math.min(0, ...vals), yMax ?? Math.max(0, ...vals)];
     const formatoPct = x => x == null || !isFinite(x) ? '–'
         : (x > 0 ? '+' : x < 0 ? '−' : '') + Math.abs(x).toLocaleString('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' %';
     const variacionPct = (base, actual) => base == null || actual == null || base === 0 ? null : (actual / base - 1) * 100;
@@ -165,14 +165,14 @@
 
     // Dos series con banda de saldo. desde = índice del primer dato provisional.
     function dibujarLineas(el, op) {
-        const { x, a, b, nombres, colores, desde = null, yMax = null, destacar = null, titulo = '' } = op;
+        const { x, a, b, nombres, colores, desde = null, yMax = null, yMin = null, destacar = null, titulo = '' } = op;
         if (vacia(a) && vacia(b)) return sinDatos(el);
         const c = lienzo(el, +el.dataset.h || 240, titulo);
         if (!c) return;
         const { svg, w, h } = c;
         const m = { t: 14, b: 26, l: 10, r: 58 }, x0 = m.l + 8, x1 = w - m.r - 8;
         const vals = [...a, ...b].filter(t => t != null);
-        const ti = marcas(...rangoLineas(vals, yMax));
+        const ti = marcas(...rangoLineas(vals, yMax, yMin));
         const y = t => m.t + (ti[ti.length - 1] - t) / (ti[ti.length - 1] - ti[0]) * (h - m.t - m.b);
         const xs = x.map((_, i) => x.length > 1 ? x0 + i * (x1 - x0) / (x.length - 1) : (x0 + x1) / 2);
         const [cA, cB] = colores.map(v);
@@ -262,7 +262,9 @@
         S('polyline', { points: puntos, fill: 'none', stroke: v('--c-tinta'), 'stroke-width': 2, 'stroke-linejoin': 'round' }, svg);
         const n = x.length - 1;
         S('circle', { cx: xs[n], cy: y(total.valores[n]), r: 4, fill: v('--c-tinta'), stroke: v('--c-superficie'), 'stroke-width': 2 }, svg);
-        S('text', { x: xs[n] - 8, y: y(total.valores[n]) - 10, 'text-anchor': 'end', class: 'valor' }, svg).textContent = formato(total.valores[n]);
+        // etiqueta del último total en el lado contrario al que llega la línea, para no montarse sobre ella
+        const baja = n > 0 && total.valores[n - 1] > total.valores[n];
+        S('text', { x: xs[n] - 8, y: y(total.valores[n]) + (baja ? 18 : -10), 'text-anchor': 'end', class: 'valor' }, svg).textContent = formato(total.valores[n]);
         const guia = S('line', { y1: m.t, y2: h - m.b, stroke: v('--c-tenue'), 'stroke-dasharray': '2 3', visibility: 'hidden' }, svg);
         zonas(svg, xs.map(cx => ({ x: cx - banda / 2, y: m.t, width: banda, height: h - m.t - m.b })),
             i => `${x[i]}: ${total.nombre} ${formato(total.valores[i])} millones de euros`,
