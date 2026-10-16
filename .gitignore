@@ -25,7 +25,6 @@ Thumbs.db
 # runtime u ofrece en descarga se versionan explícitamente.
 *.csv
 !data/flujos_data.csv
-!data/estadisticas.csv
 !balanza/*.csv
 balanza_preview.txt
 

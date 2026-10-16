@@ -1,65 +1,39 @@
-# sergioargudosantiago.github.io
+# sergioargudo.es
 
-Portal personal de Sergio Argudo Santiago. Recursos para la preparación de las oposiciones al **Cuerpo de Inspectores del SOIVRE** e **Ingenieros Técnicos del SOIVRE**, junto con un visualizador interactivo de comercio exterior español.
+Portal personal de Sergio Argudo Santiago, Inspector del SOIVRE: esquemas gratuitos de
+las oposiciones al **Cuerpo de Inspectores del SOIVRE**, un visualizador del comercio
+exterior español con datos oficiales y artículos de análisis.
 
-URL actual: <https://sergioargudosantiago.github.io/>
-Dominio previsto: `sergioargudo.es`.
+Web: <https://sergioargudo.es/>
 
 ## Páginas
 
 | Página | Descripción |
 |---|---|
-| `index.html` | Landing con introducción y motivación. |
-| `temario.html` | Resúmenes y esquemas del temario (PDF/Word). |
-| `sobre-mi.html` | Sobre el autor. |
-| `enlaces.html` | Recursos y enlaces oficiales. |
-| `comercio-exterior.html` | Visualizador interactivo de balanza comercial española (2021-2025). |
-
-## Estructura del repo
-
-```
-.
-├── *.html              # Páginas
-├── css/                # Estilos (futuro: theme extraído)
-├── js/                 # Scripts cliente (main.js, cookies.js, data-visualization.js)
-├── images/, logos/     # Assets gráficos
-├── public/temas/       # PDFs del temario
-├── data/               # CSVs y datasets (futuro)
-├── scripts/            # Utilidades de build/conversión (futuro)
-├── balanza/            # Comprobaciones de datos (Excel + CSVs INE/AEAT)
-├── sitemap.xml, robots.txt
-└── README.md
-```
+| `index.html` | Portada |
+| `esquemas.html` | Un esquema de cada tema, en línea y en PDF (`temario.html` redirige aquí) |
+| `fichas.html` | Fichas de datos por tema |
+| `comercio-exterior.html` | Visualizador de balanza comercial y balanza de pagos |
+| `metodologia.html` | Fuentes y método de los datos |
+| `articulos/` | Artículos de análisis (feed en `feed.xml`) |
+| `sobre-mi.html`, `enlaces.html`, `legal.html` | Autor, enlaces y aviso legal |
 
 ## Datos
 
-El visualizador `comercio-exterior.html` utiliza datos oficiales de:
+- Estadística de comercio exterior de Aduanas (Agencia Tributaria).
+- Balanza de pagos del Banco de España, descargada de su API y validada antes de publicar.
 
-- [DataComex — Ministerio de Economía, Comercio y Empresa](https://datacomex.comercio.es/Metadata/Comex)
-- [Estadísticas de comercio exterior — Agencia Tributaria](https://sede.agenciatributaria.gob.es/Sede/estadisticas/estadisticas-comercio-exterior.html)
-- [Boletín Estadístico Capítulo 17 — Banco de España](https://www.bde.es/webbe/es/estadisticas/otras-clasificaciones/publicaciones/boletin-estadistico/capitulo-17.html)
+## Desarrollo
 
-Comprobación cruzada de cifras: ver `balanza/Comprobaciones sectores.xlsx`.
-
-## Stack
-
-- HTML estático servido por GitHub Pages.
-- Tailwind CSS (CDN — pendiente compilar a CSS estático).
-- Chart.js (via CDN) para gráficos del visualizador.
-- Tipografías Google Fonts: Newsreader (titulares), Public Sans (texto), IBM Plex Mono (cifras) y Orbitron (marca).
-
-## Desarrollo local
-
-No requiere build. Servir cualquier servidor estático:
+HTML estático en GitHub Pages, Tailwind compilado y gráficos SVG propios sin
+dependencias. Servir en local:
 
 ```bash
 python -m http.server 8000
-# o
-npx serve .
 ```
 
-Abrir <http://localhost:8000>.
+Comandos y flujos de trabajo en `CLAUDE.md` y en `package.json`.
 
 ## Licencia
 
-Contenido propio. Datos de terceros bajo sus respectivas condiciones (DataComex, AEAT).
+Contenido propio. Datos de terceros bajo sus respectivas condiciones (AEAT, Banco de España).

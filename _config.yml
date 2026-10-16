@@ -16,7 +16,6 @@ exclude:
   - tailwind.config.js
   # Material de trabajo
   - balanza/
-  - data/update_log.txt
   - review/
   - docs/
   - fuentes/
@@ -24,6 +23,6 @@ exclude:
   - README.md
   - CLAUDE.md
   - articulos/*.md
-  # Fuente Markdown de los esquemas: la web sirve los Word y PDF de public/temas/
+  # Fuente Markdown de los esquemas: la web sirve lo generado en public/temas/
   - temas/
   - articulos/autores.json
