@@ -426,6 +426,43 @@ ${cuerpo}  </div>
 
 // --- Principal --------------------------------------------------------------
 
+// Índice de enlaces de esquemas.html: un <a> por esquema publicado, en el HTML y no
+// por JS, para que Google llegue a cada tema desde la página que los agrupa. Va
+// entre las marcas indice-temas:inicio/fin y se reescribe entero en cada ejecución.
+function indiceEnlaces({ programa, enunciados }, fechas) {
+    const bloques = [];
+    for (const n of EJERCICIOS) {
+        const partes = [];
+        for (const parte of programa.ejercicios[n].partes) {
+            const items = [];
+            for (let t = parte.desde; t <= parte.hasta; t++) {
+                const nn = dosCifras(t);
+                const e = enunciados[n][t];
+                if (!fechas[`ejercicio-${n}-${nn}`] || !e) continue;
+                items.push(`                            <li><a href="public/temas/ejercicio-${n}/tema-${nn}.html">Tema ${t}. ${escapeHTML(sinPuntoFinal(e.titulo))}</a></li>`);
+            }
+            if (items.length) {
+                partes.push(`                        <h3>${escapeHTML(parte.letra)}. ${escapeHTML(parte.titulo)}</h3>\n                        <ul>\n${items.join('\n')}\n                        </ul>`);
+            }
+        }
+        if (partes.length) {
+            bloques.push(`                <details class="t-indice-ej">\n                    <summary>Ejercicio ${n}: esquemas del temario en línea</summary>\n                    <div>\n${partes.join('\n')}\n                    </div>\n                </details>`);
+        }
+    }
+    return bloques.join('\n');
+}
+
+function actualizarIndiceEnlaces(oficial, fechas) {
+    const ruta = path.join(RAIZ, 'esquemas.html');
+    const original = fs.readFileSync(ruta, 'utf8');
+    const crlf = original.includes('\r\n');
+    const html = original.replace(/\r\n/g, '\n');
+    const re = /( *)<!-- indice-temas:inicio -->[\s\S]*?<!-- indice-temas:fin -->/;
+    if (!re.test(html)) return;
+    const nuevo = html.replace(re, (_, sp) => `${sp}<!-- indice-temas:inicio -->\n${indiceEnlaces(oficial, fechas)}\n${sp}<!-- indice-temas:fin -->`);
+    fs.writeFileSync(ruta, crlf ? nuevo.replace(/\n/g, '\r\n') : nuevo);
+}
+
 function main() {
     const oficial = leerPrograma();
     // Fecha de «Actualizado» de cada esquema (la escribe el repositorio privado de
@@ -482,6 +519,7 @@ function main() {
             .filter(e => fs.existsSync(path.join(RAIZ, e.ruta)))
             .sort((a, b) => a.ruta.localeCompare(b.ruta));
         actualizarBloque('esquemas', publicados, { priority: '0.7' });
+        actualizarIndiceEnlaces(oficial, fechas);
     }
     console.log(`${total} esquemas en ${path.relative(RAIZ, SALIDA)}/.`);
     for (const a of avisos) console.warn(`  aviso: ${a}`);

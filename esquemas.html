@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#3B4533">
     <meta name="description"
-        content="Esquemas del temario de Inspectores del SOIVRE, uno por tema, para leer en línea o descargar en PDF. Útiles también para Ingenieros Técnicos del SOIVRE.">
+        content="Esquemas y apuntes del temario de las oposiciones a Inspectores del SOIVRE, tema a tema, para leer en línea o descargar en PDF. Útiles también para Ingenieros Técnicos del SOIVRE.">
     <title>Esquemas del temario de Inspectores del SOIVRE — Sergio Argudo Santiago</title>
     <link rel="canonical" href="https://sergioargudo.es/esquemas.html">
     <link rel="icon" href="logos/png/SAS-icono-claro.png?v=3" type="image/png">
@@ -16,14 +16,14 @@
     <!-- SEO & Social Meta Tags -->
     <meta name="author" content="Sergio Argudo Santiago">
     <meta name="keywords"
-        content="Esquemas SOIVRE, Resúmenes Oposiciones, Inspectores SOIVRE, Temas Comercio Exterior, Material Oposiciones">
+        content="esquemas SOIVRE, apuntes SOIVRE, temario SOIVRE, oposiciones SOIVRE, Inspector del SOIVRE, comercio exterior">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sergioargudo.es/esquemas.html">
     <meta property="og:title" content="Esquemas del temario de Inspectores del SOIVRE — Sergio Argudo Santiago">
     <meta property="og:description"
-        content="Esquemas del temario de Inspectores del SOIVRE, uno por tema, para leer en línea o descargar en PDF. Útiles también para Ingenieros Técnicos del SOIVRE.">
+        content="Esquemas y apuntes del temario de las oposiciones a Inspectores del SOIVRE, tema a tema, para leer en línea o descargar en PDF. Útiles también para Ingenieros Técnicos del SOIVRE.">
     <meta property="og:image" content="https://sergioargudo.es/images/og-cover.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -33,7 +33,7 @@
     <meta name="twitter:url" content="https://sergioargudo.es/esquemas.html">
     <meta name="twitter:title" content="Esquemas del temario de Inspectores del SOIVRE — Sergio Argudo Santiago">
     <meta name="twitter:description"
-        content="Esquemas del temario de Inspectores del SOIVRE, uno por tema, para leer en línea o descargar en PDF. Útiles también para Ingenieros Técnicos del SOIVRE.">
+        content="Esquemas y apuntes del temario de las oposiciones a Inspectores del SOIVRE, tema a tema, para leer en línea o descargar en PDF. Útiles también para Ingenieros Técnicos del SOIVRE.">
     <meta name="twitter:image" content="https://sergioargudo.es/images/og-cover.png">
 
 
@@ -63,6 +63,15 @@
         button.t-ejercicio:focus-visible, a.t-ejercicio:focus-visible { outline: 3px solid var(--c-foco); outline-offset: 3px; }
         /* .c-pagina a (sitio.css, cargado después) hereda el color: aquí hace falta más especificidad */
         .c-pagina a.t-ejercicio { text-decoration: none; color: var(--c-barra-texto); }
+        .t-indice { padding-block: 0.5rem 1rem; display: grid; gap: 0.75rem; }
+        .t-indice-ej { border: 2px solid var(--c-barra); background: var(--c-fondo); }
+        .t-indice-ej > summary { cursor: pointer; padding: 0.9rem 1.1rem; font-family: var(--f-titular); font-weight: 600; }
+        .t-indice-ej > summary:focus-visible { outline: 3px solid var(--c-foco); outline-offset: 2px; }
+        .t-indice-ej > div { padding: 0 1.1rem 1rem; }
+        .t-indice-ej h3 { font-size: 1rem; margin: 1rem 0 0.35rem; }
+        .t-indice-ej ul { margin: 0; padding-left: 1.4rem; display: grid; gap: 0.3rem; list-style: disc; }
+        .t-indice-ej h3 { font-weight: 600; }
+        .t-indice-ej a { text-decoration: underline; text-underline-offset: 0.18em; }
         .t-subtitulo { font-family: var(--f-titular); font-weight: 600; font-size: 1.35rem; margin: 1rem 0 0; }
         .t-rotulo { font-family: var(--f-marca); font-weight: 800; font-size: 1.05rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--c-barra-activo); }
         .t-partes { line-height: 1.5; }
@@ -116,7 +125,7 @@
           "@type": "CollectionPage",
           "name": "Esquemas del temario de Inspectores del SOIVRE",
           "url": "https://sergioargudo.es/esquemas.html",
-          "description": "Esquemas del temario de Inspectores del SOIVRE, uno por tema, para leer en línea o descargar en PDF. Útiles también para Ingenieros Técnicos del SOIVRE.",
+          "description": "Esquemas y apuntes del temario de las oposiciones a Inspectores del SOIVRE, tema a tema, para leer en línea o descargar en PDF. Útiles también para Ingenieros Técnicos del SOIVRE.",
           "inLanguage": "es",
           "isAccessibleForFree": true,
           "about": ["Oposiciones SOIVRE", "Cuerpo de Inspectores del SOIVRE", "Cuerpo de Ingenieros Técnicos del SOIVRE", "Comercio exterior"],
@@ -212,6 +221,150 @@
                     <span class="t-partes">Economía general y estructura económica de España · Comercio interior · Derecho administrativo y organización del Estado</span>
                     <span class="t-estado">46 esquemas · PDF y Word · en actualización</span>
                 </button>
+            </section>
+
+            <h2 class="t-subtitulo">Índice de esquemas en línea</h2>
+            <p class="t-origen">Todos los apuntes del temario de las oposiciones a Inspectores del SOIVRE que ya están en línea, tema a tema. Cada uno se puede leer aquí o descargar en PDF.</p>
+            <section class="t-indice" aria-label="Índice de esquemas en línea">
+                <!-- indice-temas:inicio -->
+                <details class="t-indice-ej">
+                    <summary>Ejercicio 1: esquemas del temario en línea</summary>
+                    <div>
+                        <h3>A. Comercio de mercancías. Análisis sectorial</h3>
+                        <ul>
+                            <li><a href="public/temas/ejercicio-1/tema-01.html">Tema 1. Sector de frutos frescos, excepto cítricos</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-02.html">Tema 2. Sector de cítricos</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-03.html">Tema 3. Sector de hortalizas frescas</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-04.html">Tema 4. Sector de frutos secos</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-05.html">Tema 5. Sector de granos y semillas de consumo humano</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-06.html">Tema 6. Sector cárnico</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-07.html">Tema 7. Sector de productos de la pesca</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-08.html">Tema 8. Sector lácteo</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-09.html">Tema 9. Sectores de miel, azúcar y huevos</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-10.html">Tema 10. Sector de conservas y semiconservas vegetales</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-11.html">Tema 11. Sector vinos y demás bebidas alcohólicas</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-12.html">Tema 12. Sector de aceites y grasas comestibles</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-13.html">Tema 13. Otros sectores agroalimentarios no incluidos en temas anteriores (Condimentos y especias. Platos preparados)</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-14.html">Tema 14. Sector de productos energéticos y materias primas</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-15.html">Tema 15. Sector de semi-manufacturas</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-16.html">Tema 16. Sector de bienes de equipo (I)</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-17.html">Tema 17. Sector de bienes de equipo (II)</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-18.html">Tema 18. Sector de bienes de consumo duradero</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-19.html">Tema 19. Sector de manufacturas de consumo (I)</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-20.html">Tema 20. Sector de manufacturas de consumo (II)</a></li>
+                        </ul>
+                        <h3>B. Comercio de servicios</h3>
+                        <ul>
+                            <li><a href="public/temas/ejercicio-1/tema-21.html">Tema 21. Definición de servicio según el sistema de cuentas nacionales</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-22.html">Tema 22. Las estadísticas de comercio internacional de servicios</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-23.html">Tema 23. Análisis de la evolución del comercio exterior de servicios en España (I)</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-24.html">Tema 24. Análisis de la evolución del comercio exterior de servicios en España (II)</a></li>
+                        </ul>
+                        <h3>C. CITES</h3>
+                        <ul>
+                            <li><a href="public/temas/ejercicio-1/tema-25.html">Tema 25. El Convenio CITES</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-26.html">Tema 26. El Convenio CITES como instrumento de política comercial</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-27.html">Tema 27. Aplicación del Convenio CITES en la Unión Europea</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-28.html">Tema 28. Autoridades de Aplicación y Observancia del Convenio CITES en España</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-29.html">Tema 29. Especímenes de origen vegetal sujetos al convenio sobre comercio internacional de especies amenazadas de fauna y flora silvestres (CITES)</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-30.html">Tema 30. Especímenes de origen animal sujetos al Convenio CITES</a></li>
+                        </ul>
+                        <h3>D. Control analítico</h3>
+                        <ul>
+                            <li><a href="public/temas/ejercicio-1/tema-31.html">Tema 31. Muestreo: connotaciones del muestreo físico y del muestreo estadístico</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-32.html">Tema 32. Errores en análisis instrumental: regresión y correlación</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-33.html">Tema 33. Control de calidad en laboratorios</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-34.html">Tema 34. Validación de métodos</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-35.html">Tema 35. Técnicas de preparación de muestras</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-36.html">Tema 36. Ensayos fisicoquímicos</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-37.html">Tema 37. Técnicas ópticas</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-38.html">Tema 38. Técnicas de análisis cromatográfico</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-39.html">Tema 39. Técnicas espectrométricas</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-40.html">Tema 40. Técnicas de identificación de especies</a></li>
+                        </ul>
+                        <h3>E. Normalización. Inspección</h3>
+                        <ul>
+                            <li><a href="public/temas/ejercicio-1/tema-41.html">Tema 41. Normalización internacional en el ámbito de Naciones Unidas (I)</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-42.html">Tema 42. Normalización internacional en el ámbito de Naciones Unidas (II)</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-43.html">Tema 43. Normalización en el seno de la Unión Europea</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-44.html">Tema 44. Otros organismos internacionales, regionales y nacionales de normalización</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-45.html">Tema 45. Control oficial de productos alimenticios</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-46.html">Tema 46. Control oficial de productos industriales procedentes de terceros países</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-47.html">Tema 47. Calidad comercial</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-48.html">Tema 48. Criterios de calidad comercial</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-49.html">Tema 49. Etiquetado de productos alimenticios e industriales</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-50.html">Tema 50. Aditivos</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-51.html">Tema 51. Microbiología de los alimentos</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-52.html">Tema 52. Envases y embalajes</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-53.html">Tema 53. Certificación y Acreditación</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-54.html">Tema 54. Aseguramiento de la calidad en la industria alimentaria</a></li>
+                            <li><a href="public/temas/ejercicio-1/tema-55.html">Tema 55. Control higiénico-sanitario basado en el sistema APPCC (análisis de peligros y puntos críticos de control)</a></li>
+                        </ul>
+                    </div>
+                </details>
+                <details class="t-indice-ej">
+                    <summary>Ejercicio 3: esquemas del temario en línea</summary>
+                    <div>
+                        <h3>A. Comercio exterior</h3>
+                        <ul>
+                            <li><a href="public/temas/ejercicio-3/tema-01.html">Tema 1. El comercio internacional</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-02.html">Tema 2. Balanza de Pagos</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-03.html">Tema 3. El comercio exterior español</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-04.html">Tema 4. La empresa ante el comercio internacional</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-05.html">Tema 5. El marketing internacional</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-06.html">Tema 6. Las formas de acceso a los mercados</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-07.html">Tema 7. Instrumentos financieros de apoyo a la internacionalización de la economía y las empresas españolas (I)</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-08.html">Tema 8. Instrumentos financieros de apoyo a la internacionalización de la economía y las empresas españolas (II)</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-09.html">Tema 9. Instrumentos financieros de apoyo a la internacionalización de la economía y las empresas españolas (III)</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-10.html">Tema 10. Instrumentos comerciales de apoyo a la internacionalización de la economía y las empresas españolas</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-11.html">Tema 11. Instrumentos comerciales de apoyo a la internacionalización de la economía y las empresas españolas</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-12.html">Tema 12. Instrumentos fiscales no aduaneros de apoyo a la internacionalización de la economía y las empresas españolas</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-13.html">Tema 13. El factoring, el leasing y el forfaiting</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-14.html">Tema 14. Financiación de las operaciones de comercio exterior</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-15.html">Tema 15. Medios de pago y cobro internacionales</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-16.html">Tema 16. Contratación internacional (I)</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-17.html">Tema 17. Contratación internacional (II)</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-18.html">Tema 18. Inversiones extranjeras</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-19.html">Tema 19. Inversión española en el exterior</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-20.html">Tema 20. Inversión extranjera en España</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-21.html">Tema 21. El régimen aduanero del comercio exterior: la política aduanera comunitaria</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-22.html">Tema 22. Sistema de Preferencias Generalizadas</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-23.html">Tema 23. Regímenes aduaneros</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-24.html">Tema 24. Los regímenes especiales</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-25.html">Tema 25. Instrumentos de defensa comercial: cláusulas de salvaguardia</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-26.html">Tema 26. El comercio exterior de material de defensa y de doble uso</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-27.html">Tema 27. Obstáculos comerciales</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-28.html">Tema 28. Medidas sanitarias y fitosanitarias</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-29.html">Tema 29. Medidas de armonización y transparencia en la Unión Europea</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-30.html">Tema 30. Política comunitaria en materia de normas y evaluación de la conformidad</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-31.html">Tema 31. Acuerdos de reconocimiento mutuo sobre evaluación de la conformidad (ARM)</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-32.html">Tema 32. El transporte internacional marítimo y aéreo</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-33.html">Tema 33. El transporte internacional por carretera y ferrocarril</a></li>
+                        </ul>
+                        <h3>B. Organismos Internacionales y Unión Europea</h3>
+                        <ul>
+                            <li><a href="public/temas/ejercicio-3/tema-34.html">Tema 34. Naciones Unidas</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-35.html">Tema 35. La cooperación económica internacional: el Fondo Monetario Internacional</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-36.html">Tema 36. Instituciones multilaterales de financiación y ayuda al desarrollo</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-37.html">Tema 37. La OCDE</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-38.html">Tema 38. Las negociaciones comerciales multilaterales: la evolución del sistema de comercio multilateral</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-39.html">Tema 39. La Organización Mundial de Comercio y la economía mundial</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-40.html">Tema 40. La Organización Mundial del Comercio y los Acuerdos multilaterales y plurilaterales</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-41.html">Tema 41. La Unión Europea</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-42.html">Tema 42. Las Instituciones de la Unión Europea</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-43.html">Tema 43. Toma de decisiones en la Unión Europea</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-44.html">Tema 44. El Mercado Único Europeo</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-45.html">Tema 45. La política agrícola de la Unión Europea</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-46.html">Tema 46. La política pesquera de la Unión Europea</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-54.html">Tema 54. La política comercial y de relaciones económicas exteriores de la Unión Europea (I)</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-55.html">Tema 55. La política comercial y de relaciones económicas exteriores de la Unión Europea (II)</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-56.html">Tema 56. La política comercial exterior y de relaciones económicas exteriores de la Unión Europea (III)</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-57.html">Tema 57. La política comercial y de relaciones económicas exteriores de la Unión Europea (IV)</a></li>
+                            <li><a href="public/temas/ejercicio-3/tema-58.html">Tema 58. La política comercial y de relaciones económicas exteriores de la Unión Europea (V)</a></li>
+                        </ul>
+                    </div>
+                </details>
+                <!-- indice-temas:fin -->
             </section>
 
             <h2 class="t-subtitulo">Fichas de datos</h2>
