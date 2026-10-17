@@ -63,9 +63,11 @@
         button.t-ejercicio:focus-visible, a.t-ejercicio:focus-visible { outline: 3px solid var(--c-foco); outline-offset: 3px; }
         /* .c-pagina a (sitio.css, cargado después) hereda el color: aquí hace falta más especificidad */
         .c-pagina a.t-ejercicio { text-decoration: none; color: var(--c-barra-texto); }
-        .t-indice { padding-block: 0.5rem 1rem; display: grid; gap: 0.75rem; }
-        .t-indice-ej { border: 2px solid var(--c-barra); background: var(--c-fondo); }
-        .t-indice-ej > summary { cursor: pointer; padding: 0.9rem 1.1rem; font-family: var(--f-titular); font-weight: 600; }
+        .t-indice-titulo { font-family: var(--f-titular); font-weight: 600; font-size: 1rem; margin: 2.25rem 0 0; color: var(--c-tenue); }
+        .t-indice-nota { font-size: 0.9rem; margin: 0; }
+        .t-indice { padding-block: 0.25rem 1rem; display: grid; gap: 0.5rem; }
+        .t-indice-ej { border: 1px solid var(--c-linea); background: transparent; font-size: 0.95rem; }
+        .t-indice-ej > summary { cursor: pointer; padding: 0.7rem 1rem; font-family: var(--f-titular); font-weight: 500; }
         .t-indice-ej > summary:focus-visible { outline: 3px solid var(--c-foco); outline-offset: 2px; }
         .t-indice-ej > div { padding: 0 1.1rem 1rem; }
         .t-indice-ej h3 { font-size: 1rem; margin: 1rem 0 0.35rem; }
@@ -223,8 +225,17 @@
                 </button>
             </section>
 
-            <h2 class="t-subtitulo">Índice de esquemas en línea</h2>
-            <p class="t-origen">Todos los apuntes del temario de las oposiciones a Inspectores del SOIVRE que ya están en línea, tema a tema. Cada uno se puede leer aquí o descargar en PDF.</p>
+            <h2 class="t-subtitulo">Fichas de datos</h2>
+            <section class="t-ejercicios" aria-label="Fichas de datos">
+                <a class="t-ejercicio" href="fichas.html">
+                    <span class="t-rotulo">Fichas</span>
+                    <span class="t-partes">Cifras de comercio exterior de los temas 1 a 20 del ejercicio 1 y de la balanza de pagos: exportación, importación, saldo, cuota UE y principales países.</span>
+                    <span class="t-estado">23 fichas · para leer o imprimir en PDF</span>
+                </a>
+            </section>
+
+            <h2 class="t-indice-titulo">Índice de esquemas en línea</h2>
+            <p class="t-origen t-indice-nota">Acceso directo a cada esquema del temario que ya está en línea.</p>
             <section class="t-indice" aria-label="Índice de esquemas en línea">
                 <!-- indice-temas:inicio -->
                 <details class="t-indice-ej">
@@ -365,15 +376,6 @@
                     </div>
                 </details>
                 <!-- indice-temas:fin -->
-            </section>
-
-            <h2 class="t-subtitulo">Fichas de datos</h2>
-            <section class="t-ejercicios" aria-label="Fichas de datos">
-                <a class="t-ejercicio" href="fichas.html">
-                    <span class="t-rotulo">Fichas</span>
-                    <span class="t-partes">Cifras de comercio exterior de los temas 1 a 20 del ejercicio 1 y de la balanza de pagos: exportación, importación, saldo, cuota UE y principales países.</span>
-                    <span class="t-estado">23 fichas · para leer o imprimir en PDF</span>
-                </a>
             </section>
 
         </div>
