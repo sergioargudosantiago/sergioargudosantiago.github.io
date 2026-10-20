@@ -18,7 +18,7 @@ España exporta bienes a más de 200 países y territorios. Detrás de esa cifra
 
 ## 1. ¿Cuánto exporta e importa España?
 
-**Las exportaciones crecieron un 55 % en diez años, pero desde 2022 apenas se mueven.** Pasaron de 249.794 millones de euros en 2015 a 387.092 en 2025, y casi todo ese avance llegó antes de 2022.
+**Las exportaciones crecieron un 55 % en diez años, pero desde 2022 apenas se mueven.** Pasaron de 249.794 millones de euros en 2015 a 387.092 en 2025, y casi todo ese avance llegó hasta 2022.
 
 **Las importaciones crecieron todavía más, un 62 %, y el saldo sigue en déficit.** El gráfico de abajo lo separa en dos partes: la energética, que se mueve con el precio del petróleo y del gas, y el resto.
 
