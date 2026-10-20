@@ -55,6 +55,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://sergioargudo.es/articulos/comercio-exterior-5-graficos.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- articulos:fin -->
   <!-- esquemas:inicio -->
   <url>

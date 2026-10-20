@@ -5,7 +5,6 @@ autores: [sergio]
 resumen: Cuánto exporta e importa España, qué sectores pesan, a dónde van sus exportaciones, con quién tiene superávit y déficit y qué exporta a cada gran socio. Cinco gráficos con los datos de 2025.
 tags: [comercio exterior, España, datos]
 slug: comercio-exterior-5-graficos
-estado: proximamente
 js: [js/graficos.js, articulos/recursos/comercio-5-graficos.js]
 portada: comercio-g1.html#g1-flujos
 puntos:
