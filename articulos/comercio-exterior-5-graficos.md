@@ -2,7 +2,7 @@
 titulo: El comercio exterior español en 5 gráficos
 fecha: 2026-10-20
 autores: [sergio]
-resumen: Cuánto exporta e importa España, qué sectores pesan, adónde van sus exportaciones, con quién tiene superávit y déficit y qué exporta a cada gran socio. Cinco gráficos con los datos de 2025.
+resumen: Cuánto exporta e importa España, qué sectores pesan, a dónde van sus exportaciones, con quién tiene superávit y déficit y qué exporta a cada gran socio. Cinco gráficos con los datos de 2025.
 tags: [comercio exterior, España, datos]
 slug: comercio-exterior-5-graficos
 estado: proximamente
@@ -11,14 +11,14 @@ portada: comercio-g1.html#g1-flujos
 puntos:
   - España exportó 387.092 millones de euros en bienes en 2025, un 55 % más que en 2015.
   - El déficit comercial llegó a 57.055 millones. Casi la mitad ya no es energético.
-  - Seis de cada diez euros exportados van a la Unión Europea, pero las exportaciones llegan a 229 países y territorios.
+  - Seis de cada diez euros exportados van a la Unión Europea, pero las exportaciones llegan a más de 200 países y territorios.
 ---
 
-España exporta bienes a 229 países y territorios. Detrás de esa cifra hay un comercio muy concentrado en Europa, una cesta de productos más diversa de lo que se suele pensar y un déficit que ha cambiado de naturaleza. Cinco gráficos lo resumen.
+España exporta bienes a más de 200 países y territorios. Detrás de esa cifra hay un comercio muy concentrado en Europa, una cesta de productos más diversa de lo que se suele pensar y un déficit que ha cambiado de naturaleza. Cinco gráficos lo resumen.
 
 ## 1. ¿Cuánto exporta e importa España?
 
-**Las exportaciones crecieron un 55 % en diez años, pero llevan tres planas.** Pasaron de 249.794 millones de euros en 2015 a 387.092 en 2025, y casi todo ese avance llegó antes de 2022.
+**Las exportaciones crecieron un 55 % en diez años, pero desde 2022 apenas se mueven.** Pasaron de 249.794 millones de euros en 2015 a 387.092 en 2025, y casi todo ese avance llegó antes de 2022.
 
 **Las importaciones crecieron todavía más, un 62 %, y el saldo sigue en déficit.** El gráfico de abajo lo separa en dos partes: la energética, que se mueve con el precio del petróleo y del gas, y el resto.
 
@@ -34,7 +34,7 @@ España exporta bienes a 229 países y territorios. Detrás de esa cifra hay un 
 
 <!--incluir: comercio-g2.html | Gráfico de mariposa con los diez sectores económicos en 2025: a la izquierda las exportaciones y a la derecha las importaciones. Bienes de equipo (75.019 millones) y alimentación (74.716 millones) son los primeros sectores exportadores.-->
 
-## 3. ¿Adónde exporta España y de dónde importa?
+## 3. ¿A dónde exporta España y de dónde importa?
 
 **La Unión Europea es el gran mercado de las exportaciones españolas.** Recibe el 60,4 % del total. Francia, Alemania, Portugal e Italia suman el 41,6 %, y Francia, el primer destino, el 14,4 %.
 
