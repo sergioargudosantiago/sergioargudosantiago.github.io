@@ -58,8 +58,8 @@ Hesperidio pequeño de piel verde lisa y pulpa muy ácida, con poco azúcar. Se 
 
 Los requisitos se recogen en las normas de comercialización de la UE, reguladas por el **Reglamento Delegado (UE) 2023/2429**, aplicable desde el 1 de enero de 2025. Distingue dos niveles.
 
-- Norma general, para frutas y hortalizas sin norma específica (aquí, pomelos y limas)
-- Norma específica de cítricos (limones, naranjas y mandarinas), que añade categorías (Extra, I y II), calibrado por diámetro, tolerancias, presentación y marcado
+- Norma general, para frutas y hortalizas sin norma específica
+- Norma específica de cítricos (limones, limas, mandarinas, naranjas, pomelos y toronjas), que añade categorías (Extra, I y II), calibrado por diámetro, tolerancias, presentación y marcado
 
 Los requisitos mínimos exigen productos enteros, sanos, limpios, prácticamente exentos de plagas y de daños en la pulpa, sin humedad exterior anormal ni olores y sabores extraños, y en estado de soportar el transporte. A ello se suman la madurez, las tolerancias y el marcado, con el país de origen.
 

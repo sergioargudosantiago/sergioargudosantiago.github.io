@@ -50,7 +50,9 @@ Las medidas conformes se presumen compatibles con el GATT de 1994, en particular
 - **Control, inspección y aprobación** (art. 8 y anexo C): sin demoras indebidas y sin trato menos favorable al producto importado
 - **Asistencia técnica y trato especial** (arts. 9 y 10): plazos más largos y asistencia a países en desarrollo y menos adelantados, con el **STDF**
 
-## 2.5. El Comité de Medidas Sanitarias y Fitosanitarias
+# 3. EL ACUERDO MSF: FUNCIONAMIENTO
+
+## 3.1. El Comité de Medidas Sanitarias y Fitosanitarias
 
 El **Comité MSF** (art. 12) administra el Acuerdo, es foro de consultas y vigila la armonización. Reúne a todos los miembros, se reúne normalmente tres veces al año en Ginebra y decide por consenso. Son observadores el Codex, la OMSA, la CIPF, la OMS, la FAO, la UNCTAD o la ISO. Logros:
 
@@ -59,7 +61,7 @@ El **Comité MSF** (art. 12) administra el Acuerdo, es foro de consultas y vigil
 - Procedimiento de consultas ad hoc (2014), con buenos oficios del Presidente
 - **Preocupaciones comerciales específicas** sobre medidas de otros miembros: 598 entre 1995 y 2024, y récord de 76 en la reunión de marzo de 2026
 
-## 2.6. Procedimiento de información y notificación
+## 3.2. Procedimiento de información y notificación
 
 - **Servicio de información**: responde a otros miembros y facilita documentos. En España lo desempeña la Subdirección General de Inspección, Certificación y Asistencia Técnica del Comercio Exterior (**SOIVRE**), que difunde proyectos de reglamentación y recibe y transmite observaciones
 - **Notificación** a la Secretaría de la OMC de las medidas proyectadas que no se ajusten a norma internacional, o sin norma, con efecto significativo en el comercio, con antelación para recibir observaciones. En urgencia puede aplicarse y notificarse después. En 2025 hubo un récord de 2.496 notificaciones, cerca del 80 % de economías en desarrollo
@@ -67,7 +69,7 @@ El **Comité MSF** (art. 12) administra el Acuerdo, es foro de consultas y vigil
 
 El sistema **ePing** (2016) permite recibir alertas sobre notificaciones MSF y OTC.
 
-## 2.7. Solución de diferencias
+## 3.3. Solución de diferencias
 
 Se rige por el Entendimiento sobre Solución de Diferencias:
 
@@ -77,23 +79,24 @@ Se rige por el Entendimiento sobre Solución de Diferencias:
 
 Caso más conocido, **Hormonas en la carne de vacuno**: EEUU y Canadá impugnaron la prohibición europea y el Órgano de Apelación concluyó en 1998 que carecía de evaluación del riesgo adecuada. Se autorizaron represalias y el asunto se encauzó con un memorándum con EEUU en 2009, revisado en 2019, con contingente de vacuno sin hormonas. Otros: Australia: Salmón, Japón: Manzanas, Productos biotecnológicos y Rusia: Porcino.
 
-# 3. EL ACUERDO MSF: EVOLUCIÓN
+# 4. EL ACUERDO MSF: EVOLUCIÓN
 
 El Acuerdo ha impulsado la armonización con las tres hermanas y resuelto muchas preocupaciones sin diferencia formal. Se articula en exámenes periódicos (art. 12.7), el primero a los tres años y desde Doha 2001 al menos cada cuatro:
 
 - Resultados previos: consultas ad hoc y debate sobre normas privadas, acotado a cuestiones MSF
+- Quinto examen: sin informe en 2020 por falta de consenso
 - XII Conferencia Ministerial (2022): Declaración MSF sobre desafíos modernos, con informe del Comité en junio de 2024
 - **Sexto examen** (marzo de 2025, trigésimo aniversario): recomendaciones sobre desafíos emergentes, regionalización, transparencia y cooperación con organismos de normalización. Creó un Grupo de Trabajo sobre Transparencia, que comenzó sus trabajos en noviembre de 2025, y un sistema de mentoría para países en desarrollo
 
 Debates actuales: resistencia a los antimicrobianos, nuevas técnicas de mejora genética, peste porcina africana y gripe aviar, regionalización, retrasos en aprobaciones y controles digitales.
 
-# 4. EL PORTAL ACCESS2MARKETS: ESPECIAL ATENCIÓN A LAS MEDIDAS SANITARIAS Y FITOSANITARIAS
+# 5. EL PORTAL ACCESS2MARKETS: ESPECIAL ATENCIÓN A LAS MEDIDAS SANITARIAS Y FITOSANITARIAS
 
-## 4.1. Origen y objetivos
+## 5.1. Origen y objetivos
 
 La Comisión vela por que la legislación de la Unión cumpla el Acuerdo MSF y defiende el acceso de los exportadores europeos a terceros mercados, desde 1996 con la Estrategia de Acceso a los Mercados y su base de datos, reforzada en 2007 con la Asociación para el Acceso a los Mercados. El **13 de octubre de 2020** lanzó **Access2Markets**, que integra la antigua base de datos (exportadores) y el Trade Helpdesk (importadores). Es gratuito, multilingüe y pensado para las PYME.
 
-## 4.2. Estructura y contenido
+## 5.2. Estructura y contenido
 
 - **My Trade Assistant**: por producto y países de origen y destino, informa de aranceles, formalidades, requisitos, origen, barreras y estadísticas. Cubre exportaciones a más de 120 mercados e importaciones en la Unión
 - **ROSA**: autoevaluación de normas de origen
@@ -101,7 +104,7 @@ La Comisión vela por que la legislación de la Unión cumpla el Acuerdo MSF y d
 - **Barreras comerciales y Punto Único de Entrada** (noviembre de 2020): base de barreras en terceros países y formulario para denunciarlas
 - **Guías y recursos**, con contactos de autoridades competentes
 
-## 4.3. Los aspectos sanitarios y fitosanitarios en el portal
+## 5.3. Los aspectos sanitarios y fitosanitarios en el portal
 
 Las medidas MSF pesan especialmente por afectar al comercio agroalimentario. El portal las trata desde cuatro perspectivas:
 
@@ -114,7 +117,7 @@ Las medidas MSF pesan especialmente por afectar al comercio agroalimentario. El 
 - **Barreras MSF**: filtro por tipo de medida, con estado y gestiones
 - **Acuerdos comerciales**: capítulos MSF con regionalización, equivalencia, prelistado de establecimientos, plazos y comités específicos
 
-## 4.4. Access2Markets en la estrategia de acceso a los mercados
+## 5.4. Access2Markets en la estrategia de acceso a los mercados
 
 Ante una barrera MSF la Comisión actúa mediante:
 
@@ -126,7 +129,7 @@ Ante una barrera MSF la Comisión actúa mediante:
 
 En España, el Ministerio de Agricultura, Pesca y Alimentación negocia protocolos y certificados con **CEXGAN** (origen animal) y **CEXVEG** (vegetal). La Secretaría de Estado de Comercio mantiene un portal de barreras vinculado a Access2Markets.
 
-# 5. CASOS CONCRETOS
+# 6. CASOS CONCRETOS
 
 - **Peste porcina africana en España**: el 27 de noviembre de 2025 reapareció en jabalíes de Cerdanyola del Vallès, sin casos en explotaciones. China, Corea del Sur y Reino Unido aceptaron la regionalización, y Filipinas en mayo de 2026. Japón, México y Taiwán suspendieron las importaciones de toda España, y las exportaciones a Japón y México cayeron unos 350 M€ en el primer semestre de 2026. Ejemplo directo del art. 6
 - **Rusia: Porcino**: Rusia prohibió en 2014 el porcino de toda la Unión por peste porcina africana en Lituania y Polonia. Grupo especial (2016) y Órgano de Apelación (2017) vieron vulneración del MSF, sobre todo en regionalización. La Unión pidió suspender concesiones por unos 1.390 M€ anuales
@@ -135,7 +138,7 @@ En España, el Ministerio de Agricultura, Pesca y Alimentación negocia protocol
 - **Límites máximos de residuos**: el **Reglamento (UE) 2023/334** redujo los límites de clotianidina y tiametoxam, invocando la protección de los polinizadores, con preocupaciones comerciales en el Comité MSF
 - **Nuevos alimentos**: ante la preocupación de países como Perú, se prevé un procedimiento simplificado para alimentos tradicionales que exige 25 años de uso seguro en origen
 
-# 6. CONCLUSIÓN
+# 7. CONCLUSIÓN
 
 El Acuerdo MSF equilibra durante más de tres décadas la protección de la salud de personas, animales y plantas y la libertad de comercio, exigiendo medidas basadas en la ciencia y en normas internacionales y respetando el nivel de protección de cada miembro.
 
