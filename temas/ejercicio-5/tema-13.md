@@ -14,7 +14,7 @@ La energía es un insumo esencial y un sector estratégico, tradicionalmente muy
 
 ## 2.2. El sistema eléctrico
 
-En 2025, según Red Eléctrica, las renovables generaron el 55,5 % de la electricidad: eólica 21,6 % y solar fotovoltaica 18,4 %. Siguieron la nuclear (19 %), el ciclo combinado (16,8 %) y la hidráulica (12,4 %). Más del 75 % de la generación no emite CO2, el carbón es residual y España es exportador neto de electricidad desde finales de 2021. La potencia instalada ronda los 142,5 GW.
+En 2025, según Red Eléctrica, las renovables generaron el 55,5 % de la electricidad. Lideró la eólica (21,6 %), seguida de la nuclear (19 %), la solar fotovoltaica (18,4 %), el ciclo combinado (16,8 %) y la hidráulica (12,4 %). Más del 75 % de la generación no emite CO2, el carbón es residual y España es exportador neto de electricidad desde finales de 2021. La potencia instalada ronda los 142,5 GW.
 
 La estructura distingue dos tipos de actividades:
 
