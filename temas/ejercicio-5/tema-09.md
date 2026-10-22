@@ -1,101 +1,141 @@
-# **1. Conceptos Fundamentales y Características**
+# 1. INTRODUCCIÓN
 
-## **1.1. Contexto y Definición**
-**Origen:** Surge de la necesidad de los Estados-nación de mejorar su posición negociadora frente a otros bloques en un contexto de globalización y libre mercado.
-**Diferencia entre Cooperación e Integración:**
-- Cooperación: Acciones para disminuir la discriminación (ej. acuerdos sobre políticas comerciales).
-- Integración: Medidas para suprimir formas de discriminación (ej. eliminar barreras al comercio) y crear instituciones comunes.
-**Definición de Integración:** Proceso convergente, voluntario, gradual y progresivo entre dos o más Estados sobre un plan de acción común (económico, social, político).
-**Teoría Funcionalista:** Propone que la incapacidad del Estado moderno para satisfacer necesidades complejas lleva a crear organizaciones internacionales. Esto transfiere lealtades desde el Estado hacia organismos supranacionales, reduciendo conflictos nacionalistas.
+La liberalización del comercio avanza desde la Segunda Guerra Mundial por dos vías: la multilateral (GATT y, desde 1995, la **OMC**), que reduce las barreras para todos por igual, y la regional o preferencial, con ventajas que un grupo de países no extiende al resto, el **regionalismo**. Según la OMC hay más de 350 acuerdos regionales en vigor. Con la Ronda de Doha estancada son la principal forma de liberalización, y plantean si conducen a un comercio más libre o lo fragmentan en bloques.
 
-## **1.2. Características del Proceso**
-- **Sujetos:** Estados soberanos.
-- **Voluntariedad:** Decisión deliberada de los Estados.
-- **Gradualidad:** Se avanza por etapas.
-- **Progresividad:** Las etapas son cada vez más profundas (de lo económico a lo político).
+# 2. LA INTEGRACIÓN ECONÓMICA: CONCEPTO Y FASES
 
-# **2. Fases de la Integración Económica**
-El proceso avanza desde acuerdos superficiales hasta la integración política total.
+## 2.1. Concepto de integración
 
-## **2.1. Acuerdo Preferencial**
-- Nivel más superficial. Se conceden rebajas arancelarias entre los firmantes sin extenderlas a TTPP.
-- Requiere autorización de la OMC (excepción al principio de No-Discriminación), permitida generalmente para Países en Desarrollo (ej. Sistema de Preferencias Generalizadas).
+Para **Balassa (1961)** la cooperación reduce la discriminación entre países, mientras que la integración suprime algunas formas de ella, como las barreras al comercio entre miembros. Desde las relaciones internacionales, es el proceso por el que los Estados renuncian a decidir solos sobre ciertas políticas y las toman conjuntamente o las delegan en órganos comunes. La teoría funcionalista lo explica por el efecto de desbordamiento: la cooperación en un sector crea intereses comunes que llevan a cooperar en otros, como desde la CECA de 1951. Los procesos son voluntarios, graduales y suelen empezar por lo económico.
 
-## **2.2. Zona de Libre Comercio**
-- **Características:** Eliminación de aranceles y barreras entre los miembros, pero cada país mantiene su propio arancel frente a terceros.
-- **Reglas de Origen:** Elemento fundamental para evitar la triangulación (que productos externos entren por el país con menor arancel). Certifican qué mercancía es originaria de la zona.
-Ejemplos: NAFTA (ahora T-MEC), EFTA.
+## 2.2. Las fases de la integración económica
 
-## **2.3. Unión Aduanera**
-- **Características:** Libre comercio interno + Arancel Externo Común (AEC) frente a terceros.
-- **Efecto:** Se eliminan las reglas de origen (libre circulación real) y se negocia como bloque frente al exterior.
-Requisitos: Eliminar tarifas internas, establecer tarifa uniforme externa y acordar distribución de ingresos aduaneros.
-**2.4. Mercado Común**
-- **Características:** Unión Aduanera + **Libre circulación de factores productivos** (las 4 libertades: mercancías, servicios, capital y personas).
-- **Implicaciones:** Requiere armonizar legislaciones y establecer reglas de competencia para asegurar el libre mercado.
-Efecto laboral: El factor trabajo se mueve hacia el país con mayor salario hasta que estos tienden a igualarse.
+Balassa las clasificó de menor a mayor profundidad:
 
-## **2.5. Unión Económica y Monetaria**
-- **Características:** Mercado Común + Armonización de **Políticas Económicas** (fiscal, monetaria, industrial).
-- **Paso final:** Creación de una autoridad monetaria supranacional (Banco Central) y adopción de una **moneda única** (ej. Eurozona).
+- **Acuerdo preferencial.** Rebajas arancelarias recíprocas sin eliminarlas. Hoy se usa sobre todo para ventajas unilaterales a países en desarrollo, como el SPG
+- **Zona de libre comercio.** Eliminan aranceles y restricciones cuantitativas entre miembros, y cada uno mantiene su arancel frente a terceros. Las reglas de origen evitan la triangulación. Ejemplos: EFTA y T-MEC
+- **Unión aduanera.** Añade un arancel exterior común, sin reglas de origen internas, con negociación en bloque y reparto de ingresos aduaneros. La Unión Europea lo es desde 1968, y Mercosur o la Comunidad Andina de forma imperfecta
+- **Mercado común.** Añade la libre circulación de personas, servicios y capitales, que con las mercancías forman las cuatro libertades. Exige armonizar legislaciones y reglas de competencia comunes
+- **Unión económica.** Añade la coordinación de políticas económicas. Con moneda única y banco central es unión económica y monetaria, como la zona del euro, con 21 Estados miembros desde 2026 tras la entrada de Bulgaria
+- **Integración económica total.** Unifica políticas económicas, sociales y, al final, exteriores y de defensa, bajo una autoridad supranacional
 
-## **2.6. Integración Económica Completa**
-Máximo grado. Unificación de políticas más allá del mercado: política exterior, defensa y seguridad. Requiere una autoridad supranacional cuyas decisiones obliguen a los Estados miembros.
+Las **reglas de origen** exigen una transformación o un porcentaje mínimo de valor añadido en la zona, y condicionan el aprovechamiento de los acuerdos. La acumulación permite usar insumos de varios socios, como la diagonal paneuromediterránea de la Unión Europea. Muchos acuerdos de **integración profunda** incluyen desde el inicio servicios, inversiones, contratación pública, propiedad intelectual, comercio digital y desarrollo sostenible.
 
-# **3. Efectos Económicos de la Integración**
+# 3. LOS EFECTOS ECONÓMICOS DE LA INTEGRACIÓN
 
-## **3.1. Efectos Estáticos (Unión Aduanera)**
-Al crear una Unión Aduanera, ocurren efectos simultáneos sobre el comercio y bienestar:
-- **Creación de Comercio (Positivo):** Se sustituye producción nacional ineficiente por importaciones más baratas de un socio miembro (debido a la eliminación de aranceles).
-- **Desviación de Comercio (Negativo):** Se sustituyen importaciones baratas de un tercer país (ahora gravado con el arancel común) por importaciones más caras de un socio miembro (exento de arancel).
-Conclusión: La integración aumenta el bienestar si la creación de comercio supera a la desviación. Esto es más probable si la unión es grande y los aranceles previos eran altos.
+## 3.1. Los efectos estáticos: creación y desviación de comercio
 
-## **3.2. Efectos Dinámicos (Largo Plazo)**
-- **Economías de Escala:** La ampliación del mercado permite a las empresas aumentar producción y reducir costes medios.
-- **Intensificación de la Competencia:** Reduce precios, fomenta la innovación y mejora la eficiencia empresarial al romperse los monopolios nacionales.
-- **Comercio Intraindustrial:** Aumenta el intercambio de productos similares (diferenciados) dentro del mismo sector, típico de competencia imperfecta.
+**Viner (1950)** mostró que una unión aduanera no aumenta necesariamente el bienestar, aunque suponga más libre comercio entre sus miembros. Distinguió dos efectos:
 
-## **3.3Efectos sobre el Crecimiento (Modelo Rivera-Romer)**
-La integración puede elevar la tasa de crecimiento permanente mediante el flujo de bienes e ideas:
-- **Capital Humano e Ideas:** Si hay integración total (flujo de ideas/tecnología), aumenta la tasa de crecimiento al aprovechar rendimientos crecientes de I+D,.
-- **Solo Bienes:** Si la integración es solo comercial, el efecto en el crecimiento es temporal (aumenta el output por especialización, pero no la tasa de innovación a largo plazo).
+- **Creación de comercio.** Un país sustituye producción nacional más cara por importaciones más baratas de un socio. Es positivo, porque la producción pasa al productor más eficiente
+- **Desviación de comercio.** Con el arancel exterior común, el país deja de importar del productor más eficiente del mundo y pasa a importar de un socio de mayor coste que no paga arancel. Es negativo, porque la producción pasa a un productor menos eficiente y el Estado pierde ingresos arancelarios
 
-# **4. Principales Bloques Regionales**
+En el país A, antes de la unión importa del país C pagando arancel. Al formar la unión con B importa de B sin arancel y a menor precio. Las áreas a y b son la ganancia por creación de comercio, y el área c, la pérdida por desviación, porque A paga a B más que a C.
 
-## **4.1. Unión Europea**
-- Proceso más avanzado del mundo. Mercado Común y Unión Monetaria (19 países). Posee institucionalidad supranacional.
-- Amplia red de acuerdos comerciales globales (CETA, Mercosur, Turquía, etc.).
+![Efectos de creación y desviación de comercio de una unión aduanera en el país A. Elaboración propia.](tema-09-fig-1.png)
 
-## **4.2. América del Norte**
-- **NAFTA (1994):** Primer gran acuerdo entre desarrollados (EEUU, Canadá) y un emergente (México).
-- **T-MEC / USMCA (2020):** Actualización del NAFTA (NAFTA 2.0) impulsada por la administración Trump, ratificada en 2020.
+La creación tiende a dominar cuanto mayor es el comercio previo entre socios y mayor la unión, más elásticas son la oferta y la demanda, más alto era el arancel inicial entre socios y más bajo el exterior común, y más competitivas y no complementarias son sus economías. **Meade** añadió el efecto consumo. **Kemp y Wan (1976)** demostraron que siempre se puede formar una unión que mejore a sus miembros sin perjudicar a terceros, si el arancel exterior común mantiene el comercio con el resto del mundo.
 
-## **4.3. Asia**
-- **ASEAN:** Asociación de 10 países del Sudeste Asiático. Zona de Libre Comercio desde 1992. Tercer socio comercial de la UE fuera de Europa.
-- **RCEP (2020):** Acuerdo masivo entre ASEAN + 5 socios (incluyendo China, Japón, Corea, Australia). Es el primer tratado multilateral que incluye a China, desplazando el eje económico hacia Asia.
+## 3.2. La medición de la integración
 
-## **4.4. América Latina**
-- **MERCOSUR:** Unión Aduanera imperfecta entre Brasil, Argentina, Uruguay y Paraguay. Éxito relativo, aunque con crisis políticas (suspensión de Venezuela).
-- **CAN (Comunidad Andina):** Perú, Colombia, Ecuador, Bolivia.
-- **ALADI:** Marco general para la integración latinoamericana.
-- **MCCA:** Mercado Común Centroamericano.
+Se mide por la proporción del comercio intrarregional sobre el total: en la Unión Europea ronda el **60 %** del comercio de bienes, en la ASEAN una quinta parte y en Mercosur menos. Refleja la profundidad de la integración y la estructura productiva: las economías exportadoras de materias primas comercian poco entre sí.
 
-# **5. Relaciones Transatlánticas**
+## 3.3. Los efectos dinámicos
 
-## **5.1. El TTIP (Asociación Transatlántica de Comercio e Inversión)**
-Intento de crear el mayor mercado libre del mundo (50% del PIB mundial).
-**Objetivos ambiciosos:**
-- Acceso a mercados (bienes, servicios, compras públicas).
-- Aspectos regulatorios (coherencia normativa).
-- Reglas globales (propiedad intelectual, desarrollo sostenible).
-**Estado:** Negociaciones suspendidas en 2016 tras 15 rondas.
+Son los más importantes y se producen a largo plazo:
 
-## **5.2. Tensiones Comerciales (Trump)**
-- Giro de EEUU hacia el proteccionismo y bilateralismo desde 2017.
-- **Guerra Comercial:** Imposición de aranceles al acero y aluminio europeos (2018) alegando seguridad nacional.
-- **Disputa Airbus-Boeing:** La OMC declaró ilegales las ayudas a ambas compañías. EEUU impuso aranceles por 7.500 M.
+- **Economías de escala.** Un mercado mayor reduce costes. **Corden** distinguió el efecto de reducción de costes (las empresas que ya abastecían el mercado producen más) y el de supresión de comercio (la protección común permite alcanzar escala eficiente y sustituir importaciones de terceros)
+- **Competencia.** Reduce el poder de mercado, obliga a mejorar o salir a las menos eficientes y amplía la variedad, pues gran parte del comercio entre países desarrollados es intraindustrial
+- **Innovación y crecimiento.** Según **Rivera-Batiz y Romer (1991)**, la integración puede elevar de forma permanente el crecimiento si permite circular ideas y conocimientos
+- **Inversión extranjera.** Un mercado más amplio atrae inversión
+- **Factores.** Trabajo y capital se mueven hacia donde se remuneran más, lo que tiende a igualar rendimientos, aunque puede concentrar la actividad en regiones dinámicas
 
-## **5.3. Nueva Agenda (Biden)**
-- Desde 2021, intento de renovar la asociación (Nueva agenda transatlántica).
-- **Hitos recientes:** Suspensión de aranceles cruzados del caso Airbus-Boeing (por 5 años desde junio 2021) y compromiso de no financiar I+D que dañe a la otra parte.
-- Enfoque en cooperación tecnológica, clima y defensa de la democracia frente al auge de China
+El **Informe Cecchini (1988)** estimó que completar el mercado único daría ganancias del **4 % al 6 %** del PIB comunitario, sobre todo por estos efectos.
+
+## 3.4. Los costes de la integración
+
+Hay reajustes con pérdida de empleo en los sectores menos competitivos, y las ganancias pueden concentrarse en las regiones ricas, lo que justifica políticas de cohesión. La integración monetaria obliga a renunciar al tipo de cambio y a la política monetaria propia, y según **Mundell (1961)** solo compensa si los países son similares, sus factores móviles o hay transferencias fiscales.
+
+# 4. EL REGIONALISMO Y EL SISTEMA MULTILATERAL
+
+## 4.1. El marco jurídico en la OMC
+
+Los acuerdos regionales excepcionan la no discriminación y la cláusula de la nación más favorecida, y la OMC los admite con condiciones:
+
+- **Artículo XXIV del GATT.** Permite zonas de libre comercio y uniones aduaneras si eliminan los aranceles y demás restricciones en lo esencial de los intercambios, en un plazo razonable, y no elevan en conjunto la protección frente a terceros. Si una unión eleva el arancel de algún miembro, los terceros afectados pueden pedir compensaciones
+- **Artículo V del AGCS.** Condiciones similares para la integración en servicios
+- **Cláusula de Habilitación (1979).** Permite preferencias entre países en desarrollo y preferencias unilaterales de los desarrollados, como el SPG
+
+Los acuerdos se notifican a la OMC y los examina el Comité de Acuerdos Comerciales Regionales, con un control poco exigente en la práctica.
+
+## 4.2. Las oleadas del regionalismo
+
+- **Viejo regionalismo** (años cincuenta y sesenta). CEE (1957), EFTA (1960) e intentos en América Latina y África basados en la sustitución de importaciones, con resultados modestos fuera de Europa
+- **Nuevo regionalismo** (desde finales de los ochenta). Mercado único europeo, TLCAN, Mercosur y ASEAN. Acuerdos entre países desarrollados y en desarrollo, regionalismo abierto y ámbitos más allá de los aranceles
+- **Acuerdos megarregionales** de la última década. Grandes economías e integración más profunda, como CPTPP y RCEP
+
+## 4.3. El regionalismo en los países en desarrollo
+
+En América Latina y África se concibió en los sesenta, siguiendo a la CEPAL, como complemento de la industrialización por sustitución de importaciones. Intentos como la ALALC de 1960, antecesora de la ALADI, tuvieron resultados limitados por la escasa complementariedad, la inestabilidad macroeconómica y la resistencia a ceder soberanía. Desde los noventa predomina el **regionalismo abierto** y los acuerdos Norte-Sur, que dan acceso a grandes mercados a cambio de compromisos en inversión, propiedad intelectual y estándares laborales y ambientales.
+
+El SPG de la Unión Europea tiene tres modalidades:
+
+- Régimen general
+- **SPG+**, con preferencias adicionales para quienes aplican convenios sobre derechos humanos, laborales, ambientales y buena gobernanza
+- **Todo Menos Armas**, acceso libre de aranceles y contingentes para los países menos adelantados salvo armas
+
+## 4.4. ¿Bloques de construcción o de obstáculo?
+
+El debate central es si el regionalismo favorece o perjudica la liberalización multilateral:
+
+- **Bloques de construcción (building blocks).** Avanzan más rápido entre afines, sirven de laboratorio de normas que luego se multilateralizan y se amplían. **Krugman** añadió que los acuerdos entre socios naturales, cercanos y con mucho comercio previo crean más comercio del que desvían
+- **Bloques de obstáculo (stumbling blocks).** Para **Bhagwati** desvían comercio, restan interés por la negociación multilateral y crean el plato de espaguetis (spaghetti bowl) de reglas de origen, que eleva los costes, sobre todo de las pequeñas empresas
+
+La evidencia sugiere que los acuerdos modernos crean más comercio del que desvían, porque los aranceles exteriores son ya bajos, pero el regionalismo ha avanzado en paralelo al estancamiento multilateral.
+
+# 5. LOS PRINCIPALES PROCESOS DE INTEGRACIÓN
+
+## 5.1. Europa
+
+La **Unión Europea** es el proceso más avanzado: 27 Estados miembros, mercado único, política comercial común y 21 con el euro. El Reino Unido salió el 31 de enero de 2020 y desde 2021 se rige por un Acuerdo de Comercio y Cooperación. Sus etapas: CECA (1951), CEE (Roma, 1957), unión aduanera (1968), Acta Única (1986), Maastricht (1992) y euro (1999), con el mercado único completado en 1993. El Informe Letta (2024) advirtió de que sigue incompleto en energía, telecomunicaciones y servicios financieros.
+
+Tiene la mayor red de acuerdos del mundo, con **44 acuerdos preferenciales** con 76 países a finales de 2025, que cubren cerca de la mitad de su comercio exterior. Destacan el EEE, la unión aduanera con Turquía, CETA, Japón, Corea del Sur, Singapur, Vietnam y Nueva Zelanda, y los de nueva generación de 2026 con Mercosur (acuerdo interino aplicado de forma provisional desde mayo de 2026), México, India y Australia. El Acuerdo de Samoa (2023) sustituyó al de Cotonú.
+
+## 5.2. América
+
+- **T-MEC.** Sustituyó en julio de 2020 al TLCAN (1994). En la revisión del 1 de julio de 2026 no hubo consenso para prorrogarlo, por lo que sigue en vigor con revisiones anuales y vencimiento previsto en 2036
+- **Mercosur** (1991). Unión aduanera imperfecta de Argentina, Brasil, Paraguay y Uruguay, con Venezuela suspendida desde 2016 y Bolivia miembro de pleno derecho desde 2024
+- **Comunidad Andina** (1969). Bolivia, Colombia, Ecuador y Perú
+- **Otros.** Mercado Común Centroamericano, Alianza del Pacífico (2011) y ALADI como marco general
+
+## 5.3. Asia y el Pacífico
+
+- **ASEAN** (1967). Once miembros con Timor Oriental desde 2025. Zona de libre comercio en 1992 y Comunidad Económica en 2015
+- **RCEP.** En vigor desde 2022, reúne a la ASEAN con China, Japón, Corea del Sur, Australia y Nueva Zelanda. Es el mayor acuerdo comercial por población y PIB y el primero que une a China, Japón y Corea del Sur
+- **CPTPP.** En vigor desde 2018 tras la retirada de EEUU del acuerdo original, con once países y el Reino Unido desde diciembre de 2024
+- **APEC.** Foro de cooperación, no acuerdo comercial, basado en el regionalismo abierto
+
+## 5.4. Otras regiones
+
+- **AfCFTA** (en vigor desde 2019). Aspira a un mercado único africano, apoyado en comunidades como la CEDEAO y la Comunidad de África Oriental
+- **Unión Económica Euroasiática** (2015). Varios países de la antigua Unión Soviética en torno a Rusia
+- **Consejo de Cooperación del Golfo** (1981). Seis monarquías de la península arábiga
+
+## 5.5. Las relaciones entre la Unión Europea y Estados Unidos
+
+El **TTIP** se paralizó en 2016 y en 2019 el Consejo declaró obsoletas sus directrices. Desde entonces hay disputas, como los aranceles de 2018 al acero y al aluminio o Airbus y Boeing, en tregua desde 2021.
+
+En 2025 EEUU impuso aranceles generalizados. La Declaración Conjunta del **21 de agosto de 2025** fija un arancel máximo del **15 %** para la mayoría de las exportaciones europeas, aplicada por la Unión mediante reglamentos de junio de 2026. En febrero de 2026 el Tribunal Supremo declaró que la ley de emergencia en que se basaban parte de los aranceles no permitía imponerlos, y la Administración los sustituyó por otros instrumentos.
+
+## 5.6. Las nuevas tendencias del regionalismo
+
+- **Geopolítica.** Pesa en la elección de socios fiables para asegurar bienes estratégicos, como materias primas críticas y semiconductores
+- **Acuerdos sectoriales y de nueva generación.** Complementan los de libre comercio: comercio digital, materias primas e inversiones sostenibles
+- **Cooperación entre bloques.** La Unión Europea dialoga con el CPTPP y la ASEAN para reforzar un comercio basado en reglas
+- **Desarrollo sostenible.** Capítulos vinculantes laborales y medioambientales y referencias al Acuerdo de París
+
+# 6. CONCLUSIÓN
+
+La integración regional amplía mercados, aprovecha economías de escala, aumenta la competencia y refuerza la posición negociadora, pero sus efectos dependen de que la creación de comercio supere a la desviación, y sus mayores ganancias son dinámicas. El reto es que los acuerdos sean compatibles con la OMC y base de una apertura más amplia, no de bloques rivales.
+
+Para España, la integración en la Unión Europea (Acuerdo Preferencial de 1970 y adhesión de 1986) ha sido decisiva para su apertura y modernización. La Unión concentra la mayor parte de su comercio exterior y los acuerdos que negocia la Comisión abren mercados, sobre todo en América Latina, con Mercosur y México.

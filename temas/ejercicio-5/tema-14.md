@@ -1,189 +1,121 @@
-# **1. INTRODUCCIÓN: LIBERALIZACIÓN DEL SECTOR SERVICIOS**
+# 1. INTRODUCCIÓN
 
-## **1.1 Contexto General**
-- **Terciarización:** Aumento del peso del sector servicios en detrimento de actividades primarias y secundarias. En España el proceso fue más tardío (años 80) pero más rápido que en otros PD.
-- **Datos clave (INE, Contabilidad Nacional 2023):**
-  - 68,5% del PIB.
-  - 78,6% del empleo total.
-  - Correlación positiva: a mayor nivel de ingresos del país, mayor demanda de servicios.
-  - Comparativa UE: Aunque elevada, la dimensión es inferior a países como Holanda, Reino Unido o Bélgica.
+La terciarización llegó a España más tarde que a otros países europeos, con el turismo desde los años sesenta y sobre todo desde los ochenta, pero avanzó más rápido. Hoy los servicios generan en torno a tres cuartas partes del VAB y del empleo.
 
-## **1.2 Características principales de las actividades terciarias**
-- **Generación de empleo:** Sector que más empleo genera por el carácter personal (frecuentemente irremplazable). Compensa la destrucción de empleo en otros sectores y absorbe la expansión de la población activa (mujeres, inmigrantes, jóvenes). Suaviza fluctuaciones cíclicas.
-- **Productividad y Tecnología:** Menor productividad relativa, pero no es ajeno a la tecnología. Engloba actividades dinámicas y estratégicas (transporte aéreo, telecomunicaciones, TIC).
-- **Inflación:** Tiende a presentar tasas más altas que otros sectores.
-- **Dificultad en obtención de datos:** Debido a la heterogeneidad, existencia de Servicios No de Mercado (Sector Público), dificultad de separar servicios en empresas industriales y economía sumergida.
+El turismo destaca por su superávit, que compensa buena parte del déficit comercial de bienes. La construcción es una actividad secundaria que se estudia junto a los servicios por su relación con la vivienda, el turismo y las infraestructuras y por su influencia en el ciclo, como mostró 2008. La vivienda es hoy uno de los principales problemas económicos y sociales por el encarecimiento del acceso.
 
-## **1.3 Comercio de servicios**
-- Presenta superávit en la Balanza de Pagos.
-- **Turismo:** 46,5% de ingresos por servicios en 2023 (fuerte recuperación tras la caída al 20,5% en 2020).
-- **Servicios empresariales y financieros:** Escaso desarrollo respecto a la UE. En 2023 representaron un 53,5% de las exportaciones de servicios.
+# 2. EL SECTOR SERVICIOS EN ESPAÑA
 
-# **2. EVOLUCIÓN Y POLÍTICA DE LIBERALIZACIÓN**
+## 2.1. Terciarización y rasgos del sector
 
-## **2.1 Fases del proceso de terciarización**
-- **Años 60-70:** Inicio moderado con el turismo extranjero.
-- **Años 80:** Desarrollo decidido por:
-  - Formación del Estado de Bienestar (educación y sanidad como Servicios No de Mercado).
-  - Estado Autonómico (aumento de servicios de AAPP).
-  - Aumento de renta: mayor demanda de ocio, comercio, seguridad, etc.
-  - Externalización empresarial: limpieza, selección de personal, marketing.
-- **Años 90 (Política de Liberalización):** Impulsada por la UE y el Tratado de Maastricht.
+El crecimiento de los servicios responde al aumento de la renta, a la construcción del Estado del Bienestar y del Estado autonómico, que multiplicó los servicios no de mercado, a la externalización de actividades por las empresas y a la digitalización.
 
-## **2.2 Justificación de la Liberalización**
-- **Objetivo:** Contener la Inflación Dual. Los precios de los servicios tendían a crecer más rápido que los bienes, desestabilizando la economía.
-- **Meta:** Competir en mercados internacionales en condiciones de costes óptimas.
-Nuevo diseño de la Política de Regulación. No implica necesariamente desregulación, sino:
-- Separación de regulador y regulado (privatización de empresas públicas).
-- Garantía de acceso a nuevos competidores en igualdad.
-- Refuerzo de la Defensa de la Competencia.
-- Garantía de prestación de servicio universal (en algunos casos).
-Beneficiarios: Consumidores y empresas (inputs más baratos).
+Rasgos de las actividades terciarias:
 
-# **3. LIBERALIZACIÓN POR SECTORES**
+- Gran capacidad de creación de empleo, que absorbió a la población salida de agricultura e industria y a mujeres, jóvenes e inmigrantes
+- Menor crecimiento de la productividad en muchas actividades tradicionales, como hostelería o comercio, aunque otras son muy dinámicas, como telecomunicaciones, informáticos o financieros
+- Inflación dual: los precios de los servicios crecen más que los de los bienes porque muchos no están expuestos a la competencia internacional, argumento de la liberalización
+- Dificultad de medición, por la heterogeneidad, los servicios no de mercado y la economía sumergida
+- Superávit exterior estructural, por el turismo y cada vez más por servicios empresariales, informáticos y transporte. En 2025 el superávit de la balanza de servicios rondó los **113.500 M€** (Banco de España)
 
-## **3.1 Servicios Financieros**
-- Proceso rápido para el Espacio Financiero Europeo (1993).
-- Hitos: Libre circulación de capitales (1992) y libre prestación de servicios (pasaporte comunitario).
-- Resultados: Aumento de competencia/eficiencia, reducción de márgenes.
+## 2.2. La liberalización de los servicios
 
-## **3.2 Servicios de Telecomunicaciones**
-- **Telefonía Móvil:**
-  - 1994: Segundo operador (Airtel/Vodafone).
-  - 1999: Tercer operador (Amena/Orange).
-- **Regulación:** Creación de la CMT (1996), integrada en la CNMC en 2013.
-- **Telefonía Fija:**
-  - 1996: Segundo operador (Retevisión).
-  - 1998: Obligación de Telefónica de poner su red al servicio de entrantes (interconexión).
-  - 2001: Apertura del bucle local (fin del monopolio).
-  - 2006: Liberalización de tarifas minoristas (fin de precios regulados).
+Desde los años noventa, la UE, el mercado único y la UEM impulsaron la liberalización de actividades protegidas, para aumentar la competencia, bajar precios y mejorar la competitividad de las empresas usuarias. No es desregulación sino nuevo diseño de la regulación: en las industrias de red, separación entre regulador y regulado, acceso no discriminatorio a las redes, defensa de la competencia y servicio universal. Desde 2013 supervisa los mercados la **CNMC**, creada por la **Ley 3/2013**.
 
-## **3.3 Servicios de Transporte**
-- **Carretera:** Privatización de ENATCAR, adquirida por ALSA. Sector atomizado.
-- **Aéreo:**
-  - Fin del monopolio público: Air Europa (1993) y Spanair (1994).
-  - Privatización de Iberia (1999), adquirida mayoritariamente por British Airways (2010).
-  - Irrupción de compañías low cost (Ryanair, Vueling).
-  - Subvenciones por servicio público a islas, Ceuta y Melilla.
-- **Ferrocarril:**
-  - **Infraestructuras vs Operación:** Separación establecida por la Ley del Sector Ferroviario (2003). Creación de ADIF (infraestructura) y RENFE-Operadora (servicio).
-  - **Mercancías:** Liberalizado desde 2005.
-  - **Viajeros:**
-    - Monopolio de RENFE hasta la liberalización reciente.
-    - Cuarto Paquete Ferroviario UE: Apertura de mercados nacionales.
-    - Entrada de competencia en Alta Velocidad: OUIGO (SNCF) en 2021 y AVLO (Renfe low cost).
-    - Obligaciones de Servicio Público: Licitación obligatoria para 2024.
-- **Marítimo:** Liberalizado desde 1996 (salvo cabotaje a islas/Ceuta y Melilla declarado de interés público).
+La **Directiva 2006/123/CE** (Bolkestein) facilitó la libertad de establecimiento y la libre prestación de servicios. Se transpuso con la **Ley 17/2009** (Paraguas) y la **Ley 25/2009** (Ómnibus), y la **Ley 20/2013**, de unidad de mercado, evita la fragmentación por la normativa autonómica.
 
-## **3.4 Servicios Turísticos**
-**Importancia Económica**
-- Factor fundamental de competitividad exterior (compensa déficit comercial).
-- España: 2ª potencia mundial en turistas (tras Francia) y 2ª en ingresos (tras EEUU).
-- Datos 2023: 11,9% del PIB y 9,6% del empleo total.
-**Oferta Turística**
-- **Recursos:** Naturales (8.000 km costa, montañoso) e Histórico-Culturales (3º país Patrimonio Humanidad).
-- **Alojamientos:** Sobredimensionados.
-  - Apartamentos/Viviendas: ~800.000 plazas. Fuerte auge de los apartamentos turísticos generando problemas de acceso a vivienda residencial.
-  - Hoteleros: ~1,5 millones de plazas.
-  - Campings: >500.000 plazas.
-- **Operadores:** Estructura dual (grandes agencias vs. pequeñas en crisis). Tour-operadores extranjeros captan 50% del turismo receptor.
-- **Otros:** Golf, puertos deportivos, estaciones de esquí.
-**Productos Turísticos**
-- **Sol y Playa:** Producto básico, muy competitivo (clima, localización, precio).
-- **Cultural:** Menor estacionalidad, mayor gasto.
-- **Rural:** Alternativa para zonas en declive.
-- **Negocios:** Alto gasto medio.
-- **Social/3ª Edad:** Gestionado por entes públicos (IMSERSO), clave para temporada baja.
-- **Salud y Compras:** En desarrollo (ZGAT's, Plan Turismo de Compras).
-**Demanda Turística**
-- **Externa:**
-  - Origen: 80% UE+UK (Francia, UK, Alemania).
-  - Evolución: Récord en 2019 (83,5M turistas). Caída drástica COVID (2020-2022). Recuperación total en 2023 (85,1M turistas, +1,9% sobre 2019).
-  - Vía entrada: Avión (83%).
-  - Concentración: Estacional (julio-septiembre) y Geográfica (Mediterráneo, Islas).
-- **Interna:** Menor concentración geográfica pero menor gasto medio.
-**Planes de Política Turística**
-- Planes históricos: FUTURES (92-99), PICTE (2000-06), Plan 2020, PNIT (2012-2015).
-- **Plan Estratégico de Marketing 2018-2020:** Enfoque en el turista cosmopolita y de mercados lejanos (mayor gasto).
-- **Estrategia de Turismo Sostenible 2030:** Tres pilares (socioeconómico, medioambiental, territorial). Alineado con ODS Agenda 2030.
-- **Estrategia de Sostenibilidad Turística en Destino:** Enmarcada en fondos NGEU (1.900M€ inversión).
-**Estadísticas (INE)**
-- **FRONTUR:** Flujos de entrada. 2023: 85,1 millones de turistas.
-  - Destinos principales: Cataluña, Baleares, Canarias, Andalucía.
-- **EGATUR:** Gasto turístico.
-  - 2023: Gasto total 108.662M€ (+18,2% vs 2019). Gasto medio/turista: 1.278€. Gasto diario: 175€.
+Por sectores:
 
-# **4. SECTOR DE LA CONSTRUCCIÓN**
+- **Servicios financieros**: libre circulación de capitales (1992) y pasaporte comunitario. Tras 2008, reestructuración bancaria con desaparición de la mayoría de las cajas, y Unión Bancaria
+- **Telecomunicaciones**: nuevos operadores, liberalización plena en diciembre de 1998 y apertura del bucle local en 2001. Rige la **Ley 11/2022**, General de Telecomunicaciones
+- **Transporte aéreo**: nuevas compañías, privatización de Iberia (2001), hoy en IAG, y bajo coste. Aena cotiza desde 2015 con mayoría pública
+- **Ferrocarril**: rige la **Ley 38/2015**, con infraestructura (ADIF) y servicios (Renfe) separados. El Cuarto Paquete Ferroviario abrió la alta velocidad a Ouigo (2021) e Iryo (2022), con menores precios y más viajeros.
+- **Carretera y marítimo**: mercancías por carretera liberalizadas y atomizadas (**Ley 16/1987**). Marítimo liberalizado salvo las líneas de interés público con islas, Ceuta y Melilla
+- **Comercio minorista**: la **Ley 7/1996**, reformada por la **Ley 1/2010**, suprimió con carácter general la autorización previa. La **Ley 1/2004** regula horarios y Zonas de Gran Afluencia Turística
 
-## **4.1 Importancia y Características**
-- Extrema sensibilidad al ciclo económico (motor o lastre).
-- Peso en PIB: Caída del 10,4% (2006) al 5,0% (2023).
-- Empleo: Caída del 13,9% (2006) al 7,0% (2023).
-- Estructura dual: Grandes grupos (ACS, Ferrovial, FCC) y muchas PYMES.
-- Empleo: Alta temporalidad, escasa formación, alta siniestralidad. Escasez de mano de obra actual.
-- Arrastre industrial: Clave para sector de minerales no metálicos (cemento, cerámica - España líder mundial en tejas/ladrillos).
+## 2.3. El turismo
 
-## **4.2 Situación Reciente y Perspectivas (Informe Euroconstruct)**
-- **2023:** Crecimiento del 2,8% (recuperación postpandemia completada).
-- **2024-2025:** Previsiones de crecimiento tibio (1,2% - 1,4%). Dependencia de fondos NGEU.
-- **Problemas latentes:** Escasez de mano de obra, altos costes de suministros/energía/crédito.
-- **Mercado Inmobiliario:** No hay exceso de stock grave (447.691 viviendas a enero 2024).
+En 2024 el turismo aportó el **12,6 %** del PIB y el **12,3 %** del empleo (Cuenta Satélite, INE). España es el segundo destino mundial por llegadas, tras Francia, y por ingresos, tras EEUU. En 2025 recibió un récord de **96,8 millones** de turistas con un gasto de **134.712 M€**. Los mercados principales son Reino Unido, Francia y Alemania, y las comunidades de mayor gasto, Cataluña, Canarias y Baleares. Según el Banco de España, en 2025 los ingresos fueron unos 105.200 M€ y el superávit turístico unos 70.300 M€, en torno al 4,2 % del PIB.
 
-## **4.3 Análisis por Subsectores**
-- **Edificación Residencial:** Situación ambigua. Caen compraventas, pero precios resisten (oferta escasa). Producción estancada prevista para 2023-2025. Incertidumbre por la Ley de Vivienda y tipos de interés.
-- **Edificación No Residencial:** Prudencia, selección rigurosa de proyectos. Logística con riesgo de sobreexplotación.
-- **Rehabilitación:** Expectativas del programa PREE no cumplidas totalmente. Riesgo de retracción al agotarse subvenciones.
-- **Ingeniería Civil:** Segmento más beneficiado por fondos NGEU. Crecimiento expansivo en 2023 (7%), relajándose después. Riesgo de no ejecutar a tiempo los fondos.
+La oferta combina recursos naturales, patrimonio cultural, una de las mayores redes de alojamiento de Europa y grandes hoteleras como Meliá, NH o Barceló. El sol y playa sigue siendo el producto principal, pero ganan peso el turismo cultural, urbano, de negocios, rural y de compras, que reducen estacionalidad y concentración. La vía aérea supone más del 80 % de las llegadas.
 
-## **4.4 Comercio Exterior**
-- Tradicionalmente cerrado, apertura mediante licitaciones internacionales (Acuerdo Contratación Pública).
-- Grandes éxitos de empresas españolas en el exterior (Canal de Panamá, Metro Riad/Montreal/Copenhague).
+Retos: estacionalidad, sostenibilidad, saturación de destinos, baja productividad, precariedad laboral e impacto de las viviendas de uso turístico sobre el alquiler.
 
-## **4.5 Subsector Infraestructuras**
-- Déficit histórico y estructura radial.
-- **PEIT 2005-2020:** Objetivo de red mallada. Fuerte inversión en ferrocarril (Alta Velocidad).
-- **PITVI 2012-2024:** Enfoque en eficiencia, sostenibilidad y conexión con Red Transeuropea.
-**5. POLÍTICA DE LA VIVIENDA ESPAÑOLA**
-**Contexto**
-- Alto porcentaje de propiedad (87% vs 65% media UE).
-- Burbuja inmobiliaria (1997-2007): Precios se triplicaron. Estallido en 2008 con fuerte endeudamiento familiar.
-- Preferencia por compra debido a regulación histórica del alquiler.
+La política turística se comparte con las comunidades autónomas, competentes en ordenación del turismo. Los fondos del Plan de Recuperación financiaron los Planes de Sostenibilidad Turística en Destinos (unos 1.858 M€). La hoja de ruta vigente es la **Estrategia España Turismo 2030**, aprobada el 21 de octubre de 2025, basada en la triple sostenibilidad y que incluye por primera vez a los residentes entre los beneficiarios.
 
-## **5.1 Evolución Legislativa del Alquiler**
-- **Decreto Boyer (1985):** Liberalización para nuevos contratos (fin prórroga forzosa).
-- **LAU 29/1994:** Plazo mínimo 5 años.
-- **Ley 4/2013 (Flexibilización):**
-  - Reducción prórroga obligatoria de 5 a 3 años.
-  - Facilidad para recuperar vivienda por el arrendador.
-  - Desistimiento del arrendatario a los 6 meses.
-- **RDL 7/2019:** Vuelta a mayor protección. Prórroga obligatoria de 5 años (física) o 7 años (jurídica).
-- **Limitación actualización rentas (2022):** Tope al IGC (guerra Ucrania/inflación).
+# 3. EL SECTOR DE LA CONSTRUCCIÓN
 
-## **5.2 Ley 12/2023 por el Derecho a la Vivienda**
-Primera ley estatal de vivienda de la democracia. Claves:
-- **Reserva de suelo:** 30% en nuevas promociones para parque público (mitad para alquiler social).
-- **Incentivos fiscales (IRPF):** Bonificaciones a pequeños propietarios (hasta 90%) si bajan precios en zonas tensionadas, alquilan a jóvenes o rehabilitan.
-- **Impuesto viviendas vacías:** Recargo del IBI hasta 150%.
-- **Grandes Propietarios:** Definidos como titulares de >10 inmuebles (o 5 en zonas tensionadas). Limitación de precios al índice de referencia en zonas tensionadas.
-- **Bono Alquiler Joven:** 250€/mes (18-35 años, rentas bajas).
-- **Desahucios:** Prohibición sin fecha predeterminada, prórrogas para vulnerables, intermediación obligatoria.
-- **Zonas de Mercado Tensionado:** Declaración por CCAA (si carga hipoteca/alquiler >30% ingresos o precios suben >3 puntos sobre IPC). Tope de precios y prórrogas forzosas.
-- **Vivienda Asequible Incentivada:** Beneficios a privados a cambio de alquileres reducidos.
-- **Parque Público:** Protección permanente, no se puede descalificar en menos de 30 años.
-- **Definición de Vivienda Digna:** Habitable, accesible, eficiente y con suministros garantizados.
+## 3.1. Importancia y rasgos del sector
 
-## **5.3 Planes Estatales y Otras Medidas**
-- **Plan Estatal de Acceso a la Vivienda 2022-2025:**
-  - Objetivos corto plazo: Ayudas directas alquiler, vulnerables (violencia género, desahucios), jóvenes.
-  - Objetivos medio plazo: Incremento parque público, cohousing, viviendas SAREB, alojamientos temporales.
-  - Estructurado en 13 programas.
-- **Medidas Fiscales recientes:**
-  - Eliminación deducción por compra (desde 2013).
-  - Supresión deducción estatal por alquiler (desde 2015).
-  - Reducción exención arrendadores en IRPF (del 60% al 50%).
-  - Dación en pago exenta de plusvalía (IRPF).
-  - SOCIMI: Tributación elevada al 15% (antes 0%).
-- **Regulación de Suelo:**
-  - **SEPES:** Entidad pública para urbanizar suelo residencial/industrial. Nueva empresa pública de vivienda arrancará con activos de SEPES.
-- **Fondo Social de Viviendas (FSV):** Creado en 2013 con viviendas de entidades financieras para desahuciados. Prorrogado hasta 2025.
-- **SAREB:** Gestión de activos tóxicos de entidades nacionalizadas. Protocolos para ceder viviendas para alquiler social (objetivo 50.000 inmuebles en parque público).
+Rasgos del sector:
+
+- Peso económico: en torno al 5 a 6 % del VAB y cerca de **1,56 millones** de ocupados a finales de 2025, menos del 7 % del empleo, frente a más del 10 % del PIB y el 13 % del empleo antes de 2008
+- Efecto arrastre sobre materiales (cemento, cerámica, vidrio, acero) y servicios inmobiliarios y financieros
+- Alta sensibilidad al ciclo: motor en las expansiones y amplificador de las recesiones, como en 1992 y 2008
+- Dependencia de la iniciativa pública, en obra civil y, por la política de suelo y vivienda, en edificación
+- Estructura dual: grandes grupos internacionalizados (ACS, Ferrovial, Acciona, Sacyr, OHLA), líderes en concesiones, y muchas pequeñas empresas
+- Problemas de empleo: siniestralidad, envejecimiento y escasez de mano de obra cualificada, que limita la producción de viviendas
+
+Se divide en edificación, obra civil y rehabilitación y mantenimiento, que gana peso por la eficiencia energética.
+
+## 3.2. Evolución reciente
+
+Entre 1997 y 2007 hubo un auge sin precedentes, por los bajos tipos, la inmigración, el crédito fácil y las expectativas de revalorización, con más de 600.000 viviendas iniciadas algunos años. La crisis de 2008 redujo la producción residencial a una fracción y el sector perdió más de la mitad de su empleo. La recuperación, desde 2014, ha sido lenta: en 2025 se terminaron unas **92.000** viviendas, muy por debajo de las necesidades.
+
+Hoy impulsan la actividad la obra civil con fondos Next Generation EU y la rehabilitación energética, con una licitación pública superior a **28.700 M€** hasta noviembre de 2025. Se prevé un crecimiento moderado, limitado por la escasez de mano de obra, los costes de materiales y la lentitud urbanística. La construcción industrializada reduce plazos y mano de obra.
+
+## 3.3. Las infraestructuras
+
+El esfuerzo inversor desde los años ochenta, con fondos europeos, sitúa a España entre los países con mayor red de autovías y de alta velocidad de Europa. Persisten el trazado radial, la escasa cuota del ferrocarril en mercancías y la necesidad de mantenimiento.
+
+La planificación pasó por el Plan Director 1993-2007, el PEIT 2005-2020 y el PITVI 2012-2024. Hoy se orienta a la movilidad sostenible:
+
+- La Estrategia de Movilidad 2030 y la **Ley 9/2025**, de 3 de diciembre, de Movilidad Sostenible priorizan mantenimiento, intermodalidad y descarbonización frente a nuevas infraestructuras
+- El **Reglamento (UE) 2024/1679**, de la Red Transeuropea de Transporte, fija plazos para los corredores Mediterráneo y Atlántico
+- El DORA III (2027-2031) prevé cerca de **13.000 M€** en aeropuertos de Aena, incluida la ampliación de Madrid-Barajas
+
+# 4. LA POLÍTICA DE VIVIENDA ESPAÑOLA
+
+## 4.1. El mercado de la vivienda
+
+Rasgos del mercado:
+
+- Predominio de la propiedad: en torno a tres cuartas partes de los hogares, aunque desciende entre los jóvenes
+- Alquiler reducido y con escasa oferta profesional, y vivienda social de en torno al 1,5 % del parque, frente a cerca del 7 % en la UE y la OCDE
+- Fuerte alza de precios: el índice de vivienda subió un **12,9 %** interanual en el cuarto trimestre de 2025 (INE), y los alquileres han crecido más que los salarios en grandes ciudades y zonas turísticas
+- Déficit de oferta: unas **750.000** viviendas entre 2021 y 2025 (Banco de España), porque se crean unos 240.000 hogares al año, por la inmigración, y se producen muchas menos viviendas
+- Competencia de viviendas turísticas y alquileres de temporada
+
+El **art. 47** de la Constitución reconoce el derecho a una vivienda digna y adecuada. Las comunidades autónomas tienen competencia exclusiva en vivienda, urbanismo y ordenación del territorio, y el Estado interviene por sus títulos sobre planificación económica, legislación civil y fiscalidad. Desde 2023 la política estatal corresponde al Ministerio de Vivienda y Agenda Urbana.
+
+## 4.2. La regulación del alquiler
+
+El alquiler se rige por la **Ley 29/1994** (LAU), reformada por el **Real Decreto-ley 7/2019**: duración mínima de cinco años si el arrendador es persona física y siete si es jurídica, con prórroga tácita de tres años.
+
+Desde 2025 las subidas anuales se rigen por el **IRAV**, elaborado por el INE. El **Real Decreto 1312/2024**, en aplicación del **Reglamento (UE) 2024/1028**, creó el Registro Único de Arrendamientos, que desde el 1 de julio de 2025 exige número de registro para anunciar en plataformas alquileres turísticos y de temporada.
+
+## 4.3. La Ley 12/2023, por el derecho a la vivienda
+
+La **Ley 12/2023**, de 24 de mayo, es la primera ley estatal de vivienda de la democracia. Medidas principales:
+
+- **Zonas tensionadas**: las comunidades autónomas pueden declararlas por tres años, prorrogables, si el coste de alquiler o hipoteca supera el 30 % de los ingresos medios de los hogares o los precios han crecido muy por encima del IPC. Los grandes tenedores no pueden superar el índice de referencia del precio del alquiler, los pequeños propietarios la renta anterior, y los inquilinos pueden pedir una prórroga extraordinaria de hasta tres años. En 2025 vivían en ellas más de 8 millones de personas
+- **Gran tenedor**: titular de más de diez viviendas, o de cinco o más en zona tensionada si así lo decide la comunidad
+- Reducciones en el IRPF a arrendadores de hasta el 90 % si se rebaja la renta en zona tensionada, frente al 50 % general
+- Recargo en el IBI de hasta el 150 % para viviendas vacías más de dos años de propietarios con al menos cuatro viviendas
+- Reservas de suelo para vivienda protegida del 40 % en suelo urbanizable y 20 % en urbano no consolidado, al menos la mitad para alquiler
+- Protección permanente de la vivienda protegida sobre suelo de reserva y 30 años de calificación en los demás casos. Crea la vivienda asequible incentivada, privada con beneficios públicos a cambio de rentas limitadas
+- Mayor protección de hogares vulnerables en los desahucios
+
+## 4.4. Planes de vivienda y otros instrumentos
+
+Los planes estatales, financiados por el Estado y gestionados por las comunidades, son el principal instrumento de ayudas. Al Plan 2022-2025 (**Real Decreto 42/2022**), centrado en el alquiler, el parque público y los vulnerables, lo sustituye el **Plan Estatal de Vivienda 2026-2030**, aprobado en abril de 2026, el primero bajo la Ley 12/2023, con unos **7.000 M€** (60 % Estado, 40 % comunidades). Destina el 40 % al parque público y social, el 30 % a rehabilitación y el 30 % a ayudas a jóvenes para alquiler o compra en pequeños municipios.
+
+En diciembre de 2025 se acordó transformar SEPES en **CASA47**, Entidad Estatal de Vivienda, con unos **13.000 M€** en diez años y el objetivo de que la vivienda pública alcance cerca del 8 % del parque. Gestionará suelo y viviendas de la SAREB y otros organismos, con alquileres que no superarán el 30 % de la renta media del territorio. El Plan de Recuperación financió rehabilitación y vivienda en alquiler social, y el ICO ofrece avales a jóvenes para la primera vivienda.
+
+En lo fiscal, en 2013 se suprimió la deducción del IRPF por compra de vivienda habitual, que alimentó la burbuja. Las **SOCIMI** tributan al tipo cero en el Impuesto sobre Sociedades. En suelo rige el **Real Decreto Legislativo 7/2015**, pero la gestión corresponde a comunidades y ayuntamientos, y su lentitud frena la oferta.
+
+# 5. CONCLUSIÓN
+
+Los servicios son el núcleo de la economía española y la principal fuente de empleo. La liberalización ha aumentado la competencia en telecomunicaciones, transporte y servicios financieros, y el turismo, con cifras récord en 2025, sigue siendo pilar del crecimiento y del equilibrio exterior, aunque plantea retos de sostenibilidad, productividad y convivencia con los residentes.
+
+La construcción, antes motor del crecimiento, es hoy un sector más pequeño apoyado en obra civil, rehabilitación y fondos europeos, y limitado por la escasez de mano de obra. Esa insuficiente oferta es una de las causas del déficit de viviendas y del encarecimiento del acceso, sobre todo para los jóvenes. La Ley 12/2023, el Plan Estatal 2026-2030 y CASA47 buscan ampliar el parque público y moderar los alquileres, pero la solución requiere producir más vivienda con suelo más ágil, construcción industrializada y coordinación entre administraciones.

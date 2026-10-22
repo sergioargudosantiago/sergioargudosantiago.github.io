@@ -1,115 +1,149 @@
-# **1. Introducción y Conceptos Fundamentales**
+# 1. INTRODUCCIÓN
 
-## **1.1. Definición y Encuadre**
-• **Actividad Financiera del Sector Público:** Conjunto de decisiones económicas sobre ingresos y gastos del Estado.
-• **Política Fiscal:** Actuación discrecional de las autoridades sobre programas de ingresos y gastos públicos para alcanzar objetivos macroeconómicos (producción, renta y empleo).
+**Política fiscal.** Uso que hace el sector público de sus ingresos y gastos para influir en la actividad, el empleo, los precios y el reparto de la renta. Con la política monetaria forma las dos grandes herramientas macroeconómicas.
 
-## **1.2. Funciones y Objetivos**
-• **Objetivos Finales:**
-- Plena ocupación (máximo empleo).
-- Control de la demanda agregada (vía impuestos y gasto).
-- Control del saldo presupuestario (déficit o superávit).
-• **Funciones Principales:**
-- **Estabilización:** Junto con la política monetaria.
-- **Asignación:** Provisión de bienes sociales/públicos.
-- **Distribución:** Corregir desigualdades de renta.
+Desde 1999 el BCE decide la política monetaria del euro, así que la política fiscal es el principal instrumento nacional ante perturbaciones propias, limitado por reglas europeas y nacionales. En 2024 entró en vigor un nuevo marco europeo y en 2025 España redujo su déficit al **2,4 % del PIB**, el más bajo desde 2007, con una deuda próxima al 100 %.
 
-## **1.3. Instrumentos de la Política Fiscal**
-- **Gasto Público:** Influye directamente en el nivel de actividad.
-- **Impuestos y Transferencias:** Influyen indirectamente afectando la renta disponible, el consumo y la inversión privada.
+# 2. LA POLÍTICA FISCAL: FUNCIONES E INSTRUMENTOS
 
-## **1.4. Tipología de la Política Fiscal**
-- **Política Fiscal Expansiva:**
-- Objetivo: Estimular la demanda agregada (combatir recesión/paro).
-- Mecanismos: Aumentar gasto público o bajar impuestos.
-- Riesgos: Puede provocar déficit e inflación.
-- **Política Fiscal Restrictiva:**
-- Objetivo: Frenar la demanda agregada (combatir inflación/exceso de expansión).
-- Mecanismos: Reducir gasto público o subir impuestos.
-- Resultado: Tiende al superávit presupuestario.
+## 2.1. Las funciones del sector público
 
-# **2. La Política Fiscal Española**
+Según **Musgrave (1959)**, el sector público cumple tres funciones:
 
-## **2.1. Marco General y Evolución**
-• **Principios Tributarios:** La Constitución y la Ley General Tributaria establecen principios de capacidad económica, igualdad, progresividad y no confiscatoriedad.
-• **Hitos Históricos:**
-1. Descentralización autonómica (1982).
-2. Entrada en la CEE (1986): Adopción del IVA y Arancel Exterior Común.
-3. Entrada en la UEM (1999): Disciplina fiscal y moneda única.
+- Asignación: proporciona bienes y servicios que el mercado no ofrece en cantidad suficiente y corrige fallos de mercado como las externalidades
+- Distribución: corrige la desigualdad de la renta con impuestos progresivos, transferencias y gasto social
+- Estabilización: suaviza las fluctuaciones para mantener empleo y precios estables. Es la función propia de la política fiscal como política macroeconómica
 
-## **2.2. Crisis y Consolidación Fiscal**
-• **Periodo pre-UEM:** Altos déficits (7% en 1995). Creación de la Oficina Presupuestaria (1996) para cumplir Maastricht, logrando reducir el déficit al 3% para entrar en el euro.
-• **Crisis 2008:** Deterioro grave de finanzas. Déficit récord del 10,95% en 2009. Agotamiento del margen fiscal.
-• **Crisis COVID-19 (2020):** Déficit del 10,95% (122.900 M€). Suspensión temporal de reglas fiscales. Aumento masivo de gasto para ayudas.
-• **Presión Fiscal:** España mantiene una presión fiscal (35,4%) inferior a la media de la UE (41,1%), condicionando el Estado del Bienestar.
+## 2.2. Los instrumentos y el tipo de política
 
-## **2.3. Nuevas Normas Fiscales**
-• **Reforma del Artículo 135 de la Constitución (2011):**
-- Prioridad absoluta al pago de la deuda pública.
-- Principio de estabilidad presupuestaria y límites de déficit estructural.
-• **Ley Orgánica 2/2012 de Estabilidad Presupuestaria:**
-- Límite de deuda: 60% del PIB (44% Estado, 13% CCAA, 3% Local).
-- Objetivo de déficit 0 o superávit para todas las AAPP.
-- Responsabilidad compartida adaptada a normativa UE.
+El **gasto público** forma parte directa de la demanda agregada. Los **impuestos y transferencias** influyen de forma indirecta, al modificar la renta disponible y con ella el consumo y la inversión. La política es **expansiva** si aumenta el gasto o reduce impuestos para estimular la demanda en una recesión, y **restrictiva** en el caso contrario, para frenar una demanda que genera inflación.
 
-# **3. Disciplina Fiscal en la Unión Europea**
+Los **estabilizadores automáticos** actúan sin decisiones nuevas: en una recesión cae la recaudación y suben las prestaciones por desempleo, de modo que el déficit sostiene la demanda. En España son importantes. La **política discrecional** son medidas deliberadas, como un plan de inversión o una rebaja de impuestos. El **saldo estructural**, corregido de ciclo y de medidas temporales, indica la orientación de fondo, aunque su cálculo es incierto porque exige estimar la producción potencial.
 
-## **3.1. Justificación de la Disciplina**
-• Necesidad de evitar efectos negativos cruzado entre países miembros (ej. subidas de tipos de interés por culpa de un país endeudado).
-• La política fiscal se mantiene nacional, pero coordinada para proteger la independencia del BCE y la estabilidad de precios.
+## 2.3. La eficacia de la política fiscal
 
-## **3.2. Criterios de Convergencia**
-Para acceder al Euro se exigió:
-- **Déficit:** No superior al 3% del PIB.
-- **Deuda:** No superior al 60% del PIB.
-- **Inflación y Tipos de Interés:** Cercanos a los países con mejor comportamiento
-- **Tipo de Cambio:** Estabilidad en el SME durante 2 años.
+En el modelo keynesiano el gasto eleva la renta más de lo gastado por el **multiplicador**. Sus límites:
 
-## **3.3. Pacto de Estabilidad y Crecimiento (PEC)**
-Normas para mantener finanzas saneadas en la UEM:
-• **Vertiente Preventiva:** Programas de Estabilidad (países Euro) o Convergencia. Supervisión multilateral.
-• **Vertiente Correctora (Procedimiento de Déficit Excesivo - PDE):** Se activa si se supera el 3% de déficit. Puede conllevar sanciones (multas del 0,2% al 0,5% del PIB) y suspensión de Fondos Estructurales.
+- **Efecto expulsión**: el mayor déficit puede subir los tipos y desplazar inversión privada
+- **Equivalencia ricardiana**: si se anticipan impuestos futuros, se ahorra más y el estímulo pierde eficacia
+- **Retardos**: la medida puede llegar cuando ya no es necesaria
+- **Economía abierta**: parte del estímulo se filtra por las importaciones
 
-## **3.4. Refuerzo de la Gobernanza**
-• **Six-Pack (2011):** 6 reglamentos para fortalecer la supervisión fiscal y macroeconómica. Atención a la evolución de la deuda, no solo al déficit.
-• **Pacto Presupuestario:** Tratado intergubernamental para reforzar la disciplina.
-• **Two-Pack (2013):** Supervisión reforzada específica para la Zona Euro (mayor control sobre borradores presupuestarios).
+Tras 2008 se vio que los multiplicadores son mayores en recesión y con tipos en cero (FMI, 2013), por lo que la austeridad en plena recesión costó más actividad de lo previsto.
 
-## **3.5. Flexibilidad y Excepciones**
-• **Cláusula General de Salvaguardia:** Activada en marzo de 2020 por el COVID-19. Permite desviarse de las trayectorias de ajuste temporalmente ante crisis graves, sin suspender los procedimientos del PEC.
-• **Meta de Inflación del BCE (2021):** Nuevo objetivo de inflación simétrico del 2% a medio plazo, permitiendo desviaciones transitorias.
+# 3. LA POLÍTICA FISCAL EN ESPAÑA
 
-# **4. Financiación del Déficit Público**
+## 3.1. Los principios constitucionales
 
-## **4.1. Restricción Presupuestaria del Gobierno**
-El gobierno no puede gastar más de lo que ingresa o se endeuda.
-**Gasto + Intereses = Impuestos + ΔBase Monetaria + ΔDeuda Pública**
-La política fiscal y monetaria son interdependientes, un déficit exige una decisión de financiación.
+El **art. 31** de la Constitución exige contribuir al gasto público según la capacidad económica, con un sistema tributario justo basado en igualdad y progresividad y sin alcance confiscatorio. Los tributos solo se establecen por ley. Su régimen general es la **Ley 58/2003**, General Tributaria.
 
-## **4.2. Vías de Financiación**
-1. **Impuestos:** Si cubren el gasto, reducen el déficit, pero pueden distorsionar el consumo y la inversión. Políticamente costosos.
-2. **Emisión de Dinero (Monetización):** Facultad del Banco Central. Genera inflación. Actualmente limitada legalmente en la UE (independencia del BCE).
-3. **Emisión de Deuda Pública:**
-- No empobrece necesariamente a futuras generaciones si se refinancia.
-- **Efecto Desplazamiento (Crowding Out):** Al emitir deuda, el Estado compite por fondos con el sector privado, subiendo los tipos de interés y reduciendo la inversión privada.
+## 3.2. La evolución reciente
 
-# **5. Sostenibilidad del Déficit Público**
+- **Descentralización autonómica**: las comunidades gestionan buena parte del gasto en sanidad y educación y parte de los impuestos
+- **Ingreso en la Comunidad Europea (1986)**: IVA, arancel exterior común y fondos europeos
+- **Convergencia hacia el euro**: déficit del 7 % en 1995, consolidación posterior y entrada en el euro en 1999. Superávit entre 2005 y 2007
+- **Crisis de 2008**: se hundió la recaudación ligada a la burbuja inmobiliaria. Déficit superior al 11 % en 2009 y deuda del 36 % del PIB en 2007 a más del 100 % en 2014, con un intenso ajuste desde 2010
+- **Reformas tributarias**: la del IRPF de 1998 y la de 2014, que bajó el tipo general de Sociedades del 30 % al 25 %
+- **Pandemia de 2020**: déficit superior al 10 % y deuda superior al 120 %. La UE creó Next Generation EU, con el Mecanismo de Recuperación y Resiliencia como componente principal
+- **Recuperación**: déficit del **2,4 %** en 2025, en parte afectado por el gasto de la DANA, y deuda del **100,7 %**
 
-## **5.1. Enfoques de Sostenibilidad**
-- **A Corto Plazo (Criterio UE):** Basado en la regla del déficit máximo del 3%. Crítica: Puede forzar políticas procíclicas en recesión (recortar gasto cuando se necesita estimular).
-- **A Medio Plazo (Estructural):** Capacidad de controlar flujos a lo largo del tiempo. Considera la presión fiscal máxima tolerada y la movilidad del capital global.
-- **A Largo Plazo (Demográfico):** El verdadero reto es el envejecimiento poblacional (pensiones, sanidad).
-- Ejemplo: Si la ratio cotizante/pensionista cae, el déficit estructural se dispara.
-- Necesidad: Reformas en pensiones (cuentas nocionales, edad jubilación) y mercado laboral.
-**5.2. Definición Técnica de Sostenibilidad**
-La política fiscal es sostenible cuando el **valor actual de la deuda** iguala el **valor presente esperado de los superávits futuros**. El gobierno debe estabilizar la proporción Deuda/PIB, no el nivel absoluto de deuda.
+![Saldo público y deuda pública de España en porcentaje del PIB desde 2007, con el límite del 3 % y la referencia del 60 %. Elaboración propia.](tema-06-fig-1.png)
 
-# **6. Estrategia Europa 2020**
-Sucesora de la Estrategia de Lisboa, busca un crecimiento inteligente, sostenible e integrador. Se supervisa dentro del **Semestre Europeo**.
+La presión fiscal ha aumentado pero sigue algunos puntos por debajo de la media de la UE, que en 2024 fue del 40,4 % del PIB. El Estado funciona con presupuestos prorrogados.
 
-## **6.1. Los 5 Objetivos Clave (actualizar)**
-- **Empleo:** Tasa del 75% (20-64 años).
-- **I+D:** Inversión del 3% del PIB.
-- **Clima y Energía (20/20/20):**
-- **Educación:** Abandono escolar <10% y 40% de población (30-34 años) con estudios terciarios.
-- **Pobreza:** Reducir en 20 millones las personas en riesgo de exclusión
+## 3.3. Las reglas fiscales españolas
+
+- **Art. 135 de la Constitución** (septiembre de 2011): consagra la estabilidad presupuestaria. Déficit estructural dentro del límite europeo, deuda dentro del valor de referencia y prioridad absoluta del pago de la deuda. Solo se superan los límites por catástrofes, recesión o emergencia, apreciadas por mayoría absoluta del Congreso
+- **Ley Orgánica 2/2012**: equilibrio estructural, deuda del 60 % del PIB (Administración Central 44 %, comunidades 13 %, corporaciones locales 3 %) y regla de gasto ligada al crecimiento a medio plazo. Prevé planes de reequilibrio y medidas correctoras
+- **AIReF**, creada por la Ley Orgánica 6/2013: vigila las reglas y evalúa de forma independiente previsiones y cuentas
+
+Las reglas se suspendieron entre 2020 y 2023, como las europeas, y volvieron en 2024.
+
+# 4. LA DISCIPLINA FISCAL EN LA UNIÓN EUROPEA
+
+## 4.1. Por qué hace falta disciplina fiscal en una unión monetaria
+
+La autonomía fiscal se justifica porque cada país sufre perturbaciones asimétricas y no tiene política monetaria ni tipo de cambio propios. La disciplina, porque un país con finanzas insostenibles puede subir los tipos de toda la unión, contagiar una crisis de deuda o presionar al banco central, y porque existe riesgo moral ante un posible rescate. Por eso el Tratado prohíbe la financiación monetaria de los Estados (**art. 123 TFUE**) y excluye que la Unión asuma sus compromisos (**art. 125**).
+
+## 4.2. Los criterios de Maastricht y el Pacto de Estabilidad y Crecimiento
+
+El **Tratado de Maastricht (1992)** fijó los criterios para entrar en el euro:
+
+- Déficit no superior al **3 %** del PIB
+- Deuda no superior al **60 %** del PIB, o aproximándose a un ritmo satisfactorio
+- Inflación a no más de 1,5 puntos de los tres mejores Estados
+- Tipos a largo plazo a no más de 2 puntos de esos Estados
+- Dos años en el mecanismo de tipos de cambio sin tensiones graves
+
+España cumplió en 1998. El **Pacto de Estabilidad y Crecimiento (1997)** tiene dos vertientes. La **preventiva** exige un objetivo a medio plazo próximo al equilibrio estructural y un programa de estabilidad anual. La **correctora** es el **procedimiento de déficit excesivo**, que se abre si el déficit supera el 3 % o la deuda el 60 % sin reducirse lo suficiente, y puede acabar en depósito de hasta el 0,2 % del PIB, multas de hasta el 0,5 % y suspensión de fondos. No es excesivo un déficit excepcional y temporal. Se aplicó con flexibilidad: Alemania y Francia incumplieron en 2003 sin sanción y el Pacto se reformó en 2005.
+
+## 4.3. Las reformas tras la crisis de 2008
+
+- **Six-pack (2011)**: seis normas que reforzaron ambas vertientes, automatizaron sanciones, exigieron marcos presupuestarios nacionales (Directiva 2011/85/UE) y crearon el procedimiento de desequilibrios macroeconómicos
+- **Tratado de Estabilidad, Coordinación y Gobernanza (2012)**: obliga a incorporar el equilibrio estructural al derecho nacional, preferiblemente constitucional
+- **Two-pack (2013)**: supervisión de los presupuestos del euro, con planes enviados a la Comisión cada otoño
+- **Semestre Europeo**: ciclo anual de examen y recomendaciones específicas a cada país
+
+En marzo de 2020 se activó por primera vez la cláusula general de salvaguardia, mantenida hasta finales de 2023.
+
+## 4.4. El nuevo marco de gobernanza económica de 2024
+
+Las reglas previas eran complejas, usaban variables difíciles de medir y eran a menudo procíclicas. En abril de 2024 se aprobaron el **Reglamento (UE) 2024/1263** (vertiente preventiva), el **Reglamento (UE) 2024/1264** (déficit excesivo) y la **Directiva (UE) 2024/1265** (marcos nacionales).
+
+- Se mantienen el 3 % de déficit y el 60 % de deuda
+- **Plan fiscal y estructural** a medio plazo de cuatro años, ampliable a siete con reformas e inversiones
+- Indicador único: **gasto primario neto**, sin intereses ni medidas cíclicas de desempleo y descontando medidas discrecionales de ingresos. Lo controla el gobierno y deja actuar a los estabilizadores
+- La senda de gasto parte de un análisis de sostenibilidad de la deuda. Salvaguardias: reducción mínima de la deuda de un punto anual si supera el 90 % del PIB y de medio punto entre el 60 % y el 90 %
+- El déficit excesivo puede abrirse también por desviarse de la senda con deuda superior al 60 %. Multas menores pero más aplicables, hasta el 0,05 % del PIB cada seis meses
+- Cláusula general de salvaguardia para graves recesiones y cláusulas nacionales para circunstancias excepcionales. En 2025 se permitió activarlas para defensa
+
+El debate sigue abierto: tras Next Generation EU, primera emisión de deuda común a gran escala, algunos defienden una capacidad fiscal permanente y otros se oponen por el riesgo de transferencias permanentes. España presentó el **Plan Fiscal y Estructural de Medio Plazo 2025-2028**, validado en noviembre de 2024, con gasto primario neto creciendo un 3,4 % anual y deuda por debajo del 100 % en 2027.
+
+# 5. LA FINANCIACIÓN DEL DÉFICIT PÚBLICO
+
+## 5.1. La restricción presupuestaria del sector público
+
+El gasto más los intereses de la deuda debe financiarse con impuestos, dinero o deuda. Por eso la forma de financiar el déficit tiene consecuencias monetarias.
+
+## 5.2. Las formas de financiación
+
+- **Impuestos**: no generan deuda pero pueden distorsionar las decisiones de trabajar, ahorrar e invertir. Más gasto con impuestos sigue siendo expansivo (teorema de Haavelmo o del presupuesto equilibrado)
+- **Emisión de dinero**: si es sistemática genera inflación, un impuesto inflacionario (señoreaje). La UE prohíbe la financiación monetaria directa. Las compras del BCE en el mercado secundario no se consideran tal, aunque han suscitado debate jurídico
+- **Deuda pública**: la vía principal. La emite el Tesoro en letras (corto plazo) y bonos y obligaciones (medio y largo). Comunidades y ayuntamientos se financian en los mercados o con mecanismos como el Fondo de Liquidez Autonómico
+
+## 5.3. Las consecuencias de financiar el déficit con deuda
+
+- **Efecto expulsión**: puede subir los tipos y reducir la inversión privada. Es menor con recursos ociosos
+- **Equivalencia ricardiana** (**Barro, 1974**): si se anticipan los impuestos futuros, deuda e impuestos equivalen. Se cumple solo en parte
+- **Generaciones futuras**: soportan costes si la deuda reduce el capital heredado o se paga a acreedores extranjeros. Si financia inversión productiva, dejan también activos
+- **Riesgo de financiación**: una deuda elevada hace vulnerable a subidas de tipos y a cambios de confianza, como en 2010 a 2012. La **prima de riesgo**, diferencial con el bono alemán, lo mide
+
+# 6. LA SOSTENIBILIDAD DEL DÉFICIT PÚBLICO
+
+## 6.1. El concepto de sostenibilidad
+
+Una política fiscal es **sostenible** si puede mantenerse sin que la deuda crezca sin límite respecto a la economía, es decir, sin ajuste brusco, impago ni financiación monetaria. Formalmente, el valor actual de los superávits primarios futuros iguala la deuda actual.
+
+Importa la deuda en proporción al PIB, que depende del saldo primario, del tipo de interés medio (la hace crecer) y del crecimiento nominal del PIB (reduce su peso). Según **Domar (1944)**, con crecimiento un déficit constante sobre el PIB estabiliza la deuda en un nivel finito. Si el tipo es menor que el crecimiento nominal, basta un pequeño déficit primario. Si es mayor, hace falta superávit primario. Este diferencial **r menos g** explica por qué la deuda fue más manejable con tipos bajos y por qué la subida desde 2022 presiona a los más endeudados. **Blanchard (2019)** sostuvo que con tipos tan bajos el coste fiscal era menor de lo pensado, aunque podía cambiar.
+
+**Sargent y Wallace (1981)**: si la política fiscal no es sostenible, el banco central puede verse obligado a financiar al Estado creando dinero, con inflación. La credibilidad monetaria depende de la disciplina fiscal.
+
+## 6.2. La sostenibilidad a corto, medio y largo plazo
+
+- **Corto plazo**: límites anuales de déficit como el 3 %. Un límite rígido puede forzar políticas procíclicas, crítica central al Pacto y motivo del marco basado en la senda de gasto
+- **Medio plazo**: la Comisión, el FMI y la AIReF proyectan la deuda en distintos escenarios de crecimiento, tipos y saldo primario
+- **Largo plazo**: el reto es el envejecimiento, que eleva el gasto en pensiones, sanidad y dependencia. Con cotización del 25 % y pensión del 50 % del salario hacen falta dos cotizantes por pensionista. Con 1,5 las cotizaciones cubren el 75 % del gasto. Estos compromisos son una **deuda implícita** ausente de la deuda oficial
+
+## 6.3. Las medidas para garantizar la sostenibilidad
+
+- **Pensiones**: retraso de la edad efectiva de jubilación, más cotizaciones (mecanismo de equidad intergeneracional) y revisión de la fórmula de cálculo, evaluada por la AIReF
+- **Crecimiento potencial**: productividad, menos paro estructural, más actividad e inmigración ordenada
+- **Sistema tributario eficiente** que combata el fraude
+- **Calidad del gasto**: evaluación de políticas y orientación hacia educación, investigación e inversión pública
+- **Instituciones fiscales sólidas**: reglas creíbles y organismos independientes como la AIReF
+
+# 7. CONCLUSIÓN
+
+La política fiscal es el principal instrumento de estabilización de los países del euro, condicionado por la sostenibilidad. La disciplina previa permitió a España entrar en el euro, la crisis de 2008 elevó la deuda por encima del 100 % del PIB y la pandemia exigió una respuesta sin precedentes, posible por la suspensión de reglas y el apoyo europeo.
+
+El marco de 2024 busca reglas más sencillas, centradas en el gasto controlable y compatibles con inversión y reformas, y su éxito depende de su credibilidad. España, con déficit por debajo del 3 % y deuda próxima al 100 %, afronta el envejecimiento y necesita consolidación gradual y reformas que eleven la productividad.
