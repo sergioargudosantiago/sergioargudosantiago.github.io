@@ -1,148 +1,143 @@
-# **1. INTRODUCCIÓN**
+# 1. INTRODUCCIÓN
 
-# **1.1. Concepto y Clasificación**
-- **Definición de Distribución Comercial**: Conjunto de actividades que salvan el bache entre producción y consumo, conectando oferta y demanda.
-- **Sector económico**: Pertenece al sector Servicios (junto a turismo, transporte, etc.) según el INE.
-- **Clasificación CNAE**: Incluye venta de vehículos y combustibles, comercio al por mayor y comercio al por menor.
+Junto a la venta tradicional en el establecimiento, el comercio ha desarrollado otras formas comerciales que se caracterizan por la forma de organizar la red de venta o por realizar la compra fuera del establecimiento convencional. Responden a los nuevos hábitos de consumo: comodidad, consumo sobre la marcha y uso de las tecnologías de comunicación.
 
-# **1.2. Factores de Transformación**
-- **Factores socioeconómicos**: Aumento del poder adquisitivo, incorporación de la mujer al trabajo, reducción del tamaño familiar, cultura del ocio, crecimiento de periferias urbanas y mejora del equipamiento del hogar (nevera/congelador).
-- **Avances tecnológicos**: Desarrollo de las TIC, e-commerce, transporte, mejoras en conservación/empaquetado y estrategias comerciales.
+- **Franquicia**: permite a una empresa expandir su red sin asumir toda la inversión, y a pequeños empresarios explotar un negocio con una marca y un saber hacer contrastados.
+- **Venta a distancia**: permite comprar sin la presencia física del vendedor.
+- **Venta automática o vending**: pone el producto a disposición del consumidor sin intervención de personal.
 
-# **1.3. Importancia Económica (Datos INE y EPA)**
-- **PIB y VAB (2023)**: El comercio supone el 12,5%, siendo un sector estratégico, aunque inferior a la Industria (15,2%) y Servicios (68,5%).
-- **Comercio minorista**: Representó un 5,0% del PIB en 2023 (caída respecto al 5,2% de 2019).
-- **Tejido empresarial**:
-  - 646.339 empresas (20,2% del total).
-  - 822.542 locales activos (22,0% del total).
-- **Empleo (3T 2024)**:
-  - Total sector Comercio: 3.154.300 ocupados.
-  - Comercio minorista: 2.031.900 ocupados (9,3% del total nacional).
-- **Tendencias**: Pérdida de peso del trabajo autónomo en favor del trabajo por cuenta ajena y aumento de cuota de mercado de grandes empresas frente al pequeño comercio.
+Se regulan en el Título III de la **Ley 7/1996 de Ordenación del Comercio Minorista (LOCM)**, dedicado a las ventas especiales, y se completan con el **TRLGDCU** (**Real Decreto Legislativo 1/2007**) y normas reglamentarias propias. Su desarrollo, inspección y sanción corresponden en gran medida a las comunidades autónomas. La tendencia es la liberalización: la **Ley 1/2010** sustituyó la autorización de la venta automática y las inscripciones registrales por una comunicación, y el **Real Decreto-ley 20/2018** suprimió el Registro de Franquiciadores y el de Empresas de Ventas a Distancia.
 
-# **1.4. Marco Normativo General**
-- **Ley 7/1996**: De Ordenación del Comercio Minorista (modificada por Ley 1/2010).
-- **Ley 1/2004**: De Horarios Comerciales.
-- **Ley 3/2004**: Medidas de lucha contra la morosidad.
-- **Planes de Apoyo**: Plan Integral de Apoyo a la Competitividad del Comercio Minorista (desde 2013).
+# 2. LA FRANQUICIA
 
-# **1.5. Nuevas Formas de Venta**
-- **Concepto**: Realización del acto de compra fuera del establecimiento convencional.
-- **Tipología**: Venta directa (franquicia), venta a distancia, venta automática (vending) y venta electrónica.
-- **Regulación específica**: Título III de la Ley 7/1996.
+## 2.1. Concepto y regulación
 
-# **2. VENTAS EN RÉGIMEN DE FRANQUICIA**
+**Franquicia.** Según el **art. 62 de la LOCM**, es la actividad comercial que se lleva a cabo en virtud de un acuerdo o contrato por el que una empresa, denominada franquiciadora, cede a otra, denominada franquiciada, el derecho a la explotación de un sistema propio de comercialización de productos o servicios.
 
-# **2.1. Definición y Regulación**
-- **Definición (Art. 62.1 Ley 7/1996)**: Contrato por el cual la empresa franquiciadora cede a la franquiciada el derecho a explotar un sistema propio de comercialización de productos o servicios.
-- **Modificaciones recientes (RDL 20/2018)**:
-  - Supresión del Registro de Franquiciadores por ineficiencia y duplicidad de datos con la Oficina de Patentes y Marcas.
-  - Eliminación de la obligación de comunicar el inicio de actividad en 3 meses.
+El **Real Decreto 201/2010** exige, al menos, tres elementos:
 
-# **2.2. Medidas de Liberalización**
-- **Licencias municipales**: Sustitución de licencia previa por declaración responsable para locales de hasta 750 m2(Ley 20/2013).
-- **Horarios comerciales (RDL 20/2012)**:
-  - Mínimo de domingos/festivos de apertura: 16 (CCAA pueden reducir a 10).
-  - Horario semanal mínimo: 90 horas.
+- Denominación o rótulo común y presentación uniforme de los locales o medios de transporte.
+- Comunicación de un saber hacer (know-how) propio, sustancial y singular.
+- Asistencia comercial o técnica continuada del franquiciador durante el acuerdo.
 
-# **2.3. Características del Sistema**
-- **Elementos clave**:
-  - Exclusividad: Franquiciador cede zona exclusiva; franquiciado se dedica en exclusiva al producto.
-  - Diversidad: Puede ser de producción, distribución o servicios (know-how).
-- **Motivaciones**:
-  - Franquiciado: Menor riesgo, apoyo de marca prestigiosa.
-  - Franquiciador: Aumento de negocio con menor inversión.
+La principal obligación legal es la **información precontractual**: el franquiciador debe entregar al futuro franquiciado, con al menos **veinte días** de antelación a la firma del contrato o de cualquier precontrato o pago, información por escrito sobre su identidad, la marca, el sector, su experiencia, el saber hacer y la asistencia, la estructura de la red en España y los elementos esenciales del contrato (duración, resolución, renovación, contraprestaciones y limitaciones). Ya no existe obligación de comunicar la actividad a ningún registro.
 
-# **2.4. Modalidades y Pagos**
-- **Tipos de franquicia**:
-  - Asociativa (participación económica cruzada).
-  - Master franquicia (explotación de grandes territorios/países).
-  - Franquicia de esquina (parte de un establecimiento mayor).
-- **Cánones**:
-  - Derecho de entrada: Por uso de marca y formación (aprox. 2/3 lo cobran).
-  - Royalty/Mantenimiento: Pago periódico por soporte. En franquicias de producto suele incluirse en el margen de compra (aprox. 70% lo cobran).
-  - Publicidad: Fondo de marketing común (aprox. 60% lo cobran).
+En el ámbito europeo, el **Reglamento (UE) 2022/720**, de exención por categorías de los acuerdos verticales, aplicable hasta 2034, exime los acuerdos cuando la cuota de mercado de las partes no supera el **30 %**, siempre que no contengan restricciones especialmente graves, como la fijación de los precios de reventa o determinadas restricciones territoriales. Las cláusulas propias de la franquicia, como la exclusividad territorial, la no competencia durante el contrato o la protección del saber hacer, suelen considerarse justificadas para preservar la identidad y la reputación de la red.
 
-# **2.5. Datos del Sector (Cierre 2023)**
-- **Enseñas**: 1.384 marcas (+0,6%). Predominio nacional (82,7%) frente a extranjeras (17,3% - Francia, EEUU, Italia).
-- **Facturación**: 27.623 M€. Crecimiento estancado desde 2008. Sectores líderes: Alimentación y Hostelería/Fast food.
-- **Establecimientos**: 78.255 locales (21.075 propios y 57.180 franquiciados).
-- **Empleo**: 318.313 personas. Sectores principales: Alimentación y Hostelería.
+## 2.2. Características
 
-# **3. VENTAS A DISTANCIA**
+- **Independencia jurídica y financiera**: el franquiciado es un empresario independiente que asume el riesgo de su negocio.
+- **Exclusividad**: es habitual una zona exclusiva y el compromiso de comercializar solo los productos o servicios de la red.
+- **Uniformidad** de la imagen, de los métodos de gestión y de la calidad.
+- **Ventajas para el franquiciado**: menor riesgo, marca conocida, formación, asistencia y economías de escala.
+- **Ventajas para el franquiciador**: expansión rápida con menor inversión propia, gestores motivados y mayor implantación territorial.
 
-# **3.1. Concepto y Normativa**
-- **Definición (Art. 92 RDL 1/2007)**: Ventas celebradas sin presencia física simultánea, utilizando exclusivamente técnicas de comunicación a distancia (correo, internet, teléfono, fax).
-- **Regulación**: Ley 7/1996 y RDL 1/2007.
+Según su objeto, la franquicia puede ser de producción (el franquiciador es el fabricante), de distribución (selecciona y suministra los productos) o de servicios (su objeto es un saber hacer). Entre las modalidades destacan la **máster franquicia**, que concede el derecho a desarrollar la red en un territorio amplio, normalmente un país, con facultad para subfranquiciar, la **franquicia asociativa**, en la que una parte participa en el capital de la otra, y la **franquicia en córner**, que ocupa solo una parte de un establecimiento.
 
-# **3.2. Supresión del Registro**
-- **RDL 20/2018**: Eliminó el Registro de Empresas de Ventas a Distancia y la obligación de comunicar inicio de actividad.
-- **Causas**: Ineficacia para proteger al consumidor, costes elevados y supresión de trabas administrativas.
+## 2.3. El contrato de franquicia
 
-# **3.3. Información Precontractual (Art. 97 RDL 1/2007)**
-El empresario debe facilitar de forma clara antes de la contratación:
-- Características principales de bienes/servicios y precio total.
-- Identidad, dirección completa, teléfono y email del empresario.
-- Procedimientos de pago, entrega y fecha de ejecución.
-- Derecho de desistimiento: Condiciones, plazo, procedimiento y costes de devolución.
-- Garantías legales y servicios posventa.
-- Duración del contrato y condiciones de resolución.
+Es un contrato atípico, sin regulación civil o mercantil específica, regido por la autonomía de la voluntad con los límites de la normativa de competencia y de la información precontractual. Suele recoger territorio, duración (que debe permitir amortizar la inversión), contraprestaciones, suministro, uso de la marca, control del franquiciador, causas de resolución y consecuencias de la extinción. La no competencia posterior en general no puede superar **un año**.
 
-# **3.4. Derechos y Garantías Adicionales**
-- **Consentimiento expreso (Art. 101)**: La falta de respuesta no es aceptación. Prohibido el envío de suministros no solicitados con pretensión de pago.
-- **Irrenunciabilidad**: Nulidad de la renuncia a los derechos reconocidos por la ley.
-- **Sanciones**: Competencia de la CCAA del domicilio social de la empresa.
+Como inconvenientes, el franquiciado pierde autonomía, depende del franquiciador y paga cánones aunque el negocio no vaya bien, y el franquiciador tiene menor control directo y corre el riesgo de que un franquiciado dañe la reputación de la marca. El **Código Deontológico Europeo de la Franquicia** recoge buenas prácticas entre las partes.
 
-# **4. VENTA POR CORRESPONDENCIA**
+## 2.4. La franquicia frente a otras fórmulas
 
-# **4.1. Características**
-- **Definición**: Venta inmediata usando correo en al menos 2 fases, sin que el comprador vea antes el producto.
-- **Evolución**: Apoyo actual en nuevas tecnologías. Modalidades: clubes de libros, venta directa de fábrica, catálogos.
+- **Licencia de marca**: solo cede el uso de un signo distintivo, sin sistema de negocio ni asistencia continuada.
+- **Concesión y distribución exclusiva o selectiva**: el distribuidor revende productos del fabricante, normalmente con su propia imagen y sin uniformidad.
+- **Comercio asociado** (cadenas voluntarias y cooperativas de detallistas): los asociados conservan más autonomía y participan en la gestión, mientras que en la franquicia dirige el franquiciador.
 
-# **4.2. Situación en España**
-- **Difusión**: Escasa comparada con Europa o EEUU.
-- **Destinatario**: 90% consumidores finales, 10% empresas.
-- **Productos**: Principalmente ediciones/discos, hogar y textiles.
+## 2.5. Las contraprestaciones
 
-# **5. VENTA POR TELÉFONO Y TELEVISIÓN**
+El franquiciado paga cánones que no existen en todas las redes:
 
-# **5.1. Venta por Teléfono**
-- **Uso**: Canal de distribución adicional o diversificación. Minimiza costes y ofrece atención personalizada.
-- **Crecimiento**: Impulsado por la telefonía móvil y acceso a internet.
+- **Canon de entrada**: por usar la marca y el saber hacer y por la formación inicial.
+- **Canon periódico o regalía (royalty)**: por la asistencia continuada, normalmente un porcentaje de las ventas. En las franquicias de distribución puede no existir, porque el margen sale del suministro.
+- **Canon de publicidad**: para un fondo común de marketing de la red.
 
-# **5.2. Venta por Televisión**
-- **Funcionamiento**: Presentación en TV, pedido por teléfono/internet y entrega a domicilio.
-- **Ventajas**: Comodidad, precio, facilidades de pago y devolución.
-- **Implantación**: Poco arraigo en España. Existencia de canales TDT específicos con éxito moderado.
+## 2.6. La franquicia en España
 
-# **6. VENTA AUTOMÁTICA O VENDING**
+España es uno de los países europeos con mayor desarrollo de la franquicia, aunque el número de redes se ha estabilizado. Según la AEF (La Franquicia en España 2026), a finales de 2025:
 
-# **6.1. Definición y Requisitos**
-- **Definición (Art. 49 Ley 7/1996)**: Puesta a disposición del producto mediante accionamiento de mecanismo y previo pago.
-- **Requisitos obligatorios**:
-  - Cumplimiento de normativa técnica.
-  - Información visible: producto, precio, monedas, instrucciones, identificación del oferente y teléfono de reclamaciones.
-  - Recuperación del importe si no se facilita el artículo.
+- Operaban **1.295 enseñas**, el 82 % de origen español.
+- Las redes sumaban **77.526 establecimientos**, propios y franquiciados.
+- La facturación alcanzó **28.454 M€**, un 3 % más que en 2023, y el empleo, **322.830 personas**.
+- La alimentación, impulsada por la franquicia de supermercados, es el primer sector por facturación (más de 8.000 M€), empleo y establecimientos, seguida de hostelería y restauración.
+- Predominan las redes pequeñas, pero las de más de cien establecimientos concentran la mayor parte de la facturación.
 
-# **6.2. Tipología**
-- **Componentes**: Dispositivo expendedor + sistema de pago.
-- **Clasificación**:
-  - **Vending Cautivo**: Ubicación cerrada (empresas), usuarios estables.
-  - **Vending Público**: Sitios de paso, acceso libre.
+Muchas enseñas españolas se han internacionalizado mediante franquicia, sobre todo en moda, restauración y alimentación.
 
-# **6.3. Datos del Sector (ANEDA)**
-- **Parque de máquinas**: Más de 615.000 unidades.
-  - 40% Vending de productos (estricto).
-  - 21% Máquinas recreativas.
-- **Productos vendidos**: 70% bebidas calientes, 15% bebidas frías, resto sólidos.
-- **Estructura empresarial**: Unas 3.050 operadoras. Sector muy atomizado (70% son pequeñas empresas).
+# 3. LA VENTA A DISTANCIA
 
-# **7. CONCLUSIÓN**
+## 3.1. Concepto y regulación
 
-# **7.1. Políticas Públicas**
-- **Planes de Apoyo**: Desde 2013 se ejecutan Planes Integrales de Apoyo a la Competitividad del Comercio Minorista.
-- **Ejes 2020-2024**: Modernización, adaptación tecnológica, preservación de núcleos comerciales y potenciación de áreas urbanas.
+La LOCM la regula en su Título III, pero su **art. 38** remite a la normativa de consumo. El **art. 92 del TRLGDCU**, reformado por la **Ley 3/2014** (que transpuso la Directiva 2011/83/UE), define los contratos a distancia como los celebrados en el marco de un sistema organizado de venta o prestación de servicios a distancia, sin la presencia física simultánea del empresario y del consumidor, con el uso exclusivo de una o más técnicas de comunicación a distancia hasta la celebración del contrato. Son técnicas a distancia el correo postal, el teléfono, la televisión, el correo electrónico o internet. Por medios electrónicos se rige además por la **Ley 34/2002 (LSSI)**.
 
-# **7.2. Nuevos Competidores**
-- **Amazon Prime Now (2016)**: Entrada en la distribución de productos de gran consumo (frescos/congelados) con entrega rápida.
-- **Impacto**: Modificación del sector tradicional pese a su cuota de mercado aún en desarrollo.
+## 3.2. Las técnicas de venta a distancia
+
+- **Correspondencia y catálogo**: utiliza el correo en al menos dos fases (oferta, pedido, entrega o cobro). Hoy ha sido sustituida en gran medida por internet.
+- **Teléfono (telemarketing)**: las llamadas comerciales no deseadas están prohibidas desde junio de 2023, salvo consentimiento previo del destinatario u otra base legal, según la **Ley 11/2022, General de Telecomunicaciones**. Los consumidores pueden inscribirse en la Lista Robinson.
+- **Televisión (teletienda)**: tiene poco arraigo en España y la **Ley 13/2022, General de Comunicación Audiovisual**, regula sus límites.
+- **Comercio electrónico**: la principal forma de venta a distancia, con más de **110.000 M€** en 2024 según el ONTSI.
+
+## 3.3. Los derechos del consumidor en la venta a distancia
+
+**Información precontractual** (**art. 97 del TRLGDCU**). El empresario debe informar de forma clara y comprensible, antes de contratar, sobre su identidad y contacto, las características del bien o servicio, el precio total (con impuestos y gastos de envío), los procedimientos de pago, entrega y reclamación, el derecho de desistimiento, la garantía legal y los servicios posventa, la duración y la resolución del contrato, y los códigos de conducta y mecanismos extrajudiciales de reclamación.
+
+- **Confirmación** del contrato en un soporte duradero, en un plazo razonable y, como tarde, en el momento de la entrega.
+- **Entrega** en el plazo pactado o, si no se pactó, en un máximo de **30 días**.
+- **Consentimiento expreso**: la falta de respuesta a una oferta no es aceptación y se prohíbe el envío de bienes no solicitados con pretensión de pago, sin obligación de devolverlos ni pagarlos.
+- **Garantía legal de conformidad** de tres años para los bienes, desde el Real Decreto-ley 7/2021.
+- **Irrenunciabilidad**: la renuncia previa a estos derechos es nula.
+
+**Derecho de desistimiento.** El consumidor puede desistir en **14 días naturales** sin indicar el motivo y sin penalización. Si el empresario no le informó de este derecho, el plazo se amplía hasta **12 meses**. El reembolso debe hacerse en un máximo de **14 días** desde que el empresario conoce el desistimiento. Hay excepciones, como los bienes personalizados, los perecederos, los productos precintados por higiene una vez abiertos o los servicios de alojamiento y ocio con fecha determinada. La **Directiva (UE) 2023/2673** exige un botón visible y sencillo de desistimiento en las interfaces en línea desde el 19 de junio de 2026, aunque España aún no la había transpuesto a esa fecha.
+
+Las infracciones se sancionan conforme a la LOCM y al TRLGDCU, y su inspección y sanción corresponden a las comunidades autónomas.
+
+## 3.4. La resolución de conflictos y la seguridad de los pagos
+
+Los conflictos pueden resolverse por vías extrajudiciales. El **Sistema Arbitral de Consumo** (**Real Decreto 231/2008**) ofrece un procedimiento gratuito y vinculante para las empresas adheridas, y la **Ley 7/2017** regula las entidades de resolución alternativa de litigios. La plataforma europea de resolución de litigios en línea dejó de funcionar en 2025.
+
+En los pagos, la **Directiva (UE) 2015/2366 (PSD2)** exige autenticación reforzada en los pagos en línea y protege al titular de la tarjeta frente a los cargos no autorizados, que la entidad debe devolver salvo fraude o negligencia grave del usuario. Para la seguridad de los productos de terceros países responden el **Reglamento (UE) 2023/988**, con obligaciones para los mercados en línea, y los controles en frontera.
+
+# 4. LA VENTA AUTOMÁTICA (VENDING)
+
+## 4.1. Concepto y regulación
+
+**Venta automática.** Según el **art. 49 de la LOCM**, es la forma de distribución detallista en la cual se pone a disposición del consumidor el producto o servicio para que este lo adquiera mediante el accionamiento de cualquier tipo de mecanismo y previo pago de su importe.
+
+Reglas de la LOCM:
+
+- Las máquinas deben cumplir la normativa técnica, incluida la de seguridad de los productos y la de higiene alimentaria cuando vendan alimentos.
+- Deben indicar producto, precio, medios de pago, instrucciones de uso, identidad del oferente y dirección y teléfono para reclamaciones.
+- Deben permitir recuperar el importe si no se entrega el producto.
+- En local ajeno, el titular del local y el de la máquina responden solidariamente frente al comprador.
+- Desde la Ley 1/2010 no hay autorización previa.
+
+Restricciones específicas:
+
+- **Tabaco**: solo en máquinas situadas en el interior de establecimientos autorizados, como los locales de hostelería, con mecanismos que impidan el acceso de menores (**Ley 28/2005**).
+- **Centros educativos**: el **Real Decreto 315/2025** limita los alimentos y bebidas de las máquinas, con límites de calorías, grasas, azúcares añadidos y sal por porción, y excluye las bebidas energéticas.
+
+## 4.2. Características y estructura
+
+La máquina combina el dispositivo expendedor y el mecanismo de cobro, que hoy incorpora billetes, tarjetas y pago sin contacto. Se distinguen las máquinas de productos (bebidas, alimentos, tabaco) y de servicios (parquímetros, billetes de transporte, recarga de vehículos). Las máquinas recreativas y de juego quedan fuera. El **vending cautivo** se sitúa en lugares cerrados con clientes habituales, como empresas, hospitales o universidades, y el **vending público** en lugares de paso.
+
+Según DBK, el sector facturó **2.775 M€** en 2024, un 6,1 % más:
+
+- Alimentación y bebidas: unos 1.375 M€, con más de 390.000 máquinas, el 55 % en ubicaciones cautivas.
+- Tabaco: unos 1.400 M€, con un parque en descenso.
+- Sector atomizado: los cinco primeros operadores reúnen en torno al 12 % del mercado.
+
+Las tendencias son el pago electrónico, la telemetría para gestionar la reposición, los productos saludables y frescos, las tiendas automáticas 24 horas y los micromercados de autoservicio en empresas.
+
+# 5. OTRAS VENTAS ESPECIALES
+
+- **Venta ambulante o no sedentaria**: la realizada fuera de establecimiento permanente, en mercadillos, mercados ocasionales o vía pública (**arts. 53 a 55 de la LOCM**, **Real Decreto 199/2010**). Requiere autorización municipal de duración limitada, concedida mediante un procedimiento transparente y de concurrencia.
+- **Venta fuera del establecimiento mercantil**: venta a domicilio y demostraciones o excursiones comerciales. El TRLGDCU le reconoce el mismo desistimiento de 14 días. La venta multinivel es lícita, pero se prohíbe la venta en pirámide, en la que el beneficio depende de captar nuevos participantes y no de vender productos.
+- **Venta en pública subasta**: adjudicación a quien ofrece el precio más alto en una puja pública (**arts. 56 a 61 de la LOCM**), con información sobre las características del bien y el precio de salida.
+
+# 6. CONCLUSIÓN
+
+La franquicia, la venta a distancia y la venta automática son formas comerciales consolidadas que responden a los cambios del consumo. La franquicia descansa en la libertad de pactos, con información precontractual y el marco europeo de competencia sobre acuerdos verticales. La venta a distancia se apoya en una protección del consumidor armonizada en la UE, con el desistimiento como pieza central. La venta automática se moderniza con el pago electrónico y la oferta saludable, con restricciones en el tabaco y los centros educativos.
+
+La evolución normativa combina la liberalización de los controles administrativos, con supresión de autorizaciones y registros, y el refuerzo de la protección de los consumidores, la transparencia y la competencia leal.

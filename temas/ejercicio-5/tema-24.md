@@ -1,163 +1,134 @@
-# **1. INTRODUCCIÓN**
+# 1. INTRODUCCIÓN
 
-## **1.1. Concepto y Clasificación**
-- **Definición de Distribución Comercial:**
-  - Conjunto de actividades que salvan el bache entre producción y consumo.
-  - Movimiento de mercancías desde donde son menos necesarias a donde son más necesarias (conecta oferta y demanda).
-- **Clasificación Sectorial:**
-  - Pertenece al sector Servicios (INE).
-  - Según CNAE incluye: vehículos a motor, combustibles, comercio al por mayor y al por menor.
+El consumidor está en desigualdad frente al empresario: tiene menos información y menor poder de negociación, y contrata a menudo con condiciones que no puede discutir. Corregirlo protege su salud, su seguridad y sus intereses económicos, y da confianza y competencia leal al mercado.
 
-## **1.2. Transformación del Sector**
-- **Factores influyentes:**
-  - Socioeconómicos: aumento poder adquisitivo, incorporación mujer al trabajo, reducción tamaño familiar, cultura del ocio, crecimiento periferias, aumento parque automovilístico, equipamiento hogares (nevera/congelador).
-  - Avances tecnológicos: TIC, e-commerce, transporte, conservación, estrategias comerciales.
+La protección descansa en dos pilares: derechos reconocidos por la ley que el consumidor hace valer frente al empresario, y una actividad administrativa de información, control, inspección y sanción repartida entre la Administración General del Estado, las comunidades autónomas y las entidades locales.
 
-## **1.3. Datos Económicos**
-- **Peso en la economía (Datos INE 2023):**
-  - Comercio total: 12,5% del PIB y del VAB (sector estratégico).
-  - Comparativa: inferior a Industria (15,2% PIB) y muy inferior a Servicios global (68,5% PIB).
-  - Comercio minorista: 5,0% del PIB en 2023 (descenso frente al 5,2% de 2019).
-- **Estructura empresarial (Datos 2023):**
-  - Total empresas: 646.339 (20,2% del total nacional).
-    - Minorista: 393.287.
-    - Mayorista e intermediarios: 183.963.
-    - Venta/reparación vehículos: 69.089.
-  - Locales activos: 822.542 (22,0% del total).
-- **Empleo (Datos EPA 3T 2024):**
-  - Sector Comercio total: 3.154.300 ocupados.
-  - Comercio minorista: 2.031.900 ocupados (9,3% de la población ocupada total).
-  - Tendencia: Aumento de empleo asalariado y descenso de autónomos (pérdida de peso del pequeño comercio frente a grandes empresas).
+# 2. LA POLÍTICA EUROPEA DE PROTECCIÓN DE LOS CONSUMIDORES
 
-## **1.4. Problemática actual**
-- Sustitución de pequeño comercio por grandes superficies (localización periurbana).
-- Disminución de actividad comercial en centros urbanos.
-- Normativa destacada:
-  - Ley 7/1996 de Ordenación del Comercio Minorista (modificada por Ley 1/2010 - Directiva Bolkestein).
-  - Ley 1/2004 de Horarios Comerciales.
-  - Ley 3/2004 de lucha contra la morosidad.
+## 2.1. Fundamento y competencias
 
-## **1.5. Evolución reciente de ventas**
-- **Crisis y recuperación:**
-  - 2008-2013: Crisis (caída superior al 20%).
-  - 2014-2019: Recuperación moderada pero estable.
-  - 2020 (COVID-19): Caída histórica (descensos 35-40% anual; PIB sector -25,7%).
-  - 2021-2024: Recuperación positiva, aunque a finales de 2024 no se había recuperado todo el terreno perdido.
-- **Apoyo institucional:** Plan Integral de Apoyo a la Competitividad del Comercio Minorista (desde 2013 hasta 2024).
+La protección de los consumidores es una **competencia compartida** entre la UE y los Estados miembros. El **art. 169 del TFUE** dispone que la Unión contribuirá a proteger la salud, la seguridad y los intereses económicos de los consumidores y a promover su derecho a la información, a la educación y a organizarse. El art. 12 del TFUE exige tenerla en cuenta en las demás políticas y el art. 38 de la Carta de los Derechos Fundamentales garantiza un nivel elevado de protección.
 
-## **1.6. Marco de Protección al Consumidor (UE)**
-- **Base jurídica:** Artículo 169 TFUE.
-  - Objetivos: promover salud, seguridad, intereses económicos/jurídicos, derecho a la información.
-- **Competencia:** Compartida entre UE y Estados Miembros (Art. 114 TFUE).
-  - Los Estados pueden mantener medidas más estrictas si son compatibles y notificadas.
-- **Planes de actuación:**
-  - Nueva Agenda del Consumidor 2020-2025 (Comisión Europea, nov 2020).
-  - Retos: transición ecológica/digital, protección post-COVID, cooperación internacional.
+La mayor parte de las normas se aprueban con base en el **art. 114 del TFUE** (aproximación de legislaciones para el mercado interior). Los Estados pueden mantener o adoptar medidas más protectoras, compatibles con los Tratados y notificadas a la Comisión, salvo en las directivas de armonización plena, como la de derechos de los consumidores.
 
-# **2. LA PROTECCIÓN AL CONSUMIDOR EN ESPAÑA**
+## 2.2. Evolución y estrategia
 
-## **2.1. Constitución Española de 1978**
-- **Artículo 51:** Principio rector de la Política Social y Económica.
-  - Garantía de defensa de consumidores (seguridad, salud, intereses económicos).
-  - Promoción de información, educación y fomento de organizaciones.
-  - Regulación del comercio interior y autorización de productos.
+La política nació con la **Resolución del Consejo de 14 de abril de 1975**, que reconoció cinco derechos básicos: salud y seguridad, intereses económicos, reparación de daños, información y educación, y representación.
 
-## **2.2. Desarrollo Legislativo**
-- **Ley 7/1996:** Ordenación del Comercio Minorista.
-- **Ley 44/2006:** Mejora de protección
-- **Real Decreto Legislativo 1/2007:** Texto refundido vigente
-- **Ley 4/2022:** Protección frente a vulnerabilidad social y económica
-**2.3. Competencias Autonómicas y Reglamentos**
-- **CCAA:** Asumen competencia normativa y de ejecución respetando marco estatal/UE.
-- **Reglamentos fundamentales:**
-  - RD 1945/1983: Infracciones y sanciones.
-  - RD 1801/2003: Seguridad general de productos (afectado por Reglamento UE 2023/988 desde dic-2024).
+En noviembre de 2025 la Comisión presentó la **Agenda del Consumidor 2030**, con cuatro prioridades: completar el mercado único para los consumidores, garantizar la equidad digital, promover el consumo sostenible y reforzar la aplicación y la reparación. Destaca la futura Ley de Equidad Digital, prevista para 2026, contra los patrones oscuros, el diseño adictivo y la personalización que explota vulnerabilidades.
 
-## **2.4. Modalidades de Intervención Administrativa**
-- **Casos de intervención:** Cláusulas abusivas, información/educación, función arbitral.
-- **Tipos de actividad:**
-  - Fomento (subvenciones a asociaciones: FACUA, OCU, etc.).
-  - Servicio público (oficinas de información, formación).
-  - Arbitral (Juntas y Colegios arbitrales).
-  - Policía (limitación, inspección y sanción).
+## 2.3. Principales normas europeas
 
-## **2.5. Real Decreto Legislativo 1/2007**
-Refunde la Ley 26/1984 y directivas europeas. Modificado sustancialmente por Ley 3/2014 (Directiva 2011/83/UE) y posteriores (ej. RD-ley 7/2021).
-Estructura en 4 Libros:
+- **Directiva 93/13/CEE**, cláusulas abusivas
+- **Directiva 2005/29/CE**, prácticas comerciales desleales, modificada por la Directiva (UE) 2024/825, que prohíbe las alegaciones ambientales genéricas no demostradas desde septiembre de 2026
+- **Directiva 2011/83/UE**, derechos de los consumidores, completada por la Directiva (UE) 2023/2673 (desistimiento en interfaces en línea)
+- **Directiva (UE) 2019/2161 (Ómnibus)**, que modernizó las normas de consumo y endureció las sanciones
+- **Directivas (UE) 2019/770 y 2019/771**, contenidos y servicios digitales y compraventa de bienes
+- **Directiva (UE) 2024/1799**, derecho a la reparación
+- **Directiva 85/374/CEE**, productos defectuosos, que será sustituida por la Directiva (UE) 2024/2853 (incluye el software, transposición antes de diciembre de 2026)
+- **Directiva (UE) 2015/2302**, viajes combinados
+- **Reglamento (UE) 2023/988 (RGSP)**, seguridad general de los productos, aplicable desde el 13 de diciembre de 2024
+- **Reglamento (UE) 2017/2394**, cooperación entre autoridades de protección de los consumidores
+- **Directiva (UE) 2020/1828**, acciones de representación de intereses colectivos, pendiente de transposición en España (proyecto de ley en tramitación desde marzo de 2025)
 
-### **2.5.1. Libro Primero: Disposiciones Generales**
-- **Título I: Ámbito y derechos básicos.**
-  - Conceptos: consumidor, empresario, productor.
-  - Salud y seguridad.
-  - **Derecho a información (Art. 18):** Etiquetado claro, riguroso, sin inducir a error (composición, alérgenos, origen, efectos).
-- **Título II: Asociaciones.** Régimen jurídico, independencia, Registro Estatal.
-- **Título III: Cooperación Institucional.**
-  - **Conferencia Sectorial de Consumo:** Órgano máximo de cooperación Estado-CCAA.
-    - Preside: Ministro de Derechos Sociales, Consumo y Agenda 2030.
-    - Funciones: criterios comunes, planes conjuntos, participación en UE, campañas de inspección.
-- **Título IV: Potestad Sancionadora.**
-  - Infracciones y sanciones
-- **Título V: Procedimientos.**
-  - Acciones de cesación.
-  - **Sistema Arbitral de Consumo:** Extrajudicial, vinculante, ejecutivo, gratuito (salvo peritajes). Excluye casos de intoxicación, lesión, muerte o delito.
+# 3. EL MARCO JURÍDICO ESPAÑOL
 
-### **2.5.2. Libro Segundo: Contratos y Garantías**
-- **Título I: Contratos con consumidores.**
-  - Prohibición de plazos excesivos o limitaciones para finalizar contrato.
-  - **Derecho de Desistimiento (Arts. 68-76):**
-    - Plazo mínimo: 14 días naturales (antes 7 días hábiles).
-    - Sin penalización ni necesidad de justificación.
-    - Devolución de sumas: antes de 14 días naturales. Si se demora, el consumidor puede reclamar la suma duplicada más daños.
-- **Título II: Condiciones Generales y Cláusulas Abusivas.**
-  - Cláusulas no negociadas que causan desequilibrio importante en contra de la buena fe.
-- **Título III: Contratos a distancia y fuera de establecimiento.**
-  - Regulación unificada tras Ley 3/2014.
-  - Información precontractual obligatoria.
-- **Título IV: Garantías y servicios posventa.**
-  - Modificado por RD-ley 7/2021.
-  - Conformidad del producto/servicio digital.
-  - Garantía comercial: formalizada, en castellano, soporte duradero.
+## 3.1. La Constitución
 
-### **2.5.3. Libro Tercero: Responsabilidad Civil (Bienes/Servicios Defectuosos)**
-- **Concepto de Producto (Art. 136):** Bien mueble, gas y electricidad.
-- **Producto Defectuoso (Art. 137):** No ofrece la seguridad legítimamente esperada (presentación, uso previsible). Es defectuoso si no ofrece seguridad de los de su misma serie.
-- Responsabilidad del productor/importador por daños causados.
+El **art. 51** establece que los poderes públicos garantizarán la defensa de los consumidores y usuarios, protegiendo mediante procedimientos eficaces su seguridad, su salud y sus legítimos intereses económicos, y promoverán su información y educación y fomentarán sus organizaciones. La ley regulará el comercio interior y el régimen de autorización de productos comerciales.
 
-### **2.5.4. Libro Cuarto: Viajes Combinados**
-- Definición: Combinación de al menos 2 elementos (transporte, alojamiento, otros servicios significativos) por precio global, >24h o con pernoctación.
-- Responsabilidad y protección frente a insolvencia.
+Al ser un principio rector, no crea por sí mismo derechos exigibles ante los tribunales, sino que informa la legislación y la actuación pública (art. 53.3). Solo puede alegarse ante la jurisdicción ordinaria de acuerdo con las leyes que lo desarrollan.
 
-# **3. ESTRUCTURA COMPETENCIAL DE LAS ADMINISTRACIONES**
+## 3.2. El desarrollo legislativo
 
-## **3.1. Características Generales**
-- **Ámbito Material:** Control más intenso en bienes de primera necesidad y consumo común.
-- **Dificultad:** Superposición con legislación sectorial (sanitaria, industria, turismo, metrología).
-- **Tendencia:** Reducción competencia estatal y ampliación autonómica.
+La **Ley 26/1984** fue la primera ley general de consumo. La Ley 44/2006 la reformó y habilitó al Gobierno para refundir la normativa, lo que hizo el **Real Decreto Legislativo 1/2007**, que aprobó el texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios (**TRLGDCU**). Se ha reformado sobre todo para transponer directivas: Ley 3/2014, Real Decreto-ley 23/2018 (viajes combinados), Real Decreto-ley 7/2021 (garantías y contenidos digitales), Real Decreto-ley 24/2021 (Ómnibus) y Ley 4/2022 (consumidores vulnerables).
 
-## **3.2. Reparto de Competencias**
-- **Administración General del Estado:**
-  - Intervención cuando desborda el ámbito de una CCAA.
-  - Órgano: Dirección General de Consumo (Ministerio de Derechos Sociales, Consumo y Agenda 2030). AESAN (Agencia Española de Seguridad Alimentaria y Nutrición) lleva seguridad alimentaria; D.G. Consumo lleva derechos en bienes y servicios.
-- **Comunidades Autónomas:**
-  - Controles preventivos e inspecciones.
-  - Medidas para evitar lesiones a intereses.
-  - Potestad sancionadora.
-  - Elaboración de planes de actuación.
-- **Entidades Locales:**
-  - Competencias propias (Ley General de Defensa de Consumidores):
-    - Control de abastos, mercados, ferias.
-    - Protección de salud pública y consumidores.
-  - Competencias sanitarias (Ley General de Sanidad):
-    - Control sanitario de industrias, transportes y servicios.
-    - Control de edificios/convivencia (hoteles, peluquerías, centros alimentación).
-    - Control distribución alimentos/bebidas.
-  - **Carácter:** Concurrentes e indistintas con las CCAA (si el municipio no puede, asume la CCAA).
+Lo completan la Ley 7/1998 (condiciones generales de la contratación), la Ley 3/1991 (Competencia Desleal), la Ley 34/1988 (Publicidad), la Ley 7/1996 (Comercio Minorista), la Ley 10/2025 (atención a la clientela) y normas sectoriales. Todas las comunidades autónomas tienen normas propias de protección de los consumidores.
 
-## **3.3. Coordinación**
-- Principios de colaboración para evitar vacíos o reiteraciones.
-- Instrumentos: Acuerdos, convenios y la Conferencia Sectorial.
-- Ejecución: Programas de inspección autonómicos incentivando participación local.
+## 3.3. El texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios
 
-# **4. CONCLUSIÓN**
-- Importancia vital en sociedades modernas.
-- Anclaje en Art. 169 TFUE y Art. 51 Constitución Española.
+El TRLGDCU se estructura en cuatro libros.
+
+## 3.4. Libro primero. Disposiciones generales
+
+- **Consumidores.** Las personas físicas que actúan con un propósito ajeno a su actividad comercial, empresarial, oficio o profesión, y las personas jurídicas y entidades sin personalidad que actúan sin ánimo de lucro en un ámbito ajeno a una actividad comercial o empresarial. Desde la Ley 4/2022 existe el consumidor vulnerable, en situación de especial indefensión
+- **Derechos básicos (art. 8).** Protección contra riesgos para la salud y la seguridad, protección de los intereses económicos y sociales, indemnización de daños, información correcta y educación, audiencia, consulta y representación a través de asociaciones, y protección prioritaria en situaciones de inferioridad, subordinación o indefensión. Son irrenunciables
+- **Asociaciones.** Registro Estatal de Asociaciones de Consumidores y Usuarios y Consejo de Consumidores y Usuarios, órgano de representación ante la Administración General del Estado
+- **Cooperación.** La **Conferencia Sectorial de Consumo** coopera entre Estado y comunidades autónomas: aprueba criterios comunes, planes y programas conjuntos, como las campañas nacionales de inspección
+- **Potestad sancionadora.** Las sanciones son: leves, de 150 a 10.000 euros, graves, de 10.001 a 100.000 euros, y muy graves, de 100.001 a 1.000.000 de euros. Pueden elevarse según el beneficio ilícito, para que la infracción nunca resulte más rentable que cumplir. La STC 10/2015 anuló el artículo que permitía a la Administración calificar las infracciones, por vulnerar el principio de legalidad sancionadora (art. 25.1 de la Constitución)
+- **Justicia y conflictos.** Acciones de cesación, para que el empresario ponga fin a una conducta ilícita y no la repita, y **Sistema Arbitral de Consumo** (Real Decreto 231/2008): extrajudicial, voluntario, gratuito y vinculante, con laudos ejecutivos, gestionado por juntas arbitrales con colegios en los que participan Administración, consumidores y empresarios. No se aplica si concurren intoxicación, lesión, muerte o indicios de delito
+
+## 3.5. Libro segundo. Contratos y garantías
+
+- **Contratos con consumidores.** Información, formalización y régimen común del derecho de desistimiento, que permite dejar sin efecto el contrato sin justificación ni penalización en los casos previstos por la ley
+- **Cláusulas abusivas.** Estipulaciones no negociadas individualmente que, contra la buena fe, causan en perjuicio del consumidor un desequilibrio importante de derechos y obligaciones. Son nulas de pleno derecho
+- **Contratos a distancia y fuera del establecimiento.** Desistimiento de 14 días naturales
+- **Garantías.** El vendedor responde de las faltas de conformidad manifestadas en tres años desde la entrega de los bienes y en dos años en contenidos y servicios digitales. El consumidor puede exigir reparación o sustitución y, subsidiariamente, rebaja del precio o resolución del contrato. Los fabricantes garantizan piezas de repuesto al menos diez años desde que el bien deja de fabricarse
+
+## 3.6. Libro tercero. Responsabilidad civil por bienes o servicios defectuosos
+
+El productor responde por los daños causados por los defectos de sus productos, con independencia de la culpa. Es defectuoso el producto que no ofrece la seguridad que cabría legítimamente esperar, según su presentación, su uso razonablemente previsible y el momento de su puesta en circulación.
+
+## 3.7. Libro cuarto. Viajes combinados y servicios de viaje vinculados
+
+Transpone la Directiva (UE) 2015/2302 y regula la información precontractual, las modificaciones y la resolución del contrato, la responsabilidad de organizadores y minoristas y la protección frente a la insolvencia. Viaje combinado es la combinación de al menos dos tipos de servicios de viaje (transporte, alojamiento, alquiler de vehículos) para un mismo viaje.
+
+## 3.8. Las modalidades de intervención administrativa
+
+- **Fomento.** Ayudas a asociaciones y campañas de información y educación
+- **Servicio público.** Oficinas de información al consumidor y formación
+- **Arbitraje.** Sistema Arbitral de Consumo
+- **Policía o limitación.** Regulación, control, inspección y sanción. Es la técnica predominante y la propia de la inspección de consumo
+
+# 4. ESTRUCTURA COMPETENCIAL EN LA INSPECCIÓN DEL MERCADO INTERIOR
+
+## 4.1. El reparto de competencias
+
+La defensa de los consumidores no figura como tal en los arts. 148 y 149 de la Constitución. Todas las comunidades autónomas han asumido en sus Estatutos **competencias exclusivas**, y el Estado interviene por otros títulos, como la legislación civil y mercantil, las bases de la sanidad o la seguridad de los productos. Por ello la inspección y la sanción corresponden con carácter general a las comunidades autónomas, y el Estado se reserva la coordinación, la representación ante la UE y los casos que desbordan una comunidad.
+
+La delimitación es compleja porque la normativa de consumo se superpone a normas sectoriales con sus propias autoridades. El TRLGDCU prevé un control más intenso de los bienes de primera necesidad y de los productos y servicios de uso común, ordinario y generalizado.
+
+## 4.2. La Administración General del Estado
+
+La política estatal corresponde al Ministerio de Derechos Sociales, Consumo y Agenda 2030, a través de la Secretaría General de Consumo y Juego y de la Dirección General de Consumo. La seguridad alimentaria corresponde a la AESAN. Funciones de inspección:
+
+- Coordinar las actuaciones autonómicas y las campañas nacionales de inspección y control, acordadas en la Conferencia Sectorial de Consumo
+- **Potestad sancionadora directa** en infracciones generalizadas que afectan a consumidores de varias comunidades y al mercado nacional, en las de dimensión europea y en las cometidas en línea por operadores establecidos fuera de la UE
+- Gestionar la red de alerta de productos no alimentarios peligrosos (Sistema de Intercambio Rápido de Información, conectado con Safety Gate)
+- Ser oficina de enlace única en la red europea del Reglamento (UE) 2017/2394, frente a infracciones transfronterizas
+- Análisis técnico en el Centro de Investigación y Control de la Calidad (CICC), y gestión de la Junta Arbitral Nacional de Consumo y del Registro Estatal de Asociaciones
+
+## 4.3. Las comunidades autónomas
+
+Las direcciones generales o institutos de consumo autonómicos son los **principales responsables** de la protección de los consumidores en su territorio. Sus funciones:
+
+- Regular mediante leyes propias de consumo, dentro del marco estatal y europeo
+- Control preventivo e inspección de productos, servicios y establecimientos, con programas propios y participación en las campañas nacionales y europeas
+- Medidas provisionales, como la inmovilización o la retirada de productos
+- Potestad sancionadora en su ámbito territorial
+- Gestión de las juntas arbitrales autonómicas y de las redes de alerta, e información y educación de los consumidores
+
+Como regla, sanciona la comunidad en la que se comete la infracción, con criterios de coordinación cuando una conducta afecta a varias.
+
+## 4.4. Las entidades locales
+
+La Ley 7/1985 (LBRL), en la redacción de la Ley 27/2013, atribuye a los municipios como competencias propias, entre otras, ferias, abastos, mercados, lonjas, comercio ambulante y protección de la salubridad pública. La defensa de los consumidores **dejó de figurar** entre ellas y puede ejercerse por delegación del Estado o de las comunidades autónomas, o en los términos que prevean las leyes autonómicas. La Ley 14/1986, General de Sanidad, les atribuye el control sanitario de establecimientos de alimentación, locales de convivencia humana y distribución de alimentos y bebidas.
+
+Su instrumento principal son las **Oficinas Municipales de Información al Consumidor (OMIC)**, que informan y orientan, tramitan reclamaciones, realizan mediaciones y, en algunos casos, colaboran con el sistema arbitral y la inspección. En los municipios pequeños asumen estas funciones las diputaciones o las comunidades autónomas.
+
+## 4.5. La vigilancia del mercado de productos
+
+La seguridad de los productos no alimentarios se rige por el **Reglamento (UE) 2023/988 (RGSP)**, que obliga a fabricantes, importadores, distribuidores y mercados en línea a comercializar solo productos seguros y retirar los peligrosos. El **Reglamento (UE) 2019/1020** obliga a los Estados a designar autoridades de vigilancia del mercado, exige un operador económico responsable establecido en la UE y refuerza los controles de los productos que entran en el mercado de la Unión.
+
+En España, la vigilancia de los productos de consumo corresponde sobre todo a las autoridades de consumo autonómicas y la de los industriales a las de industria, coordinadas por el Ministerio de Industria y Turismo. En frontera, el **SOIVRE** controla la seguridad de determinados productos industriales importados (Real Decreto 330/2008), en colaboración con las autoridades aduaneras, algo cada vez más relevante por los envíos desde plataformas de terceros países.
+
+## 4.6. Coordinación y colaboración
+
+La pluralidad de administraciones exige coordinación para evitar duplicidades y vacíos. Los instrumentos son la Conferencia Sectorial de Consumo, las campañas nacionales y europeas de inspección, los convenios entre administraciones, las redes de alerta y la cooperación europea. Las competencias de inspección autonómicas y locales pueden ser concurrentes, y su ejercicio coordinado mejora el control.
+
+# 5. CONCLUSIÓN
+
+La protección de los consumidores responde a su desigualdad frente a los empresarios. La UE la reconoce en el art. 169 del TFUE y en la Carta, y la Constitución la configura como principio rector. El TRLGDCU refunde las directivas europeas con derechos irrenunciables, contratos, garantías, responsabilidad por productos defectuosos y un régimen sancionador tipificado.
+
+La inspección se reparte entre el Estado, que coordina y actúa en las infracciones generalizadas, las comunidades autónomas, principales responsables de inspección y sanción, y las entidades locales, mediante las OMIC y sus competencias sanitarias y de mercados. Los retos son aplicar las normas frente a plataformas digitales y productos de terceros países, transponer las acciones de representación, proteger frente a patrones oscuros y greenwashing y coordinar mejor las administraciones.

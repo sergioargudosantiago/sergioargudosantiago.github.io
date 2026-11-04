@@ -1,169 +1,141 @@
-# **1. INTRODUCCIÓN Y MARCO ECONÓMICO**
+# 1. INTRODUCCIÓN
 
-## **1.1. Definición y función**
-- **Distribución Comercial:** Conjunto de actividades que salvan el bache entre producción y consumo.
-  - Movimiento de mercancías desde donde son menos necesarias hasta donde son más necesarias.
-  - Sector Servicios (según INE). Incluye partidas CNAE: vehículos, combustibles, comercio mayorista y minorista.
+**Distribución comercial.** Conjunto de actividades que salvan la distancia entre la producción y el consumo y ponen los productos a disposición del consumidor en la cantidad, el lugar y el momento adecuados. Estadísticamente es un servicio y corresponde a la sección G de la CNAE. Desde 2026 el INE aplica la CNAE-2025, que integra la venta de vehículos en el comercio mayorista y minorista, por lo que las series de 2026 no son comparables con las anteriores.
 
-## **1.2. Factores de transformación**
-- **Factores socioeconómicos:** Aumento del poder adquisitivo, incorporación de la mujer al trabajo, reducción tamaño familiar, cultura del ocio, periferias urbanas, equipamiento hogares (congeladores).
-- **Avances tecnológicos:** TIC, e-commerce, transporte, técnicas de conservación/empaquetado.
+**Comercio mayorista.** Adquiere productos a fabricantes, productores u otros mayoristas para venderlos a minoristas, a otros mayoristas, a empresas o a clientes institucionales y del canal HORECA, sin ventas significativas al consumidor final. Es el subsector que más factura del comercio. La alimentación fresca sigue siendo su núcleo, mientras que en confección, calzado o ferretería el escalón mayorista tiende a reducirse. Sus formas con más protagonismo son los mercados centrales de la Red de Unidades Alimentarias, gestionada por MERCASA junto con los ayuntamientos, y los canales alternativos.
 
-## **1.3. Datos económicos España (2023)**
-- **Peso en la economía:**
-  - Comercio total: ~12,5% del PIB y VAB.
-  - Comercio minorista: 5,0% del PIB (frente al 5,2% en 2019).
-- **Tejido empresarial:**
-  - 646.339 empresas (20,2% del total).
-  - Locales: 3.732.601 activos (22% corresponden a comercio).
-    - Minorista: 13,6%.
-    - Mayorista: 6,1%.
-- **Empleo (3T 2024):**
-  - Sector Comercio: 3.154.300 ocupados.
-  - Comercio minorista: 2.031.900 ocupados (9,3% del total nacional).
-  - Tendencia: Pérdida de peso del trabajo autónomo frente al trabajo por cuenta ajena (auge de grandes empresas).
+# 2. EL COMERCIO MAYORISTA EN ESPAÑA
 
-## **1.4. Marco normativo destacado**
-- Ley 7/1996 de Ordenación del Comercio Minorista (modificada por Ley 1/2010 - Directiva Bolkestein).
-- Ley 1/2004 de Horarios Comerciales.
-- Ley 3/2004 de lucha contra la morosidad.
-- Planes de apoyo: Plan Integral de Apoyo a la Competitividad del Comercio Minorista (desde 2013 hasta 2024).
+## 2.1. Concepto y funciones
 
-## **1.5. Contexto de crisis y recuperación**
-- **2008-2014:** Crisis profunda. Recuperación iniciada en Navidad 2014.
-- **2015-2019:** Recuperación moderada pero estable.
-- **COVID-19:** Caída de facturación sin parangón (descensos 35-40% anual). Caída PIB sectorial del 25,7%.
-- **Actualidad:** 2021 y 2022 positivos, pero recuperación total del terreno perdido prevista para finales de 2024.
+**Mayorista.** Intermediario que compra en grandes cantidades y vende a otros intermediarios o a empresas. Sus funciones principales son:
 
-# **2. EL COMERCIO MAYORISTA: CARACTERÍSTICAS Y ESTRUCTURA**
+- Comprar, agrupar la oferta y fraccionar lotes para formar surtidos
+- Almacenar, conservar, transportar y distribuir la mercancía
+- Negociar condiciones y financiar a los clientes con el aplazamiento de pago
+- Asumir riesgos como mermas, caducidad o impagados
+- Informar y asesorar a fabricantes y minoristas
 
-## **2.1. Concepto y función**
-- **Definición:** Centro de concurrencia donde operan agentes (producción, comercio, consumo). Adquisición a fabricantes para venta a minoristas, otros mayoristas o HORECA. Sin ventas significativas al consumidor final.
-- **Funciones principales:**
-  - Compra a fabricantes/mayoristas.
-  - Agrupación y regulación de stocks.
-  - Almacenamiento y conservación.
-  - Negociación (precios/condiciones).
-  - Promoción, financiación y venta.
-  - Asunción de riesgos.
-  - Asesoramiento.
+La función puede desarrollarse con tres estrategias: crecimiento para lograr economías de escala, integración vertical asumiendo funciones de fabricantes o minoristas, y especialización en una gama o en un tipo de cliente, como el canal HORECA.
 
-## **2.2. Estrategias fundamentales**
-- **Crecimiento:** Ganar tamaño y reducir costes (economías de escala). Vía crecimiento interno o fusiones.
-- **Integración vertical:** Asumir tareas de fabricantes o minoristas.
-- **Especialización:** Centrarse en gama concreta para lograr demanda inelástica y aumentar márgenes.
+## 2.2. Clasificación
 
-## **2.3. Estructura del sector en España**
-- **Importancia:** El sector agroalimentario (especialmente frescos) es el núcleo. Tendencia a suprimir el mayorista en sectores como textil o calzado.
-- **Clasificación administrativa (7 ramas):** Alimentación, Textil, Droguería, Vehículos, Consumo duradero, Inter-industrial, Otros.
-- **Datos (Estadística 2024, datos 2022):**
-  - Facturación: 574.666 M€ (60,2% del comercio total).
-  - Empleo: 1.127.170 personas (35,9% del sector).
-- **Modernización y tendencias:**
-  - Mayor concentración y necesidad de superficie.
-  - Mecanización e informatización.
-  - Acortamiento de plazos de pago y más servicios.
-  - **Internacionalización:** Entrada de grupos europeos, aumento de importaciones, Euro.
+Se clasifica por el tipo de producto, las relaciones de propiedad (independientes, integrados o asociados), la localización (en origen o en destino), el tipo de actividad (con o sin servicios) y la propiedad de la mercancía. En este último caso se distingue entre los mayoristas que compran y revenden y los intermediarios o comisionistas, que actúan por cuenta de otros sin adquirir la propiedad. En la CNAE-2009 corresponde a la división 46.
 
-## **2.4. Contexto Europeo**
-- Más de 1,95 millones de empresas.
-- Italia lidera en número de establecimientos, seguida de España.
-- Reino Unido y Alemania lideran en cifra de negocio.
-- Registra la mayor productividad media de la distribución.
+## 2.3. Datos y tendencias
 
-# **3. CANALES DE COMERCIALIZACIÓN**
+Según la Estadística Estructural de Empresas del INE, en 2024 el comercio al por mayor facturó **608.399 M€**, el **58,3 %** de la cifra de negocios del comercio, con **1,15 millones de ocupados**, el 35,6 % del empleo del sector. Es la rama más productiva e internacionalizada del comercio.
 
-## **3.1. Comercialización en Origen**
-- **Mayoristas en origen:** Primeros compradores al agricultor. Concentran producto.
-- **Mayoristas transportistas:** Aprovechan retornos vacíos.
-- **Corredores/Comisionistas:** Intermediarios independientes (brokers). No tienen propiedad del producto, cobran comisión.
-- **Alhóndigas o "corridas":** Centros locales privados. Venta por subasta a la baja. El agricultor puede retirar el producto. Solvencia garantizada al vendedor.
-- **Centrales hortofrutícolas:** Almacenistas que manipulan, clasifican, embalan y conservan (frío). Acceso a mercados exteriores.
+El sector se transforma hacia una mayor profesionalización por estas tendencias:
 
-## **3.2. Comercialización en Destino**
-- Principal vía de abastecimiento del comercio especializado y mercadillos.
-- **Operadores:**
-  - Mayoristas independientes (fuera de Mercas).
-  - Asentadores tradicionales (dentro de la Red de Mercas).
-  - Intermediarios mayoristas (facilitan negociación con gran distribución).
+- Integración de la función mayorista por las grandes cadenas minoristas y las centrales de compras
+- Desintermediación en los productos no alimentarios, con venta directa del fabricante
+- Concentración y mayor tamaño, con almacenes automatizados
+- Más servicios: reparto, preparación de pedidos y venta en línea a profesionales
+- Internacionalización, por más importaciones y más presencia de grupos europeos
+- Acortamiento de los plazos de pago, por la Ley 3/2004 de morosidad y la Ley 12/2013 de la cadena alimentaria
 
-# **4. LA RED DE UNIDADES ALIMENTARIAS (MERCASA)**
+## 2.4. La comercialización de los productos perecederos
 
-## **4.1. Concepto de Mercado Central**
-- Lugar físico de concentración de oferta y demanda profesional (sin consumidor final).
-- Evolución desde plazas municipales a plataformas logísticas periurbanas.
-- **Clasificación:** Por ubicación (rural/urbano), función (origen/destino), variedad (especializado/general), propiedad (público/privado/mixto).
+En los productos frescos, el canal tradicional distingue dos escalones mayoristas: el de origen y el de destino.
 
-## **4.2. Empresa Nacional MERCASA**
-- Creada en 1966. Dependiente de SEPI y MAPA (vía FEGA).
-- **Modelo:** Servicio público en régimen de concesión a operadores.
-- **Red:** 24 Unidades Alimentarias (ej. Mercamadrid, Mercabarna, Mercaolid).
+## 2.5. Comercialización en origen
 
-## **4.3. Datos de la Red (Informe 2023)**
-- **Superficie:** ~8 millones m2.
-  - Mercado neto: ~800.000 m2
-  - Zonas de Actividades Complementarias (ZAC): 3,7 millones m2
-- **Empresas:** ~3.300 instaladas (tendencia a reducción en mercado, aumento en ZAC).
-  - Mayoría de Frutas y Hortalizas (1.000 empresas).
-- **Empleo:** ~30.000 personas.
-- **Tránsito:** 16,5 millones de vehículos/año.
-- **Cuota de mercado (volúmenes comercializados):**
-  - Frutas y hortalizas: ~65% del consumo nacional.
-  - Pescados y mariscos: ~50%.
-  - Carnes: ~35%.
-- **Valor económico:** >22.800 M€ (1,56% del PIB).
+Se realiza en las zonas de producción e incluye el acondicionamiento del producto: lavado, selección, clasificación y envasado. Sus operadores son:
 
-## **4.4. Actividades minoristas y otros servicios de MERCASA**
-- **Centros Comerciales:** Gestión de 8 centros.
-- **Mercados Municipales:** Modernización y remodelación.
-- **Proyectos de especialización (Franquicias):**
-  - Mercafresh: Cadena detallista de producto fresco.
-  - Mercaorigen: Potenciación de Denominaciones de Origen.
-- **Estudios:** "Alimentación en España" (con MAPA).
-- **Responsabilidad Social:** Colaboración con Bancos de Alimentos.
-- **Internacional:** Consultoría y proyectos llave en mano (Consorcio MERCASA-Incatema). Unión Mundial de Mercados Mayoristas.
+- **Mayoristas o almacenistas en origen**, que compran a los agricultores para el mercado interior o la exportación
+- **Cooperativas y organizaciones de productores**, principales operadores en origen de frutas y hortalizas
+- **Centrales hortofrutícolas**, que reciben, clasifican, envasan y expiden a los mercados de destino o a la exportación
+- **Alhóndigas o corridas**, centros privados típicos del sureste con venta por lotes mediante subasta a la baja. Pagan al agricultor en la entrega y asumen el riesgo de cobro
+- **Lonjas pesqueras**, donde se hace la primera venta del pescado, normalmente por subasta
+- **Corredores o comisionistas**, que ponen en contacto oferta y demanda a cambio de una comisión
+- **Mayoristas transportistas**, que aprovechan los retornos para comprar en origen y vender en destino
 
-# **5. CANALES ALTERNATIVOS Y CENTRALES DE DISTRIBUCIÓN**
+## 2.6. Comercialización en destino
 
-## **5.1. Cash & Carry (Autoservicio Mayorista)**
-- **Definición:** Venta al por mayor en régimen de autoservicio para profesionales (HORECA, detallistas).
-- **Características:**
-  - Superficie 1.000 - 2.000 m2. Periferia urbana.
-  - Pago al contado. Transporte por cuenta del cliente.
-  - Surtido: Gran consumo, bebidas, alimentación envasada (menos perecederos que Merca).
-- **Evolución:** Impulso tras Ley 7/1996 (prohibición venta a pérdidas en minorista).
-- **Operadores:** Líder destacado MAKRO (Grupo Metro, 38 centros). Otros: Miquel Alimentació, Covalco, Eroski, Grupo DÍA.
-- **Relación con Mercas:**
-  - Teóricamente competidores.
-  - CNMC considera que son mercados conexos/complementarios (distinto perfil de cliente y servicio).
+Los mayoristas en destino compran a los operadores de origen y venden a minoristas, comercio especializado, mercadillos y canal HORECA. Se distinguen los instalados en las Mercas, tradicionalmente llamados asentadores, los mayoristas independientes que operan fuera de la red y los intermediarios que compran por cuenta de minoristas. Es la principal vía de abastecimiento del comercio especializado, los mercados municipales, los mercadillos y la hostelería independiente.
 
-## **5.2. Centrales o Plataformas de Distribución**
-- **Función:** Logística, almacenamiento y distribución física para suministrar a redes de supermercados/hipermercados.
-- **Importancia:** Canalizan el 29,5% de perecederos (2023).
-- **Difusión de roles:** Mayoristas tradicionales actúan como operadores logísticos o las grandes cadenas montan sus propias plataformas (integración vertical).
+# 3. LA RED DE UNIDADES ALIMENTARIAS. LA EMPRESA NACIONAL MERCASA
 
-## **5.3. Centrales de Compra**
-- **Definición:** Agrupaciones para negociar condiciones con proveedores (capacidad de interlocución).
-- **Tipos:**
-  - Centrales de asociados: Mayoristas medianos que se unen para competir.
-  - Centrales independientes: Grandes cadenas que agrupan compras de sus sucursales.
-- **Bloques principales en España:**
-  - Euromadi Ibérica (Alcampo, Simply).
-  - IFA Española (Ahorramás, Unide, Covalco).
-- **ANCECO:** Asociación Nacional (fundada 1998). Aglutina 127 centrales.
+## 3.1. Los mercados centrales mayoristas
 
-# **6. CONCLUSIÓN Y TENDENCIAS**
+**Mercado central.** Lugar físico donde los operadores se concentran para comprar y vender productos a otros profesionales, sin participación del consumidor final. Los mercados mayoristas se clasifican por su ubicación (rurales o urbanos), su función en el canal (de origen, de tránsito o de destino), la variedad de su oferta, su gestión (independientes o en red) y su propiedad (públicos, privados o mixtos).
 
-## **6.1. Nueva demanda**
-- Crecimiento del consumo fuera del hogar (hostelería, restauración colectiva).
-- Especialización del detallista (mix frescos + seco).
-- Consolidación de formatos modernos (híper, súper, descuento) que priorizan frescos para fidelizar.
-- Valoración de salud, calidad y seguridad alimentaria (Dieta Mediterránea).
+Su marco normativo básico sigue siendo el **Real Decreto 1882/1978**, sobre canales de comercialización de productos agropecuarios y pesqueros, que reconoció como excepción al comercio mayorista de perecederos en los mercados centrales la actividad de las centrales de distribución. El **Real Decreto 200/2010** lo adaptó a la Directiva de servicios: amplió las centrales de distribución a toda clase de productos, suprimió el registro especial de centrales y exigió que la adjudicación de puestos respete los principios de publicidad, objetividad y concurrencia.
 
-## **6.2. Retos de futuro**
-- Nuevos servicios y tecnologías (e-commerce B2B).
-- Normalización de productos (IV y V gama).
-- Apoyo a campañas de educación alimentaria.
+## 3.2. La Empresa Nacional MERCASA
 
-## **6.3. Nuevos competidores**
-- **Amazon (Prime Now):** Entrada en alimentación frescos y refrigerados (desde 2016). Modificación del sector por entregas rápidas a domicilio.
+La **Empresa Nacional MERCASA** (Mercados Centrales de Abastecimiento, S.A.) se creó en 1966 para modernizar el abastecimiento alimentario de las ciudades. Es una sociedad mercantil estatal cuyo capital pertenece a la SEPI y al Ministerio de Agricultura, Pesca y Alimentación a través del FEGA. Presta un servicio público a toda la cadena alimentaria, sobre todo en el escalón mayorista de la alimentación fresca, y ordena su actividad mediante planes estratégicos, el último para el periodo 2025 a 2029.
+
+## 3.3. La Red de Mercas
+
+MERCASA participa, junto con los ayuntamientos, en el capital de las sociedades que gestionan las **24 Unidades Alimentarias** de la Red de Mercas, complejos de distribución mayorista y servicios logísticos. Las mayores son Mercamadrid y Mercabarna, y la incorporación más reciente es Mercaolid, en Valladolid. Funcionan como espacio público en régimen de concesión a los operadores mayoristas.
+
+Cada Unidad cuenta con mercados mayoristas de frutas y hortalizas, pescados y, en algunos casos, carnes y flores, y con una **Zona de Actividades Complementarias (ZAC)** para empresas de distribución, manipulación, logística, cash and carry y servicios. Según el Informe Anual 2024 de MERCASA:
+
+- Más de 3.000 empresas y más de 30.000 personas trabajando
+- Unos 9,1 millones de toneladas comercializadas, por más de 24.000 M€, el 1,5 % del PIB
+- Distribución de alrededor del 77 % de las frutas y hortalizas, el 60 % de los pescados y mariscos y el 65 % de la carne que se consumen en España
+- Mayoría de origen nacional, con venta directa de agricultores en las Mercas
+
+La estructura empresarial muestra menos mayoristas dentro de los mercados y más empresas en las ZAC, que prestan servicios logísticos y de valor añadido.
+
+## 3.4. Otras actividades de MERCASA
+
+- **Comercio minorista.** Gestiona ocho centros comerciales y asesora a ayuntamientos y asociaciones para modernizar los mercados municipales
+- **Promoción del consumo.** Colabora con el MAPA en campañas de productos frescos y de mercados municipales
+- **Conocimiento del sector.** Publica la revista Distribución y Consumo y el informe anual Alimentación en España
+- **Desperdicio alimentario.** Las Mercas colaboran con los bancos de alimentos, en línea con la Ley 1/2025, de 1 de abril, de prevención de las pérdidas y el desperdicio alimentario
+- **Actividad internacional.** Presta consultoría a otros países y participa en la Unión Mundial de Mercados Mayoristas (WUWM)
+
+# 4. CENTRALES DE DISTRIBUCIÓN Y CANALES ALTERNATIVOS
+
+## 4.1. El autoservicio mayorista (cash and carry)
+
+**Cash and carry.** Venta al por mayor de productos de gran consumo, en autoservicio, dirigida a profesionales y no al consumidor final: hostelería, comercio minorista independiente e instituciones. Sus características son:
+
+- Almacenes de gran tamaño en la periferia urbana
+- Pago al contado y transporte por el cliente, aunque cada vez más ofrecen reparto y venta en línea
+- Surtido amplio de alimentación envasada, bebidas, frescos y droguería
+- Costes reducidos y fidelización del cliente profesional
+
+El líder es **Makro**, del grupo alemán Metro, que abrió en Madrid en 1972 y tiene 37 centros. En 2025 facturó unos 1.875 M€, más del 80 % con la hostelería.
+
+El formato se vio favorecido en los años noventa por la regulación de la venta con pérdida en la LOCM de 1996. La **venta con pérdida** es vender por debajo del precio de adquisición, y no debe confundirse con el **dumping**, que es exportar a un precio inferior al del mercado de origen. Desde el Real Decreto-ley 20/2018, la venta con pérdida solo está prohibida cuando sea desleal.
+
+La Comisión Europea y la CNMC lo consideran un mercado de producto distinto de la distribución mayorista tradicional en destino, por la oferta (grandes empresas nacionales con muchas más referencias) y por la demanda (autoservicio, pago al contado y transporte por el cliente, con pymes como clientes). No obstante, la CNMC reconoce que ambos canales son complementarios y que la distribución tradicional puede disciplinar en parte a los cash and carry.
+
+## 4.2. La distribución especializada a la hostelería (food service)
+
+El crecimiento del consumo fuera del hogar ha impulsado a los distribuidores especializados en el canal HORECA, que suministran a restaurantes, hoteles y restauración colectiva alimentos frescos, refrigerados, congelados y bebidas, con entrega en el establecimiento. Compite con los cash and carry y con los mayoristas de las Mercas, muchos de los cuales han desarrollado reparto a la hostelería.
+
+## 4.3. Las centrales o plataformas de distribución
+
+Constituyen el llamado **canal moderno**. El art. 6 del Real Decreto 1882/1978 ya permitía comercializar alimentos a través de ellas, como excepción al paso de los frescos por los mercados mayoristas. Realizan el transporte, el almacenamiento y la distribución física en el escalón mayorista, de frescos y de gran consumo. Muestran la difusión de funciones entre los operadores:
+
+- Las grandes cadenas compran directamente a productores, cooperativas o mayoristas y distribuyen desde sus plataformas a su red de tiendas, de modo que un único agente integra la función mayorista
+- Algunos mayoristas en destino se integran hacia el origen o actúan como operadores logísticos desde las ZAC
+- La trazabilidad y la seguridad alimentaria llevan a la gran distribución a controlar su cadena de suministro y a externalizar la logística
+
+## 4.4. Las centrales de compras
+
+Son sociedades o agrupaciones de comerciantes, con personalidad jurídica propia, que agrupan las compras de sus asociados para obtener mejores condiciones por volumen. Se distinguen de las simples agrupaciones de compra por tener estructura organizativa y órganos de gobierno propios. Hay dos tipos:
+
+- Centrales de asociados, creadas por mayoristas y minoristas independientes para hacer frente a las grandes cadenas
+- Centrales integradas en los grandes grupos de distribución
+
+En alimentación predominan dos centrales de asociados, **Euromadi** e **IFA**, formadas sobre todo por cadenas regionales cuyos socios cambian con frecuencia de central. Fuera de la alimentación tienen gran implantación en ferretería, material de construcción, electrónica o droguería, y muchas se agrupan en la Asociación Nacional de Centrales de Compra y Servicios (ANCECO), fundada en 1998.
+
+Aumentan el poder de negociación frente a los fabricantes, por lo que las autoridades de competencia vigilan sus efectos. Su relación con los proveedores agroalimentarios está sometida a la Ley 12/2013 de la cadena alimentaria y a la prohibición de prácticas comerciales desleales.
+
+## 4.5. Canales cortos y venta directa
+
+Alternativa al canal largo, con un intermediario como máximo: venta directa del productor en la explotación, en mercados de productores o por internet, y venta a la hostelería o al comercio local. Las Mercas facilitan la venta directa de los agricultores, y las ayudas del Plan de Recuperación al comercio incluyeron una línea específica para estos canales.
+
+# 5. CONCLUSIÓN
+
+El comercio mayorista español se adapta a una nueva demanda, con más consumo fuera del hogar, modernización del comercio especializado y de los mercados municipales, consolidación de la distribución organizada y mayor valoración de la alimentación saludable basada en la dieta mediterránea.
+
+Los mercados mayoristas deben seguir evolucionando: prestar logística y reparto, incorporar el comercio electrónico entre profesionales, adaptar la presentación de los productos, reducir el desperdicio alimentario y mejorar su sostenibilidad.
+
+La Red de Mercas, con MERCASA a la cabeza, sigue siendo pieza esencial del abastecimiento: canaliza la mayor parte de los frescos que se consumen en España y garantiza el suministro al comercio especializado y a la hostelería independiente, como demostró durante la pandemia. Convive y se complementa con el cash and carry, las plataformas de la gran distribución y las centrales de compras, en un sistema en el que la función mayorista no desaparece, sino que se transforma.
