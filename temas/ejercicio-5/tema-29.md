@@ -1,135 +1,143 @@
-# **1. INTRODUCCIÓN**
-**Derecho Administrativo:**
-  - Surge al otorgar personalidad jurídica propia a la Administración Pública.
-  - Es un derecho estatutario, completo y cerrado.
-  - Las lagunas se integran con sus propios principios.
-  - **Definición:** Conjunto de normas de Derecho Público interno que regulan la organización y actividad de las Administraciones Públicas.
+# 1. INTRODUCCIÓN
 
-# **2. LAS FUENTES DEL DERECHO ADMINISTRATIVO**
+El **Derecho Administrativo** es el conjunto de normas de Derecho público que regulan la organización de las Administraciones públicas, su actividad y sus relaciones con los ciudadanos. Lo distingue el **principio de legalidad**: la Administración solo puede actuar cuando una norma la habilita, porque el art. 103.1 CE le exige sometimiento pleno a la ley y al Derecho.
 
-## **2.1. Concepto y clases**
-- **Fuente:** Origen de las normas jurídicas.
-  - **Sentido material:** Instituciones con potestad normativa (Parlamento, Gobierno).
-  - **Sentido formal:** Normas emanadas (Leyes, Reglamentos).
-- **Fuentes del Ordenamiento Jurídico (Código Civil, Art. 1):**
-  - La Ley.
-  - La Costumbre.
-  - Los Principios Generales del Derecho.
-- **Regulación Constitucional (CE 1978):**
-  - Regula leyes, decretos-leyes, decretos legislativos y tratados.
-  - División del poder normativo (Estado y CC.AA.).
-  - Reconocimiento de la potestad reglamentaria.
-  - Principios: Reserva de Ley, Jerarquía Normativa, Publicidad, Irretroactividad (sancionadora no favorable), Seguridad Jurídica.
+# 2. LAS FUENTES DEL DERECHO ADMINISTRATIVO
 
-## **2.2. Principios de ordenación de fuentes**
-- **Principio de Jerarquía Normativa:**
-  - Norma superior prevalece y deroga a la inferior. La inferior es nula si contradice a la superior.
-  - **Pirámide normativa:**
-    - Constitución.
-    - Leyes (Orgánicas, Especiales, Ordinarias) y normas con rango de Ley (Decretos-leyes, Decretos legislativos).
-    - Reglamentos.
-- **Principio de Competencia:**
-  - Regla complementaria. Atribución a un ente u órgano concreto de la potestad de regular una materia con exclusión de las demás.
-  - Protege normas frente a otras de igual o superior nivel (ej. Ley estatal no puede derogar Reglamento autonómico si hay competencia exclusiva).
+## 2.1. Concepto y clases de fuentes
 
-## **2.3. Clasificación de las Fuentes**
-- **Fuentes Directas:**
-  - **Primarias:** Constitución, Leyes/normas con rango de Ley, Tratados internacionales, Reglamentos.
-  - **Subsidiarias:** Costumbre, Principios Generales del Derecho.
-- **Fuentes Indirectas:** Jurisprudencia (Doctrina del Tribunal Supremo).
+Las **fuentes del Derecho** aluden al origen de las normas. En sentido material son los sujetos con poder para crearlas, y en sentido formal los tipos de normas que producen. El art. 1 del Código Civil enumera la ley, la costumbre y los principios generales, pero hoy el sistema está en la Constitución de 1978 (CE). La doctrina distingue:
 
-## **2.4. Referencia a fuentes específicas**
-- **La Costumbre:** Rige en defecto de Ley. Apenas tiene aplicación en Derecho Administrativo.
-- **Principios Generales del Derecho:** Fundamentos ético-jurídicos. Límite a la discrecionalidad administrativa (evita arbitrariedad). Aplican en defecto de Ley o costumbre.
-- **Reglamentos:** Norma jurídica de carácter general dictada por la Administración, con valor subordinado a la Ley.
+- Fuentes escritas: Constitución, normas con rango de ley, tratados internacionales, Derecho de la Unión Europea y reglamentos
+- Fuentes no escritas: costumbre y principios generales del Derecho
+- Fuentes complementarias: jurisprudencia (art. 1.6 CC)
 
-# **3. LA CONSTITUCIÓN**
-- Norma suprema del Ordenamiento Jurídico. Norma Jurídica vinculante.
-- Regula derechos, libertades, organización de poderes y límites.
+## 2.2. Los principios que ordenan las fuentes
 
-## **3.1. Supremacía Formal**
-Procedimiento estricto de revisión (Arts. 166-169 CE):
-- **Procedimiento Agravado (Art. 168):**
-  - Materias: Revisión total, Título Preliminar, Título I (Sección 1ª), Título II (Corona).
-  - Requisitos:
-    - Aprobación por 2/3 de cada Cámara.
-    - Disolución inmediata de las Cortes.
-    - Ratificación por nuevas Cámaras y aprobación por 2/3.
-    - Referéndum obligatorio.
-- **Procedimiento Ordinario (Art. 167):**
-  - Materias: Restantes normas.
-  - Requisitos: Aprobación por 3/5 de cada Cámara. Si no hay acuerdo: Comisión paritaria. Si no, Congreso 2/3 y Senado mayoría absoluta.
-  - Referéndum: Solo si lo solicita 1/10 de los miembros en 15 días.
-- **Límites:** No puede iniciarse reforma en tiempo de guerra o estados de alarma, excepción o sitio (Art. 169).
-- **Iniciativa:** Gobierno, Congreso, Senado, Asambleas CC.AA.
+El art. 9.3 CE garantiza, entre otros, la legalidad, la jerarquía normativa, la publicidad de las normas, la seguridad jurídica y la interdicción de la arbitrariedad.
 
-## **3.2. Supremacía Material (Art. 9 CE)**
-- Subordinación de todas las normas a la Constitución.
-- Vincula a Jueces y Tribunales (LOPJ Art. 5).
-- **Garantía:** Recurso de Inconstitucionalidad y Cuestión de Inconstitucionalidad ante el Tribunal Constitucional.
+**Jerarquía normativa.** Las normas de rango superior prevalecen sobre las de rango inferior, y la que las contradiga es nula. Ordena las fuentes de forma piramidal.
 
-# **4. LAS LEYES Y DISPOSICIONES CON RANGO DE LEY**
+![Jerarquía de las fuentes escritas del Derecho Administrativo en el ámbito estatal. Elaboración propia.](tema-29-fig-1.png)
 
-## **4.1. Leyes Parlamentarias**
-- **Leyes Orgánicas (Art. 81 CE):**
-  - **Material:** Desarrollo de Derechos Fundamentales y Libertades Públicas, Estatutos de Autonomía, Régimen Electoral General y otras previstas.
-  - **Formal:** Aprobación, modificación o derogación requiere mayoría absoluta del Congreso.
-- **Leyes Ordinarias:**
-  - Aprobación por **mayoría simple**.
-  - Tipos: Leyes de Pleno y Leyes de Comisión (Art. 75 CE).
-  - Materias excluidas de delegación en Comisión: Reforma constitucional, cuestiones internacionales, leyes orgánicas/de bases, Presupuestos Generales.
+**Competencia.** En un Estado compuesto la jerarquía no basta. Una ley autonómica y una estatal tienen el mismo rango, y el conflicto se resuelve preguntando cuál es competente. Solo cuando la materia no es de competencia exclusiva autonómica entra la cláusula de prevalencia del Derecho estatal (art. 149.3 CE).
 
-## **4.2. Disposiciones del Gobierno con fuerza de Ley**
-- **Decretos-leyes (Art. 86 CE):**
-  - Facultad del Gobierno en caso de **extraordinaria y urgente necesidad**.
-  - **Límites:** No pueden afectar a instituciones básicas del Estado, derechos del Título I, régimen de CC.AA. ni derecho electoral.
-  - **Carácter provisional:** Deben someterse a debate/votación en el Congreso en 30 días para convalidación o derogación.
-- **Delegación Legislativa (Decretos Legislativos):**
-  - Cortes delegan en el Gobierno la potestad de dictar normas con rango de ley.
-  - **Modalidades:**
-    - **Textos refundidos:** Unificar varios textos legales (Ley ordinaria autoriza).
-    - **Textos articulados:** Desarrollar una Ley de Bases (establece directrices).
-  - **Requisitos:** Delegación expresa, materia concreta y plazo fijo.
-  - **Prohibiciones:** La Ley de Bases no puede autorizar su propia modificación ni dictar normas retroactivas.
+**Reserva de ley.** Ciertas materias deben regularse por ley y no por reglamento: los derechos y libertades del Capítulo II del Título I (art. 53.1), los tributos y prestaciones patrimoniales públicas (arts. 31.3 y 133) y las infracciones y sanciones (art. 25.1). Es absoluta cuando la ley debe regular toda la materia y relativa cuando basta con que fije sus elementos esenciales.
 
-## **4.3. Iniciativa Legislativa (Arts. 87 y 88 CE)**
-- **Gobierno:** Proyecto de Ley (aprobado por Consejo de Ministros). Prioridad en tramitación.
-- **Congreso y Senado:** Proposición de Ley (25 diputados o 25 senadores).
-- **Asambleas Legislativas CC.AA.:** Solicitud al Gobierno o a la Mesa del Congreso.
-- **Iniciativa Popular:** Mínimo 500.000 firmas acreditadas.
-  - **Exclusiones:** Materias de ley orgánica, tributaria, internacional, prerrogativa de gracia, reforma constitucional.
+## 2.3. Las fuentes no escritas y la jurisprudencia
 
-## **4.4. Tramitación**
-- **Congreso:** Publicación, enmiendas (15 días), informe ponencia, debate/votación en comisión, votación en Pleno. Remisión al Senado.
-- **Senado:** 2 meses para vetar (mayoría absoluta), enmendar o aceptar.
-- **Sanción (Art. 91):** El Rey sanciona en 15 días, promulga y ordena publicación.
-- **Entrada en vigor:** A los 20 días de su publicación en BOE (salvo disposición contraria).
+- **Costumbre.** Uso reiterado con convicción de obligatoriedad, rige solo en defecto de ley (art. 1.3 CC). Su papel es muy reducido y casi limitado al régimen local
+- **Principios generales.** Se aplican en defecto de ley o costumbre e informan todo el ordenamiento (art. 1.4 CC). Sirven sobre todo para controlar las potestades discrecionales. Muchos están positivados, como la buena fe, la confianza legítima y la lealtad institucional (art. 3.1 Ley 40/2015)
+- **Jurisprudencia.** No crea normas en sentido estricto, pero los tribunales han construido buena parte de las instituciones. Se suma la doctrina del Tribunal Constitucional, que vincula a todos los jueces (art. 5.1 LOPJ)
 
-## **4.5. Leyes particulares (Art. 150 CE)**
-- **Leyes Marco:** Cortes atribuyen a CC.AA. facultad de dictar normas sobre competencia estatal.
-- **Leyes de Armonización:** Establecen principios para armonizar disposiciones de las CC.AA. por interés general.
+No son fuentes el precedente administrativo, aunque la Administración debe motivar cuándo se aparta de él (art. 35.1.c Ley 39/2015), ni la doctrina del Consejo de Estado.
 
-# **5. LOS TRATADOS INTERNACIONALES**
-- Forman parte del Ordenamiento Jurídico interno una vez publicados en el BOE.
-- **Tipos de autorización:**
-  - **Mediante Ley Orgánica (Art. 93 CE):** Tratados que atribuyan ejercicio de competencias constitucionales a organización internacional.
-  - **Autorización previa de Cortes (Art. 94.1 CE):** Carácter político, militar, integridad territorial, obligaciones financieras, modificación de leyes.
-  - **Información a Cortes (Art. 94.2 CE):** Resto de tratados concluidos por el Gobierno.
-- **Derogación/Modificación:** Solo según lo previsto en el propio Tratado o normas de Derecho Internacional.
+# 3. LA CONSTITUCIÓN
 
-# **6. DERECHO COMUNITARIO Y DERECHO ESPAÑOL**
-- Incorporación del Ordenamiento Jurídico Comunitario tras la entrada en la UE.
-- **Principio de Primacía:** El Derecho Comunitario prevalece sobre el nacional (incompatible mantener norma interna contraria).
-- **Atribuciones:** Los órganos nacionales dejan de ser competentes en materias transferidas.
-- **Competencias exclusivas de la Unión (Art. 3 TFUE):**
-  - Unión Aduanera.
-  - Normas sobre competencia (Mercado Interior).
-  - Política Monetaria (Euro).
-  - Conservación recursos biológicos marinos.
-  - Política Comercial Común.
+## 3.1. La Constitución como norma jurídica
 
-# **7. CONCLUSIÓN**
-- El Derecho Administrativo regula la producción de normas jurídico-administrativas.
-- **Diferencia clave con Derecho Privado:**
-  - **Privado:** Autonomía de la voluntad (la Ley es solo un límite).
-  - **Administrativo:** Inexistencia de autonomía de la voluntad. Sujeción plena al Principio de Legalidad (Ley y Derecho).
+La Constitución es la norma suprema y una **norma jurídica** que vincula directamente a ciudadanos y poderes públicos (art. 9.1 CE). Para la Administración es el fundamento de sus potestades y fija sus principios: eficacia, jerarquía, descentralización, desconcentración y coordinación (art. 103.1). Todas las normas se interpretan conforme a ella (art. 5.1 LOPJ).
+
+## 3.2. La supremacía formal: la reforma constitucional
+
+La Constitución es **rígida**: solo se modifica por procedimientos más exigentes que los legislativos.
+
+- **Ordinario** (art. 167). Exige tres quintos de cada Cámara. Si no hay acuerdo, una Comisión paritaria propone un texto y, si tampoco se aprueba, el Congreso puede aprobarlo por dos tercios siempre que el Senado lo haya aprobado por mayoría absoluta. Solo hay referéndum si lo pide una décima parte de los miembros de cualquiera de las Cámaras en los quince días siguientes
+- **Agravado** (art. 168). Para la revisión total y la reforma del Título Preliminar, de la Sección 1.ª del Capítulo II del Título I y del Título II. Exige dos tercios de cada Cámara, disolución de las Cortes, ratificación por dos tercios de las nuevas Cámaras y referéndum obligatorio
+
+La iniciativa corresponde al Gobierno, al Congreso, al Senado y a las Asambleas autonómicas, y queda excluida la popular (art. 166). No puede iniciarse en tiempo de guerra ni durante los estados de alarma, excepción o sitio (art. 169).
+
+## 3.3. Las garantías de la supremacía
+
+Ninguna norma puede contradecir la Constitución, y su garante es el **Tribunal Constitucional**, que controla las normas con rango de ley mediante:
+
+- Recurso de inconstitucionalidad, en el plazo general de tres meses, por el Presidente del Gobierno, el Defensor del Pueblo, cincuenta diputados, cincuenta senadores y los órganos ejecutivos y legislativos autonómicos
+- Cuestión de inconstitucionalidad, que plantean los jueces cuando dudan de la constitucionalidad de una ley aplicable al caso (art. 163 CE)
+
+Los jueces ordinarios no pueden inaplicar una ley por inconstitucional, porque el Tribunal tiene el monopolio de rechazo de las normas con rango de ley. Sí pueden inaplicar los reglamentos ilegales. El recurso de amparo defiende los derechos fundamentales.
+
+# 4. LA LEY
+
+## 4.1. Concepto y clases
+
+La **ley** es la norma aprobada por el Parlamento (art. 66 CE) o por los Parlamentos autonómicos en su ámbito. Tiene fuerza activa, que le permite modificar o derogar cualquier norma de rango igual o inferior, y fuerza pasiva, que impide que la modifiquen normas inferiores.
+
+- **Leyes orgánicas** (art. 81 CE). Solo regulan las materias reservadas: desarrollo de los derechos fundamentales y libertades públicas, Estatutos de Autonomía, régimen electoral general y las demás previstas en la Constitución. Exigen mayoría absoluta del Congreso en una votación final sobre el conjunto. Con la ordinaria no hay jerarquía sino competencia
+- **Leyes ordinarias**. Se aprueban por mayoría simple. Las Cámaras pueden delegar su aprobación en las Comisiones, salvo en reforma constitucional, cuestiones internacionales, leyes orgánicas y de bases y Presupuestos Generales del Estado (art. 75.3 CE)
+
+## 4.2. El procedimiento legislativo
+
+La **iniciativa** (arts. 87 a 89 CE) corresponde al Gobierno (proyectos de ley), al Congreso y al Senado (proposiciones de ley), a las Asambleas autonómicas y a los ciudadanos con al menos 500.000 firmas, que no cabe en materias de ley orgánica, tributarias, internacionales ni de prerrogativa de gracia.
+
+El Senado dispone de dos meses, o de veinte días naturales si hay urgencia, para aprobar el texto, enmendarlo por mayoría simple u oponer un veto por mayoría absoluta. El Congreso levanta el veto por mayoría absoluta o, pasados dos meses, por mayoría simple (art. 90 CE). El Rey sanciona la ley en quince días, la promulga y ordena su publicación (art. 91). Entra en vigor a los veinte días de su publicación en el BOE si no dispone otra cosa (art. 2.1 CC).
+
+## 4.3. Las leyes autonómicas y las leyes del artículo 150 CE
+
+Las leyes autonómicas tienen el mismo rango que las estatales y se relacionan con ellas por competencia. El art. 150 CE prevé tres leyes estatales que modulan el reparto:
+
+- Leyes marco: atribuyen a las Comunidades la facultad de legislar en materias estatales dentro de las bases del Estado
+- Leyes de transferencia o delegación, que son orgánicas
+- Leyes de armonización: fijan principios cuando lo exige el interés general, apreciado por mayoría absoluta de cada Cámara
+
+# 5. LOS DECRETOS-LEYES
+
+## 5.1. Concepto y presupuesto habilitante
+
+El **Decreto-ley** es una disposición legislativa provisional que dicta el Gobierno en caso de extraordinaria y urgente necesidad (art. 86.1 CE). Tiene rango de ley desde su publicación, pero su permanencia depende de que el Congreso lo convalide. En el Estado adopta la forma de Real Decreto-ley.
+
+La extraordinaria y urgente necesidad es un concepto jurídico indeterminado que aprecia el Gobierno, pero que puede controlarse (SSTC 29/1982 y 6/1983). El Gobierno debe razonar la situación de necesidad y debe existir conexión de sentido entre ella y las medidas adoptadas.
+
+## 5.2. Límites materiales
+
+No puede afectar al ordenamiento de las instituciones básicas del Estado, a los derechos, deberes y libertades del Título I, al régimen de las Comunidades Autónomas ni al Derecho electoral general (art. 86.1 CE). El verbo afectar se interpreta de forma restrictiva (STC 111/1983): lo prohibido es regular el régimen general de esos derechos o ir contra su contenido esencial. Tampoco puede invadir materias reservadas a la ley orgánica.
+
+## 5.3. Convalidación y tramitación como ley
+
+El Congreso debe pronunciarse sobre la convalidación o derogación, tras debate y votación de totalidad, en los **treinta días** siguientes a la promulgación y por mayoría simple (art. 86.2 CE). Si no se convalida, queda derogado, y la doctrina mayoritaria entiende que se mantienen los efectos producidos mientras estuvo vigente.
+
+En ese mismo plazo, las Cortes pueden tramitarlo como proyecto de ley por urgencia, lo que permite enmendarlo (art. 86.3 CE). Su elaboración solo exige una memoria abreviada de impacto normativo (art. 26.11 Ley 50/1997). Muchos Estatutos reformados desde 2006 han extendido la figura a los Gobiernos autonómicos, lo que admitió la STC 93/2015 con límites equivalentes a los del art. 86 CE.
+
+# 6. LA DELEGACIÓN LEGISLATIVA
+
+## 6.1. Concepto y requisitos
+
+La **delegación legislativa** habilita al Gobierno, por las Cortes Generales, para dictar normas con rango de ley sobre una materia determinada (arts. 82 a 85 CE). La norma resultante es el Decreto legislativo, que adopta la forma de Real Decreto Legislativo. A diferencia del Decreto-ley, la iniciativa parte del Parlamento, que fija antes los límites. La delegación:
+
+- No puede referirse a materias de ley orgánica (art. 82.1)
+- Debe ser expresa, para una materia concreta y con plazo. Se agota con su uso y no puede ser implícita ni por tiempo indeterminado (art. 82.3)
+- Se otorga al Gobierno y no puede subdelegarse (art. 82.3)
+
+## 6.2. Textos articulados y textos refundidos
+
+- **Textos articulados**. Desarrollan una ley de bases, que delimita el objeto, alcance, principios y criterios de la delegación (art. 82.4). No puede autorizar a modificarla ni a dictar normas retroactivas (art. 83). Es una técnica hoy poco utilizada
+- **Textos refundidos**. Reúnen normas legales dispersas a partir de una ley ordinaria, que precisa si se trata de una mera formulación de un texto único o si permite además regularizar, aclarar y armonizar los textos (art. 82.5). Es la modalidad más frecuente
+
+## 6.3. El control de los Decretos legislativos
+
+Los proyectos requieren dictamen del Pleno del Consejo de Estado (art. 21 Ley Orgánica 3/1980). El art. 82.6 CE prevé su control sin perjuicio de la competencia de los tribunales y permite fórmulas adicionales en la ley de delegación. El Tribunal Constitucional controla su constitucionalidad. Los tribunales contencioso-administrativos pueden controlarlos cuando excedan los límites de la delegación (art. 1.1 LJCA), porque en lo que se excede el Gobierno no actúa como legislador delegado y la norma no tiene rango de ley (tesis del *ultra vires*).
+
+# 7. LOS TRATADOS INTERNACIONALES Y EL DERECHO DE LA UNIÓN EUROPEA
+
+## 7.1. Los tratados internacionales
+
+Los tratados válidamente celebrados forman parte del ordenamiento interno una vez publicados oficialmente en España, y solo se derogan, modifican o suspenden en la forma prevista en ellos o en el Derecho internacional (art. 96.1 CE). Requieren:
+
+- Autorización por ley orgánica, los que atribuyen a una organización internacional competencias derivadas de la Constitución (art. 93)
+- Autorización de las Cortes, los de carácter político o militar, los que afecten a la integridad territorial o a los derechos del Título I, los que impliquen obligaciones financieras y los que modifiquen leyes (art. 94.1). Del resto basta con informar a las Cámaras (art. 94.2)
+
+Si un tratado contradice la Constitución, debe reformarse antes esta (art. 95). La Ley 25/2014 establece que los tratados prevalecen sobre cualquier norma interna salvo las constitucionales (art. 31), y la STC 140/2018 permite a cualquier juez inaplicar una ley contraria a un tratado.
+
+## 7.2. El Derecho de la Unión Europea
+
+Forma parte del ordenamiento español desde 1986. El **Derecho originario** son los Tratados (TUE y TFUE) y la Carta de los Derechos Fundamentales. El **Derecho derivado** son los actos del art. 288 TFUE:
+
+- Reglamento: obligatorio y directamente aplicable sin norma nacional
+- Directiva: obliga en cuanto al resultado y exige transposición
+- Decisión: obligatoria para sus destinatarios
+- Recomendaciones y dictámenes: no vinculantes
+
+Sus relaciones con el Derecho nacional descansan en el **efecto directo** (Van Gend en Loos, 1963), que permite invocar ante los jueces las normas europeas claras e incondicionales, y en la **primacía** (Costa contra ENEL, 1964), que obliga a jueces y Administraciones a inaplicar la norma interna contraria. El Tribunal Constitucional (Declaración 1/2004) la distinguió de la supremacía de la Constitución. La Unión tiene competencia exclusiva, entre otras, en la unión aduanera y la política comercial común (art. 3 TFUE).
+
+# 8. CONCLUSIÓN
+
+En la cúspide del sistema está la Constitución, norma directamente aplicable. Por debajo se sitúa la ley, junto a las normas con rango de ley que dicta el Gobierno por urgencia (Decretos-leyes) o por encargo del Parlamento (Decretos legislativos), sometidas a límites y controles estrictos. La jerarquía se combina con la competencia y con la aplicación preferente de los tratados y del Derecho de la Unión. La Administración, sujeta al principio de legalidad, debe apoyar toda su actuación en una norma aplicable y respetar su rango.

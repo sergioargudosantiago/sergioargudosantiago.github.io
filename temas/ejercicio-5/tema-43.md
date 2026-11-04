@@ -1,172 +1,136 @@
-# **1. INTRODUCCIÓN**
+# 1. INTRODUCCIÓN
 
-## **1.1. Definición y función**
-- **Sistema Tributario Español:** Conjunto de medios de la Hacienda Pública para obtener dinero de los contribuyentes.
-- **Finalidad:** Financiar los objetivos y gastos públicos previstos anualmente en los Presupuestos Generales del Estado.
+El sector público financia sus fines sobre todo con tributos, prestaciones que los ciudadanos están obligados a satisfacer por imperativo legal, y también con ingresos patrimoniales, precios públicos, transferencias y endeudamiento. El **sistema tributario** es el conjunto ordenado de tributos vigentes en un país en un momento determinado. Su base constitucional es el **art. 31.1**: todos contribuirán al sostenimiento de los gastos públicos de acuerdo con su capacidad económica mediante un sistema tributario justo inspirado en los principios de igualdad y progresividad que, en ningún caso, tendrá alcance confiscatorio.
 
-# **2. EL SISTEMA TRIBUTARIO ESPAÑOL**
+# 2. EL SISTEMA TRIBUTARIO ESPAÑOL: EVOLUCIÓN HISTÓRICA
 
-## **2.1. Evolución histórica**
+## 2.1. De la reforma de 1845 a la de 1964
 
-### **2.1.1. Siglo XIX y principios del XX**
-- **Reforma Fiscal de 1845 (Ley de Presupuestos):**
-  - Origen del sistema actual.
-  - Unificación fiscal (fin de diferencias entre Reinos, salvo Navarra y Vascongadas).
-  - Simplificación de la estructura impositiva.
-- **Reforma de 1900 (Ministro Fernández Villaverde):**
-  - Creación de un impuesto con tres tarifas: rentas del trabajo, del capital y mixtas.
+El sistema contemporáneo nace con la **reforma de Mon y Santillán de 1845**, que unificó la tributación, salvo el régimen foral de Navarra y las provincias vascas, con una estructura basada en contribuciones de producto e impuestos sobre consumos. Las reformas posteriores no alteraron esa estructura:
 
-### **2.1.2. Periodo 1940 - 1976**
-- **Reforma de 1940:** Aumento de tipos tras la Guerra Civil. Consecuencias: generalización del fraude, estancamiento de ingresos y aumento del déficit.
-- **Reforma de 1957:**
-  - Objetivos: Reforzar ingresos, racionalizar tributos y corregir insuficiencia/fraude.
-- **Reforma de 1964:**
-  - División de impuestos estatales en directos e indirectos.
-  - Insuficiencia: Estructura poco flexible, excesivos beneficios fiscales y peso excesivo de impuestos indirectos y de producto.
+- **1900, Fernández Villaverde**: contribución de utilidades de la riqueza mobiliaria
+- **1940, Larraz**: subida de tipos que favoreció el fraude y no resolvió la insuficiencia recaudatoria
+- **1957, Navarro Rubio**: evaluaciones globales y convenios con los contribuyentes
+- **1964**: ordenó los tributos en directos e indirectos y aprobó la primera Ley General Tributaria (Ley 230/1963), pero mantuvo el predominio de los impuestos de producto y una escasa progresividad
 
-### **2.1.3. Reforma de 1977 y desarrollo posterior**
-- **Ley 50/1977 (Medidas urgentes):** Inicio del sistema moderno.
-  - **Fase 1 (1979):** Nuevos impuestos directos (IRPF, Sociedades, Patrimonio, Sucesiones).
-  - **Fase 2 (1986):** Nuevos impuestos indirectos (IVA, modificación de Impuestos Especiales).
-- **Ley 58/2003 General Tributaria (LGT):**
-  - Vigente desde el 1 de julio de 2004. Eje central del ordenamiento.
-  - Desarrollada por RD 520/2005 (revisión en vía administrativa).
-  - **Modificación principal (Ley 34/2015):** Busca seguridad jurídica, prevención del fraude y eficacia administrativa.
+## 2.2. La reforma fiscal de la democracia
 
-## **2.2. Régimen actual (Ley 58/2003 General Tributaria)**
+La **reforma de Fernández Ordóñez** comenzó con la Ley 50/1977, de medidas urgentes de reforma fiscal, y siguió con la Ley 44/1978 del IRPF y la Ley 61/1978 del Impuesto sobre Sociedades, en vigor desde 1979. Configuraron un sistema moderno basado en la imposición personal y progresiva sobre la renta.
 
-### **2.2.1. Objetivos de la LGT**
-- Reforzar garantías y seguridad jurídica.
-- Unificar criterios administrativos.
-- Uso de nuevas tecnologías y modernización de procedimientos.
-- Lucha contra el fraude y mejora del cobro.
+La integración en las Comunidades Europeas trajo el **IVA**, regulado inicialmente por la Ley 30/1985 y en vigor desde el 1 de enero de 1986, que sustituyó al Impuesto General sobre el Tráfico de Empresas. Paralelamente se desarrollaron la financiación autonómica, mediante la cesión de tributos, y las haciendas locales (Ley 39/1988).
 
-### **2.2.2. Principios de ordenación (Art. 3 LGT)**
-- Capacidad económica.
-- Justicia, generalidad, igualdad, progresividad, distribución equitativa y no confiscatoriedad.
+## 2.3. Etapa reciente
 
-### **2.2.3. Potestad tributaria (Art. 4 LGT)**
-- **Estado:** Potestad originaria (mediante Ley).
-- **CCAA y Entidades Locales:** Pueden establecer/exigir tributos según Constitución y Leyes.
-- **Otras entidades de Derecho Público:** Cuando la Ley lo determine.
+Hitos principales:
 
-### **2.2.4. Fuentes del ordenamiento (Art. 7 LGT)**
-- Constitución Española.
-- Tratados internacionales (convenios doble imposición).
-- Normas de la UE.
-- LGT, leyes de cada tributo y otras leyes tributarias.
-- Disposiciones reglamentarias de desarrollo.
+- **Ley 58/2003 General Tributaria (LGT)**, en vigor desde el 1 de julio de 2004 y reformada por la Ley 34/2015, eje del ordenamiento tributario
+- Prevención del fraude fiscal: Ley 36/2006, Ley 7/2012 y Ley 11/2021, que limitó los pagos en efectivo
+- Reforma de 2014: Leyes 26/2014 (IRPF) y 27/2014 (Impuesto sobre Sociedades)
+- Nuevos impuestos de 2020: servicios digitales y transacciones financieras
+- Ley 7/2022: impuestos sobre envases de plástico no reutilizables y sobre el depósito de residuos
+- Ley 38/2022: gravámenes temporales energético y de entidades de crédito e Impuesto Temporal de Solidaridad de las Grandes Fortunas
+- Ley 7/2024: Impuesto Complementario de tributación mínima global del 15 % para grandes grupos multinacionales (Pilar Dos de la OCDE)
 
-## **2.3. Los tributos**
+# 3. EL SISTEMA TRIBUTARIO ESPAÑOL: RÉGIMEN ACTUAL
 
-### **2.3.1. Concepto (Art. 2 LGT)**
-- Prestación pecuniaria exigida por un ente público.
-- Establecida por Ley.
-- Finalidad: Sostenimiento de gastos públicos.
+## 3.1. Principios y fuentes
 
-### **2.3.2. Clasificación de los tributos**
-- **Tasas:** Utilización privativa del dominio público o servicios de solicitud obligatoria/sin oferta privada.
-- **Contribuciones especiales:** Hecho imponible basado en el beneficio o aumento de valor de bienes por obras o servicios públicos.
-- **Impuestos:** Exigidos sin contraprestación. Gravan la capacidad económica (negocios, actos, hechos).
+Principios constitucionales del sistema:
 
-### **2.3.3. Clasificación de los impuestos por subsistemas**
-**Subsistema Estatal - Impuestos Directos**
-- **IRPF (Ley 35/2006):** Grava la renta de personas físicas según circunstancias personales. Pilar básico del sistema. Reformado por Ley 26/2014.
-- **Impuesto sobre Sociedades (Ley 27/2014):** Grava la renta de personas jurídicas. Principios: neutralidad, transparencia, competitividad.
-- **Impuesto sobre el Patrimonio (Ley 19/1991):** Complementa al IRPF. Grava rentas no laborales.
-- **Impuesto sobre la Renta de no Residentes (RD Leg 5/2004):** Rentas en España de no residentes.
-- **Sucesiones y Donaciones (Ley 29/1987):** Incrementos patrimoniales gratuitos (sucesión o donación).
-**Subsistema Estatal - Impuestos Indirectos**
-- **IVA (Ley 37/1992):** Grava el consumo (entregas de bienes, servicios, adquisiciones intracomunitarias). Multifásico. No aplica en Canarias, Ceuta y Melilla.
-- **Impuestos Especiales (Ley 38/1992):** Consumos específicos (costes sociales/salud).
-  - De Fabricación: Alcohol, Hidrocarburos, Tabaco (Monofásicos).
-  - Otros: Medios de Transporte (matriculación), Electricidad, Carbón.
-- **ITP y AJD (RD Leg 1/1993):**
-  - Transmisiones patrimoniales onerosas.
-  - Operaciones societarias.
-  - Actos jurídicos documentados.
-- **Renta de Aduanas:** Vinculado al tráfico exterior.
-**Subsistema Autonómico**
-- **Impuestos propios:** No pueden gravar hechos imponibles del Estado. Límites territoriales y de mercado.
-- **Impuestos cedidos:** Gestión total o parcial de impuestos estatales (ej. ITP).
-**Subsistema Local**
-- IBI (Bienes Inmuebles).
-- IAE (Actividades Económicas).
-- IVTM (Vehículos).
-- IIVTNU (Plusvalía).
-- ICIO (Construcciones).
+- **Reserva de ley** (arts. 31.3 y 133.1 CE): la potestad originaria para establecer tributos corresponde exclusivamente al Estado, mediante ley. Las comunidades autónomas y las corporaciones locales pueden establecerlos de acuerdo con la Constitución y las leyes (art. 133.2). Según el Tribunal Constitucional es una reserva relativa, que alcanza a la creación del tributo y a sus elementos esenciales
+- **Capacidad económica, generalidad, igualdad, progresividad y no confiscatoriedad** (art. 31.1)
+- **Prohibición de crear tributos mediante la Ley de Presupuestos**, que solo puede modificarlos cuando una ley tributaria sustantiva así lo prevea (art. 134.7)
 
-# **3. LA HACIENDA PÚBLICA**
+La LGT añade los principios de justicia y equitativa distribución de la carga tributaria, y los de proporcionalidad, eficacia y limitación de costes indirectos (art. 3). Sus fuentes son, por este orden, la Constitución, los tratados internacionales (en especial los convenios para evitar la doble imposición), las normas de la Unión Europea, la LGT y las leyes propias de cada tributo, y los reglamentos de desarrollo (art. 7), con el Derecho común como supletorio.
 
-## **3.1. Concepto y regulación**
-- Estudia la intervención pública en economía de mercado (ingresos/gastos), presupuestos, déficit y financiación.
-- **Ley 47/2003 General Presupuestaria:** Conjunto de derechos y obligaciones económicos de la Administración General del Estado.
+La **Agencia Estatal de Administración Tributaria (AEAT)**, creada por la Ley 31/1990 y operativa desde 1992, aplica el sistema estatal. Sus reglamentos regulan la gestión e inspección (Real Decreto 1065/2007), la recaudación (Real Decreto 939/2005), el régimen sancionador (Real Decreto 2063/2004) y la revisión en vía administrativa (Real Decreto 520/2005).
 
-## **3.2. Marco Constitucional (Título VII CE)**
-- **Art. 31 (Deberes fiscales):**
-  - Criterios: Justicia, Equidad, Progresividad = Distribución equitativa.
-  - Gasto público: Principios de eficiencia y economía.
-- **Art. 133 (Potestad):** Potestad originaria del Estado. Soberanía fiscal mediante Ley.
-- **Art. 134 (Presupuestos):** Elaboración por el Gobierno, enmiendas en el Congreso. Incluye todo el sector público.
-- **Art. 135 (Estabilidad y Deuda):**
-  - Reformado en 2011 (crisis económica/Pacto Estabilidad UE).
-  - Prioridad absoluta del pago de la deuda pública.
-  - Estabilidad presupuestaria vinculante para todas las AAPP.
-- **Art. 136 (Tribunal de Cuentas):** Supremo fiscalizador. Depende de las Cortes. Informe anual.
-- **Art. 149:** Competencia exclusiva del Estado en "Hacienda General y Deuda del Estado".
+## 3.2. Los tributos y sus clases
 
-# **4. LOS INGRESOS PÚBLICOS**
+**Tributos** (art. 2 LGT): ingresos públicos que consisten en prestaciones pecuniarias exigidas por una Administración pública como consecuencia de la realización del supuesto de hecho al que la ley vincula el deber de contribuir, con el fin primordial de obtener los ingresos necesarios para el sostenimiento de los gastos públicos. Pueden servir también a otros fines de política económica, como la protección del medio ambiente o de la salud. Son:
 
-## **4.1. Concepto**
-- Conjunto de ingresos (prestaciones pecuniarias) para cubrir necesidades y deudas públicas.
-- Actualmente, el 85-90% provienen de los impuestos.
+- **Impuestos**: exigidos sin contraprestación, con hecho imponible constituido por negocios, actos o hechos que ponen de manifiesto la capacidad económica del contribuyente
+- **Tasas**: se estudian en el apartado 6
+- **Contribuciones especiales**: el hecho imponible es la obtención de un beneficio o aumento de valor de los bienes del obligado como consecuencia de obras públicas o del establecimiento o ampliación de servicios públicos
 
-## **4.2. Clasificación Jurídica**
-- **Ingresos Ordinarios:** Tributos (tasas, contribuciones, impuestos), productos de monopolios (Lotería), sanciones.
-- **Ingresos Extraordinarios:** Deuda Pública, venta de bienes, impuestos extraordinarios, emisión de moneda.
+Los impuestos son **directos**, si gravan una manifestación directa de la capacidad económica como la renta o el patrimonio, o **indirectos**, si gravan el consumo o la circulación de bienes.
 
-## **4.3. Clasificación Económica**
-- **Ingresos Corrientes:** Impuestos directos/indirectos, tasas, transferencias corrientes, ingresos patrimoniales.
-- **Ingresos de Capital:** Enajenación de inversiones reales, transferencias de capital, variación de activos/pasivos financieros.
+## 3.3. Los impuestos estatales
 
-# **5. TASAS Y PRECIOS PÚBLICOS**
+Imposición directa:
 
-## **5.1. Regulación**
-- Ley 8/1989 de Tasas y Precios Públicos.
+- **IRPF** (Ley 35/2006): principal impuesto directo, personal, subjetivo y progresivo. Grava la renta mundial de los residentes, con base general de tarifa progresiva y base del ahorro. Está cedido parcialmente a las comunidades autónomas, que aprueban su tramo de la tarifa
+- **Impuesto sobre Sociedades** (Ley 27/2014): grava la renta de las personas jurídicas residentes, con tipo general del 25 %
+- **Impuesto sobre la Renta de No Residentes** (Real Decreto Legislativo 5/2004): grava las rentas obtenidas en España por no residentes
+- **Impuesto sobre el Patrimonio** (Ley 19/1991) e **Impuesto sobre Sucesiones y Donaciones** (Ley 29/1987): de titularidad estatal y cedidos a las comunidades autónomas, con amplias diferencias de tributación entre ellas
+- **Impuesto Temporal de Solidaridad de las Grandes Fortunas** (Ley 38/2022): complementa al de Patrimonio para patrimonios netos superiores a 3 M€, con tipos del 1,7 %, 2,1 % y 3,5 %
 
-## **5.2. Tasas (Tributos)**
-- **Hecho imponible:**
-  - Uso privativo/aprovechamiento especial del dominio público (ej. vado).
-  - Servicios en régimen de Derecho Público si:
-    - Son de solicitud obligatoria (no voluntaria).
-    - O no se prestan por el sector privado (sin competencia).
+Imposición indirecta:
 
-## **5.3. Precios Públicos (No son tributos)**
-- Ingresos de Derecho Público.
-- Contraprestación por servicios/actividades cuando:
-  - Son de solicitud voluntaria.
-  - Y se prestan también por el sector privado (ej. laboratorios SOIVRE a petición).
+- **IVA** (Ley 37/1992): grava el consumo de forma plurifásica pero no acumulativa, ya que cada empresario deduce el IVA soportado y la carga recae sobre el consumidor final. Se aplica a entregas de bienes y prestaciones de servicios, adquisiciones intracomunitarias e importaciones. Tipos: general del 21 %, reducido del 10 % y superreducido del 4 %. No se aplica en Canarias (IGIC) ni en Ceuta y Melilla (IPSI)
+- **Impuestos especiales** (Ley 38/1992): gravan consumos específicos y corrigen externalidades negativas sobre la salud o el medio ambiente. Son los de fabricación (alcohol, hidrocarburos y tabaco), Electricidad, Carbón y Determinados Medios de Transporte
+- **Transmisiones Patrimoniales y Actos Jurídicos Documentados** (Real Decreto Legislativo 1/1993): grava transmisiones onerosas entre particulares, operaciones societarias y actos jurídicos documentados. Está cedido a las comunidades autónomas
 
-# **6. CONCLUSIÓN Y TENDENCIAS RECIENTES**
+Los **derechos de aduana** sobre importaciones de terceros países se rigen por el arancel aduanero común y el Código Aduanero de la Unión (Reglamento (UE) 952/2013). No son un tributo estatal, sino un recurso propio tradicional de la Unión Europea que recaudan los Estados miembros, que retienen un porcentaje por gastos de recaudación.
 
-## **6.1. Adaptación y retos**
-- Necesidad de equilibrar servicios públicos y carga fiscal.
-- Importancia de la educación fiscal contra el fraude.
+## 3.4. Los subsistemas autonómico y local
 
-## **6.2. Debate fiscal actual**
-- **Impuesto Sucesiones y Donaciones:** Competencia fiscal entre CCAA (bonificaciones en Madrid, CyL, Canarias).
-- **ITP y AJD:** Cambios de criterio generan inseguridad jurídica.
-- **Plusvalía Municipal (IIVTNU):**
-  - Sentencia TC (noviembre 2021): Inconstitucionalidad del cálculo de la base imponible.
-  - Adaptación mediante RD-ley 26/2021.
+La **Hacienda autonómica** se rige por la LOFCA (Ley Orgánica 8/1980) y la Ley 22/2009. Sus recursos son los tributos propios (que no pueden recaer sobre hechos imponibles ya gravados por el Estado), los tributos cedidos, los recargos sobre tributos estatales, las transferencias del sistema de financiación y el endeudamiento. El País Vasco y Navarra tienen régimen foral propio, el **Concierto Económico** (Ley 12/2002) y el **Convenio Económico** (Ley 28/1990): regulan y recaudan la mayor parte de los tributos y contribuyen a las cargas del Estado mediante un cupo o aportación.
 
-## **6.3. Nuevos Impuestos (Temporales/Indefinidos)**
-- Impuestos a la banca y energéticas.
-- **Impuesto de Solidaridad a las Grandes Fortunas:**
-  - Temporal (ejercicios 2023-2024).
-  - Patrimonio neto superior a 3 millones de euros.
-  - Deducible la cuota del Impuesto sobre Patrimonio autonómico.
-  - **Tramos:**
-    - 1,7% (3M€ - 5M€).
-    - 2,1% (5M€ - 10M€).
-    - 3,5% (> 10M€).
+La **Hacienda local** se rige por el Real Decreto Legislativo 2/2004. Los municipios exigen obligatoriamente el IBI, el IAE y el Impuesto sobre Vehículos de Tracción Mecánica, y de forma potestativa el ICIO y el Impuesto sobre el Incremento de Valor de los Terrenos de Naturaleza Urbana, cuyo método de cálculo fue anulado por la STC 182/2021 y modificado por el Real Decreto-ley 26/2021.
+
+# 4. LA HACIENDA PÚBLICA
+
+Como **disciplina económica**, estudia la actividad financiera del sector público y sus efectos sobre la asignación de recursos, la distribución de la renta y la estabilidad económica, las tres funciones clásicas descritas por Musgrave. Como **concepto jurídico**, según el art. 5 de la Ley 47/2003 General Presupuestaria, la Hacienda Pública estatal está constituida por el conjunto de derechos y obligaciones de contenido económico cuya titularidad corresponde a la Administración General del Estado y a sus organismos autónomos.
+
+El Título VII de la Constitución («Economía y Hacienda») fija sus principios:
+
+- **Art. 31**: capacidad económica (31.1), asignación equitativa del gasto con criterios de eficiencia y economía (31.2) y reserva de ley para toda prestación personal o patrimonial de carácter público (31.3)
+- **Art. 133**: potestad tributaria originaria del Estado y derivada de comunidades autónomas y corporaciones locales, y exigencia de ley para beneficios fiscales, obligaciones financieras y gastos
+- **Art. 134**: Presupuestos Generales del Estado
+- **Art. 135**: estabilidad presupuestaria y prioridad absoluta del pago de la deuda pública, introducidas por la reforma de 2011
+- **Art. 136**: Tribunal de Cuentas
+
+Se suman el art. 149.1.14.ª (competencia exclusiva del Estado sobre Hacienda general y Deuda del Estado), el art. 142 (suficiencia de las haciendas locales) y los arts. 156 a 158 (autonomía financiera de las comunidades autónomas con coordinación y solidaridad, y Fondo de Compensación Interterritorial).
+
+# 5. LOS INGRESOS PÚBLICOS: CONCEPTO Y CLASIFICACIÓN
+
+## 5.1. Concepto
+
+**Ingresos públicos.** Recursos monetarios que obtienen el Estado y los demás entes públicos para financiar sus fines y la provisión de bienes y servicios a la colectividad. En España, los ingresos tributarios y las cotizaciones sociales son con gran diferencia la principal fuente de financiación de las Administraciones públicas.
+
+## 5.2. Clasificación
+
+- **Por su régimen jurídico**: de Derecho público (tributos, precios públicos, multas y sanciones, deuda pública), con las prerrogativas de la Administración para su cobro, y de Derecho privado (rendimientos del patrimonio, venta de bienes patrimoniales)
+- **Por su carácter**: coactivos (tributos y cotizaciones sociales) o voluntarios (precios públicos, ingresos patrimoniales)
+- **Por su periodicidad**: ordinarios, regulares en cada ejercicio como los tributos, y extraordinarios, como el endeudamiento, la venta de patrimonio o un impuesto extraordinario
+- **Por su naturaleza económica**: la de los Presupuestos Generales del Estado (art. 41 de la Ley General Presupuestaria). Por capítulos, son corrientes los 1 (impuestos directos y cotizaciones sociales), 2 (impuestos indirectos), 3 (tasas, precios públicos y otros ingresos), 4 (transferencias corrientes) y 5 (ingresos patrimoniales), de capital los 6 (enajenación de inversiones reales) y 7 (transferencias de capital), y financieros los 8 (activos financieros) y 9 (pasivos financieros)
+
+Los capítulos 1 a 7 forman los ingresos no financieros. La diferencia entre ingresos y gastos no financieros determina la capacidad o necesidad de financiación del sector público.
+
+# 6. TASAS Y PRECIOS PÚBLICOS
+
+De la distinción depende que el ingreso esté sometido o no a la reserva de ley tributaria. Ambos se regulan en la **Ley 8/1989, de 13 de abril, de Tasas y Precios Públicos**, reformada por la Ley 25/1998 a raíz de la STC 185/1995.
+
+## 6.1. Las tasas
+
+**Tasas.** Tributos cuyo hecho imponible consiste en (art. 2.2.a LGT):
+
+- la utilización privativa o el aprovechamiento especial del dominio público, como terrazas o vados
+- la prestación de servicios o la realización de actividades en régimen de Derecho público que se refieran, afecten o beneficien de modo particular al obligado tributario, cuando no sean de solicitud o recepción voluntaria o no se presten o realicen por el sector privado, como la tasa por expedir el documento nacional de identidad
+
+Al ser tributos, están sometidas a reserva de ley en sus elementos esenciales. Su importe no puede exceder del coste real o previsible del servicio o actividad (principio de equivalencia), aunque puede tener en cuenta la capacidad económica de los obligados.
+
+## 6.2. Los precios públicos
+
+**Precios públicos.** Ingresos de Derecho público no tributarios: contraprestaciones pecuniarias por servicios o actividades en régimen de Derecho público que, prestándose también por el sector privado, sean de solicitud voluntaria (art. 24 de la Ley 8/1989). Deben cubrir, como mínimo, los costes económicos de la prestación, salvo razones sociales, benéficas o de interés público que justifiquen fijarlos por debajo. Al no ser tributos, se establecen y modifican por orden ministerial o por acuerdo de los organismos, sin necesidad de ley. Un ejemplo son los análisis que la red de laboratorios del SOIVRE realiza a petición de los operadores económicos.
+
+## 6.3. Criterio de distinción
+
+La STC 185/1995 estableció que toda prestación patrimonial de carácter público exigida coactivamente queda sujeta a reserva de ley (art. 31.3 CE). Hay **coactividad** cuando el servicio es de solicitud o recepción obligatoria, cuando es imprescindible para la vida privada o social del solicitante o cuando lo presta el sector público en monopolio de hecho o de derecho. En cualquiera de estos casos el ingreso es una tasa. Solo cuando concurren a la vez la voluntariedad y la concurrencia con el sector privado puede hablarse de precio público.
+
+La Ley 9/2017 de Contratos del Sector Público reconoció además las **prestaciones patrimoniales de carácter público no tributario**, como las tarifas de servicios gestionados por concesionarios o sociedades públicas: son coactivas y requieren ley, pero no son tributos.
+
+# 7. CONCLUSIÓN
+
+El sistema tributario ha pasado de impuestos de producto, poco progresivos y con elevado fraude, a un sistema moderno construido desde 1977 sobre la imposición personal de la renta y, desde 1986, sobre el IVA. Combina tres niveles de Hacienda, estatal, autonómica y local, con creciente cesión de tributos y fuerte influencia del Derecho de la Unión y de la fiscalidad internacional. Sus retos son el fraude, la economía digital, los grandes grupos multinacionales, la fiscalidad medioambiental y la financiación autonómica, sin perder de vista la suficiencia, la capacidad económica y la progresividad. La distinción entre tasas y precios públicos muestra la importancia de la reserva de ley como garantía del ciudadano frente a cualquier prestación coactiva.

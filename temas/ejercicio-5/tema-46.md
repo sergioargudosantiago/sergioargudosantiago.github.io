@@ -1,183 +1,90 @@
-# **1. INTRODUCCIÓN Y CONTEXTO EN ESPAÑA**
+# 1. INTRODUCCIÓN
 
-## **1.1. Contexto general**
-- **Objetivo actual:** Generar un modelo de sociedad más transparente, colaborativa y participativa (enfoque al ciudadano).
-- **Transparencia:** Principio necesario para el nuevo modelo de gestión y antídoto contra la corrupción.
+Al modelo burocrático clásico se sumó la nueva gestión pública, que importó técnicas del sector privado para ganar eficiencia. Desde comienzos de este siglo se ha impuesto la gobernanza pública, que entiende que los problemas complejos exigen la implicación de ciudadanos, empresas, organizaciones sociales y otras Administraciones.
 
-## **1.2. La Comisión para la Reforma de las Administraciones Públicas (CORA)**
-- **Origen:** Creada por Acuerdo de Consejo de Ministros.
-- **Misión:** Estudio integral para identificar mejoras, agilidad, eficiencia y cercanía.
-- **Estructura del análisis:**
-  - Subcomisiones: Duplicidades, Simplificación, Gestión de Servicios y Medios Comunes, Administración Institucional.
-- **Informe Ejecutivo:**
-  - Diagnóstico: España tiene una buena Administración, pero con ineficiencias, solapamientos y duplicidades.
-  - Objetivo: Sector público moderno, transparente y ágil.
+En ese marco surge el **Gobierno Abierto**, una relación más horizontal entre poderes públicos y ciudadanía basada en la transparencia, la participación, la colaboración y la rendición de cuentas.
 
-## **1.3. Medidas del Informe CORA**
-- **Total:** 217 propuestas de medidas.
-- **Desglose:**
-  - 11 medidas generales y horizontales.
-  - 118 para eliminar duplicidades (CCAA y AGE).
-  - 42 de eliminación de trabas y simplificación.
-  - 38 de mejora de gestión de servicios y medios comunes.
-  - 8 de racionalización de la Administración Institucional (supresión/integración de 57 entidades).
+# 2. GOBERNANZA PÚBLICA Y GOBIERNO ABIERTO
 
-# **2. CONCEPTO Y PRINCIPIOS INFORMADORES DEL GOBIERNO ABIERTO**
+## 2.1. La gobernanza pública
 
-## **2.1. Gobernanza Pública**
-- **Definición:** Cambio de paradigma que propicia políticas públicas con participación de sectores público y privado.
-- **Dirección General de Gobernanza Pública:**
-  - Adscripción: Secretaría de Estado de Función Pública (Ministerio para la Transformación Digital y de la Función Pública).
-  - **Funciones (triple perspectiva):**
-    - Coordinación organizativa (evitar duplicidades).
-    - Evaluación de gestión (mejorar servicios).
-    - Orientación al ciudadano.
+**Gobernanza.** Forma de gobernar basada en la interacción y la cooperación entre los poderes públicos y los actores privados y sociales, en redes y en varios niveles territoriales. No sustituye a la autoridad del Estado, pero la ejerce de forma más abierta y negociada. El Libro Blanco sobre la Gobernanza Europea (2001) identificó cinco principios de la buena gobernanza: apertura, participación, responsabilidad, eficacia y coherencia.
 
-## **2.2. Gobierno Abierto (Open Government)**
-- **Concepto:** Doctrina política (origen años 70, UK; impulso Obama 2009) que adapta la filosofía del software libre a la democracia.
-- **Objetivo:** Colaboración ciudadana en servicios públicos, robustecimiento de transparencia y rendición de cuentas.
-- **Innovación:** No es solo uso de TIC/Redes Sociales, sino creación de "valor público" (mejora de eficiencia, eficacia y calidad).
+En España, la **Ley 40/2015** (art. 3) impone a todas las Administraciones los principios de servicio efectivo a los ciudadanos, participación, objetividad y transparencia, planificación y evaluación de las políticas públicas, responsabilidad por la gestión y cooperación entre Administraciones. En la AGE, la **Dirección General de Gobernanza Pública** coordina los planes de Gobierno Abierto.
 
-## **2.3. Los 4 Pilares (Principios Informadores)**
-Basados en el Memorando de Obama (2009) y los Open Government Standards:
+## 2.2. Concepto y origen del Gobierno Abierto
 
-### **2.3.1 La Transparencia**
-- **Definición:** Proporcionar información sobre actuaciones y planes, fomentando la rendición de cuentas.
-- **Estándares:**
-  - **Derecho a saber:** Acceso a la información como derecho fundamental (respuesta a solicitudes y proactividad).
-  - **Alcance total:** Aplica a todos los organismos y órganos con fondos públicos.
-  - **El acceso es la regla:** El secreto es la excepción (solo por daño demostrable a intereses legítimos).
-  - **Publicación proactiva:** Información de interés público accesible, fácil y rápida.
-  - **Gratuidad y reutilización:** Sin cargos (salvo costes de copia/entrega) y sin límites de uso.
-  - **Formatos abiertos:** Electrónicos y abiertos.
-  - **Recopilación:** Obligación de recopilar información para la participación.
-  - **Supervisión independiente:** Organismo que revise cumplimiento y sancione.
+Su difusión actual arranca del Memorando sobre Transparencia y Gobierno Abierto de Barack Obama, de 21 de enero de 2009, que formuló el compromiso de un gobierno transparente, participativo y colaborativo. En 2011 se creó la **Alianza para el Gobierno Abierto** (OGP), iniciativa multilateral en la que gobiernos y sociedad civil asumen compromisos concretos. España se incorporó ese mismo año.
 
-### **2.3.2 La Colaboración**
-- **Definición:** Implicar a ciudadanos, empresas, asociaciones y empleados públicos en el trabajo de la Administración.
-- **Cooperación:** Entre la propia administración y con la sociedad civil.
+La Recomendación del Consejo de la OCDE sobre Gobierno Abierto (2017) lo define como una cultura de gobernanza que promueve los principios de transparencia, integridad, rendición de cuentas y participación de las partes interesadas en apoyo de la democracia y el crecimiento inclusivo. No consiste en usar tecnologías para comunicar lo mismo de siempre, sino en cambiar la forma de decidir y de gestionar, incorporando las aportaciones de la ciudadanía.
 
-### **2.3.3 La Participación**
-- **Definición:** Derecho a participar activamente en la conformación de políticas públicas.
-- **Estándares:**
-  - **Apertura:** Consultas públicas amplias (incluso por Internet).
-  - **Plazos claros:** Tiempo suficiente para preparar aportes.
-  - **Información comprensible:** Datos y análisis accesibles.
-  - **Colaboración activa:** Múltiples canales (audiencias, online).
-  - **Procedimientos claros:** Reglas, fechas y lugares definidos.
-  - **Empoderamiento:** Revisión cuidadosa de comentarios; justificación de decisiones finales.
-  - **Transparencia y rendición:** Informes sobre respuestas y observaciones recibidas.
+## 2.3. Principios informadores
 
-### **2.3.4 La Rendición de Cuentas**
-- **Definición:** Normas y mecanismos que orientan y justifican el comportamiento de autoridades y gasto fiscal.
-- **Estándares:**
-  - **Códigos de conducta:** Para funcionarios electos y no electos.
-  - **Conflictos de intereses:** Mecanismos de prevención claros.
-  - **Publicidad de bienes:** Declaración de patrimonio para prevenir enriquecimiento ilícito.
-  - **Regulación del Lobby:** Control sobre la influencia de grupos de interés.
-  - **Protección al denunciante:** Canales y protección ante revelación de corrupción.
-  - **Compras públicas:** Transparencia total en contratación.
-  - **Supervisión independiente:** Organismos de auditoría y fiscalización (ej. Defensor del Pueblo).
+- **Transparencia.** El gobierno proporciona información sobre lo que hace, de forma accesible, completa y comprensible, para que los ciudadanos controlen su gestión. Se articula mediante la publicidad activa, que difunde información sin necesidad de solicitud, y el derecho de acceso a la información pública, que permite obtener la no publicada.
+- **Participación.** Reconoce el derecho de los ciudadanos a intervenir en la elaboración de las políticas públicas. Requiere procesos abiertos, con plazos razonables, información completa y una respuesta motivada sobre cómo se han tenido en cuenta las aportaciones. Su base constitucional está en los arts. 9.2, 23 y 105 CE.
+- **Colaboración.** Implica a ciudadanos, empresas, organizaciones sociales y otras Administraciones en el propio trabajo público, desde el diseño hasta la prestación de servicios, mediante cocreación y colaboración público privada.
+- **Rendición de cuentas.** Exige normas y mecanismos que permitan exigir responsabilidad a los responsables públicos por sus decisiones y por el uso de los recursos. Incluye códigos de conducta, prevención de conflictos de intereses, declaraciones de bienes, regulación de los grupos de interés, transparencia en la contratación pública, protección de los denunciantes y órganos de control independientes.
 
-## **2.4. Estrategias de implementación**
-Se articulan en dos ejes:
-- **Open Data (Datos abiertos):** Reutilización de información (RISP) para generar valor.
-- **Open Action (Apertura de procesos):** Redes y plataformas para participación en decisiones.
+Estos principios se concretan en dos líneas de actuación: la apertura de datos públicos (*open data*) y la apertura de procesos de participación y colaboración (*open action*). La figura muestra los cuatro pilares y los instrumentos que los desarrollan.
 
-## **2.5. Alianza para el Gobierno Abierto (OGP)**
-- **Naturaleza:** Iniciativa multilateral fundada en 2011 (España miembro fundador).
-- **Miembros actuales:** 75 países.
-- **Funcionamiento:**
-  - Supervisada por Comité Directivo (Gobiernos + sociedad civil).
-  - Requisitos: Declaración de Gobierno Abierto, Plan de Acción (bianual) y evaluación independiente.
+![Pilares e instrumentos del Gobierno Abierto. Elaboración propia.](tema-46-fig-1.png)
 
-# **3. DATOS ABIERTOS Y REUTILIZACIÓN**
+# 3. DATOS ABIERTOS Y REUTILIZACIÓN
 
-## **3.1. Datos Abiertos (Open Government Data)**
-- **Concepto:** Datos disponibles libremente para acceder, utilizar y republicar sin restricciones de copyright o patentes.
-- **Justificación:** Romper el monopolio de datos del Estado para generar transparencia, eficiencia e innovación económica.
-- **Condiciones para considerar un dato abierto:**
-  - **Disponibilidad y acceso:** Integral, costo razonable (preferible descarga gratuita), formato modificable.
-  - **Reutilización y redistribución:** Permitir cruzamiento de datos.
-  - **Participación universal:** Sin discriminación (no se permiten restricciones no comerciales o "solo educación").
+## 3.1. Los datos abiertos
 
-## **3.2. Reutilización de la Información del Sector Público (RISP)**
-- **Definición:** Uso de datos públicos por personas/empresas con fines comerciales o no.
-- **Valor:** Potencial económico, creación de empleo (contenidos digitales) y refuerzo democrático.
-- **Proyecto Aporta (España, 2009):**
-  - **Objetivos:** Fomentar cultura de apertura, facilitar apertura a administraciones, impulsar mercado RISP.
-  - **Directrices:** W3C.
-  - **Elementos clave:**
-    - **Portal datos.gob.es:** Catálogo nacional
-    - **Guías:** De aplicación del RD 1495/2011 y de Norma Técnica de Interoperabilidad.
-    - **Formación y asesoramiento:** A organismos públicos.
-    - **Eventos:** Encuentro Aporta anual.
-    - **Foro de colaboración público-privado (Foro CPP-RISP):** Desde 2013.
+**Datos abiertos.** Datos que cualquier persona puede acceder, utilizar, reutilizar y redistribuir libremente, con la única exigencia, en su caso, de citar la fuente. Deben estar disponibles de forma completa, preferentemente descargables y en formatos legibles por máquina y abiertos, y ser utilizables por todos sin discriminación de personas ni de finalidades, incluidas las comerciales.
 
-## **3.3. Carta Internacional de Datos Abiertos**
-- **Lanzamiento:** Octubre 2015 (Cumbre OGP México).
-- **Objetivo:** Coherencia, adopción de principios y estándares globales.
-- **Estatus:** Estándar ad hoc mundial para estrategias de datos abiertos.
+La **Carta Internacional de Datos Abiertos** (OGP, 2015) fija seis principios: datos abiertos por defecto, oportunos y exhaustivos, accesibles y utilizables, comparables e interoperables, orientados a mejorar la gobernanza y la participación ciudadana y al desarrollo incluyente y la innovación.
 
-# **4. MARCO JURÍDICO EN ESPAÑA**
+Aportan transparencia, eficiencia, porque evitan duplicar esfuerzos, e innovación, porque son materia prima de nuevos productos y servicios.
 
-## **4.1. Normativa destacada**
-- Directiva (UE) 2019/1024 (Datos abiertos y RISP).
-- Ley 37/2007 (RISP), modificada por Ley 18/2015.
-- Ley 9/2017 (Contratos del Sector Público).
-- Real Decreto 1495/2011 (Desarrollo Ley 37/2007).
-- **Principal:** Ley 19/2013, de transparencia, acceso a la información y buen gobierno.
+## 3.2. La reutilización de la información del sector público
 
-## **4.2. Ley 19/2013**
-- **Objeto:** Ampliar transparencia, garantizar derecho de acceso y establecer obligaciones de buen gobierno.
-- **Triple alcance:**
-  - Incrementar transparencia (publicidad activa).
-  - Garantizar acceso a la información (derecho subjetivo).
-  - Obligaciones de buen gobierno (responsabilidad).
-**Estructura de la Ley 19/2013**
-- **Título Preliminar:** Objeto.
-- **Título I: Transparencia de la actividad pública.**
-  - **Ámbito subjetivo (muy amplio):** Todas las AAPP, órganos legislativos/judiciales (en lo administrativo), Casa del Rey, Tribunal de Cuentas, Defensor del Pueblo, empresas públicas (>50%), partidos, sindicatos y entidades privadas que perciban ciertas subvenciones.
-  - **Capítulo II (Publicidad Activa):** Difusión de información institucional, organizativa y económica sin esperar solicitud.
-  - **Capítulo III (Derecho de Acceso):** Titularidad universal, sin necesidad de motivación. Define "información pública" (contenidos/documentos en poder de sujetos obligados elaborados en ejercicio de funciones).
-- **Título II: Buen Gobierno.**
-  - Principios éticos y de actuación para miembros del Gobierno y altos cargos (Estado, CCAA y Entidades Locales).
-- **Título III: Consejo de Transparencia y Buen Gobierno.**
-  - Órgano independiente de supervisión y control.
-  - Competencia estatal. En CCAA solo si hay convenio (si no, órgano autonómico).
-  - Estatuto aprobado por RD 919/2014.
-- **Desarrollo reglamentario:** Pendiente para precisar aspectos formales del derecho de acceso y unidades de información.
+**Reutilización.** Uso, por personas físicas o jurídicas, de los documentos que obran en poder del sector público, con fines comerciales o no comerciales, distintos del propósito inicial del servicio público para el que se produjeron. Su regulación procede del Derecho de la Unión:
 
-# **5. PLANES DE GOBIERNO ABIERTO EN ESPAÑA**
-Hasta la fecha, se han implementado 4 planes bajo la OGP:
+- **Directiva (UE) 2019/1024**, de datos abiertos y reutilización de la información del sector público, que sustituyó a la Directiva 2003/98/CE. Refuerza la gratuidad como regla general, incorpora los datos dinámicos, que deben ofrecerse en tiempo real mediante API, y los datos de investigación financiados con fondos públicos, y crea los conjuntos de datos de alto valor
+- **Reglamento de Ejecución (UE) 2023/138**, que identifica esos conjuntos en seis categorías: geoespaciales, observación de la Tierra y medio ambiente, meteorológicos, estadísticos, sociedades y propiedad de sociedades y movilidad
+- **Reglamento (UE) 2022/868**, de Gobernanza de Datos, y **Reglamento (UE) 2023/2854**, de Datos, sobre datos protegidos del sector público y datos de productos conectados
 
-## **5.1. I Plan de Acción 2012-2014**
-- **Ejes:** Integridad pública, gestión eficaz de recursos, mejora de servicios.
-- **Hito:** Aprobación de la Ley 19/2013.
+En España, la norma básica es la **Ley 37/2007**, modificada por la Ley 18/2015 y por el Real Decreto-ley 24/2021, que transpuso la Directiva de 2019. Se desarrolla por el **Real Decreto 1495/2011** y la Norma Técnica de Interoperabilidad de reutilización de recursos de información. Sus reglas principales son:
 
-## **5.2. II Plan de Acción 2014-2016**
-- **Hitos:** Creación del Portal de la Transparencia, Consejo español de drogodependencias.
+- Reutilización autorizada con carácter general, preferentemente sin condiciones o con licencias tipo abiertas, que no pueden restringir la competencia
+- No discriminación y prohibición de acuerdos exclusivos, salvo excepciones justificadas
+- Gratuita como regla general, aunque pueden cobrarse tarifas limitadas a los costes marginales de reproducción, puesta a disposición y difusión
+- No alcanza a documentos con derechos de propiedad intelectual de terceros, afectados por la protección de datos personales o excluidos del derecho de acceso
 
-## **5.3. III Plan de Acción 2017-2019**
-- 20 medidas en 5 ejes:
-  - **Colaboración:** Foro y Comisión Sectorial de Gobierno Abierto.
-  - **Participación:** Diagnóstico, presupuestos participativos.
-  - **Transparencia:** Mejora del Portal, Sistema Archive, Reglamento Ley Transparencia.
-  - **Rendición de cuentas:** Justicia Abierta, info violencia de género.
-  - **Formación:** Funcionarios y sociedad civil.
+La **Iniciativa Aporta** (2009) impulsa la cultura de la reutilización y gestiona el portal **datos.gob.es**, que desde 2011 alberga el Catálogo de Información Pública y federa los catálogos autonómicos y locales.
 
-## **5.4. IV Plan de Gobierno Abierto 2020-2024**
-- **Aprobación:** 29 octubre 2020.
-- **Contenido:** 10 compromisos.
-- **Objetivos generales:**
-  - Mejorar calidad de la participación.
-  - Profundizar en transparencia y datos abiertos.
-  - Construir sistema de integridad pública.
-  - Sensibilización y cumplimiento Agenda 2030.
+# 4. EL MARCO JURÍDICO Y LOS PLANES DE GOBIERNO ABIERTO EN ESPAÑA
 
-# **6. CONCLUSIÓN Y GESTIÓN AUTONÓMICA**
-- **Situación autonómica:** Todas las CCAA tienen Portales de Transparencia y Leyes propias (aprobadas o en trámite).
-- **Reclamaciones (Art. 24 Ley 19/2013):**
-  - Regla general: Consejo de Transparencia y Buen Gobierno.
-  - Excepción: Si la CCAA atribuye competencia a un órgano específico.
-  - Posibilidad de Convenio: Las CCAA pueden convenir que el CTBG resuelva sus reclamaciones.
+## 4.1. Marco jurídico
+
+El Gobierno Abierto no tiene en España una ley propia, sino que se apoya en un conjunto de normas:
+
+- **Constitución**: participación de todos en la vida política, económica, cultural y social (art. 9.2), derecho de participación en los asuntos públicos (art. 23) y audiencia de los ciudadanos en la elaboración de disposiciones administrativas y acceso a archivos y registros (art. 105)
+- **Ley 19/2013**, de transparencia, acceso a la información pública y buen gobierno, que crea el Consejo de Transparencia y Buen Gobierno
+- **Participación en la elaboración de normas**: consulta pública previa, audiencia e información pública (art. 133 Ley 39/2015 y art. 26 Ley 50/1997) y Plan Anual Normativo. La STC 55/2018 declaró contrarios al orden constitucional de competencias varios apartados del art. 133, que por ello no se aplican plenamente a las comunidades autónomas
+- **Integridad y rendición de cuentas**: la **Ley 3/2015**, del alto cargo, con la Oficina de Conflictos de Intereses, y la **Ley 2/2023**, de protección de las personas que informen sobre infracciones, que transpone la Directiva (UE) 2019/1937, obliga a las Administraciones y a las empresas de 50 o más trabajadores a tener un sistema interno de información y crea la Autoridad Independiente de Protección del Informante
+- **Reutilización y datos abiertos**: la Ley 37/2007 y su desarrollo
+- **Normas autonómicas y locales**: leyes de transparencia, participación o Gobierno Abierto de numerosas comunidades autónomas y ordenanzas de muchas entidades locales
+
+La gobernanza del Gobierno Abierto en la AGE se apoya en la Dirección General de Gobernanza Pública, en el **Foro de Gobierno Abierto**, órgano paritario de Administraciones y sociedad civil (Orden HFP/134/2018), y en la **Comisión Sectorial de Gobierno Abierto**, que coordina a la AGE, las comunidades autónomas y las entidades locales.
+
+## 4.2. La Alianza para el Gobierno Abierto y los planes de acción
+
+Los miembros de la OGP, que agrupa a más de setenta países y a numerosos gobiernos locales, deben suscribir la Declaración de Gobierno Abierto, elaborar planes de acción con compromisos concretos cocreados con la sociedad civil y someterse a una evaluación independiente por el Mecanismo de Revisión Independiente (IRM). España ha aprobado cinco planes:
+
+- **I Plan (2012-2014)**: integridad pública, gestión eficaz de los recursos y mejora de los servicios. Impulsó la Ley 19/2013
+- **II Plan (2014-2016)**: transparencia y datos abiertos, con la puesta en marcha del Portal de la Transparencia
+- **III Plan (2017-2019)**: 20 medidas en cinco ejes (colaboración, participación, transparencia, rendición de cuentas y formación). Creó el Foro de Gobierno Abierto
+- **IV Plan (2020-2024)**: 10 compromisos sobre transparencia y rendición de cuentas, participación, integridad y sensibilización, con las tres Administraciones territoriales
+- **V Plan (2025-2029)**: aprobado en octubre de 2025, con 10 compromisos y 218 medidas sobre participación y espacio cívico, transparencia y acceso a la información, integridad, administración abierta, gobernanza digital e inteligencia artificial, y apertura fiscal e información veraz, entre otros ámbitos
+
+El IV Plan, en el marco de la Agenda 2030, buscó impulsar la participación, profundizar en la transparencia, los datos abiertos y la rendición de cuentas, construir un sistema de integridad pública y sensibilizar a la sociedad. El V Plan lo amplía a la gobernanza de los datos y de la inteligencia artificial, la lucha contra la desinformación y la apertura de los presupuestos y de la contratación pública.
+
+# 5. CONCLUSIÓN
+
+El Gobierno Abierto es la expresión más reciente de la gobernanza pública. Sus cuatro principios, transparencia, participación, colaboración y rendición de cuentas, buscan una Administración que no solo actúe conforme a la ley y con eficiencia, sino que explique lo que hace, escuche a los ciudadanos y responda de sus decisiones.
+
+En España el modelo se ha construido sobre la Ley 19/2013, las normas de participación, las leyes de integridad y la regulación de la reutilización, y los planes de acción de la OGP han permitido avanzar de forma gradual. Su éxito depende de un cambio de cultura administrativa en el que la apertura deje de ser una obligación formal y se convierta en una forma ordinaria de trabajar.

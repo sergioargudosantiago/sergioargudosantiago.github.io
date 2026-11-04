@@ -1,206 +1,140 @@
-# **1. INTRODUCCIÓN Y NORMATIVA APLICABLE**
+# 1. INTRODUCCIÓN
 
-## **1.1. Evolución Normativa**
-- **Antecedentes:** Ley de Funcionarios Civiles del Estado (1964) y Ley 30/1984 de Medidas para la Reforma de la Función Pública.
-- **Constitución Española:** Artículos 103.3 y 149.1.18 (bases del régimen estatutario).
-- **Norma vigente:** **Real Decreto Legislativo 5/2015**, de 30 de octubre, por el que se aprueba el Texto Refundido de la Ley del Estatuto Básico del Empleado Público (**TREBEP**).
-  - Deroga la Ley 7/2007 (EBEP original).
-  - Establece las bases comunes del régimen estatutario de los funcionarios de todas las Administraciones Públicas.
+La Constitución fija las bases del régimen de los empleados públicos: acceso en condiciones de igualdad y según mérito y capacidad (art. 23.2 CE), estatuto de los funcionarios que garantice su imparcialidad (art. 103.3 CE) y competencia del Estado para fijar las bases de su régimen estatutario (art. 149.1.18.ª CE).
 
-## **1.2. Objeto**
-- Establecer los principios generales aplicables al conjunto de las relaciones de empleo público.
-- Regular los elementos comunes a todo el personal (funcionario y laboral) al servicio de las Administraciones Públicas.
+Esas bases se recogen en el **Estatuto Básico del Empleado Público**, aprobado por la Ley 7/2007 y refundido por el Real Decreto Legislativo 5/2015 (TREBEP). Se aplica a funcionarios y, en lo que dispone, al personal laboral de todas las Administraciones, y se completa con las leyes de función pública del Estado y de cada Comunidad Autónoma.
 
-# **2. ÁMBITO DE APLICACIÓN (ART. 2 TREBEP)**
+# 2. EL ESTATUTO BÁSICO DEL EMPLEADO PÚBLICO. NORMATIVA APLICABLE
 
-## **2.1. Entidades incluidas**
-El Estatuto se aplica al personal de:
-- Administración General del Estado.
-- Administraciones de las CCAA y de las Ciudades de Ceuta y Melilla.
-- Administraciones de las Entidades Locales.
-- Organismos Públicos, Agencias y demás Entidades de derecho público con personalidad jurídica propia.
-- Universidades Públicas.
+## 2.1. Ámbito de aplicación y clases de empleados públicos
 
-## **2.2. Exclusiones y Regímenes Específicos**
-- **Personal con legislación específica (aplicación supletoria del TREBEP):**
-  - Personal de las Cortes Generales y Asambleas Legislativas.
-  - Jueces, Magistrados, Fiscales y personal de la Administración de Justicia.
-  - Personal militar de las Fuerzas Armadas.
-  - Fuerzas y Cuerpos de Seguridad.
-  - Personal retribuido por arancel.
-  - Personal del CNI y Banco de España.
-- **Personal de Correos:** Se rige por sus normas específicas y supletoriamente por el régimen del personal laboral común.
+El TREBEP se aplica al personal funcionario y, en lo que proceda, al laboral de la Administración General del Estado, las Comunidades Autónomas, las entidades locales, los organismos públicos y las universidades públicas (art. 2). Al personal docente y al estatutario de los servicios de salud se les aplica salvo lo que disponga su legislación específica. Solo cuando esta así lo disponga se aplica a Cortes Generales y demás órganos constitucionales, jueces, magistrados y fiscales, personal militar, Fuerzas y Cuerpos de Seguridad, Centro Nacional de Inteligencia y Banco de España (art. 4).
 
-# **3. CLASES DE PERSONAL**
+**Empleados públicos** son quienes desempeñan funciones retribuidas en las Administraciones públicas al servicio de los intereses generales (art. 8). Hay cuatro clases, más el personal directivo:
 
-## **3.1. Funcionarios de Carrera**
-- Nombrados legalmente.
-- Vinculación mediante relación estatutaria regulada por el Derecho Administrativo.
-- Desempeño de servicios profesionales retribuidos de carácter permanente.
+- **Funcionarios de carrera**: relación estatutaria regulada por el Derecho Administrativo, por nombramiento legal, para servicios profesionales de carácter permanente. Solo ellos ejercen funciones que impliquen participación directa o indirecta en potestades públicas o en la salvaguarda de los intereses generales (art. 9)
+- **Funcionarios interinos**: nombrados por necesidad y urgencia. Tras la Ley 20/2021, solo para cubrir vacantes durante un máximo de tres años, sustituir transitoriamente a titulares, ejecutar programas temporales o atender exceso o acumulación de tareas durante un máximo de nueve meses en un periodo de dieciocho (art. 10)
+- **Personal laboral**: contrato de trabajo, fijo, indefinido o temporal, y además legislación laboral (art. 11)
+- **Personal eventual**: solo funciones de confianza o asesoramiento especial, y cesa cuando cesa la autoridad que lo nombró (art. 12)
+- **Personal directivo profesional**: designado por mérito, capacidad e idoneidad (art. 13)
 
-## **3.2. Funcionarios Interinos (Art. 10)**
-- Nombrados por razones de necesidad y urgencia para funciones propias de funcionarios de carrera.
-- **Circunstancias de nombramiento:**
-  - Existencia de plazas vacantes (cobertura imposible por funcionarios de carrera).
-  - Sustitución transitoria de los titulares.
-  - Ejecución de programas de carácter temporal (máximo 3 años, ampliable 12 meses).
-  - Exceso o acumulación de tareas (máximo 9 meses en un periodo de 18 meses).
-- **Cese:** Por las mismas causas que los de carrera, por finalización de la causa que motivó el nombramiento o por cobertura reglada de la plaza.
+Los cuerpos y escalas se clasifican en grupos según la titulación (art. 76): A1 y A2 (grado universitario), B (técnico superior), C1 (bachiller o técnico) y C2 (educación secundaria obligatoria).
 
-## **3.3. Personal Laboral**
-- Relación jurídica mediante contrato de trabajo (Derecho Laboral).
-- Formalizado por escrito.
-- Tipos: Fijo, por tiempo indefinido o temporal.
+## 2.2. Normativa aplicable
 
-## **3.4. Personal Eventual (Art. 12)**
-- Nombramiento y cese libre (no permanente).
-- Funciones exclusivas de confianza o asesoramiento especial.
-- Retribución con cargo a créditos presupuestarios específicos.
-- Su cese se produce automáticamente al cesar la autoridad que lo nombró.
-- El desempeño de este puesto no constituye mérito para el acceso a la Función Pública.
+El régimen del empleo público se compone de varios niveles normativos:
 
-## **3.5. Personal Directivo**
-- Desarrolla funciones directivas profesionales definidas en las normas específicas.
-- Designación basada en principios de mérito, capacidad e idoneidad (publicidad y concurrencia).
-- Sujeto a evaluación con arreglo a criterios de eficacia, eficiencia y control de resultados.
+- La **Constitución** (arts. 23.2, 103.3 y 149.1.18.ª)
+- El **TREBEP**, básico, reformado por la Ley 20/2021, sobre temporalidad, y por el Real Decreto-ley 6/2023, que reguló para la AGE la planificación de recursos humanos, el acceso, la evaluación del desempeño y la carrera horizontal
+- Las **leyes de función pública** del Estado y de las Comunidades Autónomas. En la AGE, mientras no se apruebe una ley propia, siguen vigentes los preceptos de la Ley 30/1984 que no se oponen al TREBEP. El proyecto de Ley de la Función Pública de la AGE de 2024 debe verificarse en cada momento
+- Reglamentos de la AGE: Real Decreto 364/1995 (ingreso y provisión), Real Decreto 365/1995 (situaciones administrativas), Real Decreto 33/1986 (disciplinario) y Real Decreto 462/2002 (indemnizaciones)
+- La **Ley 53/1984**, de incompatibilidades, y las leyes de Presupuestos Generales del Estado, que fijan cada año las retribuciones
+- Para el personal laboral, el Estatuto de los Trabajadores y los convenios colectivos
 
-# **4. DERECHOS Y DEBERES**
+# 3. DERECHOS Y DEBERES DE LOS FUNCIONARIOS
 
-## **4.1. Derechos Individuales (Art. 14)**
-- Inamovilidad en la condición de funcionario de carrera.
-- Desempeño efectivo de funciones propias de su categoría.
-- Progresión en la carrera profesional y promoción interna.
-- Retribuciones e indemnizaciones por razón del servicio.
-- Formación continua.
-- Respeto a la intimidad, orientación sexual, propia imagen y dignidad.
-- Conciliación de la vida personal, familiar y laboral.
-- Vacaciones, descansos, permisos y licencias.
-- Jubilación.
+## 3.1. Derechos individuales y colectivos
 
-## **4.2. Derechos Colectivos (Art. 15)**
-- Libertad sindical.
-- Negociación colectiva y participación en condiciones de trabajo.
-- Ejercicio de la huelga (con garantía de servicios esenciales).
-- Planteamiento de conflictos colectivos de trabajo.
-- Reunión.
+El art. 14 TREBEP reconoce, entre otros, estos **derechos individuales**:
 
-## **4.3. Deberes y Código de Conducta**
-El personal actuará conforme a los principios de:
-- **Principios Éticos:** Respeto a la Constitución, objetividad, integridad, neutralidad, imparcialidad, confidencialidad, transparencia y ejemplaridad.
-- **Principios de Conducta:** Atención al ciudadano, austeridad, conservación de recursos, puntualidad, responsabilidad, obediencia a instrucciones (salvo ilegalidad manifiesta) y trato correcto a usuarios y compañeros.
+- Inamovilidad en la condición de funcionario de carrera, principal garantía de su imparcialidad frente a presiones políticas
+- Desempeño efectivo de sus funciones y progresión en la carrera según igualdad, mérito y capacidad
+- Retribuciones e indemnizaciones por razón del servicio
+- Formación continua, intimidad, desconexión digital, dignidad y protección frente al acoso
+- No discriminación y conciliación de la vida personal, familiar y laboral
+- Defensa jurídica por la Administración por el ejercicio legítimo de sus funciones
+- Libertad de expresión dentro de los límites del ordenamiento, salud en el trabajo, vacaciones, permisos y licencias, y jubilación
 
-# **5. ACCESO Y PÉRDIDA DE LA RELACIÓN DE SERVICIO**
+Los **derechos colectivos** son la libertad sindical, la negociación colectiva y la participación en las condiciones de trabajo, la huelga con garantía de los servicios esenciales, los conflictos colectivos y la reunión (art. 15).
 
-## **5.1. Principios Rectores del Acceso**
-- Igualdad, Mérito y Capacidad.
-- Publicidad de convocatorias y bases.
-- Transparencia, imparcialidad y profesionalidad de los órganos de selección.
-- Adecuación entre el contenido de los procesos y las funciones a desarrollar.
+La **carrera** puede ser horizontal, si se progresa sin cambiar de puesto, vertical, si se asciende a puestos de superior nivel, o mediante promoción interna a cuerpos de un subgrupo superior (arts. 16 a 18). La **evaluación del desempeño** mide la conducta profesional y el rendimiento, y sus resultados se tienen en cuenta para la carrera, la formación, la provisión de puestos y las retribuciones complementarias (art. 20). El Real Decreto-ley 6/2023 la ha hecho obligatoria y anual en la AGE y ha previsto una carrera horizontal en cuatro tramos.
 
-## **5.2. Requisitos Generales**
-- Nacionalidad española (o de Estados miembros de la UE/tratados internacionales; cónyuges/descendientes según normas). Acceso restringido a nacionales para potestades públicas.
-- Capacidad funcional para el desempeño de tareas.
-- Edad: Mínimo 16 años y no exceder la edad de jubilación forzosa.
-- No haber sido separado mediante expediente disciplinario ni hallarse inhabilitado.
-- Titulación exigida según el grupo.
+## 3.2. Deberes y código de conducta
 
-## **5.3. Sistemas Selectivos**
-- **Oposición:** Pruebas para determinar capacidad y aptitud.
-- **Concurso-oposición:** Pruebas de capacidad + valoración de méritos.
-- **Concurso:** Valoración de méritos (excepcional, solo por Ley).
+El TREBEP incorporó por primera vez un **código de conducta** (arts. 52 a 54). Los empleados públicos deben desempeñar con diligencia las tareas asignadas y velar por los intereses generales con sujeción a la Constitución y al ordenamiento, conforme a principios como objetividad, integridad, neutralidad, imparcialidad, transparencia, ejemplaridad, austeridad y honradez (art. 52). Hay dos tipos de reglas:
 
-## **5.4. Adquisición de la Condición de Funcionario**
-- Superación del proceso selectivo.
-- Nombramiento por el órgano competente.
-- Acto de acatamiento de la Constitución y el resto del ordenamiento jurídico.
-- Toma de posesión (plazo reglamentario).
-**5.5. Pérdida de la Condición**
-- Renuncia voluntaria (por escrito y aceptada).
-- Pérdida de la nacionalidad (salvo que pueda mantenerse por norma).
-- Jubilación total.
-- Sanción disciplinaria de separación del servicio (carácter firme).
-- Pena principal o accesoria de inhabilitación absoluta o especial.
+- **Principios éticos** (art. 53): respetar la Constitución, abstenerse en asuntos de interés personal, no aceptar tratos de favor y guardar secreto de las materias clasificadas
+- **Principios de conducta** (art. 54): tratar con atención y respeto a los ciudadanos, cumplir la jornada, obedecer a los superiores salvo infracción manifiesta del ordenamiento y rechazar regalos que vayan más allá de los usos habituales de cortesía
 
-# **6. CARRERA ADMINISTRATIVA Y EVALUACIÓN**
+El incumplimiento puede dar lugar a responsabilidad disciplinaria.
 
-## **6.1. Modalidades de Carrera Profesional**
-- **Carrera horizontal:** Progresión de grado, categoría o escalón sin cambiar de puesto de trabajo.
-- **Carrera vertical:** Ascenso en la estructura de puestos (provisión de puestos).
-- **Promoción interna vertical:** Ascenso de un Cuerpo o Escala a otro superior.
-- **Promoción interna horizontal:** Acceso a otro Cuerpo o Escala del mismo Subgrupo.
+# 4. SISTEMA DE RETRIBUCIONES E INDEMNIZACIONES
 
-## **6.2. Evaluación del Desempeño**
-- Procedimiento para medir y valorar la conducta profesional y el rendimiento.
-- Efectos: Influye en la carrera horizontal, provisión de puestos, formación y percepción de retribuciones complementarias.
-- Debe basarse en criterios de transparencia, objetividad, imparcialidad y no discriminación.
+## 4.1. Principios y estructura
 
-# **7. SITUACIONES ADMINISTRATIVAS**
+Solo pueden percibirse las retribuciones previstas en la ley. Sus cuantías y su incremento se reflejan cada año en la ley de Presupuestos (art. 21). La parte de jornada no realizada, incluida la huelga, da lugar a la deducción proporcional de haberes, sin carácter sancionador (art. 30).
 
-## **7.1. Servicio Activo**
-- El funcionario presta servicios en su condición de tal.
-- Goza de todos los derechos y deberes inherentes.
+Se dividen en **básicas** y **complementarias** (art. 22):
 
-## **7.2. Servicios Especiales**
-- Se declara cuando el funcionario ocupa cargos políticos, constitucionales o en organismos internacionales (ej. Diputados, miembros del Gobierno, Tribunal Constitucional, organismos de la UE).
-- **Efectos:** Se computa el tiempo a efectos de ascensos, trienios y derechos pasivos. Derecho a reserva de puesto (o localidad).
+- Las básicas, fijadas por la ley de Presupuestos e iguales en todas las Administraciones, retribuyen según el subgrupo del cuerpo y la antigüedad. Son el **sueldo**, asignado a cada subgrupo, y los **trienios**, una cantidad igual para cada subgrupo por cada tres años de servicio (art. 23)
+- Las complementarias retribuyen las características de los puestos, la carrera profesional o el desempeño, y su estructura la fijan las leyes de función pública de cada Administración (art. 24)
 
-## **7.3. Servicio en Otras Administraciones Públicas**
-- Por procesos de transferencia o procedimientos de provisión de puestos.
-- Se rigen por la normativa de la Administración de destino, pero conservan la condición en la de origen.
+Las pagas extraordinarias son dos al año y cada una incluye, como mínimo, una mensualidad de retribuciones básicas y la totalidad de las complementarias, salvo las vinculadas al rendimiento y los servicios extraordinarios (art. 22.4). Los interinos perciben las básicas, las pagas extraordinarias y las complementarias del puesto, y tienen derecho a trienios (art. 25).
 
-## **7.4. Excedencia**
-- **Excedencia voluntaria por interés particular:** Requiere haber prestado servicios efectivos (mínimo 5 años según leyes de Función Pública). No hay reserva de puesto.
-- **Excedencia voluntaria por agrupación familiar:** Para reunirse con cónyuge funcionario residente en otra localidad. No requiere tiempo mínimo. No reserva de puesto.
-- **Excedencia por cuidado de familiares:**
-  - Hijos (3 años máximo).
-  - Familiares hasta 2º grado (3 años máximo).
-  - Computa a efectos de trienios y carrera. Reserva de puesto: 2 años (luego puesto en la misma localidad).
-- **Excedencia por violencia de género o terrorismo:** Sin requisito de tiempo mínimo. Retribuciones integras los dos primeros meses. Reserva de puesto 6 meses (prorrogable).
-**7.5. Suspensión de Funciones**
-- Privación temporal del ejercicio de funciones.
-- **Tipos:**
-  - Suspensión firme: Por condena criminal o sanción disciplinaria. No puede exceder los 6 años.
-  - Suspensión provisional: Durante la tramitación de expediente judicial o disciplinario. No podrá exceder de 6 meses (salvo paralización imputable al interesado).
+## 4.2. Las retribuciones complementarias en la Administración General del Estado
 
-# **8. RÉGIMEN DISCIPLINARIO**
+Hasta que se desarrolle el modelo del TREBEP, en la AGE rigen los conceptos de la Ley 30/1984 (art. 23):
 
-## **8.1. Principios de la Potestad Disciplinaria**
-- Legalidad y tipicidad.
-- Irretroactividad de normas sancionadoras no favorables.
-- Proporcionalidad.
-- Culpabilidad y presunción de inocencia.
+- **Complemento de destino**: corresponde al nivel del puesto. El Real Decreto-ley 6/2023 fija los intervalos: A1, 24 a 30. A2, 20 a 26. B, 18 a 24. C1, 16 a 22. C2, 14 a 18. Se consolida un grado personal al desempeñar un nivel dos años continuados o tres con interrupción
+- **Complemento específico**: condiciones particulares de algunos puestos, como dificultad técnica, dedicación, responsabilidad, incompatibilidad, peligrosidad o penosidad
+- **Complemento de productividad**: especial rendimiento, actividad extraordinaria e iniciativa. No es periódico ni consolidable y sus cuantías son públicas. El Real Decreto-ley 6/2023 prevé sustituirlo por un complemento de desempeño
+- **Gratificaciones** por servicios extraordinarios fuera de la jornada normal, ni fijas ni periódicas
 
-## **8.2. Faltas**
-- **Muy graves (Art. 95 TREBEP):** Incumplimiento del deber de fidelidad a la Constitución, discriminación, acoso, abandono de servicio, adopción de acuerdos ilegales, notoria falta de rendimiento, violación de la imparcialidad, etc.
-- **Graves:** Reguladas en las leyes de Función Pública.
-- **Leves:** Reguladas en las leyes de Función Pública.
+## 4.3. Indemnizaciones por razón del servicio
 
-## **8.3. Sanciones**
-- Separación del servicio (solo para faltas muy graves).
-- Despido disciplinario (personal laboral).
-- Suspensión firme de funciones (hasta 6 años).
-- Traslado forzoso con cambio de localidad.
-- Demérito (penalización en la carrera o promoción).
-- Apercibimiento.
+No son retribuciones, sino compensaciones por los gastos del cumplimiento de las funciones (art. 28 TREBEP). En la AGE las regula el Real Decreto 462/2002:
 
-## **8.4. Prescripción**
-- **De las faltas:**
-  - Muy graves: 3 años.
-  - Graves: 2 años.
-  - Leves: 6 meses.
-- **De las sanciones:**
-  - Muy graves: 3 años.
-  - Graves: 2 años.
-  - Leves: 1 año.
+- **Dietas**: alojamiento y manutención en comisión de servicio fuera de la residencia oficial
+- **Gastos de viaje o locomoción** de esos desplazamientos
+- **Indemnización por traslado de residencia** si el cambio de destino es forzoso
+- **Asistencias**: participación en órganos colegiados, consejos de administración y tribunales de selección
 
-# **9. INCOMPATIBILIDADES**
+# 5. LAS INCOMPATIBILIDADES
 
-## **9.1. Marco Legal**
-- **Ley 53/1984**, de Incompatibilidades del Personal al Servicio de las Administraciones Públicas.
+## 5.1. Fundamento y principio general
 
-## **9.2. Principio General**
-- El personal solo puede desempeñar un puesto de trabajo en el sector público.
-- Solo puede percibir un sueldo con cargo a los presupuestos públicos (salvo excepciones legales).
-**9.3. Excepciones**
-- **Sector Público:** Docencia universitaria asociada, investigación, miembros de Asambleas Legislativas (sin retribución fija) o Corporaciones Locales (salvo dedicación exclusiva).
-- **Sector Privado:** Se puede autorizar si no compromete la imparcialidad, no interfiere con el horario y no se relaciona directamente con los asuntos gestionados. Se requiere reconocimiento expreso de compatibilidad.
+El régimen busca garantizar la imparcialidad y la dedicación de los empleados públicos. Lo regula la **Ley 53/1984**, desarrollada para la AGE por el Real Decreto 598/1985, y se aplica a todo el personal del sector público, cualquiera que sea la naturaleza de su relación.
+
+El principio básico es que solo puede desempeñarse un único puesto de trabajo en el sector público y no puede percibirse más de una remuneración con cargo a los presupuestos públicos (art. 1). Las actividades públicas y privadas compatibles requieren autorización o reconocimiento de compatibilidad previo.
+
+## 5.2. Actividades públicas y privadas
+
+Solo excepcionalmente puede autorizarse un segundo puesto público, por interés público y en supuestos tasados, como profesor asociado universitario a tiempo parcial, determinadas actividades sanitarias o de investigación. La jornada del segundo puesto no puede superar la de tiempo parcial ni las retribuciones conjuntas ciertos límites (arts. 3 a 10).
+
+Las actividades privadas requieren reconocimiento de compatibilidad. Están prohibidas en todo caso las relacionadas directamente con asuntos en que el funcionario intervenga o haya intervenido en los dos últimos años por razón de su puesto, y la pertenencia a consejos de administración de empresas privadas relacionadas con su departamento (arts. 11 y 12). Tampoco puede reconocerse a quienes ocupen puestos cuyo complemento específico supere el 30 % de sus retribuciones básicas, excluida la antigüedad, salvo excepciones (art. 16).
+
+Quedan fuera, entre otras, la administración del patrimonio personal o familiar, la producción literaria, artística o científica, la docencia ocasional de hasta setenta y cinco horas al año y los tribunales de selección (art. 19).
+
+Incumplir el régimen es falta disciplinaria, muy grave si se desarrollan actividades incompatibles (art. 95.2.n TREBEP). Los altos cargos tienen un régimen más estricto en la Ley 3/2015.
+
+# 6. RÉGIMEN DISCIPLINARIO
+
+## 6.1. Principios y responsabilidad disciplinaria
+
+Funcionarios y personal laboral se someten al Título VII del TREBEP (arts. 93 a 98), completado en la AGE por el **Real Decreto 33/1986** en lo que no se oponga al TREBEP. Responden quienes cometen la falta y también quienes inducen a otros a cometerla o la encubren, si causa daño grave a la Administración o a los ciudadanos (art. 93).
+
+La potestad disciplinaria se rige por legalidad y tipicidad, irretroactividad de las disposiciones desfavorables y retroactividad de las favorables, proporcionalidad, culpabilidad y presunción de inocencia (art. 94.2). Si hay indicios de delito se suspende la tramitación y se informa al Ministerio Fiscal, y los hechos probados por resoluciones judiciales firmes vinculan a la Administración (art. 94.3).
+
+## 6.2. Faltas, sanciones y prescripción
+
+Las faltas son **muy graves**, **graves** y **leves** (art. 95). Las muy graves las enumera el propio TREBEP, entre ellas el incumplimiento del deber de respeto a la Constitución, la discriminación o el acoso, el abandono del servicio, el notorio incumplimiento de las funciones, la desobediencia abierta a las órdenes de un superior, el ejercicio de actividades incompatibles y el acoso laboral. Las graves las establece ley de las Cortes o de las Asambleas autonómicas y las leves, las leyes de función pública. En la AGE siguen tipificadas en el Real Decreto 33/1986.
+
+Sanciones (art. 96) y prescripción:
+
+- **Muy grave**: separación del servicio o despido disciplinario, suspensión de funciones hasta seis años, traslado forzoso y demérito. Falta y sanción prescriben a los tres años
+- **Grave**: suspensión firme de funciones, traslado forzoso y demérito. Falta y sanción prescriben a los dos años
+- **Leve**: apercibimiento. La falta prescribe a los seis meses y la sanción al año
+
+La separación del servicio solo puede imponerse por faltas muy graves, y en los interinos comporta la revocación del nombramiento. En el personal laboral la sanción equivalente es el despido disciplinario, que, si se declara improcedente por falta muy grave, obliga a la readmisión del trabajador fijo (art. 96.2). La prescripción de las faltas se cuenta desde que se cometieron, o desde el cese de su comisión si son continuadas, y la de las sanciones desde la firmeza de la resolución (art. 97).
+
+## 6.3. El procedimiento disciplinario
+
+No puede imponerse sanción por faltas graves o muy graves sin procedimiento previamente establecido. Las leves se sancionan mediante procedimiento sumario con audiencia al interesado. Instrucción y resolución se encomiendan a órganos distintos (art. 98).
+
+Como medida provisional cabe la suspensión provisional de funciones, que no puede exceder de seis meses salvo paralización imputable al interesado. Si la sanción final no es de suspensión o es inferior a la provisional, la Administración debe restituir la diferencia de retribuciones y el tiempo de servicio.
+
+# 7. CONCLUSIÓN
+
+El TREBEP es la norma básica del empleo público y se completa con las leyes de función pública. En la AGE conviven el TREBEP, los preceptos vigentes de la Ley 30/1984 y sus reglamentos, y las novedades del Real Decreto-ley 6/2023.
+
+Las retribuciones son básicas, iguales en todas las Administraciones, y complementarias, según puesto, carrera y desempeño. Incompatibilidades y régimen disciplinario protegen la imparcialidad y la dedicación de los empleados públicos.

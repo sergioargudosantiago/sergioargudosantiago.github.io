@@ -1,200 +1,139 @@
-# **1. INTRODUCCIÓN Y MARCO NORMATIVO GENERAL**
+# 1. INTRODUCCIÓN
 
-## **1.1. Estructura del Gobierno (Real Decreto 829/2023)**
-- **Objeto:** Define la estructura actual del Gobierno para lograr eficacia y eficiencia en la Administración General del Estado.
-- **Departamentos Ministeriales:** Establece 22 ministerios.
-  - El Ministerio de Economía, Comercio y Empresa es el número 15.
-  - Titular: Carlos Cuerpo Caballero.
+El **Real Decreto 829/2023** creó el Ministerio de Economía, Comercio y Empresa (MECE), que reúne las competencias de política económica y de política comercial. Su estructura orgánica básica se desarrolla en el **Real Decreto 410/2024**, modificado por el **Real Decreto 867/2025** (refuerzo de la Secretaría de Estado de Comercio) y por el **Real Decreto 65/2026**. Su titular es Carlos Cuerpo Caballero, también Vicepresidente Primero del Gobierno desde marzo de 2026.
 
-## **1.2. Estructuración del MECE (Artículo 16)**
-- **Competencia:** Propuesta y ejecución de la política del Gobierno en materia económica, reformas para la mejora de la competitividad y comercio.
-- **Órganos Superiores:**
-  - Secretaría de Estado de Comercio (Titular: María Amparo López Senovilla).
-  - Secretaría de Estado de Economía y Apoyo a la Empresa (Titular: Israel Arroyo Martínez).
-- **Normativa orgánica básica:** Real Decreto 1009/2023.
-**2. MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA**
-**Normativa de desarrollo:** Real Decreto 410/2024.
+# 2. ORGANIZACIÓN Y COMPETENCIAS DEL MINISTERIO
 
-## **2.1. Organización General (Artículo 1)**
-- **Misión:** Propuesta, coordinación y ejecución de la política económica, comercial y de apoyo a la empresa.
-  - Interlocución con la UE y Organismos Económicos/Financieros Internacionales.
-  - Dirección de política comercial de internacionalización y supervisión de inversiones/transacciones exteriores.
-  - Impulso de cooperación y relaciones internacionales (coordinado con Ministerio de Asuntos Exteriores).
-- **Comisión Delegada del Gobierno para Asuntos Económicos (CDGAE):** Presidencia recae en el MECE.
-- **Órganos dependientes directos del Ministro:**
-  - Secretaría de Estado de Economía y Apoyo a la Empresa.
-  - Secretaría de Estado de Comercio.
-  - Subsecretaría de Economía, Comercio y Empresa.
-  - Gabinete (órgano de apoyo inmediato).
-  - **Subdirección General de Fondos Europeos:**
-    - Coordinación de planificación/programación del Plan de Recuperación, Transformación y Resiliencia (PRTR) y su Adenda.
-    - Seguimiento de hitos, objetivos y principios transversales.
-    - Emisión de informes de gestión y seguimiento.
-- **Órgano adscrito:** Autoridad Macroprudencial Consejo de Estabilidad Financiera (AMCESFI).
+## 2.1. Competencias y organización general
 
-# **3. SECRETARÍA DE ESTADO DE ECONOMÍA Y APOYO A LA EMPRESA**
-**Funciones (Art. 2):** Tesorería, deuda pública, política financiera, seguros, prevención de blanqueo, representación en instituciones financieras internacionales, análisis macroeconómico.
-- Su titular es Secretario de la CDGAE.
+El MECE propone, coordina y ejecuta la política económica del Gobierno mediante reformas que mejoran la competitividad, el apoyo a la empresa y el crecimiento potencial. Dirige también la política comercial y de internacionalización y la supervisión de las inversiones y transacciones exteriores. Su titular preside la Comisión Delegada del Gobierno para Asuntos Económicos. Según el art. 1 del Real Decreto 410/2024, se organiza así:
 
-## **3.1. Órganos Directivos Dependientes**
-- **Secretaría General del Tesoro y Financiación Internacional** (Rango de Subsecretaría).
-  - Dirección General del Tesoro y Política Financiera.
-  - Dirección General de Financiación Internacional.
-- **Dirección General de Política Económica.**
-- **Dirección General de Análisis Económico.**
-- **Dirección General de Seguros y Fondos de Pensiones.**
+- Órganos superiores: la Secretaría de Estado de Economía y Apoyo a la Empresa y la Secretaría de Estado de Comercio
+- Subsecretaría de Economía, Comercio y Empresa
+- Gabinete del Ministro, como órgano de apoyo inmediato
+- Dependen también del Ministro la Subdirección General de Fondos Europeos y la Autoridad Macroprudencial Consejo de Estabilidad Financiera (AMCESFI), órgano colegiado adscrito que él preside
 
-## **3.2. Otros órganos y adscripciones**
-- **Gabinete:** Nivel de subdirección general.
-- **Abogacía del Estado:** Integrada orgánicamente.
-- **Órgano Colegiado:** Comisión de Prevención del Blanqueo de Capitales e Infracciones Monetarias (Presidencia).
-- **Adscritos/Vinculados:**
-  - Instituto Nacional de Estadística (INE).
-  - Instituto de Crédito Oficial (ICO).
-  - Comisión Nacional de los Mercados y la Competencia (CNMC).
-  - Comisión Nacional del Mercado de Valores (CNMV).
-  - FROB (Autoridad administrativa independiente).
-- **Dependencia funcional:** Inspección General del Ministerio de Hacienda (en sus materias).
+## 2.2. La Secretaría de Estado de Economía y Apoyo a la Empresa
 
-# **4. SECRETARÍA DE ESTADO DE COMERCIO**
-**Funciones (Art. 9):** Definición y ejecución de política comercial (exterior e interior), estrategia de internacionalización, inversiones y transacciones exteriores.
+Dirige la política económica, el análisis de la coyuntura, la financiación del Estado, la regulación financiera y de seguros y las relaciones económicas y financieras internacionales. Sus órganos directivos son:
 
-## **4.1. Órganos Directivos Dependientes**
-- **Dirección General de Comercio Internacional e Inversiones.**
-- **Dirección General de Política Comercial.**
+- **Secretaría General del Tesoro y Financiación Internacional**, con rango de Subsecretaría, con las Direcciones Generales del Tesoro y Política Financiera y de Financiación Internacional
+- **Dirección General de Política Económica**, de reformas estructurales
+- **Dirección General de Análisis Económico**, de coyuntura y previsiones macroeconómicas
+- **Dirección General de Seguros y Fondos de Pensiones**
 
-## **4.2. Órganos de Apoyo y Subdirecciones**
-- **Gabinete:** Nivel de subdirección general.
-- **Subdirección General de Estudios y Prospección Comercial:**
-  - Análisis de instrumentos de política comercial.
-  - Encuesta de coyuntura de exportación y estadísticas.
-  - Publicaciones: Información Comercial Española (ICE) y memoria anual.
-  - Estudios sobre distribución comercial minorista.
-- **Subdirección General de Estrategia Comercial y Seguridad Económica:**
-  - Inteligencia económica y comercial.
-  - Diseño de estrategia de internacionalización y licitaciones internacionales.
-  - Secretaría del Grupo de Trabajo Interministerial y Consejo Interterritorial.
-  - Tutela de las Cámaras de Comercio en el exterior y en España (relativo a internacionalización).
-  - Relación con asociaciones de exportadores.
+Por esta Secretaría de Estado se adscriben al Ministerio el INE, el ICO, la CNMC, la CNMV y el FROB.
 
-## **4.3. Adscripciones y Presidencias**
-- **Adscrito:** ICEX España Exportación e Inversiones (Presidencia).
-- **Presidencias ostentadas por el titular:**
-  - Junta Superior Arancelaria.
-  - Comisiones Interministeriales (UNCTAD, OMC).
-  - Comisión de Riesgos por cuenta del Estado (CRE).
-  - Junta Interministerial Reguladora del Comercio Exterior de Material de Defensa y Doble Uso (JIMDDU).
-- **Tutela y supervisión:** CESCE (Seguros de Crédito a la Exportación).
-- **Dependencia Orgánica:**
-  - Direcciones Territoriales y Provinciales de Comercio.
-  - Oficinas Económicas y Comerciales en el exterior (OFECOMES).
+## 2.3. La Subsecretaría
 
-# **5. DIRECCIÓN GENERAL DE COMERCIO INTERNACIONAL E INVERSIONES**
-**Funciones principales (Art. 10):** Inteligencia económica, política comercial bilateral, identificación de oportunidades, control de inversiones exteriores.
+Ostenta la representación ordinaria del Ministerio y dirige los servicios comunes, como recursos humanos, gestión presupuestaria, contratación y administración electrónica. Elabora la propuesta anual de presupuesto y ejerce la potestad disciplinaria, salvo la separación del servicio. De ella depende la Secretaría General Técnica (producción normativa, informes jurídicos y recursos administrativos).
 
-## **5.1. Funciones Detalladas**
-- Recopilación de inteligencia de la red OFECOMES y Territorial.
-- Negociación de acuerdos bilaterales y política comercial UE.
-- Detección de obstáculos al comercio/inversión.
-- Autorización y control de inversiones exteriores (Presidencia de la Junta de Inversiones Exteriores).
-- Registro de Inversiones y Punto Nacional de Contacto (OCDE).
-- Gestión de instrumentos financieros (FIEM, CARI, FIEX, FONPYME) y coordinación con CESCE/COFIDES/ICO.
-- Gestión de la Red de OFECOMES y Red Territorial (económico-financiera, técnica e inspección).
+# 3. LA SECRETARÍA DE ESTADO DE COMERCIO: COMPETENCIAS Y ORGANIZACIÓN
 
-## **5.2. Estructura (Subdirecciones Generales)**
-- **SG de Oficinas Económicas y Comerciales en el Exterior y de Red Territorial de Comercio.**
-- **SG de Europa, Asia y Oceanía.**
-- **SG de América.**
-- **SG de Países Mediterráneos, África y Oriente Medio.**
-- **SG de Inversiones Exteriores:** Secretaría de la Junta de Inversiones Exteriores.
-- **SG de Regulación de Inversiones.**
-- **SG de Instrumentos Financieros para la Internacionalización.**
+## 3.1. Competencias
 
-# **6. DIRECCIÓN GENERAL DE POLÍTICA COMERCIAL**
-**Funciones principales (Art. 11):** Política comercial UE con terceros, OMC, defensa comercial, inspección (SOIVRE), comercio interior.
+La **Secretaría de Estado de Comercio** (SEC), cuya titular es María Amparo López Senovilla, define, desarrolla y ejecuta la política comercial del Estado (art. 9 del Real Decreto 410/2024). Sus competencias abarcan:
 
-## **6.1. Funciones Detalladas**
-- Representación en Comité de Política Comercial UE y OMC.
-- Defensa comercial de la UE y política arancelaria.
-- Inspección y control de calidad comercial (SOIVRE): Frutas/hortalizas, seguridad de productos, ecológicos, aparatos eléctricos/pilas (RoHS/RAEE), CITES.
-- Gestión de importación/exportación de productos industriales y agroalimentarios.
-- Comercio Interior: Fomento de productividad, digitalización, observatorios, Premios Nacionales, normativa básica de Cámaras de Comercio.
-- Material de defensa y doble uso: Gestión y preparación de acuerdos de la JIMDDU.
+- El comercio exterior, incluido el intracomunitario, y la defensa de los intereses comerciales españoles en la Unión Europea y en los foros multilaterales
+- La estrategia de internacionalización y la promoción de las empresas en el exterior
+- Las inversiones y transacciones exteriores, incluido el control de las inversiones extranjeras
+- El comercio interior, en coordinación con las comunidades autónomas
+- La seguridad económica en su vertiente comercial
 
-## **6.2. Estructura (Subdirecciones Generales)**
-- **SG de Política Comercial Multilateral y de la Unión Europea:** Secretarías de comisiones interministeriales (UNCTAD, OMC).
-- **SG de Comercio Internacional de Mercancías.**
-- **SG Comercio Internacional de Servicios, Comercio Digital y Cadenas de Valor.**
-- **SG de Defensa Comercial y Política Arancelaria.**
-- **SG de Inspección, Certificación y Asistencia Técnica del Comercio Exterior:** Coordina la red de laboratorios e inspección SOIVRE.
-- **SG de Regulación y Apoyo al Comercio Interior.**
-- **SG de Comercio Internacional de Material de Defensa y Doble Uso.**
+El Real Decreto 867/2025 la reorganizó ante las tensiones comerciales y geopolíticas, renombró sus dos direcciones generales y creó la Oficina española para la Reconstrucción de Ucrania.
 
-# **7. SUBSECRETARÍA DE ECONOMÍA, COMERCIO Y EMPRESA**
-**Funciones (Art. 12):** Representación ordinaria, dirección de servicios comunes, asesoramiento jurídico, recursos humanos y gestión económica.
+## 3.2. Estructura
 
-## **7.1. Competencias Específicas**
-- Jefatura superior de personal y relaciones laborales.
-- Planificación de recursos humanos y formación.
-- Gestión de medios materiales, obras y contratación.
-- Tecnologías de la información (TIC) y administración electrónica.
-- Propuesta de presupuesto anual y gestión financiera.
-- Inspección de servicios y potestad disciplinaria.
-- Comunicación, archivos y transparencia.
-- Protectorado de fundaciones y Unidad de Igualdad.
+De la Secretaría de Estado dependen tres órganos directivos: la Dirección General de Inteligencia Económica y Comercial, la Dirección General de Política Comercial y Seguridad Económica y la Oficina española para la Reconstrucción de Ucrania, con rango de dirección general. Dependen directamente de ella un Gabinete y una Abogacía del Estado.
 
-## **7.2. Estructura y Órganos Adscritos**
-- **Dependencia Directa:** Secretaría General Técnica.
-- **Subdirecciones Generales:**
-  - Recursos Humanos.
-  - Administración Financiera y Oficialía Mayor.
-  - Inspección de Servicios.
-  - Tecnologías de la Información y las Comunicaciones.
-  - Oficina Presupuestaria.
-  - Comunicación.
-- **Órganos de Apoyo:** Gabinete Técnico.
-- **Adscripciones:**
-  - Abogacía del Estado.
-  - Intervención Delegada de la IGAE.
-  - Junta Asesora Permanente.
-  - Instituto de Contabilidad y Auditoría de Cuentas (ICAC).
+![Organigrama del Ministerio de Economía, Comercio y Empresa y de la Secretaría de Estado de Comercio. Elaboración propia.](tema-41-fig-1.png)
 
-# **8. SERVICIOS TERRITORIALES Y EN EL EXTERIOR**
+Su titular preside varios órganos colegiados:
 
-## **8.1. Servicios Territoriales (Direcciones Territoriales y Provinciales)**
-- **Dependencia:** Orgánica del MECE (vía Secretaría de Estado de Comercio) y funcional de los órganos directivos correspondientes.
-- **Funciones (RD 1456/2005):**
-  - Gestión de expedientes de comercio exterior (agrícola, industrial, defensa).
-  - Inspección y control de calidad comercial (SOIVRE): Normas técnicas, seguridad, etiquetado, productos ecológicos, RAEE/RoHS.
-  - Expedición de certificados de conformidad.
-  - Estadísticas de distribución y efectos arancelarios.
-  - Actúan como directores del ICEX en su demarcación.
+- Junta Superior Arancelaria
+- Comisiones Interministeriales para las negociaciones en la OMC y para la participación española en la UNCTAD
+- Comisión de Riesgos por cuenta del Estado, en materia de seguro de crédito a la exportación
+- Junta Interministerial Reguladora del Comercio Exterior de Material de Defensa y de Doble Uso (JIMDDU)
 
-## **8.2. Servicios en el Exterior**
-Se articulan a través de las **OFECOMES** y el **ICEX**.
+Están adscritos o vinculados a ella:
 
-### **8.2.1 Oficinas Económicas y Comerciales (OFECOMES)**
-- **Naturaleza:** Dependencia orgánica de la Secretaría de Estado de Comercio y jerárquica del Jefe de Misión Diplomática.
-- **Funciones:**
-  - **Representación oficial:** Ante gobiernos locales.
-  - **Apoyo a empresas:** Información, promoción y asistencia.
-- **Servicios:** Estadísticas, aranceles, normativa, ferias, contactos de distribución.
-- **Cobertura:** Casi 100 oficinas. Si no hay oficina en un país, depende de una cercana.
+- **ICEX España Exportación e Inversiones, E.P.E.**, presidido por la persona titular de la Secretaría de Estado
+- **CESCE**, sobre cuya gestión y sobre la cobertura por cuenta del Estado la Secretaría ejerce funciones de tutela y supervisión
+- **COFIDES**, cuya actividad coordina y supervisa la Dirección General de Inteligencia Económica y Comercial
 
-### **8.2.2 ICEX España Exportación e Inversiones**
-- **Naturaleza:** Entidad pública empresarial.
-- **Misión:** Promover internacionalización, competitividad y atracción de inversiones.
-- **Red:** 31 Direcciones Territoriales en España, casi 100 OFECOMES y 29 Centros de Negocio en el extranjero.
-- **Servicios Principales:**
-  - **Información:** Estudios de mercado, oportunidades (ahora a precios públicos).
-  - **Formación:** Cursos, seminarios, becas (programa con 50 años de antigüedad en 2025).
-  - **Asesoramiento:** Programas ICEX Next o Conecta2.
-  - **Promoción y Apoyo:** Planes de marketing, Target USA, ICEX IMPACT+, Desafía.
-  - **Foros de inversión:** ICEX Integra.
-  - **Publicaciones:** Revista "El Exportador".
-- **Estrategia:** Plan Estratégico 2021-2022 (alineado con PRTR).
-  - **6 Objetivos principales:** Resiliencia, diversificación de mercados, valor añadido (tecnología/marca), atracción de inversión extranjera, formación de talento y mejora de gobernanza interna.
-- **Actuaciones destacadas:** Portal web unificado, Ventana Global, Programa Pyme Invierte (con COFIDES), ICEX-Smart Cities, integración con CECO (formación MBA), Programa ICEX Vives (talento joven para empresas).
+# 4. SERVICIOS CENTRALES DE LA SECRETARÍA DE ESTADO
 
-# **9. CONCLUSIÓN**
-- El MECE posee una importancia estratégica y cualitativa fundamental, abarcando carteras trascendentales para la estructura económica de España.
+## 4.1. Dirección General de Inteligencia Económica y Comercial
+
+Según el art. 10, recopila y trata la inteligencia económica y comercial de las redes exterior y territorial, define el programa de trabajo de las Oficinas Económicas y Comerciales, dirige la política comercial bilateral y gestiona el apoyo financiero oficial a la internacionalización, en particular el Fondo para la Internacionalización de la Empresa (FIEM). Elabora estudios y estadísticas de comercio exterior y tutela las Cámaras de Comercio de España en el extranjero. Tiene siete subdirecciones generales:
+
+- Oficinas Económicas y Comerciales en el Exterior y de Red Territorial de Comercio
+- Europa, Asia y Oceanía, América, y Países Mediterráneos, África y Oriente Medio
+- Estudios y Prospección Comercial, con las estadísticas de comercio exterior como DataComex
+- Estrategia Comercial
+- Instrumentos Financieros para la Internacionalización
+
+## 4.2. Dirección General de Política Comercial y Seguridad Económica
+
+Según el art. 11, representa los intereses españoles en la política comercial común de la Unión Europea y en la OMC, la OCDE y la UNCTAD. Gestiona la defensa comercial, el arancel, la inspección y control de productos objeto de comercio exterior, el comercio interior, el material de defensa y doble uso y las inversiones exteriores. Su titular preside la Junta de Inversiones Exteriores. Tiene nueve subdirecciones generales:
+
+- Política Comercial Multilateral y Seguridad Económica
+- Comercio Internacional de Mercancías
+- Comercio Internacional de Servicios y Comercio Digital
+- Defensa Comercial y Política Arancelaria
+- Inspección, Certificación y Asistencia Técnica del Comercio Exterior (SOIVRE)
+- Regulación y Apoyo al Comercio Interior
+- Comercio Internacional de Material de Defensa y Doble Uso
+- Inversiones Exteriores
+- Regulación de Inversiones, que aplica el control de inversiones extranjeras directas por motivos de seguridad y orden público
+
+## 4.3. El SOIVRE
+
+El **Servicio Oficial de Inspección, Vigilancia y Regulación de las Exportaciones** (SOIVRE) se articula en torno a la Subdirección General de Inspección, Certificación y Asistencia Técnica del Comercio Exterior, que coordina los Servicios de Inspección SOIVRE de la red territorial y la red de laboratorios. Sus funciones principales son:
+
+- Control de calidad comercial de los productos agroalimentarios, conforme a la **Orden PRE/3026/2003** y sus modificaciones, incluidas las normas de comercialización de frutas y hortalizas frescas de la Unión
+- Control de los productos ecológicos importados de terceros países antes de su despacho a libre práctica, conforme al **Reglamento (UE) 2018/848**
+- Control de la seguridad de productos industriales importados de terceros países, como juguetes o material eléctrico, conforme al **Real Decreto 330/2008** y al **Reglamento (UE) 2023/988**
+- Control en frontera de especies protegidas (CITES), por encomienda de gestión del Ministerio para la Transición Ecológica y el Reto Demográfico, al que corresponde la Autoridad Administrativa CITES desde el **Real Decreto 986/2021**
+- Certificación voluntaria y asistencia técnica a las empresas exportadoras
+
+La red analítica se compone de 17 laboratorios: uno Central en Madrid y 16 periféricos.
+
+## 4.4. La Oficina española para la Reconstrucción de Ucrania
+
+Creada por el Real Decreto 867/2025 con rango de dirección general, actúa como ventanilla única para las empresas españolas interesadas en la reconstrucción de Ucrania. Se apoya en las Oficinas Económicas y Comerciales de Kiev y Varsovia.
+
+# 5. SERVICIOS TERRITORIALES: LA RED TERRITORIAL DE COMERCIO
+
+Las **Direcciones Territoriales y Provinciales de Comercio**, 31 en todo el territorio nacional, se regulan en el **Real Decreto 1456/2005**. Dependen orgánicamente del Ministerio a través de la Secretaría de Estado de Comercio y funcionalmente de los órganos directivos competentes por razón de la materia. No están integradas en las Delegaciones del Gobierno. Sus directores actúan también como directores del ICEX en su demarcación. Sus funciones, entre otras, son:
+
+- Gestión, tramitación y resolución de expedientes de comercio exterior, incluido el intracomunitario, y de material de defensa y doble uso
+- Inspección y control de calidad comercial y de seguridad, que desarrollan los Servicios de Inspección SOIVRE, y expedición de certificados
+- Estudio de los efectos del arancel y recogida de datos sobre la distribución comercial
+- Actividades del ICEX e información y asesoramiento a empresas
+- Tramitación de los procedimientos sancionadores previstos en su normativa
+
+# 6. SERVICIOS EN EL EXTERIOR
+
+## 6.1. Las Oficinas Económicas y Comerciales
+
+Son órganos técnicos de las Misiones Diplomáticas, regulados por el **Real Decreto 2827/1998**. Dependen orgánicamente del MECE a través de la Secretaría de Estado de Comercio y funcionalmente de los órganos directivos por razón de la materia, sin perjuicio de la dependencia jerárquica del Jefe de Misión (Ley 2/2014). Las dirigen los Consejeros Económicos y Comerciales, normalmente del Cuerpo de Técnicos Comerciales y Economistas del Estado, que actúan también como directores del ICEX. La red cuenta con casi un centenar de oficinas. Sus funciones tienen dos vertientes:
+
+- Representación oficial ante las autoridades del país en materia económica y comercial, seguimiento de su política comercial y de las barreras que afectan a las empresas españolas, y elaboración de inteligencia económica y comercial
+- Apoyo a las empresas con información sobre mercados, normativa, aranceles y licitaciones, búsqueda de socios y apoyo a la promoción comercial y a la atracción de inversiones
+
+## 6.2. ICEX España Exportación e Inversiones
+
+**ICEX** es una entidad pública empresarial adscrita al MECE a través de la Secretaría de Estado de Comercio, cuya titular la preside. Promueve la internacionalización de las empresas españolas y atrae inversión extranjera a España a través de Invest in Spain. Presta sus servicios por medio de la red territorial y de las Oficinas Económicas y Comerciales. Sus servicios principales son:
+
+- Información sobre mercados, oportunidades de negocio y licitaciones internacionales
+- Formación en internacionalización, a través del CECO y de las Becas de Internacionalización
+- Asesoramiento a empresas que inician su salida al exterior, como el programa ICEX Next
+- Promoción comercial: ferias, misiones comerciales y planes sectoriales
+- Atracción y acompañamiento de la inversión extranjera
+
+ICEX se coordina con COFIDES y CESCE a través de Ventana Global, punto único de información sobre los instrumentos públicos de apoyo. Su actividad se enmarca en la Estrategia de Internacionalización de la Economía Española 2017-2027.
+
+# 7. CONCLUSIÓN
+
+El MECE concentra la política económica y la política comercial. La Secretaría de Estado de Comercio gestiona la política comercial, la internacionalización, las inversiones exteriores y el comercio interior, y el Real Decreto 867/2025 refleja el peso creciente de la seguridad económica y de la inteligencia comercial. Las redes territorial y exterior, conectadas con ICEX, acompañan a las empresas desde su provincia hasta el mercado de destino, y el SOIVRE garantiza la calidad y la seguridad de los productos que entran y salen del mercado de la Unión por las fronteras españolas.
