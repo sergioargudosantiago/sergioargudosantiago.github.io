@@ -333,6 +333,7 @@ html.dark body.c-pagina {
 .art-cuerpo { font-size: 1.0625rem; line-height: 1.72; }
 .art-cuerpo > * + * { margin-top: 1.15rem; }
 .art-cuerpo p { max-width: 68ch; }
+.art-resumen > * + * { margin-top: 1.15rem; }
 .art-cuerpo h2 {
     font-family: var(--f-titular) !important;
     font-weight: 600;
@@ -380,6 +381,9 @@ html.dark body.c-pagina {
 .art-fig-unidad { font-size: 0.85rem; color: var(--c-tenue); margin: 0.25rem 0 0.6rem !important; }
 .art-fig .graficos-leyenda { margin-bottom: 0.4rem; color: var(--c-tenue); }
 .art-fig-fuente { font-size: 0.78rem; color: var(--c-tenue); margin-top: 0.6rem; }
+/* Recuadro divulgativo dentro del artículo (conceptos técnicos) */
+.art-recuadro { margin: 1.5rem 0; padding: 0.9rem 1.1rem; border-left: 3px solid var(--p-flujos-exportaciones); background: var(--c-superficie); border-radius: 0 6px 6px 0; font-size: 0.95rem; }
+.art-recuadro p { margin: 0.4rem 0; }
 .art-conmutador { display: inline-flex; gap: 0.25rem; padding: 0.2rem; background: var(--c-superficie-2); border: 1px solid var(--c-linea); border-radius: 4px; }
 .art-conmutador button { font-family: var(--f-texto); font-size: 0.85rem; font-weight: 700; padding: 0.35rem 0.8rem; border: 0; border-radius: 3px; background: transparent; color: var(--c-tenue); cursor: pointer; }
 .art-conmutador button:hover:not([aria-pressed="true"]) { color: var(--c-tinta); background: var(--c-acento-suave); }
@@ -656,6 +660,14 @@ html.dark .c-franja { background: #283224; border-top: 2px solid var(--c-oro); }
     --p-paises-paises-bajos: #179eb7;
     --p-paises-marruecos: #848e38;
     --p-paises-china: #c579a5;
+    --p-paises-espana: #C62828;
+    --p-paises-ue27: #1F3B73;
+    --p-paises-taiwan: #D9600B;
+    --p-paises-vietnam: #0F766E;
+    --p-paises-mexico: #A16207;
+    --p-paises-canada: #7C4A2D;
+    --p-paises-irlanda: #15803D;
+    --p-paises-belgica: #8A6D00;
     --p-paises-resto: #8c9387;
     --p-balanza-bienes: #9076be;
     --p-balanza-turismo: #d07a6d;
@@ -685,6 +697,14 @@ html.dark {
     --p-paises-paises-bajos: #21a3bc;
     --p-paises-marruecos: #848e38;
     --p-paises-china: #c276a2;
+    --p-paises-espana: #EF5350;
+    --p-paises-ue27: #7C9BDB;
+    --p-paises-taiwan: #F08A3E;
+    --p-paises-vietnam: #2EB8A8;
+    --p-paises-mexico: #D9A520;
+    --p-paises-canada: #C08457;
+    --p-paises-irlanda: #4CC777;
+    --p-paises-belgica: #D4B13A;
     --p-paises-resto: #8e9589;
     --p-balanza-bienes: #9076be;
     --p-balanza-turismo: #cd776a;

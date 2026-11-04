@@ -1,7 +1,8 @@
 /**
  * Gráficos de sergioargudo.es en SVG, sin dependencias.
  * Colores: variables --p-* (data/paleta.json vía npm run paleta) y --c-* de css/sitio.css.
- * Tipos: lineas, apiladas, ranking, mancuernas, panelesGemelos. Cada uno se
+ * Tipos: lineas, apiladas, ranking, mancuernas, mariposa, divergentes, tiras,
+ * ramas, indices, barras, miniaturas y panelesGemelos. Cada uno se
  * registra para redibujarse al cambiar el ancho del contenedor y con
  * Graficos.redibujarTodo() al cambiar el tema.
  * Las funciones puras se prueban en scripts/lib/graficos.test.js.
@@ -53,7 +54,35 @@
             `L${r(x1)},${r(b1)}C${r(xm)},${r(b1)} ${r(xm)},${r(b0)} ${r(x0)},${r(b0)}Z`;
     }
 
-    const puras = { marcas, formato, rangoLineas, formatoPct, variacionPct, sumaMovil, pasoEtiquetas, indicesEtiquetas, anchoDibujable, conAlfa, cinta };
+    // Separa etiquetas verticales para que no se monten: ys ordenadas por posición
+    function repartir(ys, min, top, bottom) {
+        const orden = ys.map((y, i) => [y, i]).sort((a, b) => a[0] - b[0]), r = ys.slice();
+        let prev = top - min;
+        orden.forEach(([y, i]) => { r[i] = Math.max(y, prev + min); prev = r[i]; });
+        // si se salen por abajo, se empujan hacia arriba
+        let sig = bottom + min;
+        orden.reverse().forEach(([, i]) => { r[i] = Math.min(r[i], sig - min); sig = r[i]; });
+        return r;
+    }
+
+    // Cascada: cada valor arranca donde acaba el anterior. Las filas con total: true van de 0 a su valor.
+    function escalones(filas) {
+        let acum = 0;
+        return filas.map(f => {
+            if (f.total) return { desde: 0, hasta: f.valor };
+            const e = { desde: acum, hasta: acum + f.valor };
+            acum = e.hasta;
+            return e;
+        });
+    }
+    // Índice de la caja {x0, x1, y0, y1} que contiene menos puntos [x, y] (margen de 3 px). En empate, la primera.
+    function elegirHueco(cajas, puntos, margen = 3) {
+        const dentro = c => puntos.filter(([px, py]) => px >= c.x0 - margen && px <= c.x1 + margen && py >= c.y0 - margen && py <= c.y1 + margen).length;
+        let mejor = 0, minimo = Infinity;
+        cajas.forEach((c, k) => { const n = dentro(c); if (n < minimo) { minimo = n; mejor = k; } });
+        return mejor;
+    }
+    const puras = { elegirHueco, escalones, repartir, marcas, formato, rangoLineas, formatoPct, variacionPct, sumaMovil, pasoEtiquetas, indicesEtiquetas, anchoDibujable, conAlfa, cinta };
     if (typeof module !== 'undefined' && module.exports) { module.exports = puras; return; }
 
     // ---------- dibujo (solo navegador) ----------
@@ -163,15 +192,29 @@
     }
     const vacia = s => !s || !s.length || s.every(x => x == null);
 
+    // Línea vertical discontinua desde el rótulo, horizontal y centrado encima, hasta el eje
+    // xMax: borde derecho del área de dibujo; el rótulo se desplaza a la izquierda si no cabe centrado
+    function marcaHorizontal(svg, hx, yTexto, yFin, texto, xMax = Infinity) {
+        S('line', { x1: hx, x2: hx, y1: yTexto + 4, y2: yFin, stroke: v('--c-tenue'), 'stroke-dasharray': '5 3', 'stroke-width': 1.5 }, svg);
+        const t = S('text', { x: hx, y: yTexto, 'text-anchor': 'middle', 'font-size': 11,
+            style: `fill:${v('--c-tenue')};stroke:${v('--c-fondo')};stroke-width:4px;paint-order:stroke;stroke-linejoin:round` }, svg);
+        t.textContent = texto;
+        const mitad = (t.getComputedTextLength ? t.getComputedTextLength() : texto.length * 6) / 2;
+        if (hx + mitad > xMax) t.setAttribute('x', xMax - mitad);
+    }
+
     // Dos series con banda de saldo. desde = índice del primer dato provisional.
+    // Con saldo: {color} el saldo (a - b) va en columnas en lugar de banda.
+    // Con marca: {i, texto} una línea vertical discontinua en x[i] con su rótulo donde menos estorba.
     function dibujarLineas(el, op) {
-        const { x, a, b, nombres, colores, desde = null, yMax = null, yMin = null, destacar = null, titulo = '' } = op;
+        const { x, a, b, nombres, colores, desde = null, yMax = null, yMin = null, destacar = null, titulo = '', unidad = 'millones de euros', saldo = null, marca = null } = op;
         if (vacia(a) && vacia(b)) return sinDatos(el);
         const c = lienzo(el, +el.dataset.h || 240, titulo);
         if (!c) return;
         const { svg, w, h } = c;
         const m = { t: 14, b: 26, l: 10, r: 58 }, x0 = m.l + 8, x1 = w - m.r - 8;
-        const vals = [...a, ...b].filter(t => t != null);
+        const dif = x.map((_, i) => a[i] == null || b[i] == null ? null : a[i] - b[i]);
+        const vals = [...a, ...b, ...(saldo ? dif : [])].filter(t => t != null);
         const ti = marcas(...rangoLineas(vals, yMax, yMin));
         const y = t => m.t + (ti[ti.length - 1] - t) / (ti[ti.length - 1] - ti[0]) * (h - m.t - m.b);
         const xs = x.map((_, i) => x.length > 1 ? x0 + i * (x1 - x0) / (x.length - 1) : (x0 + x1) / 2);
@@ -179,9 +222,34 @@
         ejeY(svg, ti, y, m.l, w - m.r);
         indicesEtiquetas(x.length, x1 - x0).forEach(i => { S('text', { x: xs[i], y: h - 8, 'text-anchor': 'middle' }, svg).textContent = x[i]; });
 
+        if (saldo) {
+            const paso = x.length > 1 ? (x1 - x0) / (x.length - 1) : 20, ancho = Math.max(1, paso * 0.7);
+            dif.forEach((t, i) => { if (t != null) S('rect', { x: xs[i] - ancho / 2, y: Math.min(y(0), y(t)), width: ancho, height: Math.max(0.5, Math.abs(y(0) - y(t))), fill: v(saldo.color) }, svg); });
+            const n = x.length - 1;
+            if (dif[n] != null) S('text', { x: xs[n] - ancho, y: y(dif[n]) + (dif[n] < 0 ? 16 : -6), 'text-anchor': 'end', class: 'valor' }, svg).textContent = formato(dif[n]);
+        }
+        if (marca && xs[marca.i] != null && marca.y != null) marcaHorizontal(svg, xs[marca.i], y(marca.y), h - m.b, marca.texto, x1);
+        else if (marca && xs[marca.i] != null) {
+            const hx = xs[marca.i], arriba = m.t + 2, abajo = h - m.b - 2;
+            S('line', { x1: hx, x2: hx, y1: m.t, y2: h - m.b, stroke: v('--c-tenue'), 'stroke-dasharray': '5 3', 'stroke-width': 1.5 }, svg);
+            // puntos que el rótulo no debe pisar: las dos líneas y las columnas de saldo de todo su alto
+            const puntos = [...a.map((t, i) => [xs[i], y(t)]), ...b.map((t, i) => [xs[i], y(t)])].filter(([, py]) => isFinite(py));
+            if (saldo) dif.forEach((t, i) => { if (t != null) for (let k = 0; k <= 4; k++) puntos.push([xs[i], y(t * k / 4)]); });
+            const prueba = S('text', { 'font-size': 11 }, svg);
+            prueba.textContent = marca.texto;
+            const largo = (prueba.getComputedTextLength ? prueba.getComputedTextLength() : marca.texto.length * 6) + 4;
+            prueba.remove();
+            const opciones = [];
+            for (const tx of [hx + 12, hx - 3]) for (let y0 = arriba; y0 + largo <= abajo; y0 += 8) opciones.push({ tx, x0: tx - 10, x1: tx + 1, y0, y1: y0 + largo });
+            if (opciones.length) {
+                const o = opciones[elegirHueco(opciones, puntos)];
+                S('text', { x: o.tx, y: o.y0, transform: `rotate(-90 ${o.tx} ${o.y0})`, 'text-anchor': 'end', 'font-size': 11,
+                    style: `fill:${v('--c-tenue')};stroke:${v('--c-fondo')};stroke-width:4px;paint-order:stroke;stroke-linejoin:round` }, svg).textContent = marca.texto;
+            }
+        }
         // banda de saldo, partida en los cruces
         const tramo = (p, q, ta, tb, sa, sb) => S('polygon', { points: `${p},${y(ta)} ${q},${y(tb)} ${q},${y(sb)} ${p},${y(sa)}`, fill: (ta - sa + tb - sb) >= 0 ? conAlfa(cA, 0.14) : conAlfa(cB, 0.16) }, svg);
-        for (let i = 0; i < x.length - 1; i++) {
+        for (let i = 0; i < x.length - 1 && !saldo; i++) {
             if ([a[i], a[i + 1], b[i], b[i + 1]].some(t => t == null)) continue;
             const d0 = a[i] - b[i], d1 = a[i + 1] - b[i + 1];
             if (d0 * d1 < 0) {
@@ -219,7 +287,7 @@
         const banda = x.length > 1 ? (x1 - x0) / (x.length - 1) : x1 - x0;
         const fmt = t => t == null ? '–' : formato(t);
         zonas(svg, xs.map(cx => ({ x: cx - banda / 2, y: m.t, width: banda, height: h - m.t - m.b })),
-            i => `${x[i]}: ${nombres[0]} ${fmt(a[i])}, ${nombres[1]} ${fmt(b[i])} millones de euros`,
+            i => `${x[i]}: ${nombres[0]} ${fmt(a[i])}, ${nombres[1]} ${fmt(b[i])} ${unidad}`,
             i => `<div class="cab">${x[i]}${desde != null && i >= desde ? ' · provisional' : ''}</div>` +
                 filaTip(nombres[0], cA, fmt(a[i])) + filaTip(nombres[1], cB, fmt(b[i])) +
                 (a[i] != null && b[i] != null ? filaTip('Saldo', '', formato(a[i] - b[i])) : ''),
@@ -230,7 +298,7 @@
 
     // Columnas apiladas en positivo y negativo con una línea de total
     function dibujarApiladas(el, op) {
-        const { x, etiquetas, series, total, titulo = '' } = op;
+        const { x, etiquetas, series, total, titulo = '', unidad = 'millones de euros', marca = null } = op;
         if (!x.length || vacia(total.valores)) return sinDatos(el);
         const c = lienzo(el, +el.dataset.h || 280, titulo);
         if (!c) return;
@@ -257,6 +325,8 @@
             });
             if (visibles.has(i)) S('text', { x: xs[i], y: h - 8, 'text-anchor': xs[i] < 20 ? 'start' : 'middle' }, svg).textContent = etiquetas[i];
         });
+        // marca {i, texto, y}: rótulo horizontal a la altura y (por defecto, la marca superior del eje)
+        if (marca && xs[marca.i] != null) marcaHorizontal(svg, xs[marca.i], y(marca.y ?? ti[ti.length - 1]), h - m.b, marca.texto, x1);
         const puntos = total.valores.map((t, i) => `${xs[i]},${y(t)}`).join(' ');
         S('polyline', { points: puntos, fill: 'none', stroke: v('--c-superficie'), 'stroke-width': 5, 'stroke-linejoin': 'round' }, svg);
         S('polyline', { points: puntos, fill: 'none', stroke: v('--c-tinta'), 'stroke-width': 2, 'stroke-linejoin': 'round' }, svg);
@@ -267,7 +337,7 @@
         S('text', { x: xs[n] - 8, y: y(total.valores[n]) + (baja ? 18 : -10), 'text-anchor': 'end', class: 'valor' }, svg).textContent = formato(total.valores[n]);
         const guia = S('line', { y1: m.t, y2: h - m.b, stroke: v('--c-tenue'), 'stroke-dasharray': '2 3', visibility: 'hidden' }, svg);
         zonas(svg, xs.map(cx => ({ x: cx - banda / 2, y: m.t, width: banda, height: h - m.t - m.b })),
-            i => `${x[i]}: ${total.nombre} ${formato(total.valores[i])} millones de euros`,
+            i => `${x[i]}: ${total.nombre} ${formato(total.valores[i])} ${unidad}`,
             i => `<div class="cab">${x[i]}</div>` + series.map(se => filaTip(se.nombre, v(se.color), formato(se.valores[i] || 0))).join('') +
                 filaTip(total.nombre, v('--c-tinta'), formato(total.valores[i])),
             i => { guia.setAttribute('x1', xs[i]); guia.setAttribute('x2', xs[i]); guia.setAttribute('visibility', 'visible'); },
@@ -542,8 +612,207 @@
         tablaAccesible(el, ['', 'Grupo', nombreValor, '% del total'], filas.map(({ g, hj }) => [hj.nombre, g.nombre, formato(hj.valor), cuota(hj.cuota)]));
     }
 
+    // Índices base 100 de varias series, con hitos numerados y nombre al final de cada línea
+    function dibujarIndices(el, op) {
+        const { x, etiquetas = x, series, base = 100, hitos = [], titulo = '' } = op;
+        if (!x.length || series.every(s => vacia(s.valores))) return sinDatos(el);
+        const c = lienzo(el, +el.dataset.h || 320, titulo);
+        if (!c) return;
+        const { svg, w, h } = c;
+        const etqAncho = Math.min(118, w * 0.3);
+        const m = { t: 24, b: 26, l: 8, r: 40 }, x0 = m.l, x1 = w - m.r - etqAncho;
+        // hitos con texto: rótulo en vertical a lo largo de su línea, sin círculo numerado
+        const conTexto = hitos.length && hitos.every(hi => hi.texto);
+        if (conTexto) m.t = 10;
+        const ti = marcas(Math.min(base, ...series.flatMap(s => s.valores).filter(t => t != null)),
+            Math.max(base, ...series.flatMap(s => s.valores).filter(t => t != null)), 5);
+        const y = t => m.t + (ti[ti.length - 1] - t) / (ti[ti.length - 1] - ti[0]) * (h - m.t - m.b);
+        const xs = x.map((_, i) => x0 + i * (x1 - x0) / Math.max(1, x.length - 1));
+        for (const t of ti) {
+            S('line', { x1: x0, x2: x1, y1: y(t), y2: y(t), stroke: t === base ? v('--c-tenue') : v('--c-linea'), 'stroke-width': 1 }, svg);
+            S('text', { x: w - 4, y: y(t) + 4, 'text-anchor': 'end' }, svg).textContent = formato(t);
+        }
+        indicesEtiquetas(x.length, x1 - x0).forEach(i => { S('text', { x: xs[i], y: h - 8, 'text-anchor': 'middle' }, svg).textContent = etiquetas[i]; });
+        hitos.forEach(hi => {
+            const hx = xs[hi.i], estilo = { stroke: v('--c-tenue'), 'stroke-dasharray': hi.principal ? '5 3' : '2 3', 'stroke-width': hi.principal ? 1.5 : 1 };
+            S('line', Object.assign({ x1: hx, x2: hx, y1: conTexto ? m.t : m.t - 6, y2: h - m.b }, estilo), svg);
+            if (conTexto) return;
+            S('circle', { cx: hx, cy: m.t - 13, r: 8, fill: v('--c-superficie'), stroke: v('--c-tenue') }, svg);
+            S('text', { x: hx, y: m.t - 9, 'text-anchor': 'middle', 'font-size': 10.5 }, svg).textContent = hi.n;
+        });
+        // primero las secundarias, encima las destacadas
+        const orden = series.map((s, k) => k).sort((a, b) => (series[a].destacar ? 1 : 0) - (series[b].destacar ? 1 : 0));
+        orden.forEach(k => {
+            const s = series[k], pts = s.valores.map((t, i) => t == null ? null : `${xs[i]},${y(t)}`).filter(Boolean);
+            if (s.destacar) S('polyline', { points: pts.join(' '), fill: 'none', stroke: v('--c-superficie'), 'stroke-width': 6, 'stroke-linejoin': 'round' }, svg);
+            S('polyline', { points: pts.join(' '), fill: 'none', stroke: v(s.color), 'stroke-width': s.destacar ? 3 : 1.6, 'stroke-linejoin': 'round', opacity: s.destacar ? 1 : 0.9 }, svg);
+        });
+        const n = x.length - 1;
+        const yEtq = repartir(series.map(s => y(s.valores[n])), 14, m.t, h - m.b);
+        series.forEach((s, k) => {
+            const t = S('text', { x: x1 + 8, y: yEtq[k] + 4, class: s.destacar ? 'nombre' : '', style: `fill:${v(s.color)}` }, svg);
+            t.textContent = `${s.nombre} ${formato(s.valores[n])}`;
+            if (s.destacar) t.setAttribute('font-weight', '600');
+        });
+        // rótulos de los hitos al final, en vertical junto a su línea y con halo del fondo.
+        // Cada uno va arriba o abajo, a la derecha o a la izquierda de su línea: donde pisa menos puntos de las series.
+        if (conTexto) {
+            const puntos = series.flatMap(s => s.valores.flatMap((t, i) => {
+                if (t == null) return [];
+                const p = [[xs[i], y(t)]], u = s.valores[i + 1];
+                if (u != null) p.push([(xs[i] + xs[i + 1]) / 2, (y(t) + y(u)) / 2]);
+                return p;
+            }));
+            const prueba = S('text', { 'font-size': 11 }, svg);
+            hitos.forEach(hi => {
+                prueba.textContent = hi.texto;
+                const largo = (prueba.getComputedTextLength ? prueba.getComputedTextLength() : hi.texto.length * 6) + 4;
+                const hx = xs[hi.i], arriba = m.t + 2, abajo = h - m.b - 2;
+                // candidatas: a cada lado de la línea, deslizando el rótulo de arriba abajo de 8 en 8 px
+                const opciones = [];
+                for (const tx of [hx + 12, hx - 3]) for (let y0 = arriba; y0 + largo <= abajo; y0 += 8) opciones.push({ tx, x0: tx - 10, x1: tx + 1, y0, y1: y0 + largo });
+                if (!opciones.length) opciones.push({ tx: hx + 12, x0: hx + 2, x1: hx + 13, y0: arriba, y1: arriba + largo });
+                const o = opciones[elegirHueco(opciones, puntos)];
+                const ty = o.y0;
+                S('text', { x: o.tx, y: ty, transform: `rotate(-90 ${o.tx} ${ty})`, 'text-anchor': 'end', 'font-size': 11,
+                    style: `fill:${v('--c-tenue')};stroke:${v('--c-fondo')};stroke-width:4px;paint-order:stroke;stroke-linejoin:round` }, svg).textContent = hi.texto;
+            });
+            prueba.remove();
+        }
+        // puntos finales después de los rótulos de hitos, para que el halo no los tape
+        series.forEach(s => { if (s.valores[n] != null) S('circle', { cx: xs[n], cy: y(s.valores[n]), r: s.destacar ? 4 : 3, fill: v(s.color) }, svg); });
+        const guia = S('line', { y1: m.t, y2: h - m.b, stroke: v('--c-tenue'), 'stroke-dasharray': '2 3', visibility: 'hidden' }, svg);
+        const banda = (x1 - x0) / Math.max(1, x.length - 1);
+        const fmt = t => t == null ? '–' : formato(t);
+        zonas(svg, xs.map(cx => ({ x: cx - banda / 2, y: m.t, width: banda, height: h - m.t - m.b })),
+            i => `${etiquetas[i]}: ` + series.map(s => `${s.nombre} ${fmt(s.valores[i])}`).join(', '),
+            i => `<div class="cab">${etiquetas[i]}</div>` + series.slice().sort((a, b) => (b.valores[i] ?? 0) - (a.valores[i] ?? 0))
+                .map(s => filaTip(s.nombre, v(s.color), fmt(s.valores[i]))).join('') + `<div class="nota">Índice, base ${base}</div>`,
+            i => { guia.setAttribute('x1', xs[i]); guia.setAttribute('x2', xs[i]); guia.setAttribute('visibility', 'visible'); },
+            () => guia.setAttribute('visibility', 'hidden'));
+        tablaAccesible(el, ['', ...series.map(s => s.nombre)], x.map((t, i) => [etiquetas[i], ...series.map(s => fmt(s.valores[i]))]));
+    }
+
+    // Barras horizontales desde cero, nombre a la izquierda y una columna extra a la derecha.
+    // destacar resalta una fila. Cada fila trae su tooltip en tip: [[nombre, valor], ...]
+    function dibujarBarras(el, op) {
+        const { filas, formatoValor = formatoPct, colores = ['--p-flujos-exportaciones', '--p-flujos-importaciones'],
+            extraTitulo = '', titulo = '' } = op;
+        if (!filas.length) return sinDatos(el);
+        // en pantallas estrechas el nombre va encima de su barra para que quepa entero
+        const apilado = el.dataset.apilado ? el.dataset.apilado === 'si' : el.clientWidth < 520;
+        const fh = apilado ? 38 : 24, top = extraTitulo ? 20 : 6, h = filas.length * fh + top + 4;
+        const c = lienzo(el, h, titulo);
+        if (!c) return;
+        const { svg, w } = c;
+        const [cPos, cNeg] = colores.map(v);
+        // la columna de nombres se ajusta al más largo, con tope para que quepan las barras
+        const prueba = S('text', { class: 'nombre', 'font-weight': '700' }, svg);
+        const largo = Math.max(...filas.map(f => { prueba.textContent = f.nombre; return prueba.getComputedTextLength ? prueba.getComputedTextLength() : f.nombre.length * 7; }));
+        prueba.remove();
+        const etq = apilado ? 0 : Math.min(largo + 4, w * 0.45), extra = extraTitulo ? 54 : 0;
+        const xa = apilado ? 4 : etq + 8, xb = w - extra - 6;
+        const max = Math.max(0, ...filas.map(f => f.valor)), min = Math.min(0, ...filas.map(f => f.valor));
+        // hueco para la cifra a cada lado
+        const hueco = 48, X = t => xa + (min < 0 ? hueco : 0) + (xb - xa - (min < 0 ? hueco : 0) - (max > 0 ? hueco : 0)) * (t - min) / (max - min || 1);
+        const x0 = X(0);
+        if (extraTitulo) S('text', { x: w - 4, y: 12, 'text-anchor': 'end', class: 'nombre' }, svg).textContent = extraTitulo;
+        S('line', { x1: x0, x2: x0, y1: top - 2, y2: h, stroke: v('--c-tenue') }, svg);
+        const ys = filas.map((_, i) => top + i * fh + fh / 2);
+        filas.forEach((f, i) => {
+            const fila = ys[i], cy = apilado ? fila + 7 : fila, pos = f.valor >= 0, xf = X(f.valor), op1 = f.destacar || !filas.some(g => g.destacar) ? 1 : 0.55;
+            if (f.destacar) S('rect', { x: 0, y: fila - fh / 2, width: w, height: fh, fill: conAlfa(v('--c-tenue'), 0.12) }, svg);
+            const n = S('text', apilado ? { x: 4, y: fila - 7, 'text-anchor': 'start', class: 'nombre' } : { x: etq, y: cy + 4, 'text-anchor': 'end', class: 'nombre' }, svg);
+            n.textContent = f.nombre;
+            if (f.destacar) n.setAttribute('font-weight', '700');
+            S('rect', { x: Math.min(x0, xf), y: cy - 7, width: Math.max(1, Math.abs(xf - x0)), height: 14, rx: 2, fill: pos ? cPos : cNeg, opacity: op1 }, svg);
+            S('text', { x: pos ? xf + 5 : xf - 5, y: cy + 4, 'text-anchor': pos ? 'start' : 'end', class: f.destacar ? 'valor' : '' }, svg).textContent = formatoValor(f.valor);
+            if (extraTitulo) S('text', { x: w - 4, y: cy + 4, 'text-anchor': 'end', class: f.extraFuerte ? 'valor' : '' }, svg).textContent = f.extra ?? '';
+        });
+        zonas(svg, ys.map(cy => ({ x: 0, y: cy - fh / 2, width: w, height: fh })),
+            i => `${filas[i].nombre}: ` + filas[i].tip.map(([k, val]) => `${k} ${val}`).join(', '),
+            i => `<div class="cab">${filas[i].nombre}</div>` + filas[i].tip.map(([k, val]) => filaTip(k, '', val)).join(''));
+        tablaAccesible(el, ['', ...filas[0].tip.map(([k]) => k)], filas.map(f => [f.nombre, ...f.tip.map(([, val]) => val)]));
+    }
+
+    // Cuadrícula de minigráficos con la misma escala: una línea por panel y una
+    // referencia común (p. ej. la UE) en cada uno. Paneles en el orden dado.
+    function dibujarMiniaturas(el, op) {
+        const { x, paneles, referencia = null, base = 100, titulo = '' } = op;
+        if (!paneles.length) return sinDatos(el);
+        const w0 = el.clientWidth, cols = w0 >= 640 ? 4 : w0 >= 420 ? 3 : 2;
+        const ph = 124, filasN = Math.ceil(paneles.length / cols), h = filasN * ph + 4;
+        const c = lienzo(el, h, titulo);
+        if (!c) return;
+        const { svg, w } = c;
+        const pw = w / cols, pad = 8, cab = 18;
+        const todos = paneles.flatMap(p => p.valores).concat(referencia ? referencia.valores : []).filter(t => t != null);
+        const lo = Math.min(base, ...todos), hi = Math.max(base, ...todos);
+        paneles.forEach((p, k) => {
+            const ox = (k % cols) * pw, oy = Math.floor(k / cols) * ph;
+            const X = i => ox + pad + i * (pw - 2 * pad) / Math.max(1, x.length - 1);
+            const Y = t => oy + cab + 6 + (hi - t) / (hi - lo || 1) * (ph - cab - 16);
+            const n = S('text', { x: ox + pad, y: oy + 13, class: 'nombre' }, svg);
+            n.textContent = p.nombre;
+            if (p.destacar) n.setAttribute('font-weight', '700');
+            const ult = p.valores[p.valores.length - 1];
+            S('text', { x: ox + pw - pad, y: oy + 13, 'text-anchor': 'end', class: p.destacar ? 'valor' : '', style: `fill:${v(p.color)}` }, svg).textContent = formato(ult);
+            S('line', { x1: X(0), x2: X(x.length - 1), y1: Y(base), y2: Y(base), stroke: v('--c-tenue'), 'stroke-dasharray': '2 3' }, svg);
+            const linea = (vals, color, ancho) => S('polyline', { points: vals.map((t, i) => t == null ? '' : `${X(i)},${Y(t)}`).join(' ').trim(), fill: 'none', stroke: v(color), 'stroke-width': ancho, 'stroke-linejoin': 'round' }, svg);
+            if (referencia) linea(referencia.valores, referencia.color, 1.2);
+            linea(p.valores, p.color, p.destacar ? 2.6 : 1.8);
+        });
+        const caja = k => ({ x: (k % cols) * pw, y: Math.floor(k / cols) * ph, width: pw, height: ph });
+        zonas(svg, paneles.map((_, k) => caja(k)),
+            k => `${paneles[k].nombre}: ` + paneles[k].tip.map(([a, b]) => `${a} ${b}`).join(', '),
+            k => `<div class="cab">${paneles[k].nombre}</div>` + paneles[k].tip.map(([a, b]) => filaTip(a, '', b)).join('') +
+                (referencia ? `<div class="nota">Línea fina: ${referencia.nombre}. Base ${base}</div>` : ''));
+        tablaAccesible(el, ['', ...paneles[0].tip.map(([a]) => a)], paneles.map(p => [p.nombre, ...p.tip.map(([, b]) => b)]));
+    }
+
+    // Cascada horizontal: una fila por aportación, cada barra arranca donde acaba la anterior
+    // y la última fila (total: true) va desde cero. Filas: {nombre, valor, color?, destacar, total, tip}
+    function dibujarCascada(el, op) {
+        const { filas, formatoValor = formato, colores = ['--p-flujos-exportaciones', '--p-flujos-importaciones'], titulo = '' } = op;
+        if (!filas.length) return sinDatos(el);
+        const apilado = el.dataset.apilado ? el.dataset.apilado === 'si' : el.clientWidth < 520;
+        const fh = apilado ? 38 : 26, top = 6, h = filas.length * fh + top + 4;
+        const c = lienzo(el, h, titulo);
+        if (!c) return;
+        const { svg, w } = c;
+        const [cPos, cNeg] = colores.map(v);
+        const prueba = S('text', { class: 'nombre', 'font-weight': '700' }, svg);
+        const largo = Math.max(...filas.map(f => { prueba.textContent = f.nombre; return prueba.getComputedTextLength ? prueba.getComputedTextLength() : f.nombre.length * 7; }));
+        prueba.remove();
+        const etq = apilado ? 0 : Math.min(largo + 4, w * 0.4);
+        const esc = escalones(filas), todos = esc.flatMap(e => [e.desde, e.hasta]);
+        const min = Math.min(0, ...todos), max = Math.max(0, ...todos);
+        const hueco = 52, xa = (apilado ? 4 : etq + 8) + (min < 0 ? hueco : 0), xb = w - 6 - hueco;
+        const X = t => xa + (xb - xa) * (t - min) / (max - min || 1);
+        S('line', { x1: X(0), x2: X(0), y1: top - 2, y2: h, stroke: v('--c-tenue') }, svg);
+        const ys = filas.map((_, i) => top + i * fh + fh / 2);
+        filas.forEach((f, i) => {
+            const fila = ys[i], cy = apilado ? fila + 7 : fila, { desde, hasta } = esc[i];
+            if (f.destacar) S('rect', { x: 0, y: fila - fh / 2, width: w, height: fh, fill: conAlfa(v('--c-tenue'), 0.12) }, svg);
+            const n = S('text', apilado ? { x: 4, y: fila - 7, class: 'nombre' } : { x: etq, y: cy + 4, 'text-anchor': 'end', class: 'nombre' }, svg);
+            n.textContent = f.nombre;
+            if (f.destacar || f.total) n.setAttribute('font-weight', '700');
+            const color = f.color ? v(f.color) : f.total ? v('--c-tinta') : f.valor >= 0 ? cPos : cNeg;
+            S('rect', { x: Math.min(X(desde), X(hasta)), y: cy - 8, width: Math.max(1.5, Math.abs(X(hasta) - X(desde))), height: 16, rx: 2, fill: color }, svg);
+            // conector con la fila siguiente
+            if (i < filas.length - 1 && !filas[i + 1].total) S('line', { x1: X(hasta), x2: X(hasta), y1: cy + 8, y2: ys[i + 1] + (apilado ? 7 : 0) - 8, stroke: v('--c-tenue'), 'stroke-dasharray': '2 2' }, svg);
+            const derecha = hasta >= desde;
+            S('text', { x: derecha ? Math.max(X(desde), X(hasta)) + 5 : Math.min(X(desde), X(hasta)) - 5, y: cy + 4, 'text-anchor': derecha ? 'start' : 'end', class: f.destacar || f.total ? 'valor' : '' }, svg).textContent = f.total ? formato(f.valor) : formatoValor(f.valor);
+        });
+        zonas(svg, ys.map(cy => ({ x: 0, y: cy - fh / 2, width: w, height: fh })),
+            i => `${filas[i].nombre}: ` + filas[i].tip.map(([k, val]) => `${k} ${val}`).join(', '),
+            i => `<div class="cab">${filas[i].nombre}</div>` + filas[i].tip.map(([k, val]) => filaTip(k, '', val)).join(''));
+        tablaAccesible(el, ['', ...filas[0].tip.map(([k]) => k)], filas.map(f => [f.nombre, ...f.tip.map(([, val]) => val)]));
+    }
+
     const DIBUJO = { lineas: dibujarLineas, apiladas: dibujarApiladas, ranking: dibujarRanking, mancuernas: dibujarMancuernas,
-        mariposa: dibujarMariposa, divergentes: dibujarDivergentes, tiras: dibujarTiras, ramas: dibujarRamas };
+        mariposa: dibujarMariposa, divergentes: dibujarDivergentes, tiras: dibujarTiras, ramas: dibujarRamas,
+        indices: dibujarIndices, barras: dibujarBarras, miniaturas: dibujarMiniaturas, cascada: dibujarCascada };
     const publico = tipo => (el, op) => { registrar(tipo, el, op); DIBUJO[tipo](el, op); };
 
     function panelesGemelos(els, ops) {
@@ -554,6 +823,8 @@
     raiz.Graficos = Object.assign({
         lineas: publico('lineas'), apiladas: publico('apiladas'), ranking: publico('ranking'),
         mancuernas: publico('mancuernas'), mariposa: publico('mariposa'), divergentes: publico('divergentes'),
-        tiras: publico('tiras'), ramas: publico('ramas'), panelesGemelos, redibujarTodo
+        tiras: publico('tiras'), ramas: publico('ramas'), indices: publico('indices'),
+        barras: publico('barras'), miniaturas: publico('miniaturas'), cascada: publico('cascada'),
+        panelesGemelos, redibujarTodo
     }, puras);
 })(typeof window !== 'undefined' ? window : globalThis);

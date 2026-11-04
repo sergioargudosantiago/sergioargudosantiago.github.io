@@ -77,3 +77,22 @@ test('cinta cierra una banda curva entre los dos tramos', () => {
     assert.strictEqual(G.cinta(0, 0, 10, 100, 50, 55),
         'M0,0C50,0 50,50 100,50L100,55C50,55 50,10 0,10Z');
 });
+
+test('elegirHueco toma la caja con menos puntos y, en empate, la primera', () => {
+    const cajas = [{ x0: 0, x1: 10, y0: 0, y1: 10 }, { x0: 0, x1: 10, y0: 50, y1: 60 }];
+    assert.strictEqual(G.elegirHueco(cajas, [[5, 5], [5, 8]]), 1);
+    assert.strictEqual(G.elegirHueco(cajas, []), 0);
+});
+
+test('escalones encadena las aportaciones y el total sale de cero', () => {
+    assert.deepStrictEqual(G.escalones([{ valor: 10 }, { valor: -4 }, { valor: 52, total: true }]),
+        [{ desde: 0, hasta: 10 }, { desde: 10, hasta: 6 }, { desde: 0, hasta: 52 }]);
+});
+
+test('repartir separa etiquetas que se montan y respeta los bordes', () => {
+    assert.deepStrictEqual(G.repartir([100, 105, 200], 14, 0, 300), [100, 114, 200]);
+    // dos al fondo: suben para no salirse
+    assert.deepStrictEqual(G.repartir([295, 300], 14, 0, 300), [286, 300]);
+    // el orden de entrada se conserva
+    assert.deepStrictEqual(G.repartir([50, 45], 14, 0, 300), [59, 45]);
+});

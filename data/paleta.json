@@ -31,6 +31,14 @@
     { "id": "paises-bajos", "nombre": "Países Bajos", "claro": "#179eb7", "oscuro": "#21a3bc" },
     { "id": "marruecos", "nombre": "Marruecos", "claro": "#848e38", "oscuro": "#848e38" },
     { "id": "china", "nombre": "China", "claro": "#c579a5", "oscuro": "#c276a2" },
+    { "id": "espana", "nombre": "España", "claro": "#C62828", "oscuro": "#EF5350" },
+    { "id": "ue27", "nombre": "UE-27", "claro": "#1F3B73", "oscuro": "#7C9BDB" },
+    { "id": "taiwan", "nombre": "Taiwán", "claro": "#D9600B", "oscuro": "#F08A3E" },
+    { "id": "vietnam", "nombre": "Vietnam", "claro": "#0F766E", "oscuro": "#2EB8A8" },
+    { "id": "mexico", "nombre": "México", "claro": "#A16207", "oscuro": "#D9A520" },
+    { "id": "canada", "nombre": "Canadá", "claro": "#7C4A2D", "oscuro": "#C08457" },
+    { "id": "irlanda", "nombre": "Irlanda", "claro": "#15803D", "oscuro": "#4CC777" },
+    { "id": "belgica", "nombre": "Bélgica", "claro": "#8A6D00", "oscuro": "#D4B13A" },
     { "id": "resto", "nombre": "Resto", "claro": "#8c9387", "oscuro": "#8e9589" }
   ],
   "balanza": [
