@@ -28,7 +28,7 @@
     // Canadá, Alemania e Irlanda ya salen en la cascada y en el gráfico de la UE
     const SERIES_G1 = ['España', 'UE-27', 'Total', 'China', 'Taiwán', 'Vietnam', 'México'];
     // Rótulo corto de cada hito sobre los gráficos de índices (el texto largo va en el artículo)
-    const HITO_CORTO = { '2025-04': 'Recíproco 10 %', '2025-09': 'Acuerdo UE 15 %', '2026-02': 'Supremo: 15 %', '2026-07': 'Sección 301: 10 %' };
+    const HITO_CORTO = { '2025-04': 'Aranceles recíprocos', '2025-09': 'Acuerdo con la UE', '2026-02': 'Fallo del Supremo', '2026-07': 'Sección 301' };
     const DESTACAR_G1 = new Set(['España', 'UE-27']);
     // Grupos CUCI que cuenta el texto
     const DESTACAR_G4 = new Set(['421']);

@@ -672,7 +672,15 @@
                 const opciones = [];
                 for (const tx of [hx + 12, hx - 3]) for (let y0 = arriba; y0 + largo <= abajo; y0 += 8) opciones.push({ tx, x0: tx - 10, x1: tx + 1, y0, y1: y0 + largo });
                 if (!opciones.length) opciones.push({ tx: hx + 12, x0: hx + 2, x1: hx + 13, y0: arriba, y1: arriba + largo });
-                const o = opciones[elegirHueco(opciones, puntos)];
+                // nunca encima del punto final de una serie (un hito cerca del último mes lo tapaba)
+                const libres = opciones.filter(o => !series.some(s => {
+                    const t = s.valores[n];
+                    if (t == null) return false;
+                    const px = xs[n], py = y(t);
+                    return px + 6 > o.x0 && px - 6 < o.x1 && py + 6 > o.y0 && py - 6 < o.y1;
+                }));
+                const cands = libres.length ? libres : opciones;
+                const o = cands[elegirHueco(cands, puntos)];
                 const ty = o.y0;
                 S('text', { x: o.tx, y: ty, transform: `rotate(-90 ${o.tx} ${ty})`, 'text-anchor': 'end', 'font-size': 11,
                     style: `fill:${v('--c-tenue')};stroke:${v('--c-fondo')};stroke-width:4px;paint-order:stroke;stroke-linejoin:round` }, svg).textContent = hi.texto;
